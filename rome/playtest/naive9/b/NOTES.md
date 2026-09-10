@@ -53,3 +53,58 @@ Nice: the goal is stated plainly and `state` repeats it ("Aiming at: Point-conta
    negative balance. Two rules for the same act.
 7. Scandal appeared at 3.9 with no explanation of which of my four finance projects caused it
    (seigniorage? the cartel?). `state` shows the number but nothing says where it came from.
+
+### The debt trap, confirmed (and the catch-22 that goes with it)
+At 131 AD the game finally said what had been happening for 25 years:
+"CLOSE TO THE LIMIT: you owe 1,186 of the 1,285 anyone here will advance you (92%).
+Past it every project in hand is halted unfinished and nobody funds new work for some years."
+That is a good message - but it arrives at 92%, and it explains a rule that silently destroyed
+three projects (fin_pawnshop at 61% done, scientific_method, units_standards) during an earlier
+`step 20`, with *no* message at all at the time. I only noticed because `state` said
+"RUNNING: nothing" and my money was gone.
+
+8. **The open-while-broke catch-22 is the single most frustrating thing in the game.** I finished
+   `horse_collar`. It earns 900/yr against 150 upkeep. The game refuses:
+   "REFUSED: opening it costs 150 denarii in stock and premises and you have -1,186".
+   So the engine will happily lend me 1,186 denarii to *build* a thing, then refuse to lend me
+   150 to *switch it on* and dig myself out. I sat idle for 14 game-years waiting to afford
+   150 den. Either let borrowing cover opening, or don't let me borrow to build in the first place.
+
+9. **`start scientific_method` once answered "REFUSED: you have never heard of any such thing"**
+   in 126 AD - for a technology that `available` had listed as startable since year 100 and that
+   I had already had in progress. Three game-years later the identical command worked. Never
+   reproduced it deliberately, but it read as a plain bug.
+
+10. **"'labour' says what raises it" is false, and it hid the most important building in the game.**
+    `state` and `labour` both say household places are "what you can feed, house and oversee.
+    'labour' says what raises it". `labour` says:
+      "HOUSEHOLD PLACES: 3.6 of 6 used, room for 2.4 more
+       to make room: To get more artisans: hire smith 3 or any trade in labour; or commission..."
+    That is the *how to hire* text pasted under a *how to make room* heading. It never mentions
+    the answer, which is `workshop_first` ("First workshop and laboratory", 5,757 den) - that
+    took me from 6.0 places to 14.8. I was stuck at the 6-place ceiling for ~15 game years,
+    watching concerns close for lack of a supervisor, with the game pointing me at a help text
+    that answered a different question.
+
+11. **Concerns silently close from staff attrition and you have to keep re-opening them.**
+    "nobody left to keep an eye on 1 concern, so tr_block_tackle closed". Attrition is 3.5%/yr,
+    so a 5-artisan staff drifts below what 20 concerns need and things switch off one at a time,
+    each costing money to reopen. `policy auto_hire on` fixes it, but auto_hire is off by default
+    and nothing suggests it when the first concern closes.
+
+12. **`ventures` invites you to open things that do nothing.** It lists, under
+    "YOU KNOW HOW, AND HAVE NOT OPENED": `identity_cover  0 earns  200 costs  237 to open`,
+    same for `scientific_method` and `units_standards`. I opened all three to see whether their
+    protection/method effects needed to be "running". Protection stayed at exactly 25% and I was
+    down 330 den/yr for nothing. Things with no revenue and no running effect should not be
+    offered as openable.
+
+13. **The `NEEDS` column in `ventures` is rounded to whole people and misleads.** It shows
+    "1 cr" for six different concerns while the actual requirement (per the event text) is
+    "0.2 craftsmen". Reading `ventures` I thought I needed 6 craftsmen; I needed about 1.2.
+
+14. **Duplicate-looking tech nodes.** I built `arithmetic_positional`, described as "Decimal
+    positional notation, zero, negative numbers, decimal fractions". The tree then still offers
+    `sc2_notation_zero` ("Zero as a number", 5 years), `sc2_notation_negative` ("Negative numbers",
+    8 years), `sc2_notation_decimal_fraction`, `sc2_notation_positional`. It looks like the same
+    knowledge sold to me twice, and I have no way under fog to tell whether they matter.

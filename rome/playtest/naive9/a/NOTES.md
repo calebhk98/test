@@ -88,3 +88,56 @@ PROBLEMS:
     the win condition needs 25 scholars and 20 artisans on staff and I am capped at 6.
 12. Every `available ...` query reprints the same ~26-line "HEARD OF, CANNOT BEGIN YET"
     block, even for a one-line query like `available find estate`. It buries the answer.
+
+## Session 1 - the recovery, and what the game actually rewards (115-143)
+
+After firing everyone I was at +3,005 den/yr and recovered fast. Two more observations:
+
+13. When I was under the post-insolvency credit ban, `start patron_local` refused with:
+      "REFUSED: nobody here will fund new work ... until then you may finish what is
+       running, and pay for something out of money you actually hold."
+    I had 9,603 denarii in hand and the project costs 1,200. It still refused. Either
+    the message is wrong or the rule is. That sentence promises something the game
+    does not allow, and I retried it twice believing I was doing it wrong.
+14. `available electricity` returns "Codebook for optical telegraph" and "Signal flags
+    for maritime signalling". Neither is electricity. The subject buckets are odd
+    (signal flags in electricity, "sizing systems: body measurement" and 50 other
+    textile micro-nodes crowding out everything else).
+15. The dominant strategy I found is dull and probably not intended: dump `available
+    all`, sort by cost, and start EVERY cheap node at once. I started 47 things in one
+    year, went from 16 to 63 technologies, and my reputation tripled. The engine has no
+    penalty for breadth, so "buy the whole bottom shelf" beats any thoughtful plan.
+    A player who plans carefully is punished relative to one who spams.
+16. Failure messages are good but very frequent and identical:
+      "FAILED at Green manure: it did not work. 40% of the hours are to do again
+       (20 of your own) and 84 is gone. Attempt 2."
+    In one 4-year step I got nine of these. "it did not work" never says anything about
+    WHY, so nine failures teach me nothing and just tax me.
+
+## Session 2 - I restarted with fog OFF, and it is a different (much better) game
+
+With fog off, `path point_contact_transistor` prints the whole 142-node road in
+topological order, and `why <id>` gains three lines that are worth more than everything
+else in the interface put together:
+
+    FULL CHAIN BEHIND IT: 145 nodes, 55,420 of your hours, 9,421,124 den, 142.2-year serial floor
+    DIRECTLY UNLOCKS: case_hardening, charcoal_industrial, collegium_licensed, ...
+    TOTAL DOWNSTREAM: 2,008 thing(s) depend on this -- INCLUDING THE GOAL
+
+17. THE BIG ONE. Fog of war is the DEFAULT ("Fog of war? [Y/n]") and it removes the
+    only tools that make the game strategic. Under fog you get 218 startable things,
+    a four-value hint column (ALL / much / some / few / ?), and no way to tell which of
+    them is on the road. I played 43 in-game years under fog and never learned that
+    `workshop_first` exists, let alone that 2,008 things and the goal depend on it -
+    because it was BLOCKED, and fog hides blocked nodes' descriptions. The default
+    setting is the one where the interesting decisions are invisible.
+18. Related and worse: the answer to "how do I ever get 25 scholars and 20 artisans on
+    staff when my household cap is 6" is hidden in the prose of three blocked nodes:
+      freedman_staff: "Grants +8 artisans."
+      school_founded: "Grants +4 scholars and +2 scholars/yr thereafter."
+    Under fog I could not read either of those, and `labour` - which `state` explicitly
+    points at for this - does not mention them. A fog-on player cannot find the single
+    mechanic that makes the goal reachable except by accident.
+19. The real opening is patron_local -> workshop_first -> citizenship -> collegium_licensed
+    -> freedman_staff -> school_founded, and nothing in the fog-on game says so. Under
+    fog, patron_local is the only one of those six that is even visible on turn one.

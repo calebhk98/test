@@ -1127,6 +1127,19 @@ def _node_explain(s, nodes, k):
                          "you read it: quotes move with prices, the coinage "
                          "and what a material costs to get."},
         "upkeep": n["up"], "revenue": n["rev"],
+        # WHAT IT PAYS YOU, which for something in your own practice is a third
+        # of the figure above. A break tester read "REVENUE: 500 den/yr" beside
+        # a ledger crediting 166.7 for the same node and called it `why`
+        # overstating income threefold. Both are true of different things: the
+        # tree quotes the trade as an organised concern, and one person in a
+        # rented room is not one.
+        "but_it_pays_YOU": (
+            round(n["rev"] * s.PRACTICE_SHARE * s.practice_attention(), 1)
+            if k in s._practice_set() and n["rev"] else None),
+        "because": ("this is your own practice, not a concern: it pays about a "
+                    "third of what the tree quotes for the trade, and selling "
+                    "your hours for wages takes another bite"
+                    if k in s._practice_set() and n["rev"] else None),
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
         "you_have": {"scholars": round(s.effective_scholars(), 1),
@@ -1695,6 +1708,9 @@ def render_why(out):
     if out.get("upkeep") or out.get("revenue"):
         L.append("UPKEEP: %s den/yr     REVENUE: %s den/yr"
                  % (_fmt_num(out.get("upkeep")), _fmt_num(out.get("revenue"))))
+    if out.get("but_it_pays_YOU") is not None:
+        L.append("  BUT IT PAYS YOU %s den/yr: %s"
+                 % (_fmt_num(out["but_it_pays_YOU"]), out.get("because") or ""))
 
     L.append("")
     status = ("DONE" if out.get("done") else
@@ -1888,8 +1904,10 @@ def render_ventures(out):
     that."""
     L = ["CONCERNS"]
     free = out.get("people_free_to_run_something_new") or {}
-    L.append("free to put behind something new: %s scholars, %s craftsmen"
-             % (_fmt_num(free.get("scholars")), _fmt_num(free.get("craftsmen"))))
+    L.append("free to put behind something new: %s scholars, %s craftsmen%s"
+             % (_fmt_num(free.get("scholars")), _fmt_num(free.get("craftsmen")),
+                "   (one of each of those is you)"
+                if out.get("one_of_each_of_those_is_you") else ""))
     if out.get("these_are_not_interchangeable"):
         L.append(_wrap(out["these_are_not_interchangeable"], indent="  "))
     L.append("")
@@ -3404,6 +3422,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     for k in idle[:20]] or "nothing",
                "people_free_to_run_something_new": {
                    "scholars": round(sch_free, 2), "craftsmen": round(art_free, 2)},
+               # YOU ARE IN THAT COUNT. `ventures` said "1 scholars, 1
+               # craftsmen" on the same screen as `labour`'s "ON YOUR STAFF:
+               # nobody" and `why`'s "(you have 1, 0)" - three screens, three
+               # different counts, and a break tester listed all three side by
+               # side. One person can keep an eye on one small shop, which is
+               # how every one of these fortunes started; it just has to say
+               # that the person is you.
+               "one_of_each_of_those_is_you": bool(s.founder_alive),
                # SCHOLARS AND CRAFTSMEN ARE NOT INTERCHANGEABLE, and nothing
                # said so. A play tester spent thirty years poor because
                # auto_train had bought them engineers - who count as scholars

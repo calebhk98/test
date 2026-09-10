@@ -1,0 +1,1759 @@
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+>>> 2
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+=>>> n
+=============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+>>> poor_scholar
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+>>> n
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_59.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+>>> policy auto_open on
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > p>>> policy auto_hire on
+olicy:
+  auto hire: False
+  auto buy people: False
+  auto manumit: False
+  auto train: False
+  auto mine: False
+  auto forest: False
+  auto mothball: True
+  auto shed: False
+  auto open: True
+  auto commission: False
+  auto bribe: False
+changed:
+  auto open: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > p>>> policy auto_mine on
+olicy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: False
+  auto train: False
+  auto mine: False
+  auto forest: False
+  auto mothball: True
+  auto shed: False
+  auto open: True
+  auto commission: False
+  auto bribe: False
+changed:
+  auto hire: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > p>>> policy auto_forest on
+olicy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: False
+  auto train: False
+  auto mine: True
+  auto forest: False
+  auto mothball: True
+  auto shed: False
+  auto open: True
+  auto commission: False
+  auto bribe: False
+changed:
+  auto mine: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > policy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: False
+  auto train: False
+  auto mine: True
+  auto forest: True
+  auto mothball: True
+  auto shed: False
+  auto open: True
+  auto commission: False
+  auto bribe: False
+changed:
+  auto forest: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+>>> policy auto_bribe on
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > p>>> policy auto_shed on
+olicy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: False
+  auto train: False
+  auto mine: True
+  auto forest: True
+  auto mothball: True
+  auto shed: False
+  auto open: True
+  auto commission: False
+  auto bribe: True
+changed:
+  auto bribe: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > p>>> policy auto_manumit on
+olicy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: False
+  auto train: False
+  auto mine: True
+  auto forest: True
+  auto mothball: True
+  auto shed: True
+  auto open: True
+  auto commission: False
+  auto bribe: True
+changed:
+  auto shed: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > policy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: True
+  auto train: False
+  auto mine: True
+  auto forest: True
+  auto mothball: True
+  auto shed: True
+  auto open: True
+  auto commission: False
+  auto bribe: True
+changed:
+  auto manumit: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+>>> policy auto_commission on
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > p>>> path point_contact_transistor
+olicy:
+  auto hire: True
+  auto buy people: False
+  auto manumit: True
+  auto train: False
+  auto mine: True
+  auto forest: True
+  auto mothball: True
+  auto shed: True
+  auto open: True
+  auto commission: True
+  auto bribe: True
+changed:
+  auto commission: True
+what each does:
+  auto hire: grow the staff toward what you can house and pay
+  auto buy people: buy slaves when the workshop is short-handed
+  auto manumit: free people you hold, over time
+  auto train: teach trades this society does not have when a project needs them
+  auto mine: sink a mine when a mineral is holding work up
+  auto forest: buy coppice when charcoal is holding work up
+  auto mothball: stop working mines you cannot pay for
+  auto bribe: pay your way out of a scandal before it kills you
+  auto shed: let go of WORKS that cost more than they return (this is about buildings and practices, not people)
+  auto open: open concerns that plainly pay for themselves. It will NOT open anything whose upkeep exceeds its takings, however much you need it - open those yourself with 'open <id>'
+note: Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe.
+not policies: Some things are consequences, not automation, and there is no switch for them: people you cannot pay leave, mines you cannot pay for stop being worked once your credit is gone, and creditors take what they are owed. Those follow from having no money, not from a setting.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > i>>> available all
+d: point_contact_transistor
+done: False
+remaining count: 142
+remaining: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic, geometry_analytic, workshop_first, calculus, case_hardening, charcoal_industrial, crank_conrod, lead_metallurgy, lens_grinding, nitre_beds, refractory_fireclay, newtonian_mechanics, drawplate_wire, precision_three_plate, prc_treadle_lathe_flywheel, water_power_scale, crude_cell, cap_heat_1100, em_theory, cap_tol_100um, bellows_water_blown, cap_power_water, galena_detector, cementation_steel, coal_coke, glass_clear, gp_carbon_brushes, quantum_solidstate_theory, cap_vac_1torr, cap_heat_1300, balance_analytical, gp_laminated_core, master_screw, zinc_metal, glass_labware, gp_glass_metal_seal, mirror_amalgam, telescope, blast_furnace, mt2_silica_brick_refractory, cap_pure_2N, micrometer_gauges, prc_slide_rest_simple, lab_apparatus, finery_puddling, mat_copper, mt2_basic_converter, prc_change_gears_quadrant, prc_milling_machine, mercury_supply, sulfuric_retort, voltaic_pile, prc_dividing_head, barometer, cap_vac_1e3, thermometer, hydrochloric_acid, lead_chamber, nitric_acid, daniell_cell, vacuum_pumps, cap_measure_temp, thermodynamics_theory, analytical_chemistry, cap_measure_temp_hi, cap_gas_o2h2, electroplating, cap_heat_1600, cap_pure_4N, cap_heat_2000, crucible_steel, glass_borosilicate, cap_pure_6N, copper_refining, high_temp_furnace, screw_lathe, el2_inductor_iron_core, galvanometer, gp_magnet_wire_enamelled, fused_quartz, mat_bulk_steel, boring_mill, cap_tol_10um, interchangeable_parts, cap_measure_elec, electromagnet, gp_controlled_atmosphere_chamber, steam_atmospheric, gp_whisker_forming, prc_lapping_plate, spectroscope, el2_potentiometer, steam_watt, cap_measure_light, el2_potentiometer_method_measurement, steam_high_pressure, prc_gauge_blocks_johansson, cap_power_steam, en_alternator, en_commutator, en_frequency_standardisation, en_transmission_line, dynamo, en_insulator, en_switchgear, cap_power_electric, discharge_xray, motor_transformer_ac, en_circuit_breaker, cap_vac_1e6, in2_electron_source_cathode, in2_xray_diffraction_camera, diffusion_pump, el2_alternator_rotating_field, en_transformer, gp_czochralski_puller, pwr_high_voltage_transmission, gp_exhaust_pinchoff, el2_induction_heating_inductor_coupling, en_substation, gp_getter, power_grid, vacuum_tube, cap_power_grid, zinc_industry_scale, el2_valve_voltmeter_high_impedance, cap_heat_3000, germanium_extraction, semiconductor_metrology, arc_furnace_ferroalloys, gecl4_purification, ge_reduction, zone_refining, single_crystal, point_contact_transistor
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > AVAILABLE: 207 startable now
+1-207
+
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      0
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*      7
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      0
+tx2_flax_fibre                     Flax cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_hemp_fibre                     Hemp cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_rope_lay                       Rope laying: strand          9      40     0   15%        0      40    1a*      2
+tx2_twist_insertion                Twist insertion cont         9      50     0   15%        0      40    1a*      0
+tx2_warp_sizing                    Warp sizing: fibre s         9      50  0.20   15%        0      40    1a*      0
+med_bone_setting                   Bone setting               9.3       0  0.50   10%      6.2       0     1s      0
+tx2_heddle                         Heddle: warp thread        9.5      40  0.10   15%        0      40    1a*      6
+tx2_wool_fibre                     Wool: sheep fibre          9.5      40     0   15%        0      40    1a*      1
+tx2_beam                           Beam: warp holder an       9.9      40  0.20   15%        0      40    1a*      0
+fin_employment_contract            Contract of employme        10      60     1    5%        0       0      -      1
+tx2_button_horn                    Button: horn materia        10      40  0.10   15%        0      40    1a*      0
+tx2_button_bone                    Button: bone materia      10.1      40  0.10   15%        0      40    1a*      0
+tx2_cashmere                       Cashmere: goat under      10.5      50     0   15%        0      40    1a*      0
+tx2_jute_fibre                     Jute cultivation and      10.5      50     0   15%        0      40    1a*      0
+tx2_mohair                         Mohair: angora goat       10.5      50     0   15%        0      40    1a*      0
+tx2_ramie_fibre                    Ramie cultivation an      10.5      50     0   15%        0      40    1a*      0
+tx2_button_shell                   Button: shell materi      11.5      50  0.15   15%        0      40    1a*      0
+tx2_pin                            Pin: sewing fastener      11.8      40  0.10   15%        0      40    1a*      0
+med_amputation                     Amputation and prost      12.3       0     0   30%      8.2      50  1s1a*      1
+tx2_comb                           Comb: hair grooming         13      50  0.20   15%        0      40    1a*      0
+tx2_cutting_table                  Cutting table: stack        14      60  0.30   15%        0      40    1a*      1
+tx2_currying                       Currying: leather fi        15      60  0.30   15%        0      40    1a*      0
+fin_apprenticeship                 Apprenticeship inden        16      80     1    5%        0       0      -      0
+tx2_splitting                      Splitting: leather l        16      70  0.30   15%        0      40    1a*      0
+tx2_paperclip                      Paperclip: bent wire      16.6      50  0.50   15%        0      40    1a*      0
+tx2_sizing_systems                 Sizing systems: body        18     100     2   15%        0      40    1a*      1
+med_obstetric_practice             Obstetric practice        18.8       0     0   15%     12.5       0     1s      1
+tx2_hook_and_eye                   Hook and eye: wire f      19.8      50  0.20   15%        0      40    1a*      0
+fin_trademark                      Trademark and mark o        20      80     1   10%        0       0      -      1
+tx2_warping_mill                   Warping mill: warp t        21      60  0.25   15%        0      40    1a*      0
+hom_safety_pin                     Safety pin                24.1      40  0.25    2%       15    0.50      -      0
+fin_seigniorage                    Seigniorage and deba        25      80  0.20   10%     16.7       0      -      0
+tx2_flyer                          Flyer: the earliest       27.9      70  0.30   15%        0      40    1a*      5
+tx2_drawing_pin                    Drawing pin: short f      28.6      50  0.20   15%        0      40    1a*      0
+fin_usury_law                      Usury law and intere        30     100     1    5%        0       0     1s      1
+tx2_corset                         Corset: rigid body s        30     100  0.50   15%        0      40    1a*      0
+hom_toothbrush                     Toothbrush                30.3      60  0.25    2%       30      40      -      1
+tx2_spectacle_frame                Spectacle frame: eye        31      60  0.20   15%        0      40    1a*      0
+fin_arbitrage                      Arbitrage and price       37.5      80     1   10%       25       0      -      0
+fin_bankruptcy                     Bankruptcy law and i        40     120     1   10%        0       0  1s1a*      0
+pwr_oil_shale                      Oil shale and bitume      40.4      80  0.50   15%     31.7      30      -      0
+fin_tariff                         Tariff and import du      47.5     100     2   10%     31.7       0  1s1a*      1
+sea_log_line                       Log line for speed        49.6      30  0.10    5%        0       5      -      0
+fin_monopoly                       Monopoly and exclusi      51.1      80     1   15%        0       0     1s      0
+fin_bimetallism                    Bimetallism and fixe      53.5     100     2   20%        0       0      -      0
+fin_cartel                         Cartel and market sh      53.8     100     1   20%     33.3       0      -      0
+tx2_pattern_grading                Pattern grading: mul        55      80  0.30   15%        0      40    1a*      1
+tx2_printing_block                 Block printing: carv      55.1     100  0.50   15%        0      40    1a*      1
+pwr_peat                           Peat extraction and       57.4     100  0.50   10%       45      40      -      0
+fin_mortgage                       Mortgage and real es      57.5     120     1   15%     38.3       0      -      0
+fin_patent                         Patent and exclusive      61.8     140     2   20%        0       0  1s1a*      2
+fin_guild                          Guild and monopoly c      68.8     100     1   10%       50       0     1s      1
+tex_hand_ginning                   Hand ginning cotton       69.9      30  0.20    6%     43.3       5      -      1
+fin_bill_exchange                  Bill of exchange            70     150     2   15%     46.7       0    1a*     10
+com_optical_codebook               Codebook for optical      71.4     100  0.25   10%        0       0     1s      2
+met_ore_crushing_sorting           Ore dressing: crushi      74.4      20  0.30    5%        0      10      -      1
+hom_toys_dolls                     Toys and dolls            75.5      60  0.50    5%      150       2      -      1
+prc_straightedge                   Straightedge and ref      81.8      30  0.20    5%        0       5      -      0
+hom_punkah_ceiling                 Ceiling punkah, serv        83      50  0.50    2%        0       0      -      0
+tx2_doll                           Doll: articulated ch      83.5      80     1   15%        0      40    1a*      0
+air_compass_magnetic               Compass for navigati      87.7      30  0.10    5%        0       0      -      0
+fin_trade_union                    Trade union and work      88.1     120     2   30%       50       0  1s1a*      0
+lnd_wheelbarrow                    Wheelbarrow                 89      30  0.50    5%        0      10      -      0
+hom_umbrella                       Umbrella                  89.7      80  0.50    5%     59.8       3      -      0
+cn_gypsum_plaster                  Gypsum plaster finis      97.7      35  0.15    5%       80      25    1a*      0
+pwr_petroleum_seeps                Petroleum seeps and        102     100  0.50   10%       80      50      -      6
+civ_truss_triangulated             Triangulated truss f     108.4     120  0.50   10%        0      10      -      4
+tx2_needle                         Needle: sewing imple     111.8      40  0.10   15%        0      40    1a*      0
+sea_lodestone                      Lodestone knowledge      112.2      20  0.20    5%        0      10     1s     22
+tx2_eye_pointed_needle             Eye-pointed needle:      113.8      50  0.15   15%        0      40    1a*      7
+tx2_carding                        Carding: opening and     115.9      60  0.20   15%        0      40    1a*      4
+ag2_guano                          Guano                      119      30     0    8%      100       0      -      0
+ag2_marling                        Marling                  119.4      25  0.15    2%       30      15      -      0
+hom_latrine_water_trap             Latrine water trap (     124.9      60  0.50    3%        0       5      -      1
+tex_mordanting                     Mordanting dyes with     129.3      40  0.30    8%      150      15      -      7
+cn_stone_polish                    Stone polishing and      137.8      30  0.15    5%       60      15    1a*      1
+civ_lightning_conductor            Lightning conductor        142      80  0.40    5%        0       5      -      0
+ag2_liming                         Liming                   149.6      30  0.20    3%       40      20      -      0
+ag2_hopping                        Hopping                    150      40  0.15    4%       80      15      -      0
+air_kite_basic                     Kite                     157.8      20  0.10    5%        0       0      -      0
+ag2_composting                     Composting               159.4      40  0.20    5%       60      25      -      0
+ag2_potash                         Potash                   159.4      40  0.20    5%       80      25      -      0
+hom_flush_toilet_trap              Flush toilet with S-     169.2      80  0.50    5%        0       8      -      0
+civ_gate_sluice                    Sluice gate for wate       183     100  0.60   10%       50      10      -      1
+tex_indigo                         Indigo dyeing            187.8      60  0.40   10%      300      40      -      0
+tr_reefing                         Reefing sails            200.4      50  0.30    8%      200      40    1a*      0
+lnd_hobby_horse                    Hobby horse (pedal-l     202.8      40  0.50   10%       50      20      -      2
+mfg_production_schedule            Production schedule        204     130  0.50   10%        0      40    1a*      2
+tr_wooden_waggonway                Wooden waggonway         204.9      40     2   10%      300      40    1a*      0
+mfg_flux                           Flux                       209      60  0.15    7%        0      40    1a*      2
+mat_obsidian_blade                 Obsidian blade knapp       210      40  0.50    5%      150      20      -      0
+md2_vector_control                 Vector control           210.8     100     2   15%        0      40    1a*      1
+med_surgical_gloves_mask           Surgical gloves and      216.8      40     0    0%        0      50    1a*      0
+mfg_enamelling                     Enamelling               216.8     120  0.30   14%        0      40    1a*      0
+prn_wire_mould_deckle              Wire mould and deckl     217.5     150     1   10%        0      30      -      0
+md2_plaster_cast                   Plaster cast immobil       218     100     1   15%        0      40    1a*      1
+mfg_adhesive_bond                  Adhesive bonding         219.5     140  0.30   15%        0      40    1a*      0
+mfg_japanning                      Japanning                219.5     110  0.25    9%        0      40    1a*      0
+mfg_hot_riveting                   Hot riveting               220      80  0.20   10%        0      40    1a*      3
+mfg_mould                          Casting mould            222.5     120  0.30   12%        0      40    1a*      0
+mfg_cold_riveting                  Cold riveting              223     100  0.20    9%        0      40    1a*      0
+tr_sleeper_ballast                 Sleeper and ballast      223.4      30     1    5%      200      40    1a*     11
+mt2_pelletising                    Pelletising: forming     223.5     110  0.80    8%        0      40    1a*      0
+mt2_timbering_safety               Timbering: wooden su     224.4      80  0.80   11%        0      40    1a*      0
+mfg_painting                       Painting                   225      80  0.20    8%        0      40    1a*      0
+tex_horizontal_loom                Horizontal loom          225.8      80  0.50   10%      400      30      -      9
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,111
+mt2_earthenware                    Earthenware: low-fir       230      60  0.50    5%        0      40    1a*      0
+tr_block_tackle                    Block and tackle pul     230.2      40  0.30    2%      200      40    1a*      0
+fud_hay_making_storage             Hay making and dry s       235     100     1   20%        0      50      -      1
+cn_post_lintel                     Post and lintel stru     235.6      25  0.40    5%      100      30    1a*      0
+sc2_physics_newtons_laws           Newton's three laws        236     100     4   15%        0      40    1a*      0
+mfg_soft_solder                    Soft soldering           236.4      80  0.20    8%        0      40    1a*      0
+ag2_malting                        Malting                    240      60  0.30    8%      140      30    1a*      1
+ag2_oil_pressing                   Oil pressing             241.6      60  0.30    8%      140      35      -      0
+sc2_institution_doctorate          Doctorate and resear       258     150     8   15%        0      40    1a*      0
+sc2_institution_funded_programme   Funded research prog       258     120     5   15%        0      40    1a*      0
+sc2_institution_referee            Referee and peer rev       258     100     8   15%        0      40    1a*      0
+sc2_institution_research_group     Research group and p       258     100     5   15%        0      40    1a*      0
+sc2_method_hypothesis              Hypothesis and predi       258      90     8   15%        0      40    1a*      0
+sc2_method_negative_result         Negative result and        258      90    20   15%        0      40    1a*      0
+sc2_method_replication             Replication and repe       258      80    10   15%        0      40    1a*      0
+sc2_notation_positional            Positional notation        258       0     0   15%        0      40    1a*      0
+sc2_probability_axioms             Probability axioms a       258     100     4   15%        0      40    1a*     14
+tr_semaphore_signal                Semaphore signal         259.3      40     2    6%      300      40    1a*     11
+tr_hopper_wagon                    Hopper wagon for bul     266.1      50     1    6%      600      40    1a*      0
+sc2_notation_decimal_point         The decimal point co     268.3      20     2   15%        0      40    1a*      0
+com_signal_flags                   Signal flags for mar     269.6      40  0.50    5%      150      20    1a*      0
+if_quill                           Quill pen                271.2      15  0.05    3%       50      20  1s1a*      0
+hom_fireplace_chimney              Fireplace and chimne     271.5     120     1    8%        0      20      -      2
+pwr_coal_seam                      Coal seam and mining     272.8     150     1   25%      214     100      -      5
+sc2_notation_roots                 Root symbols and rad     278.6      40     3   15%        0      40    1a*      0
+civ_town_planning                  Town planning and st     278.8     180     1   10%        0       0  1s1a*      0
+ag2_pyrethrum                      Pyrethrum                  280      70  0.30   12%      170      40    1a*      0
+ag2_refrigeration_ice              Refrigeration - ice        280      70  0.50   10%      200       0    1a*      0
+sc2_notation_exponents             Exponent notation        281.2      45     2   15%        0      40    1a*      0
+hom_sprung_mattress                Sprung mattress          285.5     120     1    8%        0      10      -      0
+sc2_institution_curriculum         Curriculum and cours       294     120     5   15%        0      40    1a*      0
+sc2_physics_momentum               Momentum and impulse     296.7      80     3   15%        0      40    1a*      0
+sc2_institution_citation           Citation and bibliog     299.3      80     5   15%        0      40    1a*      0
+sc2_physics_kinematics             Kinematics: position     301.9      90     2   15%        0      40    1a*      0
+sc2_physics_gravitation            Newton's law of univ     304.4     100     5   15%        0      40    1a*      0
+tx2_silk_fibre                     Silk: cultivated fib       309      40     0   15%        0      40    1a*      2
+sea_cross_staff                    Cross-staff for lati     310.7      80  0.25   12%        0      20  1s1a*     19
+opt_manometer                      Manometer (pressure      315.9      60  0.10    5%      150       5      -      2
+tx2_mirror                         Mirror: reflective g       316      70  0.30   15%        0      40    1a*      0
+tr_bilge_pump                      Bilge pump               329.2      50  0.30    4%      200      40    1a*      0
+met_investment_casting             Investment casting a     329.8     100  0.80    8%        0      60    1a*      0
+opt_anemometer                     Anemometer (wind spe     337.2      60  0.25    8%      200      15      -      0
+cn_pile_driving                    Pile driving by drop     347.9      40  0.80    8%      140      60    1a*      9
+fud_fish_curing_and_smoking        Large-scale fish cur       363     120     1   10%      400     100      -      0
+mat_papyrus                        Papyrus                  402.5      20     0    0%        0      30      -      0
+sc2_institution_examination        Examination and cred     412.8      80     8   15%        0      40    1a*      0
+sea_sternpost_rudder               Sternpost rudder         427.4     120  0.50   10%        0      50      -     31
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,714
+civ_street_paved                   Paved street and sid     491.7      80  0.80    8%        0      15      -      0
+cn_damp_proof_course               Damp proof course ba       531      50  0.50    7%      160      60    1a*      1
+mat_parchment                      Parchment                536.6      30     0    0%        0      40      -      1
+mfg_drawing_office                 Drawing office           541.8     150  0.50   11%        0      40    1a*      3
+med_herbal_pharmacy                Herbal pharmacy (Dio       580     100  0.50    0%      300     100  1s1a*      0
+arrival_orientation                Six months of listen       600     900  0.50    2%        0       0      -      0
+tr_lateen_sail                     Lateen sail                629      80  0.50    2%      200      40    1a*      7
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*     78
+tx2_scouring                       Scouring: removal of     710.5      40  0.20   15%        0      40    1a*      1
+tx2_dyeing_fibre                   Dyeing in fibre: pre       715      60  0.30   15%        0      40    1a*      0
+tx2_dyeing_yarn                    Dyeing in yarn: skei       718      70  0.30   15%        0      40    1a*      0
+tx2_dyeing_piece                   Dyeing in piece: wov       721      80  0.30   15%        0      40    1a*      0
+tx2_resist_dyeing                  Resist dyeing: patte       733      70  0.30   15%        0      40    1a*      0
+tx2_alum_tanning                   Alum tanning: minera       760      60  0.40   15%        0      40    1a*      0
+civ_sewer_separate                 Separate foul and st       765     120     1   10%        0      30      -      1
+fud_grain_storage_silos            Cylindrical silos fo     830.4     200     1   10%        0     100      -      0
+lnd_coach                          Coach                    837.7     200     2   20%      500     100    1a*      1
+mfg_silver_solder                  Silver soldering         856.1     100  0.25   10%        0      40    1a*      0
+tr_square_rig                      Square rig sails           935      40  0.60    4%      300      40    1a*      0
+sea_skeleton_first                 Skeleton-first hull      967.7     250     1   22%        0     120      -      0
+sea_diving_bell                    Diving bell              968.5     120  0.40   20%      100     100      -      2
+fin_pawnshop                       Pawnshop and secured     1,025      60  0.30   10%      300      50      -      0
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,222
+tx2_bottle                         Bottle: glass contai     1,132      60  0.30   15%        0      40    1a*      0
+air_observation_balloon_tethered   Tethered observation     1,138     120  0.50   10%        0      20      -      8
+tx2_asbestos_cloth                 Asbestos cloth: fire     1,203      80     1   15%        0      40    1a*      0
+met_bloomery_bog_iron              Bloomery smelting of     1,210     100     1   15%      420      90    1a*      0
+sea_keel_deep                      Deep keel and the ab     1,258     100     1   10%      300      60    1a*      0
+sea_lead_sheathing                 Lead sheathing again     1,445       0     0    0%        0     200      -      1
+sc2_institution_textbook           Textbook and codifie     1,470     200     8   15%        0      40    1a*      0
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,030
+fin_trading_post                   Trading post and rem     1,662     100     1   15%      300     100      -      1
+mt2_type_metal                     Type metal: lead-tin     1,883     110  0.80   10%        0      40    1a*      0
+fin_ferry                          Ferry and toll cross     1,916     100     1   12%      250     150      -      5
+fud_whaling_industry               Organized whaling in     2,070     300     1   30%    1,200     500      -      0
+fin_lottery                        Lottery and state ga     2,080     150     2   10%      800     100  1s1a*      0
+fin_gambling_house                 Gambling house and g     2,112     100     1   25%      500     100      -      0
+fin_census                         Census and populatio     2,532     200     2   15%        0     100  1s1a*      1
+fin_inn                            Inn and coaching hou     3,538     100   1.5   12%      300     200      -      0
+fin_marine_insurance               Marine insurance         4,105     200     2   25%      800     200    1a*      3
+fin_postal_service                 Postal service as pa     4,362     180     2   15%      400     300    1a*      3
+mt2_solder_lead_tin                Solder: lead-tin for     4,713     100  0.50    8%        0      40    1a*      0
+fin_hotel                          Hotel and commercial     5,824     120     2   15%      400     300    1a*      1
+mt2_amalgamation                   Amalgamation: extrac     6,296      80  0.50    9%        0      40    1a*      0
+fin_plantation                     Plantation and large    10,831     200     3   20%      800   1,000    1a*      0
+tx2_watch_case                     Watch case: portable    17,415      80  0.30   15%        0      40    1a*      0
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+[100 AD | 400 den | you:2000 hr | sch 0 >>> start tr_hopper_wagon
+art 0 | rep 5] > s>>> start hom_toys_dolls
+tarted: tr_hopper_wagon
+name: Hopper wagon for bulk minerals
+founder hours needed: 50
+calendar floor years: 1
+the bill you have taken on: 266.1
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: hom_toys_dolls
+name: Toys and dolls
+founder hours needed: 60
+calendar floor years: 0.50
+the bill you have taken on: 75.5
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[>>> start tex_horizontal_loom
+100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: tex_horizontal_loom
+name: Horizontal loom
+founder hours needed: 80
+calendar floor years: 0.50
+the bill you have taken on: 225.8
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[>>> start fin_seigniorage
+100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > s>>> start med_bone_setting
+tarted: fin_seigniorage
+name: Seigniorage and debasement
+founder hours needed: 80
+calendar floor years: 0.20
+the bill you have taken on: 25
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: med_bone_setting
+name: Bone setting
+founder hours needed: 0
+calendar floor years: 0.50
+the bill you have taken on: 9.3
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[>>> start med_obstetric_practice
+100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: med_obstetric_practice
+name: Obstetric practice
+founder hours needed: 0
+calendar floor years: 0
+the bill you have taken on: 18.8
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[>>> step 4
+100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] >  >>> path point_contact_transistor
+ COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Seigniorage and debasement
+  COMPLETED 100: Toys and dolls
+  COMPLETED 100: Bone setting
+  COMPLETED 100: Horizontal loom
+  COMPLETED 100: Hopper wagon for bulk minerals
+  COMPLETED 103: Obstetric practice
+  EVENT 100: FAILED at Obstetric practice: it did not work. 40% of the hours are to do again (0 of your own) and 8 is gone. Attempt 2.
+  EVENT 100: completed: Bone setting
+  EVENT 100: completed: Seigniorage and debasement
+  EVENT 100: completed: Horizontal loom
+  EVENT 100: completed: Toys and dolls
+  EVENT 100: completed: Hopper wagon for bulk minerals
+  EVENT 101: tr_hopper_wagon would earn 600 a year against 40 of upkeep and is still shut: you have no money to open it with
+  EVENT 101: FAILED at Obstetric practice: it did not work. 40% of the hours are to do again (0 of your own) and 8 is gone. Attempt 3.
+  EVENT 102: FAILED at Obstetric practice: it did not work. 40% of the hours are to do again (0 of your own) and 8 is gone. Attempt 4.
+  EVENT 103: completed: Obstetric practice
+
+============================================================
+YEAR 104   (496 years to the horizon at 600)
+============================================================
+
+Money: -251.5 den    net -7 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 15.9   protection 6%   scandal 4.4   eminence 0.10
+  EMINENCE is dangerous above 26 (settles near 0.40 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[104 AD | -251 den | you:2000 hr | sch 0 art 0 | rep 16] > i>>> state
+d: point_contact_transistor
+done: False
+remaining count: 142
+remaining: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic, geometry_analytic, workshop_first, calculus, case_hardening, charcoal_industrial, crank_conrod, lead_metallurgy, lens_grinding, nitre_beds, refractory_fireclay, newtonian_mechanics, drawplate_wire, precision_three_plate, prc_treadle_lathe_flywheel, water_power_scale, crude_cell, cap_heat_1100, em_theory, cap_tol_100um, bellows_water_blown, cap_power_water, galena_detector, cementation_steel, coal_coke, glass_clear, gp_carbon_brushes, quantum_solidstate_theory, cap_vac_1torr, cap_heat_1300, balance_analytical, gp_laminated_core, master_screw, zinc_metal, glass_labware, gp_glass_metal_seal, mirror_amalgam, telescope, blast_furnace, mt2_silica_brick_refractory, cap_pure_2N, micrometer_gauges, prc_slide_rest_simple, lab_apparatus, finery_puddling, mat_copper, mt2_basic_converter, prc_change_gears_quadrant, prc_milling_machine, mercury_supply, sulfuric_retort, voltaic_pile, prc_dividing_head, barometer, cap_vac_1e3, thermometer, hydrochloric_acid, lead_chamber, nitric_acid, daniell_cell, vacuum_pumps, cap_measure_temp, thermodynamics_theory, analytical_chemistry, cap_measure_temp_hi, cap_gas_o2h2, electroplating, cap_heat_1600, cap_pure_4N, cap_heat_2000, crucible_steel, glass_borosilicate, cap_pure_6N, copper_refining, high_temp_furnace, screw_lathe, el2_inductor_iron_core, galvanometer, gp_magnet_wire_enamelled, fused_quartz, mat_bulk_steel, boring_mill, cap_tol_10um, interchangeable_parts, cap_measure_elec, electromagnet, gp_controlled_atmosphere_chamber, steam_atmospheric, gp_whisker_forming, prc_lapping_plate, spectroscope, el2_potentiometer, steam_watt, cap_measure_light, el2_potentiometer_method_measurement, steam_high_pressure, prc_gauge_blocks_johansson, cap_power_steam, en_alternator, en_commutator, en_frequency_standardisation, en_transmission_line, dynamo, en_insulator, en_switchgear, cap_power_electric, discharge_xray, motor_transformer_ac, en_circuit_breaker, cap_vac_1e6, in2_electron_source_cathode, in2_xray_diffraction_camera, diffusion_pump, el2_alternator_rotating_field, en_transformer, gp_czochralski_puller, pwr_high_voltage_transmission, gp_exhaust_pinchoff, el2_induction_heating_inductor_coupling, en_substation, gp_getter, power_grid, vacuum_tube, cap_power_grid, zinc_industry_scale, el2_valve_voltmeter_high_impedance, cap_heat_3000, germanium_extraction, semiconductor_metrology, arc_furnace_ferroalloys, gecl4_purification, ge_reduction, zone_refining, single_crystal, point_contact_transistor
+
+[104 AD | -251 den | you:2000 hr | sch 0 art 0 | rep 16] > =>>> available all
+===========================================================
+YEAR 104   (496 years to the horizon at 600)
+============================================================
+
+Money: -251.5 den    net -7 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 15.9   protection 6%   scandal 4.4   eminence 0.10
+  EMINENCE is dangerous above 26 (settles near 0.40 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[104 AD | -251 den | you:2000 hr | sch 0 art 0 | rep 16] > AVAILABLE: 204 startable now
+1-204
+
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      0
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*      7
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      0
+tx2_flax_fibre                     Flax cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_hemp_fibre                     Hemp cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_rope_lay                       Rope laying: strand          9      40     0   15%        0      40    1a*      2
+tx2_twist_insertion                Twist insertion cont         9      50     0   15%        0      40    1a*      0
+tx2_warp_sizing                    Warp sizing: fibre s         9      50  0.20   15%        0      40    1a*      0
+tx2_wool_fibre                     Wool: sheep fibre          9.5      40     0   15%        0      40    1a*      1
+tx2_heddle                         Heddle: warp thread        9.5      40  0.10   15%        0      40    1a*      6
+tx2_beam                           Beam: warp holder an       9.9      40  0.20   15%        0      40    1a*      0
+fin_employment_contract            Contract of employme        10      60     1    5%        0       0      -      1
+tx2_button_horn                    Button: horn materia        10      40  0.10   15%        0      40    1a*      0
+tx2_button_bone                    Button: bone materia      10.1      40  0.10   15%        0      40    1a*      0
+tx2_cashmere                       Cashmere: goat under      10.5      50     0   15%        0      40    1a*      0
+tx2_jute_fibre                     Jute cultivation and      10.5      50     0   15%        0      40    1a*      0
+tx2_mohair                         Mohair: angora goat       10.5      50     0   15%        0      40    1a*      0
+tx2_ramie_fibre                    Ramie cultivation an      10.5      50     0   15%        0      40    1a*      0
+tx2_button_shell                   Button: shell materi      11.5      50  0.15   15%        0      40    1a*      0
+tx2_pin                            Pin: sewing fastener      11.8      40  0.10   15%        0      40    1a*      0
+med_amputation                     Amputation and prost      12.3       0     0   30%      8.2      50  1s1a*      1
+tx2_comb                           Comb: hair grooming         13      50  0.20   15%        0      40    1a*      0
+tx2_cutting_table                  Cutting table: stack        14      60  0.30   15%        0      40    1a*      1
+tx2_currying                       Currying: leather fi        15      60  0.30   15%        0      40    1a*      0
+fin_apprenticeship                 Apprenticeship inden        16      80     1    5%        0       0      -      0
+tx2_splitting                      Splitting: leather l        16      70  0.30   15%        0      40    1a*      0
+tx2_paperclip                      Paperclip: bent wire      16.6      50  0.50   15%        0      40    1a*      0
+tx2_sizing_systems                 Sizing systems: body        18     100     2   15%        0      40    1a*      1
+tx2_hook_and_eye                   Hook and eye: wire f      19.8      50  0.20   15%        0      40    1a*      0
+fin_trademark                      Trademark and mark o        20      80     1   10%        0       0      -      1
+tx2_warping_mill                   Warping mill: warp t        21      60  0.25   15%        0      40    1a*      0
+hom_safety_pin                     Safety pin                24.1      40  0.25    2%       15    0.50      -      0
+tx2_flyer                          Flyer: the earliest       27.9      70  0.30   15%        0      40    1a*      5
+tx2_drawing_pin                    Drawing pin: short f      28.6      50  0.20   15%        0      40    1a*      0
+fin_usury_law                      Usury law and intere        30     100     1    5%        0       0     1s      1
+tx2_corset                         Corset: rigid body s        30     100  0.50   15%        0      40    1a*      0
+hom_toothbrush                     Toothbrush                30.3      60  0.25    2%       30      40      -      1
+tx2_spectacle_frame                Spectacle frame: eye        31      60  0.20   15%        0      40    1a*      0
+fin_arbitrage                      Arbitrage and price       37.5      80     1   10%       25       0      -      0
+fin_bankruptcy                     Bankruptcy law and i        40     120     1   10%        0       0  1s1a*      0
+pwr_oil_shale                      Oil shale and bitume      40.4      80  0.50   15%     31.7      30      -      0
+fin_tariff                         Tariff and import du      47.5     100     2   10%     31.7       0  1s1a*      1
+sea_log_line                       Log line for speed        49.6      30  0.10    5%        0       5      -      0
+fin_monopoly                       Monopoly and exclusi      51.1      80     1   15%        0       0     1s      0
+fin_bimetallism                    Bimetallism and fixe      53.5     100     2   20%        0       0      -      0
+fin_cartel                         Cartel and market sh      53.8     100     1   20%     33.3       0      -      0
+tx2_pattern_grading                Pattern grading: mul        55      80  0.30   15%        0      40    1a*      1
+tx2_printing_block                 Block printing: carv      55.1     100  0.50   15%        0      40    1a*      1
+pwr_peat                           Peat extraction and       57.4     100  0.50   10%       45      40      -      0
+fin_mortgage                       Mortgage and real es      57.5     120     1   15%     38.3       0      -      0
+fin_patent                         Patent and exclusive      61.8     140     2   20%        0       0  1s1a*      2
+fin_guild                          Guild and monopoly c      68.8     100     1   10%       50       0     1s      1
+tex_hand_ginning                   Hand ginning cotton       69.9      30  0.20    6%     43.3       5      -      1
+fin_bill_exchange                  Bill of exchange            70     150     2   15%     46.7       0    1a*     10
+com_optical_codebook               Codebook for optical      71.4     100  0.25   10%        0       0     1s      2
+met_ore_crushing_sorting           Ore dressing: crushi      74.4      20  0.30    5%        0      10      -      1
+prc_straightedge                   Straightedge and ref      81.8      30  0.20    5%        0       5      -      0
+hom_punkah_ceiling                 Ceiling punkah, serv        83      50  0.50    2%        0       0      -      0
+tx2_doll                           Doll: articulated ch      83.5      80     1   15%        0      40    1a*      0
+air_compass_magnetic               Compass for navigati      87.7      30  0.10    5%        0       0      -      0
+fin_trade_union                    Trade union and work      88.1     120     2   30%       50       0  1s1a*      0
+lnd_wheelbarrow                    Wheelbarrow                 89      30  0.50    5%        0      10      -      0
+hom_umbrella                       Umbrella                  89.7      80  0.50    5%     59.8       3      -      0
+cn_gypsum_plaster                  Gypsum plaster finis      97.7      35  0.15    5%       80      25    1a*      0
+pwr_petroleum_seeps                Petroleum seeps and        102     100  0.50   10%       80      50      -      6
+civ_truss_triangulated             Triangulated truss f     108.4     120  0.50   10%        0      10      -      4
+tx2_needle                         Needle: sewing imple     111.8      40  0.10   15%        0      40    1a*      0
+sea_lodestone                      Lodestone knowledge      112.2      20  0.20    5%        0      10     1s     22
+tx2_eye_pointed_needle             Eye-pointed needle:      113.8      50  0.15   15%        0      40    1a*      7
+tx2_carding                        Carding: opening and     115.9      60  0.20   15%        0      40    1a*      4
+ag2_guano                          Guano                      119      30     0    8%      100       0      -      0
+ag2_marling                        Marling                  119.4      25  0.15    2%       30      15      -      0
+hom_latrine_water_trap             Latrine water trap (     124.9      60  0.50    3%        0       5      -      1
+tex_mordanting                     Mordanting dyes with     129.3      40  0.30    8%      150      15      -      7
+tex_canvas                         Canvas cloth             135.4      40  0.25    6%       84      10      -      2
+cn_stone_polish                    Stone polishing and      137.8      30  0.15    5%       60      15    1a*      1
+civ_lightning_conductor            Lightning conductor        142      80  0.40    5%        0       5      -      0
+ag2_liming                         Liming                   149.6      30  0.20    3%       40      20      -      0
+ag2_hopping                        Hopping                    150      40  0.15    4%       80      15      -      0
+air_kite_basic                     Kite                     157.8      20  0.10    5%        0       0      -      0
+ag2_composting                     Composting               159.4      40  0.20    5%       60      25      -      0
+ag2_potash                         Potash                   159.4      40  0.20    5%       80      25      -      0
+hom_flush_toilet_trap              Flush toilet with S-     169.2      80  0.50    5%        0       8      -      0
+civ_gate_sluice                    Sluice gate for wate       183     100  0.60   10%       50      10      -      1
+tex_indigo                         Indigo dyeing            187.8      60  0.40   10%      300      40      -      0
+tr_reefing                         Reefing sails            200.4      50  0.30    8%      200      40    1a*      0
+lnd_hobby_horse                    Hobby horse (pedal-l     202.8      40  0.50   10%       50      20      -      2
+mfg_production_schedule            Production schedule        204     130  0.50   10%        0      40    1a*      2
+tr_wooden_waggonway                Wooden waggonway         204.9      40     2   10%      300      40    1a*      0
+mfg_flux                           Flux                       209      60  0.15    7%        0      40    1a*      2
+mat_obsidian_blade                 Obsidian blade knapp       210      40  0.50    5%      150      20      -      0
+md2_vector_control                 Vector control           210.8     100     2   15%        0      40    1a*      1
+med_surgical_gloves_mask           Surgical gloves and      216.8      40     0    0%        0      50    1a*      0
+mfg_enamelling                     Enamelling               216.8     120  0.30   14%        0      40    1a*      0
+prn_wire_mould_deckle              Wire mould and deckl     217.5     150     1   10%        0      30      -      0
+md2_plaster_cast                   Plaster cast immobil       218     100     1   15%        0      40    1a*      1
+mfg_adhesive_bond                  Adhesive bonding         219.5     140  0.30   15%        0      40    1a*      0
+mfg_japanning                      Japanning                219.5     110  0.25    9%        0      40    1a*      0
+mfg_hot_riveting                   Hot riveting               220      80  0.20   10%        0      40    1a*      3
+mfg_mould                          Casting mould            222.5     120  0.30   12%        0      40    1a*      0
+mfg_cold_riveting                  Cold riveting              223     100  0.20    9%        0      40    1a*      0
+tr_sleeper_ballast                 Sleeper and ballast      223.4      30     1    5%      200      40    1a*     11
+mt2_pelletising                    Pelletising: forming     223.5     110  0.80    8%        0      40    1a*      0
+mt2_timbering_safety               Timbering: wooden su     224.4      80  0.80   11%        0      40    1a*      0
+mfg_painting                       Painting                   225      80  0.20    8%        0      40    1a*      0
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,111
+mt2_earthenware                    Earthenware: low-fir       230      60  0.50    5%        0      40    1a*      0
+tr_block_tackle                    Block and tackle pul     230.2      40  0.30    2%      200      40    1a*      0
+fud_hay_making_storage             Hay making and dry s       235     100     1   20%        0      50      -      1
+cn_post_lintel                     Post and lintel stru     235.6      25  0.40    5%      100      30    1a*      0
+sc2_physics_newtons_laws           Newton's three laws        236     100     4   15%        0      40    1a*      0
+mfg_soft_solder                    Soft soldering           236.4      80  0.20    8%        0      40    1a*      0
+ag2_malting                        Malting                    240      60  0.30    8%      140      30    1a*      1
+ag2_oil_pressing                   Oil pressing             241.6      60  0.30    8%      140      35      -      0
+sc2_institution_doctorate          Doctorate and resear       258     150     8   15%        0      40    1a*      0
+sc2_institution_funded_programme   Funded research prog       258     120     5   15%        0      40    1a*      0
+sc2_institution_referee            Referee and peer rev       258     100     8   15%        0      40    1a*      0
+sc2_institution_research_group     Research group and p       258     100     5   15%        0      40    1a*      0
+sc2_method_hypothesis              Hypothesis and predi       258      90     8   15%        0      40    1a*      0
+sc2_method_negative_result         Negative result and        258      90    20   15%        0      40    1a*      0
+sc2_method_replication             Replication and repe       258      80    10   15%        0      40    1a*      0
+sc2_notation_positional            Positional notation        258       0     0   15%        0      40    1a*      0
+sc2_probability_axioms             Probability axioms a       258     100     4   15%        0      40    1a*     14
+tr_semaphore_signal                Semaphore signal         259.3      40     2    6%      300      40    1a*     11
+sc2_notation_decimal_point         The decimal point co     268.3      20     2   15%        0      40    1a*      0
+com_signal_flags                   Signal flags for mar     269.6      40  0.50    5%      150      20    1a*      0
+if_quill                           Quill pen                271.2      15  0.05    3%       50      20  1s1a*      0
+hom_fireplace_chimney              Fireplace and chimne     271.5     120     1    8%        0      20      -      2
+pwr_coal_seam                      Coal seam and mining     272.8     150     1   25%      214     100      -      5
+sc2_notation_roots                 Root symbols and rad     278.6      40     3   15%        0      40    1a*      0
+civ_town_planning                  Town planning and st     278.8     180     1   10%        0       0  1s1a*      0
+ag2_pyrethrum                      Pyrethrum                  280      70  0.30   12%      170      40    1a*      0
+ag2_refrigeration_ice              Refrigeration - ice        280      70  0.50   10%      200       0    1a*      0
+sc2_notation_exponents             Exponent notation        281.2      45     2   15%        0      40    1a*      0
+hom_sprung_mattress                Sprung mattress          285.5     120     1    8%        0      10      -      0
+sc2_institution_curriculum         Curriculum and cours       294     120     5   15% >>> step 4
+       0      40    1a*      0
+sc2_physics_momentum               Momentum and impulse     296.7      80     3   15%        0      40    1a*      0
+sc2_institution_citation           Citation and bibliog     299.3      80     5   15%        0      40    1a*      0
+sc2_physics_kinematics             Kinematics: position     301.9      90     2   15%        0      40    1a*      0
+sc2_physics_gravitation            Newton's law of univ     304.4     100     5   15%        0      40    1a*      0
+tx2_silk_fibre                     Silk: cultivated fib       309      40     0   15%        0      40    1a*      2
+sea_cross_staff                    Cross-staff for lati     310.7      80  0.25   12%        0      20  1s1a*     19
+opt_manometer                      Manometer (pressure      315.9      60  0.10    5%      150       5      -      2
+tx2_mirror                         Mirror: reflective g       316      70  0.30   15%        0      40    1a*      0
+tr_bilge_pump                      Bilge pump               329.2      50  0.30    4%      200      40    1a*      0
+met_investment_casting             Investment casting a     329.8     100  0.80    8%        0      60    1a*      0
+opt_anemometer                     Anemometer (wind spe     337.2      60  0.25    8%      200      15      -      0
+cn_pile_driving                    Pile driving by drop     347.9      40  0.80    8%      140      60    1a*      9
+fud_fish_curing_and_smoking        Large-scale fish cur       363     120     1   10%      400     100      -      0
+mat_papyrus                        Papyrus                  402.5      20     0    0%        0      30      -      0
+sc2_institution_examination        Examination and cred     412.8      80     8   15%        0      40    1a*      0
+sea_sternpost_rudder               Sternpost rudder         427.4     120  0.50   10%        0      50      -     31
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,714
+civ_street_paved                   Paved street and sid     491.7      80  0.80    8%        0      15      -      0
+cn_damp_proof_course               Damp proof course ba       531      50  0.50    7%      160      60    1a*      1
+mat_parchment                      Parchment                536.6      30     0    0%        0      40      -      1
+mfg_drawing_office                 Drawing office           541.8     150  0.50   11%        0      40    1a*      3
+med_herbal_pharmacy                Herbal pharmacy (Dio       580     100  0.50    0%      300     100  1s1a*      0
+arrival_orientation                Six months of listen       600     900  0.50    2%        0       0      -      0
+tr_lateen_sail                     Lateen sail                629      80  0.50    2%      200      40    1a*      7
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*     78
+tx2_scouring                       Scouring: removal of     710.5      40  0.20   15%        0      40    1a*      1
+tx2_dyeing_fibre                   Dyeing in fibre: pre       715      60  0.30   15%        0      40    1a*      0
+tx2_dyeing_yarn                    Dyeing in yarn: skei       718      70  0.30   15%        0      40    1a*      0
+tx2_dyeing_piece                   Dyeing in piece: wov       721      80  0.30   15%        0      40    1a*      0
+tx2_resist_dyeing                  Resist dyeing: patte       733      70  0.30   15%        0      40    1a*      0
+tx2_alum_tanning                   Alum tanning: minera       760      60  0.40   15%        0      40    1a*      0
+civ_sewer_separate                 Separate foul and st       765     120     1   10%        0      30      -      1
+fud_grain_storage_silos            Cylindrical silos fo     830.4     200     1   10%        0     100      -      0
+lnd_coach                          Coach                    837.7     200     2   20%      500     100    1a*      1
+mfg_silver_solder                  Silver soldering         856.1     100  0.25   10%        0      40    1a*      0
+tr_square_rig                      Square rig sails           935      40  0.60    4%      300      40    1a*      0
+sea_skeleton_first                 Skeleton-first hull      967.7     250     1   22%        0     120      -      0
+sea_diving_bell                    Diving bell              968.5     120  0.40   20%      100     100      -      2
+fin_pawnshop                       Pawnshop and secured     1,025      60  0.30   10%      300      50      -      0
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,222
+tx2_bottle                         Bottle: glass contai     1,132      60  0.30   15%        0      40    1a*      0
+air_observation_balloon_tethered   Tethered observation     1,138     120  0.50   10%        0      20      -      8
+tx2_asbestos_cloth                 Asbestos cloth: fire     1,203      80     1   15%        0      40    1a*      0
+met_bloomery_bog_iron              Bloomery smelting of     1,210     100     1   15%      420      90    1a*      0
+sea_keel_deep                      Deep keel and the ab     1,258     100     1   10%      300      60    1a*      0
+sea_lead_sheathing                 Lead sheathing again     1,445       0     0    0%        0     200      -      1
+sc2_institution_textbook           Textbook and codifie     1,470     200     8   15%        0      40    1a*      0
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,030
+fin_trading_post                   Trading post and rem     1,662     100     1   15%      300     100      -      1
+mt2_type_metal                     Type metal: lead-tin     1,883     110  0.80   10%        0      40    1a*      0
+fin_ferry                          Ferry and toll cross     1,916     100     1   12%      250     150      -      5
+fud_whaling_industry               Organized whaling in     2,070     300     1   30%    1,200     500      -      0
+fin_lottery                        Lottery and state ga     2,080     150     2   10%      800     100  1s1a*      0
+fin_gambling_house                 Gambling house and g     2,112     100     1   25%      500     100      -      0
+fin_census                         Census and populatio     2,532     200     2   15%        0     100  1s1a*      1
+fin_inn                            Inn and coaching hou     3,538     100   1.5   12%      300     200      -      0
+fin_marine_insurance               Marine insurance         4,105     200     2   25%      800     200    1a*      3
+fin_postal_service                 Postal service as pa     4,362     180     2   15%      400     300    1a*      3
+mt2_solder_lead_tin                Solder: lead-tin for     4,713     100  0.50    8%        0      40    1a*      0
+fin_racecourse                     Racecourse and pari-     5,332     130     2   18%      500     300    1a*      1
+fin_hotel                          Hotel and commercial     5,824     120     2   15%      400     300    1a*      1
+mt2_amalgamation                   Amalgamation: extrac     6,296      80  0.50    9%        0      40    1a*      0
+fin_theatre_business               Theatre as business      8,848     150     3   20%      600     400    1a*      1
+fin_plantation                     Plantation and large    10,831     200     3   20%      800   1,000    1a*      0
+tx2_watch_case                     Watch case: portable    17,415      80  0.30   15%        0      40    1a*      0
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+[104 AD | -251 den | you:2000 hr | sch 0 art 0 | rep 16] > =>>> path point_contact_transistor
+===========================================================
+YEAR 108   (492 years to the horizon at 600)
+============================================================
+
+Money: -275 den    net -9.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 14.1   protection 5%   scandal 2.9   eminence 0.16
+  EMINENCE is dangerous above 26 (settles near 0.30 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[108 AD | -275 den | you:2000 hr | sch 0 art 0 | rep 14] > id: point_contact_transistor
+done: False
+remaining count: 142
+remaining: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic, geometry_analytic, workshop_first, calculus, case_hardening, charcoal_industrial, crank_conrod, lead_metallurgy, lens_grinding, nitre_beds, refractory_fireclay, newtonian_mechanics, drawplate_wire, precision_three_plate, prc_treadle_lathe_flywheel, water_power_scale, crude_cell, cap_heat_1100, em_theory, cap_tol_100um, bellows_water_blown, cap_power_water, galena_detector, cementation_steel, coal_coke, glass_clear, gp_carbon_brushes, quantum_solidstate_theory, cap_vac_1torr, cap_heat_1300, balance_analytical, gp_laminated_core, master_screw, zinc_metal, glass_labware, gp_glass_metal_seal, mirror_amalgam, telescope, blast_furnace, mt2_silica_brick_refractory, cap_pure_2N, micrometer_gauges, prc_slide_rest_simple, lab_apparatus, finery_puddling, mat_copper, mt2_basic_converter, prc_change_gears_quadrant, prc_milling_machine, mercury_supply, sulfuric_retort, voltaic_pile, prc_dividing_head, barometer, cap_vac_1e3, thermometer, hydrochloric_acid, lead_chamber, nitric_acid, daniell_cell, vacuum_pumps, cap_measure_temp, thermodynamics_theory, analytical_chemistry, cap_measure_temp_hi, cap_gas_o2h2, electroplating, cap_heat_1600, cap_pure_4N, cap_heat_2000, crucible_steel, glass_borosilicate, cap_pure_6N, copper_refining, high_temp_furnace, screw_lathe, el2_inductor_iron_core, galvanometer, gp_magnet_wire_enamelled, fused_quartz, mat_bulk_steel, boring_mill, cap_tol_10um, interchangeable_parts, cap_measure_elec, electromagnet, gp_controlled_atmosphere_chamber, steam_atmospheric, gp_whisker_forming, prc_lapping_plate, spectroscope, el2_potentiometer, steam_watt, cap_measure_light, el2_potentiometer_method_measurement, steam_high_pressure, prc_gauge_blocks_johansson, cap_power_steam, en_alternator, en_commutator, en_frequency_standardisation, en_transmission_line, dynamo, en_insulator, en_switchgear, cap_power_electric, discharge_xray, motor_transformer_ac, en_circuit_breaker, cap_vac_1e6, in2_electron_source_cathode, in2_xray_diffraction_camera, diffusion_pump, el2_alternator_rotating_field, en_transformer, gp_czochralski_puller, pwr_high_voltage_transmission, gp_exhaust_pinchoff, el2_induction_heating_inductor_coupling, en_substation, gp_getter, power_grid, vacuum_tube, cap_power_grid, zinc_industry_scale, el2_valve_voltmeter_high_impedance, cap_heat_3000, germanium_extraction, semiconductor_metrology, arc_furnace_ferroalloys, gecl4_purification, ge_reduction, zone_refining, single_crystal, point_contact_transistor
+>>> state
+
+[108 AD | -275 den | you:2000 hr | sch 0 art 0 | rep 14] > =>>> available all
+===========================================================
+YEAR 108   (492 years to the horizon at 600)
+============================================================
+
+Money: -275 den    net -9.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 14.1   protection 5%   scandal 2.9   eminence 0.16
+  EMINENCE is dangerous above 26 (settles near 0.30 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[108 AD | -275 den | you:2000 hr | sch 0 art 0 | rep 14] > AVAILABLE: 204 startable now
+1-204
+
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      0
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*      7
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      0
+tx2_flax_fibre                     Flax cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_hemp_fibre                     Hemp cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_rope_lay                       Rope laying: strand          9      40     0   15%        0      40    1a*      2
+tx2_twist_insertion                Twist insertion cont         9      50     0   15%        0      40    1a*      0
+tx2_warp_sizing                    Warp sizing: fibre s         9      50  0.20   15%        0      40    1a*      0
+tx2_wool_fibre                     Wool: sheep fibre          9.5      40     0   15%        0      40    1a*      1
+tx2_heddle                         Heddle: warp thread        9.5      40  0.10   15%        0      40    1a*      6
+tx2_beam                           Beam: warp holder an       9.9      40  0.20   15%        0      40    1a*      0
+fin_employment_contract            Contract of employme        10      60     1    5%        0       0      -      1
+tx2_button_horn                    Button: horn materia        10      40  0.10   15%        0      40    1a*      0
+tx2_button_bone                    Button: bone materia      10.1      40  0.10   15%        0      40    1a*      0
+tx2_cashmere                       Cashmere: goat under      10.5      50     0   15%        0      40    1a*      0
+tx2_jute_fibre                     Jute cultivation and      10.5      50     0   15%        0      40    1a*      0
+tx2_mohair                         Mohair: angora goat       10.5      50     0   15%        0      40    1a*      0
+tx2_ramie_fibre                    Ramie cultivation an      10.5      50     0   15%        0      40    1a*      0
+tx2_button_shell                   Button: shell materi      11.5      50  0.15   15%        0      40    1a*      0
+tx2_pin                            Pin: sewing fastener      11.8      40  0.10   15%        0      40    1a*      0
+med_amputation                     Amputation and prost      12.3       0     0   30%      8.2      50  1s1a*      1
+tx2_comb                           Comb: hair grooming         13      50  0.20   15%        0      40    1a*      0
+tx2_cutting_table                  Cutting table: stack        14      60  0.30   15%        0      40    1a*      1
+tx2_currying                       Currying: leather fi        15      60  0.30   15%        0      40    1a*      0
+fin_apprenticeship                 Apprenticeship inden        16      80     1    5%        0       0      -      0
+tx2_splitting                      Splitting: leather l        16      70  0.30   15%        0      40    1a*      0
+tx2_paperclip                      Paperclip: bent wire      16.6      50  0.50   15%        0      40    1a*      0
+tx2_sizing_systems                 Sizing systems: body        18     100     2   15%        0      40    1a*      1
+tx2_hook_and_eye                   Hook and eye: wire f      19.8      50  0.20   15%        0      40    1a*      0
+fin_trademark                      Trademark and mark o        20      80     1   10%        0       0      -      1
+tx2_warping_mill                   Warping mill: warp t        21      60  0.25   15%        0      40    1a*      0
+hom_safety_pin                     Safety pin                24.1      40  0.25    2%       15    0.50      -      0
+tx2_flyer                          Flyer: the earliest       27.9      70  0.30   15%        0      40    1a*      5
+tx2_drawing_pin                    Drawing pin: short f      28.6      50  0.20   15%        0      40    1a*      0
+fin_usury_law                      Usury law and intere        30     100     1    5%        0       0     1s      1
+tx2_corset                         Corset: rigid body s        30     100  0.50   15%        0      40    1a*      0
+hom_toothbrush                     Toothbrush                30.3      60  0.25    2%       30      40      -      1
+tx2_spectacle_frame                Spectacle frame: eye        31      60  0.20   15%        0      40    1a*      0
+fin_arbitrage                      Arbitrage and price       37.5      80     1   10%       25       0      -      0
+fin_bankruptcy                     Bankruptcy law and i        40     120     1   10%        0       0  1s1a*      0
+pwr_oil_shale                      Oil shale and bitume      40.4      80  0.50   15%     31.7      30      -      0
+fin_tariff                         Tariff and import du      47.5     100     2   10%     31.7       0  1s1a*      1
+sea_log_line                       Log line for speed        49.6      30  0.10    5%        0       5      -      0
+fin_monopoly                       Monopoly and exclusi      51.1      80     1   15%        0       0     1s      0
+fin_bimetallism                    Bimetallism and fixe      53.5     100     2   20%        0       0      -      0
+fin_cartel                         Cartel and market sh      53.8     100     1   20%     33.3       0      -      0
+tx2_pattern_grading                Pattern grading: mul        55      80  0.30   15%        0      40    1a*      1
+tx2_printing_block                 Block printing: carv      55.1     100  0.50   15%        0      40    1a*      1
+pwr_peat                           Peat extraction and       57.4     100  0.50   10%       45      40      -      0
+fin_mortgage                       Mortgage and real es      57.5     120     1   15%     38.3       0      -      0
+fin_patent                         Patent and exclusive      61.8     140     2   20%        0       0  1s1a*      2
+fin_guild                          Guild and monopoly c      68.8     100     1   10%       50       0     1s      1
+tex_hand_ginning                   Hand ginning cotton       69.9      30  0.20    6%     43.3       5      -      1
+fin_bill_exchange                  Bill of exchange            70     150     2   15%     46.7       0    1a*     10
+com_optical_codebook               Codebook for optical      71.4     100  0.25   10%        0       0     1s      2
+met_ore_crushing_sorting           Ore dressing: crushi      74.4      20  0.30    5%        0      10      -      1
+prc_straightedge                   Straightedge and ref      81.8      30  0.20    5%        0       5      -      0
+hom_punkah_ceiling                 Ceiling punkah, serv        83      50  0.50    2%        0       0      -      0
+tx2_doll                           Doll: articulated ch      83.5      80     1   15%        0      40    1a*      0
+air_compass_magnetic               Compass for navigati      87.7      30  0.10    5%        0       0      -      0
+fin_trade_union                    Trade union and work      88.1     120     2   30%       50       0  1s1a*      0
+lnd_wheelbarrow                    Wheelbarrow                 89      30  0.50    5%        0      10      -      0
+hom_umbrella                       Umbrella                  89.7      80  0.50    5%     59.8       3      -      0
+cn_gypsum_plaster                  Gypsum plaster finis      97.7      35  0.15    5%       80      25    1a*      0
+pwr_petroleum_seeps                Petroleum seeps and        102     100  0.50   10%       80      50      -      6
+civ_truss_triangulated             Triangulated truss f     108.4     120  0.50   10%        0      10      -      4
+tx2_needle                         Needle: sewing imple     111.8      40  0.10   15%        0      40    1a*      0
+sea_lodestone                      Lodestone knowledge      112.2      20  0.20    5%        0      10     1s     22
+tx2_eye_pointed_needle             Eye-pointed needle:      113.8      50  0.15   15%        0      40    1a*      7
+tx2_carding                        Carding: opening and     115.9      60  0.20   15%        0      40    1a*      4
+ag2_guano                          Guano                      119      30     0    8%      100       0      -      0
+ag2_marling                        Marling                  119.4      25  0.15    2%       30      15      -      0
+hom_latrine_water_trap             Latrine water trap (     124.9      60  0.50    3%        0       5      -      1
+tex_mordanting                     Mordanting dyes with     129.3      40  0.30    8%      150      15      -      7
+tex_canvas                         Canvas cloth             135.4      40  0.25    6%       84      10      -      2
+cn_stone_polish                    Stone polishing and      137.8      30  0.15    5%       60      15    1a*      1
+civ_lightning_conductor            Lightning conductor        142      80  0.40    5%        0       5      -      0
+ag2_liming                         Liming                   149.6      30  0.20    3%       40      20      -      0
+ag2_hopping                        Hopping                    150      40  0.15    4%       80      15      -      0
+air_kite_basic                     Kite                     157.8      20  0.10    5%        0       0      -      0
+ag2_composting                     Composting               159.4      40  0.20    5%       60      25      -      0
+ag2_potash                         Potash                   159.4      40  0.20    5%       80      25      -      0
+hom_flush_toilet_trap              Flush toilet with S-     169.2      80  0.50    5%        0       8      -      0
+civ_gate_sluice                    Sluice gate for wate       183     100  0.60   10%       50      10      -      1
+tex_indigo                         Indigo dyeing            187.8      60  0.40   10%      300      40      -      0
+tr_reefing                         Reefing sails            200.4      50  0.30    8%      200      40    1a*      0
+lnd_hobby_horse                    Hobby horse (pedal-l     202.8      40  0.50   10%       50      20      -      2
+mfg_production_schedule            Production schedule        204     130  0.50   10%        0      40    1a*      2
+tr_wooden_waggonway                Wooden waggonway         204.9      40     2   10%      300      40    1a*      0
+mfg_flux                           Flux                       209      60  0.15    7%        0      40    1a*      2
+mat_obsidian_blade                 Obsidian blade knapp       210      40  0.50    5%      150      20      -      0
+md2_vector_control                 Vector control           210.8     100     2   15%        0      40    1a*      1
+med_surgical_gloves_mask           Surgical gloves and      216.8      40     0    0%        0      50    1a*      0
+mfg_enamelling                     Enamelling               216.8     120  0.30   14%        0      40    1a*      0
+prn_wire_mould_deckle              Wire mould and deckl     217.5     150     1   10%        0      30      -      0
+md2_plaster_cast                   Plaster cast immobil       218     100     1   15%        0      40    1a*      1
+mfg_adhesive_bond                  Adhesive bonding         219.5     140  0.30   15%        0      40    1a*      0
+mfg_japanning                      Japanning                219.5     110  0.25    9%        0      40    1a*      0
+mfg_hot_riveting                   Hot riveting               220      80  0.20   10%        0      40    1a*      3
+mfg_mould                          Casting mould            222.5     120  0.30   12%        0      40    1a*      0
+mfg_cold_riveting                  Cold riveting              223     100  0.20    9%        0      40    1a*      0
+tr_sleeper_ballast                 Sleeper and ballast      223.4      30     1    5%      200      40    1a*     11
+mt2_pelletising                    Pelletising: forming     223.5     110  0.80    8%        0      40    1a*      0
+mt2_timbering_safety               Timbering: wooden su     224.4      80  0.80   11%        0      40    1a*      0
+mfg_painting                       Painting                   225      80  0.20    8%        0      40    1a*      0
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,111
+mt2_earthenware                    Earthenware: low-fir       230      60  0.50    5%        0      40    1a*      0
+tr_block_tackle                    Block and tackle pul     230.2      40  0.30    2%      200      40    1a*      0
+fud_hay_making_storage             Hay making and dry s       235     100     1   20%        0      50      -      1
+cn_post_lintel                     Post and lintel stru     235.6      25  0.40    5%      100      30    1a*      0
+sc2_physics_newtons_laws           Newton's three laws        236     100     4   15%        0      40    1a*      0
+mfg_soft_solder                    Soft soldering           236.4      80  0.20    8%        0      40    1a*      0
+ag2_malting                        Malting                    240      60  0.30    8%      140      30    1a*      1
+ag2_oil_pressing                   Oil pressing             241.6      60  0.30    8%      140      35      -      0
+sc2_institution_doctorate          Doctorate and resear       258     150     8   15%        0      40    1a*      0
+sc2_institution_funded_programme   Funded research prog       258     120     5   15%        0      40    1a*      0
+sc2_institution_referee            Referee and peer rev       258     100     8   15%        0      40    1a*      0
+sc2_institution_research_group     Research group and p       258     100     5   15%        0      40    1a*      0
+sc2_method_hypothesis              Hypothesis and predi       258      90     8   15%        0      40    1a*      0
+sc2_method_negative_result         Negative result and        258      90    20   15%        0      40    1a*      0
+sc2_method_replication             Replication and repe       258      80    10   15%        0      40    1a*      0
+sc2_notation_positional            Positional notation        258       0     0   15%        0      40    1a*      0
+sc2_probability_axioms             Probability axioms a       258     100     4   15%        0      40    1a*     14
+tr_semaphore_signal                Semaphore signal         259.3      40     2    6%      300      40    1a*     11
+sc2_notation_decimal_point         The decimal point co     268.3      20     2   15%        0      40    1a*      0
+com_signal_flags                   Signal flags for mar     269.6      40  0.50    5%      150      20    1a*      0
+if_quill                           Quill pen                271.2      15  0.05    3%       50      20  1s1a*      0
+hom_fireplace_chimney              Fireplace and chimne     271.5     120     1    8%        0      20      -      2
+pwr_coal_seam                      Coal seam and mining     272.8     150     1   25%      214     100      -      5
+sc2_notation_roots                 Root symbols and rad     278.6      40     3   15%        0      40    1a*      0
+civ_town_planning                  Town planning and st     278.8     180     1   10%        0       0  1s1a*      0
+ag2_pyrethrum                      Pyrethrum                  280      70  0.30   12%      170      40    1a*      0
+ag2_refrigeration_ice              Refrigeration - ice        280      70  0.50   10%      200       0    1a*      0
+sc2_notation_exponents             Exponent notation        281.2      45     2   15%        0      40    1a*      0
+hom_sprung_mattress                Sprung mattress          285.5     120     1    8%        0      10      -      0
+sc2_institution_curriculum         Curriculum and cours       294     120     5   15% >>> step 4
+       0      40    1a*      0
+sc2_physics_momentum               Momentum and impulse     296.7      80     3   15%        0      40    1a*      0
+sc2_institution_citation           Citation and bibliog     299.3      80     5   15%        0      40    1a*      0
+sc2_physics_kinematics             Kinematics: position     301.9      90     2   15%        0      40    1a*      0
+sc2_physics_gravitation            Newton's law of univ     304.4     100     5   15%        0      40    1a*      0
+tx2_silk_fibre                     Silk: cultivated fib       309      40     0   15%        0      40    1a*      2
+sea_cross_staff                    Cross-staff for lati     310.7      80  0.25   12%        0      20  1s1a*     19
+opt_manometer                      Manometer (pressure      315.9      60  0.10    5%      150       5      -      2
+tx2_mirror                         Mirror: reflective g       316      70  0.30   15%        0      40    1a*      0
+tr_bilge_pump                      Bilge pump               329.2      50  0.30    4%      200      40    1a*      0
+met_investment_casting             Investment casting a     329.8     100  0.80    8%        0      60    1a*      0
+opt_anemometer                     Anemometer (wind spe     337.2      60  0.25    8%      200      15      -      0
+cn_pile_driving                    Pile driving by drop     347.9      40  0.80    8%      140      60    1a*      9
+fud_fish_curing_and_smoking        Large-scale fish cur       363     120     1   10%      400     100      -      0
+mat_papyrus                        Papyrus                  402.5      20     0    0%        0      30      -      0
+sc2_institution_examination        Examination and cred     412.8      80     8   15%        0      40    1a*      0
+sea_sternpost_rudder               Sternpost rudder         427.4     120  0.50   10%        0      50      -     31
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,714
+civ_street_paved                   Paved street and sid     491.7      80  0.80    8%        0      15      -      0
+cn_damp_proof_course               Damp proof course ba       531      50  0.50    7%      160      60    1a*      1
+mat_parchment                      Parchment                536.6      30     0    0%        0      40      -      1
+mfg_drawing_office                 Drawing office           541.8     150  0.50   11%        0      40    1a*      3
+med_herbal_pharmacy                Herbal pharmacy (Dio       580     100  0.50    0%      300     100  1s1a*      0
+arrival_orientation                Six months of listen       600     900  0.50    2%        0       0      -      0
+tr_lateen_sail                     Lateen sail                629      80  0.50    2%      200      40    1a*      7
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*     78
+tx2_scouring                       Scouring: removal of     710.5      40  0.20   15%        0      40    1a*      1
+tx2_dyeing_fibre                   Dyeing in fibre: pre       715      60  0.30   15%        0      40    1a*      0
+tx2_dyeing_yarn                    Dyeing in yarn: skei       718      70  0.30   15%        0      40    1a*      0
+tx2_dyeing_piece                   Dyeing in piece: wov       721      80  0.30   15%        0      40    1a*      0
+tx2_resist_dyeing                  Resist dyeing: patte       733      70  0.30   15%        0      40    1a*      0
+tx2_alum_tanning                   Alum tanning: minera       760      60  0.40   15%        0      40    1a*      0
+civ_sewer_separate                 Separate foul and st       765     120     1   10%        0      30      -      1
+fud_grain_storage_silos            Cylindrical silos fo     830.4     200     1   10%        0     100      -      0
+lnd_coach                          Coach                    837.7     200     2   20%      500     100    1a*      1
+mfg_silver_solder                  Silver soldering         856.1     100  0.25   10%        0      40    1a*      0
+tr_square_rig                      Square rig sails           935      40  0.60    4%      300      40    1a*      0
+sea_skeleton_first                 Skeleton-first hull      967.7     250     1   22%        0     120      -      0
+sea_diving_bell                    Diving bell              968.5     120  0.40   20%      100     100      -      2
+fin_pawnshop                       Pawnshop and secured     1,025      60  0.30   10%      300      50      -      0
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,222
+tx2_bottle                         Bottle: glass contai     1,132      60  0.30   15%        0      40    1a*      0
+air_observation_balloon_tethered   Tethered observation     1,138     120  0.50   10%        0      20      -      8
+tx2_asbestos_cloth                 Asbestos cloth: fire     1,203      80     1   15%        0      40    1a*      0
+met_bloomery_bog_iron              Bloomery smelting of     1,210     100     1   15%      420      90    1a*      0
+sea_keel_deep                      Deep keel and the ab     1,258     100     1   10%      300      60    1a*      0
+sea_lead_sheathing                 Lead sheathing again     1,445       0     0    0%        0     200      -      1
+sc2_institution_textbook           Textbook and codifie     1,470     200     8   15%        0      40    1a*      0
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,030
+fin_trading_post                   Trading post and rem     1,662     100     1   15%      300     100      -      1
+mt2_type_metal                     Type metal: lead-tin     1,883     110  0.80   10%        0      40    1a*      0
+fin_ferry                          Ferry and toll cross     1,916     100     1   12%      250     150      -      5
+fud_whaling_industry               Organized whaling in     2,070     300     1   30%    1,200     500      -      0
+fin_lottery                        Lottery and state ga     2,080     150     2   10%      800     100  1s1a*      0
+fin_gambling_house                 Gambling house and g     2,112     100     1   25%      500     100      -      0
+fin_census                         Census and populatio     2,532     200     2   15%        0     100  1s1a*      1
+fin_inn                            Inn and coaching hou     3,538     100   1.5   12%      300     200      -      0
+fin_marine_insurance               Marine insurance         4,105     200     2   25%      800     200    1a*      3
+fin_postal_service                 Postal service as pa     4,362     180     2   15%      400     300    1a*      3
+mt2_solder_lead_tin                Solder: lead-tin for     4,713     100  0.50    8%        0      40    1a*      0
+fin_racecourse                     Racecourse and pari-     5,332     130     2   18%      500     300    1a*      1
+fin_hotel                          Hotel and commercial     5,824     120     2   15%      400     300    1a*      1
+mt2_amalgamation                   Amalgamation: extrac     6,296      80  0.50    9%        0      40    1a*      0
+fin_theatre_business               Theatre as business      8,848     150     3   20%      600     400    1a*      1
+fin_plantation                     Plantation and large    10,831     200     3   20%      800   1,000    1a*      0
+tx2_watch_case                     Watch case: portable    17,415      80  0.30   15%        0      40    1a*      0
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+[108 AD | -275 den | you:2000 hr | sch 0 art 0 | rep 14] >  >>> path point_contact_transistor
+ EVENT 111: tr_hopper_wagon would earn 600 a year against 40 of upkeep and is still shut: you have no money to open it with
+
+============================================================
+YEAR 112   (488 years to the horizon at 600)
+============================================================
+
+Money: -310.8 den    net -13.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 12.5   protection 5%   scandal 1.9   eminence 0.19
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[112 AD | -310 den | you:2000 hr | sch 0 art 0 | rep 13] > i>>> state
+d: point_contact_transistor
+done: False
+remaining count: 142
+remaining: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic, geometry_analytic, workshop_first, calculus, case_hardening, charcoal_industrial, crank_conrod, lead_metallurgy, lens_grinding, nitre_beds, refractory_fireclay, newtonian_mechanics, drawplate_wire, precision_three_plate, prc_treadle_lathe_flywheel, water_power_scale, crude_cell, cap_heat_1100, em_theory, cap_tol_100um, bellows_water_blown, cap_power_water, galena_detector, cementation_steel, coal_coke, glass_clear, gp_carbon_brushes, quantum_solidstate_theory, cap_vac_1torr, cap_heat_1300, balance_analytical, gp_laminated_core, master_screw, zinc_metal, glass_labware, gp_glass_metal_seal, mirror_amalgam, telescope, blast_furnace, mt2_silica_brick_refractory, cap_pure_2N, micrometer_gauges, prc_slide_rest_simple, lab_apparatus, finery_puddling, mat_copper, mt2_basic_converter, prc_change_gears_quadrant, prc_milling_machine, mercury_supply, sulfuric_retort, voltaic_pile, prc_dividing_head, barometer, cap_vac_1e3, thermometer, hydrochloric_acid, lead_chamber, nitric_acid, daniell_cell, vacuum_pumps, cap_measure_temp, thermodynamics_theory, analytical_chemistry, cap_measure_temp_hi, cap_gas_o2h2, electroplating, cap_heat_1600, cap_pure_4N, cap_heat_2000, crucible_steel, glass_borosilicate, cap_pure_6N, copper_refining, high_temp_furnace, screw_lathe, el2_inductor_iron_core, galvanometer, gp_magnet_wire_enamelled, fused_quartz, mat_bulk_steel, boring_mill, cap_tol_10um, interchangeable_parts, cap_measure_elec, electromagnet, gp_controlled_atmosphere_chamber, steam_atmospheric, gp_whisker_forming, prc_lapping_plate, spectroscope, el2_potentiometer, steam_watt, cap_measure_light, el2_potentiometer_method_measurement, steam_high_pressure, prc_gauge_blocks_johansson, cap_power_steam, en_alternator, en_commutator, en_frequency_standardisation, en_transmission_line, dynamo, en_insulator, en_switchgear, cap_power_electric, discharge_xray, motor_transformer_ac, en_circuit_breaker, cap_vac_1e6, in2_electron_source_cathode, in2_xray_diffraction_camera, diffusion_pump, el2_alternator_rotating_field, en_transformer, gp_czochralski_puller, pwr_high_voltage_transmission, gp_exhaust_pinchoff, el2_induction_heating_inductor_coupling, en_substation, gp_getter, power_grid, vacuum_tube, cap_power_grid, zinc_industry_scale, el2_valve_voltmeter_high_impedance, cap_heat_3000, germanium_extraction, semiconductor_metrology, arc_furnace_ferroalloys, gecl4_purification, ge_reduction, zone_refining, single_crystal, point_contact_transistor
+
+[112 AD | -310 den | you:2000 hr | sch 0 art 0 | rep 13] > ============================================================
+YEAR 112   (488 years to the horizon at 600)
+============================================================
+
+Money: -310.8 den    net -13.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 12.5   protection 5%   scandal 1.9   eminence 0.19
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+>>> available all
+
+[112 AD | -310 den | you:2000 hr | sch 0 art 0 | rep 13] > AVAILABLE: 204 startable now
+1-204
+
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      0
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*      7
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      0
+tx2_flax_fibre                     Flax cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_hemp_fibre                     Hemp cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_rope_lay                       Rope laying: strand          9      40     0   15%        0      40    1a*      2
+tx2_twist_insertion                Twist insertion cont         9      50     0   15%        0      40    1a*      0
+tx2_warp_sizing                    Warp sizing: fibre s         9      50  0.20   15%        0      40    1a*      0
+tx2_wool_fibre                     Wool: sheep fibre          9.5      40     0   15%        0      40    1a*      1
+tx2_heddle                         Heddle: warp thread        9.5      40  0.10   15%        0      40    1a*      6
+tx2_beam                           Beam: warp holder an       9.9      40  0.20   15%        0      40    1a*      0
+fin_employment_contract            Contract of employme        10      60     1    5%        0       0      -      1
+tx2_button_horn                    Button: horn materia        10      40  0.10   15%        0      40    1a*      0
+tx2_button_bone                    Button: bone materia      10.1      40  0.10   15%        0      40    1a*      0
+tx2_cashmere                       Cashmere: goat under      10.5      50     0   15%        0      40    1a*      0
+tx2_jute_fibre                     Jute cultivation and      10.5      50     0   15%        0      40    1a*      0
+tx2_mohair                         Mohair: angora goat       10.5      50     0   15%        0      40    1a*      0
+tx2_ramie_fibre                    Ramie cultivation an      10.5      50     0   15%        0      40    1a*      0
+tx2_button_shell                   Button: shell materi      11.5      50  0.15   15%        0      40    1a*      0
+tx2_pin                            Pin: sewing fastener      11.8      40  0.10   15%        0      40    1a*      0
+med_amputation                     Amputation and prost      12.3       0     0   30%      8.2      50  1s1a*      1
+tx2_comb                           Comb: hair grooming         13      50  0.20   15%        0      40    1a*      0
+tx2_cutting_table                  Cutting table: stack        14      60  0.30   15%        0      40    1a*      1
+tx2_currying                       Currying: leather fi        15      60  0.30   15%        0      40    1a*      0
+fin_apprenticeship                 Apprenticeship inden        16      80     1    5%        0       0      -      0
+tx2_splitting                      Splitting: leather l        16      70  0.30   15%        0      40    1a*      0
+tx2_paperclip                      Paperclip: bent wire      16.6      50  0.50   15%        0      40    1a*      0
+tx2_sizing_systems                 Sizing systems: body        18     100     2   15%        0      40    1a*      1
+tx2_hook_and_eye                   Hook and eye: wire f      19.8      50  0.20   15%        0      40    1a*      0
+fin_trademark                      Trademark and mark o        20      80     1   10%        0       0      -      1
+tx2_warping_mill                   Warping mill: warp t        21      60  0.25   15%        0      40    1a*      0
+hom_safety_pin                     Safety pin                24.1      40  0.25    2%       15    0.50      -      0
+tx2_flyer                          Flyer: the earliest       27.9      70  0.30   15%        0      40    1a*      5
+tx2_drawing_pin                    Drawing pin: short f      28.6      50  0.20   15%        0      40    1a*      0
+fin_usury_law                      Usury law and intere        30     100     1    5%        0       0     1s      1
+tx2_corset                         Corset: rigid body s        30     100  0.50   15%        0      40    1a*      0
+hom_toothbrush                     Toothbrush                30.3      60  0.25    2%       30      40      -      1
+tx2_spectacle_frame                Spectacle frame: eye        31      60  0.20   15%        0      40    1a*      0
+fin_arbitrage                      Arbitrage and price       37.5      80     1   10%       25       0      -      0
+fin_bankruptcy                     Bankruptcy law and i        40     120     1   10%        0       0  1s1a*      0
+pwr_oil_shale                      Oil shale and bitume      40.4      80  0.50   15%     31.7      30      -      0
+fin_tariff                         Tariff and import du      47.5     100     2   10%     31.7       0  1s1a*      1
+sea_log_line                       Log line for speed        49.6      30  0.10    5%        0       5      -      0
+fin_monopoly                       Monopoly and exclusi      51.1      80     1   15%        0       0     1s      0
+fin_bimetallism                    Bimetallism and fixe      53.5     100     2   20%        0       0      -      0
+fin_cartel                         Cartel and market sh      53.8     100     1   20%     33.3       0      -      0
+tx2_pattern_grading                Pattern grading: mul        55      80  0.30   15%        0      40    1a*      1
+tx2_printing_block                 Block printing: carv      55.1     100  0.50   15%        0      40    1a*      1
+pwr_peat                           Peat extraction and       57.4     100  0.50   10%       45      40      -      0
+fin_mortgage                       Mortgage and real es      57.5     120     1   15%     38.3       0      -      0
+fin_patent                         Patent and exclusive      61.8     140     2   20%        0       0  1s1a*      2
+fin_guild                          Guild and monopoly c      68.8     100     1   10%       50       0     1s      1
+tex_hand_ginning                   Hand ginning cotton       69.9      30  0.20    6%     43.3       5      -      1
+fin_bill_exchange                  Bill of exchange            70     150     2   15%     46.7       0    1a*     10
+com_optical_codebook               Codebook for optical      71.4     100  0.25   10%        0       0     1s      2
+met_ore_crushing_sorting           Ore dressing: crushi      74.4      20  0.30    5%        0      10      -      1
+prc_straightedge                   Straightedge and ref      81.8      30  0.20    5%        0       5      -      0
+hom_punkah_ceiling                 Ceiling punkah, serv        83      50  0.50    2%        0       0      -      0
+tx2_doll                           Doll: articulated ch      83.5      80     1   15%        0      40    1a*      0
+air_compass_magnetic               Compass for navigati      87.7      30  0.10    5%        0       0      -      0
+fin_trade_union                    Trade union and work      88.1     120     2   30%       50       0  1s1a*      0
+lnd_wheelbarrow                    Wheelbarrow                 89      30  0.50    5%        0      10      -      0
+hom_umbrella                       Umbrella                  89.7      80  0.50    5%     59.8       3      -      0
+cn_gypsum_plaster                  Gypsum plaster finis      97.7      35  0.15    5%       80      25    1a*      0
+pwr_petroleum_seeps                Petroleum seeps and        102     100  0.50   10%       80      50      -      6
+civ_truss_triangulated             Triangulated truss f     108.4     120  0.50   10%        0      10      -      4
+tx2_needle                         Needle: sewing imple     111.8      40  0.10   15%        0      40    1a*      0
+sea_lodestone                      Lodestone knowledge      112.2      20  0.20    5%        0      10     1s     22
+tx2_eye_pointed_needle             Eye-pointed needle:      113.8      50  0.15   15%        0      40    1a*      7
+tx2_carding                        Carding: opening and     115.9      60  0.20   15%        0      40    1a*      4
+ag2_guano                          Guano                      119      30     0    8%      100       0      -      0
+ag2_marling                        Marling                  119.4      25  0.15    2%       30      15      -      0
+hom_latrine_water_trap             Latrine water trap (     124.9      60  0.50    3%        0       5      -      1
+tex_mordanting                     Mordanting dyes with     129.3      40  0.30    8%      150      15      -      7
+tex_canvas                         Canvas cloth             135.4      40  0.25    6%       84      10      -      2
+cn_stone_polish                    Stone polishing and      137.8      30  0.15    5%       60      15    1a*      1
+civ_lightning_conductor            Lightning conductor        142      80  0.40    5%        0       5      -      0
+ag2_liming                         Liming                   149.6      30  0.20    3%       40      20      -      0
+ag2_hopping                        Hopping                    150      40  0.15    4%       80      15      -      0
+air_kite_basic                     Kite                     157.8      20  0.10    5%        0       0      -      0
+ag2_composting                     Composting               159.4      40  0.20    5%       60      25      -      0
+ag2_potash                         Potash                   159.4      40  0.20    5%       80      25      -      0
+hom_flush_toilet_trap              Flush toilet with S-     169.2      80  0.50    5%        0       8      -      0
+civ_gate_sluice                    Sluice gate for wate       183     100  0.60   10%       50      10      -      1
+tex_indigo                         Indigo dyeing            187.8      60  0.40   10%      300      40      -      0
+tr_reefing                         Reefing sails            200.4      50  0.30    8%      200      40    1a*      0
+lnd_hobby_horse                    Hobby horse (pedal-l     202.8      40  0.50   10%       50      20      -      2
+mfg_production_schedule            Production schedule        204     130  0.50   10%        0      40    1a*      2
+tr_wooden_waggonway                Wooden waggonway         204.9      40     2   10%      300      40    1a*      0
+mfg_flux                           Flux                       209      60  0.15    7%        0      40    1a*      2
+mat_obsidian_blade                 Obsidian blade knapp       210      40  0.50    5%      150      20      -      0
+md2_vector_control                 Vector control           210.8     100     2   15%        0      40    1a*      1
+med_surgical_gloves_mask           Surgical gloves and      216.8      40     0    0%        0      50    1a*      0
+mfg_enamelling                     Enamelling               216.8     120  0.30   14%        0      40    1a*      0
+prn_wire_mould_deckle              Wire mould and deckl     217.5     150     1   10%        0      30      -      0
+md2_plaster_cast                   Plaster cast immobil       218     100     1   15%        0      40    1a*      1
+mfg_adhesive_bond                  Adhesive bonding         219.5     140  0.30   15%        0      40    1a*      0
+mfg_japanning                      Japanning                219.5     110  0.25    9%        0      40    1a*      0
+mfg_hot_riveting                   Hot riveting               220      80  0.20   10%        0      40    1a*      3
+mfg_mould                          Casting mould            222.5     120  0.30   12%        0      40    1a*      0
+mfg_cold_riveting                  Cold riveting              223     100  0.20    9%        0      40    1a*      0
+tr_sleeper_ballast                 Sleeper and ballast      223.4      30     1    5%      200      40    1a*     11
+mt2_pelletising                    Pelletising: forming     223.5     110  0.80    8%        0      40    1a*      0
+mt2_timbering_safety               Timbering: wooden su     224.4      80  0.80   11%        0      40    1a*      0
+mfg_painting                       Painting                   225      80  0.20    8%        0      40    1a*      0
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,111
+mt2_earthenware                    Earthenware: low-fir       230      60  0.50    5%        0      40    1a*      0
+tr_block_tackle                    Block and tackle pul     230.2      40  0.30    2%      200      40    1a*      0
+fud_hay_making_storage             Hay making and dry s       235     100     1   20%        0      50      -      1
+cn_post_lintel                     Post and lintel stru     235.6      25  0.40    5%      100      30    1a*      0
+sc2_physics_newtons_laws           Newton's three laws        236     100     4   15%        0      40    1a*      0
+mfg_soft_solder                    Soft soldering           236.4      80  0.20    8%        0      40    1a*      0
+ag2_malting                        Malting                    240      60  0.30    8%      140      30    1a*      1
+ag2_oil_pressing                   Oil pressing             241.6      60  0.30    8%      140      35      -      0
+sc2_institution_doctorate          Doctorate and resear       258     150     8   15%        0      40    1a*      0
+sc2_institution_funded_programme   Funded research prog       258     120     5   15%        0      40    1a*      0
+sc2_institution_referee            Referee and peer rev       258     100     8   15%        0      40    1a*      0
+sc2_institution_research_group     Research group and p       258     100     5   15%        0      40    1a*      0
+sc2_method_hypothesis              Hypothesis and predi       258      90     8   15%        0      40    1a*      0
+sc2_method_negative_result         Negative result and        258      90    20   15%        0      40    1a*      0
+sc2_method_replication             Replication and repe       258      80    10   15%        0      40    1a*      0
+sc2_notation_positional            Positional notation        258       0     0   15%        0      40    1a*      0
+sc2_probability_axioms             Probability axioms a       258     100     4   15%        0      40    1a*     14
+tr_semaphore_signal                Semaphore signal         259.3      40     2    6%      300      40    1a*     11
+sc2_notation_decimal_point         The decimal point co     268.3      20     2   15%        0      40    1a*      0
+com_signal_flags                   Signal flags for mar     269.6      40  0.50    5%      150      20    1a*      0
+if_quill                           Quill pen                271.2      15  0.05    3%       50      20  1s1a*      0
+hom_fireplace_chimney              Fireplace and chimne     271.5     120     1    8%        0      20      -      2
+pwr_coal_seam                      Coal seam and mining     272.8     150     1   25%      214     100      -      5
+sc2_notation_roots                 Root symbols and rad     278.6      40     3   15%        0      40    1a*      0
+civ_town_planning                  Town planning and st     278.8     180     1   10%        0       0  1s1a*      0
+ag2_pyrethrum                      Pyrethrum                  280      70  0.30   12%      170      40    1a*      0
+ag2_refrigeration_ice              Refrigeration - ice        280      70  0.50   10%      200       0    1a*      0
+sc2_notation_exponents             Exponent notation        281.2      45     2   15%        0      40    1a*      0
+hom_sprung_mattress                Sprung mattress          285.5     120     1    8%        0      10      -      0
+sc2_institution_curriculum         Curriculum and cours       294     120     5   15% >>> step 4
+       0      40    1a*      0
+sc2_physics_momentum               Momentum and impulse     296.7      80     3   15%        0      40    1a*      0
+sc2_institution_citation           Citation and bibliog     299.3      80     5   15%        0      40    1a*      0
+sc2_physics_kinematics             Kinematics: position     301.9      90     2   15%        0      40    1a*      0
+sc2_physics_gravitation            Newton's law of univ     304.4     100     5   15%        0      40    1a*      0
+tx2_silk_fibre                     Silk: cultivated fib       309      40     0   15%        0      40    1a*      2
+sea_cross_staff                    Cross-staff for lati     310.7      80  0.25   12%        0      20  1s1a*     19
+opt_manometer                      Manometer (pressure      315.9      60  0.10    5%      150       5      -      2
+tx2_mirror                         Mirror: reflective g       316      70  0.30   15%        0      40    1a*      0
+tr_bilge_pump                      Bilge pump               329.2      50  0.30    4%      200      40    1a*      0
+met_investment_casting             Investment casting a     329.8     100  0.80    8%        0      60    1a*      0
+opt_anemometer                     Anemometer (wind spe     337.2      60  0.25    8%      200      15      -      0
+cn_pile_driving                    Pile driving by drop     347.9      40  0.80    8%      140      60    1a*      9
+fud_fish_curing_and_smoking        Large-scale fish cur       363     120     1   10%      400     100      -      0
+mat_papyrus                        Papyrus                  402.5      20     0    0%        0      30      -      0
+sc2_institution_examination        Examination and cred     412.8      80     8   15%        0      40    1a*      0
+sea_sternpost_rudder               Sternpost rudder         427.4     120  0.50   10%        0      50      -     31
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,714
+civ_street_paved                   Paved street and sid     491.7      80  0.80    8%        0      15      -      0
+cn_damp_proof_course               Damp proof course ba       531      50  0.50    7%      160      60    1a*      1
+mat_parchment                      Parchment                536.6      30     0    0%        0      40      -      1
+mfg_drawing_office                 Drawing office           541.8     150  0.50   11%        0      40    1a*      3
+med_herbal_pharmacy                Herbal pharmacy (Dio       580     100  0.50    0%      300     100  1s1a*      0
+arrival_orientation                Six months of listen       600     900  0.50    2%        0       0      -      0
+tr_lateen_sail                     Lateen sail                629      80  0.50    2%      200      40    1a*      7
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*     78
+tx2_scouring                       Scouring: removal of     710.5      40  0.20   15%        0      40    1a*      1
+tx2_dyeing_fibre                   Dyeing in fibre: pre       715      60  0.30   15%        0      40    1a*      0
+tx2_dyeing_yarn                    Dyeing in yarn: skei       718      70  0.30   15%        0      40    1a*      0
+tx2_dyeing_piece                   Dyeing in piece: wov       721      80  0.30   15%        0      40    1a*      0
+tx2_resist_dyeing                  Resist dyeing: patte       733      70  0.30   15%        0      40    1a*      0
+tx2_alum_tanning                   Alum tanning: minera       760      60  0.40   15%        0      40    1a*      0
+civ_sewer_separate                 Separate foul and st       765     120     1   10%        0      30      -      1
+fud_grain_storage_silos            Cylindrical silos fo     830.4     200     1   10%        0     100      -      0
+lnd_coach                          Coach                    837.7     200     2   20%      500     100    1a*      1
+mfg_silver_solder                  Silver soldering         856.1     100  0.25   10%        0      40    1a*      0
+tr_square_rig                      Square rig sails           935      40  0.60    4%      300      40    1a*      0
+sea_skeleton_first                 Skeleton-first hull      967.7     250     1   22%        0     120      -      0
+sea_diving_bell                    Diving bell              968.5     120  0.40   20%      100     100      -      2
+fin_pawnshop                       Pawnshop and secured     1,025      60  0.30   10%      300      50      -      0
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,222
+tx2_bottle                         Bottle: glass contai     1,132      60  0.30   15%        0      40    1a*      0
+air_observation_balloon_tethered   Tethered observation     1,138     120  0.50   10%        0      20      -      8
+tx2_asbestos_cloth                 Asbestos cloth: fire     1,203      80     1   15%        0      40    1a*      0
+met_bloomery_bog_iron              Bloomery smelting of     1,210     100     1   15%      420      90    1a*      0
+sea_keel_deep                      Deep keel and the ab     1,258     100     1   10%      300      60    1a*      0
+sea_lead_sheathing                 Lead sheathing again     1,445       0     0    0%        0     200      -      1
+sc2_institution_textbook           Textbook and codifie     1,470     200     8   15%        0      40    1a*      0
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,030
+fin_trading_post                   Trading post and rem     1,662     100     1   15%      300     100      -      1
+mt2_type_metal                     Type metal: lead-tin     1,883     110  0.80   10%        0      40    1a*      0
+fin_ferry                          Ferry and toll cross     1,916     100     1   12%      250     150      -      5
+fud_whaling_industry               Organized whaling in     2,070     300     1   30%    1,200     500      -      0
+fin_lottery                        Lottery and state ga     2,080     150     2   10%      800     100  1s1a*      0
+fin_gambling_house                 Gambling house and g     2,112     100     1   25%      500     100      -      0
+fin_census                         Census and populatio     2,532     200     2   15%        0     100  1s1a*      1
+fin_inn                            Inn and coaching hou     3,538     100   1.5   12%      300     200      -      0
+fin_marine_insurance               Marine insurance         4,105     200     2   25%      800     200    1a*      3
+fin_postal_service                 Postal service as pa     4,362     180     2   15%      400     300    1a*      3
+mt2_solder_lead_tin                Solder: lead-tin for     4,713     100  0.50    8%        0      40    1a*      0
+fin_racecourse                     Racecourse and pari-     5,332     130     2   18%      500     300    1a*      1
+fin_hotel                          Hotel and commercial     5,824     120     2   15%      400     300    1a*      1
+mt2_amalgamation                   Amalgamation: extrac     6,296      80  0.50    9%        0      40    1a*      0
+fin_theatre_business               Theatre as business      8,848     150     3   20%      600     400    1a*      1
+fin_plantation                     Plantation and large    10,831     200     3   20%      800   1,000    1a*      0
+tx2_watch_case                     Watch case: portable    17,415      80  0.30   15%        0      40    1a*      0
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+[112 AD | -310 den | you:2000 hr | sch 0 art 0 | rep 13] > =>>> path point_contact_transistor
+===========================================================
+YEAR 116   (484 years to the horizon at 600)
+============================================================
+
+Money: -364.9 den    net -19.4 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 11.2   protection 4%   scandal 1.2   eminence 0.19
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[116 AD | -364 den | you:2000 hr | sch 0 art 0 | rep 11] > id: point_contact_transistor
+done: False
+remaining count: 142
+remaining: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic, geometry_analytic, workshop_first, calculus, case_hardening, charcoal_industrial, crank_conrod, lead_metallurgy, lens_grinding, nitre_beds, refractory_fireclay, newtonian_mechanics, drawplate_wire, precision_three_plate, prc_treadle_lathe_flywheel, water_power_scale, crude_cell, cap_heat_1100, em_theory, cap_tol_100um, bellows_water_blown, cap_power_water, galena_detector, cementation_steel, coal_coke, glass_clear, gp_carbon_brushes, quantum_solidstate_theory, cap_vac_1torr, cap_heat_1300, balance_analytical, gp_laminated_core, master_screw, zinc_metal, glass_labware, gp_glass_metal_seal, mirror_amalgam, telescope, blast_furnace, mt2_silica_brick_refractory, cap_pure_2N, micrometer_gauges, prc_slide_rest_simple, lab_apparatus, finery_puddling, mat_copper, mt2_basic_converter, prc_change_gears_quadrant, prc_milling_machine, mercury_supply, sulfuric_retort, voltaic_pile, prc_dividing_head, barometer, cap_vac_1e3, thermometer, hydrochloric_acid, lead_chamber, nitric_acid, daniell_cell, vacuum_pumps, cap_measure_temp, thermodynamics_theory, analytical_chemistry, cap_measure_temp_hi, cap_gas_o2h2, electroplating, cap_heat_1600, cap_pure_4N, cap_heat_2000, crucible_steel, glass_borosilicate, cap_pure_6N, copper_refining, high_temp_furnace, screw_lathe, el2_inductor_iron_core, galvanometer, gp_magnet_wire_enamelled, fused_quartz, mat_bulk_steel, boring_mill, cap_tol_10um, interchangeable_parts, cap_measure_elec, electromagnet, gp_controlled_atmosphere_chamber, steam_atmospheric, gp_whisker_forming, prc_lapping_plate, spectroscope, el2_potentiometer, steam_watt, cap_measure_light, el2_potentiometer_method_measurement, steam_high_pressure, prc_gauge_blocks_johansson, cap_power_steam, en_alternator, en_commutator, en_frequency_standardisation, en_transmission_line, dynamo, en_insulator, en_switchgear, cap_power_electric, discharge_xray, motor_transformer_ac, en_circuit_breaker, cap_vac_1e6, in2_electron_source_cathode, in2_xray_diffraction_camera, diffusion_pump, el2_alternator_rotating_field, en_transformer, gp_czochralski_puller, pwr_high_voltage_transmission, gp_exhaust_pinchoff, el2_induction_heating_inductor_coupling, en_substation, gp_getter, power_grid, vacuum_tube, cap_power_grid, zinc_industry_scale, el2_valve_voltmeter_high_impedance, cap_heat_3000, germanium_extraction, semiconductor_metrology, arc_furnace_ferroalloys, gecl4_purification, ge_reduction, zone_refining, single_crystal, point_contact_transistor
+>>> state
+
+[116 AD | -364 den | you:2000 hr | sch 0 art 0 | rep 11] > ============================================================
+YEAR 116   (484 years to the horizon at 600)
+============================================================
+
+Money: -364.9 den    net -19.4 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 6 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 11.2   protection 4%   scandal 1.2   eminence 0.19
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 6 built by you, 139 granted for free (145 total)
+
+AHEAD: 2 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[>>> available all
+116 AD | -364 den | you:2000 hr | sch 0 art 0 | rep 11] > AVAILABLE: 204 startable now
+1-204
+
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      0
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*      7
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      0
+tx2_flax_fibre                     Flax cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_hemp_fibre                     Hemp cultivation and         9      40     0   15%        0      40    1a*      0
+tx2_rope_lay                       Rope laying: strand          9      40     0   15%        0      40    1a*      2
+tx2_twist_insertion                Twist insertion cont         9      50     0   15%        0      40    1a*      0
+tx2_warp_sizing                    Warp sizing: fibre s         9      50  0.20   15%        0      40    1a*      0
+tx2_wool_fibre                     Wool: sheep fibre          9.5      40     0   15%        0      40    1a*      1
+tx2_heddle                         Heddle: warp thread        9.5      40  0.10   15%        0      40    1a*      6
+tx2_beam                           Beam: warp holder an       9.9      40  0.20   15%        0      40    1a*      0
+fin_employment_contract            Contract of employme        10      60     1    5%        0       0      -      1
+tx2_button_horn                    Button: horn materia        10      40  0.10   15%        0      40    1a*      0
+tx2_button_bone                    Button: bone materia      10.1      40  0.10   15%        0      40    1a*      0
+tx2_cashmere                       Cashmere: goat under      10.5      50     0   15%        0      40    1a*      0
+tx2_jute_fibre                     Jute cultivation and      10.5      50     0   15%        0      40    1a*      0
+tx2_mohair                         Mohair: angora goat       10.5      50     0   15%        0      40    1a*      0
+tx2_ramie_fibre                    Ramie cultivation an      10.5      50     0   15%        0      40    1a*      0
+tx2_button_shell                   Button: shell materi      11.5      50  0.15   15%        0      40    1a*      0
+tx2_pin                            Pin: sewing fastener      11.8      40  0.10   15%        0      40    1a*      0
+med_amputation                     Amputation and prost      12.3       0     0   30%      8.2      50  1s1a*      1
+tx2_comb                           Comb: hair grooming         13      50  0.20   15%        0      40    1a*      0
+tx2_cutting_table                  Cutting table: stack        14      60  0.30   15%        0      40    1a*      1
+tx2_currying                       Currying: leather fi        15      60  0.30   15%        0      40    1a*      0
+fin_apprenticeship                 Apprenticeship inden        16      80     1    5%        0       0      -      0
+tx2_splitting                      Splitting: leather l        16      70  0.30   15%        0      40    1a*      0
+tx2_paperclip                      Paperclip: bent wire      16.6      50  0.50   15%        0      40    1a*      0
+tx2_sizing_systems                 Sizing systems: body        18     100     2   15%        0      40    1a*      1
+tx2_hook_and_eye                   Hook and eye: wire f      19.8      50  0.20   15%        0      40    1a*      0
+fin_trademark                      Trademark and mark o        20      80     1   10%        0       0      -      1
+tx2_warping_mill                   Warping mill: warp t        21      60  0.25   15%        0      40    1a*      0
+hom_safety_pin                     Safety pin                24.1      40  0.25    2%       15    0.50      -      0
+tx2_flyer                          Flyer: the earliest       27.9      70  0.30   15%        0      40    1a*      5
+tx2_drawing_pin                    Drawing pin: short f      28.6      50  0.20   15%        0      40    1a*      0
+fin_usury_law                      Usury law and intere        30     100     1    5%        0       0     1s      1
+tx2_corset                         Corset: rigid body s        30     100  0.50   15%        0      40    1a*      0
+hom_toothbrush                     Toothbrush                30.3      60  0.25    2%       30      40      -      1
+tx2_spectacle_frame                Spectacle frame: eye        31      60  0.20   15%        0      40    1a*      0
+fin_arbitrage                      Arbitrage and price       37.5      80     1   10%       25       0      -      0
+fin_bankruptcy                     Bankruptcy law and i        40     120     1   10%        0       0  1s1a*      0
+pwr_oil_shale                      Oil shale and bitume      40.4      80  0.50   15%     31.7      30      -      0
+fin_tariff                         Tariff and import du      47.5     100     2   10%     31.7       0  1s1a*      1
+sea_log_line                       Log line for speed        49.6      30  0.10    5%        0       5      -      0
+fin_monopoly                       Monopoly and exclusi      51.1      80     1   15%        0       0     1s      0
+fin_bimetallism                    Bimetallism and fixe      53.5     100     2   20%        0       0      -      0
+fin_cartel                         Cartel and market sh      53.8     100     1   20%     33.3       0      -      0
+tx2_pattern_grading                Pattern grading: mul        55      80  0.30   15%        0      40    1a*      1
+tx2_printing_block                 Block printing: carv      55.1     100  0.50   15%        0      40    1a*      1
+pwr_peat                           Peat extraction and       57.4     100  0.50   10%       45      40      -      0
+fin_mortgage                       Mortgage and real es      57.5     120     1   15%     38.3       0      -      0
+fin_patent                         Patent and exclusive      61.8     140     2   20%        0       0  1s1a*      2
+fin_guild                          Guild and monopoly c      68.8     100     1   10%       50       0     1s      1
+tex_hand_ginning                   Hand ginning cotton       69.9      30  0.20    6%     43.3       5      -      1
+fin_bill_exchange                  Bill of exchange            70     150     2   15%     46.7       0    1a*     10
+com_optical_codebook               Codebook for optical      71.4     100  0.25   10%        0       0     1s      2
+met_ore_crushing_sorting           Ore dressing: crushi      74.4      20  0.30    5%        0      10      -      1
+prc_straightedge                   Straightedge and ref      81.8      30  0.20    5%        0       5      -      0
+hom_punkah_ceiling                 Ceiling punkah, serv        83      50  0.50    2%        0       0      -      0
+tx2_doll                           Doll: articulated ch      83.5      80     1   15%        0      40    1a*      0
+air_compass_magnetic               Compass for navigati      87.7      30  0.10    5%        0       0      -      0
+fin_trade_union                    Trade union and work      88.1     120     2   30%       50       0  1s1a*      0
+lnd_wheelbarrow                    Wheelbarrow                 89      30  0.50    5%        0      10      -      0
+hom_umbrella                       Umbrella                  89.7      80  0.50    5%     59.8       3      -      0
+cn_gypsum_plaster                  Gypsum plaster finis      97.7      35  0.15    5%       80      25    1a*      0
+pwr_petroleum_seeps                Petroleum seeps and        102     100  0.50   10%       80      50      -      6
+civ_truss_triangulated             Triangulated truss f     108.4     120  0.50   10%        0      10      -      4
+tx2_needle                         Needle: sewing imple     111.8      40  0.10   15%        0      40    1a*      0
+sea_lodestone                      Lodestone knowledge      112.2      20  0.20    5%        0      10     1s     22
+tx2_eye_pointed_needle             Eye-pointed needle:      113.8      50  0.15   15%        0      40    1a*      7
+tx2_carding                        Carding: opening and     115.9      60  0.20   15%        0      40    1a*      4
+ag2_guano                          Guano                      119      30     0    8%      100       0      -      0
+ag2_marling                        Marling                  119.4      25  0.15    2%       30      15      -      0
+hom_latrine_water_trap             Latrine water trap (     124.9      60  0.50    3%        0       5      -      1
+tex_mordanting                     Mordanting dyes with     129.3      40  0.30    8%      150      15      -      7
+tex_canvas                         Canvas cloth             135.4      40  0.25    6%       84      10      -      2
+cn_stone_polish                    Stone polishing and      137.8      30  0.15    5%       60      15    1a*      1
+civ_lightning_conductor            Lightning conductor        142      80  0.40    5%        0       5      -      0
+ag2_liming                         Liming                   149.6      30  0.20    3%       40      20      -      0
+ag2_hopping                        Hopping                    150      40  0.15    4%       80      15      -      0
+air_kite_basic                     Kite                     157.8      20  0.10    5%        0       0      -      0
+ag2_composting                     Composting               159.4      40  0.20    5%       60      25      -      0
+ag2_potash                         Potash                   159.4      40  0.20    5%       80      25      -      0
+hom_flush_toilet_trap              Flush toilet with S-     169.2      80  0.50    5%        0       8      -      0
+civ_gate_sluice                    Sluice gate for wate       183     100  0.60   10%       50      10      -      1
+tex_indigo                         Indigo dyeing            187.8      60  0.40   10%      300      40      -      0
+tr_reefing                         Reefing sails            200.4      50  0.30    8%      200      40    1a*      0
+lnd_hobby_horse                    Hobby horse (pedal-l     202.8      40  0.50   10%       50      20      -      2
+mfg_production_schedule            Production schedule        204     130  0.50   10%        0      40    1a*      2
+tr_wooden_waggonway                Wooden waggonway         204.9      40     2   10%      300      40    1a*      0
+mfg_flux                           Flux                       209      60  0.15    7%        0      40    1a*      2
+mat_obsidian_blade                 Obsidian blade knapp       210      40  0.50    5%      150      20      -      0
+md2_vector_control                 Vector control           210.8     100     2   15%        0      40    1a*      1
+med_surgical_gloves_mask           Surgical gloves and      216.8      40     0    0%        0      50    1a*      0
+mfg_enamelling                     Enamelling               216.8     120  0.30   14%        0      40    1a*      0
+prn_wire_mould_deckle              Wire mould and deckl     217.5     150     1   10%        0      30      -      0
+md2_plaster_cast                   Plaster cast immobil       218     100     1   15%        0      40    1a*      1
+mfg_adhesive_bond                  Adhesive bonding         219.5     140  0.30   15%        0      40    1a*      0
+mfg_japanning                      Japanning                219.5     110  0.25    9%        0      40    1a*      0
+mfg_hot_riveting                   Hot riveting               220      80  0.20   10%        0      40    1a*      3
+mfg_mould                          Casting mould            222.5     120  0.30   12%        0      40    1a*      0
+mfg_cold_riveting                  Cold riveting              223     100  0.20    9%        0      40    1a*      0
+tr_sleeper_ballast                 Sleeper and ballast      223.4      30     1    5%      200      40    1a*     11
+mt2_pelletising                    Pelletising: forming     223.5     110  0.80    8%        0      40    1a*      0
+mt2_timbering_safety               Timbering: wooden su     224.4      80  0.80   11%        0      40    1a*      0
+mfg_painting                       Painting                   225      80  0.20    8%        0      40    1a*      0
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,111
+mt2_earthenware                    Earthenware: low-fir       230      60  0.50    5%        0      40    1a*      0
+tr_block_tackle                    Block and tackle pul     230.2      40  0.30    2%      200      40    1a*      0
+fud_hay_making_storage             Hay making and dry s       235     100     1   20%        0      50      -      1
+cn_post_lintel                     Post and lintel stru     235.6      25  0.40    5%      100      30    1a*      0
+sc2_physics_newtons_laws           Newton's three laws        236     100     4   15%        0      40    1a*      0
+mfg_soft_solder                    Soft soldering           236.4      80  0.20    8%        0      40    1a*      0
+ag2_malting                        Malting                    240      60  0.30    8%      140      30    1a*      1
+ag2_oil_pressing                   Oil pressing             241.6      60  0.30    8%      140      35      -      0
+sc2_institution_doctorate          Doctorate and resear       258     150     8   15%        0      40    1a*      0
+sc2_institution_funded_programme   Funded research prog       258     120     5   15%        0      40    1a*      0
+sc2_institution_referee            Referee and peer rev       258     100     8   15%        0      40    1a*      0
+sc2_institution_research_group     Research group and p       258     100     5   15%        0      40    1a*      0
+sc2_method_hypothesis              Hypothesis and predi       258      90     8   15%        0      40    1a*      0
+sc2_method_negative_result         Negative result and        258      90    20   15%        0      40    1a*      0
+sc2_method_replication             Replication and repe       258      80    10   15%        0      40    1a*      0
+sc2_notation_positional            Positional notation        258       0     0   15%        0      40    1a*      0
+sc2_probability_axioms             Probability axioms a       258     100     4   15%        0      40    1a*     14
+tr_semaphore_signal                Semaphore signal         259.3      40     2    6%      300      40    1a*     11
+sc2_notation_decimal_point         The decimal point co     268.3      20     2   15%        0      40    1a*      0
+com_signal_flags                   Signal flags for mar     269.6      40  0.50    5%      150      20    1a*      0
+if_quill                           Quill pen                271.2      15  0.05    3%       50      20  1s1a*      0
+hom_fireplace_chimney              Fireplace and chimne     271.5     120     1    8%        0      20      -      2
+pwr_coal_seam                      Coal seam and mining     272.8     150     1   25%      214     100      -      5
+sc2_notation_roots                 Root symbols and rad     278.6      40     3   15%        0      40    1a*      0
+civ_town_planning                  Town planning and st     278.8     180     1   10%        0       0  1s1a*      0
+ag2_pyrethrum                      Pyrethrum                  280      70  0.30   12%      170      40    1a*      0
+ag2_refrigeration_ice              Refrigeration - ice        280      70  0.50   10%      200       0    1a*      0
+sc2_notation_exponents             Exponent notation        281.2      45     2   15%        0      40    1a*      0
+hom_sprung_mattress                Sprung mattress          285.5     120     1    8%        0      10      -      0
+sc2_institution_curriculum         Curriculum and cours       294     120     5   15% >>> quit
+       0      40    1a*      0
+sc2_physics_momentum               Momentum and impulse     296.7      80     3   15%        0      40    1a*      0
+sc2_institution_citation           Citation and bibliog     299.3      80     5   15%        0      40    1a*      0
+sc2_physics_kinematics             Kinematics: position     301.9      90     2   15%        0      40    1a*      0
+sc2_physics_gravitation            Newton's law of univ     304.4     100     5   15%        0      40    1a*      0
+tx2_silk_fibre                     Silk: cultivated fib       309      40     0   15%        0      40    1a*      2
+sea_cross_staff                    Cross-staff for lati     310.7      80  0.25   12%        0      20  1s1a*     19
+opt_manometer                      Manometer (pressure      315.9      60  0.10    5%      150       5      -      2
+tx2_mirror                         Mirror: reflective g       316      70  0.30   15%        0      40    1a*      0
+tr_bilge_pump                      Bilge pump               329.2      50  0.30    4%      200      40    1a*      0
+met_investment_casting             Investment casting a     329.8     100  0.80    8%        0      60    1a*      0
+opt_anemometer                     Anemometer (wind spe     337.2      60  0.25    8%      200      15      -      0
+cn_pile_driving                    Pile driving by drop     347.9      40  0.80    8%      140      60    1a*      9
+fud_fish_curing_and_smoking        Large-scale fish cur       363     120     1   10%      400     100      -      0
+mat_papyrus                        Papyrus                  402.5      20     0    0%        0      30      -      0
+sc2_institution_examination        Examination and cred     412.8      80     8   15%        0      40    1a*      0
+sea_sternpost_rudder               Sternpost rudder         427.4     120  0.50   10%        0      50      -     31
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,714
+civ_street_paved                   Paved street and sid     491.7      80  0.80    8%        0      15      -      0
+cn_damp_proof_course               Damp proof course ba       531      50  0.50    7%      160      60    1a*      1
+mat_parchment                      Parchment                536.6      30     0    0%        0      40      -      1
+mfg_drawing_office                 Drawing office           541.8     150  0.50   11%        0      40    1a*      3
+med_herbal_pharmacy                Herbal pharmacy (Dio       580     100  0.50    0%      300     100  1s1a*      0
+arrival_orientation                Six months of listen       600     900  0.50    2%        0       0      -      0
+tr_lateen_sail                     Lateen sail                629      80  0.50    2%      200      40    1a*      7
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*     78
+tx2_scouring                       Scouring: removal of     710.5      40  0.20   15%        0      40    1a*      1
+tx2_dyeing_fibre                   Dyeing in fibre: pre       715      60  0.30   15%        0      40    1a*      0
+tx2_dyeing_yarn                    Dyeing in yarn: skei       718      70  0.30   15%        0      40    1a*      0
+tx2_dyeing_piece                   Dyeing in piece: wov       721      80  0.30   15%        0      40    1a*      0
+tx2_resist_dyeing                  Resist dyeing: patte       733      70  0.30   15%        0      40    1a*      0
+tx2_alum_tanning                   Alum tanning: minera       760      60  0.40   15%        0      40    1a*      0
+civ_sewer_separate                 Separate foul and st       765     120     1   10%        0      30      -      1
+fud_grain_storage_silos            Cylindrical silos fo     830.4     200     1   10%        0     100      -      0
+lnd_coach                          Coach                    837.7     200     2   20%      500     100    1a*      1
+mfg_silver_solder                  Silver soldering         856.1     100  0.25   10%        0      40    1a*      0
+tr_square_rig                      Square rig sails           935      40  0.60    4%      300      40    1a*      0
+sea_skeleton_first                 Skeleton-first hull      967.7     250     1   22%        0     120      -      0
+sea_diving_bell                    Diving bell              968.5     120  0.40   20%      100     100      -      2
+fin_pawnshop                       Pawnshop and secured     1,025      60  0.30   10%      300      50      -      0
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,222
+tx2_bottle                         Bottle: glass contai     1,132      60  0.30   15%        0      40    1a*      0
+air_observation_balloon_tethered   Tethered observation     1,138     120  0.50   10%        0      20      -      8
+tx2_asbestos_cloth                 Asbestos cloth: fire     1,203      80     1   15%        0      40    1a*      0
+met_bloomery_bog_iron              Bloomery smelting of     1,210     100     1   15%      420      90    1a*      0
+sea_keel_deep                      Deep keel and the ab     1,258     100     1   10%      300      60    1a*      0
+sea_lead_sheathing                 Lead sheathing again     1,445       0     0    0%        0     200      -      1
+sc2_institution_textbook           Textbook and codifie     1,470     200     8   15%        0      40    1a*      0
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,030
+fin_trading_post                   Trading post and rem     1,662     100     1   15%      300     100      -      1
+mt2_type_metal                     Type metal: lead-tin     1,883     110  0.80   10%        0      40    1a*      0
+fin_ferry                          Ferry and toll cross     1,916     100     1   12%      250     150      -      5
+fud_whaling_industry               Organized whaling in     2,070     300     1   30%    1,200     500      -      0
+fin_lottery                        Lottery and state ga     2,080     150     2   10%      800     100  1s1a*      0
+fin_gambling_house                 Gambling house and g     2,112     100     1   25%      500     100      -      0
+fin_census                         Census and populatio     2,532     200     2   15%        0     100  1s1a*      1
+fin_inn                            Inn and coaching hou     3,538     100   1.5   12%      300     200      -      0
+fin_marine_insurance               Marine insurance         4,105     200     2   25%      800     200    1a*      3
+fin_postal_service                 Postal service as pa     4,362     180     2   15%      400     300    1a*      3
+mt2_solder_lead_tin                Solder: lead-tin for     4,713     100  0.50    8%        0      40    1a*      0
+fin_racecourse                     Racecourse and pari-     5,332     130     2   18%      500     300    1a*      1
+fin_hotel                          Hotel and commercial     5,824     120     2   15%      400     300    1a*      1
+mt2_amalgamation                   Amalgamation: extrac     6,296      80  0.50    9%        0      40    1a*      0
+fin_theatre_business               Theatre as business      8,848     150     3   20%      600     400    1a*      1
+fin_plantation                     Plantation and large    10,831     200     3   20%      800   1,000    1a*      0
+tx2_watch_case                     Watch case: portable    17,415      80  0.30   15%        0      40    1a*      0
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+[116 AD | -364 den | you:2000 hr | sch 0 art 0 | rep 11] > bye: True
+
+Ended 116 AD. stopped
+Saved to rome_100ad_59.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_59.json

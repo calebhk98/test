@@ -350,6 +350,11 @@ class EconomyMixin:
         if self.capital < -limit and yr - getattr(self, "last_settlement", -999) >= 10:
             self.last_settlement = yr
             self.capital = -limit * 0.35
+            # THE NUMBER ANNOUNCED HAS TO BE THE NUMBER APPLIED. Two settlements
+            # each said "reputation -12" against a reputation of 4.9, and the
+            # second did nothing at all - a break tester checked, and was right
+            # that a penalty which cannot be paid should not be quoted.
+            _rep_hit = min(12.0, max(0.0, self.reputation))
             self.reputation = max(0.0, self.reputation - 12)
             # AND NOBODY LENDS TO YOU FOR A WHILE. Without this, walking away
             # from a debt cost a little standing and nothing else, and standing
@@ -365,9 +370,11 @@ class EconomyMixin:
             # cost your name, is the part worth reading.
             self.log.append((yr, "INSOLVENCY SETTLED: most of the debt is written "
                                  "off and you still owe about %s denarii. Your "
-                                 "name is worth less for it (reputation -12), and "
+                                 "name is worth less for it (reputation %s), and "
                                  "you keep your knowledge and your practice"
-                                 % "{:,.0f}".format(limit * 0.35)))
+                                 % ("{:,.0f}".format(limit * 0.35),
+                                    "-%.1f" % _rep_hit if _rep_hit > 0.05
+                                    else "already at nothing, so no further")))
 
     def stall_diagnosis(self):
         """None if the run is going somewhere; otherwise what is wrong and what
@@ -753,10 +760,13 @@ class EconomyMixin:
             # rows, got 166.7 + 66.7 = 233.4 under a stated 233.5, and filed
             # the claim as false in one line. Push the residue into the largest
             # row, which is the one place a tenth cannot be noticed.
-            resid = round(self.revenue() - sum(out.values()), 4)
-            if out and abs(resid) > 1e-9:
+            # AT ONE DECIMAL, like every other row. Pushing the raw residue in
+            # wrote 166.8394 onto a line the player reads; the rows and the
+            # total both live at a tenth, so the correction has to as well.
+            resid = round(round(self.revenue(), 1) - sum(out.values()), 1)
+            if out and abs(resid) > 0.049:
                 big = max(out, key=lambda k: abs(out[k]))
-                out[big] = round(out[big] + resid, 4)
+                out[big] = round(out[big] + resid, 1)
         return out
 
     # Of the auto-granted nodes that carry revenue, seven are medicine and two

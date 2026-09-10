@@ -3435,6 +3435,50 @@ check("...and the after figure is the one `state` prints, to the decimal",
       "net_after_project_spend" in _st2[0], list(_st2[0])[:5])
 
 
+# --- BREAK: `why med_cataract_couching` said "REVENUE: 500 den/yr" beside a
+# ledger crediting 166.7 for the same node - `why` overstating income
+# threefold, as a break tester put it.
+_rwy, _, _ = proto([{"cmd": "why", "id": "med_cataract_couching"}])
+check("why says what a practice node pays YOU, not only what the trade is worth",
+      _rwy[0].get("but_it_pays_YOU") is not None
+      and _rwy[0]["but_it_pays_YOU"] < _rwy[0]["revenue"],
+      (_rwy[0].get("revenue"), _rwy[0].get("but_it_pays_YOU")))
+_st_r, _, _ = proto([{"cmd": "money"}])
+_led = _st_r[0].get("where_the_money_comes_from") or {}
+check("...and that figure is the ledger's, to the decimal",
+      abs(_rwy[0]["but_it_pays_YOU"]
+          - _led.get("med_cataract_couching", -1)) < 0.11,
+      (_rwy[0].get("but_it_pays_YOU"), sorted(_led)[:4]))
+_rwy2, _, _ = proto([{"cmd": "why", "id": "horse_collar"}])
+check("...and a node that is NOT your practice carries no such line",
+      _rwy2[0].get("but_it_pays_YOU") is None, _rwy2[0].get("but_it_pays_YOU"))
+
+# --- BREAK: `ventures` "1 scholars, 1 craftsmen" on the same screen as
+# `labour`'s "ON YOUR STAFF: nobody". Three screens, three counts.
+_rv2, _, _ = proto([{"cmd": "ventures"}, {"cmd": "labour"}])
+check("the free-hands count says that one of them is you",
+      _rv2[0].get("one_of_each_of_those_is_you") is True
+      and _rv2[1].get("you_employ_in_total") == 0,
+      (_rv2[0].get("people_free_to_run_something_new"),
+       _rv2[1].get("you_employ_in_total")))
+
+# --- BREAK: two settlements each announced "reputation -12" against a
+# reputation of 4.9, and the second did nothing at all.
+s_ins = sim(capital=-99999.0)
+s_ins.reputation = 4.9
+s_ins.insolvent_years = 30
+s_ins.enforce_credit_limit(150)
+_m1 = [m for _, m in s_ins.log if "INSOLVENCY" in m][-1]
+check("a reputation penalty announces what it actually took",
+      "-4.9" in _m1, _m1)
+s_ins.capital = -99999.0
+s_ins.insolvent_years = 30
+s_ins.enforce_credit_limit(200)
+_m2 = [m for _, m in s_ins.log if "INSOLVENCY" in m][-1]
+check("...and says plainly when there was nothing left to take",
+      "already at nothing" in _m2, _m2)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
