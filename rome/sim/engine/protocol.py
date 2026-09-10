@@ -3144,7 +3144,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, why = s.stop_project(k)
         if not ok:
             return {"ok": False, "error": why}
-        return {"ok": True, "stopped": k}
+        return {"ok": True, "stopped": k, "what_happened": why}
 
     if op == "bounty":
         if ended:

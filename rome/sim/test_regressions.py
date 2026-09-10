@@ -4203,6 +4203,41 @@ check("restoring a shop the staffing rule shut costs the tenth it promised",
       (_cap_rs - s_rs.capital, _fullfee))
 
 
+# --- BREAK: `stop` burned the money as well as the hours, "same as a real
+# abandoned enterprise" - so when the creditors were about to take everything,
+# stopping something yourself cost exactly as much as letting them, and `stop`
+# was never the right move. The site does not un-dig itself either way.
+s_sp = sim()
+s_sp.start_project("identity_cover")
+for _ in range(2):
+    s_sp.step()
+_spent_sp = s_sp.active["identity_cover"]["spent"]
+_ok_sp, _why_sp = s_sp.stop_project("identity_cover")
+check("stopping a project keeps the money already paid",
+      _ok_sp and abs(s_sp.paid_towards.get("identity_cover", 0.0)
+                     - _spent_sp) < 0.5,
+      (s_sp.paid_towards, _spent_sp))
+check("...and says so",
+      "comes off the bill" in str(_why_sp), _why_sp)
+s_sp.capital = 50000.0
+s_sp.start_project("identity_cover")
+check("...and beginning again bills only the remainder",
+      abs(s_sp.active["identity_cover"]["cost_left"]
+          - (s_sp.project_cost("identity_cover") - _spent_sp)) < 0.5,
+      s_sp.active["identity_cover"]["cost_left"])
+check("...but the hours really are gone: that was your year",
+      abs(s_sp.active["identity_cover"]["ph_left"]
+          - NODES["identity_cover"]["ph"]) < 1e-6,
+      s_sp.active["identity_cover"]["ph_left"])
+# And the affordability gate has to test the REMAINDER, or a nearly-paid-for
+# project is refused for a bill it no longer owes.
+s_sp2 = sim()
+s_sp2.paid_towards = {"identity_cover": s_sp2.project_cost("identity_cover") - 5.0}
+check("...and a nearly-paid project is not refused for its gross price",
+      s_sp2.start_project("identity_cover")[0],
+      s_sp2.start_reason("identity_cover"))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

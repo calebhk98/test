@@ -877,7 +877,16 @@ class ProjectsMixin:
         # fiction, and the limit the player read a second earlier has to mean
         # something.
         price = self.project_cost(k)
-        owed = sum(st.get("cost_left") or 0.0 for st in self.active.values())
+        # WHAT IS LEFT TO PAY, not the whole bill. Money already sunk into this
+        # node - by you stopping it, or by the creditors stopping it - comes
+        # off, and testing against the gross would refuse a project that is
+        # nearly paid for. See stop_project.
+        _paid_now = min(price, max(0.0, (getattr(self, "paid_towards", None)
+                                         or {}).get(k, 0.0)))
+        price -= _paid_now
+        # sorted(): summing floats over a dict whose keys came from a set.
+        owed = sum(st.get("cost_left") or 0.0
+                   for st in (self.active[x] for x in sorted(self.active)))
         ceiling = max(0.0, self.capital) + self.credit_limit()
         # `self.active and` used to guard this, which exempted the FIRST
         # project from the only affordability test there is. A break tester
@@ -897,14 +906,15 @@ class ProjectsMixin:
         # creditors stop a project the money already sunk into it is kept
         # against the node, and this is where it comes back off the bill.
         _paid = getattr(self, "paid_towards", None) or {}
-        _already = min(price, max(0.0, _paid.pop(k, 0.0)))
+        _paid.pop(k, None)          # spent once; the figure is _paid_now above
+        _already = _paid_now
         # A THING YOU ARE REBUILDING IS NOT A THING SITTING IDLE. If the
         # knowledge was destroyed and only the mothball entry survived, that
         # entry is stale the moment you begin again - and while it stands,
         # `available` hides the node and `restore` claims it can reopen it.
         self.mothballed.discard(k)
         self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0,
-                              spent=_already, cost_left=price - _already)
+                              spent=_already, cost_left=price)
         if _already > 0.5:
             self.log.append((self.year, "%s begun again; the %s denarii already "
                                         "paid on it before comes off the bill"
@@ -918,14 +928,31 @@ class ProjectsMixin:
         return True, None
 
     def stop_project(self, k):
-        """Abandon a project the player started. Money and hours already spent
-        on it are gone, same as they would be for a real abandoned enterprise;
-        there is no refund."""
+        """Stop a project you started. Your HOURS are gone; the money stands.
+
+        This used to burn both, "same as a real abandoned enterprise", and a
+        break tester pointed out what that does to the decision: when the
+        creditors are about to take everything, stopping something yourself
+        costs exactly as much as letting them, so no branch saves you and
+        `stop` is never the right move. The site does not un-dig itself either
+        way. What you paid stands against the node - the same credit
+        enforce_credit_limit keeps - and comes off the bill if you begin again.
+        The hours really are gone: that is your year, and you spent it.
+        """
         if k not in self.active:
             return False, "not active"
-        del self.active[k]
+        st = self.active.pop(k)
         self.bountied.discard(k)
-        return True, None
+        _paid = getattr(self, "paid_towards", None)
+        if _paid is None:
+            _paid = self.paid_towards = {}
+        kept = max(0.0, st.get("spent", 0.0))
+        if kept > 0.5:
+            _paid[k] = _paid.get(k, 0.0) + kept
+        return True, ("stopped. The %s denarii already paid stands to your "
+                      "credit and comes off the bill if you begin again; the "
+                      "hours are gone" % "{:,.0f}".format(kept)
+                      if kept > 0.5 else "stopped; nothing had been paid yet")
 
     # -- main loop ----------------------------------------------------------
 
