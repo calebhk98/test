@@ -278,6 +278,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
     def step(self):
         c = self.cfg
         yr = self.year
+        # WHERE SCANDAL STOOD WHEN THE PLAYER LAST LOOKED. `state` prints the
+        # chance of being denounced from the CURRENT scandal, and scandal moves
+        # DURING the step - so a break tester read "scandal 21.9 ... 0% chance
+        # of being denounced this year", pressed step once, and the same batch
+        # printed the first warning and "RUN ENDS: denounced: as a sorcerer".
+        # The figure was never wrong; it was answering about a year that had
+        # already gone. A player needs the direction as well as the level, and
+        # this is the only place that knows both.
+        self.scandal_last_year = self.scandal
 
         # 0. PEOPLE WHOSE APPRENTICESHIP ENDED. This block used to sit at the
         #    very BOTTOM of step(), after the year's work had already been

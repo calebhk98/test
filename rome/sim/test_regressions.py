@@ -3965,8 +3965,28 @@ _rs, _, _ = proto([{"cmd": "stuck"}])
 check("there is one command that answers why you are not getting on",
       _rs and _rs[0].get("ok") and "what_is_holding_you_up" in _rs[0],
       list(_rs[0])[:5] if _rs else None)
-check("...and on turn one it says nothing is holding you up",
-      isinstance(_rs[0]["what_is_holding_you_up"], str), _rs[0]["what_is_holding_you_up"])
+# THIS CHECK USED TO ASSERT THE BUG. It required turn one to report nothing
+# holding you up - and turn one is precisely when nothing is running, which a
+# later play tester typed `stuck` to find out and was told "nothing: you have
+# work in hand, money to pay for it and people to do it". It was the first
+# thing they typed and it was false.
+check("...and on turn one it says you have started nothing",
+      any(r.get("what") == "you have started nothing"
+          for r in _rs[0]["what_is_holding_you_up"]),
+      _rs[0]["what_is_holding_you_up"])
+check("...and names something you could start instead",
+      any("start " in str(r.get("why")) for r in _rs[0]["what_is_holding_you_up"]),
+      _rs[0]["what_is_holding_you_up"])
+# ...and once something IS running and nothing is wrong, it says so plainly
+# without claiming work in hand that is not there.
+_s_ok = sim(capital=500000.0)
+_s_ok.start_project("identity_cover")
+_rs_ok = S._agent_dispatch(_s_ok, NODES, {"cmd": "stuck"})
+check("...and with work in hand and money it says nothing is holding you up",
+      isinstance(_rs_ok.get("what_is_holding_you_up"), str)
+      or all(r.get("what") != "you have started nothing"
+             for r in _rs_ok["what_is_holding_you_up"]),
+      _rs_ok.get("what_is_holding_you_up"))
 check("...and names the cheapest thing you could actually begin",
       _rs[0].get("and_the_cheapest_thing_you_could_start_now") in NODES,
       _rs[0].get("and_the_cheapest_thing_you_could_start_now"))

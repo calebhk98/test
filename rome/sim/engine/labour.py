@@ -680,7 +680,18 @@ class LabourMixin:
         self.employees[trade] = self.employees.get(trade, 0.0) + float(n)
         self._add_labour_pressure(trade, float(n) * self.HOURS_PER_PERSON_YEAR)
         self._resync_pools()
-        return True, None
+        # SAY HOW MANY, AND HOW MANY YOU NOW HAVE. This returned None, so the
+        # only thing a player saw was "hired: scholar" - no number. A play
+        # tester asked for eight, and did not discover for twenty years that
+        # they had one, by which time half the tree was refusing them for want
+        # of two trained scholars. A verb that takes a quantity has to report
+        # the quantity.
+        return True, ("%g %s%s taken on for %s denarii (a finder's fee and the "
+                      "first year in advance). You now have %.1f, and %.2f "
+                      "household place(s) left"
+                      % (n, trade, "" if n == 1 else "s",
+                         "{:,.0f}".format(fee), self.employees[trade],
+                         max(0.0, self.household_room())))
 
     def fire(self, trade, n):
         """Let staff go. Their wages stop; so does what they were doing.

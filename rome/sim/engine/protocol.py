@@ -430,6 +430,21 @@ def _agent_state(s, nodes, cmd=None):
         "scandal_danger": s.cfg["suspicion_danger"],
         "chance_of_being_denounced_this_year": round(
             max(0.0, (s.scandal - s.cfg["suspicion_danger"]) / 60.0), 4),
+        # AND WHICH WAY IT IS GOING. The chance above is computed from where
+        # scandal stands now, and the roll happens after a year in which it
+        # moves - so the figure is honest about today and says nothing about
+        # the step you are about to take. A tester crossed from 21.9 to 29 and
+        # was denounced inside one step, having last read "0%".
+        "scandal_now": round(s.scandal, 1),
+        "scandal_rose_by_last_year": (
+            round(s.scandal - s.scandal_last_year, 1)
+            if getattr(s, "scandal_last_year", None) is not None else None),
+        "years_until_scandal_crosses_the_line": (
+            int(max(0.0, (s.cfg["suspicion_danger"] - s.scandal))
+                / (s.scandal - s.scandal_last_year)) + 1
+            if (getattr(s, "scandal_last_year", None) is not None
+                and s.scandal - s.scandal_last_year > 0.05
+                and s.scandal < s.cfg["suspicion_danger"]) else None),
         "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
@@ -1416,13 +1431,26 @@ def _fmt_num(v):
 
 
 def _pct(v):
-    """A 0..1 fraction as a percentage a person reads at a glance."""
+    """A 0..1 fraction as a percentage a person reads at a glance.
+
+    NEVER ROUND A FATAL CHANCE TO ZERO. Two play testers were ended by
+    something this had just printed as 0%: "1% chance something lands this
+    year, of which 0% would end the run", and then the run ended. A number
+    that means "this can kill you" and prints as "this cannot happen" is the
+    one number in the game that must not be rounded down. Anything that can
+    happen at all prints as at least "<1%".
+    """
     if v is None:
         return "-"
     try:
-        return "%.0f%%" % (100.0 * float(v))
+        f = 100.0 * float(v)
     except (TypeError, ValueError):
         return str(v)
+    if f <= 0.0:
+        return "0%"
+    if f < 0.5:
+        return "<1%"
+    return "%.0f%%" % f
 
 
 def _wrap(text, width=76, indent=""):
@@ -1599,6 +1627,13 @@ def render_state(out):
                      "down and it falls a tenth a year on its own)"
                      % (_fmt_num(out["scandal_danger"]),
                         _pct(out.get("chance_of_being_denounced_this_year"))))
+            # THE DIRECTION, not only the level. See _agent_state.
+            if out.get("years_until_scandal_crosses_the_line") is not None:
+                L.append("    and RISING: up %s last year. At that rate you "
+                         "cross the line in about %s year(s), and the chance "
+                         "above is only true of where you stand today"
+                         % (_fmt_num(out.get("scandal_rose_by_last_year")),
+                            _fmt_num(out["years_until_scandal_crosses_the_line"])))
         L.append("  EMINENCE is dangerous above %s (settles near %s if nothing "
                  "changes; %s chance something lands this year, of which %s "
                  "would end the run)"
@@ -2115,6 +2150,13 @@ def render_labour(out):
                     _fmt_num(out.get("room_for_more_people"))))
         if out.get("what_raises_that_room"):
             L.append(_wrap("  to make room: " + str(out["what_raises_that_room"]),
+                           indent="  "))
+        # THE OTHER CEILING, which is not room and cannot be built past. A
+        # tester met it only inside a `hire` refusal in year 463 of a 500-year
+        # game, and called it the single thing that decided the run.
+        if out.get("and_how_many_of_the_lettered_trades_this_society_supplies"):
+            L.append(_wrap("  the lettered trades: "
+                           + out["and_how_many_of_the_lettered_trades_this_society_supplies"],
                            indent="  "))
     L.append("")
     L.append("YOU COULD HIRE: " + (", ".join(out.get("you_could_hire_here") or []) or "nobody new"))
@@ -3124,7 +3166,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "start":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s); nothing more can be started" % ended}
+            return {"ok": False, "error": "the run has ended (%s); nothing more can be started. 'state' shows where you finished and how far you got" % ended}
         k = cmd.get("id")
         if k not in nodes:
             return {"ok": False, "error": "unknown node id %r. use {\"cmd\":\"available\"} "
@@ -3199,7 +3241,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "bounty":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s); nothing more can be bought" % ended}
+            return {"ok": False, "error": "the run has ended (%s); nothing more can be bought. 'state' shows where you finished and how far you got" % ended}
         k = cmd.get("id")
         if k not in nodes:
             return {"ok": False, "error": "unknown node id %r" % k}
@@ -3230,7 +3272,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "buy":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s); nothing more can be bought" % ended}
+            return {"ok": False, "error": "the run has ended (%s); nothing more can be bought. 'state' shows where you finished and how far you got" % ended}
         what = cmd.get("what")
         # THE SAME READER AS EVERY OTHER QUANTITY. This had its own float()
         # and so missed the guards _qty carries: a break tester bought
@@ -3338,7 +3380,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "work":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         # WHAT THE PRACTICE WAS EARNING BEFORE YOU TOOK THE JOB. Selling your
         # hours takes them out of your own surgery, which is where most of your
         # income comes from at the start - so a play tester earned 80.1 for 500
@@ -3470,6 +3512,37 @@ def _agent_dispatch_inner(s, nodes, cmd):
                            % (len(_road), _near[0],
                               s.start_reason(_near[0])[1]),
                     "the_nearest_few": _near[:5]})
+        # STARTING NOTHING IS THE COMMONEST WAY TO GET NOWHERE, and this
+        # command - whose whole job is "why you are not getting on" - said
+        # "nothing: you have work in hand, money to pay for it and people to do
+        # it" to a play tester on turn one, with no project running at all. It
+        # was the first thing they typed and it was false.
+        if not s.active:
+            _cheap = (min(_afford or _startable, key=lambda k: s.project_cost(k))
+                      if (_afford or _startable) else None)
+            reasons.append({"what": "you have started nothing",
+                            "why": ("no project is in hand, so no year of yours "
+                                    "is being spent on one. %s"
+                                    % ("'start %s' would begin the cheapest "
+                                       "thing you can pay for today." % _cheap
+                                       if _cheap else
+                                       "and nothing in front of you can be "
+                                       "begun, which the rows below explain."))})
+        # AND WHAT YOU HAVE BUILT AND NEVER SWITCHED ON. A break tester read
+        # "NOTHING YOU COULD BEGIN" while two concerns sat finished and closed
+        # that between them raised their revenue by 71%.
+        _shut = sorted(k for k in s.done
+                       if s.is_venture(k) and k not in s.operating
+                       and nodes[k]["rev"] > nodes[k]["up"])
+        if _shut:
+            _best = max(_shut, key=lambda k: nodes[k]["rev"] - nodes[k]["up"])
+            reasons.append({"what": "things you built and never opened",
+                            "why": "%d finished concern(s) are shut and earning "
+                                   "nothing. The best of them is %s, which would "
+                                   "earn %s a year against %s of upkeep: 'open %s'"
+                                   % (len(_shut), _best,
+                                      "{:,.0f}".format(nodes[_best]["rev"]),
+                                      "{:,.0f}".format(nodes[_best]["up"]), _best)})
         if not _startable:
             reasons.append({"what": "nothing you could begin",
                             "why": "everything in front of you is either built, "
@@ -3510,9 +3583,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
         out = {"ok": True,
                "you_could_begin": len(_startable),
                "and_could_pay_for": len(_afford),
-               "what_is_holding_you_up": reasons or "nothing: you have work in "
-                                                    "hand, money to pay for it "
-                                                    "and people to do it",
+               "what_is_holding_you_up": reasons or (
+                   "nothing: %d project(s) in hand, money to pay for them and "
+                   "people to do them" % len(s.active)),
                "and_the_cheapest_thing_you_could_start_now": (
                    min(_startable, key=lambda k: s.project_cost(k))
                    if _startable else None)}
@@ -3672,7 +3745,23 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "household_places_in_all":
                     round(s.headcount() + max(0.0, s.household_room()), 2),
                 "room_for_more_people": round(max(0.0, s.household_room()), 2),
-                "what_raises_that_room": s._staff_advice("artisans"),
+                # _room_advice, NOT _staff_advice. This is `labour`, and
+                # `state` sends a player here with the words "'labour' says
+                # what raises it" - meaning the CEILING on people. It answered
+                # with _staff_advice, which names hiring, commissioning and
+                # buying, every one of which needs the room you have not got.
+                # Two play testers followed it in a circle; one found the real
+                # answer only by guessing the word "workshop" in a search.
+                # _room_advice exists for exactly this and was written after
+                # the same complaint about the hire refusal.
+                "what_raises_that_room": s._room_advice(),
+                "and_how_many_of_the_lettered_trades_this_society_supplies": (
+                    "%s: this society's literacy will never let you HIRE more "
+                    "than %.1f of them in total, however rich you are. Printing, "
+                    "paper, schools and academies raise it, and a school or an "
+                    "academy grants scholars outright on top."
+                    % (", ".join(sorted(s.LITERATE_TRADES)),
+                       s.literate_capacity("scholar"))),
                 "slaves": s.slaves, "freedmen": s.freedmen,
                 "annual_wage_bill": round(s.wage_bill(), 1),
                 "craftsmen_on_your_staff": round(s.artisans, 2),
@@ -3698,7 +3787,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "hire":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         if not s.founder_alive and s.directors_extra < 0.5:
             return {"ok": False,
                     "error": "there is nobody left to take anyone on: the "
@@ -3730,7 +3819,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "train":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         n, err = _qty(cmd, "n", 1)
         if err:
             return {"ok": False, "error": err + ". Nothing was changed."}
@@ -3743,7 +3832,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op in ("commission", "job"):
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         hours, err = _qty(cmd, "hours")
         if err:
             return {"ok": False, "error": err + ". Nothing was changed."}
@@ -3833,7 +3922,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op in ("close", "close_mine"):
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         ok, msg = s.close_mine(cmd.get("material") or cmd.get("what"))
         if not ok:
             return {"ok": False, "error": msg}
@@ -3842,7 +3931,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "withdraw":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         ok, msg = s.withdraw_from_public_life()
         if not ok:
             return {"ok": False, "error": msg}
@@ -3853,7 +3942,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "bribe":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         amount, err = _qty(cmd, "amount")
         if err:
             return {"ok": False, "error": err + ". Nothing was changed."}
@@ -3864,7 +3953,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "open":
         if ended:
-            return {"ok": False, "error": "the run has ended (%s)" % ended}
+            return {"ok": False, "error": "the run has ended (%s). 'state' shows where you finished and how far you got" % ended}
         k = cmd.get("id")
         if not isinstance(k, str):
             return {"ok": False, "error": 'give an id, e.g. {"cmd":"open","id":"fin_pawnshop"}'}

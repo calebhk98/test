@@ -945,12 +945,24 @@ class ProjectsMixin:
             return True, None
         si = self.state_interest(n)
         if si < -0.4 and not self.running("patron_local"):
+            # NAME THE NODE, by the word you would type. "Get at least a local
+            # patron first" was the whole message, and a play tester who read
+            # it several times never connected it to `patron_local`, which was
+            # sitting startable in the list in front of them the entire time.
             return False, ("the state is wary of this (state interest %.1f); "
-                           "get at least a local patron first" % si)
+                           "get at least a local patron first: 'start "
+                           "patron_local'%s"
+                           % (si, "" if "patron_local" not in self.done else
+                              ", which you have built - 'open patron_local' to "
+                              "put his name behind you"))
         if si < -1.2 and not (self.running("patron_senatorial") or self.protection > 0.45):
             return False, ("the state actively opposes this (state interest %.1f); "
-                           "you need senatorial patronage, or protection above 0.45 "
-                           "(you have %.2f)" % (si, self.protection))
+                           "you need senatorial patronage ('start "
+                           "patron_senatorial'%s), or protection above 0.45 "
+                           "(you have %.2f)"
+                           % (si, ", which you have built - 'open "
+                              "patron_senatorial'" if "patron_senatorial"
+                              in self.done else "", self.protection))
         return True, None
 
     def can_start(self, k, _memo=None):
