@@ -1522,6 +1522,12 @@ def render_money(out):
             label = k[1:].replace("_", " ") if k.startswith("_") else k
             L.append("    %-38s %s" % (label, _fmt_num(v)))
         L.append("    %-38s %s" % ("(these add up to the revenue above)", ""))
+        if out.get("still_building_up_custom"):
+            L.append(_wrap("STILL BUILDING UP: " + out["still_building_up_custom"],
+                           indent="    "))
+        if out.get("about_your_own_practice"):
+            L.append(_wrap("YOUR PRACTICE: " + out["about_your_own_practice"],
+                           indent="    "))
     costs = out.get("what_it_costs_you") or {}
     if costs:
         L.append("Costs:")
@@ -2649,10 +2655,13 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op in ("money", "ledger", "accounts"):
         fixed = s.upkeep() + s.living_cost() + s.mine_operating_cost()
+        _ramp, _prac = s.still_ramping(), s.practice_note()
         return {"ok": True,
                 "capital": round(s.capital, 1),
                 "revenue": round(s.revenue(), 1),
                 "where_the_money_comes_from": s.revenue_sources(),
+                **({"still_building_up_custom": _ramp} if _ramp else {}),
+                **({"about_your_own_practice": _prac} if _prac else {}),
                 "what_it_costs_you": {
                     "upkeep_of_what_you_built": round(s.upkeep(), 1),
                     "living_and_appearances": round(s.living_cost() - s.wage_bill(), 1),

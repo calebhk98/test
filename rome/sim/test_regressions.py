@@ -704,6 +704,7 @@ check("creditors' seizure mothballs, and NAMES, what it takes",
 
 # --- C: a repossessed work must not look like fresh research
 s = sim(capital=100000.0)
+s.done.add(_LOSS); s._done_changed()      # you BUILT it; that is what mothballing means
 s.mothballed.add(_LOSS)
 ok, why = s.start_reason(_LOSS)
 check("a mothballed work refuses to be started as if it were new research",
@@ -711,6 +712,40 @@ check("a mothballed work refuses to be started as if it were new research",
 avail = S._agent_available(s, NODES, {"all": True})
 check("a mothballed work does not appear in available looking like new research",
       not any(e["id"] == _LOSS for e in avail["available"]), avail["count"])
+
+# --- ROUND 8: THE DEADLOCK. A play tester lost precision_three_plate to a
+# third-century sack and could not get it back by any verb: `start` sent them
+# to `restore`, `restore` said they no longer knew how, `open` said they had
+# not built it, `mothball` said there was nothing to shut. That node gates the
+# whole precision branch, so `available` read "0 startable now" for a hundred
+# and eighty years while they held a quarter of a billion denarii.
+s_dl = sim(capital=100000.0)
+s_dl.mothballed.add(_LOSS)                # mothballed, and NOT known: the trap
+ok_dl, why_dl = s_dl.start_reason(_LOSS)
+check("a work whose knowledge was destroyed can be built again",
+      ok_dl, why_dl)
+ok_rs, why_rs = s_dl.restore_work(_LOSS)
+check("...and restore says to build it, not that it cannot be restored",
+      not ok_rs and "start" in why_rs, why_rs)
+_av_dl = S._agent_available(s_dl, NODES, {"all": True})
+check("...and it is visible in available, not hidden behind a stale mothball",
+      any(e["id"] == _LOSS for e in _av_dl["available"]), _av_dl["count"])
+s_dl.start_project(_LOSS)
+check("...and starting it clears the stale mothball entry",
+      _LOSS not in s_dl.mothballed and _LOSS in s_dl.active,
+      (_LOSS in s_dl.mothballed, _LOSS in s_dl.active))
+
+# The path that created it: insolvency abandonment discarded from `done` AND
+# added to `mothballed`, the same pair of lines already fixed twice elsewhere.
+s_ab = sim(capital=-100000.0)
+s_ab.done.add(_LOSS); s_ab._done_changed()
+s_ab.operating.add(_LOSS)
+s_ab.revenue = lambda: 0.0
+for _ in range(6):
+    s_ab.step()
+check("no path in the engine leaves a work mothballed but unknown",
+      not (s_ab.mothballed - s_ab.done),
+      sorted(s_ab.mothballed - s_ab.done)[:4])
 
 # --- D1: auto_hire must not take on staff this year's income cannot carry
 s = sim(civ="rome_100ad", capital=400.0, manual=False, events=False)
@@ -2639,6 +2674,175 @@ check("a save played without fog cannot be loaded into a fogged game",
 check("...and refusing it does not kill the session", _rc8 == 0)
 if os.path.exists(_svp):
     os.remove(_svp)
+
+# ======================================================================
+# ROUND 8b: the game saying what it did, and two attribute-level defects.
+# ======================================================================
+
+# --- BREAK: the patron-death guard read `_last_patron_death` and the body set
+# `last_patron_death`, so the 25-year cooling-off never applied and the 5%
+# roll fired every year for ever - the exact bug its comment claims to fix.
+s_pd = sim(capital=50000.0, events=True)
+s_pd.done.add("patron_local"); s_pd._done_changed()
+s_pd.rng = random.Random(4)
+_deaths = []
+for _y in range(100, 400):
+    s_pd.year = _y
+    _before = len(s_pd.log)
+    s_pd._random_events(_y)
+    _deaths += [m for _, m in s_pd.log[_before:] if "patron dies" in m]
+check("a patron cannot die twice inside the cooling-off period",
+      len(_deaths) <= 300 // 25 + 1,
+      "%d deaths in 300 years" % len(_deaths))
+_years = [y for y, m in s_pd.log if "patron dies" in m]
+check("...and the gap between them is at least the 25 years it promises",
+      all(b - a > 25 for a, b in zip(_years, _years[1:])), _years)
+check("a patron's death names what it cost you",
+      not _years or any("courting cost" in m and "protection falls" in m
+                        for _, m in s_pd.log if "patron dies" in m),
+      [m for _, m in s_pd.log if "patron dies" in m][:1])
+
+# --- BREAK: a fire and a raid announced themselves and left the player to
+# diff their own state to find out whether anything had happened.
+s_fx = sim(capital=10000.0, events=True)
+s_fx.rng = random.Random(7)
+for _y in range(100, 200):
+    s_fx.year = _y
+    s_fx._random_events(_y)
+_dis = [m for _, m in s_fx.log if "fire in" in m or "banditry" in m]
+check("a fire or a raid says what it took",
+      _dis and all("denarii" in m or "holding none" in m for m in _dis),
+      _dis[:2])
+
+# --- BREAK: shed_loss_makers scanned `done`, so it could unlearn a concern
+# that was already shut - saving nothing, since upkeep follows `operating`.
+# (The positive cases are checked in round two, section C.)
+
+# --- BREAK: auto_open threw away every refusal open_venture handed it, so a
+# concern earning 150 against 15 of upkeep sat shut for six years in silence.
+s_ao = sim(capital=1.0)
+# Dear to open and plainly worth opening: auto_open must refuse it and SAY SO.
+_v = max((k for k in NODES if NODES[k]["rev"] > NODES[k]["up"] > 0),
+         key=lambda k: NODES[k]["rev"] - NODES[k]["up"])
+s_ao.done.add(_v); s_ao._done_changed()
+_opened = s_ao.auto_open_ventures()
+check("auto_open opens nothing it cannot pay the capex on",
+      _v not in _opened, (_v, _opened[:3]))
+check("auto_open says why the best concern is still shut",
+      any(_v in m for _, m in s_ao.log), [m for _, m in s_ao.log][:2])
+
+# --- BREAK: `buy nitre`. Saltpetre is made, not mined, and there was no
+# command that made any: only step(), which took 5% of a MANUAL player's
+# capital every year they were short, silently.
+s_ni = sim(capital=100000.0)
+_laid = s_ni.build_nitre(20000)
+check("nitre beds can be laid by hand, and cost what the quote says",
+      _laid == 20000 and abs(s_ni.capital
+                             - (100000.0 - 20000 * s_ni.NITRE_COST_PER_M2
+                                * s_ni.price_index)) < 1e-6,
+      (_laid, s_ni.capital))
+check("...and they actually supply saltpetre",
+      s_ni._own_material_supply("nitre") > 0, s_ni._own_material_supply("nitre"))
+s_ni2 = sim(capital=10.0)
+check("...and one you cannot afford changes nothing at all",
+      s_ni2.build_nitre(20000) == 0.0 and s_ni2.nitre_bed_m2 == 0.0
+      and s_ni2.capital == 10.0,
+      (s_ni2.nitre_bed_m2, s_ni2.capital))
+_r_ni, _, _ = proto([{"cmd": "quote", "what": "nitre", "n": 20000},
+                     {"cmd": "buy", "what": "nitre", "n": 20000},
+                     {"cmd": "buy", "what": "nitre", "n": -1}])
+check("the nitre quote and the nitre purchase agree on the price",
+      _r_ni[0].get("to_lay_it") is not None
+      and _r_ni[1].get("ok") is False,        # 400 denarii cannot buy 40,000
+      (_r_ni[0].get("to_lay_it"), _r_ni[1].get("error")))
+check("a negative nitre order is refused, not credited",
+      _r_ni[2].get("ok") is False, _r_ni[2])
+
+# --- BREAK: a MANUAL player's capital was spent on nitre beds by step().
+s_mn = sim(capital=100000.0, manual=True)
+s_mn.binding = "saltpetre"
+_cap_before = s_mn.capital
+s_mn.policy["auto_mine"] = False
+for _ in range(3):
+    s_mn.step()
+check("with the automatic policies off, nothing lays a nitre bed but you",
+      s_mn.nitre_bed_m2 == 0.0, s_mn.nitre_bed_m2)
+
+# --- BREAK: "SHORT OF SALTPETRE: work at 5% of plan" for thirty years, with
+# no way to find out what saltpetre was for or what would fix it.
+s_rm = sim(capital=100000.0)
+for _b in ("charcoal", "saltpetre", "iron"):
+    _msg = s_rm.shortage_remedy(_b)
+    check("a %s shortage names a command that would end it" % _b,
+          "buy " in _msg or "quote " in _msg, _msg[:80])
+
+# --- BREAK: the practice paid a third of the quoted figure with nothing
+# anywhere saying so, because a granted node has no done_year and the revenue
+# ramp pinned it at step one of three for ever. It is now a named constant,
+# and the arithmetic is unchanged.
+s_pr = sim()
+_prac = sorted(s_pr._practice_set())
+_expect = sum(NODES[k]["rev"] for k in _prac) * s_pr.PRACTICE_SHARE
+check("the practice pays its share of the quoted figure, not a ramp step",
+      abs(s_pr.revenue() - _expect) < 0.5, (s_pr.revenue(), _expect))
+s_pr5 = sim()
+for _ in range(6):
+    s_pr5.step()
+check("...and it does not grow into the full figure over the ramp years",
+      abs(s_pr5.revenue() - _expect) < 0.5, (s_pr5.revenue(), _expect))
+check("the ledger says why the practice pays less than the tree quotes",
+      s_pr.practice_note() and "a third" in s_pr.practice_note(),
+      s_pr.practice_note())
+check("a concern you opened is NOT described as your practice",
+      all(k in s_pr.granted for k in _prac), _prac[:3])
+
+# --- BREAK: `available` carried nine numbers and not one of them was the
+# staff, so six projects picked on cost and hours all waited on people.
+s_av = sim()
+_av, _, _ = proto([{"cmd": "available", "find": "flax"}])
+_rows = _av[0].get("available") or []
+check("available says what standing staff a project needs",
+      _rows and any(r.get("needs_staff") for r in _rows),
+      [(r["id"], r.get("needs_staff")) for r in _rows][:3])
+check("...and marks the ones you could not staff today",
+      any(r.get("short_of_staff") for r in _rows),
+      [(r["id"], r.get("short_of_staff")) for r in _rows][:3])
+_av2, _, _ = proto([{"cmd": "available", "find": "zzzznosuchthing"}])
+check("a search that matches nothing says so instead of printing '1-0'",
+      _av2[0].get("nothing_matched") and "1-0" not in str(_av2[0].get("showing")),
+      _av2[0].get("showing"))
+from engine.protocol import render_pretty as _RP
+_pretty = _RP("available", _av2[0])
+check("...and the empty result prints no column headings over no rows",
+      "COST" not in _pretty and "matches" in _pretty, _pretty[:120])
+
+# --- BREAK: with knowing and running split apart, nothing said which one a
+# prerequisite wants.
+# One node with its prerequisites met, one without: both have to say which
+# state a prerequisite wants, since knowing and running became separate.
+_wy, _, _ = proto([{"cmd": "why", "id": "horse_collar"},
+                   {"cmd": "why", "id": "point_contact_transistor"}])
+_wp = "\n".join(_RP("why", x) for x in _wy)
+check("why states that a prerequisite must be finished, and stays finished",
+      "FINISHED" in _wp or "finished counts for ever" in _wp,
+      [l for l in _wp.splitlines() if "PREREQ" in l][:3])
+
+# --- BREAK: a debasement announced itself and moved no price a player could
+# see, because the model is in real terms. Say so, and name the real bite.
+s_db = sim(capital=100000.0, events=True)
+_before_price = s_db.project_cost("horse_collar")
+while s_db.year < 210:
+    s_db.step()
+check("debasement does not move a real price quote (the model is real terms)",
+      abs(s_db.project_cost("horse_collar") - _before_price) < 1e-6,
+      (_before_price, s_db.project_cost("horse_collar")))
+_dbm = [m for _, m in s_db.log if "coin is worth" in m]
+check("...and the announcement says so, rather than leaving it to be found",
+      _dbm and "do not move" in _dbm[0] and "your chest" in _dbm[0],
+      _dbm[:1])
+check("...and names what the debasement actually took this year",
+      _dbm and ("denarii" in _dbm[0] or "holding none" in _dbm[0]), _dbm[:1])
+
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

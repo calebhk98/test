@@ -303,8 +303,9 @@ class ProjectsMixin:
         if k not in getattr(self, "mothballed", set()):
             return False, "you have not shut that down"
         if k not in self.done:
-            return False, ("you no longer know how to do that; it has to be "
-                           "built again rather than reopened")
+            return False, ('you no longer know how to do that, so there is '
+                           'nothing to reopen: build it again with '
+                           '{"cmd":"start","id":"%s"}' % k)
         n = self.nodes[k]
         # A FLOOR FROM THE UPKEEP, not only a share of the build cost. Thirty
         # per cent of nothing is nothing, and a node that costs nothing to build
@@ -472,21 +473,27 @@ class ProjectsMixin:
             return False, "no such node"
         n = self.nodes[k]
         if k in self.done:
+            # A MOTHBALLED WORK IS NOT FRESH RESEARCH, and it is not "already
+            # done" either: you know how, and the plant is gone. `restore` puts
+            # it back at a fraction of the cost, and this branch used to sit
+            # BELOW the flat "already done" that swallowed it - reachable only
+            # in the one state where its advice was wrong.
+            if k in getattr(self, "mothballed", set()):
+                return False, ("you built this once and let it go; you already "
+                               'know how, so restoring it is cheaper than '
+                               'starting over: {"cmd":"restore","id":"%s"} for '
+                               "about %.0f denarii"
+                               % (k, self.project_cost(k) * 0.3))
             return False, "already done"
         if k in self.active:
             return False, "already active"
-        # A MOTHBALLED WORK IS NOT FRESH RESEARCH. You already know how; what
-        # is gone is the plant, at a fraction of the cost to put back up. A
-        # `start` here used to charge the FULL cost again and hand back the
-        # full founder_hours as if this were the first time, which is exactly
-        # what a tester objected to: a repossessed work "reappears in
-        # available looking like fresh research rather than something you
-        # already knew and must rebuild". `restore` is the honest version.
-        if k in getattr(self, "mothballed", set()):
-            return False, ("you built this once and let it go; you already "
-                           'know how, so restoring it is cheaper than starting '
-                           'over: {"cmd":"restore","id":"%s"} for about %.0f '
-                           "denarii" % (k, self.project_cost(k) * 0.3))
+        # A MOTHBALL ENTRY WITHOUT THE KNOWLEDGE IS A STALE ENTRY, and it falls
+        # through to the ordinary checks below. Refusing here and sending the
+        # player to `restore` - which answers "you no longer know how" - was a
+        # deadlock no verb could clear: a play tester lost
+        # precision_three_plate to a sack and watched `available` read "0
+        # startable now" for a hundred and eighty years, because that node
+        # gates the whole precision branch.
         # Tier 9 once meant UNOBTAINABLE: rubber, quinine, New World crops. That
         # concept was abolished, because nothing is unobtainable, only elsewhere,
         # and the tree now routes those through exp_* expedition nodes instead.
@@ -670,6 +677,11 @@ class ProjectsMixin:
                            % ("{:,.0f}".format(owed), "{:,.0f}".format(owed + price),
                               "{:,.0f}".format(ceiling)))
         n = self.nodes[k]
+        # A THING YOU ARE REBUILDING IS NOT A THING SITTING IDLE. If the
+        # knowledge was destroyed and only the mothball entry survived, that
+        # entry is stale the moment you begin again - and while it stands,
+        # `available` hides the node and `restore` claims it can reopen it.
+        self.mothballed.discard(k)
         self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
                               cost_left=price)
         # Director hours in step() 5 are handed out by priority in `order`.

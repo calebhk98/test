@@ -638,7 +638,9 @@
   ],
   null
  ],
+ "_said_autoopen": null,
  "_said_debasement": null,
+ "_said_output": null,
  "_version": 1,
  "_weights": {
   "_note": "w_magic_fear 0.8 because the Lex Cornelia is used against malefici and astrologers are expelled repeatedly. w_religious_rigidity only 0.2 because Roman religion is pluralistic and absorbs new cults readily; it is MAGIC that is criminal, not heterodoxy. w_labour_saving negative because of the Vespasian precedent and cheap coerced labour.",
@@ -666,7 +668,7 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 1000000.0,
+ "capital": 400.0,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,

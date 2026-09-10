@@ -1,3 +1,99 @@
+# TOP PROBLEMS
+
+Ordered by severity. Full repros with exact input/output are in the numbered
+findings below.
+
+1. **`bribe N` charges N and does nothing above ~100 denarii (F16).** `bribe 100`
+   and `bribe 1000000` both move protection 0% -> 32%; the second one leaves you
+   with 0 denarii. No warning, no cap, no refund. One command can end a run.
+
+2. **Hiring charges a year's wages twice (F11).** A smith listed at 281 den/yr
+   costs 566 den for his first year: `hire` takes a year in advance and the next
+   `step` bills the same year again. `fire` refunds nothing, so hire-then-fire
+   in one turn destroys the advance for zero work.
+
+3. **The affordability check is skipped for your first project (F8).** With 400
+   den and 1,367 credit, `start tx2_watch_case` (17,415 den) is accepted. Start a
+   5-denarius project first and the same command is refused, quoting exactly the
+   money you do not have. Taking the offer leads to CREDIT EXHAUSTED, two
+   insolvencies, reputation 5 -> 0.2 and 1,306 den of interest, with nothing built.
+
+4. **Concurrent games silently share one save file (F26).** Six games started at
+   once: five were all assigned `rome_100ad_78.json` and overwrote each other,
+   against a banner that promises you can "come back to exactly where you left
+   off". The namer also refills any gap, so a save you move or delete is a slot a
+   future game will take.
+
+5. **`why` cost breakdowns are not the cost (F17/F6).** "COST: 258 den total (0
+   labour + 0 materials + 200 capital, then x1.2 your civ, x1 distance, x1
+   scarcity, x1 prices)" - 200 x 1.2 = 240. scientific_method: 200 shown as 230.
+   fin_plantation: 10,075 shown as 10,831. The hidden factor (up to 1.29) is not
+   constant and is not disclosed; the *total* is what you are charged.
+
+6. **`ventures` and `money` disagree about whether anything is running, and `why`
+   overstates income 3x (F1/F2/F7).** Turn one: `money` pays 233.5 den/yr from
+   two named ventures; `ventures` says "RUNNING: nothing" and "Only what you are
+   RUNNING earns anything"; `why` says those two earn 500 and 200 den/yr against
+   the 166.7 and 66.7 actually paid. (The 1/3 rule is explained in the ledger -
+   but that explanation disappears when you resume a saved session, F28.)
+
+7. **After a sack, `path`, `start` and the prerequisite check give three
+   different answers (F29).** `path` lists lead_chamber as remaining, `start
+   lead_chamber` says you already know how and to use `restore`, and downstream
+   nodes report it as a missing prerequisite. A player driving off `path` +
+   `start` is stuck for good; mine sat at 106 technologies and 760,403 unspent
+   denarii from 460 AD to the horizon.
+
+8. **A failure announces a penalty it never charges (F18).** "60% of the work is
+   to do again and 80 is gone" - the same screen then shows "0 still owed", and
+   the retry completes the next year at no extra cost.
+
+9. **Events take money without naming the amount (F19).** "EVENT 104: fire in the
+   insula district" removed 75.1 den (18% of everything I had) with no figure on
+   screen and no line in the ledger.
+
+10. **With fog of war OFF, unknown-id errors blame fog of war (F30).** `help fog`
+    says "OFF. You can see the whole tree." and `why zzzzzzzz` in the same
+    session says "under fog of war I can only suggest things you have heard of",
+    so the players who turned fog off get no suggestions at all.
+
+11. **`available` pagination is unordered (F21).** Page 1 runs 6 -> 1,580 den,
+    page 2 restarts at 5 den. The cheapest node in the game is item 31.
+
+12. **The arrears rescue text is wrong three ways (F22/F23/F24).** It quotes a
+    loss of 46 den/yr when the ledger says 159.5; it recommends wage work, which
+    the game answers with "this cost you 50 ... Wage work is for when you have no
+    practice to lose"; and it is still printed after the run has ended, when
+    every action it suggests is refused.
+
+13. **Wage arithmetic contradicts itself on one screen (F12/F13).** "smith 1, 281
+    den/yr each / annual wage bill: 282.9"; with two, "281 den/yr each / 574".
+    Two identical hires in the same turn cost 281.2 and 283.0.
+
+14. **Mexica scenario sells horse technology to a society it says has no horses
+    (F27).** `horse_collar` (900 den/yr) and `en_horse_gin` are startable on
+    arrival in a scenario the menu describes as "no draught animals".
+
+15. **Three different answers to "can I afford this" (F32).** The AFFORD column
+    uses cash + half your credit, `start` uses cash + all of it, and the first
+    project of a run is not checked at all.
+
+16. Smaller: `help economy` prints the money topic verbatim (F5); "YOU COULD
+    HIRE" hides trades you already employ (F14); hiring *increases* the labour
+    market's supply (F15); `quote` ignores credit while `start` uses it (F20);
+    reputation penalties are announced then silently clamped (F10); a
+    money-blocked project reports "waiting on your hours" while 2,000 hours sit
+    free (F9); float artefacts in prices (F31); holding capital costs ~1.5%/yr
+    with no documentation (F33); several printed sums that do not add up (F34).
+
+17. **Seen once, not reproduced:** after `help money` / `quote nitre 20000` /
+    `buy nitre 20000` in a 273 AD session, `money`, `step` and `state` all
+    returned "REFUSED: internal error handling that command: TypeError:
+    unsupported operand type(s) for +: 'float' and 'str'." 35+ replays of the
+    same commands from the same save did not reproduce it, so something in the
+    ledger path can be handed a string. Worth chasing in the source.
+
+---
 # Playtest notes - "One person, and everything they know" (rome/sim/simulator.py)
 
 Session setup used for most repros (unless stated):
@@ -306,3 +402,120 @@ year". Every one of those is refused:
 ### F25. `open <bad id>` gives no "did you mean", `why <bad id>` does
     why nonexistent_thing -> REFUSED: unknown node 'nonexistent_thing'. did you mean: ...
     open nonexistent      -> REFUSED: no such node
+
+### F26. **Concurrent games silently share one save file and overwrite each other**
+
+The auto-chosen session name is the lowest free `rome_100ad_N.json`, chosen
+without any locking or exclusive create:
+
+    cd /home/user/test
+    for i in 1 2 3 4 5 6; do
+      ( printf '2\nn\npoor_scholar\nn\nstep 3\nquit\n' | python3 rome/sim/simulator.py | grep '^Saved to' ) &
+    done; wait
+
+    Saved to rome_100ad_77.json.
+    Saved to rome_100ad_78.json.
+    Saved to rome_100ad_78.json.
+    Saved to rome_100ad_78.json.
+    Saved to rome_100ad_78.json.
+    Saved to rome_100ad_78.json.
+
+Five different games were all told to "come back with --session rome_100ad_78.json";
+four of them are gone. The banner promises "Progress is written to this file
+after every command, so you can stop any time ... and come back to exactly where
+you left off", which is false in this case.
+
+It also fills gaps, so any save you move or delete leaves a slot a later game
+takes over:
+
+    rm rome_100ad_40.json ; (new game) -> "Saved to rome_100ad_40.json"
+
+I also observed an existing save being clobbered in normal sequential use:
+rome_100ad_7.json was 18,128 bytes at 15:29 and 18,177 bytes at 15:47 after a
+new game claimed that name.
+
+### F27. Mexica scenario sells horse-powered technology to a society it says has no horses
+
+Scenario 5 is described on the menu as "no draught animals, no iron, no wheel in
+practical use". On arrival:
+
+    5 / n / poor_scholar / n
+    available find horse
+      en_horse_gin    Horse gin        63.2  ... EARNS/YR 52.7
+      lnd_hobby_horse Hobby horse     434.8
+      horse_collar    Rigid padded horse collar  863.1 ... EARNS/YR 900
+
+`horse_collar` is startable on arrival, with no prerequisite that gets you a
+horse, in the Valley of Mexico in 1500. (`why horse_collar` there still
+describes it as a collar for a draught horse.)
+
+### F28. The one explanation of the 1/3 practice rule does not survive a resume
+
+A fresh in-process game prints it under the ledger:
+
+    money -> "YOUR PRACTICE: med_cataract_couching, med_trepanation are your own
+              practice, and they pay about a third of what the tree quotes ..."
+
+The same session resumed with `play --session FILE` prints the ledger without
+that block, so a player who takes the game's own advice to stop and come back
+never sees the reason their income is a third of the quoted number, and `why`
+still says "REVENUE: 500 den/yr".
+
+### F29. `path` and `start` disagree about technologies lost in a sack
+
+Late run, after "EVENT 460: KNOWLEDGE LOST: 36 technologies forgotten":
+
+    path point_contact_transistor -> remaining: ... lead_chamber, high_temp_furnace ...
+    start lead_chamber -> REFUSED: you built this once and let it go; you already
+                          know how, so restoring it is cheaper than starting over:
+                          restore lead_chamber for about N denarii
+    start (anything downstream) -> REFUSED: missing prerequisites: high_temp_furnace
+
+So `path` says it is missing, `start` says you already have it, and the
+downstream node says it is a missing prerequisite. The only way forward is
+`restore`, which `path` never mentions. Following `path` + `start` mechanically
+leaves the run permanently stuck (mine sat at 106 technologies and 760,403
+denarii from 460 AD to the 600 AD horizon).
+
+### F30. With fog of war OFF, an unknown-id error still blames fog of war
+
+Same session, one command apart:
+
+    help fog       -> "fog of war: OFF. You can see the whole tree."
+    why zzzzzzzz   -> "REFUSED: unknown node 'zzzzzzzz'. did you mean: no idea,
+                       and under fog of war I can only suggest things you have
+                       heard of"
+
+Reproducible from a fresh game (`2 / n / poor_scholar / n`), so the suggester is
+reading the wrong flag and gives no suggestions to exactly the players who
+turned fog off in order to see everything.
+
+### F31. Float artefacts leak into player-facing prices
+    hire smith 999999999999999999999
+    -> "REFUSED: hiring 1e+21 smiths costs 281250000000000012058624 denarii and you have 400"
+
+### F32. `available afford N` uses a different affordability rule than `start`
+The subject summary's AFFORD column and `available afford` use cash + half the
+credit line (the hint offers "available afford 1,083" when cash is 400 and the
+credit limit 1,367). `start` uses cash + the whole credit line (1,767), and the
+first project of a run is not checked at all (F8). Three different answers to
+"can I afford this".
+
+### F33. Holding money costs ~1.5% a year and nothing says so
+    absurd start (1,000,000 den), 100 AD, nothing built, nobody hired:
+      money -> living and appearances ~14,990 ;  Net/yr: -14,990
+    poor_scholar (400 den): living and appearances 230
+
+"living and appearances" scales with capital, so an idle million bleeds ~15,000
+a year. `help money` and `help economy` never mention it.
+
+### F34. Numbers that do not reconcile, collected
+- `money`: "med_cataract_couching 166.7 + med_trepanation 66.7 ... (these add up
+  to the revenue above)" against "Revenue: 233.5" (=233.4).
+- `state` "net -70.8 den/yr (after 75.5 den into projects)" against `money`
+  "Net/yr: 4.6" (4.6 - 75.5 = -70.9).
+- `labour` "smith 1  281 den/yr each ... annual wage bill: 282.9"; with two,
+  "281 den/yr each ... 574" (=562).
+- `work labourer 2000`: "you earned 128, and the practice ... was worth 234 ...
+  so this cost you 105" (234 - 128 = 106).
+- ledger after auto-open: 306.7+170.4+153.4+68.2 = 698.7 printed as 698.4.

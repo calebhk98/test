@@ -487,9 +487,19 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                             break
                         n = self.nodes[k]
                         net += n["up"] - n["rev"]
+                        # CLOSE IT, DO NOT UNLEARN IT - and above all do not do
+                        # both. Discarding from `done` while adding to
+                        # `mothballed` produced a state no verb could clear: a
+                        # play tester lost precision_three_plate to a sack, and
+                        # `start` sent them to `restore`, `restore` said they no
+                        # longer knew how, `open` said they had not built it and
+                        # `mothball` said there was nothing to shut. That node
+                        # gates the whole precision branch, so `available` read
+                        # "0 startable now" for a hundred and eighty years while
+                        # they sat on a quarter of a billion denarii. The same
+                        # pair of lines was fixed in enforce_credit_limit and in
+                        # shed_loss_makers and survived here.
                         self.operating.discard(k)
-                        self.done.discard(k)
-                        self._done_changed()
                         self.mothballed.add(k)   # you can buy it back
                         shed.append(k)
                     if shed:

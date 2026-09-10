@@ -1,3 +1,84 @@
+# TOP PROBLEMS
+
+Ordered by how much they cost me. I played Rome/100 AD, fog on, poor scholar,
+no ageing, and lost at the 600 AD horizon with 1,944 technologies built, about
+thirty nodes short of the point-contact transistor.
+
+1. **`start` and `restore` deadlock each other on any technology you lose to a
+   sacking — this alone probably cost me the game.** A third-century sack
+   destroyed `precision_three_plate`. `start` said "restore it instead"; `restore`
+   said "you no longer know how to do that; it has to be built again". `open` and
+   `mothball` both refused too. Since that node gates master_screw -> screw_lathe
+   -> the entire precision branch, `available` printed **"0 startable now /
+   nothing"** for 180 game years while I sat on a quarter of a billion denarii.
+   The only escape was guessing `bounty <id>`, which nothing suggests. Eight
+   other lost technologies were stuck the same way at the final turn.
+
+2. **The critical path is only ever revealed inside refusal messages, and only
+   sometimes.** `patron_local -> workshop_first -> freedman_staff -> citizenship
+   -> collegium_licensed -> school_founded` is the backbone of the entire game.
+   I hit a hard six-person staff ceiling at year 117 and stayed there until year
+   149 — thirty years, with 20,000 idle denarii — because the "cannot hire"
+   message listed hire/commission/slaves and did not mention `workshop_first`.
+   One day the same message silently grew a `build workshop_first` clause. `state`
+   points at `how_to_grow_staff -> labour`; `labour` says nothing at all about
+   capacity, workshops, patrons or the literacy ceiling. That pointer is a dead
+   end and the capacity number appears nowhere until you exceed it.
+
+3. **The opening the game recommends bankrupts you, and the debt trap that
+   follows is unescapable and unexplained.** `available` heads its list with
+   "MOST RESTS ON THESE: identity_cover 1,580 / arithmetic_positional 1,032 /
+   horse_collar 709 / units_standards 444 / scientific_method 230". You start
+   with 400 denarii. I started two of them, went into arrears, and discovered
+   that arrears freeze *all* project progress ("the hours offered this year did
+   almost nothing") while 11% interest compounds. Nothing warned me at `start`,
+   even though the engine clearly can — later, at scale, it refuses politely:
+   "you already owe 6,045 denarii on work in hand; this would take it to
+   74,497... Finish or stop something first." The things that actually work on
+   turn one (`hom_toys_dolls` 75 den for 150/yr, `tex_horizontal_loom`) are not
+   hinted at anywhere.
+
+4. **`available` offers work that cannot be finished, then destroys the money.**
+   `HALTED ...: there is nobody here who can do this work (engineer). What you
+   spent is lost` — seven at once, all of which `why` had reported as "STATUS:
+   CAN START NOW". Meanwhile the specialist trades are capped at 5.9 "in total,
+   ever, at any price" and mine never moved off 2.0 despite paper, printing, a
+   university, three academies and 148 scholars — while `train electrician 20`
+   in the very same command batch succeeded and gave me 27. That inconsistency
+   left half the tree permanently out of reach.
+
+5. **The numbers on the tin are not the numbers you get.** `why` and `ventures`
+   both advertise `REVENUE / EARNS/YR: 400`; the ledger the same turn paid
+   266.7 — exactly two-thirds, across every single line — and years later paid
+   409. Nothing says a multiplier exists. Separately, `work scholar 400` earned
+   128 denarii and silently cut my standing revenue by 46.7/yr, because that
+   revenue is secretly proportional to unspent founder-hours. And `money`
+   attributed all my income to `med_cataract_couching` and `med_trepanation`
+   while `ventures` said "RUNNING: nothing / Only what you are RUNNING earns
+   anything".
+
+6. **The ending tells you nothing.** "You built 1944 things of your own and did
+   not reach point-contact transistor." No distance, no last missing link, no
+   sense of which century I fell behind in. I had to start a *second game with
+   fog off* and run `path point_contact_transistor` to learn the goal is 142
+   nodes and that I had finished all of thermometer, master_screw, screw_lathe,
+   interchangeable_parts, steam_watt and electroplating and died at
+   `copper_refining <- cap_pure_4N`. That is a thrilling fact and the game hid
+   it from me.
+
+7. **Smaller, but constant:** the 17-25 line "HEARD OF, CANNOT BEGIN YET" block
+   is reprinted in full after *every* `available` call, including ones that
+   match nothing; `policy <x> on` reprints the whole 25-line policy manual for a
+   one-line change; `why point_contact_transistor` answers "you have never heard
+   of any such thing" on a screen whose next line says "Aiming at: Point-contact
+   transistor"; `available subject electricity` returns two optical signalling
+   technologies; the failure message "60% of the work is to do again" is
+   followed by a progress bar reading "60% of your hours spent", so you cannot
+   tell whether you kept 60% or lost it; `hire` silently charges a full year's
+   wages up front and `fire` refunds none of it; "no viable option in a required
+   substitution group (fuel, vessel, etc.)" is the only blocker message that
+   does not tell you what to do, and I never worked it out.
+
 # Playtest notes — naive player, session naive8/a
 
 (Notes written as I go. TOP PROBLEMS section will be added at the top at the end.)
@@ -239,3 +320,130 @@ literacy ceiling. That pointer is a dead end.
   or stop something first.` This is exactly the warning I wanted at the start
   of the game and never got when I was starting 939 denarii of work with 400 in
   hand. Why does this check exist for big numbers and not small ones?
+
+## Endgame (session 2 continued) — I lost, at 600 AD, with half a billion denarii
+
+Final line:
+
+    *** THE RUN HAS ENDED: the horizon at 600 AD is reached. You built 1944
+    things of your own and did not reach point-contact transistor. ***
+
+Final position: 470,504,293 denarii, +5.5M/yr, 504 employees, 2,088
+technologies, reputation 98.8, protection 92%.
+
+Afterwards I started a second game with fog OFF purely to find out how badly I
+had lost, and ran `path point_contact_transistor`:
+
+    remaining count: 142
+    remaining: arithmetic_positional, identity_cover, scientific_method, ...
+    ... zone_refining, single_crystal, point_contact_transistor
+
+Then I checked my finished game against that list. I had **thermometer,
+master_screw, screw_lathe, interchangeable_parts, steam_watt, electroplating,
+cap_vac_1torr — all DONE**. I was blocked at `copper_refining` (missing
+`cap_pure_4N`), and behind that the dynamo / vacuum-tube / germanium chain. So
+I finished perhaps twenty to forty nodes short of the win after five hundred
+years and two thousand technologies.
+
+That makes the two big blockers below not cosmetic. **The ~150 years I lost to
+the invisible staff ceiling, and the ~180 years I lost to the
+precision_three_plate deadlock, are almost exactly the margin by which I
+lost.**
+
+### The hard-lock: `start` and `restore` each tell you to use the other
+
+A sacking during the third-century crisis destroyed `precision_three_plate`.
+From then on, for 180 game years:
+
+    > start precision_three_plate
+    REFUSED: you built this once and let it go; you already know how, so
+    restoring it is cheaper than starting over: restore precision_three_plate
+    for about 980 denarii
+
+    > restore precision_three_plate
+    REFUSED: you no longer know how to do that; it has to be built again
+    rather than reopened
+
+`open` -> "you have not worked out how to do that yet, so there is nothing to
+open". `mothball` -> "you have not built that". Four commands, four refusals,
+two of them contradicting each other in consecutive lines. `why
+precision_three_plate` meanwhile says "HOW MUCH RESTS ON THIS: almost
+everything", which is true: it gates master_screw -> screw_lathe -> the entire
+precision and instrument half of the tree, i.e. the road to the goal.
+
+For 180 years `available` reported **"AVAILABLE: 0 startable now / nothing"**
+while I had a quarter of a billion denarii and 458 employees. I sat there
+stepping five years at a time watching the technology count not move. The only
+thing that broke it was guessing at `bounty precision_three_plate` (7,335 den),
+which posted a public prize and quietly put the project back in RUNNING. Nothing
+anywhere suggests bounty is the way out of that state.
+
+The same message appears for eight other lost technologies (`fin_tariff`,
+`tl_coil_spring`, `tl_muffler`, `tl_universal_joint`, `tl_velocipede`,
+`tl_water_pump`, `fin_trade_union`, `fin_bill_exchange`) and `restore` refuses
+every one of them, right up to the last turn of the game.
+
+### The specialist trades are capped at 5.9 forever, inconsistently
+
+    > train machinist 20
+    REFUSED: this society's literacy will not supply more than 5.9 machinists
+    in total, ever, at any price; you already have 2.0 ...
+    Raise literacy_general or literacy_elite -- printing, schools and
+    libraries do -- to widen this pool.
+
+By 460 AD I had rag paper, movable type, a university, three academies, a
+school, the corpus written and dispersed, 148 scholars and 2,000
+technologies. The machinist / chemist / engineer / optician ceiling was still
+5.9 and my count of each was still exactly 2.0, all the way to 600 AD. But
+`train electrician 20` in the same batch of commands **succeeded**, and I
+finished with 27 electricians. Same command, same turn, same literacy, five
+trades refused and one allowed. Either the cap is not actually tied to
+literacy or electricians are exempt for some reason nothing explains. Half the
+tree wants machinists.
+
+### Things that killed projects without warning
+
+    EVENT 195: HALTED mt2_classifier_size_separation: there is nobody here who
+    can do this work (engineer). What you spent is lost
+
+Seven projects halted at once and burned their spend. Every one had been
+listed by `available` as startable, and `why` had shown "STATUS: CAN START
+NOW". `available` will happily offer you work that cannot be finished with the
+staff you have and then destroy the money. `start` knows how to refuse for
+money ("you already owe 6,045 denarii on work in hand..."); it should refuse,
+or at least warn, for people.
+
+### "no viable option in a required substitution group (fuel, vessel, etc.)"
+
+Eleven technologies were blocked by this, including several I needed. It is
+the only blocker message in the game that does not tell you what to do about
+it, it is not in `help`, "substitution group" is not a phrase used anywhere
+else, and "(fuel, vessel, etc.)" is not a list of my options, it is a list of
+examples of the kind of thing it might be. I never worked out what to build.
+
+### The ending has nothing in it
+
+After 500 years the game says how many things I built and that I did not win,
+and stops. It does not say how close I came, what the last missing links were,
+which decade I fell behind in, what a good run looks like, or what I should
+try differently. I had to start a *second game with different settings* and
+run `path` to find out I had been thirty nodes away. The single most
+interesting fact about my run was invisible from inside it.
+
+### Late-game pleasant surprises
+* The end-state `risk` screen is the best writing in the game:
+  "sack chance: you take 3% of it (softened by angled bastion walls no ram or
+  ladder answers, ... a patron with soldiers, the work is in too many places
+  to burn, land nobody can carry away)". Seeing a two-century-long list of
+  things I built turn a 30% catastrophe into 0% is a genuinely great payoff.
+* `academy_network` completing and eminence dropping from 26 (3% chance of
+  ruin per year) to 20 in one turn, with the event text
+  "Three geographically separated academies changes the society:
+  adaptation_rate, literacy_elite, literacy_general, state_capacity, w_novelty"
+  — excellent.
+* Deputies. "18,686 founder-hours free this year (2,000 of your own, plus 9.3
+  deputies directing work in your name at 1,800 hours each)". Watching the
+  one-person bottleneck dissolve into an institution is exactly the fantasy the
+  intro promises.
+* `auto_hire` is transformative and I found it far too late; the `policy`
+  screen is buried behind `help automatic`.

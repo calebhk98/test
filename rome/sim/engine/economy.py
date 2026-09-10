@@ -468,6 +468,21 @@ class EconomyMixin:
             seq = self._done_seq = [k for k in self.order if k in self.done]
         return seq
 
+    # WHAT ONE PERSON'S PRACTICE IS WORTH, against what the tree quotes for the
+    # trade as a going concern. A physician working alone, out of a rented room,
+    # with no partners and no staff, does not take what an organised practice
+    # takes; a third is the figure the whole opening is calibrated around.
+    #
+    # This number was already in the game and was reached by accident. A granted
+    # skill has no entry in done_year, so its "age" was zero every year for ever
+    # and the revenue ramp - meant to say a NEW business takes three years to
+    # find its custom - pinned it at the first step of three and never moved it.
+    # The arithmetic came out right and the meaning came out wrong: a break
+    # tester read `why` at 500 a year, saw 166.7 in the ledger, and could find
+    # nothing anywhere that explained the difference or said whether it would
+    # ever close. It will not. It is not a ramp; it is the size of your practice.
+    PRACTICE_SHARE = 1.0 / 3.0
+
     def practice_attention(self):
         """How much of your practice you are actually there to run.
 
@@ -509,9 +524,12 @@ class EconomyMixin:
                 continue
             n = self.nodes[k]
             if n["rev"]:
-                age = self.year - self.done_year.get(k, self.year)
-                ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
-                r += n["rev"] * ramp * (attention if practice else 1.0)
+                if practice:
+                    r += n["rev"] * self.PRACTICE_SHARE * attention
+                else:
+                    age = self.year - self.done_year.get(k, self.year)
+                    ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+                    r += n["rev"] * ramp
         # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
         # pays back inside two years, so its income buys the next one, and a run
         # ended holding three billion denarii against an empire whose entire
@@ -608,10 +626,13 @@ class EconomyMixin:
             n = self.nodes[k]
             if not n["rev"]:
                 continue
-            age = self.year - self.done_year.get(k, self.year)
-            ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+            if practice:
+                ramp = self.PRACTICE_SHARE
+            else:
+                age = self.year - self.done_year.get(k, self.year)
+                ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
             amt = n["rev"] * ramp * (self.economy ** 0.75) * self.output_factor
-            if k in self.granted and self._practisable(k):
+            if practice:
                 amt *= self.practice_attention()
             if amt > 0.5:
                 rows[k] = round(amt, 1)
@@ -654,6 +675,55 @@ class EconomyMixin:
     def _practisable(self, k):
         """Is this granted node a skill YOU can practise for a fee?"""
         return self.nodes[k].get("cat") in self.PRACTISABLE_CATS
+
+    def still_ramping(self):
+        """Earners that are not yet paying their full figure, and how far along.
+
+        Every earner ramps over revenue_ramp_years, so on the day you open one
+        it pays a third of what the tree quotes for it. A break tester read
+        `why` at 500 a year, opened it, saw 166.7 in the ledger, and had
+        nothing anywhere to tell them whether the ledger was wrong, the quote
+        was wrong, or they were being charged for something. It is none of
+        those: it is year one of three. Kept OUT of revenue_sources, whose
+        every value is a number that has to sum to the revenue above it.
+        """
+        young = []
+        for k in self.operating:
+            n = self.nodes.get(k)
+            if not n or not n["rev"] or k in self.granted:
+                continue
+            age = self.year - self.done_year.get(k, self.year)
+            ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+            if ramp < 0.999:
+                young.append((k, ramp))
+        if not young:
+            return None
+        young.sort(key=lambda kv: kv[1])
+        return ("%s%s at %d%% of full takings. A concern you open reaches its "
+                "full figure over %g years, so what the ledger shows is not "
+                "what it will be."
+                % (", ".join(k for k, _r in young[:6]),
+                   " and %d more" % (len(young) - 6) if len(young) > 6 else "",
+                   young[0][1] * 100, self.cfg["revenue_ramp_years"]))
+
+    def practice_note(self):
+        """Why the practice pays less than the tree quotes, said once, plainly."""
+        # ONLY WHAT THE LEDGER ACTUALLY SHOWS. Naming rows that were dropped
+        # for being under half a denarius invites the reader to look for them.
+        scale = (self.PRACTICE_SHARE * self.practice_attention()
+                 * (self.economy ** 0.75) * self.output_factor)
+        prac = sorted(k for k in self._practice_set()
+                      if self.nodes[k]["rev"] * scale > 0.5)
+        if not prac:
+            return None
+        return ("%s %s your own practice, and %s about a third of what the tree "
+                "quotes for the trade: the difference between one person in a "
+                "rented room and an organised concern. That gap does not close "
+                "with time. Selling your hours for wages takes another bite out "
+                "of it, because you cannot be in two places."
+                % (", ".join(prac[:4]),
+                   "is" if len(prac) == 1 else "are",
+                   "it pays" if len(prac) == 1 else "they pay"))
 
     def _practice_set(self):
         """The granted skills you actually practise, as a set, computed once.
