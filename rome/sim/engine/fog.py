@@ -143,6 +143,26 @@ class FogMixin:
                 row["staff_loss_after_what_you_have_built"] = round(
                     h["staff_loss"] * self.hazard_relief("staff_loss")[0], 4)
             upcoming.append(row)
+        # WHAT IS ACTUALLY NEAR, in full, and the rest by name. Every dated
+        # hazard now carries a real historical note and England has fifteen of
+        # them; sending all of it made one `risk` reply seventeen thousand
+        # bytes, which is the wall this whole interface was broken up to stop
+        # producing. A player deciding what to do this decade does not need
+        # four hundred words on enclosure in 1700.
+        _soon = [r for r in upcoming
+                 if r.get("in_progress") or (r["years"][0] - self.year) <= 120]
+        _later = [r for r in upcoming if r not in _soon]
+        if _later:
+            for r in _later:
+                r.pop("note", None)
+                r.pop("what_you_can_do", None)
+        upcoming = _soon[:6] + _later
+        if len(_soon) > 6:
+            upcoming = _soon[:6]
+            for r in _soon[6:] + _later:
+                r.pop("note", None)
+                r.pop("what_you_can_do", None)
+                upcoming.append(r)
         # Norse hazards do not sack anything, and a playtester watched this
         # advertise a loss risk and recommend a hedge for a full 500 year run in
         # which no sacking could ever occur. Risk you cannot face is not risk.

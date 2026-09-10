@@ -506,3 +506,56 @@ following the game's own printed advice.
 I cannot tell from inside the program whether the artisans were converted into the
 "None" trade and then deleted, or whether something else ate them, but the timing
 is exact and nothing else changed. This is the clearest defect I have found.
+
+## 1385-1397 — the capability ladders, and where the real tree is
+
+Once I stopped chasing revenue and searched `available find cap_`, the actual
+spine of the game showed itself. It is four ladders:
+  cap_heat_*   1100 C -> 1600 C ...
+  cap_tol_*    1 mm -> 0.1 mm ...
+  cap_vac_*    1 torr -> 1e-3 torr ...
+  cap_pure_*   99% ...
+plus measurement nodes (cap_measure_temp, _mass_mg, _time_s) that cost **0 den and
+0 hours** and which I had been ignoring for 85 years because they sat at the
+bottom of the "cheapest six" list looking like junk. Three free techs, one of them
+marked "RESTS: much". That is a real discoverability failure: the game's own
+summary screen buries its most important cheap nodes under a "cheapest" sort.
+
+By 1397: 156 techs, capital 378,934, net +45,707/yr, voltaic_pile built,
+Sprengel pump and 1e-3 torr vacuum built, 1600 C built, copper refined
+(324,519 den, the single biggest cheque I have written).
+
+Staff has never recovered from the manumission bug: 20-odd people, capacity
+pinned at "0.00 more". I have worked around it entirely with `commission`
+(4,000 artisan-hours for 845 den, one year) which is so cheap relative to hiring
+that I now think commission is strictly better than employment for project work,
+and staff only matter for *supervising open concerns*. If that is intended it is
+not signposted; if it is not intended it is an exploit.
+
+## 1430-1438 — the literacy lock finally opens
+
+At 1430 the fog list turned into a wall of "needs 4 / 5 / 6 / 50 trained scholars,
+you have 3.2" and `hire scholar` said "this society's literacy will not supply
+more than 2.7 scholars in total, ever, at any price". Same wall as the scribes in
+1309, 120 years earlier.
+
+The key turned out to be the **printing chain**, which I finally built as a block:
+prn_type_punch + mt2_type_metal + if_type_mould + hom_printed_books +
+sc2_institution_textbook + sc2_method_lab_notebook (about 880 founder-hours,
+~7,400 den total — trivial money).
+
+Result in eight years: scholar supply went from 2.7 people / 1,321 scribe-hours to
+**30 employed and 67,464 hours available**, and `available` went from ~350 items
+to **897**. That is the single largest state change in the whole run, and it cost
+almost nothing. I had the information to do it in 1318 (the hire refusal literally
+says "printing, schools and libraries do") and I did not connect it, partly
+because papermaking and woodblock alone visibly did nothing, which taught me the
+wrong lesson.
+
+Also noticed: my founder-hours have quietly risen from 2,000 to 3,730/yr. Nothing
+ever announced this or explained it. I assume reputation or the institutions buy
+me assistants, but the HUD just changes number.
+
+Endgame road is now legible:
+  newtonian_mechanics -> em_theory -> quantum_solidstate_theory -> (transistor)
+plus thermodynamics_theory, electroplating, and the cap_* ladders.

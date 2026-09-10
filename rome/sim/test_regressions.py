@@ -1922,6 +1922,34 @@ check("...and you can still build the balloon without one",
       _no.alarm_of(_n) > 0 and "identity_cover" not in NODES["hot_air_balloon"]["pre"],
       NODES["hot_air_balloon"]["pre"])
 
+# --- the history notes must not rebuild the wall ----------------------------
+# Every dated hazard now carries a real historical note and England has
+# fifteen of them. Embedded whole, they took one `state full` reply to nearly
+# twenty thousand bytes and one `risk` reply to seventeen thousand - which is
+# the exact wall this interface was broken up to stop producing.
+for _civ_big in ("england_1300", "mexica_1500", "rome_100ad"):
+    _sf, _, _ = proto([{"cmd": "state", "full": True}, {"cmd": "risk"}],
+                      civ=_civ_big, fog=True)
+    check("%s: state full stays readable" % _civ_big,
+          len(json.dumps(_sf[0])) < 9000, "%d bytes" % len(json.dumps(_sf[0])))
+    check("%s: risk stays readable" % _civ_big,
+          len(json.dumps(_sf[1])) < 9000, "%d bytes" % len(json.dumps(_sf[1])))
+
+# A hazard should report the harm it did to YOU, not the harm it would have
+# done to somebody with something to lose: a tester with no staff and no money
+# read "staff -45%, and 0 pence gone" three years running.
+s = sim(civ="england_1300")
+s.scholars = s.artisans = 0.0
+s.employees = {}
+s.capital = 0.0
+s.year = 1348
+s._shocks(1348)
+_plague = [m for _y, m in s.log if "Black Death" in m]
+check("a hazard that took nothing from you says so",
+      not _plague or all("-45%" not in m or "nothing it could take" in m
+                         for m in _plague),
+      _plague)
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

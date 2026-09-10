@@ -43,6 +43,20 @@ def _agent_end_reason(s):
     return None
 
 
+def _risk_without_the_essays(kr):
+    """knowledge_risk with the hazard prose stripped, for embedding in state."""
+    if not isinstance(kr, dict):
+        return kr
+    out = dict(kr)
+    ahead = out.get("known_hazards_ahead")
+    if isinstance(ahead, list):
+        out["known_hazards_ahead"] = [
+            {k: v for k, v in h.items() if k not in ("note", "what_you_can_do")}
+            for h in ahead if isinstance(h, dict)]
+        out["the_full_account_of_each"] = '{"cmd":"risk"}'
+    return out
+
+
 def _waiting_on(s, nodes, k, st, bill):
     """What is ACTUALLY holding this project up, checked against today."""
     n = nodes[k]
@@ -275,7 +289,13 @@ def _agent_state(s, nodes, cmd=None):
         "credit_limit": round(s.credit_limit(), 1),
         "debt_interest_rate": round(s.debt_interest_rate(), 4),
         "interest_paid_total": round(getattr(s, "interest_paid", 0.0), 1),
-        "knowledge_risk": s.knowledge_risk(),
+        # WITHOUT THE HISTORY ESSAYS. Each dated hazard now carries a real
+        # historical note, several of them a couple of hundred words, and
+        # embedding the lot here took one `state full` reply to nearly twenty
+        # thousand bytes - the exact wall this reply was split up to stop
+        # producing. The numbers stay; the prose lives in `risk`, which is the
+        # command you type when you want it.
+        "knowledge_risk": _risk_without_the_essays(s.knowledge_risk()),
         "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},

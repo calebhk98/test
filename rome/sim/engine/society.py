@@ -440,6 +440,8 @@ class SocietyMixin:
             if "staff_loss" in h and r.random() < 0.32:
                 relief, why = self.hazard_relief("staff_loss")
                 loss = h["staff_loss"] * relief
+                _people_before = (self.scholars + self.artisans
+                                  + sum(self.employees.values()))
                 self.scholars *= (1 - loss); self.artisans *= (1 - loss)
                 for t in list(self.employees):
                     self.employees[t] *= (1 - loss)
@@ -451,10 +453,22 @@ class SocietyMixin:
                 # accounts were broken. A plague empties the market as well as
                 # the workshop; that is real, and it has to be said.
                 cash = self.lose_capital(loss * 0.6)
-                self.log.append((yr, "%s: staff -%d%%, and %s denarii gone with "
-                                     "the trade that stopped%s"
-                                 % (h.get("name", "hazard"), loss * 100,
-                                    "{:,.0f}".format(max(0.0, cash)),
+                # SAY WHAT ACTUALLY HAPPENED TO YOU. A weird-play tester with no
+                # staff and no money read "staff -45%, and 0 pence gone" three
+                # years running and reasonably concluded the event was firing
+                # against nobody. It was: they had nothing to lose. An event
+                # should report the harm it did, not the harm it would have
+                # done to somebody else.
+                _hit = []
+                if _people_before > 0.05:
+                    _hit.append("staff -%d%%" % (loss * 100))
+                if cash > 0.5:
+                    _hit.append("%s gone with the trade that stopped"
+                                % "{:,.0f}".format(cash))
+                if not _hit:
+                    _hit.append("you had nothing it could take")
+                self.log.append((yr, "%s: %s%s"
+                                 % (h.get("name", "hazard"), ", ".join(_hit),
                                     " (would have been -%d%%: %s)"
                                     % (h["staff_loss"] * 100, "; ".join(why)) if why else "")))
             if "sack_chance" in h:

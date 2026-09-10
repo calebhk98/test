@@ -387,3 +387,60 @@ concerns, with reputation at 37.5, eminence was 0.26 and "settles near 1.7"; by 
 eminence 0.97, "settles near 1.8", still "0% chance of ruin this year". The whole
 warning apparatus has never produced a non-zero risk in 19 years of aggressive,
 conspicuous building. Confidence it's mis-tuned rather than broken: medium.
+
+---
+## FINDING 26 — FAILURE RISK appears never to fire
+Every `why` card carries "FAILURE RISK: n%" (0-45% across the tree) and every
+`available` row has a RISK column. I built, across this session:
+  - 19 projects in the main run (1300-1319),
+  - 60 more in one fork where I started all 94 startable ids at once and stepped 25 years,
+  - 15 deliberately chosen high-risk ones (whaling 30%, coal seam 25%, gambling house 25%,
+    skeleton-first 22%, diving bell 20%, phosphorus 20%, bimetallism 20%, hay 20%,
+    safety lamps 16%, knitting frame 16%, pulp stamper 15%, leat and weir 15%,
+    oil shale 15%, mortgage 15%, cartel 20%) in one turn.
+Total ~113 builds. Mean advertised risk over the 105-item 1300 list is 7.9%, so the
+expected number of failures is roughly 9-10. Observed: **zero**. Not one event,
+message or line containing "fail", "abandon" or "lost" in any run
+(`step 20` output grepped case-insensitively -> 0 matches).
+P(0 failures | lambda ~ 9) is about 1 in 8,000.
+Either the risk is not applied, or "failure" is silent and invisible - and if it is
+silent, the number on the card promises a consequence the game never shows you.
+Confidence something is wrong: high.
+
+## FINDING 27 — "waiting on money" with half a million in the bank; "waiting on your hours" with 2,000 hours free
+Repro (start_1300 save with capital set to 500,000 so money cannot be the constraint):
+  start pwr_leat_and_weir ; start met_safety_lamps_ventilation ; start tex_knitting_frame ; step 1 ; state
+  [1301 AD | 490409 den | you:2000 hr | ...]
+    met_safety_lamps_ventilation  100% of your hours spent, 491.3 still owed - waiting on money
+    pwr_leat_and_weir             100% of your hours spent, 155.9 still owed - waiting on money
+    tex_knitting_frame             60% of your hours spent, 0 still owed - waiting on your hours
+  "You: alive ..., 2,000 founder-hours free this year"
+491.3 owed against 490,410 held, and 2,000 free founder-hours against a project said to
+be waiting on my hours. The real constraint is evidently a per-year pacing rule (the
+CALENDAR FLOOR - the engine does print "waiting on the calendar" elsewhere, so the
+wording exists), but the status line names money and hours instead.
+Confidence the reason given is wrong: high.
+
+## FINDING 28 — "this society can field 1321 at most" is not the most
+`state full:true` on a stalled project:
+  arithmetic_positional  81% of your hours spent, 0 still owed - waiting on nobody to do
+  the work: scribe (wants 2500 hours a year; this society can field 1321 at most)
+It sat like that for 25 years. But `hire scribe 2` (allowed - the literacy cap is 2.2)
+raises `labour scribe` "market can supply" from 1,321 to 5,321, and then
+`commission scribe 2500` succeeds and the project unsticks. So "at most, ever" is
+"at most until you hire two scribes". Given that arithmetic_positional's own card says
+"Highest return on personal hours in the entire tree" and "HOW MUCH RESTS ON THIS:
+almost everything", a player who believes the refusal will simply abandon the most
+important node in the game. Confidence the wording is wrong: high.
+
+## Corrected: CALENDAR FLOOR is respected
+I first thought floors were being beaten (a 2-year floor completing one year after
+start in a `step 25`). A clean single-project test shows it is honoured:
+  start pwr_leat_and_weir (floor 2 years) at 1300 -> still RUNNING at 1301 ->
+  "COMPLETED 1301" reported on the step that ends in 1302. Two calendar years. Fine.
+
+## Corrected: `commission` does not exceed the trade's supply
+`commission scribe 2500` succeeding after "market can supply 1,321" looked like a cap
+violation; it was not - hiring 2 scribes had raised the pool to 5,321 first, and
+`commission scribe 100000` / `5000` are then refused with "the scribes here can spare
+2821 more hours this year". The cap holds.
