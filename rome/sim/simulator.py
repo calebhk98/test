@@ -2,82 +2,21 @@
 """
 ROME 100 AD -> TRANSISTOR : tech-tree simulator, planner and game.
 
-Three things at once, as requested:
-  * a RECORD    : `validate`, `costs`, `path` dump the tree and its economics
-  * a TOOL      : `run` Monte-Carlos a strategy and tells you where it breaks
-  * a GAME      : `play` steps you through it year by year, and `agent` lets a
-                  script or an AI play it instead of a person at a keyboard
-
-No third-party dependencies. Python 3.8+.
+  a RECORD : validate, costs, path   dump the tree and its economics
+  a TOOL   : run, compare, sweep     Monte-Carlo a strategy, find where it breaks
+  a GAME   : play, agent             step through it yourself, or let a script play
 
     python3 rome/sim/simulator.py validate
-    python3 rome/sim/simulator.py path point_contact_transistor
-    python3 rome/sim/simulator.py costs --top 25
-    python3 rome/sim/simulator.py run --strategy recommended --mc 400
-    python3 rome/sim/simulator.py run --strategy recommended --no-events   # pure engineering timeline
-    python3 rome/sim/simulator.py compare --mc 400
-    python3 rome/sim/simulator.py play --strategy recommended
-    python3 rome/sim/simulator.py play --manual                            # real free choice, no autopilot
-    python3 rome/sim/simulator.py agent                                    # JSON protocol, see below
+    python3 rome/sim/simulator.py civs                       who you can play
+    python3 rome/sim/simulator.py play --manual               free choice, no autopilot
+    python3 rome/sim/simulator.py agent --civ rome_100ad --fog
 
-MACHINE-PLAYABLE INTERFACE (`agent`, and `play --manual`)
------------------------------------------------------------------------------
-`play` used to be a demonstration, not a game: typing a node id only moved it
-to the front of the OPTIMIZER's own ordering, and the optimizer (step() 4b)
-went on starting whatever else it wanted that year regardless. There was no
-way to make a choice and live with only that choice's consequences, and
-nothing but a human typing into input() could drive it at all.
+`agent` speaks one JSON object per line in and one per line out. It explains
+itself: it prints a welcome on first run and answers {"cmd":"help"}. There is
+no protocol document to read, on purpose.
 
-Two fixes, usable separately or together:
-
-  --manual (on `play`, and always-on inside `agent`)
-      Switches off step() 4b, the optimizer's auto-start loop, entirely.
-      Nothing becomes active except what start_project() was explicitly told
-      to start. Money, materials, staff, hazards and the calendar all still
-      proceed on their own; only the research CHOICE stops being automatic.
-      A player who starts nothing makes no progress. That is correct.
-
-  `agent`  a line-oriented JSON protocol, for a script or an LLM
-      Reads one JSON command per line from stdin and writes one JSON object
-      per line to stdout (or, with --script FILE, reads a JSON list of the
-      same command objects from a file and plays them in order). Every
-      response is exactly one line of valid JSON; a failed command comes back
-      as {"ok": false, "error": "..."} explaining what to do instead, never a
-      stack trace or a bare False.
-
-      {"cmd":"state"}                              current situation, in full
-      {"cmd":"available"}                          every node that can legally start now,
-                                                    with cost, founder hours, calendar
-                                                    floor, prerequisites and its note
-      {"cmd":"why","id":"zinc_metal"}              the full explanation for one node:
-                                                    cost, staff, risk, chain, what it
-                                                    unlocks, why it is or isn't startable
-      {"cmd":"path","id":"zinc_metal"}             everything still undone on the way
-                                                    to this node, in dependency order
-      {"cmd":"start","id":"zinc_metal"}            begin a project (error explains
-                                                    exactly what is missing if you can't)
-      {"cmd":"stop","id":"zinc_metal"}             abandon a project; sunk cost is sunk
-      {"cmd":"bounty","id":"zinc_metal"}           post a public prize instead of
-                                                    building it yourself (tier <=2 crafts
-                                                    only; converts denarii into hours)
-      {"cmd":"buy","what":"forest","n":100}        buy 100 ha of coppice woodland
-      {"cmd":"buy","what":"mine","material":"iron","n":500}   sink a mine
-      {"cmd":"buy","what":"slaves","n":4}          the economic actions the optimizer
-      {"cmd":"buy","what":"manumit","n":4}         could take, exposed to the player
-      {"cmd":"step","years":5}                     advance the calendar; returns what
-                                                    completed and what happened
-      {"cmd":"quit"}                               end the session
-
-      The `state` object (also embedded in every `step` reply) reports: year,
-      capital, revenue, founder hours available, founder_alive, scholars,
-      artisans, reputation, suspicion, scandal, eminence, protection,
-      done_count, active (each project's progress), resource_throttle and
-      throttle_binding (what is limiting work, if anything), and ended /
-      end_reason once the run is over (goal reached, died, or ran out of
-      horizon). `available` and `why` never consult the optimizer's own
-      ordering for a decision, only for a stable listing order; every
-      decision an agent needs is reachable through start/stop/bounty/buy/step
-      alone, all the way to the transistor.
+No third-party dependencies. Python 3.8+.
+Design notes and the full protocol: rome/sim/PROTOCOL.md
 """
 
 import argparse, json, math, os, random, sys
@@ -976,12 +915,21 @@ class Sim:
     }
 
     def _staff_advice(self, kind):
-        """Name the remedy, not just the shortfall."""
+        """Name the remedy, not just the shortfall - and only remedies you could
+        actually have heard of.
+
+        This advice told a tester to "build workshop_first" for ten years while
+        `why workshop_first` replied "you have never heard of that", from the
+        same program in the same second. They called it the single most confusing
+        thing in the game and they were right. Hiring is always sayable, because
+        the labour market is in front of you; a named institution is not, until
+        it is.
+        """
         bits = []
         for node, why in self.STAFF_SOURCES.get(kind, []):
             if node in ("BUY", "HIRE"):
                 bits.append(why)
-            elif node not in self.done:
+            elif node not in self.done and self.is_visible(node):
                 bits.append("build %s (%s)" % (node, why))
         if not bits:
             return "wait: your existing institutions add %s each year." % kind
@@ -1064,8 +1012,11 @@ class Sim:
             return self.nodes[k]["name"]
         for sep in (". ", "? ", "! "):
             if sep in note:
-                return note.split(sep)[0].strip() + "."
-        return (note[:160] + ("..." if len(note) > 160 else ""))
+                note = note.split(sep)[0].strip() + "."
+                break
+        # Hard cap. A "one sentence" summary that runs to 160 characters, times
+        # thirty entries in a list, is most of the reply.
+        return note if len(note) <= 110 else note[:107].rstrip(" ,;") + "..."
 
     def knowledge_risk(self):
         """How exposed your finished work is to being forgotten, and to what.
@@ -1457,8 +1408,16 @@ class Sim:
         if hours > left:
             return 0.0, ("you have %.0f of your own hours left this year, not %.0f"
                          % (max(0.0, left), hours))
-        # Your own labour is worth the trade rate. A famous man is paid better.
-        pay = hours * w * self.price_index * (1.0 + min(0.5, self.reputation / 200.0))
+        # Your own labour is worth the trade rate: the SAME rate the game charges
+        # you to employ somebody in that trade, which is the point. It used to be
+        # billed from the hourly column while hiring was billed from the annual
+        # one, and those two columns disagree by about half, so a founder could
+        # work as a scholar for 1,416 a year and hire one for 625. The docstring
+        # claimed "there is no arbitrage in either direction" while the arithmetic
+        # ran a 2.3x spread.
+        rate = ANNUAL_WAGE.get(trade, 375.0) / self.HOURS_PER_PERSON_YEAR
+        pay = (hours * rate * self.price_index * self.wage_index
+               * (1.0 + min(0.5, self.reputation / 200.0)))
         self.capital += pay
         self.wage_hours_this_year = getattr(self, "wage_hours_this_year", 0.0) + hours
         self.wages_earned = getattr(self, "wages_earned", 0.0) + pay
@@ -1523,7 +1482,8 @@ class Sim:
             self.mothball_mines()
         if self.capital < -limit:
             burden = sorted((k for k in self.done
-                             if self.nodes[k]["up"] > 0 and k not in self.granted
+                             if self.nodes[k]["up"] > self.nodes[k]["rev"]
+                             and k not in self.granted
                              and not self.never_abandon(k)),
                             key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
             taken = []
@@ -1633,9 +1593,27 @@ class Sim:
         return (n["_total_cost"] * self.cost_money_factor() * self.opposition_factor(k)
                 * self.civ_cost_factor(k) * self.material_cost_factor(k))
 
+    def done_in_order(self):
+        """Everything you have finished, in a FIXED order.
+
+        `self.done` is a set of strings, and a set of strings iterates in an
+        order that depends on PYTHONHASHSEED, which Python randomises per
+        process. Three places summed floats over it - revenue, upkeep and
+        material demand - and floating point addition is not associative, so
+        the totals differed in their last bits between one process and the
+        next. Over five hundred years those last bits decide which side of a
+        threshold you land on, and the same --seed gave two different answers
+        on alternate invocations. Three other sites were fixed for this before
+        by sorting; these were missed because nothing here touches the RNG, and
+        the arithmetic looked innocent.
+
+        `self.order` is a list, and a list is a list.
+        """
+        return [k for k in self.order if k in self.done]
+
     def revenue(self):
         r = 0.0
-        for k in self.done:
+        for k in self.done_in_order():
             if k in self.granted and not self._practisable(k):
                 continue          # the society's, not yours
             n = self.nodes[k]
@@ -1693,7 +1671,7 @@ class Sim:
         tells you to adopt, and neither had any way to find that out.
         """
         rows = {}
-        for k in self.done:
+        for k in self.done_in_order():
             if k in self.granted and not self._practisable(k):
                 continue
             n = self.nodes[k]
@@ -1729,7 +1707,7 @@ class Sim:
     def upkeep(self):
         # Symmetrically, you do not pay to maintain what you do not own, but you
         # do bear the small standing cost of the practice you actually run.
-        return sum(self.nodes[k]["up"] for k in self.done
+        return sum(self.nodes[k]["up"] for k in self.done_in_order()
                    if k not in self.granted or self._practisable(k))
 
     # ---- raw material supply ------------------------------------------------
@@ -1773,7 +1751,7 @@ class Sim:
     def annual_material_demand(self):
         """Tonnes per year of the materials that actually bind, from work in hand."""
         d = collections.Counter()
-        for k in self.active:
+        for k in sorted(self.active):
             n = self.nodes[k]
             span = max(1.0, float(n.get("build_yrs") or n.get("yrs") or 1.0))
             coke = self.chosen_fuel(k) == "coke"
@@ -1785,7 +1763,7 @@ class Sim:
         # A furnace does not eat charcoal only while it is being built. It eats
         # charcoal every year it runs, forever. Omitting that was why forest
         # ownership never mattered in the model and always mattered in reality.
-        for k in self.done:
+        for k in self.done_in_order():
             n = self.nodes[k]
             if n["up"] <= 0 or not n["mat"]:
                 continue
@@ -2191,7 +2169,18 @@ class Sim:
         return sum(self.employees.values()) + self.slaves + self.freedmen
 
     def director_hours_committed(self):
-        return getattr(self, "teaching_hours_this_year", 0.0)
+        """Hours of your own year already spoken for before any project sees them.
+
+        WAGE HOURS BELONG HERE, and their absence was the worst thing two naive
+        testers found. `work` kept its own separate tally, so a founder could
+        report "your_hours_left_this_year: 0.0" after a full 2,400 hours of paid
+        labour and then complete eight projects worth 2,044 founder-hours in the
+        same year. One of them called it "a free second year inside every year"
+        and correctly identified it as the dominant strategy in the game. There
+        is one year, and one pair of hands.
+        """
+        return (getattr(self, "teaching_hours_this_year", 0.0)
+                + getattr(self, "wage_hours_this_year", 0.0))
 
     def _resync_pools(self):
         """Recompute the two aggregate pools the tech tree asks for from the
@@ -2332,14 +2321,26 @@ class Sim:
                            "maintain; there is no upkeep of yours to stop")
         if self.nodes[k]["up"] <= 0:
             return False, "that costs nothing to keep; there is nothing to save"
+        # A DELIBERATE SHUTDOWN IS NOT AN ABANDONMENT. never_abandon exists to
+        # stop the ENGINE quietly deleting a step you need and then refusing to
+        # fund rebuilding it. A player choosing to close something down is the
+        # opposite: they chose it, restore brings it back, and refusing them was
+        # the exact trap a tester hit - the upkeep bankrupting them was the one
+        # thing they were not allowed to stop paying for, which is how a bad
+        # year became "an unrecoverable softlock". Knowledge still cannot be
+        # unlearned; a building can always be shut.
+        warn = None
         if self.never_abandon(k):
-            return False, ("that is load-bearing for what you are trying to reach, "
-                           "or it is who you are here; shutting it down would "
-                           "softlock the run")
+            if self.nodes[k]["cat"] in self.NEVER_ABANDON:
+                return False, ("that is knowledge, or it is who you are here. "
+                               "You cannot un-know a thing to save its upkeep")
+            warn = ("this is a step on the way to what you are trying to reach; "
+                    "you will have to restore or rebuild it before you can go on")
         self.done.discard(k)
         self.mothballed.add(k)
-        return True, ("%s shut down; you stop paying %.0f a year for it, and you stop "
-                      "getting what it gave you" % (k, self.nodes[k]["up"]))
+        msg = ("%s shut down; you stop paying %.0f a year for it, and you stop "
+               "getting what it gave you" % (k, self.nodes[k]["up"]))
+        return True, (msg + (". Note: " + warn if warn else ""))
 
     def restore_work(self, k):
         """Bring a mothballed work back. The plant rotted while it stood idle."""
@@ -2462,7 +2463,23 @@ class Sim:
                            "here" % self.civ.get("name", "this society"))
         missing = [p for p in n["pre"] if p not in self.done]
         if missing:
-            return False, "missing prerequisites: " + ", ".join(missing)
+            # NAME ONLY WHAT YOU HAVE HEARD OF. A tester wrote a twenty-line
+            # crawler that did nothing but read this message, and mapped 163
+            # nodes - the entire ancestor closure of the transistor - in eight
+            # rounds, while `why` and `path` dutifully refused every one of them.
+            # Fog that one error message undoes is not fog.
+            known = [p for p in missing if self.is_visible(p)]
+            hidden = len(missing) - len(known)
+            if not getattr(self, "fog", False) or not hidden:
+                return False, "missing prerequisites: " + ", ".join(missing)
+            bits = []
+            if known:
+                bits.append("missing prerequisites: " + ", ".join(known))
+            bits.append("%d other thing%s you have not heard of yet"
+                        % (hidden, "" if hidden == 1 else "s"))
+            return False, "; and ".join(bits) if known else \
+                ("this needs %s, and you do not yet know what %s"
+                 % (bits[-1], "they are" if hidden > 1 else "it is"))
         if not self.substitution_quality(k)[1]:
             return False, "no viable option in a required substitution group (fuel, vessel, etc.)"
         # A playtester hit a scholar wall that stopped ALL progress and reported
@@ -2709,9 +2726,18 @@ class Sim:
                 # and can rebuild later, which is a real cost and a real way out.
                 net = (self.revenue() - self.upkeep() - self.living_cost()
                        - self.mine_operating_cost())
-                if net < 0:
+                # ONLY WORKS THAT COST MORE THAN THEY RETURN, and only if you let
+                # it happen at all. Both halves were wrong and a tester called the
+                # result "an unrecoverable softlock", correctly: the loop ran
+                # until the books balanced rather than until shedding stopped
+                # helping, so once the genuine loss-makers were gone it went on
+                # to destroy eleven works earning 2,700 a year against 330 of
+                # upkeep, each one making the deficit worse, for ever. And it did
+                # it whether or not auto_shed was switched off, in a game whose
+                # own help says "every one of them is a switch you control".
+                if net < 0 and self.policy.get("auto_shed", True):
                     burden = sorted((k for k in self.done
-                                     if self.nodes[k]["up"] > 0
+                                     if self.nodes[k]["up"] > self.nodes[k]["rev"]
                                      and k not in self.granted
                                      and not self.never_abandon(k)),
                                     key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
@@ -2722,6 +2748,7 @@ class Sim:
                         n = self.nodes[k]
                         net += n["up"] - n["rev"]
                         self.done.discard(k)
+                        self.mothballed.add(k)   # you can buy it back
                         shed.append(k)
                     if shed:
                         self.log.append((yr, "ABANDONED %d works you could no longer "
@@ -2963,7 +2990,7 @@ class Sim:
                 st["stalled_years"] = 0
                 per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))) * self.throttle
                 remaining -= per
-                st["ph_left"] -= per
+                st["ph_left"] = max(0.0, st["ph_left"] - per)
                 self.director_hours_spent_founder += per if self.founder_alive else 0
                 st["yrs"] += 1
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
@@ -2995,6 +3022,19 @@ class Sim:
                     money *= worst
                     hh *= worst
                     st["ph_left"] += per * 0.4 * (1.0 - worst)
+                    # Remember it. A tester sat on 696,350 denarii watching three
+                    # projects report waiting_on "money" with 2.3, 84 and 158
+                    # denarii left to pay, and reasonably concluded the spend cap
+                    # was broken. It was not: the trades those projects needed
+                    # were fully booked, so almost nothing could be paid FOR. The
+                    # mechanic was right and the label was a lie.
+                    st["short_of_trade"] = sorted(
+                        t for t, wnt in n["lab"].items()
+                        if wnt > 0 and (self.market_supply(t)
+                                        + self.contract_hours.get(t, 0.0)
+                                        - self.trade_hours_used.get(t, 0.0)) < wnt * frac)[:3]
+                else:
+                    st.pop("short_of_trade", None)
                 for t, want in n["lab"].items():
                     self.trade_hours_used[t] = (self.trade_hours_used.get(t, 0.0)
                                                 + want * frac)
@@ -3083,6 +3123,8 @@ class Sim:
                   if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
+        # Reset AFTER the progress pass above, which is where the hours you sold
+        # are subtracted from the hours you have left to direct.
         self.wage_hours_this_year = 0.0
         # Contracted work is bought for a year and expires with it: hours you
         # paid a shop for in 142 are not still sitting there in 143.
@@ -3433,7 +3475,7 @@ class Sim:
         # times, which is not how having a patron works.
         if (r.random() < 0.05 and self.has("patron_local")
                 and yr - getattr(self, "_last_patron_death", -99) > 25):
-            self._last_patron_death = yr
+            self.last_patron_death = yr
             self.scandal += 4
             self.protection *= 0.6
             self.capital -= 800
@@ -3795,7 +3837,7 @@ def _agent_end_reason(s):
     return None
 
 
-def _agent_state(s, nodes):
+def _agent_state(s, nodes, cmd=None):
     active = {}
     for k, st in s.active.items():
         n = nodes[k]
@@ -3809,12 +3851,16 @@ def _agent_state(s, nodes):
                      # calendar-locked and could not use them, and only noticed by
                      # reading state closely. Say which of the three things it is
                      # actually waiting for.
-                     "waiting_on": ("money" if st["ph_left"] <= 0 and bill > 0.5
-                                    else "the calendar" if st["ph_left"] <= 0
-                                    else "your hours"),
+                     "waiting_on": (
+                         ("nobody to do the work: " + ", ".join(st["short_of_trade"]))
+                         if st.get("short_of_trade")
+                         else "money" if st["ph_left"] <= 0 and bill > 0.5
+                         else "the calendar" if st["ph_left"] <= 0
+                         else "your hours"),
                      "bountied": k in s.bountied}
     end_reason = _agent_end_reason(s)
-    return {
+    full = bool((cmd or {}).get("full"))
+    out = {
         "year": s.year, "capital": round(s.capital, 1), "revenue": round(s.revenue(), 1),
         "upkeep": round(s.upkeep(), 1),
         # A playtester watched capital fall 400 to 184 on the first step with
@@ -3898,153 +3944,322 @@ def _agent_state(s, nodes):
         "fog_of_war": getattr(s, "fog", False),
         "manual": s.manual, "ended": end_reason is not None, "end_reason": end_reason,
     }
+    # A SHORT REPLY BY DEFAULT. `state` had grown to 55 fields and four
+    # kilobytes, two of them a hazard briefing repeated verbatim on every single
+    # call, and a tester said reading it back "made me double-check arithmetic
+    # more than once". The three heaviest blocks now have commands of their own,
+    # so you read them when you want them instead of every turn.
+    if not full:
+        moved = {"knowledge_risk": "risk", "how_to_grow_staff": "labour",
+                 "policy": "policy", "where_the_money_comes_from": "money",
+                 "training_pending": "labour"}
+        elided = []
+        for field, where in moved.items():
+            if field in out:
+                if field == "knowledge_risk":
+                    kr = out[field]
+                    haz = [h["name"] for h in kr.get("known_hazards_ahead", [])
+                           if h.get("in_progress")]
+                    out["at_risk"] = {
+                        "technologies_you_could_lose": kr.get("technologies_at_risk"),
+                        "hedged_by": kr.get("hedged_by"),
+                        "happening_now": haz or None,
+                        "hazards_still_ahead": len(kr.get("known_hazards_ahead", [])),
+                        "in_full": '{"cmd":"risk"}'}
+                elif field == "training_pending" and out[field]:
+                    out["in_training"] = len(out[field])
+                del out[field]
+                elided.append('%s -> {"cmd":"%s"}' % (field, where))
+        out["also_available"] = elided
+        out["everything_at_once"] = '{"cmd":"state","full":true}'
+    return out
 
 
-def _agent_help(s):
-    """Everything a player needs, from inside the game.
+HELP_TOPICS = ("commands", "labour", "economy", "money", "automatic",
+               "sittings", "fog")
+
+
+def _agent_help(s, topic=None):
+    """Everything a player needs, from inside the game, a topic at a time.
 
     A tester should not have to be told the commands out of band, and neither
-    should a player. If the only way to learn this game is for someone to hand
-    you a protocol document, the game is not finished.
+    should a player. But the whole of it at once was four and a half kilobytes
+    of JSON before a single move had been made, and testers were spending a
+    command just to re-read it. If it is too much for a machine it is far too
+    much for a person. So: a short front page, and topics on request.
     """
     fog = getattr(s, "fog", False)
-    return {
-        "what this is": (
-            "You are one person, dropped into a pre-industrial society, carrying "
-            "the knowledge of how modern technology works but none of the "
-            "industry that makes it. You are playing %s, beginning in %d. "
-            "Knowing how a thing works is free. Building it is not: it takes your "
-            "own hours, other people's hours, money, materials, and years."
-            % (s.civ.get("name", "a society"), s.cfg["start_year"])),
-        "how a turn works": (
-            "You begin projects, then advance time. In the first year you are also "
-            "credited with everything this society ALREADY knows how to do, which "
-            "is over a hundred things and costs you nothing; `state` counts those "
-            "separately as granted rather than earned, because they are not your "
-            "doing. After that first year, nothing happens unless you make it. Projects consume money and hours while they run. You "
-            "are charged for food, rent and appearances every year whether or not "
-            "you are building anything."),
-        "what you are trying to do": (
-            "Advance as far as you can before the horizon at %d. There is no "
-            "score but the state of what you have built." % s.end_year
-            if fog else
-            "Reach %s, and see the rest of what you can build on the way."
-            % s.goal),
-        "commands": {
-            "state": "everything about your position right now",
-            "available": "what you could begin today" + (
-                ", one line each" if fog else ", in full"),
+    topic = (topic or "").strip().lower()
+
+    if not topic:
+        return {
+            "what this is": (
+                "You are one person, dropped into a pre-industrial society, "
+                "carrying the knowledge of how modern technology works but none "
+                "of the industry that makes it. You are playing %s, beginning in "
+                "%d. Knowing how a thing works is free. Building it is not: it "
+                "takes your own hours, other people's hours, money, materials, "
+                "and years."
+                % (s.civ.get("name", "a society"), s.cfg["start_year"])),
+            "how a turn works": (
+                "You begin projects, then advance time. Nothing happens unless "
+                "you make it. You are charged for food, rent and appearances "
+                "every year whether or not you are building anything."),
+            "what you are trying to do": (
+                "Advance as far as you can before the horizon at %d. There is no "
+                "score but the state of what you have built." % s.end_year
+                if fog else
+                "Reach %s, and see the rest of what you can build on the way."
+                % s.goal),
+            "you arrive alone": (
+                "No employees, no slaves, nobody who owes you anything. Anyone "
+                'who works for you is hired, taught, commissioned or bought. See '
+                '{"cmd":"help","topic":"labour"}.'),
+            "the four you need first": {
+                "state": "where you stand",
+                "available": "what you could begin today",
+                "why <id>": "everything known about one thing",
+                "step <years>": "let time pass",
+            },
+            "how to send a command": (
+                'One JSON object per line on standard input, for example '
+                '{"cmd":"available"} or {"cmd":"step","years":5}. Each reply is '
+                'one JSON object.'),
+            "more": {t: '{"cmd":"help","topic":"%s"}' % t for t in HELP_TOPICS},
+        }
+
+    if topic in ("commands", "command", "all"):
+        return {"commands": {
+            "state": "where you stand; add full:true for every field",
+            "available": "what you could begin today, summarised by subject; "
+                         'add subject, find, afford, limit/offset, or all:true',
             "why <id>": "everything known about one thing",
             "start <id>": "begin work on something",
             "stop <id>": "abandon it, losing what you have spent",
             "step <years>": "let time pass",
-            "buy": "forest, mine, slaves, or manumit; see 'economy' below",
-            "bounty <id>": "pay someone else to solve it instead of building it",
-            "path <id>": ("not available under fog of war"
-                          if fog else "what something still needs"),
-            "work <trade> <hours>": "do an ordinary job for ordinary pay, which is "
-                                    "sometimes all you can afford to do",
-            "labour": "who you employ, what trades this society has, and what each costs",
-            "hire <trade> <n>": "take people onto the staff permanently; they are paid "
-                                "every year whether you have work for them or not",
-            "fire <trade> <n>": "let them go",
-            "train <trade> <n>": "teach a trade that does not exist here into "
-                                 "existence, out of your own hours",
-            "commission <trade> <hours>": "buy a job rather than a person: somebody "
-                                          "else's shop does the work, at a premium, "
-                                          "with no standing obligation",
-            "mothball <id>": "shut a finished work down to stop paying its upkeep",
-            "restore <id>": "bring a mothballed work back, for about a third of "
-                            "what it cost to build",
+            "money": "the whole ledger: what comes in, what goes out",
+            "risk": "what history is about to do to you, and what blunts it",
+            "labour": "who you employ and what trades exist here",
+            "hire / fire / train / commission": "see the labour topic",
+            "buy": "forest, mine, slaves, or manumit; see the economy topic",
+            "work <trade> <hours>": "do an ordinary job for ordinary pay",
+            "bounty <id>": "pay someone else to solve it instead",
+            "mothball <id> / restore <id>": "shut a finished work down, or reopen it",
             "bribe <amount>": "spend money to reduce a scandal",
-            "policy": "every automatic behaviour, and a switch for each one; "
-                      '{"cmd":"policy","set":{"auto_hire":true}}',
-            "save <file>": "write the game to a file",
-            "load <file>": "read a game back",
-            "help": "this",
+            "policy": "every automatic behaviour, and a switch for each",
+            "path <id>": ("not available under fog of war" if fog
+                          else "what something still needs"),
+            "save <file> / load <file>": "write or read a game",
+            "help": "this; add a topic",
             "quit": "stop",
-        },
-        "how to send a command": (
-            'One JSON object per line on standard input, for example '
-            '{"cmd":"available"} or {"cmd":"step","years":5} or '
-            '{"cmd":"start","id":"some_id"}. Each reply is one JSON object.'),
-        "playing across several sittings": (
-            "Pass --session FILE on the command line. The game is written to that "
-            "file after every command and read back when you start again, so you "
-            "do not need to hold a process open or write a script."),
-        "economy": {
-            "buy forest": '{"cmd":"buy","what":"forest","n":100} hectares of coppice, '
-                          'which is where charcoal comes from',
-            "buy mine": '{"cmd":"buy","what":"mine","material":"coal","n":500} tonnes '
-                        'a year of your own workings; it takes years to sink',
-            "buy slaves": '{"cmd":"buy","what":"slaves","n":5}. This is available '
-                          'because it was the ordinary condition of production in '
-                          'most of these societies, and a model that hides it lies '
-                          'about the cost of everything.',
-            "manumit": '{"cmd":"buy","what":"manumit","n":5} frees people you hold. '
-                       'They then work better, and it is the decent thing.',
-        },
-        "labour": (
-            "You arrive alone: no employees, no slaves, nobody who owes you "
-            "anything. Everything anyone else does for you is hired by the year "
-            "(`hire`), bought as a single job (`commission`), taught by you from "
-            "nothing if this society has no such trade (`train`), or bought "
-            "outright as a person (`buy slaves`). Trades are NOT "
-            "interchangeable: a smith is not a scribe, and a project asking for "
-            "an engineer cannot be built by smiths however many you have. See "
-            "`labour` for who exists here and what they cost."),
-        "what happens on its own": (
+        }}
+
+    if topic == "labour":
+        return {"labour": (
+            "You arrive alone. Everything anyone else does for you is hired by "
+            "the year, bought as a single job, taught by you from nothing if "
+            "this society has no such trade, or bought outright as a person. "
+            "Trades are NOT interchangeable: a smith is not a scribe, and a "
+            "project asking for an engineer cannot be built by smiths however "
+            "many you have."),
+            "commands": {
+                "labour": 'who exists here and what they cost; add "trade" for one',
+                "hire": '{"cmd":"hire","trade":"smith","n":3} - paid every year, '
+                        "whether you have work for them or not",
+                "fire": '{"cmd":"fire","trade":"smith","n":1}',
+                "train": '{"cmd":"train","trade":"machinist","n":2} - teaches a '
+                         "trade that does not exist here, out of your own hours",
+                "commission": '{"cmd":"commission","trade":"smith","hours":400} - '
+                              "buy a job rather than a person",
+            }}
+
+    if topic in ("economy", "money", "buy"):
+        return {"the ledger": '{"cmd":"money"} itemises what comes in and what '
+                              "goes out, including where the income comes from",
+                "buy forest": '{"cmd":"buy","what":"forest","n":100} hectares of '
+                              "coppice, which is where charcoal comes from",
+                "buy mine": '{"cmd":"buy","what":"mine","material":"coal","n":500} '
+                            "tonnes a year of your own workings; it takes years "
+                            "to sink. Materials: " + ", ".join(Sim.MINE_CAPEX_PER_T_YR),
+                "buy slaves": '{"cmd":"buy","what":"slaves","n":5}. This is '
+                              "available because it was the ordinary condition of "
+                              "production in most of these societies, and a model "
+                              "that hides it lies about the cost of everything.",
+                "manumit": '{"cmd":"buy","what":"manumit","n":5} frees people you '
+                           "hold. They then work better, and it is the decent thing.",
+                "debt": "You may spend past what you have, as far as somebody will "
+                        "lend you and no further. Arrears cost interest."}
+
+    if topic in ("automatic", "policy"):
+        return {"what happens on its own": (
             "Some things the engine will do for you if you let it: grow the "
             "staff, teach trades, sink mines, buy woodland, shut down what you "
-            "cannot pay for, pay off a scandal. Every one of them is a switch you "
-            "control, and every one can be done by hand instead. See `policy`."),
-        "fog of war": (
-            "ON. You can see what you have built, what you could begin today as a "
-            "one line summary, and things you have heard of but cannot yet begin. "
-            "You cannot see where anything leads, and there is no way to view the "
-            "whole tree." if fog else "OFF. You can see the whole tree."),
-    }
+            "cannot pay for, pay off a scandal. Every one is a switch you "
+            "control, and every one can be done by hand instead."),
+            "see them": '{"cmd":"policy"}',
+            "change one": '{"cmd":"policy","set":{"auto_hire":true}}'}
+
+    if topic in ("sittings", "save", "load"):
+        return {"playing across several sittings": (
+            "Pass --session FILE on the command line. The game is written to "
+            "that file after every command and read back when you start again, "
+            "so you do not need to hold a process open or write a script.")}
+
+    if topic == "fog":
+        return {"fog of war": (
+            "ON. You can see what you have built, what you could begin today as "
+            "a one line summary, and things you have heard of but cannot yet "
+            "begin. You cannot see where anything leads, and there is no way to "
+            "view the whole tree." if fog else "OFF. You can see the whole tree.")}
+
+    return {"no such topic": topic, "topics": list(HELP_TOPICS)}
 
 
-def _agent_available(s, nodes):
-    out = []
-    for k in s.order:
-        if not s.can_start(k):
-            continue
-        n = nodes[k]
-        # Anything the society is about to be handed for nothing is not a
-        # decision. Before the first step these sat in `available` alongside
-        # real choices, and a tester reported the list as 300 entries of which
-        # most were background facts. They are granted in step() 4a anyway.
-        if n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1 \
-                and not s._is_foreign_institution(k):
-            continue
-        if getattr(s, "fog", False):
-            # One sentence, the price, and how long. No prerequisites, because
-            # you already have them, and above all no hint of what it leads to.
-            out.append({"id": k, "name": n["name"],
-                        "summary": s.fog_summary(k),
-                        "cost": round(s.project_cost(k), 1),
-                        "your_hours": n["ph"],
-                        "trades_needed": sorted(n["lab"]),
-                        "least_years": n["yrs"],
-                        "chance_of_failure": n["risk"]})
-        else:
-            out.append({"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
-                        "cost": round(n["_total_cost"], 1), "founder_hours": n["ph"],
-                        "calendar_floor_years": n["yrs"], "risk": n["risk"],
-                        "prerequisites": n["pre"], "note": n["note"]})
-    if getattr(s, "fog", False):
+SUBJECTS = {
+    "00": "the briefing", "01": "the world as it is", "03": "society and politics",
+    "10": "metallurgy", "20": "chemistry", "30": "glass and optics",
+    "40": "power and precision", "50": "electricity", "55": "semiconductors",
+    "60": "mathematics and method", "70": "medicine and biology",
+    "75": "agriculture and food", "76": "farming, in depth",
+    "80": "printing and information", "85": "roads, bridges and canals",
+    "86": "transport, in depth", "87": "construction", "88": "signals and media",
+    "89": "the remaining arts", "90": "textiles", "91": "the household",
+    "95": "expeditions", "96": "finance", "97": "military",
+    "98": "power stations",
+}
+
+
+def _subject_of(n):
+    """A readable heading for a node, from its knowledge module.
+
+    There are 241 distinct `cat` values and 26 knowledge modules. The modules
+    are the ones a person would recognise as subjects.
+    """
+    kb = (n.get("kb") or "").split("#")[0]
+    return SUBJECTS.get(kb[:2], "everything else")
+
+
+def _brief(s, nodes, k, fog):
+    n = nodes[k]
+    if fog:
+        return {"id": k, "name": n["name"],
+                "cost": round(s.project_cost(k), 1),
+                "your_hours": n["ph"],
+                "least_years": n["yrs"],
+                "chance_of_failure": n["risk"]}
+    return {"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
+            "cost": round(s.project_cost(k), 1), "founder_hours": n["ph"],
+            "calendar_floor_years": n["yrs"], "risk": n["risk"]}
+
+
+def _full_entry(s, nodes, k, fog):
+    e = _brief(s, nodes, k, fog)
+    n = nodes[k]
+    if fog:
+        e["summary"] = s.fog_summary(k)
+        if n["lab"]:
+            e["trades_needed"] = sorted(n["lab"])
+    else:
+        e["prerequisites"] = n["pre"]
+        e["note"] = n["note"]
+    return e
+
+
+def _agent_available(s, nodes, cmd=None):
+    """What you could begin today.
+
+    THIS USED TO RETURN EVERYTHING. At year 250 that was 559 entries and 165
+    kilobytes in a single reply, and even at the start it was 78 entries and 21
+    kilobytes: a wall nobody reads, which testers dealt with by grepping their
+    own scrollback. If it is too much for a machine it is far too much for a
+    person. So the default is now a digest by subject, and you ask for the part
+    you want.
+    """
+    cmd = cmd or {}
+    fog = getattr(s, "fog", False)
+    ok = [k for k in s.order if s.can_start(k)]
+    # Anything the society is about to be handed for nothing is not a decision.
+    ok = [k for k in ok
+          if not (nodes[k]["tier"] == 0 and nodes[k]["ph"] == 0
+                  and nodes[k]["_total_cost"] <= 1
+                  and not s._is_foreign_institution(k))]
+
+    want_subject = (cmd.get("subject") or cmd.get("group") or "").strip().lower()
+    find = (cmd.get("find") or cmd.get("search") or "").strip().lower()
+    show_all = bool(cmd.get("all"))
+    try:
+        limit = int(cmd.get("limit", 0))
+    except (TypeError, ValueError):
+        limit = 0
+    try:
+        offset = max(0, int(cmd.get("offset", 0)))
+    except (TypeError, ValueError):
+        offset = 0
+    afford = float(cmd.get("afford")) if str(cmd.get("afford", "")).strip() not in ("", "None") else None
+
+    sel, why_these = ok, None
+    if find:
+        sel = [k for k in ok if find in k.lower() or find in nodes[k]["name"].lower()]
+        why_these = "matching %r" % find
+    elif want_subject:
+        sel = [k for k in ok if want_subject in _subject_of(nodes[k]).lower()]
+        why_these = "in %r" % want_subject
+    if afford is not None:
+        sel = [k for k in sel if s.project_cost(k) <= afford]
+
+    heard = []
+    if fog:
         heard = sorted(k for k in getattr(s, "revealed", set())
                        if k not in s.done and k not in s.active
-                       and not s.start_reason(k)[0])
-        return {"count": len(out), "available": out,
-                "heard_of_but_cannot_begin": [
-                    {"id": k, "name": nodes[k]["name"],
-                     "why_not": s.start_reason(k)[1]} for k in heard[:40]],
-                "note": "Under fog you see only what you could begin now, and things "
-                        "you have heard of. There is no way to see the whole tree."}
-    return {"count": len(out), "available": out}
+                       and not s.start_reason(k)[0])[:25]
+    heard_block = [{"id": k, "name": nodes[k]["name"],
+                    "why_not": s.start_reason(k)[1]} for k in heard]
+
+    # A LIST was asked for: a subject, a search, an explicit page, or everything.
+    if find or want_subject or limit or offset or show_all or afford is not None:
+        page = sel if show_all else sel[offset:offset + (limit or 30)]
+        out = {"ok": True, "count": len(sel), "of_everything_startable": len(ok),
+               "showing": "%d-%d%s" % (offset + 1, offset + len(page),
+                                       (" " + why_these) if why_these else ""),
+               "available": [_full_entry(s, nodes, k, fog) for k in page]}
+        if not show_all and offset + len(page) < len(sel):
+            out["more"] = ('%d more; ask again with "offset": %d'
+                           % (len(sel) - offset - len(page), offset + len(page)))
+        if fog and heard_block and offset == 0:
+            out["heard_of_but_cannot_begin"] = heard_block
+        return out
+
+    # DEFAULT: the digest.
+    groups = {}
+    for k in ok:
+        g = groups.setdefault(_subject_of(nodes[k]), [])
+        g.append(k)
+    purse = s.capital + s.credit_limit() * 0.5
+    rows = []
+    for name, ks in sorted(groups.items(), key=lambda kv: -len(kv[1])):
+        costs = sorted(s.project_cost(k) for k in ks)
+        rows.append({"subject": name, "things": len(ks),
+                     "cheapest": round(costs[0], 1),
+                     "dearest": round(costs[-1], 1),
+                     "you_could_pay_for": sum(1 for c in costs if c <= purse)})
+    cheap = sorted(ok, key=lambda k: s.project_cost(k))[:6]
+    out = {"ok": True, "count": len(ok),
+           "showing": "a summary by subject, because the full list is %d things"
+                      % len(ok),
+           "subjects": rows,
+           "cheapest_six": [_full_entry(s, nodes, k, fog) for k in cheap],
+           "to_see_more": {
+               "one subject": '{"cmd":"available","subject":"metallurgy"}',
+               "by name": '{"cmd":"available","find":"furnace"}',
+               "what you can pay for": '{"cmd":"available","afford":%d}' % int(max(0, purse)),
+               "a page of everything": '{"cmd":"available","limit":30,"offset":0}',
+               "all of it at once": '{"cmd":"available","all":true} (large)'}}
+    if fog and heard_block:
+        out["heard_of_but_cannot_begin"] = heard_block
+    if fog:
+        out["note"] = ("Under fog you see only what you could begin now, and things "
+                       "you have heard of. There is no way to see the whole tree.")
+    return out
 
 
 def _node_explain(s, nodes, k):
@@ -4055,7 +4270,7 @@ def _node_explain(s, nodes, k):
     bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                       "power", "agriculture", "information", "instruments"))
     started = k in s.done or k in s.active
-    return {
+    out = {
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
         "note": n["note"], "kb": n["kb"],
         "founder_hours": n["ph"],
@@ -4067,11 +4282,6 @@ def _node_explain(s, nodes, k):
         # here, for this project only. staff_needed is PEOPLE ON YOUR OWN BOOKS
         # who understand your methods and stay afterwards.
         "hired_labour": n["lab"],
-        "hired_labour_means": "hours of each trade this project buys in, for this "
-                              "job only. A trade that does not exist here has to "
-                              "be taught first; see the labour command.",
-        "trades_that_do_not_exist_here": sorted(t for t in n["lab"]
-                                                if not s.trade_available(t)),
         "materials": n["mat"],
         # `why` used to quote the BASE cost, identical for every civilization,
         # while step() charged that base multiplied by this society's domain
@@ -4095,10 +4305,6 @@ def _node_explain(s, nodes, k):
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
-        "staff_needed_means": "people kept on your own staff, who understand your "
-                              "methods and are still there when this is finished. "
-                              "You are one scholar yourself; the rest are hired, "
-                              "taught or bought.",
         "you_have": {"scholars": round(s.effective_scholars(), 1),
                      "artisans": round(s.artisans, 1)},
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
@@ -4151,14 +4357,62 @@ def _node_explain(s, nodes, k):
         # name in someone else's sentence either.
         "start_blocked_reason": None if started else s.fog_scrub(s.start_reason(k)[1]),
     }
+    # Say what the two labour fields mean ONLY when this node makes it matter.
+    # A tester read them as contradicting each other, so the explanation earns
+    # its place; carrying it on every reply whether or not the node hires anyone
+    # is 400 bytes of boilerplate per call.
+    absent = sorted(t for t in n["lab"] if not s.trade_available(t))
+    if absent:
+        out["trades_that_do_not_exist_here"] = absent
+        out["hired_labour_means"] = ("hours of a trade bought in for this job only. "
+                                     "These trades do not exist here yet and must "
+                                     "be taught; see the labour command.")
+    if n["art"] > s.artisans or n["sch"] > s.effective_scholars():
+        out["staff_needed_means"] = ("people kept on your own staff, who understand "
+                                     "your methods and stay when this is finished. "
+                                     "Different from hired_labour, which is hours of "
+                                     "a job.")
+    return out
 
 
 def _num(v, default=0.0):
-    """Read a number from a command without ever raising at the player."""
+    """Read a number from a command without ever raising at the player.
+
+    NaN AND INFINITY ARE NOT NUMBERS FOR THIS PURPOSE. Python's json accepts
+    bare NaN and Infinity as an extension, float() accepts the strings, and
+    every comparison against NaN is False - so `NaN` walked through every "must
+    be greater than zero" guard in the game, set capital to NaN permanently,
+    made everything free, and then got written into the save file as bare NaN,
+    which is not legal JSON and cannot be read back by anything else. A tester
+    bought 999,999 hectares of woodland with 400 denarii this way.
+    """
     try:
-        return float(v)
+        f = float(v)
     except (TypeError, ValueError):
         return float(default)
+    if f != f or f in (float("inf"), float("-inf")):
+        return float(default)
+    return f
+
+
+def _clean(v):
+    """True if this is a real, finite number (or something that is not a number
+    at all and will be rejected elsewhere). False only for NaN and infinity."""
+    if isinstance(v, bool) or not isinstance(v, (int, float)):
+        return True
+    return v == v and v not in (float("inf"), float("-inf"))
+
+
+def _flag(v, default=False):
+    """Read a switch. "false", "no", "0" and "" are all off.
+
+    A tester set a policy to the STRING "false" and it came back true, because
+    bool("false") is true. Every other language on earth has this bug too and it
+    is still a bug.
+    """
+    if isinstance(v, str):
+        return v.strip().lower() not in ("", "false", "no", "off", "0", "none")
+    return bool(default if v is None else v)
 
 
 def _agent_dispatch(s, nodes, cmd):
@@ -4169,7 +4423,7 @@ def _agent_dispatch(s, nodes, cmd):
     ended = _agent_end_reason(s)
 
     if op in ("help", "?", "commands"):
-        return {"ok": True, "help": _agent_help(s)}
+        return {"ok": True, "help": _agent_help(s, cmd.get("topic"))}
 
     # One central guard rather than five. A playtester sent {"id": {"a": 1}} and
     # the process died on `k not in nodes` with an unhashable-type TypeError,
@@ -4180,11 +4434,18 @@ def _agent_dispatch(s, nodes, cmd):
                 "error": "id must be a string, got %s. Nothing was changed."
                          % type(cmd["id"]).__name__}
 
+    # NaN and Infinity, anywhere in the command, before anything is touched.
+    bad = sorted(k for k, v in cmd.items() if not _clean(v))
+    if bad:
+        return {"ok": False,
+                "error": "%s must be a real number; NaN and Infinity are not "
+                         "quantities. Nothing was changed." % ", ".join(bad)}
+
     if op == "state":
-        return dict(ok=True, **_agent_state(s, nodes))
+        return dict(ok=True, **_agent_state(s, nodes, cmd))
 
     if op == "available":
-        return dict(ok=True, **_agent_available(s, nodes))
+        return _agent_available(s, nodes, cmd)
 
     if op == "why":
         k = cmd.get("id")
@@ -4347,24 +4608,73 @@ def _agent_dispatch(s, nodes, cmd):
                 "your_hours_left_this_year": round(
                     max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
 
+    if op in ("risk", "hazards"):
+        kr = s.knowledge_risk()
+        return {"ok": True, "knowledge_risk": kr,
+                "note": "What history is about to do to you, and what you have "
+                        "built that blunts it. Every hazard here is fightable."}
+
+    if op in ("money", "ledger", "accounts"):
+        fixed = s.upkeep() + s.living_cost() + s.mine_operating_cost()
+        return {"ok": True,
+                "capital": round(s.capital, 1),
+                "revenue": round(s.revenue(), 1),
+                "where_the_money_comes_from": s.revenue_sources(),
+                "what_it_costs_you": {
+                    "upkeep_of_what_you_built": round(s.upkeep(), 1),
+                    "living_and_appearances": round(s.living_cost() - s.wage_bill(), 1),
+                    "wages": round(s.wage_bill(), 1),
+                    "mines_standing": round(s.mine_operating_cost(), 1)},
+                "net_per_year": round(s.revenue() - fixed, 1),
+                "spent_on_projects_last_year": round(getattr(s, "spend_last_year", 0.0), 1),
+                "credit_limit": round(s.credit_limit(), 1),
+                "interest_rate_on_arrears": round(s.debt_interest_rate(), 4),
+                "interest_paid_in_total": round(getattr(s, "interest_paid", 0.0), 1),
+                "still_owed_on_work_in_hand": round(
+                    sum(st.get("cost_left") or 0.0 for st in s.active.values()), 1)}
+
     if op == "labour":
-        rows = {}
-        for t in sorted(WAGES):
-            rows[t] = {
-                "you_employ": round(s.employees.get(t, 0.0), 2),
-                "exists_here": s.trade_available(t),
-                "wage_per_hour": round(WAGES[t] * s.wage_index * s.price_index, 3),
-                "a_year_of_one": round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index * s.price_index, 0),
-                "hours_the_market_can_supply": round(s.market_supply(t), 0),
-                "note": TRADE_NOTES.get(t, ""),
-                "kind": trade_family(t),
-            }
-        return {"ok": True, "trades": rows,
+        one = (cmd.get("trade") or "").strip().lower()
+        if one and one not in WAGES:
+            return {"ok": False, "error": "no such trade: %s. They are: %s"
+                    % (one, ", ".join(sorted(WAGES)))}
+        def row(t, long=False):
+            r = {"trade": t,
+                 "a_year_of_one": round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index
+                                        * s.price_index, 0),
+                 "you_employ": round(s.employees.get(t, 0.0), 2)}
+            if long:
+                r.update({"kind": trade_family(t),
+                          "wage_per_hour": round(WAGES[t] * s.wage_index
+                                                 * s.price_index, 3),
+                          "hours_the_market_can_supply": round(s.market_supply(t), 0),
+                          "note": TRADE_NOTES.get(t, "")})
+            return r
+        if one:
+            r = row(one, long=True)
+            r["exists_here"] = s.trade_available(one)
+            return {"ok": True, "trade": r}
+        have = sorted(t for t in WAGES if s.employees.get(t, 0.0) > 0.005)
+        hirable = sorted(t for t in WAGES
+                         if s.trade_available(t) and t not in have)
+        absent = sorted(t for t in WAGES if not s.trade_available(t))
+        return {"ok": True,
+                "on_your_staff": [row(t) for t in have] or "nobody",
+                "you_could_hire_here": hirable,
+                "do_not_exist_here": absent,
                 "you_employ_in_total": round(sum(s.employees.values()), 2),
                 "slaves": s.slaves, "freedmen": s.freedmen,
                 "annual_wage_bill": round(s.wage_bill(), 1),
                 "craftsmen_on_your_staff": round(s.artisans, 2),
                 "scholars_including_you": round(s.effective_scholars(), 2),
+                "in_training": [
+                    {"trade": (r_[2] if len(r_) > 2 else None),
+                     "people": (r_[3] if len(r_) > 3 else round(r_[0], 2)),
+                     "ready_year": r_[1]}
+                    for r_ in getattr(s, "training", [])],
+                "one_trade_in_full": '{"cmd":"labour","trade":"smith"}',
+                "how_to_grow_staff": {"scholars": s._staff_advice("scholars"),
+                                      "artisans": s._staff_advice("artisans")},
                 "note": "A trade that does not exist here cannot be hired at any "
                         "price; teach one with train. Trades are not "
                         "interchangeable. Buying a job instead of a person is "
@@ -4437,8 +4747,8 @@ def _agent_dispatch(s, nodes, cmd):
                 if key not in s.policy:
                     return {"ok": False, "error": "no such policy: %s. They are: %s"
                             % (key, ", ".join(sorted(s.policy)))}
-                s.policy[key] = bool(val)
-                changed[key] = bool(val)
+                s.policy[key] = _flag(val)
+                changed[key] = s.policy[key]
         return {"ok": True, "policy": dict(s.policy), "changed": changed,
                 "what_each_does": {
                     "auto_hire": "grow the staff toward what you can house and pay",
@@ -4516,6 +4826,15 @@ SAVE_FIELDS = (
     "employees", "trades_created", "policy", "mothballed", "contract_hours",
     "commissioned", "teaching_hours_this_year", "wages_paid",
     "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",
+    # Counters and within-year tallies that were being silently reset on every
+    # single command, because with --session every command is a save and a load.
+    # wage_hours_this_year is the dangerous one: it is the tally that stops you
+    # selling the same year's hours twice, so dropping it handed the exploit
+    # straight back to anyone playing the ordinary way, across sittings.
+    "interest_paid", "wage_hours_this_year", "teaching_hours_this_year",
+    "trade_hours_used", "total_spend", "director_hours_spent_founder",
+    "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
+    "last_patron_death", "_said_debasement",
 )
 
 

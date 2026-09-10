@@ -845,13 +845,15 @@
    "name": "The centrifugal machine for sugar",
    "note": "Vibration that prevents sugar from caking against the screen and the automated discharge timer",
    "ph": 95.0,
-   "pre": [],
+   "pre": [
+    "ag2_sugar_voyage"
+   ],
    "req_any": [],
    "rev": 240.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "labour_saving"
    ],
@@ -942,13 +944,15 @@
    "name": "Coffee cultivation after voyage",
    "note": "Shade trees and altitude matching matter; three years to first harvest after planting",
    "ph": 90.0,
-   "pre": [],
+   "pre": [
+    "exp_trade_route_extend"
+   ],
    "req_any": [],
    "rev": 240.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "food",
     "commerce",
@@ -1353,13 +1357,15 @@
    "name": "Crown cork",
    "note": "Crimped tin cap with cork liner, seals carbonated beverages, bottling machine applies caps, invented 1891",
    "ph": 90.0,
-   "pre": [],
+   "pre": [
+    "met_tin_plate"
+   ],
    "req_any": [],
    "rev": 170.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "labour_saving"
    ],
@@ -1467,13 +1473,15 @@
    "name": "Double seam can",
    "note": "The pressure-sealing geometry and tool wear that prevents leakage during handling and retort pressure",
    "ph": 100.0,
-   "pre": [],
+   "pre": [
+    "met_tin_plate"
+   ],
    "req_any": [],
    "rev": 240.0,
    "risk": 0.13,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "labour_saving"
    ],
@@ -2301,13 +2309,15 @@
    "name": "Maize from the New World",
    "note": "Flint varieties travelled farther north than dent varieties; indigenous varieties per region arose within decades",
    "ph": 65.0,
-   "pre": [],
+   "pre": [
+    "exp_atlantic_crossing"
+   ],
    "req_any": [],
    "rev": 160.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "food"
    ],
@@ -2871,13 +2881,15 @@
    "name": "Potato from the New World",
    "note": "One successful voyage and it propagates forever via tubers; varieties diverge by latitude and day length",
    "ph": 70.0,
-   "pre": [],
+   "pre": [
+    "exp_atlantic_crossing"
+   ],
    "req_any": [],
    "rev": 180.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "food"
    ],
@@ -3824,13 +3836,15 @@
    "name": "Sugar cultivation after voyage",
    "note": "Once a few cuttings establish, perpetual harvest with harvest planning and burn timing to prevent disease",
    "ph": 80.0,
-   "pre": [],
+   "pre": [
+    "exp_trade_route_extend"
+   ],
    "req_any": [],
    "rev": 220.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "food",
     "commerce"
@@ -45488,13 +45502,15 @@
    "name": "Friction matches",
    "note": "White phosphorus matches ignite easily but cause phosphorus necrosis (rotting jawbone) in workers from chronic exposure. Safety matches use red phosphorus instead, less toxic. Early matches are dangerous to makers and users alike.",
    "ph": 60.0,
-   "pre": [],
+   "pre": [
+    "chm_phosphorus_extraction"
+   ],
    "req_any": [],
    "rev": 80.0,
    "risk": 0.05,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [],
    "up": 5.0,
    "yrs": 0.5
@@ -74641,7 +74657,10 @@
    "note": "The atomic bomb as a single node with an honest statement: requires the isotope separation and reactor programme it needs and the fact that it is the one node in this tree whose use is a mass atrocity. Hiroshima and Nagasaki killed 150,000-200,000 civilians, mostly instantly. Nuclear weapons end conventional warfare through deterrence.",
    "ph": 200.0,
    "pre": [
-    "cap_tol_100um"
+    "cap_tol_100um",
+    "sc2_physics_nuclear_fission",
+    "mt2_uranium_thorium_extraction",
+    "in2_ultracentrifuge"
    ],
    "req_any": [],
    "rev": 0.0,
@@ -77434,13 +77453,15 @@
    "name": "Plate armour against firearms",
    "note": "Plate armour against firearms and why it lost - musket balls penetrate at medium range, weight exceeds cavalry endurance, cavalry becomes less viable. By 1700, infantry with muskets dominates armoured cavalry.",
    "ph": 70.0,
-   "pre": [],
+   "pre": [
+    "mil_matchlock"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.01,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "military"
    ],
@@ -111668,13 +111689,15 @@
    "name": "Friction match: white phosphorus tip",
    "note": "White phosphorus mixed with oxidiser at stick tip, ignites spontaneously in air, dangerous but widespread in 19th century",
    "ph": 80.0,
-   "pre": [],
+   "pre": [
+    "chm_phosphorus_extraction"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [],
    "up": 40.0,
    "yrs": 0.5
@@ -114666,13 +114689,15 @@
    "name": "Tin can: sealed metal container",
    "note": "Rolled and soldered tin plate, preserves food and other goods, mass production from 1810s onwards",
    "ph": 80.0,
-   "pre": [],
+   "pre": [
+    "met_tin_plate"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [],
    "up": 40.0,
    "yrs": 1.0

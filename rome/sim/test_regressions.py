@@ -163,7 +163,7 @@ check("topping up a mine still delivers capacity",
       s.mine_capacity.get("coal", 0) > 0, str(s.mine_capacity))
 
 # --- Norse BREAK: knowledge_risk advertised risk a civ could not face
-r, _, _ = proto([{"cmd": "state"}], civ="norse_900ad")
+r, _, _ = proto([{"cmd": "risk"}], civ="norse_900ad")
 kr = r[0]["knowledge_risk"]
 check("no loss risk is reported where nothing sacks",
       kr["expected_technologies_lost_per_sacking"] == 0.0, str(kr)[:80])
@@ -189,7 +189,8 @@ check("a saved game reloads without bricking",
 # --- naive BREAK: no advanced physics on the first morning
 early = {"sc2_physics_nuclear_fission", "sc2_physics_wave_mechanics",
          "el2_sonar_acoustic_detection_ranging", "el2_photomultiplier_single_photon"}
-r, _, _ = proto([{"cmd": "available"}])
+# all:true, because `available` is a digest by default now
+r, _, _ = proto([{"cmd": "available", "all": True}])
 offered = {a["id"] for a in r[0]["available"]} & early
 check("no advanced physics is startable in year one", not offered, str(offered))
 
@@ -314,6 +315,25 @@ check("debt bondage follows the society, and is a term of years",
       "rome %r han %r" % (S.load_civ("rome_100ad").get("debt_bondage"),
                           S.load_civ("han_china_100ad").get("debt_bondage")))
 
+# --- the user: a reply nobody can read is a reply nobody reads
+r, _, _ = proto([{"cmd": "state"}, {"cmd": "available"}, {"cmd": "help"},
+                 {"cmd": "labour"}])
+sizes = {c: len(json.dumps(x)) for c, x in
+         zip(("state", "available", "help", "labour"), r)}
+check("no ordinary reply is a wall of text",
+      all(v < 6000 for v in sizes.values()), str(sizes))
+
+# a late-game available must not blow up either: it was 165KB at year 250
+s = sim(capital=1e6, manual=False)
+s.fog = True
+for _ in range(150):
+    s.step()
+avail = S._agent_available(s, NODES)
+digest = len(json.dumps(avail))
+check("available stays a summary as the tree opens up", digest < 12000,
+      "%d bytes at year %d with %d things startable"
+      % (digest, s.year, avail["count"]))
+
 # --- reproducibility: the same seed must give the same answer
 outs = set()
 for _ in range(2):
@@ -324,7 +344,7 @@ for _ in range(2):
 check("the same seed gives the same result", len(outs) == 1)
 
 print("=" * 72)
-print("%d checks, %d failures" % (36, len(FAILURES)))
+print("%d checks, %d failures" % (38, len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)
