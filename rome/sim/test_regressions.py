@@ -3918,6 +3918,46 @@ check("...and `state` advertises it every turn",
       _rst[0].get("also_available"))
 
 
+# --- BREAK: a trade you taught counts as existing for ever, so once the last
+# machinist had died of old age auto_train skipped every node that needed one
+# and nobody was ever taught again. A Rome run built 829 technologies, sat on
+# 31.9M denarii, and could not begin precision_three_plate - which gates
+# master_screw, the screw lathe and ninety-nine of the hundred and forty-six
+# nodes on the road to the goal.
+s_rt = sim(capital=2000000.0, manual=False)
+s_rt.trades_created.add("machinist")          # taught once, long ago
+s_rt.employees.pop("machinist", None)
+s_rt._resync_pools()
+check("a trade taught and then lost counts as gone, not as available",
+      s_rt.trade_available("machinist")
+      and s_rt.market_supply("machinist") <= 0.0,
+      (s_rt.trade_available("machinist"), s_rt.market_supply("machinist")))
+for _ in range(6):
+    s_rt.step()
+check("...and the engine teaches it again rather than skipping every node "
+      "that needs it",
+      s_rt.market_supply("machinist") > 0
+      or s_rt._trade_headcount_pending("machinist") > 0,
+      (s_rt.market_supply("machinist"),
+       s_rt._trade_headcount_pending("machinist")))
+# But not every year: teaching two costs about 900 of a 2,000-hour year.
+s_rt2 = sim(capital=2000000.0, manual=False)
+s_rt2.trades_created.add("machinist")
+# Per TRADE: teaching four different trades over forty years is fine; teaching
+# the same one four times is the treadmill that cost three Rome seeds most of
+# what they built.
+_per_trade = {}
+for _ in range(40):
+    _before = dict(getattr(s_rt2, "last_taught", {}))
+    s_rt2.step()
+    for _t, _y in getattr(s_rt2, "last_taught", {}).items():
+        if _before.get(_t) != _y:
+            _per_trade[_t] = _per_trade.get(_t, 0) + 1
+check("...and no more than once a generation FOR THE SAME TRADE",
+      all(v <= 40 // s_rt2.RETEACH_EVERY + 1 for v in _per_trade.values()),
+      _per_trade)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

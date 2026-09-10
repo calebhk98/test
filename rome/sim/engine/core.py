@@ -82,6 +82,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.mothballed = set()          # completed works you shut down on purpose
         self.forgotten = {}              # {node: year} destroyed by a sacking
         self.opened_year = {}            # {node: year} the doors first opened
+        self.last_taught = {}            # {trade: year} auto_train last taught it
         self.wages_prepaid = 0.0         # first-year wages `hire` already took
         # WHAT YOU ACTUALLY RUN, as opposed to what you know how to do. Revenue
         # and upkeep follow this set and nothing else does. See is_venture and
@@ -245,6 +246,10 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                              % (self.civ.get("id", "?"), ", ".join(missing)))
 
     # -- helpers ------------------------------------------------------------
+
+    # Years between one automatic teaching of a trade and the next. Long
+    # enough that restoring a lost trade is an event rather than a habit.
+    RETEACH_EVERY = 25
 
     def has(self, k):
         return k in self.done
@@ -630,18 +635,47 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 if k in self.done or k in self.active:
                     continue
                 n = self.nodes[k]
-                if not any(not self.trade_available(t) for t in n["lab"]):
+                # EXISTING IS NOT THE SAME AS ANYBODY BEING LEFT. A trade you
+                # taught stays "available" for ever, so once the last machinist
+                # had died of old age this loop skipped every node that needed
+                # one and nobody was ever taught again. A Rome run built 829
+                # technologies, sat on 31.9M denarii, and could not begin
+                # precision_three_plate - which gates master_screw, the screw
+                # lathe and the entire precision branch, ninety-nine of the
+                # hundred and forty-six nodes on the road to the goal. This is
+                # the same distinction start_reason learned an hour earlier.
+                def _gone(t):
+                    return (not self.trade_available(t)
+                            or (self.market_supply(t) <= 0.0
+                                and self._trade_headcount_pending(t) <= 0.0))
+                if not any(_gone(t) for t in n["lab"]):
                     continue
                 if not self.start_reason(k, ignore_trade=True)[0]:
                     continue
                 for t in n["lab"]:
-                    if not self.trade_available(t):
+                    if _gone(t):
                         want[t] = want.get(t, 0) + 1
-            for t, _ in sorted(want.items(), key=lambda kv: -kv[1])[:1]:
+            # NOT EVERY YEAR. Teaching two of a trade costs about nine hundred
+            # of the founder's two thousand hours plus their keep, and once
+            # re-teaching a lost trade was possible at all the loop did it
+            # continuously: three Rome seeds fell from 829, 858 and 1,257
+            # technologies to 229, 56 and 188, the whole difference going into
+            # a teaching treadmill. A trade is worth restoring; it is not worth
+            # half of every year for ever.
+            _taught = getattr(self, "last_taught", None)
+            if _taught is None:
+                _taught = self.last_taught = {}
+            want = {t: v for t, v in want.items()
+                    if yr - _taught.get(t, -999) >= self.RETEACH_EVERY}
+            for t, _ in sorted(want.items(), key=lambda kv: (-kv[1], kv[0]))[:1]:
+                _taught[t] = yr
+                _first = t not in self.trades_created
                 ok, _msg = self.train(t, 2)
                 if ok:
-                    self.log.append((yr, "you begin teaching the first %ss this world "
-                                         "has ever had" % t))
+                    self.log.append((yr, "you begin teaching the first %ss this "
+                                         "world has ever had" % t if _first else
+                                     "the last %ss are gone; you begin teaching "
+                                     "more" % t))
 
         # 4b. start new projects
         pool = max(0.0, self.director_pool() - self.director_hours_committed())
