@@ -1,3 +1,93 @@
+# TOP PROBLEMS
+
+In the order I would want them fixed. Numbers in brackets point at the detailed
+note further down.
+
+1. **Fog of war hides help text that is not about the tree at all, and that
+   leaves the player genuinely stuck for a hundred in-game years.** [2, 12, 13, 25]
+   With fog OFF, `labour` says "to make room: **Room is not bought, it is built:
+   school_founded (+12 places); endowment_land (+8 places); patron_senatorial
+   (+6 places)**" and `state` explains that a chemist counts toward the
+   "scholars" figure that `why` and `start` test against. With fog ON, the same
+   fields say only "'labour' says what raises it" (it doesn't) and print two
+   numbers that contradict `ventures`. Neither sentence reveals anything about
+   where the tree goes. Show them under fog.
+
+2. **Under fog, the game tells you to do things it will not let you find.** [7, 12]
+   For ~50 in-game years the frontier said "the state is wary of this; **get at
+   least a local patron first**". There is no `patron` command; `available find
+   patron` said "nothing matching 'patron'"; `help` never mentions one. I found
+   `patron_local` by hand-walking every subject heading. It unlocked
+   `workshop_first` (filed under the subject "the briefing"), which is flagged
+   "HOW MUCH RESTS ON THIS: almost everything" and which tripled my household
+   places the year it finished. The intended opening spine - identity_cover →
+   patron_local → workshop_first → freedman_staff/collegium → school_founded - is
+   effectively undiscoverable under fog. If a blocker message names a
+   requirement, it should name the node that satisfies it.
+
+3. **`policy auto_hire true` bankrupted a healthy game in eight years, and
+   `auto_train` did the same on a smaller scale.** [3, 9] Described as "grow the
+   staff toward what you can house and pay", it hired 5.5 scholars at 625/yr when
+   every concern I owned needed craftsmen, squeezed my artisans out of the
+   household places, closed seven concerns, and ended in "CREDIT EXHAUSTED" and
+   "INSOLVENCY SETTLED ... reputation -12.0". Either make it hire the trades the
+   work actually needs and respect the budget, or warn before it commits.
+
+4. **A multi-year `step` runs straight through its own emergency warnings.**
+   [10, 23, 31] Inside one `step 8` I got "CLOSE TO THE LIMIT ... 'stop' a
+   project, 'mothball' a loss-maker or 'fire' somebody **while it is still your
+   choice**" and then insolvency, with no chance to act. Elsewhere a step ate ten
+   consecutive years of "SHORT OF SALTPETRE: work running at 5% of plan" and
+   "nobody left to keep an eye on 68 concerns ... closed". `step` should stop on
+   these classes of event and hand control back.
+
+5. **You cannot see how far along you are until the run is over.** [20, 29]
+   The ending prints "146 nodes in all; you had 122 of them and 24 were still to
+   build". That single line is the most useful thing in the game, and under fog it
+   arrives after the clock has run out. Give a progress figure during play - even
+   just counts, no names - and ideally "N years of irreducible calendar floor
+   remain on the critical path", because the endgame is decided by calendar, not
+   money.
+
+6. **Mortality mode buries its own terminal event and then soft-locks.** [26, 27, 28]
+   "EVENT 938: the founder dies, aged about 73" appears as one line among
+   completion messages. The game then ran twelve more years with
+   "You: DEAD and ageing, 0 founder-hours" and 25 projects "waiting on your
+   hours", accepting `start` commands, before finally printing the (very good)
+   ending. Also: with ageing on, the game never tells you your age or your
+   expected remaining years, which is the one number that mode exists to make you
+   plan around.
+
+7. **The "unopened concerns" nag counts things that would lose money.** [16, 17]
+   "you know how to run 481 more and have not opened them - those shut concerns
+   would clear 39,524 den/yr" reads like a to-do list. In fact most earn 0 and
+   cost upkeep (`scientific_method`: 0 revenue, 100 upkeep), and `auto open`
+   rightly refuses them. Worse, listing `scientific_method` and `units_standards`
+   under "YOU KNOW HOW, AND HAVE NOT OPENED" implies their stated multipliers only
+   work while open. They don't - DONE is enough. Say so.
+
+8. **Your own backlog silently throttles you and nothing points at it.** [30]
+   110 cheap unrelated projects I started "to unlock things" sat in RUNNING for
+   eighty years eating founder-hours. `stuck` listed 115 identical lines of
+   "X - waiting on your hours" with no ranking. Stopping 111 of them took path
+   progress from 2 nodes/24 years to 17 nodes/30 years.
+
+9. **Displayed FAILURE RISK does not match observed failures, and there is no
+   feedback loop.** [4, 21] `ag2_refrigeration_ice` at "FAILURE RISK: 15%" failed
+   four years running (p = 0.05%). Across one run: "807 attempts failed and had to
+   be begun again", never summarised until the end.
+
+10. **Smaller papercuts.** `open` silently charges a year's upkeep up front and
+    `why`/`help` never mention it [5]. Staff attrition (3.5%/yr) quietly hollows
+    out your workshop during long steps with no trend indicator [14]. `train
+    chemist 8` is refused entirely when the ceiling allows 7, in a message that
+    says 7 is allowed [33]. `state`'s headline "net -631.5 den/yr" folds one-off
+    project spend into a per-year rate and makes a healthy position look fatal [8].
+    Hidden hired-labour supply ceilings ("machinist wants 1250 hours a year; this
+    society can field 216 at most") are invisible in `why` until a project stalls
+    [19].
+
+---
 # Playtest notes — naive player, session "naive11/b"
 
 (Notes written as I play. TOP PROBLEMS section will be added at the top at the end.)
@@ -233,3 +323,123 @@ THE RUN IS OVER
     ag2_maize_newworld, ag2_marling **and others** closed." Sixty-eight at once,
     named four, inside a multi-year step, because my artisan headcount had drifted
     down. There is no "staff shortfall" warning before it happens.
+
+## Run 2 — Scandinavia 900, artisan, fog OFF, MORTALITY ON
+
+Chosen partly by accident (I typed 'y' at "Let the founder age and die? [y/N]"),
+which turned out to be the most revealing thing I did all session.
+
+24. **`path <id>` with fog off is a completely different game, and it is the good
+    one.** `path point_contact_transistor` prints the entire 142-node route in
+    build order. Suddenly there is a plan. Compare five hundred years of fog where
+    the only feedback was "this needs 1 other thing you have not heard of yet".
+    The gap between the two modes is enormous - there is nothing in between.
+
+25. **Fog hides help text that has nothing to do with the tree.** With fog OFF,
+    `state` prints:
+    "counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+    hands. That pair is what the prompt shows and what 'why' and 'start' test a
+    project against; the count above is people on your payroll."
+    and `labour` prints:
+    "to make room: **Room is not bought, it is built: school_founded (+12 places);
+    endowment_land (+8 places); patron_senatorial (+6 places).**"
+    Both of those are precisely the sentences I needed in run 1 and could not get
+    at any price. Neither reveals anything about where the tree leads. Hiding
+    them behind fog is, I think, simply a bug.
+
+26. **The founder dying is a one-line event in the middle of a completion list.**
+    ```
+    EVENT 938: completed: Composting
+    EVENT 938: the founder dies, aged about 73
+    EVENT 939: nobody left to keep an eye on 3 concerns, ...
+    ```
+    No banner, no pause, no "THE RUN IS OVER". I did not notice for two commands.
+
+27. **And then the game kept going for twelve dead years.** `state` said
+    "You: DEAD and ageing, 0 founder-hours free this year" and listed 25 projects
+    "waiting on your hours" that could never advance. `hire` returned "REFUSED:
+    there is nobody left to take anyone on: the founder is dead and no deputy
+    remains to direct the work". I could still type `start`, and it accepted them.
+    Only when I typed `step 20` did I get the (excellent, well-written) ending:
+    "the founder died without training successors; the school dispersed and the
+    work was forgotten". That should fire the moment the founder dies with no
+    deputy - or at minimum `state` should say the run is effectively over.
+
+28. **With mortality on, the game never tells you your age or your odds.**
+    "You: alive and ageing" - that is all. No age, no life expectancy, no "you are
+    62 and the actuarial table says you have about 11 years". I had no way to plan
+    the one decision the mode exists to force (build the institution before you
+    die). I died at 73 having built workshop_first and freedman_staff but not the
+    school, and lost everything.
+
+## Run 3 — Later Han 100 AD, rich_merchant, fog OFF, no ageing
+
+Played to win, using `path` as a build order. Final:
+```
+  ran out of horizon (600 AD) without reaching the goal
+  you built 897 things; ... 86,736,219 in hand, 297.6 people, 400 concerns running
+  98 attempts failed and had to be begun again
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 140 of them and 6 were still to build
+    the next steps would have been: germanium_extraction, gecl4_purification,
+    ge_reduction, zone_refining, single_crystal, point_contact_transistor
+```
+Six nodes short. The tail of the tree is pure calendar floor - germanium_extraction
+5y, gecl4_purification 5y, ge_reduction 3y, zone_refining 6y, single_crystal 5y,
+point_contact_transistor 4y = 28 years of wall clock that no amount of the
+86 million denarii in my hand can buy down. That is a legitimate and even elegant
+design point, but it means:
+
+29. **The last hundred years are decided by a decision you made in the first
+    thirty, and nothing tells you that until it is far too late.** By 500 AD I had
+    money, staff, hours and reputation to spare; the only thing I lacked was
+    calendar. A "critical path: N years of irreducible calendar floor remain"
+    number would make the endgame a race instead of a slow realisation.
+
+30. **Starting the wrong things is silently, permanently expensive.** Early on I
+    started ~110 cheap unrelated projects "to unlock things". They then sat in
+    RUNNING for eighty years soaking up my founder-hours at 34-87% completion,
+    while my path nodes crawled. Nothing in `state` or `stuck` ranks work in hand
+    by whether it is on any road; `stuck` just lists 115 lines of
+    "X - waiting on your hours". When I finally `stop`ped 111 of them, path
+    progress went from 2 nodes / 24 years to 17 nodes / 30 years. A player has no
+    way to see they are being throttled by their own backlog.
+
+31. **Raw-material and supply throttles fire once a year, forever, inside a step,
+    and only stop the world silently.** Ten years of
+    "EVENT 3xx: SHORT OF SALTPETRE: work running at **5% of plan**." went past
+    inside `step` calls and I only found it by grepping my own scrollback. The
+    message itself is excellent ("Saltpetre is made in nitre beds, not mined:
+    'buy nitre 20000' ... it is cheap: 1.50 cash the square metre") - it just
+    needs to interrupt, or at minimum appear in `state`.
+
+32. **Yongjia disaster: "a site is sacked - 3,123,568 taken, 22.7 of your people
+    gone, 5 projects back to the beginning".** Losing five in-flight projects
+    entirely, plus 27 already-built technologies, is brutal and I had no warning
+    that "5 projects back to the beginning" was even a possible outcome. `risk`
+    lists the sack chance but describes the consequence only as "technologies at
+    risk".
+
+33. Small: **`train chemist 8` when the ceiling allows 7 refuses the whole
+    command** and tells you 7 is the max. Just train 7. Same for
+    `hire scholar 8`. I lost several turns to this.
+
+34. Small: **ids are not all lower-case-with-underscores** (`cap_pure_2N`,
+    `cap_pure_4N`, `cap_pure_6N`). Harmless for a human, but the inconsistency
+    surprised me when scanning lists.
+
+## Things I liked a lot (summary)
+- The writing. "Sejanus was the most protected man in Rome until the morning he
+  was not." The per-hazard history notes. "a break tester read the 92 as the
+  ceiling on bribery, offered a million, and stopped at the same 32% a hundred
+  had bought."
+- `why <id>` cost decomposition with the multipliers, and "This is the price as of
+  today, and it is now fixed for this project."
+- `risk` naming priced, startable mitigations for each coming disaster.
+- Calendar floors that money cannot buy down, and the "at most X a year goes into
+  this" pace cap. It makes the century feel like a century.
+- Different civilisations really do differ: in Rome school_founded needed
+  freedman_staff; in Norse and Han it needed collegium_licensed (and in Han,
+  citizenship first). Han's literacy ceiling was 10.5 per trade vs Rome's 16.1.
+- Save-after-every-command. My terminal died three times and I lost nothing.
+- The end screen.
