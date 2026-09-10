@@ -4221,6 +4221,36 @@ check("restoring a shop the staffing rule shut costs the tenth it promised",
       (_cap_rs - s_rs.capital, _fullfee))
 
 
+# --- BREAK: the supervision test was an exact comparison, and attrition moves
+# the payroll by fractions of a man every single year. A play tester watched
+# the same concern close and reopen "every single turn for four centuries" and
+# called it endless busywork. Nobody shuts a shop over a fortieth of a man.
+s_hy = sim(capital=500000.0)
+s_hy.done.update(NODES); s_hy._done_changed()
+s_hy.artisans = s_hy.scholars = 6.0
+_vh = max((k for k in sorted(NODES)
+           if s_hy.is_venture(k) and NODES[k]["rev"] > 500
+           and 1.6 <= s_hy.venture_hands(k)[1] <= 5.0
+           and s_hy.venture_hands(k)[0] <= 5.0),
+          key=lambda k: s_hy.venture_hands(k)[1])
+_ok_hy, _ = s_hy.open_venture(_vh)
+check("(a shop to test the staffing rule on is open)",
+      _vh in s_hy.operating, (_vh, _ok_hy, s_hy.venture_hands(_vh)))
+_need_s, _need_a = s_hy.venture_staff_used()
+_own = s_hy.FOUNDER_IS_WORTH if s_hy.founder_alive else 0.0
+# stand the payroll exactly on the line, then let a tenth of a man die
+s_hy.artisans = _need_a - _own - 0.1
+s_hy.scholars = max(0.0, _need_s - 1.0)
+s_hy.close_unstaffed_ventures(110)
+check("a tenth of a man short does not shut the shop",
+      _vh in s_hy.operating, (s_hy.artisans, _need_a, sorted(s_hy.operating)))
+# but a real pair of hands gone does
+s_hy.artisans = _need_a - _own - 0.6
+s_hy.close_unstaffed_ventures(111)
+check("...but a whole hand short still does",
+      _vh not in s_hy.operating, (s_hy.artisans, _need_a))
+
+
 # --- BREAK: `stop` burned the money as well as the hours, "same as a real
 # abandoned enterprise" - so when the creditors were about to take everything,
 # stopping something yourself cost exactly as much as letting them, and `stop`

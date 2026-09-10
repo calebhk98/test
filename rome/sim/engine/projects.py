@@ -249,12 +249,20 @@ class ProjectsMixin:
         alternative - which is what the game did - is a fortune of concerns
         running themselves for ever on an empty payroll.
         """
+        # HYSTERESIS. Attrition is 3.5% a year and auto_hire tracks the
+        # ceiling, so the supervision balance wobbles across the line
+        # constantly - and an exact comparison meant a concern closed and was
+        # reopened almost every single turn for four centuries. A play tester
+        # called it "endless re-opening busywork" and they were right: nobody
+        # shuts a shop because they are a fortieth of a man short this spring.
+        # Close only when the shortfall is a real pair of hands.
+        SLACK = 0.5
         closed = []
         while self.operating:
             sch_used, art_used = self.venture_staff_used()
             own = self.FOUNDER_IS_WORTH if self.founder_alive else 0.0
-            if (sch_used <= self.effective_scholars() + 1e-6
-                    and art_used <= self.artisans + own + 1e-6):
+            if (sch_used <= self.effective_scholars() + SLACK
+                    and art_used <= self.artisans + own + SLACK):
                 break
             # THE LEAST WORTH KEEPING, not the largest. This picked whichever
             # concern needed the most hands, which is very nearly the same as
