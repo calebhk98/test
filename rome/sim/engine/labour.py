@@ -29,6 +29,136 @@ class LabourMixin:
         h += self.directors_extra * self.cfg["director_hours_per_year"]
         return h
 
+    # ---- literacy bounds who you can hire ----------------------------------
+    # FINDINGS_ROUND2 section Q: every civ file carries literacy_general and
+    # literacy_elite, apply_tech_effects (society.py) raises them when paper,
+    # printing, schools and libraries are built, and until now nothing else in
+    # the engine ever read either number. A scribe cost the same to hire in a
+    # society where two people in a hundred could read as in one where nine
+    # could.
+    #
+    # `scholar` is drawn from the lettered, propertied class - literacy_elite
+    # in the civ file, "fraction of the propertied class that can read". The
+    # rest - `scribe`, and the trades taught into being from ordinary
+    # craftsmen (`engineer`, `chemist`, `machinist`, `optician`) - draw on the
+    # wider literacy_general pool of anyone who can read at all. `merchant` is
+    # left out on purpose: an agent working on commission is not, in this
+    # period, chiefly a reader.
+    LITERATE_TRADES = frozenset({"scholar", "scribe", "engineer", "chemist",
+                                 "machinist", "optician"})
+    # The literacy this file's trade shares and staff ceilings were already
+    # tuned against, before literacy was read anywhere: Rome's own numbers
+    # (rome_100ad.json), because every other constant in this economy - price
+    # index, cost multipliers - is already calibrated relative to Rome. Below
+    # its own reference literacy stays 1.0 and NOTHING changes for Rome; a
+    # civilization with less of either number gets a genuinely smaller pool,
+    # in proportion, and a civilization with more (Han's elite literacy, 0.95
+    # against Rome's 0.9) is not penalised for having read more than Rome did.
+    LITERACY_REFERENCE_GENERAL = 0.12   # rome_100ad.json literacy_general
+    LITERACY_REFERENCE_ELITE = 0.90     # rome_100ad.json literacy_elite
+
+    def literacy_factor(self, trade):
+        """0..1: how much of this trade's usual pool this society's literacy
+        can actually fill. 1.0 for anything that is not a literate trade."""
+        if trade not in self.LITERATE_TRADES:
+            return 1.0
+        if trade == "scholar":
+            lit, ref = self.civ.get("literacy_elite", 0.0), self.LITERACY_REFERENCE_ELITE
+        else:
+            lit, ref = self.civ.get("literacy_general", 0.0), self.LITERACY_REFERENCE_GENERAL
+        return max(0.0, min(1.0, float(lit) / ref))
+
+    def literate_capacity(self, trade):
+        """The most people this society's literacy will EVER let you have in
+        this trade, hired and taught combined - a headcount ceiling, not an
+        hours one.
+
+        `hire`'s own affordability and supervision checks say nothing about
+        whether anyone who can read is available at any price; this is the
+        actual wall. Read as people rather than hours, it is the same
+        abstracted labour-market scale market_supply() already uses for the
+        share a scholar-family trade gets (25,000 hours at full population
+        scale, of which a lettered trade gets 35% before literacy narrows it
+        further) - not a second population model that has to be kept in step
+        with the first, but that one.
+        """
+        if trade not in self.LITERATE_TRADES:
+            return float("inf")
+        base = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
+        people = base * 0.35 / self.HOURS_PER_PERSON_YEAR
+        # A FLOOR OF TWO, because the unfloored number said something false.
+        # Norse elite literacy is a sixth of Rome's, which took this ceiling to
+        # 0.2 people: not "scarce" but "there is no such person in Scandinavia,
+        # at any price, ever". That is wrong about the period. Viking-age
+        # Scandinavia had runic literacy, rune-carvers who cut inscriptions for
+        # hire, merchants who kept reckonings, and from the tenth century
+        # priests who read Latin. What it did not have was a POOL - a body of
+        # lettered men large enough to staff an institution.
+        #
+        # So literacy bounds the SCALE of what you can build and not whether a
+        # single literate person can be found.
+        #
+        # ADDED, not a maximum. My first attempt floored this with max(), which
+        # fixed the falsehood and broke the mechanism: the floor was larger than
+        # anything Norse literacy could reach, so teaching the society to read
+        # changed the ceiling not at all, for the one civilisation the mechanism
+        # exists to matter for. A floor that swallows the signal is worse than
+        # no floor. The rune-carver and the priest are always findable; the POOL
+        # on top of them is what literacy buys, and it is what teaching moves.
+        return 1.5 + people * self.literacy_factor(trade)
+
+    def _trade_headcount_pending(self, trade):
+        """People already on the books in this trade, plus people already
+        being taught into it who are not ready yet - what a fresh hire or a
+        fresh training run would be added ON TOP OF."""
+        pending = sum(row[3] for row in self.training
+                      if len(row) > 2 and row[2] == trade)
+        return self.employees.get(trade, 0.0) + pending
+
+    # ---- the market responds to demand, and to supply ----------------------
+    # FINDINGS_ROUND2 section R: market_pressure already does this for slaves
+    # - buying in bulk bids the price up, it remembers between purchases, and
+    # it decays - and nothing else in the economy had an equivalent. This is
+    # the labour half: the same saturating idea, extended honestly rather than
+    # copied, and self-contained (decayed on READ rather than decremented once
+    # a year in step(), which lives in core.py, so nothing outside this file
+    # has to know this exists). 0.6x a year, the same rate market_pressure
+    # decays at (0.55, near enough) - mostly gone in three years.
+    def labour_pressure(self, trade):
+        rec = getattr(self, "_labour_pressure", None)
+        rec = rec.get(trade) if rec else None
+        if not rec:
+            return 0.0
+        hours, yr = rec
+        age = max(0.0, self.year - yr)
+        return hours * (0.6 ** age)
+
+    def _add_labour_pressure(self, trade, hours):
+        d = getattr(self, "_labour_pressure", None)
+        if d is None:
+            d = self._labour_pressure = {}
+        d[trade] = (self.labour_pressure(trade) + max(0.0, hours), self.year)
+
+    def labour_price_factor(self, trade):
+        """What hiring, commissioning or keeping MORE of this trade costs
+        beyond the wage table, from how hard you have recently leaned on its
+        local supply.
+
+        `market_supply(trade)` is the ceiling: everyone this trade could put
+        to work here, including everyone you already employ. Recent pressure
+        taken as a share of that ceiling is negligible at a fifth of it and
+        roughly doubles the price at the whole of it - the same curve
+        `material_price_factor` uses for the same reason. Because the ceiling
+        itself grows when you teach the trade a bigger workforce, or when an
+        institution or literacy widens it, the SAME recent pressure buys a
+        smaller premium once the supply behind it is bigger: teaching fifty
+        machinists is what makes hiring the fifty-first one cheap again, not
+        merely possible.
+        """
+        supply = max(1.0, self.market_supply(trade))
+        share = min(1.5, self.labour_pressure(trade) / supply)
+        return 1.0 + 0.9 * share * share
+
     def staff_capacity(self):
         """How many trained people the institution can support.
 
@@ -61,6 +191,16 @@ class LabourMixin:
         if self.has("bessemer_openhearth"):ar += 65; sc += 6
         if self.has("railway"):            ar += 95; sc += 8
         if self.has("power_grid"):         sc += 45; ar += 130; di += 6.0
+        # LITERACY BOUNDS THE SCHOLAR CEILING. A school, an academy or an
+        # imperial patron can only produce as many scholars as this society
+        # has literate, propertied people to draw them from (literacy_factor
+        # reads literacy_elite for "scholar"; see FINDINGS_ROUND2 section Q).
+        # Below Rome's own literacy_elite (0.9, the number every one of the
+        # figures above was already tuned against) this narrows the pool;
+        # printing, schools and libraries raise literacy_elite
+        # (apply_tech_effects, society.py) and widen it again as a run goes
+        # on, which is the entire point of building them.
+        sc *= self.literacy_factor("scholar")
         # you cannot keep staff you cannot pay
         # a famous school attracts students and patrons it did not have to pay for
         # WAGES ARE A REAL CHARGE NOW (see wage_bill), so this ceiling is no
@@ -214,10 +354,16 @@ class LabourMixin:
         is the other half of differentiating the trades: the expensive trades are
         expensive to keep, so a large staff of the people you actually need is a
         real commitment rather than a number that drifts upward on its own.
+
+        Recently having leaned hard on a trade's local supply (labour_price_factor)
+        shows up here too, not only in the fee `hire` charged to bring someone
+        on: a town that just watched you take on half its smiths pays every
+        smith more for a few years, yours included, until the pressure decays
+        or the supply of smiths genuinely grows.
         """
         total = 0.0
         for t, n in self.employees.items():
-            total += n * ANNUAL_WAGE.get(t, 375.0) * self.wage_index
+            total += n * ANNUAL_WAGE.get(t, 375.0) * self.wage_index * self.labour_price_factor(t)
         return total * self.price_index
 
     def effective_scholars(self):
@@ -264,6 +410,14 @@ class LabourMixin:
         if self.has("patron_imperial"):       cap *= 3.0
         if self.has("academy_network"):       cap *= 2.5
         if self.has("interchangeable_parts"): cap *= 1.5
+        # A trade that needs reading cannot be bought past how many people
+        # here can read (FINDINGS_ROUND2 section Q). scholar and scribe are
+        # the only literate trades that reach this branch - the taught ones
+        # (engineer, chemist, machinist, optician) are all in TRADES_ABSENT
+        # and returned above, bounded instead by literate_capacity() in
+        # train().
+        if t in self.LITERATE_TRADES:
+            cap *= self.literacy_factor(t)
         return cap + self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
 
     def hire(self, trade, n):
@@ -282,9 +436,28 @@ class LabourMixin:
             return False, ("there are no %ss to hire in this society at any price: %s "
                            'Teach one: {"cmd":"train","trade":"%s","n":1}'
                            % (trade, TRADE_NOTES.get(trade, ""), trade))
+        # LITERACY IS A WALL, NOT A COST. Money buys the finder's fee below;
+        # it cannot buy people who do not exist. See FINDINGS_ROUND2 section
+        # Q and literate_capacity()'s docstring.
+        if trade in self.LITERATE_TRADES:
+            cap = self.literate_capacity(trade)
+            have = self._trade_headcount_pending(trade)
+            if have + n > cap + 1e-6:
+                return False, ("this society's literacy will not supply more than "
+                               "%.1f %ss in total, ever, at any price; you already have "
+                               "%.1f (hired and still being taught). Raise "
+                               "literacy_general or literacy_elite -- printing, schools "
+                               "and libraries do -- to widen this pool."
+                               % (cap, trade, have))
         # A finder's fee and the first year in advance, which is what a household
-        # actually pays to take a skilled man off someone else's bench.
-        fee = n * ANNUAL_WAGE.get(trade, 375.0) * self.wage_index * self.price_index
+        # actually pays to take a skilled man off someone else's bench. Buying
+        # deep into a trade's LOCAL supply bids its price up, the same
+        # principle market_pressure already applies to slaves (see
+        # labour_price_factor for why it is not a one-way ratchet: teaching
+        # or hiring your way to a bigger supply of the trade brings the price
+        # back down).
+        fee = (n * ANNUAL_WAGE.get(trade, 375.0) * self.wage_index * self.price_index
+              * self.labour_price_factor(trade))
         if fee > self.capital + self.credit_limit() * 0.5:
             return False, ("hiring %g %ss costs %.0f denarii in advance and you have %.0f"
                            % (n, trade, fee, self.capital))
@@ -295,6 +468,7 @@ class LabourMixin:
                            % (max(0.0, room), n, self._staff_advice("artisans")))
         self.capital -= fee
         self.employees[trade] = self.employees.get(trade, 0.0) + float(n)
+        self._add_labour_pressure(trade, float(n) * self.HOURS_PER_PERSON_YEAR)
         self._resync_pools()
         return True, None
 
@@ -331,12 +505,35 @@ class LabourMixin:
                        else "smith")).strip().lower()
         if frm in TRADES_ABSENT and frm not in self.trades_created:
             return False, "you cannot teach from %ss; there are none" % frm
+        # LITERACY BOUNDS TEACHING TOO, and this is where it bites hardest:
+        # engineer, chemist, machinist and optician can ONLY be had this way
+        # (trade_available refuses to hire them at all), so without this check
+        # a founder with enough director-hours and money could teach an
+        # unlimited technical staff into a society two per cent of whose
+        # people can read. Money and hours are necessary; they were never
+        # supposed to be sufficient. See FINDINGS_ROUND2 section Q.
+        if trade in self.LITERATE_TRADES:
+            cap = self.literate_capacity(trade)
+            have = self._trade_headcount_pending(trade)
+            if have + n > cap + 1e-6:
+                return False, ("this society's literacy will not supply more than "
+                               "%.1f %ss in total, ever, at any price; you already have "
+                               "%.1f (hired and still being taught). Raise "
+                               "literacy_general or literacy_elite -- printing, schools "
+                               "and libraries do -- to widen this pool."
+                               % (cap, trade, have))
         hours = 450.0 * n            # your hours, teaching, per person
         pool = self.director_pool() - self.director_hours_committed()
         if hours > pool:
             return False, ("teaching %g %ss takes %.0f of your own hours and you have "
                            "%.0f uncommitted this year" % (n, trade, hours, max(0.0, pool)))
-        fee = n * ANNUAL_WAGE.get(frm, 375.0) * 1.2 * self.wage_index * self.price_index
+        # Teaching pulls the SOURCE trade's people off their own bench for the
+        # duration, which is exactly what market_pressure prices for buying
+        # slaves and labour_price_factor now prices for hiring: the more of
+        # `frm` you have already pulled recently, the dearer feeding the next
+        # batch while they learn.
+        fee = (n * ANNUAL_WAGE.get(frm, 375.0) * 1.2 * self.wage_index * self.price_index
+              * self.labour_price_factor(frm))
         if fee > self.capital + self.credit_limit() * 0.5:
             return False, ("you must keep them fed while they learn: %.0f denarii, "
                            "and you have %.0f" % (fee, self.capital))
@@ -344,6 +541,7 @@ class LabourMixin:
         self.teaching_hours_this_year = getattr(self, "teaching_hours_this_year", 0.0) + hours
         self.trades_created.add(trade)
         self.training.append([0.0, self.year + 2.0, trade, float(n)])
+        self._add_labour_pressure(frm, float(n) * self.HOURS_PER_PERSON_YEAR)
         return True, ("%g %s%s will be ready in 2 years" % (n, trade, "s" if n != 1 else ""))
 
     def commission(self, trade, hours):
@@ -366,14 +564,18 @@ class LabourMixin:
         if hours > spare:
             return False, ("the %ss here can spare %.0f more hours this year, not %.0f"
                            % (trade, max(0.0, spare), hours))
-        # A shop charges more for a one-off than it pays its own man for a year.
-        fee = hours * WAGES[trade] * 1.6 * self.wage_index * self.price_index
+        # A shop charges more for a one-off than it pays its own man for a
+        # year, and more again if you are buying deep into what the local
+        # market can spare this year (see labour_price_factor).
+        fee = (hours * WAGES[trade] * 1.6 * self.wage_index * self.price_index
+              * self.labour_price_factor(trade))
         if fee > self.capital + self.credit_limit() * 0.5:
             return False, ("%.0f hours of a %s costs %.0f denarii and you have %.0f"
                            % (hours, trade, fee, self.capital))
         self.capital -= fee
         self.contract_hours[trade] = self.contract_hours.get(trade, 0.0) + hours
         self.commissioned[trade] = self.commissioned.get(trade, 0.0) + hours
+        self._add_labour_pressure(trade, hours)
         return True, ("%.0f hours of a %s bought for %.0f denarii" % (hours, trade, fee))
 
     def headcount(self):

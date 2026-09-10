@@ -329,7 +329,8 @@ class EconomyMixin:
         """
         n = self.nodes[k]
         return (n["_total_cost"] * self.cost_money_factor() * self.opposition_factor(k)
-                * self.civ_cost_factor(k) * self.material_cost_factor(k))
+                * self.civ_cost_factor(k) * self.material_cost_factor(k)
+                * self.material_market_factor(k))
 
     def _done_changed(self):
         """Call after anything adds to or removes from self.done."""
@@ -528,6 +529,73 @@ class EconomyMixin:
                 d[m] += 0.5 * float(q) / span / 1000.0
         return d
 
+    # Which raw material keys (as they appear in a node's `mat` dict) draw on
+    # which tracked commodity, and how "your own supply of it" is computed.
+    # Factored out of resource_throttle so material_price_factor() below reads
+    # the identical figures rather than a second guess at them.
+    MATERIAL_CHECKS = {
+        "charcoal_kg": ("charcoal", "forest1"),
+        "firewood_kg": ("charcoal", "forest4"),
+        "iron_bar_kg": ("iron", "mine:iron"),
+        "iron_ore_kg": ("iron", "mine:iron"),
+        "coal_kg":     ("coal", "mine:coal"),
+        "copper_kg":   ("copper", "mine:copper"),
+        "lead_kg":     ("lead", "mine:lead"),
+        "tin_kg":      ("tin", "mine:tin"),
+        "silver_kg":   ("silver", "mine:silver"),
+        "nitre_kg":    ("saltpetre", "nitre"),
+    }
+
+    def _own_material_supply(self, tag):
+        """Tonnes a year of a tracked commodity you supply yourself, not
+        bought from anyone: mines you sank, woodland you bought, nitre beds
+        you built. See MATERIAL_CHECKS for which tag means what."""
+        if tag == "forest1":
+            return self.forest_ha * self.CHARCOAL_PER_HA
+        if tag == "forest4":
+            return self.forest_ha * self.CHARCOAL_PER_HA * 4
+        if tag == "nitre":
+            return self.nitre_bed_m2 * 0.0008
+        if tag.startswith("mine:"):
+            return self.mine_capacity.get(tag[5:], 0.0)
+        return 0.0
+
+    def _material_market_tonnes(self, emp_key):
+        """Tonnes a year of `emp_key` the empire's market will sell you, at
+        your current standing. The MARKET half of resource_throttle()'s
+        `supply`; material_price_factor() reads it too."""
+        emp = self.res["empire_output_100ad"]
+        share = self.MARKET_SHARE.get(emp_key, 0.03)
+        # How much of a market you can command is a function of STANDING, not
+        # just of money. A stranger buys at the margin; a man with senatorial
+        # backing buys through their agents; a holder of imperial patronage
+        # has the fiscus itself as a supplier, and the metalla were largely
+        # imperial property. Charcoal is exempt because no amount of standing
+        # makes a bulky crumbling fuel travel further than it can travel.
+        if emp_key != "charcoal":
+            if self.has("patron_imperial"):     share *= 6.0
+            elif self.has("patron_senatorial"): share *= 2.5
+            elif self.has("citizenship"):       share *= 1.4
+            share = min(share, 0.60)
+        # GEOLOGY, NOT DEMOGRAPHY. This used to be `* self.pop_scale`:
+        # mineral availability scaled by population, so Norse Scandinavia
+        # got 2.3% of Rome's coal because it has 2.3% of the people, and
+        # England in 1300 got 7%, when England is precisely where the
+        # coal actually is. A coalfield does not care how many people
+        # live near it. mineral_scale() derives this instead from the
+        # regions this civilization actually holds and can trade with
+        # (see _compute_mineral_scale). Charcoal stays on pop_scale: it
+        # is not mined, it is a local wood market, and THAT genuinely
+        # does track how much local economic activity there is to buy
+        # firewood from.
+        scale = self.pop_scale if emp_key == "charcoal" else self.mineral_scale(emp_key)
+        market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * scale
+        # Bengal saltpetre: an existing annual sea route, not a nitre bed.
+        # This is the single most useful thing in the geography file.
+        if emp_key == "saltpetre" and self.has("exp_trade_route_extend"):
+            market += 60.0
+        return market
+
     def resource_throttle(self):
         """How much of this year's planned work the materials will actually support.
 
@@ -536,55 +604,21 @@ class EconomyMixin:
         single blast furnace making 300 tonnes of iron eats 900 tonnes of it. If
         you have not bought the woodland, the furnace idles.
         """
-        emp = self.res["empire_output_100ad"]
-        demand = self.annual_material_demand()
+        # CACHED for material_price_factor(). project_cost() now calls that
+        # once for every candidate node `available` considers, every year,
+        # for every active project, and annual_material_demand() is
+        # O(active + done); recomputing it from scratch on every one of those
+        # calls is the quadratic blowup this codebase already had to fix once
+        # for done_in_order() (see its own comment). Good for one step(): a
+        # query between steps reads the demand as of the last one, which is
+        # already true of price_index, self.economy and self.throttle itself.
+        demand = self._material_demand_cache = self.annual_material_demand()
         worst, who = 1.0, None
-        checks = {
-            "charcoal_kg": ("charcoal", self.forest_ha * self.CHARCOAL_PER_HA),
-            "firewood_kg": ("charcoal", self.forest_ha * self.CHARCOAL_PER_HA * 4),
-            "iron_bar_kg": ("iron", self.mine_capacity.get("iron", 0.0)),
-            "iron_ore_kg": ("iron", self.mine_capacity.get("iron", 0.0)),
-            "coal_kg": ("coal", self.mine_capacity.get("coal", 0.0)),
-            "copper_kg": ("copper", self.mine_capacity.get("copper", 0.0)),
-            "lead_kg": ("lead", self.mine_capacity.get("lead", 0.0)),
-            "tin_kg": ("tin", self.mine_capacity.get("tin", 0.0)),
-            "silver_kg": ("silver", self.mine_capacity.get("silver", 0.0)),
-            "nitre_kg": ("saltpetre", self.nitre_bed_m2 * 0.0008),
-        }
-        for mat, (emp_key, own) in checks.items():
+        for mat, (emp_key, tag) in self.MATERIAL_CHECKS.items():
             need = demand.get(mat, 0.0)
             if need <= 0:
                 continue
-            share = self.MARKET_SHARE.get(emp_key, 0.03)
-            # How much of a market you can command is a function of STANDING, not
-            # just of money. A stranger buys at the margin; a man with senatorial
-            # backing buys through their agents; a holder of imperial patronage
-            # has the fiscus itself as a supplier, and the metalla were largely
-            # imperial property. Charcoal is exempt because no amount of standing
-            # makes a bulky crumbling fuel travel further than it can travel.
-            if emp_key != "charcoal":
-                if self.has("patron_imperial"):     share *= 6.0
-                elif self.has("patron_senatorial"): share *= 2.5
-                elif self.has("citizenship"):       share *= 1.4
-                share = min(share, 0.60)
-            # GEOLOGY, NOT DEMOGRAPHY. This used to be `* self.pop_scale`:
-            # mineral availability scaled by population, so Norse Scandinavia
-            # got 2.3% of Rome's coal because it has 2.3% of the people, and
-            # England in 1300 got 7%, when England is precisely where the
-            # coal actually is. A coalfield does not care how many people
-            # live near it. mineral_scale() derives this instead from the
-            # regions this civilization actually holds and can trade with
-            # (see _compute_mineral_scale). Charcoal stays on pop_scale: it
-            # is not mined, it is a local wood market, and THAT genuinely
-            # does track how much local economic activity there is to buy
-            # firewood from.
-            scale = self.pop_scale if emp_key == "charcoal" else self.mineral_scale(emp_key)
-            market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * scale
-            # Bengal saltpetre: an existing annual sea route, not a nitre bed.
-            # This is the single most useful thing in the geography file.
-            if emp_key == "saltpetre" and self.has("exp_trade_route_extend"):
-                market += 60.0
-            supply = own + market
+            supply = self._own_material_supply(tag) + self._material_market_tonnes(emp_key)
             if supply < need:
                 f = max(0.05, supply / need)
                 if f < worst:
@@ -593,6 +627,70 @@ class EconomyMixin:
         if who:
             self.shortages[who] += 1
         return worst
+
+    def _cached_material_demand(self):
+        """annual_material_demand(), reusing resource_throttle()'s cache when
+        there is one. See the comment there."""
+        d = getattr(self, "_material_demand_cache", None)
+        return d if d is not None else self.annual_material_demand()
+
+    def material_price_factor(self, emp_key):
+        """What buying MORE of this tracked commodity costs beyond the flat
+        catalogue price, from how hard current demand leans on the empire's
+        market for it, versus how much of your own supply makes that market
+        unnecessary.
+
+        FINDINGS_ROUND2 section R: MARKET_SHARE was a supply ceiling with no
+        price response at all -- buying up to it cost the same per tonne as
+        buying one kilogram -- and nothing made owning your own supply make
+        the material CHEAPER, only available. Both halves are here: `need`
+        and `_material_market_tonnes(emp_key)` are resource_throttle()'s own
+        figures, so demand approaching the market ceiling raises the price on
+        the same saturating curve labour_price_factor uses (negligible at a
+        fifth of the ceiling, roughly double at the whole of it); owning
+        enough of your own extraction (mine_capacity, forest_ha,
+        nitre_bed_m2) to cover the need removes the premium rather than
+        merely making the tonnes exist. This is the actual mechanism behind
+        "the price of iron fell because supply rose": opening a mine lowers
+        what iron costs YOU, specifically because you stop having to buy it
+        at the margin.
+        """
+        if emp_key not in self.MARKET_SHARE:
+            return 1.0
+        demand = self._cached_material_demand()
+        market = self._material_market_tonnes(emp_key)
+        worst = 1.0
+        for mat, (ek, tag) in self.MATERIAL_CHECKS.items():
+            if ek != emp_key:
+                continue
+            need = demand.get(mat, 0.0)
+            if need <= 0:
+                continue
+            supply = max(1e-9, self._own_material_supply(tag) + market)
+            share = min(1.5, need / supply)
+            worst = max(worst, 1.0 + 0.9 * share * share)
+        return worst
+
+    def material_market_factor(self, k):
+        """A project's price pressure from the specific tracked materials it
+        buys, weighted by how many kilograms of each -- the same weighting
+        `_material_cost` already uses implicitly by summing kilogram costs.
+        Materials this table does not track (glass sand, hide, dyestuffs...)
+        are untouched: MARKET_SHARE only exists for materials scarce enough
+        to matter (see its own comment), and so does the price response.
+        """
+        mat = self.nodes[k].get("mat") or {}
+        if not mat:
+            return 1.0
+        total_kg, weighted = 0.0, 0.0
+        for m, q in mat.items():
+            emp_key = self.MATERIAL_CHECKS.get(m, (None, None))[0]
+            if not emp_key:
+                continue
+            q = float(q)
+            total_kg += q
+            weighted += q * self.material_price_factor(emp_key)
+        return (weighted / total_kg) if total_kg else 1.0
 
     # Capital to create one tonne per year of standing extraction capacity, and
     # the recurring cost of actually getting that tonne out. DERIVED, not

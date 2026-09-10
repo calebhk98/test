@@ -983,6 +983,160 @@ check("that refusal leaves the running game untouched too",
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 
+# =============================================================================
+# FINDINGS_ROUND2 section Q: literacy bounds who you can hire.
+# =============================================================================
+
+# --- Q: a low-literacy society genuinely cannot hire scribes a high-literacy
+# one can, at any price. This is the exact case the finding asked for: "if
+# only 0.001% of the population can read... you can only hire 0.001%".
+s_hi = sim(civ="rome_100ad", capital=1e9)
+s_lo = sim(civ="norse_900ad", capital=1e9)
+check("a low-literacy society's literate-trade pool is smaller than a "
+      "high-literacy one's",
+      s_lo.literate_capacity("scribe") < s_hi.literate_capacity("scribe"),
+      "norse=%.2f rome=%.2f" % (s_lo.literate_capacity("scribe"),
+                                s_hi.literate_capacity("scribe")))
+ok_hi, why_hi = s_hi.hire("scribe", 3)
+ok_lo, why_lo = s_lo.hire("scribe", 3)
+check("money alone cannot hire scribes a low-literacy society has nobody to "
+      "supply, at any price",
+      ok_hi and not ok_lo and "literacy" in why_lo,
+      "rome ok=%s / norse ok=%s (%s)" % (ok_hi, ok_lo, why_lo))
+
+# --- Q: the same wall applies to TEACHING a trade into existence, the only
+# way engineer/chemist/machinist/optician can ever exist at all (hire()
+# refuses them outright until train() has made them real).
+ok_lo, why_lo = sim(civ="norse_900ad", capital=1e9).train("machinist", 2)
+check("a society that cannot read cannot be taught machinists into "
+      "existence either",
+      not ok_lo and "literacy" in why_lo, why_lo)
+ok_hi, why_hi = sim(civ="rome_100ad", capital=1e9).train("machinist", 2)
+check("the same teaching succeeds where enough people can read",
+      ok_hi, why_hi)
+
+# --- Q: the institutional scholar ceiling (staff_capacity, which is what
+# auto_hire actually grows) is bounded by literacy_elite too, not only the
+# named `scholar`/`scribe` trades hired one at a time.
+s_hi = sim(civ="rome_100ad", capital=1e9); s_hi.done.add("school_founded")
+s_lo = sim(civ="norse_900ad", capital=1e9); s_lo.done.add("school_founded")
+sc_hi, sc_lo = s_hi.staff_capacity()[0], s_lo.staff_capacity()[0]
+check("a school trains fewer scholars where fewer of the propertied class "
+      "can read",
+      sc_lo < sc_hi, "norse sc=%.2f rome sc=%.2f" % (sc_lo, sc_hi))
+
+# --- Q: printing, schools and libraries WIDEN the pool -- the whole point --
+# rather than raising a number nothing reads. Played out on Norse, where
+# there is room for it to move; Rome starts at this file's own reference
+# literacy and is not expected to move much.
+s = sim(civ="norse_900ad", capital=1e9)
+cap0 = s.literate_capacity("scribe")
+s.apply_tech_effects("rag_paper")
+s.apply_tech_effects("printing_press")
+cap1 = s.literate_capacity("scribe")
+# THRESHOLD CHANGED, deliberately, and the reason belongs here rather than in
+# a commit message. This asserted cap1 > cap0 * 2, which was true of the
+# original implementation because the pool was purely multiplicative: Norse
+# elite literacy is a sixth of Rome's, so the ceiling came out at 0.2 people
+# and printing multiplied a very small number. 0.2 people means "there is no
+# such person in Scandinavia, at any price, ever", which is false about a
+# society with rune-carvers who cut inscriptions for hire and, from the tenth
+# century, priests who read Latin. The pool is now 1.5 findable people plus a
+# literacy-scaled body on top, and no floor large enough to fix that falsehood
+# can also leave room for a doubling. So the pair below pins both properties
+# the mechanism actually needs, which is more than the single ratio did.
+check("printing and paper widen the literate-trade hiring pool",
+      cap1 > cap0 * 1.4, "before=%.2f after=%.2f" % (cap0, cap1))
+check("a literate person can always be found, even before any teaching",
+      cap0 >= 1.0, "norse scribe ceiling before teaching = %.2f" % cap0)
+
+# =============================================================================
+# FINDINGS_ROUND2 section R: the market responds to demand, and to supply.
+# =============================================================================
+
+# --- R: taking a large share of a trade's local supply raises what it costs
+# (labour_price_factor), the same principle market_pressure already applies
+# to slaves -- and it decays, the same way.
+s = sim(civ="rome_100ad", capital=1e9)
+f0 = s.labour_price_factor("millwright")
+s._add_labour_pressure("millwright", 6 * s.HOURS_PER_PERSON_YEAR)
+f1 = s.labour_price_factor("millwright")
+check("leaning hard on a scarce trade's local supply raises what it costs",
+      f1 > f0 * 1.5, "before=%.3f after=%.3f" % (f0, f1))
+s.year += 5
+f2 = s.labour_price_factor("millwright")
+check("recent demand pressure decays: the same trade is not dearer forever",
+      f2 < f1 and f2 < 1.3, "immediate=%.3f +5yr=%.3f" % (f1, f2))
+
+# --- R: the SAME recent demand costs less once the trade's own supply is
+# bigger -- this is "teaching fifty machinists is what makes hiring the
+# fifty-first one cheap again", tested directly against pressure rather than
+# waiting on a training run to mature.
+thin = sim(civ="rome_100ad", capital=1e9)
+thick = sim(civ="rome_100ad", capital=1e9)
+thick.employees["millwright"] = 20.0
+pressure_hours = 6 * thin.HOURS_PER_PERSON_YEAR
+thin._add_labour_pressure("millwright", pressure_hours)
+thick._add_labour_pressure("millwright", pressure_hours)
+check("a bigger trained workforce in a trade makes the same recent demand "
+      "cheaper to satisfy",
+      thick.labour_price_factor("millwright") < thin.labour_price_factor("millwright"),
+      "thin supply=%.3f thick supply=%.3f"
+      % (thin.labour_price_factor("millwright"), thick.labour_price_factor("millwright")))
+
+# --- R, end to end: hiring the same trade repeatedly through `hire` really
+# does cost more each time, not only in the internal factor.
+s = sim(civ="rome_100ad", capital=1e9)
+s.done.update({"workshop_first", "school_founded", "academy_network", "patron_imperial"})
+fees = []
+for _ in range(3):
+    before = s.capital
+    ok, msg = s.hire("millwright", 10)
+    if not ok:
+        break
+    fees.append(before - s.capital)
+check("hire's own fee rises the more of a trade you have taken on recently",
+      len(fees) == 3 and fees[-1] > fees[0] * 1.15, fees)
+
+# --- R: materials respond to demand too -- MARKET_SHARE (economy.py) was a
+# supply ceiling with no price response, so buying up to it cost the same
+# per tonne as buying one kilogram. Saltpetre (MARKET_SHARE 0.0: no open
+# market for it at all without a trade route) makes the effect dramatic;
+# gunpowder is the cheapest node that needs it.
+s = sim(civ="rome_100ad", capital=1e9)
+s.active["gunpowder"] = {}
+f_no_beds = s.material_price_factor("saltpetre")
+check("demand for a material the market barely sells costs a real premium "
+      "over the flat catalogue price",
+      f_no_beds > 1.5, "%.3f" % f_no_beds)
+s.nitre_bed_m2 = 2_000_000.0
+f_with_beds = s.material_price_factor("saltpetre")
+check("owning enough of your own supply (nitre beds) relieves the premium "
+      "-- this is 'opening a mine lowers what iron costs you', generalised",
+      f_with_beds < f_no_beds, "no beds=%.3f with beds=%.3f" % (f_no_beds, f_with_beds))
+
+# --- R: the price response actually reaches the number the game quotes and
+# charges (project_cost), not only an internal factor nothing reads.
+s = sim(civ="rome_100ad", capital=1e9)
+s.active["gunpowder"] = {}
+cost_no_beds = s.project_cost("gunpowder")
+s.nitre_bed_m2 = 2_000_000.0
+cost_with_beds = s.project_cost("gunpowder")
+check("project_cost itself falls once your own supply covers the demand",
+      cost_with_beds < cost_no_beds * 0.6,
+      "no beds=%.0f with beds=%.0f" % (cost_no_beds, cost_with_beds))
+
+# --- refactor safety: resource_throttle()'s own quantity ceiling (unrelated
+# to price, and pre-existing) is unchanged by factoring its material lookup
+# out for material_price_factor() to share.
+s = sim(civ="rome_100ad", capital=1e9)
+s.active["gunpowder"] = {}
+check("resource_throttle still throttles a material the market will not "
+      "sell you at all",
+      s.resource_throttle() < 1.0, s.resource_throttle())
+s.nitre_bed_m2 = 2_000_000.0
+check("...and stops once your own supply covers the need",
+      s.resource_throttle() > 0.99, s.resource_throttle())
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
