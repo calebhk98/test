@@ -2930,9 +2930,27 @@ _cold = _fam.prominence_hazard()
 _fam.familiarity = 0.9
 _warm = _fam.prominence_hazard()
 check("a city that has watched you for a century is less alarmed by you",
-      _warm < _cold * 0.75, (_cold, _warm))
+      _warm < _cold * 0.92, (_cold, _warm))
+# A sixth off, not a third: the first attempt at this damping took the hazard
+# so far down that a break tester measured three thousand run-years with the
+# sum of every reported chance of ruin at exactly 0.00.
 check("...but never stops being alarmed altogether",
-      _warm > _cold * 0.5, (_cold, _warm))
+      _warm > _cold * 0.8, (_cold, _warm))
+# The shape that matters: build the counter and you sit under the line;
+# do not and you sit well over it.
+_em_shape = {}
+for _acad in (False, True):
+    _s = sim(capital=50000000.0)
+    _s.done.update(list(NODES)[:1400]); _s.done.add("patron_imperial")
+    if not _acad:
+        _s.done.discard("academy_network")
+    _s._done_changed()
+    _s.reputation, _s.year, _s.familiarity = 98.0, 400, 0.9
+    _em_shape[_acad] = _s.eminence_report()["settles_at_if_nothing_changes"]
+check("a great man near the throne who built no academies is over the line",
+      _em_shape[False] > sim().cfg["eminence_danger"], _em_shape)
+check("...and the same man who built them is under it",
+      _em_shape[True] < sim().cfg["eminence_danger"], _em_shape)
 
 # "7% chance of ruin" was the chance SOMETHING landed; four fifths of those
 # are survivable. A play tester survived two and was ended by the third.

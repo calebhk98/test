@@ -230,9 +230,18 @@ class SocietyMixin:
         # correctly described it as the game announcing that a successful run is
         # scheduled to die. A man who has been the great man of the city for
         # ninety years is a fixture, not a novelty; he is still exposed, and he
-        # is not what he was in his first decade. Capped at a third off, so this
-        # softens the clock without stopping it.
-        h *= (1.0 - 0.37 * self.familiarity)
+        # is not what he was in his first decade.
+        #
+        # A SIXTH OFF, NOT A THIRD. The first attempt at this took a third, and
+        # a break tester then measured three thousand run-years in which the
+        # sum of every reported chance of ruin was exactly 0.00 - a mechanic
+        # that cannot reach you is not a hazard, it is scenery, and the
+        # correction had gone as far past the line as the original sat the
+        # other side of it. At a sixth, a man who has been the city's fixture
+        # for ninety years settles just under the danger line and a man who has
+        # also got himself next to the throne settles well over it, which is
+        # the shape the whole mechanic is about.
+        h *= (1.0 - 0.15 * self.familiarity)
         return h
 
     # The FIRST answer to "I have no staff" is now the obvious one, which the
