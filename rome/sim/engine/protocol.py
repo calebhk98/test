@@ -620,11 +620,23 @@ def _agent_available(s, nodes, cmd=None):
     if afford is not None:
         sel = [k for k in sel if s.project_cost(k) <= afford]
 
-    heard = []
+    heard, heard_more = [], 0
     if fog:
-        heard = sorted(k for k in getattr(s, "revealed", set())
-                       if k not in s.done and k not in s.active
-                       and not s.start_reason(k)[0])[:25]
+        # CLOSEST FIRST, NOT ALPHABETICALLY. This sorted by id and cut at 25, so
+        # the list a player reads was always the same handful of things
+        # beginning with a, b and c, however many they had heard of and however
+        # near the rest were. A play tester noticed it stopped around "c" and
+        # had no way to page past it. Fewest missing prerequisites first is the
+        # order that answers the question the list is actually asked: what is
+        # nearly within reach?
+        _heard_all = [k for k in getattr(s, "revealed", set())
+                      if k not in s.done and k not in s.active
+                      and not s.start_reason(k)[0]]
+        _heard_all.sort(key=lambda k: (sum(1 for p_ in nodes[k]["pre"]
+                                           if p_ not in s.done),
+                                       nodes[k]["tier"], k))
+        heard = _heard_all[:25]
+        heard_more = max(0, len(_heard_all) - len(heard))
     heard_block = [{"id": k, "name": nodes[k]["name"],
                     "why_not": s.start_reason(k)[1]} for k in heard]
 
@@ -640,6 +652,8 @@ def _agent_available(s, nodes, cmd=None):
                            % (len(sel) - offset - len(page), offset + len(page)))
         if fog and heard_block and offset == 0:
             out["heard_of_but_cannot_begin"] = heard_block
+            if heard_more:
+                out["and_more_you_have_heard_of"] = heard_more
         return out
 
     # DEFAULT: the digest.
@@ -688,6 +702,8 @@ def _agent_available(s, nodes, cmd=None):
                "all of it at once": '{"cmd":"available","all":true} (large)'}}
     if fog and heard_block:
         out["heard_of_but_cannot_begin"] = heard_block
+        if heard_more:
+            out["and_more_you_have_heard_of"] = heard_more
     if fog:
         out["note"] = ("Under fog you see only what you could begin now, and things "
                        "you have heard of. There is no way to see the whole tree.")
@@ -997,9 +1013,16 @@ def render_state(out):
         # spent". The arithmetic is fixed in core.py; the display refuses to
         # print an impossible figure either way.
         pct = max(0.0, min(100.0, pct))
-        L.append("  %-28s %3.0f%% of your hours spent, %s den still owed - waiting on %s"
-                 % ((st.get("name") or k)[:28], pct, _fmt_num(st.get("still_to_pay")),
+        # THE ID, because that is what `stop` and `why` take. This printed the
+        # display NAME, so a play tester with a project they wanted to abandon
+        # had no way to name it: "no way to map a running project's display
+        # name back to an id so you can stop it". The name goes on the line
+        # after, where it costs nothing.
+        L.append("  %-34s %3.0f%% of your hours spent, %s still owed - waiting on %s"
+                 % (k, pct, _fmt_num(st.get("still_to_pay")),
                     st.get("waiting_on") or "-"))
+        if st.get("name"):
+            L.append("      %s" % st["name"])
         if st.get("why_underfunded"):
             L.append("      %s" % st["why_underfunded"])
 
