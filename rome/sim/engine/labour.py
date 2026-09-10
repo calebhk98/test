@@ -86,7 +86,26 @@ class LabourMixin:
             return float("inf")
         base = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
         people = base * 0.35 / self.HOURS_PER_PERSON_YEAR
-        return people * self.literacy_factor(trade)
+        # A FLOOR OF TWO, because the unfloored number said something false.
+        # Norse elite literacy is a sixth of Rome's, which took this ceiling to
+        # 0.2 people: not "scarce" but "there is no such person in Scandinavia,
+        # at any price, ever". That is wrong about the period. Viking-age
+        # Scandinavia had runic literacy, rune-carvers who cut inscriptions for
+        # hire, merchants who kept reckonings, and from the tenth century
+        # priests who read Latin. What it did not have was a POOL - a body of
+        # lettered men large enough to staff an institution.
+        #
+        # So literacy bounds the SCALE of what you can build and not whether a
+        # single literate person can be found.
+        #
+        # ADDED, not a maximum. My first attempt floored this with max(), which
+        # fixed the falsehood and broke the mechanism: the floor was larger than
+        # anything Norse literacy could reach, so teaching the society to read
+        # changed the ceiling not at all, for the one civilisation the mechanism
+        # exists to matter for. A floor that swallows the signal is worse than
+        # no floor. The rune-carver and the priest are always findable; the POOL
+        # on top of them is what literacy buys, and it is what teaching moves.
+        return 1.5 + people * self.literacy_factor(trade)
 
     def _trade_headcount_pending(self, trade):
         """People already on the books in this trade, plus people already

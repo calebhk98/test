@@ -769,8 +769,21 @@ cap0 = s.literate_capacity("scribe")
 s.apply_tech_effects("rag_paper")
 s.apply_tech_effects("printing_press")
 cap1 = s.literate_capacity("scribe")
+# THRESHOLD CHANGED, deliberately, and the reason belongs here rather than in
+# a commit message. This asserted cap1 > cap0 * 2, which was true of the
+# original implementation because the pool was purely multiplicative: Norse
+# elite literacy is a sixth of Rome's, so the ceiling came out at 0.2 people
+# and printing multiplied a very small number. 0.2 people means "there is no
+# such person in Scandinavia, at any price, ever", which is false about a
+# society with rune-carvers who cut inscriptions for hire and, from the tenth
+# century, priests who read Latin. The pool is now 1.5 findable people plus a
+# literacy-scaled body on top, and no floor large enough to fix that falsehood
+# can also leave room for a doubling. So the pair below pins both properties
+# the mechanism actually needs, which is more than the single ratio did.
 check("printing and paper widen the literate-trade hiring pool",
-      cap1 > cap0 * 2.0, "before=%.2f after=%.2f" % (cap0, cap1))
+      cap1 > cap0 * 1.4, "before=%.2f after=%.2f" % (cap0, cap1))
+check("a literate person can always be found, even before any teaching",
+      cap0 >= 1.0, "norse scribe ceiling before teaching = %.2f" % cap0)
 
 # =============================================================================
 # FINDINGS_ROUND2 section R: the market responds to demand, and to supply.
