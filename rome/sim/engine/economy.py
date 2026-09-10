@@ -213,6 +213,15 @@ class EconomyMixin:
             self._said_near_limit = False
             return
         used = -self.capital / limit
+        # PAST IT IS NOT "CLOSE TO" IT, and past it the halting has already
+        # happened: a break tester read "CLOSE TO THE LIMIT ... (103%) ... every
+        # project in hand is halted" in a year when nothing was halted, because
+        # enforce_credit_limit runs immediately after this and had already dealt
+        # with it. Warn about what is still ahead of you, not about what has
+        # just been done.
+        if used >= 1.0:
+            self._said_near_limit = True
+            return
         if used < 0.7:
             self._said_near_limit = False
             return
@@ -536,6 +545,23 @@ class EconomyMixin:
         """Call after anything adds to or removes from self.done."""
         self._done_seq = None
 
+    def venture_ramp(self, k):
+        """How much of its full takings a concern is making, 0..1.
+
+        FROM THE YEAR YOU OPENED IT, not the year you worked out how. This read
+        done_year, so a concern built in 100 and opened in 130 was at full
+        takings the day its doors opened - which made delaying `open` strictly
+        better than opening promptly, and made the ledger's own sentence ("a
+        concern you open reaches its full figure over 3 years") false in the
+        one case a break tester checked. Custom takes time to find whoever owns
+        the shop.
+        """
+        started = (getattr(self, "opened_year", None) or {}).get(k)
+        if started is None:
+            started = self.done_year.get(k, self.year)
+        age = self.year - started
+        return min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+
     def done_in_order(self):
         """Everything you have finished, in a FIXED order.
 
@@ -629,9 +655,7 @@ class EconomyMixin:
                 if practice:
                     r += n["rev"] * self.PRACTICE_SHARE * attention * self.price_index
                 else:
-                    age = self.year - self.done_year.get(k, self.year)
-                    ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
-                    r += n["rev"] * ramp * self.price_index
+                    r += n["rev"] * self.venture_ramp(k) * self.price_index
         # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
         # pays back inside two years, so its income buys the next one, and a run
         # ended holding three billion denarii against an empire whose entire
@@ -731,8 +755,7 @@ class EconomyMixin:
             if practice:
                 ramp = self.PRACTICE_SHARE
             else:
-                age = self.year - self.done_year.get(k, self.year)
-                ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+                ramp = self.venture_ramp(k)
             amt = (n["rev"] * ramp * (self.economy ** 0.75) * self.output_factor
                    * self.price_index)
             if practice:
@@ -811,8 +834,7 @@ class EconomyMixin:
             n = self.nodes.get(k)
             if not n or not n["rev"] or k in self.granted:
                 continue
-            age = self.year - self.done_year.get(k, self.year)
-            ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+            ramp = self.venture_ramp(k)
             if ramp < 0.999:
                 young.append((k, ramp))
         if not young:

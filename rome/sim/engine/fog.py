@@ -190,7 +190,13 @@ class FogMixin:
             "technologies_at_risk": at_risk,
             "loss_chance_if_a_site_is_sacked": round(chance, 2),
             "fraction_lost_when_it_happens": round(frac, 2),
-            "expected_technologies_lost_per_sacking": round(at_risk * chance * frac, 1),
+            # PER SACKING means the sacking has already happened, so `chance`
+            # - which is the probability that a sacking costs you anything at
+            # all - must not be applied a second time. A break tester summed
+            # the numbers on this screen against what a sacking actually took
+            # and found this 20% low, which is exactly 1 - 0.8.
+            "expected_technologies_lost_per_sacking": round(at_risk * frac, 1),
+            "and_the_chance_a_sacking_costs_you_anything": round(chance, 2),
             **({"you_have_already_lost": len(_gone),
                 "and_have_to_build_again": _gone[:10],
                 "the_most_recent_went_in": self.forgotten[_gone[0]]} if _gone else {}),

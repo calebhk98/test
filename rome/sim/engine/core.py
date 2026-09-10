@@ -74,6 +74,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.trade_hours_used = {}       # trade -> hours consumed by projects this year
         self.mothballed = set()          # completed works you shut down on purpose
         self.forgotten = {}              # {node: year} destroyed by a sacking
+        self.opened_year = {}            # {node: year} the doors first opened
         self.wages_prepaid = 0.0         # first-year wages `hire` already took
         # WHAT YOU ACTUALLY RUN, as opposed to what you know how to do. Revenue
         # and upkeep follow this set and nothing else does. See is_venture and

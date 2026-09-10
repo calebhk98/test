@@ -1207,7 +1207,14 @@ def _node_explain(s, nodes, k):
         "chain_size": (len(need) if not getattr(s, "fog", False) else None),
         "chain_founder_hours": (sum(nodes[x]["ph"] for x in need)
                                 if not getattr(s, "fog", False) else None),
-        "chain_cost": (round(sum(nodes[x]["_total_cost"] for x in need), 1)
+        # AT THIS SOCIETY'S PRICES, like the COST line four rows above it. This
+        # summed the tree's BASE cost and applied none of the multipliers the
+        # same page prints - the eight prerequisites of a telescope came out at
+        # 24,175 in all five civilisations, against a real bill of 18,970 in
+        # Han and 35,108 for the Norse. A break tester checked it and called it
+        # a 31% error in the poorest civilisation; chain_size and
+        # chain_founder_hours were exact, and only the money was wrong.
+        "chain_cost": (round(sum(s.project_cost(x) for x in sorted(need)), 1)
                        if not getattr(s, "fog", False) else None),
         "critical_path_years": (critical_path(nodes, k)[0]
                                 if not getattr(s, "fog", False) else None),
@@ -1524,8 +1531,10 @@ def render_state(out):
         L.append("  %s more hazard(s) known ahead - %s"
                  % (_fmt_num(at_risk.get("hazards_still_ahead")), at_risk.get("in_full") or ""))
     elif kr:
-        L.append("AHEAD: %s technologies at risk, %s lost per sacking on average, hedged by %s"
+        L.append("AHEAD: %s technologies at risk; a sacking that costs you "
+                 "anything (%s of them do) takes %s, hedged by %s"
                  % (_fmt_num(kr.get("technologies_at_risk")),
+                    _pct(kr.get("and_the_chance_a_sacking_costs_you_anything")),
                     _fmt_num(kr.get("expected_technologies_lost_per_sacking")),
                     kr.get("hedged_by") or "nothing yet"))
         for h in kr.get("known_hazards_ahead") or []:
@@ -3813,7 +3822,7 @@ SAVE_FIELDS = (
     "output_factor", "economy", "throttle", "binding", "bountied",
     "stalled", "life_left", "founder_alive", "revealed", "last_settlement",
     "employees", "trades_created", "policy", "mothballed", "operating",
-    "forgotten",
+    "forgotten", "opened_year",
     "contract_hours",
     "commissioned", "teaching_hours_this_year", "wages_paid",
     "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",

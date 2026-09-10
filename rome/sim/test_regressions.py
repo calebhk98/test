@@ -3711,6 +3711,85 @@ check("...and the cheapest really is the cheapest",
       min(_lc, key=lambda c: _lc[c]) == "han_china_100ad", _lc)
 
 
+# --- BREAK: "A concern you open reaches its full figure over 3 years" - and a
+# concern built in 100 and opened in 130 was at full takings the day its doors
+# opened, because the ramp read the year you worked it OUT. Delaying `open`
+# was strictly better than opening promptly.
+s_rp = sim(capital=500000.0)
+_vr = next(k for k in sorted(NODES)
+           if s_rp.is_venture(k) and NODES[k]["rev"] > 500 and not NODES[k]["pre"])
+s_rp.done.add(_vr); s_rp.done_year[_vr] = 100; s_rp._done_changed()
+s_rp.artisans = s_rp.scholars = 20.0
+s_rp.year = 130
+s_rp.open_venture(_vr)
+_ramps = []
+for _y in (130, 131, 132, 133):
+    s_rp.year = _y
+    _ramps.append(round(s_rp.venture_ramp(_vr), 3))
+check("a concern opened late still starts small",
+      _ramps[0] < 0.4, _ramps)
+check("...and reaches its full figure over the years the ledger promises",
+      _ramps == [1 / 3.0, 2 / 3.0, 1.0, 1.0][:4]
+      or (_ramps[0] < _ramps[1] < _ramps[2] == _ramps[3] == 1.0), _ramps)
+# Reopening something you already ran does not restart its custom.
+s_rp.year = 140
+s_rp.close_venture(_vr)
+s_rp.open_venture(_vr)
+check("...and reopening a shop the town already knows does not start it over",
+      s_rp.venture_ramp(_vr) == 1.0, s_rp.venture_ramp(_vr))
+
+# --- BREAK: "FULL CHAIN BEHIND IT: ... N den" summed the tree's BASE cost and
+# applied none of the multipliers the same page prints. The eight
+# prerequisites of a telescope came out at 24,175 in all five civilisations.
+_chains = {}
+for _cid in ("rome_100ad", "han_china_100ad", "norse_900ad"):
+    _rc, _, _ = proto([{"cmd": "why", "id": "telescope"}], civ=_cid)
+    _chains[_cid] = _rc[0].get("chain_cost")
+check("the full-chain bill is quoted at this society's prices",
+      len(set(_chains.values())) == 3, _chains)
+check("...and the dearest society's chain really is the dearest",
+      max(_chains, key=lambda c: _chains[c]) == "norse_900ad", _chains)
+# The parts have to add up to the whole, at whatever prices.
+_s_ch = sim(civ="norse_900ad")
+from engine.data import closure as _closure
+# The chain is what is BEHIND it, so the node itself is not in the bill.
+_behind = sorted(_closure(NODES, "telescope") - {"telescope"})
+check("...and it is the sum of what each of those nodes would actually cost",
+      abs(_chains["norse_900ad"]
+          - sum(_s_ch.project_cost(x) for x in _behind)) < 0.5,
+      (_chains["norse_900ad"],
+       round(sum(_s_ch.project_cost(x) for x in _behind), 1)))
+
+# --- BREAK: `risk` applied the 80% chance twice, so "expected lost per
+# sacking" was exactly 20% low - a sacking that has happened has happened.
+s_rk = sim()
+for _k in list(NODES)[:300]:
+    s_rk.done.add(_k)
+s_rk._done_changed()
+_krk = s_rk.knowledge_risk()
+check("what a sacking costs is not discounted by the chance it happens",
+      abs(_krk["expected_technologies_lost_per_sacking"]
+          - _krk["technologies_at_risk"] * _krk["fraction_lost_when_it_happens"]) < 0.6,
+      _krk["expected_technologies_lost_per_sacking"])
+check("...and the chance it costs you anything is reported separately",
+      _krk.get("and_the_chance_a_sacking_costs_you_anything") is not None,
+      _krk.get("and_the_chance_a_sacking_costs_you_anything"))
+
+# --- BREAK: "CLOSE TO THE LIMIT ... (103%) ... every project in hand is
+# halted" in a year when nothing was halted, because it had already happened.
+s_pl = sim()
+s_pl.capital = -s_pl.credit_limit() * 1.03
+s_pl.warn_near_the_limit(105)
+check("the limit warning is about what is ahead of you, not behind",
+      not s_pl.log, [m for _, m in s_pl.log])
+
+# --- BREAK: `bribe 1` refused at 0% protection as "already as protected as
+# money can make you".
+_rb, _, _ = proto([{"cmd": "bribe", "amount": 1}])
+check("a bribe too small to matter says so, not that you are already covered",
+      "too little" in (_rb[0].get("error") or ""), _rb[0].get("error"))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

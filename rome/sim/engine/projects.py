@@ -178,6 +178,14 @@ class ProjectsMixin:
         self.mothballed.discard(k)
         _shut.pop(k, None)
         self.shut_for_staff = _shut
+        # WHEN THE DOORS OPENED, which is when custom starts to find you. See
+        # venture_ramp: this used to read the year you worked the thing OUT, so
+        # opening late skipped the ramp entirely. Reopening something you had
+        # running does not restart it: the shop is known.
+        _oy = getattr(self, "opened_year", None)
+        if _oy is None:
+            _oy = self.opened_year = {}
+        _oy.setdefault(k, self.year)
         return True, ("%s open: it earns %s a year and costs %s a year to run"
                       % (k, "{:,.0f}".format(n["rev"]), "{:,.0f}".format(n["up"])))
 
@@ -402,6 +410,19 @@ class ProjectsMixin:
             would = min(0.30, (spent / (income * 0.6)) * self.w["bribability"])
             already = min(0.30, (self.bribes_ytd / (income * 0.6)) * self.w["bribability"])
             if would - already < 0.005:
+                # SAY WHICH IT IS. A break tester was refused `bribe 1` at 0%
+                # protection and told they were "already as protected as money
+                # can make you", which is false and reads as a bug. One denarius
+                # buys nothing measurable; a thousand would.
+                _floor = 0.005 * (max(1.0, self.revenue()) * 0.6) / max(
+                    1e-9, self.w["bribability"])
+                if already < 0.29:
+                    return False, ("you have no scandal to answer, and %s "
+                                   "denarii is too little to buy any advocacy "
+                                   "worth having. About %s would begin to move "
+                                   "your protection. Nothing was changed."
+                                   % ("{:,.0f}".format(amount),
+                                      "{:,.0f}".format(max(1.0, _floor))))
                 return False, ("you have no scandal to answer and you are already "
                                "as protected as money can make you here, so this "
                                "would buy nothing. Nothing was changed.")
@@ -659,12 +680,20 @@ class ProjectsMixin:
         # reputation, which raises the credit limit. They financed 22
         # technologies with money that did not exist and kept all of it.
         if self.year < getattr(self, "credit_frozen_until", 0):
+            # SAY IF IT WILL NEVER LIFT IN TIME. A break tester was told credit
+            # would return in 609 in a game whose horizon is 600, which is not
+            # a date, it is the end of the run wearing a date's clothes.
+            _end = getattr(self, "end_year", None) or (
+                self.cfg["start_year"] + self.cfg["horizon_years"])
             return False, ("nobody here will fund new work: your creditors were "
                            "left unpaid and the word is out. They will deal with "
-                           "you again in %d, and until then you may finish what "
+                           "you again in %d%s, and until then you may finish what "
                            "is running, and pay for something out of money you "
                            "actually hold."
-                           % int(self.credit_frozen_until))
+                           % (int(self.credit_frozen_until),
+                              " - which is past the horizon at %d, so not within "
+                              "this run" % int(_end)
+                              if self.credit_frozen_until > _end else ""))
         if getattr(self, "insolvent_years", 0) >= 3:
             surplus = (self.revenue() - self.upkeep() - self.living_cost()
                        - self.mine_operating_cost())
