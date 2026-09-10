@@ -237,7 +237,14 @@ class LabourMixin:
         # against is what makes "grow the staff toward what you can house and
         # pay" true of the headroom hiring and not just the institutional kind.
         extra = self.supervision_room()
-        scale = max(0.10, min(1.0, afford / max(1.0, sc + ar + extra * 1.35)))
+        # NO FLOOR. This read max(0.10, ...), so a household with no surplus at
+        # all still hired a tenth of its headroom - about 0.6 craftsmen, some
+        # 250 a year in wages, against a net income of 3.5. A break tester
+        # turned auto_hire on, did nothing else whatever, and was in debt
+        # bondage ten steps later. The whole careful affordability calculation
+        # above was undone by the floor beneath it: "grow the staff toward what
+        # you can house and pay" has to be able to mean nobody.
+        scale = min(1.0, afford / max(1.0, sc + ar + extra * 1.35))
         self._staff_scale = scale     # step() applies this to `extra` too
         # A civilization of 1.5 million simply cannot field the trained people a
         # civilization of 65 million can, however rich you are. This is the single

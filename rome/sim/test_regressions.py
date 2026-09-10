@@ -1854,6 +1854,28 @@ check("state says where the founder's hours actually come from",
       (_hrs[0].get("where_your_hours_come_from") or {}).get("hours_each_deputy_adds"),
       _hrs[0].get("where_your_hours_come_from"))
 
+# 8. `policy auto_hire on`, nothing else done at all, put a break tester into
+#    ten years of debt bondage in ten steps - while the policy's own
+#    description promises to "grow the staff toward what you can house and
+#    pay". The whole careful affordability calculation was undone by a floor
+#    beneath it: scale was max(0.10, ...), so a household with no surplus
+#    still hired a tenth of its headroom.
+s = sim(civ="han_china_100ad")
+s.policy["auto_hire"] = True
+for _ in range(10):
+    s.step()
+check("auto_hire on a poor household hires nobody and stays solvent",
+      s.bondage_years_left == 0 and s.capital > 0,
+      "capital %.0f, staff %.2f, bondage %s"
+      % (s.capital, sum(s.employees.values()), s.bondage_years_left))
+s = sim(civ="han_china_100ad", capital=100000.0)
+s.policy["auto_hire"] = True
+for _ in range(10):
+    s.step()
+check("...and on a rich one it actually hires",
+      sum(s.employees.values()) > 1.0,
+      "staff %.2f on 100,000" % sum(s.employees.values()))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
