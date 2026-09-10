@@ -26,14 +26,14 @@
  },
  "active": {
   "logarithms": {
-   "cost_left": 0.0,
+   "cost_left": 2125.9390024038453,
    "hours_effective_this_year": 0.0,
    "hours_offered_this_year": 100.0,
    "ph_left": 23.91346153846154,
    "short_of_trade": [],
-   "spent": 4275.0,
+   "spent": 2149.060997596154,
    "stalled_years": 0,
-   "yrs": 80.0
+   "yrs": 5.0
   }
  },
  "artisans": 0.0,
@@ -45,13 +45,13 @@
   "__set__": []
  },
  "bounties_paid": 0,
- "bribes_ytd": 10.130026387392912,
- "capital": 601571.7600089482,
+ "bribes_ytd": 0.09814882320712956,
+ "capital": 820842.6030380266,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 120,
  "dead_reason": null,
- "director_hours_spent_founder": 69105.83333333334,
+ "director_hours_spent_founder": 70825.83333333334,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -87,6 +87,7 @@
    "air_aerofoil_section",
    "air_compass_magnetic",
    "air_kite_basic",
+   "air_observation_balloon_tethered",
    "air_wind_tunnel",
    "algebra_symbolic",
    "arithmetic_positional",
@@ -575,6 +576,7 @@
   "air_aerofoil_section": 206,
   "air_compass_magnetic": 125,
   "air_kite_basic": 130,
+  "air_observation_balloon_tethered": 331,
   "air_wind_tunnel": 155,
   "algebra_symbolic": 210,
   "arithmetic_positional": 205,
@@ -932,16 +934,17 @@
   "world_map": 200
  },
  "economy": 3.55,
- "eminence": 8.224044035282981,
+ "eminence": 8.026218996814329,
  "employees": {
-  "engineer": 0.09340689663006319
+  "engineer": 0.058780600257332845,
+  "scholar": 2.100846822459343
  },
  "familiarity": 0.9,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": 53.51688524590156,
+ "gov": 54.716885245901565,
  "granted": {
   "__set__": [
    "bellows_water_blown",
@@ -1096,10 +1099,10 @@
  },
  "insolvent_years": 0,
  "interest_paid": 6705.89833104287,
- "last_patron_death": 323,
+ "last_patron_death": 336,
  "last_settlement": 108,
- "life_left": 999999775.0,
- "living_cost_paid": 1306904.2547018135,
+ "life_left": 999999762.0,
+ "living_cost_paid": 1514687.6726049262,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -1210,7 +1213,7 @@
    "world_map"
   ]
  },
- "output_factor": 0.9040000000000001,
+ "output_factor": 0.9820000000000002,
  "policy": {
   "auto_bribe": true,
   "auto_buy_people": false,
@@ -1223,8 +1226,8 @@
   "auto_shed": false,
   "auto_train": true
  },
- "protection": 0.30931857069229973,
- "reputation": 14.566039002570827,
+ "protection": 0.3069923996656395,
+ "reputation": 14.037339004482142,
  "revealed": {
   "__set__": [
    "ag2_biological_control",
@@ -1263,15 +1266,21 @@
    "ag2_tedder",
    "air_aerofoil_section",
    "air_autogyro",
+   "air_balloon_ballast",
+   "air_balloon_valve",
    "air_cayley_forces",
    "air_compass_magnetic",
    "air_glider_simple",
+   "air_goldbeater_skin",
    "air_helicopter_rotor",
    "air_kite_basic",
+   "air_observation_balloon_tethered",
+   "air_parachute",
    "air_pitot_tube",
    "air_powered_aeroplane",
    "air_propeller_wing",
    "air_three_axis_control",
+   "air_varnished_silk_envelope",
    "air_wind_tunnel",
    "algebra_symbolic",
    "analytical_chemistry",
@@ -1843,16 +1852,16 @@
    "world_map"
   ]
  },
- "scandal": 7.791406125354113,
- "scholars": 0.09340689663006319,
+ "scandal": 5.66085558301603,
+ "scholars": 2.159627422716676,
  "slaves": 0,
- "spend_last_year": 0.0,
+ "spend_last_year": 429.8121995192308,
  "stalled": 0,
  "suspicion": 0.0,
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 144984.55534926776,
+ "total_spend": 148137.41634686384,
  "trade_hours_used": {
   "scribe": 4021.6346153846157
  },
@@ -1869,5 +1878,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 325
+ "year": 338
 }

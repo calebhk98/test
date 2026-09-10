@@ -162,3 +162,102 @@ While in bondage: `state` shows "IN DEBT BONDAGE: 9 years left owing 740.8 den" 
 screen shows "Money: -183.4 den" and `money` shows "Capital: -183.4". Paying capital back up
 (work smith 500 -> capital -145.8) does not touch the 740.8 owed. There are two debt numbers and
 the game never explains the relationship. Confidence: medium that it is a bug; certain it is confusing.
+
+## FINDING 10 — `available` prints TRUNCATED ids that every other command rejects
+The ID column is 30 characters wide and ids are cut without any marker.
+  > available all
+  ... air_observation_balloon_tether   Tethered observation ballo  1,004 ...
+  ... hom_sewer_stormwater_separatio   Sewer separated from storm  1,636 ...
+  > start air_observation_balloon_tether
+  REFUSED: unknown node id 'air_observation_balloon_tether'. use available or why ... to find valid ids
+  > why air_observation_balloon_tether
+  REFUSED: unknown node 'air_observation_balloon_tether'. did you mean: air_observation_balloon_tethered, ...
+  > why hom_sewer_stormwater_separatio
+  ... did you mean: hom_sewer_stormwater_separation, ...
+So `available` - the command the game tells you to use to find valid ids, and the ONLY way to see
+them under fog - emits ids that cannot be used, and the error message tells you to go back to the
+command that produced them. CONFIDENCE: certain this is a bug.
+
+## FINDING 11 — reported staffing requirements disagree between `ventures` and `open`
+  > ventures
+    - id=ag2_contour_ploughing, ... needs={'scholars': 0.0, 'craftsmen': 1.0}, to_open_it=40.0
+  > open ag2_contour_ploughing
+    REFUSED: nobody free to keep an eye on it: it needs 0.0 scholars and 0.2 craftsmen to supervise
+1.0 vs 0.2 for the same venture in the same turn. Confidence: certain they disagree; medium that
+one of them is wrong rather than two different quantities sharing one label.
+
+## FINDING 12 — the premise ("you arrive alone; anyone who works for you is hired") is not enforced
+At 130 AD in an ordinary greedy playthrough: "RUNNING AS CONCERNS: 51 ... EMPLOY: 0 people,
+0 den/yr in wages". Those 51 concerns include `fud_whaling_industry` (Organized whaling industry,
+1,610 den/yr), `fin_gambling_house`, `fin_inn`, `fin_pawnshop`, `pwr_coal_seam` (a coal mine) and
+`chm_phosphorus_extraction` - all running with literally zero employees and zero wages, because
+`ventures` reports needs={'scholars': 0.0, 'craftsmen': 0.0} for them. A one-man whaling industry
+and a one-man coal seam is exactly the thing the opening screen says the model refuses to do.
+
+## FINDING 13 — the economy compounds without limit and contradicts the setup screen's own framing
+Greedy but entirely legal play from the 400-den poor-scholar start, all inside one process:
+   100 AD    400 den
+   115 AD  22,400 den
+   130 AD 153,422 den, revenue 13,434 den/yr, 51 concerns, 0 employees
+   245 AD 530,108 den, revenue 34,393 den/yr
+   325 AD 601,572 den, revenue ~49,000 den/yr
+The setup screen says the `absurd` purse of 1,000,000 den is "four senatorial fortunes" and buys
+"perhaps a tenth off the time"; ordinary play passes half of it inside 150 years and would pass all
+of it. Once nothing new is startable, revenue still grows ~3.3%/yr by itself forever
+(34,689 -> 48,999 den/yr from 250 to 325 AD with zero new technologies and zero actions).
+
+## FINDING 14 — FOUNDER HOURS CAN BE SPENT TWICE: `train` and `work` use different counters
+REPRO from a fresh 100 AD save (2,000 founder-hours in the year):
+  > train machinist 2
+    training: 2 machinists will be ready in 2 years
+    capital: 45.6
+    your hours left this year: 1,100          <- train's own counter: 2000-900
+  > train chemist 2
+    your hours left this year: 200            <- 1100-900
+  > train engineer 2
+    REFUSED: teaching 2 engineers takes 900 of your own hours and you have 200 uncommitted   <- guard works
+  > state
+    You: alive (you do not age), 2,000 founder-hours free this year   <- WRONG, 1,800 were just spent
+  > work smith 2000
+    earned: 151.3 ... your hours left this year: 0                     <- ACCEPTED
+Total founder hours spent in the year 100: 1,800 teaching + 2,000 smithing = 3,800 of 2,000.
+The prompt also never moves: it reads `you:2000 hr` throughout the two trainings.
+The asymmetry is one-directional - `work smith 2000` first DOES make `train` refuse
+("teaching 2 machinists takes 900 of your own hours and you have 0 uncommitted this year"),
+so `train` reads the shared counter but never writes to it.
+CONFIDENCE: certain. This is the clearest resource-accounting bug I found.
+
+## FINDING 15 — `train` will teach a trade the society already has, contradicting its own help
+`help labour`: "train: teaches a trade that does not exist here, out of your own hours" and
+"A trade that does not exist here cannot be hired at any price; teach one with train."
+`labour` lists smith under "YOU COULD HIRE" and MUST BE TAUGHT: chemist, electrician, engineer,
+machinist, optician.
+  > train smith 2
+    training: 2 smiths will be ready in 2 years
+    capital: 53.2 (i.e. 354 den) ... 900 of your own hours
+Accepted, at 354 den and 900 founder-hours, for people you could simply hire. No warning.
+
+## FINDING 16 — reputation only ever costs you money
+`buy slaves 20` then `buy manumit 20`, repeated 5 times inside one turn at 130 AD:
+  reputation 59 -> 63.5 -> 66.5 -> 68.9 -> 70.8 -> 72.4 (diminishing; slave price rises each time,
+  so the pump self-limits - a guard that HELD)
+but `money` before and after: Revenue unchanged at 13,434 den/yr, while "living and appearances"
+went 3,317 -> 7,063 den/yr. 50,000 den spent to double your own overheads and gain nothing visible.
+Reputation is printed in the status bar of every single screen and the only measurable effect I
+could find is that it raises your annual expenses and your credit limit.
+Also unrealistic: 100 people can be bought and freed inside a single turn with no time passing.
+
+## More guards that HELD
+- `hire smith 100000` -> "REFUSED: hiring 100000 smiths costs 14765625 denarii in advance and you have 601225"
+- `train machinist 4` when the pool is exhausted -> "REFUSED: this society's literacy will not supply
+  more than 3.5 machinists in total, ever, at any price" (good hard cap)
+- `start hom_button` twice -> "REFUSED: already active"; `stop` an inactive id -> "REFUSED: not active"
+- `fire smith 5` with none -> "REFUSED: you employ no smiths"; `close coal` with no mine -> refused
+- `buy manumit 100` with 0 slaves -> "REFUSED: you have no slaves to free"
+- mothball/open cycling costs money every time; no free-money loop there
+- save/load round-trips state faithfully (year, capital, hours) - only the ACTIVE-PROJECT bug (Finding 4) leaks
+- `save` outside the start directory: both `save /etc/x` and `save ../../../../../../../tmp/x.json`
+  refused ("a save file must be a relative path" / "cannot be written outside the directory you started in")
+- JSON command paste works as advertised: `{"cmd": "work", "trade": "smith", "hours": 100}` ran;
+  `{"cmd":"step","years":-3}` was refused by the same guard as the text form; `{"cmd":"capital","amount":999999}`
+  -> "REFUSED: unknown cmd 'capital'". No extra powers via the JSON channel that I could find.

@@ -367,6 +367,11 @@ def _agent_help(s, topic=None):
             "buy": "forest, mine, slaves, or manumit; see the economy topic",
             "work <trade> <hours>": "do an ordinary job for ordinary pay",
             "bounty <id>": "pay someone else to solve it instead",
+            "open <id>": "start actually running something you have worked out "
+                         "how to do; until you do, it earns nothing and costs "
+                         "nothing",
+            "ventures": "what you are running, and what you know how to run and "
+                        "have not opened",
             "mothball <id> / restore <id>": "shut a finished work down, or reopen it",
             "bribe <amount>": "spend money to reduce a scandal",
             "policy": "every automatic behaviour, and a switch for each",
@@ -720,6 +725,13 @@ def _node_explain(s, nodes, k):
                      "artisans": round(s.artisans, 1)},
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
+        # NOT CHARGED UNTIL YOU OPEN IT. A tester read the upkeep off `why`,
+        # built the thing, and found nothing on the bill - correctly, because
+        # revenue and upkeep follow what you RUN. The figure is real; it just
+        # is not yours yet.
+        "revenue_and_upkeep_apply_only_once_opened": (
+            True if (n["rev"] > 0 or n["up"] > 0) and k not in s.granted
+            and k not in s.operating else None),
         "direct_prerequisites": n["pre"],
         # A GRANTED NODE IS HELD, WHATEVER ROUTE THE TREE DRAWS TO IT. `why
         # cap_heat_1300` on Han reported done:true, missing_prerequisites:
@@ -1836,7 +1848,7 @@ def parse_typed(line):
 _ID_COMMANDS = ("why", "path", "start", "stop", "bounty", "mothball", "restore")
 
 
-def _did_you_mean(k, nodes, limit=8):
+def _did_you_mean(k, nodes, limit=8, s=None):
     """Names close to what was typed.
 
     This was a plain substring test, so it helped with a truncation and not at
@@ -1865,6 +1877,17 @@ def _did_you_mean(k, nodes, limit=8):
                 near.append(x)
             if len(near) >= limit:
                 break
+    # NOT THROUGH THE FOG. `help fog` says in as many words that there is no
+    # way to view the whole tree, and `path` is properly disabled - and then a
+    # misspelling was answered out of the complete namespace. A weird-play
+    # tester typed `why transistor` and was handed junction_transistor and
+    # point_contact_transistor; `why vacuum`, `why steam` and `why
+    # semiconductor` each dumped eight hidden ids, and they pointed out that
+    # two-letter prefixes would reconstruct the entire tree. A suggestion is
+    # still a statement about what exists.
+    if s is not None and getattr(s, "fog", False):
+        memo = {}
+        near = [x for x in near if s.is_visible(x, _memo=memo)]
     return near[:limit]
 
 
@@ -1932,7 +1955,9 @@ def _agent_dispatch(s, nodes, cmd):
                     "id must be a name in quotes, not %s" % type(k).__name__}
         if k not in nodes:
             return {"ok": False, "error": "unknown node %r. did you mean: %s"
-                    % (k, ", ".join(_did_you_mean(k, nodes)) or "no idea")}
+                    % (k, ", ".join(_did_you_mean(k, nodes, s=s))
+                       or "no idea, and under fog of war I can only suggest "
+                          "things you have heard of")}
         return dict(ok=True, **_node_explain(s, nodes, k))
 
     if op == "path":

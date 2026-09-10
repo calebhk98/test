@@ -351,3 +351,93 @@ Things that bother me at this point:
    only recurring event I have seen besides "fire in the timber wards of the capital",
    which has now happened three times and appears to do nothing to me at all. I cannot
    tell whether that fire is flavour or a near-miss I should react to.
+
+### 10. 148-152: the saltpetre stall - the best and worst moment so far
+I queried the goal directly: `why point_contact_transistor` works even though the node
+is invisible under fog. It gave me its prerequisites (galena_detector,
+prc_lapping_plate, quantum_solidstate_theory + 3 unknown), and `why` on each of those
+gave theirs, and so on. In four commands I had mapped the whole spine:
+
+  point_contact_transistor
+    <- galena_detector <- crude_cell, drawplate_wire            (both startable NOW)
+    <- prc_lapping_plate <- cap_tol_10um <- screw_lathe <- crucible_steel,
+                                                           prc_change_gears_quadrant
+    <- quantum_solidstate_theory <- em_theory <- newtonian_mechanics <- calculus
+
+That is a **big hole in fog of war**: `available` insists "there is no way to see the
+whole tree", but `why <id>` on a known id ignores fog entirely, and the goal's id is
+printed in `state` every single turn. I did not have to cheat or read a file; the game
+handed me the root and the recursion. If fog is meant to be the core constraint, `why`
+on an unheard-of node should be the thing that refuses.
+
+Then I started eight things at once and got:
+  EVENT 148: SHORT OF SALTPETRE: work running at 5% of plan
+  ... repeated in 149, 150, 151.
+**Four years at 5% throughput.** Excellent event - a genuine materials bottleneck, and
+exactly the kind of "you cannot skip the supply chain" lesson the game should teach.
+
+But the cause was a trap of the game's own making. I had built nitre_beds in 141.
+`policy auto_open` had silently declined to open it, because nitre_beds earns 1,400/yr
+and costs 1,600/yr - a loss on paper. auto_open is described as an automation
+convenience ("open ventures for you"); nothing warns that it applies a profitability
+filter, or that the thing it declines to open is the sole domestic source of a material
+eight other projects need. Checking `ventures` I found TEN completed works sitting
+unopened, including lab_apparatus, glass_labware, sulfuric_retort, cap_heat_1100 and
+cap_tol_100um - i.e. most of my actual capability.
+
+So the lesson the game taught me was not "supply chains matter", it was "do not trust
+the automation". I would fix this by having the shortage event name the fix
+("you know nitre_beds and have not opened it") - the engine plainly knows.
+
+Opened all ten by hand (12,000 den). Revenue jumped 17k -> 48,766/yr.
+
+### 11. 157-211: the middle game bites back
+Corrections and discoveries:
+- My earlier claim that `why` ignores fog was too strong. `why` works on anything you
+  have HEARD OF, and refuses ("you have never heard of that") otherwise. But the goal
+  is always heard of, and each prerequisite it names becomes queryable, so
+  `why point_contact_transistor` -> `why galena_detector` -> `why crude_cell` walks the
+  whole spine anyway. The leak is real but principled.
+- **`start` and `available` disagree about ids.** `available` truncates the ID column
+  at 30 characters, and `start ch2_lab_fractional_crystallisa` is REFUSED as an unknown
+  node id. If you build your commands by reading the table (which is the only way to
+  act on a 400-item list) some of them simply cannot be typed. That is a plain bug.
+- **The saltpetre stall is a design landmine.** Any running project that lacks a
+  material throttles EVERY project to 5% of plan, the event names only the material,
+  and there is no command that lists materials, stocks, sources or which project is
+  starving. I lost 4 years, then 6 more, then 8 more to this - about 18 years of a
+  500-year budget - and each time the only cure I could find was to guess which of 51
+  running projects was the culprit and `stop` it. `quote` only knows minerals; there is
+  no `buy nitre`. A `materials` command, or naming the blocking project in the event,
+  would turn a frustration into a lesson.
+- `bounty` gave the best refusal text in the game: "not bounty-eligible (tier 3,
+  category chemistry): a craftsman in The Later Han Empire could not recognise success
+  at this without understanding the theory... A bounty works where the craft already
+  exists here and success is visible." That single sentence taught me more about the
+  model than any help topic.
+
+**184 AD: the Yellow Turbans arrived, and the game finally had teeth.**
+  EVENT 184: Yellow Turban rebellion: a site is sacked
+  EVENT 186: KNOWLEDGE LOST: 6 technologies forgotten (the corpus was never printed
+             and dispersed)
+Then again in 193 (11 lost), 194 (9 lost), 200 (7 lost). I went from 120 technologies
+built to 96, lost half my staff repeatedly, and money fell from 454k to 129k.
+
+I had thought corpus_written WAS the hedge - `state` says "hedged by corpus_written"
+and `risk` lists "copies of your work kept somewhere else". It is only half of it: you
+also need **corpus_dispersed**, which needs **printing_press**. The loss message says
+so explicitly ("the corpus was never printed and dispersed"), which is exactly right -
+but it only says it AFTER the first loss, and `state`'s reassuring "hedged by
+corpus_written" actively misled me for 70 years. `state` should say "partly hedged".
+
+This was, genuinely, the best sequence in the game. Twenty years of scrambling:
+printing_press (2 yr) -> corpus_dispersed (8 yr calendar floor, cannot be bought down)
+while the rebellion burns sites every other year. It made the earlier 6,000 hours of
+corpus writing retroactively meaningful and it punished me for exactly the right
+mistake - complacency about a warning I had been given in year 100 and had ticked off
+too early. Finished dispersing in 209.
+
+Also learned: `crop_rotation` needs `citizenship` (5,175 den, 3 yr, prereq
+patron_local); a venture can be REFUSED for want of a supervisor ("it needs 0.2
+craftsmen to supervise and you have 0.1 not already watching something else"), which is
+a nice constraint I only met once.

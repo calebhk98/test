@@ -46,9 +46,13 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 10.130026387392912,
- "capital": 601571.7600089482,
- "commissioned": {},
- "contract_hours": {},
+ "capital": 579771.6219035567,
+ "commissioned": {
+  "smith": 400.0
+ },
+ "contract_hours": {
+  "smith": 400.0
+ },
  "credit_frozen_until": 120,
  "dead_reason": null,
  "director_hours_spent_founder": 69105.83333333334,
@@ -937,9 +941,9 @@
   "engineer": 0.09340689663006319
  },
  "familiarity": 0.9,
- "forest_ha": 0.0,
+ "forest_ha": 100.0,
  "founder_alive": true,
- "freedmen": 0,
+ "freedmen": 10,
  "goal_year": null,
  "gov": 53.51688524590156,
  "granted": {
@@ -1100,8 +1104,8 @@
  "last_settlement": 108,
  "life_left": 999999775.0,
  "living_cost_paid": 1306904.2547018135,
- "manumitted_total": 0,
- "market_pressure": 0.0,
+ "manumitted_total": 10,
+ "market_pressure": 10.0,
  "mine_capacity": {},
  "mine_cost_paid": 0.0,
  "mine_pending": {},
@@ -1136,9 +1140,12 @@
    "ag2_roller",
    "ag2_root_cutter",
    "ag2_subsoiler",
+   "algebra_symbolic",
    "arithmetic_positional",
+   "chm_filter_press",
    "chm_matches",
    "chm_phosphorus_extraction",
+   "civ_arch_roman",
    "civ_canal_pound_lock",
    "civ_gate_sluice",
    "civ_harbour_dock",
@@ -1224,7 +1231,7 @@
   "auto_train": true
  },
  "protection": 0.30931857069229973,
- "reputation": 14.566039002570827,
+ "reputation": 17.423181859713683,
  "revealed": {
   "__set__": [
    "ag2_biological_control",
@@ -1865,7 +1872,12 @@
    "optician"
   ]
  },
- "training": [],
+ "training": [
+  [
+   10.0,
+   328.0
+  ]
+ ],
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,

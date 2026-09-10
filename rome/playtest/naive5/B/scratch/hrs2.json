@@ -14,33 +14,33 @@
   "_note_eminence": "Court factions and eunuch politics make eminence dangerous in much the same way, and the examination-literati class resents an outsider.",
   "adaptation_rate": 0.1,
   "bribability": 0.6,
-  "patronage_weight": 0.8499999999999981,
-  "w_commerce": -0.350000000000001,
+  "patronage_weight": 0.7,
+  "w_commerce": -0.2,
   "w_eminence_danger": 0.8,
   "w_information": 0.2,
   "w_labour_saving": -0.2,
   "w_magic_fear": 0.35,
   "w_military": 0.8,
   "w_novelty": -0.2,
-  "w_religious_rigidity": 0.29999999999999993
+  "w_religious_rigidity": 0.15
  },
  "active": {},
  "artisans": 0.0,
  "atrocity": 0,
  "binding": null,
- "bondage_debt": 54.97439330448074,
- "bondage_years_left": 10.0,
+ "bondage_debt": 0.0,
+ "bondage_years_left": 0.0,
  "bountied": {
   "__set__": []
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": -54.83637840590037,
+ "capital": -196.77734374999994,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
  "dead_reason": null,
- "director_hours_spent_founder": 760.0,
+ "director_hours_spent_founder": 0.0,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -66,7 +66,6 @@
    "fud_heavy_mouldboard_plough_coulter",
    "fud_seed_drill",
    "hom_board_games",
-   "hom_button",
    "hom_candle_beeswax",
    "hom_candle_tallow",
    "hom_flush_latrine_simple",
@@ -79,13 +78,10 @@
    "hom_oil_lamp_simple",
    "hom_perfume_enfleurage",
    "hom_public_bath",
-   "hom_punkah_ceiling",
-   "hom_safety_pin",
-   "hom_toys_dolls",
-   "hom_umbrella",
    "horse_collar",
    "lnd_axle_pivot_front",
    "lnd_bridge",
+   "lnd_cursus_publicus",
    "lnd_four_wheel_cart",
    "lnd_harness_throat_girth",
    "lnd_horse_saddle_basic",
@@ -185,31 +181,16 @@
    "tex_wool"
   ]
  },
- "done_year": {
-  "hom_button": 212,
-  "hom_cosmetics_roman": 212,
-  "hom_eraser_breadcrumb": 212,
-  "hom_fireplace_chimney": 217,
-  "hom_flush_toilet_trap": 217,
-  "hom_latrine_water_trap": 217,
-  "hom_punkah_ceiling": 217,
-  "hom_safety_pin": 212,
-  "hom_sprung_mattress": 217,
-  "hom_toothbrush": 212,
-  "hom_toys_dolls": 212,
-  "hom_umbrella": 217,
-  "lnd_cursus_publicus": 100,
-  "sea_pharos_lighthouse": 100
- },
- "economy": 1.18,
- "eminence": 0.015471699722705737,
+ "done_year": {},
+ "economy": 1.0,
+ "eminence": 0.0,
  "employees": {},
- "familiarity": 0.9,
+ "familiarity": 0.0,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": 2.1,
+ "gov": 0.0,
  "granted": {
   "__set__": [
    "bellows_water_blown",
@@ -249,6 +230,7 @@
    "horse_collar",
    "lnd_axle_pivot_front",
    "lnd_bridge",
+   "lnd_cursus_publicus",
    "lnd_four_wheel_cart",
    "lnd_harness_throat_girth",
    "lnd_horse_saddle_basic",
@@ -329,6 +311,7 @@
    "sea_merchant_ships_large",
    "sea_monsoon_route",
    "sea_mortise_tenon",
+   "sea_pharos_lighthouse",
    "sea_sounding_lines",
    "sea_spritsail",
    "sea_square_sail",
@@ -347,47 +330,29 @@
    "tex_wool"
   ]
  },
- "hours_this_year": {
-  "available": 500.0,
-  "effective_on_projects": 0.0,
-  "offered_to_projects": 0.0,
-  "teaching": 0.0,
-  "unused": 500.0,
-  "wage_work": 0.0
- },
- "insolvent_years": 1,
- "interest_paid": 5676.551971015467,
+ "hours_this_year": null,
+ "insolvent_years": null,
+ "interest_paid": null,
  "last_patron_death": null,
- "last_settlement": 283,
- "life_left": 999999810.0,
- "living_cost_paid": 43249.608631598785,
+ "last_settlement": -999,
+ "life_left": 1000000000.0,
+ "living_cost_paid": 0.0,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
  "mine_cost_paid": 0.0,
  "mine_pending": {},
  "mine_ready": {},
- "mine_tranches": [],
+ "mine_tranches": null,
  "money_real": 1.0,
  "mothballed": {
-  "__set__": [
-   "hom_cosmetics_roman",
-   "hom_eraser_breadcrumb",
-   "hom_fireplace_chimney",
-   "hom_flush_toilet_trap",
-   "hom_latrine_water_trap",
-   "hom_sprung_mattress",
-   "hom_toothbrush",
-   "lnd_cursus_publicus"
-  ]
+  "__set__": []
  },
  "nitre_bed_m2": 0.0,
  "operating": {
-  "__set__": [
-   "lnd_cursus_publicus"
-  ]
+  "__set__": []
  },
- "output_factor": 0.654,
+ "output_factor": 1.0,
  "policy": {
   "auto_bribe": false,
   "auto_buy_people": false,
@@ -400,50 +365,44 @@
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.001364204763622137,
- "reputation": 0.3546932385417556,
+ "protection": 0.0,
+ "reputation": 5.0,
  "revealed": {
-  "__set__": [
-   "hom_button",
-   "hom_cosmetics_modern_warning",
-   "hom_cosmetics_roman",
-   "hom_doll_fashion",
-   "hom_eraser_breadcrumb",
-   "hom_fireplace_chimney",
-   "hom_flush_toilet_trap",
-   "hom_kitchen_range",
-   "hom_latrine_water_trap",
-   "hom_punkah_ceiling",
-   "hom_safety_pin",
-   "hom_sewer_stormwater_separation",
-   "hom_sprung_mattress",
-   "hom_stove_enclosed",
-   "hom_toothbrush",
-   "hom_toothpaste_commercial",
-   "hom_toys_dolls",
-   "hom_umbrella",
-   "lnd_cursus_publicus",
-   "sea_fresnel_lens",
-   "sea_pharos_lighthouse"
-  ]
+  "__set__": []
  },
- "scandal": 3.092474323036208e-05,
+ "scandal": 0.0,
  "scholars": 0.0,
  "slaves": 0,
- "spend_last_year": 0.0,
+ "spend_last_year": null,
  "stalled": 0,
  "suspicion": 0.0,
  "suspicion_mult": 1.0,
- "teaching_hours_this_year": 0.0,
+ "teaching_hours_this_year": 1800.0,
  "throttle": 1.0,
- "total_spend": 996.1804637687555,
+ "total_spend": 0.0,
  "trade_hours_used": {},
  "trades_created": {
-  "__set__": []
+  "__set__": [
+   "chemist",
+   "machinist"
+  ]
  },
- "training": [],
- "wage_hours_this_year": 0.0,
- "wages_earned": 66.03096278418444,
+ "training": [
+  [
+   0.0,
+   102.0,
+   "machinist",
+   2.0
+  ],
+  [
+   0.0,
+   102.0,
+   "chemist",
+   2.0
+  ]
+ ],
+ "wage_hours_this_year": 2000.0,
+ "wages_earned": 151.34765625,
  "wages_paid": 0.0,
- "year": 290
+ "year": 100
 }

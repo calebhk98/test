@@ -576,6 +576,56 @@ class LabourMixin:
         self._add_labour_pressure(frm, float(n) * self.HOURS_PER_PERSON_YEAR)
         return True, ("%g %s%s will be ready in 2 years" % (n, trade, "s" if n != 1 else ""))
 
+    def auto_commission_for_blocked(self, look=40):
+        """Buy the hands for the nearest thing that is blocked ONLY on hands.
+
+        Deliberately narrow. It looks at the front of the priority order, at
+        things the goal actually needs, and only acts where craftsmen are the
+        single remaining obstacle - not where money, prerequisites, the
+        calendar or scholars are. Buying a year of a carpenter to raise a
+        workshop is a sensible thing to do; buying labour speculatively is not,
+        and this must never become a way to spend a run's savings on nothing.
+        """
+        if self.capital <= 0:
+            return None
+        need = getattr(self, "_goal_closure", None)
+        if need is None:
+            try:
+                need = self._goal_closure = closure(self.nodes, self.goal)
+            except Exception:
+                need = self._goal_closure = set()
+        seen = 0
+        for k in self.order:
+            if seen >= look:
+                break
+            if k in self.done or k in self.active or k not in need:
+                continue
+            n = self.nodes[k]
+            if any(p not in self.done for p in n["pre"]):
+                continue
+            seen += 1
+            short = n["art"] - self.craft_hands_available()
+            if short <= 0 or n["sch"] > self.effective_scholars():
+                continue
+            hours = short * self.HOURS_PER_PERSON_YEAR
+            # The cheapest craft trade this society actually has that can
+            # spare the time: a workshop needs hands, not a particular guild.
+            best = None
+            for t in sorted(WAGES):
+                if trade_family(t) != "craft" or not self.trade_available(t):
+                    continue
+                spare = self.market_supply(t) - self.contract_hours.get(t, 0.0)
+                if spare < hours:
+                    continue
+                if best is None or WAGES[t] < WAGES[best]:
+                    best = t
+            if best is None:
+                continue
+            ok, _why = self.commission(best, hours)
+            if ok:
+                return (k, best, hours)
+        return None
+
     def craft_hands_available(self):
         """Craftsmen you can actually put on a job this year: the ones on your
         own staff, plus the ones whose time you have already bought.

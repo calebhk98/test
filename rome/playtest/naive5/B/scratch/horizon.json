@@ -33,7 +33,7 @@
    "short_of_trade": [],
    "spent": 4275.0,
    "stalled_years": 0,
-   "yrs": 80.0
+   "yrs": 355.0
   }
  },
  "artisans": 0.0,
@@ -45,13 +45,13 @@
   "__set__": []
  },
  "bounties_paid": 0,
- "bribes_ytd": 10.130026387392912,
- "capital": 601571.7600089482,
+ "bribes_ytd": 3.2036438682940346e-39,
+ "capital": 2555813.211274939,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 120,
  "dead_reason": null,
- "director_hours_spent_founder": 69105.83333333334,
+ "director_hours_spent_founder": 96605.83333333334,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -932,10 +932,8 @@
   "world_map": 200
  },
  "economy": 3.55,
- "eminence": 8.224044035282981,
- "employees": {
-  "engineer": 0.09340689663006319
- },
+ "eminence": 7.780126632646372,
+ "employees": {},
  "familiarity": 0.9,
  "forest_ha": 0.0,
  "founder_alive": true,
@@ -1096,10 +1094,10 @@
  },
  "insolvent_years": 0,
  "interest_paid": 6705.89833104287,
- "last_patron_death": 323,
+ "last_patron_death": 502,
  "last_settlement": 108,
- "life_left": 999999775.0,
- "living_cost_paid": 1306904.2547018135,
+ "life_left": 999999500.0,
+ "living_cost_paid": 9559606.760969771,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -1210,7 +1208,7 @@
    "world_map"
   ]
  },
- "output_factor": 0.9040000000000001,
+ "output_factor": 1.0,
  "policy": {
   "auto_bribe": true,
   "auto_buy_people": false,
@@ -1223,8 +1221,8 @@
   "auto_shed": false,
   "auto_train": true
  },
- "protection": 0.30931857069229973,
- "reputation": 14.566039002570827,
+ "protection": 0.29781616842447994,
+ "reputation": 11.652203790364869,
  "revealed": {
   "__set__": [
    "ag2_biological_control",
@@ -1843,8 +1841,8 @@
    "world_map"
   ]
  },
- "scandal": 7.791406125354113,
- "scholars": 0.09340689663006319,
+ "scandal": 0.0001467652044552484,
+ "scholars": 0.0,
  "slaves": 0,
  "spend_last_year": 0.0,
  "stalled": 0,
@@ -1869,5 +1867,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 325
+ "year": 600
 }

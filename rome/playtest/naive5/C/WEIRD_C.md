@@ -577,3 +577,163 @@ compounds on 2,092, and creditors seize works. Specifically I predict they will 
 my household technologies and **un-invent** them, as happened to the courier service. I predict
 **no new ghost concerns**, because ghosts came from seizing an *opened* concern and none of these
 are open. If ghosts appear anyway, the bug is broader than I thought.
+
+**What actually happened (217 → 287):** exactly as predicted, and worse.
+
+```
+EVENT 228: creditors took what they could: 7 works let go: hom_fireplace_chimney,
+  hom_sprung_mattress, hom_toothbrush, hom_flush_toilet_trap, hom_latrine_water_trap,
+  hom_cosmetics_roman, hom_eraser_breadcrumb
+EVENT 228: BONDAGE ...
+```
+Seven technologies un-invented. **No new ghost concerns** — confirming the ghost bug is specific to
+seizing an *opened* concern. Bondage cycled six more times (terms of 11, 11, 11, 9, 3, 4 years, all
+described as "about 12 years"), INSOLVENCY SETTLED three times, reputation 13.3 → 0.20.
+
+Two more things here:
+- The seven `LOST` lines are dated **229**; the `creditors took what they could` event that caused
+  them is dated **228**. The loss is reported a year after the seizure that caused it.
+- **`INSOLVENCY SETTLED` says, verbatim, "you keep your knowledge and your practice"** — in the same
+  decade in which creditors took seven pieces of knowledge out of my head. The flavour text and the
+  mechanic say opposite things.
+
+---
+
+## The three findings I'd most want a developer to see
+
+### 1. FOG OF WAR IS LEAKY — you can enumerate the entire hidden tech tree with `why`
+
+`help fog` says: *"You cannot see where anything leads, and **there is no way to view the whole
+tree**."* `path <id>` is properly disabled under fog. `why point_contact_transistor` is properly
+refused: *"you have never heard of that."*
+
+But the **typo suggester on `why` searches the full tree and prints up to eight real node ids,
+ignoring fog completely.**
+
+```
+> why transistor
+REFUSED: unknown node 'transistor'. did you mean: junction_transistor,
+  point_contact_transistor, tl_radiator, tr_pantograph, tl_tractor
+
+> why semiconductor
+REFUSED: unknown node 'semiconductor'. did you mean: com_semiconductor_diode,
+  semiconductor_metrology
+
+> why vacuum
+REFUSED: ... com_vacuum_tube_computer, com_vacuum_tube_pentode, com_vacuum_tube_tetrode,
+  el2_photocell_vacuum_gas_photoelectric, en_turbine_condenser_vacuum, hom_vacuum_cleaner
+
+> why steam
+REFUSED: ... ag2_tractor_steam, cap_power_steam, ch2_lab_steam_distillation, en_steam_trap,
+  en_steam_turbine_curtis, en_steam_turbine_impulse, en_steam_turbine_reaction,
+  lnd_steam_locomotive
+```
+
+A **single letter** works too — `why a` returns eight ids alphabetically. So a player can walk the
+whole namespace with two-letter prefixes and reconstruct the tree the game says cannot be seen.
+I found this by accident, in 287 AD, while broke and in debt bondage, by typing the word
+"transistor" wrong.
+
+### 2. A CREDITOR SEIZURE CAN PERMANENTLY SOFT-LOCK A TECHNOLOGY
+
+Reachable in seven years from a fresh start by taking the free item. After the seizure,
+`lnd_cursus_publicus` is listed forever in `state` as a running concern and in `ventures` as
+costing 200/yr, while `money` charges 0 for it, and **all four verbs refuse it, each citing a
+different state**: `start` says restore it, `restore` says start it, `open` says you don't know it,
+`mothball` says you never built it. There is no way for the player to clear the entry.
+
+### 3. THE FREE ITEMS ARE UNMARKED TRAPS AND THE PLAYER IS NEVER WARNED
+
+`lnd_cursus_publicus` is 0 den, 0 hours, 0 years, unlocks nothing, earns nothing, and costs 200
+den/yr — against a starting income of +3.5 den/yr. `hom_toothbrush` earns 30/yr and costs 40/yr.
+Neither is flagged. A first-time player will absolutely take the free one, and it is a
+seven-year path to permanent bankruptcy plus the soft-lock above.
+
+---
+
+## Everything else, in a list
+
+**Contradictions between commands**
+- `open med_cataract_couching` → *"that is something the society has, **not a concern of yours to
+  run**"* — while `money` lists `med_cataract_couching 185.1` as **my** revenue. The game's single
+  largest income stream is something it denies is mine. This was the mystery from year one.
+- `state`: `sch 0` · `ventures`: `scholars: 1` · `why`: `(you have 1, 0)`. Also three words for one
+  trade: `art` / "artisans" / "craftsmen".
+- `state` prints `RUNNING: nothing` immediately above `RUNNING AS CONCERNS: 1`.
+- `state`: "6 technologies at risk if a hazard lands" · `state full:true`: "6 technologies at risk,
+  **0 lost per sacking on average**" · `risk`: "chance lost if a site is sacked: **80%**, fraction
+  lost when it happens: **40%**" and then "**nothing here is currently at risk of being forgotten**".
+  Four statements, four numbers, one fact.
+- `IN DEBT BONDAGE: 10 years left owing 55 den` beside `Money: -54.8 den`; earlier
+  `owing 11 den` beside `Money: -151.4 den`.
+- `help money` and `help economy` return **byte-identical text**, and neither answers the question
+  the state screen's own pointer promises (`where_the_money_comes_from -> money`).
+- `state full:true` shows **less** than plain `state` (it drops the `more:` footer).
+
+**Undocumented / misdocumented**
+- `open` and `ventures` — the two verbs that turn technology into income — are **not in
+  `help commands`**. I found `open` only because a completion event happened to name it.
+- `why` prints `UPKEEP: 200 den/yr` as a flat property, but upkeep is only charged after `open`.
+  So every cost estimate a player makes from `why` is wrong.
+- `help sittings` promises the file is written "after every command"; when the process died on a
+  closed stdout mid-`step`, a hundred years of play were lost. (A clean stdin-close does save.)
+- Events debit you with **no amount ever shown** — a sack cost ~83 den, a capital fire ~27 den,
+  and nothing in the game will tell you that.
+
+**Balance / realism**
+- `work labourer 2000` — an entire year of full-time manual labour — earns **66 denarii** against a
+  cost of living of ~227. You cannot subsist by working, and working also switches off your
+  practice, so the verb is strictly self-destructive in every situation I could construct.
+- Reputation counts **how many things you finished recently**, not what they were or whether anyone
+  uses them. Twelve unopened household gadgets took me from 1.3 to 13.3. Five hundred years of
+  total inaction left me at 0.5. Fame for a breadcrumb eraser nobody has ever seen.
+- Credit limit scales with reputation so steeply that 151 den of debt meant slavery at reputation
+  0.1 while 2,092 den of debt was ignored for a decade at reputation 13.3 — and the "Credit limit"
+  figure was exceeded without comment.
+- **500 years of doing absolutely nothing quadruples your money** (400 → 1,600). The game's thesis
+  is that hours are the scarce resource; its default reward for spending none is to make you rich.
+
+**Content oddities in the Han China scenario**
+- The **Pharos lighthouse** is offered in landlocked Luoyang for 0 den, 0 hours, 0 years, and pays
+  +1.3 reputation. So is the **cursus publicus**, whose own description says it "is already
+  established wherever a state has the capacity", in a state of capacity 0.90. So are **Roman
+  cosmetics** and the **Roman masonry arch**. The item list does not appear to be filtered by
+  civilisation.
+- "Yellow Turban rebellion: **a site is sacked**" fired repeatedly against me while my entire estate
+  was one Pharos lighthouse, and billed me for it.
+- **The scenario's history stops in 322.** Yellow Turbans (184) and Three Kingdoms (220–280) are
+  modelled beautifully, with dated values-shifts. Then, over the remaining **278 years** to the
+  horizon, there are eight events, all from the generic table. No Jin, no Sixteen Kingdoms, no
+  Northern Wei, no Buddhism — and, most consequentially, **no Sui reunification in 589**, even
+  though the game models fragmentation as "output falls to 60%" and never turns it back on. The
+  opening screen promises "three centuries of division"; the last 45% of the timeline is empty.
+- `EMINENCE is dangerous above 26` is printed on every single `state` screen. Across 500 years and
+  two runs I never exceeded **0.23**. It may be unreachable in practice; it is certainly odd to
+  headline a threshold two orders of magnitude away.
+
+**Things the game does very well and should keep**
+- Refusals are uniformly excellent: `step -5`, `step 1e9`, `bribe -1000`, `buy slaves -5`, bare
+  verbs, blank lines — all handled with clear, in-voice messages and "Nothing was changed."
+- `step 400` past the horizon is refused with the exact number of years remaining.
+- Reaching 600 with nothing built gives a clean, unambiguous ending, and afterwards `step` is
+  refused while `available` and `why` still work so you can read your own tombstone.
+- `policy` is the best screen in the game — ten named automations plus an explicit note on which
+  ruinous things are *consequences* rather than settings.
+- The bounty refusal is superb writing: *"a craftsman in The Later Han Empire could not recognise
+  success at this without understanding the theory, so there is nothing to award the prize for."*
+- The hours/practice trade-off (spending your year labouring shuts off your practice) is a genuinely
+  good mechanic, and it is correctly forecast in the status line before you step.
+- Runs are deterministic — I replayed 100→250 and got byte-identical events.
+
+**Did the game notice I ignored it?** Yes, at the very end, and only there:
+*"You built 0 things of your own and did not reach point-contact transistor."* Nothing during the
+five hundred years ever prompted, warned, nudged or asked. A player who does the wrong thing gets
+no feedback until the horizon.
+
+---
+
+### Correction to my own note at line ~128
+I later tested the save promise properly: closing **stdin** mid-session does write the file
+correctly. What failed was the process dying on a closed **stdout** (SIGPIPE) part-way through a
+`step`, which lost the whole step. So `help sittings` is broadly honest; the failure mode is
+narrower than I first claimed, but it does exist and it is silent.

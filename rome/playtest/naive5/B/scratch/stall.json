@@ -33,7 +33,7 @@
    "short_of_trade": [],
    "spent": 4275.0,
    "stalled_years": 0,
-   "yrs": 80.0
+   "yrs": 86.0
   }
  },
  "artisans": 0.0,
@@ -45,13 +45,13 @@
   "__set__": []
  },
  "bounties_paid": 0,
- "bribes_ytd": 10.130026387392912,
- "capital": 601571.7600089482,
+ "bribes_ytd": 1.1917874744503882,
+ "capital": 791355.6901843048,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 120,
  "dead_reason": null,
- "director_hours_spent_founder": 69105.83333333334,
+ "director_hours_spent_founder": 69705.83333333334,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -932,9 +932,10 @@
   "world_map": 200
  },
  "economy": 3.55,
- "eminence": 8.224044035282981,
+ "eminence": 8.103996091512528,
  "employees": {
-  "engineer": 0.09340689663006319
+  "engineer": 0.07542977691660545,
+  "scholar": 2.695896375
  },
  "familiarity": 0.9,
  "forest_ha": 0.0,
@@ -1098,8 +1099,8 @@
  "interest_paid": 6705.89833104287,
  "last_patron_death": 323,
  "last_settlement": 108,
- "life_left": 999999775.0,
- "living_cost_paid": 1306904.2547018135,
+ "life_left": 999999769.0,
+ "living_cost_paid": 1391849.4627480246,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -1210,7 +1211,7 @@
    "world_map"
   ]
  },
- "output_factor": 0.9040000000000001,
+ "output_factor": 0.9400000000000002,
  "policy": {
   "auto_bribe": true,
   "auto_buy_people": false,
@@ -1223,8 +1224,8 @@
   "auto_shed": false,
   "auto_train": true
  },
- "protection": 0.30931857069229973,
- "reputation": 14.566039002570827,
+ "protection": 0.30528932567785816,
+ "reputation": 13.5865364731663,
  "revealed": {
   "__set__": [
    "ag2_biological_control",
@@ -1843,8 +1844,8 @@
    "world_map"
   ]
  },
- "scandal": 7.791406125354113,
- "scholars": 0.09340689663006319,
+ "scandal": 4.140672662664316,
+ "scholars": 2.7713261519166053,
  "slaves": 0,
  "spend_last_year": 0.0,
  "stalled": 0,
@@ -1869,5 +1870,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 325
+ "year": 331
 }

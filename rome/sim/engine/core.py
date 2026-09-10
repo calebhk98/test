@@ -120,6 +120,9 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # that does run what it builds, and off for a player, for whom
             # deciding what to actually operate is the point.
             "auto_open":     not manual,
+            # Buy a job from an outside shop when a few pairs of hands are the
+            # only thing standing between you and something you need.
+            "auto_commission": not manual,
             "auto_bribe":    not manual,   # pay your way out of a scandal
         }
         self.founder_alive = True
@@ -367,6 +370,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     self.employees[t] += short
                     self.capital -= short * ANNUAL_WAGE.get(t, 375.0) * self.price_index
             self._resync_pools()
+        # BUY A JOB WHEN A HANDFUL OF HANDS IS THE ONLY THING IN THE WAY.
+        # Letting contracted craftsmen count toward a project's staff
+        # requirement fixed the Norse deadlock for a person at a keyboard and
+        # not at all for the optimizer, because nothing in the engine had ever
+        # called commission(). A run that can see the wall, has the money, and
+        # has no way to spend it on the wall is the same dead end wearing a
+        # different hat.
+        if self.policy.get("auto_commission", not self.manual):
+            self.auto_commission_for_blocked()
         self.directors_extra += (di_cap - self.directors_extra) * 0.12 - self.directors_extra * ATTRITION
         self.artisans = max(0.0, self.artisans)
         self.scholars = max(0.0, self.scholars)

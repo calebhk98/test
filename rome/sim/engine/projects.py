@@ -86,6 +86,18 @@ class ProjectsMixin:
             return False, ("you have not worked out how to do that yet, so there "
                            "is nothing to open")
         if k in self.granted:
+            if self._practisable(k):
+                # A tester put this best: "my entire un-chosen livelihood is
+                # drilling holes in Han skulls, and the game denies it's mine."
+                # `money` itemises this as their revenue and `open` called it
+                # the society's. Both are half right: the SKILL is the
+                # society's, and you are already practising it - which is why
+                # it pays, and why there is nothing here to open.
+                return False, ("you are already doing that - it is your practice, "
+                               "and it is where most of your income comes from. "
+                               "It is a skill this society has, not a concern "
+                               "you opened, so there is nothing to open and "
+                               "nothing to close")
             return False, ("that is something the society has, not a concern of "
                            "yours to run")
         if not self.is_venture(k):

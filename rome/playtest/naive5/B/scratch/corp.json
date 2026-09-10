@@ -1,7 +1,7 @@
 {
  "_civ": "han_china_100ad",
  "_civ_live": {
-  "literacy_elite": 0.98,
+  "literacy_elite": 1.0,
   "literacy_general": 0.06,
   "state_capacity": 0.92
  },
@@ -19,7 +19,7 @@
   "w_eminence_danger": 0.8,
   "w_information": 0.2,
   "w_labour_saving": -0.2,
-  "w_magic_fear": 0.24999999999999997,
+  "w_magic_fear": 0.21999999999999997,
   "w_military": 0.8,
   "w_novelty": -0.12000000000000001,
   "w_religious_rigidity": 0.29999999999999993
@@ -29,11 +29,11 @@
    "cost_left": 0.0,
    "hours_effective_this_year": 0.0,
    "hours_offered_this_year": 100.0,
-   "ph_left": 23.91346153846154,
+   "ph_left": 0.7534615384615373,
    "short_of_trade": [],
-   "spent": 4275.0,
+   "spent": 4274.999999999999,
    "stalled_years": 0,
-   "yrs": 80.0
+   "yrs": 26.0
   }
  },
  "artisans": 0.0,
@@ -45,13 +45,13 @@
   "__set__": []
  },
  "bounties_paid": 0,
- "bribes_ytd": 10.130026387392912,
- "capital": 601571.7600089482,
+ "bribes_ytd": 5.482061926698361e-05,
+ "capital": 1128222.1065545252,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 120,
  "dead_reason": null,
- "director_hours_spent_founder": 69105.83333333334,
+ "director_hours_spent_founder": 82825.83333333334,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -87,6 +87,7 @@
    "air_aerofoil_section",
    "air_compass_magnetic",
    "air_kite_basic",
+   "air_observation_balloon_tethered",
    "air_wind_tunnel",
    "algebra_symbolic",
    "arithmetic_positional",
@@ -151,6 +152,7 @@
    "com_optical_tower",
    "com_signal_flags",
    "com_stepped_drum",
+   "corpus_written",
    "crank_conrod",
    "en_horse_gin",
    "en_spring_motor",
@@ -575,6 +577,7 @@
   "air_aerofoil_section": 206,
   "air_compass_magnetic": 125,
   "air_kite_basic": 130,
+  "air_observation_balloon_tethered": 331,
   "air_wind_tunnel": 155,
   "algebra_symbolic": 210,
   "arithmetic_positional": 205,
@@ -630,6 +633,7 @@
   "com_optical_tower": 211,
   "com_signal_flags": 145,
   "com_stepped_drum": 200,
+  "corpus_written": 347,
   "en_horse_gin": 140,
   "en_spring_motor": 135,
   "en_treadwheel": 135,
@@ -932,16 +936,17 @@
   "world_map": 200
  },
  "economy": 3.55,
- "eminence": 8.224044035282981,
+ "eminence": 7.900832172665351,
  "employees": {
-  "engineer": 0.09340689663006319
+  "scholar": 0.9941867444714546,
+  "scribe": 2.695896375
  },
  "familiarity": 0.9,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": 53.51688524590156,
+ "gov": 54.91688524590157,
  "granted": {
   "__set__": [
    "bellows_water_blown",
@@ -1096,10 +1101,10 @@
  },
  "insolvent_years": 0,
  "interest_paid": 6705.89833104287,
- "last_patron_death": 323,
+ "last_patron_death": 341,
  "last_settlement": 108,
- "life_left": 999999775.0,
- "living_cost_paid": 1306904.2547018135,
+ "life_left": 999999741.0,
+ "living_cost_paid": 1895885.8951563844,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -1210,7 +1215,7 @@
    "world_map"
   ]
  },
- "output_factor": 0.9040000000000001,
+ "output_factor": 1.0,
  "policy": {
   "auto_bribe": true,
   "auto_buy_people": false,
@@ -1223,8 +1228,8 @@
   "auto_shed": false,
   "auto_train": true
  },
- "protection": 0.30931857069229973,
- "reputation": 14.566039002570827,
+ "protection": 0.3055177539017404,
+ "reputation": 13.654615638785684,
  "revealed": {
   "__set__": [
    "ag2_biological_control",
@@ -1263,15 +1268,21 @@
    "ag2_tedder",
    "air_aerofoil_section",
    "air_autogyro",
+   "air_balloon_ballast",
+   "air_balloon_valve",
    "air_cayley_forces",
    "air_compass_magnetic",
    "air_glider_simple",
+   "air_goldbeater_skin",
    "air_helicopter_rotor",
    "air_kite_basic",
+   "air_observation_balloon_tethered",
+   "air_parachute",
    "air_pitot_tube",
    "air_powered_aeroplane",
    "air_propeller_wing",
    "air_three_axis_control",
+   "air_varnished_silk_envelope",
    "air_wind_tunnel",
    "algebra_symbolic",
    "analytical_chemistry",
@@ -1355,6 +1366,7 @@
    "collegium_licensed",
    "com_binary_arithmetic",
    "com_boolean_algebra",
+   "com_cryptography_substitution",
    "com_error_detecting_code",
    "com_heliograph",
    "com_information_theory",
@@ -1367,6 +1379,7 @@
    "com_relay_computer",
    "com_signal_flags",
    "com_stepped_drum",
+   "corpus_dispersed",
    "corpus_written",
    "crop_rotation",
    "em_theory",
@@ -1598,7 +1611,9 @@
    "prc_tracer_lathe",
    "prc_treadle_lathe_flywheel",
    "precision_three_plate",
+   "prn_cataloguing_system",
    "prn_hand_papermaking",
+   "prn_index_concordance",
    "prn_sizing_surface",
    "prn_wire_mould_deckle",
    "pwr_cable_tool_drilling",
@@ -1843,8 +1858,8 @@
    "world_map"
   ]
  },
- "scandal": 7.791406125354113,
- "scholars": 0.09340689663006319,
+ "scandal": 1.2864923634997547,
+ "scholars": 3.6900831194714545,
  "slaves": 0,
  "spend_last_year": 0.0,
  "stalled": 0,
@@ -1852,9 +1867,9 @@
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 144984.55534926776,
+ "total_spend": 151649.53133471715,
  "trade_hours_used": {
-  "scribe": 4021.6346153846157
+  "scribe": 9413.427365384616
  },
  "trades_created": {
   "__set__": [
@@ -1869,5 +1884,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 325
+ "year": 359
 }

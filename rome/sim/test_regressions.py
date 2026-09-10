@@ -657,11 +657,22 @@ check("shed_loss_makers mothballs, and NAMES, what it takes",
 
 s = sim(capital=-100000.0)
 s.done.add(_LOSS); s.done.add(_KNOW2)
+s._done_changed()
+# A creditor seizes a CONCERN, not a memory, so it has to be open to be taken.
+s.operating.add(_LOSS); s.operating.add(_KNOW2)
 s.credit_limit = lambda: 0.0   # force straight past the credit floor
 s.enforce_credit_limit(100)
-check("creditors cannot seize knowledge either",
-      _LOSS not in s.done and _KNOW2 in s.done,
-      "loss-maker taken=%s knowledge taken=%s" % (_LOSS not in s.done, _KNOW2 not in s.done))
+# NOW ABOUT WHAT IS RUNNING, not about what is known. Creditors close and sell
+# up a concern; they cannot take away your memory of how it worked, which is
+# also why a weird-play tester could reach a state where a node was
+# simultaneously forgotten and running and no verb would touch it.
+check("creditors close a loss-making concern and cannot touch knowledge",
+      _LOSS not in s.operating and _KNOW2 in s.operating,
+      "loss-maker closed=%s knowledge closed=%s"
+      % (_LOSS not in s.operating, _KNOW2 not in s.operating))
+check("a concern the creditors took is still a thing you know how to do",
+      _LOSS in s.done,
+      "still known: %s" % (_LOSS in s.done))
 check("creditors' seizure mothballs, and NAMES, what it takes",
       _LOSS in s.mothballed and any(_LOSS in m for _, m in s.log),
       [m for _, m in s.log])
@@ -1661,6 +1672,55 @@ check("craftsmen you have under contract count toward what a project needs",
 check("commission can unblock the gate whose own advice is to commission",
       s.craft_hands_available() >= 2.0,
       "%.2f craft hands from 4,000 contracted hours" % s.craft_hands_available())
+
+# --- the invariant behind a whole class of contradiction ---------------------
+# A weird-play tester reached, in seven years from a fresh start, a node that
+# was simultaneously forgotten and running: `state` said the concern was
+# running, `ventures` billed for it, `money` charged nothing, and all four
+# verbs refused it on mutually contradictory grounds - `start` said restore it,
+# `restore` said start it, `open` said you do not know it, `mothball` said you
+# never built it. The entry could never be cleared. Every one of those symptoms
+# is the same broken invariant: you cannot be running something you do not know
+# how to do.
+def _operating_subset_of_done(s_):
+    return sorted(s_.operating - s_.done)
+
+
+s = sim(capital=-100000.0, civ="norse_900ad")
+s.done.add(_LOSS); s._done_changed(); s.operating.add(_LOSS)
+s.credit_limit = lambda: 0.0
+s.enforce_credit_limit(100)
+check("creditors' seizure cannot leave you running what you no longer know",
+      not _operating_subset_of_done(s), _operating_subset_of_done(s))
+
+s = sim(civ="han_china_100ad", manual=False)
+for _ in range(60):
+    s.step()
+check("a long run never ends up running something it does not know",
+      not _operating_subset_of_done(s), _operating_subset_of_done(s)[:5])
+
+# The typo suggester searched the whole tree with fog on: `why transistor` gave
+# back junction_transistor and point_contact_transistor, and the tester pointed
+# out that two-letter prefixes would reconstruct the entire namespace.
+_fg, _, _ = proto([{"cmd": "why", "id": "transistor"},
+                   {"cmd": "why", "id": "vacuum"},
+                   {"cmd": "why", "id": "semiconductor"}], fog=True)
+check("a misspelling cannot be used to enumerate the tree through the fog",
+      all("transistor" not in (r.get("error") or "").replace("'transistor'", "")
+          and "vacuum_tube" not in (r.get("error") or "") for r in _fg),
+      [r.get("error", "")[:80] for r in _fg])
+
+# open/ventures are how technology turns into income and were missing from the
+# command list; `open` on the founder's own practice denied it was theirs while
+# `money` itemised it as their largest source of income.
+_hc, _, _ = proto([{"cmd": "help", "topic": "commands"},
+                   {"cmd": "open", "id": "med_cataract_couching"}],
+                  civ="han_china_100ad")
+check("every way of turning knowledge into income is in the command list",
+      all(c in json.dumps(_hc[0]) for c in ("open", "ventures")),
+      sorted((_hc[0].get("commands") or {}).keys())[:6])
+check("the game does not deny that your own practice is yours",
+      "already doing that" in (_hc[1].get("error") or ""), _hc[1].get("error"))
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)

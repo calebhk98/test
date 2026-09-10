@@ -215,7 +215,10 @@ class EconomyMixin:
         if self.capital < -limit:
             self.mothball_mines()
         if self.capital < -limit:
-            burden = sorted((k for k in self.done
+            # From what you are RUNNING: a creditor cannot seize a thing you
+            # merely know how to do, and closing something that was not open
+            # saves nobody anything.
+            burden = sorted((k for k in self.operating
                              if self.nodes[k]["up"] > self.nodes[k]["rev"]
                              and k not in self.granted
                              and not self.never_abandon(k)),
@@ -224,8 +227,20 @@ class EconomyMixin:
             for k in burden:
                 if self.capital >= -limit:
                     break
-                self.done.discard(k)
-                self._done_changed()
+                # THEY TAKE THE CONCERN, NOT YOUR MEMORY OF HOW IT WORKED.
+                # This discarded the node from `done` and left it in
+                # `operating`, so afterwards it was simultaneously forgotten
+                # and running: `state` said the concern was running, `ventures`
+                # billed 200 a year for it, `money` charged nothing, and all
+                # four verbs refused it on mutually contradictory grounds -
+                # `start` said restore it, `restore` said start it, `open` said
+                # you do not know it, `mothball` said you never built it. A
+                # weird-play tester reached that state in seven years from a
+                # fresh start and could never clear the entry.
+                #
+                # Closing it is both the fix and the more honest event: what a
+                # creditor can carry away is the shop.
+                self.operating.discard(k)
                 self.capital += self.nodes[k]["up"] * 2.0
                 # MOTHBALLED, not merely discarded - see the identical comment
                 # in shed_loss_makers. Without this a work creditors took stood
@@ -240,7 +255,10 @@ class EconomyMixin:
             # player cannot understand what they lost, or why it reappeared
             # mothballed rather than gone, from a bare count.
             if taken:
-                self.log.append((yr, "creditors took what they could: %d works let go: %s"
+                self.log.append((yr, "creditors took what they could: %d concerns "
+                                     "closed and sold up: %s. You keep the "
+                                     "knowledge; reopening means paying for the "
+                                     "premises again"
                                      % (len(taken), ", ".join(taken))))
         # And the household goes. This was the missing piece: a tester's run sat
         # pinned at the credit floor making no progress for a century because the
