@@ -269,6 +269,44 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         c = self.cfg
         yr = self.year
 
+        # 0. PEOPLE WHOSE APPRENTICESHIP ENDED. This block used to sit at the
+        #    very BOTTOM of step(), after the year's work had already been
+        #    handed out - so machinists promised "ready in 102" were not usable
+        #    on anything until 103, and a break tester timed both the message
+        #    and the ready_year and found each a year late. A man who finishes
+        #    his training at the turn of the year works that year.
+        # People bought this year are not artisans this year.
+        if self.training:
+            still = []
+            for row in self.training:
+                cap, ready = row[0], row[1]
+                trade = row[2] if len(row) > 2 else None
+                count = row[3] if len(row) > 3 else 0.0
+                if self.year >= ready:
+                    if trade:
+                        # A trade you taught. They are now yours to pay, and
+                        # they are that trade and no other.
+                        self.employees[trade] = self.employees.get(trade, 0.0) + count
+                        self.log.append((self.year, "%g %s%s finish their training"
+                                         % (count, trade, "s" if count != 1 else "")))
+                        self._resync_pools()
+                    else:
+                        # They are trained now, so _resync_pools counts them
+                        # from the people you actually hold - see the note
+                        # there about why adding to self.artisans directly was
+                        # thrown away at the next call.
+                        self.log.append((self.year,
+                                         "%g of the people you bought finish "
+                                         "learning the work" % round(cap / 0.55, 1)))
+                else:
+                    still.append(row)
+            # BEFORE the resync, not after: _resync_pools counts who is still
+            # learning off this very list, so recomputing while the matured row
+            # was still on it cost a whole extra year of everybody's time.
+            self.training = still
+            self._resync_pools()
+
+
         # 1. staff. ATTRITION IS UNCONDITIONAL: people die, are poached and grow
         #    old whatever your policy is. GROWTH IS NOT. It used to be, and that
         #    was the same fault as buying people without being asked: a player
@@ -376,13 +414,23 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # about the two generic buckets. A programme that trains the first
             # machinists in the world and then lets them die out has not trained
             # anybody.
-            for t in list(self.employees):
+            # FROM THE TRADES YOU TAUGHT, not from the keys that happen to be
+            # left. A trade falls out of `employees` entirely once the last of
+            # them drops below 0.05, and this loop only ever looked at the
+            # keys - so the moment a taught trade went to nothing it stopped
+            # being replaced, permanently. That is the leak behind a Rome run
+            # that built 829 technologies and could not begin
+            # precision_three_plate: not that machinists were never taught, but
+            # that the last one died and the top-up had already forgotten they
+            # existed.
+            for t in sorted(set(self.employees) | set(self.trades_created)):
                 if t in ("artisan", "scholar"):
                     continue
-                want = max(self.employees[t], 2.0 if t in self.trades_created else 0.0)
-                short = want - self.employees[t]
+                have = self.employees.get(t, 0.0)
+                want = max(have, 2.0 if t in self.trades_created else 0.0)
+                short = want - have
                 if short > 0.02 and self.capital > ANNUAL_WAGE.get(t, 375.0) * 6:
-                    self.employees[t] += short
+                    self.employees[t] = have + short
                     self.capital -= short * ANNUAL_WAGE.get(t, 375.0) * self.price_index
             self._resync_pools()
         # BUY A JOB WHEN A HANDFUL OF HANDS IS THE ONLY THING IN THE WAY.
@@ -668,10 +716,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             want = {t: v for t, v in want.items()
                     if yr - _taught.get(t, -999) >= self.RETEACH_EVERY}
             for t, _ in sorted(want.items(), key=lambda kv: (-kv[1], kv[0]))[:1]:
-                _taught[t] = yr
                 _first = t not in self.trades_created
                 ok, _msg = self.train(t, 2)
+                # THE COOLDOWN IS ON TEACHING, NOT ON TRYING. Recording the
+                # attempt meant a refusal - no room in the household, no hours
+                # left, nobody to teach from - burned the trade's whole
+                # twenty-five years, so the run went on needing machinists and
+                # never asked again.
                 if ok:
+                    _taught[t] = yr
                     self.log.append((yr, "you begin teaching the first %ss this "
                                          "world has ever had" % t if _first else
                                      "the last %ss are gone; you begin teaching "
@@ -1196,36 +1249,6 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self._spend_this_year = 0.0
         # Sellers restock, so the pressure your buying put on the market fades.
         self.market_pressure = max(0.0, getattr(self, "market_pressure", 0.0) * 0.55 - 2.0)
-        # People bought this year are not artisans this year.
-        if self.training:
-            still = []
-            for row in self.training:
-                cap, ready = row[0], row[1]
-                trade = row[2] if len(row) > 2 else None
-                count = row[3] if len(row) > 3 else 0.0
-                if self.year >= ready:
-                    if trade:
-                        # A trade you taught. They are now yours to pay, and
-                        # they are that trade and no other.
-                        self.employees[trade] = self.employees.get(trade, 0.0) + count
-                        self.log.append((self.year, "%g %s%s finish their training"
-                                         % (count, trade, "s" if count != 1 else "")))
-                        self._resync_pools()
-                    else:
-                        # They are trained now, so _resync_pools counts them
-                        # from the people you actually hold - see the note
-                        # there about why adding to self.artisans directly was
-                        # thrown away at the next call.
-                        self.log.append((self.year,
-                                         "%g of the people you bought finish "
-                                         "learning the work" % round(cap / 0.55, 1)))
-                else:
-                    still.append(row)
-            # BEFORE the resync, not after: _resync_pools counts who is still
-            # learning off this very list, so recomputing while the matured row
-            # was still on it cost a whole extra year of everybody's time.
-            self.training = still
-            self._resync_pools()
         # WARN BEFORE IT KILLS YOU. A play tester built 952 technologies, was
         # three nodes from the goal, and the run ended on a 2% roll against an
         # eminence of 28.2 - with no escalation of any kind beforehand, and
