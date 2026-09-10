@@ -1497,6 +1497,25 @@ check("a save file that is not there is a typo, not a new game",
       and not os.path.exists(os.path.join(ROOT, _PLAY_DIR, "no_such.json")),
       _missing[:200])
 
+# A3. `why cap_heat_1300` on Han reported done:true and
+# missing_prerequisites:["cap_heat_1100"] in the same object. Nothing a player
+# reads should be able to say a thing they have is missing something.
+_g3, _, _ = proto([{"cmd": "why", "id": "cap_heat_1300"}], civ="han_china_100ad")
+check("nothing this society already has is also reported as missing something",
+      _g3[0].get("done") is True and not _g3[0].get("missing_prerequisites")
+      and _g3[0].get("held_without_building_it") is True,
+      {k: _g3[0].get(k) for k in ("done", "missing_prerequisites",
+                                  "held_without_building_it")})
+# ...and the fix must NOT be to close the grant over its prerequisites, which
+# would hand Tenochtitlan sextants and cementation steel for nothing, because
+# maize hangs off "cross the Atlantic and found a trading post".
+_mx = sim(civ="mexica_1500")
+check("a society is not granted the route another society would take to it",
+      "cementation_steel" not in _mx.done and "clock_pendulum" not in _mx.done
+      and "fud_maize" in _mx.done,
+      [k for k in ("fud_maize", "cementation_steel", "clock_pendulum")
+       if k in _mx.done])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

@@ -713,7 +713,26 @@ def _node_explain(s, nodes, k):
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
         "direct_prerequisites": n["pre"],
-        "missing_prerequisites": [p for p in n["pre"] if p not in s.done],
+        # A GRANTED NODE IS HELD, WHATEVER ROUTE THE TREE DRAWS TO IT. `why
+        # cap_heat_1300` on Han reported done:true, missing_prerequisites:
+        # ["cap_heat_1100"] and can_start_now:false in one object - three
+        # statements that cannot all be true. The cause is not a broken graph
+        # but a mis-read one: the tree encodes ONE acquisition route, and a
+        # society that already has the thing did not travel it. The clearest
+        # case is the Mexica, whose maize and chinampas hang off
+        # exp_americas_factory - crossing the Atlantic and founding a trading
+        # post - because that is how a European acquires maize. Closing the
+        # prerequisites into the grant, the obvious-looking fix, would hand
+        # Tenochtitlan sextants, pendulum clocks and cementation steel for
+        # nothing. What is actually wrong is the claim that a thing you have
+        # is missing something.
+        "missing_prerequisites": ([] if k in s.granted
+                                  else [p for p in n["pre"] if p not in s.done]),
+        "held_without_building_it": k in s.granted,
+        "prerequisites_are_how_another_society_would_get_this": (
+            "this society already has it; the list above is the route somebody "
+            "who did not would have to take" if k in s.granted and n["pre"]
+            else None),
         # Same reasoning: the size and cost of everything BEHIND a node is a
         # measurement of a tree you cannot see. You do know how many of its own
         # prerequisites you are still missing, because those have names you have
@@ -1129,7 +1148,13 @@ def render_why(out):
     else:
         missing = out.get("missing_prerequisites")
         direct = out.get("direct_prerequisites")
-        if missing:
+        if out.get("held_without_building_it"):
+            L.append("THIS SOCIETY ALREADY HAS THIS. You did not build it and "
+                     "do not maintain it.")
+            if direct:
+                L.append("  (%s is how somebody who did not have it would get "
+                         "there)" % ", ".join(direct))
+        elif missing:
             L.append("MISSING PREREQUISITES: " + ", ".join(missing))
         elif direct:
             L.append("PREREQUISITES (all met): " + ", ".join(direct))
