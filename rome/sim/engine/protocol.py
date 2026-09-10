@@ -288,11 +288,23 @@ def _agent_state(s, nodes, cmd=None):
         # household in a debt spiral that it is recovering.
         "interest_on_arrears_this_year": round(
             max(0.0, -s.capital) * s.debt_interest_rate(), 1),
+        # LESS THE YEAR YOU HAVE ALREADY PAID FOR. `hire` takes a finder's fee
+        # and the first year's wages in advance, and step() correctly nets that
+        # advance off the living cost it charges - but this forecast did not,
+        # so it billed the same year twice. A break tester hired four artisans,
+        # read "Net/yr after it: -1,097", stepped once, and lost 61. Off by the
+        # whole wage bill, in the one year the player is most likely to look.
+        "wages_you_have_already_paid_this_year": round(
+            getattr(s, "wages_prepaid", 0.0), 1) or None,
         "net_after_project_spend": round(s.revenue() - s.upkeep() - s.living_cost()
+                                         + min(s.living_cost(),
+                                               getattr(s, "wages_prepaid", 0.0))
                                          - s.mine_operating_cost()
                                          - max(0.0, -s.capital) * s.debt_interest_rate()
                                          - getattr(s, "spend_last_year", 0.0), 1),
         "net_per_year": round(s.revenue() - s.upkeep() - s.living_cost()
+                              + min(s.living_cost(),
+                                    getattr(s, "wages_prepaid", 0.0))
                               - s.mine_operating_cost()
                               - max(0.0, -s.capital) * s.debt_interest_rate(), 1),
         # Rows are [capacity, ready_year] for people bought and trained, and
@@ -3421,7 +3433,16 @@ def _agent_dispatch_inner(s, nodes, cmd):
                         "built that blunts it. Every hazard here is fightable."}
 
     if op in ("money", "ledger", "accounts"):
-        fixed = s.upkeep() + s.living_cost() + s.mine_operating_cost()
+        # LESS THE YEAR YOU HAVE ALREADY PAID FOR. `hire` takes a finder's fee
+        # and the first year's wages up front, and step() nets that advance off
+        # the living cost it charges - so counting the whole payroll here bills
+        # the same year twice. A break tester hired four artisans, read
+        # "Net/yr after it: -1,097" on this very screen, stepped once and lost
+        # 61. From the second year on the figure was right, which is what made
+        # it so hard to see.
+        _prepaid = min(s.living_cost(), getattr(s, "wages_prepaid", 0.0))
+        fixed = (s.upkeep() + s.living_cost() - _prepaid
+                 + s.mine_operating_cost())
         _ramp, _prac = s.still_ramping(), s.practice_note()
         return {"ok": True,
                 "capital": round(s.capital, 1),
@@ -3441,6 +3462,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "_of_which_because_you_are_rich":
                         round(max(0.0, s.capital) * 0.015, 1) or None,
                     "wages": round(s.wage_bill(), 1),
+                    "of_which_already_paid_as_hiring_advances":
+                        round(_prepaid, 1) or None,
                     "mines_standing": round(s.mine_operating_cost(), 1),
                     # A COST LIKE ANY OTHER. It was printed two lines below the
                     # net that ignored it, so a tester in a debt spiral read

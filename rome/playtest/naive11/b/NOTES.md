@@ -193,3 +193,43 @@ Nice: the opening tutorial line ("the five to start with are 'state', 'available
     but nothing in `why` warns you before you commit: `why balance_analytical`
     lists HIRED LABOUR: machinist 1,250h and does not say the society can only
     field 216.
+
+### Run 1 result (Rome 100 AD, poor_scholar, fog on, no ageing)
+
+```
+THE RUN IS OVER
+  the horizon at 600 AD is reached. You built 2349 things of your own and did
+  not reach point-contact transistor.
+  617,448,063 in hand, 334.2 people, reputation 98.9, 335 concerns running
+  807 attempts failed and had to be begun again
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 122 of them and 24 were still to build
+    the next steps would have been: motor_transformer_ac, diffusion_pump, ...
+```
+
+20. **The end screen is superb and it is the first time the game ever showed me
+    the shape of the problem.** "146 nodes in all; you had 122 of them and 24 were
+    still to build" - that is the single most useful sentence in five hundred
+    years of play, and I got it after the clock ran out. Under fog I never had any
+    idea whether I was 10% or 90% of the way there. Even a crude "you have N of
+    the M nodes on the road" (without naming them) during play would transform the
+    experience from blind flailing into a race.
+
+21. **807 failed attempts.** That is a lot of invisible tax. Failures are reported
+    but never summarised until the end, and the per-node "FAILURE RISK: 20%" never
+    seems to reflect what actually happens on repeats.
+
+22. **The real bottleneck at the end was a per-trade literacy ceiling nobody told
+    me about until I hit it.** "this society's literacy will not supply more than
+    16.1 chemists in total, ever, at any price". Fine - but two related things bite:
+    (a) technical staff apparently count as HALF a scholar each for STAFF NEEDED
+    (43.5 tradesmen showed as "21.5 scholars"), which is never stated anywhere; and
+    (b) `train chemist 8` when the ceiling allows 7 is **refused entirely** rather
+    than training 7. The refusal even says "7 more is the most you can take right
+    now" - so just do 7.
+
+23. **Concerns silently close en masse inside a `step`.** "EVENT 593: nobody left
+    to keep an eye on **68 concerns**, so ag2_cheese_families, ag2_composting,
+    ag2_maize_newworld, ag2_marling **and others** closed." Sixty-eight at once,
+    named four, inside a multi-year step, because my artisan headcount had drifted
+    down. There is no "staff shortfall" warning before it happens.
