@@ -57,8 +57,13 @@
  "hazards": [
   {
    "name": "Christianisation and political consolidation",
-   "note": "The real effect of this is not deaths but a change to the VALUES vector: w_religious_rigidity and w_magic_fear both rise sharply as the old plural, no-doctrine seidr-tolerant religion gives way to a Church with a creed and an inquisition's ancestor. That vector shift is not a field this hazard schema can apply (only staff_loss, sack_chance, output_factor and real_erosion reach the engine; see data/civilizations/_SCHEMA.md's `values` section) -- ENGINE TODO: a hazard type that reweights `values` for the rest of the run. Until that exists, the output_factor below stands in for the real cost: temple-burnings, forced conversions and the kings' wars that came with them (Olaf Tryggvason's campaigns from 995, climaxing at the Battle of Stiklestad in 1030) did visibly disrupt production and did occasionally burn things down, even though the deeper damage was to what the society was willing to tolerate, not to its people or plant.",
+   "note": "The real effect of this is not mainly deaths but a change to the VALUES vector, applied gradually below: w_religious_rigidity and w_magic_fear both rise sharply as the old plural, no-doctrine seidr-tolerant religion gives way to a Church with a creed and an inquisition's ancestor -- what got you patronised in 950 gets you denounced in 1080. output_factor covers the physical, smaller half of the same event: temple-burnings, forced conversions and the kings' wars that came with them (Olaf Tryggvason's campaigns from 995, climaxing at the Battle of Stiklestad in 1030) visibly disrupted production and occasionally burned things down.",
    "output_factor": 0.85,
+   "values": {
+    "w_religious_rigidity": 0.45,
+    "w_magic_fear": 0.35,
+    "w_novelty": -0.2
+   },
    "years": [
     995,
     1100

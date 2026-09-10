@@ -2007,6 +2007,38 @@
     "note": "A junction between p-type (hole-doped) and n-type (electron-doped) semiconductor. Forward bias allows current flow (low resistance), reverse bias blocks it (high resistance). Used as rectifier (AC to DC), detector, and digital switch. Silicon and germanium diodes were reliable by 1952. In logic, diodes replace vacuum tubes: smaller, cooler, longer-lived. The key is that the diode's threshold voltage sets the logic swing (0-5V typical)."
   },
   {
+    "id": "com_led",
+    "name": "Light-emitting diode",
+    "tier": 5,
+    "cat": "electronics",
+    "pre": [
+      "com_semiconductor_diode"
+    ],
+    "kb": "",
+    "ph": 160,
+    "lab": {
+      "chemist": 260,
+      "scholar": 120,
+      "optician": 80
+    },
+    "mat": {
+      "germanium_g": 6,
+      "zinc_kg": 0.05,
+      "gold_g": 1
+    },
+    "cap": 1400,
+    "up": 90,
+    "yrs": 1.2,
+    "risk": 0.18,
+    "sus": 0,
+    "gov": 0,
+    "rev": 0,
+    "sch": 1,
+    "art": 0,
+    "conf": "C",
+    "note": "Not a filament in a bulb: forward bias across a p-n junction whose semiconductor has a DIRECT band gap pushes electrons and holes together and they recombine by emitting a photon rather than heat, which is why an LED runs cool and a filament does not. Ordinary silicon and germanium, the substrate of com_semiconductor_diode, have an INDIRECT band gap and barely glow at all; H. J. Round noticed the effect in silicon carbide in 1907 and Oleg Losev photographed and characterised it through the 1920s, both too dim to matter. The practical device is Nick Holonyak's 1962 zinc-diffused gallium arsenide phosphide junction, the first LED bright enough to sell, and the diode's wavelength (hence its colour) is set by the band gap of the material chosen, not by a filter. This tree has no priced gallium, so the recipe below is germanium with a zinc-diffused junction, the nearest thing the price list has to the real III-V compound (CONTRACT_V2's rule for a missing material); treat the colour as monochromatic red, the first and for decades the only colour available, not as a general-purpose light source."
+  },
+  {
     "id": "com_logic_gate",
     "name": "Logic gate - elementary switching circuit",
     "tier": 4,

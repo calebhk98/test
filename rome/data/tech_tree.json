@@ -17313,6 +17313,42 @@
    "yrs": 0.8
   },
   {
+   "adopt_yrs": 0,
+   "art": 2.0,
+   "build_yrs": 4.0,
+   "cap": 3000.0,
+   "cat": "structures",
+   "conf": "B",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 4,
+   "id": "civ_monumental_stone",
+   "kb": "87_construction.md#cn_quarry_wedge",
+   "lab": {
+    "labourer": 20000.0,
+    "mason": 9000.0
+   },
+   "mat": {},
+   "name": "Monumental stone construction without iron tools",
+   "note": "Dressing and placing large stone using stone tools, sand abrasive, ramps and enormous organised labour. The absence of iron chisels is not the obstacle people assume: it changes the time per block, not the possibility. Nothing downstream requires it: it is what a society builds WITH its capability, not a step toward more.",
+   "ph": 150.0,
+   "pre": [],
+   "rev": 0.0,
+   "risk": 0.12,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "religious_adjacent",
+    "spectacle"
+   ],
+   "up": 150.0,
+   "yrs": 4.0,
+   "req_any": [],
+   "_src": "core"
+  },
+  {
    "_src": "22_civil.json",
    "_total_cost": 100.0,
    "adopt_yrs": 0.0,
@@ -22848,6 +22884,45 @@
    ],
    "up": 220.0,
    "yrs": 1.5
+  },
+  {
+   "id": "com_led",
+   "name": "Light-emitting diode",
+   "tier": 5,
+   "cat": "electronics",
+   "pre": [
+    "com_semiconductor_diode"
+   ],
+   "kb": "",
+   "ph": 160.0,
+   "lab": {
+    "chemist": 260.0,
+    "scholar": 120.0,
+    "optician": 80.0
+   },
+   "mat": {
+    "germanium_g": 6.0,
+    "zinc_kg": 0.05,
+    "gold_g": 1.0
+   },
+   "cap": 1400.0,
+   "up": 90.0,
+   "yrs": 1.2,
+   "risk": 0.18,
+   "sus": 0,
+   "gov": 0,
+   "rev": 0.0,
+   "sch": 1.0,
+   "art": 0.0,
+   "conf": "C",
+   "note": "Not a filament in a bulb: forward bias across a p-n junction whose semiconductor has a DIRECT band gap pushes electrons and holes together and they recombine by emitting a photon rather than heat, which is why an LED runs cool and a filament does not. Ordinary silicon and germanium, the substrate of com_semiconductor_diode, have an INDIRECT band gap and barely glow at all; H. J. Round noticed the effect in silicon carbide in 1907 and Oleg Losev photographed and characterised it through the 1920s, both too dim to matter. The practical device is Nick Holonyak's 1962 zinc-diffused gallium arsenide phosphide junction, the first LED bright enough to sell, and the diode's wavelength (hence its colour) is set by the band gap of the material chosen, not by a filter. This tree has no priced gallium, so the recipe below is germanium with a zinc-diffused junction, the nearest thing the price list has to the real III-V compound (CONTRACT_V2's rule for a missing material); treat the colour as monochromatic red, the first and for decades the only colour available, not as a general-purpose light source.",
+   "traits": [],
+   "build_yrs": 1.2,
+   "adopt_yrs": 0.0,
+   "req_any": [],
+   "dev_years": null,
+   "dev_people": null,
+   "_src": "24_comms_computing.json"
   },
   {
    "_internal": "[REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: coil winding requires file and gauge precision to achieve specified inductance]",
@@ -36480,6 +36555,50 @@
    "yrs": 5.0
   },
   {
+   "adopt_yrs": 12.0,
+   "art": 2.0,
+   "build_yrs": 4.0,
+   "cap": 42000.0,
+   "cat": "expedition",
+   "conf": "B",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 3,
+   "id": "exp_import_draught_animals",
+   "kb": "95_expeditions.md#transplant_botany",
+   "lab": {
+    "labourer": 6000.0,
+    "merchant": 2000.0,
+    "sailor": 9000.0
+   },
+   "mat": {
+    "timber_m3": 400.0,
+    "wheat_kg": 90000.0
+   },
+   "name": "Import and establish draught animals",
+   "note": "The answer to a continent with no draught animals is to go and get some, which is exactly what happened in 1519. Horses, oxen and donkeys survive a sea crossing badly and breed slowly, so this is not a purchase, it is a founding herd plus the decade it takes to multiply: adopt_yrs is 12 because that is generations, not shipping. Carry mares in foal rather than stallions, carry far more fodder and water than seems sane, and expect to lose a third at sea. Once established they are permanent and self-replacing, which is why this is worth four years and 42,000 denarii to a society that has been carrying every load on human backs.",
+   "ph": 300.0,
+   "pre": [
+    "exp_oceangoing_hull",
+    "exp_provisioning_scurvy",
+    "exp_openocean_navigation"
+   ],
+   "rev": 0.0,
+   "risk": 0.45,
+   "sch": 0.0,
+   "sus": 2,
+   "tier": 3,
+   "traits": [
+    "commerce",
+    "infrastructure",
+    "food"
+   ],
+   "up": 2600.0,
+   "yrs": 12.0,
+   "req_any": [],
+   "_src": "core"
+  },
+  {
    "_src": "30_expeditions.json",
    "_total_cost": 15560.0,
    "adopt_yrs": 0.0,
@@ -41273,6 +41392,41 @@
   },
   {
    "_src": "11_food_agriculture.json",
+   "_total_cost": 0.0,
+   "adopt_yrs": 0.0,
+   "art": 0.0,
+   "build_yrs": 0.0,
+   "cap": 0.0,
+   "cat": "located_material",
+   "conf": "A",
+   "dev_people": null,
+   "dev_years": null,
+   "gov": 0,
+   "id": "fud_cacao",
+   "kb": "75_agriculture_food.md",
+   "kb_level": "module",
+   "lab": {},
+   "mat": {},
+   "name": "Cacao",
+   "note": "NOT UNOBTAINABLE. One voyage for seed stock, then transplant. See data/world/geography.json for where it is and what reaching it costs.",
+   "ph": 60.0,
+   "pre": [
+    "exp_americas_factory"
+   ],
+   "req_any": [],
+   "rev": 0.0,
+   "risk": 0.95,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 4,
+   "traits": [
+    "food"
+   ],
+   "up": 0.0,
+   "yrs": 0.0
+  },
+  {
+   "_src": "11_food_agriculture.json",
    "_total_cost": 106.9,
    "adopt_yrs": 0.0,
    "art": 1.0,
@@ -41354,39 +41508,42 @@
    "yrs": 1.0
   },
   {
-   "_src": "11_food_agriculture.json",
-   "_total_cost": 0.0,
-   "adopt_yrs": 0.0,
+   "adopt_yrs": 0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
-   "cat": "located_material",
-   "conf": "A",
-   "dev_people": null,
-   "dev_years": null,
-   "gov": 0,
-   "id": "fud_cacao",
-   "kb": "75_agriculture_food.md",
-   "kb_level": "module",
-   "lab": {},
-   "mat": {},
-   "name": "Cacao",
-   "note": "NOT UNOBTAINABLE. One voyage for seed stock, then transplant. See data/world/geography.json for where it is and what reaching it costs.",
-   "ph": 60.0,
+   "build_yrs": 2.0,
+   "cap": 600.0,
+   "cat": "agriculture",
+   "conf": "B",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 2,
+   "id": "fud_chinampa",
+   "kb": "76_farming_food_deep.md#ag2_terracing",
+   "lab": {
+    "labourer": 4000.0
+   },
+   "mat": {
+    "timber_m3": 40.0
+   },
+   "name": "Chinampa raised-bed agriculture",
+   "note": "Lake-bed plots built up from dredged mud and staked with willow, cropped several times a year with the water table always at the roots. Yields per hectare beat anything in Europe and it needs no plough and no draught animal, which is exactly why Mesoamerica could carry dense cities without either. This is native to the lake basins of central Mexico; anyone not already there needs to reach the Americas first (see exp_americas_factory) and then adapt the technique to their own wetlands.",
+   "ph": 120.0,
    "pre": [
     "exp_americas_factory"
    ],
-   "req_any": [],
-   "rev": 0.0,
-   "risk": 0.95,
+   "rev": 900.0,
+   "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
    "traits": [
-    "food"
+    "food",
+    "infrastructure"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 120.0,
+   "yrs": 2.0,
+   "req_any": [],
+   "_src": "core"
   },
   {
    "_src": "11_food_agriculture.json",
@@ -44594,6 +44751,46 @@
    "yrs": 0.75
   },
   {
+   "id": "hom_clothes_dryer_electric",
+   "name": "Clothes dryer, electric tumble",
+   "tier": 4,
+   "cat": "textiles",
+   "pre": [
+    "hom_washing_machine_electric",
+    "motor_transformer_ac",
+    "cap_power_electric"
+   ],
+   "kb": "",
+   "ph": 130.0,
+   "lab": {
+    "artisan": 150.0,
+    "smith": 90.0
+   },
+   "mat": {
+    "cast_iron_kg": 35.0,
+    "copper_kg": 3.0,
+    "brass_kg": 5.0
+   },
+   "cap": 260.0,
+   "up": 18.0,
+   "yrs": 1.2,
+   "risk": 0.12,
+   "sus": 0,
+   "gov": -1,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 0.0,
+   "conf": "B",
+   "note": "A perforated drum tumbles wet laundry through warm air, driven by an electric motor and heated by a resistance element, replacing the clothesline and the mangle. A distinct invention from the washing machine itself, not a variant of it: Sampson patents a hand-cranked ventilating drum dryer in 1892, but the first practical automatic electric one is Hamilton Manufacturing's 1938 'Thor Automagic', which puts the drum, the motor and a thermostatically controlled heater in one cabinet. It needs nothing the electric washer has not already put in the house except the heating element.",
+   "traits": [],
+   "build_yrs": 1.2,
+   "adopt_yrs": 0.0,
+   "req_any": [],
+   "dev_years": null,
+   "dev_people": null,
+   "_src": "12_household.json"
+  },
+  {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "12_household.json",
    "_total_cost": 206.75,
@@ -45082,6 +45279,45 @@
    ],
    "up": 8.0,
    "yrs": 0.5
+  },
+  {
+   "id": "hom_freezer_domestic",
+   "name": "Domestic deep freezer",
+   "tier": 4,
+   "cat": "cooling",
+   "pre": [
+    "hom_refrigerator_home_electric"
+   ],
+   "kb": "",
+   "ph": 160.0,
+   "lab": {
+    "master": 180.0,
+    "artisan": 140.0,
+    "smith": 100.0
+   },
+   "mat": {
+    "cast_iron_kg": 90.0,
+    "copper_kg": 10.0,
+    "brass_kg": 14.0
+   },
+   "cap": 900.0,
+   "up": 55.0,
+   "yrs": 1.8,
+   "risk": 0.14,
+   "sus": 0,
+   "gov": 1,
+   "rev": 0.0,
+   "sch": 1.0,
+   "art": 1.0,
+   "conf": "B",
+   "note": "Not a colder refrigerator: holding about -18C rather than +4C needs a larger-duty compressor, several times the insulation thickness, and a refrigerant charge and evaporator sized for the lower temperature, none of which the icebox-descended refrigerator cabinet provides. What actually pulls it into American homes through the 1940s is not the compressor, already solved by hom_refrigerator_home_electric, but the frozen-food industry giving people something worth freezing: Clarence Birdseye's flash-freezing process, commercialised from 1930, makes frozen food palatable enough to want months of storage rather than an icebox's days.",
+   "traits": [],
+   "build_yrs": 1.8,
+   "adopt_yrs": 0.0,
+   "req_any": [],
+   "dev_years": null,
+   "dev_people": null,
+   "_src": "12_household.json"
   },
   {
    "_src": "12_household.json",
@@ -58761,6 +58997,39 @@
    "yrs": 2.0
   },
   {
+   "adopt_yrs": 0,
+   "art": 0.0,
+   "build_yrs": 0.5,
+   "cap": 120.0,
+   "cat": "material",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 0,
+   "id": "mat_obsidian_blade",
+   "kb": "",
+   "lab": {
+    "artisan": 600.0
+   },
+   "mat": {},
+   "name": "Obsidian blade knapping",
+   "note": "A pressure-flaked obsidian edge is sharper than any steel scalpel, a few molecules across, and it is the reason Mesoamerican surgery and butchery needed no metal. It is also brittle and blunts at once, so it is a consumable, not a tool. Nothing downstream requires it: it is a finished tool, not a rung.",
+   "ph": 40.0,
+   "pre": [],
+   "rev": 150.0,
+   "risk": 0.05,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 0,
+   "traits": [
+    "commerce"
+   ],
+   "up": 20.0,
+   "yrs": 0.5,
+   "req_any": [],
+   "_src": "core"
+  },
+  {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0.0,
@@ -66670,6 +66939,44 @@
    ],
    "up": 120.0,
    "yrs": 1.4
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 1.0,
+   "build_yrs": 1.0,
+   "cap": 700.0,
+   "cat": "metallurgy",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 2,
+   "id": "met_bloomery_bog_iron",
+   "kb": "10_metallurgy.md#bloomery_iron",
+   "lab": {
+    "furnaceman": 2500.0,
+    "labourer": 2000.0
+   },
+   "mat": {
+    "charcoal_kg": 9000.0,
+    "clay_kg": 800.0
+   },
+   "name": "Bloomery smelting of bog iron",
+   "note": "Bog ore is iron precipitated by bacteria in wetlands, gathered with a spade rather than mined, and it renews over a human lifetime. It is poor ore and it is everywhere in Scandinavia, which is why a society with no mining industry still had abundant iron.",
+   "ph": 100.0,
+   "pre": [],
+   "rev": 420.0,
+   "risk": 0.15,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "military"
+   ],
+   "up": 90.0,
+   "yrs": 1.0,
+   "req_any": [],
+   "_src": "core"
   },
   {
    "_src": "19_metallurgy_mining.json",
@@ -97288,6 +97595,44 @@
    "yrs": 0.5
   },
   {
+   "adopt_yrs": 0,
+   "art": 2.0,
+   "build_yrs": 1.5,
+   "cap": 2200.0,
+   "cat": "ships",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 3,
+   "id": "sea_clinker_hull",
+   "kb": "86_transport_deep.md#tr_clinker_planking",
+   "lab": {
+    "carpenter": 6000.0
+   },
+   "mat": {
+    "iron_bar_kg": 400.0,
+    "timber_m3": 90.0
+   },
+   "name": "Clinker-built hull",
+   "note": "Overlapping strakes riveted along their laps, so the SKIN carries the load and the frames only hold its shape. The hull flexes in a seaway instead of resisting it, which is why a Norse ship survives water that would open a rigid Mediterranean hull.",
+   "ph": 150.0,
+   "pre": [],
+   "rev": 700.0,
+   "risk": 0.12,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "military",
+    "commerce"
+   ],
+   "up": 180.0,
+   "yrs": 1.5,
+   "req_any": [],
+   "_src": "core"
+  },
+  {
    "_src": "15_ships.json",
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
@@ -97866,6 +98211,42 @@
    ],
    "up": 20.0,
    "yrs": 0.2
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 1.0,
+   "build_yrs": 1.0,
+   "cap": 900.0,
+   "cat": "ships",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "gov": 2,
+   "id": "sea_keel_deep",
+   "kb": "86_transport_deep.md#tr_frame_first_construction",
+   "lab": {
+    "carpenter": 3000.0
+   },
+   "mat": {
+    "timber_m3": 40.0
+   },
+   "name": "Deep keel and the ability to sail to windward",
+   "note": "A deep keel resists leeway, which is what lets a square-rigged ship make ground upwind instead of only running before the wind. It is the difference between a boat that goes where the weather sends it and one that goes where you choose.",
+   "ph": 100.0,
+   "pre": [],
+   "rev": 300.0,
+   "risk": 0.1,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "commerce"
+   ],
+   "up": 60.0,
+   "yrs": 1.0,
+   "req_any": [],
+   "_src": "core"
   },
   {
    "_src": "15_ships.json",
@@ -115622,255 +116003,6 @@
    ],
    "up": 22000.0,
    "yrs": 6.0
-  },
-  {
-   "adopt_yrs": 12.0,
-   "art": 2,
-   "build_yrs": 4.0,
-   "cap": 42000,
-   "cat": "expedition",
-   "conf": "B",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 3,
-   "id": "exp_import_draught_animals",
-   "kb": "95_expeditions.md#transplant_botany",
-   "lab": {
-    "labourer": 6000,
-    "merchant": 2000,
-    "sailor": 9000
-   },
-   "mat": {
-    "timber_m3": 400,
-    "wheat_kg": 90000
-   },
-   "name": "Import and establish draught animals",
-   "note": "The answer to a continent with no draught animals is to go and get some, which is exactly what happened in 1519. Horses, oxen and donkeys survive a sea crossing badly and breed slowly, so this is not a purchase, it is a founding herd plus the decade it takes to multiply: adopt_yrs is 12 because that is generations, not shipping. Carry mares in foal rather than stallions, carry far more fodder and water than seems sane, and expect to lose a third at sea. Once established they are permanent and self-replacing, which is why this is worth four years and 42,000 denarii to a society that has been carrying every load on human backs.",
-   "ph": 300,
-   "pre": [
-    "exp_oceangoing_hull",
-    "exp_provisioning_scurvy",
-    "exp_openocean_navigation"
-   ],
-   "rev": 0,
-   "risk": 0.45,
-   "sch": 0,
-   "sus": 2,
-   "tier": 3,
-   "traits": [
-    "commerce",
-    "infrastructure",
-    "food"
-   ],
-   "up": 2600,
-   "yrs": 12.0
-  },
-  {
-   "adopt_yrs": 0,
-   "art": 0,
-   "build_yrs": 2.0,
-   "cap": 600,
-   "cat": "agriculture",
-   "conf": "B",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 2,
-   "id": "fud_chinampa",
-   "kb": "76_farming_food_deep.md#ag2_terracing",
-   "lab": {
-    "labourer": 4000
-   },
-   "mat": {
-    "timber_m3": 40
-   },
-   "name": "Chinampa raised-bed agriculture",
-   "note": "Lake-bed plots built up from dredged mud and staked with willow, cropped several times a year with the water table always at the roots. Yields per hectare beat anything in Europe and it needs no plough and no draught animal, which is exactly why Mesoamerica could carry dense cities without either. This is native to the lake basins of central Mexico; anyone not already there needs to reach the Americas first (see exp_americas_factory) and then adapt the technique to their own wetlands.",
-   "ph": 120,
-   "pre": [
-    "exp_americas_factory"
-   ],
-   "rev": 900,
-   "risk": 0.1,
-   "sch": 0,
-   "sus": 0,
-   "tier": 4,
-   "traits": [
-    "food",
-    "infrastructure"
-   ],
-   "up": 120,
-   "yrs": 2.0
-  },
-  {
-   "adopt_yrs": 0,
-   "art": 2,
-   "build_yrs": 4.0,
-   "cap": 3000,
-   "cat": "structures",
-   "conf": "B",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 4,
-   "id": "civ_monumental_stone",
-   "kb": "87_construction.md#cn_quarry_wedge",
-   "lab": {
-    "labourer": 20000,
-    "mason": 9000
-   },
-   "mat": {},
-   "name": "Monumental stone construction without iron tools",
-   "note": "Dressing and placing large stone using stone tools, sand abrasive, ramps and enormous organised labour. The absence of iron chisels is not the obstacle people assume: it changes the time per block, not the possibility. Nothing downstream requires it: it is what a society builds WITH its capability, not a step toward more.",
-   "ph": 150,
-   "pre": [],
-   "rev": 0,
-   "risk": 0.12,
-   "sch": 0,
-   "sus": 0,
-   "tier": 1,
-   "traits": [
-    "infrastructure",
-    "religious_adjacent",
-    "spectacle"
-   ],
-   "up": 150,
-   "yrs": 4.0
-  },
-  {
-   "adopt_yrs": 0,
-   "art": 0,
-   "build_yrs": 0.5,
-   "cap": 120,
-   "cat": "material",
-   "conf": "A",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 0,
-   "id": "mat_obsidian_blade",
-   "kb": "",
-   "lab": {
-    "artisan": 600
-   },
-   "mat": {},
-   "name": "Obsidian blade knapping",
-   "note": "A pressure-flaked obsidian edge is sharper than any steel scalpel, a few molecules across, and it is the reason Mesoamerican surgery and butchery needed no metal. It is also brittle and blunts at once, so it is a consumable, not a tool. Nothing downstream requires it: it is a finished tool, not a rung.",
-   "ph": 40,
-   "pre": [],
-   "rev": 150,
-   "risk": 0.05,
-   "sch": 0,
-   "sus": 0,
-   "tier": 0,
-   "traits": [
-    "commerce"
-   ],
-   "up": 20,
-   "yrs": 0.5
-  },
-  {
-   "adopt_yrs": 0,
-   "art": 2,
-   "build_yrs": 1.5,
-   "cap": 2200,
-   "cat": "ships",
-   "conf": "A",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 3,
-   "id": "sea_clinker_hull",
-   "kb": "86_transport_deep.md#tr_clinker_planking",
-   "lab": {
-    "carpenter": 6000
-   },
-   "mat": {
-    "iron_bar_kg": 400,
-    "timber_m3": 90
-   },
-   "name": "Clinker-built hull",
-   "note": "Overlapping strakes riveted along their laps, so the SKIN carries the load and the frames only hold its shape. The hull flexes in a seaway instead of resisting it, which is why a Norse ship survives water that would open a rigid Mediterranean hull.",
-   "ph": 150,
-   "pre": [],
-   "rev": 700,
-   "risk": 0.12,
-   "sch": 0,
-   "sus": 0,
-   "tier": 1,
-   "traits": [
-    "infrastructure",
-    "military",
-    "commerce"
-   ],
-   "up": 180,
-   "yrs": 1.5
-  },
-  {
-   "adopt_yrs": 0,
-   "art": 1,
-   "build_yrs": 1.0,
-   "cap": 900,
-   "cat": "ships",
-   "conf": "A",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 2,
-   "id": "sea_keel_deep",
-   "kb": "86_transport_deep.md#tr_frame_first_construction",
-   "lab": {
-    "carpenter": 3000
-   },
-   "mat": {
-    "timber_m3": 40
-   },
-   "name": "Deep keel and the ability to sail to windward",
-   "note": "A deep keel resists leeway, which is what lets a square-rigged ship make ground upwind instead of only running before the wind. It is the difference between a boat that goes where the weather sends it and one that goes where you choose.",
-   "ph": 100,
-   "pre": [],
-   "rev": 300,
-   "risk": 0.1,
-   "sch": 0,
-   "sus": 0,
-   "tier": 1,
-   "traits": [
-    "infrastructure",
-    "commerce"
-   ],
-   "up": 60,
-   "yrs": 1.0
-  },
-  {
-   "adopt_yrs": 0,
-   "art": 1,
-   "build_yrs": 1.0,
-   "cap": 700,
-   "cat": "metallurgy",
-   "conf": "A",
-   "dev_people": 0,
-   "dev_years": 0,
-   "gov": 2,
-   "id": "met_bloomery_bog_iron",
-   "kb": "10_metallurgy.md#bloomery_iron",
-   "lab": {
-    "furnaceman": 2500,
-    "labourer": 2000
-   },
-   "mat": {
-    "charcoal_kg": 9000,
-    "clay_kg": 800
-   },
-   "name": "Bloomery smelting of bog iron",
-   "note": "Bog ore is iron precipitated by bacteria in wetlands, gathered with a spade rather than mined, and it renews over a human lifetime. It is poor ore and it is everywhere in Scandinavia, which is why a society with no mining industry still had abundant iron.",
-   "ph": 100,
-   "pre": [],
-   "rev": 420,
-   "risk": 0.15,
-   "sch": 0,
-   "sus": 0,
-   "tier": 1,
-   "traits": [
-    "infrastructure",
-    "military"
-   ],
-   "up": 90,
-   "yrs": 1.0
   }
  ]
 }

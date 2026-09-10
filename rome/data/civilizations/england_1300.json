@@ -41,7 +41,12 @@
   },
   {
    "name": "Hundred Years War",
+   "note": "A century of war funded by taxation Parliament must consent to, which is why Parliament's power grows through this period rather than the Crown's alone, and funded also by letters patent: Edward III's 1331 grant inviting the Flemish clothworker John Kempe to teach English weavers his technique is the template for a whole class of war-driven invitations to bring a foreign process home and be rewarded with a monopoly on it. That makes the wartime Crown a more eager importer of new technique than peacetime custom would be, and makes royal favour, increasingly dispensed through war service and patent grants rather than land alone, matter more than it did -- both applied gradually below as `values`, well short of a value that would make this an easy country to work in; the guilds who litigate against a fulling mill are not softened by any of it.",
    "output_factor": 0.85,
+   "values": {
+    "w_novelty": 0.1,
+    "patronage_weight": 0.05
+   },
    "years": [
     1337,
     1453

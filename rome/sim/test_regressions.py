@@ -718,6 +718,118 @@ elapsed = _time.time() - t0
 check("available returns quickly under fog, not in tens of seconds",
       elapsed < 5.0, "%.2fs" % elapsed)
 
+# ============================================================================
+# Round two, section P: a hazard can carry a `values` delta, the same way a
+# technology does, and it must land gradually and be visible while it is
+# happening. Norse Christianisation (995-1100) is the case in point: it now
+# carries a `values` block in the civ file instead of the ENGINE TODO note
+# that used to stand in for it.
+# ============================================================================
+
+_christ = next(h for h in S.load_civ("norse_900ad")["hazards"]
+              if h["name"].startswith("Christianisation"))
+check("Christianisation now carries a values delta, not just a TODO note",
+      bool(_christ.get("values")), _christ.get("values"))
+
+# --- gradual, not a single jump: one year of a 106-year hazard should move
+# the needle by roughly a hundredth of the total, not all of it at once.
+s = sim(civ="norse_900ad")
+before = dict(s.w)
+s._shocks(995)
+step1 = s.w["w_religious_rigidity"] - before["w_religious_rigidity"]
+total_asked = _christ["values"]["w_religious_rigidity"]
+check("a hazard's values shift lands gradually: one year moves it a fraction "
+      "of the total, not the whole amount",
+      0 < step1 < total_asked * 0.5, "%.4f of %.2f" % (step1, total_asked))
+
+# --- and by the hazard's last year the FULL delta has landed, spread evenly
+# across every year in between (995 already applied above; finish the span).
+for yr in range(996, 1101):
+    s._shocks(yr)
+total_moved = s.w["w_religious_rigidity"] - before["w_religious_rigidity"]
+check("a hazard's values shift reaches its full stated amount across the "
+      "full span of years",
+      abs(total_moved - total_asked) < 1e-6,
+      "%.6f vs %.2f asked" % (total_moved, total_asked))
+
+# --- visible WHILE it happens: the society turning against the player has to
+# show up in the log more than once, and not only at the first or last year,
+# or a player has no way to see it coming except by reading the future.
+shift_years = [y for y, msg in s.log if "values are shifting" in msg]
+check("a values shift is logged more than once while the hazard is running, "
+      "not only as a single note",
+      len(shift_years) >= 3, shift_years)
+check("some of those log lines land mid-hazard, not only at the first or "
+      "last year",
+      any(995 < y < 1100 for y in shift_years), shift_years)
+
+# --- a hazard with no staff_loss/sack_chance/output_factor/real_erosion at
+# all, only `values`, must still be applied (the mechanism must not be
+# piggy-backing on one of the four old fields being present).
+s2 = sim(civ="norse_900ad")
+s2.civ = dict(s2.civ)
+s2.civ["hazards"] = [{"name": "values-only test hazard",
+                      "values": {"w_novelty": -0.2}, "years": [900, 909]}]
+s2.w = s2.civ["values"] = dict(s2.w)
+f0 = s2.w["w_novelty"]
+for yr in range(900, 910):
+    s2._shocks(yr)
+check("a hazard that carries ONLY a values delta (no staff_loss, sack_chance, "
+      "output_factor or real_erosion) still moves the society",
+      abs(s2.w["w_novelty"] - (f0 - 0.2)) < 1e-6,
+      "%.4f -> %.4f" % (f0, s2.w["w_novelty"]))
+
+# --- foreseeable, not just felt: knowledge_risk must let a player see the
+# shift coming before it starts, the same complaint that section G raised
+# about Christianisation producing "no event and no visible consequence".
+r, _, _ = proto([{"cmd": "risk"}], civ="norse_900ad")
+kr = r[0]["knowledge_risk"]
+christ_row = next((h for h in kr["known_hazards_ahead"]
+                   if h["name"].startswith("Christianisation")), None)
+check("knowledge_risk lists Christianisation among the hazards ahead, "
+      "before it starts",
+      christ_row is not None, kr.get("known_hazards_ahead"))
+check("knowledge_risk's note on Christianisation says what it does to the "
+      "society, not only what it does to output",
+      christ_row is not None and "values" in christ_row.get("note", "").lower(),
+      christ_row and christ_row.get("note"))
+
+# --- the "Norse cannot be sacked" finding this mechanism must not disturb:
+# a values shift is not a sack, and Christianisation still has none of the
+# sack_chance fields that would make it one.
+check("Christianisation still carries no sack_chance (a values shift is not "
+      "a sacking, and Norse assembly society still has no capital to sack)",
+      "sack_chance" not in _christ, _christ)
+
+# ============================================================================
+# Section S: three nodes the machine list was missing. Honest prerequisites
+# matter more than the node existing at all, especially for the LED, which
+# is not a light bulb.
+# ============================================================================
+
+check("the light-emitting diode exists and sits behind a real semiconductor "
+      "diode, not the lighting branch",
+      "com_led" in NODES and "com_semiconductor_diode" in NODES["com_led"]["pre"],
+      NODES.get("com_led", {}).get("pre"))
+check("the LED needs the same purity/single-crystal semiconductor lineage a "
+      "diode needs, not a shortcut around it",
+      "com_led" in NODES and "junction_transistor" in S.closure(NODES, "com_led"),
+      None)
+
+check("the clothes dryer exists as its own node, distinct from the washing "
+      "machine it builds on",
+      "hom_clothes_dryer_electric" in NODES
+      and NODES["hom_clothes_dryer_electric"]["id"] != "hom_washing_machine_electric"
+      and "hom_washing_machine_electric" in NODES["hom_clothes_dryer_electric"]["pre"],
+      NODES.get("hom_clothes_dryer_electric", {}).get("pre"))
+
+check("the domestic freezer exists as its own node, distinct from the "
+      "refrigerator it builds on",
+      "hom_freezer_domestic" in NODES
+      and NODES["hom_freezer_domestic"]["id"] != "hom_refrigerator_home_electric"
+      and "hom_refrigerator_home_electric" in NODES["hom_freezer_domestic"]["pre"],
+      NODES.get("hom_freezer_domestic", {}).get("pre"))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

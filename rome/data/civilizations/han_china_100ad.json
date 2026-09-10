@@ -33,7 +33,11 @@
  "hazards": [
   {
    "name": "Yellow Turban rebellion",
+   "note": "Not a bandit revolt: the Way of Supreme Peace was a millenarian Daoist religious movement, and it very nearly took the dynasty down. The court's lasting reaction, applied gradually below as `values`, is to stop treating unlicensed religious movements as a nuisance and start treating them as a standing threat to the state, a genuine tightening relative to the easy tolerance of alchemy and technical craft this civilization's baseline `values` describes.",
    "sack_chance": 0.2,
+   "values": {
+    "w_religious_rigidity": 0.15
+   },
    "years": [
     184,
     205
@@ -41,7 +45,12 @@
   },
   {
    "name": "Three Kingdoms fragmentation",
+   "note": "The examined bureaucracy that makes Han China the easiest place in this game to organise anything depends on there being one court to examine for; once Wei, Shu and Wu each run their own court, a distant and increasingly fictional emperor buys you far less than a warlord's own favour does, applied gradually below as `values`. The unified currency and the state's coordination of long-distance trade fragment with the court, which is the values-side counterpart to the output_factor loss.",
    "output_factor": 0.6,
+   "values": {
+    "patronage_weight": 0.15,
+    "w_commerce": -0.15
+   },
    "years": [
     220,
     280
