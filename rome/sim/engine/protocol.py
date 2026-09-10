@@ -1795,8 +1795,12 @@ def render_money(out):
                 continue
             L.append("  %-30s %s"
                      % (k.lstrip("_").replace("_", " "), _fmt_num(v)))
-    L.append("Net/yr: %s     spent on projects last step: %s"
-             % (_fmt_num(out.get("net_per_year")), _fmt_num(out.get("spent_on_projects_last_year"))))
+    L.append("Net/yr before the work in hand: %s     spent on projects last step: %s"
+             % (_fmt_num(out.get("net_per_year")),
+                _fmt_num(out.get("spent_on_projects_last_year"))))
+    if out.get("net_after_project_spend") is not None:
+        L.append("Net/yr after it: %s   (this is the figure `state` prints)"
+                 % _fmt_num(out.get("net_after_project_spend")))
     L.append("Credit limit: %s (%s used)     interest on arrears: %s     paid so far: %s"
              % (_fmt_num(out.get("credit_limit")),
                 out.get("of_that_limit_you_have_used") or "none",
@@ -3034,8 +3038,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
                "your_hours_left_this_year": round(
                    max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
         if _cost > 0.5:
+            # Same rule: round the parts, then take the difference from the
+            # rounded parts, so the three figures on the screen subtract.
+            out["earned"] = round(pay, 1)
             out["it_cost_your_own_practice"] = round(_cost, 1)
-            out["so_you_are_up"] = round(pay - _cost, 1)
+            out["so_you_are_up"] = round(round(pay, 1) - round(_cost, 1), 1)
             out["why"] = ("You cannot be in two places. Hours sold for wages "
                           "come out of the practice, so what you really made "
                           "this year is the wage less what the surgery did not "
@@ -3082,6 +3089,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     s.revenue() - fixed
                     - max(0.0, -s.capital) * s.debt_interest_rate(), 1),
                 "spent_on_projects_last_year": round(getattr(s, "spend_last_year", 0.0), 1),
+                # THE SAME FIGURE `state` PRINTS. A break tester read `state`
+                # "net -70.8 den/yr (after 75.5 den into projects)" against
+                # `money` "Net/yr: 4.6" and called it a contradiction. Both were
+                # right and only one was labelled: net_per_year is the standing
+                # flows, before anything goes into the work in hand.
+                "net_after_project_spend": round(
+                    s.revenue() - fixed
+                    - max(0.0, -s.capital) * s.debt_interest_rate()
+                    - getattr(s, "spend_last_year", 0.0), 1),
                 "credit_limit": round(s.credit_limit(), 1),
                 "interest_rate_on_arrears": round(s.debt_interest_rate(), 4),
                 "interest_paid_in_total": round(getattr(s, "interest_paid", 0.0), 1),

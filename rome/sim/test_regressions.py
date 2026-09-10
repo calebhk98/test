@@ -3407,6 +3407,34 @@ check("...once per whole deputy, not every year",
       len([m for _, m in s_dp.log if "deput" in m]))
 
 
+# --- BREAK: F34, "numbers that do not reconcile, collected". Every one of
+# these was a subtraction a break tester did on figures printed together.
+_rn2, _, _ = proto([{"cmd": "hire", "trade": "smith", "n": 2},
+                    {"cmd": "labour"},
+                    {"cmd": "work", "trade": "scribe", "hours": 500},
+                    {"cmd": "start", "id": "units_standards"},
+                    {"cmd": "step", "years": 1},
+                    {"cmd": "money"}], kit="absurd")
+_lab = _rn2[1]
+_rows = {r["trade"]: r for r in (_lab.get("on_your_staff") or [])}
+if "smith" in _rows:
+    check("the wage bill is the quoted wage times the number of people",
+          abs(_rows["smith"]["a_year_of_one"] * _rows["smith"]["you_employ"]
+              - _lab["annual_wage_bill"]) < 1.0,
+          (_rows["smith"], _lab["annual_wage_bill"]))
+_wk = _rn2[2]
+check("work's three figures subtract to each other",
+      abs((_wk["earned"] - _wk["it_cost_your_own_practice"])
+          - _wk["so_you_are_up"]) < 0.051, _wk)
+_mn = _rn2[5]
+check("money's net before and after the work in hand differ by exactly that",
+      abs((_mn["net_per_year"] - _mn["spent_on_projects_last_year"])
+          - _mn["net_after_project_spend"]) < 0.11, _mn)
+_st2, _, _ = proto([{"cmd": "state"}], kit="absurd")
+check("...and the after figure is the one `state` prints, to the decimal",
+      "net_after_project_spend" in _st2[0], list(_st2[0])[:5])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

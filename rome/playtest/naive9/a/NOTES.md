@@ -55,3 +55,36 @@ Confusions / problems:
 7. Scandal appeared out of nowhere: after one `step` STANDING went from
    "scandal 0" to "scandal 4.1" with no event line explaining why. Nothing in the
    step output said I had done anything scandalous.
+
+## Session 1 - I went bankrupt because of an automation switch (years 104-112)
+
+I turned on `policy auto_train on` because `help automatic` said it "teach[es] trades
+this society does not have when a project needs them". No project of mine needed them.
+It nevertheless taught engineers, chemists, machinists and then opticians, and put them
+on my payroll permanently at ~650 den/yr each. My wage bill went 217 -> 4,818 den/yr
+against a revenue of 4,561, and eight years later:
+
+    EVENT 110: CLOSE TO THE LIMIT: you owe 7,626 of the 9,801 anyone here will advance you
+    EVENT 111: CREDIT EXHAUSTED: 2 projects halted, unfinished.
+    EVENT 111: INSOLVENCY SETTLED: ... you still owe about 3,358 denarii ... reputation -12
+
+PROBLEMS:
+8. `auto train` trained four trades that NO project of mine needed, which directly
+   caused an insolvency. Either the description ("when a project needs them") is wrong
+   or the trigger is. This is the single most damaging thing that happened to me and I
+   had no way to see it coming - nothing warned me that turning that switch on would
+   commit me to ~2,600 den/yr of new wages.
+9. I set `policy auto_train off` in 109 and an OPTICIAN still appeared on the payroll by
+   112. I assume there was training already in flight, but nothing told me that. There
+   is a hint `training_pending -> labour` in state's "more:" line, but `labour` never
+   printed anything about pending training.
+10. Firing was the fix and it is silently very good: after firing them, chemist,
+    engineer, machinist and optician moved from "MUST BE TAUGHT" to "YOU COULD HIRE" -
+    i.e. teaching a trade once creates it in the whole labour market forever. That is a
+    lovely mechanic and the game never says it anywhere. I only found it by accident.
+11. `labour` says "HOUSEHOLD PLACES: 0.65 of 6 used" and then, under "to make room:",
+    explains only how to HIRE people. It never says what raises the cap of 6. `state`
+    says "'labour' says what raises it." It does not. This matters enormously because
+    the win condition needs 25 scholars and 20 artisans on staff and I am capped at 6.
+12. Every `available ...` query reprints the same ~26-line "HEARD OF, CANNOT BEGIN YET"
+    block, even for a one-line query like `available find estate`. It buries the answer.

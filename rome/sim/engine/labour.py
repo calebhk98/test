@@ -408,11 +408,15 @@ class LabourMixin:
         # the player had to work it out from the ledger.
         lost = before_practice - self.revenue()
         if lost > pay:
+            # THE THREE NUMBERS HAVE TO SUBTRACT. Rounding each separately gave
+            # "you earned 128 ... was worth 234 ... so this cost you 105", and
+            # a break tester did the subtraction. Round first, then subtract.
+            _p, _l = round(pay), round(lost)
             return pay, ("you earned %s, and the practice those hours were "
                          "running was worth %s a year - so this cost you %s. "
                          "Wage work is for when you have no practice to lose."
-                         % ("{:,.0f}".format(pay), "{:,.0f}".format(lost),
-                            "{:,.0f}".format(lost - pay)))
+                         % ("{:,.0f}".format(_p), "{:,.0f}".format(_l),
+                            "{:,.0f}".format(_l - _p)))
         return pay, None
 
     def wage_bill(self):
