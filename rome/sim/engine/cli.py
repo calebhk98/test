@@ -427,9 +427,18 @@ def cmd_play(a):
         free_hours = max(0.0, s.director_pool() - s.director_hours_committed())
         # The prompt is built here and never passes through the renderer, so it
         # was the last place still saying "den" in a game counted in pence.
+        # THE SAME TWO NUMBERS `why` PRINTS, for the same reason the hours
+        # figure above matches state's: the prompt showed hired heads only
+        # (s.scholars, s.artisans) while `why` compares a project's
+        # requirement against effective_scholars() and craft_hands_available()
+        # - both of which count the founder, and the second of which counts
+        # hours under contract. A play tester read "sch 0 art 0" in the prompt
+        # and "(you have 1, 0)" in `why` on the same turn and reported the
+        # game as having lost count of their staff.
         prompt = ("[%d AD | %d %s | you:%d hr | sch %.0f art %.0f | rep %.0f] > "
                   % (s.year, s.capital, money_short(s.civ), free_hours,
-                     s.scholars, s.artisans, s.reputation))
+                     s.effective_scholars(), s.craft_hands_available(),
+                     s.reputation))
         try:
             line = input(prompt)
         except (EOFError, KeyboardInterrupt):

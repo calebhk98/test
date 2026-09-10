@@ -371,6 +371,17 @@ def _agent_state(s, nodes, cmd=None):
         "household_places_used_of_all": "%.1f of %.1f"
             % (s.headcount(), s.headcount() + max(0.0, s.household_room())),
         "annual_wage_bill": round(s.wage_bill(), 1),
+        # WHAT THE PROMPT'S sch/art MEAN. Those two figures count yourself and
+        # any hours you have bought, so the prompt can read "sch 1 art 1" on a
+        # turn where you employ nobody - and a play tester who saw that beside
+        # "EMPLOY: 0 people" reported it as the game losing count. Both are
+        # right; they are answering different questions, and this says so.
+        "what_you_can_field": (
+            "counting yourself and hours you have bought: %.1f scholars and "
+            "%.1f craft hands. That pair is what the prompt shows and what "
+            "'why' and 'start' test a project against; the count above is "
+            "people on your payroll."
+            % (s.effective_scholars(), s.craft_hands_available())),
         # FRACTIONS ARE REAL, NOT A DISPLAY GLITCH. A tester reported "1.32
         # artisans" and "0.07 engineers" as if something had gone wrong. It
         # had not: staff grow and decay gradually (hiring phases in, training
@@ -1204,8 +1215,17 @@ def _node_explain(s, nodes, k):
                     if k in s._practice_set() and n["rev"] else None),
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
+        # THE FIGURE THE GAME ACTUALLY TESTS. start_project gates artisans on
+        # craft_hands_available() - staff, plus yourself, plus any hours you
+        # have already bought - and this printed s.artisans, which is only the
+        # first of the three. A play tester read "STAFF NEEDED: 3 artisans
+        # (you have 1, 0)" beside a prompt reading "sch 0 art 0" and could not
+        # tell which of the two numbers, if either, was the one that decided
+        # whether they could begin. Print what decides it.
         "you_have": {"scholars": round(s.effective_scholars(), 1),
-                     "artisans": round(s.artisans, 1)},
+                     "artisans": round(s.craft_hands_available(), 1)},
+        "you_have_counts": ("counting yourself, and hours you have bought"
+                            if s.founder_alive else "counting hours you have bought"),
         # SAY WHEN THE STAFF IT WANTS IS MORE THAN THIS SOCIETY HAS. The goal
         # itself needs twenty-five scholars against a ceiling of 6.4, and a
         # play tester found that ceiling in a refusal message in year 463 of a
@@ -1546,6 +1566,8 @@ def render_state(out):
         L.append("  %-16s %s" % (t, _fmt_num(v)))
     if not employees:
         L.append("  nobody")
+    if out.get("what_you_can_field"):
+        L.append(_wrap(out["what_you_can_field"], indent="  "))
     if out.get("staff_are_fractional_because"):
         L.append(_wrap(out["staff_are_fractional_because"], indent="  "))
 
@@ -1633,7 +1655,9 @@ def render_state(out):
     if completed or events or lost:
         head = []
         for c in completed or []:
-            head.append("  COMPLETED %s: %s" % (c.get("year"), c.get("name")))
+            head.append("  %s %s: %s"
+                        % ("THIS SOCIETY NOW HAS" if c.get("granted")
+                           else "COMPLETED", c.get("year"), c.get("name")))
         for c in lost or []:
             head.append("  LOST %s: %s%s"
                         % (c.get("year"), c.get("name"),
@@ -1823,9 +1847,10 @@ def render_why(out):
              % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),
                 _pct(out.get("risk"))))
     staff, have = out.get("staff_needed") or {}, out.get("you_have") or {}
-    L.append("STAFF NEEDED: %s scholars, %s artisans   (you have %s, %s)"
+    L.append("STAFF NEEDED: %s scholars, %s artisans   (you have %s, %s%s)"
              % (_fmt_num(staff.get("scholars")), _fmt_num(staff.get("artisans")),
-                _fmt_num(have.get("scholars")), _fmt_num(have.get("artisans"))))
+                _fmt_num(have.get("scholars")), _fmt_num(have.get("artisans")),
+                (" - " + out["you_have_counts"]) if out.get("you_have_counts") else ""))
     for _k_warn in ("more_scholars_than_this_society_can_supply",
                     "more_craftsmen_than_your_household_can_hold"):
         if out.get(_k_warn):
@@ -3973,7 +3998,21 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                   % int(s.credit_frozen_until))
         _pol = {"ok": True, "policy": dict(s.policy), "changed": changed,
                 "what_each_does": {
-                    "auto_hire": "grow the staff toward what you can house and pay",
+                    # SAY WHAT MIX. "Grow the staff" was the whole
+                    # description, and a play tester turned it on and watched
+                    # scholars take all 22 of their household places while
+                    # artisans fell to 0.03 - which shut 22 concerns, because
+                    # artisans are what supervise them, and took their net from
+                    # +8,010 a year to -3,027. The mix is now defended in
+                    # code; a player deciding whether to switch this on should
+                    # be able to read what it will do before it does it.
+                    "auto_hire": "grow the staff toward what you can house and "
+                                 "pay. Mostly craftsmen, because craftsmen are "
+                                 "what keep concerns open; some scholars; and "
+                                 "it replaces any trade you taught as its "
+                                 "people die off. It spends only a share of "
+                                 "your surplus, so with no surplus it hires "
+                                 "nobody",
                     "auto_buy_people": "buy slaves when the workshop is short-handed",
                     "auto_manumit": "free people you hold, over time",
                     "auto_train": "teach trades this society does not have when a "
@@ -4094,7 +4133,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
             # engine before and after being split into modules: every number
             # matched and this list did not.
             for k in sorted(s.done - before_done):
-                completed.append({"id": k, "name": nodes[k]["name"], "year": s.done_year.get(k)})
+                # YOURS OR THE SOCIETY'S. Anything in `granted` is this
+                # civilisation's own work, credited free; printing it in the
+                # same "COMPLETED" line as a project the player paid for and
+                # waited three years on had a tester reading their first turn
+                # as two finished buildings they had never started.
+                completed.append({"id": k, "name": nodes[k]["name"],
+                                  "year": s.done_year.get(k),
+                                  "granted": k in s.granted})
             for k in sorted(before_done - s.done):
                 lost.append({"id": k, "name": nodes[k]["name"], "year": s.year,
                              "can_be_restored": k in getattr(s, "mothballed", set())})

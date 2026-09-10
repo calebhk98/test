@@ -4251,6 +4251,39 @@ check("...but a whole hand short still does",
       _vh not in s_hy.operating, (s_hy.artisans, _need_a))
 
 
+# --- BREAK: three places printed the founder's own staff differently. The
+# prompt showed hired heads ("sch 0 art 0"), `why` compared a project against
+# effective_scholars() and s.artisans ("you have 1, 0"), and start_project
+# actually gated on craft_hands_available() - which counts the founder AND
+# hours already bought. A play tester read two of the three on one turn and
+# reported the game as having lost count of their household.
+s_cn = sim(capital=20000.0)
+_kn = next(k for k in sorted(NODES) if NODES[k]["art"] >= 2 and NODES[k]["sch"] == 0)
+s_cn.commission("mason", 4000.0)
+_why_cn = S._node_explain(s_cn, NODES, _kn)
+check("`why` counts the same artisans `start` does: yourself and hours bought",
+      abs(_why_cn["you_have"]["artisans"] - round(s_cn.craft_hands_available(), 1)) < 0.05,
+      (_why_cn["you_have"], s_cn.craft_hands_available(), s_cn.artisans))
+check("...and says which people it is counting",
+      "yourself" in str(_why_cn.get("you_have_counts")), _why_cn.get("you_have_counts"))
+check("...and it is more than the bare payroll, having bought a mason's year",
+      _why_cn["you_have"]["artisans"] > s_cn.artisans + 0.5,
+      (_why_cn["you_have"]["artisans"], s_cn.artisans))
+
+# --- BREAK: grant_ambient ran BEFORE the civ's named starting_techs were
+# added, so anything they unlocked was credited on the player's first `step`
+# and printed as "COMPLETED 100: Amphitheatre with tiered seating" - a
+# completion for something they had never started, in the same words as their
+# own work. Nothing free may arrive after the game begins.
+for _civ_ga in ("rome_100ad", "han_china_100ad", "norse_900ad", "mexica_1500",
+                "england_1300"):
+    _s_ga = sim(civ=_civ_ga)
+    _before_ga = set(_s_ga.done)
+    _s_ga.step()
+    check("%s hands you nothing free on turn one" % _civ_ga,
+          not (_s_ga.done - _before_ga), sorted(_s_ga.done - _before_ga))
+
+
 # --- BREAK: `stop` burned the money as well as the hours, "same as a real
 # abandoned enterprise" - so when the creditors were about to take everything,
 # stopping something yourself cost exactly as much as letting them, and `stop`

@@ -245,6 +245,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             sys.stderr.write("WARNING: %s lists starting technologies that do not "
                              "exist in the tree and have been ignored: %s\n"
                              % (self.civ.get("id", "?"), ", ".join(missing)))
+        # AGAIN, NOW THAT starting_techs ARE IN. grant_ambient walks the tree
+        # crediting free tier-0 work whose prerequisites are already done, and
+        # it ran BEFORE this loop - so anything a civ's named starting
+        # technology unlocks was still ungranted when turn one began, and
+        # arrived on the player's first `step` as "COMPLETED 100: Amphitheatre
+        # with tiered seating". A play tester reported those, correctly, as
+        # completions for things they had never started. Rome's amphitheatre
+        # and barrel vault are not the founder's work and are not news.
+        self.grant_ambient()
 
     # -- helpers ------------------------------------------------------------
 
