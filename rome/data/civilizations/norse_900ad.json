@@ -1,91 +1,33 @@
 {
- "id": "norse_900ad",
- "name": "Scandinavia in the Viking age",
- "year": 900,
- "blurb": "Small population, no state to speak of, superb shipbuilding and ironworking, and the best long-range mobility in Europe. The opposite problem from Rome: nobody will stop you, and nobody can fund you either.",
- "population": 1500000,
- "urban_fraction": 0.03,
- "literacy_elite": 0.15,
- "literacy_general": 0.02,
- "currency": "hacksilver by weight",
- "price_index": 1.4,
- "wage_index": 0.6,
- "state_capacity": 0.15,
- "home_regions": [
-  "scandinavia"
- ],
+ "_note_cost_multipliers": "The best shipwrights and among the best smiths in Europe, and no state at all. Anything that is a public work rather than a private one costs nearly twice what it costs Rome, because there is nobody to compel or fund it. Concrete is worse still: no pozzolana, no tradition of masonry at scale.",
+ "_note_debt_bondage": "A man who could not pay became a skuldarmadr, a debt-thrall, and the law provided for working the debt off and going free.",
  "base_reach": 4,
- "institutions": {
-  "partnership": "felag, a genuine joint venture",
-  "corporation": false,
-  "guild": false,
-  "testament": "weak",
-  "charter": false,
-  "bank": false,
-  "patent": false,
-  "note": "The thing is an assembly, not a state. No one can license you and no one can fund you."
- },
- "starting_techs": [
-  "sea_clinker_hull",
-  "sea_keel_deep",
-  "met_bloomery_bog_iron",
-  "exp_openocean_navigation"
- ],
- "values": {
-  "w_military": 1.0,
-  "w_labour_saving": 0.3,
-  "w_information": 0.4,
-  "w_novelty": 0.5,
-  "w_magic_fear": 0.45,
-  "w_religious_rigidity": 0.1,
-  "w_commerce": 0.8,
-  "bribability": 0.3,
-  "patronage_weight": 0.3,
-  "adaptation_rate": 0.2,
-  "_note": "Positive w_labour_saving because labour is scarce, not cheap: exactly the reverse of Rome, and the reason a labour-saving machine is welcome here and resented there. Very high w_commerce, high novelty tolerance, and seidr is feared but not prosecuted by a state, because there is no state.",
-  "w_eminence_danger": 0.2,
-  "_note_eminence": "No state, no court, nobody to denounce you to. The danger here is a feud, not a treason charge."
- },
- "hazards": [
-  {
-   "name": "Christianisation and political consolidation",
-   "years": [
-    995,
-    1100
-   ],
-   "note": "changes the value vector rather than killing people"
-  }
- ],
- "notes": [
-  "Population is 1.5 million against Rome's 65 million. You will never assemble a large workforce, so every plan must be capital-light and skill-heavy.",
-  "Base reach 4: these ships already go to Greenland, the Caspian and Newfoundland. The Atlantic is not a barrier here, which flips the entire expedition branch."
- ],
+ "blurb": "Small population, no state to speak of, superb shipbuilding and ironworking, and the best long-range mobility in Europe. The opposite problem from Rome: nobody will stop you, and nobody can fund you either.",
+ "bondage_years": 10,
  "cost_multipliers": {
-  "ships": 0.6,
-  "marine": 0.65,
-  "navigation": 0.7,
-  "hull": 0.6,
-  "metallurgy": 0.85,
   "alloys": 0.9,
-  "cutting": 0.85,
-  "infrastructure": 1.8,
-  "structures": 1.7,
+  "binders": 2.2,
   "buildings": 1.6,
   "civil": 1.8,
-  "binders": 2.2,
+  "commerce": 1.1,
+  "cutting": 0.85,
   "foundations": 1.9,
-  "commerce": 1.1
+  "hull": 0.6,
+  "infrastructure": 1.8,
+  "marine": 0.65,
+  "metallurgy": 0.85,
+  "navigation": 0.7,
+  "ships": 0.6,
+  "structures": 1.7
  },
- "_note_cost_multipliers": "The best shipwrights and among the best smiths in Europe, and no state at all. Anything that is a public work rather than a private one costs nearly twice what it costs Rome, because there is nobody to compel or fund it. Concrete is worse still: no pozzolana, no tradition of masonry at scale.",
+ "currency": "hacksilver by weight",
+ "debt_bondage": true,
+ "fire_quarter": "longhouses by the shore",
  "handicap_remedies": {
   "_doc": "The Norse handicap is not skill, it is that there is no body able to compel or fund a public work. Charter one and it goes away.",
-  "infrastructure": {
-   "node": "collegium_licensed",
-   "residual": 1.2
-  },
-  "structures": {
-   "node": "collegium_licensed",
-   "residual": 1.2
+  "binders": {
+   "node": "cn_portland_cement",
+   "residual": 1.0
   },
   "buildings": {
    "node": "collegium_licensed",
@@ -95,17 +37,79 @@
    "node": "collegium_licensed",
    "residual": 1.2
   },
+  "commerce": {
+   "node": "collegium_licensed",
+   "residual": 1.0
+  },
   "foundations": {
    "node": "collegium_licensed",
    "residual": 1.2
   },
-  "binders": {
-   "node": "cn_portland_cement",
-   "residual": 1.0
-  },
-  "commerce": {
+  "infrastructure": {
    "node": "collegium_licensed",
-   "residual": 1.0
+   "residual": 1.2
+  },
+  "structures": {
+   "node": "collegium_licensed",
+   "residual": 1.2
   }
- }
+ },
+ "hazards": [
+  {
+   "name": "Christianisation and political consolidation",
+   "note": "changes the value vector rather than killing people",
+   "years": [
+    995,
+    1100
+   ]
+  }
+ ],
+ "home_regions": [
+  "scandinavia"
+ ],
+ "id": "norse_900ad",
+ "institutions": {
+  "bank": false,
+  "charter": false,
+  "corporation": false,
+  "guild": false,
+  "note": "The thing is an assembly, not a state. No one can license you and no one can fund you.",
+  "partnership": "felag, a genuine joint venture",
+  "patent": false,
+  "testament": "weak"
+ },
+ "literacy_elite": 0.15,
+ "literacy_general": 0.02,
+ "name": "Scandinavia in the Viking age",
+ "notes": [
+  "Population is 1.5 million against Rome's 65 million. You will never assemble a large workforce, so every plan must be capital-light and skill-heavy.",
+  "Base reach 4: these ships already go to Greenland, the Caspian and Newfoundland. The Atlantic is not a barrier here, which flips the entire expedition branch."
+ ],
+ "population": 1500000,
+ "price_index": 1.4,
+ "starting_techs": [
+  "sea_clinker_hull",
+  "sea_keel_deep",
+  "met_bloomery_bog_iron",
+  "exp_openocean_navigation"
+ ],
+ "state_capacity": 0.15,
+ "urban_fraction": 0.03,
+ "values": {
+  "_note": "Positive w_labour_saving because labour is scarce, not cheap: exactly the reverse of Rome, and the reason a labour-saving machine is welcome here and resented there. Very high w_commerce, high novelty tolerance, and seidr is feared but not prosecuted by a state, because there is no state.",
+  "_note_eminence": "No state, no court, nobody to denounce you to. The danger here is a feud, not a treason charge.",
+  "adaptation_rate": 0.2,
+  "bribability": 0.3,
+  "patronage_weight": 0.3,
+  "w_commerce": 0.8,
+  "w_eminence_danger": 0.2,
+  "w_information": 0.4,
+  "w_labour_saving": 0.3,
+  "w_magic_fear": 0.45,
+  "w_military": 1.0,
+  "w_novelty": 0.5,
+  "w_religious_rigidity": 0.1
+ },
+ "wage_index": 0.6,
+ "year": 900
 }

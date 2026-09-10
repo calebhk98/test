@@ -159,6 +159,61 @@ def _load_wages():
 WAGES = _load_wages()
 
 
+def _load_annual_wages():
+    """What a year of one person of each trade actually costs.
+
+    Two columns in prices.json disagree with each other by about half: `rate` is
+    denarii an hour, `day_hs` is sestertii a day, and rate x 10 hours is
+    consistently 1.5x day_hs / 4. The day figure is the better sourced of the
+    two (it is what the wage evidence is actually quoted in), so annual pay
+    comes from that where it exists, and only falls back to the hourly rate
+    where it does not.
+    """
+    p = json.load(open(PRICES))
+    out = {}
+    for k, v in p["wage_rates_denarii_per_hour"].items():
+        if not isinstance(v, dict):
+            continue
+        if "day_hs" in v:
+            out[k] = v["day_hs"] / 4.0 * 250.0     # 4 sestertii to the denarius
+        elif "rate" in v:
+            out[k] = v["rate"] * 2500.0
+    return out
+
+
+ANNUAL_WAGE = _load_annual_wages()
+
+
+def _load_trade_notes():
+    p = json.load(open(PRICES))
+    return {k: (v.get("note") or "") for k, v in p["wage_rates_denarii_per_hour"].items()
+            if isinstance(v, dict)}
+
+
+TRADE_NOTES = _load_trade_notes()
+
+# Trades that DO NOT EXIST in a pre-industrial society. The wage table already
+# says so, in its own notes, for every one of them ("does not exist yet; you
+# must create this trade"), so read it rather than keeping a second list that
+# can drift out of step with the first.
+TRADES_ABSENT = frozenset(t for t, note in TRADE_NOTES.items()
+                          if "does not exist" in note.lower())
+
+# What kind of person a trade is, for the two aggregate pools the tech tree asks
+# for. A tester put the objection exactly: "a skilled blacksmith is not a skilled
+# writer, but the game treats all as artisans". These are not interchangeable and
+# from here on the model does not pretend they are.
+TRADE_FAMILY = {
+    "scholar": "scholar", "chemist": "scholar", "engineer": "scholar",
+    "scribe": "scholar", "merchant": "scholar",
+    "labourer": "labour", "miner": "labour", "sailor": "labour",
+}   # everything else is a craft: smith, carpenter, mason, glassblower, ...
+
+
+def trade_family(t):
+    return TRADE_FAMILY.get(t, "craft")
+
+
 def load_civ(name="rome_100ad"):
     """A civilization is DATA, not code. Swapping Rome for Han China, Viking
     Norway, Mexica Tenochtitlan or somewhere invented is a different file, not a
@@ -331,12 +386,57 @@ class Sim:
         self.granted = set()      # held because the SOCIETY has it, not because you built it
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
         self.failed_attempts = defaultdict(int)
-        # You are one scholar. Rome already has excellent craftsmen for hire;
-        # `art` requirements mean staff who understand YOUR methods, so you start
-        # with a small pool of hired Roman artisans you can direct.
-        self.scholars = 1.0
-        self.artisans = 3.0
+        # YOU ARRIVE ALONE. No employees, no slaves, no household: you stepped
+        # out of the future into a street in a city where nobody knows you, and
+        # the three artisans the model used to hand you on arrival were never
+        # hired by anybody. You are your own only scholar (see
+        # effective_scholars) and everyone else has to be found, paid, taught or
+        # bought, by you, on purpose.
+        self.scholars = 0.0
+        self.artisans = 0.0
         self.directors_extra = 0.0
+        # Standing staff BY TRADE, which is what makes a smith not a scribe.
+        self.employees = {}
+        # Trades this society does not have and you have taught into existence.
+        self.trades_created = set()
+        self.contract_projects = set()   # projects staffed by the job, not by employees
+        self.wages_paid = 0.0
+        self.contract_hours = {}         # trade -> hours bought this year, by the job
+        self.commissioned = {}           # trade -> hours bought this year, cumulative log
+        self.teaching_hours_this_year = 0.0
+        self.trade_hours_used = {}       # trade -> hours consumed by projects this year
+        self.mothballed = set()          # completed works you shut down on purpose
+        self.bondage_years_left = 0.0    # years of service still owed for a debt
+        self.bondage_debt = 0.0
+        self.credit_frozen_until = 0     # year until which nobody will fund new work
+        # EVERY AUTOMATIC BEHAVIOUR, IN ONE PLACE, SWITCHABLE.
+        #
+        # A tester's objection, and the right one: "everything that is automatic
+        # should be controllable by players, allowing them to enable/disable
+        # that, as well as manually doing it". Each of these was a thing the
+        # engine did on its own with no way to stop it and, in several cases, no
+        # log line saying it had happened. Defaults differ between the optimizer
+        # and a human: the optimizer has to run unattended, so it manages its own
+        # household; a player is handed nothing they did not ask for.
+        self.policy = {
+            "auto_hire":     not manual,   # grow the staff toward what you can support
+            # ON for the optimizer, OFF for a player, and that distinction is the
+            # whole of what the tester actually objected to. Their complaint was
+            # not that the model has slavery, it was that it bought people on
+            # THEIR behalf, in a game they were playing by hand, with no prompt
+            # and no line in the log. An unattended run of a slave economy that
+            # says "bought 6 people for the workshop" in its log is modelling the
+            # thing; a player who never typed the command and finds twenty people
+            # in their household is being lied to.
+            "auto_buy_people": not manual,
+            "auto_manumit":  not manual,
+            "auto_train":    not manual,   # teach trades this society does not have
+            "auto_mine":     not manual,   # sink shafts when a material binds
+            "auto_forest":   not manual,   # buy coppice when charcoal binds
+            "auto_mothball": True,         # stop working what you cannot pay for
+            "auto_shed":     True,         # let go of works that cost more than they return
+            "auto_bribe":    not manual,   # pay your way out of a scandal
+        }
         self.founder_alive = True
         self.suspicion = 0.0
         self.suspicion_mult = 1.0
@@ -350,6 +450,7 @@ class Sim:
         self.output_factor = 1.0  # real output, crushed by war and plague, not by debasement
         self.director_hours_spent_founder = 0.0
         self.stalled = 0
+        self.last_settlement = -999
         self.bounties_paid = 0
         self.bountied = set()
         self.total_spend = 0.0
@@ -669,7 +770,13 @@ class Sim:
     def director_pool(self):
         h = 0.0
         if self.founder_alive:
-            h += self.cfg["founder_hours_per_year"]
+            own = self.cfg["founder_hours_per_year"]
+            # In bondage most of your hours are owed to somebody else. Not all
+            # of them: nobody worked every waking hour, and the evenings are
+            # where the work gets done. This is the cost, and it is temporary.
+            if self.bondage_years_left > 0:
+                own *= 0.25
+            h += own
         h += self.directors_extra * self.cfg["director_hours_per_year"]
         return h
 
@@ -680,9 +787,11 @@ class Sim:
         supervise, and you cannot supervise more than your directors can reach.
         Funding matters: an institute whose income has collapsed sheds people.
         """
-        # Rome already has excellent craftsmen for hire. This floor is them, and it
-        # is not conditional on your finances: you can always find a smith.
-        base_sc, base_ar = 1.0, 4.0
+        # There is no floor here any more. Rome does have excellent craftsmen for
+        # hire and they are reachable through market_supply() and `hire`, which
+        # is a thing you do rather than a staff of four you are handed on
+        # arrival and never asked for.
+        base_sc, base_ar = 0.0, 0.0
         sc = ar = di = 0.0
         if self.has("workshop_first"):     ar += 6
         if self.has("freedman_staff"):     ar += 10
@@ -705,8 +814,18 @@ class Sim:
         if self.has("power_grid"):         sc += 45; ar += 130; di += 6.0
         # you cannot keep staff you cannot pay
         # a famous school attracts students and patrons it did not have to pay for
-        income = (self.revenue() + max(0.0, self.capital) * 0.12) * self.rep_factor()
-        afford = income / (900.0 * self.price_index)        # c. 900 den/yr all-in for one trained person
+        # WAGES ARE A REAL CHARGE NOW (see wage_bill), so this ceiling is no
+        # longer "what you could pay for": it is what you can pay for WITHOUT
+        # eating the surplus you need in order to build anything. The first
+        # version of the explicit wage bill hired to the old affordability
+        # ceiling and the household then consumed the entire surplus: revenue
+        # 32,000, upkeep 17,000, wages 12,000, and exactly nothing left to spend
+        # on the work, for two centuries. A programme whose payroll is its whole
+        # income is not a programme.
+        spare = max(0.0, (self.revenue() - self.upkeep()) * self.rep_factor()
+                    + max(0.0, self.capital) * 0.06)
+        budget = spare * 0.40
+        afford = budget / (420.0 * self.price_index * self.wage_index)
         scale = max(0.10, min(1.0, afford / max(1.0, sc + ar)))
         # A civilization of 1.5 million simply cannot field the trained people a
         # civilization of 65 million can, however rich you are. This is the single
@@ -718,6 +837,26 @@ class Sim:
         pop = 0.45 + 0.55 * min(1.0, self.pop_scale ** 0.35)
         return (base_sc + sc * scale * pop, base_ar + ar * scale * pop,
                 di * min(1.0, scale * 1.3) * pop)
+
+    def supervision_room(self):
+        """People you can direct and pay BEYOND what your institutions train.
+
+        staff_capacity is a ceiling on what a school, a workshop and a patron
+        produce and support. It is not a ceiling on how many men you can hire
+        off the street, which is limited by money and by the market. Conflating
+        the two put a hard wall across the Norse run: it needed thirty craftsmen
+        for interchangeable parts against an institutional ceiling of 27.6, and
+        a society of a million and a half could never cross the gap however rich
+        it got. The old model cleared it by handing every founder four artisans
+        on arrival, which is the thing a tester objected to and which I removed;
+        this is the honest version of the same headroom. You hire them, you pay
+        them every year, and you can only supervise so many.
+        """
+        room = 6.0 + 14.0 * self.directors_extra
+        if self.has("workshop_first"):  room += 6.0
+        if self.has("school_founded"):  room += 10.0
+        if self.has("academy_network"): room += 30.0
+        return room
 
     def hired_cap(self):
         # a civilization of 1.5 million cannot staff what one of 65 million can
@@ -813,12 +952,24 @@ class Sim:
             h *= 0.65
         return h
 
+    # The FIRST answer to "I have no staff" is now the obvious one, which the
+    # model did not have until this round: hire somebody. A tester spent five
+    # hundred years with one scholar, built five separate institution nodes
+    # hoping one of them would help, and wrote "if there's a way to grow
+    # scholars, I never found it" - because there was not one, short of an
+    # institution costing thousands.
     STAFF_SOURCES = {
-        "scholars": [("school_founded", "the school is the only thing that produces scholars in "
-                                        "quantity, and it grants more every year it runs"),
+        "scholars": [("HIRE", "{\"cmd\":\"hire\",\"trade\":\"scholar\",\"n\":2} "
+                              "hires literate men by the year; see {\"cmd\":\"labour\"}"),
+                     ("school_founded", "the school produces scholars in quantity, and "
+                                        "grants more every year it runs"),
                      ("academy_network", "three academies produce more than one school"),
                      ("collegium_licensed", "required before the school is legal")],
-        "artisans": [("freedman_staff", "buy, teach and free a technical staff"),
+        "artisans": [("HIRE", "{\"cmd\":\"hire\",\"trade\":\"smith\",\"n\":3} or any "
+                              "trade in {\"cmd\":\"labour\"}; or "
+                              "{\"cmd\":\"commission\",\"trade\":\"smith\",\"hours\":400} "
+                              "to buy one job instead of employing anybody"),
+                     ("freedman_staff", "buy, teach and free a technical staff"),
                      ("workshop_first", "you need somewhere for them to work"),
                      ("BUY", "{\"cmd\":\"buy\",\"what\":\"slaves\",\"n\":N} then "
                              "manumit, though they are untrained for three years")],
@@ -828,7 +979,7 @@ class Sim:
         """Name the remedy, not just the shortfall."""
         bits = []
         for node, why in self.STAFF_SOURCES.get(kind, []):
-            if node == "BUY":
+            if node in ("BUY", "HIRE"):
                 bits.append(why)
             elif node not in self.done:
                 bits.append("build %s (%s)" % (node, why))
@@ -949,13 +1100,27 @@ class Sim:
             y1 = yrs[1] if len(yrs) > 1 else yrs[0]
             if self.year > y1:
                 continue                      # already survived, or missed
-            upcoming.append({"name": h.get("name", "hazard"),
-                             "years": [y0, y1],
-                             "in_progress": y0 <= self.year <= y1,
-                             "sacks_a_site": bool(h.get("sack_chance")),
-                             "sack_chance_per_year": h.get("sack_chance"),
-                             "staff_loss": h.get("staff_loss"),
-                             "note": h.get("note")})
+            row = {"name": h.get("name", "hazard"),
+                   "years": [y0, y1],
+                   "in_progress": y0 <= self.year <= y1,
+                   "sacks_a_site": bool(h.get("sack_chance")),
+                   "sack_chance_per_year": h.get("sack_chance"),
+                   "staff_loss": h.get("staff_loss"),
+                   "note": h.get("note")}
+            # WHAT YOU CAN DO ABOUT IT. Every hazard here is fightable, and
+            # until now nothing said so: testers watched the plague arrive on
+            # the year they were told it would and treated it as weather.
+            row["what_you_can_do"] = {}
+            for kind in ("staff_loss", "sack_chance", "output_factor", "real_erosion"):
+                if kind in h or (kind == "sack_chance" and h.get("sack_chance")):
+                    row["what_you_can_do"][kind] = self.hazard_advice(kind)
+            if "sack_chance" in h:
+                row["sack_chance_after_what_you_have_built"] = round(
+                    h["sack_chance"] * self.hazard_relief("sack_chance")[0], 4)
+            if "staff_loss" in h:
+                row["staff_loss_after_what_you_have_built"] = round(
+                    h["staff_loss"] * self.hazard_relief("staff_loss")[0], 4)
+            upcoming.append(row)
         # Norse hazards do not sack anything, and a playtester watched this
         # advertise a loss risk and recommend a hedge for a full 500 year run in
         # which no sacking could ever occur. Risk you cannot face is not risk.
@@ -1032,11 +1197,28 @@ class Sim:
     FOREIGN_MARKERS = ("_roman", "_rome", "annona", "insula", "societas",
                        "collegium", "argentarii", "latifundi")
 
+    # A Roman masonry arch is a way of laying stone and anyone can learn it. The
+    # annona is the Roman state's grain dole and Roman citizenship is a status
+    # only Rome can confer, and neither is a thing you can BUILD in Luoyang.
+    # A tester played five hundred years of Han China with `citizenship`
+    # ("the difference between a governor executing you and Rome hearing you")
+    # sitting in their available list the whole time, and called it what it was:
+    # unfinished civilization gating rather than a deliberate choice.
+    FOREIGN_INSTITUTIONS = ("annona", "societas", "collegium", "argentarii",
+                            "latifundi", "citizenship")
+
     def _is_foreign_institution(self, k):
         if self.civ.get("id") == "rome_100ad":
             return False
         hay = (k + " " + self.nodes[k].get("name", "")).lower()
         return any(m in hay for m in self.FOREIGN_MARKERS)
+
+    def _is_foreign_only(self, k):
+        """A legal or civic institution of a society that is not this one."""
+        if self.civ.get("id") == "rome_100ad":
+            return False
+        hay = (k + " " + self.nodes[k].get("name", "")).lower()
+        return any(m in hay for m in self.FOREIGN_INSTITUTIONS)
 
     def civ_cost_factor(self, k):
         """What this society is unusually good or bad at building.
@@ -1076,6 +1258,25 @@ class Sim:
                 m = float(r.get("residual", 1.0))
             f *= m
         return f
+
+    def standing_floor(self):
+        """The reputation you keep for what you have built, whatever else happens.
+
+        Novelty fades. A corpus in three libraries, a school with students and a
+        senator who will receive you do not.
+        """
+        earned = len(self.done) - len(self.granted)
+        f = 0.5 + 0.55 * math.sqrt(max(0, earned))
+        if self.has("corpus_written"):     f += 3.0
+        if self.has("corpus_dispersed"):   f += 6.0
+        if self.has("school_founded"):     f += 4.0
+        if self.has("academy_network"):    f += 10.0
+        if self.has("patron_senatorial"):  f += 3.0
+        if self.has("patron_imperial"):    f += 8.0
+        if self.has("identity_cover"):     f += 1.0
+        # Scandal is the one thing that eats into standing rather than sitting
+        # alongside it: being notorious is not the same as being unknown.
+        return max(0.0, f - 0.5 * self.scandal)
 
     def rep_factor(self):
         """How much easier reputation makes everything. 1.0 at zero reputation."""
@@ -1163,7 +1364,14 @@ class Sim:
         if self.has("endowment_land"):     base += 30000.0      # real collateral
         base += max(0.0, self.reputation) * 250.0
         base += self.forest_ha * 120.0                           # also collateral
-        return base * self.price_index
+        # A FLOOR of one year's running costs, because everyone everywhere has
+        # always been able to run a tab. The baker, the landlord and the smith
+        # all carry you for a season; what they will not do is advance you cash.
+        # Without this floor a household whose rent exceeded its credit line by
+        # a few denarii was declared insolvent, settled, and then declared
+        # insolvent again the next year, for ever.
+        floor = self.living_cost() + self.upkeep() * 0.5
+        return max(base, floor) * self.price_index
 
     def shed_loss_makers(self, yr):
         """In arrears, stop maintaining anything that costs more than it returns.
@@ -1287,7 +1495,9 @@ class Sim:
             for k in dropped:
                 self.active.pop(k, None)
                 self.bountied.discard(k)
-            self.log.append((yr, "CREDIT EXHAUSTED: %d projects halted, unfinished"
+            self.credit_frozen_until = yr + 5
+            self.log.append((yr, "CREDIT EXHAUSTED: %d projects halted, unfinished. "
+                                 "Nobody will fund new work here for some years"
                                  % len(dropped)))
         # let go of what you cannot maintain
         if self.capital < -limit:
@@ -1297,12 +1507,19 @@ class Sim:
                              if self.nodes[k]["up"] > 0 and k not in self.granted
                              and not self.never_abandon(k)),
                             key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
+            taken = []
             for k in burden:
                 if self.capital >= -limit:
                     break
                 self.done.discard(k)
                 self.capital += self.nodes[k]["up"] * 2.0
-            self.log.append((yr, "creditors took what they could; works let go"))
+                taken.append(k)
+            # Only say it if it happened. This line used to fire every year
+            # whether or not there was anything left to take, so a run with
+            # nothing to lose logged creditors seizing it over and over.
+            if taken:
+                self.log.append((yr, "creditors took what they could: %d works let go"
+                                     % len(taken)))
         # And the household goes. This was the missing piece: a tester's run sat
         # pinned at the credit floor making no progress for a century because the
         # upkeep of a household they could no longer feed consumed every denarius
@@ -1317,9 +1534,42 @@ class Sim:
             self.log.append((yr, "the household disperses: %d people leave, because "
                                  "you can no longer feed them" % freed))
 
+        # DEBT BONDAGE, where the society had it, and worked off, because that is
+        # what it mostly was. A tester asked me to reconsider having refused it:
+        # "I know a lot of slave debt was also something you worked off, so it
+        # wouldn't necessarily be a dead end." That is right, and the general
+        # case matters more than the Roman one: Han debt servitude, the Norse
+        # debt-thrall and Mexica tlacotin were all terms of service that ended,
+        # were redeemable, and in the Mexica case were not heritable. Rome is the
+        # exception, not the rule, because nexum was abolished in 326 BC, so Rome
+        # carries debt_bondage false and goes straight to the write-off below.
+        #
+        # In bondage your hours are not your own. That is the whole penalty, and
+        # it is a heavy one in a game whose scarcest resource is your hours; but
+        # it ends, and it ends sooner if the work is worth something.
+        if (self.capital < -limit and self.civ.get("debt_bondage")
+                and not self.bondage_years_left):
+            term = float(self.civ.get("bondage_years", 10))
+            self.bondage_years_left = term
+            self.bondage_debt = -self.capital
+            self.capital = 0.0
+            self.log.append((yr, "BONDAGE: you cannot pay, and you enter service for "
+                                 "your debt. For about %d years most of your hours "
+                                 "belong to someone else. It is not the end: it is "
+                                 "worked off, and then you are free again" % term))
+            return
+
         # and the rest is written off. You keep your standing, your knowledge and
         # your practice, which is exactly what you started with.
-        if self.capital < -limit:
+        #
+        # ONCE A DECADE AT MOST. The first version settled whenever the balance
+        # sat a denarius past the line, so a household whose rent slightly
+        # exceeded its credit was "settled" every single year, logging the same
+        # dramatic event five hundred times. A write-off is a once-in-a-life
+        # humiliation, not an annual accounting entry, and between them you are
+        # simply in arrears, which already has consequences of its own.
+        if self.capital < -limit and yr - getattr(self, "last_settlement", -999) >= 10:
+            self.last_settlement = yr
             self.capital = -limit * 0.35
             self.reputation = max(0.0, self.reputation - 12)
             self.log.append((yr, "INSOLVENCY SETTLED: the debt is written off, you "
@@ -1345,6 +1595,25 @@ class Sim:
         """
         return float(self.price_index)
 
+    def opposition_factor(self, k):
+        """Opposed work costs more: bribes, delay, a provincial site, a front man."""
+        return 1.0 + 0.25 * max(0.0, -self.state_interest(self.nodes[k]))
+
+    def project_cost(self, k):
+        """What this project will actually cost in money, all factors applied.
+
+        This is the number `why` quotes and the number the project must have
+        actually PAID before it can complete. It used not to exist, and that was
+        the single worst bug in the economy: step() charged what you could afford
+        each year, clamped at your balance, and then completed the project on
+        hours and calendar alone. A tester started a 4,361 denarius balloon with
+        400 denarii, finished it in four years having paid about 984, and the
+        remainder was simply forgiven. Money was decorative; only hours were real.
+        """
+        n = self.nodes[k]
+        return (n["_total_cost"] * self.cost_money_factor() * self.opposition_factor(k)
+                * self.civ_cost_factor(k) * self.material_cost_factor(k))
+
     def revenue(self):
         r = 0.0
         for k in self.done:
@@ -1355,7 +1624,71 @@ class Sim:
                 age = self.year - self.done_year.get(k, self.year)
                 ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
                 r += n["rev"] * ramp
-        return (r * (self.economy ** 0.75) + self.state_funding()) * self.output_factor
+        # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
+        # pays back inside two years, so its income buys the next one, and a run
+        # ended holding three billion denarii against an empire whose entire
+        # annual product was perhaps five billion. Testers saw the near end of
+        # it and said so plainly: "I have far more capital than I have good
+        # places to put it". You cannot sell more inns than the town wants, and
+        # a saturating curve says that without ever making a venture worthless.
+        # WHAT YOUR OWN WORKSHOP SELLS. Charging wages explicitly without
+        # crediting the work was half an accounting change: in the old model a
+        # trained staff was free and its output was folded invisibly into node
+        # revenue, so adding a payroll of 12,000 a year and no corresponding
+        # output made every civilization except Rome unable to finish. Thirty
+        # craftsmen in a workshop do not sit there costing money. They make
+        # things, and the things are sold.
+        #
+        # It is deliberately less than a 2x markup on wages and it needs somewhere
+        # to work: a staff with no workshop is an expense, which is exactly why
+        # workshop_first matters and why it is cheap.
+        r += self.workshop_output()
+        gross = r * (self.economy ** 0.75)
+        ceiling = 900000.0 * self.pop_scale * (self.economy ** 0.75) * self.price_index
+        gross = gross / (1.0 + gross / max(1.0, ceiling))
+        return (gross + self.state_funding()) * self.output_factor
+
+    def workshop_output(self):
+        """What your standing staff produces and sells, over and above projects."""
+        if not (self.has("workshop_first") or self.has("school_founded")):
+            return 0.0
+        craft = sum(n for t, n in self.employees.items() if trade_family(t) == "craft")
+        craft += self.freedmen + self.slaves * 0.7
+        wage = 0.0
+        for t, n in self.employees.items():
+            if trade_family(t) == "craft":
+                wage += n * ANNUAL_WAGE.get(t, 375.0)
+        wage += (self.freedmen + self.slaves * 0.7) * ANNUAL_WAGE.get("artisan", 250.0)
+        mark = 1.55
+        if self.has("interchangeable_parts"):  mark += 0.35
+        if self.has("power_grid"):             mark += 0.45
+        return wage * mark * self.wage_index * self.price_index
+
+    def revenue_sources(self):
+        """Where the money actually comes from, itemised.
+
+        Testers asked this three separate times and could not answer it: "there
+        is no visible in-fiction source for it", "a player who never issues a
+        single start still gets richer every year". Both were looking at the
+        income from practising medicine, which is the cover identity the game
+        tells you to adopt, and neither had any way to find that out.
+        """
+        rows = {}
+        for k in self.done:
+            if k in self.granted and not self._practisable(k):
+                continue
+            n = self.nodes[k]
+            if not n["rev"]:
+                continue
+            age = self.year - self.done_year.get(k, self.year)
+            ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
+            amt = n["rev"] * ramp * (self.economy ** 0.75) * self.output_factor
+            if amt > 0.5:
+                rows[k] = round(amt, 1)
+        out = dict(sorted(rows.items(), key=lambda kv: -kv[1])[:15])
+        if self.state_funding() > 0.5:
+            out["_state_funding"] = round(self.state_funding() * self.output_factor, 1)
+        return out
 
     # Of the auto-granted nodes that carry revenue, seven are medicine and two
     # are shipping, and the difference decides who gets paid. Cataract couching
@@ -1520,10 +1853,17 @@ class Sim:
     # before haulage. Doubling it for haulage, timbering and overseers gives the
     # figures below. Metal ores cost far more per tonne of METAL because of the
     # ore grade and the smelting, and the capital rises with depth and drainage.
+    # Gold is here because a tester asked the obvious question about debasement:
+    # "what if you build a mine that can mine gold?" If the money is being ruined
+    # by having less silver in it, a man who digs his own metal is not ruined with
+    # it. Roman gold (Dacia, Las Medulas) was mined at enormous cost and that is
+    # what the capex says.
     MINE_CAPEX_PER_T_YR = {"coal": 9.0, "iron": 60.0, "copper": 240.0,
-                           "lead": 80.0, "tin": 420.0, "silver": 9000.0}
+                           "lead": 80.0, "tin": 420.0, "silver": 9000.0,
+                           "gold": 160000.0}
     MINE_OPEX_PER_T     = {"coal": 1.5, "iron": 12.0, "copper": 55.0,
-                           "lead": 18.0, "tin": 95.0, "silver": 2200.0}
+                           "lead": 18.0, "tin": 95.0, "silver": 2200.0,
+                           "gold": 42000.0}
     MINE_LEAD_YEARS = 3.0        # sinking, drainage, roads, and hiring
 
     def open_mine(self, mat, t_per_yr):
@@ -1659,7 +1999,191 @@ class Sim:
         if self.has("patron_senatorial"):  status += 900
         if self.has("patron_imperial"):    status += 2500
         status += max(0.0, self.capital) * 0.015      # you cannot look poor and rich
-        return base + household + tax + status
+        return base + household + tax + status + self.wage_bill()
+
+    HOURS_PER_PERSON_YEAR = 2000.0   # prices.json: a 10-hour day, 250 days, less feasts
+
+    def wage_bill(self):
+        """What your standing staff costs you every year, by trade.
+
+        A machinist is not paid a labourer's wage and cannot be had at one. This
+        is the other half of differentiating the trades: the expensive trades are
+        expensive to keep, so a large staff of the people you actually need is a
+        real commitment rather than a number that drifts upward on its own.
+        """
+        total = 0.0
+        for t, n in self.employees.items():
+            total += n * ANNUAL_WAGE.get(t, 375.0) * self.wage_index
+        return total * self.price_index
+
+    def effective_scholars(self):
+        """You are your own natural philosopher; everyone else is hired."""
+        return self.scholars + (1.0 if self.founder_alive else 0.0)
+
+    def trade_available(self, t):
+        """Can this trade be had here at all, at any price?
+
+        Rome has masons and plumbers in abundance and no machinists whatever.
+        An absent trade is not expensive, it is absent, and the only way to have
+        one is to teach somebody the trade yourself.
+        """
+        if t not in TRADES_ABSENT:
+            return True
+        return t in self.trades_created
+
+    def market_supply(self, t):
+        """Hours a year of this trade the local labour market can actually supply."""
+        if not self.trade_available(t):
+            return 0.0
+        base = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
+        if t in TRADES_ABSENT:
+            # Only the people you taught, plus the ones they have taught since.
+            return self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR * 1.5
+        # How much of the town's labour market is this trade. These are shares of
+        # the SAME base the old single pool used, and the aggregate pool is still
+        # applied on top, so total hired labour is bounded exactly as before; what
+        # changes is that the trades are no longer one interchangeable bucket.
+        note = TRADE_NOTES.get(t, "").lower()
+        if "abundance" in note or "abundant" in note or "numerous" in note:
+            share = 1.0
+        elif "scarcest" in note:
+            share = 0.08
+        elif trade_family(t) == "scholar":
+            share = 0.35          # literate men are a small fraction of anywhere
+        elif t in ("labourer", "artisan", "carpenter", "mason", "potter", "smith",
+                   "sailor", "miner", "furnaceman"):
+            share = 0.9
+        else:
+            share = 0.25          # glassblowers, engravers, opticians' forebears
+        cap = base * share
+        if self.has("school_founded"):        cap *= 2.0
+        if self.has("patron_imperial"):       cap *= 3.0
+        if self.has("academy_network"):       cap *= 2.5
+        if self.has("interchangeable_parts"): cap *= 1.5
+        return cap + self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
+
+    def hire(self, trade, n):
+        """Take someone onto the staff permanently. They are paid every year."""
+        trade = str(trade or "").strip().lower()
+        if trade not in WAGES:
+            return False, ("no such trade: %s. Trades: %s"
+                           % (trade, ", ".join(sorted(WAGES))))
+        if n <= 0:
+            return False, "n must be greater than zero. Nothing was changed."
+        if not self.trade_available(trade):
+            return False, ("there are no %ss to hire in this society at any price: %s "
+                           'Teach one: {"cmd":"train","trade":"%s","n":1}'
+                           % (trade, TRADE_NOTES.get(trade, ""), trade))
+        # A finder's fee and the first year in advance, which is what a household
+        # actually pays to take a skilled man off someone else's bench.
+        fee = n * ANNUAL_WAGE.get(trade, 375.0) * self.wage_index * self.price_index
+        if fee > self.capital + self.credit_limit() * 0.5:
+            return False, ("hiring %g %ss costs %.0f denarii in advance and you have %.0f"
+                           % (n, trade, fee, self.capital))
+        room = (self.staff_capacity()[1] + self.supervision_room()
+                - self.headcount())
+        if n > room:
+            return False, ("you can supervise, house and teach %.1f more people, not %g. %s"
+                           % (max(0.0, room), n, self._staff_advice("artisans")))
+        self.capital -= fee
+        self.employees[trade] = self.employees.get(trade, 0.0) + float(n)
+        self._resync_pools()
+        return True, None
+
+    def fire(self, trade, n):
+        """Let staff go. Their wages stop; so does what they were doing."""
+        trade = str(trade or "").strip().lower()
+        have = self.employees.get(trade, 0.0)
+        if have <= 0:
+            return False, "you employ no %ss" % trade
+        n = min(float(n), have)
+        self.employees[trade] = have - n
+        if self.employees[trade] <= 1e-9:
+            self.employees.pop(trade)
+        self._resync_pools()
+        return True, None
+
+    def train(self, trade, n, frm=None):
+        """Teach a trade that does not exist here into existence.
+
+        This is the answer to "there are no machinists in 100 AD". There are
+        smiths, and a smith who spends two years with you becomes the first
+        machinist in the world. It costs your own hours, which is the scarcest
+        thing you have, and it is per-trade: the machinists you made are no use
+        at all when you need a chemist.
+        """
+        trade = str(trade or "").strip().lower()
+        if trade not in WAGES:
+            return False, "no such trade: %s" % trade
+        if n <= 0:
+            return False, "n must be greater than zero. Nothing was changed."
+        frm = (frm or ("smith" if trade in ("machinist", "engineer")
+                       else "glassblower" if trade == "optician"
+                       else "scribe" if trade == "chemist"
+                       else "smith")).strip().lower()
+        if frm in TRADES_ABSENT and frm not in self.trades_created:
+            return False, "you cannot teach from %ss; there are none" % frm
+        hours = 450.0 * n            # your hours, teaching, per person
+        pool = self.director_pool() - self.director_hours_committed()
+        if hours > pool:
+            return False, ("teaching %g %ss takes %.0f of your own hours and you have "
+                           "%.0f uncommitted this year" % (n, trade, hours, max(0.0, pool)))
+        fee = n * ANNUAL_WAGE.get(frm, 375.0) * 1.2 * self.wage_index * self.price_index
+        if fee > self.capital + self.credit_limit() * 0.5:
+            return False, ("you must keep them fed while they learn: %.0f denarii, "
+                           "and you have %.0f" % (fee, self.capital))
+        self.capital -= fee
+        self.teaching_hours_this_year = getattr(self, "teaching_hours_this_year", 0.0) + hours
+        self.trades_created.add(trade)
+        self.training.append([0.0, self.year + 2.0, trade, float(n)])
+        return True, ("%g %s%s will be ready in 2 years" % (n, trade, "s" if n != 1 else ""))
+
+    def commission(self, trade, hours):
+        """Pay for a job, not for a person.
+
+        A tester's objection, and a fair one: "maybe you don't want employees,
+        you just want some copper wire, and you don't need a full time smith".
+        This buys a specific piece of work from somebody else's shop at a
+        premium over their wage, with no standing obligation either way.
+        """
+        trade = str(trade or "").strip().lower()
+        if trade not in WAGES:
+            return False, "no such trade: %s" % trade
+        if hours <= 0:
+            return False, "hours must be greater than zero. Nothing was changed."
+        if not self.trade_available(trade):
+            return False, ("no %s will take the work; the trade does not exist here: %s"
+                           % (trade, TRADE_NOTES.get(trade, "")))
+        spare = self.market_supply(trade) - self.contract_hours.get(trade, 0.0)
+        if hours > spare:
+            return False, ("the %ss here can spare %.0f more hours this year, not %.0f"
+                           % (trade, max(0.0, spare), hours))
+        # A shop charges more for a one-off than it pays its own man for a year.
+        fee = hours * WAGES[trade] * 1.6 * self.wage_index * self.price_index
+        if fee > self.capital + self.credit_limit() * 0.5:
+            return False, ("%.0f hours of a %s costs %.0f denarii and you have %.0f"
+                           % (hours, trade, fee, self.capital))
+        self.capital -= fee
+        self.contract_hours[trade] = self.contract_hours.get(trade, 0.0) + hours
+        self.commissioned[trade] = self.commissioned.get(trade, 0.0) + hours
+        return True, ("%.0f hours of a %s bought for %.0f denarii" % (hours, trade, fee))
+
+    def headcount(self):
+        return sum(self.employees.values()) + self.slaves + self.freedmen
+
+    def director_hours_committed(self):
+        return getattr(self, "teaching_hours_this_year", 0.0)
+
+    def _resync_pools(self):
+        """Recompute the two aggregate pools the tech tree asks for from the
+        actual people on the books. `art` and `sch` in the tree mean "trained
+        people who understand your methods", so they are the sum of the trades,
+        not a number that floats free of them."""
+        craft = sum(n for t, n in self.employees.items() if trade_family(t) == "craft")
+        schol = sum(n for t, n in self.employees.items() if trade_family(t) == "scholar")
+        # People you own or have freed work in the shop; they are not scholars.
+        self.artisans = craft + self.freedmen * 1.0 + self.slaves * 0.7
+        self.scholars = schol
 
     TRAINING_YEARS = 3.0      # nobody is a useful artisan the week you buy them
 
@@ -1751,12 +2275,15 @@ class Sim:
         # time at all, which is most of the way back to the exploit the training
         # lag was added to close. Freeing an untrained person upgrades what they
         # will be worth WHEN they mature; it does not skip the maturing.
-        pending = sum(1 for _ in self.training)
-        untrained = min(n_people, int(sum(c for c, _ in self.training) / 0.55 + 0.5))
+        # The training queue also carries taught-trade rows now (which have a
+        # trade name in them and no artisan capacity), so read column 0 by index
+        # rather than unpacking a row whose width is no longer fixed.
+        in_training = sum(row[0] for row in self.training)
+        untrained = min(n_people, int(in_training / 0.55 + 0.5))
         trained_freed = max(0, n_people - untrained)
         self.artisans += trained_freed * 0.45
         if untrained:
-            share = untrained / max(1.0, sum(c for c, _ in self.training) / 0.55)
+            share = untrained / max(1.0, in_training / 0.55)
             for row in self.training:
                 row[0] *= 1.0 + 0.45 / 0.55 * min(1.0, share)
         # Manumission was publicly admired, and admiration saturates. The first
@@ -1765,6 +2292,65 @@ class Sim:
         gain = 0.4 * n_people / (1.0 + self.manumitted_total / 25.0)
         self.reputation += min(gain, 6.0)
         return n_people
+
+    def mothball_work(self, k):
+        """Shut a completed work down to stop paying its upkeep.
+
+        Three testers hit the same wall and described it the same way: deep in
+        debt, the only lever the game offered was to start MORE things, because
+        `stop` cancels work in progress and there was nothing at all that shut
+        down a finished institution. One wrote "once you've over-built, the
+        recurring cost is permanent"; another "your agency basically
+        disappears". This is the missing lever. It is not free: you lose what
+        the work gave you, and restoring it costs a fraction of building it.
+        """
+        if k not in self.nodes:
+            return False, "no such node"
+        if k not in self.done:
+            return False, "you have not built that"
+        if k in self.granted:
+            return False, ("that is something the society has, not something you "
+                           "maintain; there is no upkeep of yours to stop")
+        if self.nodes[k]["up"] <= 0:
+            return False, "that costs nothing to keep; there is nothing to save"
+        if self.never_abandon(k):
+            return False, ("that is load-bearing for what you are trying to reach, "
+                           "or it is who you are here; shutting it down would "
+                           "softlock the run")
+        self.done.discard(k)
+        self.mothballed.add(k)
+        return True, ("%s shut down; you stop paying %.0f a year for it, and you stop "
+                      "getting what it gave you" % (k, self.nodes[k]["up"]))
+
+    def restore_work(self, k):
+        """Bring a mothballed work back. The plant rotted while it stood idle."""
+        if k not in getattr(self, "mothballed", set()):
+            return False, "you have not shut that down"
+        n = self.nodes[k]
+        fee = self.project_cost(k) * 0.3
+        if fee > self.capital + self.credit_limit() * 0.5:
+            return False, ("bringing it back costs %.0f denarii and you have %.0f"
+                           % (fee, self.capital))
+        if any(p not in self.done for p in n["pre"]):
+            return False, ("you no longer have what it stands on: "
+                           + ", ".join(p for p in n["pre"] if p not in self.done))
+        self.capital -= fee
+        self.done.add(k)
+        self.mothballed.discard(k)
+        return True, ("%s back in service for %.0f denarii" % (k, fee))
+
+    def bribe(self, amount):
+        """Pay your way out of trouble, deliberately, for a stated sum."""
+        amount = float(amount)
+        if amount <= 0:
+            return False, "amount must be greater than zero. Nothing was changed."
+        if amount > self.capital:
+            return False, "you have %.0f denarii" % self.capital
+        before = self.scandal
+        self.capital -= amount
+        self.bribes_ytd = 0.7 * self.bribes_ytd + amount
+        self.scandal = max(0.0, self.scandal - amount / 300.0 * self.w["bribability"])
+        return True, ("scandal %.2f -> %.2f for %.0f denarii" % (before, self.scandal, amount))
 
     def bounty_eligible(self, k):
         """Can this be bought as a prize instead of built with your own hands?
@@ -1851,6 +2437,10 @@ class Sim:
         # retiers them on merge, so this should never fire.
         if n["tier"] == 9 or n["cat"] == "unobtainable":
             return False, "retired category: unobtainable in this tree"
+        if self._is_foreign_only(k):
+            return False, ("that is an institution of a different society. %s has "
+                           "no such thing, and it is not something you can build "
+                           "here" % self.civ.get("name", "this society"))
         missing = [p for p in n["pre"] if p not in self.done]
         if missing:
             return False, "missing prerequisites: " + ", ".join(missing)
@@ -1869,8 +2459,15 @@ class Sim:
         # horizon. First hatch: creditors care about PERSISTENT insolvency, not
         # one bad year. Second: anything you can fund from this year's income
         # needs nobody's permission.
-        cheap_enough = (n["_total_cost"] * self.cost_money_factor() * self.civ_cost_factor(k)
-                        <= max(800.0, self.revenue()))
+        # "Cheap enough to need nobody's permission" means payable out of what
+        # is actually LEFT, not out of turnover. Measured against gross revenue
+        # it let a bankrupt household with 11,637 of income and 6,020 of upkeep
+        # start 11,000-denarius projects every year for two centuries, each one
+        # halted by the creditors a year later: 18 technologies in 200 years and
+        # a log that was nothing but CREDIT EXHAUSTED.
+        surplus = (self.revenue() - self.upkeep() - self.living_cost()
+                   - self.mine_operating_cost())
+        cheap_enough = (self.project_cost(k) <= max(600.0, surplus * 2.0))
         if (getattr(self, "insolvent_years", 0) >= 3
                 and not cheap_enough
                 and self.capital < -max(4000.0, self.revenue() * 2.0)):
@@ -1879,12 +2476,21 @@ class Sim:
                            "you can pay for out of this year's income is still allowed, "
                            "so is finishing or stopping what is running."
                            % (getattr(self, "insolvent_years", 0), -self.capital))
-        if n["sch"] > self.scholars:
-            return False, ("needs %d trained scholars, you have %.1f. %s"
-                           % (n["sch"], self.scholars, self._staff_advice("scholars")))
+        if n["sch"] > self.effective_scholars():
+            return False, ("needs %d trained scholars, you have %.1f (you are one of them). %s"
+                           % (n["sch"], self.effective_scholars(), self._staff_advice("scholars")))
         if n["art"] > self.artisans:
-            return False, ("needs %d trained artisans, you have %.1f. %s"
+            return False, ("needs %d trained craftsmen on your own staff, you have %.1f. %s"
                            % (n["art"], self.artisans, self._staff_advice("artisans")))
+        # THE TRADE HAS TO EXIST. A node wanting 450 hours of an engineer cannot
+        # be built by smiths, and in 100 AD there is no such person as a private
+        # engineer: the wage table says so itself. You make one by teaching one.
+        absent = sorted(t for t in n["lab"] if not self.trade_available(t))
+        if absent:
+            return False, ("this needs %s and there are none in this society. "
+                           'Teach one: {"cmd":"train","trade":"%s","n":2} '
+                           "(about 450 of your own hours each, two years)"
+                           % (", ".join(a + "s" for a in absent), absent[0]))
         # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
         # amount of money substitutes for someone powerful being willing to be
         # associated with it. See 03_SOCIAL_POLITICS.md section 4.
@@ -1926,7 +2532,8 @@ class Sim:
         if not ok:
             return False, why
         n = self.nodes[k]
-        self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
+        self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
+                              cost_left=self.project_cost(k))
         # Director hours in step() 5 are handed out by priority in `order`.
         # A thing you just chose to work on should get first call on your own
         # hours, exactly as the old (cosmetic) reprioritisation implied it did.
@@ -1950,16 +2557,81 @@ class Sim:
         c = self.cfg
         yr = self.year
 
-        # 1. staff: bounded by what you can actually house, teach and PAY,
-        #    and constantly eroded by death, poaching and old age.
+        # 1. staff. ATTRITION IS UNCONDITIONAL: people die, are poached and grow
+        #    old whatever your policy is. GROWTH IS NOT. It used to be, and that
+        #    was the same fault as buying people without being asked: a player
+        #    who never issued a single command watched the staff climb on its own.
+        #
+        #    With auto_hire on (the default for the optimizer, off for a player)
+        #    the old smoothing toward capacity runs as before, which is what the
+        #    long civilization runs are calibrated against. With it off, the only
+        #    things that change the staff are hire, fire, train, buy and manumit.
         sc_cap, ar_cap, di_cap = self.staff_capacity()
         ATTRITION = 0.035           # Roman adult mortality plus normal turnover
-        self.scholars += (sc_cap - self.scholars) * 0.18 - self.scholars * ATTRITION
-        self.artisans += (ar_cap - self.artisans) * 0.22 - self.artisans * ATTRITION
+        for t in list(self.employees):
+            self.employees[t] *= (1.0 - ATTRITION)
+            if self.employees[t] < 0.05:
+                self.employees.pop(t)
+        self._resync_pools()
+        # A HOUSEHOLD THAT CANNOT PAY ITS PEOPLE LETS THEM GO. This is the whole
+        # answer to "you built it from nothing, so you must be able to rebuild
+        # it": the thing that kept a ruined run frozen for two centuries was a
+        # payroll it could not carry and never reduced. A run that fired its
+        # staff, lived cheaply and started again earned 300 technologies; the
+        # same run holding on to eleven people it could not pay earned 18.
+        net = (self.revenue() - self.upkeep() - self.living_cost()
+               - self.mine_operating_cost())
+        # Only when you are ACTUALLY in the red, not merely having an expensive
+        # year. Taking someone on is an investment that costs more than it
+        # returns at first; shedding on a single negative year undid every hire
+        # the moment it was made and a clean run never got a staff at all.
+        if net < 0 and self.capital < 0 and self.employees:
+            # shed, dearest first, until the books balance
+            for t in sorted(self.employees, key=lambda t: -ANNUAL_WAGE.get(t, 375.0)):
+                if net >= 0:
+                    break
+                wage = ANNUAL_WAGE.get(t, 375.0) * self.wage_index * self.price_index
+                if wage <= 0:
+                    continue
+                cut = min(self.employees[t], (-net) / wage)
+                self.employees[t] -= cut
+                net += cut * wage
+                if self.employees[t] < 0.05:
+                    self.employees.pop(t)
+            self._resync_pools()
+            if net >= 0:
+                self.log.append((yr, "you cannot pay everyone, so some of them go"))
+        if (self.policy.get("auto_hire", not self.manual) and self.capital > 0):
+            extra = self.supervision_room()
+            self.scholars += (sc_cap + extra * 0.35 - self.scholars) * 0.18
+            self.artisans += (ar_cap + extra - self.artisans) * 0.22
+            # Keep the per-trade books honest about the aggregate: staff taken on
+            # for you are generic craftsmen and scribes, and that is all they are.
+            craft = max(0.0, self.artisans - self.freedmen - self.slaves * 0.7)
+            generic = self.employees.get("artisan", 0.0)
+            specials = sum(v for t, v in self.employees.items()
+                           if t not in ("artisan", "scholar") and trade_family(t) == "craft")
+            self.employees["artisan"] = max(0.0, craft - specials)
+            if self.scholars > 0:
+                self.employees["scholar"] = self.scholars
+            # REPLACE THE PEOPLE YOU LOSE, trade by trade. Attrition was eating
+            # the taught trades (the engineers went from 1.9 to 0.3 over sixty
+            # years) and nothing ever replaced them, because the top-up only knew
+            # about the two generic buckets. A programme that trains the first
+            # machinists in the world and then lets them die out has not trained
+            # anybody.
+            for t in list(self.employees):
+                if t in ("artisan", "scholar"):
+                    continue
+                want = max(self.employees[t], 2.0 if t in self.trades_created else 0.0)
+                short = want - self.employees[t]
+                if short > 0.02 and self.capital > ANNUAL_WAGE.get(t, 375.0) * 6:
+                    self.employees[t] += short
+                    self.capital -= short * ANNUAL_WAGE.get(t, 375.0) * self.price_index
+            self._resync_pools()
         self.directors_extra += (di_cap - self.directors_extra) * 0.12 - self.directors_extra * ATTRITION
-        # while you live you are always at least one natural philosopher
-        self.scholars = max(1.0 if self.founder_alive else 0.0, self.scholars)
-        self.artisans = max(1.0, self.artisans)
+        self.artisans = max(0.0, self.artisans)
+        self.scholars = max(0.0, self.scholars)
         self.directors_extra = max(0.0, self.directors_extra)
 
         # 2. money
@@ -1974,10 +2646,11 @@ class Sim:
         # sank a large mine, lost its revenue and then ran three centuries at
         # minus four million denarii, unable to afford anything at all, which
         # the log reported as being "blocked" on a treadle lathe.
-        if self.capital < 0 and self.mine_capacity:
+        if self.capital < 0 and self.mine_capacity and self.policy.get("auto_mothball", True):
             self.mothball_mines()
         self.charge_interest(yr)
-        self.shed_loss_makers(yr)
+        if self.policy.get("auto_shed", True):
+            self.shed_loss_makers(yr)
         self.enforce_credit_limit(yr)
 
         # INSOLVENCY. A playtester ran to minus 4.12 million denarii over eighty
@@ -2046,12 +2719,13 @@ class Sim:
         # that hides it lies about the cost of everything", and then it was
         # hiding the acquisition. Buying people on someone's behalf without
         # telling them is the worst version of that.
-        if not self.manual:
+        if self.policy.get("auto_buy_people", False):
             if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
                 got = self.buy_slaves(min(6, int(self.capital // 1500)))
                 if got:
                     self.log.append((yr, "bought %d people for the workshop" % got))
-            if self.slaves and self.rng.random() < 0.25:
+        if self.policy.get("auto_manumit", not self.manual) and self.slaves:
+            if self.rng.random() < 0.25:
                 freed = self.manumit(max(1, self.slaves // 4))
                 if freed:
                     self.log.append((yr, "freed %d people" % freed))
@@ -2093,8 +2767,34 @@ class Sim:
                 # of it from a merchant fleet belonging to other people.
                 self.granted.add(k)
 
+        # 4a2. TEACH THE TRADES THIS SOCIETY DOES NOT HAVE. The optimizer has to
+        #      do this for itself or half the tree is unreachable; a player does
+        #      it with `train`, or turns this on.
+        if self.policy.get("auto_train", not self.manual):
+            want = {}
+            # Anything already in hand that has lost its trade comes FIRST: those
+            # projects are burning a slot and will be halted if nobody turns up.
+            for k in self.active:
+                for t in self.nodes[k]["lab"]:
+                    if self.market_supply(t) <= 0.0:
+                        want[t] = want.get(t, 0) + 500
+            for k in self.order:
+                if k in self.done or k in self.active:
+                    continue
+                n = self.nodes[k]
+                if any(p not in self.done for p in n["pre"]):
+                    continue
+                for t in n["lab"]:
+                    if not self.trade_available(t):
+                        want[t] = want.get(t, 0) + 1
+            for t, _ in sorted(want.items(), key=lambda kv: -kv[1])[:1]:
+                ok, _msg = self.train(t, 2)
+                if ok:
+                    self.log.append((yr, "you begin teaching the first %ss this world "
+                                         "has ever had" % t))
+
         # 4b. start new projects
-        pool = self.director_pool()
+        pool = max(0.0, self.director_pool() - self.director_hours_committed())
         hired_left = self.hired_cap()
         # MANUAL MODE STOPS HERE. This loop is "the optimizer": it walks
         # `order` and starts whatever it judges best, which is exactly the
@@ -2107,12 +2807,34 @@ class Sim:
         # human or a script. Everything below this block (materials, staff,
         # money, hazards, the calendar) is untouched by `manual` and keeps
         # running exactly as before.
-        if not self.manual:
+        if not self.manual and yr >= getattr(self, "credit_frozen_until", 0):
             # More directors means more things in hand at once, and a big trained staff
             # lets routine work proceed without the founder watching it.
+            # How many things can be in hand at once. I tried doubling this on
+            # the theory that money is now the real constraint and attention need
+            # not stand in for a budget. It made every civilization worse,
+            # including Rome, from 33% of runs reaching the transistor to none:
+            # more projects in hand divide the same purse into smaller annual
+            # payments, so everything crawls and nothing finishes. Spreading a
+            # fixed budget across more work is not more work. Left as it was.
             max_active = int(2 + self.director_pool() / 2400.0
                              + self.scholars / 12.0 + self.artisans / 25.0)
-            for k in self.order:
+            # EARN A LIVING FIRST. Now that a project must actually be paid for,
+            # a founder who arrives with 400 denarii and walks the goal-ordered
+            # list starves: every human tester worked this out for themselves
+            # within a few turns and went hunting for the cheap revenue nodes,
+            # and the optimizer had no such instinct. When the surplus is thin,
+            # prefer whatever pays best for what it costs; the goal order resumes
+            # the moment there is money to pursue it with.
+            fixed0 = self.upkeep() + self.living_cost() + self.mine_operating_cost()
+            candidates = self.order
+            if self.revenue() - fixed0 < max(400.0, fixed0 * 0.25):
+                earners = [k for k in self.order
+                           if self.nodes[k]["rev"] - self.nodes[k]["up"] > 0]
+                earners.sort(key=lambda k: self.project_cost(k)
+                             / max(1.0, self.nodes[k]["rev"] - self.nodes[k]["up"]))
+                candidates = earners + [k for k in self.order if k not in set(earners)]
+            for k in candidates:
                 if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
                     break
                 if not self.can_start(k):
@@ -2123,27 +2845,41 @@ class Sim:
                 # located material (mat_gutta_percha and the like) costs more
                 # or less to reach depending on how far THIS civ actually is
                 # from it, not on Rome's distance to it.
-                if (n["_total_cost"] * self.cost_money_factor() * self.civ_cost_factor(k)
-                        * self.material_cost_factor(k)) > self.capital * 3 + self.revenue() * 6:
+                # Do not begin what you cannot pay for. This used to allow three
+                # times your capital plus six years of GROSS revenue, which was
+                # harmless while the money was notional and the bill was quietly
+                # forgiven at completion. Now that the bill has to be paid, the
+                # same heuristic commits the household to more than it can ever
+                # fund, the creditors halt everything, and the spend is lost.
+                fixed = self.upkeep() + self.living_cost() + self.mine_operating_cost()
+                room = (max(0.0, self.capital) + self.credit_limit() * 0.5
+                        + max(0.0, self.revenue() - fixed) * 5.0
+                        - sum(st.get("cost_left") or 0.0 for st in self.active.values()))
+                if self.project_cost(k) > room:
                     continue
                 if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
                     continue
-                self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
+                self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
+                                      cost_left=self.project_cost(k))
 
         # 4c. materials. Buy the woodland and dig the beds BEFORE the shortage
         #     bites, which is what a competent manager does and what the old
         #     model never had to think about at all.
         self.commission_mines()
         thr = self.resource_throttle()
-        if thr < 0.9 and self.capital > 3000:
+        if (thr < 0.9 and self.capital > 3000
+                and (self.policy.get("auto_mine", not self.manual)
+                     or self.policy.get("auto_forest", not self.manual))):
             # Charcoal is GROWN, so the answer is woodland. Everything else in
             # this list is DUG, so the answer is a mine, and the old model had
             # no answer at all for coal: the binding constraint fell through
             # both branches and the run simply sat throttled. That is why coal
             # showed 1,669 shortage-years in a 395 year run.
             if self.binding == "charcoal":
-                self.buy_forest(min(400.0, self.capital / 900.0))
-            elif self.binding in self.MINE_CAPEX_PER_T_YR:
+                if self.policy.get("auto_forest", not self.manual):
+                    self.buy_forest(min(400.0, self.capital / 900.0))
+            elif (self.binding in self.MINE_CAPEX_PER_T_YR
+                    and self.policy.get("auto_mine", not self.manual)):
                 # Size the mine from ALL the material keys that feed this
                 # bucket, not one of them. The throttle counted iron ore AND
                 # iron bar against "iron"; the investment response looked only
@@ -2178,34 +2914,109 @@ class Sim:
         rank = {k: i for i, k in enumerate(self.order)}
         active_sorted = sorted(self.active, key=lambda k: rank.get(k, 9999))
         remaining = pool
+        self.trade_hours_used = {}
         for k in active_sorted:
                 st = self.active[k]
                 n = self.nodes[k]
+                # IS THERE ANYBODY TO DO THE WORK? If a trade this project needs
+                # has vanished since it started (the machinists you taught died
+                # out, say), nothing can be done on it this year, and your own
+                # hours should go somewhere they are useful rather than into a
+                # project that cannot absorb them.
+                #
+                # This matters more than it sounds. Without it a project whose
+                # trade had disappeared sat in `active` for ever: hours went in,
+                # no money was spent because no work was done, so the bill was
+                # never paid, so it could never complete, so it never released
+                # the slot. Four of those deadlocked a run at 98 technologies for
+                # two hundred and fifty years.
+                blocked = [t for t, want in n["lab"].items()
+                           if want > 0 and self.market_supply(t) <= 0.0]
+                if blocked:
+                    st["stalled_years"] = st.get("stalled_years", 0) + 1
+                    if st["stalled_years"] >= 4:
+                        self.log.append((yr, "HALTED %s: there is nobody here who can "
+                                             "do this work (%s). What you spent is lost"
+                                         % (k, ", ".join(blocked[:2]))))
+                        self.active.pop(k, None)
+                        self.bountied.discard(k)
+                    continue
+                st["stalled_years"] = 0
                 per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))) * self.throttle
                 remaining -= per
                 st["ph_left"] -= per
                 self.director_hours_spent_founder += per if self.founder_alive else 0
                 st["yrs"] += 1
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
-                # opposed work costs more: bribes, delay, a provincial site, a front man
-                opposition = 1.0 + 0.25 * max(0.0, -self.state_interest(n))
+                # A project started before this field existed (an old save) has
+                # no bill to pay; give it one now rather than crash on it.
+                if st.get("cost_left") is None:
+                    st["cost_left"] = max(0.0, self.project_cost(k) - st["spent"])
                 # material_cost_factor: how far THIS civilization is from
                 # wherever geography.json says this thing actually comes
                 # from. 1.0 for every node that is not a located material.
-                money = (n["_total_cost"] * frac * self.cost_money_factor() * opposition
-                         * self.civ_cost_factor(k) * self.material_cost_factor(k))
+                money = min(st["cost_left"], self.project_cost(k) * frac)
+                # LABOUR BY TRADE. The old model pooled every trade into one
+                # bucket of hired hours, so 450 hours of engineer and 450 hours
+                # of labourer were the same resource. They are not, and the wage
+                # table has said so all along. What binds now is the scarcest
+                # trade this project actually needs.
                 hh = n["_hired_hours"] * frac
+                worst = 1.0
+                for t, want in n["lab"].items():
+                    need = want * frac
+                    if need <= 0:
+                        continue
+                    have = (self.market_supply(t) + self.contract_hours.get(t, 0.0)
+                            - self.trade_hours_used.get(t, 0.0))
+                    if need > have:
+                        worst = min(worst, max(0.0, have) / need)
+                if worst < 1.0:
+                    frac *= worst
+                    money *= worst
+                    hh *= worst
+                    st["ph_left"] += per * 0.4 * (1.0 - worst)
+                for t, want in n["lab"].items():
+                    self.trade_hours_used[t] = (self.trade_hours_used.get(t, 0.0)
+                                                + want * frac)
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
                     money *= hired_left / max(hh, 1e-9)
                     hh = hired_left
                 hired_left -= hh
-                if money > self.capital:
-                    money = max(0.0, self.capital)
+                # You may spend into debt, up to what someone will lend you, and
+                # no further. Beyond that the work simply does not get paid for
+                # this year, and a year nobody was paid for is a year of little
+                # progress. What must NOT happen is the bill being forgiven.
+                #
+                # The margin is deliberate. Spending to the last denarius of your
+                # credit means next year's rent breaches the limit and the
+                # creditors halt every project you have, which turns "I was
+                # ambitious" into "everything I had in hand was destroyed". A
+                # lender who will advance you a thousand will not let you draw
+                # the last two hundred of it against a half-built balloon.
+                # Reserve next year's fixed costs AND most of the credit line.
+                # Drawing the line to its last denarius is how one ambitious
+                # project destroyed everything else a tester had in hand: the
+                # limit itself falls as reputation and revenue fall, so a balance
+                # exactly at the limit this year is over it next year, and over
+                # the line every project in progress is halted at once.
+                # Reserve only the SHORTFALL, not the whole running cost. This
+                # year's rent and wages have already been taken out of capital at
+                # the top of step(); reserving them again left a household with
+                # 6,670 in hand and 31,000 of costs covered by 31,600 of income
+                # unable to spend a single denarius on its own projects, so four
+                # of them sat unpayable and unfinished for two hundred years.
+                fixed = self.living_cost() + self.upkeep() + self.mine_operating_cost()
+                reserve = max(0.0, fixed - self.revenue())
+                purse = self.capital + self.credit_limit() * 0.6 - reserve
+                if money > purse:
+                    money = max(0.0, purse)
                     st["ph_left"] += per * 0.5     # underfunded work stalls
                 self.capital -= money
                 self.total_spend += money
                 st["spent"] += money
+                st["cost_left"] = max(0.0, st["cost_left"] - money)
                 # Count it HERE, after the hired-hours scaling and the
                 # affordability clamp, not before them. Accumulating the
                 # notional figure made project_spend_last_year disagree with
@@ -2215,11 +3026,38 @@ class Sim:
                 floor = n["yrs"]
                 if n["yrs"] >= 5:   # diffusion-limited nodes, not physical curing
                     floor = max(2.0, n["yrs"] / (1.0 + self.reputation / 90.0))
-                if st["ph_left"] <= 0 and st["yrs"] >= floor:
+                # THE BILL HAS TO BE PAID. Hours done and years elapsed are not
+                # enough; if the money never arrived, the thing was never built.
+                if st["ph_left"] <= 0 and st["yrs"] >= floor and st["cost_left"] <= 0.5:
                     self._complete(k)
+                elif st["ph_left"] <= 0 and st["yrs"] >= floor and st["cost_left"] > 0.5:
+                    st["waiting_on_money"] = True
+
+        # 5b. IF THERE IS NO WORK AND NO MONEY, TAKE A JOB. A man who arrives
+        #     with four hundred denarii and a lens does not sit watching his
+        #     savings run out; he teaches, or writes, or sets bones for money. It
+        #     is in the protocol as `work` for a player and the optimizer had no
+        #     equivalent, so a single bad year in the opening decade could end a
+        #     run: one Rome seed earned four technologies in five hundred years
+        #     because a fire in 103 took a fifth of everything it had.
+        if (not self.manual and remaining > 100.0
+                and (self.capital < self.living_cost() * 2 or not self.active)):
+            trade = ("scholar" if self.effective_scholars() >= 1 else "scribe")
+            self.work_for_wages(trade, min(remaining, 1200.0))
 
         # 6. reputation, familiarity, protection, scandal
-        self.reputation *= 0.97
+        #
+        # Reputation DECAYS TOWARD WHAT YOU ARE ACTUALLY KNOWN FOR, not toward
+        # zero. Three testers independently reported the same thing: reputation
+        # slid from 10 to 0.2 over a century and a half with no event ever
+        # explaining it, and one called it "less like a lever I could manage and
+        # more like a clock running out in the background". They were right, and
+        # decaying to zero was also wrong on its own terms. A physician with a
+        # practice, a school and a written corpus does not become a man nobody
+        # has heard of because thirty quiet years passed. What fades is novelty;
+        # what remains is the work.
+        floor = self.standing_floor()
+        self.reputation = floor + (self.reputation - floor) * 0.97
         # ADAPTATION. Every year the world has known you, and every visible thing
         # you have already done, makes the next one less astonishing.
         pub = sum(1 for k in self.done
@@ -2227,6 +3065,10 @@ class Sim:
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
         self.wage_hours_this_year = 0.0
+        # Contracted work is bought for a year and expires with it: hours you
+        # paid a shop for in 142 are not still sitting there in 143.
+        self.contract_hours = {}
+        self.teaching_hours_this_year = 0.0
         self.spend_last_year = getattr(self, "_spend_this_year", 0.0)
         self._spend_this_year = 0.0
         # Sellers restock, so the pressure your buying put on the market fades.
@@ -2234,11 +3076,22 @@ class Sim:
         # People bought this year are not artisans this year.
         if self.training:
             still = []
-            for cap, ready in self.training:
+            for row in self.training:
+                cap, ready = row[0], row[1]
+                trade = row[2] if len(row) > 2 else None
+                count = row[3] if len(row) > 3 else 0.0
                 if self.year >= ready:
-                    self.artisans += cap
+                    if trade:
+                        # A trade you taught. They are now yours to pay, and
+                        # they are that trade and no other.
+                        self.employees[trade] = self.employees.get(trade, 0.0) + count
+                        self.log.append((self.year, "%g %s%s finish their training"
+                                         % (count, trade, "s" if count != 1 else "")))
+                        self._resync_pools()
+                    else:
+                        self.artisans += cap
                 else:
-                    still.append([cap, ready])
+                    still.append(row)
             self.training = still
         self.update_protection()
         self.scandal *= 0.90
@@ -2248,7 +3101,7 @@ class Sim:
         # attempt is itself evidence against you.
         self.eminence = self.eminence * 0.93 + self.prominence_hazard()
         # you can buy your way out of trouble, and a sane player does
-        if self.scandal > 8 and self.capital > 2000:
+        if self.scandal > 8 and self.capital > 2000 and self.policy.get("auto_bribe", not self.manual):
             spend = min(self.capital * 0.12, self.scandal * 260)
             self.capital -= spend
             self.bribes_ytd = 0.7 * self.bribes_ytd + spend
@@ -2287,6 +3140,22 @@ class Sim:
                 else:
                     self._catastrophe("too eminent: brought down not for what you built "
                                       "but for how large you had become")
+
+        # 6b. serving out a debt. The hours you owe go to the creditor and the
+        #     debt falls; when it is done you are free, and you keep everything
+        #     you know.
+        if self.bondage_years_left > 0:
+            self.bondage_years_left -= 1
+            paid = self.cfg["founder_hours_per_year"] * 0.75 * \
+                (WAGES.get("labourer", 0.075) * 1.2) * self.wage_index * self.price_index
+            self.bondage_debt = max(0.0, self.bondage_debt - paid)
+            if self.bondage_debt <= 0 and self.bondage_years_left > 0:
+                self.bondage_years_left = 0     # paid early
+            if self.bondage_years_left <= 0:
+                self.bondage_years_left = 0.0
+                self.bondage_debt = 0.0
+                self.log.append((yr, "your term is served and the debt is discharged; "
+                                     "you are your own man again"))
 
         # 7. founder mortality
         if self.founder_alive:
@@ -2355,6 +3224,107 @@ class Sim:
             self.goal_year = self.year
 
     # -- shocks -------------------------------------------------------------
+    # WHAT YOU CAN DO ABOUT HISTORY.
+    #
+    # A tester's question, and it is the right one to ask of a game that tells
+    # you on turn one exactly which disasters are coming: "some techs might
+    # counter that, like what if you build a mine that can mine gold for Rome,
+    # or guns for a rebellion, or medicine for disease?" Until now the answer
+    # was almost no: four hardcoded checks, none of them findable, and the
+    # hazards were weather. They are not weather. They are the thing the whole
+    # programme is for.
+    #
+    # Each entry is (node id, how much of the harm it removes, what it is).
+    # They compound, and none of them takes a hazard to zero on its own: no
+    # amount of sanitation stops a plague, it decides how many of your people
+    # are still alive at the end of it.
+    HAZARD_COUNTERS = {
+        "staff_loss": [
+            ("sanitation_antisepsis", 0.30, "boiled water, handwashing, clean wounds"),
+            ("med_quarantine_sanitation", 0.30, "quarantine, clean water, sewage"),
+            ("germ_theory", 0.25, "knowing what is actually killing them"),
+            ("md2_isolation_hospital", 0.20, "the sick kept apart from the well"),
+            ("med_vaccination_progression", 0.45, "variolation and then vaccination"),
+            ("md2_vaccine_smallpox", 0.40, "smallpox vaccine"),
+            ("md2_vaccine_plague", 0.35, "plague vaccine"),
+            ("md2_vaccine_typhoid", 0.20, "typhoid vaccine"),
+            ("md2_sand_filtration", 0.15, "filtered water"),
+            ("soap_hard", 0.10, "hard soap, in quantity"),
+            ("med_nursing_profession", 0.12, "people trained to nurse the sick"),
+            ("plague_preparedness", 0.35, "a plan made before the plague"),
+            ("crop_rotation", 0.15, "fields that do not fail together"),
+            ("ag2_silage_silo", 0.10, "fodder that keeps through a bad winter"),
+            ("fud_canning_appert_method", 0.10, "food that keeps"),
+        ],
+        "sack_chance": [
+            ("mil_trace_italienne", 0.45, "angled bastion walls no ram or ladder answers"),
+            ("mil_bastion", 0.30, "a bastioned enclosure"),
+            ("mil_concrete_fortification", 0.30, "concrete fortification"),
+            ("mil_matchlock", 0.25, "firearms in the hands of your own people"),
+            ("mil_flintlock", 0.35, "reliable firearms"),
+            ("mil_artillery_piece", 0.30, "guns on the walls"),
+            ("gunpowder", 0.15, "corned powder"),
+            ("patron_imperial", 0.30, "a patron with soldiers"),
+            ("academy_network", 0.40, "the work is in too many places to burn"),
+            ("endowment_land", 0.15, "land nobody can carry away"),
+        ],
+        "output_factor": [
+            ("endowment_land", 0.30, "land that yields whoever is emperor this year"),
+            ("crop_rotation", 0.20, "you feed yourself"),
+            ("water_power_scale", 0.20, "power that does not come by ship"),
+            ("civ_road_paved", 0.10, "your own roads"),
+            ("fin_marine_insurance", 0.15, "losses spread rather than borne"),
+        ],
+        "real_erosion": [
+            ("_own_gold", 0.55, "your own gold, dug not minted"),
+            ("_own_silver", 0.35, "your own silver"),
+            ("endowment_land", 0.40, "wealth held as land, not as coin"),
+            ("fin_bimetallism", 0.25, "a standard the coin can be held to"),
+            ("fin_assay_office", 0.20, "you can prove what metal is in a coin"),
+            ("met_fire_assay", 0.15, "you can assay ore and coin yourself"),
+        ],
+    }
+
+    def hazard_relief(self, kind):
+        """How much of one kind of harm the things you have built take off.
+
+        Returns (multiplier, [what did it]). Diminishing: each counter removes a
+        share of what is LEFT, so five partial answers are strong and none of
+        them is a switch that turns history off.
+        """
+        mult, why = 1.0, []
+        for node, share, label in self.HAZARD_COUNTERS.get(kind, ()):
+            if node == "_own_gold":
+                got = self.mine_capacity.get("gold", 0.0) > 0.0005
+            elif node == "_own_silver":
+                got = self.mine_capacity.get("silver", 0.0) > 0.01
+            else:
+                got = self.has(node)
+            if got:
+                mult *= (1.0 - share)
+                why.append(label)
+        return mult, why
+
+    def hazard_advice(self, kind):
+        """What KIND of thing would help, without naming what you cannot see.
+
+        Under fog this must not turn into a list of node ids to go and build:
+        that is the tech tree by the back door. It names the kind of answer, in
+        the same words a person in the year 100 would use.
+        """
+        words = {"staff_loss": "clean water, quarantine, and eventually inoculation",
+                 "sack_chance": "walls, firearms, powerful friends, and copies of "
+                                "your work kept somewhere else",
+                 "output_factor": "land and power of your own, and not depending on "
+                                  "trade that a war can cut",
+                 "real_erosion": "metal you dug yourself, land, and a way to prove "
+                                 "what a coin contains"}
+        mult, why = self.hazard_relief(kind)
+        out = {"you_currently_take": round(mult, 3), "because_of": why}
+        if mult > 0.75:
+            out["what_would_help"] = words.get(kind, "")
+        return out
+
     def _shocks(self, yr):
         """Dated catastrophes, read from the CIVILIZATION file.
 
@@ -2370,15 +3340,22 @@ class Sim:
             if not (a <= yr <= b):
                 continue
             if "staff_loss" in h and r.random() < 0.32:
-                loss = h["staff_loss"] * (0.25 if prep else 1.0)
+                relief, why = self.hazard_relief("staff_loss")
+                loss = h["staff_loss"] * relief
                 self.scholars *= (1 - loss); self.artisans *= (1 - loss)
+                for t in list(self.employees):
+                    self.employees[t] *= (1 - loss)
                 self.directors_extra *= (1 - loss); self.capital *= (1 - loss * 0.6)
                 self.log.append((yr, "%s: staff -%d%%%s" % (h.get("name","hazard"),
-                                 loss * 100, " (mitigated)" if prep else "")))
+                                 loss * 100,
+                                 " (would have been -%d%%: %s)"
+                                 % (h["staff_loss"] * 100, "; ".join(why)) if why else "")))
             if "sack_chance" in h:
-                p = h["sack_chance"]
-                if self.has("academy_network"): p *= 0.40
-                if self.has("endowment_land"):  p *= 0.85
+                relief, why = self.hazard_relief("sack_chance")
+                p = h["sack_chance"] * relief
+                if why and r.random() < h["sack_chance"] - p:
+                    self.log.append((yr, "%s: an attack comes to nothing (%s)"
+                                     % (h.get("name", "crisis"), "; ".join(why[:3]))))
                 if r.random() < p:
                     self.capital *= 0.40
                     self.artisans *= 0.55; self.scholars *= 0.55
@@ -2407,11 +3384,28 @@ class Sim:
                                 % (len(drop), "" if self.has("corpus_dispersed")
                                    else " (the corpus was never printed and dispersed)")))
             if "output_factor" in h:
-                self.output_factor = min(self.output_factor, h["output_factor"])
+                relief, _why = self.hazard_relief("output_factor")
+                # relief moves the floor back toward 1.0 rather than scaling the
+                # damage: self-sufficiency means less of your income was ever
+                # coming through the thing the war cut.
+                floor = 1.0 - (1.0 - h["output_factor"]) * relief
+                before = self.output_factor
+                self.output_factor = min(self.output_factor, floor)
+                if before > self.output_factor:
+                    self.log.append((yr, "%s: trade and output fall to %d%% of normal"
+                                     % (h.get("name", "crisis"), self.output_factor * 100)))
             if "real_erosion" in h:
+                relief, why = self.hazard_relief("real_erosion")
                 self.money_real *= (1 - h["real_erosion"])
-                self.capital *= (1 - h["real_erosion"] * 0.85 *
-                                 (0.35 if self.has("endowment_land") else 1.0))
+                bite = h["real_erosion"] * 0.85 * relief
+                self.capital *= (1 - bite)
+                if not getattr(self, "_said_debasement", 0) or yr - self._said_debasement >= 15:
+                    self._said_debasement = yr
+                    self.log.append((yr, "%s: the coin is worth %d%% less than it was%s"
+                                     % (h.get("name", "debasement"),
+                                        (1 - self.money_real) * 100,
+                                        "; you feel less of it (%s)" % "; ".join(why)
+                                        if why else "")))
 
     def _random_events(self, yr):
         r = self.rng
@@ -2427,7 +3421,11 @@ class Sim:
             self.log.append((yr, "your patron dies; his heir must be courted afresh"))
         if r.random() < 0.03:
             self.capital *= 0.82
-            self.log.append((yr, "fire in the insula district"))
+            # An insula is a Roman tenement block, and a tester playing Han China
+            # counted nine fires in the insula district of Luoyang in a hundred
+            # years. Every civilization file names its own quarter.
+            self.log.append((yr, "fire in the %s"
+                             % self.civ.get("fire_quarter", "crowded quarter")))
         if r.random() < 0.02:
             self.capital *= 0.9
             self.log.append((yr, "banditry or a frontier war disrupts supply"))
@@ -2782,9 +3780,20 @@ def _agent_state(s, nodes):
     active = {}
     for k, st in s.active.items():
         n = nodes[k]
+        bill = st.get("cost_left")
+        if bill is None:
+            bill = max(0.0, s.project_cost(k) - st["spent"])
         active[k] = {"name": n["name"], "founder_hours_left": round(st["ph_left"], 1),
                      "founder_hours_total": n["ph"], "years_in_progress": st["yrs"],
-                     "spent": round(st["spent"], 1), "bountied": k in s.bountied}
+                     "spent": round(st["spent"], 1), "still_to_pay": round(bill, 1),
+                     # A tester poured 1,200 hours into a project that was
+                     # calendar-locked and could not use them, and only noticed by
+                     # reading state closely. Say which of the three things it is
+                     # actually waiting for.
+                     "waiting_on": ("money" if st["ph_left"] <= 0 and bill > 0.5
+                                    else "the calendar" if st["ph_left"] <= 0
+                                    else "your hours"),
+                     "bountied": k in s.bountied}
     end_reason = _agent_end_reason(s)
     return {
         "year": s.year, "capital": round(s.capital, 1), "revenue": round(s.revenue(), 1),
@@ -2839,6 +3848,15 @@ def _agent_state(s, nodes):
             "scholars": s._staff_advice("scholars"),
             "artisans": s._staff_advice("artisans"),
         },
+        "where_the_money_comes_from": s.revenue_sources(),
+        "employees": {t: round(v, 2) for t, v in sorted(s.employees.items()) if v > 0.005},
+        "employees_total": round(sum(s.employees.values()), 2),
+        "annual_wage_bill": round(s.wage_bill(), 1),
+        "trades_you_created": sorted(s.trades_created),
+        "mothballed": sorted(getattr(s, "mothballed", set())),
+        "policy": dict(s.policy),
+        "in_bondage_for_debt": round(getattr(s, "bondage_years_left", 0.0), 1),
+        "debt_still_to_work_off": round(getattr(s, "bondage_debt", 0.0), 1),
         "credit_limit": round(s.credit_limit(), 1),
         "debt_interest_rate": round(s.debt_interest_rate(), 4),
         "interest_paid_total": round(getattr(s, "interest_paid", 0.0), 1),
@@ -2847,6 +3865,8 @@ def _agent_state(s, nodes):
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
         "slaves": s.slaves, "freedmen": s.freedmen,
+        "scholars_including_you": round(s.effective_scholars(), 2),
+        "founder_ages": not s.cfg.get("immortal", True),
         "goal": None if getattr(s, "fog", False) else s.goal,
         "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
         "fog_of_war": getattr(s, "fog", False),
@@ -2898,6 +3918,21 @@ def _agent_help(s):
                           if fog else "what something still needs"),
             "work <trade> <hours>": "do an ordinary job for ordinary pay, which is "
                                     "sometimes all you can afford to do",
+            "labour": "who you employ, what trades this society has, and what each costs",
+            "hire <trade> <n>": "take people onto the staff permanently; they are paid "
+                                "every year whether you have work for them or not",
+            "fire <trade> <n>": "let them go",
+            "train <trade> <n>": "teach a trade that does not exist here into "
+                                 "existence, out of your own hours",
+            "commission <trade> <hours>": "buy a job rather than a person: somebody "
+                                          "else's shop does the work, at a premium, "
+                                          "with no standing obligation",
+            "mothball <id>": "shut a finished work down to stop paying its upkeep",
+            "restore <id>": "bring a mothballed work back, for about a third of "
+                            "what it cost to build",
+            "bribe <amount>": "spend money to reduce a scandal",
+            "policy": "every automatic behaviour, and a switch for each one; "
+                      '{"cmd":"policy","set":{"auto_hire":true}}',
             "save <file>": "write the game to a file",
             "load <file>": "read a game back",
             "help": "this",
@@ -2923,6 +3958,20 @@ def _agent_help(s):
             "manumit": '{"cmd":"buy","what":"manumit","n":5} frees people you hold. '
                        'They then work better, and it is the decent thing.',
         },
+        "labour": (
+            "You arrive alone: no employees, no slaves, nobody who owes you "
+            "anything. Everything anyone else does for you is hired by the year "
+            "(`hire`), bought as a single job (`commission`), taught by you from "
+            "nothing if this society has no such trade (`train`), or bought "
+            "outright as a person (`buy slaves`). Trades are NOT "
+            "interchangeable: a smith is not a scribe, and a project asking for "
+            "an engineer cannot be built by smiths however many you have. See "
+            "`labour` for who exists here and what they cost."),
+        "what happens on its own": (
+            "Some things the engine will do for you if you let it: grow the "
+            "staff, teach trades, sink mines, buy woodland, shut down what you "
+            "cannot pay for, pay off a scandal. Every one of them is a switch you "
+            "control, and every one can be done by hand instead. See `policy`."),
         "fog of war": (
             "ON. You can see what you have built, what you could begin today as a "
             "one line summary, and things you have heard of but cannot yet begin. "
@@ -2949,9 +3998,9 @@ def _agent_available(s, nodes):
             # you already have them, and above all no hint of what it leads to.
             out.append({"id": k, "name": n["name"],
                         "summary": s.fog_summary(k),
-                        "cost": round(n["_total_cost"] * s.civ_cost_factor(k)
-                                      * s.material_cost_factor(k) * s.cost_money_factor(), 1),
+                        "cost": round(s.project_cost(k), 1),
                         "your_hours": n["ph"],
+                        "trades_needed": sorted(n["lab"]),
                         "least_years": n["yrs"],
                         "chance_of_failure": n["risk"]})
         else:
@@ -2998,9 +4047,11 @@ def _node_explain(s, nodes, k):
                  "base_total": round(n["_total_cost"], 1),
                  "civ_domain_factor": round(s.civ_cost_factor(k), 3),
                  "material_distance_factor": round(s.material_cost_factor(k), 3),
+                 "opposition_factor": round(s.opposition_factor(k), 3),
                  "price_index": round(s.money_real, 3),
-                 "total": round(n["_total_cost"] * s.civ_cost_factor(k)
-                                * s.material_cost_factor(k) * s.cost_money_factor(), 1)},
+                 # The same figure the project will be billed, and must actually
+                 # have paid in full before it can complete.
+                 "total": round(s.project_cost(k), 1)},
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
@@ -3008,11 +4059,43 @@ def _node_explain(s, nodes, k):
         "bounty_eligible_by_type": bounty_by_type,
         "direct_prerequisites": n["pre"],
         "missing_prerequisites": [p for p in n["pre"] if p not in s.done],
-        "chain_size": len(need), "chain_founder_hours": sum(nodes[x]["ph"] for x in need),
-        "chain_cost": round(sum(nodes[x]["_total_cost"] for x in need), 1),
-        "critical_path_years": critical_path(nodes, k)[0],
-        "unlocks": unlocks, "downstream_count": len(blocks),
-        "on_goal_path": k == s.goal or s.goal in blocks,
+        # Same reasoning: the size and cost of everything BEHIND a node is a
+        # measurement of a tree you cannot see. You do know how many of its own
+        # prerequisites you are still missing, because those have names you have
+        # either heard or not.
+        "chain_size": (len(need) if not getattr(s, "fog", False) else None),
+        "chain_founder_hours": (sum(nodes[x]["ph"] for x in need)
+                                if not getattr(s, "fog", False) else None),
+        "chain_cost": (round(sum(nodes[x]["_total_cost"] for x in need), 1)
+                       if not getattr(s, "fog", False) else None),
+        "critical_path_years": (critical_path(nodes, k)[0]
+                                if not getattr(s, "fog", False) else None),
+        # DOWNSTREAM COUNT IS A SPOILER UNDER FOG, and a tester said so
+        # unprompted: "downstream_count 1276 seems slightly cheaty". They were
+        # right, and worse than cheaty, it was the whole game. Two testers
+        # independently found the same three hub nodes by calling `why` on
+        # guesses and reading the number, and one wrote that after that "the
+        # early strategy is pretty obvious". An exact count of everything a
+        # thing leads to is a map of the tree you were told you could not see.
+        #
+        # What survives fog is the thing a person in the year 100 could actually
+        # judge: whether this is a foundation others will build on, or an end in
+        # itself. You can tell that much by looking at it.
+        "unlocks": unlocks,
+        "downstream_count": (len(blocks) if not getattr(s, "fog", False) else None),
+        "how_much_rests_on_this": (
+            None if not getattr(s, "fog", False) else
+            "almost everything" if len(blocks) > 1200 else
+            "a great deal" if len(blocks) > 300 else
+            "a fair amount" if len(blocks) > 40 else
+            "a few things" if len(blocks) > 3 else
+            "nothing else; this is worth having for itself"),
+        # Under fog there is no goal, so a boolean saying whether this is "on the
+        # goal path" is either meaningless or a leak. A tester read it as
+        # true/false for five hundred years while `state.goal` was null and
+        # reasonably asked what path it could possibly mean.
+        "on_goal_path": (None if getattr(s, "fog", False)
+                         else (k == s.goal or s.goal in blocks)),
         "done": k in s.done, "active": k in s.active,
         "can_start_now": (not started) and s.can_start(k),
         # Under fog this used to name locked prerequisites in full, so a tester
@@ -3022,6 +4105,14 @@ def _node_explain(s, nodes, k):
         # name in someone else's sentence either.
         "start_blocked_reason": None if started else s.fog_scrub(s.start_reason(k)[1]),
     }
+
+
+def _num(v, default=0.0):
+    """Read a number from a command without ever raising at the player."""
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return float(default)
 
 
 def _agent_dispatch(s, nodes, cmd):
@@ -3210,6 +4301,114 @@ def _agent_dispatch(s, nodes, cmd):
                 "your_hours_left_this_year": round(
                     max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
 
+    if op == "labour":
+        rows = {}
+        for t in sorted(WAGES):
+            rows[t] = {
+                "you_employ": round(s.employees.get(t, 0.0), 2),
+                "exists_here": s.trade_available(t),
+                "wage_per_hour": round(WAGES[t] * s.wage_index * s.price_index, 3),
+                "a_year_of_one": round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index * s.price_index, 0),
+                "hours_the_market_can_supply": round(s.market_supply(t), 0),
+                "note": TRADE_NOTES.get(t, ""),
+                "kind": trade_family(t),
+            }
+        return {"ok": True, "trades": rows,
+                "you_employ_in_total": round(sum(s.employees.values()), 2),
+                "slaves": s.slaves, "freedmen": s.freedmen,
+                "annual_wage_bill": round(s.wage_bill(), 1),
+                "craftsmen_on_your_staff": round(s.artisans, 2),
+                "scholars_including_you": round(s.effective_scholars(), 2),
+                "note": "A trade that does not exist here cannot be hired at any "
+                        "price; teach one with train. Trades are not "
+                        "interchangeable. Buying a job instead of a person is "
+                        "commission."}
+
+    if op == "hire":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        ok, err = s.hire(cmd.get("trade"), _num(cmd.get("n"), 1))
+        if not ok:
+            return {"ok": False, "error": err}
+        return {"ok": True, "hired": cmd.get("trade"), "n": cmd.get("n"),
+                "you_now_employ": round(s.employees.get(str(cmd.get("trade")).lower(), 0.0), 2),
+                "annual_wage_bill": round(s.wage_bill(), 1),
+                "capital": round(s.capital, 1)}
+
+    if op in ("fire", "dismiss"):
+        ok, err = s.fire(cmd.get("trade"), _num(cmd.get("n"), 1))
+        if not ok:
+            return {"ok": False, "error": err}
+        return {"ok": True, "let_go": cmd.get("trade"),
+                "annual_wage_bill": round(s.wage_bill(), 1)}
+
+    if op == "train":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        ok, msg = s.train(cmd.get("trade"), _num(cmd.get("n"), 1), cmd.get("from"))
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "training": msg, "capital": round(s.capital, 1),
+                "your_hours_left_this_year": round(
+                    max(0.0, s.director_pool() - s.director_hours_committed()), 1)}
+
+    if op in ("commission", "job"):
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        ok, msg = s.commission(cmd.get("trade"), _num(cmd.get("hours"), 0))
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "commissioned": msg, "capital": round(s.capital, 1),
+                "note": "These hours are available to your projects this year only."}
+
+    if op == "mothball":
+        ok, msg = s.mothball_work(cmd.get("id"))
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "mothballed": msg, "upkeep": round(s.upkeep(), 1)}
+
+    if op == "restore":
+        ok, msg = s.restore_work(cmd.get("id"))
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "restored": msg, "capital": round(s.capital, 1)}
+
+    if op == "bribe":
+        ok, msg = s.bribe(_num(cmd.get("amount"), 0))
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "bribed": msg, "capital": round(s.capital, 1)}
+
+    if op == "policy":
+        want = cmd.get("set")
+        changed = {}
+        if want is not None:
+            if not isinstance(want, dict):
+                return {"ok": False,
+                        "error": 'set must be an object, e.g. '
+                                 '{"cmd":"policy","set":{"auto_hire":true}}'}
+            for key, val in want.items():
+                if key not in s.policy:
+                    return {"ok": False, "error": "no such policy: %s. They are: %s"
+                            % (key, ", ".join(sorted(s.policy)))}
+                s.policy[key] = bool(val)
+                changed[key] = bool(val)
+        return {"ok": True, "policy": dict(s.policy), "changed": changed,
+                "what_each_does": {
+                    "auto_hire": "grow the staff toward what you can house and pay",
+                    "auto_buy_people": "buy slaves when the workshop is short-handed",
+                    "auto_manumit": "free people you hold, over time",
+                    "auto_train": "teach trades this society does not have when a "
+                                  "project needs them",
+                    "auto_mine": "sink a mine when a mineral is holding work up",
+                    "auto_forest": "buy coppice when charcoal is holding work up",
+                    "auto_mothball": "stop working mines you cannot pay for",
+                    "auto_shed": "let go of works that cost more than they return",
+                    "auto_bribe": "pay your way out of a scandal before it kills you",
+                },
+                "note": "Anything switched off here you can still do by hand: hire, "
+                        "train, buy, commission, mothball, restore, bribe."}
+
     if op in ("save", "load"):
         path = cmd.get("file") or cmd.get("path")
         if not isinstance(path, str) or not path:
@@ -3267,7 +4466,10 @@ SAVE_FIELDS = (
     "manumitted_total", "goal_year", "dead_reason", "insolvent_years",
     "bribes_ytd", "living_cost_paid", "mine_cost_paid", "spend_last_year",
     "output_factor", "economy", "throttle", "binding", "bountied",
-    "stalled", "life_left", "founder_alive", "revealed",
+    "stalled", "life_left", "founder_alive", "revealed", "last_settlement",
+    "employees", "trades_created", "policy", "mothballed", "contract_hours",
+    "commissioned", "teaching_hours_this_year", "wages_paid",
+    "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",
 )
 
 

@@ -1,30 +1,76 @@
 {
- "id": "han_china_100ad",
- "name": "The Later Han Empire",
- "year": 100,
+ "_note_cost_multipliers": "Han China already has the blast furnace and cast iron, which the Roman west does not, and paper, which nobody else has. It arrives at the tree several rungs up in exactly the places Rome is weakest. Its handicap is a state that distrusts private commerce and a literati class that ranks merchants near the bottom.",
+ "_note_debt_bondage": "Debt servitude was common and legally recognised in the Han, and it was ordinarily WORKED OFF rather than permanent: the sale of self or family into service for a term, redeemable.",
+ "base_reach": 2,
  "blurb": "Rome's exact contemporary and ahead of it in metallurgy, agriculture and bureaucracy. Cast iron for five centuries already, the seed drill, the moldboard plough, paper in the year 105, water-powered blast bellows in 31 AD.",
- "population": 58000000,
- "urban_fraction": 0.1,
- "literacy_elite": 0.95,
- "literacy_general": 0.06,
+ "bondage_years": 12,
+ "cost_multipliers": {
+  "agriculture": 0.8,
+  "alloys": 0.75,
+  "casting": 0.65,
+  "commerce": 1.15,
+  "field_machinery": 0.8,
+  "finance": 1.2,
+  "information": 0.6,
+  "metallurgy": 0.7,
+  "paper": 0.5,
+  "printing": 0.6
+ },
  "currency": "wu zhu cash",
- "price_index": 0.75,
- "wage_index": 0.7,
- "state_capacity": 0.9,
+ "debt_bondage": true,
+ "fire_quarter": "timber wards of the capital",
+ "handicap_remedies": {
+  "_doc": "The Han handicap is the status of merchants, not any lack of capability. Imperial sanction removes it.",
+  "commerce": {
+   "node": "patron_imperial",
+   "residual": 1.0
+  },
+  "finance": {
+   "node": "patron_imperial",
+   "residual": 1.0
+  }
+ },
+ "hazards": [
+  {
+   "name": "Yellow Turban rebellion",
+   "sack_chance": 0.2,
+   "years": [
+    184,
+    205
+   ]
+  },
+  {
+   "name": "Three Kingdoms fragmentation",
+   "output_factor": 0.6,
+   "years": [
+    220,
+    280
+   ]
+  }
+ ],
  "home_regions": [
   "china"
  ],
- "base_reach": 2,
+ "id": "han_china_100ad",
  "institutions": {
-  "partnership": true,
+  "bank": "early credit notes",
+  "charter": "imperial",
   "corporation": false,
   "guild": "hang, state-supervised",
-  "testament": true,
-  "charter": "imperial",
-  "bank": "early credit notes",
+  "note": "An examined civil service and state monopolies on salt and iron. The state is a far more capable customer than Rome's, and a far more capable competitor.",
+  "partnership": true,
   "patent": false,
-  "note": "An examined civil service and state monopolies on salt and iron. The state is a far more capable customer than Rome's, and a far more capable competitor."
+  "testament": true
  },
+ "literacy_elite": 0.95,
+ "literacy_general": 0.06,
+ "name": "The Later Han Empire",
+ "notes": [
+  "You start with cast iron, paper, the horse collar, the seed drill and water-powered bellows already in hand. That is roughly a thousand years of head start over Rome on the metallurgy and agriculture branches.",
+  "The bureaucracy is the customer, the funder and the competition. Impress the examiners, not a patron."
+ ],
+ "population": 58000000,
+ "price_index": 0.75,
  "starting_techs": [
   "blast_furnace",
   "mat_cast_iron",
@@ -39,65 +85,23 @@
   "sea_sternpost_rudder",
   "sea_magnetic_compass"
  ],
+ "state_capacity": 0.9,
+ "urban_fraction": 0.1,
  "values": {
-  "w_military": 0.8,
-  "w_labour_saving": -0.2,
-  "w_information": 0.2,
-  "w_novelty": -0.2,
-  "w_magic_fear": 0.35,
-  "w_religious_rigidity": 0.15,
-  "w_commerce": -0.2,
+  "_note": "Merchants rank BELOW farmers and artisans in Confucian order, so w_commerce is negative: getting rich is not a route to status here, passing the examinations is. But alchemy and technical craft are far less likely to be called sorcery than in Rome.",
+  "_note_eminence": "Court factions and eunuch politics make eminence dangerous in much the same way, and the examination-literati class resents an outsider.",
+  "adaptation_rate": 0.1,
   "bribability": 0.6,
   "patronage_weight": 0.7,
-  "adaptation_rate": 0.1,
-  "_note": "Merchants rank BELOW farmers and artisans in Confucian order, so w_commerce is negative: getting rich is not a route to status here, passing the examinations is. But alchemy and technical craft are far less likely to be called sorcery than in Rome.",
+  "w_commerce": -0.2,
   "w_eminence_danger": 0.8,
-  "_note_eminence": "Court factions and eunuch politics make eminence dangerous in much the same way, and the examination-literati class resents an outsider."
+  "w_information": 0.2,
+  "w_labour_saving": -0.2,
+  "w_magic_fear": 0.35,
+  "w_military": 0.8,
+  "w_novelty": -0.2,
+  "w_religious_rigidity": 0.15
  },
- "hazards": [
-  {
-   "name": "Yellow Turban rebellion",
-   "years": [
-    184,
-    205
-   ],
-   "sack_chance": 0.2
-  },
-  {
-   "name": "Three Kingdoms fragmentation",
-   "years": [
-    220,
-    280
-   ],
-   "output_factor": 0.6
-  }
- ],
- "notes": [
-  "You start with cast iron, paper, the horse collar, the seed drill and water-powered bellows already in hand. That is roughly a thousand years of head start over Rome on the metallurgy and agriculture branches.",
-  "The bureaucracy is the customer, the funder and the competition. Impress the examiners, not a patron."
- ],
- "cost_multipliers": {
-  "metallurgy": 0.7,
-  "alloys": 0.75,
-  "casting": 0.65,
-  "information": 0.6,
-  "printing": 0.6,
-  "paper": 0.5,
-  "agriculture": 0.8,
-  "field_machinery": 0.8,
-  "commerce": 1.15,
-  "finance": 1.2
- },
- "_note_cost_multipliers": "Han China already has the blast furnace and cast iron, which the Roman west does not, and paper, which nobody else has. It arrives at the tree several rungs up in exactly the places Rome is weakest. Its handicap is a state that distrusts private commerce and a literati class that ranks merchants near the bottom.",
- "handicap_remedies": {
-  "_doc": "The Han handicap is the status of merchants, not any lack of capability. Imperial sanction removes it.",
-  "commerce": {
-   "node": "patron_imperial",
-   "residual": 1.0
-  },
-  "finance": {
-   "node": "patron_imperial",
-   "residual": 1.0
-  }
- }
+ "wage_index": 0.7,
+ "year": 100
 }

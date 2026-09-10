@@ -1,118 +1,30 @@
 {
- "id": "mexica_1500",
- "name": "The Mexica Triple Alliance",
- "year": 1500,
- "blurb": "A large, dense, literate, well-administered state with monumental construction, chinampa agriculture that outyields anything in Europe, and no draught animals, no iron, no wheel in practical use.",
- "population": 5000000,
- "urban_fraction": 0.25,
- "literacy_elite": 0.4,
- "literacy_general": 0.03,
- "currency": "cacao bean and cotton cloth",
- "price_index": 0.8,
- "wage_index": 0.5,
- "state_capacity": 0.8,
- "home_regions": [
-  "americas_carib"
- ],
- "base_reach": 1,
- "institutions": {
-  "partnership": true,
-  "corporation": false,
-  "guild": "pochteca merchant order, hereditary and privileged",
-  "testament": true,
-  "charter": "tlatoani grant",
-  "bank": false,
-  "patent": false
- },
- "starting_techs": [
-  "fud_chinampa",
-  "fud_maize",
-  "fud_cacao",
-  "civ_monumental_stone",
-  "mat_obsidian_blade"
- ],
- "values": {
-  "w_military": 1.0,
-  "w_labour_saving": 0.1,
-  "w_information": -0.5,
-  "w_novelty": -0.3,
-  "w_magic_fear": 0.3,
-  "w_religious_rigidity": 0.9,
-  "w_commerce": 0.5,
-  "bribability": 0.35,
-  "patronage_weight": 0.75,
-  "adaptation_rate": 0.09,
-  "_note": "w_religious_rigidity 0.9 is the dominant constraint: the calendar and the ritual cycle govern the year and anything touching them is dangerous. But an inexplicable effect is likelier to be read as divine favour than as a crime, so w_magic_fear is LOWER than Rome's, which is a genuinely different strategic situation.",
-  "w_eminence_danger": 0.7,
-  "_note_eminence": "A theocratic hierarchy with a strong priesthood; standing outside it is dangerous."
- },
- "hazards": [
-  {
-   "name": "Old World epidemics on contact",
-   "years": [
-    1520,
-    1600
-   ],
-   "staff_loss": 0.8,
-   "note": "Smallpox, measles and typhus in a population with no immunity. This is the single most severe hazard of any civilization in this directory and it is not a fair fight."
-  },
-  {
-   "name": "Spanish invasion",
-   "years": [
-    1519,
-    1521
-   ],
-   "sack_chance": 0.9
-  }
- ],
- "notes": [
-  "NO IRON, NO DRAUGHT ANIMALS, NO PRACTICAL WHEEL. Obsidian is sharper than steel and shatters. Every metallurgy node starts from copper and gold.",
-  "Chinampa agriculture yields more per hectare than any European system, so the food constraint that shapes the Roman tree does not bind here.",
-  "The absence of draught animals is the deepest constraint: it removes the plough, the cart, the mill and the horse collar in one stroke."
- ],
- "cost_multipliers": {
-  "animal_traction": 3.0,
-  "transport": 2.2,
-  "land_transport": 2.2,
-  "carriage_engineering": 2.2,
-  "field_machinery": 2.4,
-  "agriculture": 1.3,
-  "bicycles": 2.0,
-  "alloys": 1.7,
-  "metallurgy": 1.7,
-  "casting": 1.5,
-  "infrastructure": 1.15,
-  "food": 0.85,
-  "textiles": 0.9,
-  "astronomy": 0.8
- },
  "_note_cost_multipliers": "No domesticable large mammal exists in Mesoamerica, so every load moves on a human back and every plough, cart, harness and horse-hoe in the tree is a far worse deal here. That is a fact about the continent, not something the founder can teach away, and it is the single largest handicap any civilization in this file carries. Against it: superb calendrical astronomy, intensive chinampa agriculture that outyields Roman farming per hectare, and cotton textiles.",
+ "_note_debt_bondage": "Tlacotin: servitude entered into for debt, worked off, not heritable, and the person could buy their own freedom. Not chattel slavery, and the model should not flatten it into one.",
+ "base_reach": 1,
+ "blurb": "A large, dense, literate, well-administered state with monumental construction, chinampa agriculture that outyields anything in Europe, and no draught animals, no iron, no wheel in practical use.",
+ "bondage_years": 8,
+ "cost_multipliers": {
+  "agriculture": 1.3,
+  "alloys": 1.7,
+  "animal_traction": 3.0,
+  "astronomy": 0.8,
+  "bicycles": 2.0,
+  "carriage_engineering": 2.2,
+  "casting": 1.5,
+  "field_machinery": 2.4,
+  "food": 0.85,
+  "infrastructure": 1.15,
+  "land_transport": 2.2,
+  "metallurgy": 1.7,
+  "textiles": 0.9,
+  "transport": 2.2
+ },
+ "currency": "cacao bean and cotton cloth",
+ "debt_bondage": true,
+ "fire_quarter": "reed and adobe quarter by the canal",
  "handicap_remedies": {
   "_doc": "Every handicap here can be lifted. That is the point: nothing about a society is permanent, and a founder who knows what is missing can go and fetch it.",
-  "animal_traction": {
-   "node": "exp_import_draught_animals",
-   "residual": 1.15
-  },
-  "transport": {
-   "node": "exp_import_draught_animals",
-   "residual": 1.15
-  },
-  "land_transport": {
-   "node": "exp_import_draught_animals",
-   "residual": 1.15
-  },
-  "carriage_engineering": {
-   "node": "exp_import_draught_animals",
-   "residual": 1.15
-  },
-  "field_machinery": {
-   "node": "exp_import_draught_animals",
-   "residual": 1.2
-  },
-  "bicycles": {
-   "node": "exp_import_draught_animals",
-   "residual": 1.0
-  },
   "agriculture": {
    "node": "exp_import_draught_animals",
    "residual": 1.0
@@ -121,17 +33,109 @@
    "node": "blast_furnace",
    "residual": 1.0
   },
-  "metallurgy": {
-   "node": "blast_furnace",
+  "animal_traction": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
+  },
+  "bicycles": {
+   "node": "exp_import_draught_animals",
    "residual": 1.0
+  },
+  "carriage_engineering": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
   },
   "casting": {
    "node": "blast_furnace",
    "residual": 1.0
   },
+  "field_machinery": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.2
+  },
   "infrastructure": {
    "node": "exp_import_draught_animals",
    "residual": 1.0
+  },
+  "land_transport": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
+  },
+  "metallurgy": {
+   "node": "blast_furnace",
+   "residual": 1.0
+  },
+  "transport": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
   }
- }
+ },
+ "hazards": [
+  {
+   "name": "Old World epidemics on contact",
+   "note": "Smallpox, measles and typhus in a population with no immunity. This is the single most severe hazard of any civilization in this directory and it is not a fair fight.",
+   "staff_loss": 0.8,
+   "years": [
+    1520,
+    1600
+   ]
+  },
+  {
+   "name": "Spanish invasion",
+   "sack_chance": 0.9,
+   "years": [
+    1519,
+    1521
+   ]
+  }
+ ],
+ "home_regions": [
+  "americas_carib"
+ ],
+ "id": "mexica_1500",
+ "institutions": {
+  "bank": false,
+  "charter": "tlatoani grant",
+  "corporation": false,
+  "guild": "pochteca merchant order, hereditary and privileged",
+  "partnership": true,
+  "patent": false,
+  "testament": true
+ },
+ "literacy_elite": 0.4,
+ "literacy_general": 0.03,
+ "name": "The Mexica Triple Alliance",
+ "notes": [
+  "NO IRON, NO DRAUGHT ANIMALS, NO PRACTICAL WHEEL. Obsidian is sharper than steel and shatters. Every metallurgy node starts from copper and gold.",
+  "Chinampa agriculture yields more per hectare than any European system, so the food constraint that shapes the Roman tree does not bind here.",
+  "The absence of draught animals is the deepest constraint: it removes the plough, the cart, the mill and the horse collar in one stroke."
+ ],
+ "population": 5000000,
+ "price_index": 0.8,
+ "starting_techs": [
+  "fud_chinampa",
+  "fud_maize",
+  "fud_cacao",
+  "civ_monumental_stone",
+  "mat_obsidian_blade"
+ ],
+ "state_capacity": 0.8,
+ "urban_fraction": 0.25,
+ "values": {
+  "_note": "w_religious_rigidity 0.9 is the dominant constraint: the calendar and the ritual cycle govern the year and anything touching them is dangerous. But an inexplicable effect is likelier to be read as divine favour than as a crime, so w_magic_fear is LOWER than Rome's, which is a genuinely different strategic situation.",
+  "_note_eminence": "A theocratic hierarchy with a strong priesthood; standing outside it is dangerous.",
+  "adaptation_rate": 0.09,
+  "bribability": 0.35,
+  "patronage_weight": 0.75,
+  "w_commerce": 0.5,
+  "w_eminence_danger": 0.7,
+  "w_information": -0.5,
+  "w_labour_saving": 0.1,
+  "w_magic_fear": 0.3,
+  "w_military": 1.0,
+  "w_novelty": -0.3,
+  "w_religious_rigidity": 0.9
+ },
+ "wage_index": 0.5,
+ "year": 1500
 }

@@ -1,31 +1,78 @@
 {
- "id": "england_1300",
- "name": "England under Edward I",
- "year": 1300,
+ "_note_cost_multipliers": "Wool is the English economy and the whole textile chain is cheaper here than anywhere. Chartered towns, guilds and a money economy make commerce easier than in Rome. Against that: a much smaller population and a king who can attaint you.",
+ "_note_debt_bondage": "Distraint and the debtors' gaol, not bondage; the Statute of Merchants 1285 imprisons the debtor until he pays, which is a different failure and is handled as arrears.",
+ "base_reach": 2,
  "blurb": "Watermills and windmills everywhere, a real legal system, chartered towns, universities, the horse collar, the crank, the mechanical clock arriving, and about to be hit by the worst demographic catastrophe in European history.",
- "population": 4500000,
- "urban_fraction": 0.12,
- "literacy_elite": 0.5,
- "literacy_general": 0.06,
+ "bondage_years": 0,
+ "cost_multipliers": {
+  "agriculture": 0.85,
+  "animals": 0.85,
+  "buildings": 0.9,
+  "commerce": 0.85,
+  "fibres": 0.75,
+  "finance": 0.9,
+  "finishing": 0.8,
+  "structures": 0.9,
+  "textiles": 0.7
+ },
  "currency": "sterling penny",
- "price_index": 1.1,
- "wage_index": 0.8,
- "state_capacity": 0.6,
+ "debt_bondage": false,
+ "fire_quarter": "thatched lanes behind the market",
+ "handicap_remedies": {
+  "_doc": "No handicaps above 1.0 to remedy."
+ },
+ "hazards": [
+  {
+   "name": "Great Famine",
+   "staff_loss": 0.12,
+   "years": [
+    1315,
+    1317
+   ]
+  },
+  {
+   "name": "Black Death",
+   "note": "and recurrent thereafter",
+   "staff_loss": 0.45,
+   "years": [
+    1348,
+    1350
+   ]
+  },
+  {
+   "name": "Hundred Years War",
+   "output_factor": 0.85,
+   "years": [
+    1337,
+    1453
+   ]
+  }
+ ],
  "home_regions": [
   "britannia",
   "gaul_germania"
  ],
- "base_reach": 2,
+ "id": "england_1300",
  "institutions": {
-  "partnership": true,
+  "bank": "Italian merchant banks operating",
+  "charter": "royal, purchasable",
   "corporation": "borough and guild corporations, genuinely perpetual",
   "guild": "strong, and protective of monopoly",
-  "testament": true,
-  "charter": "royal, purchasable",
-  "bank": "Italian merchant banks operating",
+  "note": "A PERPETUAL CORPORATION EXISTS HERE and it is the single most important institutional advantage over Rome: an enterprise can outlive its founder without a testamentary trick.",
+  "partnership": true,
   "patent": "letters patent exist by 1331",
-  "note": "A PERPETUAL CORPORATION EXISTS HERE and it is the single most important institutional advantage over Rome: an enterprise can outlive its founder without a testamentary trick."
+  "testament": true
  },
+ "literacy_elite": 0.5,
+ "literacy_general": 0.06,
+ "name": "England under Edward I",
+ "notes": [
+  "You arrive 48 years before the Black Death kills something like 45% of the population.",
+  "The perpetual corporation is worth more to a multi-generation programme than any machine in the tree.",
+  "Guilds will litigate against your fulling mill. They did, repeatedly, and sometimes won."
+ ],
+ "population": 4500000,
+ "price_index": 1.1,
  "starting_techs": [
   "horse_collar",
   "crank_conrod",
@@ -39,66 +86,23 @@
   "cap_heat_1300",
   "sea_sternpost_rudder"
  ],
+ "state_capacity": 0.6,
+ "urban_fraction": 0.12,
  "values": {
-  "w_military": 0.8,
-  "w_labour_saving": -0.4,
-  "w_information": -0.4,
-  "w_novelty": -0.3,
-  "w_magic_fear": 0.7,
-  "w_religious_rigidity": 0.8,
-  "w_commerce": 0.6,
+  "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, which had no doctrine to offend. Guilds resist labour-saving machinery violently and have legal standing to do it.",
+  "_note_eminence": "A king who can attaint you, but also chartered towns, guilds and a church with its own courts, so power is more divided than in Rome.",
+  "adaptation_rate": 0.09,
   "bribability": 0.65,
   "patronage_weight": 0.7,
-  "adaptation_rate": 0.09,
-  "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, which had no doctrine to offend. Guilds resist labour-saving machinery violently and have legal standing to do it.",
+  "w_commerce": 0.6,
   "w_eminence_danger": 0.55,
-  "_note_eminence": "A king who can attaint you, but also chartered towns, guilds and a church with its own courts, so power is more divided than in Rome."
+  "w_information": -0.4,
+  "w_labour_saving": -0.4,
+  "w_magic_fear": 0.7,
+  "w_military": 0.8,
+  "w_novelty": -0.3,
+  "w_religious_rigidity": 0.8
  },
- "hazards": [
-  {
-   "name": "Great Famine",
-   "years": [
-    1315,
-    1317
-   ],
-   "staff_loss": 0.12
-  },
-  {
-   "name": "Black Death",
-   "years": [
-    1348,
-    1350
-   ],
-   "staff_loss": 0.45,
-   "note": "and recurrent thereafter"
-  },
-  {
-   "name": "Hundred Years War",
-   "years": [
-    1337,
-    1453
-   ],
-   "output_factor": 0.85
-  }
- ],
- "notes": [
-  "You arrive 48 years before the Black Death kills something like 45% of the population.",
-  "The perpetual corporation is worth more to a multi-generation programme than any machine in the tree.",
-  "Guilds will litigate against your fulling mill. They did, repeatedly, and sometimes won."
- ],
- "cost_multipliers": {
-  "textiles": 0.7,
-  "fibres": 0.75,
-  "finishing": 0.8,
-  "agriculture": 0.85,
-  "animals": 0.85,
-  "commerce": 0.85,
-  "finance": 0.9,
-  "structures": 0.9,
-  "buildings": 0.9
- },
- "_note_cost_multipliers": "Wool is the English economy and the whole textile chain is cheaper here than anywhere. Chartered towns, guilds and a money economy make commerce easier than in Rome. Against that: a much smaller population and a king who can attaint you.",
- "handicap_remedies": {
-  "_doc": "No handicaps above 1.0 to remedy."
- }
+ "wage_index": 0.8,
+ "year": 1300
 }

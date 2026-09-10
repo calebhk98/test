@@ -229,6 +229,91 @@ pumps = [k for k, n in NODES.items()
 check("no node repays its entire cost in under six months", not pumps,
       "%d pumps, e.g. %s" % (len(pumps), pumps[:3]))
 
+# --- naive WEIRD 7 / Han BREAK 5: a project must actually be PAID for
+s = sim(capital=400.0, manual=True)
+ok, why = s.start_project("identity_cover")         # 1,580 den against 400
+for _ in range(6):
+    s.step()
+paid = s.active.get("identity_cover", {}).get("spent", 0.0)
+check("an unfunded project never completes",
+      ok and "identity_cover" not in s.done,
+      "started=%s (%s) done=%s paid=%.0f" % (ok, why, "identity_cover" in s.done, paid))
+
+# --- the user: you arrive alone
+s = sim()
+check("you arrive with no employees and no slaves",
+      not s.employees and s.slaves == 0 and s.freedmen == 0 and s.artisans == 0.0,
+      "employees %r artisans %.1f" % (s.employees, s.artisans))
+
+# --- the user: a skilled smith is not a skilled writer
+s = sim()
+ok_hire, err = s.hire("engineer", 1)
+check("a trade this society does not have cannot be hired",
+      not ok_hire and "no engineer" in (err or "").lower(),
+      "hire engineer -> %s / %s" % (ok_hire, err))
+s.capital = 20000.0
+ok_train, _ = s.train("machinist", 2)
+check("you can teach a trade into existence",
+      ok_train and "machinist" in s.trades_created and not s.trade_available("chemist"),
+      "trained %s created %r" % (ok_train, sorted(s.trades_created)))
+
+# --- the user: hire a job, not a person
+s = sim(capital=5000.0)
+before = s.capital
+ok_job, _ = s.commission("smith", 200)
+check("you can buy a job without employing anybody",
+      ok_job and not s.employees and s.capital < before,
+      "ok %s employees %r" % (ok_job, s.employees))
+
+# --- the user: everything automatic must be switchable
+s = sim(manual=False)
+check("every automatic behaviour has a switch",
+      set(s.policy) >= {"auto_hire", "auto_buy_people", "auto_manumit", "auto_train",
+                        "auto_mine", "auto_forest", "auto_mothball", "auto_shed",
+                        "auto_bribe"},
+      sorted(s.policy))
+
+# --- naive B/C: there must be a way to shed the upkeep of a finished work
+s = sim(capital=200000.0)
+s.done.add("fin_pawnshop")
+up_before = s.upkeep()
+ok_mb, _ = s.mothball_work("fin_pawnshop")
+check("a finished work can be shut down to stop its upkeep",
+      ok_mb and s.upkeep() < up_before,
+      "upkeep %.0f -> %.0f" % (up_before, s.upkeep()))
+
+# --- the user: hazards must be answerable with technology
+s = sim()
+bare, _ = s.hazard_relief("staff_loss")
+s.done.add("sanitation_antisepsis")
+s.done.add("germ_theory")
+better, why = s.hazard_relief("staff_loss")
+check("medicine blunts a plague", bare == 1.0 and better < 0.6 and why,
+      "%.2f -> %.2f %s" % (bare, better, why))
+s2 = sim()
+s2.mine_capacity["gold"] = 1.0
+gold, _ = s2.hazard_relief("real_erosion")
+check("your own gold mine blunts a debasement", gold < 0.5, "%.2f" % gold)
+
+# --- the user: downstream_count is a fog spoiler
+p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "agent",
+                    "--civ", "rome_100ad", "--fog"],
+                   input='{"cmd":"why","id":"identity_cover"}\n',
+                   capture_output=True, text=True, timeout=120, cwd=ROOT)
+reply = json.loads([l for l in p.stdout.splitlines() if l.strip()][0])
+check("fog hides the exact downstream count",
+      reply.get("downstream_count") is None and reply.get("how_much_rests_on_this"),
+      "downstream %r band %r" % (reply.get("downstream_count"),
+                                 reply.get("how_much_rests_on_this")))
+
+# --- the user: debt bondage is worked off where a society had it, and Rome did not
+check("debt bondage follows the society, and is a term of years",
+      S.load_civ("rome_100ad").get("debt_bondage") is False
+      and S.load_civ("han_china_100ad").get("debt_bondage") is True
+      and S.load_civ("han_china_100ad").get("bondage_years", 0) > 0,
+      "rome %r han %r" % (S.load_civ("rome_100ad").get("debt_bondage"),
+                          S.load_civ("han_china_100ad").get("debt_bondage")))
+
 # --- reproducibility: the same seed must give the same answer
 outs = set()
 for _ in range(2):
@@ -239,7 +324,7 @@ for _ in range(2):
 check("the same seed gives the same result", len(outs) == 1)
 
 print("=" * 72)
-print("%d checks, %d failures" % (25, len(FAILURES)))
+print("%d checks, %d failures" % (36, len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)
