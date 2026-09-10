@@ -214,3 +214,25 @@ for a player to ask for it).
 
 Two testers asked for it. The JSON is precise and unreadable; a formatted view
 for a person, alongside the machine protocol, not replacing it.
+
+## P. A hazard can only be four numbers  (engine)
+
+Found by the agent fixing the civilisation data, and it is right to have
+refused to fake it.
+
+`_shocks` reads exactly four fields off a hazard: `staff_loss`, `sack_chance`,
+`output_factor` and `real_erosion`. Norse Christianisation's real effect is
+none of those. It is a shift in the society's `values` vector — more religious
+rigidity, more fear of the inexplicable — which is precisely the thing that
+decides whether your work gets you patronised or denounced, and the schema
+cannot carry it. The agent used `output_factor` as the closest honest stand-in
+and wrote ENGINE TODO in the hazard's own note rather than inventing a field
+nothing reads.
+
+The fix is to let a hazard carry a `values` delta and have `_shocks` apply it,
+the same way `apply_tech_effects` already applies a technology's effect on the
+society. The machinery exists; the hazards just cannot reach it.
+
+Worth noting what this makes possible: a civilisation whose values move against
+you mid-run is the sharpest version of the danger this game models, and at
+present every hazard can only kill people, burn a site, or make you poorer.
