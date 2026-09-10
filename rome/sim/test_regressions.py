@@ -1598,6 +1598,42 @@ check("what you are running survives a save and reload",
       _rt[-1].get("concerns_you_run") == 1,
       "runs %r after a round trip" % _rt[-1].get("concerns_you_run"))
 
+# --- a run that has stopped has to say so --------------------------------
+# A weird-play tester's "most important finding": a run sat at exactly -924.5
+# denarii for fifty years, completing nothing, while INSOLVENCY SETTLED fired
+# once a decade for ever, and nothing anywhere said the run had effectively
+# stopped or that it was escapable. It WAS escapable - they got out by working
+# for wages - which is exactly why silence was the defect.
+s = sim(civ="norse_900ad", capital=40000.0)
+s.hire("smith", 3)
+_loser = [k for k in NODES if NODES[k]["up"] > NODES[k]["rev"] > 0][:1]
+if _loser:
+    s.done.add(_loser[0]); s._done_changed(); s.open_venture(_loser[0])
+s.capital = -900.0
+s.insolvent_years = 12
+_diag = s.stall_diagnosis()
+check("a run that has effectively stopped says so, and says what would restart it",
+      _diag and _diag["what_would_change_it"]
+      and any("work for wages" in w for w in _diag["what_would_change_it"]),
+      _diag)
+check("a solvent run is not told it is stuck",
+      sim(civ="norse_900ad").stall_diagnosis() is None,
+      sim(civ="norse_900ad").stall_diagnosis())
+
+# A one-character typo used to be answered with the words "did you mean: no idea".
+_dm, _, _ = proto([{"cmd": "why", "id": "ag2_marlingg"}])
+check("a typo in a name gets a real suggestion, not 'no idea'",
+      "ag2_marling" in (_dm[0].get("error") or ""), _dm[0].get("error"))
+
+# Two Roman-branded grants were still being handed free to every civilisation.
+_ROMAN = ("_roman", "_rome", "annona", "insula", "societas", "collegium",
+          "argentarii", "latifundi", "cursus", "pharos")
+for _civ in ("han_china_100ad", "norse_900ad", "mexica_1500", "england_1300"):
+    _sc = sim(civ=_civ)
+    _bad = sorted(k for k in _sc.granted if any(m in k for m in _ROMAN))
+    check("%s is not handed Roman institutions for nothing" % _civ,
+          not _bad, _bad)
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

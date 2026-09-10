@@ -306,6 +306,65 @@ class EconomyMixin:
                                  "you keep your knowledge and your practice"
                                  % "{:,.0f}".format(limit * 0.35)))
 
+    def stall_diagnosis(self):
+        """None if the run is going somewhere; otherwise what is wrong and what
+        would actually change it.
+
+        A weird-play tester called this the most important finding of their
+        session: "a player who makes one bad purchase early can be locked out
+        of the goal for the rest of the game, with the game continuing to
+        accept commands and give the impression of an ongoing playthrough for
+        470+ more years, and the only feedback being the same static 'in
+        arrears' message every time." Their run sat at exactly -924.5 denarii
+        for fifty years, completing nothing, while INSOLVENCY SETTLED fired
+        once a decade for ever.
+
+        The arithmetic was not wrong and the state was not even a dead end -
+        they got out of it themselves with forty rounds of working for wages.
+        What was wrong is that nothing told them any of that. A game that has
+        effectively stopped has to say so, and say what would restart it,
+        because the alternative is a player spending an hour discovering it by
+        experiment.
+        """
+        if self.capital >= 0 or getattr(self, "insolvent_years", 0) < 8:
+            return None
+        net = (self.revenue() - self.upkeep() - self.living_cost()
+               - self.mine_operating_cost())
+        if net >= 0:
+            return None
+        ways = []
+        pool = self.director_pool() - getattr(self, "wage_hours_this_year", 0.0)
+        if pool > 100:
+            ways.append("work for wages: you have %.0f of your own hours left "
+                        "this year and nobody has to lend you anything for that"
+                        % pool)
+        losers = sorted((k for k in self.operating
+                         if self.nodes[k]["up"] > self.nodes[k]["rev"]),
+                        key=lambda k: self.nodes[k]["rev"] - self.nodes[k]["up"])
+        if losers:
+            ways.append("close what costs more than it brings in: %s"
+                        % ", ".join("%s (%+.0f a year)"
+                                    % (k, self.nodes[k]["rev"] - self.nodes[k]["up"])
+                                    for k in losers[:3]))
+        if self.wage_bill() > 0:
+            ways.append("let people go: your payroll is %s a year"
+                        % "{:,.0f}".format(self.wage_bill()))
+        if self.mine_operating_cost() > 0:
+            ways.append("close a mine: they cost %s a year whether you use them "
+                        "or not" % "{:,.0f}".format(self.mine_operating_cost()))
+        if not ways:
+            ways.append("there is nothing left to cut; your living costs alone "
+                        "exceed what you earn, and only new income will move it")
+        return {"you_are_stuck": ("you have been in arrears %d years and you "
+                                  "lose %s denarii a year, so nothing you start "
+                                  "will ever be paid for"
+                                  % (self.insolvent_years,
+                                     "{:,.0f}".format(-net))),
+                "this_is_not_the_end_of_the_run": ("it is escapable, and none of "
+                                                   "these need anybody to lend "
+                                                   "you a denarius"),
+                "what_would_change_it": ways}
+
     def cost_money_factor(self):
         """What a denarius of QUOTED cost means, for spending purposes.
 

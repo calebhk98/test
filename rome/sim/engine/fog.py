@@ -236,7 +236,15 @@ class FogMixin:
         return k in self._goal_closure
 
     FOREIGN_MARKERS = ("_roman", "_rome", "annona", "insula", "societas",
-                       "collegium", "argentarii", "latifundi")
+                       "collegium", "argentarii", "latifundi",
+                       # The cursus publicus is the Roman imperial dispatch
+                       # relay and the Pharos is one specific Ptolemaic
+                       # building at Alexandria. Neither is a generic capability
+                       # any society might have, and with no marker of their own
+                       # both were being handed free to Han and to the Norse -
+                       # the last two of the thirteen Roman-branded grants that
+                       # testers kept finding in other people's civilisations.
+                       "cursus", "pharos")
 
     # A Roman masonry arch is a way of laying stone and anyone can learn it. The
     # annona is the Roman state's grain dole and Roman citizenship is a status

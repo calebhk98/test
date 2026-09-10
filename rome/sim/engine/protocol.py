@@ -109,6 +109,8 @@ def _agent_state(s, nodes, cmd=None):
         # Knowing how and running it are different, so say how many you know
         # how to run and have not opened. Without this the difference is
         # invisible until a player wonders why building things stopped paying.
+        # Only present when the run has effectively stopped. See stall_diagnosis.
+        "stuck": s.stall_diagnosis(),
         "concerns_you_run": len(getattr(s, "operating", ())),
         "you_know_how_to_run_but_have_not_opened": sum(
             1 for k in s.done if s.is_venture(k) and k not in s.operating),
@@ -932,6 +934,14 @@ def render_state(out):
                     st.get("waiting_on") or "-"))
         if st.get("why_underfunded"):
             L.append("      %s" % st["why_underfunded"])
+
+    stuck = out.get("stuck")
+    if stuck:
+        L.append("")
+        L.append("!! " + stuck["you_are_stuck"].upper())
+        L.append(_wrap(stuck["this_is_not_the_end_of_the_run"], indent="   "))
+        for w in stuck["what_would_change_it"]:
+            L.append(_wrap("- " + w, indent="   "))
 
     idle_v = out.get("you_know_how_to_run_but_have_not_opened")
     if out.get("concerns_you_run") or idle_v:
@@ -1826,6 +1836,38 @@ def parse_typed(line):
 _ID_COMMANDS = ("why", "path", "start", "stop", "bounty", "mothball", "restore")
 
 
+def _did_you_mean(k, nodes, limit=8):
+    """Names close to what was typed.
+
+    This was a plain substring test, so it helped with a truncation and not at
+    all with a typo: one wrong character and the answer was the literal words
+    "did you mean: no idea". Substring first, because a partial name is the
+    common case and an exact prefix is a better guess than anything fuzzy, then
+    difflib for the rest.
+    """
+    q = str(k).lower()
+    near = [x for x in nodes if q in x.lower()]
+    if len(near) < limit:
+        import difflib
+        for x in difflib.get_close_matches(q, list(nodes), n=limit, cutoff=0.6):
+            if x not in near:
+                near.append(x)
+    # A word from the middle of a name is a real attempt too: "wheelbarrow"
+    # should find fud_wheelbarrow even when the fuzzy score does not.
+    # A SUBSTANTIAL word from the middle of a name is a real attempt too:
+    # "wheelbarrow" should find lnd_wheelbarrow. Four characters minimum,
+    # because matching on "fud" or "ag2" returns every node in the branch and
+    # buries the one good answer under seven bad ones.
+    if len(near) < limit:
+        parts = [w for w in q.split("_") if len(w) >= 4]
+        for x in nodes:
+            if any(w in x.lower() for w in parts) and x not in near:
+                near.append(x)
+            if len(near) >= limit:
+                break
+    return near[:limit]
+
+
 def _agent_dispatch(s, nodes, cmd):
     if not isinstance(cmd, dict) or "cmd" not in cmd:
         return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
@@ -1889,9 +1931,8 @@ def _agent_dispatch(s, nodes, cmd):
                     if k is None else
                     "id must be a name in quotes, not %s" % type(k).__name__}
         if k not in nodes:
-            near = [x for x in nodes if str(k).lower() in x.lower()]
             return {"ok": False, "error": "unknown node %r. did you mean: %s"
-                    % (k, ", ".join(near[:8]) or "no idea")}
+                    % (k, ", ".join(_did_you_mean(k, nodes)) or "no idea")}
         return dict(ok=True, **_node_explain(s, nodes, k))
 
     if op == "path":
