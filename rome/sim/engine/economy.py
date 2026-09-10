@@ -536,7 +536,44 @@ class EconomyMixin:
         mark = 1.55
         if self.has("interchangeable_parts"):  mark += 0.35
         if self.has("power_grid"):             mark += 0.45
-        return wage * mark * self.wage_index * self.price_index
+        # AND EVERYTHING YOU KNOW HOW TO DO, which is where the value of a
+        # capability actually shows up.
+        #
+        # Making revenue follow what you RUN was right, and it left a hole:
+        # 1,337 nodes carried revenue and most of them are not businesses at
+        # all. A better furnace, a tighter tolerance, a purer reagent - nobody
+        # opens those as a going concern, so under the new rule they paid
+        # nothing whatever, and the economy came out far poorer than every
+        # number in this file was calibrated against. A Rome run ended at year
+        # 800 with 270 technologies, one open concern and no craftsmen at all.
+        #
+        # The honest place for that value is here. Knowing how to do a thing
+        # earns you nothing on its own - which was the whole point - but it
+        # makes the workshop you actually staff and pay for more productive,
+        # which is how method has always paid. It needs a workshop and it needs
+        # people; with neither, it is still worth nothing.
+        return (wage * mark * self.capability_factor()
+                * self.wage_index * self.price_index)
+
+    def capability_factor(self):
+        """How much better your methods make the same pair of hands.
+
+        Tier-weighted, over what you have built and are NOT separately running
+        as a concern - a concern already pays you directly and must not be
+        counted twice. Saturating, because the tenth improvement to a workshop
+        is worth less than the first, and because an unbounded product of 1,300
+        technologies is how you get a run holding more money than the empire.
+        """
+        weight = 0.0
+        for k in self.done_in_order():
+            if k in self.granted or k in self.operating:
+                continue
+            n = self.nodes[k]
+            if n["rev"] <= 0:
+                continue
+            weight += n["rev"] * (1.0 + 0.25 * n["tier"])
+        # 40,000 of tier-weighted method roughly doubles what a workshop makes.
+        return 1.0 + 2.0 * (weight / (weight + 40000.0))
 
     def revenue_sources(self):
         """Where the money actually comes from, itemised.

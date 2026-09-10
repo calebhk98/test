@@ -177,9 +177,21 @@ MONEY_WORDS = {
 }
 
 
+MONEY_SHORT_WORDS = {
+    "denarius": "den", "sterling penny": "d", "wu zhu cash": "cash",
+    "hacksilver by weight": "g", "cacao bean and cotton cloth": "beans",
+}
+
+
 def money_word(civ):
     cur = (civ or {}).get("currency") or "denarius"
     return MONEY_WORDS.get(cur, cur)
+
+
+def money_short(civ):
+    """The abbreviation used in compact lines: "400 den", "net +12 den/yr"."""
+    cur = (civ or {}).get("currency") or "denarius"
+    return MONEY_SHORT_WORDS.get(cur, MONEY_WORDS.get(cur, "den"))
 
 
 def load_civ(name="rome_100ad"):

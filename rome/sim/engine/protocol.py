@@ -1489,6 +1489,9 @@ _RENDERERS = {
 # protocol - so the translation happens here, on the rendered text only, and
 # only when the caller says the reader is typing.
 TYPED_HINTS = False
+# The short form used in the compact lines ("400 den", "net +12 den/yr"). Set
+# alongside TYPED_HINTS by whichever front end is rendering; see MONEY_WORDS.
+MONEY_SHORT = "den"
 
 
 def _typed_form(obj):
@@ -1550,6 +1553,9 @@ def to_typed_hints(text):
     return _JSON_HINT.sub(sub, text)
 
 
+_DEN_RE = re.compile(r"\bden\b")
+
+
 def render_pretty(op, resp):
     """The human rendering of one reply. Never touches stdout or the JSON
     itself - see cli.py, which prints this to stderr alongside the unchanged
@@ -1566,6 +1572,11 @@ def render_pretty(op, resp):
             return to_typed_hints(err) if TYPED_HINTS else err
         fn = _RENDERERS.get((op or "").strip().lower(), render_generic)
         out = fn(resp)
+        if MONEY_SHORT != "den":
+            # "Money: 400 den" in a game counted in pence was the other half of
+            # the currency work, and a tester duly reported "pence vs den mixed
+            # throughout".
+            out = _DEN_RE.sub(MONEY_SHORT, out)
         return to_typed_hints(out) if TYPED_HINTS else out
     except Exception as e:
         return "(could not render a readable view of this reply: %s: %s)" % (type(e).__name__, e)

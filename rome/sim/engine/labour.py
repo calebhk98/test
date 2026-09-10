@@ -616,7 +616,17 @@ class LabourMixin:
         workshop is a sensible thing to do; buying labour speculatively is not,
         and this must never become a way to spend a run's savings on nothing.
         """
-        if self.capital <= 0:
+        # ON CREDIT IF NEED BE. This required money in hand, which is exactly
+        # what a household in the hole does not have - and buying a season of
+        # somebody's hands is a one-off, not a standing wage, so it is the
+        # right instrument for a poor household and the wrong one to forbid
+        # them. A Rome run ended at year 800 with 270 technologies, no
+        # craftsmen at all and no way to get any: it could not hire (no
+        # surplus), could not commission (no cash), so attrition took the last
+        # of its staff and it never opened another concern. commission() does
+        # its own affordability check against cash AND credit, which is the
+        # check that should govern here too.
+        if self.capital + self.credit_limit() * 0.5 <= 0:
             return None
         need = getattr(self, "_goal_closure", None)
         if need is None:

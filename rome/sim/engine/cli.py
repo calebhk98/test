@@ -14,6 +14,7 @@ import argparse, sys
 
 from .core import Sim
 from . import protocol as _protocol
+from .data import money_word, money_short
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
     _agent_state, _node_explain, civ_of_save, load_state, parse_typed,
@@ -366,6 +367,7 @@ def cmd_play(a):
     # The reader is a person typing words, so the worked examples inside every
     # reply should be words too. See protocol.to_typed_hints.
     _protocol.TYPED_HINTS = True
+    _protocol.MONEY_SHORT = money_short(s.civ)
 
     session = getattr(a, "session", None)
     # A --session THAT DOES NOT EXIST IS A TYPO, NOT AN INVITATION. Naming a
@@ -397,10 +399,10 @@ def cmd_play(a):
         save_state(s, session)
     if fresh:
         print()
-        print(_wrap("You arrive in %d AD with %d denarii and nothing else: no "
+        print(_wrap("You arrive in %d AD with %d %s and nothing else: no "
                     "employees, no slaves, and nobody who owes you anything. "
                     "What you have is everything you know."
-                    % (s.year, s.capital)))
+                    % (s.year, s.capital, money_word(s.civ))))
         print()
         print(_wrap("Type commands in plain words. The four to start with are "
                     "'state' (where you stand), 'available' (what you could "
@@ -437,10 +439,25 @@ def cmd_play(a):
                     "error": "internal error handling that command: %s: %s. "
                              "The game is intact; try something else."
                              % (type(e).__name__, e)}
-        print(render_pretty(cmd.get("cmd"), resp))
-        print()
+        # SAVE FIRST, THEN SPEAK. The state change is already committed by the
+        # time we get here, so writing it must not be contingent on the output
+        # succeeding. A weird-play tester piped the game through `head`, which
+        # closed the pipe and killed the process on the first print - and
+        # twelve years of play went with it, twice, in a game whose own help
+        # promises "progress is written to this file after every command...
+        # close the terminal, anything".
         if session:
             save_state(s, session)
+        try:
+            print(render_pretty(cmd.get("cmd"), resp))
+            print()
+        except BrokenPipeError:
+            # Somebody closed the pipe. The game is saved; leave quietly.
+            try:
+                sys.stdout.close()
+            except Exception:
+                pass
+            break
         if cmd.get("cmd") == "quit":
             break
         # NOT A BREAK. This used to end the process the moment the horizon was

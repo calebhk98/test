@@ -1595,7 +1595,10 @@ check("opening a concern costs stock and premises, not nothing",
 
 # You cannot run fifty businesses with three people.
 s3 = sim(capital=1000000.0)
-_heavy = [k for k in NODES if NODES[k]["art"] >= 3 and NODES[k]["rev"] > 0][:1]
+# BIG ENOUGH THAT ONE PERSON CANNOT RUN IT. The founder counts as a pair of
+# hands now, so a small shop is exactly what they CAN open alone; the staffing
+# rule is about scale, and this check has to test scale.
+_heavy = [k for k in NODES if NODES[k]["rev"] >= 6000][:1]
 if _heavy:
     s3.done.add(_heavy[0]); s3._done_changed()
     s3.artisans = 0.0

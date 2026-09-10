@@ -93,13 +93,24 @@ class ProjectsMixin:
             art += b
         return sch, art
 
+    # YOU ARE A PAIR OF HANDS TOO. Requiring staff for every concern, however
+    # small, meant a founder with nobody could open nothing at all - not a
+    # bottling shed, not an inn - and since revenue now follows what you RUN,
+    # that closed the only door out of an empty household: no hands, so no
+    # concern; no concern, so no income; no income, so no hands. Rome ran to
+    # year 800 with 270 technologies, no craftsmen and one open concern, and
+    # Norse sat solvent at 317 in hand with none. One person can keep an eye on
+    # one small shop, which is exactly how every one of these fortunes started.
+    FOUNDER_IS_WORTH = 1.0
+
     def venture_staff_free(self):
         """People you could put behind something new. You cannot run fifty
         businesses with three people, and this is the whole of why choosing
         WHICH to run is a decision rather than an accounting formality."""
         sch_used, art_used = self.venture_staff_used()
+        own = self.FOUNDER_IS_WORTH if self.founder_alive else 0.0
         return (max(0.0, self.effective_scholars() - sch_used),
-                max(0.0, self.artisans - art_used))
+                max(0.0, self.artisans + own - art_used))
 
     def open_venture(self, k, pay=True):
         """Start actually running something you have worked out how to do."""
