@@ -311,7 +311,7 @@ def _civ_for_session(a):
     """
     session = getattr(a, "session", None)
     asked = getattr(a, "civ", None)
-    if session and os.path.exists(session):
+    if session and os.path.exists(session) and not _is_claimed_slot(session):
         saved = civ_of_save(session)
         if saved:
             if asked and asked != saved:
@@ -381,7 +381,7 @@ def cmd_play(a):
               "what game you meant. To resume, check the path; to start a new "
               "game there, say which civilisation with --civ." % session)
         return 1
-    fresh = not (session and os.path.exists(session))
+    fresh = not (session and os.path.exists(session)) or _is_claimed_slot(session)
     if not fresh:
         try:
             load_state(s, session)
@@ -521,7 +521,7 @@ def cmd_agent(a):
     pretty = bool(getattr(a, "pretty", False))
 
     session = getattr(a, "session", None)
-    if session and os.path.exists(session):
+    if session and os.path.exists(session) and not _is_claimed_slot(session):
         try:
             load_state(s, session)
         except Exception as e:
@@ -826,6 +826,20 @@ def _wrap(text, width=76, indent="   "):
     return "\n".join(lines)
 
 
+def _is_claimed_slot(path):
+    """A session file that exists but holds nothing yet.
+
+    _pick_session_filename claims its name by creating the file, so between
+    the menu picking a name and the first command being saved there is a
+    zero-byte file on disk. That is a NEW GAME, not a corrupt save, and
+    treating it as one made a freshly started game unresumable.
+    """
+    try:
+        return os.path.getsize(path) == 0
+    except OSError:
+        return False
+
+
 def _pick_session_filename(civ_id):
     """A save name for a game the menu is about to start, picked so it never
     silently overwrites an existing one.
@@ -834,12 +848,38 @@ def _pick_session_filename(civ_id):
     `save` will accept (see _unsafe_path in protocol.py) and exactly where it
     will actually be written.
     """
-    candidate = "%s.json" % civ_id
-    i = 2
-    while os.path.exists(candidate):
-        candidate = "%s_%d.json" % (civ_id, i)
-        i += 1
-    return candidate
+    # CLAIMED, NOT MERELY CHECKED. This tested os.path.exists and returned the
+    # name without creating anything, so six games started at once all saw the
+    # same gap and all picked rome_100ad_78.json: five of them overwrote each
+    # other, under a banner promising you can resume exactly where you left
+    # off. O_EXCL makes the check and the claim one operation.
+    #
+    # And it counts UP FROM THE HIGHEST rather than filling the first gap, so
+    # moving a save out of the directory does not turn its number into a slot
+    # some later game takes.
+    highest = 1
+    prefix = civ_id + "_"
+    try:
+        for nm in os.listdir("."):
+            if nm.startswith(prefix) and nm.endswith(".json"):
+                try:
+                    highest = max(highest, int(nm[len(prefix):-5]))
+                except ValueError:
+                    pass
+    except OSError:
+        pass
+    i = highest if os.path.exists("%s.json" % civ_id) else 1
+    while True:
+        candidate = ("%s.json" % civ_id) if i == 1 else ("%s_%d.json" % (civ_id, i))
+        try:
+            os.close(os.open(candidate, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644))
+            return candidate
+        except FileExistsError:
+            i += 1
+        except OSError:
+            # Cannot write here at all; hand back a name and let `save` report
+            # the real error rather than looping for ever.
+            return candidate
 
 
 def _ask(prompt, options, default=None):

@@ -528,6 +528,9 @@ class LabourMixin:
                               if whole else " - you have no room for even one",
                               self._staff_advice("artisans")))
         self.capital -= fee
+        # CARRIED FORWARD, so the next step does not bill the same year twice.
+        # See step() 2, where it is netted off living_cost.
+        self.wages_prepaid = getattr(self, "wages_prepaid", 0.0) + fee
         self.employees[trade] = self.employees.get(trade, 0.0) + float(n)
         self._add_labour_pressure(trade, float(n) * self.HOURS_PER_PERSON_YEAR)
         self._resync_pools()

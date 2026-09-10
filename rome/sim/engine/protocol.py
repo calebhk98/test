@@ -261,6 +261,8 @@ def _agent_state(s, nodes, cmd=None):
         "where_the_money_comes_from": s.revenue_sources(),
         "employees": {t: round(v, 2) for t, v in sorted(s.employees.items()) if v > 0.005},
         "employees_total": round(sum(s.employees.values()), 2),
+        "household_places_used_of_all": "%.1f of %.1f"
+            % (s.headcount(), s.headcount() + max(0.0, s.household_room())),
         "annual_wage_bill": round(s.wage_bill(), 1),
         # FRACTIONS ARE REAL, NOT A DISPLAY GLITCH. A tester reported "1.32
         # artisans" and "0.07 engineers" as if something had gone wrong. It
@@ -527,7 +529,11 @@ def _agent_help(s, topic=None):
                 "A patron, citizenship, a licensed collegium, land endowed in "
                 "public, a school, and your reputation - and spending on "
                 "advocacy and piety, which is what `bribe` does when you have "
-                "no scandal to answer. It caps at 92%."),
+                "no scandal to answer. Protection caps at 92% in total, and "
+                "money is only 30 points of that however much you spend - a "
+                "break tester read the 92 as the ceiling on bribery, offered a "
+                "million, and stopped at the same 32% a hundred had bought. "
+                "The rest has to be earned."),
             "what it does NOT protect you from": (
                 "Eminence. Being too large is the one hazard no protection "
                 "touches; see {\"cmd\":\"help\",\"topic\":\"eminence\"}."),
@@ -729,6 +735,12 @@ def _agent_available(s, nodes, cmd=None):
         why_these = "in %r" % want_subject
     if afford is not None:
         sel = [k for k in sel if s.project_cost(k) <= afford]
+    # PAGE IN THE ORDER YOU DISPLAY. Each page was sorted by cost as it was
+    # printed, but the pages were CUT from strategy order, so a break tester
+    # asking for the cheapest work found it at item 31 - and the first page was
+    # a cost-sorted view of an arbitrary thirty. Sort the selection, then cut.
+    if find or want_subject or limit or offset or show_all or afford is not None:
+        sel = sorted(sel, key=lambda k: (s.project_cost(k), k))
 
     heard, heard_more = [], 0
     if fog:
@@ -941,7 +953,14 @@ def _node_explain(s, nodes, k):
         "revenue_and_upkeep_apply_only_once_opened": (
             True if (n["rev"] > 0 or n["up"] > 0) and k not in s.granted
             and k not in s.operating else None),
-        "direct_prerequisites": n["pre"],
+        # ONLY WHAT YOU HAVE HEARD OF. These are read for a visible node, where
+        # every prerequisite is either done or itself heard of - except on the
+        # goal, which `why` answers under fog because the status line names it
+        # every turn. Unfiltered, that one exception printed the goal's seven
+        # hidden prerequisites by name in the JSON, which is the fog exploit
+        # this file has already closed twice.
+        "direct_prerequisites": ([p for p in n["pre"] if s.is_visible(p)]
+                                 if getattr(s, "fog", False) else n["pre"]),
         # A GRANTED NODE IS HELD, WHATEVER ROUTE THE TREE DRAWS TO IT. `why
         # cap_heat_1300` on Han reported done:true, missing_prerequisites:
         # ["cap_heat_1100"] and can_start_now:false in one object - three
@@ -956,7 +975,12 @@ def _node_explain(s, nodes, k):
         # nothing. What is actually wrong is the claim that a thing you have
         # is missing something.
         "missing_prerequisites": ([] if k in s.granted
-                                  else [p for p in n["pre"] if p not in s.done]),
+                                  else [p for p in n["pre"] if p not in s.done
+                                        and (not getattr(s, "fog", False)
+                                             or s.is_visible(p))]),
+        "prerequisites_you_have_not_heard_of": (
+            sum(1 for p in n["pre"] if not s.is_visible(p))
+            if getattr(s, "fog", False) else 0) or None,
         "held_without_building_it": k in s.granted,
         "prerequisites_are_how_another_society_would_get_this": (
             "this society already has it; the list above is the route somebody "
@@ -1033,6 +1057,22 @@ def _node_explain(s, nodes, k):
 # so what a person reads and what a script reads are guaranteed to agree -
 # there is only one source of truth for any number in here.
 # ----------------------------------------------------------------------------
+
+
+def _factor(v):
+    """A multiplier, at the precision a player would need to reproduce a total.
+
+    _fmt_num drops to one decimal above 1, which turned an opposition factor
+    of 1.15 into "x1.1" and made 200 x 1.15 = 230 look like arithmetic the
+    game had got wrong. A factor is not a quantity; it is a term in a product
+    somebody is going to multiply out.
+    """
+    if not isinstance(v, (int, float)) or isinstance(v, bool):
+        return _fmt_num(v)
+    f = float(v)
+    if abs(f - round(f)) < 5e-4:
+        return "%d" % round(f)
+    return ("%.3f" % f).rstrip("0")
 
 
 def _fmt_num(v):
@@ -1193,6 +1233,10 @@ def render_state(out):
                 _fmt_num(out.get("annual_wage_bill")),
                 ("   (and %s in your household, owned or freed)" % _fmt_num(_house))
                 if _house else ""))
+    if out.get("household_places_used_of_all"):
+        L.append("  household places: %s used - what you can feed, house and "
+                 "oversee. 'labour' says what raises it."
+                 % out["household_places_used_of_all"])
     for t, v in sorted(employees.items()):
         L.append("  %-16s %s" % (t, _fmt_num(v)))
     if not employees:
@@ -1412,14 +1456,23 @@ def render_why(out):
 
     L.append("")
     cost = out.get("cost") or {}
+    # EVERY FACTOR THAT IS MULTIPLIED IN. opposition_factor - bribes, delay, a
+    # provincial site, a front man, up to 1.3x for work this society dislikes -
+    # was in the JSON and not on this line, so a break tester multiplied the
+    # printed terms out for three nodes, got 240 against 258, 200 against 230
+    # and 10,075 against 10,831, and reported an undisclosed overhead. Third
+    # time this exact lesson has been learned on this exact line: a breakdown
+    # that omits a term invites the check and then fails it.
     L.append("COST: %s den total  (%s labour + %s materials + %s capital, then "
-             "x%s your civ, x%s distance, x%s scarcity, x%s prices)"
+             "x%s your civ, x%s distance, x%s scarcity, x%s opposition, "
+             "x%s prices)"
              % (_fmt_num(cost.get("total")), _fmt_num(cost.get("labour")),
                 _fmt_num(cost.get("materials")), _fmt_num(cost.get("capital")),
-                _fmt_num(cost.get("civ_domain_factor")),
-                _fmt_num(cost.get("material_distance_factor")),
-                _fmt_num(cost.get("scarce_material_premium")),
-                _fmt_num(cost.get("price_index"))))
+                _factor(cost.get("civ_domain_factor")),
+                _factor(cost.get("material_distance_factor")),
+                _factor(cost.get("scarce_material_premium")),
+                _factor(cost.get("opposition_factor")),
+                _factor(cost.get("price_index"))))
     L.append("YOUR HOURS: %s     CALENDAR FLOOR: %s years     FAILURE RISK: %s"
              % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),
                 _pct(out.get("risk"))))
@@ -1577,6 +1630,15 @@ def render_labour(out):
                  % ("freedmen", _fmt_num(out.get("freedmen"))))
     if not _shown:
         L.append("  nobody")
+    if out.get("household_places_in_all") is not None:
+        L.append("")
+        L.append("HOUSEHOLD PLACES: %s of %s used, room for %s more"
+                 % (_fmt_num(out.get("household_places_used")),
+                    _fmt_num(out.get("household_places_in_all")),
+                    _fmt_num(out.get("room_for_more_people"))))
+        if out.get("what_raises_that_room"):
+            L.append(_wrap("  to make room: " + str(out["what_raises_that_room"]),
+                           indent="  "))
     L.append("")
     L.append("YOU COULD HIRE: " + (", ".join(out.get("you_could_hire_here") or []) or "nobody new"))
     L.append("MUST BE TAUGHT: " + (", ".join(out.get("do_not_exist_here") or []) or "none"))
@@ -1630,6 +1692,10 @@ def render_ventures(out):
         L.append("  nothing")
     if out.get("and_more_you_could_open"):
         L.append("  ...and %s more" % _fmt_num(out["and_more_you_could_open"]))
+    if out.get("your_practice_is_not_a_venture"):
+        L.append("")
+        L.append(_wrap("YOUR PRACTICE (not a concern, and not listed above): "
+                       + out["your_practice_is_not_a_venture"]))
     if out.get("note"):
         L.append("")
         L.append(_wrap(out["note"]))
@@ -1794,6 +1860,22 @@ _JSON_PAIR = re.compile(r'"([a-z_]+)"\s*:\s*("(?:[^"]*)"|-?[0-9.]+|true|false'
                         r'|[A-Za-z_][A-Za-z0-9_]*)')
 
 
+def _typed_deep(obj):
+    """to_typed_hints applied to every string a renderer is about to read.
+
+    Keys are left alone: a field name is protocol, and only the values a
+    person reads get rewritten. Same rule, and same reason, as
+    _localise_money.
+    """
+    if isinstance(obj, str):
+        return to_typed_hints(obj)
+    if isinstance(obj, list):
+        return [_typed_deep(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _typed_deep(v) for k, v in obj.items()}
+    return obj
+
+
 def to_typed_hints(text):
     """Rewrite every {"cmd":...} example in rendered text as a typed command.
     Best-effort: anything that will not parse is left exactly as it was."""
@@ -1831,7 +1913,14 @@ def render_pretty(op, resp):
             err = render_error(resp)
             return to_typed_hints(err) if TYPED_HINTS else err
         fn = _RENDERERS.get((op or "").strip().lower(), render_generic)
-        out = fn(resp)
+        # REWRITE THE HINTS BEFORE WRAPPING, NOT AFTER. This ran on the
+        # finished page, so a paragraph wrapped at 76 columns around a long
+        # {"cmd":"hire","trade":"smith","n":3} and then had it replaced by
+        # `hire smith 3`, leaving a ragged half-width block wherever the game
+        # explains what to type - which is most of the places it explains
+        # anything. Wrapping the final words is the only way the line lengths
+        # can be right.
+        out = fn(_typed_deep(resp) if TYPED_HINTS else resp)
         if MONEY_SHORT != "den":
             # "Money: 400 den" in a game counted in pence was the other half of
             # the currency work, and a tester duly reported "pence vs den mixed
@@ -2341,8 +2430,32 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # in one pass. `help fog` promises there is no way to view the whole
         # tree, and a question you can ask about any name at all, and get a
         # true answer to, is a way to view the whole tree.
-        if _op in _ID_COMMANDS and isinstance(_k, str) and (
+        # THE ONE EXCEPTION IS `why` ON THE GOAL. The status line names the goal
+        # every single turn - "Aiming at: Point-contact transistor" - and this
+        # answered `why point_contact_transistor` with "you have never heard of
+        # any such thing", then offered fin_contract_law as what the player
+        # might have meant, for the first 187 years of a play tester's run.
+        # Being told what you are for and then told you have never heard of it
+        # is a contradiction, not fog. It is `why` alone, and not is_visible
+        # itself, because making the goal visible reopened the exact exploit
+        # this guard exists to close: `bounty` on the goal then printed its
+        # seven missing prerequisites by name, and a break tester once crawled
+        # that error recursively to recover 134 hidden ids. `why` under fog
+        # already says only "this needs 7 other things you have not heard of
+        # yet", which is the honest answer.
+        _goal_why = (_op == "why" and _k == getattr(s, "goal", None))
+        if _op in _ID_COMMANDS and isinstance(_k, str) and not _goal_why and (
                 _k not in nodes or not s.is_visible(_k)):
+            if _k == getattr(s, "goal", None):
+                # You know its name; you were handed it on arrival. Telling you
+                # that you have never heard of the thing you are aiming at, and
+                # then guessing you meant fin_contract_law, is absurd on its
+                # face. Saying nothing MORE than "not yet" leaks nothing.
+                return {"ok": False,
+                        "error": "that is what you are aiming at, and you cannot "
+                                 "act on it yet: everything it rests on is still "
+                                 "beyond what you have heard of. 'why %s' is all "
+                                 "of it you can see from here." % _k}
             near = _did_you_mean(_k, nodes, s=s)
             return {"ok": False,
                     "error": "you have never heard of any such thing. You know "
@@ -2379,7 +2492,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "why":
         k = cmd.get("id")
-        if isinstance(k, str) and k in nodes and not s.is_visible(k):
+        # The goal is the one thing you were told the name of on arrival; see
+        # the _goal_why note on the fog guard above for why it is `why` alone.
+        if (isinstance(k, str) and k in nodes and not s.is_visible(k)
+                and k != getattr(s, "goal", None)):
             return {"ok": False,
                     "error": "you have never heard of that. You know what you have "
                              "built and what you could begin now; use 'available'."}
@@ -2391,10 +2507,16 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     if k is None else
                     "id must be a name in quotes, not %s" % type(k).__name__}
         if k not in nodes:
+            # Only blame the fog when there IS any. With it off a break tester
+            # mistyped an id and was told the fog was limiting the suggestions,
+            # in a game they had explicitly started with the whole tree visible.
             return {"ok": False, "error": "unknown node %r. did you mean: %s"
                     % (k, ", ".join(_did_you_mean(k, nodes, s=s))
-                       or "no idea, and under fog of war I can only suggest "
-                          "things you have heard of")}
+                       or ("no idea, and under fog of war I can only suggest "
+                           "things you have heard of"
+                           if getattr(s, "fog", False)
+                           else "no idea - nothing in the tree is spelled much "
+                                "like that"))}
         return dict(ok=True, **_node_explain(s, nodes, k))
 
     if op == "path":
@@ -2724,6 +2846,18 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "you_could_hire_here": hirable,
                 "do_not_exist_here": absent,
                 "you_employ_in_total": round(sum(s.employees.values()), 2),
+                # THE CAP, WHERE A PLAYER CAN SEE IT. This number decided a
+                # play tester's entire mid-game and appeared NOWHERE: not in
+                # state, not in state full, not here. The only way to learn it
+                # was to try to hire and be refused, and the only way to learn
+                # what RAISED it was to read the refusal, which changed as the
+                # tree opened. They sat on 285,000 denarii unable to take on a
+                # sixth person and had no idea why.
+                "household_places_used": round(s.headcount(), 2),
+                "household_places_in_all":
+                    round(s.headcount() + max(0.0, s.household_room()), 2),
+                "room_for_more_people": round(max(0.0, s.household_room()), 2),
+                "what_raises_that_room": s._staff_advice("artisans"),
                 "slaves": s.slaves, "freedmen": s.freedmen,
                 "annual_wage_bill": round(s.wage_bill(), 1),
                 "craftsmen_on_your_staff": round(s.artisans, 2),
@@ -2922,9 +3056,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
                "people_free_to_run_something_new": {
                    "scholars": round(sch_free, 2), "craftsmen": round(art_free, 2)},
                "note": "Knowing how to do a thing and running it are different. "
-                       "Only what you are RUNNING earns anything or costs "
-                       "anything. 'open <id>' starts one, 'mothball <id>' stops "
-                       "it, and you keep the knowledge either way."}
+                       "Of the things in the TREE, only what you are RUNNING "
+                       "earns anything or costs anything. 'open <id>' starts "
+                       "one, 'mothball <id>' stops it, and you keep the "
+                       "knowledge either way."}
+        # THE PRACTICE IS NOT A VENTURE, AND IT IS WHERE YOUR MONEY COMES FROM.
+        # A break tester read "RUNNING: nothing" and "only what you are RUNNING
+        # earns anything" on the same screen as a ledger paying 233.5 a year
+        # from two named nodes, and filed it as the two screens flatly
+        # contradicting each other. They do not, but nothing said which side
+        # the practice falls on.
+        _prac_note = s.practice_note()
+        if _prac_note:
+            out["your_practice_is_not_a_venture"] = (
+                "%s You did not open it and you cannot close it; it is not "
+                "listed here, and it is most of your income until you build "
+                "something. See 'money'." % _prac_note)
         if len(idle) > 20:
             out["and_more_you_could_open"] = len(idle) - 20
         return out
@@ -3129,6 +3276,7 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
+    "wages_prepaid",
     # hours_this_year: last year's founder-hours accounting (see step(), just
     # before the within-year tallies above reset). Without it, `state` right
     # after a `--session` reload would report nothing for a figure the player

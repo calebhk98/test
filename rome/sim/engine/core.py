@@ -73,6 +73,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.teaching_hours_this_year = 0.0
         self.trade_hours_used = {}       # trade -> hours consumed by projects this year
         self.mothballed = set()          # completed works you shut down on purpose
+        self.wages_prepaid = 0.0         # first-year wages `hire` already took
         # WHAT YOU ACTUALLY RUN, as opposed to what you know how to do. Revenue
         # and upkeep follow this set and nothing else does. See is_venture and
         # open_venture in projects.py: completing the research used to start
@@ -387,6 +388,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # 2. money
         self.economy = self.economy_index()
         lc = self.living_cost()
+        # THE YEAR YOU PAID FOR IN ADVANCE IS NOT BILLED AGAIN. `hire` takes a
+        # finder's fee and the first year's wages up front, and living_cost()
+        # carries the whole payroll, so a smith at 281 a year cost 566 in his
+        # first year: the advance, then the identical year again at the next
+        # step. A break tester found hire-then-fire in one turn burned the
+        # advance for no work at all.
+        prepaid = min(lc, getattr(self, "wages_prepaid", 0.0))
+        lc -= prepaid
+        self.wages_prepaid = 0.0
         self.living_cost_paid += lc
         mo = self.mine_operating_cost()
         self.mine_cost_paid += mo

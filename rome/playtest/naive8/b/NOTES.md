@@ -196,3 +196,47 @@ real game.** The menu presents fog as the default (`Fog of war? [Y/n]`), which I
   a third of what the tree quotes... Selling your hours for wages takes another bite out of it,
   because you cannot be in two places." That text should appear on turn one, not after I've already
   lost 500 hours to `work`.
+
+### Run 3 (fog off, deliberate): survived to the horizon, still lost — 600 AD, 41 nodes short
+Final: 2,046 technologies built, 635 million denarii, 375 staff, reputation 97.6, eminence 24.9.
+`The run has ended: ran out of horizon (600 AD) without reaching the goal`, with 41 nodes left
+(everything from `mat_bulk_steel` and `steam_high_pressure` through `zinc_industry_scale`,
+`vacuum_tube`, `single_crystal` to the transistor itself).
+
+This run taught me the actual shape of the game, and most of what it taught me was undocumented:
+- **"Scholars" is a *class*, not a trade.** The `sch N` counter in the status bar counts
+  scholar + chemist + engineer + machinist + optician + electrician together. A node that
+  "needs 8 trained scholars" is satisfied by any mix of those. I spent about 150 game-years
+  blocked on `quantum_solidstate_theory` ("needs 8 trained scholars, you have 1.7") while
+  `hire scholar` was refused with "this society's literacy will not supply more than 5.9 scholars
+  in total, ever, at any price". The fix — train four opticians and four electricians — is not
+  hinted at anywhere. The refusal message actively misdirects you toward literacy, which in my
+  experience never moved the 5.9 cap at all, even after `printing_press`, `school_founded`,
+  `fin_lending_library`, `prn_newspaper_institution` and 700 other technologies.
+- **`academy_network` looks unreachable in Rome, and it is the game's own answer to its main
+  loss condition.** It needs 10 trained scholars. Scholars cap at 5.9. Its advice for getting
+  more scholars is, verbatim, "build academy_network (three academies produce more than one
+  school)" — the thing you are trying to build. `commission scholar 20000` (12,800 denarii, and
+  the requirement text says "on your staff **or under contract**") did not count either.
+- **Taught trades can be lost entirely and silently.** With ~3.5%/yr attrition and no one on
+  staff, `machinist`, `chemist`, `engineer`, `optician` and `electrician` fell out of
+  `YOU COULD HIRE` and back into `MUST BE TAUGHT` — the *society* forgets them. A project already
+  running then reports "started, but this society cannot supply the labour it wants and it will
+  crawl until you can: machinist (wants 1500 hours a year; this society can field 0 at most)",
+  and after four years it HALTS and you lose everything spent. I lost two decades of path
+  progress to this before realising I had to re-train the same five trades every few turns
+  forever. Nothing warns you that a trade is about to die out.
+- **Hoarding cash during the debasement is a silent bleed.** I idled from 208-263 AD to cool
+  eminence off and watched 26,000,000 denarii turn into 8,000,000. That is the
+  `Currency debasement` hazard doing exactly what it says, and it is a great mechanic — but the
+  ledger has no line for it, so it looks like the money simply evaporated. (`money` lists
+  upkeep / living / wages / mines / interest and nothing else.)
+- **Eminence can be managed, but only by refusing to play.** The one tactic that worked was
+  stopping entirely for 30-50 years so that reputation decayed and eminence with it. That is a
+  strategy the game clearly does not intend and which is anti-fun: my optimal move was to type
+  `step 5` twenty times.
+- `available find` matched nothing for `academy`, `school`, `workshop`, `patron`, `literacy`,
+  `education` at the moments I needed them, because it only searches things that are *startable
+  right now*. `why <id>` is the only real lookup tool, and it needs you to already know the id.
+- Small thing that cost me two hours: a handful of ids are mixed-case (`cap_pure_2N`,
+  `cap_pure_4N`, `cap_vac_1e6`) where everything else is lowercase. `2N` is very easy to mistype.

@@ -1347,10 +1347,19 @@ _bt, _, _ = proto([{"cmd": "bounty", "id": "point_contact_transistor"},
                    {"cmd": "start", "id": "point_contact_transistor"},
                    {"cmd": "mothball", "id": "point_contact_transistor"},
                    {"cmd": "why", "id": "point_contact_transistor"}], fog=True)
+# The PROPERTY, not the wording: no reply may contain the id of anything the
+# player has not heard of. (`why` on the goal is answered now - the status line
+# names the goal every turn - but it still may not name what the goal rests on.)
+_GOAL_PRE = NODES["point_contact_transistor"]["pre"]
+_bt_text = json.dumps(_bt)
 check("no command names a prerequisite of something you have not heard of",
-      all(r.get("ok") is False and "never heard of" in (r.get("error") or "")
-          for r in _bt),
-      [r.get("error", "")[:70] for r in _bt])
+      not any(p_ in _bt_text for p_ in _GOAL_PRE),
+      [p_ for p_ in _GOAL_PRE if p_ in _bt_text])
+check("...and only `why` answers about the goal at all; the rest still refuse",
+      all(r.get("ok") is False for r in _bt[:3]) and _bt[3].get("ok") is True,
+      [r.get("ok") for r in _bt])
+check("...and what `why` says about the goal counts what it cannot name",
+      "have not heard of" in json.dumps(_bt[3]), json.dumps(_bt[3])[:200])
 
 # 2. The menu promises "Saved to X. Come back with ..."; a tester quit before
 #    typing anything, found no file, followed the printed line, and landed in a

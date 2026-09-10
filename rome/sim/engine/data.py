@@ -206,7 +206,13 @@ def load_civ(name="rome_100ad"):
     different simulator. See data/civilizations/_SCHEMA.md."""
     f = os.path.join(CIVDIR, name + ".json")
     if not os.path.exists(f):
-        have = sorted(x[:-5] for x in os.listdir(CIVDIR) if x.endswith(".json"))
+        # "_"-prefixed files are schema and reference data, not playable
+        # civilizations - the same convention cli.py applies in both the places
+        # it lists this directory, and the one place that did not, which is why
+        # a play tester's typo was answered with "available: _TECH_EFFECTS,
+        # england_1300, ...".
+        have = sorted(x[:-5] for x in os.listdir(CIVDIR)
+                      if x.endswith(".json") and not x.startswith("_"))
         raise SystemExit("unknown civilization %r. available: %s" % (name, ", ".join(have)))
     c = json.load(open(f))
     c.setdefault("starting_techs", [])

@@ -360,9 +360,25 @@ class ProjectsMixin:
                 return False, ("you have no scandal to answer and you are already "
                                "as protected as money can make you here, so this "
                                "would buy nothing. Nothing was changed.")
+        # NEVER TAKE MORE THAN IT CAN SPEND. Both things a bribe buys are
+        # bounded: scandal stops at zero and the protection it buys saturates
+        # at 0.30. A break tester typed `bribe 1000000`, got exactly the same
+        # 0% -> 32% as `bribe 100`, and was left with nothing at all - one
+        # command, no cap, no warning, and the run was over. What a man cannot
+        # be paid to do more of, he cannot be paid more for.
+        bribability = max(1e-9, self.w["bribability"])
+        for_scandal = self.scandal * 300.0 / bribability
+        income = max(1.0, self.revenue())
+        # spent/(income*0.6) * bribability = 0.30, solved for the carried total
+        for_protection = max(0.0, (0.30 * income * 0.6) / bribability
+                             - 0.7 * self.bribes_ytd)
+        useful = max(for_scandal, for_protection)
+        refused = 0.0
+        if amount > useful + 0.5:
+            refused, amount = amount - useful, useful
         self.capital -= amount
         self.bribes_ytd = 0.7 * self.bribes_ytd + amount
-        self.scandal = max(0.0, self.scandal - amount / 300.0 * self.w["bribability"])
+        self.scandal = max(0.0, self.scandal - amount / 300.0 * bribability)
         self.update_protection()
         # BOTH THINGS IT BUYS. A break tester spent 500 denarii against a
         # scandal of zero, read "scandal 0.00 -> 0.00", and wrote it down as
@@ -371,6 +387,10 @@ class ProjectsMixin:
         # reply that names only the half that did not move is what made a real
         # effect look like a bug.
         msg = "scandal %.2f -> %.2f for %.0f denarii" % (before, self.scandal, amount)
+        if refused > 0.5:
+            msg += ("; %s denarii of what you offered was not taken, because "
+                    "this is as far as money goes here - you kept it"
+                    % "{:,.0f}".format(refused))
         if self.protection > prot_before + 0.0005:
             msg += ("; advocacy and piety bought as well: protection %.2f -> %.2f"
                     % (prot_before, self.protection))
@@ -670,7 +690,14 @@ class ProjectsMixin:
         price = self.project_cost(k)
         owed = sum(st.get("cost_left") or 0.0 for st in self.active.values())
         ceiling = max(0.0, self.capital) + self.credit_limit()
-        if self.active and owed + price > ceiling:
+        # `self.active and` used to guard this, which exempted the FIRST
+        # project from the only affordability test there is. A break tester
+        # took tx2_watch_case at 17,415 denarii on 400 in cash and 1,367 of
+        # credit because it was their opening move, then found the identical
+        # command refused - quoting the shortfall exactly - after they had
+        # started a five-denarius project first. Two insolvencies, 1,306 in
+        # interest and reputation from 5 to 0.2 later, nothing was built.
+        if owed + price > ceiling:
             return False, ("you already owe %s denarii on work in hand; this "
                            "would take it to %s, and between cash and credit "
                            "you can raise %s. Finish or stop something first."
@@ -720,10 +747,16 @@ class ProjectsMixin:
             # whole mechanic was dead. A cost you cannot see is a cost the
             # player is not paying attention to, which is the same as not
             # charging it.
+            # 40, NOT 60. ph_left is set to 0.4 of the FULL hours, so what is
+            # to do again is forty per cent of the work; the line said sixty
+            # and a break tester who measured the hours reported the stated
+            # penalty as never charged. It was charged. The sentence was wrong.
             self.log.append((self.year,
-                             "FAILED at %s: it did not work. %s of the work is "
-                             "to do again and %s is gone. Attempt %d."
-                             % (n["name"], "60%", "{:,.0f}".format(max(0.0, _lost)),
+                             "FAILED at %s: it did not work. %d%% of the hours "
+                             "are to do again (%s of your own) and %s is gone. "
+                             "Attempt %d."
+                             % (n["name"], 40, "{:,.0f}".format(n["ph"] * 0.4),
+                                "{:,.0f}".format(max(0.0, _lost)),
                                 self.failed_attempts[k] + 1)))
             return
         del self.active[k]
