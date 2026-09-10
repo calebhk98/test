@@ -343,7 +343,7 @@ def _agent_state(s, nodes, cmd=None):
 
 
 HELP_TOPICS = ("commands", "labour", "economy", "money", "automatic",
-               "sittings", "fog")
+               "sittings", "fog", "eminence", "risk")
 
 
 def _agent_help(s, topic=None):
@@ -506,6 +506,28 @@ def _agent_help(s, topic=None):
             "Pass --session FILE on the command line. The game is written to "
             "that file after every command and read back when you start again, "
             "so you do not need to hold a process open or write a script.")}
+
+    if topic in ("eminence", "prominence"):
+        return {"eminence": (
+            "The one hazard no patron, no bribe and no reputation protects you "
+            "from, because it IS reputation. It rises with how well known you "
+            "are and how visibly rich, it is multiplied by standing close to "
+            "the throne, and past the danger line it rolls every year for your "
+            "ruin. Sejanus was the most protected man in Rome until the morning "
+            "he was not."),
+            "what lowers it": (
+                "Nothing lowers it directly, which is the point. What SURVIVES "
+                "it is a wide, dispersed institution - academy_network makes "
+                "the hazard itself smaller, and corpus_dispersed means what you "
+                "know is in too many places to burn. Being merely rich and "
+                "merely famous is the dangerous combination."),
+            "where to watch it": '{"cmd":"state"} shows it under STANDING'}
+
+    if topic in ("risk", "hazards"):
+        return {"risk": ("What history is about to do to you, with dates, and "
+                         "what you have built that blunts each one. Every "
+                         "hazard is fightable and the numbers are real."),
+                "see it": '{"cmd":"risk"}'}
 
     if topic == "fog":
         return {"fog of war": (
@@ -2166,6 +2188,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
         if k not in nodes:
             return {"ok": False, "error": "unknown node id %r. use {\"cmd\":\"available\"} "
                                           "or {\"cmd\":\"why\",\"id\":...} to find valid ids" % k}
+        # SAY UP FRONT WHEN THE SOCIETY CANNOT STAFF IT. A play tester started
+        # arithmetic_positional, which wants 2,500 scribe-hours a year against
+        # a national ceiling of 1,321, and watched it sit at "81% spent" from
+        # 1309 to about 1440 - a hundred and thirty years. Their point is the
+        # right one: the engine knows this at `start` time. It is still allowed
+        # (you may teach or hire your way to the hours, and the work does
+        # crawl) but it must not be a silent trap.
+        _impossible = []
+        _n0 = nodes[k]
+        _frac0 = min(1.0, 1.0 / max(1.0, _n0["yrs"]))
+        for _t, _want in (_n0["lab"] or {}).items():
+            _need = _want * _frac0
+            if _need > 0 and s.market_supply(_t) + s.contract_hours.get(_t, 0.0) < _need:
+                _impossible.append("%s (wants %.0f hours a year; this society can "
+                                   "field %.0f at most)"
+                                   % (_t, _need, max(0.0, s.market_supply(_t))))
         ok, why = s.start_project(k)
         if not ok:
             return {"ok": False, "error": why}
@@ -2178,6 +2216,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # moment you start; what was missing was any statement of what it was
         # fixed AT.
         bill = round(s.active.get(k, {}).get("cost_left", s.project_cost(k)), 1)
+        _warn_staff = ("started, but this society cannot supply the labour it "
+                       "wants and it will crawl until you can: %s"
+                       % "; ".join(_impossible)) if _impossible else None
         out = {"ok": True, "started": k, "name": n["name"], "founder_hours_needed": n["ph"],
                "calendar_floor_years": n["yrs"],
                "the_bill_you_have_taken_on": bill,
@@ -2185,6 +2226,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        "this project. Quotes move with prices, the coinage and "
                        "what a material costs to get: a figure you read years "
                        "ago is not what you will pay."}
+        if _warn_staff:
+            out["but"] = _warn_staff
         # WARN, DO NOT SILENTLY ACCEPT. start_reason() already refuses a trade
         # that does not exist AT ALL (see "THE TRADE HAS TO EXIST" there), but
         # trade_available() goes true the moment you call `train`, two years

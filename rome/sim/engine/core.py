@@ -1046,10 +1046,39 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                                          % (count, trade, "s" if count != 1 else "")))
                         self._resync_pools()
                     else:
-                        self.artisans += cap
+                        # They are trained now, so _resync_pools counts them
+                        # from the people you actually hold - see the note
+                        # there about why adding to self.artisans directly was
+                        # thrown away at the next call.
+                        self.log.append((self.year,
+                                         "%g of the people you bought finish "
+                                         "learning the work" % round(cap / 0.55, 1)))
                 else:
                     still.append(row)
+            # BEFORE the resync, not after: _resync_pools counts who is still
+            # learning off this very list, so recomputing while the matured row
+            # was still on it cost a whole extra year of everybody's time.
             self.training = still
+            self._resync_pools()
+        # WARN BEFORE IT KILLS YOU. A play tester built 952 technologies, was
+        # three nodes from the goal, and the run ended on a 2% roll against an
+        # eminence of 28.2 - with no escalation of any kind beforehand, and
+        # nothing in the log ever mentioning it. Their words: "no escalation on
+        # the stat that ends the run". It is the one hazard that cannot be
+        # bribed away and the one the player was never told was closing in.
+        _danger = self.cfg["eminence_danger"]
+        if self.eminence > _danger * 0.75:
+            _said = getattr(self, "_said_eminence", -999)
+            _band = int(self.eminence / max(1.0, _danger * 0.15))
+            if _band > _said:
+                self._said_eminence = _band
+                self.log.append((yr, "YOU ARE BECOMING CONSPICUOUS: eminence %.0f "
+                                     "against a danger line of %.0f. This is the "
+                                     "one thing no patron and no bribe protects "
+                                     "you from, and it grows with reputation and "
+                                     "visible wealth. A wide, dispersed "
+                                     "institution is what survives you"
+                                 % (self.eminence, _danger)))
         self.update_protection()
         self.scandal *= 0.90
         # Eminence accumulates in a SEPARATE pool, because bribery does not

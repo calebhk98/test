@@ -590,3 +590,139 @@ Scale by 1559: 952 technologies built, capital 8.1M, founder-hours 6,612/yr
 (2,000 mine plus deputies at 1,800 each — the deputies appeared silently around
 1475 and the HUD only explains them if you read `state` closely), 61 scholars,
 191 artisans, reputation 98, eminence 18.4 against a danger line of 26.
+
+## 1559 — THE RUN ENDED: "too eminent"
+
+    *** THE RUN HAS ENDED: too eminent: brought down not for what you built but
+        for how large you had become ***
+
+Final: 1559 AD, 241 years still on the clock, **952 technologies built** (1,091
+total), capital 8,161,750 den, revenue 695,053/yr, net +372,271/yr, reputation
+97.9, scandal 4.0, **eminence 28.2** against "dangerous above 26", 2% chance of
+ruin that year. The 2% landed.
+
+Distance to the goal at death:
+  point_contact_transistor — BLOCKED, missing single_crystal and vacuum_tube.
+Both of those were two or three nodes away: the whole remaining chain ran through
+en_commutator -> dynamo -> motor_transformer_ac, and en_commutator had just
+revealed its last blocker (cap_power_steam, free, 0 hours). I was probably ten to
+fifteen years from the transistor with 241 years in hand.
+
+Was I warned? Yes and no. The `state` screen prints "EMINENCE is dangerous above
+26 (settles near N; X% chance of ruin this year)" every single turn, and it had
+been climbing 0.3 -> 2.2 -> 6.1 -> 18.4 -> 28.2 over 250 years. So the number was
+always in front of me. But:
+- It sat at "0% chance of ruin this year" for the entire game until literally the
+  end, which trains you to ignore it.
+- Nothing ever *escalated*: no event line, no colour, no "you are being talked
+  about at court", no offer to act. Scandal produced events; eminence never did.
+- I never found out what actually reduces eminence. `bribe <amount>` is documented
+  for *scandal*. `policy auto_bribe` says "pay your way out of a scandal before it
+  kills you" — scandal again. Mothballing concerns might have done it; nothing
+  says so. So the one stat that killed me is the one stat with no documented lever.
+- And the failure is a coin flip, not a consequence: 2% per year, applied to a
+  259-year run. Losing everything to a 1-in-50 roll after a quarter-millennium of
+  correct play is the least satisfying way this could have ended. If eminence is
+  meant to be a real constraint it should bite gradually (harassment, seizures,
+  forced sales) long before it deletes the run.
+
+I take part of the blame: I had been automating `available -> start -> step 4`
+loops and stopped reading the STANDING block. But that is itself a finding — the
+game's optimal play is repetitive enough to automate, and the one thing that will
+kill you is the one thing that never interrupts the loop.
+
+## Post-mortem: what the game taught, and what it taught badly
+
+WHAT IT TEACHES WELL
+- Knowing is free; building is not. The separation of *knowing how* / *having
+  built* / *running as a concern* is the best idea in the design and it is
+  constantly true.
+- Labour is not fungible and cannot be conjured: "a smith is not a scribe"; a
+  trade that does not exist must be taught out of your own 2,000 hours a year.
+- Society's *capacity* is a hard ceiling. Literacy caps scribes and scholars;
+  a glassblower shortage is national, not personal. The single best moment in my
+  run was watching the printing chain take scholar supply from 2.7 people to
+  67,464 hours and the board from 350 items to 897.
+- Hazards are legible and hedgeable: the `risk` screen told me the Black Death
+  would cost 45% of staff, told me soap and stored fodder would help, and after I
+  built them told me 36% and then reported the counterfactual in the event line.
+  That is model teaching.
+- The historical writing is genuinely good and often load-bearing: the three-plate
+  method, the Kempe patent of 1331 explaining why a war makes a Crown import
+  technique, the Elizabethan "strangers" and the Witchcraft Act in the same breath.
+- Materials and fuel are real: 187,500 kg of charcoal for one glass furnace,
+  coppice at 275 den/hectare, mines that cost to keep standing whether used or not.
+
+WHAT IT TEACHES BADLY, OR HIDES
+1. **Free nodes are invisible and load-bearing.** cap_measure_temp/_mass/_time,
+   cap_measure_elec and cap_power_steam all cost 0 den and 0 hours, all gate large
+   branches, and none of them ever appears in "MOST RESTS ON THESE". Twice they
+   were the only thing between me and a whole age.
+2. **Arrears silently disable the game.** Negative capital blocks hiring, blocks
+   opening concerns, and therefore blocks auto_hire and auto_open — which stay
+   switched ON and do nothing. I lost 5,952 den to interest and about eight years
+   before I worked this out from a single refusal message.
+3. **Projects can be started that are impossible.** arithmetic_positional needs
+   2,500 scribe-hours a year against a national ceiling of 1,321. The engine knows
+   this at `start` time; it let me commit 968 den and 450 hours and then sit at
+   "81% spent" from 1309 to about 1440. `why` should say "this society cannot
+   supply the labour" the way `hire` does.
+4. **Failures are silent.** glass_clear failed at 20% risk and simply vanished:
+   no event, no line in `step` output. I found out by chance two years later.
+5. **Command syntax is inconsistent with its own help.** `available subject X`
+   fails (`available X` works); `labour trade artisan` fails (`labour artisan`
+   works); `quote` works only for mines but is described generally.
+6. **Units drift**: the HUD says "den", refusals say "pence", later screens say
+   "d". The HUD's `art` counter also disagrees with `labour` (56 vs 3.8).
+7. **The manumission path appears broken.** `buy slaves N` + `buy manumit N` put
+   people into a trade called literally "None", and when their training finished
+   they disappeared; my artisan count fell from ~35 to 3.8 across the same years.
+   ~12,750 den and most of my workforce, following advice printed by the game's
+   own refusal message.
+8. **No warning ladder on the thing that ends the run.** See above.
+9. **A permanent false alarm**: "AHEAD: 536 technologies at risk if a hazard lands,
+   hedged by nothing yet" is printed every turn, while `risk` says no remaining
+   hazard in England can sack a site. I nearly spent 6,000 founder-hours on
+   corpus_written because of it.
+10. **`why <garbage>` leaks node names** ("did you mean: ...") including things
+    the fog says you have not heard of. I used it deliberately to find the hidden
+    prerequisite of en_commutator.
+
+THINGS I WANTED AND COULD NOT DO
+- See what my *world values* are (literacy_general, patronage_weight, w_novelty
+  are all named in messages; nothing displays them).
+- See where eminence comes from, or reduce it.
+- Ask the price of anything but a mine (`quote forest 500` is refused).
+- Sort or filter `available` by return, payback or subject-plus-affordable. I had
+  to pipe the table through awk to play well, which cannot be the intent.
+- Get a goal-directed view earlier. `why point_contact_transistor` at 1300 would
+  have named its five prerequisites; I did not think to ask until 1475.
+
+THINGS THAT SEEMED POINTLESS OR THAT I NEVER USED
+- `bounty` (never found a case where paying someone else looked better).
+- `mothball` / `restore`, `close`, `fire` (used `fire` once, to no effect).
+- The 0-cost, 200-upkeep freebies at the very start (lnd_cursus_publicus,
+  sea_pharos_lighthouse) which looked like traps and which I never touched.
+- `arrival_orientation`: the game says outright it leads nowhere, so I skipped it,
+  and never learned what the "reduced early blunder risk" would have felt like.
+
+TEDIOUS OR HARD TO READ
+- `ventures` prints raw Python dict literals (`needs={'scholars': 0.0,
+  'craftsmen': 1.0}`) — the only screen in the game that looks like a debug dump.
+- The refusal "it needs 0.0 scholars and 0.0 craftsmen to supervise, and you have
+  1.0 and 0.0" is self-contradictory to the reader; the real requirement is a
+  fraction rounded to 0.0.
+- Every `available` call reprints the entire "HEARD OF, CANNOT BEGIN YET" block,
+  which by the end was 25 lines repeated after every query.
+- Mid-game, a turn is: dump 900 rows, sort them in your head, start fifteen things.
+  The interesting decisions (which trade to teach, whether to borrow, whether to
+  buy the mine or the material) are perhaps one turn in ten.
+
+Confirmed after the end: there is no `help eminence` topic ("topics: commands,
+labour, economy, money, automatic, sittings, fog"), and eminence is never
+mentioned in any of the seven help topics. The stat that ended a 259-year run is
+documented only by the one-line warning on the state screen.
+
+Final tally: England 1300 -> 1559, poor scholar start (400 den), fog of war on,
+immortal founder. 952 technologies built, 8.16M den, 695k/yr revenue, ended by a
+2% eminence roll two or three nodes short of the point-contact transistor.

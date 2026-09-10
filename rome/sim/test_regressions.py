@@ -2004,6 +2004,49 @@ _msgs = {(r.get("error") or "").split("Did you mean")[0].strip() for r in _tri}
 check("a name you have not heard of and a name that does not exist read alike",
       len(_msgs) == 1, [m[:60] for m in _msgs])
 
+# --- round 6, the England play tester ----------------------------------------
+# 1. Bought people counted at full worth from the day of purchase, so the
+#    training lag buy_slaves documents did nothing - and when a row finally
+#    matured, step() added its capacity to self.artisans, which _resync_pools
+#    then recomputed from scratch and threw away. A tester watched their
+#    craftsmen fall from 35 to 3.8 at the moment the training finished.
+s = sim(capital=500000.0)
+s.buy_slaves(20)
+_at_purchase = s.artisans
+for _ in range(4):
+    s.step()
+_trained = s.artisans
+s.manumit(20)
+s._resync_pools()
+check("people you buy are worth nothing until they have learned the work",
+      _at_purchase < 0.5, "%.2f craftsmen the day 20 were bought" % _at_purchase)
+check("...and are worth something once they have, and do not vanish",
+      _trained > 12.0, "%.2f craftsmen after the training lag" % _trained)
+check("freeing them is worth more than holding them, as the model claims",
+      s.artisans > _trained * 1.3,
+      "%.2f held -> %.2f freed" % (_trained, s.artisans))
+
+# 2. arithmetic_positional wants 2,500 scribe-hours a year against a national
+#    ceiling of 1,321, and sat at "81% spent" from 1309 to about 1440. The
+#    engine knows this at start time.
+_imp, _, _ = proto([{"cmd": "start", "id": "arithmetic_positional"}],
+                   civ="england_1300")
+check("starting work this society cannot staff says so at the time",
+      _imp[0].get("ok") is True and "cannot supply the labour" in (_imp[0].get("but") or ""),
+      _imp[0].get("but"))
+
+# 3. The stat that ends the run had no warning and no help topic.
+s = sim(capital=400.0)
+s.eminence = s.cfg["eminence_danger"] * 0.9
+s.step()
+check("becoming conspicuous is said out loud before it kills you",
+      any("BECOMING CONSPICUOUS" in m for _y, m in s.log),
+      [m for _y, m in s.log][-2:])
+_he, _, _ = proto([{"cmd": "help", "topic": "eminence"}])
+check("...and there is a help topic for it",
+      "eminence" in json.dumps(_he[0]).lower() and "no such topic" not in json.dumps(_he[0]),
+      list(_he[0])[:4])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

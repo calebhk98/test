@@ -736,8 +736,31 @@ class LabourMixin:
         not a number that floats free of them."""
         craft = sum(n for t, n in self.employees.items() if trade_family(t) == "craft")
         schol = sum(n for t, n in self.employees.items() if trade_family(t) == "scholar")
-        # People you own or have freed work in the shop; they are not scholars.
-        self.artisans = craft + self.freedmen * 1.0 + self.slaves * 0.7
+        # PEOPLE STILL LEARNING ARE NOT YET CRAFTSMEN. Two things were wrong
+        # here at once and they cancelled into a disappearance. Everyone bought
+        # counted at full worth from the day of purchase, so the training lag
+        # that buy_slaves' own docstring promises did nothing; and when a
+        # training row finally matured, step() added its capacity to
+        # self.artisans - which THIS function then recomputed from scratch and
+        # threw away at the next call. A play tester bought and freed people,
+        # saw them enter training as a trade named literally `None`, and
+        # watched their craftsmen fall from 35 to 3.8 when the training
+        # finished. Excluding those still learning makes the lag real and makes
+        # the maturation stick, because by then they are simply part of the
+        # count below.
+        # buy_slaves stores 0.55 of a worker per person bought, so that is the
+        # divisor that recovers the headcount still learning.
+        learning = sum(row[0] for row in getattr(self, "training", ())
+                       if len(row) <= 2) / 0.55
+        owned = max(0.0, self.freedmen + self.slaves - learning)
+        # Split what is left in the same proportion as what is held.
+        held = self.freedmen + self.slaves
+        if held > 0:
+            free_share = self.freedmen / held
+        else:
+            free_share = 0.0
+        self.artisans = (craft + owned * free_share * 1.0
+                         + owned * (1.0 - free_share) * 0.7)
         self.scholars = schol
 
     TRAINING_YEARS = 3.0      # nobody is a useful artisan the week you buy them
