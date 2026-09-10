@@ -18,6 +18,10 @@ rome/playtest/naive2/*.fifo
 rome/playtest/naive2/*.json
 rome/playtest/naive2/*.log
 rome/playtest/naive2/*.out
+rome/playtest/naive3/*.fifo
+rome/playtest/naive3/*.json
+rome/playtest/naive3/*.log
+rome/playtest/naive3/*.out
 # Isolated git worktrees for parallel agents. Full checkouts, 108MB of them,
 # created and removed as agents come and go. They are scaffolding, and one of
 # them containing a stale copy of a file is exactly how another agent's work
