@@ -487,6 +487,22 @@ class ProjectsMixin:
         # 38 of its 100 seconds inside them - to compute a surplus that is only
         # read when the household has been insolvent three years or more, which
         # in most runs is never.
+        # A CREDIT FREEZE HAS TO APPLY TO THE PLAYER TOO. It was set when the
+        # creditors halted your work and then only ever checked in the
+        # optimizer's own start loop, so a person at a keyboard could default,
+        # be frozen out on paper, and carry on borrowing and starting things
+        # regardless. A weird-play tester found the consequence: creditors
+        # seize CONCERNS, so a player who opens none can default over and over
+        # for nothing but reputation, which regenerates - and building raises
+        # reputation, which raises the credit limit. They financed 22
+        # technologies with money that did not exist and kept all of it.
+        if self.year < getattr(self, "credit_frozen_until", 0):
+            return False, ("nobody here will fund new work: your creditors were "
+                           "left unpaid and the word is out. They will deal with "
+                           "you again in %d, and until then you may finish what "
+                           "is running, and pay for something out of money you "
+                           "actually hold."
+                           % int(self.credit_frozen_until))
         if getattr(self, "insolvent_years", 0) >= 3:
             surplus = (self.revenue() - self.upkeep() - self.living_cost()
                        - self.mine_operating_cost())

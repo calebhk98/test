@@ -418,3 +418,91 @@ Spend 1,800 of this year's 2,000 hours on train engineer 2 + train chemist 2.
 Expect that to open the engine/chemistry half of the tree. Expect opticians next
 year. I also expect to have to solve arithmetic_positional with
 `commission scribe 2500` — the trick I just learned on glassblowers.
+
+## 1346-1349 — electricity, at a ridiculous price
+
+Bought lead_metallurgy for **132,416 den** because it is the only gate on
+crude_cell. Then read crude_cell:
+  "A poor cell, and you can have it on arrival... COST: 273.1 d, 120 hours."
+So the copper-iron brine cell costs 273 den and its prerequisite costs 132,416.
+The flavour text explicitly says you could have it on arrival. That is the
+sharpest mismatch between what the game *says* and what it *charges* that I have
+met. (I understand the argument — you need worked lead before you have a
+controllable electrochemistry industry — but the text undercuts the gate.)
+
+Trained engineers, chemists, opticians (2 each, 900 founder-hours each pair).
+Built freedman_staff (9,350 den, +8 artisans; the text is careful and pointed
+about manumission being both the ethical and the efficient answer, which is the
+best-written thing in the game after the three-plate method).
+
+Housing was the binding constraint before that: "you can supervise, house and
+teach 0.00 more people - you have no room for even one."
+
+Black Death hedging worked and was legible: after soap_hard + ag2_silage_silo the
+`risk` screen moved "staff loss: you take 100% of it" -> "81% (softened by hard
+soap, in quantity, fodder that keeps through a bad winter)" and projected loss
+45% -> 36%. That is exactly the right feedback loop, and it is the only place in
+the game where I could see a decision change a number before it happened.
+
+Still unsolved after 49 years: **arithmetic_positional**. It has been sitting at
+81% since 1309 wanting 2,500 scribe-hours/yr against a national ceiling of 1,321.
+`hire scribe` is capped at 2.2 by literacy; `commission scribe 2600` -> "the
+scribes here can spare 1321 more hours this year, not 2600". It gates
+atomic_theory and statistics_basic. I have no idea how to raise literacy and the
+game has told me only "printing, schools and libraries do" — the school
+(if_punch_and_matrix / collegium_licensed) needs `citizenship`, which I have never
+seen offered. This is my biggest open frustration.
+
+## 1352-1364 — the grind, and the shape of the mid-game
+
+The loop has settled into: read "MOST RESTS ON THESE" -> start those -> dump
+`available all`, sort by payback -> start every earner under ~2 years payback ->
+`train <trade> 2` whenever the fog says a trade is missing -> `step 3` -> repeat.
+By 1364: 119 techs built, 47.6 staff, capital 133,435, net +23,548/yr, rep 94.
+
+Things I noticed in this stretch:
+- Founder-hours (2,000/yr) are now the only real constraint. Money accumulates
+  faster than I can spend hours designing things. A trained trade costs 900 hours;
+  a big node costs 500-800. So a year is about two or three decisions.
+- The cost curve of the "material" nodes is brutal and, I think, deliberate:
+  mat_copper is **324,519 den**, of which 194,400 is just buying copper.
+  `quote mine copper 500` -> sink 132,000, then 30,250/yr forever, 3 years before
+  it produces. Owning the mine is the alternative to paying the market. This is
+  the most interesting economic decision the game has offered and I only found it
+  because `help economy` mentioned `quote mine coal 500` in passing.
+- `quote` works for mines only. There is no way to ask the price of anything else
+  before committing (forest, commission, bounty).
+- Knowledge risk: 44 technologies "at risk" is displayed every turn, but `risk`
+  says "no remaining hazard for this civilization sacks a site, so nothing here is
+  currently at risk of being forgotten". So the AHEAD line on the main state
+  screen is alarming about a thing that cannot happen in England. That is a
+  persistent false alarm and it made me consider corpus_written (6,000 hours) for
+  no reason.
+
+### Expectation
+Buy finery_puddling (159,221 -> 9,000/yr, "RESTS much" and the gate on puddled
+iron and rails), plus thermometer and prc_milling_machine. I expect puddling to
+open the iron/steel/rail branch and the thermometer to open temperature-controlled
+chemistry, which is where semiconductors have to come from.
+
+## 1378-1385 — a bug that cost me my workforce
+
+Chain of reasoning that led here: 57 of my finished works were sitting unopened
+because "people free to run something new: craftsmen: 0", and `hire artisan`
+refused with "you can supervise, house and teach 0.00 more people". The refusal
+text itself suggests "buy slaves N then manumit, though they are untrained for
+three years", so I did exactly that — twice (10, then 20; ~12,750 den), and
+manumitted both batches immediately (reputation went up 3 points each time, which
+is a nice touch).
+
+What actually happened:
+  `labour` -> "IN TRAINING: None x15.7, ready 1384.0"
+The freed people are training into a trade literally named **None**. When the
+training completed they did not appear on the staff list at all — they simply
+vanished. And my artisan count collapsed from 34.6 (1381) to 6.1 (1384) to
+**3.8** (1385). I appear to have lost roughly thirty artisans and 12,750 den by
+following the game's own printed advice.
+
+I cannot tell from inside the program whether the artisans were converted into the
+"None" trade and then deleted, or whether something else ate them, but the timing
+is exact and nothing else changed. This is the clearest defect I have found.

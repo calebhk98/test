@@ -328,3 +328,62 @@ water-blown bellows. Confidence something is wrong: high.
   cataract-couching practice the game hands me for free (0.29 vs 0.12 den/hr).
 - 500 slaves appear on no screen that counts people.
 - 500 tonnes a year of gold is quotable (88,000,000 den to sink) with no comment.
+
+---
+## CAVEAT: the program was being edited while I played it
+`find /home/user/test/rome -newermt "2026-09-10 14:15"` shows engine/economy.py,
+engine/projects.py, engine/cli.py, engine/labour.py, engine/protocol.py and
+engine/data.py all rewritten DURING this session (14:24 - 14:32; my session started
+~14:17). I only looked at timestamps, not contents.
+One consequence I actually observed: at the start of the session `money` printed
+"Capital: 400 den / Revenue: 232.8 den/yr"; later the byte-identical save file with
+the identical command printed "Capital: 400 d / Revenue: 232.8 d/yr", while the
+prompt bar kept saying "400 den". So the "den"/"d" split in FINDING 19 may be a
+live edit rather than one build's inconsistency — but "den" in the prompt bar vs
+"d" in the body of the same screen is a real disagreement in the build I now have.
+I re-verified findings 1/2/3/4/9 against the build as of 14:32 and they all still
+reproduce.
+
+---
+## FINDING 23 — the ledger's itemised revenue does not add up to its own total
+help money says: "the ledger: money itemises what comes in and what goes out,
+including where the income comes from".
+At 1300 (fresh game, two income lines):
+  Revenue: 232.8   from: med_cataract_couching 166.7 + med_trepanation 66.7 = 233.4
+At 1319 in my main run (17 concerns open):
+  Revenue: 6,738   from: 15 listed rows summing to 7,101.9   (gap 363.9, 5.4%)
+and the total is the authoritative one: Net/yr 4,908 = 6,738 - 608 upkeep - 1,222 living.
+On top of that the breakdown is silently truncated at 15 rows: tex_canvas (running,
+earns ~100) and med_trepanation (running, earns ~80) appear in `ventures` and in the
+running set but not in the "from:" list, with no "and 2 more" line. So the list is
+both short of entries and over the total at the same time.
+Repro: `printf 'money\n' | python3 .../simulator.py play --session england_1300.json`
+and add the "from:" column up.
+Confidence it's a real defect: high (arithmetic, reproducible at two very different scales).
+
+## FINDING 24 — the same hazard is applied once or three times depending on which hazard it is
+  risk: "[1315-1317] Great Famine ... staff loss after what you have built: 12%"
+  actual: a single "EVENT 1316: Great Famine: staff -12%" — one hit in a three-year window.
+  risk: "[1348-1350] Black Death ... staff loss after what you have built: 45%"
+  actual: three hits, "EVENT 1348/1349/1350: Black Death: staff -45%" - 83% compounded.
+Two multi-year hazards described in the same format behave completely differently.
+Confidence one of them is wrong: high.
+
+## FINDING 10 (confirmed at scale)
+At 1310, in the main run: `hire artisan 5` (bringing me to 6), `open` eleven concerns
+in the same turn, then `fire artisan 6`. Result:
+  labour -> "ON YOUR STAFF: nobody / Total employed: 0"
+  money  -> Revenue 5,632 d/yr, Net/yr 4,476 (up from 2,876 with the staff)
+  ventures -> 16 concerns listed under "running:", "craftsmen: 0"
+By 1319, with nobody employed for nine years and a famine in between:
+  Money 40,511 d, Revenue 6,738 d/yr, "RUNNING AS CONCERNS: 17", "EMPLOY: 0 people".
+Total wage cost of the whole industrial base: about 1,100 den, paid once, for one turn.
+Confidence unintended: high.
+
+## FINDING 25 — eminence is advertised as the danger and never moves
+Every `state` prints "EMINENCE is dangerous above 26 (settles near X if nothing
+changes; 0% chance of ruin this year)". After building 18 things and running 17
+concerns, with reputation at 37.5, eminence was 0.26 and "settles near 1.7"; by 1319
+eminence 0.97, "settles near 1.8", still "0% chance of ruin this year". The whole
+warning apparatus has never produced a non-zero risk in 19 years of aggressive,
+conspicuous building. Confidence it's mis-tuned rather than broken: medium.

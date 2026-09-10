@@ -634,7 +634,7 @@
    747480833,
    3545787415,
    3656373148,
-   36
+   164
   ],
   null
  ],
@@ -655,39 +655,8 @@
   "w_novelty": -0.3,
   "w_religious_rigidity": 0.8
  },
- "active": {
-  "hom_button": {
-   "cost_left": 37.307875,
-   "ph_left": 40.0,
-   "spent": 0.0,
-   "yrs": 0.0
-  },
-  "hom_toys_dolls": {
-   "cost_left": 82.995,
-   "ph_left": 60.0,
-   "spent": 0.0,
-   "yrs": 0.0
-  },
-  "prn_sizing_surface": {
-   "cost_left": 60.80800000000001,
-   "ph_left": 50.0,
-   "spent": 0.0,
-   "yrs": 0.0
-  },
-  "tex_indigo": {
-   "cost_left": 129.16307078206194,
-   "ph_left": 60.0,
-   "spent": 0.0,
-   "yrs": 0.0
-  },
-  "tex_mordanting": {
-   "cost_left": 88.94285870109933,
-   "ph_left": 40.0,
-   "spent": 0.0,
-   "yrs": 0.0
-  }
- },
- "artisans": 0.8671800006249999,
+ "active": {},
+ "artisans": 0.0,
  "atrocity": 0,
  "binding": null,
  "bondage_debt": 0.0,
@@ -697,12 +666,12 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 502.0968519047729,
+ "capital": 40511.37416528876,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
  "dead_reason": null,
- "director_hours_spent_founder": 80.0,
+ "director_hours_spent_founder": 1748.3333333333333,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -727,7 +696,9 @@
    "fin_tax_farming",
    "fin_testament",
    "fin_wage",
+   "fud_fish_curing_and_smoking",
    "hom_board_games",
+   "hom_button",
    "hom_candle_beeswax",
    "hom_candle_tallow",
    "hom_flush_latrine_simple",
@@ -735,11 +706,13 @@
    "hom_hypocaust",
    "hom_lead_plumbing",
    "hom_locks_keys",
+   "hom_mechanical_clock_home",
    "hom_mirror_bronze_polished",
    "hom_musical_instruments",
    "hom_oil_lamp_simple",
    "hom_perfume_enfleurage",
    "hom_public_bath",
+   "hom_toys_dolls",
    "horse_collar",
    "lnd_axle_pivot_front",
    "lnd_bridge",
@@ -793,10 +766,12 @@
    "med_surgical_kit_good",
    "med_trepanation",
    "med_wound_suturing",
+   "opt_anemometer",
    "opt_burning_glass",
    "opt_dioptra",
    "opt_geared_mechanisms",
    "opt_groma",
+   "opt_manometer",
    "opt_metal_mirror_polished",
    "opt_steelyards",
    "opt_sundial",
@@ -811,6 +786,7 @@
    "prn_scribal_copying",
    "prn_sculpture",
    "prn_seals_stamps",
+   "prn_sizing_surface",
    "prn_theatre_pantomime",
    "prn_wax_tablets",
    "pwr_animal_treadmill",
@@ -829,16 +805,24 @@
    "sea_square_sail",
    "sea_steering_oars",
    "sea_sternpost_rudder",
+   "tex_canvas",
    "tex_cotton_trade",
    "tex_drop_spindle",
    "tex_dye_madder",
    "tex_dye_murex",
    "tex_dye_woad",
    "tex_felting",
+   "tex_field_bleaching",
    "tex_horizontal_loom",
+   "tex_indigo",
+   "tex_knitting_frame",
+   "tex_mordanting",
    "tex_sailcloth",
    "tex_silk_trade",
+   "tex_spinning_wheel",
+   "tex_treadle_loom",
    "tex_two_beam_loom",
+   "tex_vegetable_tanning",
    "tex_warp_weighted_loom",
    "tex_wool",
    "water_power_scale"
@@ -846,21 +830,34 @@
  },
  "done_year": {
   "cap_measure_time_s": 1300,
+  "fud_fish_curing_and_smoking": 1308,
+  "hom_button": 1305,
+  "hom_mechanical_clock_home": 1309,
+  "hom_toys_dolls": 1305,
+  "opt_anemometer": 1308,
+  "opt_manometer": 1308,
+  "prn_sizing_surface": 1307,
   "pwr_ship_sail": 1300,
   "sea_pharos_lighthouse": 1300,
-  "tex_horizontal_loom": 1300
+  "tex_canvas": 1308,
+  "tex_field_bleaching": 1309,
+  "tex_horizontal_loom": 1300,
+  "tex_indigo": 1305,
+  "tex_knitting_frame": 1308,
+  "tex_mordanting": 1306,
+  "tex_spinning_wheel": 1309,
+  "tex_treadle_loom": 1308,
+  "tex_vegetable_tanning": 1309
  },
- "economy": 1.12,
- "eminence": 0.02908319907983239,
- "employees": {
-  "artisan": 0.8671800006249999
- },
+ "economy": 1.27,
+ "eminence": 0.9731400771123035,
+ "employees": {},
  "familiarity": 0.9,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": 1.3,
+ "gov": 0.9999999999999999,
  "granted": {
   "__set__": [
    "blast_furnace",
@@ -1007,11 +1004,11 @@
   "wage_work": 0.0
  },
  "insolvent_years": 0,
- "interest_paid": null,
+ "interest_paid": 127.04460591395863,
  "last_patron_death": null,
  "last_settlement": -999,
- "life_left": 999999995.0,
- "living_cost_paid": 2040.164392049208,
+ "life_left": 999999981.0,
+ "living_cost_paid": 12092.436391047719,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -1027,7 +1024,22 @@
  "operating": {
   "__set__": [
    "cap_measure_time_s",
-   "tex_horizontal_loom"
+   "fud_fish_curing_and_smoking",
+   "hom_button",
+   "hom_mechanical_clock_home",
+   "hom_toys_dolls",
+   "opt_anemometer",
+   "opt_manometer",
+   "prn_sizing_surface",
+   "tex_canvas",
+   "tex_field_bleaching",
+   "tex_horizontal_loom",
+   "tex_indigo",
+   "tex_knitting_frame",
+   "tex_mordanting",
+   "tex_spinning_wheel",
+   "tex_treadle_loom",
+   "tex_vegetable_tanning"
   ]
  },
  "output_factor": 1.0,
@@ -1044,27 +1056,50 @@
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.03137594826575221,
- "reputation": 8.157746549095576,
+ "protection": 0.11091143407805508,
+ "reputation": 28.83697286029432,
  "revealed": {
   "__set__": [
+   "air_pitot_tube",
    "cap_measure_time_ms",
    "cap_measure_time_s",
    "chm_continuous_batch",
+   "fud_fish_curing_and_smoking",
+   "hom_button",
+   "hom_doll_fashion",
+   "hom_mechanical_clock_home",
+   "hom_toys_dolls",
+   "mat_dyes_synthetic",
+   "opt_anemometer",
    "opt_ballistic_galvanometer",
    "opt_gravimeter",
+   "opt_manometer",
    "opt_stellar_parallax",
    "opt_transit_instrument",
+   "prn_sizing_surface",
    "pwr_smeaton_efficiency",
    "sc2_notation_metric_unit",
    "sea_fresnel_lens",
    "sea_pharos_lighthouse",
+   "tex_calico_printing",
    "tex_canvas",
+   "tex_chlorine_bleaching",
+   "tex_field_bleaching",
+   "tex_flying_shuttle",
    "tex_horizontal_loom",
-   "tex_treadle_loom"
+   "tex_hosiery",
+   "tex_indigo",
+   "tex_knitting_frame",
+   "tex_mordanting",
+   "tex_power_loom",
+   "tex_spinning_jenny",
+   "tex_spinning_wheel",
+   "tex_treadle_loom",
+   "tex_vegetable_tanning",
+   "tex_water_frame"
   ]
  },
- "scandal": 1.2282192,
+ "scandal": 1.8527354454557816,
  "scholars": 0.0,
  "slaves": 0,
  "spend_last_year": 0.0,
@@ -1073,7 +1108,7 @@
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 158.08709822622532,
+ "total_spend": 4986.583890844989,
  "trade_hours_used": {},
  "trades_created": {
   "__set__": []
@@ -1082,5 +1117,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 1305
+ "year": 1319
 }

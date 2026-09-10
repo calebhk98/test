@@ -42,6 +42,11 @@ class SocietyMixin:
         a *= (1.0 + max(0.0, -w["w_novelty"]))
         a *= max(0.12, 1.0 - self.familiarity)      # people habituate, fast
         a *= max(0.15, 1.0 - self.protection)       # patrons, office, money
+        # A recognised scholar doing something strange is a scholar; a stranger
+        # doing the same thing is a sorcerer. This is the persona working, and
+        # it is what the node has always said it does.
+        if self.has("identity_cover"):
+            a *= 0.75
         return a
 
     def update_protection(self):
@@ -53,6 +58,16 @@ class SocietyMixin:
         if self.has("patron_local"):        p += 0.18 * w["patronage_weight"]
         if self.has("patron_senatorial"):   p += 0.26 * w["patronage_weight"]
         if self.has("patron_imperial"):     p += 0.32 * w["patronage_weight"]
+        # IT SAYS "REDUCES ALL FUTURE SUSPICION" AND IT DID NOTHING OF THE KIND.
+        # identity_cover's entire implementation was +1.0 to the reputation
+        # floor and +400 to the credit limit, and the suspicion it promised to
+        # reduce was a field that no longer exists. Its real value was that it
+        # gated a quarter of the tree - which is why every tester concluded
+        # they had to have it and assumed it was about illegal activity. It is
+        # a persona: books, a house, clothes, a secretary and a reputation for
+        # piety. What that buys is that an inexplicable effect coming out of
+        # YOUR workshop is read as learning rather than as sorcery.
+        if self.has("identity_cover"):      p += 0.12
         if self.has("citizenship"):         p += 0.10
         if self.has("collegium_licensed"):  p += 0.10
         if self.has("endowment_land"):      p += 0.08   # conspicuous benefaction

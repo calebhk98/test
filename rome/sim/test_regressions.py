@@ -1879,6 +1879,49 @@ check("...and on a rich one it actually hires",
       sum(s.employees.values()) > 1.0,
       "staff %.2f on 100,000" % sum(s.employees.values()))
 
+# --- the persona is a persona, not a licence to do arithmetic ----------------
+# The user, on identity_cover: "does anything building on it actually require
+# it, or does it just make it so that you have social metrics that help? You
+# could build a hot air balloon or bike without an identity, you are just more
+# likely to be called a witch."
+#
+# They were right, and it was worse than that. identity_cover's whole
+# implementation was +1.0 to the reputation floor and +400 to the credit
+# limit; the "reduces all future suspicion" in its own description referred to
+# a field that no longer exists. Its real function was to gate a quarter of
+# the tree - and it was empirically the single node blocking England and
+# Mexica from ever reaching the goal, because arithmetic_positional needs it
+# and nothing else.
+check("writing down zero does not require a respectable persona",
+      "identity_cover" not in NODES["arithmetic_positional"]["pre"]
+      and "identity_cover" not in NODES["scientific_method"]["pre"],
+      (NODES["arithmetic_positional"]["pre"], NODES["scientific_method"]["pre"]))
+check("...but being received by a patron, and publishing, still do",
+      "identity_cover" in NODES["patron_local"]["pre"]
+      and "identity_cover" in NODES["world_map"]["pre"],
+      (NODES["patron_local"]["pre"], NODES["world_map"]["pre"]))
+
+
+def _persona(has):
+    s_ = sim(civ="england_1300")
+    if has:
+        s_.done.add("identity_cover")
+        s_._done_changed()
+    s_.update_protection()
+    return s_
+
+
+_no, _yes = _persona(False), _persona(True)
+_n = NODES["hot_air_balloon"]
+check("a persona makes the same strange work less alarming, as it says it does",
+      _yes.alarm_of(_n) < _no.alarm_of(_n) * 0.85
+      and _yes.protection > _no.protection,
+      "alarm %.2f -> %.2f, protection %.3f -> %.3f"
+      % (_no.alarm_of(_n), _yes.alarm_of(_n), _no.protection, _yes.protection))
+check("...and you can still build the balloon without one",
+      _no.alarm_of(_n) > 0 and "identity_cover" not in NODES["hot_air_balloon"]["pre"],
+      NODES["hot_air_balloon"]["pre"])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

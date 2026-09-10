@@ -312,6 +312,12 @@ class EconomyMixin:
             self.last_settlement = yr
             self.capital = -limit * 0.35
             self.reputation = max(0.0, self.reputation - 12)
+            # AND NOBODY LENDS TO YOU FOR A WHILE. Without this, walking away
+            # from a debt cost a little standing and nothing else, and standing
+            # grows back. A person who has just been written off does not get
+            # a fresh line of credit the following morning.
+            self.credit_frozen_until = max(getattr(self, "credit_frozen_until", 0),
+                                           yr + 12)
             # SAY WHAT ACTUALLY HAPPENED. "The debt is written off" while
             # leaving the player owing a third of their credit line is a
             # sentence that contradicts the number on the next line, and a
