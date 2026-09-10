@@ -1797,7 +1797,13 @@ def render_labour(out):
         L = ["TRADE: %s (%s)" % (t.get("trade"), t.get("kind"))]
         L.append("exists here: %s" % t.get("exists_here"))
         L.append("a year of one: %s den     wage: %s den/hr" % (_fmt_num(t.get("a_year_of_one")), _fmt_num(t.get("wage_per_hour"))))
-        L.append("you employ: %s     market can supply: %s hours" % (_fmt_num(t.get("you_employ")), _fmt_num(t.get("hours_the_market_can_supply"))))
+        L.append("you employ: %s     the town can supply: %s hours"
+                 % (_fmt_num(t.get("you_employ")),
+                    _fmt_num(t.get("hours_the_market_can_supply"))))
+        if t.get("hours_your_own_people_add"):
+            L.append("your own %ss add %s, so %s hours a year are available to you"
+                     % (t.get("trade"), _fmt_num(t.get("hours_your_own_people_add")),
+                        _fmt_num(t.get("hours_available_to_you_in_all"))))
         if t.get("note"):
             L.append(_wrap(t["note"]))
         return "\n".join(L)
@@ -3075,7 +3081,12 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 r.update({"kind": trade_family(t),
                           "wage_per_hour": round(WAGES[t] * s.wage_index
                                                  * s.price_index, 3),
-                          "hours_the_market_can_supply": round(s.market_supply(t), 0),
+                          # SPLIT, because the total includes your own people
+                          # and calling all of it "the market" made hiring look
+                          # like it created smiths out of nothing.
+                          "hours_the_market_can_supply": round(s.market_supply_split(t)[0], 0),
+                          "hours_your_own_people_add": round(s.market_supply_split(t)[1], 0),
+                          "hours_available_to_you_in_all": round(s.market_supply(t), 0),
                           # THE NOTE IS STATIC AND THE WORLD IS NOT. A break
                           # tester read "exists here: True" and "does not exist
                           # yet; you must create this trade" three lines apart,
@@ -3095,8 +3106,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
             r["exists_here"] = s.trade_available(one)
             return {"ok": True, "trade": r}
         have = sorted(t for t in WAGES if s.employees.get(t, 0.0) > 0.005)
-        hirable = sorted(t for t in WAGES
-                         if s.trade_available(t) and t not in have)
+        # NOT "TRADES YOU DO NOT YET EMPLOY". Excluding the ones you have reads
+        # as "no more smiths available" the moment you hire your first smith,
+        # which is false and which `hire smith 1` then contradicts. It is every
+        # trade this society has.
+        hirable = sorted(t for t in WAGES if s.trade_available(t))
         absent = sorted(t for t in WAGES if not s.trade_available(t))
         return {"ok": True,
                 "on_your_staff": [row(t) for t in have] or "nobody",

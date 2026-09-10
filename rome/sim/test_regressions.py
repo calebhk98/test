@@ -3180,6 +3180,44 @@ check("...and names restore, which is the verb that reopens it",
       "restore" in str(_rp.get("reopen_them_with")), _rp.get("reopen_them_with"))
 
 
+# ======================================================================
+# ROUND 8f: screens that disagreed with each other.
+# ======================================================================
+
+# --- BREAK: "(these add up to the revenue above)" - 166.7 + 66.7 = 233.4
+# under a stated 233.5. A claim of exact addition, checkable in one line.
+for _civ_name in ("rome_100ad", "han_china_100ad", "norse_900ad", "england_1300"):
+    _s = sim(civ=_civ_name, capital=200000.0)
+    for _i, _k in enumerate(k_ for k_ in NODES if NODES[k_]["rev"] > 0):
+        if _i >= 6:
+            break
+        _s.done.add(_k); _s.operating.add(_k)
+    _s._done_changed()
+    _src = _s.revenue_sources()
+    _sum = sum(v for v in _src.values() if isinstance(v, (int, float)))
+    check("%s: the ledger rows add up to the revenue they are printed under"
+          % _civ_name, abs(_sum - _s.revenue()) < 0.05, (_sum, _s.revenue()))
+
+# --- BREAK: "market can supply 22,500 hours", then 24,500 after hiring one
+# smith. market_supply is hours available TO YOU, your own staff included.
+s_ms = sim(capital=200000.0)
+_town0, _mine0 = s_ms.market_supply_split("smith")
+s_ms.hire("smith", 1)
+_town1, _mine1 = s_ms.market_supply_split("smith")
+check("hiring does not conjure more of a trade into the town",
+      abs(_town0 - _town1) < 1e-6, (_town0, _town1))
+check("...and what your own people add is counted separately",
+      _mine1 > _mine0 and abs(_town1 + _mine1 - s_ms.market_supply("smith")) < 1e-6,
+      (_mine0, _mine1, s_ms.market_supply("smith")))
+
+# --- BREAK: after `hire smith 1`, `labour` dropped smith from YOU COULD HIRE,
+# which reads as "no more smiths available" - and `hire smith 1` still worked.
+_rl, _, _ = proto([{"cmd": "hire", "trade": "smith", "n": 1}, {"cmd": "labour"}])
+check("a trade you employ is still listed as one you could hire",
+      "smith" in (_rl[1].get("you_could_hire_here") or []),
+      _rl[1].get("you_could_hire_here"))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

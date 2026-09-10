@@ -470,6 +470,24 @@ class LabourMixin:
             cap *= self.literacy_factor(t)
         return cap + self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
 
+    def market_supply_split(self, t):
+        """(the town's hours, your own people's hours). Same total, said honestly.
+
+        market_supply is hours of this trade AVAILABLE TO YOU, which includes
+        your own staff - so `labour trade smith` reported "market can supply
+        22,500 hours", then 24,500 after hiring one smith, and a break tester
+        reasonably filed it as taking smiths out of the market making more
+        smith-hours available. The arithmetic was right and the label was
+        wrong: the town's share had not moved at all.
+        """
+        mine = self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
+        total = self.market_supply(t)
+        if t in TRADES_ABSENT:
+            # There is no market in these at all; every hour is somebody you
+            # taught, or somebody they taught.
+            return 0.0, total
+        return max(0.0, total - mine), mine
+
     def hire(self, trade, n):
         """Take someone onto the staff permanently. They are paid every year."""
         trade = str(trade or "").strip().lower()
