@@ -177,9 +177,15 @@ MONEY_WORDS = {
 }
 
 
+# THE SAME WORD IN BOTH FORMS, except for Rome where "den" is the established
+# abbreviation and appears throughout the notes. Having a long form and a
+# different short form produced sentences like "needs about 1959 pence, you
+# have 612 den" - one clause localised from the payload, the next from the
+# renderer - which a break tester quite reasonably filed as the currency
+# drifting between three names.
 MONEY_SHORT_WORDS = {
-    "denarius": "den", "sterling penny": "d", "wu zhu cash": "cash",
-    "hacksilver by weight": "g", "cacao bean and cotton cloth": "beans",
+    "denarius": "den", "sterling penny": "pence", "wu zhu cash": "cash",
+    "hacksilver by weight": "hacksilver", "cacao bean and cotton cloth": "beans",
 }
 
 

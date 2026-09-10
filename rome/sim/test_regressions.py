@@ -2047,6 +2047,33 @@ check("...and there is a help topic for it",
       "eminence" in json.dumps(_he[0]).lower() and "no such topic" not in json.dumps(_he[0]),
       list(_he[0])[:4])
 
+# Money is counted in the money of the place, and in ONE name for it. A break
+# tester read "needs about 1959 pence, you have 612 den" in a single sentence:
+# one clause localised from the payload, the next from the renderer.
+_cur, _ = _play(["state", "money", "quote mine coal 500", "quit"], civ="england_1300")
+check("an English game is counted in pence and never in denarii",
+      " den " not in _cur and "denarii" not in _cur and "pence" in _cur,
+      [l for l in _cur.splitlines() if " den " in l or "denarii" in l][:2])
+_cur2, _ = _play(["state", "quit"], civ="han_china_100ad")
+check("a Han game is counted in cash",
+      "cash" in _cur2 and "denarii" not in _cur2,
+      [l for l in _cur2.splitlines() if "denarii" in l][:2])
+
+# The help shows {"cmd":"labour","trade":"smith"}, so `labour trade smith` is
+# the obvious typed reading of it - and was answered "no such trade: trade".
+_syn, _ = _play(["available subject metallurgy", "labour trade smith", "quit"],
+                civ="england_1300")
+check("the typed form of what the help shows actually works",
+      "no such trade: trade" not in _syn and "AVAILABLE: 0 startable" not in _syn,
+      [l for l in _syn.splitlines() if "REFUSED" in l][:2])
+
+# `ventures` fell through to the generic dump and printed lists of dicts as
+# raw Python.
+_vr, _ = _play(["ventures", "quit"], civ="england_1300")
+check("ventures is rendered as a table, not as raw Python",
+      "CONCERNS" in _vr and "{'id':" not in _vr and "{\"id\":" not in _vr,
+      [l for l in _vr.splitlines() if "{'" in l][:2])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

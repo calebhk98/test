@@ -1421,6 +1421,47 @@ def render_labour(out):
     return "\n".join(L)
 
 
+def render_ventures(out):
+    """What you run and what you could. This fell through to the generic
+    key/value dump, which prints a list of dicts as raw Python - a tester
+    reported "ventures dumps raw Python dicts" and they were reading exactly
+    that."""
+    L = ["CONCERNS"]
+    free = out.get("people_free_to_run_something_new") or {}
+    L.append("free to put behind something new: %s scholars, %s craftsmen"
+             % (_fmt_num(free.get("scholars")), _fmt_num(free.get("craftsmen"))))
+    L.append("")
+    run = out.get("running")
+    L.append("RUNNING")
+    if isinstance(run, list) and run:
+        L.append("  %-34s %10s %10s %8s" % ("ID", "EARNS/YR", "COSTS/YR", "NEEDS"))
+        for r in run:
+            nd = r.get("needs") or {}
+            L.append("  %-34s %10s %10s %4s sch %3s cr"
+                     % (r.get("id"), _fmt_num(r.get("earns_a_year")),
+                        _fmt_num(r.get("costs_a_year")),
+                        _fmt_num(nd.get("scholars")), _fmt_num(nd.get("craftsmen"))))
+    else:
+        L.append("  nothing")
+    idle = out.get("you_know_how_but_have_not_opened")
+    L.append("")
+    L.append("YOU KNOW HOW, AND HAVE NOT OPENED")
+    if isinstance(idle, list) and idle:
+        L.append("  %-34s %10s %10s %10s" % ("ID", "EARNS/YR", "COSTS/YR", "TO OPEN"))
+        for r in idle:
+            L.append("  %-34s %10s %10s %10s"
+                     % (r.get("id"), _fmt_num(r.get("earns_a_year")),
+                        _fmt_num(r.get("costs_a_year")), _fmt_num(r.get("to_open_it"))))
+    else:
+        L.append("  nothing")
+    if out.get("and_more_you_could_open"):
+        L.append("  ...and %s more" % _fmt_num(out["and_more_you_could_open"]))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
 def render_risk(out):
     kr = out.get("knowledge_risk") or out
     L = ["KNOWLEDGE AT RISK"]
@@ -1520,7 +1561,7 @@ _RENDERERS = {
     "state": render_state, "step": render_step, "available": render_available,
     "why": render_why, "money": render_money, "ledger": render_money,
     "accounts": render_money, "labour": render_labour, "risk": render_risk,
-    "hazards": render_risk,
+    "hazards": render_risk, "ventures": render_ventures,
 }
 
 
@@ -1863,6 +1904,9 @@ def parse_typed(line):
                 out["offset"] = int(_typed_number(nxt) or 0); i += 1
             elif _typed_number(w) is not None:
                 out["afford"] = _typed_number(w)
+            elif w in ("subject", "group", "in") and nxt:
+                out["subject"] = " ".join(rest[i + 1:])
+                break
             else:
                 # A bare word is a subject: 'available metallurgy'. Subjects are
                 # several words long ("roads, bridges and canals"), so take the
@@ -1908,7 +1952,14 @@ def parse_typed(line):
         return {"cmd": "bribe", "amount": nums[0]}, None
 
     if op == "labour":
-        return {"cmd": "labour", "trade": (words[0].lower() if words else None)}, None
+        # A PLAYER WHO TYPES THE FIELD NAME MEANS THE FIELD. The help shows
+        # {"cmd":"labour","trade":"smith"}, so `labour trade smith` is the
+        # obvious typed reading of it, and it was answered with "no such trade:
+        # trade". Same for `available subject metallurgy`, which quietly
+        # searched for a subject literally called "subject metallurgy" and
+        # reported nothing startable.
+        _w = [x for x in words if x.lower() != "trade"]
+        return {"cmd": "labour", "trade": (_w[0].lower() if _w else None)}, None
 
     if op in ("hire", "fire"):
         if not words:

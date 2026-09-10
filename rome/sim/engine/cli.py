@@ -416,9 +416,11 @@ def cmd_play(a):
         # wages. The prompt disagreeing with state about the one number on it
         # is how a tester found the accounting wrong in the first place.
         free_hours = max(0.0, s.director_pool() - s.director_hours_committed())
-        prompt = ("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f] > "
-                  % (s.year, s.capital, free_hours, s.scholars,
-                     s.artisans, s.reputation))
+        # The prompt is built here and never passes through the renderer, so it
+        # was the last place still saying "den" in a game counted in pence.
+        prompt = ("[%d AD | %d %s | you:%d hr | sch %.0f art %.0f | rep %.0f] > "
+                  % (s.year, s.capital, money_short(s.civ), free_hours,
+                     s.scholars, s.artisans, s.reputation))
         try:
             line = input(prompt)
         except (EOFError, KeyboardInterrupt):
