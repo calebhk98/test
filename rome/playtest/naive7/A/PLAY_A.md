@@ -404,3 +404,109 @@ paying off decades after I bought them. Third century crisis landed in 235:
 rigidity. Being told *which* of my buildings absorbed which shock, every time, is
 the thing this simulation does better than any tech-tree game I have played.
 
+### 239-496: the broad front, and the win
+
+Once income passed a few hundred thousand a year I stopped choosing. I wrote a
+shell loop that dumped `available all`, started everything marked RESTS
+ALL/much/some plus everything under a cost ceiling, and stepped six years. Tech
+count went 159 → 2,669. Money reached 959 million denarii and 892 staff.
+
+**GOAL REACHED: point-contact transistor completed in 496 AD**, 104 years inside
+the 600 horizon, starting from 400 denarii and one person in 100 AD.
+
+The final item is a lovely piece of writing:
+
+    THE GOAL. An n-type germanium slab with two phosphor bronze points a fraction
+    of a millimetre apart, plus a forming pulse. Fragile, noisy, irreproducible
+    and it amplifies. Bardeen, Brattain and Shockley, December 1947. Getting here
+    from 100 AD is the whole game.
+    33,970 den, 900 founder hours, 4 years, 45% failure risk,
+    needs 25 scholars and 20 artisans on staff,
+    materials: germanium 200 g, gold 20 g, phosphor bronze 60 g.
+
+The last hundred years of the chain read exactly right: cap_pure_4N → cap_pure_6N
+→ cap_pure_9N, germanium_extraction → gecl4_purification → ge_reduction →
+zone_refining → single_crystal → semiconductor_metrology → point_contact_
+transistor, alongside vacuum_tube/triode and the whole power grid.
+
+Hazards survived, all of them visibly blunted by things bought decades earlier:
+Antonine plague (-20% instead of -28%), Plague of Cyprian (-10% instead of -28%),
+third-century crisis ("an attack comes to nothing (a patron with soldiers; the
+work is in too many places to burn; land nobody can carry away)"), currency
+debasement to 94% ("you feel less of it — wealth held as land, not as coin"),
+and the fall of the western empire, which passed without my noticing.
+
+## What I'd tell the designer
+
+**What works, and works well**
+
+1. The `open` / built distinction. "Knowing how to do a thing and running it are
+   different" is the best single mechanic here and it is taught in one line.
+2. Refusals that name the fix. Every wall I hit — no housing, no supervisor, no
+   engineer in this society, no citizenship — came with the exact command that
+   would clear it. I was never stuck without knowing why.
+3. Hazard mitigation with a stated counterfactual. "-20%, would have been -28%:
+   filtered water; fields that do not fail together" makes fifty-year-old
+   decisions legible. Nothing else I've played does this.
+4. Eminence. A hazard that grows out of success, that money and patrons make
+   *worse*, and whose only cure is a slow, expensive, dispersed institution. It
+   punished exactly the play the economy rewards.
+5. The social prerequisites — patron, citizenship, licensed collegium, freed
+   staff. These are the Rome-specific content and they are the best part.
+
+**What tripped me up**
+
+1. **`available` does not show staff requirements.** I planned around the table
+   twice and got refused, because "STAFF NEEDED: 1 artisan" lives only in `why`.
+   One extra column would fix this.
+2. **Nothing says whether a prerequisite needs to be DONE or OPEN.** I paid 100
+   den/yr for years to keep scientific_method "running" on a guess. `why` shows
+   STATUS: DONE for unopened things, which suggests I wasted the money, but I
+   never got confirmation.
+3. **school_founded shouts "every year of delay costs more than any single
+   technology" while being BLOCKED by two things fog will not name.** That is the
+   sharpest conflict between the advice layer and the fog layer.
+4. **`risk` leaks prerequisites that `why` hides.** That is how I found the
+   school's blockers. Either fix it or lean into it and call `risk` a scouting
+   tool.
+5. **auto_mothball closes concerns silently.** I lost horse_collar's 900/yr for
+   two turns. `auto_open` also silently stops working when you are in arrears.
+6. **The school competes with itself.** +2 scholars/yr fills the housing cap and
+   starves you of the artisans who supervise concerns; income collapsed until I
+   fired eight scholars. Nothing warns you.
+7. **The recurring patron death.** "your patron dies; his heir must be courted
+   afresh" fired at least five times. I never found a command to court the heir,
+   never saw what it cost me, and building patron_senatorial did not stop it.
+8. **"SHORT OF SALTPETRE: work running at 5% of plan"** — a 20x throttle with no
+   way I could find to diagnose or fix it. Same for "no viable option in a
+   required substitution group (fuel, vessel, etc.)", which blocked several
+   electrical items for a century with no hint what the missing option was.
+9. **Every `available` reprints the full "HEARD OF, CANNOT BEGIN YET" list**,
+   25+ identical lines, even when the answer to your query is two rows.
+
+**What felt unrealistic**
+
+- Revenue is fully general-purpose: a rope walk and a horizontal loom fund a
+  semiconductor programme, and "what your own workshop sells" becomes the largest
+  single line with no explanation of what it is selling.
+- 892 employees but exactly 2 chemists, 2 engineers, 2 machinists, 2 opticians,
+  2 electricians for four centuries. The trained trades never grew, and the game
+  never told me to grow them.
+- The founder is immortal, which is the stated design choice, but by 400 AD I was
+  running a 900-person institution across a collapsing empire with the same
+  2,000 personal hours a year, extended only by "deputies".
+
+**What I never found a use for**
+
+- `bounty` (2.5x cash for no founder hours) — correct in principle, but by the
+  time hours were scarce enough to want it, money was so abundant that I never
+  needed the trade. `commission`, `bribe`, `close`, `mothball`/`restore` and
+  buying slaves directly all went unused too. 1,819 concerns I knew how to run
+  and never opened, because money had stopped mattering by 250 AD.
+
+**Where it got tedious**
+
+- Roughly 250 AD to 490 AD. Once income outruns every price, the decision
+  disappears and the optimal play is "start everything, step six years". I
+  scripted it. A ceiling on how many projects can run at once, or a real
+  constraint that scales with the empire, would keep the last half alive.

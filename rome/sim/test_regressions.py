@@ -2236,6 +2236,40 @@ check("a step that is not a number is refused, not silently taken as one",
       "not a number" in _sa and "YEAR 100" in _sa,
       [l for l in _sa.splitlines() if "YEAR" in l][:2])
 
+# 5. "A site is sacked" took 62% of a tester's money, restarted every project
+#    and cut their people nearly in half, and printed only those five words -
+#    against a player who owned no sites. The plague family had already been
+#    taught to report the harm it actually did; this one had not.
+s = sim(civ="mexica_1500", capital=50000.0)
+s.year = 1519
+for _ in range(6):
+    s._shocks(s.year)
+    s.year += 1
+_sacks = [m for _y, m in s.log if "sacked" in m]
+check("a sacking says what it took from you",
+      _sacks and ("taken" in _sacks[0] or "nothing it could take" in _sacks[0]),
+      _sacks[:1])
+s2 = sim(civ="mexica_1500", capital=0.0)
+s2.year = 1519
+for _ in range(6):
+    s2._shocks(s2.year)
+    s2.year += 1
+_sacks2 = [m for _y, m in s2.log if "sacked" in m]
+check("...and says so plainly when it took nothing",
+      not _sacks2 or "nothing it could take" in _sacks2[0], _sacks2[:1])
+
+# 6. `bribe` sells protection, protection decides whether strange work reads as
+#    learning or as sorcery, and it appeared on no screen and in no help topic.
+_pr, _ = _play(["state", "bribe 700", "state", "quit"],
+               civ="rome_100ad", extra=["--kit", "equestrian"])
+_lines = [l for l in _pr.splitlines() if "STANDING:" in l]
+check("protection is on the screen that shows your standing",
+      len(_lines) >= 2 and "protection" in _lines[0] and _lines[0] != _lines[1],
+      _lines[:2])
+_hp, _, _ = proto([{"cmd": "help", "topic": "protection"}])
+check("...and has a help topic of its own",
+      "no such topic" not in json.dumps(_hp[0]), list(_hp[0])[:3])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

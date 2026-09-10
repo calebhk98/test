@@ -478,13 +478,37 @@ class SocietyMixin:
                     self.log.append((yr, "%s: an attack comes to nothing (%s)"
                                      % (h.get("name", "crisis"), "; ".join(why[:3]))))
                 if r.random() < p:
+                    # SAY WHAT IT TOOK FROM YOU. This printed "a site is
+                    # sacked" and nothing else while removing 62% of a
+                    # weird-play tester's money, restarting every project they
+                    # had and cutting their people nearly in half - and they
+                    # owned no sites at all. The plague family was taught to
+                    # report the harm it actually did; this one was not, and a
+                    # bare event line against an unexplained fall in capital is
+                    # how a player stops trusting the ledger.
+                    _cap0 = max(0.0, self.capital)
+                    _people0 = self.artisans + self.scholars
+                    _act0 = len(self.active)
                     self.lose_capital(0.60)
                     self.artisans *= 0.55; self.scholars *= 0.55
                     self.directors_extra *= 0.65
                     for k in sorted(self.active):
                         self.active[k]["ph_left"] = self.nodes[k]["ph"]
                         self.active[k]["yrs"] = 0.0
-                    self.log.append((yr, "%s: a site is sacked" % h.get("name","crisis")))
+                    _took = []
+                    if _cap0 - max(0.0, self.capital) > 0.5:
+                        _took.append("%s taken"
+                                     % "{:,.0f}".format(_cap0 - max(0.0, self.capital)))
+                    if _people0 - (self.artisans + self.scholars) > 0.05:
+                        _took.append("%.1f of your people gone"
+                                     % (_people0 - (self.artisans + self.scholars)))
+                    if _act0:
+                        _took.append("%d project%s back to the beginning"
+                                     % (_act0, "" if _act0 == 1 else "s"))
+                    self.log.append((yr, "%s: a site is sacked - %s"
+                                     % (h.get("name", "crisis"),
+                                        ", ".join(_took)
+                                        or "you had nothing it could take")))
                     if self.has("corpus_dispersed"):   pl, frac = 0.12, 0.08
                     elif self.has("corpus_written"):   pl, frac = 0.45, 0.22
                     else:                              pl, frac = 0.80, 0.40

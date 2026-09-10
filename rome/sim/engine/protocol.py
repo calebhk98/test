@@ -352,7 +352,7 @@ def _agent_state(s, nodes, cmd=None):
 
 
 HELP_TOPICS = ("commands", "labour", "economy", "money", "automatic",
-               "sittings", "fog", "eminence", "risk")
+               "sittings", "fog", "eminence", "risk", "protection")
 
 
 def _agent_help(s, topic=None):
@@ -515,6 +515,22 @@ def _agent_help(s, topic=None):
             "Pass --session FILE on the command line. The game is written to "
             "that file after every command and read back when you start again, "
             "so you do not need to hold a process open or write a script.")}
+
+    if topic in ("protection", "standing"):
+        return {"protection": (
+            "How far your standing shields you when you produce an effect "
+            "nobody can explain. It decides whether a strange result out of "
+            "your workshop is read as learning or as sorcery, and it is the "
+            "only thing money can buy here directly."),
+            "what raises it": (
+                "A patron, citizenship, a licensed collegium, land endowed in "
+                "public, a school, and your reputation - and spending on "
+                "advocacy and piety, which is what `bribe` does when you have "
+                "no scandal to answer. It caps at 92%."),
+            "what it does NOT protect you from": (
+                "Eminence. Being too large is the one hazard no protection "
+                "touches; see {\"cmd\":\"help\",\"topic\":\"eminence\"}."),
+            "where to watch it": '{"cmd":"state"} shows it under STANDING'}
 
     if topic in ("eminence", "prominence"):
         return {"eminence": (
@@ -1127,8 +1143,14 @@ def render_state(out):
         L.append(_wrap(out["staff_are_fractional_because"], indent="  "))
 
     L.append("")
-    L.append("STANDING: reputation %s   scandal %s   eminence %s"
-             % (_fmt_num(out.get("reputation")),
+    # PROTECTION BELONGS HERE. It is what bribes, patrons and standing actually
+    # buy, and what decides whether a strange result out of your workshop is
+    # read as learning or as sorcery - and it appeared on no screen at all. A
+    # weird-play tester found it only by noticing that bribing with no scandal
+    # to answer still moved SOMETHING, and reported it as a hidden stat being
+    # sold to them.
+    L.append("STANDING: reputation %s   protection %s   scandal %s   eminence %s"
+             % (_fmt_num(out.get("reputation")), _pct(out.get("protection")),
                 _fmt_num(out.get("scandal")), _fmt_num(out.get("eminence"))))
     prom = out.get("prominence") or {}
     if prom:

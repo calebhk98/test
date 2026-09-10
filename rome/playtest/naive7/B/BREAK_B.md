@@ -427,3 +427,144 @@ apart with different values, on a screen where I employ nobody at all. The same 
 explains FINDING 8: `why tr_hopper_wagon` printed "1 artisans (you have 1, 0)" and
 "STATUS: CAN START NOW" simultaneously - the gate uses the 1.0 figure, the display uses the
 employee count. Confidence: HIGH.
+
+### FINDING 21 (confirmed) — designer's notes leak into the player-facing risk screen
+```
+> risk
+[235-284] Third century crisis
+  Rome's baseline `values` note that it is magic, not heterodoxy, that is criminal here,
+  ... That is a real tightening of religious rigidity, not merely more of the old
+  magic-suspicion, so it is modelled as its own small shift below rather than folded into
+  w_magic_fear.
+[284-305] Diocletian's reforms and the Price Edict
+  ... That, and not the persecution of 303-311, is why w_commerce falls here. The state
+  also gets stronger and its favour correspondingly more decisive, which is the patronage
+  shift.
+```
+Internal variable names (`w_magic_fear`, `w_commerce`), a reference to "Rome's baseline
+`values`" file, and first-person modelling justifications ("is modelled as", "is why ...
+falls here") are printed to the player as in-world briefing text. Confidence: HIGH that
+this is not meant to be player-visible.
+
+### FINDING 2 (strengthened) — one generic mitigation offered for every hazard
+`horse_collar` is offered as "you could begin now" under all of:
+Antonine plague, Plague of Cyprian, Third century crisis (output factor) and Diocletian's
+Price Edict - alongside prose remedies that are, respectively, "clean water, quarantine and
+eventually inoculation" (twice) and "land and power of your own". A padded horse collar is
+not a plague measure. `statistics_basic` is likewise offered under both plagues AND the
+third-century crisis. The suggestion engine is clearly not reading the hazard's own
+mitigator list. Confidence: HIGH.
+
+### FINDING 22 (confirmed) — when it must close a concern, it closes the most profitable one
+`scratch_fuzz.json`, staff wiped out by the Antonine plague. Two concerns each need 1
+craftsman: `tr_hopper_wagon` (earns 600/yr, costs 40) and `tx2_retting` (earns 0/yr,
+costs 40). The engine's choice:
+```
+EVENT 177: nobody left to keep an eye on 1 concern, so tr_hopper_wagon closed.
+```
+It kept the one that earns nothing and costs 40 a year, and closed the one earning 600.
+This is the second time I have seen it pick the worst victim (the first was at 114 AD).
+Confidence: HIGH that this is wrong.
+
+### FINDING 23 (candidate) — `policy auto_shed` never fires
+`auto shed: let go of WORKS that cost more than they return (this is about buildings and
+practices, not people)". Switched ON, with `tx2_retting` open at 0 den/yr earned and
+40 den/yr paid, and 33 years passing (168-201). It was never shed. Three more zero-revenue
+concerns (identity_cover 0/200, scientific_method 0/100, units_standards 0/30) also
+survived - those plausibly have non-monetary value, but `tx2_retting` does not obviously.
+Confidence: MEDIUM.
+
+### Small: a hardcoded example in a live number
+`state` prints "1.32 artisans is the wage and output of one artisan plus a third of
+another's" while the line above it says "artisan 0.09". The illustrative number is static
+and does not match the figure it is illustrating.
+
+### Fuzzing the parser — could NOT break it
+`step 1e9`, `step 999999999` -> refused with the correct remaining-years figure (432).
+`step 2.5` -> "years must be a whole number". `why` / `start` / `buy` / `quote` with no
+argument -> a helpful usage line. `state; money` -> "one command per line - I will not
+guess which half you meant." `help nosuchtopic` -> lists real topics.
+`policy auto_nonexistent on` -> lists real policies. `policy auto_hire maybe` -> "say 'on'
+or 'off'". `quote mine unobtainium 5` -> "no such material ... Mineable: coal, copper,
+gold, iron, lead, silver, tin". No traceback anywhere.
+Two nits: `buy forest abc` parses "abc" as 0 and reports "n must be greater than zero,
+got 0" rather than "not a number"; `start hom_toys_dolls hom_safety_pin` silently ignores
+the second id.
+
+### Expectation before the long run
+I am at 168 AD in the honest session with 9 technologies built, ~14,800 den and revenue
+1,871/yr. I am going to switch on every automatic policy and step to the horizon.
+I expect: the founder is immortal so no succession problem; money compounds slowly because
+living costs are ~1.5% of capital plus a base; the binding constraint should be founder
+hours (2,000/yr) and calendar floors, not money. With 432 years and roughly 142 nodes still
+between me and the transistor (I know the count only because the save-editing exploit let
+me run `path` once in a scratch game), a purely automatic run should get nowhere near it -
+I expect fewer than 40 things built and no transistor.
+
+### FINDING 24 (confirmed) — during a hazard the ledger keeps quoting pre-hazard numbers
+Calm years: the ledger is exact. 106 AD -> 107 AD, `money` said "Net/yr: 153.4" and capital
+went 206.5 -> 360.0, a change of +153.5. Perfect.
+During the Third century crisis (scratch copy of the main save at 268 AD):
+```
+> money      Capital: 1,012   Revenue: 1,106 den/yr   Net/yr: 269.3
+> step 1     EVENT 268: Third century crisis: trade and output fall to 65% of normal
+> money      Capital: 1,217   Revenue: 1,106 den/yr   Net/yr: 267.8      (actual change +205)
+> step 1
+> money      Capital: 1,411                                             (actual change +194)
+```
+Revenue is still printed as 1,106 after the program has said output fell to 65% of normal,
+and Net/yr overstates the real change by 24-27% two years running, with no line item for
+the difference - on a screen that advertises itself as "the whole ledger: what comes in,
+what goes out" and asserts "(these add up to the revenue above)". Confidence: HIGH.
+
+### The honest run, 168 -> 268 AD with every policy switched on
+Result: technologies built went DOWN, 9 -> 8 (one lost to a sacking), capital 14,809 -> 1,012,
+reputation 12.8 -> 0.90, staff 4 artisans -> 0.17 full-time-equivalents.
+So "Nothing happens unless you make it" is honest: the automation will not advance the tree
+for you. It did teach an optician (a trade that "MUST BE TAUGHT"), which is a nice touch.
+
+## Reproduction of the headline findings from a brand-new game
+```
+mkdir repro && cd repro
+printf '2\ny\npoor_scholar\nn\n' | python3 /home/user/test/rome/sim/simulator.py
+printf 'ventures\nmoney\nlabour\nwhy med_cataract_couching\n' \
+  | python3 /home/user/test/rome/sim/simulator.py play --session rome_100ad.json
+```
+On the very first turn of a fresh Rome/100 AD/fog-on/poor-scholar/no-ageing game:
+- `ventures`: "RUNNING: nothing" ... "Only what you are RUNNING earns anything"
+              "free to put behind something new: 1 scholars, 1 craftsmen"
+- `money`:    "Revenue: 233.5 den/yr  from: med_cataract_couching 166.7, med_trepanation 66.7"
+- `labour`:   "ON YOUR STAFF: nobody   Total employed: 0   annual wage bill: 0 den"
+- `why med_cataract_couching`: "STAFF NEEDED: 1 scholars, 0 artisans (you have 1, 0)",
+              "REVENUE: 500 den/yr", "STATUS: DONE / THIS SOCIETY ALREADY HAS THIS.
+              You did not build it and do not maintain it."
+So on turn zero: nothing is running, but 233.5 den/yr is coming in; I employ nobody, but I
+have 1 scholar and 1 craftsman; and the technology's own page quotes 500 den/yr for the
+thing the ledger books at 166.7.
+The 166.7 is exactly 500/3, and 66.7 is exactly 200/3, scaled by (free founder hours/2000).
+Neither the /3 nor the hour-scaling appears anywhere in the game's text.
+
+## Final tally of the honest run
+Started 100 AD, 400 den, poor scholar, fog on, immortal founder. Reached the horizon at
+600 AD with 8 technologies of my own built, 5,323 den, reputation 2.4, and no transistor.
+`state` at the end reported "AHEAD: 0 technologies at risk if a hazard lands, hedged by
+nothing yet" while also reporting "8 built by you" - the at-risk count never tracked the
+built count at any point in the run (9 built / 1 at risk; 8 built / 0 at risk).
+A field "protection 13%" appeared in STANDING at the end that had never been shown before
+and is not explained by `help` or by any command.
+
+## What could NOT be broken
+- Argument validation (negatives, zeroes, non-numbers, out-of-range years, unknown ids,
+  unknown trades, unknown materials, unknown policies, unknown help topics, two commands
+  on one line). Never a traceback.
+- Fog of war from inside the game: `path`, `why` and `available find` all refuse to reveal
+  anything past the frontier. The only way through was editing a save file.
+- Save/session persistence across invocations: exact, every time, including mid-year state
+  (hours already spent, part-paid projects).
+- End-of-run lockout: `step`, `start`, `work`, `buy` are all refused after 600 AD.
+- The credit system: limits are quoted correctly and enforced, interest is charged.
+- The eminence ruin, once actually triggered, is implemented and severe.
+- Trades genuinely are not interchangeable for *hiring* (you cannot hire a chemist in Rome,
+  and you cannot work as one either).
+- Market saturation exists ("what the market will not absorb" appears as a negative line).
+- Staff attrition (~3.5%/yr) and plague staff losses are real and compounding.
