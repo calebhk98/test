@@ -33,8 +33,15 @@ def load_strategy(name, nodes, goal):
         rest = [k for k in nodes if k not in order]
         rest.sort(key=lambda k: (k not in need, nodes[k]["tier"],
                                  nodes[k]["_total_cost"], k))
-        rest = topo_stable(nodes, rest)
-        return s.get("label", name), order + rest, set(s.get("bounties", []))
+        # STABILISE THE WHOLE THING TOGETHER, not the two halves separately.
+        # Sorting `rest` on its own left 681 places where a node preceded its
+        # own prerequisite, because a node in `rest` knows nothing about where
+        # in `order` its prerequisites sit (and the strategy's own list is not
+        # perfectly ordered either: soap_hard is listed before potash_soda,
+        # which it needs). One pass over the concatenation keeps the strategy's
+        # preference wherever it is legal and repairs it where it is not.
+        full = topo_stable(nodes, order + rest)
+        return s.get("label", name), full, set(s.get("bounties", []))
     if name == "topo":
         need = closure(nodes, goal)
         order = topo_order(nodes, need)
@@ -46,18 +53,65 @@ def load_strategy(name, nodes, goal):
     raise SystemExit("unknown strategy: %s" % name)
 
 
-def topo_stable(nodes, preference):
-    """Reorder `preference` so no node precedes its prerequisites."""
-    out, placed = [], set()
+def topo_stable(nodes, preference, already=()):
+    """Reorder `preference` so no node precedes its prerequisites, disturbing
+    the given order as little as possible.
+
+    `already`: nodes that are ALREADY ahead of this list and must count as
+    placed. Leaving this out was a serious and completely invisible bug. The
+    strategy file names 128 nodes explicitly and everything else was sorted
+    goal-critical-first and then handed to this function WITHOUT telling it
+    about those 128 - so every node whose prerequisites lived in the explicit
+    list could never satisfy `all(p in placed)`, fell through to the bulk dump
+    below, and lost its place entirely.
+
+    The effect was not subtle. `cap_heat_1100` - tier 0, 225 denarii, two
+    artisans, and a prerequisite of the goal - sorted to index 4 and came out
+    of here at index 589. Sixty goal-critical nodes were pushed past 400. A Han
+    China run then sat at year 700 holding 3.37 MILLION denarii, 57 scholars
+    and 99 artisans, having never built a 225-denarii node it needed, because
+    the optimizer works down this order and never got that far. Han reached the
+    transistor in 0% of runs and the reason was never economic.
+    """
+    placed = set(already)
+    out = []
     pref = list(preference)
-    guard = 0
-    while pref and guard < 100000:
-        guard += 1
-        for k in list(pref):
-            if all(p in placed for p in nodes[k]["pre"]):
-                out.append(k); placed.add(k); pref.remove(k); break
-        else:
-            out.extend(pref); break
+    # Index the dependants so each placement only revisits what it could free,
+    # rather than rescanning the whole list: the old loop was O(n^2) with a
+    # list.remove() inside it, over 2,700 nodes.
+    waiting = {}
+    ready = []
+    for k in pref:
+        missing = sum(1 for p in nodes[k]["pre"] if p not in placed)
+        waiting[k] = missing
+        if not missing:
+            ready.append(k)
+    dependants = {}
+    inset = set(pref)
+    for k in pref:
+        for p in nodes[k]["pre"]:
+            if p in inset:
+                dependants.setdefault(p, []).append(k)
+    rank = {k: i for i, k in enumerate(pref)}
+    import heapq
+    heap = [(rank[k], k) for k in ready]
+    heapq.heapify(heap)
+    seen = set()
+    while heap:
+        _r, k = heapq.heappop(heap)
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(k)
+        placed.add(k)
+        for m in dependants.get(k, ()):
+            waiting[m] -= 1
+            if waiting[m] == 0 and m not in seen:
+                heapq.heappush(heap, (rank[m], m))
+    # Anything genuinely unreachable (a prerequisite outside both lists) keeps
+    # its preferred order rather than being dropped.
+    if len(out) < len(pref):
+        out.extend(k for k in pref if k not in seen)
     return out
 
 

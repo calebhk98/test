@@ -1421,6 +1421,26 @@ check("hours reported as effective are hours that actually came off the work",
       % (_st3.get("hours_effective_this_year", -1),
          _before_left - _st3.get("ph_left", 0)))
 
+# --- the strategy order must actually put first what the goal needs first ----
+# Han China reached the transistor in 0% of runs, and the reason was never
+# economic: a run sat at year 700 holding 3.37 MILLION denarii, 57 scholars and
+# 99 artisans, having never built cap_heat_1100 - tier 0, 225 denarii, two
+# artisans, a prerequisite of the goal, and startable at any moment. It was at
+# index 589 in the order the optimizer works down, because topo_stable was told
+# nothing about the 128 nodes the strategy names explicitly and so could never
+# place anything that depended on them. 100% after the fix.
+_lab_o, _order_o, _b_o = S.load_strategy("recommended", NODES, GOAL)
+_idx_o = {k: i for i, k in enumerate(_order_o)}
+_viol = [(k, p_) for k in _order_o for p_ in NODES[k]["pre"]
+         if _idx_o.get(p_, -1) > _idx_o[k]]
+check("no technology is ordered before something it requires",
+      not _viol, "%d violations, e.g. %s" % (len(_viol), _viol[:3]))
+_need_o = S.closure(NODES, GOAL)
+_last = max(_idx_o[k] for k in _need_o if k in _idx_o)
+check("everything the goal needs is near the front, not spread over the tree",
+      _last < 400, "the last goal-critical node sits at index %d of %d"
+                   % (_last, len(_order_o)))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
