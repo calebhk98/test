@@ -1360,6 +1360,35 @@ for _k in list(NODES)[:400]:
 check("what rests on a node is cheap enough to put in a table",
       time.time() - _t0 < 1.0, "%.2fs for 400" % (time.time() - _t0))
 
+# 5. Losing a finished work was silent. A tester lost fourteen inside one
+#    `step 12`, corpus_written and school_founded among them, with every
+#    arrival named and no departure named.
+s = sim(capital=-50000.0, manual=False)
+s.done.add("fin_pawnshop")
+s.done.add("civ_road_paved")
+s._done_changed()
+_lost_before = set(s.done)
+_ls, _, _ = proto([{"cmd": "start", "id": "hom_eraser_breadcrumb"},
+                   {"cmd": "step", "years": 1}])
+check("a step reports what left as well as what arrived",
+      "lost" in _ls[-1], sorted(_ls[-1])[:12])
+
+# 6. A quote read years ago is not what you pay: project_cost moves with
+#    prices, the coinage and materials. The bill IS fixed when you start, and
+#    nothing said what it was fixed at.
+_q1, _, _ = proto([{"cmd": "why", "id": "hom_eraser_breadcrumb"},
+                   {"cmd": "start", "id": "hom_eraser_breadcrumb"}])
+check("starting something says what bill you have just taken on",
+      _q1[1].get("the_bill_you_have_taken_on") is not None
+      and _q1[0]["cost"].get("as_of_year"),
+      (_q1[1].get("the_bill_you_have_taken_on"), _q1[0]["cost"].get("as_of_year")))
+
+# 7. `suspicion` was replaced by `scandal` and then reported, unchanging, for
+#    five hundred years. Two testers read a dead vestige as a broken mechanic.
+_su, _, _ = proto([{"cmd": "state"}])
+check("no dead field is reported every turn as though it were a mechanic",
+      "suspicion" not in _su[0], [k for k in _su[0] if "susp" in k])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

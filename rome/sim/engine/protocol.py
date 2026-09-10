@@ -147,7 +147,16 @@ def _agent_state(s, nodes, cmd=None):
         "founder_alive": s.founder_alive,
         "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
         "directors_extra": round(s.directors_extra, 2),
-        "reputation": round(s.reputation, 1), "suspicion": round(s.suspicion, 2),
+        # NO "suspicion" FIELD. It was replaced by `scandal` (see core.py: "doing
+        # something a society cannot explain is alarming; doing a lot of
+        # ordinary things over decades is not"), and the attribute has been set
+        # to 0.0 at startup and never written since. Two testers watched it read
+        # exactly 0.0 for five hundred years - one with 388 employees and a
+        # paved road network - and concluded the social-danger system never
+        # fires. What never fired was a vestige. Reporting a dead number every
+        # turn is worse than not having it: it teaches the player that a live
+        # mechanic is broken.
+        "reputation": round(s.reputation, 1),
         "scandal": round(s.scandal, 2), "eminence": round(s.eminence, 2),
         "protection": round(s.protection, 3), "familiarity": round(s.familiarity, 3),
         # A playtester could not tell the difference between technologies the
@@ -685,7 +694,17 @@ def _node_explain(s, nodes, k):
                  "purchasing_power_of_the_coin": round(s.money_real, 3),
                  # The same figure the project will be billed, and must actually
                  # have paid in full before it can complete.
-                 "total": round(s.project_cost(k), 1)},
+                 "total": round(s.project_cost(k), 1),
+                 # AS OF TODAY. A tester read 106,567 here, started the thing
+                 # forty years later, and was billed 207,811. Both figures were
+                 # correct on their own day: this total moves with prices, the
+                 # coinage, what a material costs to get and what you have
+                 # since built. The bill is fixed at the moment you START, and
+                 # `start` says what it was fixed at.
+                 "as_of_year": s.year,
+                 "note": "today's price. It is fixed when you start, not when "
+                         "you read it: quotes move with prices, the coinage "
+                         "and what a material costs to get."},
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
@@ -901,8 +920,8 @@ def render_state(out):
         L.append(_wrap(out["staff_are_fractional_because"], indent="  "))
 
     L.append("")
-    L.append("STANDING: reputation %s   suspicion %s   scandal %s   eminence %s"
-             % (_fmt_num(out.get("reputation")), _fmt_num(out.get("suspicion")),
+    L.append("STANDING: reputation %s   scandal %s   eminence %s"
+             % (_fmt_num(out.get("reputation")),
                 _fmt_num(out.get("scandal")), _fmt_num(out.get("eminence"))))
     prom = out.get("prominence") or {}
     if prom:
@@ -957,10 +976,16 @@ def render_state(out):
 
     completed = out.get("completed")
     events = out.get("events")
-    if completed or events:
+    lost = out.get("lost")
+    if completed or events or lost:
         head = []
         for c in completed or []:
             head.append("  COMPLETED %s: %s" % (c.get("year"), c.get("name")))
+        for c in lost or []:
+            head.append("  LOST %s: %s%s"
+                        % (c.get("year"), c.get("name"),
+                           " (restore brings it back for a fraction of the cost)"
+                           if c.get("can_be_restored") else ""))
         for e in events or []:
             head.append("  EVENT %s: %s" % (e.get("year"), e.get("message")))
         L = head + [""] + L if head else L
@@ -1847,8 +1872,21 @@ def _agent_dispatch(s, nodes, cmd):
         if not ok:
             return {"ok": False, "error": why}
         n = nodes[k]
+        # THE PRICE YOU ACTUALLY COMMITTED TO. A normal-play tester read a cost
+        # of 106,567 off `why`, started the thing forty years later, and was
+        # billed 207,811 - because project_cost moves with prices, the coinage,
+        # material scarcity and what you have since built, and nothing told
+        # them the earlier figure was a snapshot. The bill IS fixed at the
+        # moment you start; what was missing was any statement of what it was
+        # fixed AT.
+        bill = round(s.active.get(k, {}).get("cost_left", s.project_cost(k)), 1)
         out = {"ok": True, "started": k, "name": n["name"], "founder_hours_needed": n["ph"],
-               "calendar_floor_years": n["yrs"]}
+               "calendar_floor_years": n["yrs"],
+               "the_bill_you_have_taken_on": bill,
+               "note": "This is the price as of today, and it is now fixed for "
+                       "this project. Quotes move with prices, the coinage and "
+                       "what a material costs to get: a figure you read years "
+                       "ago is not what you will pay."}
         # WARN, DO NOT SILENTLY ACCEPT. start_reason() already refuses a trade
         # that does not exist AT ALL (see "THE TRADE HAS TO EXIST" there), but
         # trade_available() goes true the moment you call `train`, two years
@@ -2275,7 +2313,15 @@ def _agent_dispatch(s, nodes, cmd):
                              "%d. Ask for %d or fewer, or fewer still if you want "
                              "to see what happens on the way."
                              % (left, s.end_year, left)}
-        completed, events = [], []
+        # LOST, not only completed. A normal-play tester lost fourteen finished
+        # works inside a single `step 12` - among them corpus_written and
+        # school_founded, which they called the pivot of the entire game - and
+        # wrote that "completions get EVENT lines; losses get nothing". The
+        # engine does log the shedding, but nothing in the reply put a name
+        # against what left, while every arrival got one. A game whose only
+        # score is what you have built has to report subtraction at least as
+        # loudly as addition.
+        completed, lost, events = [], [], []
         end_year = s.end_year
         for _ in range(years):
             if s.dead_reason or s.goal_year or s.year >= end_year:
@@ -2291,9 +2337,12 @@ def _agent_dispatch(s, nodes, cmd):
             # matched and this list did not.
             for k in sorted(s.done - before_done):
                 completed.append({"id": k, "name": nodes[k]["name"], "year": s.done_year.get(k)})
+            for k in sorted(before_done - s.done):
+                lost.append({"id": k, "name": nodes[k]["name"], "year": s.year,
+                             "can_be_restored": k in getattr(s, "mothballed", set())})
             for y, m in s.log[before_log:]:
                 events.append({"year": y, "message": m})
-        out = dict(ok=True, completed=completed, events=events)
+        out = dict(ok=True, completed=completed, lost=lost, events=events)
         out.update(_agent_state(s, nodes))
         return out
 
