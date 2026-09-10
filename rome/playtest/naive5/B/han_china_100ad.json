@@ -25,7 +25,7 @@
   "w_religious_rigidity": 0.15
  },
  "active": {},
- "artisans": 0.0,
+ "artisans": 0.4236180936755655,
  "atrocity": 0,
  "binding": null,
  "bondage_debt": 0.0,
@@ -35,15 +35,16 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 400.0,
+ "capital": -460.45019656314753,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
  "dead_reason": null,
- "director_hours_spent_founder": 0.0,
+ "director_hours_spent_founder": 320.0,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
+   "ag2_guano",
    "bellows_water_blown",
    "blast_furnace",
    "cap_heat_0700",
@@ -66,6 +67,7 @@
    "fud_heavy_mouldboard_plough_coulter",
    "fud_seed_drill",
    "hom_board_games",
+   "hom_button",
    "hom_candle_beeswax",
    "hom_candle_tallow",
    "hom_flush_latrine_simple",
@@ -78,6 +80,7 @@
    "hom_oil_lamp_simple",
    "hom_perfume_enfleurage",
    "hom_public_bath",
+   "hom_toys_dolls",
    "horse_collar",
    "lnd_axle_pivot_front",
    "lnd_bridge",
@@ -114,6 +117,7 @@
    "mat_linen",
    "mat_mercury",
    "mat_natron",
+   "mat_obsidian_blade",
    "mat_olive_oil",
    "mat_paper",
    "mat_pyrolusite",
@@ -150,6 +154,7 @@
    "prn_scribal_copying",
    "prn_sculpture",
    "prn_seals_stamps",
+   "prn_sizing_surface",
    "prn_theatre_pantomime",
    "prn_wax_tablets",
    "pwr_animal_treadmill",
@@ -174,6 +179,8 @@
    "tex_dye_murex",
    "tex_dye_woad",
    "tex_felting",
+   "tex_indigo",
+   "tex_mordanting",
    "tex_sailcloth",
    "tex_silk_trade",
    "tex_two_beam_loom",
@@ -181,16 +188,26 @@
    "tex_wool"
   ]
  },
- "done_year": {},
- "economy": 1.0,
- "eminence": 0.0,
- "employees": {},
- "familiarity": 0.0,
+ "done_year": {
+  "ag2_guano": 100,
+  "hom_button": 100,
+  "hom_toys_dolls": 100,
+  "mat_obsidian_blade": 100,
+  "prn_sizing_surface": 100,
+  "tex_indigo": 100,
+  "tex_mordanting": 100
+ },
+ "economy": 1.18,
+ "eminence": 0.11677132482131591,
+ "employees": {
+  "artisan": 0.4236180936755655
+ },
+ "familiarity": 0.3934693402873666,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": 0.0,
+ "gov": -0.7000000000000002,
  "granted": {
   "__set__": [
    "bellows_water_blown",
@@ -330,20 +347,27 @@
    "tex_wool"
   ]
  },
- "hours_this_year": null,
- "insolvent_years": null,
- "interest_paid": null,
+ "hours_this_year": {
+  "available": 2000.0,
+  "effective_on_projects": 0.0,
+  "offered_to_projects": 0.0,
+  "teaching": 0.0,
+  "unused": 2000.0,
+  "wage_work": 0.0
+ },
+ "insolvent_years": 2,
+ "interest_paid": 87.5166276583987,
  "last_patron_death": null,
  "last_settlement": -999,
- "life_left": 1000000000.0,
- "living_cost_paid": 0.0,
+ "life_left": 999999997.0,
+ "living_cost_paid": 868.6091982591342,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
  "mine_cost_paid": 0.0,
  "mine_pending": {},
  "mine_ready": {},
- "mine_tranches": null,
+ "mine_tranches": [],
  "money_real": 1.0,
  "mothballed": {
   "__set__": []
@@ -357,36 +381,46 @@
   "auto_bribe": false,
   "auto_buy_people": false,
   "auto_forest": false,
-  "auto_hire": false,
+  "auto_hire": true,
   "auto_manumit": false,
   "auto_mine": false,
   "auto_mothball": true,
-  "auto_open": false,
+  "auto_open": true,
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.0,
- "reputation": 5.0,
+ "protection": 0.0688467046484913,
+ "reputation": 17.900143208607737,
  "revealed": {
-  "__set__": []
+  "__set__": [
+   "ag2_guano",
+   "hom_button",
+   "hom_doll_fashion",
+   "hom_toys_dolls",
+   "mat_dyes_synthetic",
+   "mat_obsidian_blade",
+   "prn_sizing_surface",
+   "tex_indigo",
+   "tex_mordanting"
+  ]
  },
- "scandal": 0.0,
+ "scandal": 2.09952,
  "scholars": 0.0,
  "slaves": 0,
- "spend_last_year": null,
+ "spend_last_year": 0.0,
  "stalled": 0,
  "suspicion": 0.0,
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 0.0,
+ "total_spend": 692.3840625,
  "trade_hours_used": {},
  "trades_created": {
   "__set__": []
  },
  "training": [],
- "wage_hours_this_year": null,
+ "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 100
+ "year": 103
 }

@@ -1634,6 +1634,34 @@ for _civ in ("han_china_100ad", "norse_900ad", "mexica_1500", "england_1300"):
     check("%s is not handed Roman institutions for nothing" % _civ,
           not _bad, _bad)
 
+# --- the Norse deadlock ------------------------------------------------------
+# A Norse run ended at year 1500 with 31,068 denarii, 136 technologies and 1.6
+# craftsmen, unable to build workshop_first because it needs 2 - while every
+# institution that raises the staff ceiling (freedman_staff, collegium_licensed,
+# school_founded) needs workshop_first first. You needed two craftsmen to build
+# the place craftsmen work, and could never get to two. The Norse reached the
+# goal in 0% of runs and it was never about money.
+#
+# The gate read self.artisans alone, so work you had already paid an outside
+# shop to do did not count - and the refusal's own advice was to go and
+# commission it.
+s = sim(civ="norse_900ad", capital=100000.0)
+# Prerequisites are tested before staff, so satisfy them: the point of this
+# check is the staff gate, not the ladder above it.
+for _p in NODES["workshop_first"]["pre"]:
+    s.done.add(_p)
+s._done_changed()
+_ok0, _why0 = s.start_reason("workshop_first")
+_blocked_on_staff = "craftsmen" in (_why0 or "")
+s.commission("carpenter", 4000)
+_ok1, _why1 = s.start_reason("workshop_first")
+check("craftsmen you have under contract count toward what a project needs",
+      _blocked_on_staff and "craftsmen" not in (_why1 or ""),
+      "before: %s | after: %s" % ((_why0 or "")[:60], (_why1 or "")[:60]))
+check("commission can unblock the gate whose own advice is to commission",
+      s.craft_hands_available() >= 2.0,
+      "%.2f craft hands from 4,000 contracted hours" % s.craft_hands_available())
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

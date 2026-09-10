@@ -576,6 +576,18 @@ class LabourMixin:
         self._add_labour_pressure(frm, float(n) * self.HOURS_PER_PERSON_YEAR)
         return True, ("%g %s%s will be ready in 2 years" % (n, trade, "s" if n != 1 else ""))
 
+    def craft_hands_available(self):
+        """Craftsmen you can actually put on a job this year: the ones on your
+        own staff, plus the ones whose time you have already bought.
+
+        Hours under contract are people for as long as the contract runs. A
+        year of a carpenter's time IS a carpenter, for the purposes of whether
+        you can attempt a thing that needs one, and buying a job rather than a
+        person is the whole point of `commission`."""
+        contracted = sum(h for t, h in getattr(self, "contract_hours", {}).items()
+                         if trade_family(t) == "craft")
+        return self.artisans + contracted / self.HOURS_PER_PERSON_YEAR
+
     def commission(self, trade, hours):
         """Pay for a job, not for a person.
 

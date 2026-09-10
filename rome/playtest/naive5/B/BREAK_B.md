@@ -57,3 +57,108 @@ hours costs you revenue, and `work` is advertised as "do an ordinary job for ord
 ## FINDING 3 (undocumented commands)
 `help commands` lists 20-odd commands and does NOT include `open` or `ventures`, yet NOTHING you
 build earns anything until you `open` it. You only learn this from the completion event text.
+
+## FINDING 4 — HEADLINE BUG: resuming a saved game silently destroys project progress,
+## and any project with a calendar floor of 2 years can NEVER be completed if you play
+## one year per sitting.
+
+The game promises exactly this play pattern:
+  `help sittings`: "The game is written to that file after every command and read back when
+   you start again, so you do not need to hold a process open or write a script."
+  startup text: "you can stop any time - close the terminal, anything - and come back to
+   exactly where you left off".
+EXPECTATION from that: N separate `step 1` invocations == one `step N`. It is not.
+
+REPRO A (same logical state, two different outcomes)
+  cp a fresh 100 AD save twice.
+  (i) ONE process:
+      printf 'start fin_bimetallism\nstep 1\nstate\nstep 1\nstate\n' | python3 .../simulator.py play --session B2.json
+      -> at 101: "Bimetallism and fixed exchan 100% of your hours spent, 24.2 den still owed"
+      -> next step: "COMPLETED 101: Bimetallism and fixed exchange", 102 AD, "1 built by you"
+  (ii) TWO processes, identical commands:
+      proc1: printf 'start fin_bimetallism\nstep 1\n'   -> 101 AD, "100% of your hours spent, 24.2 den still owed"  (IDENTICAL display)
+      proc2: printf 'step 1\n'                          -> 102 AD, "60% of your hours spent, 0 den still owed - waiting on your hours"  NOT completed
+  Deterministic: ran proc2 from 5 identical copies, all 5 gave 60%. Also inserting
+  `state`/`help`/`money`/`available` before the step changes nothing, so it is not RNG order.
+
+REPRO B (the project never finishes at all)
+  start fin_bimetallism at 100 AD, then run `step 1` in a SEPARATE process eight times.
+  Years 101..108 alternate forever:
+    101 "100% ... waiting on money"     102 "60% ... waiting on your hours"
+    103 "100% ... waiting on the calendar"  104 "60% ..."   105 "100%..."  106 "60%..."
+    107 "100%..."  108 "60%..."
+  Eight years in, `state` still shows RUNNING (1) and "0 built by you". Money (48.45 den) and
+  ~50 founder hours a year are consumed with no possibility of completion.
+  Inspecting the save the game itself writes shows the mechanism: the project's accumulated
+  calendar years `yrs` and its remaining founder hours `ph_left` oscillate
+    yrs 1.0 / ph_left 0.0  ->  yrs 0.0 / ph_left 40.0  ->  yrs 1.0 / ph_left 0.0  -> ...
+  i.e. every resume throws away the founder hours already booked, which resets the calendar
+  clock, which can never then reach the 2-year floor.
+CONFIDENCE: very high that this is a real defect. The game's own documentation states the
+opposite behaviour, and the two paths disagree on identical input.
+IMPACT: worst case for the advertised "play across sittings" mode. Anything with floor >= 2
+years is unbuildable; everything else is slower than it should be.
+
+## FINDING 5 — fog of war leaks the whole tech-tree namespace through the "did you mean" suggester
+`help fog` claims: "You cannot see where anything leads, and there is no way to view the whole tree."
+`why point_contact_transistor` correctly REFUSES: "you have never heard of that."
+BUT a *misspelling* is answered with real node ids from anywhere in the tree:
+  > why transistor
+  REFUSED: unknown node 'transistor'. did you mean: junction_transistor, point_contact_transistor,
+  tl_radiator, tr_pantograph, tl_tractor
+  > why silicon
+  ... did you mean: ch2_polymer_silicone, mt2_silicon_steel_transformer, silicon_path
+  > why semiconductor
+  ... did you mean: com_semiconductor_diode, semiconductor_metrology
+  > why photolith
+  ... did you mean: com_photolithography, if_chromolithography, if_lithography, prn_offset_lithography, photography
+  > why germanium   -> germanium_extraction
+  > why turbine     -> en_fourneyron_turbine, en_francis_turbine, en_gas_turbine, en_kaplan_turbine,
+                      en_steam_turbine_curtis, en_steam_turbine_impulse, en_steam_turbine_reaction, en_turbine_blading
+20 guessed words harvested ~120 node ids I have "never heard of", including the ones obviously on
+the road to the goal (silicon_path, germanium_extraction, semiconductor_metrology, com_photolithography,
+com_vacuum_tube_*). CONFIDENCE: high that this contradicts the stated fog rule. It leaks node NAMES,
+not edges, so it is a partial leak - but the ids are descriptive enough to reconstruct most of the map.
+Cosmetic bug in the same place: `why radio` replies "did you mean: no idea", which reads as a node name.
+
+
+## FINDING 6 — `policy auto_hire on` bankrupts you while claiming to hire only what you can pay
+Description given by the game: "auto hire: grow the staff toward what you can house and pay".
+REPRO (fresh 100 AD save, nothing else done):
+  printf 'policy auto_hire on\nstep 10\nstate\nmoney\n' | ... --session ah.json
+EXPECTED: with no projects running and no ventures open, nothing to staff, so no hiring.
+ACTUAL: it hires artisans anyway - 0.86 FTE, 113 den/yr of wages against 259 den/yr of revenue
+and 226 den/yr of living costs - and the log reads:
+  EVENT 105: interest on 361 denarii of arrears at 11.9% a year
+  EVENT 108: you cannot pay everyone: 0.3 of your staff leave for work that pays
+  EVENT 108: BONDAGE: you cannot pay, and you enter service for your debt. For about 12 years
+             most of your hours belong to someone else.
+Ten years of doing literally nothing but switching one automation on takes you from 400 den to
+debt bondage. CONFIDENCE: high that this contradicts the stated behaviour.
+
+## FINDING 7 — `policy auto_open on` silently stops working once you are in debt
+In the main session (capital -460 den) seven finished ventures worth ~1,000 den/yr of revenue sat
+unopened for 3 years with `auto open: True`; each needed only 3.6-40 den to open against a
+credit limit of 3,455. In a solvent game the same policy opens them on the next step, so the
+policy works but gives up in exactly the situation where you need it, with NO message. Combined
+with Finding 6 this is a trap: auto_hire puts you in debt, which disables auto_open.
+
+## FINDING 8 — `work` is a trap, and forced labour is free while voluntary labour is ruinous
+`help commands`: "work <trade> <hours>: do an ordinary job for ordinary pay".
+Revenue from the practices the society grants you is scaled by (hours you spend at wage work) /
+(hours available). So:
+  at 111 AD, in debt bondage, 500 hours available, 0 worked -> Revenue 259.3 den/yr (FULL)
+  `work smith 500` -> "earned: 37.6" and Revenue collapses to 0 den/yr, Net/yr -75.3 -> -319
+A year of smithing earns 37.6 den and destroys 259.3 den of income: a net loss of 221.7 den.
+Nothing in the game warns you; `work` is presented as the way to earn when you are poor, and it
+is the single worst thing a poor player can do.
+Also inconsistent: being in DEBT BONDAGE, where the game says "for about 12 years most of your
+hours belong to someone else", costs the medical practice NOTHING (revenue stays 259.3), while
+choosing to work 500 hours costs it everything. Forced labour is free; voluntary labour is fatal.
+CONFIDENCE: high that the bondage/work asymmetry is unintended.
+
+## FINDING 9 — two separate debts that never reconcile
+While in bondage: `state` shows "IN DEBT BONDAGE: 9 years left owing 740.8 den" while the same
+screen shows "Money: -183.4 den" and `money` shows "Capital: -183.4". Paying capital back up
+(work smith 500 -> capital -145.8) does not touch the 740.8 owed. There are two debt numbers and
+the game never explains the relationship. Confidence: medium that it is a bug; certain it is confusing.

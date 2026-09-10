@@ -168,3 +168,412 @@ is described as a scoring deadline, not a wall, and nothing so far has refused a
 
 I also expect the debt-bondage loop to repeat roughly every 4–5 years for 350 years, i.e. about
 80 more times, on a man who owns nothing.
+
+**What actually happened (250 → 600, still zero actions):**
+
+`step 400` was **REFUSED** with a good, clear message ("there are only 350 years left before the
+horizon at 600"). Answer (a). Nice.
+
+Then `step 350`:
+- **15 more BONDAGE events**, cycling roughly every 3 years from 251 to 322. Every one says
+  "about 12 years"; the longest actually served was 4 years and the shortest was **2** (320→322).
+- INSOLVENCY SETTLED fired 4 more times, each taking reputation −12 from a reputation of 0.10.
+- Then the Three Kingdoms modifier lifted around 322 and **I simply got better**. Debt paid itself
+  off. By 600 I had **1,600 den** — four times my starting purse — and reputation had crept back to
+  0.50.
+
+**THE BIG ONE: the world stops having history in 322.** From EVENT 343 to EVENT 598 — 255 years —
+there are exactly **eight** events, all from the generic table ("banditry or a frontier war
+disrupts supply", "fire in the timber wards of the capital"). The opening screen promised me
+"*three centuries of division*". What the simulation actually contains is Yellow Turbans (184) and
+Three Kingdoms (220–322), and then nothing. No Jin collapse, no Sixteen Kingdoms, no Northern Wei,
+no Buddhism, and — most tellingly — **no Sui reunification in 589**, even though reunification is
+the single most economically important event in the window and the game models "trade and output
+fall to 60% of normal" for fragmentation but never turns it back on as an event. The last 45% of
+the scenario's timeline is empty.
+
+**Ending:** clean and correct.
+`*** THE RUN HAS ENDED: the horizon at 600 AD is reached. You built 0 things of your own and did
+not reach point-contact transistor. ***` and `step` afterwards is properly REFUSED while `available`
+and `why` still work. That is well handled — the game absolutely does notice you ignored it.
+
+**But the score is strange:** the reward for 500 years of total inaction is *quadrupling my money*.
+A game whose thesis is "your hours are the scarce resource" pays you handsomely for spending none
+of them.
+
+### Two more inconsistencies spotted at the end screen
+
+1. **`available` shrank from 91 to 87 over 500 idle years, and the entire "textiles" subject
+   (4 things, including the horizontal loom that was one of the five "MOST RESTS ON THESE") simply
+   vanished from the list.** I did nothing to lose it. Nothing told me I had lost it. I only noticed
+   by comparing two printouts 500 years apart.
+2. **The staff count contradicts itself.** Status line says `sch 0 art 0`. `why sea_pharos_lighthouse`
+   says `STAFF NEEDED: 0 scholars, 0 artisans (you have 1, 0)`. One of those two is wrong about
+   whether the founder counts as a scholar.
+
+### The Pharos lighthouse, examined
+
+```
+Pharos lighthouse  [sea_pharos_lighthouse]   tier 0, navigation, confidence A
+COST: 0 den total   YOUR HOURS: 0   CALENDAR FLOOR: 0 years   FAILURE RISK: 0%
+STATUS: CAN START NOW    PREREQUISITES: none
+HOW MUCH RESTS ON THIS: nothing else; this is worth having for itself
+```
+**The most famous single building of the ancient world, 120 metres of masonry, is free, instant,
+and requires no labour — in an inland Chinese capital.** I want to build it. Several times if the
+game lets me.
+
+---
+
+## RUN 2 — "The Postal Martyr"
+
+Fresh game, same settings. (Run 1's finished save kept as `run1_ended.json`.)
+
+`why lnd_cursus_publicus`:
+```
+COST: 0 den total   YOUR HOURS: 0   CALENDAR FLOOR: 0   FAILURE RISK: 0%
+UPKEEP: 200 den/yr     REVENUE: 0 den/yr
+STATUS: CAN START NOW
+HOW MUCH RESTS ON THIS: nothing else; this is worth having for itself
+```
+
+**This item is a pure trap and nothing labels it as one.** It is free, instant, gives zero revenue,
+unlocks *nothing* ("nothing else rests on this"), and costs **200 den/yr forever**. My income at
+game start is **+3.5 den/yr**. My credit limit is 375. Taking the free thing on turn one therefore
+bankrupts me in about two years and, per run 1, drops me into a permanent debt-bondage loop.
+
+It is also conceptually odd: its own description says the courier relay "**is already established**
+wherever a state has the capacity to maintain one", and Han China has state capacity 0.90. So I am
+being offered the chance to pay 200 a year for a thing the text says already exists.
+
+**What I expect:** `start lnd_cursus_publicus` and `start sea_pharos_lighthouse` will both succeed
+instantly and silently, with no warning about the upkeep. Then, having taken nothing but free
+things and issued no other order, I expect to be destroyed. I want to know if the game ever says
+"are you sure" to a player who is one keystroke from unrecoverable.
+
+**Also noted from `help commands`:** there is a `mothball <id>` — "shut a finished work down". So
+building things and never using them is an explicitly supported activity. Filed for later.
+
+**What actually happened:**
+
+Both started instantly, silently, no warning of any kind. `state` then showed:
+```
+RUNNING (2):
+  Cursus publicus courier serv 100% of your hours spent, 0 den still owed - waiting on the calendar
+  Pharos lighthouse            100% of your hours spent, 0 den still owed - waiting on the calendar
+```
+(*"100% of your hours spent" on a project needing 0 hours* — cosmetic 0/0 division.)
+
+One `step` later, both COMPLETED in the same year they started. And then the surprise:
+
+**The 200 den/yr upkeep was never charged.** `money` at 101 AD shows `upkeep of what you built: 0`.
+Net income actually went **up**, 3.5 → 27.3. Reputation went **5 → 6.3**. Two free technologies,
+free reputation, no cost.
+
+The reason is a mechanic the game had not mentioned: 
+```
+EVENT 100: completed: Cursus publicus courier service. You know how; nothing is
+           earning yet - 'open lnd_cursus_publicus' to run it
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+```
+
+**Findings here:**
+1. **`why` lies about upkeep.** It states `UPKEEP: 200 den/yr` as a flat fact about the thing.
+   In reality upkeep is only charged once you `open` it as a concern. A player budgeting from `why`
+   will systematically over-estimate their costs. (The same is presumably true of the `REVENUE`
+   line, which would make it *under*-estimate income. Either way the numbers shown are not the
+   numbers charged.)
+2. **`open` and `ventures` are not in `help commands`.** I read the full command list; it lists
+   `mothball`/`restore`/`close`/`bounty` but not `open` or `ventures`, which are the commands that
+   turn a completed technology into income. The single most important verb in the economy is
+   undocumented and I only found it because a completion event happened to mention it.
+3. Building the Pharos lighthouse in Luoyang is, mechanically, a **free +1.3 reputation and a free
+   technology, with no cost and no downside, available on turn one, forever.** Nothing stops it.
+   I got paid, in standing, for a lighthouse 600 km from any sea.
+
+`ventures` at 101 AD:
+```
+running: nothing
+you know how but have not opened:
+  - id=lnd_cursus_publicus, name=Cursus publicus courier service, earns_a_year=0.0,
+    costs_a_year=200.0, needs={'scholars': 0.0, 'craftsmen': 0.0}, to_open_it=200.0
+people free to run something new:
+  scholars: 1
+  craftsmen: 0
+```
+
+**Two presentation problems in four lines:**
+- A raw Python dict is being printed at the player: `needs={'scholars': 0.0, 'craftsmen': 0.0}`.
+  Everything else in this game is beautifully written prose; this one command dumps its internals.
+- **Three different vocabularies for the same worker.** The status bar says `art`, `why` says
+  "artisans", `ventures` says "craftsmen". And the head-count disagrees: status bar says `sch 0`,
+  `ventures` says `scholars: 1`, `why` says "(you have 1, 0)". So the founder counts as a scholar
+  in two places and not in the third.
+
+Also learned: opening costs **200 up front** *as well as* 200/yr. I have 427 den.
+
+### Experiment 2: open the courier service and never do anything else, ever
+
+**What I expect:** −200 immediately (leaving ~228), then −200/yr against a +27/yr net, so about
+−173/yr. Credit limit is 1,287, so I have maybe seven or eight years before arrears, then interest
+at 12%, then the bondage loop from run 1, permanently, for 499 years. I expect **no warning at the
+moment of opening**, because there was no warning at the moment of starting.
+
+**Why I'm doing it:** because the game showed me a free thing, and the free thing is a −200/yr
+liability that unlocks nothing, and I want to know whether a game that carefully models debt
+bondage will let a first-time player walk into it on turn one with two keystrokes and no prompt.
+I am committing to this as a career. I am the postmaster of Luoyang. I will do nothing else
+for five centuries.
+
+**What actually happened (101 → 201):**
+
+```
+LOST 108: Cursus publicus courier service (restore brings it back for a fraction of the cost)
+EVENT 103: interest on 322 denarii of arrears at 11.8% a year
+EVENT 107: interest on 1389 denarii of arrears at 11.8% a year
+EVENT 107: creditors took what they could: 1 works let go: lnd_cursus_publicus
+EVENT 109: BONDAGE ... EVENT 120: your term is served
+```
+
+**Bug A — the arrears numbers do not follow from the ledger.** At 101 I had 227.8 den and a stated
+net of −169.7/yr. That is arrears of ~112 by 103 and ~450 by 107. The game charged me interest on
+**322** in 103 and on **1,389** in 107. 1,389 denarii of debt, four years after opening a 200/yr
+concern with 227 in hand. I cannot reconstruct that from anything the game showed me. (`paid so
+far: 684.5` by 201, on a purse that started at 400.)
+
+**Bug B — creditors seize *knowledge*.** `technologies: 2 built by you` became `1`. The courier
+service was not just closed, it was **un-invented**. The game's whole premise is "knowing how a
+thing works is free" and "you keep your knowledge and your practice" (its own insolvency text says
+exactly that!) — and then bailiffs confiscated an idea out of my head.
+
+**Bug C — the ghost venture. This is the clearest "the game lost track" of the session.**
+At 201 AD, ninety-three years after the seizure, three commands give three different answers:
+
+| source | says |
+|---|---|
+| `state` | `RUNNING AS CONCERNS: 1` |
+| `ventures` | `running: - id=lnd_cursus_publicus ... costs_a_year=200.0` |
+| `money` | `upkeep of what you built: 0` |
+| `state` | `technologies: 1 built by you` (only the lighthouse) |
+
+So I am *running* a concern that costs 200 a year, am charged 0 a year for it, and **do not know how
+to do it**. The venture list and the technology list were not updated together when the creditors
+took the works. Also `state` prints "RUNNING: nothing" one line above "RUNNING AS CONCERNS: 1",
+which is its own readability problem — two different meanings of RUNNING, adjacent, disagreeing.
+
+**Bug D — bondage duration is inconsistent between runs.** Here 109→120 is **11 years**, matching
+the "about 12 years" text. In run 1 the identical message produced terms of 2, 3, 3 and 4 years.
+Same message, wildly different behaviour.
+
+### Poking the ghost
+**What I expect:** `why lnd_cursus_publicus` should now say I don't have it. `mothball` on a thing
+I don't own should error. `open` should refuse. I expect at least one of these to either crash or
+silently succeed on a technology I no longer possess.
+
+**Result: the ghost is permanent and unremovable.**
+- `why` → `STATUS: BLOCKED / you built this once and let it go ... restore lnd_cursus_publicus for
+  about 0 denarii`
+- `mothball lnd_cursus_publicus` → **`REFUSED: you have not built that`**
+- `ventures` → still `running: - id=lnd_cursus_publicus ... costs_a_year=200.0`
+
+The one command that exists to stop a running concern refuses to act on the concern the game says
+is running, because a *different* subsystem correctly knows I don't own it. There is no way for a
+player to clean this up. It will sit in my `state` for the remaining 399 years.
+
+Also note `restore ... for about 0 denarii` — the recovery price for a seized work is free.
+
+### Experiment 3: do the same thing over and over (restore / open / get seized / repeat)
+
+**What I expect:** `restore` costs 0, so I can put the courier service back for nothing. Then
+`RUNNING AS CONCERNS` is either corrected to 1, or becomes **2** — a duplicated ghost. If it
+duplicates, I can pump the counter by looping restore→seizure. I'm expecting a duplicate, because
+the seizure clearly removed the technology without removing the concern.
+
+**`restore` REFUSED: "you no longer know how to do that; it has to be built again rather than
+reopened."**
+
+So on this one object the game now gives me **four mutually contradictory statements**:
+1. `state`: it is running as a concern (count = 1)
+2. `ventures`: it is running and costs 200/yr
+3. `money`: it costs 0/yr
+4. `why`: "you already know how... restore it for about 0 denarii"
+5. `restore`: "you no longer know how to do that"
+
+`why` is actively telling the player to type a command that the game refuses on directly opposite
+grounds. That is the strongest single "the game lost track of what was going on" finding so far.
+
+### Experiment 3b: build it again and see if the concern counter climbs
+
+**What I expect:** `start` should work (cost 0, prerequisites still met). If completing it and
+`open`ing it again pushes `RUNNING AS CONCERNS` to **2** while I only own one, the ghost is
+duplicable and I can pump the counter arbitrarily by cycling build → open → get seized.
+
+**Result: a complete deadlock. Every verb refuses, each on different grounds.**
+
+| command | response |
+|---|---|
+| `start lnd_cursus_publicus` | REFUSED: *you already know how... restore it* |
+| `restore lnd_cursus_publicus` | REFUSED: *you no longer know how to do that; it has to be built again* |
+| `open lnd_cursus_publicus` | REFUSED: *you have not worked out how to do that yet* |
+| `mothball lnd_cursus_publicus` | REFUSED: *you have not built that* |
+
+`start` tells me to `restore`; `restore` tells me to `start`. The object is permanently
+un-actionable and permanently listed in `state` as a running concern. **A creditor seizure leaves
+the technology in an unrecoverable soft-locked state that the player can neither fix nor clear.**
+This is reachable in *seven years of play* from a fresh start, by clicking the free thing.
+
+### Experiment 4: does the ledger add up?
+
+Stepped one year at a time and compared `Capital` to the `Net/yr` the game had just forecast:
+
+| years | actual change | forecast | event that year |
+|---|---|---|---|
+| 201→202 | **−199.3** | +28.5 | (none shown) |
+| 202→203 | **−78.5** | +31.5 | Yellow Turban: a site is sacked |
+| 203→204 | +32.7 | +32.7 | — |
+| 204→205 | **−50.7** | +32.2 | Yellow Turban: a site is sacked |
+| 205→206 | +32.9 | +32.9 | — |
+| 206→207 | +32.4 | +32.4 | — |
+| 207→208 | **+4.5** | +31.9 | fire in the timber wards |
+| 208→211 | exact each year | | — |
+
+So the arithmetic is fine in quiet years, and **events silently debit you with no amount ever
+shown**. A sack costs ~83 den; a capital fire costs ~27 den; neither the event line nor the ledger
+mentions a figure. There is no command I found that tells you what an event cost you. For a game
+this careful about money, that's a real gap — it is the reason I couldn't reconstruct the 1,389
+denarii of arrears earlier.
+
+**And a content oddity:** "Yellow Turban rebellion: **a site is sacked**" fired repeatedly against
+me while my entire estate consisted of **one Pharos lighthouse**. The Yellow Turbans are sacking a
+lighthouse, in Luoyang, which is 600 km inland, and billing me for it.
+
+### Experiment 5: hostile input
+
+**What I expect:** most parsers in a hand-written text game fall over on negative numbers, huge
+numbers, and empty input. I expect `step -5` to go backwards or error, `step 0` to be a no-op,
+`buy slaves -5` to give me money, and `bribe -1000` to be free scandal.
+
+**Result: input handling is genuinely solid.** `step 0` / `step -5` → "years must be >= 1";
+`step 1e9` parsed and refused with the horizon message; `bribe -1000` and `buy slaves -5` both
+→ "must be greater than zero. Nothing was changed."; bare `start`/`open`/`work` give helpful
+usage lines; a blank line is ignored. No crashes. The only oddity is the typo-suggester's fallback:
+`REFUSED: unknown node 'nonsense_id'. did you mean: no idea` — which reads like a placeholder.
+
+### Experiment 6: an honest day's work
+
+`work labourer 2000` (my entire year):
+```
+trade: labourer     earned: 66
+```
+**A full year of manual labour earns 66 denarii. My cost of living is 227 denarii a year.**
+So working full-time, every hour of every year, pays for **five months** of being alive. You cannot
+subsist by working. (For reference, an actual Roman day-labourer earned about a denarius a day.)
+
+Worse, look what it did to the ledger: net went from **+30.5/yr to −214.3/yr** the moment I worked.
+Spending my hours on wages shuts off the medical practice, which needs those hours. So:
+
+**`work` is strictly, massively self-destructive. Doing a job costs you 259 den/yr of income to
+earn 66 den/yr.** There is no situation I can construct where using the `work` command is correct.
+It is offered in `help commands` as one of the core verbs with no warning that it is a trap.
+(The underlying mechanic — your hours are finite and the practice needs them — is good. The
+*numbers* make the verb useless.)
+
+### Notes from `policy`, `labour`, `risk`
+
+- `policy` is excellent — ten named automations, all off except `auto mothball`, plus a clear note
+  distinguishing "policies" from "consequences" (creditors, people leaving). Best-written screen
+  in the game.
+- `risk` contradicts `state`. `state` says "AHEAD: 5 technologies at risk if a hazard lands".
+  `risk` says "chance lost if a site is sacked: 80%" and then, two lines later, "**no remaining
+  hazard for this civilization sacks a site, so nothing here is currently at risk of being
+  forgotten**". Three statements about the same 5 technologies, all in different registers.
+- `available subject the household` silently returned **0 results** rather than saying the subject
+  filter was wrong. The correct form is `available household`. A wrong filter returning an empty
+  list looks exactly like "there is nothing here".
+
+### Experiment 7: commit to one subject and never use any of it
+
+**The commitment (and I will not deviate):** I am aiming at a point-contact transistor. I will
+instead spend the rest of this run building **only "the household"** — erasers, toothbrushes,
+umbrellas, sprung mattresses — and I will **never `open` a single one of them**. Twelve domestic
+conveniences, none in use, for four hundred years.
+
+**What I expect:** the builds will succeed and reputation will climb (two free builds already gave
+me +1.3). I expect *nothing* to comment on the fact that the man sent to invent the transistor is
+inventing the safety pin. And I expect unopened builds to cost nothing, so this should be a slow,
+free reputation farm.
+
+**One thing I noticed while choosing:** `hom_toothbrush` costs 22.7, earns 30/yr and has upkeep
+**40/yr**. It is a guaranteed −10/yr if opened. That's the second strictly-dominated item I've
+found (after the courier service). Nothing marks either of them.
+Also: "**Roman cosmetics**" is on the Han China menu, next to the Pharos lighthouse and the cursus
+publicus. The scenario's item list does not seem to be filtered by civilisation.
+
+**What actually happened:**
+
+First, a correction to my own earlier complaint: the 211→212 drop of −214 was **correctly
+forecast** by the status line right after I worked (`net -214.3/yr`). The game was honest; I just
+hadn't connected it. `work` is still a trap (66 den earned, ~259 den of practice income forgone)
+but the game does show you the damage before you step.
+
+Then: **the game let me start six projects totalling 185.7 denarii while holding 71.1 denarii**,
+with no warning of any kind. It just says "the bill you have taken on" six times. Two years later:
+`EVENT 214: interest on 11 denarii of arrears`.
+
+All six completed in **the same year they were started** (212), despite calendar floors of 0.25 and
+0.5 years each and 250 founder-hours between them.
+
+And then the real result:
+
+**Reputation went from 1.3 to 10 — the cap — for building six trinkets I do not use.**
+
+```
+STANDING: reputation 10   scandal 0.07   eminence 0.07
+technologies: 7 built by you
+```
+
+Five hundred years of doing nothing left me at reputation 0.5. **Five years of inventing the
+safety pin, the button, the eraser, the toothbrush, dolls and Roman face-paint maxed me out.**
+Reputation appears to count *how many things you have finished lately* and not at all *what they
+were* or whether anyone is using them. A man famous throughout the Later Han for a breadcrumb
+eraser that he has never once sold.
+
+`ventures` confirms all six sit unopened, earning nothing and costing nothing. That is exactly the
+plan. Note `hom_toothbrush: earns_a_year=30.0, costs_a_year=40.0, to_open_it=40.0` — confirmed,
+opening the toothbrush is a permanent −10/yr for a 40 den entry fee. It is offered without comment.
+
+### Experiment 7b: start everything I cannot afford
+
+**What I expect:** I hold 65.5 denarii. The remaining six household items cost about 810. I will
+try to start all of them at once. Either the game refuses past my credit limit (~340) or it lets me
+sign for twelve times my net worth. Given it just let me overcommit by 2.6x without a murmur,
+I expect it to let me.
+
+**What actually happened:** all six started with no objection (credit limit had ballooned to
+**1,974** because reputation was 10 — creditworthiness scales with fame, which is fair). All six
+completed **in the same year**, 217, including the "1 year calendar floor" fireplace and mattress.
+
+Ten years on:
+```
+Money: -2,092 den    net -58.1 den/yr
+STANDING: reputation 13.3   scandal 0.02   eminence 0.23
+technologies: 13 built by you
+```
+
+**Correction to my earlier note: reputation is not capped at 10.** It is 13.3 now. Twelve unused
+household gadgets have made me the most celebrated man I have been all game.
+
+**And here is a live inconsistency: I am 2,092 denarii in debt against a stated credit limit of
+1,974, and nothing has happened.** No bondage, no seizure, ten years in. In run 1 a debt of
+**151 denarii** put me into debt bondage within two years. The difference is reputation (0.1 vs
+13.3). Creditworthiness scaling with standing is a good idea, but the spread is startling: being
+famous for a toothbrush lets you run fourteen times the debt that put you in chains before, and
+the "Credit limit" figure is not actually a limit.
+
+### Experiment 7c: ride the debt through the Three Kingdoms without ever opening anything
+
+**What I expect:** the fragmentation cuts output to 60%, my medical revenue falls, interest
+compounds on 2,092, and creditors seize works. Specifically I predict they will "let go" several of
+my household technologies and **un-invent** them, as happened to the courier service. I predict
+**no new ghost concerns**, because ghosts came from seizing an *opened* concern and none of these
+are open. If ghosts appear anyway, the bug is broader than I thought.

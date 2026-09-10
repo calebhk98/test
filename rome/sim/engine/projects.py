@@ -434,9 +434,27 @@ class ProjectsMixin:
         if n["sch"] > self.effective_scholars():
             return False, ("needs %d trained scholars, you have %.1f (you are one of them). %s"
                            % (n["sch"], self.effective_scholars(), self._staff_advice("scholars")))
-        if n["art"] > self.artisans:
-            return False, ("needs %d trained craftsmen on your own staff, you have %.1f. %s"
-                           % (n["art"], self.artisans, self._staff_advice("artisans")))
+        # CRAFTSMEN YOU HAVE UNDER CONTRACT COUNT TOO. This read self.artisans
+        # alone, so work you had already paid an outside shop to do could not
+        # satisfy the requirement - and the refusal's own advice was to go and
+        # commission it. `commission` could not unblock the gate that
+        # recommended commission.
+        #
+        # It is also what deadlocked an entire civilisation. A Norse run ended
+        # at year 1500 with 31,068 denarii, 136 technologies and 1.6 craftsmen,
+        # unable to build workshop_first because it needs 2 - while every
+        # institution that would raise the staff ceiling (freedman_staff,
+        # collegium_licensed, school_founded) needs workshop_first first. You
+        # needed two craftsmen to build the place craftsmen work, and could
+        # never get to two. The Norse reached the goal in 0% of runs.
+        #
+        # Buying a jobbing carpenter for a season to raise your workshop is
+        # what a person in this position actually did.
+        if n["art"] > self.craft_hands_available():
+            return False, ("needs %d trained craftsmen, on your staff or under "
+                           "contract, and you have %.1f. %s"
+                           % (n["art"], self.craft_hands_available(),
+                              self._staff_advice("artisans")))
         # THE TRADE HAS TO EXIST. A node wanting 450 hours of an engineer cannot
         # be built by smiths, and in 100 AD there is no such person as a private
         # engineer: the wage table says so itself. You make one by teaching one.
