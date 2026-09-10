@@ -236,3 +236,60 @@ society. The machinery exists; the hazards just cannot reach it.
 Worth noting what this makes possible: a civilisation whose values move against
 you mid-run is the sharpest version of the danger this game models, and at
 present every hazard can only kill people, burn a site, or make you poorer.
+
+---
+
+# Round three: what the model does not represent
+
+Not bugs. Things the simulator has no opinion about, found by being asked
+directly whether it did.
+
+## Q. Literacy is tracked, changed by technology, and read by nothing
+
+Every civilisation file carries `literacy_general` and `literacy_elite`, and
+`apply_tech_effects` raises both when the printing press is built. Nothing
+else in the engine ever reads either number.
+
+So hiring a scribe in a society where two per cent of people can read costs
+exactly what it costs anywhere else, and is exactly as easy. The pool of
+people who can be taught a trade that needs reading is unbounded. Raising
+literacy is currently a stat that goes up.
+
+What it should do: bound the hiring pool for literate trades to some fraction
+of the population that can actually read, so that in a low-literacy society
+money genuinely cannot buy you scribes, engineers or chemists — and so that
+printing, schools and libraries pay off by widening the pool rather than by
+incrementing a number nobody reads. This is also the mechanism by which
+teaching changes politics and religion, which the values vector already
+models and the literacy fields currently do not feed.
+
+## R. The market only responds to demand for slaves
+
+`market_pressure` exists and works: buying people in bulk bids their price up,
+it remembers between purchases, and it decays. Nothing else in the economy has
+an equivalent.
+
+- Materials have `MARKET_SHARE`, which is a supply CEILING — how much of the
+  empire's output you may buy — with no price response at all. Buying the
+  ceiling costs the same per tonne as buying a kilogram.
+- Wages are a fixed table. Hiring half the smiths in a town does not move
+  smith wages, and `market_supply` is likewise a ceiling rather than a price.
+- Supply works in one direction only. Nothing you build makes anything
+  cheaper. Opening a mine does not lower the price of iron for you or anyone
+  else; teaching fifty machinists does not reduce what a machinist costs.
+
+Both halves matter, and the second may matter more: a large part of what an
+industrial revolution IS, is the price of iron and labour falling because
+supply rose. The model currently cannot express that.
+
+## S. Small gaps in the machine list
+
+Present and correctly wired: 72 mining nodes (pumps, drainage, blasting,
+flotation, leaching, amalgamation), steamship components, submarine hull,
+ironclad, helicopter rotor, jet engine, powered aeroplane, tank, ballistic
+rocket, automobile, locomotive, railway, 36 radio and telegraph nodes, arc and
+incandescent lighting, street lighting, washing machine by hand and electric,
+home refrigerator, kitchen range, electric fan, central heating.
+
+Absent: the light-emitting diode, the clothes dryer, and the domestic freezer
+as distinct from the refrigerator.

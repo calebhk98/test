@@ -20,6 +20,7 @@ FAILURES = []
 # Counted rather than hand-maintained: the tally in the summary line was a
 # literal that three separate rounds of additions had to remember to update.
 CHECKS_RUN = []
+SKIPPED = []
 _LAST_AT = time.time()
 
 
@@ -29,6 +30,24 @@ def sim(civ="rome_100ad", capital=None, manual=True, events=False):
               civ=S.load_civ(civ), cfg=cfg)
     s.goal, s.done_year = GOAL, {}
     return s
+
+
+# SLOW CHECKS ARE OPT-IN. Three of these cost 83 of the suite's 89 seconds,
+# because they each simulate a couple of hundred years to test a long-run
+# property. A suite you run after every change has to be seconds, or you stop
+# running it, which is the exact rot this file exists to prevent. So the
+# default run is fast and the expensive ones go behind --slow, to be run every
+# few commits and before anything is called finished.
+SLOW = "--slow" in sys.argv or os.environ.get("ROME_SLOW_TESTS")
+
+
+def slow_check(name, fn, detail_fn=None):
+    """Run an expensive check only when asked; otherwise say it was skipped."""
+    if not SLOW:
+        SKIPPED.append(name)
+        return
+    ok, detail = fn()
+    check(name, ok, detail)
 
 
 def check(name, ok, detail=""):
@@ -220,19 +239,35 @@ check("a debased currency does not collapse prices",
       abs(s.cost_money_factor() - base) < 1e-9,
       "%.4f -> %.4f" % (base, s.cost_money_factor()))
 
-# --- reviewer: debt must be bounded and ruin must be recoverable
-s = sim(manual=False, capital=1e6)
-s.buy_slaves(400)
-worst = 0.0
-for _ in range(200):
-    s.step()
-    worst = min(worst, s.capital)
-check("debt stays inside a credit limit", worst > -200000,
-      "worst capital %.0f" % worst)
-check("a ruined founder rebuilds rather than freezing",
-      len(s.done - s.granted) > 200, "earned %d in 200 years" % len(s.done - s.granted))
-check("ruin never deletes a step the goal needs",
-      "identity_cover" in s.done)
+# --- reviewer: debt must be bounded and ruin must be recoverable.
+#     Two hundred simulated years; the single most expensive check here.
+def _ruin_run():
+    s = sim(manual=False, capital=1e6)
+    s.buy_slaves(400)
+    worst = 0.0
+    for _ in range(200):
+        s.step()
+        worst = min(worst, s.capital)
+    return s, worst
+
+
+_RUIN = {}
+
+
+def _ruin():
+    if not _RUIN:
+        _RUIN["s"], _RUIN["worst"] = _ruin_run()
+    return _RUIN["s"], _RUIN["worst"]
+
+
+slow_check("debt stays inside a credit limit",
+           lambda: (_ruin()[1] > -200000, "worst capital %.0f" % _ruin()[1]))
+slow_check("a ruined founder rebuilds rather than freezing",
+           lambda: (len(_ruin()[0].done - _ruin()[0].granted) > 200,
+                    "earned %d in 200 years"
+                    % len(_ruin()[0].done - _ruin()[0].granted)))
+slow_check("ruin never deletes a step the goal needs",
+           lambda: ("identity_cover" in _ruin()[0].done, ""))
 
 # --- naive B: the game must not buy people on the player's behalf
 s = sim(capital=200000.0, manual=True)
@@ -341,16 +376,21 @@ sizes = {c: len(json.dumps(x)) for c, x in
 check("no ordinary reply is a wall of text",
       all(v < 6000 for v in sizes.values()), str(sizes))
 
-# a late-game available must not blow up either: it was 165KB at year 250
-s = sim(capital=1e6, manual=False)
-s.fog = True
-for _ in range(150):
-    s.step()
-avail = S._agent_available(s, NODES)
-digest = len(json.dumps(avail))
-check("available stays a summary as the tree opens up", digest < 12000,
-      "%d bytes at year %d with %d things startable"
-      % (digest, s.year, avail["count"]))
+# a late-game available must not blow up either: it was 165KB at year 250.
+# 150 simulated years to get the tree open enough to be worth measuring.
+def _late_available():
+    s = sim(capital=1e6, manual=False)
+    s.fog = True
+    for _ in range(150):
+        s.step()
+    avail = S._agent_available(s, NODES)
+    digest = len(json.dumps(avail))
+    return (digest < 12000,
+            "%d bytes at year %d with %d things startable"
+            % (digest, s.year, avail["count"]))
+
+
+slow_check("available stays a summary as the tree opens up", _late_available)
 
 # --- the menu: a bare invocation must open it, and every civ must be playable
 p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
@@ -459,10 +499,14 @@ print(";".join(out))
     return seen
 
 
-_seen = _det_fingerprint()
-check("the same seed gives the same result, whatever PYTHONHASHSEED is",
-      len(_seen) == 1 and not any(x.startswith("ERROR") for x in _seen),
-      " || ".join(sorted(_seen))[:160])
+def _determinism():
+    seen = _det_fingerprint()
+    return (len(seen) == 1 and not any(x.startswith("ERROR") for x in seen),
+            " || ".join(sorted(seen))[:160])
+
+
+slow_check("the same seed gives the same result, whatever PYTHONHASHSEED is",
+           _determinism)
 
 # --- round 2 A: the setting is Rome wearing a hat -- notes must generalise
 _ROME_TEMPLATES = ("ROME ALREADY HAS THIS", "ROME HAS THIS", "ROME POSSIBLY HAS THIS")
@@ -675,8 +719,10 @@ check("available returns quickly under fog, not in tens of seconds",
       elapsed < 5.0, "%.2fs" % elapsed)
 
 print("=" * 72)
-print("%d checks, %d failures, %.0fs" % (len(CHECKS_RUN), len(FAILURES),
-                                        sum(t for _, t in CHECKS_RUN)))
+print("%d checks, %d failures, %.0fs%s"
+      % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
+         ("   (%d slow checks skipped: run with --slow)" % len(SKIPPED))
+         if SKIPPED else ""))
 slow = sorted(CHECKS_RUN, key=lambda r: -r[1])[:5]
 if slow and slow[0][1] >= 5.0:
     print("slowest:")
