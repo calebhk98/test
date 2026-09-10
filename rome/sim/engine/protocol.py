@@ -1797,8 +1797,10 @@ def render_money(out):
                      % (k.lstrip("_").replace("_", " "), _fmt_num(v)))
     L.append("Net/yr: %s     spent on projects last step: %s"
              % (_fmt_num(out.get("net_per_year")), _fmt_num(out.get("spent_on_projects_last_year"))))
-    L.append("Credit limit: %s     interest on arrears: %s     paid so far: %s"
-             % (_fmt_num(out.get("credit_limit")), _pct(out.get("interest_rate_on_arrears")),
+    L.append("Credit limit: %s (%s used)     interest on arrears: %s     paid so far: %s"
+             % (_fmt_num(out.get("credit_limit")),
+                out.get("of_that_limit_you_have_used") or "none",
+                _pct(out.get("interest_rate_on_arrears")),
                 _fmt_num(out.get("interest_paid_in_total"))))
     if out.get("still_owed_on_work_in_hand"):
         L.append("Still owed on work in hand: %s" % _fmt_num(out["still_owed_on_work_in_hand"]))
@@ -1827,8 +1829,11 @@ def render_labour(out):
     if isinstance(staff, list) and staff:
         _shown = True
         for r in staff:
-            L.append("  %-16s %8s   %s den/yr each"
-                     % (r["trade"], _fmt_num(r["you_employ"]), _fmt_num(r["a_year_of_one"])))
+            L.append("  %-16s %8s   %s den/yr each%s"
+                     % (r["trade"], _fmt_num(r["you_employ"]),
+                        _fmt_num(r["a_year_of_one"]),
+                        "   (%s dearer than usual)" % r["dearer_than_usual_by"]
+                        if r.get("dearer_than_usual_by") else ""))
     # PEOPLE YOU OWN OR HAVE FREED ARE YOUR HOUSEHOLD TOO. They are not
     # `employees` and so were never on this list: a weird-play tester bought
     # ten people and read "ON YOUR STAFF: nobody" and "EMPLOY: 0 people" while
@@ -1881,6 +1886,8 @@ def render_ventures(out):
     free = out.get("people_free_to_run_something_new") or {}
     L.append("free to put behind something new: %s scholars, %s craftsmen"
              % (_fmt_num(free.get("scholars")), _fmt_num(free.get("craftsmen"))))
+    if out.get("these_are_not_interchangeable"):
+        L.append(_wrap(out["these_are_not_interchangeable"], indent="  "))
     L.append("")
     run = out.get("running")
     L.append("RUNNING")
@@ -3078,6 +3085,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "credit_limit": round(s.credit_limit(), 1),
                 "interest_rate_on_arrears": round(s.debt_interest_rate(), 4),
                 "interest_paid_in_total": round(getattr(s, "interest_paid", 0.0), 1),
+                # HOW CLOSE, not just how far it goes. See warn_near_the_limit.
+                "of_that_limit_you_have_used": (
+                    "%d%%" % (100.0 * -s.capital / max(1e-9, s.credit_limit()))
+                    if s.capital < 0 and s.credit_limit() > 0 else "none"),
                 "still_owed_on_work_in_hand": round(
                     sum(st.get("cost_left") or 0.0 for st in s.active.values()), 1)}
 
@@ -3087,10 +3098,21 @@ def _agent_dispatch_inner(s, nodes, cmd):
             return {"ok": False, "error": "no such trade: %s. They are: %s"
                     % (one, ", ".join(sorted(WAGES)))}
         def row(t, long=False):
+            # THE PRICE YOU ACTUALLY PAY, not the table price. A play tester
+            # watched engineers go from 781 a year to 1,094 and budgeted wrong
+            # for decades: leaning on a trade's local supply bids it up, and
+            # the premium appeared in the bill and nowhere else.
+            _lpf = s.labour_price_factor(t)
             r = {"trade": t,
                  "a_year_of_one": round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index
-                                        * s.price_index, 0),
+                                        * s.price_index * _lpf, 0),
                  "you_employ": round(s.employees.get(t, 0.0), 2)}
+            if _lpf > 1.005:
+                r["dearer_than_usual_by"] = "%d%%" % ((_lpf - 1.0) * 100)
+                r["because"] = ("you have taken on a large share of the %ss "
+                                "here lately. Teaching more of the trade, or "
+                                "anything that widens the supply, brings it "
+                                "back down" % t)
             if long:
                 r.update({"kind": trade_family(t),
                           "wage_per_hour": round(WAGES[t] * s.wage_index
@@ -3366,6 +3388,18 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     for k in idle[:20]] or "nothing",
                "people_free_to_run_something_new": {
                    "scholars": round(sch_free, 2), "craftsmen": round(art_free, 2)},
+               # SCHOLARS AND CRAFTSMEN ARE NOT INTERCHANGEABLE, and nothing
+               # said so. A play tester spent thirty years poor because
+               # auto_train had bought them engineers - who count as scholars
+               # and cannot keep an eye on a workshop - and the turn they
+               # swapped three engineers for three artisans their net went from
+               # -155 a year to +4,164. `labour <trade>` shows the wage and not
+               # which of the two columns the trade lands in.
+               "these_are_not_interchangeable": (
+                   "Most concerns want CRAFTSMEN to keep an eye on them. "
+                   "Engineers, chemists and machinists are scholars here, and "
+                   "a scholar cannot watch a workshop. 'labour <trade>' says "
+                   "which of the two a trade is."),
                "note": "Knowing how to do a thing and running it are different. "
                        "Of the things in the TREE, only what you are RUNNING "
                        "earns anything or costs anything. 'open <id>' starts "
@@ -3587,6 +3621,8 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
+    "_said_deputies",
+    "_said_near_limit",
     "shut_for_staff",
     "last_withdrawal",
     "wages_prepaid",

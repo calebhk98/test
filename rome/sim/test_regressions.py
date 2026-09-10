@@ -3336,6 +3336,77 @@ else:
     check("a substitution refusal never names a node you cannot see", True, "")
 
 
+# ======================================================================
+# ROUND 8h: mechanics that only announced themselves after they had bitten.
+# ======================================================================
+
+# --- BREAK: a recoverable cash dip became "CREDIT EXHAUSTED: 4 projects
+# halted" and a forty-year dead run. "money shows a credit limit but nothing
+# shows how close to insolvency you are."
+s_lim = sim()
+s_lim.capital = -s_lim.credit_limit() * 0.75
+s_lim.warn_near_the_limit(105)
+check("the credit limit warns you BEFORE you cross it",
+      any("CLOSE TO THE LIMIT" in m for _, m in s_lim.log), [m for _, m in s_lim.log])
+check("...and names what you could still do about it",
+      any("stop" in m and "mothball" in m for _, m in s_lim.log),
+      [m for _, m in s_lim.log][:1])
+_n_before = len(s_lim.log)
+s_lim.warn_near_the_limit(106)
+check("...and does not say it again every year",
+      len(s_lim.log) == _n_before, len(s_lim.log) - _n_before)
+s_ok = sim()
+s_ok.warn_near_the_limit(105)
+check("a solvent player is not warned about a limit they are nowhere near",
+      not s_ok.log, [m for _, m in s_ok.log])
+_rm, _, _ = proto([{"cmd": "money"}])
+check("the ledger says how much of the credit line is used",
+      _rm[0].get("of_that_limit_you_have_used") is not None,
+      _rm[0].get("of_that_limit_you_have_used"))
+
+# --- BREAK: engineers went from 781 a year to 1,094 and the premium appeared
+# in the bill and nowhere else.
+s_wg = sim(capital=2000000.0)
+_r0, _, _ = proto([{"cmd": "labour", "trade": "smith"}])
+_base = _r0[0]["trade"]["a_year_of_one"]
+for _ in range(6):
+    s_wg.hire("smith", 3)
+_dear = S._agent_dispatch(s_wg, NODES, {"cmd": "labour", "trade": "smith"})["trade"]
+check("leaning on a trade shows up in its quoted price, not only in the bill",
+      _dear["a_year_of_one"] > _base, (_base, _dear["a_year_of_one"]))
+check("...and says why, and what brings it back down",
+      _dear.get("dearer_than_usual_by") and "supply" in (_dear.get("because") or ""),
+      _dear.get("because"))
+
+# --- BREAK: engineers count as SCHOLARS and cannot supervise a workshop. A
+# play tester was poor for thirty years over it; swapping three engineers for
+# three artisans took their net from -155 a year to +4,164.
+_rv, _, _ = proto([{"cmd": "ventures"}])
+check("the concerns screen says scholars and craftsmen are not interchangeable",
+      "scholar cannot watch a workshop"
+      in str(_rv[0].get("these_are_not_interchangeable")),
+      _rv[0].get("these_are_not_interchangeable"))
+_re, _, _ = proto([{"cmd": "labour", "trade": "engineer"}])
+check("...and a trade says which of the two it is",
+      _re[0]["trade"].get("kind") == "scholar", _re[0]["trade"].get("kind"))
+
+# --- BREAK: the founder's year quietly grew from 2,000 hours to 10,175 and
+# nothing ever said so - the largest change to the resource the game is built
+# on, noticed by accident.
+s_dp = sim(capital=2000000.0, manual=False)
+for _k in ("school_founded", "patron_imperial", "academy_network"):
+    s_dp.done.add(_k)
+s_dp._done_changed()
+for _ in range(30):
+    s_dp.step()
+check("gaining a deputy is announced, with what it does to your year",
+      any("deput" in m and "your year is" in m for _, m in s_dp.log),
+      [m for _, m in s_dp.log if "deput" in m][:1])
+check("...once per whole deputy, not every year",
+      len([m for _, m in s_dp.log if "deput" in m]) <= int(s_dp.directors_extra) + 1,
+      len([m for _, m in s_dp.log if "deput" in m]))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

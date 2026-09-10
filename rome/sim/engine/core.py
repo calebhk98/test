@@ -384,6 +384,21 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.artisans = max(0.0, self.artisans)
         self.scholars = max(0.0, self.scholars)
         self.directors_extra = max(0.0, self.directors_extra)
+        # SAY IT WHEN IT CROSSES A WHOLE PERSON. A play tester noticed "10,175
+        # founder-hours free this year (2,000 of your own, plus 4.5 deputies at
+        # 1,800 hours each)" by accident, after playing for a century on the
+        # assumption that their year was two thousand hours and would stay
+        # that way. The single largest change to the resource the whole game
+        # is built on had never announced itself.
+        _whole = int(self.directors_extra)
+        if _whole > int(getattr(self, "_said_deputies", 0)):
+            self._said_deputies = _whole
+            self.log.append((yr, "you now have %d deput%s directing work in "
+                                 "your name: your year is %s hours instead of "
+                                 "%s. They came with the institutions you built"
+                             % (_whole, "y" if _whole == 1 else "ies",
+                                "{:,.0f}".format(self.director_pool()),
+                                "{:,.0f}".format(self.cfg["founder_hours_per_year"]))))
 
         # 2. money
         self.economy = self.economy_index()
@@ -423,6 +438,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.charge_interest(yr)
         if self.policy.get("auto_shed", True):
             self.shed_loss_makers(yr)
+        self.warn_near_the_limit(yr)
         self.enforce_credit_limit(yr)
 
         # INSOLVENCY. A playtester ran to minus 4.12 million denarii over eighty

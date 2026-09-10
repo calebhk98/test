@@ -197,6 +197,37 @@ class EconomyMixin:
                                  % (-self.capital, rate * 100)))
         return owed
 
+    def warn_near_the_limit(self, yr):
+        """Say it BEFORE the creditors do, while there is still a decision left.
+
+        A play tester watched a recoverable-looking cash dip turn into "CREDIT
+        EXHAUSTED: 4 projects halted" and a forty-year dead run, and wrote:
+        "`money` shows a credit limit but nothing shows how close to insolvency
+        you are." A limit you can only discover by crossing it is not a limit,
+        it is an ambush - and everything that would have saved them (stop a
+        project, close a loss-maker, let somebody go) was still available the
+        year before.
+        """
+        limit = self.credit_limit()
+        if limit <= 0 or self.capital >= 0:
+            self._said_near_limit = False
+            return
+        used = -self.capital / limit
+        if used < 0.7:
+            self._said_near_limit = False
+            return
+        if getattr(self, "_said_near_limit", False):
+            return
+        self._said_near_limit = True
+        self.log.append((yr, "CLOSE TO THE LIMIT: you owe %s of the %s anyone "
+                             "here will advance you (%d%%). Past it every "
+                             "project in hand is halted unfinished and nobody "
+                             "funds new work for some years. 'stop' a project, "
+                             "'mothball' a loss-maker or 'fire' somebody while "
+                             "it is still your choice"
+                         % ("{:,.0f}".format(-self.capital),
+                            "{:,.0f}".format(limit), used * 100)))
+
     def enforce_credit_limit(self, yr):
         """Nobody lends past the limit, so past the limit you simply stop.
 
