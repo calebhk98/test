@@ -14,5 +14,9 @@ rome/playtest/naive/*.out
 rome/playtest/naive/game.in
 rome/playtest/naive/game.out
 rome/playtest/naive/send.sh
+rome/playtest/naive2/*.fifo
+rome/playtest/naive2/*.json
+rome/playtest/naive2/*.log
+rome/playtest/naive2/*.out
 rome/playtest/scratchpad/
 tutorial-runs/
