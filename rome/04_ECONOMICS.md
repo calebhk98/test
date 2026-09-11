@@ -13,11 +13,24 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 301 AD and denominated in a collapsed currency, so I use it for ratios only.
 **Replace every [C] price with an observed one in your first month.**
 
+**A caveat this section's own rule requires.** The tree has grown from 1,176
+nodes to 2,833 since the table below was rolled up, and `simulator.py costs`
+no longer has a by-domain grouping mode at all (today it prints only the N
+most expensive nodes and a "best return on capital" list) - so the table
+cannot currently be regenerated the way this file's own header promises.
+Whole-tree totals that CAN be reproduced today, from `simulator.py validate`:
+**total capital 21,446,337 den, total founder-hours 422,405** across all 2,833
+nodes. Read the domain table below for its shape - where the money and the
+hours go relative to each other - not for its absolute numbers, which predate
+both the tree's growth and the goal moving from `point_contact_transistor` to
+`junction_transistor`.
+
 ---
 
 ## 1. The whole programme, by domain
 
-1,176 nodes rolled up. Regenerate with `python3 rome/sim/simulator.py costs`.
+1,176 nodes rolled up, at a point in the project's history `simulator.py
+costs` can no longer reproduce (see the caveat above).
 
 | Domain | Nodes | Your hours | Total cost (den) | Revenue at maturity (den/yr) |
 |---|---:|---:|---:|---:|
@@ -44,9 +57,15 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 | electrical | 21 | 8,530 | 1,058,837 | 239,700 |
 | civil engineering | 21 | 2,240 | 9,768 | 400 |
 | semiconductors | 10 | 8,250 | 443,949 | 70,000 |
-| unobtainable | 7 | 0 | 0 | 0 |
+| ~~unobtainable~~ | ~~7~~ | ~~0~~ | ~~0~~ | ~~0~~ |
 | military | 2 | 700 | 10,724 | 6,000 |
 | **TOTAL** | **1176** | **215,600** | **15,427,174** | **1,368,695** |
+
+*The "unobtainable" row is struck through because that tier no longer exists:
+the seven materials it counted (rubber, gutta-percha, quinine, Chile
+saltpetre and the rest) were moved to tier 4, each reachable through an
+`exp_*` expedition node, once the project decided nothing in the material
+layer should be flagged impossible outright. See `ROME_BOOTSTRAP.md`.*
 
 ---
 

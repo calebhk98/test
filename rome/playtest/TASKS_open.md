@@ -7,22 +7,6 @@ annotated.
 
 ## Verified still open
 
-### Military technology does nothing at all
-
-Measured: the tree has 111 military, weapon and fortification nodes. Building
-and running EVERY ONE of them moves nothing. Protection 0.019 to 0.019. No
-relief against a sacking. No relief against losing staff. No change to
-reputation or to what the state will fund.
-
-The only effect military technology has is through `weapon_democratising`,
-which RAISES suspicion. So the entire branch is a pure liability: you can
-build cannon in 100 AD and the only consequence is that people trust you less.
-
-A founder who builds gunpowder artillery should be close to untouchable by
-the hazards that currently wreck runs. Sacking, confiscation, a patron
-destroyed in someone else's quarrel: those are exactly what an armed and
-useful man is protected from. This is the largest unmodelled thing left.
-
 ### `why`'s leaf detection does not scan `req_any`
 
 Confirmed: `req_any` appears nowhere in the explain path. A node whose only
@@ -92,5 +76,8 @@ produced rather than bought; mine land, depletion and technology yield; the
 goods market; the backward-chaining planner; auto_hire going through hire();
 fog rewindable by save and reload; the save lost on a closed pipe; the log
 not surviving a reload; a dead founder starting projects; the developer's
-audit markers shipped in player prose; and the test suite going from 425
-seconds to 44.
+audit markers shipped in player prose; the test suite going from 425
+seconds to 44; and military technology doing nothing (`society.
+military_leverage()` now buys faster war recovery, a protection bonus once
+you have a patron to hand it to, and a lighter state-funding penalty,
+scaled by how much of the 111-node branch you have actually built).
