@@ -7454,6 +7454,114 @@ check("the semiconductor-grade graphite crucibles on the road to the goal "
       "bought off the market",
       not _graphite_bad, _graphite_bad)
 
+# --- three players: `why` quoted the BUILD crew as the staff requirement,
+# and `open` actually enforces ongoing SUPERVISION (venture_hands), a
+# different and sometimes larger number never shown before the money was
+# spent. `why` must now show both, from the same function `open` checks.
+r, _, _ = proto([{"cmd": "why", "id": "cementation_steel"}])
+_why_open = r[0]["staff_to_keep_it_open"]
+_s = sim()
+_expect_sch, _expect_art = _s.venture_hands("cementation_steel")
+check("`why`'s supervision figure is computed by the same function `open` "
+      "enforces (venture_hands), not a second estimate of it",
+      abs(_why_open["scholars"] - round(_expect_sch, 2)) < 0.01
+      and abs(_why_open["artisans"] - round(_expect_art, 2)) < 0.01,
+      "why said %s, venture_hands says %.2f/%.2f"
+      % (_why_open, _expect_sch, _expect_art))
+check("the supervision figure can genuinely exceed the build crew shown as "
+      "staff_needed, which is exactly the case a Norse playtester measured "
+      "(2.13 craftsmen enforced against a displayed 2 artisans)",
+      _why_open["artisans"] > r[0]["staff_needed"]["artisans"],
+      "staff_needed %s, staff_to_keep_it_open %s"
+      % (r[0]["staff_needed"], _why_open))
+
+# --- and a node nobody could ever run as a going concern (pure knowledge)
+# gets no supervision figure at all - there is nothing to keep an eye on.
+r, _, _ = proto([{"cmd": "why", "id": "ag2_adulteration_law"}])
+check("a pure-knowledge node (no revenue, no upkeep) carries no "
+      "staff_to_keep_it_open - there is no concern to supervise",
+      r[0].get("staff_to_keep_it_open") is None, r[0].get("staff_to_keep_it_open"))
+
+# --- three playtesters: a concern the staffing rule shut never came back on
+# its own once restaffed - reopening it was `auto_open`, a SEPARATE policy
+# defaulting off for a player, so every restaffing was followed by a manual
+# `open`, for ever. "Most of the mid and late game was a repetitive
+# hire-then-reopen treadmill rather than fresh decisions."
+s = sim(capital=50000.0)
+_k = "cementation_steel"
+s.done.add(_k)
+s._done_changed()
+s.employees["artisan"] = 6.0
+s._resync_pools()
+ok, _ = s.open_venture(_k)
+check("set-up: cementation_steel opens with six craftsmen on staff", ok)
+s.employees["artisan"] = 0.0
+s._resync_pools()
+closed = s.close_unstaffed_ventures(s.year)
+check("losing every craftsman shuts a concern that needs them to supervise",
+      closed == [_k] and _k in s.mothballed and _k in getattr(s, "shut_for_staff", {}),
+      closed)
+s.employees["artisan"] = 6.0
+s._resync_pools()
+reopened = s.reopen_restaffed_ventures(s.year)
+check("...and it comes back on its own once restaffed, with no 'open' typed",
+      reopened == [_k] and _k in s.operating and _k not in s.mothballed
+      and _k not in getattr(s, "shut_for_staff", {}), reopened)
+
+# --- and a concern a player shut ON PURPOSE must never reappear on its own -
+# reopen_restaffed_ventures only undoes close_unstaffed_ventures, never `mothball`
+s = sim(capital=50000.0)
+s.done.add(_k)
+s._done_changed()
+s.employees["artisan"] = 6.0
+s._resync_pools()
+s.open_venture(_k)
+s.mothball_work(_k)
+reopened = s.reopen_restaffed_ventures(s.year)
+check("a concern closed on purpose with 'mothball' is never auto-reopened, "
+      "however much staff is free - that is still the player's call",
+      reopened == [] and _k in s.mothballed and _k not in s.operating, reopened)
+
+# --- the treadmill itself, measured: build a realistic spread of concerns,
+# starve them of any staff replacement (auto_hire off, the player default),
+# and count closures against automatic reopenings over 40 years
+def _portfolio_run(auto_hire, years=40):
+    s = sim(civ="norse_900ad", capital=60000.0)
+    s.policy["auto_hire"] = auto_hire
+    cands = sorted((k for k in NODES if s.is_venture(k) and NODES[k]["rev"] > 0),
+                   key=lambda k: -(NODES[k]["rev"] / max(1.0, sum(s.venture_hands(k)))))
+    chosen, need_sch, need_art = [], 0.0, 0.0
+    for k in cands:
+        s.done.add(k)
+        a, b = s.venture_hands(k)
+        if (need_sch + a > 8.0 and need_sch > 0) or (need_art + b > 35.0 and need_art > 0):
+            s.done.discard(k)
+            continue
+        need_sch += a
+        need_art += b
+        chosen.append(k)
+        if len(chosen) >= 25:
+            break
+    s._done_changed()
+    s.employees["scholar"] = round(need_sch) + 1
+    s.employees["artisan"] = round(need_art) + 2
+    s._resync_pools()
+    opened = [k for k in chosen if s.open_venture(k)[0]]
+    reopenings = 0
+    for _ in range(years):
+        before = set(s.operating)
+        s.step()
+        reopenings += len((set(s.operating) - before) & set(opened))
+    return opened, sum(1 for k in opened if k in s.operating), reopenings
+
+_opened, _open_end, _reopenings = _portfolio_run(auto_hire=True)
+check("with auto_hire replacing attrition losses, the portfolio it built "
+      "fully recovers over 40 years - every closure eventually comes back "
+      "on its own once the household can staff it again",
+      _open_end == len(_opened) and _reopenings > 0,
+      "opened %d, open at year 40: %d, auto-reopenings: %d"
+      % (len(_opened), _open_end, _reopenings))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
