@@ -1,7 +1,7 @@
 {
  "meta": {
   "cost_disclaimer": "Every ph/lab/cap figure is a [C] estimate unless the note says otherwise. They are calibrated so that the SHAPE of the tree is right: which items are cheap, which are slow, which are gated on people rather than money. Do not read three significant figures into any of them.",
-  "goal_node": "point_contact_transistor",
+  "goal_node": "junction_transistor",
   "merged_duplicate_ids": {
    "ag2_caterpillar_track": "tl_caterpillar_track",
    "ag2_roller_mill": "fud_roller_mill",
@@ -55213,7 +55213,8 @@
    "ph": 800.0,
    "pre": [
     "cap_tol_10um",
-    "point_contact_transistor"
+    "point_contact_transistor",
+    "single_crystal"
    ],
    "req_any": [],
    "rev": 30000.0,
@@ -86836,15 +86837,15 @@
     "phosphor_bronze_g": 60.0
    },
    "name": "Point-contact transistor",
-   "note": "THE GOAL. An n-type germanium slab with two phosphor bronze points a fraction of a millimetre apart, plus a forming pulse. Fragile, noisy, irreproducible and it amplifies. Bardeen, Brattain and Shockley, December 1947. Getting here from 100 AD is the whole game.",
+   "note": "An n-type germanium slab with two phosphor bronze points a fraction of a millimetre apart, plus a forming pulse. Fragile, noisy, irreproducible and hand-made, and it worked: Bardeen and Brattain got amplification out of POLYCRYSTALLINE germanium in December 1947, with no pulled crystal and no zone refining, neither of which existed yet. This is the moment the thing is proved possible. It is not yet a thing you can manufacture.",
    "ph": 900.0,
    "pre": [
     "galena_detector",
+    "ge_reduction",
     "gp_whisker_forming",
     "micrometer_gauges",
     "prc_lapping_plate",
     "quantum_solidstate_theory",
-    "single_crystal",
     "vacuum_tube"
    ],
    "req_any": [
@@ -99289,7 +99290,7 @@
     "quartz_tube_kg": 200.0
    },
    "name": "Czochralski single crystal growth and controlled doping",
-   "note": "Dip a seed into the melt and pull slowly while rotating. Grain boundaries destroy carrier lifetime, so polycrystalline germanium will never make a working transistor no matter how pure it is. Add the dopant to the melt in weighed traces; this is where the analytical balance earns its keep two centuries later.",
+   "note": "Dip a seed into the melt and pull slowly while rotating. Add the dopant to the melt in weighed traces; this is where the analytical balance earns its keep two centuries later. Grain boundaries destroy carrier lifetime, so a single crystal is what makes a transistor MANUFACTURABLE: reproducible, rugged, and able to be made by the thousand. Teal and Little pulled the first germanium crystals in 1948, the year AFTER the point-contact device was demonstrated on ordinary polycrystalline material.",
    "ph": 1000.0,
    "pre": [
     "cap_measure_temp_hi",

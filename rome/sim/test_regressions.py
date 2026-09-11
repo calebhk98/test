@@ -1392,14 +1392,18 @@ check("the mining commands the help gives actually parse",
 #    goal's seven missing prerequisites by name. The tester crawled that error
 #    recursively and recovered 134 hidden ids and the whole graph to the
 #    transistor, in six rounds, with fog on throughout.
-_bt, _, _ = proto([{"cmd": "bounty", "id": "point_contact_transistor"},
-                   {"cmd": "start", "id": "point_contact_transistor"},
-                   {"cmd": "mothball", "id": "point_contact_transistor"},
-                   {"cmd": "why", "id": "point_contact_transistor"}], fog=True)
+# GOAL, not the name of whichever node the goal used to be. These pinned
+# point_contact_transistor, which stopped being the goal when the 1947 device
+# became a milestone on the way to the 1951 one, and the checks then asserted
+# the goal's fog exception about a node that no longer has it.
+_bt, _, _ = proto([{"cmd": "bounty", "id": GOAL},
+                   {"cmd": "start", "id": GOAL},
+                   {"cmd": "mothball", "id": GOAL},
+                   {"cmd": "why", "id": GOAL}], fog=True)
 # The PROPERTY, not the wording: no reply may contain the id of anything the
 # player has not heard of. (`why` on the goal is answered now - the status line
 # names the goal every turn - but it still may not name what the goal rests on.)
-_GOAL_PRE = NODES["point_contact_transistor"]["pre"]
+_GOAL_PRE = NODES[GOAL]["pre"]
 _bt_text = json.dumps(_bt)
 check("no command names a prerequisite of something you have not heard of",
       not any(p_ in _bt_text for p_ in _GOAL_PRE),
@@ -3057,7 +3061,7 @@ check("...and the empty result prints no column headings over no rows",
 # One node with its prerequisites met, one without: both have to say which
 # state a prerequisite wants, since knowing and running became separate.
 _wy, _, _ = proto([{"cmd": "why", "id": "horse_collar"},
-                   {"cmd": "why", "id": "point_contact_transistor"}])
+                   {"cmd": "why", "id": GOAL}])
 _wp = "\n".join(_RP("why", x) for x in _wy)
 check("why states that a prerequisite must be finished, and stays finished",
       "FINISHED" in _wp or "finished counts for ever" in _wp,
@@ -4317,7 +4321,7 @@ check("hire, buy and train are all bounded by the same one number",
 # 500-year game. The single thing that decided whether their run could be won.
 _rl3, _, _ = proto([{"cmd": "labour", "trade": "scholar"},
                     {"cmd": "labour", "trade": "smith"},
-                    {"cmd": "why", "id": "point_contact_transistor"}])
+                    {"cmd": "why", "id": GOAL}])
 check("a lettered trade shows the ceiling on how many can ever exist here",
       _rl3[0]["trade"].get("most_this_society_can_ever_supply") is not None,
       _rl3[0]["trade"].get("most_this_society_can_ever_supply"))
@@ -4798,17 +4802,17 @@ check("under fog, an ambiguous name never offers more candidates than full "
 
 # --- the goal's NAME gets the same one exception its id already has on
 # `why` alone - see protocol.py's _goal_why comment - and nothing widens it.
-r, _, _ = proto([{"cmd": "why", "id": "Point-contact transistor"},
-                 {"cmd": "start", "id": "Point-contact transistor"},
+r, _, _ = proto([{"cmd": "why", "id": NODES[GOAL]["name"]},
+                 {"cmd": "start", "id": NODES[GOAL]["name"]},
                  {"cmd": "why", "id": "transistor"}], fog=True, kit="poor_scholar")
 check("why on the goal's exact printed name is the one thing fog answers",
-      r[0].get("ok") and r[0].get("id") == "point_contact_transistor",
+      r[0].get("ok") and r[0].get("id") == GOAL,
       r[0].get("error"))
 check("...but the exception does not widen to other commands on the same name",
       not r[1].get("ok") and "never heard of" in r[1].get("error", ""),
       r[1].get("error"))
 check("...and a vague guess does not silently resolve to the goal",
-      not r[2].get("ok") and "point_contact_transistor" not in r[2].get("error", "")
+      not r[2].get("ok") and GOAL not in r[2].get("error", "")
       and "aiming at" not in r[2].get("error", ""),
       r[2].get("error"))
 
@@ -5436,9 +5440,24 @@ check("the contact alloys are real prerequisites now, not just bare material cos
       "mat_gold" in NODES["gp_whisker_forming"]["pre"]
       and "phosphor_bronze_alloy" in NODES["gp_whisker_forming"]["pre"],
       NODES["gp_whisker_forming"]["pre"])
-check("the whole goal closure grew by exactly the 2+2+1+3=8 nodes the audit "
-      "claimed as marginal cost, not more",
-      len(S.closure(NODES, GOAL)) == 157, len(S.closure(NODES, GOAL)))
+# THE CLAIM, NOT A TOTAL. This asserted the closure was exactly 157, which
+# was true on the day it was written and stopped being true the moment the
+# goal moved from the 1947 point-contact device to the 1951 junction
+# transistor. A hard total is a check on where the goal happens to sit; the
+# thing the audit actually claimed is that these four additions were cheap,
+# and that is what is worth pinning. Marginal cost is the closure of the
+# addition MINUS what the goal already needed, which is the number a previous
+# audit got wrong by quoting 101 when the truth was 1.
+_clo_now = S.closure(NODES, GOAL)
+_added = ("microscope_compound", "el2_electropolishing_etching_surface_finish",
+          "mat_gold", "phosphor_bronze_alloy")
+check("the four audited prerequisites really are on the road to the goal",
+      all(a in _clo_now for a in _added),
+      [a for a in _added if a not in _clo_now])
+_marginal = len(set().union(*(S.closure(NODES, a) | {a} for a in _added))
+                - (_clo_now - set(_added)))
+check("...and between them they cost the road about eight nodes, not dozens",
+      _marginal <= 10, _marginal)
 
 # --- This audit's own mistake, caught by the very fog test above it: writing
 # a new prerequisite's id into point_contact_transistor's NOTE leaked it in

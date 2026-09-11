@@ -36,7 +36,12 @@ def load_strategy(name, nodes, goal):
         # things the goal needs first, then by tier, then cheapest first. Falling
         # back to alphabetical order made the simulation spend a century acquiring
         # ox carts before it touched a furnace.
-        need = closure(nodes, "point_contact_transistor")
+        # FROM THE TREE, NOT SPELLED OUT HERE. This named the goal by hand, so
+        # when the win condition moved from the 1947 point-contact device to the
+        # 1951 junction transistor, the ordering that decides what an unnamed
+        # node is worth would have gone on ranking against the old one for ever,
+        # silently and with nothing failing.
+        need = closure(nodes, goal)
         rest = [k for k in nodes if k not in order]
         rest.sort(key=lambda k: (k not in need, nodes[k]["tier"],
                                  nodes[k]["_total_cost"], k))
@@ -252,7 +257,7 @@ def _summarise(results, label):
     stuck = defaultdict(int)
     for r in results:
         if not r.goal_year:
-            need = closure(r.nodes, "point_contact_transistor")
+            need = closure(r.nodes, r.goal)
             miss = [k for k in topo_order(r.nodes, need) if k not in r.done]
             if miss: stuck[miss[0]] += 1
     if stuck:
@@ -879,7 +884,14 @@ def cmd_why(a):
         print("   %s" % (("%-30s %s" % (u, nodes[u]["name"])) if u in nodes else u))
     blocks = {m for m in nodes if k in closure(nodes, m)} - {k}
     print("\nTOTAL DOWNSTREAM: %d nodes depend on this, directly or indirectly." % len(blocks))
-    if "point_contact_transistor" in blocks:
+    # THE GOAL BY NAME FROM THE TREE, for the same reason as load_strategy's.
+    _goal_here = TREE["meta"]["goal_node"] if "TREE" in dir() else None
+    if _goal_here is None:
+        try:
+            _goal_here = load()[0]["meta"]["goal_node"]
+        except Exception:
+            _goal_here = None
+    if _goal_here and _goal_here in blocks:
         print("   INCLUDING THE GOAL. This node is on the critical path.")
 
 
