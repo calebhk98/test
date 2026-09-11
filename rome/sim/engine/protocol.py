@@ -509,7 +509,8 @@ def _agent_state(s, nodes, cmd=None):
 
 
 HELP_TOPICS = ("commands", "labour", "economy", "money", "automatic",
-               "sittings", "fog", "eminence", "risk", "protection", "stuck")
+               "sittings", "fog", "eminence", "risk", "protection", "stuck",
+               "log")
 
 
 def _agent_help(s, topic=None):
@@ -595,12 +596,18 @@ def _agent_help(s, topic=None):
         return {"commands": {
             "state": "where you stand; add full:true for every field",
             "available": "what you could begin today, summarised by subject; "
-                         'add subject, find, afford, limit/offset, or all:true',
+                         "add subject, find, afford, limit/offset, or all:true; "
+                         "add sort (price/hours/years/earns/upkeep/risk/alpha/"
+                         "nearest) and reverse to change the order, and page "
+                         "with offset/heard_offset all the way to the end",
             "why <id>": "everything known about one thing",
             "start <id>": "begin work on something",
             "stop <id>": "abandon it, losing what you have spent",
             "step <years>": "let time pass",
             "money": "the whole ledger: what comes in, what goes out",
+            "log": "your own history - what you did and what followed, most "
+                   "recent first; add failures:true, find, since/before, "
+                   "order, offset. Never the whole thing in one go",
             "quote <what>": "what something would cost before you commit to it; "
                             'so far {"cmd":"quote","what":"mine",'
                             '"material":"coal","n":500}',
@@ -731,6 +738,26 @@ def _agent_help(s, topic=None):
             "where to look next": (
                 '{"cmd":"available"} for what you could begin, '
                 '{"cmd":"labour"} for people, {"cmd":"money"} for the ledger.')}
+
+    if topic in ("log", "history", "diary"):
+        return {"log": (
+            "Your own history, in the order it happened: what you started, "
+            "what finished, what failed and why, a concern opening or "
+            "closing, staff hired or let go, a hazard landing, money running "
+            "out. Type 'log' alone for the twenty most recent lines."),
+            "see only the bad news": "'log failures'",
+            "search it": "'log find plague'",
+            "a year range": "'log since 300 before 400'",
+            "read forward from the start instead of back from now": "'log oldest'",
+            "page through to the end": "'log offset 20'",
+            "why it never dumps everything": (
+                "a long run's history runs to tens of thousands of lines, "
+                "more than anyone - human or script - can read in one reply, "
+                "so this always pages and there is no way to ask for all of "
+                "it at once."),
+            "fog": ("respects it: a line cannot go on naming something you "
+                    "have since forgotten or never heard of just because it "
+                    "was visible the year it happened.")}
 
     if topic in ("protection", "standing"):
         return {"protection": (
@@ -922,6 +949,38 @@ def _full_entry(s, nodes, k, fog):
     return e
 
 
+# EVERY SORT A PLAYER ASKED FOR, one table. Both the paged `available` list
+# and the "heard of but cannot begin" list under it were hard-wired to one
+# order each (cost, and nearest-first) with no way to ask for another, and a
+# play tester paging through "632 more, nearest first" asked outright how to
+# sort by what a thing earns instead of digging through cost order for it.
+# One table serves both lists so a player only has to learn one vocabulary:
+# {"cmd":"available","sort":"risk"} and the heard-of block below it sort the
+# same way.
+_SORT_KEYS = {
+    "price": lambda s, n, k: s.project_cost(k),
+    "cost": lambda s, n, k: s.project_cost(k),
+    "hours": lambda s, n, k: n[k]["ph"],
+    "years": lambda s, n, k: n[k]["yrs"],
+    "earns": lambda s, n, k: n[k]["rev"],
+    "revenue": lambda s, n, k: n[k]["rev"],
+    "upkeep": lambda s, n, k: n[k]["up"],
+    "risk": lambda s, n, k: n[k]["risk"],
+    "alpha": lambda s, n, k: n[k]["name"].lower(),
+    "alphabetical": lambda s, n, k: n[k]["name"].lower(),
+    "name": lambda s, n, k: n[k]["name"].lower(),
+    # NEAREST: fewest of its own prerequisites still missing. Every node in
+    # the STARTABLE list has zero missing by definition, so this only
+    # discriminates the heard-of list - asking for it on the startable list
+    # is harmless, not an error, and falls back to id order.
+    "near": lambda s, n, k: sum(1 for p in n[k]["pre"] if p not in s.done),
+    "nearest": lambda s, n, k: sum(1 for p in n[k]["pre"] if p not in s.done),
+}
+
+_SORT_KEY_NAMES = ("price", "hours", "years", "earns", "upkeep", "risk",
+                   "alpha", "nearest")
+
+
 def _agent_available(s, nodes, cmd=None):
     """What you could begin today.
 
@@ -966,6 +1025,9 @@ def _agent_available(s, nodes, cmd=None):
     except (TypeError, ValueError):
         offset = 0
     afford = float(cmd.get("afford")) if str(cmd.get("afford", "")).strip() not in ("", "None") else None
+    sort_by = str(cmd.get("sort") or "").strip().lower()
+    _sort_fn = _SORT_KEYS.get(sort_by)
+    reverse = bool(cmd.get("reverse"))
 
     sel, why_these = ok, None
     if find:
@@ -993,8 +1055,14 @@ def _agent_available(s, nodes, cmd=None):
     # printed, but the pages were CUT from strategy order, so a break tester
     # asking for the cheapest work found it at item 31 - and the first page was
     # a cost-sorted view of an arbitrary thirty. Sort the selection, then cut.
+    # DEFAULT COST, BUT NOT THE ONLY CHOICE. A play tester paging through
+    # "632 more" asked how to see it sorted by what a thing earns instead of
+    # digging cost order for it; `sort` picks any column, `reverse` flips it.
     if find or want_subject or limit or offset or show_all or afford is not None:
-        sel = sorted(sel, key=lambda k: (s.project_cost(k), k))
+        if _sort_fn:
+            sel = sorted(sel, key=lambda k: (_sort_fn(s, nodes, k), k), reverse=reverse)
+        else:
+            sel = sorted(sel, key=lambda k: (s.project_cost(k), k))
 
     heard, heard_more, heard_from = [], 0, 0
     if fog:
@@ -1008,9 +1076,30 @@ def _agent_available(s, nodes, cmd=None):
         _heard_all = [k for k in getattr(s, "revealed", set())
                       if k not in s.done and k not in s.active
                       and not s.start_reason(k)[0]]
-        _heard_all.sort(key=lambda k: (sum(1 for p_ in nodes[k]["pre"]
-                                           if p_ not in s.done),
-                                       nodes[k]["tier"], k))
+        # THE SAME SEARCH, OR NOTHING. This block used to ignore `find` and
+        # `subject` entirely and print its usual nearest-first twenty-five
+        # regardless of what was typed, so `available find zzz` - a search
+        # that matched nothing startable - still dumped seven things the
+        # player had never asked about, under a heading that gave no sign any
+        # of it was unrelated to the search. A search that matches nothing is
+        # supposed to look like nothing, and a search that matches something
+        # heard-of-but-not-yet-startable is exactly the case this list exists
+        # to answer, so the fix is to search it rather than hide it outright.
+        if find:
+            _heard_all = [k for k in _heard_all
+                          if find in k.lower() or find in nodes[k]["name"].lower()]
+        elif want_subject:
+            _heard_all = [k for k in _heard_all
+                          if want_subject in _subject_of(nodes[k]).lower()]
+        # NEAREST-FIRST BY DEFAULT, but the same `sort`/`reverse` a player set
+        # on the startable list applies here too - one vocabulary for both
+        # halves of the screen, per the sort table's own docstring.
+        if _sort_fn:
+            _heard_all.sort(key=lambda k: (_sort_fn(s, nodes, k), k), reverse=reverse)
+        else:
+            _heard_all.sort(key=lambda k: (sum(1 for p_ in nodes[k]["pre"]
+                                               if p_ not in s.done),
+                                           nodes[k]["tier"], k))
         # PAGEABLE, and it says when it is cut. This was a silent slice at 25
         # in a game where a play tester had a thousand nodes in play: no note
         # that it was truncated and no way to see the rest. `heard_offset`
@@ -1055,6 +1144,18 @@ def _agent_available(s, nodes, cmd=None):
                    "shorter word, or a subject: 'available metallurgy'."
                    if fog else
                    " Try a shorter word, or a subject: 'available metallurgy'."))
+        # DISCOVERABLE, not just possible. `help available` says this too, but
+        # a naive player reading the table itself should not have to go
+        # looking for the one line that explains how to change what they are
+        # looking at.
+        out["sorted_by"] = sort_by if _sort_fn else "cost"
+        if reverse:
+            out["sorted_by"] += ", reversed"
+        out["to_sort_or_page_differently"] = (
+            "add a 'sort' of %s, and 'reverse' to flip it; 'offset'/'limit' "
+            "page the list you could start, 'heard_offset' pages the "
+            "heard-of one below it - all the way to the end."
+            % ", ".join(_SORT_KEY_NAMES))
         if not show_all and offset + len(page) < len(sel):
             out["more"] = ('%d more; ask again with "offset": %d'
                            % (len(sel) - offset - len(page), offset + len(page)))
@@ -1062,8 +1163,11 @@ def _agent_available(s, nodes, cmd=None):
             out["heard_of_but_cannot_begin"] = heard_block
             if heard_more:
                 out["and_more_you_have_heard_of"] = (
-                    "%d more, nearest first; ask again with heard_offset %d"
-                    % (heard_more, heard_from + len(heard_block)))
+                    "%d more, %s; ask again with heard_offset %d"
+                    % (heard_more,
+                       ("sorted by %s%s" % (sort_by, " reversed" if reverse else ""))
+                       if _sort_fn else "nearest first",
+                       heard_from + len(heard_block)))
         return out
 
     # DEFAULT: the digest.
@@ -1134,6 +1238,150 @@ def _agent_available(s, nodes, cmd=None):
     if fog:
         out["note"] = ("Under fog you see only what you could begin now, and things "
                        "you have heard of. There is no way to see the whole tree.")
+    return out
+
+
+# A LOG LINE A PLAYER WOULD CALL BAD NEWS. Eleven rounds of playtesting kept
+# coming back to the same complaint in different words - "failures are
+# silent" - and the engine's own self.log already records every one of them,
+# in the founder's own words, with no field anywhere marking which lines are
+# the bad ones. Matched on the actual wording every append site already uses
+# (self.log.append across core.py, projects.py, economy.py and society.py),
+# not reinvented here.
+_FAILURE_MARKERS = (
+    "FAILED", "HALTED", "ABANDONED", "CREDIT EXHAUSTED", "CLOSE TO THE LIMIT",
+    "IN ARREARS", "in arrears", "INSOLVENCY", "BONDAGE", "cannot go on",
+    "cannot pay everyone", "SHORT OF", "nobody left to keep an eye",
+    "disperses", "sacked", "KNOWLEDGE LOST", "destroyed", "confiscated",
+    "the founder dies", "RUN ENDS", "MOTHBALLED",
+)
+
+
+def _is_failure_line(msg):
+    return any(marker in msg for marker in _FAILURE_MARKERS)
+
+
+def _log_scrub(s, text):
+    """A log line, with anything the player cannot currently see redacted.
+
+    self.log stores what happened IN THE YEAR IT HAPPENED, in plain English,
+    and can go on naming a thing for centuries after fog would refuse to
+    answer `why` about it - either because a sacking took it away (see
+    knowledge_risk's `forgotten`) or, for a hazard's own advice, because it
+    names a hedge the player never found. `fog_scrub` already strips ids out
+    of a message; most of this engine's own log lines name the thing, not the
+    id - "completed: Horizontal loom", not "completed: tex_horizontal_loom" -
+    so this also strips NAMES of anything not currently visible.
+    """
+    text = s.fog_scrub(text)
+    if not getattr(s, "fog", False) or not text:
+        return text
+    memo = {}
+    for k, n in s.nodes.items():
+        nm = n.get("name")
+        if nm and nm in text and not s.is_visible(k, _memo=memo):
+            text = text.replace(
+                nm, "something you have since forgotten"
+                    if k in (getattr(s, "forgotten", None) or {}) else
+                    "something you have not heard of")
+    return text
+
+
+def _agent_log(s, cmd=None):
+    """The player's own history: what they did, and what followed from it.
+
+    The commonest complaint across eleven rounds of playtesting was some
+    version of "failures are silent" - a project stalling, a concern closing
+    for want of staff, a hazard landing - none of it visible anywhere once
+    the turn it happened had scrolled past. The engine has always kept every
+    one of these in self.log; there was simply no command to read it back.
+
+    NEVER THE WHOLE THING. A run of any length runs to tens of thousands of
+    lines, more than an agent's whole context window, so this always pages
+    and defaults to a recent window - `limit` is hard-capped, not merely
+    suggested, and there is no `all:true` here the way `available` has one.
+    """
+    cmd = cmd or {}
+    log = list(getattr(s, "log", None) or [])
+    only_fail = bool(cmd.get("failures")
+                     or str(cmd.get("only") or "").strip().lower() in
+                        ("failures", "failure", "fails", "fail"))
+    find = str(cmd.get("find") or cmd.get("search") or "").strip().strip('"\'').lower()
+    try:
+        since = int(cmd["since"]) if str(cmd.get("since", "")).strip() not in ("", "None") else None
+    except (TypeError, ValueError):
+        since = None
+    try:
+        before = int(cmd["before"]) if str(cmd.get("before", "")).strip() not in ("", "None") else None
+    except (TypeError, ValueError):
+        before = None
+    order = str(cmd.get("order") or "newest").strip().lower()
+    if order not in ("newest", "oldest"):
+        order = "newest"
+    try:
+        limit = int(cmd.get("limit", 20))
+    except (TypeError, ValueError):
+        limit = 20
+    # THE HARD CAP THAT MAKES "NEVER DUMPED IN ONE GO" TRUE REGARDLESS OF WHAT
+    # IS ASKED FOR. Every other paged screen in this game trusts `limit` to
+    # whatever a script asks; this one cannot, because the failure mode this
+    # command exists to prevent - a reply so large it overflows a reader's
+    # context - is exactly what a script asking for {"limit":100000} would
+    # otherwise get.
+    limit = max(1, min(limit, 100))
+    try:
+        offset = max(0, int(cmd.get("offset", 0)))
+    except (TypeError, ValueError):
+        offset = 0
+
+    rows = list(enumerate(log))
+    if since is not None:
+        rows = [r for r in rows if r[1][0] >= since]
+    if before is not None:
+        rows = [r for r in rows if r[1][0] <= before]
+    if only_fail:
+        rows = [r for r in rows if _is_failure_line(r[1][1])]
+    if find:
+        # CHEAP FIRST, then confirmed against what fog actually lets the
+        # player see. A search that only matched a name fog is about to
+        # redact would otherwise report "3 lines mention X" as proof
+        # something called X exists, which is the same leak the visibility
+        # guard on `why` exists to close, reached from a different command.
+        rows = [r for r in rows if find in r[1][1].lower()]
+        if getattr(s, "fog", False):
+            # THE RECHECK IS THE EXPENSIVE HALF, one node sweep per candidate
+            # line, so a common word over a run's whole history could be
+            # thousands of sweeps. Capped to the most recent slice, which is
+            # also the one this command defaults to showing: a search that
+            # matches more than this has to narrow the word, the same as a
+            # search with no fog concern at all would still have to page.
+            _cap = rows[-2000:] if order != "oldest" else rows[:2000]
+            rows = [r for r in _cap if find in _log_scrub(s, r[1][1]).lower()]
+
+    total = len(rows)
+    ordered = list(reversed(rows)) if order == "newest" else rows
+    page = ordered[offset:offset + limit]
+    entries = [{"year": yr, "what": _log_scrub(s, msg)} for _idx, (yr, msg) in page]
+
+    out = {"ok": True, "count": total,
+           "showing": ("nothing" if not entries else
+                      "%d-%d of %d, %s first"
+                      % (offset + 1, offset + len(entries), total, order)),
+           "entries": entries}
+    if offset + len(page) < total:
+        out["more"] = ('%d more; ask again with "offset": %d'
+                       % (total - offset - len(page), offset + len(page)))
+    if not log:
+        out["note"] = "nothing has happened yet"
+    elif not entries and (find or only_fail or since is not None or before is not None):
+        out["note"] = "nothing in your history matches that."
+    # DISCOVERABLE ON THE SCREEN ITSELF, not only in `help`. A naive player
+    # is not going to guess that this command takes filters at all.
+    out["to_filter_or_sort"] = (
+        "add 'failures':true for only what went wrong, 'find' to search, "
+        "'since'/'before' for a year range, 'order':'oldest' to read forward "
+        "from the start instead of back from now, and 'offset' to page "
+        "through to the end.")
     return out
 
 
@@ -1773,6 +2021,8 @@ def render_available(out):
     L = ["AVAILABLE: %s startable now" % _fmt_num(out.get("count"))]
     if out.get("showing"):
         L.append(out["showing"])
+    if out.get("sorted_by"):
+        L.append("sorted by: %s" % out["sorted_by"])
     L.append("")
     # Sized to the longest id ON THIS PAGE, so the table stays aligned without
     # ever cutting the one string the player has to type next.
@@ -1812,7 +2062,13 @@ def render_available(out):
                  or "Nothing you could begin today matches that.")
     elif "available" in out:
         L.append(header)
-        for e in sorted(out["available"], key=lambda e: e.get("cost", 0)):
+        # IN THE ORDER THE REPLY GAVE IT, not re-sorted by cost here. A player
+        # who asked for {"sort":"risk"} got a JSON list in risk order and a
+        # printed table back in cost order underneath it - the JSON and the
+        # words describing the same reply disagreeing about what "sorted"
+        # meant. _agent_available already sorts the page exactly the way it
+        # was asked to; the one thing this renderer must not do is undo that.
+        for e in out["available"]:
             L.append(_available_row(e, _w, _purse))
         if out.get("more"):
             L.append("")
@@ -1844,6 +2100,9 @@ def render_available(out):
             L.append("  %-34s %s" % (h["id"], h.get("why_not") or ""))
         if out.get("and_more_you_have_heard_of"):
             L.append("  " + str(out["and_more_you_have_heard_of"]))
+    if out.get("to_sort_or_page_differently"):
+        L.append("")
+        L.append(_wrap(out["to_sort_or_page_differently"]))
     if out.get("note"):
         L.append("")
         L.append(_wrap(out["note"]))
@@ -2363,13 +2622,38 @@ def render_generic(resp, indent=""):
     return "\n".join(L)
 
 
+def render_log(out):
+    """Your own history, a year and a line at a time, newest first by default.
+
+    Plain lines rather than a table: these are sentences, of wildly varying
+    length - "FAILED at X" runs to three clauses, "hired 2 smiths" is four
+    words - and forcing them into columns would either truncate the long ones
+    or waste most of a line of blank padding on the short ones.
+    """
+    L = ["HISTORY: %s" % _fmt_num(out.get("count"))]
+    if out.get("showing"):
+        L.append(out["showing"])
+    L.append("")
+    if out.get("note") and not out.get("entries"):
+        L.append(out["note"])
+    for e in out.get("entries") or []:
+        L.append("  %4s AD  %s" % (e.get("year"), e.get("what")))
+    if out.get("more"):
+        L.append("")
+        L.append(out["more"])
+    if out.get("to_filter_or_sort"):
+        L.append("")
+        L.append(_wrap(out["to_filter_or_sort"]))
+    return "\n".join(L)
+
+
 _RENDERERS = {
     "state": render_state, "step": render_step, "available": render_available,
     "why": render_why, "money": render_money, "ledger": render_money,
     "accounts": render_money, "labour": render_labour, "risk": render_risk,
     "hazards": render_risk, "ventures": render_ventures,
     "mines": render_mines, "workings": render_mines,
-    "stuck": render_stuck,
+    "stuck": render_stuck, "log": render_log, "history": render_log,
     "final": render_final,
 }
 
@@ -2604,7 +2888,7 @@ def _flag(v, default=False):
 # advertise it is a visible omission rather than a silent one.
 KNOWN_COMMANDS = (
     "state", "available", "why", "path", "start", "stop", "step",
-    "money", "risk", "labour", "policy", "help",
+    "money", "risk", "labour", "policy", "help", "log",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
@@ -2642,6 +2926,7 @@ TYPED_ALIASES = {
     "h": "help", "?": "help", "commands": "help",
     "ledger": "money", "accounts": "money", "cash": "money",
     "hazards": "risk", "risks": "risk",
+    "history": "log", "diary": "log", "logs": "log", "journal": "log",
     "people": "labour", "staff": "labour", "workers": "labour",
     "dismiss": "fire", "sack": "fire", "lay": "fire",
     "job": "commission", "hireout": "commission",
@@ -2667,9 +2952,65 @@ def _typed_number(tok):
 
 
 # The real ids, and a case-folded index onto them. Built once: parse_typed has
-# no Sim to ask and runs on every line a player types.
-NODE_IDS = frozenset(load()[2])
+# no Sim to ask and runs on every line a player types. One load(), not two -
+# it re-reads both tree files from disk and re-derives every node's cost, and
+# this file already pays that once per process for NODE_IDS; NODE_NAME_NORM
+# below reuses the same dict rather than paying it again.
+_NODES_ONCE = load()[2]
+NODE_IDS = frozenset(_NODES_ONCE)
 NODE_IDS_LOWER = {k.lower(): k for k in NODE_IDS}
+
+
+def _norm_name(text):
+    """Fold case and punctuation, so a typed name matches what the game
+    printed however it was capitalised or punctuated.
+
+    Every screen in this game prints the NAME ("Horizontal loom") and every
+    command up to now took only the ID ("tex_horizontal_loom") - testers
+    found that jarring often enough to say so in almost identical words. A
+    player copying a name back exactly, in any case, with or without the
+    comma a name like "Loom, treadle" carries, has to land on the same key.
+    """
+    return re.sub(r"[^a-z0-9]+", " ", str(text).lower()).strip()
+
+
+# NAMES ARE NOT UNIQUE THE WAY IDS ARE - the tree has several nodes called
+# things like "Bronze casting" at different tiers - so this maps one
+# normalised name onto every id that carries it, and resolution (below)
+# decides whether that is one answer or a question back to the player.
+# Built once, alongside NODE_IDS_LOWER, for the same reason: no Sim exists yet
+# when a typed line first has to be read.
+NODE_NAME_NORM = defaultdict(list)
+for _nn_k, _nn_n in _NODES_ONCE.items():
+    NODE_NAME_NORM[_norm_name(_nn_n["name"])].append(_nn_k)
+del _nn_k, _nn_n
+
+
+def _resolve_by_name(text):
+    """Every id whose name matches `text`, case and punctuation folded.
+
+    Exact match first, so that typing a name back verbatim - which is what a
+    player does after reading it off `state` or `available` - always lands on
+    every node that carries exactly that name, never something merely close
+    to it. Failing that, a unique prefix or a distinctive (4+ character)
+    substring works too, the same generosity `_did_you_mean` already gives an
+    id typo, extended to names because a player cannot be expected to know
+    that names, unlike ids, are not unique.
+    """
+    q = _norm_name(text)
+    if not q:
+        return []
+    exact = NODE_NAME_NORM.get(q)
+    if exact:
+        return list(exact)
+    if len(q) < 3:
+        return []            # too short to mean anything as a name fragment
+    prefix = [k for nm, ids in NODE_NAME_NORM.items() if nm.startswith(q) for k in ids]
+    if prefix:
+        return prefix
+    if len(q) >= 4:
+        return [k for nm, ids in NODE_NAME_NORM.items() if q in nm for k in ids]
+    return []
 
 
 def parse_typed(line):
@@ -2729,6 +3070,7 @@ def parse_typed(line):
         #   available metallurgy      available find furnace
         #   available afford 900      available all
         #   available limit 30 offset 30
+        #   available find furnace sort risk reverse
         out = {"cmd": "available"}
         low = [w.lower() for w in rest]
         i = 0
@@ -2747,6 +3089,15 @@ def parse_typed(line):
                 out["offset"] = int(_typed_number(nxt) or 0); i += 1
             elif w in ("heard", "heard_offset") and nxt is not None:
                 out["heard_offset"] = int(_typed_number(nxt) or 0); i += 1
+            # SORT AND REVERSE, spelled the way a person would type them:
+            # 'available sort risk reverse'. A break tester paging through
+            # "632 more, nearest first" by hand, thirty at a time, is exactly
+            # the failure a typed synonym for the JSON 'sort' field exists to
+            # stop.
+            elif w == "sort" and nxt:
+                out["sort"] = nxt; i += 1
+            elif w in ("reverse", "reversed", "desc", "descending"):
+                out["reverse"] = True
             elif _typed_number(w) is not None:
                 out["afford"] = _typed_number(w)
             elif w in ("subject", "group", "in") and nxt:
@@ -2780,6 +3131,39 @@ def parse_typed(line):
     if op == "ventures":
         return {"cmd": "ventures"}, None
 
+    if op == "log":
+        # 'log' alone is the twenty most recent lines. The same narrowings
+        # 'available' takes, spelled the way a person would say them:
+        #   log failures              log find plague
+        #   log since 300             log before 200 oldest
+        #   log limit 50 offset 50
+        out = {"cmd": "log"}
+        low = [w.lower() for w in rest]
+        i = 0
+        while i < len(low):
+            w = low[i]
+            nxt = low[i + 1] if i + 1 < len(low) else None
+            if w in ("failures", "failure", "fails", "fail"):
+                out["failures"] = True
+            elif w in ("find", "search") and nxt:
+                out["find"] = nxt; i += 1
+            elif w == "since" and nxt is not None:
+                out["since"] = int(_typed_number(nxt) or 0); i += 1
+            elif w == "before" and nxt is not None:
+                out["before"] = int(_typed_number(nxt) or 0); i += 1
+            elif w == "limit" and nxt is not None:
+                out["limit"] = int(_typed_number(nxt) or 0); i += 1
+            elif w == "offset" and nxt is not None:
+                out["offset"] = int(_typed_number(nxt) or 0); i += 1
+            elif w in ("oldest", "forward"):
+                out["order"] = "oldest"
+            elif w in ("newest", "backward", "recent"):
+                out["order"] = "newest"
+            elif _typed_number(w) is not None:
+                out["limit"] = int(_typed_number(w))
+            i += 1
+        return out, None
+
     if op in ("why", "path", "start", "stop", "bounty", "mothball",
               "restore", "open"):
         if not rest:
@@ -2795,7 +3179,18 @@ def parse_typed(line):
         # past it by falling back to the raw JSON form. So: try what was typed,
         # then try a case-insensitive match against the real ids, and keep
         # whatever the tree actually calls it.
-        want = rest[0]
+        #
+        # THE WHOLE REST OF THE LINE, NOT JUST rest[0]. Every screen in this
+        # game prints a NAME - "Horizontal loom", two words - and every one of
+        # these commands took only an id until now, so 'why horizontal loom'
+        # silently discarded 'loom' and asked about a nonexistent 'horizontal'.
+        # A single id never has a space in it, so joining the whole tail costs
+        # a one-word id nothing and is what a multi-word name needs. Names are
+        # not unique, so this does not resolve them here - _agent_dispatch_inner
+        # does that, because resolving under fog has to filter candidates by
+        # what the player has actually heard of, which needs the live Sim this
+        # function does not have.
+        want = " ".join(rest)
         if want not in NODE_IDS:
             want = NODE_IDS_LOWER.get(want.lower(), want)
         return {"cmd": op, "id": want}, None
@@ -2920,6 +3315,13 @@ def parse_typed(line):
 # that describes it.
 _ID_COMMANDS = ("why", "path", "start", "stop", "bounty", "mothball", "restore")
 
+# Every command whose `id` a typed NAME should resolve onto, before anything
+# else touches it. `open` is not in _ID_COMMANDS above - it is safe without
+# the fog guard, because you can only open something you have already done -
+# but a player still types its name, not its id, so it needs the same
+# resolution the fog-guarded commands get.
+_NAME_COMMANDS = _ID_COMMANDS + ("open",)
+
 
 def _did_you_mean(k, nodes, limit=8, s=None):
     """Names close to what was typed.
@@ -3025,6 +3427,60 @@ def _agent_dispatch_inner(s, nodes, cmd):
     if not isinstance(cmd, dict) or "cmd" not in cmd:
         return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
                                       "e.g. {\"cmd\":\"state\"}"}
+    # A NAME RESOLVES TO AN ID, BEFORE ANYTHING ELSE READS IT. Every screen in
+    # this game prints the human NAME - "Horizontal loom" - and every command
+    # that acts on a technology took only the machine id - "tex_horizontal_
+    # loom" - until now; testers called that jarring often enough, in close
+    # to the same words, that it stopped being a style choice. This has to run
+    # before the fog guard just below: that guard reads cmd["id"] straight off
+    # the command, so a name that resolves to exactly one id must already BE
+    # that id by the time the guard looks at it, or a perfectly good name
+    # would be refused as something the player had never heard of. `id` still
+    # takes a raw id unchanged - this only fires when what was given is NOT
+    # already one, so scripts and the `agent` protocol lose nothing.
+    if (isinstance(cmd.get("cmd"), str) and isinstance(cmd.get("id"), str)
+            and cmd["cmd"].strip().lower() in _NAME_COMMANDS
+            and cmd["id"] not in nodes):
+        _name_cands = _resolve_by_name(cmd["id"])
+        if getattr(s, "fog", False):
+            # ONLY WHAT THE PLAYER HAS ACTUALLY HEARD OF. Two nodes can share
+            # a name where one is built and the other is still beyond the
+            # fog; handing back the hidden one as a candidate to disambiguate
+            # between is exactly the leak the fog guard below exists to close,
+            # so the filter runs before a player ever sees the list, not after.
+            _name_memo = {}
+            _goal = getattr(s, "goal", None)
+            # THE GOAL'S NAME GETS THE SAME NARROW EXCEPTION ITS ID ALREADY
+            # HAS, on `why` alone - see the fog guard's own comment on
+            # _goal_why just below. Without this, a player who only ever
+            # learned the goal's NAME (under fog its id is never shown; see
+            # _agent_state's "goal" field) typed it into `why` and was told
+            # "you have never heard of any such thing" about the one thing
+            # they were told by name on arrival. It is gated on an EXACT match
+            # of the goal's own name, not the prefix/substring tiers: a vague
+            # guess like "transistor" must stay refused, the same way
+            # `_did_you_mean` already refuses to suggest the goal for one.
+            _exact_here = NODE_NAME_NORM.get(_norm_name(cmd["id"]), ())
+            _op_lc = cmd["cmd"].strip().lower()
+            _name_cands = [
+                k for k in _name_cands
+                if s.is_visible(k, _memo=_name_memo)
+                or (k == _goal and _op_lc == "why" and k in _exact_here)]
+        if len(_name_cands) == 1:
+            cmd = dict(cmd, id=_name_cands[0])
+        elif len(_name_cands) > 1:
+            _name_cands = sorted(_name_cands, key=lambda k: (nodes[k]["name"], k))
+            return {"ok": False,
+                    "error": ("more than one thing is called that; say which "
+                              "by id: %s%s"
+                              % (", ".join("%s (%s)" % (k, nodes[k]["name"])
+                                           for k in _name_cands[:10]),
+                                 " and %d more" % (len(_name_cands) - 10)
+                                 if len(_name_cands) > 10 else ""))}
+        # Otherwise: no match by name either. Fall through with cmd["id"]
+        # untouched, so the ordinary unknown-id handling further down - and
+        # the fog guard immediately below it - answer it exactly as they
+        # already do for a mistyped id, did-you-mean included.
     # ONE GUARD, FOR EVERY COMMAND THAT TAKES AN ID. `why` checked visibility
     # and `bounty` did not: it checked prerequisites first, so refusing a
     # bounty on the goal node printed the goal's seven missing prerequisites by
@@ -3103,6 +3559,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op == "available":
         return _agent_available(s, nodes, cmd)
+
+    if op == "log":
+        return _agent_log(s, cmd)
 
     if op == "why":
         k = cmd.get("id")
@@ -3203,6 +3662,13 @@ def _agent_dispatch_inner(s, nodes, cmd):
         if not ok:
             return {"ok": False, "error": why}
         n = nodes[k]
+        # SAY SO, FOR THE PLAYER'S OWN RECORD. start_project itself only logs
+        # the RESTART case (see its own self.log.append for "begun again");
+        # a fresh start was silent, so a player reading `log` back saw
+        # completions and failures appear out of nowhere with no record of
+        # having chosen to begin them.
+        if s.active.get(k, {}).get("spent", 0.0) <= 0.5:
+            s.log.append((s.year, "started: %s" % n["name"]))
         # THE PRICE YOU ACTUALLY COMMITTED TO. A normal-play tester read a cost
         # of 106,567 off `why`, started the thing forty years later, and was
         # billed 207,811 - because project_cost moves with prices, the coinage,
@@ -3249,6 +3715,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, why = s.stop_project(k)
         if not ok:
             return {"ok": False, "error": why}
+        # stop_project ITSELF never touches self.log - see its own docstring,
+        # which is entirely about what the hours and money do, not about
+        # recording the decision. A deliberate abandonment is exactly the
+        # kind of thing a player asked `log` to be able to find again.
+        s.log.append((s.year, "stopped: %s (%s)" % (nodes[k]["name"], why)))
         return {"ok": True, "stopped": k, "what_happened": why}
 
     if op == "bounty":
@@ -3822,6 +4293,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, err = s.hire(cmd.get("trade"), n)
         if not ok:
             return {"ok": False, "error": err}
+        # HIRING AND LETTING GO ARE DECISIONS, not standing facts the way
+        # payroll is - neither labour.py nor core.py logs either one, so a
+        # player reading `log` back saw the wage bill change with nothing
+        # saying they were the one who changed it. `hire` already composed a
+        # precise sentence for this ("2 smiths taken on for 750 denarii...");
+        # using it here rather than rebuilding one from cmd["n"] keeps the log
+        # honest about what actually happened, not just what was asked for.
+        s.log.append((s.year, err or ("hired %s %s" % (cmd.get("n"), cmd.get("trade")))))
         return {"ok": True, "hired": cmd.get("trade"), "n": cmd.get("n"),
                 "you_now_employ": round(s.employees.get(str(cmd.get("trade")).lower(), 0.0), 2),
                 "annual_wage_bill": round(s.wage_bill(), 1),
@@ -3834,6 +4313,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, err = s.fire(cmd.get("trade"), n)
         if not ok:
             return {"ok": False, "error": err}
+        # Same reasoning as `hire` above: `err` here is fire()'s own success
+        # message, which says exactly what happened - staff let go, an
+        # apprenticeship cancelled, or both - and cmd["n"] alone would not.
+        s.log.append((s.year, err or ("let go %s %s" % (cmd.get("n"), cmd.get("trade")))))
         out = {"ok": True, "let_go": cmd.get("trade"),
                "annual_wage_bill": round(s.wage_bill(), 1)}
         if err:
@@ -3866,15 +4349,25 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "note": "These hours are available to your projects this year only."}
 
     if op == "mothball":
-        ok, msg = s.mothball_work(cmd.get("id"))
+        _mb_id = cmd.get("id")
+        ok, msg = s.mothball_work(_mb_id)
         if not ok:
             return {"ok": False, "error": msg}
+        # mothball_work does not log either - a deliberate shutdown reads no
+        # differently from one the creditors forced on you (see economy.py's
+        # own, separate log lines for THAT case) unless the player's own
+        # choice gets a line of its own too.
+        s.log.append((s.year, "mothballed: %s (%s)"
+                     % (nodes[_mb_id]["name"] if _mb_id in nodes else _mb_id, msg)))
         return {"ok": True, "mothballed": msg, "upkeep": round(s.upkeep(), 1)}
 
     if op == "restore":
-        ok, msg = s.restore_work(cmd.get("id"))
+        _rs_id = cmd.get("id")
+        ok, msg = s.restore_work(_rs_id)
         if not ok:
             return {"ok": False, "error": msg}
+        s.log.append((s.year, "restored: %s (%s)"
+                     % (nodes[_rs_id]["name"] if _rs_id in nodes else _rs_id, msg)))
         return {"ok": True, "restored": msg, "capital": round(s.capital, 1)}
 
     if op in ("quote", "price"):
@@ -3991,6 +4484,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, msg = s.open_venture(k)
         if not ok:
             return {"ok": False, "error": msg}
+        # The single rule `help` calls out as the one that catches everybody -
+        # finishing something earns nothing until you open it - deserves a
+        # line in the player's own history, not just in the reply to this one
+        # command. open_venture itself stays silent; see its docstring.
+        s.log.append((s.year, "opened: %s (%s)" % (nodes[k]["name"], msg)))
         return {"ok": True, "opened": msg, "capital": round(s.capital, 1),
                 "revenue": round(s.revenue(), 1), "upkeep": round(s.upkeep(), 1)}
 

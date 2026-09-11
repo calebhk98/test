@@ -4398,6 +4398,245 @@ check("...and does not mark what you can plainly afford",
       _RP("available", _cheap)[:200])
 
 
+# =============================================================================
+# NAMES, NOT JUST IDS: testers found it jarring that `state` and `available`
+# print a human NAME ("Reaper-binder") while every command that acts on a
+# technology took only the machine id ("ag2_reaper_binder"). `why`, `start`,
+# `stop`, `bounty`, `mothball`, `restore` and `open` now all resolve a typed
+# name to its id first - case and punctuation folded, a unique prefix or
+# distinctive substring both work - and refuse with the real ids to choose
+# between when the name is not unique. Ids keep working unchanged, because
+# scripts and the `agent` protocol depend on them.
+# =============================================================================
+r, _, _ = proto([{"cmd": "why", "id": "Reaper-Binder"}])
+check("a typed name resolves to the id, case and punctuation folded",
+      r[0].get("ok") and r[0].get("id") == "ag2_reaper_binder",
+      r[0].get("error") or r[0].get("id"))
+
+r, _, _ = proto([{"cmd": "why", "id": "ag2_balanced_ration"}])
+_printed_name = r[0].get("name")
+r2, _, _ = proto([{"cmd": "why", "id": _printed_name}])
+check("a name copied verbatim off another screen resolves the same way",
+      r2[0].get("ok") and r2[0].get("id") == "ag2_balanced_ration",
+      (_printed_name, r2[0].get("error")))
+
+r, _, _ = proto([{"cmd": "why", "id": "loom"}])
+check("an ambiguous name is refused with the real ids to choose between",
+      not r[0].get("ok") and r[0].get("error", "").count("(") >= 2
+      and "tex_horizontal_loom" in r[0]["error"],
+      r[0].get("error"))
+
+# --- fog: the ambiguous-name list must never offer more than full visibility
+# would, and on a fresh game it must offer strictly less (or the filter is a
+# no-op that only looks like it is doing something).
+import re as _re_names
+_full, _, _ = proto([{"cmd": "why", "id": "loom"}])
+_fog, _, _ = proto([{"cmd": "why", "id": "loom"}], fog=True, kit="poor_scholar")
+_full_ids = set(_re_names.findall(r"(\w+) \(", _full[0].get("error", "")))
+_fog_ids = set(_re_names.findall(r"(\w+) \(", _fog[0].get("error", "")))
+check("under fog, an ambiguous name never offers more candidates than full "
+      "visibility would",
+      _fog_ids and _fog_ids < _full_ids,
+      (sorted(_fog_ids), sorted(_full_ids)))
+
+# --- the goal's NAME gets the same one exception its id already has on
+# `why` alone - see protocol.py's _goal_why comment - and nothing widens it.
+r, _, _ = proto([{"cmd": "why", "id": "Point-contact transistor"},
+                 {"cmd": "start", "id": "Point-contact transistor"},
+                 {"cmd": "why", "id": "transistor"}], fog=True, kit="poor_scholar")
+check("why on the goal's exact printed name is the one thing fog answers",
+      r[0].get("ok") and r[0].get("id") == "point_contact_transistor",
+      r[0].get("error"))
+check("...but the exception does not widen to other commands on the same name",
+      not r[1].get("ok") and "never heard of" in r[1].get("error", ""),
+      r[1].get("error"))
+check("...and a vague guess does not silently resolve to the goal",
+      not r[2].get("ok") and "point_contact_transistor" not in r[2].get("error", "")
+      and "aiming at" not in r[2].get("error", ""),
+      r[2].get("error"))
+
+
+# =============================================================================
+# FOG LEAK #1, AS THE PLAYER FOUND IT: with fog on, `why aqueduct_survey` -
+# a name for nothing in the tree - suggested six ids as "did you mean", and
+# nobody had checked whether all six were things the player had actually
+# heard of. Verified the honest way: re-ask `why` about every id the
+# suggestion offered, and none of them may come back "never heard of".
+# =============================================================================
+r, _, _ = proto([{"cmd": "why", "id": "aqueduct_survey"}], fog=True, kit="poor_scholar")
+_sugg = [s_.strip() for s_ in
+         r[0].get("error", "").split("Did you mean:")[-1].split(",") if s_.strip()] \
+        if "Did you mean" in r[0].get("error", "") else []
+_checks = [{"cmd": "why", "id": sid} for sid in _sugg]
+_verify, _, _ = (proto(_checks) if _checks else ([], "", 0))
+check("the did-you-mean list under fog only ever suggests things the player "
+      "has heard of",
+      all("never heard of" not in x.get("error", "") for x in _verify),
+      [(sid, x.get("error")) for sid, x in zip(_sugg, _verify)
+       if "never heard of" in x.get("error", "")])
+
+
+# =============================================================================
+# FOG LEAK #2: `available`'s "HEARD OF, CANNOT BEGIN YET" block used to
+# ignore `find`/`subject` and print its usual nearest-first twenty-five
+# regardless of the search, so a search that matched nothing startable still
+# dumped seven things nobody asked about. Reproduced exactly as found: reveal
+# something (units_standards unlocks several), then search for nonsense.
+# =============================================================================
+s_hd = sim(civ="rome_100ad", manual=False)
+s_hd.fog = True
+s_hd.revealed = set()
+S._agent_dispatch(s_hd, NODES, {"cmd": "start", "id": "units_standards"})
+for _ in range(2):
+    s_hd.step()
+_hd_nonsense = S._agent_available(s_hd, NODES, {"find": "zzzznonexistentxyz"})
+_hd_plain = S._agent_available(s_hd, NODES, {"limit": 50})
+check("a search matching nothing startable does not also dump the generic "
+      "heard-of list",
+      not _hd_nonsense.get("heard_of_but_cannot_begin"),
+      _hd_nonsense.get("heard_of_but_cannot_begin"))
+check("...but the same heard-of list still shows up unfiltered when no "
+      "search was asked for",
+      _hd_plain.get("heard_of_but_cannot_begin"),
+      "empty heard-of list with no search active")
+_hd_match = S._agent_available(s_hd, NODES, {"find": "corpus"})
+check("...and a search that DOES match a heard-of item still shows it",
+      any(h["id"] == "corpus_written"
+          for h in _hd_match.get("heard_of_but_cannot_begin") or []),
+      _hd_match.get("heard_of_but_cannot_begin"))
+
+
+# =============================================================================
+# SORT AND PAGE, ALL THE WAY TO THE END. Several screens truncated to 25 rows
+# and said "N more, nearest first" with no way to ask for a different order.
+# `available` now takes `sort` (price/hours/years/earns/upkeep/risk/alpha/
+# nearest) and `reverse`, on both the startable list and the heard-of one.
+# =============================================================================
+r, _, _ = proto([{"cmd": "available", "limit": 10, "sort": "risk", "reverse": True}])
+_risks = [e["risk"] for e in r[0]["available"]]
+check("available can be sorted by risk, reversed, all the way through the page",
+      _risks == sorted(_risks, reverse=True), _risks)
+
+_pretty_sorted = _RP("available", r[0])
+_json_first_id = r[0]["available"][0]["id"]
+_json_last_id = r[0]["available"][-1]["id"]
+check("the printed table keeps the JSON's sort order rather than re-sorting "
+      "back to cost",
+      -1 < _pretty_sorted.find(_json_first_id) < _pretty_sorted.find(_json_last_id),
+      (_json_first_id, _json_last_id, _pretty_sorted))
+
+r2, _, _ = proto([{"cmd": "available", "limit": 3}])
+check("a plain page still defaults to cheapest first",
+      [e["cost"] for e in r2[0]["available"]]
+      == sorted(e["cost"] for e in r2[0]["available"]),
+      [e["cost"] for e in r2[0]["available"]])
+
+# --- the tester's other question: does `available` show staff requirements,
+# and is the legend for them nearby rather than a screen away.
+_staff_pretty = _RP("available", r2[0])
+_lines = _staff_pretty.splitlines()
+_staff_hdr = next(i for i, l in enumerate(_lines) if "STAFF" in l)
+_staff_legend = next((i for i, l in enumerate(_lines)
+                      if "STAFF is the standing people" in l), None)
+check("the STAFF column has its legend within a few lines of the table, "
+      "not a screen away",
+      _staff_legend is not None and _staff_legend - _staff_hdr < 15,
+      (_staff_hdr, _staff_legend))
+
+
+# =============================================================================
+# THE PLAYER'S OWN LOG. The commonest complaint across eleven rounds of
+# testing was some version of "failures are silent" - the engine has always
+# kept self.log, and there was no command to read it back. `log` (alias
+# `history`) shows it, paged, filterable, and searchable, and it is hard-
+# capped so a script asking for everything at once cannot get it.
+# =============================================================================
+from engine.protocol import _agent_log as _AL
+
+r, _, _ = proto([{"cmd": "start", "id": "units_standards"},
+                 {"cmd": "hire", "trade": "smith", "n": 2},
+                 {"cmd": "step", "years": 1},
+                 {"cmd": "fire", "trade": "smith", "n": 1},
+                 {"cmd": "log"}])
+_entries = r[-1].get("entries") or []
+check("log records what the player did - starting, hiring, letting go - not "
+      "just what the engine did on its own",
+      any("started" in e["what"] for e in _entries)
+      and any("smith" in e["what"] and "taken on" in e["what"] for e in _entries)
+      and any("smith" in e["what"] and "go" in e["what"] for e in _entries),
+      _entries)
+check("log defaults to most-recent-first",
+      _entries[0]["year"] >= _entries[-1]["year"], [e["year"] for e in _entries])
+
+# --- never dumped in one go, however large a limit is asked for or however
+# long the history actually is.
+s_lg = sim(civ="rome_100ad", manual=False)
+for _y in range(3000):
+    s_lg.log.append((100 + _y % 500, "hired 1 smith"))
+_huge = _AL(s_lg, {"limit": 1000000})
+check("the log is hard-capped regardless of what limit is asked for",
+      len(_huge["entries"]) <= 100, len(_huge["entries"]))
+_default = _AL(s_lg, {})
+check("...and defaults to a short recent window with no limit given at all",
+      len(_default["entries"]) <= 25, len(_default["entries"]))
+
+# --- filtering to failures specifically, which is what every round of
+# testing actually asked for.
+s_lf = sim()
+s_lf.log = [(100, "started: Foo"), (101, "FAILED at Foo: it did not work."),
+            (102, "hired 1 smith")]
+_fails = _AL(s_lf, {"failures": True})
+check("'failures' filters the log to only the bad news",
+      len(_fails["entries"]) == 1 and "FAILED" in _fails["entries"][0]["what"],
+      _fails["entries"])
+
+# --- fog: a log line minted while something was visible must not go on
+# naming it once fog would refuse to answer `why` about it - whether it was
+# forgotten later, or never visible to begin with.
+s_lz = sim()
+s_lz.fog = True
+s_lz.revealed = set()
+s_lz.log = [(100, "completed: Point-contact transistor")]
+_scrubbed = _AL(s_lz, {})["entries"][0]["what"]
+check("the log redacts a name fog would refuse to answer `why` about",
+      "Point-contact transistor" not in _scrubbed and "transistor" not in _scrubbed.lower(),
+      _scrubbed)
+s_lz.fog = False
+_unscrubbed = _AL(s_lz, {})["entries"][0]["what"]
+check("...but only under fog - with it off the log reads exactly as written",
+      "Point-contact transistor" in _unscrubbed, _unscrubbed)
+
+# --- a search cannot be used to confirm the existence of something a
+# redacted line would otherwise hide.
+s_lz.fog = True
+_hidden_search = _AL(s_lz, {"find": "transistor"})
+check("a search cannot smuggle out what the redaction just hid",
+      _hidden_search["count"] == 0, _hidden_search)
+
+# --- discoverable, per the task's own standard: `help` names it, and the
+# screen itself explains its filters without anyone reading the source.
+r, _, _ = proto([{"cmd": "help", "topic": "commands"}])
+check("log is advertised in help, not just implemented",
+      "log" in (r[0].get("help") or {}).get("commands", {}),
+      list((r[0].get("help") or {}).get("commands", {}).keys()))
+r, _, _ = proto([{"cmd": "log"}])
+check("the log screen itself explains how to filter and page it",
+      "to_filter_or_sort" in r[0] and "failures" in r[0]["to_filter_or_sort"],
+      r[0].get("to_filter_or_sort"))
+
+# --- typed front end: a player at a keyboard, not a script, has to be able
+# to reach all of this too.
+from engine.protocol import parse_typed as _PT
+_cmd, _err = _PT("log failures find plague since 200 oldest limit 5")
+check("the typed form reaches every filter the JSON protocol has",
+      _cmd == {"cmd": "log", "failures": True, "find": "plague",
+               "since": 200, "order": "oldest", "limit": 5},
+      _cmd)
+_cmd2, _err2 = _PT("why horizontal loom")
+check("a multi-word typed name is not truncated to its first word",
+      _cmd2 == {"cmd": "why", "id": "horizontal loom"}, _cmd2)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
