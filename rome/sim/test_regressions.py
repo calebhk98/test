@@ -7604,6 +7604,25 @@ check("why on a project needing that just-taught trade says nobody can do "
 check("...and the same sentence appears on the rendered page",
       "TAUGHT, BUT NOBODY HERE" in _RWHY(_wr_th), _RWHY(_wr_th))
 
+# --- FINDING (same root cause as above): closing a capability institution
+# for the upkeep back used to read exactly like closing an ordinary
+# business - a Mexica player did this and lost the capability silently,
+# twice. `mothball` now says so.
+_s_mb = sim(civ="rome_100ad", capital=5000000.0)
+_s_mb.done.add("identity_cover"); _s_mb._done_changed()
+_s_mb.open_venture("identity_cover")
+_mb_out = S._agent_dispatch(_s_mb, NODES, {"cmd": "mothball", "id": "identity_cover"})
+check("mothballing a capability institution says more than its upkeep "
+      "stopped",
+      _mb_out.get("ok") and bool(_mb_out.get("but"))
+      and "capability" in _mb_out["but"], _mb_out.get("but"))
+_s_mb2 = sim(civ="rome_100ad", capital=5000000.0)
+_s_mb2.done.add("tex_horizontal_loom"); _s_mb2._done_changed()
+_s_mb2.open_venture("tex_horizontal_loom")
+_mb_out2 = S._agent_dispatch(_s_mb2, NODES, {"cmd": "mothball", "id": "tex_horizontal_loom"})
+check("...and an ordinary business closing carries no such warning",
+      _mb_out2.get("ok") and "but" not in _mb_out2, _mb_out2)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

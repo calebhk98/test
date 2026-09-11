@@ -5352,7 +5352,21 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # choice gets a line of its own too.
         s.log.append((s.year, "mothballed: %s (%s)"
                      % (nodes[_mb_id]["name"] if _mb_id in nodes else _mb_id, msg)))
-        return {"ok": True, "mothballed": msg, "upkeep": round(s.upkeep(), 1)}
+        out = {"ok": True, "mothballed": msg, "upkeep": round(s.upkeep(), 1)}
+        # SAY WHAT ELSE CLOSES WITH IT. A Mexica player shut capability
+        # institutions for the capital back and lost two multi-year
+        # stretches to it silently - the upkeep saving was the only thing
+        # this reply ever mentioned. `mothball` takes effect before this
+        # runs, so `s.CAPABILITY_INSTITUTIONS` already tells the truth about
+        # what just stopped.
+        if _mb_id in s.CAPABILITY_INSTITUTIONS:
+            out["but"] = (
+                "this was a capability, not only an expense: scholars it "
+                "supported, household places it added, credit or standing "
+                "it lent you, or a future start it cleared have ALL stopped "
+                "too, the same as its upkeep. 'restore %s' brings it back "
+                "for a fraction of the original cost." % _mb_id)
+        return out
 
     if op == "restore":
         _rs_id = cmd.get("id")
