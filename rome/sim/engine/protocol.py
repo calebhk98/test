@@ -13,6 +13,7 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    topo_order, load, load_civ, haversine_km,
                    load_geography, load_resources, money_word,
                    downstream_count, is_downstream)
+from .fog import strip_self_play_advice
 
 
 from .core import Sim
@@ -1043,7 +1044,11 @@ def _full_entry(s, nodes, k, fog):
             e["trades_needed"] = sorted(n["lab"])
     else:
         e["prerequisites"] = n["pre"]
-        e["note"] = n["note"]
+        # See strip_self_play_advice: a node's own note is data written by a
+        # designer ranking it against the rest of the tree, not something the
+        # founder in the story could know, and that stays cut whether or not
+        # fog is on - see the block comment in fog.py.
+        e["note"] = strip_self_play_advice(n["note"])
     return e
 
 
@@ -1512,7 +1517,13 @@ def _node_explain(s, nodes, k):
     started = k in s.done or k in s.active
     out = {
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
-        "note": n["note"], "kb": n["kb"],
+        # See strip_self_play_advice (fog.py): drops any sentence that ranks
+        # this node against the game or the tree itself - "the pivot of the
+        # entire game", "THE highest expected-value node in the tree" - and
+        # keeps everything else the note says. Applied here, not only under
+        # fog: telling a player outright which of their own choices is
+        # correct is the game answering its own question either way.
+        "note": strip_self_play_advice(n["note"]), "kb": n["kb"],
         "founder_hours": n["ph"],
         # Two different kinds of people, and a tester reasonably read the two
         # fields as contradicting each other ("hired_labour names an engineer,

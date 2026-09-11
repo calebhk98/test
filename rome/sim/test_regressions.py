@@ -5059,6 +5059,53 @@ check("with fog off, EARNS/YR is still the exact figure",
       _w_nf["revenue"] == NODES[_k_fe]["rev"], _w_nf["revenue"])
 
 
+# --- JOB 2: the game must not tell you which branch matters most. A
+# normal-play tester quoted school_founded's own note calling itself "the
+# pivot of the entire game" with "every year of delay here costs more than
+# any single technology"; corpus_dispersed, corpus_written and
+# plague_preparedness rank themselves the same way.
+for _spid, _banned in (
+        ("school_founded", ("pivot of the entire game",
+                            "costs more than any single",
+                            "highest-leverage thing you can spend money on")),
+        ("corpus_dispersed", ("highest expected-value node in the tree",)),
+        ("corpus_written", ("largest single call on your personal hours",
+                            "must not cut")),
+        ("plague_preparedness", ("highest expected-value defensive investment",))):
+    _wn = S._node_explain(sim(), NODES, _spid)
+    check("%s's note no longer ranks itself against the rest of the tree"
+          % _spid,
+          all(b not in (_wn.get("note") or "") for b in _banned),
+          _wn.get("note"))
+
+# LEGITIMATE WARNINGS SURVIVE: plague_preparedness still tells you the date
+# and what the node actually does about it - a consequence the player
+# cannot see coming, not a ranking claim, and it must stay.
+_pp = S._node_explain(sim(), NODES, "plague_preparedness")
+check("...but the actual hazard warning underneath it is untouched",
+      "165 AD" in (_pp.get("note") or "")
+      and "decides whether your institute survives" in (_pp.get("note") or ""),
+      _pp.get("note"))
+
+# school_founded's OWN statement that it is optional must survive too - it
+# is the opposite of the fault being fixed.
+_sf = S._node_explain(sim(), NODES, "school_founded")
+check("school_founded's note still says it is optional",
+      "OPTIONAL" in (_sf.get("note") or "")
+      and "Nothing in the technical tree requires it" in (_sf.get("note") or ""),
+      _sf.get("note"))
+
+# UNDER FOG TOO: fog_summary takes its one sentence off the same note, and
+# used to open with exactly the self-play line this exists to cut.
+s_fp = sim()
+s_fp.fog = True
+s_fp.revealed = {"school_founded"}
+check("the fogged one-line summary of school_founded is not its own "
+      "self-rating either",
+      "pivot" not in s_fp.fog_summary("school_founded").lower(),
+      s_fp.fog_summary("school_founded"))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
