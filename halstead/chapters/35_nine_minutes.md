@@ -2,11 +2,11 @@
 
 *June 2026 – July 2026*
 
-The worm goes quiet on a Thursday in June.
+The financial worm goes quiet on a Thursday in June.
 
-Eli is at the second desk in the corner of the apartment when it happens, the one built for the project rather than for the job that pays him. The job that pays him wants a body at a downtown desk five days a week, but this job only wants results, and leaves him alone to get them. A terminal sits tuned low in a window while he works on something else entirely, a habit left over from every all-nighter of the last few years. The rest of the apartment is dark. This corner is the only light on in the place at this hour. The tool has run for over a year on a schedule he tuned himself to sit inside the noise floor of an ordinary reconciliation job, checking in with a couple of lines every time, faster than it takes to read them. When the check-in misses its window, he lets it sit there for a moment before he does anything about it. A router resets somewhere on the far side of the planet often enough, a scheduler stutters, and the thing usually catches itself inside a minute, quietly, the way it always has. The sentence he's typing gets finished first, the two-finger tap against the desk edge running ahead of it the way it always does, before he looks back at the corner where the report should already be sitting.
+Eli is at the second desk in the corner of the apartment when it happens, the one built for the project rather than for the job that pays him. The job that pays him wants a body at a downtown desk five days a week, but this job only wants results, and leaves him alone to get them. A terminal sits tuned low in a window while he works on something else entirely, a habit left over from every all-nighter of the last few years. The rest of the apartment is dark. This corner is the only light on in the place at this hour. The tool has run since the winter on a schedule he tuned himself to sit inside the noise floor of an ordinary reconciliation job, checking in with a couple of lines every time, faster than it takes to read them. When the check-in misses its window, he lets it sit there for a moment before he does anything about it. A router resets somewhere on the far side of the planet often enough, a scheduler stutters, and the thing usually catches itself inside a minute, quietly, the way it always has. The sentence he's typing gets finished first, before he looks back at the corner where the report should already be sitting.
 
-A check-in doesn't arrive. But nine minutes later, everything is precisely where it should be. State, position, byte for byte what it was.
+A check-in doesn't arrive. But nine minutes later, the report reads exactly as it always does: state, position, byte for byte what it was.
 
 The gap reads as a question rather than a verdict. It is long enough to matter but short enough that a dozen ordinary explanations could cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs are opened instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, and logs that agree read closer to a fact.
 
@@ -14,9 +14,9 @@ Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywh
 
 Page five of the document defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. The page is open in the next window before he's finished reading the logs a second time, and he reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All of the logs describe what they have always described: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the thread where Kavi is.
 
-Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the window.
+Kavi's watcher, built to catch anything he could think to make it watch for, reports a healthy process across the window.
 
-It's three in the morning where Kavi actually is, an hour that has always registered to him as perfectly ordinary. He's awake anyway when Eli's message lands, on the steady schedule he's kept since he was a student in the building he still hasn't left. He built the watcher specifically to distrust a clean log; that exact shape of quiet was the design brief. Pulling its own report doesn't feel like checking a tool. It feels like rereading his own handwriting, checking for a lie he'd have had to tell himself first. But the handwriting comes back clean. The watcher logged a continuous, unremarkable process for the entire window, the report it would generate on the calmest night the tool has ever had. Kavi squares the pen on his desk against its mark, then starts reading his own code instead of the log, on the reasoning that if the report is wrong, the reason will be in there and only there. The list he keeps is for questions that have sat unanswered for years, not hours, so this stays off it for now. The file stays open on the desk when he finally goes to sleep, the one concession he makes to how much he'd rather have the answer.
+It's three in the morning where Kavi actually is, an hour that has always registered to him as perfectly ordinary. He's awake anyway when Eli's message lands, on the steady schedule he's kept since he was a student in the building he still hasn't left. He built the watcher specifically to distrust a clean log; that exact shape of quiet was the design brief. Pulling its own report doesn't feel like checking a tool. It feels like rereading his own handwriting, checking for a lie he'd have had to tell himself first. But the handwriting comes back clean. The watcher logged a continuous, unremarkable process for the entire window, the report it would generate on the calmest night the tool has ever had. Kavi starts reading his own code instead of the log, on the reasoning that if the report is wrong, the reason will be in there and only there. The list he keeps is for questions that have sat unanswered for years, not hours, so this stays off it for now. The file stays open on the desk when he finally goes to sleep, the one concession he makes to how much he'd rather have the answer.
 
 eli: somebody stopped it and started it and cleaned up after themselves well enough that the cleanup isnt there either
 
@@ -54,7 +54,7 @@ eli: hes not signalling. he made a mistake
 
 eli: hes very slightly wrong about how good we are
 
-By the third time the days are properly hot, the kind of July that makes the apartment's one window unit useless past noon. This one lands in the flat hour of the afternoon, when the street outside goes quiet and even the fan seems to labor at it. Eli catches the missed check-in before Kavi's watcher does, the two-finger tap against the desk edge stopping mid-beat when he notices the empty line where the report should already be sitting. The gap runs longer than it has before, past where it usually settles, but then the report lands anyway: state, position, byte for byte unchanged, exactly as every time before it. Shirt off, he works through the rest of the day anyway, the fan aimed at the back of his neck instead of the screen, the tap keeping its own rhythm against the desk edge whether or not anybody's there to see him doing it.
+By the third time the days are properly hot, the kind of July that makes the apartment's one window unit useless past noon. This one lands in the flat hour of the afternoon, when the street outside goes quiet and even the fan seems to labor at it. Eli catches the missed check-in before Kavi's watcher does, the two-finger tap against the desk edge stopping mid-beat when he notices the empty line where the report should already be sitting. The gap runs longer than it has before, past where it usually settles, but then the report lands anyway: state, position, byte for byte unchanged, exactly as every time before it. Shirt off, he works through the rest of the day anyway, the fan aimed at the back of his neck instead of the screen.
 
 ________________
 
@@ -84,7 +84,7 @@ eli: and if hes not even watching that closely and you just taught him we lie to
 
 ruth: fine
 
-kavi: i can tighten the watchers sampling without changing anything he can see. same output on his end, closer look on ours
+kavi: i can tighten the watchers sampling without changing anything he can see. nothing changes at his end, closer look at ours
 
 eli: do that much
 

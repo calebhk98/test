@@ -12,7 +12,7 @@ At four in the morning she comes back, whichever one she is standing in.
 
 priya: does anyone know why the government cares about the school
 
-priya: i have spent a month working out who i annoyed and the only thing left on the list is a building i left four years ago
+priya: i have spent a month working out who i annoyed and the only thing left on the list is a building i left three years ago
 
 ruth: what happened
 
@@ -50,11 +50,11 @@ priya: a good fifteen
 
 priya: but nobody did anything advanced. not once, not one thing i have not had done to me on a mat
 
-Eli reads that standing at a kitchen counter with the kettle going behind him, and leaves the kettle to boil itself dry.
+Eli reads that standing at a kitchen counter with the kettle whistling on the stove behind him, and leaves it to boil dry.
 
 priya: they had guns from the start and left them alone until i was already through the line and moving, which was about thirty in
 
-priya: the two i took off the grass went into the engine blocks of the only vehicles on that side of the field, because the alternative was outrunning a van on a farm track
+priya: the two guns i took off the grass went into the engine blocks of the only vehicles on that side of the field, because the alternative was outrunning a van on a farm track
 
 priya: i took them off the grass on the way past. i was not crossing a field empty handed
 
@@ -84,7 +84,7 @@ priya: they are american. they say agency and they will not say which one
 
 priya: four days and i have almost nothing out of the pair of them so far. about what i expected
 
-priya: it is also a great deal less than i expected. i cannot get those two to sit together
+priya: it is also a great deal less than i expected. i cannot get their two stories to agree
 
 priya: what they will say, over and over, is that it was me they came for. by name, off a list somebody handed them
 
@@ -96,7 +96,7 @@ priya: read it how
 
 kavi: long story and you have been in a field
 
-nadia: the short version is that it was not a normal school, and somebody has been keeping paper on what came out of it since before any of us started
+nadia: the short version is that it was not a normal school, and somebody has been keeping paper on what came out of it since we were kids
 
 priya: then tell me why seventy-five was the number, because whoever picked seventy-five was working off something
 
@@ -124,7 +124,7 @@ priya: ruth i finished sixty-fourth out of ninety-one. bottom third four years r
 
 priya: but thank you for the heads up, genuinely
 
-Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, but what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
+Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, but what arrives is the name and number of an intake form, which Priya thanks him for and leaves alone.
 
 priya: although
 
@@ -136,13 +136,13 @@ priya: which is a much more useful question than the one i came in with
 
 Ruth finishes the arithmetic she started an hour earlier and posts it without softening it.
 
-ruth: seventy-five people across a field is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it at once
+ruth: seventy-five people, arm's length apart, is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it straight through
 
 Nobody answers it for a long time, and she does not say it a second way.
 
 Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is a form number she saw once already that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
+In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number she saw that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
 
 The ranking goes unmentioned after that. Nadia asks, days later, only to Priya, whether she wants company in the yard with her for a while, but gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave, and Priya tells him the flights are absurd, but he offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, a bolt on the inside of the outer door, a second way out that isn't the stair, a chair braced under the handle rated for more weight than the door itself, most of which she had already done before it arrived.
 
