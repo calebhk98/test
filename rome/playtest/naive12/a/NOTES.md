@@ -7,7 +7,159 @@ Setup chosen: Roman Empire under Trajan, 100 AD; fog of war ON; starting wealth
 the game's own prompt text said "the premise of the whole game is that one is
 the honest number", which read like a nudge toward the "real" mode.
 
-(TOP PROBLEMS section to be filled in at the end once I have enough evidence.)
+Game 2 setup: Rome again, fog of war OFF, rich_merchant (20,000 den),
+mortality OFF. Played to year 201 AD, stopped by my own time budget while
+clearly winning, not by any game-imposed ending. (Housekeeping note: I
+initially ran Game 2's session in playtest/naive12/b/, not realizing that
+directory already held a different, unrelated playtest session's files
+(git history shows a prior "break tester" run). I restored that directory
+to its committed state with `git checkout` and moved Game 2's transcript to
+this folder instead, at transcript_game2.txt, alongside this NOTES.md.)
+
+---
+
+## TOP PROBLEMS (ordered by damage to a player like me)
+
+1. **Mortality-on death is a silent, permanent softlock with zero warning,
+   despite the game itself nudging new players toward that setting.** In
+   Game 1 my founder died of old age at year 138/73. Every technology in the
+   tree costs nonzero "founder-hours" (the win condition itself needs 900),
+   and once the founder is dead, founder-hours are gone forever — there is
+   no heir, successor, or inheritance mechanic (`help commands` confirms no
+   such command exists). The escape hatch, `bounty`, explicitly only
+   applies to practically-visible crafts, not the theory-heavy chain that
+   leads to the goal ("a craftsman... could not recognise success at this
+   without understanding the theory"). The game never says "you have lost"
+   or "the goal is no longer reachable" — `state`, `available`, `start`, and
+   `step` all keep working forever in a fully dead-end game, and running
+   concerns keep earning money, so nothing on screen signals that the run
+   is over. Meanwhile, the mortality setup prompt's own sales pitch is "The
+   premise of the whole game is that one is the honest number," which reads
+   as an invitation to enable exactly the mode most likely to quietly end
+   the game with no way to know it happened. (It does also correctly call
+   mortality-on "a lifespan lottery," so the risk is not hidden entirely —
+   see entry 10 in the log for the fuller, fairer treatment. But nothing
+   marks the moment the lottery is lost.) This is the single most damaging
+   thing I found: it can turn 30+ turns of careful, winning-looking play
+   into a run that was dead on arrival at one early yes/no prompt, and nail
+   that fact to nobody.
+
+2. **The simulator can hang or crash outright once the economy gets large,
+   with no error message and (at least once) the process actually gone.**
+   In Game 2 at year 185 AD (153+ staff, 222+ self-built technologies), a
+   `step 3` command produced no output for minutes; checking the OS process
+   list directly showed the `python3 sim/simulator.py` process no longer
+   existed, with no traceback anywhere in the captured output and no new
+   autosave written. I could only recover because I happened to know the
+   resume command from the game's own opening text. A single-year `step`
+   at similar scale later took 2+ minutes to return (successfully), so this
+   looks like a real performance/scaling problem that gets worse exactly as
+   a player succeeds at the game's stated goal (grow a large, mature,
+   multi-generational economy) — the better you are doing, the more likely
+   you are to hit this, and a player without shell access has no way to
+   tell "still thinking" from "dead," and no in-game hint to resume from
+   save rather than give up.
+
+3. **A leaked developer/debug note appears repeatedly in player-facing
+   text, including on the win condition itself.** Any zero-upkeep
+   "technique" node's description carries the literal string "[AUDIT:
+   upkeep removed - a technique costs nothing to keep knowing; it is not an
+   establishment with premises, staff or a standing cost. See JOB 1 upkeep
+   audit.]" — seen on `algebra_symbolic`, `atomic_theory`, and even
+   `point_contact_transistor` itself (the actual stated goal of the game).
+   This is clearly an internal changelog comment that was never meant to
+   ship; it appears often enough (every zero-upkeep technique, which is a
+   large fraction of the tree) that it stops feeling like a one-off glitch
+   and starts feeling like a maintenance gap. It undercuts an otherwise
+   very well-written, historically careful text throughout the rest of the
+   game.
+
+4. **`rush`, the "start everything affordable, highest-leverage first"
+   command, can nearly end a fresh run with no warning.** Tried at turn 1
+   of Game 2 with 20,000 starting denarii, it started 38 projects
+   simultaneously (many with no relevance to the stated goal), which on the
+   very next `step` sent scandal from 0 to 16.1 ("crosses the line in about
+   1 year") and money from +20,000 to -2,217 (interest-bearing debt).
+   Recovering required manually `stop`-ping 9 projects and a costly
+   `bribe`. `rush` is genuinely useful later in the game once there's an
+   economic base to absorb it (later uses in the same game, from a
+   6-figure income, worked fine and accelerated play a great deal — see
+   entry 12 for the full comparison) but is a trap exactly when a new
+   player is most likely to try it: turn one, before they understand
+   scandal or cashflow mechanics at all. Also: `rush limit:5` (colon
+   syntax) was silently ignored rather than erroring or limiting anything.
+
+5. **Staff death/attrition is sometimes silent, and its consequences
+   (concerns shutting down) are easy to miss.** Hired artisans/scholars
+   die or leave "to better offers" repeatedly through the game, sometimes
+   with a one-line event ("you lose 1 scholar to death and to better
+   offers"), but the effect (several profitable concerns closing because
+   nobody is left to watch them) is only reported after the fact, in a
+   combined message, on a later turn. A player who isn't diffing the
+   staff-count fields in the status header turn over turn can lose real
+   income for several turns without knowing why.
+
+6. **Fog of war ON hides `path <id>` and the "TOTAL DOWNSTREAM... INCLUDING
+   THE GOAL" / "STILL TO BUILD BEHIND IT" fields entirely, and the setup
+   prompt undersells how large that gap is.** Game 1 (fog on) never once
+   let me see more than one step ahead; Game 2 (fog off) let me print the
+   *entire* 151-node critical path to the goal on day one and re-check
+   remaining-count at will, which is what actually made "trying to win"
+   tractable rather than a guessing game. The fog-of-war prompt's neutral
+   phrasing ("you cannot see where anything leads" vs. "you can see the
+   whole tree and plan a route through it") does not convey how large a
+   practical difference this makes for anyone who wants to actually reach
+   the goal rather than explore blind.
+
+7. **Minor: some hint text points at a command before its real
+   precondition is met, without saying what that precondition is.** Several
+   early "HEARD OF, CANNOT BEGIN YET" items in Game 1 said "get at least a
+   local patron first: 'start patron_local'" many turns before
+   `patron_local` was itself startable (it needed `identity_cover`
+   finished first, which the hint never mentioned) — running the suggested
+   command just returned "you have never heard of any such thing."
+
+8. **Minor: REPUTATION and SCANDAL share the same numeric danger threshold
+   (25/26), displayed adjacently in STANDING**, which caused repeated
+   double-takes wondering whether a high, healthy reputation was itself
+   dangerous. It never is — only scandal crossing 25 matters — but the
+   coincidence of the numbers plus proximity in the display made me
+   re-verify this more than once.
+
+### What worked well (worth protecting)
+- `why <id>` is excellent: full cost/hours/risk/staff/materials/revenue
+  breakdown, honest "nobody has run this here yet - a guess, not a fact"
+  framing on unproven revenue, prerequisites, and (fog off) "DIRECTLY
+  UNLOCKS" / "TOTAL DOWNSTREAM... INCLUDING THE GOAL" / calendar-floor
+  chain summaries. The single most useful command in the game.
+- Proactive, specific nudges during `step`: missed-income warnings ("X
+  would earn 3,200 a year... and is still shut: it needs 0.00 scholars and
+  2.13 craftsmen..."), rising-scandal-trend warnings with a year-to-danger
+  estimate, and eminence's "withdraw" option and its real cost explained
+  every time it becomes relevant. The game consistently tells you what's
+  wrong and how to fix it before you have to ask.
+- `risk` gives a full, dated timeline of historical hazards (Antonine
+  plague, currency debasement, sack risk, etc.) together with concrete
+  mitigations and the current hedge level — turns "history happening to
+  you" into a plannable problem rather than a jump-scare, and both hazards
+  I actually lived through (Antonine plague, currency debasement) behaved
+  exactly as advertised.
+- Failure handling is fair and transparent: a failed project loses ~40% of
+  sunk hours and a real but bounded chunk of money, then gets a numbered
+  retry, rather than being all-or-nothing; `stop <id>` refunds sunk money
+  to credit-on-reopen rather than deleting it outright.
+- Autosave after every command plus a clearly printed resume command at
+  the very start of the session is what saved Game 2 after the year-185
+  hang, and generally removes save-scum anxiety entirely.
+- The "deputies" mechanic (founder-hours scale past the base 2,000/yr from
+  some built institution) is a great, under-signposted answer to the
+  founder-hours bottleneck that made Game 1 unwinnable — see entry 14.
+- Writing quality throughout is very high: specific, well-researched
+  historical grounding (Pliny/Trajan on unlicensed associations, Sejanus
+  for eminence, Huntsman's crucible steel), and the treatment of slavery
+  (`freedman_staff`: buy, train, and manumit skilled workers, framed
+  explicitly as "both the ethical and efficient answer") handles a heavy
+  real-world topic thoughtfully rather than glossing over or sensationalizing it.
 
 ---
 
@@ -56,6 +208,128 @@ the honest number", which read like a nudge toward the "real" mode.
     `limit N` argument robustly (and/or accept `limit:N` since that's the
     natural syntax to try), and ideally take an optional goal filter so it
     only rushes things on the path to the stated objective.
+
+13. GAME 2, YEAR 185 AD: A `step 3` COMMAND APPEARS TO HAVE HUNG/CRASHED THE
+    SIMULATOR OUTRIGHT, SILENTLY, WITH A LARGE LATE-GAME ECONOMY. By this
+    point the run had grown very large: 222 technologies I had built, 363
+    known in total, 153+ staff (113 artisans, 35 scholars, etc.), 1.56
+    million denarii, dozens of running concerns. I sent `step 3` and after
+    well over a minute of no output, checked the OS process list directly:
+    the `python3 sim/simulator.py` process was simply gone — not running,
+    no traceback in the captured stdout/stderr log, no new autosave written
+    after it. (System had 13GB free RAM, so not an obvious OOM; more likely
+    a hang so severe it got reaped, or an unhandled exception that somehow
+    produced no output before the process died — I cannot tell which from
+    outside, and a real player has no way to tell either.) I was able to
+    recover cleanly by relaunching with the game's own resume command
+    (`python3 rome/sim/simulator.py play --session
+    /root/.rome-saves/rome_100ad_239.json`), which picked back up from the
+    last successful autosave (185 AD) with nothing lost except that one
+    `step 3` attempt — so the autosave-per-command design paid for itself
+    here and prevented a real disaster. But: a first-time player would have
+    no idea to try resuming from a save file if they didn't already know
+    that command existed (it IS printed at the very start of the session,
+    which is good foresight by the game, but easy to have lost track of 85
+    years and hundreds of commands later), and would likely just conclude
+    "the game is broken" and give up, especially since nothing on screen
+    ever explained what happened. This is a serious scalability/robustness
+    concern for exactly the endgame phase the whole design is pointing
+    players toward (a large, mature, multi-generational economy) — the
+    better you play, the more likely you are to hit whatever this is.
+
+    FOLLOW-UP after resuming: a single `step` (1 year, not 3) at this same
+    scale (202 staff, 275+ technologies) took well over two minutes of
+    real wall-clock time to return - and DID succeed, jumping from 222 to
+    275 self-built technologies in that one year. So the underlying issue
+    looks like a straightforward performance/scaling problem (each year of
+    simulation gets more expensive as the economy grows, non-linearly
+    enough that a 3-year step at this scale apparently exceeds whatever
+    tolerance caused it to die) rather than a hard logic bug - but from a
+    player's chair the symptom is indistinguishable from a crash: the
+    program stops responding and, at least once, actually did stop
+    existing as a process. A player without a way to inspect the OS process
+    list (i.e. everyone, normally) would have no way to tell "still
+    thinking" from "dead" and no in-game guidance to wait it out vs. restart
+    vs. resume from save.
+
+## GAME 2 ENDING (stopped year 201 AD, not a loss — stopped by playtest time
+## budget, not by the game). Founder alive (mortality off), thriving:
+## 8,677,109 denarii, net income deep in six figures/yr, 302 technologies
+## built personally (445 known total), 136 scholars + 466 artisans on staff,
+## 29,391 founder-hours/year (2,000 base + ~27,000 from "deputies", see
+## entry 14), reputation 91, scandal 0.6 (safe), eminence 22 current /
+## settling toward 30 (above the 26 danger line - a real, growing risk I
+## was actively managing but had not resolved, see entry 16), 75 of the
+## original 151 nodes still needed to reach point_contact_transistor, and
+## 399 in-game years still remaining to the year-600 horizon. Every trend
+## line (income, tech count, hours/year, staff) was accelerating, not
+## plateauing. This run reads as clearly ON TRACK TO WIN given enough
+## further turns - a complete contrast with Game 1, which was arithmetically
+## guaranteed to fail from the moment the founder died. I stopped play here
+## because per-step wall-clock cost had grown very large (multi-minute
+## waits per single year, see entry 13) and continuing to full completion
+## would have needed a large further time budget, not because anything in
+## the game stopped me.
+
+16. EMINENCE BECAME A REAL, GROWING THREAT BY YEAR 201 that I did not fully
+    resolve before stopping. By 201 AD eminence's *current* value (22) was
+    still under the 26 danger line, but its *equilibrium* ("settles near")
+    had risen from ~15 (year 166) to 30.4 (year 196) as reputation, wealth
+    and visible technology count kept climbing - meaning if I had kept
+    playing without intervention it would very likely have crossed 26 and
+    started rolling its yearly chance of "confiscation and forced
+    retirement" (45%), "patron destroyed" (35%), or outright "end of the
+    run" (20%) per `help eminence`. I had built `corpus_dispersed` (hedges
+    the hazard) and `corpus_written`, and the game clearly flagged the
+    `withdraw` option and its real cost ("halves this now and gives up half
+    the reputation you hold above what your work alone is worth") every
+    single status screen once it became relevant - excellent, proactive
+    warning design, exactly like the scandal trend-line warnings in Game 1.
+    This is a genuinely well-designed late-game tension: rapid success
+    creates its own existential risk, and the game tells you so clearly
+    and with real numbers. I'm flagging it here as unresolved business
+    rather than a flaw - a longer session would need to either `withdraw`
+    periodically or invest harder in academy_network/corpus_dispersed-style
+    mitigations to keep pushing this fast.
+
+14. POSITIVE: "DEPUTIES" — a way to grow founder-hours beyond 2,000/yr. By
+    year ~166 AD the prompt started showing e.g. "You: alive (you do not
+    age), 4,250 founder-hours free this year (2,000 of your own, plus 1.2
+    deputies directing work in your name at 1,800 hours each)". Some
+    institution I built via `rush` (never explicitly identified which)
+    evidently grants delegated-hours capacity, and it kept growing — by
+    year 186 AD I had 10,719 hours/year available, more than 5x my
+    "natural" 2,000. This is a fantastic mechanic I wish I had understood
+    earlier and deliberately pursued: in Game 1, founder-hours were the
+    single immovable bottleneck (and the thing that hard-locks the game on
+    death, see entry 10) — if "deputies" is buildable at any real founder
+    age/time, this is probably the single highest-leverage thing to chase
+    early, and the game does not point at it explicitly anywhere I saw
+    (no "why deputies", no obvious id - it looks like it's a side effect of
+    something else built, e.g. collegium_licensed or school_founded, not a
+    tech you can `why` by name). If true, that's a missed opportunity: the
+    game is very good at telling you the cost/value of a NAMED node via
+    `why`, but this important compounding mechanic surfaced with no
+    signposting at all - I only noticed it by reading the status line
+    closely.
+
+15. POSITIVE, GAME 2 vs GAME 1 — `path <id>` and `why <id>`'s "DIRECTLY
+    UNLOCKS" / "TOTAL DOWNSTREAM: N thing(s) depend on this -- INCLUDING
+    THE GOAL" / "STILL TO BUILD BEHIND IT: X of Y nodes, Z of your hours,
+    W den, V-year serial floor" fields (all fog-of-war-off only) are
+    excellent, high-value planning tools completely absent under fog of
+    war. `path point_contact_transistor` alone turned an intractable-
+    feeling "figure out the tech tree by trial and error" problem into a
+    literal checklist. This is the single biggest quality-of-life gap
+    between the two modes I played, and probably the most important
+    thing to communicate to a new player: fog-of-war ON is atmospheric and
+    matches the framing text well, but fog-of-war OFF is dramatically more
+    playable/winnable for anyone actually trying to reach the goal rather
+    than soak in discovery. Worth the game saying this more directly at
+    the fog-of-war prompt itself, rather than the current neutral
+    "you cannot see where anything leads" / "you can see the whole tree and
+    plan a route through it" phrasing, which undersells how large the
+    difference actually is in practice.
 
 ## FAIRNESS CORRECTION to entry 10 below: re-reading the mortality prompt
 ## carefully, the game's own text is more balanced than I first gave it

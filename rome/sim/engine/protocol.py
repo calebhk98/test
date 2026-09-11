@@ -291,7 +291,7 @@ def _founder_death_info(s):
     if cache is not None:
         return cache
     for yr, msg in s.log:
-        if msg.startswith("the founder dies"):
+        if "founder dies" in msg.lower():
             m = re.search(r"aged about (\d+)", msg)
             cache = {"year": yr, "aged_about": int(m.group(1)) if m else None}
             s._founder_death_cache = cache
@@ -1497,12 +1497,18 @@ _FAILURE_MARKERS = (
     "IN ARREARS", "in arrears", "INSOLVENCY", "BONDAGE", "cannot go on",
     "cannot pay everyone", "SHORT OF", "nobody left to keep an eye",
     "disperses", "sacked", "KNOWLEDGE LOST", "destroyed", "confiscated",
-    "the founder dies", "RUN ENDS", "MOTHBALLED",
+    "founder dies", "RUN ENDS", "MOTHBALLED",
 )
 
 
 def _is_failure_line(msg):
-    return any(marker in msg for marker in _FAILURE_MARKERS)
+    # CASE-INSENSITIVELY, because these markers are prose and prose gets
+    # rewritten. The founder's death line was recapitalised to say what the
+    # death MEANS rather than only that it happened, and silently stopped
+    # being a failure line here, in `log failures`, which is the one screen a
+    # player checks to find out what went wrong.
+    _low = msg.lower()
+    return any(marker.lower() in _low for marker in _FAILURE_MARKERS)
 
 
 def _log_scrub(s, text):
@@ -5302,7 +5308,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # the founder's own death: it landed inside a `step 60` and the call
         # ran eleven more years past it - far enough to also trip the
         # no-successor catastrophe - before the player got a turn to react.
-        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED", "the founder dies")
+        # MATCHED CASE-INSENSITIVELY BELOW, because this is prose and prose
+        # gets rewritten: the death line was recapitalised to say what the
+        # death MEANS and silently stopped matching here, which cost the step
+        # its stop and the reply its death field.
+        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED", "FOUNDER DIES")
         completed, lost, events = [], [], []
         founder_died_this_step = None
         stopped_early = None
@@ -5336,7 +5346,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _this_year = s.log[before_log:]
             for y, m in _this_year:
                 events.append({"year": y, "message": m})
-                if m.startswith("the founder dies"):
+                if "founder dies" in m.lower():
                     _age = re.search(r"aged about (\d+)", m)
                     _age_n = int(_age.group(1)) if _age else None
                     founder_died_this_step = {"year": y, "aged_about": _age_n}
@@ -5344,7 +5354,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     # comment on why the log alone cannot be trusted to
                     # survive a save and a resume.
                     s._founder_death_aged, s._founder_death_year = _age_n, y
-            if ran < years and any(mk in m for _, m in _this_year
+            if ran < years and any(mk.lower() in m.lower() for _, m in _this_year
                                    for mk in _STEP_STOP_MARKERS):
                 stopped_early = ("stopped after %d of the %d years you asked "
                                  "for: something happened that you warned "

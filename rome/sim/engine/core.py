@@ -1631,8 +1631,30 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 self.life_left += 0.12      # you at least do not die of a septic cut
             if self.life_left <= 0:
                 self.founder_alive = False
-                self.log.append((yr, "the founder dies, aged about %d"
-                                 % (self.cfg["founder_arrival_age"] + yr - self.cfg["start_year"])))
+                # SAY WHAT IT MEANS, not only that it happened. Two round-12
+                # testers independently called this the worst thing in the
+                # game: one wrote that a dead founder's run was "permanently
+                # unwinnable from that point" with the game never saying so,
+                # the other that a corpse went on being offered 69 startable
+                # projects and actually accepted one. The engine is not in
+                # fact silent about the consequence - deputies carry the work,
+                # and with none the programme dissolves over twelve years - but
+                # nothing ever told the player either half of that.
+                _dep = self.directors_extra
+                self.log.append((yr, "THE FOUNDER DIES, aged about %d. %s"
+                                 % (self.cfg["founder_arrival_age"] + yr
+                                    - self.cfg["start_year"],
+                                    ("Your %.1f deputies direct the work in your "
+                                     "name and the programme goes on without you: "
+                                     "that is what training them was for."
+                                     % _dep) if _dep >= 0.5 else
+                                    "You trained no deputy, so there is nobody to "
+                                    "direct anything. Nothing that needs your "
+                                    "hours can ever be begun again, and what you "
+                                    "built will be forgotten over the next twelve "
+                                    "years unless a deputy appears. This run is "
+                                    "effectively over; 'state' shows how far you "
+                                    "got.")))
         # a programme with no director is not paused, it is dissolving
         if not self.founder_alive and self.directors_extra < 0.5:
             self.stalled += 1
@@ -1648,6 +1670,16 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                         self.operating.discard(k)
                         self.done.discard(k)
                         self._done_changed()
+            # COUNT IT DOWN WHERE THE PLAYER CAN SEE IT. Twelve years of a
+            # dissolving programme passed with nothing said but the shedding
+            # itself, so a tester read the losses as unexplained and the run as
+            # merely unlucky rather than finished.
+            if self.stalled in (3, 6, 9, 11):
+                self.log.append((yr, "THE PROGRAMME IS DISSOLVING: %d year(s) "
+                                     "since the founder died with no deputy to "
+                                     "take over. What you built is being "
+                                     "forgotten. The run ends at twelve."
+                                 % self.stalled))
             if self.stalled >= 12:
                 self._catastrophe("the founder died without training successors; "
                                   "the school dispersed and the work was forgotten")

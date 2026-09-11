@@ -5993,6 +5993,35 @@ check("the founder's age at death survives a save and a fresh process "
 # --- JOB 3f: a bulk start for the late game, so it is not pure typing.
 s_ru = sim()
 _ru = S._agent_dispatch(s_ru, NODES, {"cmd": "rush"})
+# --- BREAK, round 12: two testers independently made this their worst finding.
+# One wrote that a dead founder's run was "permanently unwinnable from that
+# point" with the game never saying so; the other watched a corpse be offered
+# 69 startable projects and accept one. The engine was not actually silent
+# about the consequence - deputies carry the work, and with none the programme
+# dissolves over twelve years - but nothing ever told the player either half.
+_s_die = sim(capital=1000000.0, events=True)
+_s_die.cfg["immortal"] = False
+_s_die.life_left = 1.0
+for _ in range(6):
+    _s_die.step()
+check("the founder's death says what it means for the run, not only that it happened",
+      any("THE FOUNDER DIES" in m and "nobody to direct" in m
+          for _, m in _s_die.log),
+      [m for _, m in _s_die.log if "FOUNDER DIES" in m][:1])
+check("...and the programme dissolving is counted down where a player sees it",
+      any("DISSOLVING" in m and "ends at twelve" in m for _, m in _s_die.log),
+      [m for _, m in _s_die.log if "DISSOLVING" in m][:1])
+
+# --- BREAK, round 12: a developer's own change-log marker was shipped in the
+# prose a player reads. 1,108 nodes carried "[AUDIT: ... See JOB 1 upkeep
+# audit.]" in their note field, the win condition among them, naming the task
+# numbering of the agent that had edited them. The reasoning for a change
+# belongs in the commit message; the note field is what the player reads.
+_leaks = sorted(k for k, v in NODES.items()
+                if "AUDIT" in ((v.get("note") or "") + (v.get("name") or "")))
+check("no developer change-log marker is shipped in player-facing prose",
+      not _leaks, _leaks[:5])
+
 # --- BREAK, round 12: `rush limit:1000` on turn one started 209 things at
 # once, owing 90,944 founder-hours against a lifetime the game itself puts at
 # about 72,000. The next step gave hours to exactly one of them, so "RUNNING
