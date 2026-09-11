@@ -486,6 +486,21 @@ def cmd_play(a):
                     "year pass). When something is FINISHED it earns nothing "
                     "until you 'open' it. 'stuck' says why you are not getting "
                     "on; 'help' explains the rest; 'quit' leaves."))
+        # THE WALKTHROUGH, NOT BURIED. `path <goal>` lays out everything
+        # still standing between here and one thing AND which of it you
+        # could start today, and it used to be findable only inside `help
+        # commands`. An England player spent about forty minutes guessing
+        # before finding it and said it reorganized the rest of play once
+        # they had; two other players separately asked for exactly the join
+        # it does. It has no business being harder to find than the five
+        # above, once a player has a goal in mind - which, on arrival, they
+        # already do.
+        if not s.fog:
+            print()
+            print(_wrap("Once you have a goal in mind: 'path <name>' lays "
+                        "out everything still standing between here and "
+                        "there, and which of it you could start TODAY. "
+                        "This is the walkthrough."))
         print()
 
     while True:
