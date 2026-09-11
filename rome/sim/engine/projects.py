@@ -1120,9 +1120,30 @@ class ProjectsMixin:
         self.reputation = min(100.0, self.reputation + gain)
         self.scandal += self.alarm_of(n)
         self.gov += self.state_interest(n)
-        if k == "freedman_staff":     self.artisans += 8
-        if k == "school_founded":     self.scholars += 4
-        if k == "academy_network":    self.scholars += 10; self.artisans += 10
+        # _grant_staff, NOT a bare += on self.scholars/self.artisans. The old
+        # direct assignment was overwritten out of existence the very next
+        # time anything called _resync_pools() - which step() does
+        # unconditionally, every year - because that function has always
+        # treated self.scholars and self.artisans as computed purely from
+        # self.employees. A player who founded the school under --manual (the
+        # interactive protocol's only mode) read "+4 scholars" on completion
+        # and a refusal naming an unchanged shortfall one step later, for the
+        # single highest-leverage node in the game. See _grant_staff.
+        #
+        # ONLY WITHOUT auto_hire. With it on - the optimizer's default, off
+        # for a player - staff_capacity() already counts this same
+        # institution toward sc_cap/ar_cap and step()'s smoothing grows
+        # self.scholars/self.artisans toward that ceiling on its own; the
+        # long civilization runs are calibrated against that smoothing alone
+        # (see core.py, "1. staff"). Granting it a second time here as well
+        # double-counted every one of these three institutions and pushed a
+        # 250-year optimizer run to 560 things startable where the tree is
+        # calibrated to open up much more slowly - not a message that lied,
+        # but the same bug's fix over-correcting into a different one.
+        if not self.policy.get("auto_hire", not self.manual):
+            if k == "freedman_staff":     self._grant_staff(artisans=8)
+            if k == "school_founded":     self._grant_staff(scholars=4)
+            if k == "academy_network":    self._grant_staff(scholars=10, artisans=10)
         if k == "mining_concession":  pass
         # SAY THAT IT IS NOT YET RUNNING. Completing something that could be a
         # going concern no longer starts it earning, and a player who is not

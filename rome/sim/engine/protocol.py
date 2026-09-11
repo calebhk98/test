@@ -3649,6 +3649,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # right one: the engine knows this at `start` time. It is still allowed
         # (you may teach or hire your way to the hours, and the work does
         # crawl) but it must not be a silent trap.
+        # THE NUMBER PRINTED HAS TO BE THE NUMBER TESTED. The commit that added
+        # commissioned hours to the test above ("Make the stated labour ceiling
+        # the real one") changed the comparison to hours_you_can_call_on - which
+        # is market_supply PLUS whatever you have already commissioned - and left
+        # this line printing market_supply alone. A player who had commissioned
+        # any of the trade saw `start` quote one ceiling and `stuck` quote a
+        # higher one for the identical project a moment later, which is the exact
+        # thing that commit's own message promised could not happen again.
         _impossible = []
         _n0 = nodes[k]
         _frac0 = min(1.0, 1.0 / max(1.0, _n0["yrs"]))
@@ -3657,7 +3665,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
             if _need > 0 and s.hours_you_can_call_on(_t) < _need:
                 _impossible.append("%s (wants %.0f hours a year; this society can "
                                    "field %.0f at most)"
-                                   % (_t, _need, max(0.0, s.market_supply(_t))))
+                                   % (_t, _need, max(0.0, s.hours_you_can_call_on(_t))))
         ok, why = s.start_project(k)
         if not ok:
             return {"ok": False, "error": why}
@@ -4804,6 +4812,13 @@ SAVE_FIELDS = (
     "shut_for_staff",
     "last_withdrawal",
     "wages_prepaid",
+    # WHAT AN INSTITUTION GAVE YOU OUTRIGHT (see _grant_staff, labour.py).
+    # scholars/artisans are saved as their current totals two lines up, but
+    # _resync_pools() recomputes both from `employees` on every step and adds
+    # this back in - so a save missing it would read correctly right up until
+    # the next step, then silently lose the school's +4 scholars the same way
+    # the bug this field fixes did.
+    "granted_staff",
     # hours_this_year: last year's founder-hours accounting (see step(), just
     # before the within-year tallies above reset). Without it, `state` right
     # after a `--session` reload would report nothing for a figure the player

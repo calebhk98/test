@@ -974,13 +974,48 @@ class LabourMixin:
         return (getattr(self, "teaching_hours_this_year", 0.0)
                 + getattr(self, "wage_hours_this_year", 0.0))
 
+    def _grant_staff(self, scholars=0.0, artisans=0.0):
+        """An institution hands you people outright, on completion - the
+        school's own professors, the freedmen a patron staffs your workshop
+        with. They are not on the payroll you can fire (their keep is already
+        inside the institution's own upkeep), so they do not belong in
+        `self.employees`; they have to survive `_resync_pools()` some other
+        way, which is what this records.
+
+        Before this existed, `_complete()` added straight to self.scholars /
+        self.artisans, and the very next call to `_resync_pools()` - which
+        runs unconditionally every single step() - overwrote both from
+        `self.employees` alone and threw the grant away entirely. A player
+        who founded the school, in the one mode (`--manual`, which the
+        interactive protocol always uses) where nothing else keeps employees
+        and the aggregate in step, read the node's own description promising
+        "+4 scholars" and then watched a refusal a year later say "needs 2
+        trained scholars, you have 1.0" - the pivot node, built and paid for,
+        doing nothing at all.
+        """
+        g = getattr(self, "granted_staff", None)
+        if g is None:
+            g = self.granted_staff = {"scholars": 0.0, "artisans": 0.0}
+        g["scholars"] = g.get("scholars", 0.0) + scholars
+        g["artisans"] = g.get("artisans", 0.0) + artisans
+        self.scholars += scholars
+        self.artisans += artisans
+
     def _resync_pools(self):
         """Recompute the two aggregate pools the tech tree asks for from the
         actual people on the books. `art` and `sch` in the tree mean "trained
         people who understand your methods", so they are the sum of the trades,
-        not a number that floats free of them."""
+        not a number that floats free of them.
+
+        PLUS WHAT AN INSTITUTION GRANTED OUTRIGHT. See _grant_staff: those
+        people are real and already paid for out of the institution's own
+        upkeep, and this is the one place that ever told self.scholars and
+        self.artisans what they are, so it is the one place that has to add
+        the grant back rather than let it be overwritten out of existence.
+        """
         craft = sum(n for t, n in self.employees.items() if trade_family(t) == "craft")
         schol = sum(n for t, n in self.employees.items() if trade_family(t) == "scholar")
+        granted = getattr(self, "granted_staff", None) or {}
         # PEOPLE STILL LEARNING ARE NOT YET CRAFTSMEN. Two things were wrong
         # here at once and they cancelled into a disappearance. Everyone bought
         # counted at full worth from the day of purchase, so the training lag
@@ -1005,8 +1040,9 @@ class LabourMixin:
         else:
             free_share = 0.0
         self.artisans = (craft + owned * free_share * 1.0
-                         + owned * (1.0 - free_share) * 0.7)
-        self.scholars = schol
+                         + owned * (1.0 - free_share) * 0.7
+                         + granted.get("artisans", 0.0))
+        self.scholars = schol + granted.get("scholars", 0.0)
 
     TRAINING_YEARS = 3.0      # nobody is a useful artisan the week you buy them
 
