@@ -426,9 +426,27 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         #    things that change the staff are hire, fire, train, buy and manumit.
         sc_cap, ar_cap, di_cap = self.staff_capacity()
         ATTRITION = 0.035           # Roman adult mortality plus normal turnover
-        for t in list(self.employees):
-            self.employees[t] *= (1.0 - ATTRITION)
-            if self.employees[t] < 0.05:
+        # PEOPLE ARE WHOLE. This used to multiply every trade's headcount by
+        # (1 - ATTRITION) and carry on, so ten smiths lost exactly 0.35 of a
+        # smith and the engine went on holding the fraction: a household
+        # could read "1.32 artisans" or "0.03 engineers" on its own roster,
+        # the latter drawing 0.03 of a wage while supervising nothing. The
+        # user's objection was exact: a death is a discrete thing that either
+        # happens to a particular person this year or does not, so each of
+        # the whole people actually on the books now gets their own yearly
+        # roll against self.rng - sorted by trade name so the draws happen in
+        # the same order whatever PYTHONHASHSEED the process started with,
+        # which is what every other rng loop over this dict already does
+        # (see the "cannot pay" shedding loop below). Summed over many
+        # people this reproduces the same 3.5%-a-year average the smooth
+        # version was tuned against; no single person is ever a third of a
+        # casualty.
+        for t in sorted(self.employees):
+            head = int(round(self.employees[t]))
+            survivors = sum(1 for _ in range(head) if self.rng.random() >= ATTRITION)
+            if survivors > 0:
+                self.employees[t] = float(survivors)
+            else:
                 self.employees.pop(t)
         self._resync_pools()
         # A HOUSEHOLD THAT CANNOT PAY ITS PEOPLE LETS THEM GO. This is the whole
@@ -485,11 +503,18 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 wage = ANNUAL_WAGE.get(t, 375.0) * self.wage_index * self.price_index
                 if wage <= 0:
                     continue
-                cut = min(self.employees[t], short / wage)
+                # A WHOLE PERSON, ROUNDED UP. `short / wage` is a quantity of
+                # wages, not a quantity of people, and cutting that fraction
+                # straight used to leave "0.3 smiths" still on the books,
+                # still drawing 0.3 of a wage nobody had just said could be
+                # paid. Rounding up sheds one whole person too many at worst,
+                # which is the safe direction for a household that genuinely
+                # cannot make payroll.
+                cut = min(self.employees[t], math.ceil(short / wage - 1e-9))
                 self.employees[t] -= cut
                 short -= cut * wage
                 gone += cut
-                if self.employees[t] < 0.05:
+                if self.employees[t] < 0.5:
                     self.employees.pop(t)
             self._resync_pools()
             # ALWAYS, not only when it worked. Losing the staff you paid to hire
@@ -520,11 +545,27 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # headroom is not a free six people, it is six people you still
             # have to pay for.
             extra = self.supervision_room() * getattr(self, "_staff_scale", 1.0)
-            self.scholars += (sc_cap + extra * 0.35 - self.scholars) * 0.18
-            self.artisans += (ar_cap + extra - self.artisans) * 0.22
+            # THE SAME WALL hire() AND train() ENFORCE. This used to smooth
+            # self.scholars toward sc_cap directly, mutating the pool itself
+            # with no call anywhere near literate_capacity() - the wall a
+            # player typing `hire scholar 12` was refused at 5.9, "ever, at
+            # any price". A break tester turned auto_hire on, came back forty
+            # years later to the same civilisation, and found 146.4 scholars:
+            # one rulebook at the keyboard and a twenty-five-times-larger one
+            # for the automation, for the identical number. See
+            # literate_capacity()'s own docstring for the other half of this
+            # fix - widening the wall enough that clamping to it here does not
+            # simply strand every long civilisation run short of what the
+            # tree actually asks for (the goal wants 25; building the
+            # institutions staff_capacity() already credits widens this same
+            # wall past that well before the goal is in reach).
+            target_sc = min(sc_cap + extra * 0.35, self.literate_capacity("scholar"))
+            desired_sc = self.scholars + (target_sc - self.scholars) * 0.18
+            target_ar = ar_cap + extra
+            desired_ar = self.artisans + (target_ar - self.artisans) * 0.22
             # Keep the per-trade books honest about the aggregate: staff taken on
             # for you are generic craftsmen and scribes, and that is all they are.
-            craft = max(0.0, self.artisans - self.freedmen - self.slaves * 0.7)
+            craft = max(0.0, desired_ar - self.freedmen - self.slaves * 0.7)
             generic = self.employees.get("artisan", 0.0)
             specials = sum(v for t, v in self.employees.items()
                            if t not in ("artisan", "scholar") and trade_family(t) == "craft")
@@ -536,9 +577,20 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # artisans are what supervise a concern, twenty-two concerns closed
             # and their net went from +8,010 a year to -3,027. A household of
             # nothing but specialists cannot keep its own doors open.
-            self.employees["artisan"] = max(craft * 0.25, craft - specials)
-            if self.scholars > 0:
-                self.employees["scholar"] = self.scholars
+            #
+            # PEOPLE ARE WHOLE. This was the other place "0.03 engineers"
+            # actually came from: the smoothing above is a continuous
+            # approach to a continuous target, by design, and writing that
+            # target straight into `employees` handed a player a fractional
+            # person every single year forever, never quite arriving.
+            # _stochastic_round spends the fractional remainder as this
+            # year's chance of the next whole hire, so the long-run average
+            # this formula was tuned against is unchanged and every actual
+            # year's headcount is an integer (see its own docstring).
+            self.employees["artisan"] = self._stochastic_round(
+                max(craft * 0.25, craft - specials))
+            if desired_sc > 0:
+                self.employees["scholar"] = self._stochastic_round(desired_sc)
             # REPLACE THE PEOPLE YOU LOSE, trade by trade. Attrition was eating
             # the taught trades (the engineers went from 1.9 to 0.3 over sixty
             # years) and nothing ever replaced them, because the top-up only knew

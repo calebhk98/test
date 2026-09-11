@@ -5130,6 +5130,150 @@ check("the goal's own note never spells out the id of one of its prerequisites",
               for p in NODES["point_contact_transistor"]["pre"]),
       [p for p in NODES["point_contact_transistor"]["pre"]
        if p in NODES["point_contact_transistor"]["note"]])
+# =============================================================================
+# PEOPLE ARE WHOLE. The user's objection, and it was right: "how can you have
+# .8 people? I feel like all employees/people should be measured in
+# integers." Attrition used to multiply every trade by (1 - 0.035) every
+# single year, so ten smiths lost exactly 0.35 of a smith and the engine went
+# on carrying the fraction forever - a household could read "1.32 artisans"
+# or "0.03 engineers" on its own roster, the latter drawing 0.03 of a wage
+# while supervising nothing. Attrition is now a per-person roll against
+# self.rng (sorted by trade name, for the same PYTHONHASHSEED-independence
+# every other rng loop over this dict already has); hire() and train() now
+# refuse a fractional `n` outright, and the auto_hire smoothing that used to
+# write a continuous target straight into `employees` now spends its
+# fractional remainder as that year's CHANCE of the next whole hire instead
+# (`_stochastic_round`).
+# =============================================================================
+
+s = sim(capital=50_000_000.0)
+s.policy["auto_hire"] = False
+s.employees["artisan"] = 500.0
+s._resync_pools()
+_whole_every_year, _never_grew, _prev = True, True, 500.0
+for _ in range(150):
+    s.step()
+    _cur = s.employees.get("artisan", 0.0)
+    if abs(_cur - round(_cur)) > 1e-9:
+        _whole_every_year = False
+    if _cur > _prev + 1e-9:
+        _never_grew = False
+    _prev = _cur
+check("a whole headcount of artisans never picks up a fraction of a person, "
+      "year after year of pure attrition",
+      _whole_every_year, _prev)
+check("...and with auto_hire off and nobody hiring, the headcount only ever "
+      "falls, never climbs on its own",
+      _never_grew, _prev)
+
+# UNBIASED: the realised loss, averaged over many people and many
+# independent seeds, should still land on the nominal 3.5%/yr every balance
+# comment elsewhere in this file quotes - a per-person roll that happened to
+# be biased would quietly make every one of those comments false.
+_before_att, _after_att = 0.0, 0.0
+for _seed in range(1, 31):
+    _s = S.Sim(NODES, ORDER, random.Random(_seed), manual=True,
+               civ=S.load_civ("rome_100ad"), cfg={"start_capital": 5e7})
+    _s.goal, _s.done_year = GOAL, {}
+    _s.policy["auto_hire"] = False
+    _s.employees["artisan"] = 2000.0
+    _s._resync_pools()
+    _s.step()
+    _before_att += 2000.0
+    _after_att += _s.employees.get("artisan", 0.0)
+_att_rate = 1.0 - _after_att / _before_att
+check("whole-person attrition still averages the nominal 3.5% a year, over "
+      "many people and many seeds",
+      0.030 < _att_rate < 0.040, _att_rate)
+
+# HIRE AND TRAIN LAND WHOLE PEOPLE.
+s = sim(capital=1e6)
+ok_frac_h, why_frac_h = s.hire("smith", 2.5)
+check("hire refuses a fractional number of people",
+      not ok_frac_h and "whole" in why_frac_h, why_frac_h)
+ok_frac_t, why_frac_t = s.train("machinist", 1.5)
+check("...and so does train",
+      not ok_frac_t and "whole" in why_frac_t, why_frac_t)
+ok_whole_h, _ = s.hire("smith", 2)
+check("...but a whole number still goes through, and lands exactly that many",
+      ok_whole_h and s.employees.get("smith") == 2.0, s.employees.get("smith"))
+
+
+# =============================================================================
+# THE TWO RULEBOOKS. Measured, reproducible: `hire scholar 12` was refused
+# - "this society's literacy will not supply more than 5.9 scholars in
+# total, ever, at any price" - while `policy auto_hire on` mutated
+# self.scholars directly, never once called hire() or literate_capacity(),
+# and reached 146.4 scholars in the same civilisation forty years later. The
+# goal itself, and two nodes on the only road to it, want 25. Both halves are
+# fixed together: step()'s auto_hire now clamps its target to
+# literate_capacity("scholar") (see core.py), and literate_capacity("scholar")
+# now adds the SAME institutional pool staff_capacity() already credited
+# auto_hire with (see labour.py) - so the wall is not only closed, it is wide
+# enough to reach what the tree actually asks for.
+# =============================================================================
+
+s = sim(capital=1e9, manual=False)
+for _ in range(250):
+    s.step()
+check("auto_hire never grows scholars past the same wall hire() enforces",
+      s.scholars <= s.literate_capacity("scholar") + 1e-6,
+      (s.scholars, s.literate_capacity("scholar")))
+check("...and over two and a half centuries of a rich civilisation it grows "
+      "well past the old static ceiling of about six",
+      s.scholars > 10.0, s.scholars)
+
+# The bare, no-institution ceiling a fresh household sees is unchanged...
+s0 = sim()
+check("the market-reach ceiling for a fresh household is the same as before",
+      5.5 < s0.literate_capacity("scholar") < 6.5, s0.literate_capacity("scholar"))
+# ...and grows once the institutions auto_hire was already trusted to grow
+# toward are actually running - not from literacy alone, which is the
+# mechanism that lets a household eventually reach the tree's 25.
+s1 = run_it(sim(capital=1e9), "interchangeable_parts", "power_grid")
+check("building the institutions auto_hire already credited widens the wall "
+      "hire() enforces, which used to move only with literacy",
+      s1.literate_capacity("scholar") > 20.0, s1.literate_capacity("scholar"))
+
+# The refusal is honest about what is actually binding: a household's reach
+# into the labour market, narrowed by literacy, not literacy by itself.
+s2 = sim()
+ok2, why2 = s2.hire("scholar", 12)
+check("the refusal names the household's market reach, not literacy alone",
+      not ok2 and "reach" in why2 and "literacy" in why2, why2)
+
+
+# =============================================================================
+# ONLY `scholar` COUNTS AS A TRAINED SCHOLAR. TRADE_FAMILY groups scholar,
+# chemist, engineer, scribe and merchant together as "scholar" for
+# market_supply()'s sake - they draw on the same small, literate-or-
+# propertied slice of the population - and an earlier version of
+# _resync_pools() reused that same grouping to decide who counts as a
+# trained scholar for the tech tree's "sch" gate. Hiring three scribes
+# measurably raised effective_scholars() from 0 to 4.0, while STAFF_SOURCES
+# - the advice on how to grow scholars - has only ever named `hire scholar`.
+# Now only the `scholar` trade itself feeds the gate; the market-sizing use
+# of the wider grouping (market_supply, labour_price_factor) is untouched.
+# =============================================================================
+
+s = sim(capital=1e6)
+_before_sch = s.effective_scholars()
+ok_scribe, _ = s.hire("scribe", 3)
+check("(three scribes were actually hired)", ok_scribe, s.employees)
+check("hiring scribes does not inflate the trained-scholar headcount any more",
+      abs(s.effective_scholars() - _before_sch) < 1e-6,
+      (s.effective_scholars(), _before_sch))
+s.capital = 1e6
+ok_sch, _ = s.hire("scholar", 2)
+check("...but hiring an actual scholar still does",
+      ok_sch and s.effective_scholars() >= _before_sch + 2 - 1e-6,
+      s.effective_scholars())
+check("the advice on how to get scholars never points at a different trade "
+      "family's trade, which would not even count",
+      all("scribe" not in why and "chemist" not in why and "merchant" not in why
+          and "engineer" not in why
+          for _node, why in s.STAFF_SOURCES.get("scholars", [])),
+      s.STAFF_SOURCES.get("scholars"))
 
 
 print("=" * 72)

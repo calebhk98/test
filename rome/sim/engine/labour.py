@@ -16,6 +16,33 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
 
 
 class LabourMixin:
+    def _stochastic_round(self, x):
+        """Round a continuous headcount target to a whole number of people
+        without biasing where it is actually heading.
+
+        PEOPLE ARE WHOLE; THE PATH TOWARD THEM DOES NOT HAVE TO BE. The
+        automatic staff-growth in core.py's step() is a smoothing formula -
+        this year's target minus what you have, times a rate - and that math
+        is exactly what every balance comment near it was tuned against. Had
+        it simply rounded the smoothed figure down every year, growth toward
+        a ceiling of, say, 6 people from 0 would have sat at 5 forever
+        (0.18 of the gap each year, floor()'d, converges just under the next
+        whole number and never crosses it): hiring would have quietly gone
+        dead a person short of every ceiling in the game. Rounding UP every
+        year over-hires just as systematically the other way.
+        A fractional remainder is instead spent as THIS YEAR's chance of the
+        next whole person: 6.4 people is six for certain and a 40% chance of
+        a seventh, drawn from self.rng so it is reproducible. Averaged over
+        many years the realised headcount tracks the old fractional
+        trajectory exactly, and no single year is ever asked to employ part
+        of a person.
+        """
+        x = max(0.0, x)
+        whole = math.floor(x)
+        if self.rng.random() < x - whole:
+            whole += 1
+        return float(whole)
+
     def director_pool(self):
         h = 0.0
         if self.founder_alive:
@@ -96,6 +123,35 @@ class LabourMixin:
         scale, of which a lettered trade gets 35% before literacy narrows it
         further) - not a second population model that has to be kept in step
         with the first, but that one.
+
+        FOR `scholar` ONLY, THIS IS NOT THE WHOLE WALL. A player who typed
+        `hire scholar 12` was refused at 5.9, "ever, at any price" - and
+        auto_hire, forty years later with the same civilisation, held 146.4
+        scholars, because step() smoothed self.scholars toward
+        staff_capacity()'s institutional ceiling directly and never once
+        called hire() or read this function. Fixing the bypass (see step(),
+        core.py) without fixing the number it now has to respect would have
+        made the game worse, not better: the goal itself, and two nodes on
+        the only road to it, want 25 trained scholars, and the market-share
+        formula above tops out at 6.36 even after every literacy technology
+        in the tree - printing, paper, a school, three academies - because
+        Rome's literacy_elite starts at 0.900 and the field is capped at
+        1.0. An eight per cent gain is what "a society that reads more can
+        staff more" is worth if reading is the only lever, and it is not:
+        the actual reason a household of one can eventually field two dozen
+        literate men is that a school, an academy or an imperial patron
+        hands them over ALREADY TRAINED, on the institution's own payroll -
+        which is exactly what staff_capacity()'s `sc` already computes, and
+        already used to justify auto_hire's own math before this function
+        capped hire() and train() at a sixth of it. So the wall a person at
+        a keyboard is held to is the same market-share pool as before PLUS
+        the same institutional pool auto_hire was already trusted to grow
+        toward: a city of a million cannot produce twenty-five idle
+        scholars for one household to hire off the street, but it can
+        certainly produce them once that household has built the school
+        that trains them and the network that pays for a second and a
+        third. Early game, with no such institution running, this adds
+        nothing and the ceiling is exactly what it always was.
         """
         if trade not in self.LITERATE_TRADES:
             return float("inf")
@@ -120,7 +176,65 @@ class LabourMixin:
         # exists to matter for. A floor that swallows the signal is worse than
         # no floor. The rune-carver and the priest are always findable; the POOL
         # on top of them is what literacy buys, and it is what teaching moves.
-        return 1.5 + people * self.literacy_factor(trade)
+        cap = 1.5 + people * self.literacy_factor(trade)
+        if trade == "scholar":
+            # THE SAME POOL auto_hire ALREADY TRUSTED. staff_capacity()'s `sc`
+            # is schools, academies, patrons and the industrial cascade that
+            # trains scholars outright and carries their keep on the
+            # institution's own upkeep (see _grant_staff) - it is not a second,
+            # looser estimate of the same thing, it is the number step() was
+            # already smoothing self.scholars toward before this function's
+            # cap ever got in the way. Zero with no such institution running,
+            # which is why a fresh household still sees exactly the
+            # market-share figure above and no more.
+            cap += self.staff_capacity()[0]
+        return cap
+
+    def _literate_wall_refusal(self, trade, cap, have):
+        """The refusal hire() and train() give when literate_capacity() bites.
+
+        SAY HOW MANY YOU CAN HAVE, NOT ONLY THAT YOU CANNOT HAVE SIX. A play
+        tester asked for six machinists against a ceiling of 5.9, holding
+        NONE, and read "will not supply more than 5.9 in total, ever, at any
+        price" as being capped out. They stopped asking, and a run sat
+        frozen for two hundred years with seventeen million denarii in the
+        bank; changing the one number to four started it moving again in
+        four. Say the number they should type.
+
+        AND DO NOT BLAME LITERACY FOR A WALL IT DID NOT BUILD. The old text
+        read "this society's literacy will not supply more than X" for
+        every trade alike, which is a real description of the Norse scribe
+        case and a false one of the Rome scholar case: Rome's literacy_elite
+        starts at 0.900 against a field capped at 1.0, so literacy itself
+        can never move this ceiling by more than about eight per cent,
+        while the actual quantity doing the work is hired_hours_cap_base -
+        this household's own reach into the labour market - and, for
+        scholar, the institutional pool literate_capacity() now folds in
+        (see its docstring). Both matter; only one is literacy, and saying
+        only "literacy" when the market-reach term is doing most of the
+        work is exactly the kind of statement a play tester built a run
+        around and lost two centuries to.
+        """
+        _room = max(0.0, cap - have)
+        _whole = int(_room + 1e-9)
+        lever = (
+            "Building the institutions that train scholars outright - a "
+            "school, an academy, an imperial patron - is what actually "
+            "moves this number; printing, paper and libraries raise "
+            "literacy itself, which by itself is the smaller of the two."
+            if trade == "scholar" else
+            "Printing, paper, schools and academies widen the pool - they "
+            "raise how many people here can read, and this ceiling rises "
+            "with it.")
+        return ("this household's reach into the labour market for %ss "
+                "will not stretch past %.1f in total, hired and taught "
+                "together - not \"this society's literacy\" alone, which "
+                "only narrows an already-limited reach further - and you "
+                "have %.1f already (hired and still being taught). %s %s"
+                % (trade, cap, have,
+                   ("%d more is the most you can take right now." % _whole)
+                   if _whole >= 1 else "There is no room for even one more.",
+                   lever))
 
     def _trade_headcount_pending(self, trade):
         """People already on the books in this trade, plus people already
@@ -612,6 +726,19 @@ class LabourMixin:
             return False, "n must be a number, not %r" % (n,)
         if n <= 0:
             return False, "n must be greater than zero. Nothing was changed."
+        # PEOPLE ARE WHOLE. A household can want a third of another artisan's
+        # worth of work, and it can buy that in hours (`commission`); it
+        # cannot put a third of a person on the payroll, and the engine used
+        # to let it, silently, which is how a play tester ended up reading
+        # "0.03 engineers" on their own staff roster - a household drawing
+        # wages for somebody who could not supervise anything because there
+        # was no such person. See core.py step() for the matching fix to
+        # attrition, which used to manufacture the same fractions going the
+        # other way.
+        if abs(n - round(n)) > 1e-6:
+            return False, ("you hire whole people, not %g of one. Hire %d or %d."
+                           % (n, math.floor(n), math.ceil(n)))
+        n = float(round(n))
         if not self.trade_available(trade):
             return False, ("there are no %ss to hire in this society at any price: %s "
                            'Teach one: {"cmd":"train","trade":"%s","n":1}'
@@ -623,28 +750,7 @@ class LabourMixin:
             cap = self.literate_capacity(trade)
             have = self._trade_headcount_pending(trade)
             if have + n > cap + 1e-6:
-                # SAY HOW MANY YOU CAN HAVE, NOT ONLY THAT YOU CANNOT HAVE
-                # SIX. A play tester asked for six machinists against a
-                # ceiling of 5.9, holding NONE, and read "will not supply more
-                # than 5.9 in total, ever, at any price" as being capped out.
-                # They stopped asking, and a run sat frozen for two hundred
-                # years with seventeen million denarii in the bank; changing
-                # the one number to four started it moving again in four. The
-                # household-room refusal in the same session gets this right
-                # ("4 is the most whole people you can take") and this did
-                # not. Say the number they should type.
-                _room = max(0.0, cap - have)
-                _whole = int(_room + 1e-9)
-                return False, ("this society's literacy will not supply more than "
-                               "%.1f %ss in total, ever, at any price, and you "
-                               "have %.1f (hired and still being taught). %s "
-                               "Printing, paper, schools and academies widen the "
-                               "pool - they raise how many people here can read, "
-                               "and this ceiling rises with it."
-                               % (cap, trade, have,
-                                  ("%d more is the most you can take right now."
-                                   % _whole) if _whole >= 1 else
-                                  "There is no room for even one more."))
+                return False, self._literate_wall_refusal(trade, cap, have)
         # A finder's fee and the first year in advance, which is what a household
         # actually pays to take a skilled man off someone else's bench. Buying
         # deep into a trade's LOCAL supply bids its price up, the same
@@ -713,6 +819,16 @@ class LabourMixin:
         if have <= 0 and pending <= 0:
             return False, "you employ no %ss, and none are being taught" % trade
         n = float(n)
+        # THE SAME WHOLENESS hire() AND train() NOW ENFORCE. Letting a
+        # fraction of a person go is the mirror image of hiring one, and
+        # would reopen the exact hole this file's other two verbs were just
+        # closed for: a roster that can drift back to "0.03 engineers"
+        # through `fire` even though nothing can hire or teach its way there
+        # any more. Rounded rather than refused, because "let go 2.5" has an
+        # obvious meaning (two, or the two-point-something you actually
+        # have) and refusing outright would only make a player retype it.
+        if have > 0 and abs(n - round(n)) > 1e-6 and n < have:
+            n = float(math.ceil(n))
         note = None
         if have > 0:
             gone = min(n, have)
@@ -753,6 +869,14 @@ class LabourMixin:
             return False, "no such trade: %s" % trade
         if n <= 0:
             return False, "n must be greater than zero. Nothing was changed."
+        # PEOPLE ARE WHOLE. See the identical check in hire() for why: a
+        # taught trade is still a roster of actual people, not a quantity of
+        # training-hours, and "0.03 engineers" was exactly as false whichever
+        # verb put it there.
+        if abs(n - round(n)) > 1e-6:
+            return False, ("you teach whole people, not %g of one. Teach %d or %d."
+                           % (n, math.floor(n), math.ceil(n)))
+        n = float(round(n))
         frm = (frm or ("smith" if trade in ("machinist", "engineer")
                        else "glassblower" if trade == "optician"
                        else "scribe" if trade == "chemist"
@@ -770,28 +894,7 @@ class LabourMixin:
             cap = self.literate_capacity(trade)
             have = self._trade_headcount_pending(trade)
             if have + n > cap + 1e-6:
-                # SAY HOW MANY YOU CAN HAVE, NOT ONLY THAT YOU CANNOT HAVE
-                # SIX. A play tester asked for six machinists against a
-                # ceiling of 5.9, holding NONE, and read "will not supply more
-                # than 5.9 in total, ever, at any price" as being capped out.
-                # They stopped asking, and a run sat frozen for two hundred
-                # years with seventeen million denarii in the bank; changing
-                # the one number to four started it moving again in four. The
-                # household-room refusal in the same session gets this right
-                # ("4 is the most whole people you can take") and this did
-                # not. Say the number they should type.
-                _room = max(0.0, cap - have)
-                _whole = int(_room + 1e-9)
-                return False, ("this society's literacy will not supply more than "
-                               "%.1f %ss in total, ever, at any price, and you "
-                               "have %.1f (hired and still being taught). %s "
-                               "Printing, paper, schools and academies widen the "
-                               "pool - they raise how many people here can read, "
-                               "and this ceiling rises with it."
-                               % (cap, trade, have,
-                                  ("%d more is the most you can take right now."
-                                   % _whole) if _whole >= 1 else
-                                  "There is no room for even one more."))
+                return False, self._literate_wall_refusal(trade, cap, have)
         hours = 450.0 * n            # your hours, teaching, per person
         pool = self.director_pool() - self.director_hours_committed()
         if hours > pool:
@@ -1007,6 +1110,25 @@ class LabourMixin:
         people who understand your methods", so they are the sum of the trades,
         not a number that floats free of them.
 
+        ONLY `scholar` COUNTS AS A TRAINED SCHOLAR. TRADE_FAMILY groups
+        scholar, chemist, engineer, scribe and merchant together as
+        "scholar" - and that grouping is real and stays exactly as it is for
+        market_supply(), where it means "draws on the same small, literate-
+        or-propertied slice of the population", which is equally true of all
+        five. It is not the same claim as "is a trained natural philosopher",
+        and an earlier version of this function used the one grouping for
+        both: hiring three scribes raised effective_scholars() from 0 to
+        4.0, so a node gated on "2 trained scholars" would start on the
+        strength of scribes who had never been asked to do a philosopher's
+        work, while STAFF_SOURCES - the advice this same household is given
+        on how to get scholars - names only `hire scholar` and never scribe,
+        chemist, engineer or merchant, which is strong evidence the five-way
+        grouping was sized for the labour MARKET and reused for the staff
+        ROSTER by mistake. train()'s own docstring already makes the
+        non-interchangeability of the taught trades explicit ("the
+        machinists you made are no use at all when you need a chemist");
+        nothing about a chemist makes them a scholar either.
+
         PLUS WHAT AN INSTITUTION GRANTED OUTRIGHT. See _grant_staff: those
         people are real and already paid for out of the institution's own
         upkeep, and this is the one place that ever told self.scholars and
@@ -1014,7 +1136,7 @@ class LabourMixin:
         the grant back rather than let it be overwritten out of existence.
         """
         craft = sum(n for t, n in self.employees.items() if trade_family(t) == "craft")
-        schol = sum(n for t, n in self.employees.items() if trade_family(t) == "scholar")
+        schol = self.employees.get("scholar", 0.0)
         granted = getattr(self, "granted_staff", None) or {}
         # PEOPLE STILL LEARNING ARE NOT YET CRAFTSMEN. Two things were wrong
         # here at once and they cancelled into a disappearance. Everyone bought
