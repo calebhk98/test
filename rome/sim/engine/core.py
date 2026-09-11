@@ -602,10 +602,36 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # year's chance of the next whole hire, so the long-run average
             # this formula was tuned against is unchanged and every actual
             # year's headcount is an integer (see its own docstring).
-            self.employees["artisan"] = self._stochastic_round(
-                max(craft * 0.25, craft - specials))
+            # THROUGH hire(), NOT AROUND IT. The user asked why this does not
+            # simply call hire() and reuse the code, and the honest answer was
+            # that there is no reason: it grew as a direct write to the pools
+            # and every rule hire() enforces had to be re-enforced here by hand,
+            # or silently was not. The literacy ceiling was the one that got
+            # noticed (a player refused at 5.9 while this reached 146), and it
+            # was fixed by duplicating the check rather than sharing the code,
+            # which left the others. Measured, for four artisans: hire() takes
+            # 1,000 denarii as a finder's fee and the first year in advance,
+            # records it so the year is not billed twice, and bids that trade's
+            # price up to 1.021. This took the same four people for nothing and
+            # left the market at 1.000. The automation was cheaper than playing
+            # by hand, which is exactly backwards from what `policy` promises.
+            #
+            # Routing through hire() makes all of that impossible by
+            # construction rather than by vigilance: the advance, the household
+            # room, the literacy wall, the price pressure and the refusals are
+            # whatever hire() says they are, for player and optimizer alike. A
+            # refusal here is not an error - it is the same wall a player hits -
+            # so it is simply not acted on.
+            def _grow_to(trade, want):
+                have = self.employees.get(trade, 0.0)
+                delta = self._stochastic_round(want) - have
+                if delta >= 1.0:
+                    self.hire(trade, int(delta))
+                elif delta <= -1.0:
+                    self.fire(trade, int(-delta))
+            _grow_to("artisan", max(craft * 0.25, craft - specials))
             if desired_sc > 0:
-                self.employees["scholar"] = self._stochastic_round(desired_sc)
+                _grow_to("scholar", desired_sc)
             # REPLACE THE PEOPLE YOU LOSE, trade by trade. Attrition was eating
             # the taught trades (the engineers went from 1.9 to 0.3 over sixty
             # years) and nothing ever replaced them, because the top-up only knew
