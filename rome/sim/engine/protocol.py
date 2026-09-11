@@ -178,6 +178,24 @@ def render_final(out):
     return "\n".join(L)
 
 
+def _goal_progress_count(s, nodes):
+    """How many of the goal's own prerequisites you already have, with
+    nothing named and not even the total - see the block comment where this
+    is used in _agent_state for why the total itself has to stay withheld
+    until the run ends.
+    """
+    goal = getattr(s, "goal", None)
+    if not goal or goal not in nodes:
+        return None
+    need = getattr(s, "_goal_closure", None)
+    if need is None:
+        try:
+            need = s._goal_closure = closure(nodes, goal)
+        except Exception:
+            return None
+    return sum(1 for x in need if x in s.done)
+
+
 def _agent_state(s, nodes, cmd=None):
     active = {}
     for k, st in s.active.items():
@@ -470,6 +488,17 @@ def _agent_state(s, nodes, cmd=None):
         "goal_in_words": (s.nodes[s.goal]["name"]
                           if getattr(s, "goal", None) in s.nodes else None),
         "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
+        # THE FOG-SAFE VERSION OF final_report's "146 nodes in all; you had
+        # 122" - a tester called that the most useful line in the game, and
+        # it is withheld until the run ends on purpose: the TOTAL is the size
+        # of the tree's own spoiler surface (same reasoning as
+        # downstream_count being hidden for a single node, just applied to
+        # the whole road at once). So during play this says only how many of
+        # the road's nodes you already have, never how many there are in
+        # all and never which ones remain - you get a sense of progress
+        # without being handed a map.
+        "on_the_road_to_the_goal_so_far": (
+            _goal_progress_count(s, nodes) if getattr(s, "fog", False) else None),
         "fog_of_war": getattr(s, "fog", False),
         "manual": s.manual, "ended": end_reason is not None, "end_reason": end_reason,
     }
@@ -2072,6 +2101,12 @@ def render_state(out):
             L.append("Aiming at: %s%s" % (out["goal_in_words"],
                      ("  -- REACHED in %s AD" % out.get("goal_year"))
                      if out.get("goal_reached") else ""))
+        # HOW MANY, NEVER HOW MANY OF HOW MANY. See the field's own comment
+        # in _agent_state for why the total stays withheld until the run is
+        # over.
+        if out.get("on_the_road_to_the_goal_so_far") is not None:
+            L.append("On the road there so far: %s of its nodes"
+                     % _fmt_num(out["on_the_road_to_the_goal_so_far"]))
     elif out.get("goal"):
         L.append("")
         L.append("Goal: %s%s" % (out["goal"],

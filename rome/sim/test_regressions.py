@@ -5130,6 +5130,29 @@ check("a refusal for a started-but-unfinished prerequisite says it has to "
       [ln for ln in _txt_pn.splitlines() if "FINISHED" in ln] or _txt_pn[:200])
 
 
+# --- JOB 3b: a fog-safe sense of progress DURING play, and nothing more
+# until the run ends - the total itself is the size of the tree's own
+# spoiler surface, same reasoning as downstream_count being hidden.
+s_pg = sim()
+s_pg.fog = True
+s_pg.revealed = set()
+s_pg.done.add("arithmetic_positional")
+s_pg._done_changed()
+_stpg = S._agent_dispatch(s_pg, NODES, {"cmd": "state"})
+check("under fog, `state` says how many of the goal's road you already have",
+      isinstance(_stpg.get("on_the_road_to_the_goal_so_far"), int)
+      and _stpg["on_the_road_to_the_goal_so_far"] >= 1,
+      _stpg.get("on_the_road_to_the_goal_so_far"))
+check("...but never the total - final_report gives that, once the run is "
+      "over and there is nothing left to spoil",
+      "the_whole_road_was" not in _stpg, sorted(_stpg.keys()))
+s_pg2 = sim()
+_stpg2 = S._agent_dispatch(s_pg2, NODES, {"cmd": "state"})
+check("with fog off, the fog-safe progress field is absent (path/why "
+      "already answer this exactly, by name)",
+      _stpg2.get("on_the_road_to_the_goal_so_far") is None, _stpg2)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
