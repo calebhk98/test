@@ -5819,6 +5819,39 @@ check("the Norse deep keel now genuinely enables open-ocean navigation",
           for g in NODES["exp_openocean_navigation"]["req_any"]),
       NODES["exp_openocean_navigation"]["req_any"])
 
+# --- FREE AND WEIGHTLESS IS NOT THE SAME AS UNIVERSALLY AVAILABLE. The
+# ambient grant hands a society anything tier 0 that costs nothing and takes
+# nobody's attention, which is right for a craft that society actually has
+# and wrong for one it demonstrably does not. The Mexica were handed the
+# square sail, the spritsail, a mortise-and-tenon Mediterranean hull, large
+# merchant sailing ships and the monsoon route to India, before turn one, in
+# a civilisation whose own menu says every load moves on a human back and
+# whose water transport is the paddled canoe. needs_first already existed to
+# say a thing is impossible here rather than merely dear; both grant paths
+# now consult it.
+_mex = sim(civ="mexica_1500")
+check("the Mexica are not handed other people's seas: no sail, no "
+      "Mediterranean hull, no merchant fleet, no monsoon crossing",
+      not any(k in _mex.granted for k in
+              ("sea_square_sail", "sea_spritsail", "sea_mortise_tenon",
+               "sea_merchant_ships_large", "sea_monsoon_route")),
+      sorted(k for k in _mex.granted if k.startswith("sea_")))
+check("...but they keep what a canoe-going society does have - an anchor, "
+      "a sounding line, coastal pilotage and a steering oar",
+      all(k in _mex.granted for k in
+          ("sea_anchor", "sea_sounding_lines", "sea_coastal_pilotage",
+           "sea_steering_oars")),
+      sorted(k for k in _mex.granted if k.startswith("sea_")))
+check("and the gate is liftable by the node it names, not a permanent "
+      "exclusion - exp_oceangoing_hull does not itself need any of them",
+      not any(k in PLANNER.closure(NODES, "exp_oceangoing_hull") for k in
+              ("sea_square_sail", "sea_spritsail", "sea_mortise_tenon",
+               "sea_merchant_ships_large", "sea_monsoon_route")),
+      sorted(x for x in PLANNER.closure(NODES, "exp_oceangoing_hull")
+             if x.startswith("sea_")))
+check("a seafaring society is untouched by the gate",
+      "sea_square_sail" in sim(civ="norse_900ad").granted, True)
+
 # --- JOB 4: the blind prerequisite audit (BLIND_TREE_phase2.md) found three
 # genuine small gaps and this implements all three, marginal cost verified
 # with closure() rather than trusted from the document (a previous audit

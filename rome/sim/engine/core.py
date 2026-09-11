@@ -920,6 +920,13 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         for k in cand:
             if k in self.done or k in self.active:
                 continue
+            # INSIDE THE LOOP, not in the cached candidate list above, because
+            # needs_first reads self.done and its answer therefore changes as a
+            # run goes on: a society that could not be handed an ocean-going
+            # sail in year one can be handed it the year after it builds the
+            # hull that makes one mean anything.
+            if self.needs_first(k)[0]:
+                continue
             n = self.nodes[k]
             if all(p in self.done for p in n["pre"]):
                 self.done.add(k)

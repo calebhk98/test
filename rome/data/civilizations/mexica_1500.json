@@ -349,6 +349,17 @@
     "tl_stirrup",
     "tl_tandem_harness"
    ]
+  },
+  "seagoing sail": {
+   "node": "exp_oceangoing_hull",
+   "because": "this society has no sail and no seagoing hull. Mesoamerican water transport is the paddled canoe - on the lake, and hugging the coast as far as Xicalango - and there is no mast, no rigging, no keel and no vessel built to be out of sight of land anywhere in it. The square sail, the spritsail, the mortise-and-tenon Mediterranean hull and the monsoon crossing to India are all other people's answers to other people's seas. Build a hull that can take open water first.",
+   "ids": [
+    "sea_merchant_ships_large",
+    "sea_mortise_tenon",
+    "sea_square_sail",
+    "sea_spritsail",
+    "sea_monsoon_route"
+   ]
   }
  },
  "local_words": {
