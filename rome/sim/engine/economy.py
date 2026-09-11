@@ -2066,13 +2066,39 @@ class EconomyMixin:
         """
         market = self._material_market_tonnes(emp_key)
         worst = 1.0
-        for (ek, tag), need in sorted(self._cached_demand_by_tag().items()):
-            if ek != emp_key or need <= 0:
+        # GROUPED BY emp_key, ONCE A TICK, not scanned-and-filtered from the
+        # whole by-tag dict on every one of THIS function's own calls. See
+        # _demand_by_emp_key's comment: this is the same "called once per
+        # material a project buys, once per candidate node, every year"
+        # volume _cached_demand_by_tag() was already added to answer, one
+        # level further in. Only max() is taken below, order-independent,
+        # so - as with _cached_demand_by_tag's own dict - no sort is needed
+        # for the result to be deterministic.
+        for tag, need in self._demand_by_emp_key().get(emp_key, ()):
+            if need <= 0:
                 continue
             supply = max(1e-9, self._own_material_supply(tag) + market)
             share = min(1.5, need / supply)
             worst = max(worst, 1.0 + 0.9 * share * share)
         return worst
+
+    def _demand_by_emp_key(self):
+        """_cached_demand_by_tag(), grouped by emp_key - the grouping
+        material_price_factor() actually wants. Cached the same tick-
+        scoped way _cached_demand_by_tag() itself is (see that method's
+        own comment for why keying on the demand dict's identity is safe
+        invalidation): a new tick produces a new annual_material_demand()
+        result, which invalidates both caches together automatically."""
+        demand = self._cached_material_demand()
+        key = id(demand)
+        cached = getattr(self, "_demand_by_emp_key_cache", None)
+        if cached is not None and cached[0] == key:
+            return cached[1]
+        grouped = {}
+        for (ek, tag), need in self._cached_demand_by_tag().items():
+            grouped.setdefault(ek, []).append((tag, need))
+        self._demand_by_emp_key_cache = (key, grouped)
+        return grouped
 
     def material_market_factor(self, k):
         """A project's price pressure from the materials it buys, weighted
