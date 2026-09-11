@@ -557,9 +557,19 @@ p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                    input="q\n", capture_output=True, text=True, timeout=120, cwd=ROOT)
 check("a bare invocation opens the menu rather than a usage error",
       p.returncode == 0 and "ONE PERSON" in p.stdout, p.stdout[:80] + p.stderr[:80])
+check("the bare menu is a main menu (New game / Load / Options), not "
+      "straight into the civilisation picker",
+      all(w in p.stdout for w in ("New game", "Load a saved game", "Options")),
+      p.stdout[:1500])
 
+# The civilisation list itself lives one door in, behind "New game" - "1"
+# opens it, "b" backs out again without starting anything (so this writes no
+# save file at all) and "q" leaves the main menu.
+p2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                    input="1\nb\nq\n", capture_output=True, text=True, timeout=120,
+                    cwd=ROOT)
 check("the menu offers every civilisation with its lore",
-      all(w in p.stdout for w in ("Later Han", "Trajan", "Viking", "Edward I", "Mexica")),
+      all(w in p2.stdout for w in ("Later Han", "Trajan", "Viking", "Edward I", "Mexica")),
       "missing one of the five")
 
 # `play` was Rome-only and its loop ended at 100+horizon, so any civ that does
@@ -1172,22 +1182,37 @@ check("large numbers in the pretty rendering carry thousands separators",
 # --- 2: the menu ends by starting the game, not by printing a command line
 # and asking permission to run it. It must also honour the mortality choice
 # made in the menu, which `agent` never had a flag for at all before this.
+#
+# The menu is now three doors (New game / Load a saved game / Options), not
+# straight into the civilisation picker - see cli.py's cmd_menu. "1" at the
+# MAIN MENU chooses New game; the civilisation picker, fog, kit, mortality
+# and (new) horizon questions follow in that order.
 _menu_dir = tempfile.mkdtemp()
+# A FRESH CONFIG FILE, EXPLICITLY, so this check of the DEFAULT save
+# location is not at the mercy of a config some earlier check in this same
+# run (or a real person's own ~/.rome-sim-config.json) pointed elsewhere.
+# ROME_SAVE_DIR is deliberately left unset for the same reason.
+_menu_cfg = os.path.join(_menu_dir, "menu_default_cfg.json")
+_menu_env = dict(os.environ, ROME_SIM_CONFIG=_menu_cfg)
+_menu_env.pop("ROME_SAVE_DIR", None)
 # THE MENU NOW DROPS INTO `play`, NOT `agent`. It used to hand a person a JSON
 # prompt, which is the right front end for a script and the wrong one for the
 # human the menu exists to greet; `play` speaks typed words over the same
 # dispatcher. So the commands fed here are typed, and what comes back is the
 # rendered view rather than JSON.
-_menu_input = "1\ny\n\ny\nstate\nquit\n"
+_menu_input = "1\n1\ny\n\ny\n\nstate\nquit\n"
 _pm = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                      input=_menu_input, capture_output=True, text=True, timeout=120,
-                     cwd=_menu_dir)
+                     cwd=_menu_dir, env=_menu_env)
+check("the menu offers a main menu with New game, Load, and Options",
+      all(w in _pm.stdout for w in ("New game", "Load a saved game", "Options")),
+      _pm.stdout[:2000])
 check("the menu says it is starting, not offering a command to run later",
       "Starting now" in _pm.stdout, _pm.stdout[-500:])
 check("the menu names a resumable --session file ending in .json",
       "--session" in _pm.stdout and ".json" in _pm.stdout, _pm.stdout[-500:])
-# Saves live in ~/.rome-saves now, not beside the source: eighty-nine of them
-# had piled up in the repository root and a play tester said so.
+# Saves live in ~/.rome-saves by default, not beside the source: eighty-nine
+# of them had piled up in the repository root and a play tester said so.
 _save_dir = os.path.join(os.path.expanduser("~"), ".rome-saves")
 check("saves are written somewhere of their own, not beside the source",
       os.path.isdir(_save_dir)
@@ -1207,6 +1232,158 @@ check("the menu drops straight into a playable session, no extra prompt",
       _pm.stdout[-300:])
 check("the mortality choice made in the menu reaches the actual game",
       "and ageing" in _pm.stdout, _pm.stdout[-300:])
+if _named and os.path.exists(_named[0]):
+    os.remove(_named[0])
+    _mp = _named[0] + ".meta.json"
+    if os.path.exists(_mp):
+        os.remove(_mp)
+
+# --- PLAYER REQUEST #1: saves in a place that survives. ROME_SAVE_DIR
+# overrides everything, including a config file's own save_dir.
+_redir_dir = tempfile.mkdtemp()
+_redir_cfg_dir = tempfile.mkdtemp()
+_redir_cfg = os.path.join(_redir_cfg_dir, "cfg.json")
+# Config says one place, ROME_SAVE_DIR says another - the environment
+# variable has to win, for the player whose $HOME does not survive between
+# terminal sessions but who CAN export one line into a shell profile that
+# does.
+json.dump({"save_dir": os.path.join(_redir_cfg_dir, "not_this_one")},
+          open(_redir_cfg, "w"))
+_redir_env = dict(os.environ, ROME_SAVE_DIR=_redir_dir, ROME_SIM_CONFIG=_redir_cfg)
+_pr = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                     input="1\n1\ny\n\nn\n\nquit\n", capture_output=True, text=True,
+                     timeout=120, cwd=_redir_dir, env=_redir_env)
+check("ROME_SAVE_DIR redirects the menu's save away from the config file's "
+      "own save_dir, and away from the default",
+      any(f.endswith(".json") for f in os.listdir(_redir_dir)),
+      (_pr.stdout[-400:], os.listdir(_redir_dir)))
+
+# --- the Options menu: a preference set from it is read back on the NEXT
+# invocation, unprompted - the whole point of PLAYER REQUEST #1 being a
+# config file and not just a flag.
+_opt_dir = tempfile.mkdtemp()
+_opt_cfg = os.path.join(_opt_dir, "cfg.json")
+_opt_savedir = os.path.join(_opt_dir, "chosen_saves")
+_opt_env = dict(os.environ, ROME_SIM_CONFIG=_opt_cfg)
+_opt_env.pop("ROME_SAVE_DIR", None)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+               input="3\n1\n%s\nb\nq\n" % _opt_savedir,
+               capture_output=True, text=True, timeout=60, cwd=_opt_dir, env=_opt_env)
+check("a save location chosen from the Options menu is written to a config "
+      "file", os.path.exists(_opt_cfg), _opt_cfg)
+_opt_cfg_read = json.load(open(_opt_cfg)) if os.path.exists(_opt_cfg) else {}
+check("...and it is the directory the player actually typed",
+      _opt_cfg_read.get("save_dir") == _opt_savedir, _opt_cfg_read)
+_pm2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                      input="3\nb\nq\n", capture_output=True, text=True, timeout=60,
+                      cwd=_opt_dir, env=_opt_env)
+check("...and a LATER invocation - no flag, nothing repeated - shows it back "
+      "as the current save location, which is the whole ask: it must stick "
+      "between invocations",
+      _opt_savedir in _pm2.stdout, _pm2.stdout[-800:])
+
+# --- "Load a saved game" lists what is in the save directory well enough to
+# choose by: civilisation, year, how far along, and when it was last written.
+_load_dir = tempfile.mkdtemp()
+_load_cfg = os.path.join(_load_dir, "cfg.json")
+_load_env = dict(os.environ, ROME_SAVE_DIR=_load_dir, ROME_SIM_CONFIG=_load_cfg)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\nn\n\nn\n\nquit\n",
+               capture_output=True, text=True, timeout=120, cwd=_load_dir, env=_load_env)
+_pl_load = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                          input="2\nb\nq\n", capture_output=True, text=True, timeout=60,
+                          cwd=_load_dir, env=_load_env)
+check("Load a saved game lists the civilisation and year of a save on disk",
+      "AD" in _pl_load.stdout and
+      any(c in _pl_load.stdout for c in
+          ("Rome", "Trajan", "Han", "Viking", "Norse", "Edward", "Mexica")),
+      _pl_load.stdout[-1200:])
+check("...and how far along it is (a technology count, since this save has "
+      "fog off and so gets a goal-progress fraction instead)",
+      "toward the transistor" in _pl_load.stdout, _pl_load.stdout[-1200:])
+check("...and roughly when it was last written",
+      "ago" in _pl_load.stdout or "AD" in _pl_load.stdout, _pl_load.stdout[-1200:])
+_pl_resume = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                            input="2\n1\nstate\nquit\n", capture_output=True, text=True,
+                            timeout=120, cwd=_load_dir, env=_load_env)
+check("picking a save from the Load Game list actually resumes it, not a "
+      "fresh game",
+      "Resumed from" in _pl_resume.stdout, _pl_resume.stdout[:600])
+
+# --- fog-on saves do NOT get the goal-progress fraction in the Load Game
+# list: that number gives away the size of the whole tree, which fog exists
+# to keep a player from knowing before they have built their way to it.
+_fogload_dir = tempfile.mkdtemp()
+_fogload_cfg = os.path.join(_fogload_dir, "cfg.json")
+_fogload_env = dict(os.environ, ROME_SAVE_DIR=_fogload_dir, ROME_SIM_CONFIG=_fogload_cfg)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\ny\n\nn\n\nquit\n",
+               capture_output=True, text=True, timeout=120, cwd=_fogload_dir, env=_fogload_env)
+_pl_fogload = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                             input="2\nb\nq\n", capture_output=True, text=True, timeout=60,
+                             cwd=_fogload_dir, env=_fogload_env)
+check("a fogged save's Load Game entry does not leak how big the tree is",
+      "toward the transistor" not in _pl_fogload.stdout
+      and "technologies built" in _pl_fogload.stdout,
+      _pl_fogload.stdout[-1200:])
+
+# --- the in-game 'options' command: horizon changes stick across a plain
+# `play --session` resume (no flag repeated), and mortality can only be
+# turned ON, never off, from there.
+_ig_dir = tempfile.mkdtemp()
+_ig_session = os.path.join(_ig_dir, "ig.json")
+_ig1 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--civ", "rome_100ad", "--session", _ig_session],
+                      input="options\n1\n250\nb\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("the in-game options command changes the horizon",
+      "now ends in 250 AD" in _ig1.stdout, _ig1.stdout[-600:])
+_ig2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session],
+                      input="state\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("...and a later plain `play --session` resume - no --horizon repeated "
+      "- still honours it",
+      "horizon at 250" in _ig2.stdout, _ig2.stdout[-1500:])
+_ig3 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session, "--horizon", "9"],
+                      input="state\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("...while an EXPLICIT --horizon flag still overrides the remembered one",
+      ("horizon at %d" % (100 + 9)) in _ig3.stdout, _ig3.stdout[-1500:])
+
+_ig4 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session],
+                      input="options\n2\ny\nb\nstate\nquit\n", capture_output=True,
+                      text=True, timeout=120, cwd=_ig_dir)
+check("the in-game options command can turn mortality on mid-game",
+      "and ageing" in _ig4.stdout, _ig4.stdout[-1200:])
+_ig5 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session],
+                      input="state\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("...and that survives a resume, the ordinary save mechanism already "
+      "carrying it (life_left/founder_alive/cfg.immortal are all "
+      "SAVE_FIELDS)", "and ageing" in _ig5.stdout, _ig5.stdout[-800:])
+check("the in-game options menu never offers to change civilisation, kit or "
+      "fog - none of those are honest to change mid-game",
+      not any(w in _ig1.stdout for w in
+              ("change the civilisation", "change the kit",
+               "change the starting", "turn fog")),
+      [l for l in _ig1.stdout.splitlines() if "fog" in l.lower()])
+
+# --- moving a save from the in-game options command actually relocates it,
+# meta-sidecar included, and the old file is gone.
+_mv_dir = tempfile.mkdtemp()
+_mv_from = os.path.join(_mv_dir, "from.json")
+_mv_to = os.path.join(_mv_dir, "to.json")
+_mv = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                      "--civ", "rome_100ad", "--session", _mv_from],
+                     input="options\n1\n300\nb\noptions\n3\n%s\nb\nquit\n" % _mv_to,
+                     capture_output=True, text=True, timeout=120, cwd=_mv_dir)
+check("moving a save from the in-game options command relocates the file",
+      os.path.exists(_mv_to) and not os.path.exists(_mv_from),
+      (os.listdir(_mv_dir), _mv.stdout[-400:]))
+check("...and carries its remembered horizon along with it",
+      os.path.exists(_mv_to + ".meta.json"), os.listdir(_mv_dir))
 # --- the user: "I wanted agents to play under the play that we were just
 # making". Everything built since the split went into the JSON protocol only,
 # and `play` still understood six commands of its own. It must now reach the
