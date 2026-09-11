@@ -3006,6 +3006,9 @@ def render_rush(out):
                                             r.get("name")))
     for r in out.get("not_started") or []:
         L.append("  NOT STARTED %s: %s" % (r.get("id"), r.get("why")))
+    if out.get("this_is_an_approximation_not_optimal_play"):
+        L.append("")
+        L.append(_wrap(out["this_is_an_approximation_not_optimal_play"]))
     if out.get("note"):
         L.append("")
         L.append(_wrap(out["note"]))
@@ -4213,6 +4216,21 @@ def _agent_dispatch_inner(s, nodes, cmd):
         return {"ok": True, "started": started, "count_started": len(started),
                 "not_started": not_started,
                 "count_not_started": len(not_started),
+                # THE SAME WARNING `policy` CARRIES, for the same reason. This
+                # is an automatic behaviour and it reads as the game offering to
+                # play your turn well for you. It is not: it begins things in
+                # order of how much rests on them, which is a rule of thumb and
+                # not a plan. A round-12 tester used it on turn one and watched
+                # scandal jump to within a year of the line that ends the run,
+                # with the treasury in debt.
+                "this_is_an_approximation_not_optimal_play": (
+                    "`rush` is a rough rule of thumb, not a plan: it begins "
+                    "things in order of how much rests on them, with no idea "
+                    "what you are building toward. Beginning a great deal at "
+                    "once also makes you conspicuous and spends your credit, so "
+                    "on an early turn it can do real damage. A careful player "
+                    "beats it; it exists to save typing in a late game where "
+                    "you would have begun all of these anyway."),
                 "note": "tried everything you could begin today, "
                         "highest-leverage first, until your credit ran out "
                         "or the list did. 'why <id>' on anything in "
@@ -4765,11 +4783,24 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 # _room_advice exists for exactly this and was written after
                 # the same complaint about the hire refusal.
                 "what_raises_that_room": s._room_advice(),
+                # NOT "NEVER", AND NOT "HOWEVER RICH". This sentence is mine
+                # and it went stale the same day I wrote it. It said the
+                # ceiling could never move, which was true of the old model and
+                # is now false: the ceiling grows with the institutions that
+                # train scholars and carry their keep. The user caught it by
+                # reading the sentence literally, which is the right way to
+                # read a sentence, and noticing it implies no research you do
+                # can ever help. The `hire` refusal had already been corrected
+                # and this screen had not, so the game was saying both things.
                 "and_how_many_of_the_lettered_trades_this_society_supplies": (
-                    "%s: this society's literacy will never let you HIRE more "
-                    "than %.1f of them in total, however rich you are. Printing, "
-                    "paper, schools and academies raise it, and a school or an "
-                    "academy grants scholars outright on top."
+                    "%s: right now your household can hold at most %.1f of them "
+                    "in total, hired and taught together. That is your reach "
+                    "into the labour market, not a fact about how many people "
+                    "here can read. It RISES: a school, an academy and an "
+                    "imperial patron train and pay scholars on their own "
+                    "budget and lift this ceiling with them, which is the large "
+                    "effect; printing, paper and libraries widen literacy "
+                    "itself, which is the smaller one."
                     % (", ".join(sorted(s.LITERATE_TRADES)),
                        s.literate_capacity("scholar"))),
                 "slaves": s.slaves, "freedmen": s.freedmen,

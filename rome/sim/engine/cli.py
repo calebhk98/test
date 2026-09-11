@@ -1,5 +1,5 @@
 """The command line: validate, costs, path, plan, run, compare, play, agent."""
-import collections, json, math, os, random
+import collections, json, math, os, random, time
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
@@ -506,6 +506,14 @@ def cmd_play(a):
             continue
         if cmd is None:
             continue
+        # HOW LONG THAT TOOK. Agents play this game as well as people do, and
+        # an agent has no feel for which commands are slow: it cannot notice
+        # that `step 50` always takes a while the way a person drumming their
+        # fingers does, so it cannot tell you, and a real complaint about speed
+        # goes unreported for rounds. Measured from the command being accepted
+        # to its output being rendered, which is the interval the player
+        # actually waits through.
+        _t0 = time.time()
         try:
             resp = _agent_dispatch(s, nodes, cmd)
         except Exception as e:            # never lose a session to a bug
@@ -523,7 +531,11 @@ def cmd_play(a):
         if session:
             save_state(s, session)
         try:
-            print(render_pretty(cmd.get("cmd"), resp))
+            _text = render_pretty(cmd.get("cmd"), resp)
+            _took = time.time() - _t0
+            # Only when it is worth knowing. A tenth of a second on every line
+            # is noise that would bury the one command that took nine seconds.
+            print(_text + ("\n   (took %.1fs)" % _took if _took >= 0.5 else ""))
             print()
         except BrokenPipeError:
             # Somebody closed the pipe. The game is saved; leave quietly.

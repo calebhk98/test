@@ -56,6 +56,16 @@ _SELF_PLAY_PHRASES = (
     "is simply the highest-leverage",
     "largest single call on your personal hours",
     "must not cut",
+    # AND TELLING YOU WHAT TO DO FIRST, which is the same offence in the
+    # imperative rather than the comparative and so slipped past both the
+    # phrase list and the meta-plus-ranking test. Under fog, what to build
+    # first IS the question being asked of the player. A user reading the
+    # game found these after the ranking claims were already cut; there are
+    # only two in the whole tree, so they are named rather than pattern
+    # matched, because a broad rule for imperatives would eat the recipe
+    # instructions that are the point of the note field.
+    "do this before writing any other recipe down",
+    "build it first, use it to learn",
 )
 _SELF_PLAY_META = re.compile(
     r"\b(the game|this game|the entire game|the tree|this tree)\b", re.I)
