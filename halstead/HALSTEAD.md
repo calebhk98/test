@@ -4896,7 +4896,7 @@ Bex doesn't stop eating. "I did tell him that, and it was true by the time I sai
 
 "I drew it on the back of an exam script in April. You were there."
 
-"And I said it out loud, with somebody writing it down. That's the version he's got now." Bex is already turned to the boy on her other side, giving him the geometry too, unchanged, down to the run finishing in April.
+"And I said it out loud, with somebody writing it down. That's the version he's got now." Bex is already turned to the boy on her other side, giving him the geometry too, unchanged, down to the April drawing.
 
 Chloe has nothing to put next to that. She finishes breakfast at the counter.
 
@@ -7091,7 +7091,7 @@ Hebrew is the second year's, and it goes the way Polish went: a class that moves
 
 Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
-The written section runs four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, the one gap in it, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
+The written section runs four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, the single gap in it, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
 
 The result arrives by mail weeks later, and she reads it as having sat an exam.
 
@@ -7103,7 +7103,7 @@ The paperwork comes first, the electronic questionnaire for national security po
 
 Then he calls, the second week of October, to set a time; she spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, on impulse.
 
-Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee, set on the counter, that he doesn't open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee, set on the counter, left closed until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 Before he asks her anything, he tells her what the visit is for: a full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -7123,7 +7123,7 @@ That's the whole answer, first try, not something softer built to sound reassuri
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
-"It is. My mother thought so too, and it took months to bring her round. She asked everything: what happened if I got sick at night, who was awake, whether she could pull me out on any day, for any reason, and got a straight answer every time. Then the school offered us a house near campus, free as long as I stayed enrolled, and she said no, because giving up our own roof was a way they could make it hard for her to take me back."
+"It is. My mother thought so too, and it took months to bring her round. She asked everything: what happened if I got sick at night, who was awake, whether she could pull me out on any day, for any reason, and got a straight answer every time. Then the school offered us a house near campus, free as long as I stayed enrolled, and she said no. Giving up our own roof was a way to make it hard for her to take me back."
 
 Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next: she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
