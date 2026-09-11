@@ -94,6 +94,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.employees = {}
         # Trades this society does not have and you have taught into existence.
         self.trades_created = set()
+        # WHEN a taught trade was first taught, and which taught trades this
+        # society has since gone on to naturalise on its own - see
+        # SocietyMixin.advance_society (society.py) for what moves these and
+        # why. Separate from trades_created because that set answers "can
+        # this be hired at all", which stays true for ever once taught, while
+        # these two answer "since when" and "does the society now supply its
+        # own", which trades_created alone cannot say.
+        self.trade_introduced_year = {}
+        self.trades_endemic = set()
         self.contract_projects = set()   # projects staffed by the job, not by employees
         self.wages_paid = 0.0
         self.contract_hours = {}         # trade -> hours bought this year, by the job
@@ -865,6 +874,13 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # own clock too, and must run before this year's shocks get a chance
         # to add a fresh deficit - see _demographic_recovery for why.
         self._demographic_recovery(yr)
+        # Literacy and taught-trade naturalisation move on the same kind of
+        # slow, generational clock as population above - see
+        # SocietyMixin.advance_society (society.py) for the mechanism. Run
+        # here, before 4a2's auto_train reads literate_capacity() below, so
+        # a year's schooling gain is visible to this same year's teaching
+        # decisions rather than lagging a full step behind them.
+        self.advance_society(yr)
 
         # 3. dated shocks
         if self.events:

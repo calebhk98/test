@@ -374,6 +374,459 @@ class SocietyMixin:
             self.log.append((self.year, "%s changes the society: %s"
                              % (self.nodes[k]["name"], ", ".join(sorted(changed)))))
 
+    # ---- EDUCATING A WHOLE SOCIETY, NOT JUST A HOUSEHOLD -------------------
+    # "Can we make the whole country's literacy rates improve? What if we
+    # make 5,000 schools and tractors and food production... can I create a
+    # 90%+ literate population?" Before this, literacy_general/literacy_elite
+    # moved only through the fixed, one-off deltas in _TECH_EFFECTS.json,
+    # applied once, the year a technology like printing_press or
+    # school_founded first completes (see apply_tech_effects above). Founding
+    # a hundred schools did nothing that founding one did not: nothing else
+    # in the engine ever read institution_units("school_founded") against
+    # literacy. This section is the missing half - a school or an academy
+    # that is actually OPEN teaches the society a little more every year it
+    # stays open, not only on the day its doors first unlocked - bounded by
+    # the user's own, historically correct caveat: a farming family that
+    # cannot spare a child from the harvest will not send that child to a
+    # classroom however many classrooms you build, so the CEILING literacy
+    # can approach is itself a function of how much of the countryside's
+    # labour has been freed by mechanised agriculture, and only the RATE of
+    # approach to that ceiling is a function of how much schooling is
+    # running.
+    AGRI_MECHANISATION_CATS = frozenset(
+        {"agriculture", "field_machinery", "crops", "soil"})
+
+    def _is_agri_mechanisation(self, k):
+        """Is `k` one of the technologies that lets a farm feed the same
+        number of mouths with fewer hands - the thing that frees a child
+        for a classroom instead of the harvest?
+
+        Reads the tree's own `cat` and `traits`, the same fixed, structural
+        tree data civ_cost_factor already keys off, rather than a second,
+        hand-maintained list that could drift out of step with which nodes
+        the tree actually has. THE TREE ALREADY NAMES THIS: `labour_saving`
+        is a trait, and the first version of this function matched on `food`
+        alone, which is also carried by tea, coffee and sugar imports, jam
+        and cheese making and a dozen other nodes that make farming more
+        PROFITABLE without freeing a single pair of hands from it - 136
+        nodes matched, most of them tier 0-1, so a household could reach
+        full mechanisation before touching anything resembling a reaper.
+        Requiring `labour_saving` as well narrows this to the 40 nodes that
+        are actually about doing the same farm work with fewer people: the
+        chaff cutter and the harrow at the cheap end, the reaper, the
+        threshing machine and tile drainage in the middle, the steam
+        tractor and the combine harvester at the top. tl_tractor is
+        checked by id on its own because the tree files it under the
+        generic `vehicle_types` category with every other wheeled thing
+        rather than with the rest of agriculture, and a tractor is exactly
+        what the user asked for by name.
+        """
+        n = self.nodes.get(k)
+        if not n:
+            return False
+        if k == "tl_tractor":
+            return True
+        if "labour_saving" not in (n.get("traits") or ()):
+            return False
+        return n.get("cat") in self.AGRI_MECHANISATION_CATS or "food" in n["traits"]
+
+    # Reaches full effect at 18 of the 40 matching nodes done (see
+    # _is_agri_mechanisation): a little under half, "substantially
+    # mechanised farming", not "literally every one of them".
+    AGRI_MECHANISATION_SATURATES_AT = 18.0
+
+    def agrarian_slack(self):
+        """0..1: how much of the countryside's labour mechanised farming has
+        freed, which is the hard limit on how many children a family can
+        spare for a school instead of the fields.
+
+        This is the user's own instinct, already half-stated in
+        institution_unit_ceiling's own comment (projects.py) before this
+        function existed: "a lot of rural people without good farming don't
+        really want their kids to go to school, they want them working for
+        food or money." Nothing in this engine keeps a literal tonne of
+        grain, so this counts what the tree actually offers instead - the
+        reaper, the threshing machine, the seed drill, the tractor, better
+        rotations and fertiliser - the same shape military_leverage() already
+        uses for "how much of one branch of the tree have you actually
+        built": a plain count of matching DONE nodes (order cannot change a
+        sum of ones, so this needs no sorted() the way a weighted sum would,
+        see military_leverage's own unsorted count for the same reasoning),
+        square-rooted so the fifth mechanised technique matters far more than
+        the fifteenth, and capped at 1.0 so this can never be a lever on its
+        own - only a MULTIPLIER on what schooling is allowed to do, below.
+
+        CALLED EVERY YEAR SCHOOLING IS RUNNING, not once at completion like
+        apply_tech_effects - _advance_literacy reads the CEILING every year,
+        which reads this. Scanning self.done (up to 2,833 entries, and only
+        ever growing over the course of a long run) for a 40-node match every
+        single year of a 700-year run is the wrong direction: only 40 ids can
+        ever match at all (see _is_agri_mechanisation), fixed the moment the
+        tree loads, so this walks THAT list once, cached forever the same way
+        _is_foreign_institution caches (below) - nothing that changes after
+        construction - and does one `in self.done` set lookup per id, however
+        large self.done has grown.
+        """
+        ids = self.__dict__.get("_agri_mechanisation_ids")
+        if ids is None:
+            ids = self._agri_mechanisation_ids = tuple(
+                sorted(k for k in self.nodes if self._is_agri_mechanisation(k)))
+        n = sum(1 for k in ids if k in self.done)
+        if n <= 0:
+            return 0.0
+        return min(1.0, math.sqrt(n / self.AGRI_MECHANISATION_SATURATES_AT))
+
+    # What a pre-industrial society can reach on schooling and urban/clerical
+    # literacy alone, with farming still entirely by hand: a merchant class,
+    # a priesthood, a bureaucracy and their households, well above Rome's
+    # bare 12% general literacy and well short of a modern figure. Kept
+    # deliberately conservative rather than citing a campaign like Sweden's
+    # that reached near-universal reading through the church rather than
+    # freed farm labour, because this model has no lever for that route and
+    # a number this file cannot actually justify with a mechanism is not one
+    # it should claim.
+    LITERACY_ROOM_WITHOUT_MECHANISATION = 0.35
+
+    def literacy_ceiling_general(self):
+        """The most of the general population schooling could ever make
+        literate here, RIGHT NOW - not a fixed number, because
+        agrarian_slack() moves it as the countryside mechanises.
+
+        This is the answer to "can I create a 90%+ literate population": at
+        the limit, full mechanisation (agrarian_slack() == 1.0) puts the
+        ceiling at 0.35 + 0.55 == 0.90, and it costs exactly what the user's
+        own caveat says it costs - schools AND the agricultural machinery
+        that frees the children who would otherwise be working the harvest.
+        Never above 0.90: a hard 10% of any pre-transistor-era population -
+        the very young, the infirm, the itinerant - is not a schooling
+        question at all.
+        """
+        room = self.LITERACY_ROOM_WITHOUT_MECHANISATION
+        return min(0.90, room + 0.55 * self.agrarian_slack())
+
+    # The propertied and lettered class literacy_elite measures was never
+    # the class tied to the fields, so its ceiling does not read
+    # agrarian_slack() at all: an academy can teach every noble and priest's
+    # child a society has whether or not a single field has been mechanised.
+    # Left short of 1.0 for the same reason literacy_ceiling_general is: some
+    # fraction of any class is never going to be readers.
+    LITERACY_CEILING_ELITE = 0.97
+
+    def literacy_ceiling_elite(self):
+        return self.LITERACY_CEILING_ELITE
+
+    def _schooling_flow(self):
+        """0 if no school is open here at all; otherwise a small positive
+        number that grows, with diminishing returns, in how much school and
+        academy capacity is actually running.
+
+        Square-rooted in institution_units for the same reason every other
+        institution-driven pool in this engine is (see staff_capacity and
+        hired_cap, labour.py, and institution_unit_ceiling, projects.py): a
+        second school teaches nearly as many more people as the first one
+        did; a ninth does not teach nine times as many. This is 0.0, and
+        every function below that reads it does nothing, for the run that
+        never builds a school at all - which is deliberate: literacy in this
+        model is something a society is TAUGHT into, not something that
+        drifts upward for free while nobody is teaching anybody.
+        """
+        if not self.running("school_founded"):
+            return 0.0
+        flow = self.institution_units("school_founded") ** 0.5
+        if self.running("academy_network"):
+            flow += 1.5 * self.institution_units("academy_network") ** 0.5
+        return flow
+
+    # HOW FAST LITERACY CLOSES THE GAP TO ITS CEILING, per unit of
+    # _schooling_flow, per year. At flow 1.0 (a single ordinary school and
+    # nothing more) the general-literacy gap closes with a time constant of
+    # about 1/(0.006*1) ~= 167 years - a run has to want this for the long
+    # haul, across several generations, exactly the caution the brief asked
+    # for. At flow ~7 (several schools and academies both expanded - the
+    # "8.85 units" scale labour.py's own comments record a break tester
+    # actually reaching) the time constant falls to about 24 years, so heavy,
+    # deliberate investment can visibly transform a society within one or two
+    # long lifetimes, which is the other half of what the user asked for:
+    # yes, 90%+ is reachable, and it costs generations of sustained schooling
+    # and mechanisation, not five turns of building schools.
+    LITERACY_GROWTH_RATE_GENERAL = 0.006
+    # Faster than the general rate: the propertied class an academy draws on
+    # is a far smaller pool to reach than "the whole countryside", so the
+    # same institutional effort closes its gap faster. Chosen so Rome's own
+    # 0.90 starting elite literacy, already close to its 0.97 ceiling, moves
+    # only slightly over a run even under heavy investment - this lever is
+    # for the civilisations that start far below it, Norse and Mexica among
+    # them, not a way to squeeze Rome's last few points out faster.
+    LITERACY_GROWTH_RATE_ELITE = 0.010
+
+    def _advance_literacy(self, yr):
+        """Once a year: let running schools and academies close part of the
+        gap between this society's literacy and what it could now reach.
+
+        Logistic-shaped on purpose (the increment shrinks as the gap does,
+        the same shape prominence_hazard's `settles_at` and staff_capacity's
+        `scale` already use for "approaches a limit, never overshoots it"):
+        a society does not leap to its ceiling, and it does not overshoot it
+        and have to fall back either.
+        """
+        flow = self._schooling_flow()
+        if flow <= 0.0:
+            return
+        changed = {}
+        gen = float(self.civ.get("literacy_general", 0.0))
+        gen_ceil = self.literacy_ceiling_general()
+        if gen < gen_ceil - 1e-6:
+            gen_new = min(gen_ceil, gen + self.LITERACY_GROWTH_RATE_GENERAL
+                          * flow * (gen_ceil - gen))
+            if gen_new - gen > 1e-6:
+                self.civ["literacy_general"] = gen_new
+                changed["literacy_general"] = gen_new
+        eli = float(self.civ.get("literacy_elite", 0.0))
+        eli_ceil = self.literacy_ceiling_elite()
+        if eli < eli_ceil - 1e-6:
+            eli_new = min(eli_ceil, eli + self.LITERACY_GROWTH_RATE_ELITE
+                          * flow * (eli_ceil - eli))
+            if eli_new - eli > 1e-6:
+                self.civ["literacy_elite"] = eli_new
+                changed["literacy_elite"] = eli_new
+        if not changed:
+            return
+        # ONCE A GENERATION, NOT ONCE A YEAR. A gain of a few thousandths a
+        # year is real and worth recording, and logging it every single year
+        # for a five-hundred-year run would be the same fault the debasement
+        # and output_factor hazards were already fixed for elsewhere in this
+        # file: a message repeated until it is noise has stopped being a
+        # message. Thrown on a fixed 25-year clock (a generation) rather than
+        # on a rounded-value change, so it fires on the same schedule whether
+        # a run is barely investing or investing heavily.
+        last = getattr(self, "_literacy_said", -999)
+        if yr - last >= 25:
+            self._literacy_said = yr
+            bits = []
+            if "literacy_general" in changed:
+                bits.append("general reading is now %d%% of the population"
+                            % round(changed["literacy_general"] * 100))
+            if "literacy_elite" in changed:
+                bits.append("the lettered and propertied class is now %d%% "
+                            "literate" % round(changed["literacy_elite"] * 100))
+            self.log.append((yr, "a generation of schooling shows in the "
+                             "census: %s" % "; ".join(bits)))
+
+    # ---- A TRADE THE FOUNDER INTRODUCED BECOMES A TRADE THE SOCIETY HAS ----
+    # "If I invent electricity, you can't say that after 100 years I still
+    # can't find anyone who can make or research generators." TRADES_ABSENT
+    # (data.py) names five trades - chemist, electrician, engineer,
+    # machinist, optician - that do not exist here until the founder
+    # personally teaches the first one (train(), labour.py); trade_available()
+    # then reads them as permanently available because self.trades_created
+    # never shrinks. What never followed from that is the society producing
+    # MORE of them on its own: literate_capacity() bounds how many the
+    # founder can hire or teach, and until now nothing but the founder's own
+    # director-hours and money ever moved a trade's headcount toward that
+    # bound. This is the missing mechanism - once a taught trade has been
+    # established long enough, WITH schools actually running, the society
+    # naturalises it: it starts producing its own people in that trade, on
+    # its own, the same way it always produced its own smiths, bounded by
+    # the exact same literate_capacity() wall a founder training them by hand
+    # would have been bounded by.
+    #
+    # No schooling running at all means this never fires, by design: the
+    # user's framing is "an EDUCATED society eventually produces its own
+    # electricians", not "any society, given centuries, does" - a founder who
+    # never builds a school keeps a trade as their own personal secret for
+    # as long as the run lasts, which is the honest answer to "after 100
+    # years I'm still the only one" when nothing was ever done to change it.
+    TRADE_ABSORPTION_BASE_YEARS = 110.0
+    # Never faster than one working lifetime, however much is invested: a
+    # trade the founder taught last year cannot be "something this society
+    # has always had" by definition, whatever the schooling budget is.
+    TRADE_ABSORPTION_MIN_YEARS = 35.0
+
+    def _trade_absorption_years(self, flow):
+        return max(self.TRADE_ABSORPTION_MIN_YEARS,
+                   self.TRADE_ABSORPTION_BASE_YEARS / (1.0 + flow) ** 0.5)
+
+    # Once endemic, the fraction of the remaining gap to literate_capacity()
+    # closed each year. A time constant of 1/0.05 == 20 years on top of the
+    # 35-110 years it already took to BECOME endemic - so the total span from
+    # "the founder teaches the first one" to "the society is producing them
+    # near its own natural ceiling" is on the order of a century, generations
+    # either way you slice it, which is the pace the brief asked this whole
+    # mechanism to run at.
+    TRADE_DIFFUSION_APPROACH_RATE = 0.05
+
+    def _advance_trade_absorption(self, yr):
+        for t in sorted(TRADES_ABSENT):
+            if t not in self.trades_created:
+                continue          # never taught here; nothing to naturalise
+            intro = self.trade_introduced_year.get(t)
+            if intro is None:
+                # First year this function has ever seen the trade in
+                # trades_created. Recorded now rather than back-dated,
+                # because train() (labour.py) does not itself timestamp the
+                # set it adds to, and "the year this file first noticed" is
+                # at worst one step later than the true year, which cannot
+                # matter against a minimum absorption time measured in
+                # decades.
+                self.trade_introduced_year[t] = yr
+                continue
+            if t in self.trades_endemic:
+                self._grow_endemic_trade(t)
+                continue
+            flow = self._schooling_flow()
+            if flow <= 0.0:
+                continue
+            if yr - intro >= self._trade_absorption_years(flow):
+                self.trades_endemic.add(t)
+                # IN-WORLD, NOT A CHANGE-LOG. This narrates a census fact -
+                # the trade is no longer one household's secret - the same
+                # way every other log line in this file narrates an event
+                # the founder would actually observe, never a note about the
+                # code that produced it.
+                self.log.append((yr, "%s is no longer only your trade: "
+                                 "enough schooling has passed through enough "
+                                 "hands that this society simply has its own "
+                                 "%ss now, the way it always had smiths"
+                                 % (t, t)))
+
+    def _grow_endemic_trade(self, t):
+        """Let a naturalised trade's own headcount drift toward the same
+        ceiling literate_capacity() already enforces on a founder hiring or
+        teaching it by hand - so this never hands out a person the rest of
+        the engine would have refused the player.
+
+        Continuous, not whole-person rounded: `state`'s own
+        "staff_are_fractional_because" text already explains to the player
+        that headcount here is a full-time-equivalent that phases in
+        smoothly rather than a literal integer count of named people (see
+        protocol.py), so this is consistent with a number the player already
+        sees fluctuate this way from hiring, training and attrition alike.
+        """
+        ceiling = self.literate_capacity(t)
+        if not (ceiling < float("inf")):
+            return
+        have = self.employees.get(t, 0.0)
+        room = ceiling - have
+        if room <= 1e-6:
+            return
+        self.employees[t] = have + room * self.TRADE_DIFFUSION_APPROACH_RATE
+        self._resync_pools()
+
+    def advance_society(self, yr):
+        """Once a year: everything in this file that moves on the society's
+        own slow clock rather than on a project's. Called from step() right
+        alongside _demographic_recovery(), which is the same kind of thing -
+        a population figure that ramps in over generations - for population
+        instead of literacy and trades.
+        """
+        self._advance_literacy(yr)
+        self._advance_trade_absorption(yr)
+
+    # ---- WHAT YOU BUILT DOES NOT STAY YOURS ---------------------------------
+    # "To make it even more interesting, you could make it so others try to
+    # figure your stuff out, to sell it themselves... over a generation or
+    # two." economy_index() (economy.py) already spends the idea that
+    # diffused technology enriches the whole empire - it raises the WHOLE
+    # economy the instant a tier-2+ node is DONE, with no delay and no
+    # distinction between a technique you have never opened for business and
+    # one you have been visibly selling from for a century. That is the
+    # empire-wide half of the story, and it is not this file's to touch
+    # (economy.py is another agent's). What is missing, and IS this file's
+    # job, is the other half: a NUMBER, per venture, for how much of the one
+    # thing YOU personally run has leaked to imitators - not a price, which
+    # is the competing agent's own territory (see goods_market_factor,
+    # economy.py, already doing exactly that job, by AGE, for four goods
+    # categories) - a fraction of the original edge that is gone, that a
+    # price formula can spend however it spends a competitive market. This
+    # is deliberately NOT wired into revenue() here: that function belongs to
+    # the agent making the goods market competitive at the same time this was
+    # written, and two agents independently pricing the same venture is
+    # exactly the tangle the brief asked this to avoid. See diffusion_share's
+    # own docstring for exactly how a price formula should read it.
+    #
+    # Years for HALF of a visibly-run venture's original edge to have leaked
+    # to competitors who watched you run it, absent any effect of publishing
+    # or literacy. Pitched at the low end of "a generation or two" (a
+    # generation is conventionally 25-30 years) because the ventures this
+    # applies to are ones you are OPERATING for revenue in public, which is
+    # the most visible thing a person in this model can be doing - the
+    # opposite case, a technique you worked out and never opened for
+    # business, is exactly what `k not in self.operating` below returns zero
+    # for, because nobody has anything to watch.
+    VENTURE_DIFFUSION_HALF_LIFE_YEARS = 40.0
+    # HOWEVER LONG YOU HAVE BEEN VISIBLE, some of a first-mover's edge never
+    # leaves: your own customers, your own reputation for the thing, your own
+    # head start on the next improvement. Capped, the same way protection,
+    # familiarity and every other saturating share in this file are capped,
+    # so this can never be read as "and eventually it reaches 1.0", a claim
+    # this model has no basis for making.
+    VENTURE_DIFFUSION_CAP = 0.65
+
+    def diffusion_share(self, k):
+        """0..VENTURE_DIFFUSION_CAP: how much of what running venture `k`
+        earns has already leaked to competitors who watched you run it and
+        went into the same business themselves.
+
+        Zero for anything not currently operating (running()/is_venture,
+        projects.py) - a technique sitting in `done` with the doors shut is
+        not a thing anybody has watched you run - and zero for anything with
+        no revenue, since there is no market in it to compete for. Two
+        things move it FASTER than the bare passage of time: a corpus that is
+        written down and dispersed is knowledge a rival can read rather than
+        having to reverse-engineer from watching your workshop (reusing
+        corpus_written/corpus_dispersed - the model's own existing idea of
+        how published knowledge spreads, rather than inventing a second one
+        - see the brief's own pointer to it); and a more literate society has
+        more people able to read it and go into business against you, the
+        same literacy_general this file already reads everywhere else a
+        society's own capacity is the question.
+
+        FOR THE MARKET AGENT: a revenue formula that wants to spend this
+        number honestly should reduce what THIS venture earns by up to this
+        share while economy_index() (or its successor) is credited with the
+        matching gain to the wider economy - `diffused` there already grows
+        with self.done regardless of this function, so the two are additive,
+        not double-counting the same escape.
+        """
+        if k not in self.operating:
+            return 0.0
+        n = self.nodes.get(k)
+        if not n or n.get("rev", 0) <= 0:
+            return 0.0
+        started = self.opened_year.get(k, self.done_year.get(k, self.year))
+        age = max(0.0, self.year - started)
+        pace = 1.0
+        if self.running("corpus_dispersed"):
+            pace = 1.7
+        elif self.running("corpus_written"):
+            pace = 1.3
+        gen_lit = float(self.civ.get("literacy_general", 0.12))
+        pace *= 0.7 + 0.3 * min(2.0, gen_lit / max(0.02, self.LITERACY_REFERENCE_GENERAL))
+        half_life = self.VENTURE_DIFFUSION_HALF_LIFE_YEARS / max(0.4, pace)
+        share = 1.0 - 0.5 ** (age / half_life)
+        return min(self.VENTURE_DIFFUSION_CAP, max(0.0, share))
+
+    def diffusion_index(self):
+        """One number for the whole household: the revenue-weighted average
+        of diffusion_share() across everything currently operated for a
+        living. 0.0 if nothing is operating, or everything operating is
+        brand new. Revenue-weighted rather than a plain average because a
+        household running one huge ironworks and one brand-new stall should
+        read as "mostly caught up with", not as "half caught up with" -
+        exactly the same reasoning revenue() itself already weights by each
+        node's own `rev` figure.
+        """
+        ops = sorted(k for k in self.operating
+                     if self.nodes.get(k, {}).get("rev", 0) > 0)
+        if not ops:
+            return 0.0
+        tot_w = tot = 0.0
+        for k in ops:
+            w = self.nodes[k]["rev"]
+            tot_w += w
+            tot += w * self.diffusion_share(k)
+        return tot / tot_w if tot_w > 0 else 0.0
+
     # FOG OF WAR. Without it the player sees the entire tree from the first
     # minute, including exactly what a transistor needs, which is both a spoiler
     # and a lie about what knowing something feels like. With fog on you see
