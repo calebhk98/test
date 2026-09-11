@@ -6,7 +6,7 @@ as physically possible.**
 
 The transistor is the *marker* the simulator aims at, because it is the deepest
 single point in the tree and a great deal is upstream of it. It is not the
-subject. The subject is all 3,001 technologies, and the ones that matter most to
+subject. The subject is all 2,833 technologies, and the ones that matter most to
 the people who would actually live there are chimneys, water traps, soap, lamps
 and clean water.
 
@@ -19,7 +19,7 @@ which is the module that decides whether any of the rest happens.
 
 ## Scale
 
-**3,001 technologies, 4,720 dependency edges**, across forty domains from
+**2,833 technologies, 4,745 dependency edges**, across forty domains from
 spinning wheels to jet engines to public key cryptography. Every node is costed
 in the founder's own hours, hired labour by trade, materials, capital, calendar
 floor, failure risk, and how a given society reacts to it.
@@ -40,7 +40,7 @@ Three layers, because the point is to show WHY things are hard:
   real alternative exists, because a steam engine does not require coal and does
   not require steel. It requires a fuel and a pressure vessel.
 
-**The transistor needs 166 of them.** The other 2,835 are the rest of
+**The transistor needs 158 of them.** The other 2,675 are the rest of
 technology, and that is deliberate: a tree that only covers the path to a
 transistor is dishonest about what technology is for.
 
@@ -50,8 +50,8 @@ Figures below are from the current tree. Where a run count is small the noise
 band is roughly plus or minus 25 years, and I say so rather than quoting three
 significant figures at you.
 
-- The irreducible serial calendar time to a working transistor is **134 years**
-  across 23 nodes, even with unlimited money, labour and life. That is the floor
+- The irreducible serial calendar time to a working transistor is **142 years**
+  across 33 nodes, even with unlimited money, labour and life. That is the floor
   and nothing buys it down.
 - With the founder immortal, which is the default, the median run reaches it
   around **427 AD**, roughly **330 years** after arrival, in 100% of runs.
@@ -116,7 +116,7 @@ python3 rome/sim/treetool.py judge --id zinc_metal
 
 gives a report card: grade, tier, direct prerequisites, full ancestry depth,
 which capability rungs appear in its chain, cost, calendar floor, and every
-defect by name. Across all 3,001 nodes the mean is **96.8/100**.
+defect by name. Across all 2,833 nodes the mean is **97.0/100**.
 
 **Discount that number, and here is precisely why.** Three separate times in
 this project the score rose because a CHECK was wrong, not because the data
@@ -147,25 +147,30 @@ done by a separate reviewer against a random sample.
 
 Stated plainly, because a list of achievements without this is marketing.
 
-- Every node now resolves to a specific how-to entry: 2,897 of 3,001 linked to
-  an anchor rather than to a bare domain module, 104 correctly unlinked because
-  they are capability rungs or raw materials, 0 broken and 0 undocumented. That
-  was the single largest outstanding complaint and it is closed.
-- **213 nodes still declare no capability rung anywhere in their ancestry.**
+- Every node now resolves to a specific how-to entry: 2,742 of 2,833 linked to
+  an anchor rather than to a bare domain module, 88 correctly unlinked because
+  they are capability rungs or raw materials, and 3 (`com_led` and two household
+  appliances) simply not linked yet. That was the single largest outstanding
+  complaint and it is closed for all but those three.
+- **192 nodes still declare no capability rung anywhere in their ancestry.**
   Some of those are correct, because an idea needs no furnace. Not all of them,
   and I would rather leave them flagged than infer edges from keywords again.
-- **148 nodes are SHALLOW**, meaning their prerequisite chain is thinner than
+- **122 nodes are SHALLOW**, meaning their prerequisite chain is thinner than
   the technology really is.
-- **Substitution reaches about 10% of nodes.** The mechanism is right and the
+- **Substitution reaches about 12% of nodes.** The mechanism is right and the
   coverage is thin.
-- **166 is the closure of a POINT CONTACT transistor**, which needs no
-  photolithography and no zone-refined silicon. A reviewer expecting 500 is
-  arguing about the goal, not the graph, and that is a fair argument to have.
-- **Civilization differentiation is still thin.** Five civilizations are
-  modelled. The Mexica having no draught animals and no wheel is not yet
-  modelled as a negative capability, and the social nodes are still named for
-  Roman institutions (patron_senatorial, collegium_licensed), which is a real
-  limit on how generic the abstraction actually is.
+- **158 is the closure of a JUNCTION transistor**, the 1951 device, which needs
+  a grown single crystal and zone-refined germanium, not just a whisker on a
+  point contact. The 1947 point-contact transistor is still in the tree, as a
+  milestone on the way to the 1951 one, which is now the goal.
+- **Civilization differentiation is still thin, though less thin than it was.**
+  Five civilizations are modelled, and the Mexica having no draught animals and
+  no wheel now IS modelled as a negative capability (`animal_traction: 3.0`,
+  `field_machinery: 2.4` in their `cost_multipliers`, and a `needs_first` gate
+  that blocks the horse collar outright until animals are imported). What is
+  still thin is that the social nodes are named for Roman institutions
+  (patron_senatorial, collegium_licensed) across every civilization, which is a
+  real limit on how generic the abstraction actually is.
 - The cost model is the weak part throughout. See "How much to trust it".
 
 ## What is here
@@ -176,10 +181,10 @@ Stated plainly, because a list of achievements without this is marketing.
 | [`rome/01_WORLD_STATE_100AD.md`](rome/01_WORLD_STATE_100AD.md) | What Rome has, what it lacks, where every material comes from, what everything costs. |
 | [`rome/02_STRATEGY.md`](rome/02_STRATEGY.md) | The master plan and the simulator evidence that it beats the alternatives. |
 | [`rome/knowledge/03_SOCIAL_POLITICS.md`](rome/knowledge/03_SOCIAL_POLITICS.md) | **The ten nodes without which every run fails.** Patronage, citizenship, the school, the licence, and why money protects you only once it is converted into obligation. |
-| [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** 28 modules of real recipes with masses, temperatures and failure modes, plus a generated index linking 2,897 tree nodes to the specific entry that documents them. |
+| [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** 28 modules of real recipes with masses, temperatures and failure modes, plus a generated index linking 2,742 tree nodes to the specific entry that documents them. |
 | [`rome/knowledge/00_NONOBVIOUS_TRICKS.md`](rome/knowledge/00_NONOBVIOUS_TRICKS.md) | **Start here in the library.** The specific physical tricks that make everything else buildable. |
 | [`rome/knowledge/95_expeditions.md`](rome/knowledge/95_expeditions.md) | Why nothing is unobtainable, and what going to get it actually costs. |
-| [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | **3,001 nodes, 4,720 edges**, fully costed in hours, denarii, materials, risk and social consequence. |
+| [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | **2,833 nodes, 4,745 edges**, fully costed in hours, denarii, materials, risk and social consequence. |
 | [`rome/data/civilizations/`](rome/data/civilizations/) | Rome, Han China, Norse Scandinavia, the Mexica, and medieval England, as data. Swap one in with `--civ`. |
 | [`rome/data/world/geography.json`](rome/data/world/geography.json) | 21 regions, reach levels, and where 33 distant materials actually are. |
 | [`rome/data/world/resources.json`](rome/data/world/resources.json) | Annual output ceilings and the physical conversion ratios: charcoal per hectare, charcoal per kg of iron, saltpetre per square metre of nitre bed. |
@@ -202,7 +207,7 @@ python3 rome/sim/simulator.py compare --mc 200                # topological vs i
 python3 rome/sim/simulator.py sensitivity --mc 300            # what is each choice worth
 python3 rome/sim/simulator.py sweep capital                   # how much gold should you bring
 python3 rome/sim/simulator.py run --mortal                    # turn death back on
-python3 rome/sim/treetool.py  judge                           # score all 3,001 nodes
+python3 rome/sim/treetool.py  judge                           # score all 2,833 nodes
 python3 rome/sim/treetool.py  judge --id zinc_metal           # one report card
 python3 rome/sim/treetool.py  merge                           # branches -> tree
 python3 rome/sim/simulator.py play                            # play it year by year

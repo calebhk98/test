@@ -22,7 +22,7 @@ in this directory, read that one.
 |---|---|---:|---:|
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 11 | 0 |
 | [`03_SOCIAL_POLITICS.md`](03_SOCIAL_POLITICS.md) |  | 10 | 0 |
-| [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 180 |
+| [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 182 |
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 190 |
 | [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 168 |
 | [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 223 |
@@ -31,13 +31,13 @@ in this directory, read that one.
 | [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 71 |
 | [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 152 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 58 |
-| [`76_farming_food_deep.md`](76_farming_food_deep.md) |  | 115 | 111 |
+| [`76_farming_food_deep.md`](76_farming_food_deep.md) |  | 115 | 112 |
 | [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 57 |
 | [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 189 |
-| [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 190 |
-| [`87_construction.md`](87_construction.md) |  | 101 | 93 |
+| [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 192 |
+| [`87_construction.md`](87_construction.md) |  | 101 | 94 |
 | [`88_media_signals.md`](88_media_signals.md) |  | 100 | 80 |
-| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 214 | 183 |
+| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 214 | 184 |
 | [`90_textiles.md`](90_textiles.md) |  | 20 | 198 |
 | [`91_household.md`](91_household.md) |  | 27 | 67 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
@@ -90,6 +90,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `drawplate_wire` | 1 | 180.0 | [`wire_drawing`](10_metallurgy.md#wire_drawing---the-drawplate) |
 | `lead_metallurgy` | 1 | 200.0 | [`lead_silver_cupellation`](10_metallurgy.md#lead_silver_cupellation---refining-silver-from-lead-ore-cupellatio) |
 | `met_annealing_recrystallization` | 1 | 100.0 | _(module has no anchor)_ |
+| `met_bloomery_bog_iron` | 1 | 100.0 | [`bloomery_iron`](10_metallurgy.md#bloomery_iron) **BROKEN** |
 | `met_drop_hammer` | 1 | 280.0 | _(module has no anchor)_ |
 | `met_green_sand_mold` | 1 | 80.0 | _(module has no anchor)_ |
 | `met_jigging_gravity` | 1 | 80.0 | _(module has no anchor)_ |
@@ -200,6 +201,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mt2_tensile_test` | 3 | 240.0 | _(module has no anchor)_ |
 | `mt2_work_hardening` | 3 | 130.0 | _(module has no anchor)_ |
 | `mt2_zinc_by_retort` | 3 | 150.0 | _(module has no anchor)_ |
+| `phosphor_bronze_alloy` | 3 | 40.0 | [`phosphor_bronze_alloy`](10_metallurgy.md#phosphor_bronze_alloy) **BROKEN** |
 | `mat_bulk_steel` | 4 | 900.0 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
 | `mt2_alumina_ceramic` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_carborundum_ceramic` | 4 | 220.0 | _(module has no anchor)_ |
@@ -1407,17 +1409,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_bordeaux_mixture` | 1 | 80.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
 | `ag2_botanic_garden` | 1 | 110.0 | [`ag2_botanic_garden`](76_farming_food_deep.md#ag2_botanic_garden-ag2_wardian_case-ag2_plant_quarantine---moving-living-plants-across-oceans) |
 | `ag2_canning` | 1 | 100.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
-| `ag2_centrifugal_sugar` | 1 | 95.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
-| `ag2_coffee_voyage` | 1 | 90.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
 | `ag2_cold_store` | 1 | 110.0 | [`ag2_refrigeration_ice`](76_farming_food_deep.md#ag2_refrigeration_ice-ag2_refrigerated_ship-ag2_cold_store---the-cold-chain) |
 | `ag2_column_still` | 1 | 120.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
 | `ag2_condensed_milk` | 1 | 100.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
 | `ag2_contour_ploughing` | 1 | 70.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
 | `ag2_controlled_pollination` | 1 | 150.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
 | `ag2_cream_separator` | 1 | 100.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
-| `ag2_crown_cork` | 1 | 90.0 | [`ag2_bottling`](76_farming_food_deep.md#ag2_bottling-ag2_crown_cork---sealing-liquids-for-storage-and-transport) |
 | `ag2_cultivator` | 1 | 70.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
-| `ag2_double_seam_can` | 1 | 100.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
 | `ag2_erosion_control` | 1 | 60.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
 | `ag2_evaporated_milk` | 1 | 95.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
 | `ag2_fanning_mill` | 1 | 110.0 | [`ag2_winnower`](76_farming_food_deep.md#ag2_winnower-ag2_fanning_mill-ag2_chaff_cutter-ag2_baler---cleaning-sizing-and-packing-bulk) |
@@ -1428,7 +1426,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_herd_book` | 1 | 100.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
 | `ag2_horse_hoe` | 1 | 120.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
 | `ag2_lime_sulphur` | 1 | 90.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
-| `ag2_maize_newworld` | 1 | 65.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
 | `ag2_mower` | 1 | 95.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
 | `ag2_nitrite_curing` | 1 | 100.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
 | `ag2_nitrogen_cycle` | 1 | 120.0 | [`ag2_rhizobia`](76_farming_food_deep.md#ag2_rhizobia---legume-root-nodules-and-the-nitrogen-cycle-attributed) |
@@ -1436,7 +1433,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_pasteurisation` | 1 | 180.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
 | `ag2_plant_quarantine` | 1 | 90.0 | [`ag2_botanic_garden`](76_farming_food_deep.md#ag2_botanic_garden-ag2_wardian_case-ag2_plant_quarantine---moving-living-plants-across-oceans) |
 | `ag2_potato_lifter` | 1 | 65.0 | [`ag2_ridging_plough`](76_farming_food_deep.md#ag2_ridging_plough-ag2_root_cutter-ag2_potato_lifter---handling-root-crops) |
-| `ag2_potato_newworld` | 1 | 70.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
 | `ag2_progeny_testing` | 1 | 110.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
 | `ag2_pure_line_selection` | 1 | 110.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
 | `ag2_purifier` | 1 | 100.0 | [`ag2_roller_mill`](76_farming_food_deep.md#ag2_roller_mill-ag2_purifier-ag2_white_flour_loss---milling-wheat-and-the-cost-it-hides) |
@@ -1452,7 +1448,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_sprayer` | 1 | 95.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
 | `ag2_subsoiler` | 1 | 55.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
 | `ag2_sugar_refining` | 1 | 110.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
-| `ag2_sugar_voyage` | 1 | 80.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
 | `ag2_tedder` | 1 | 65.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
 | `ag2_threshing_machine` | 1 | 250.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
 | `ag2_tile_drainage` | 1 | 80.0 | [`ag2_tile_drainage`](76_farming_food_deep.md#ag2_tile_drainage-ag2_gravity_irrigation---moving-water-off-and-onto-fields) |
@@ -1467,13 +1462,19 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_basic_slag` | 2 | 50.0 | [`ag2_guano`](76_farming_food_deep.md#ag2_guano-ag2_bone_meal-ag2_basic_slag---imported-and-recycled-phosphate) |
 | `ag2_battery_poultry` | 2 | 110.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
 | `ag2_biological_control` | 2 | 110.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
+| `ag2_centrifugal_sugar` | 2 | 95.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
+| `ag2_coffee_voyage` | 2 | 90.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
+| `ag2_crown_cork` | 2 | 90.0 | [`ag2_bottling`](76_farming_food_deep.md#ag2_bottling-ag2_crown_cork---sealing-liquids-for-storage-and-transport) |
+| `ag2_double_seam_can` | 2 | 100.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
 | `ag2_fat_hydrogenation` | 2 | 120.0 | [`ag2_oil_pressing`](76_farming_food_deep.md#ag2_oil_pressing-ag2_fat_hydrogenation---extracting-and-modifying-fats) |
 | `ag2_food_laboratory` | 2 | 120.0 | [`ag2_adulteration_law`](76_farming_food_deep.md#ag2_adulteration_law-ag2_food_laboratory---regulation-and-the-means-to-enforce-it) |
 | `ag2_gasworks_ammonia` | 2 | 80.0 | [`ag2_gasworks_ammonia`](76_farming_food_deep.md#ag2_gasworks_ammonia-ag2_urea---synthetic-nitrogen) |
 | `ag2_hybrid_maize` | 2 | 150.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
 | `ag2_hybridisation` | 2 | 120.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
 | `ag2_lead_arsenate` | 2 | 100.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_maize_newworld` | 2 | 65.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
 | `ag2_milking_machine` | 2 | 130.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
+| `ag2_potato_newworld` | 2 | 70.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
 | `ag2_power_take_off` | 2 | 100.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
 | `ag2_reaper_binder` | 2 | 180.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
 | `ag2_refrigerated_ship` | 2 | 140.0 | [`ag2_refrigeration_ice`](76_farming_food_deep.md#ag2_refrigeration_ice-ag2_refrigerated_ship-ag2_cold_store---the-cold-chain) |
@@ -1481,6 +1482,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_rhizobia` | 2 | 150.0 | [`ag2_rhizobia`](76_farming_food_deep.md#ag2_rhizobia---legume-root-nodules-and-the-nitrogen-cycle-attributed) |
 | `ag2_seed_certification` | 2 | 100.0 | [`ag2_seed_certification`](76_farming_food_deep.md#ag2_seed_certification-ag2_seed_trade---guaranteeing-what-is-in-the-sack) |
 | `ag2_soil_testing` | 2 | 100.0 | [`ag2_liming`](76_farming_food_deep.md#ag2_liming-ag2_marling-ag2_soil_testing---reading-and-fixing-soil-chemistry) |
+| `ag2_sugar_voyage` | 2 | 80.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
 | `ag2_tea_voyage` | 2 | 120.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
 | `ag2_three_point_linkage` | 2 | 90.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
 | `ag2_tractor_steam` | 2 | 160.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
@@ -1488,6 +1490,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_combine_harvester` | 3 | 400.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
 | `ag2_ddt` | 3 | 140.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
 | `ag2_urea` | 3 | 60.0 | [`ag2_gasworks_ammonia`](76_farming_food_deep.md#ag2_gasworks_ammonia-ag2_urea---synthetic-nitrogen) |
+| `fud_chinampa` | 4 | 120.0 | [`ag2_terracing`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
 
 ### 80_information_printing.md
 
@@ -1559,19 +1562,19 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `air_compass_magnetic` | 0 | 30.0 | _(module has no anchor)_ |
 | `air_kite_basic` | 0 | 20.0 | _(module has no anchor)_ |
 | `civ_amphitheatre` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_aqueduct_roman` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_arch_roman` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_brick_tile` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_chorobates` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_aqueduct_roman` | 0 | 300.0 | _(module has no anchor)_ |
+| `civ_arch_roman` | 0 | 60.0 | _(module has no anchor)_ |
+| `civ_brick_tile` | 0 | 40.0 | _(module has no anchor)_ |
+| `civ_chorobates` | 0 | 25.0 | _(module has no anchor)_ |
 | `civ_cofferdam` | 0 | 60.0 | _(module has no anchor)_ |
-| `civ_dome_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_dome_roman` | 0 | 250.0 | _(module has no anchor)_ |
 | `civ_glass_windows` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_insula` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_insula` | 0 | 200.0 | _(module has no anchor)_ |
 | `civ_iron_wrought` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_marble_facing` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_road_paved` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_sewer_roman` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_surveying_groma` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_road_paved` | 0 | 150.0 | _(module has no anchor)_ |
+| `civ_sewer_roman` | 0 | 220.0 | _(module has no anchor)_ |
+| `civ_surveying_groma` | 0 | 20.0 | _(module has no anchor)_ |
 | `civ_vault_barrel` | 0 | 0.0 | _(module has no anchor)_ |
 | `cn_crane_treadwheel` | 0 | 55.0 | _(module has no anchor)_ |
 | `lnd_axle_pivot_front` | 0 | 0.0 | _(module has no anchor)_ |
@@ -1761,6 +1764,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tr_square_rig` | 0 | 40.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
 | `tr_staysail` | 0 | 40.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
 | `tr_wooden_waggonway` | 0 | 40.0 | [`tr_sleeper_ballast`](86_transport_deep.md#tr_sleeper_ballast---sleeper-ballast-and-track-gauge) |
+| `sea_clinker_hull` | 1 | 150.0 | [`tr_clinker_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `sea_keel_deep` | 1 | 100.0 | [`tr_frame_first_construction`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
 | `tl_air_filter` | 1 | 60.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
 | `tl_anti_siphon_valve` | 1 | 50.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
 | `tl_brake_shoe` | 1 | 70.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
@@ -1959,6 +1964,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_timber_truss` | 0 | 45.0 | [`cn_king_post`](87_construction.md#cn_king_post---king-post-roof-truss) |
 | `cn_true_arch` | 0 | 35.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
 | `mat_pozzolana` | 0 | 50.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
+| `civ_monumental_stone` | 1 | 150.0 | [`cn_quarry_wedge`](87_construction.md#cn_quarry_wedge) **BROKEN** |
 | `cn_artificial_stone` | 1 | 70.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_caisson` | 1 | 150.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
 | `cn_cavity_wall` | 1 | 75.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
@@ -2127,9 +2133,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `fin_collegium` | 0 | 0.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_collegium` | 0 | 120.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
 | `fin_government` | 0 | 0.0 | [`fin_government`](89_remaining_arts.md#fin_government---standing-bureaucracy-post-office-civil-service-exam) |
-| `fin_societas` | 0 | 0.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_societas` | 0 | 40.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
 | `prn_library_archive` | 0 | 0.0 | [`prn_library_archive`](89_remaining_arts.md#prn_library_archive---library-archive-cataloguing-indexing-copyright-economics) |
 | `fin_guild` | 1 | 100.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
 | `fin_standard_weights` | 1 | 150.0 | [`fin_standard_weights`](89_remaining_arts.md#fin_standard_weights---standard-weights-assay-office-customs-house) |
@@ -2233,7 +2239,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_tool_room` | 2 | 140.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
 | `mil_ammunition_standardisation` | 2 | 80.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
 | `mil_arsenal_manufacturing` | 2 | 110.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
-| `mil_conscription_reserve` | 2 | 60.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
 | `mil_general_staff` | 2 | 100.0 | [`mil_general_staff`](89_remaining_arts.md#mil_general_staff---professional-military-planning-general-staff-and-war-college) |
 | `mil_logistics_discipline` | 2 | 90.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
 | `mil_railway_mobilisation` | 2 | 100.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
@@ -2287,6 +2292,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_dimensioning` | 3 | 160.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
 | `mfg_quality_dept` | 3 | 160.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
 | `mfg_work_study` | 3 | 200.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
+| `mil_conscription_reserve` | 3 | 60.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
 | `mil_cryptanalysis` | 3 | 110.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
 | `mil_signals_intelligence` | 3 | 80.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
 | `sc2_physics_nuclear_fission` | 3 | 140.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
@@ -2304,6 +2310,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mat_newworld_crops` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
 | `mat_platinum_bulk` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
 | `mat_quinine` | 4 | 150.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_rubber_coagulated` | 4 | 150.0 | [`mat_rubber_coagulated`](89_remaining_arts.md#mat_rubber_coagulated) **BROKEN** |
 | `md2_dna` | 4 | 150.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
 | `met_fatigue_testing` | 4 | 280.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
 | `mil_operational_research` | 4 | 120.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
@@ -2383,7 +2390,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_envelope_gummed` | 1 | 60.0 | _(module has no anchor)_ |
 | `tx2_eye_pointed_needle` | 1 | 50.0 | _(module has no anchor)_ |
 | `tx2_flyer` | 1 | 70.0 | _(module has no anchor)_ |
-| `tx2_friction_match` | 1 | 80.0 | _(module has no anchor)_ |
 | `tx2_fulling` | 1 | 60.0 | _(module has no anchor)_ |
 | `tx2_gilling` | 1 | 40.0 | _(module has no anchor)_ |
 | `tx2_hook_and_eye` | 1 | 50.0 | _(module has no anchor)_ |
@@ -2412,7 +2418,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_splitting` | 1 | 70.0 | _(module has no anchor)_ |
 | `tx2_take_up_motion` | 1 | 60.0 | _(module has no anchor)_ |
 | `tx2_temple` | 1 | 40.0 | _(module has no anchor)_ |
-| `tx2_tin_can` | 1 | 80.0 | _(module has no anchor)_ |
 | `tx2_twist_insertion` | 1 | 50.0 | _(module has no anchor)_ |
 | `tx2_warp_sizing` | 1 | 50.0 | _(module has no anchor)_ |
 | `tx2_warping_mill` | 1 | 60.0 | _(module has no anchor)_ |
@@ -2451,6 +2456,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_dyeing_garment` | 2 | 90.0 | _(module has no anchor)_ |
 | `tx2_embossing` | 2 | 80.0 | _(module has no anchor)_ |
 | `tx2_eraser` | 2 | 70.0 | _(module has no anchor)_ |
+| `tx2_friction_match` | 2 | 80.0 | _(module has no anchor)_ |
 | `tx2_jacquard_cards` | 2 | 80.0 | _(module has no anchor)_ |
 | `tx2_jacquard_head` | 2 | 200.0 | _(module has no anchor)_ |
 | `tx2_lasting_machine` | 2 | 120.0 | _(module has no anchor)_ |
@@ -2479,6 +2485,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_stapler` | 2 | 100.0 | _(module has no anchor)_ |
 | `tx2_stocking_frame` | 2 | 140.0 | _(module has no anchor)_ |
 | `tx2_throstle_frame` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_tin_can` | 2 | 80.0 | _(module has no anchor)_ |
 | `tx2_tin_toy` | 2 | 90.0 | _(module has no anchor)_ |
 | `tx2_toothpaste_tube` | 2 | 100.0 | _(module has no anchor)_ |
 | `tx2_warp_knitting` | 2 | 130.0 | _(module has no anchor)_ |
@@ -2521,7 +2528,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_board_games` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_candle_beeswax` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_candle_tallow` | 0 | 0.0 | _(module has no anchor)_ |
-| `hom_cosmetics_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_cosmetics_roman` | 0 | 20.0 | _(module has no anchor)_ |
 | `hom_flush_latrine_simple` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_furniture_wooden` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_hypocaust` | 0 | 0.0 | _(module has no anchor)_ |
@@ -2538,7 +2545,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_flush_toilet_trap` | 1 | 80.0 | _(module has no anchor)_ |
 | `hom_jigsaw_puzzle` | 1 | 100.0 | _(module has no anchor)_ |
 | `hom_latrine_water_trap` | 1 | 60.0 | _(module has no anchor)_ |
-| `hom_matches_friction` | 1 | 60.0 | _(module has no anchor)_ |
 | `hom_mirror_silvered_glass` | 1 | 150.0 | _(module has no anchor)_ |
 | `hom_pencil` | 1 | 80.0 | _(module has no anchor)_ |
 | `hom_playing_cards_printed` | 1 | 60.0 | _(module has no anchor)_ |
@@ -2551,6 +2557,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_lamp_argand` | 2 | 100.0 | _(module has no anchor)_ |
 | `hom_lamp_kerosene` | 2 | 90.0 | _(module has no anchor)_ |
 | `hom_mangle_wringer` | 2 | 100.0 | _(module has no anchor)_ |
+| `hom_matches_friction` | 2 | 60.0 | _(module has no anchor)_ |
 | `hom_mechanical_clock_home` | 2 | 180.0 | _(module has no anchor)_ |
 | `hom_metronome` | 2 | 110.0 | _(module has no anchor)_ |
 | `hom_perfume_distilled` | 2 | 140.0 | _(module has no anchor)_ |
@@ -2598,7 +2605,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `exp_africa_circumnavigation` | 3 | 400.0 | _(module has no anchor)_ |
 | `exp_atlantic_crossing` | 3 | 400.0 | _(module has no anchor)_ |
 | `exp_colony_administration` | 3 | 400.0 | _(module has no anchor)_ |
-| `exp_import_draught_animals` | 3 | 300 | [`transplant_botany`](95_expeditions.md#transplant_botany---moving-the-garden) |
+| `exp_import_draught_animals` | 3 | 300.0 | [`transplant_botany`](95_expeditions.md#transplant_botany---moving-the-garden) |
 | `exp_transplant_botany` | 3 | 350.0 | _(module has no anchor)_ |
 | `exp_americas_factory` | 4 | 500.0 | _(module has no anchor)_ |
 | `exp_conquest_resource` | 4 | 300.0 | _(module has no anchor)_ |
@@ -2607,8 +2614,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `fin_annona` | 0 | 0.0 | _(module has no anchor)_ |
-| `fin_argentarii` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_annona` | 0 | 600.0 | _(module has no anchor)_ |
+| `fin_argentarii` | 0 | 150.0 | _(module has no anchor)_ |
 | `fin_auction` | 0 | 0.0 | _(module has no anchor)_ |
 | `fin_coined_money` | 0 | 0.0 | _(module has no anchor)_ |
 | `fin_contract_law` | 0 | 0.0 | _(module has no anchor)_ |
@@ -2698,18 +2705,15 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `mil_gunpowder_base` | 0 | 0.0 | _(module has no anchor)_ |
 | `mil_artillery_carriage` | 1 | 120.0 | _(module has no anchor)_ |
 | `mil_artillery_piece` | 1 | 140.0 | _(module has no anchor)_ |
 | `mil_bastion` | 1 | 90.0 | _(module has no anchor)_ |
 | `mil_fuse_slow_match` | 1 | 30.0 | _(module has no anchor)_ |
 | `mil_glacis` | 1 | 60.0 | _(module has no anchor)_ |
 | `mil_incorporating_mill` | 1 | 140.0 | _(module has no anchor)_ |
-| `mil_plate_armour_firearms` | 1 | 70.0 | _(module has no anchor)_ |
 | `mil_powder_mill` | 1 | 120.0 | _(module has no anchor)_ |
 | `mil_ravelin` | 1 | 75.0 | _(module has no anchor)_ |
 | `mil_serpentine_powder` | 1 | 40.0 | _(module has no anchor)_ |
-| `mil_trace_italienne` | 1 | 100.0 | _(module has no anchor)_ |
 | `mil_trunnion` | 1 | 80.0 | _(module has no anchor)_ |
 | `mil_anti_tank_ditch` | 2 | 50.0 | _(module has no anchor)_ |
 | `mil_artillery_shell` | 2 | 60.0 | _(module has no anchor)_ |
@@ -2738,12 +2742,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_observation_balloon` | 2 | 60.0 | _(module has no anchor)_ |
 | `mil_percussion_cap` | 2 | 90.0 | _(module has no anchor)_ |
 | `mil_pillbox` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_plate_armour_firearms` | 2 | 70.0 | _(module has no anchor)_ |
 | `mil_rifling` | 2 | 70.0 | _(module has no anchor)_ |
 | `mil_shrapnel_shell` | 2 | 85.0 | _(module has no anchor)_ |
 | `mil_torpedo` | 2 | 180.0 | _(module has no anchor)_ |
 | `mil_torpedo_boat` | 2 | 100.0 | _(module has no anchor)_ |
 | `mil_torpedo_tube` | 2 | 90.0 | _(module has no anchor)_ |
-| `mil_trench` | 2 | 40.0 | _(module has no anchor)_ |
+| `mil_trace_italienne` | 2 | 100.0 | _(module has no anchor)_ |
 | `mil_wheel_lock` | 2 | 80.0 | _(module has no anchor)_ |
 | `tr_periscope` | 2 | 100.0 | _(module has no anchor)_ |
 | `mil_aerial_camera` | 3 | 95.0 | _(module has no anchor)_ |
@@ -2760,7 +2765,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_bomb_sight` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_cartridge_metallic` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_centrefire_primer` | 3 | 85.0 | _(module has no anchor)_ |
-| `mil_chemical_mustard` | 3 | 85.0 | _(module has no anchor)_ |
 | `mil_chemical_phosgene` | 3 | 80.0 | _(module has no anchor)_ |
 | `mil_cordite` | 3 | 100.0 | _(module has no anchor)_ |
 | `mil_depth_charge` | 3 | 100.0 | _(module has no anchor)_ |
@@ -2770,9 +2774,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_field_telephone` | 3 | 80.0 | _(module has no anchor)_ |
 | `mil_forward_observer` | 3 | 70.0 | _(module has no anchor)_ |
 | `mil_gun_synchroniser` | 3 | 120.0 | _(module has no anchor)_ |
+| `mil_gunpowder_base` | 3 | 10.0 | _(module has no anchor)_ |
 | `mil_indirect_fire` | 3 | 80.0 | _(module has no anchor)_ |
 | `mil_machine_gun_gas` | 3 | 150.0 | _(module has no anchor)_ |
-| `mil_machine_gun_nest` | 3 | 60.0 | _(module has no anchor)_ |
 | `mil_machine_gun_recoil` | 3 | 160.0 | _(module has no anchor)_ |
 | `mil_minesweeper` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_range_table` | 3 | 100.0 | _(module has no anchor)_ |
@@ -2807,6 +2811,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_self_loading_pistol` | 4 | 140.0 | _(module has no anchor)_ |
 | `mil_self_propelled_gun` | 4 | 150.0 | _(module has no anchor)_ |
 | `mil_tank` | 4 | 160.0 | _(module has no anchor)_ |
+| `mil_trench` | 4 | 40.0 | _(module has no anchor)_ |
+| `mil_chemical_mustard` | 5 | 85.0 | _(module has no anchor)_ |
+| `mil_machine_gun_nest` | 5 | 60.0 | _(module has no anchor)_ |
 
 ### 98_power_plants.md
 
@@ -2911,9 +2918,20 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 848 |
+| linked to a specific recipe entry | 855 |
 | linked to a domain module, no specific entry | 1874 |
 | documented in a top-level prose file | 13 |
-| no link BY DESIGN (capability rungs, materials, unobtainables) | 87 |
-| **undocumented, a real gap** | **0** |
+| no link BY DESIGN (capability rungs, materials, unobtainables) | 88 |
+| **undocumented, a real gap** | **3** |
+
+The undocumented nodes, listed so the gap is visible rather than hidden:
+
+`com_led`, `hom_clothes_dryer_electric`, `hom_freezer_domestic`
+
+## Broken links
+
+- `civ_monumental_stone` points at `87_construction.md#cn_quarry_wedge`, but that module has no such `###` entry
+- `met_bloomery_bog_iron` points at `10_metallurgy.md#bloomery_iron`, but that module has no such `###` entry
+- `mat_rubber_coagulated` points at `89_remaining_arts.md#mat_rubber_coagulated`, but that module has no such `###` entry
+- `phosphor_bronze_alloy` points at `10_metallurgy.md#phosphor_bronze_alloy`, but that module has no such `###` entry
 

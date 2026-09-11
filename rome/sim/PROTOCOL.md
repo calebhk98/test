@@ -19,7 +19,7 @@ Three things at once, as requested:
 No third-party dependencies. Python 3.8+.
 
     python3 rome/sim/simulator.py validate
-    python3 rome/sim/simulator.py path point_contact_transistor
+    python3 rome/sim/simulator.py path junction_transistor
     python3 rome/sim/simulator.py costs --top 25
     python3 rome/sim/simulator.py run --strategy recommended --mc 400
     python3 rome/sim/simulator.py run --strategy recommended --no-events   # pure engineering timeline

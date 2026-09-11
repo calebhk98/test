@@ -3,12 +3,26 @@
 The plan, why it is shaped this way, and the evidence from the simulator that it
 is better than the obvious alternatives.
 
+**A caveat before the numbers below: most of them are stale.** This file's
+Monte Carlo figures (sections 1, 2, 3, 3b) were measured against a 1,176-node
+tree with `point_contact_transistor` as the goal. The tree has since grown to
+2,833 nodes and the goal moved to `junction_transistor` (see
+`ROME_BOOTSTRAP.md`'s "The answer, in eight lines" for the current headline
+numbers, which were re-measured after both changes). Re-running these specific
+sweeps at the game's current scale is expensive and was out of scope for the
+pass that added this note; what follows is the qualitative shape of the
+strategy - which phase matters when, why politics rather than physics kills
+runs, why more money does not simply help - which is the part of this
+document least likely to have changed even though its exact percentages have.
+The two numbers in section 3a that come from a deterministic graph walk
+(`validate`/`path`, not Monte Carlo) have been corrected to the current tree.
+
 Run the evidence yourself:
 
 ```
 python3 rome/sim/simulator.py compare      --mc 500
 python3 rome/sim/simulator.py sensitivity  --mc 300
-python3 rome/sim/simulator.py path point_contact_transistor
+python3 rome/sim/simulator.py path
 ```
 
 ---
@@ -48,9 +62,11 @@ This is why `RUSH` reaches 68% and still takes 85 years longer than
 each seizure.
 
 The old finding still holds and is now sharper. **The technical dependency graph
-is not the real dependency graph.** The transistor needs 97 of the 1,176 nodes,
-and not one of those 97 is a patron, a citizenship, a school or a licensed
-collegium. Nothing in physics requires them. Nothing can be built without them.
+is not the real dependency graph.** The transistor needed 97 of the 1,176 nodes
+this section was measured against; on the current, larger tree it needs 158 of
+2,833 (see section 3a) - and in neither version is a patron, a citizenship, a
+school or a licensed collegium among them. Nothing in physics requires them.
+Nothing can be built without them.
 
 ## 2a. How each technology is judged, and what that found
 
@@ -58,8 +74,11 @@ The end date is the wrong test, so it is not the test. Each node is scored on
 its own: *could someone holding exactly this node's prerequisites, and nothing
 else, actually build it?*
 
-`python3 rome/sim/treetool.py judge` reports a mean of **93.1/100** across 1,176
-nodes, with 260 still not declaring a capability rung they need.
+`python3 rome/sim/treetool.py judge` reported a mean of **93.1/100** across the
+1,176-node tree at the time this was written, with 260 nodes not declaring a
+capability rung they need. Re-run today against the current 2,833-node tree,
+the honest score is **97.0/100**, with 192 nodes still missing a capability
+rung.
 
 **Do not take that number at face value, and here is why.** An earlier version
 of the repair script inferred missing capability prerequisites by matching
@@ -116,16 +135,19 @@ removal makes the programme impossible is social or legal, not technical.**
 ## 3a. The one number that reframes the whole problem
 
 `python3 rome/sim/simulator.py path` reports that the minimum technical closure
-of the goal is **107 nodes, 52,400 founder-hours and 3.60 million denarii**,
-against the roughly **72,000 hours** you will ever have.
+of the goal is **158 nodes, 58,850 founder-hours and 9.54 million denarii**
+(re-measured against the current 2,833-node tree and the `junction_transistor`
+goal; the number of nodes and the money have both grown since the 1,176-node
+version this section originally quoted, though the shape of the finding below
+has not), against the roughly **72,000 hours** you will ever have.
 
 So on hours alone, one person could in principle direct the entire technical
 path to a transistor. It is the other two constraints that make that a fantasy:
 
-1. **The calendar floor is 134.5 years** and, if mortal, you have about 30. Nitre beds take
+1. **The calendar floor is 142 years** and, if mortal, you have about 30. Nitre beds take
    two years whatever you spend. A generation of economic diffusion takes a
    generation. Money buys neither.
-2. **Those 107 technical nodes do not include a single one of the nodes that
+2. **Those 158 technical nodes do not include a single one of the nodes that
    provide the money and the people.** No patron, no citizenship, no school, no
    revenue, no printing, no defence against plague. Ablate any of the first
    three and the success rate is zero.

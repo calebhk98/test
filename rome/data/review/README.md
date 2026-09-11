@@ -9,6 +9,7 @@ Kept because the provenance of a correction matters as much as the correction.
 | `caps_batch_0..4.json` | The 318 nodes found to be missing a capability prerequisite, split five ways. |
 | `caps_fix_0..4.json` | What five reviewers decided about each of those 318, one node at a time, with a one-line reason each. Note how often the answer is an empty list: 417 of the decisions were "this genuinely needs no capability rung", which is the answer a keyword heuristic can never give. |
 | `SHALLOW_NODES.txt` | Nodes flagged as narrow at the top and shallow all the way down. |
+| `DOCS_VS_ENGINE.md` | A documentation audit: statements in the project's own prose (`ROME_BOOTSTRAP.md`, `COMMODITIES.md`, the knowledge corpus, the design notes) that describe a mechanic the engine does not implement, verified against the code, ranked by how much building it would add. |
 
 ## The short version of what happened here
 
