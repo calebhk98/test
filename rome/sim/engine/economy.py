@@ -870,8 +870,22 @@ class EconomyMixin:
         if not cfg:
             return None
         ages = []
-        for m in sorted(self.operating):
-            if self.nodes[m].get("cat") != cat:
+        # WHICH NODES CAN EVER BE IN THIS CATEGORY IS FIXED AT LOAD TIME,
+        # so walk that (small, cached-once) list and test membership in
+        # `operating` instead of sorting and filtering the whole operating
+        # set on every single call. `cat` never changes after the tree is
+        # loaded, so this cache needs no invalidation. Profiling a 300-year
+        # single-seed run found this function alone (the `sorted(self.
+        # operating)` scan) costing more self time than any other in the
+        # engine - 7.1s of 34.4s total, called 1.5 million times because
+        # goods_market_factor() calls it once per operating concern, and
+        # income_factor() (reached from the SAME call, for every
+        # non-essential concern) calls it again for the essential
+        # category. Only max() and len() are taken from `ages` below, both
+        # order-independent, so dropping the sort changes no result. See
+        # PERFORMANCE.md.
+        for m in self._nodes_in_cat(cat):
+            if m not in self.operating:
                 continue
             started = (getattr(self, "opened_year", None) or {}).get(m)
             if started is None:
@@ -880,6 +894,22 @@ class EconomyMixin:
         if not ages:
             return None
         return len(ages), max(ages), cfg
+
+    def _nodes_in_cat(self, cat):
+        """Every node key that carries this goods category, in the tree's
+        own (stable, insertion) order - independent of PYTHONHASHSEED and
+        never changing after load, so this is built once per run and
+        reused. See _goods_category_state's own comment for why this
+        exists."""
+        cache = getattr(self, "_nodes_by_cat_cache", None)
+        if cache is None:
+            cache = {}
+            for k, n in self.nodes.items():
+                c = n.get("cat")
+                if c:
+                    cache.setdefault(c, []).append(k)
+            self._nodes_by_cat_cache = cache
+        return cache.get(cat, ())
 
     def _goods_category_ratios(self, cat, extra=0):
         """(price_ratio, qty_ratio, n_active) for a whole category, shared
@@ -2174,13 +2204,39 @@ class EconomyMixin:
         """
         market = self._material_market_tonnes(emp_key)
         worst = 1.0
-        for (ek, tag), need in sorted(self._cached_demand_by_tag().items()):
-            if ek != emp_key or need <= 0:
+        # GROUPED BY emp_key, ONCE A TICK, not scanned-and-filtered from the
+        # whole by-tag dict on every one of THIS function's own calls. See
+        # _demand_by_emp_key's comment: this is the same "called once per
+        # material a project buys, once per candidate node, every year"
+        # volume _cached_demand_by_tag() was already added to answer, one
+        # level further in. Only max() is taken below, order-independent,
+        # so - as with _cached_demand_by_tag's own dict - no sort is needed
+        # for the result to be deterministic.
+        for tag, need in self._demand_by_emp_key().get(emp_key, ()):
+            if need <= 0:
                 continue
             supply = max(1e-9, self._own_material_supply(tag) + market)
             share = min(1.5, need / supply)
             worst = max(worst, 1.0 + 0.9 * share * share)
         return worst
+
+    def _demand_by_emp_key(self):
+        """_cached_demand_by_tag(), grouped by emp_key - the grouping
+        material_price_factor() actually wants. Cached the same tick-
+        scoped way _cached_demand_by_tag() itself is (see that method's
+        own comment for why keying on the demand dict's identity is safe
+        invalidation): a new tick produces a new annual_material_demand()
+        result, which invalidates both caches together automatically."""
+        demand = self._cached_material_demand()
+        key = id(demand)
+        cached = getattr(self, "_demand_by_emp_key_cache", None)
+        if cached is not None and cached[0] == key:
+            return cached[1]
+        grouped = {}
+        for (ek, tag), need in self._cached_demand_by_tag().items():
+            grouped.setdefault(ek, []).append((tag, need))
+        self._demand_by_emp_key_cache = (key, grouped)
+        return grouped
 
     def material_market_factor(self, k):
         """A project's price pressure from the materials it buys, weighted
@@ -2935,9 +2991,20 @@ class EconomyMixin:
         # for everything it built and ate at Roman prices, and a cheap one got
         # the discount twice. Bread costs what bread costs where you are.
         px = self.price_index
+        # CALLED ONCE, NOT THREE TIMES. revenue() and wage_bill() are each
+        # pure functions of state that does not move within this call (no
+        # project completes, no venture opens, nothing is hired between
+        # here and the return), so the two more calls this used to make -
+        # one more of each, below - recomputed the same figures for no
+        # reason. Profiling a 300-year single-seed run found revenue()
+        # alone costing 2.4s of its own time and 21.9s cumulative over
+        # 28,423 calls; living_cost() was responsible for two of every
+        # three of those calls. See PERFORMANCE.md.
+        rev = self.revenue()
+        wages = self.wage_bill()
         base = 120.0 * px                             # bare subsistence, one person
         household = 90.0 * px * (1 + self.freedmen * 0.5 + self.slaves * 0.35)
-        tax = max(0.0, self.revenue()) * 0.06         # portoria, vicesima, local dues
+        tax = max(0.0, rev) * 0.06                     # portoria, vicesima, local dues
         status = 0.0
         if self.has("citizenship"):        status += 200 * px
         if self.running("patron_senatorial"):  status += 900 * px
@@ -2955,9 +3022,8 @@ class EconomyMixin:
         # You spend on appearances out of what is left after eating; never more
         # than the nominal figure, and never so much that the appearances
         # themselves starve you.
-        room = max(0.0, self.revenue() - base - household - tax
-                   - self.upkeep() - self.wage_bill())
+        room = max(0.0, rev - base - household - tax - self.upkeep() - wages)
         status = min(status, room * 0.75 + max(0.0, self.capital) * 0.015)
-        return base + household + tax + status + self.wage_bill()
+        return base + household + tax + status + wages
 
     HOURS_PER_PERSON_YEAR = 2000.0   # prices.json: a 10-hour day, 250 days, less feasts
