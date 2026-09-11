@@ -6109,9 +6109,61 @@ check("a command's progress is saved even when the reply that describes it "
 # holding, not just the one run that happened to be timed.
 _p_s = sim(civ="rome_100ad")
 _p_order, _p_c, _p_extras, _p_staff = PLANNER.backward_plan(NODES, GOAL, _p_s, side_branches=0)
-_p_need = PLANNER.closure(NODES, GOAL)
-check("the planner's closure matches `validate`'s own count for the goal",
+_p_need = PLANNER.planning_closure(NODES, GOAL)
+check("the planner's closure matches its own order's count for the goal",
       len(_p_need) == len(_p_order), (len(_p_need), len(_p_order)))
+# planning_closure() is a SUPERSET of the engine's own closure() - it also
+# follows the `req_any` groups that have exactly one option (a mandatory
+# dependency authored as a substitution rather than a `pre` edge; a group
+# with two or more real alternatives is correctly left alone, both because
+# only one is actually required and because counting every option can
+# cycle). The gap is real and was the second thing this session's own audit
+# found blocking the goal: `mat_bulk_steel` needs `mat_manganese` through
+# exactly this kind of single-option `req_any`, `closure()` cannot see it on
+# purpose, and a traced Rome run with 111 scholars, 428 artisans and 11.7
+# million denarii in hand still had not built it by year 700 because it was
+# never in `need` at all - staffing and money were both long since solved,
+# ordering was not.
+_p_need_engine = S.closure(NODES, GOAL)
+check("the planner's closure is a strict superset of the engine's own "
+      "pre-only closure - every node the goal hard-requires is still in "
+      "it, plus the req_any dependencies that are not really alternatives",
+      _p_need_engine < _p_need, (len(_p_need_engine), len(_p_need)))
+check("mat_bulk_steel (on the critical path) is gated on mat_manganese "
+      "through exactly one req_any option, no real alternative offered",
+      NODES["mat_bulk_steel"]["req_any"] ==
+      [{"group": "manganese_supply", "options": {"mat_manganese": 1.0}}],
+      NODES["mat_bulk_steel"]["req_any"])
+check("planning_closure() catches it: mat_manganese and its own "
+      "prerequisite mat_pyrolusite are both pulled in, where closure() "
+      "leaves both out",
+      {"mat_manganese", "mat_pyrolusite"} <= _p_need
+      and not ({"mat_manganese", "mat_pyrolusite"} & _p_need_engine),
+      (("mat_manganese" in _p_need, "mat_pyrolusite" in _p_need),
+       ("mat_manganese" in _p_need_engine, "mat_pyrolusite" in _p_need_engine)))
+_syn_req = {
+    "goal2":  {"pre": ["mandatory"], "req_any": [], "yrs": 0, "ph": 0, "_total_cost": 0},
+    "mandatory": {"pre": [], "req_any": [{"group": "g1", "options": {"onlyroute": 1.0}}],
+                  "yrs": 1, "ph": 0, "_total_cost": 10},
+    "onlyroute": {"pre": [], "req_any": [], "yrs": 1, "ph": 0, "_total_cost": 5},
+    "choice":    {"pre": [], "req_any": [{"group": "g2", "options": {"routeA": 1.0, "routeB": 1.0}}],
+                  "yrs": 1, "ph": 0, "_total_cost": 5},
+    "routeA":    {"pre": [], "req_any": [], "yrs": 1, "ph": 0, "_total_cost": 5},
+    "routeB":    {"pre": [], "req_any": [], "yrs": 1, "ph": 0, "_total_cost": 5},
+}
+check("a single-option req_any group's target is pulled into "
+      "planning_closure() - the mandatory-dependency-in-disguise case",
+      "onlyroute" in PLANNER.planning_closure(_syn_req, "goal2"),
+      PLANNER.planning_closure(_syn_req, "goal2"))
+_syn_req["goal2"]["pre"] = ["choice"]
+check("a genuine req_any CHOICE is left alone - neither option of a "
+      "two-way alternative is forced into the closure",
+      "routeA" not in PLANNER.planning_closure(_syn_req, "goal2")
+      and "routeB" not in PLANNER.planning_closure(_syn_req, "goal2"),
+      PLANNER.planning_closure(_syn_req, "goal2"))
+# The acyclic check against the WHOLE real tree (not just this synthetic
+# pair) needs `_cycle_on`, defined later in this file - see the check next
+# to "the tree is acyclic on hard prerequisites" below.
 # THE STAFFING LAYER, which is the one thing in a plan that the tech tree
 # cannot supply. A node's prerequisites are other nodes; its demand for
 # "eight trained scholars" is a demand on the household, and no amount of
@@ -6544,6 +6596,25 @@ check("the tree is acyclic on hard prerequisites, which is what closure() "
       "walks and why it must not follow substitutions",
       _cycle_on(lambda k: [p for p in NODES[k]["pre"] if p in NODES]) is None,
       _cycle_on(lambda k: [p for p in NODES[k]["pre"] if p in NODES]))
+
+def _pre_and_single_option_any(k):
+    n = NODES[k]
+    out = [p for p in n["pre"] if p in NODES]
+    for g in (n.get("req_any") or []):
+        opts = g.get("options") or {}
+        if len(opts) == 1:
+            (opt,) = opts.keys()
+            if opt in NODES:
+                out.append(opt)
+    return out
+check("pre plus every single-option req_any edge is still acyclic over the "
+      "whole tree - planning_closure()'s own safety margin, since a "
+      "multi-option group (two or more real alternatives) walked the same "
+      "way genuinely can cycle (junction_transistor -> silicon_path -> "
+      "point_contact_transistor -> junction_transistor is real) and must "
+      "never be",
+      _cycle_on(_pre_and_single_option_any) is None,
+      _cycle_on(_pre_and_single_option_any))
 
 def _pre_and_any(k):
     # req_any OPTIONS ARE NOT ALL NODES. A group can offer a MATERIAL as an

@@ -79,6 +79,60 @@ from engine.core import Sim
 from engine.cli import load_strategy
 
 
+def planning_closure(nodes, goal):
+    """The goal's true prerequisite set for PLANNING purposes - `closure()`
+    plus the `req_any` dependencies that are not really alternatives at all.
+
+    `closure()` (engine/data.py) walks `pre` only, on purpose: `req_any` can
+    genuinely offer a CHOICE among several routes (any power source will do
+    for `ag2_baler`; silicon or germanium will do for a transistor), and
+    counting every option as required would both overstate what is needed
+    and - the reason `closure()` itself must not do this - can cycle
+    (`junction_transistor -> silicon_path -> point_contact_transistor ->
+    junction_transistor` is real once every option counts).
+
+    But 125 of the tree's 400 `req_any` groups have exactly ONE option that
+    is itself a real node - not a choice, a mandatory dependency that
+    happened to be authored as a substitution group instead of a `pre` edge.
+    `mat_bulk_steel` is the case this was found from: its `req_any` is
+    `{"manganese_supply": {"mat_manganese": 1.0}}`, one option, no
+    alternative - functionally identical to a `pre` entry - and because
+    `closure()` correctly does not follow it, `mat_manganese` (and its own
+    prerequisite `mat_pyrolusite`) were never in the goal's `need` set. A
+    traced Rome run confirmed the consequence directly: by year 700, with
+    111 scholars, 428 artisans and 11.7 million denarii in hand - staffing
+    and money both long since solved - `mat_bulk_steel` and everything
+    downstream of it (51 of the 158 closure nodes, the entire path to the
+    goal through steel, power generation and semiconductor purification)
+    were STILL not built, not for lack of resources but because
+    `mat_manganese` was never part of `need`: it was never ordered ahead of
+    the tree's ~2,700 optional side nodes, so a rich, fully-staffed
+    household kept busy on hundreds of them instead of the one tier-4 node
+    actually standing in the way.
+
+    A single-option `req_any` group cannot introduce a cycle the way a
+    multi-option one can (verified directly: `pre` plus every single-option
+    `req_any` edge in the whole 2,833-node tree is still acyclic), so this
+    is safe to do here even though it would not be safe inside `closure()`
+    itself, which has to stay correct for fog/discovery and for every other
+    caller that was never asking this question.
+    """
+    need, stack = set(), [goal]
+    while stack:
+        c = stack.pop()
+        if c in need:
+            continue
+        need.add(c)
+        stack.extend(nodes[c]["pre"])
+        for grp in (nodes[c].get("req_any") or []):
+            opts = grp.get("options") or {}
+            if len(opts) == 1:
+                (opt,) = opts.keys()
+                if opt in nodes:
+                    stack.append(opt)
+    return need
+
+
 # ----------------------------------------------------------------------------
 # Critical-path method over the goal's closure
 # ----------------------------------------------------------------------------
@@ -166,6 +220,32 @@ def pick_side_branches(nodes, need, s, limit):
     (a Han run has no use for Roman citizenship), and anything already
     granted or already a hard prerequisite of the goal is excluded because it
     needs no priority push - it is either free or already first in line.
+
+    NOT PRICED PER CIVILISATION, ON PURPOSE, AND MEASURED. `rev`/`up`/
+    `_total_cost` are the tree's raw, civilisation-unadjusted numbers, so
+    ranking by them ignores what THIS society's own `cost_multipliers` and
+    `price_index` make a candidate actually worth - civ-blind ranking,
+    tried first because it looked like an obvious gap (Rome and Han's
+    strategy files came out byte-for-byte identical, side branches
+    included, which is real and still true). Re-ranking with `net =
+    (rev-up)*price_index` over `cost = _total_cost*civ_cost_factor(k)` -
+    exactly what the engine charges at run time - does produce a genuinely
+    different top-`limit` list per civilisation, and was measured head to
+    head against this version, three seeds, 600-year horizon, fresh
+    civilisation state per trial (reusing one `Sim`-built civ dict across
+    trials was an earlier version of this same test and silently mutated
+    hazard-shifted values across trials, inflating the civ-priced version's
+    apparent results - a trap worth naming so nobody re-walks into it).
+    Civ-priced Rome ended WORSE on every one of the three seeds - capital
+    -4,489 / -1,929 / 91.0m against this version's +11.8m / +6.7m / +198.7m
+    at year 700 - not merely different, worse across the board. The
+    civilisation-blind ranking this function already used favours cheap,
+    short-chain, low-risk ventures (toys, buttons, simple textiles) that
+    happen to serve a poor household better than the theoretically-better-
+    ROI, longer-chain ventures (locomotives, boilers, dynamite) civ-pricing
+    promotes it to instead, whatever their nominal return on capital. Left
+    as is; the real fix for what actually blocks the goal is
+    `planning_closure()`, not this.
     """
     cands = []
     for k, n in nodes.items():
@@ -282,7 +362,7 @@ def backward_plan(nodes, goal, s, seed_order=None, side_branches=12,
     genuinely-different-urgency nodes (recommended.json's failure mode), and
     the seed supplies the fine sequencing the graph has no opinion about.
     """
-    need = closure(nodes, goal)
+    need = planning_closure(nodes, goal)
     c = cpm(nodes, need)
     seed_rank = {k: i for i, k in enumerate(seed_order or ())}
     def key(k):
@@ -373,7 +453,7 @@ def refine(nodes, goal, s, order, extras, civ, mc, horizon, seed, rounds,
     invocation. The order actually kept at the end is whichever round scored
     best on WIN RATE first, then median year reached, never on vibes.
     """
-    need = closure(nodes, goal)
+    need = planning_closure(nodes, goal)
     # CURRENT is what gets measured and then advanced each round; BEST is
     # whichever round's order scored best, which is what gets returned. These
     # must not be the same variable: a later round can score WORSE than an
@@ -455,7 +535,7 @@ def plan(civ="rome_100ad", goal=None, seed_strategy=None, side_branches=12,
         order, extras, score = refine(nodes, goal, s, order, extras, civ, mc,
                                       horizon, seed, refine_rounds,
                                       side_branch_every, log)
-    need = closure(nodes, goal)
+    need = planning_closure(nodes, goal)
     crit = sum(1 for k in need if c["slack"].get(k, 0) <= 1e-6)
     rationale = [
         "Computed backward from the goal by critical-path method (CPM) over "
