@@ -88,20 +88,29 @@ def topo_stable(nodes, preference, already=()):
     placed = set(already)
     out = []
     pref = list(preference)
+    # hard_pre, NOT nodes[k]["pre"]. This function is what decides the order
+    # the engine actually receives, and it was the last place still reading
+    # `pre` alone after closure(), topo_order() and critical_path() had all
+    # learned that a req_any group with exactly one real option is a
+    # prerequisite rather than a choice. The effect was the whole point of
+    # that work going nowhere: mat_manganese was correctly required, and came
+    # out of here at index 187 behind the mat_bulk_steel at index 65 that
+    # cannot be built without it.
+    hp = {k: hard_pre(nodes, k) for k in pref}
     # Index the dependants so each placement only revisits what it could free,
     # rather than rescanning the whole list: the old loop was O(n^2) with a
     # list.remove() inside it, over 2,700 nodes.
     waiting = {}
     ready = []
     for k in pref:
-        missing = sum(1 for p in nodes[k]["pre"] if p not in placed)
+        missing = sum(1 for p in hp[k] if p not in placed)
         waiting[k] = missing
         if not missing:
             ready.append(k)
     dependants = {}
     inset = set(pref)
     for k in pref:
-        for p in nodes[k]["pre"]:
+        for p in hp[k]:
             if p in inset:
                 dependants.setdefault(p, []).append(k)
     rank = {k: i for i, k in enumerate(pref)}

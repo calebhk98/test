@@ -6187,6 +6187,13 @@ check("closure() catches it now: mat_manganese and its own "
 # critical_path did not, so mat_manganese was correctly called required and
 # then sorted AFTER the mat_bulk_steel that requires it. All three read
 # hard_pre() now.
+check("the order the ENGINE receives puts the single-option dependency "
+      "first - topo_stable in cli.py was the last place still reading `pre` "
+      "alone, and brought mat_manganese out at 187 behind the "
+      "mat_bulk_steel at 65 that cannot be built without it",
+      (lambda o: o.index("mat_manganese") < o.index("mat_bulk_steel"))(
+          PLANNER._repaired(NODES, GOAL, _p_order)),
+      "engine-order manganese/bulk steel")
 check("topo_order puts a single-option req_any dependency before the node "
       "that requires it, not after",
       (lambda o: o.index("mat_manganese") < o.index("mat_bulk_steel"))(
