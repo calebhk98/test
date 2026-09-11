@@ -503,15 +503,21 @@ check("the unknown-command message advertises every command there is",
       all(c in _advertised for c in _real),
       "missing: %s" % [c for c in _real if c not in _advertised])
 
-# and every command it advertises must actually answer
-_dead = []
-for _c in _real:
-    if _c in ("quit", "save", "load"):
-        continue                      # need arguments or end the session
-    rr, _, _ = proto([{"cmd": _c}], civ="mexica_1500")
-    if rr and "unknown cmd" in str(rr[0].get("error", "")):
-        _dead.append(_c)
-check("every advertised command is one the game answers to", not _dead, str(_dead))
+# and every command it advertises must actually answer. FIVE SECONDS, because
+# it builds a fresh Mexica game per command and there are now dozens; the
+# cheap half above, that the message names them all, stays on the fast path.
+def _every_advertised_command_answers():
+    dead = []
+    for c in _real:
+        if c in ("quit", "save", "load"):
+            continue                  # need arguments or end the session
+        rr, _, _ = proto([{"cmd": c}], civ="mexica_1500")
+        if rr and "unknown cmd" in str(rr[0].get("error", "")):
+            dead.append(c)
+    return not dead, str(dead)
+
+slow_check("every advertised command is one the game answers to",
+           _every_advertised_command_answers)
 
 r, _, _ = proto([{"cmd": "why"}], civ="mexica_1500")
 check("a missing id asks for one rather than naming a Python type",
@@ -1328,35 +1334,34 @@ check("a small remaining bill is actually paid off, not approached for ever",
 # friends, and copies of your work kept somewhere else", played 154 years with
 # 269 startable things in view, and reported finding no hedge of any kind. The
 # hedges were there. Nothing ever connected the words to the list.
-s = sim(civ="mexica_1500", manual=False)
-s.fog = True
-s.revealed = set()
-for _i in range(45):
-    s.step()
-_adv = s.hazard_advice("staff_loss")
-_steps = _adv.get("you_could_begin_now_toward_it") or []
-# THE GUARANTEE IS THAT IT NAMES THEM, with what each is waiting on - not that
-# one happens to be startable in the particular year this check stops at. The
-# tester's complaint was "nothing connected the words to the 269 things in
-# view", and naming the hedge and its blocker is what connects them. Requiring
-# a startable one made this check hostage to how a 45-year run happens to
-# develop, and it duly broke the first time the economy changed underneath it.
-check("a hazard names things in front of you that hedge against it",
-      _steps and all(e.get("id") and (e["can_begin_now"] or e.get("waiting_on"))
-                     for e in _steps),
-      [(e["id"], e["can_begin_now"], (e.get("waiting_on") or "")[:40]) for e in _steps])
-check("anything you could begin toward a hedge is listed before what you cannot",
-      [e["can_begin_now"] for e in _steps] == sorted(
-          (e["can_begin_now"] for e in _steps), reverse=True),
-      [e["can_begin_now"] for e in _steps])
-# ...and it must not do that by naming whatever sits first in the strategy
-# order. An earlier version walked the whole ancestry and advised beginning a
-# "respectable cover identity" as a hedge against smallpox.
-_counters = {n for n, _s2, _l in s.HAZARD_COUNTERS["staff_loss"]}
-_near = _counters | {p_ for n in _counters if n in NODES for p_ in NODES[n]["pre"]}
-check("a hedge is a hedge, not any ancestor of one",
-      all(e["id"] in _near for e in _steps),
-      [e["id"] for e in _steps if e["id"] not in _near])
+# 11 SECONDS: forty-five years of a Mexica optimizer run before the advice it
+# is checking even has anything to say. The three checks that share that setup
+# move together, since re-running it for each would cost three times as much.
+def _hazard_advice_names_hedges():
+    s_ = sim(civ="mexica_1500", manual=False)
+    s_.fog = True
+    s_.revealed = set()
+    for _i in range(45):
+        s_.step()
+    steps = (s_.hazard_advice("staff_loss")
+             .get("you_could_begin_now_toward_it") or [])
+    counters = {n for n, _s2, _l in s_.HAZARD_COUNTERS["staff_loss"]}
+    near = counters | {p_ for n in counters if n in NODES
+                       for p_ in NODES[n]["pre"]}
+    named = bool(steps) and all(
+        e.get("id") and (e["can_begin_now"] or e.get("waiting_on"))
+        for e in steps)
+    ordered = [e["can_begin_now"] for e in steps] == sorted(
+        (e["can_begin_now"] for e in steps), reverse=True)
+    real = all(e["id"] in near for e in steps)
+    return named and ordered and real, [
+        (e["id"], e["can_begin_now"], (e.get("waiting_on") or "")[:40])
+        for e in steps]
+
+slow_check("a hazard names things in front of you that hedge against it, "
+           "startable ones first, and every one really is a hedge",
+           _hazard_advice_names_hedges)
+
 
 # --- the England weird-play tester -------------------------------------------
 # 1. The game printed its own resume command, `play --session england_1300.json`,
@@ -3633,16 +3638,18 @@ check("...and a trade says which of the two it is",
 # --- BREAK: the founder's year quietly grew from 2,000 hours to 10,175 and
 # nothing ever said so - the largest change to the resource the game is built
 # on, noticed by accident.
-s_dp = sim(capital=2000000.0, manual=False)
-run_it(s_dp, "school_founded", "patron_imperial", "academy_network")
-for _ in range(30):
-    s_dp.step()
-check("gaining a deputy is announced, with what it does to your year",
-      any("deput" in m and "your year is" in m for _, m in s_dp.log),
-      [m for _, m in s_dp.log if "deput" in m][:1])
-check("...once per whole deputy, not every year",
-      len([m for _, m in s_dp.log if "deput" in m]) <= int(s_dp.directors_extra) + 1,
-      len([m for _, m in s_dp.log if "deput" in m]))
+def _deputies_are_announced():
+    s_ = sim(capital=2000000.0, manual=False)
+    run_it(s_, "school_founded", "patron_imperial", "academy_network")
+    for _ in range(30):
+        s_.step()
+    said = [m for _, m in s_.log if "deput" in m]
+    return (any("deput" in m and "your year is" in m for _, m in s_.log)
+            and len(said) <= int(s_.directors_extra) + 1, said[:1])
+
+slow_check("gaining a deputy is announced with what it does to your year, "
+           "once per whole deputy rather than every year",
+           _deputies_are_announced)
 
 
 # --- BREAK: F34, "numbers that do not reconcile, collected". Every one of
@@ -3870,22 +3877,36 @@ def _one_run(seed=9, years=180, civ="rome_100ad"):
     return (round(s_.capital, 6), len(s_.done), len(s_.operating),
             round(s_.reputation, 9))
 
-_r_a = _one_run()
-check("the same seed gives the same run, twice in one process",
-      _one_run() == _r_a, (_r_a, _one_run()))
-_det = subprocess.run(
-    [sys.executable, "-c",
-     "import random,sys;sys.path.insert(0,%r);import simulator as S;"
-     "T,P,N,W,Gd=S.load();_l,O,_b=S.load_strategy('recommended',N,T['meta']['goal_node']);"
-     "s=S.Sim(N,O,random.Random(9),events=True,manual=False,civ=S.load_civ('rome_100ad'),"
-     "cfg={'start_capital':100000.0});s.goal,s.done_year=T['meta']['goal_node'],{};"
-     "[s.step() for _ in range(180)];"
-     "print(round(s.capital,6),len(s.done),len(s.operating),round(s.reputation,9))" % HERE],
-    capture_output=True, text=True, timeout=600,
-    env=dict(os.environ, PYTHONHASHSEED="1234"))
-check("...and the same run in a process with a different string hash seed",
-      _det.stdout.split() == [str(x) for x in _r_a],
-      (_det.stdout.strip(), _r_a))
+# THESE TWO COST 293 OF THE SUITE'S 425 SECONDS between them, because each
+# simulates 180 years and the second does it again in a fresh interpreter.
+# They are the most valuable checks in the file and also by far the most
+# expensive, which is exactly the case --slow exists for: a suite you run after
+# every change has to be seconds or you stop running it, and these belong to
+# the run you do before calling something finished.
+def _same_seed_same_run():
+    a = _one_run()
+    return _one_run() == a, (a, _one_run())
+
+slow_check("the same seed gives the same run, twice in one process",
+           _same_seed_same_run)
+
+def _same_under_other_hash_seed():
+    a = _one_run()
+    det = subprocess.run(
+        [sys.executable, "-c",
+         "import random,sys;sys.path.insert(0,%r);import simulator as S;"
+         "T,P,N,W,Gd=S.load();_l,O,_b=S.load_strategy('recommended',N,T['meta']['goal_node']);"
+         "s=S.Sim(N,O,random.Random(9),events=True,manual=False,civ=S.load_civ('rome_100ad'),"
+         "cfg={'start_capital':100000.0});s.goal,s.done_year=T['meta']['goal_node'],{};"
+         "[s.step() for _ in range(180)];"
+         "print(round(s.capital,6),len(s.done),len(s.operating),round(s.reputation,9))" % HERE],
+        capture_output=True, text=True, timeout=600,
+        env=dict(os.environ, PYTHONHASHSEED="1234"))
+    return (det.stdout.split() == [str(x) for x in a],
+            (det.stdout.strip(), a))
+
+slow_check("...and the same run in a process with a different string hash seed",
+           _same_under_other_hash_seed)
 
 # --- BREAK: a permanent deadlock. `logarithms` wants 10,000 scribe-hours a
 # year where the society can field 8,750, so the throttle gives back a
@@ -4215,21 +4236,25 @@ check("...and the engine teaches it again rather than skipping every node "
       (s_rt.market_supply("machinist"),
        s_rt._trade_headcount_pending("machinist")))
 # But not every year: teaching two costs about 900 of a 2,000-hour year.
-s_rt2 = sim(capital=2000000.0, manual=False)
-s_rt2.trades_created.add("machinist")
-# Per TRADE: teaching four different trades over forty years is fine; teaching
-# the same one four times is the treadmill that cost three Rome seeds most of
-# what they built.
-_per_trade = {}
-for _ in range(40):
-    _before = dict(getattr(s_rt2, "last_taught", {}))
-    s_rt2.step()
-    for _t, _y in getattr(s_rt2, "last_taught", {}).items():
-        if _before.get(_t) != _y:
-            _per_trade[_t] = _per_trade.get(_t, 0) + 1
-check("...and no more than once a generation FOR THE SAME TRADE",
-      all(v <= 40 // s_rt2.RETEACH_EVERY + 1 for v in _per_trade.values()),
-      _per_trade)
+# FOUR SECONDS: forty years of an optimizer run to watch a cooldown that only
+# has meaning across decades. Per TRADE: teaching four different trades over
+# forty years is fine; teaching the same one four times is the treadmill that
+# cost three Rome seeds most of what they built.
+def _reteaching_is_once_a_generation():
+    s_ = sim(capital=2000000.0, manual=False)
+    s_.trades_created.add("machinist")
+    per_trade = {}
+    for _ in range(40):
+        before = dict(getattr(s_, "last_taught", {}))
+        s_.step()
+        for t, y in getattr(s_, "last_taught", {}).items():
+            if before.get(t) != y:
+                per_trade[t] = per_trade.get(t, 0) + 1
+    return (all(v <= 40 // s_.RETEACH_EVERY + 1 for v in per_trade.values()),
+            per_trade)
+
+slow_check("...and no more than once a generation FOR THE SAME TRADE",
+           _reteaching_is_once_a_generation)
 
 
 # --- BREAK: `train machinist 4` quietly ate 1,800 of a play tester's 2,000
@@ -5509,15 +5534,21 @@ check("...but a whole number still goes through, and lands exactly that many",
 # enough to reach what the tree actually asks for.
 # =============================================================================
 
-s = sim(capital=1e9, manual=False)
-for _ in range(250):
-    s.step()
-check("auto_hire never grows scholars past the same wall hire() enforces",
-      s.scholars <= s.literate_capacity("scholar") + 1e-6,
-      (s.scholars, s.literate_capacity("scholar")))
-check("...and over two and a half centuries of a rich civilisation it grows "
-      "well past the old static ceiling of about six",
-      s.scholars > 10.0, s.scholars)
+# 73 SECONDS, because it needs two and a half centuries of a rich run before
+# the question it asks even becomes interesting. The cheap half of the same
+# fix - that the ceiling itself widens with the institutions - is checked
+# below in milliseconds and stays on the fast path.
+def _auto_hire_respects_the_wall():
+    s_ = sim(capital=1e9, manual=False)
+    for _ in range(250):
+        s_.step()
+    return (s_.scholars <= s_.literate_capacity("scholar") + 1e-6
+            and s_.scholars > 10.0,
+            (s_.scholars, s_.literate_capacity("scholar")))
+
+slow_check("auto_hire never grows scholars past the wall hire() enforces, and "
+           "over two and a half centuries grows well past the old ceiling of six",
+           _auto_hire_respects_the_wall)
 
 # The bare, no-institution ceiling a fresh household sees is unchanged...
 s0 = sim()
