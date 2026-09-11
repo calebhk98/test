@@ -2337,19 +2337,24 @@ def render_why(out):
                 L.append("  (%s is how somebody who did not have it would get "
                          "there)" % ", ".join(direct))
         elif missing:
-            # KNOWN, NOT RUNNING. Since knowing a thing and operating it became
-            # two different states, a play tester reasonably asked which one a
-            # prerequisite wants, and nothing anywhere said. It wants the
-            # knowledge: finish the work once and it counts for ever, whether
-            # or not you keep the concern open.
             L.append("MISSING PREREQUISITES: " + ", ".join(missing))
-            L.append("  (a prerequisite has to be FINISHED, not merely started, "
-                     "and it stays finished: you need not keep it running.)")
         elif direct:
             L.append("PREREQUISITES (all met, and finished counts for ever): "
                      + ", ".join(direct))
         else:
             L.append("PREREQUISITES: none, you can start this on arrival")
+    # DONE, NOT MERELY OPEN - SAID ONCE, WHICHEVER BRANCH ABOVE ACTUALLY
+    # FIRED. A tester wrote "nothing states whether a prerequisite must be
+    # DONE or open"; it has always meant done, but the one sentence that used
+    # to say so lived only in the `elif missing:` branch just above, which
+    # start_blocked_reason (the common case - see its own comment) pre-empts
+    # on every refusal that actually has missing prerequisites, so a player
+    # who hit this refusal in the ordinary way never saw it at all. Printed
+    # here instead, off the same `missing` list, it is reachable whichever of
+    # the two branches actually wrote the list out.
+    if out.get("missing_prerequisites"):
+        L.append("  (a prerequisite has to be FINISHED, not merely started, "
+                 "and it stays finished: you need not keep it running.)")
 
     if out.get("chain_size") is not None:
         L.append("")

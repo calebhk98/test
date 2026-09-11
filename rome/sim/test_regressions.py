@@ -5106,6 +5106,30 @@ check("the fogged one-line summary of school_founded is not its own "
       s_fp.fog_summary("school_founded"))
 
 
+# --- JOB 3a: a prerequisite has to be DONE, not merely started. A tester
+# wrote "nothing states whether a prerequisite must be DONE or open" - it
+# has always meant done, and the one sentence that said so lived only in a
+# branch start_blocked_reason pre-empts on every ordinary refusal, so a
+# player who actually hit the refusal never saw it.
+s_pn = sim(capital=1000000.0)
+_pair_pn = None
+for _cand in s_pn.order:
+    if not s_pn.can_start(_cand):
+        continue
+    _dep = next((m for m in NODES if _cand in NODES[m]["pre"]), None)
+    if _dep:
+        _pair_pn = (_cand, _dep)
+        break
+_k1_pn, _k2_pn = _pair_pn
+S._agent_dispatch(s_pn, NODES, {"cmd": "start", "id": _k1_pn})
+_w_pn = S._node_explain(s_pn, NODES, _k2_pn)
+_txt_pn = _RP("why", _w_pn)
+check("a refusal for a started-but-unfinished prerequisite says it has to "
+      "be FINISHED, not merely started - on the path a player actually hits",
+      "FINISHED" in _txt_pn and "not merely started" in _txt_pn,
+      [ln for ln in _txt_pn.splitlines() if "FINISHED" in ln] or _txt_pn[:200])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
