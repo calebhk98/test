@@ -4823,6 +4823,32 @@ check("the typed form reaches every filter the JSON protocol has",
       _cmd == {"cmd": "log", "failures": True, "find": "plague",
                "since": 200, "order": "oldest", "limit": 5},
       _cmd)
+# --- BREAK: the automatic behaviours read as the engine offering to play
+# well on your behalf, and they are nothing of the kind. Testers turned them
+# on and reported the result as a defect: "policy auto_hire true destroyed my
+# run in eight years", "auto_train quietly bankrupted me", "policy auto_hire
+# on quietly destroyed my economy". They were right about what happened and
+# wrong about what these are, and this screen never told them.
+_pl, _, _ = proto([{"cmd": "policy"}])
+check("the policy screen says these are approximations, not optimal play",
+      "approximation" in str(_pl[0].get(
+          "these_are_approximations_not_optimal_play")).lower()
+      or "rule of thumb" in str(_pl[0].get(
+          "these_are_approximations_not_optimal_play")).lower(),
+      _pl[0].get("these_are_approximations_not_optimal_play"))
+_pl_txt = _RP("policy", _pl[0])
+check("...and a player reads that before the list of switches, not after it",
+      _pl_txt.index("rule of thumb") < _pl_txt.index("auto_bribe"),
+      _pl_txt[:200])
+check("...and every switch the game offers says what it does",
+      not [k for k in _pl[0]["policy"]
+           if not (_pl[0].get("what_each_does") or {}).get(k)],
+      [k for k in _pl[0]["policy"]
+       if not (_pl[0].get("what_each_does") or {}).get(k)])
+check("...and no line of that screen runs past the width everything else wraps to",
+      max(len(l) for l in _pl_txt.splitlines()) <= 78,
+      max(_pl_txt.splitlines(), key=len))
+
 _cmd2, _err2 = _PT("why horizontal loom")
 check("a multi-word typed name is not truncated to its first word",
       _cmd2 == {"cmd": "why", "id": "horizontal loom"}, _cmd2)

@@ -2647,7 +2647,42 @@ def render_log(out):
     return "\n".join(L)
 
 
+def render_policy(out):
+    """The switches, under a plain statement of what they are.
+
+    The generic renderer printed the warning below AFTER the list of eleven
+    switches and their descriptions, unwrapped, as a single eighty-word line
+    that a player scanning for a switch name would never read. The whole point
+    of that paragraph is that it is read BEFORE somebody turns one on.
+    """
+    L = ["AUTOMATIC BEHAVIOUR"]
+    if out.get("these_are_approximations_not_optimal_play"):
+        L.append(_wrap(out["these_are_approximations_not_optimal_play"],
+                       indent="  "))
+        L.append("")
+    pol = out.get("policy") or {}
+    does = out.get("what_each_does") or {}
+    for k in sorted(pol):
+        L.append("  %-18s %s" % (k, "ON" if pol[k] else "off"))
+        if does.get(k):
+            L.append(_wrap(does[k], width=68, indent="        "))
+    if out.get("changed"):
+        L.append("")
+        L.append("  changed: %s" % out["changed"])
+    stopped = out.get("stopped_by") or out.get("but")
+    if stopped:
+        L.append("")
+        L.append("  NOT ACTING JUST NOW:")
+        if isinstance(stopped, dict):
+            for k, v in sorted(stopped.items()):
+                L.append(_wrap("%s - %s" % (k, v), indent="    "))
+        else:
+            L.append(_wrap(str(stopped), indent="    "))
+    return "\n".join(L)
+
+
 _RENDERERS = {
+    "policy": render_policy,
     "state": render_state, "step": render_step, "available": render_available,
     "why": render_why, "money": render_money, "ledger": render_money,
     "accounts": render_money, "labour": render_labour, "risk": render_risk,
@@ -4615,6 +4650,33 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _stopped["credit"] = ("nobody will fund new work until %d"
                                   % int(s.credit_frozen_until))
         _pol = {"ok": True, "policy": dict(s.policy), "changed": changed,
+                # WHAT THESE ARE FOR, BEFORE WHAT EACH ONE DOES. Play testers
+                # keep switching them on in the belief that the engine knows
+                # the best line and is offering to walk it for them, and then
+                # reporting the result as a bug: "policy auto_hire true
+                # destroyed my run in eight years", "auto_train quietly
+                # bankrupted me", "policy auto_hire on quietly destroyed my
+                # economy". They are none of them wrong about what happened.
+                # They are wrong about what these are, and nothing on this
+                # screen has ever told them.
+                #
+                # These are a rough hand on the tiller so a player who does not
+                # want to manage a payroll every turn does not have to. They
+                # follow simple rules on the information of a single year. They
+                # do not look ahead, they do not know your plan, and they will
+                # sometimes take a line you would not have taken. That is the
+                # deal, and it is worth taking for the tedium it saves; it is
+                # not an optimizer and playing by hand will beat it.
+                "these_are_approximations_not_optimal_play": (
+                    "Each of these is a rough rule of thumb applied once a "
+                    "year on that year's figures. None of them looks ahead, "
+                    "knows what you are building towards, or is trying to win. "
+                    "They exist to save you typing, and a careful player beats "
+                    "them. Turn one on when the tedium is worse than the "
+                    "mistakes; turn it off the moment it does something you "
+                    "would not have done. If one of them ever ruins you rather "
+                    "than merely costing you a little, that is a defect worth "
+                    "reporting, not the intended cost of convenience."),
                 "what_each_does": {
                     # SAY WHAT MIX. "Grow the staff" was the whole
                     # description, and a play tester turned it on and watched
@@ -4638,6 +4700,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "auto_mine": "sink a mine when a mineral is holding work up",
                     "auto_forest": "buy coppice when charcoal is holding work up",
                     "auto_mothball": "stop working mines you cannot pay for",
+                    # THE ONE SWITCH WITH NO DESCRIPTION AT ALL, on a screen
+                    # whose entire purpose is saying what each of these does.
+                    "auto_commission": "buy a job from an outside shop when a "
+                                       "few pairs of hands are the only thing "
+                                       "between you and something you need. "
+                                       "Cheaper than employing somebody you "
+                                       "will not need next year, and it leaves "
+                                       "no standing obligation either way",
                     "auto_bribe": "pay your way out of a scandal before it kills you",
                     "auto_shed": "let go of WORKS that cost more than they return "
                                  "(this is about buildings and practices, not people)",
