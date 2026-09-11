@@ -3190,7 +3190,7 @@ s_ni = sim(capital=100000.0)
 _laid = s_ni.build_nitre(20000)
 check("nitre beds can be laid by hand, and cost what the quote says",
       _laid == 20000 and abs(s_ni.capital
-                             - (100000.0 - 20000 * s_ni.NITRE_COST_PER_M2
+                             - (100000.0 - 20000 * s.NITRE_COST_PER_M2
                                 * s_ni.price_index)) < 1e-6,
       (_laid, s_ni.capital))
 check("...and they actually supply saltpetre",
@@ -6181,6 +6181,44 @@ check("following `pre` alone understates what the goal needs by the "
 # grew an entire age of exploration - six expedition nodes, the sextant, the
 # compass, the lodestone, the cross-staff, the backstaff and a world map,
 # seventeen nodes in all - to fetch a metal the data says is on a wagon road.
+# --- THE ONE REMEDY THE GAME OFFERS, CAPPED AT THE HOUSEHOLD OF YEAR FIVE.
+# Saltpetre has no market to buy from (MARKET_SHARE is 0.0; the only bought
+# supply is sixty tonnes a year of Bengal nitre once the eastern trade route
+# runs), so nitre beds are the whole answer. auto_mine laid
+# min(capital * 0.05, 2000) denarii of bed a year - a flat ceiling, never
+# asking how short it was - while the mine branch beside it took 25% of
+# capital and sized itself to the measured shortfall. A Rome run with
+# staffing and money both solved spent 277 of its years short of saltpetre.
+def _nitre_laid(capital, tonnes_short_per_yr):
+    """One year of the auto_mine nitre branch, against a stated shortfall."""
+    n = sim(civ="rome_100ad")
+    n.capital = float(capital)
+    n.policy["auto_mine"] = True
+    n.nitre_bed_m2 = 0.0
+    n.annual_material_demand = lambda: {"nitre_kg": tonnes_short_per_yr * 1000.0}
+    n.binding = "saltpetre"
+    before = n.nitre_bed_m2
+    n.step()
+    return n.nitre_bed_m2 - before
+
+_rich = _nitre_laid(5_000_000.0, 40.0)
+_poor = _nitre_laid(3_000.0, 40.0)
+check("a rich household lays nitre bed in proportion to what it is short "
+      "of - forty tonnes a year wants 50,000 square metres, and the old "
+      "flat ceiling bought a thousand",
+      _rich >= 40.0 / 0.0008 * 0.99, _rich)
+check("...and a poor one is still held to what it can pay for, a quarter "
+      "of its capital, not to the shortfall it cannot afford",
+      _poor <= 3_000.0 * 0.25 / 2.0 + 1e-6, _poor)
+check("the nitre yield and price the advice quotes are the ones the "
+      "purchase actually uses - 0.0008 t/m2 at 2.0 den/m2, so a tonne a "
+      "year of shortfall costs 2,500 denarii of bed",
+      abs(S.Sim.NITRE_YIELD_T_PER_M2 - 0.0008) < 1e-12
+      and abs(S.Sim.NITRE_COST_PER_M2 - 2.0) < 1e-12,
+      (S.Sim.NITRE_YIELD_T_PER_M2, S.Sim.NITRE_COST_PER_M2))
+check("saltpetre still cannot simply be bought - the beds are the answer, "
+      "not a market share",
+      S.Sim.MARKET_SHARE["saltpetre"] == 0.0, S.Sim.MARKET_SHARE["saltpetre"])
 check("platinum is reachable the way its own note and the geography file "
       "both say it is, overland, without rounding the Cape",
       "exp_africa_circumnavigation" not in S.closure(NODES, "mat_platinum_bulk"),
