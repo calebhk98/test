@@ -9,7 +9,8 @@
   "w_novelty": "appetite for the new",
   "w_information": "how a society reacts to information moving freely",
   "adaptation_rate": "how fast people habituate to a marvel",
-  "bribability": "how far money moves a verdict"
+  "bribability": "how far money moves a verdict",
+  "population": "eventual fraction of this civilization's baseline population added by this technology, as a one-off total rather than an annual rate. NOT applied the year the node completes: apply_tech_effects (society.py) queues it and _demographic_recovery (core.py) spreads it over POP_TECH_RAMP_YEARS (40) years, because a lower death rate shows up in the headcount a generation later. Keep these flat and small (0.01-0.02) and resist the temptation to rank them by true historical magnitude - New World crops probably did more for Old World population than any single sanitation node, but scoring it that way turns one node into this file's best investment and the rest into noise."
  },
  "rag_paper": {
   "literacy_general": 0.02,
@@ -87,11 +88,58 @@
  },
  "germ_theory": {
   "w_magic_fear": -0.08,
-  "_why": "Disease explained is the single largest withdrawal from the account that magical thinking draws on."
+  "population": 0.01,
+  "_why": "Disease explained is the single largest withdrawal from the account that magical thinking draws on. It is also, on its own, only an idea - it raises the population less than any of the PRACTICES below it in the tree, which is why this entry is half their size."
  },
  "sanitation_antisepsis": {
   "w_magic_fear": -0.04,
-  "state_capacity": 0.03
+  "state_capacity": 0.03,
+  "population": 0.02,
+  "_why": "Boiled water and handwashing cut exactly the childhood diarrhoeal and puerperal mortality that kept pre-modern populations flat for centuries."
+ },
+ "med_aqueducts_latrines": {
+  "population": 0.02,
+  "_why": "Clean water in and sewage out is the oldest public-health intervention in the tree, and the one Rome already had: the Roman water supply is the textbook case of infrastructure holding down urban mortality, which was otherwise always higher than the rural rate it depended on for replacement."
+ },
+ "med_quarantine_sanitation": {
+  "population": 0.02,
+  "_why": "Separating the sick kept outbreaks from becoming famines-of-labour as well as famines-of-food; this is the same mechanism _shocks' staff_loss hedges reward, seen from the demographic side instead of the plague side."
+ },
+ "med_vector_control": {
+  "population": 0.02,
+  "_why": "Draining the standing water a mosquito breeds in is the pre-germ-theory answer to malaria, which was endemic across most of the warm Old World and a steady drag on population wherever it was."
+ },
+ "med_obstetric_antisepsis": {
+  "population": 0.02,
+  "_why": "Semmelweis's handwashing rule cut Viennese maternity-ward mortality by most of an order of magnitude within the year he imposed it. Childbirth killed a meaningful share of adult women in every pre-modern society; this is the node that stops it."
+ },
+ "med_asepsis_antisepsis": {
+  "population": 0.02,
+  "_why": "Lister's carbolic spray turned a compound fracture or an abdominal operation from a likely death sentence into a survivable event, at exactly the historical moment surgery was starting to attempt more of both."
+ },
+ "med_vaccination_progression": {
+  "population": 0.02,
+  "_why": "Variolation and then vaccination are the textbook case of a single technology visibly changing a population curve: smallpox alone is estimated to have killed 10% or more of every generation that had not had it."
+ },
+ "crop_rotation": {
+  "population": 0.02,
+  "_why": "Marling, the heavy plough and selective breeding are the package historians call the medieval agricultural revolution, and it is credited with the population growth that filled Europe's villages before the Black Death emptied them again."
+ },
+ "fud_three_field_rotation": {
+  "population": 0.02,
+  "_why": "Letting only a third of the land lie fallow each year instead of half is a flat one-sixth more land in production every year, for the same soil, forever - this is the single most-cited driver of the High Medieval population rise."
+ },
+ "fud_seed_drill": {
+  "population": 0.015,
+  "_why": "Jethro Tull's drill sows in rows at a measured depth instead of scattering by hand, and the yield gain it and the tools that followed it made possible is one of the standard explanations for Britain feeding a population that tripled across the 18th and 19th centuries without a matching rise in farmed acreage."
+ },
+ "mat_newworld_crops": {
+  "population": 0.02,
+  "_why": "The potato and maize are the most-studied case of a crop transfer raising a whole continent's population; Nunn and Qian (2011) attribute a substantial share of Old World population growth after 1700 to the potato alone. Scored no higher than the others here on purpose - see the _fields note on this column - because this file is not trying to be a faithful demographic model, only a modest and bounded one."
+ },
+ "ag2_canning": {
+  "population": 0.015,
+  "_why": "Preserving a harvest past the season it grew in turns a local crop failure into a supply problem instead of a famine, which is exactly the kind of shock that used to show up as a population collapse in the hazard file above."
  },
  "arithmetic_positional": {
   "literacy_elite": 0.03,
