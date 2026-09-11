@@ -668,7 +668,12 @@ import time as _time
 # rest of abstract science) were not, even though several of those nodes carry
 # real upkeep the same way Newton's laws does. A loss-making node that is
 # neither is the control: it SHOULD still be shed.
-_KNOW1, _KNOW2, _LOSS = "md2_cell_theory", "md2_dna", "hom_eraser_breadcrumb"
+# hom_eraser_breadcrumb used to be that control, but the JOB 1 upkeep audit
+# correctly zeroed its upkeep (a rubber eraser is a technique, not an
+# establishment), so it stopped bleeding money and stopped exercising this
+# path. met_ore_crushing_sorting is a real establishment kind of node (it
+# stayed in the audit's kept "mining" category) that still carries upkeep.
+_KNOW1, _KNOW2, _LOSS = "md2_cell_theory", "md2_dna", "met_ore_crushing_sorting"
 s = sim()
 check("theory and knowledge categories are protected the same way physics is",
       s.never_abandon(_KNOW1) and s.never_abandon("sc2_physics_newtons_laws"),
@@ -1614,9 +1619,23 @@ check("you cannot commit to more work than cash and credit could ever cover",
 # S14. A node that costs nothing to build and 20 a year to keep could be shut
 # down and brought back around the annual tick for nothing, so its upkeep was
 # optional. The engine already gets this right for mines.
+# This used to pick its own candidate by filter (up>0, no prerequisite,
+# project_cost under 1 denarius); the JOB 1 upkeep audit zeroed `up` on every
+# node that filter used to find (they were all techniques, correctly), and
+# every remaining up>0/no-prerequisite/near-free node turned out to be
+# something auto-granted on turn one (a capability rung, a road network) -
+# excluded by `not in s.granted` and so invisible to the filter too. There is
+# also a sharper reason to stop computing this dynamically: `s.done.add`
+# below bypasses `start`'s own prerequisite check, but restore_work has its
+# OWN separate check ("you no longer have what it stands on") that reads real
+# prerequisites regardless of how `done` was populated, so a candidate with
+# unmet prerequisites makes restore_work silently refuse and charge nothing -
+# which reads as exactly the bug this check exists to catch, for a completely
+# different reason. met_ore_crushing_sorting has no prerequisite, was not
+# auto-granted (its `ph` is not zero), and kept its upkeep in the audit as
+# real mining-establishment cost, so it is named directly rather than found.
 s = sim(civ="england_1300", capital=50000.0)
-_free = [k for k in NODES if NODES[k]["up"] > 0 and s.project_cost(k) < 1.0
-         and k not in s.granted and not NODES[k]["pre"]]
+_free = ["met_ore_crushing_sorting"]
 s.done.add(_free[0])
 s._done_changed()
 s.mothball_work(_free[0])
@@ -4983,6 +5002,134 @@ _rome_10 = s_lm.goods_market_factor("tex_power_loom")
 check("a smaller, poorer civilization's market for the same good saturates "
       "faster than Rome's did at the same age",
       _small_factor < _rome_10, (_small_factor, _rome_10))
+
+
+# --- JOB 1: techniques should not cost upkeep. A play tester asked "should
+# any techs cost upkeep? Shouldn't that all be on the building/thing it
+# unlocks?" and was right: 2,444 non-institution nodes carried upkeep, most
+# of them pure knowledge (a theory, a hand technique, a machine-tool
+# accessory) with no premises, staff or standing cost to speak of. The audit
+# zeroed upkeep on every one of those that had no revenue either - a node
+# with revenue is already a going concern by the tree's own definition - and
+# kept it only on physical plant (furnaces, mills, mines, chemical process
+# works) and a short hand-picked list of named facilities (hospitals,
+# clinics, road networks, the arsenal). This is em_theory: pure knowledge,
+# nothing to run.
+check("a pure technique no longer costs anything to keep knowing",
+      NODES["em_theory"]["up"] == 0.0 and NODES["em_theory"]["rev"] == 0.0,
+      (NODES["em_theory"]["up"], NODES["em_theory"]["rev"]))
+check("that same technique is no longer offered as a going concern to open",
+      sim().is_venture("em_theory") is False, sim().is_venture("em_theory"))
+# And the flip side: an actual furnace you fire every day still costs
+# something to keep firing, same as before the audit.
+check("a furnace you actually run still carries real upkeep",
+      NODES["met_open_hearth_furnace"]["up"] > 0,
+      NODES["met_open_hearth_furnace"]["up"])
+# A venture that sells something was never in scope for the audit - revenue
+# is what makes it a going concern in the first place - so blast_furnace,
+# which both sells cast iron and costs money to run, is untouched.
+check("a venture that already sells something keeps its upkeep untouched",
+      NODES["blast_furnace"]["up"] == 7000.0 and NODES["blast_furnace"]["rev"] > 0,
+      (NODES["blast_furnace"]["up"], NODES["blast_furnace"]["rev"]))
+
+# --- JOB 2: rubber should be made, not bought. A play tester asked whether
+# rubber could even be bought for most of the run, and said you should have
+# to make it with your own factory - tapping and coagulating latex, and
+# vulcanising anything that must not melt in summer or crack in winter.
+# Before this, every rubber good gated on mat_natural_rubber directly and
+# then simply bought rubber_kg at a price, with tl_vulcanized_rubber built
+# and never required by anything.
+check("coagulating rubber is its own step, not free the moment you know the vine",
+      NODES["mat_rubber_coagulated"]["pre"] == ["mat_natural_rubber"],
+      NODES["mat_rubber_coagulated"]["pre"])
+check("a pneumatic tyre needs vulcanised rubber, not raw coagulated latex",
+      "tl_vulcanized_rubber" in NODES["tl_pneumatic_tyre"]["pre"]
+      and "mat_natural_rubber" not in NODES["tl_pneumatic_tyre"]["pre"],
+      NODES["tl_pneumatic_tyre"]["pre"])
+check("an eraser needs coagulated rubber but not full vulcanisation",
+      "mat_rubber_coagulated" in NODES["tx2_eraser"]["pre"]
+      and "tl_vulcanized_rubber" not in NODES["tx2_eraser"]["pre"],
+      NODES["tx2_eraser"]["pre"])
+check("vulcanisation itself is built from coagulated rubber, not raw latex",
+      "mat_rubber_coagulated" in NODES["tl_vulcanized_rubber"]["pre"]
+      and "mat_natural_rubber" not in NODES["tl_vulcanized_rubber"]["pre"],
+      NODES["tl_vulcanized_rubber"]["pre"])
+
+# --- JOB 3a: England's own briefing calls cheap iron and the temperature to
+# make it "the biggest single technology gap you face", and blast_furnace's
+# own note calls itself "the biggest single technology gap" in the same
+# words - yet England's starting kit handed over blast_furnace, mat_cast_
+# iron and cap_heat_1300 (Han China's real grant, copied by mistake) for
+# free. A blast furnace did not reach England until Newbridge in 1496.
+_eng = S.load_civ("england_1300")
+check("England no longer starts already owning the iron gap its own briefing describes",
+      not ({"blast_furnace", "mat_cast_iron", "cap_heat_1300"}
+           & set(_eng["starting_techs"])),
+      _eng["starting_techs"])
+
+# --- JOB 3b: the cursus publicus (Roman imperial dispatch relay) and the
+# Pharos (one specific Ptolemaic building at Alexandria) are not a generic
+# capability any society might have. FOREIGN_MARKERS in fog.py already
+# catches both by name; this pins that Han China - which has no Roman
+# citizenship, no Roman roads and no Alexandria - is never handed either one
+# for free, the way testers kept finding Roman-branded grants in other
+# people's civilisations.
+_han = sim(civ="han_china_100ad")
+check("Han China is never handed Rome's courier relay or Ptolemy's lighthouse for free",
+      "lnd_cursus_publicus" not in _han.granted
+      and "sea_pharos_lighthouse" not in _han.granted,
+      (sorted(_han.granted & {"lnd_cursus_publicus", "sea_pharos_lighthouse"})))
+
+# --- JOB 3c: the Norse civilisation's flagship starting technologies -
+# clinker hull, deep keel, bog-iron bloomery - are supposed to be its
+# superb shipbuilding and ironworking, but `why sea_keel_deep` reported
+# "(nothing, this is a leaf)": literally nothing in the tree depended on it,
+# contradicting the civilisation's own self-description. It is now a real
+# alternative route (alongside the Mediterranean fore-and-aft rig) into
+# open-ocean navigation, which needs SOME way to sail to windward and
+# previously named none at all.
+check("the Norse deep keel now genuinely enables open-ocean navigation",
+      any("sea_keel_deep" in g.get("options", {})
+          for g in NODES["exp_openocean_navigation"]["req_any"]),
+      NODES["exp_openocean_navigation"]["req_any"])
+
+# --- JOB 4: the blind prerequisite audit (BLIND_TREE_phase2.md) found three
+# genuine small gaps and this implements all three, marginal cost verified
+# with closure() rather than trusted from the document (a previous audit
+# nearly deferred a correct fix by quoting 101 when the true marginal cost
+# was 1).
+check("placing a whisker a few hundredths of a millimetre apart now requires something that can see the gap",
+      "microscope_compound" in NODES["gp_whisker_forming"]["pre"],
+      NODES["gp_whisker_forming"]["pre"])
+check("the germanium surface now gets a chemical/electrolytic etch, not mechanical lapping alone",
+      "el2_electropolishing_etching_surface_finish" in NODES["gp_whisker_forming"]["pre"],
+      NODES["gp_whisker_forming"]["pre"])
+# mat_gold sits on gp_whisker_forming, one step short of the goal, not on
+# point_contact_transistor directly - a first attempt put it on the goal
+# itself and a fog regression test caught the leak: mat_gold is tier0/ph0,
+# auto-granted and therefore always is_visible(), and the goal is the one
+# node `why` always answers under fog, so direct_prerequisites (unlike
+# every other node, where is_visible() filters it) named the goal's own
+# prerequisite from turn one.
+check("the contact alloys are real prerequisites now, not just bare material costs",
+      "mat_gold" in NODES["gp_whisker_forming"]["pre"]
+      and "phosphor_bronze_alloy" in NODES["gp_whisker_forming"]["pre"],
+      NODES["gp_whisker_forming"]["pre"])
+check("the whole goal closure grew by exactly the 2+2+1+3=8 nodes the audit "
+      "claimed as marginal cost, not more",
+      len(S.closure(NODES, GOAL)) == 157, len(S.closure(NODES, GOAL)))
+
+# --- This audit's own mistake, caught by the very fog test above it: writing
+# a new prerequisite's id into point_contact_transistor's NOTE leaked it in
+# prose, because the goal is special-cased to answer `why` under fog no
+# matter what, and note text - unlike direct_prerequisites - is never
+# filtered by is_visible(). Pin it so a future data edit cannot reintroduce
+# the same leak by being specific in the wrong field.
+check("the goal's own note never spells out the id of one of its prerequisites",
+      not any(p in NODES["point_contact_transistor"]["note"]
+              for p in NODES["point_contact_transistor"]["pre"]),
+      [p for p in NODES["point_contact_transistor"]["pre"]
+       if p in NODES["point_contact_transistor"]["note"]])
 
 
 print("=" * 72)
