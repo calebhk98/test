@@ -1,0 +1,453 @@
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_234.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] >   EVENT 104: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 75 denarii
+  EVENT 130: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 79 denarii
+  EVENT 137: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 70 denarii
+  EVENT 141: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 60 denarii
+  EVENT 141: banditry or a frontier war disrupts supply: it cost you 28 denarii
+  EVENT 150: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 53 denarii
+  EVENT 159: banditry or a frontier war disrupts supply: it cost you 29 denarii
+  EVENT 165: Antonine plague: 50 gone with the trade that stopped, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 166: population still 27% below trend: wages (and anything billed in them) are running 24% above normal for here, and will ease as the population does
+  EVENT 167: Antonine plague: 43 gone with the trade that stopped, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 172: Antonine plague: 41 gone with the trade that stopped, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 178: Antonine plague: 40 gone with the trade that stopped, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 180: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 38 denarii
+  EVENT 181: population still 56% below trend: wages (and anything billed in them) are running 50% above normal for here, and will ease as the population does
+  EVENT 188: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 41 denarii
+  EVENT 190: Currency debasement: the coin is worth 6% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 10 denarii
+  EVENT 196: population still 35% below trend: wages (and anything billed in them) are running 31% above normal for here, and will ease as the population does
+  EVENT 205: Currency debasement: the coin is worth 62% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 8 denarii
+  EVENT 211: population still 21% below trend: wages (and anything billed in them) are running 19% above normal for here, and will ease as the population does
+  EVENT 220: Currency debasement: the coin is worth 85% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 8 denarii
+  EVENT 223: banditry or a frontier war disrupts supply: it cost you 14 denarii
+  EVENT 226: population still 13% below trend: wages (and anything billed in them) are running 12% above normal for here, and will ease as the population does
+  EVENT 235: Third century crisis: trade and output fall to 65% of normal
+  EVENT 235: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.20)
+  EVENT 235: Currency debasement: the coin is worth 94% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 7 denarii
+  EVENT 238: interest on 76 denarii of arrears at 11.0% a year
+  EVENT 239: CLOSE TO THE LIMIT: you owe 158 of the 219 anyone here will advance you (71%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 240: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.6), and you keep your knowledge and your practice
+  EVENT 240: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 241: population still 8% below trend: wages (and anything billed in them) are running 7% above normal for here, and will ease as the population does
+  EVENT 242: interest on 248 denarii of arrears at 11.0% a year
+  EVENT 243: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 245: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.23)
+  EVENT 246: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 250: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 250: Currency debasement: the coin is worth 97% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took nothing, because you were holding none
+  EVENT 251: Plague of Cyprian: you had nothing it could take, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 252: interest on 248 denarii of arrears at 11.0% a year
+  EVENT 252: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 254: Plague of Cyprian: you had nothing it could take, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 255: Third century crisis: trade and output fall to 65% of normal
+  EVENT 255: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.26)
+  EVENT 255: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 256: population still 46% below trend: wages (and anything billed in them) are running 41% above normal for here, and will ease as the population does
+  EVENT 258: Plague of Cyprian: you had nothing it could take, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 259: Plague of Cyprian: you had nothing it could take, population -28% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 260: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 265: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 265: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.29)
+  EVENT 265: Currency debasement: the coin is worth 99% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took nothing, because you were holding none
+  EVENT 270: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 270: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 271: population still 47% below trend: wages (and anything billed in them) are running 42% above normal for here, and will ease as the population does
+  EVENT 275: Third century crisis: trade and output fall to 65% of normal
+  EVENT 275: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.32)
+  EVENT 280: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 283: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 284: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.35)
+  EVENT 284: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.85, w_commerce now 0.30, w_military now 0.90, w_religious_rigidity now 0.35)
+  EVENT 286: population still 29% below trend: wages (and anything billed in them) are running 26% above normal for here, and will ease as the population does
+  EVENT 290: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 294: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.88, w_commerce now 0.25, w_military now 0.93, w_religious_rigidity now 0.39)
+  EVENT 295: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 300: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 301: population still 18% below trend: wages (and anything billed in them) are running 16% above normal for here, and will ease as the population does
+  EVENT 302: CLOSE TO THE LIMIT: you owe 198 of the 221 anyone here will advance you (89%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 304: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.90, w_commerce now 0.20, w_military now 0.95, w_religious_rigidity now 0.43)
+  EVENT 305: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.90, w_commerce now 0.20, w_military now 0.95, w_religious_rigidity now 0.43)
+  EVENT 310: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 312: CLOSE TO THE LIMIT: you owe 167 of the 221 anyone here will advance you (75%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 312: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.20, w_labour_saving now -0.60)
+  EVENT 313: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.80, w_novelty now -0.40, w_religious_rigidity now 0.43)
+  EVENT 316: population still 11% below trend: wages (and anything billed in them) are running 10% above normal for here, and will ease as the population does
+  EVENT 320: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 322: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.22, w_labour_saving now -0.57)
+  EVENT 323: CLOSE TO THE LIMIT: you owe 169 of the 222 anyone here will advance you (76%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 323: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.81, w_novelty now -0.41, w_religious_rigidity now 0.47)
+  EVENT 330: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 331: population still 7% below trend: wages (and anything billed in them) are running 6% above normal for here, and will ease as the population does
+  EVENT 332: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.24, w_labour_saving now -0.55)
+  EVENT 333: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.82, w_novelty now -0.41, w_religious_rigidity now 0.51)
+  EVENT 336: CLOSE TO THE LIMIT: you owe 164 of the 224 anyone here will advance you (73%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 340: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 342: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.26, w_labour_saving now -0.53)
+  EVENT 343: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.84, w_novelty now -0.42, w_religious_rigidity now 0.55)
+  EVENT 346: population still 4% below trend: wages (and anything billed in them) are running 4% above normal for here, and will ease as the population does
+  EVENT 352: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.28, w_labour_saving now -0.50)
+  EVENT 353: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.85, w_novelty now -0.42, w_religious_rigidity now 0.59)
+  EVENT 360: banditry or a frontier war disrupts supply: it cost you 3 denarii
+  EVENT 361: population still 3% below trend: wages (and anything billed in them) are running 2% above normal for here, and will ease as the population does
+  EVENT 362: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.30, w_labour_saving now -0.48)
+  EVENT 363: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.86, w_novelty now -0.43, w_religious_rigidity now 0.63)
+  EVENT 372: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.31, w_labour_saving now -0.46)
+  EVENT 373: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.87, w_novelty now -0.43, w_religious_rigidity now 0.67)
+  EVENT 375: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.32, w_labour_saving now -0.45)
+  EVENT 375: banditry or a frontier war disrupts supply: it cost you 15 denarii
+  EVENT 376: population still 2% below trend: wages (and anything billed in them) are running 1% above normal for here, and will ease as the population does
+  EVENT 376: Adrianople and the Gothic settlement: trade and output fall to 86% of normal
+  EVENT 383: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.88, w_novelty now -0.44, w_religious_rigidity now 0.71)
+  EVENT 384: interest on 31 denarii of arrears at 11.0% a year
+  EVENT 388: interest on 152 denarii of arrears at 11.0% a year
+  EVENT 389: CLOSE TO THE LIMIT: you owe 191 of the 222 anyone here will advance you (85%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 390: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.4), and you keep your knowledge and your practice
+  EVENT 391: population still 1% below trend: wages (and anything billed in them) are running 1% above normal for here, and will ease as the population does
+  EVENT 393: CLOSE TO THE LIMIT: you owe 181 of the 222 anyone here will advance you (81%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 393: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.89, w_novelty now -0.45, w_religious_rigidity now 0.75)
+  EVENT 394: Adrianople and the Gothic settlement: a site is sacked - you had nothing it could take
+  EVENT 396: Adrianople and the Gothic settlement: trade and output fall to 86% of normal
+  EVENT 398: interest on 444 denarii of arrears at 11.0% a year
+  EVENT 400: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 400: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.90, w_novelty now -0.45, w_religious_rigidity now 0.78)
+  EVENT 403: CLOSE TO THE LIMIT: you owe 181 of the 222 anyone here will advance you (81%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 406: population still 1% below trend: wages (and anything billed in them) are running 1% above normal for here, and will ease as the population does
+  EVENT 406: The crossings, and the sack of Rome: trade and output fall to 74% of normal
+  EVENT 407: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 408: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 410: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 411: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 412: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 412: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 419: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 420: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 420: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 421: population still 34% below trend: wages (and anything billed in them) are running 31% above normal for here, and will ease as the population does
+  EVENT 422: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 423: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 424: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 426: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 426: The crossings, and the sack of Rome: trade and output fall to 74% of normal
+  EVENT 429: The crossings, and the sack of Rome: a site is sacked - you had nothing it could take
+  EVENT 430: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 430: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 432: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 436: population still 39% below trend: wages (and anything billed in them) are running 35% above normal for here, and will ease as the population does
+  EVENT 437: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 438: The crossings, and the sack of Rome: a site is sacked - you had nothing it could take
+  EVENT 440: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 442: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 443: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 445: The crossings, and the sack of Rome: a site is sacked - you had nothing it could take
+  EVENT 446: The crossings, and the sack of Rome: trade and output fall to 74% of normal
+  EVENT 450: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 451: population still 33% below trend: wages (and anything billed in them) are running 30% above normal for here, and will ease as the population does
+  EVENT 451: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 452: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 452: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 453: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 458: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 459: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 460: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 460: The crossings, and the sack of Rome: you had nothing it could take, population -10% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 461: The end of the western empire: trade and output fall to 63% of normal
+  EVENT 461: The end of the western empire: the society's values are shifting (patronage_weight now 0.90, w_commerce now 0.32)
+  EVENT 466: population still 43% below trend: wages (and anything billed in them) are running 38% above normal for here, and will ease as the population does
+  EVENT 470: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 471: The end of the western empire: the society's values are shifting (patronage_weight now 0.93, w_commerce now 0.27)
+  EVENT 479: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 480: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 481: population still 26% below trend: wages (and anything billed in them) are running 24% above normal for here, and will ease as the population does
+  EVENT 481: The end of the western empire: trade and output fall to 63% of normal
+  EVENT 481: The end of the western empire: the society's values are shifting (patronage_weight now 0.97, w_commerce now 0.22)
+  EVENT 490: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 491: The end of the western empire: the society's values are shifting (patronage_weight now 1.00, w_commerce now 0.17)
+  EVENT 492: The end of the western empire: the society's values are shifting (patronage_weight now 1.00, w_commerce now 0.17)
+  EVENT 493: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.17, w_novelty now -0.45)
+  EVENT 496: population still 16% below trend: wages (and anything billed in them) are running 15% above normal for here, and will ease as the population does
+  EVENT 500: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 503: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.20, w_novelty now -0.43)
+  EVENT 510: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 511: population still 10% below trend: wages (and anything billed in them) are running 9% above normal for here, and will ease as the population does
+  EVENT 511: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 512: CLOSE TO THE LIMIT: you owe 201 of the 221 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 513: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.22, w_novelty now -0.42)
+  EVENT 520: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 522: CLOSE TO THE LIMIT: you owe 170 of the 221 anyone here will advance you (76%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 523: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.24, w_novelty now -0.40)
+  EVENT 526: population still 6% below trend: wages (and anything billed in them) are running 6% above normal for here, and will ease as the population does
+  EVENT 526: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.25, w_novelty now -0.40)
+  EVENT 530: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 533: CLOSE TO THE LIMIT: you owe 174 of the 222 anyone here will advance you (78%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 534: banditry or a frontier war disrupts supply: it cost you nothing, because you were holding none
+  EVENT 535: Justinian's Gothic War: a site is sacked - you had nothing it could take
+  EVENT 535: Justinian's Gothic War: trade and output fall to 59% of normal
+  EVENT 535: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 536: Justinian's Gothic War: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 537: Justinian's Gothic War: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 538: Justinian's Gothic War: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 539: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 540: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 76 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 541: population still 31% below trend: wages (and anything billed in them) are running 28% above normal for here, and will ease as the population does
+  EVENT 545: Justinian's Gothic War: a site is sacked - you had nothing it could take
+  EVENT 547: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 550: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 76 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 554: Justinian's Gothic War: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 556: population still 28% below trend: wages (and anything billed in them) are running 25% above normal for here, and will ease as the population does
+  EVENT 557: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 558: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 560: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 560: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 561: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 562: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 566: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 567: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 568: The Lombard invasion: a site is sacked - you had nothing it could take
+  EVENT 568: The Lombard invasion: trade and output fall to 65% of normal
+  EVENT 570: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 570: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 571: population still 47% below trend: wages (and anything billed in them) are running 42% above normal for here, and will ease as the population does
+  EVENT 571: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 572: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 573: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 575: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 577: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 580: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 583: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 585: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 586: population still 58% below trend: wages (and anything billed in them) are running 52% above normal for here, and will ease as the population does
+  EVENT 588: The Lombard invasion: trade and output fall to 65% of normal
+  EVENT 590: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 591: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 592: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 593: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 593: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 594: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 595: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+  EVENT 599: Recurrent plague: you had nothing it could take, population -12% society-wide, which will keep wages (and everything paid in them) dear for roughly the next 93 years
+
+============================================================
+YEAR 600   (0 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: the horizon at 600 AD is reached. You built 0 things of your own and did not reach point-contact transistor. ***
+
+Money: -1,228 den    net -200.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 0.10   protection <1%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  HAPPENING NOW: Recurrent plague, The Lombard invasion
+  4 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+======================================================================
+THE RUN IS OVER
+======================================================================
+  the horizon at 600 AD is reached. You built 0 things of your own and did not
+  reach point-contact transistor.
+
+  ended in 600 AD
+  you built 0 things; this society already had 139
+  -1,228 in hand, 0 people, reputation 0.10, 0 concerns running
+
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    157 nodes in all; you had 6 of them and 151 were still to build
+    the next steps would have been: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic
+======================================================================
+
+   You can still look at anything; 'quit' when you are done.
+
+[600 AD | -1227 den | you:2000 hr | sch 1 art 1 | rep 0] > ============================================================
+YEAR 600   (0 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: the horizon at 600 AD is reached. You built 0 things of your own and did not reach point-contact transistor. ***
+
+Money: -1,228 den    net -200.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 0.10   protection <1%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk; a sacking that costs you anything (80% of them do) takes 0, hedged by nothing yet
+  [IN PROGRESS] Recurrent plague
+  [IN PROGRESS] The Lombard invasion
+  [634-700] The Arab conquests close the Mediterranean
+  [774-800] The Carolingian renaissance
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+[600 AD | -1227 den | you:2000 hr | sch 1 art 1 | rep 0] > REFUSED: the run has ended (the horizon at 600 AD is reached. You built 0 things of your own and did not reach point-contact transistor.); time cannot advance. Use state to see the final position.
+
+[600 AD | -1227 den | you:2000 hr | sch 1 art 1 | rep 0] > bye: True
+
+Ended 600 AD. the horizon at 600 AD is reached. You built 0 things of your own and did not reach point-contact transistor.
+Saved to /root/.rome-saves/rome_100ad_234.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_234.json

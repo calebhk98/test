@@ -1,0 +1,154 @@
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_235.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you have no slaves to free
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you have never heard of any such thing. You know what you have built and what you could begin next; nothing tells you what lies beyond that.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > started: hom_eraser_breadcrumb
+name: Eraser, breadcrumb substitute
+founder hours needed: 30
+calendar floor years: 0.10
+the bill you have taken on: 5
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: already active
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_235.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_235.json

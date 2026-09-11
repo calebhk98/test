@@ -5993,6 +5993,37 @@ check("the founder's age at death survives a save and a fresh process "
 # --- JOB 3f: a bulk start for the late game, so it is not pure typing.
 s_ru = sim()
 _ru = S._agent_dispatch(s_ru, NODES, {"cmd": "rush"})
+# --- BREAK, round 12: `rush limit:1000` on turn one started 209 things at
+# once, owing 90,944 founder-hours against a lifetime the game itself puts at
+# about 72,000. The next step gave hours to exactly one of them, so "RUNNING
+# (209)" was a fiction about 208 of them. Committing a couple of years of
+# everyone's attention is a decision; committing four centuries of it is not.
+_s_rush = sim(capital=5000000.0)
+_r_rush = S._agent_dispatch(_s_rush, NODES, {"cmd": "rush", "limit": 1000})
+_owed_rush = sum(NODES[r["id"]]["ph"] for r in (_r_rush.get("started") or []))
+check("`rush` does not commit more hours than a couple of years can hold",
+      _owed_rush <= _s_rush.director_pool() * 2.0 + max(
+          NODES[r["id"]]["ph"] for r in (_r_rush.get("started") or [{"id": GOAL}])),
+      (_owed_rush, _s_rush.director_pool()))
+check("...and says why it stopped rather than silently starting fewer",
+      any("would not make them go faster" in str(r.get("why"))
+          for r in (_r_rush.get("not_started") or [])),
+      [r.get("why") for r in (_r_rush.get("not_started") or [])][:1])
+
+# --- BREAK, round 12: five scholars hired, five years stepped, the payroll
+# read 5, 4, 3, 3, 2 and NOTHING said why. The rate was right all along
+# (measured 0.825 survival over five years against 0.837 expected across forty
+# seeds); it was the reporting that was missing, and from the chair it looked
+# exactly like staff vanishing.
+_s_att = sim(capital=10000000.0, events=False)
+run_it(_s_att, "workshop_first", "school_founded", "freedman_staff")
+_s_att.hire("scholar", 8)
+for _ in range(12):
+    _s_att.step()
+check("losing people to death and better offers is announced, not silent",
+      any("lose" in m and "scholar" in m for _, m in _s_att.log),
+      [m for _, m in _s_att.log if "lose" in m][:2])
+
 check("`rush` starts more than one thing in a single call",
       _ru.get("count_started", 0) >= 2, _ru.get("count_started"))
 check("...and every id it reports started is actually active now",

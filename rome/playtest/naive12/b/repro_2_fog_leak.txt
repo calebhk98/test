@@ -1,0 +1,4 @@
+# python3 rome/sim/simulator.py play --session /tmp/fog.json --civ rome_100ad --kit poor_scholar --fog
+why bronze_castin
+start bronze_castin
+why zone_refin

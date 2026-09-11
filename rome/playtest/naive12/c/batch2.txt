@@ -1,0 +1,107 @@
+Resumed from /root/.rome-saves/rome_100ad_231.json: 149 AD.
+[149 AD | 283316 den | you:0 hr | sch 0 art 0 | rep 2] >   EVENT 149: RUN ENDS: the founder died without training successors; the school dispersed and the work was forgotten
+
+============================================================
+YEAR 150   (450 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: the founder died without training successors; the school dispersed and the work was forgotten ***
+
+Money: 278,856 den    net -4,393 den/yr (after 0 den into projects this year)
+You: DEAD (aged about 73 at death, in 138) and ageing, 0 founder-hours free this year
+
+RUNNING (1):
+  hom_eraser_breadcrumb                0% of your hours spent, 0 still owed - waiting on your hours
+      Eraser, breadcrumb substitute
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 0.0 scholars and 0.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 1.5   protection 1%   scandal 0   eminence 7.0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  17 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+======================================================================
+THE RUN IS OVER
+======================================================================
+  the founder died without training successors; the school dispersed and the
+  work was forgotten
+
+  ended in 150 AD
+  you built 0 things; this society already had 139
+  278,856 in hand, 0 people, reputation 1.5, 0 concerns running
+
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    157 nodes in all; you had 6 of them and 151 were still to build
+    the next steps would have been: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic
+======================================================================
+
+   You can still look at anything; 'quit' when you are done.
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > ============================================================
+YEAR 150   (450 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: the founder died without training successors; the school dispersed and the work was forgotten ***
+
+Money: 278,856 den    net -4,393 den/yr (after 0 den into projects this year)
+You: DEAD (aged about 73 at death, in 138) and ageing, 0 founder-hours free this year
+
+RUNNING (1):
+  hom_eraser_breadcrumb                0% of your hours spent, 0 still owed - waiting on your hours
+      Eraser, breadcrumb substitute
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 0.0 scholars and 0.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 1.5   protection 1%   scandal 0   eminence 7.0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk; a sacking that costs you anything (80% of them do) takes 0, hedged by nothing yet
+  [165-180] Antonine plague
+  [249-262] Plague of Cyprian
+  [235-284] Third century crisis
+  [190-275] Currency debasement
+  [284-305] Diocletian's reforms and the Price Edict
+  [312-375] The solidus and the end of the debasement
+  [313-400] Christianisation of the empire
+  [376-405] Adrianople and the Gothic settlement
+  [406-460] The crossings, and the sack of Rome
+  [461-492] The end of the western empire
+  [493-526] Ostrogothic Italy under Theodoric
+  [535-554] Justinian's Gothic War
+  [541-545] The Justinianic plague
+  [558-600] Recurrent plague
+  [568-600] The Lombard invasion
+  [634-700] The Arab conquests close the Mediterranean
+  [774-800] The Carolingian renaissance
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > bye: True
+
+Ended 150 AD. the founder died without training successors; the school dispersed and the work was forgotten
+Saved to /root/.rome-saves/rome_100ad_231.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_231.json

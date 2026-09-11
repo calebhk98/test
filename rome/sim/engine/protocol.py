@@ -3909,11 +3909,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                  "beyond what you have heard of. 'why %s' is all "
                                  "of it you can see from here." % _k}
             near = _did_you_mean(_k, nodes, s=s)
+            # SAY WHERE THE SUGGESTIONS COME FROM. The suggestions are already
+            # filtered through is_visible, so nothing hidden is ever named -
+            # but this said "you have never heard of any such thing... nothing
+            # tells you what lies beyond that" and then listed three ids, and a
+            # break tester reasonably read that as the fog leaking and filed it
+            # as their second most serious finding. It was a false alarm: the
+            # three they saw were two of Rome's own granted crafts and one
+            # thing standing startable in front of them. A refusal that
+            # manufactures false bug reports is costing real work, so the
+            # sentence now says which of the two the suggestions are.
             return {"ok": False,
                     "error": "you have never heard of any such thing. You know "
                              "what you have built and what you could begin next; "
                              "nothing tells you what lies beyond that.%s"
-                             % ((" Did you mean: " + ", ".join(near)) if near else "")}
+                             % ((" Among the things you DO know, did you mean: "
+                                 + ", ".join(near)) if near else "")}
     op = cmd.get("cmd")
     ended = _agent_end_reason(s)
 
@@ -4149,12 +4160,39 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # decide what to show you. Ranking by it here leaks nothing, because
         # the ranking itself is never printed, only which ids got started.
         _ok.sort(key=lambda k: (-downstream_count(nodes, k), s.project_cost(k)))
+        # AND STOP WHEN THE YEAR IS FULL. `rush limit:1000` on turn one started
+        # 209 things at once - a plantation, a whaling industry, a theatre, a
+        # gambling house, nitre beds and lens grinding, all in the same year -
+        # owing 90,944 founder-hours against a lifetime the game itself puts at
+        # about 72,000. The next step gave hours to exactly ONE of them and the
+        # other 208 sat inert for ever, so "RUNNING (209)" was a fiction about
+        # 208 of them. A weird-play tester called it out as the worst thing they
+        # found, and they were right: the command was doing what it was asked
+        # and what it was asked was incoherent.
+        #
+        # Committing a couple of years of everyone's attention is a decision a
+        # player might reasonably make. Committing four centuries of it is not.
+        _hours_room = max(0.0, s.director_pool() - s.director_hours_committed())
+        _HORIZON_YEARS = 2.0
+        _budget = s.director_pool() * _HORIZON_YEARS
         started, not_started = [], []
+        _owed = 0.0
         for k in _ok:
             if limit is not None and len(started) >= limit:
                 break
+            if started and _owed + nodes[k]["ph"] > _budget:
+                not_started.append({
+                    "id": k, "name": nodes[k]["name"],
+                    "why": "not begun: the %d things already started this turn "
+                           "owe %s of your hours, and you have about %s a year. "
+                           "Beginning more would not make them go faster, only "
+                           "leave them all standing still"
+                           % (len(started), "{:,.0f}".format(_owed),
+                              "{:,.0f}".format(s.director_pool()))})
+                continue
             ok2, why = s.start_project(k)
             if ok2:
+                _owed += nodes[k]["ph"]
                 n = nodes[k]
                 # SAY SO, for the same reason the single-id `start` does: a
                 # player reading `log` back should see every begun-work as a
@@ -5337,6 +5375,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
 
 SAVE_FIELDS = (
+    # THE LOG, which the `log` command exists to read back and which was not
+    # saved. The opening screen promises "progress is written to this file
+    # after every command, so you can stop any time - close the terminal,
+    # anything - and come back to exactly where you left off", and a break
+    # tester did exactly that and found `log` answering "nothing has happened
+    # yet" while money, reputation and technologies were all intact. A history
+    # that does not survive the thing the game tells you to do is not a history.
+    "log",
     "year", "capital", "done", "granted", "active", "done_year", "training",
     "scholars", "artisans", "directors_extra", "reputation", "suspicion",
     "scandal", "eminence", "protection", "familiarity", "forest_ha",

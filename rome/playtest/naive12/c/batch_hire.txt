@@ -1,0 +1,106 @@
+Resumed from /root/.rome-saves/rome_100ad_233.json: 100 AD.
+[100 AD | 1000000 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you can supervise, house and teach 6.00 more people, not 20 - 6 is the most whole people you can take. Room comes from institutions and heavy industry, and you have every one of them this society offers; what is left grows on its own as they run.
+
+[100 AD | 1000000 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 1,000,000 den    net -14,990 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk; a sacking that costs you anything (80% of them do) takes 0, hedged by nothing yet
+  [165-180] Antonine plague
+  [190-275] Currency debasement
+  [249-262] Plague of Cyprian
+  [235-284] Third century crisis
+  [284-305] Diocletian's reforms and the Price Edict
+  [312-375] The solidus and the end of the debasement
+  [313-400] Christianisation of the empire
+  [376-405] Adrianople and the Gothic settlement
+  [406-460] The crossings, and the sack of Rome
+  [461-492] The end of the western empire
+  [493-526] Ostrogothic Italy under Theodoric
+  [535-554] Justinian's Gothic War
+  [541-545] The Justinianic plague
+  [558-600] Recurrent plague
+  [568-600] The Lombard invasion
+  [634-700] The Arab conquests close the Mediterranean
+  [774-800] The Carolingian renaissance
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+[100 AD | 1000000 den | you:2000 hr | sch 1 art 1 | rep 5] > bribed: scandal 0.00 -> 0.00 for 76 denarii; 499,924 denarii of what you offered was not taken, because this is as far as money goes here - you kept it; advocacy and piety bought as well: protection 0.00 -> 0.32
+capital: 999,924
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > Point-contact transistor  [point_contact_transistor]
+====================================================
+tier 5, semiconductor, confidence A
+
+THE GOAL. An n-type germanium slab with two phosphor bronze points a
+fraction of a millimetre apart, plus a forming pulse. Fragile, noisy,
+irreproducible and it amplifies. Bardeen, Brattain and Shockley, December
+1947. Getting here from 100 AD is the whole game. [AUDIT: upkeep removed - a
+technique costs nothing to keep knowing; it is not an establishment with
+premises, staff or a standing cost. See JOB 1 upkeep audit.]
+
+COST: 33,970 den total  (5,900 labour + 8,070 materials + 20,000 capital, then x1 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 900     CALENDAR FLOOR: 4 years     FAILURE RISK: 45%
+STAFF NEEDED: 25 scholars, 20 artisans   (you have 1, 1 - counting yourself, and hours you have bought)
+     !! 25.0 wanted; you have 1.0 and literacy here will never let you HIRE more
+     than 5.9. Printing, paper, schools and academies raise both.
+     !! 20.0 wanted; you have 0.0 and could hold 6.0 in all. Room comes from
+     institutions and heavy industry, and you have every one of them this society
+     offers; what is left grows on its own as they run.
+HIRED LABOUR: chemist 8,000h, machinist 6,000h
+MATERIALS: germanium_g 200, gold_g 20, phosphor_bronze_g 60
+
+STATUS: BLOCKED
+  this needs 7 other things you have not heard of yet, and you do not yet know
+  what they are
+HOW MUCH RESTS ON THIS: a few things
+
+hours of a trade bought in for this job only. These trades do not exist here
+yet and must be taught; see the labour command.
+TRADES NOT YET TAUGHT HERE: chemist, machinist
+people kept on your own staff, who understand your methods and stay when
+this is finished. Different from hired_labour, which is hours of a job.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you have never heard of any such thing. You know what you have built and what you could begin next; nothing tells you what lies beyond that.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: 999999999 tonnes a year of gold costs 159,999,999,840,000 denarii to sink and you have 999,924. Nothing was changed - ask for what you can pay for, or check the price first with {"cmd":"quote","what":"mine","material":"gold","n":1e+09}.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > material: gold
+tonnes per year: 999,999,999
+to sink it: 159,999,999,840,000
+every year it stands: 41,999,999,958,000
+years before it produces: 3
+you have: 999,924
+you could raise: 1,007,535
+you can afford about: 6.3
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+the ground here could ever support: 6,425
+room left before geology stops you: 6,425
+current yield is this fraction of day one: 1
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_233.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_233.json

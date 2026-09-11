@@ -1,0 +1,1597 @@
+Resumed from /root/.rome-saves/rome_100ad_233.json: 100 AD.
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 999,924 den    net -14,989 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (209):
+  ag2_composting                       0% of your hours spent, 159.4 still owed - waiting on your hours
+      Composting
+  ag2_guano                            0% of your hours spent, 119 still owed - waiting on your hours
+      Guano
+  ag2_hopping                          0% of your hours spent, 150 still owed - waiting on your hours
+      Hopping
+  ag2_liming                           0% of your hours spent, 149.6 still owed - waiting on your hours
+      Liming
+  ag2_malting                          0% of your hours spent, 240 still owed - waiting on your hours
+      Malting
+  ag2_marling                          0% of your hours spent, 119.4 still owed - waiting on your hours
+      Marling
+  ag2_oil_pressing                     0% of your hours spent, 241.6 still owed - waiting on your hours
+      Oil pressing
+  ag2_potash                           0% of your hours spent, 159.4 still owed - waiting on your hours
+      Potash
+  ag2_pyrethrum                        0% of your hours spent, 280 still owed - waiting on your hours
+      Pyrethrum
+  ag2_refrigeration_ice                0% of your hours spent, 280 still owed - waiting on your hours
+      Refrigeration - ice trade
+  air_compass_magnetic                 0% of your hours spent, 87.7 still owed - waiting on your hours
+      Compass for navigation
+  air_kite_basic                       0% of your hours spent, 157.8 still owed - waiting on your hours
+      Kite
+  air_observation_balloon_tethered     0% of your hours spent, 1,138 still owed - waiting on your hours
+      Tethered observation balloon
+  arithmetic_positional                0% of your hours spent, 1,032 still owed - waiting on your hours
+      Decimal positional notation, zero, negative numbers, decimal fractions
+  arrival_orientation                  0% of your hours spent, 600 still owed - waiting on your hours
+      Six months of listening before you act
+  civ_gate_sluice                      0% of your hours spent, 183 still owed - waiting on your hours
+      Sluice gate for water control
+  civ_lightning_conductor              0% of your hours spent, 142 still owed - waiting on your hours
+      Lightning conductor and grounding
+  civ_sewer_separate                   0% of your hours spent, 765 still owed - waiting on your hours
+      Separate foul and storm sewers
+  civ_street_paved                     0% of your hours spent, 491.7 still owed - waiting on your hours
+      Paved street and sidewalk
+  civ_town_planning                    0% of your hours spent, 278.8 still owed - waiting on your hours
+      Town planning and street layout
+  civ_truss_triangulated               0% of your hours spent, 108.4 still owed - waiting on your hours
+      Triangulated truss frame
+  cn_damp_proof_course                 0% of your hours spent, 531 still owed - waiting on your hours
+      Damp proof course barrier layer
+  cn_gypsum_plaster                    0% of your hours spent, 97.7 still owed - waiting on your hours
+      Gypsum plaster finish
+  cn_pile_driving                      0% of your hours spent, 347.9 still owed - waiting on your hours
+      Pile driving by drop hammer
+  cn_post_lintel                       0% of your hours spent, 235.6 still owed - waiting on your hours
+      Post and lintel structure
+  cn_stone_polish                      0% of your hours spent, 137.8 still owed - waiting on your hours
+      Stone polishing and smoothing
+  com_optical_codebook                 0% of your hours spent, 71.4 still owed - waiting on your hours
+      Codebook for optical signal tower
+  com_signal_flags                     0% of your hours spent, 269.6 still owed - waiting on your hours
+      Signal flags for maritime communication
+  fin_apprenticeship                   0% of your hours spent, 16 still owed - waiting on your hours
+      Apprenticeship indenture and training contract
+  fin_arbitrage                        0% of your hours spent, 37.5 still owed - waiting on your hours
+      Arbitrage and price equalisation
+  fin_bankruptcy                       0% of your hours spent, 40 still owed - waiting on your hours
+      Bankruptcy law and insolvency
+  fin_bill_exchange                    0% of your hours spent, 70 still owed - waiting on your hours
+      Bill of exchange
+  fin_bimetallism                      0% of your hours spent, 53.5 still owed - waiting on your hours
+      Bimetallism and fixed exchange
+  fin_cartel                           0% of your hours spent, 53.8 still owed - waiting on your hours
+      Cartel and market sharing agreement
+  fin_census                           0% of your hours spent, 2,532 still owed - waiting on your hours
+      Census and population enumeration
+  fin_employment_contract              0% of your hours spent, 10 still owed - waiting on your hours
+      Contract of employment
+  fin_ferry                            0% of your hours spent, 1,916 still owed - waiting on your hours
+      Ferry and toll crossing
+  fin_gambling_house                   0% of your hours spent, 2,112 still owed - waiting on your hours
+      Gambling house and gaming establishment
+  fin_guild                            0% of your hours spent, 68.8 still owed - waiting on your hours
+      Guild and monopoly craft
+  fin_hotel                            0% of your hours spent, 5,824 still owed - waiting on your hours
+      Hotel and commercial lodging
+  fin_inn                              0% of your hours spent, 3,538 still owed - waiting on your hours
+      Inn and coaching house
+  fin_lottery                          0% of your hours spent, 2,080 still owed - waiting on your hours
+      Lottery and state gambling
+  fin_marine_insurance                 0% of your hours spent, 4,105 still owed - waiting on your hours
+      Marine insurance
+  fin_monopoly                         0% of your hours spent, 51.1 still owed - waiting on your hours
+      Monopoly and exclusive grant
+  fin_mortgage                         0% of your hours spent, 57.5 still owed - waiting on your hours
+      Mortgage and real estate credit
+  fin_patent                           0% of your hours spent, 61.8 still owed - waiting on your hours
+      Patent and exclusive right
+  fin_pawnshop                         0% of your hours spent, 1,025 still owed - waiting on your hours
+      Pawnshop and secured loan
+  fin_plantation                       0% of your hours spent, 10,831 still owed - waiting on your hours
+      Plantation and large estate agriculture
+  fin_postal_service                   0% of your hours spent, 4,362 still owed - waiting on your hours
+      Postal service as paid business
+  fin_racecourse                       0% of your hours spent, 5,332 still owed - waiting on your hours
+      Racecourse and pari-mutuel betting
+  fin_seigniorage                      0% of your hours spent, 25 still owed - waiting on your hours
+      Seigniorage and debasement
+  fin_tariff                           0% of your hours spent, 47.5 still owed - waiting on your hours
+      Tariff and import duty
+  fin_theatre_business                 0% of your hours spent, 8,848 still owed - waiting on your hours
+      Theatre as business
+  fin_trade_union                      0% of your hours spent, 88.1 still owed - waiting on your hours
+      Trade union and workers collegium
+  fin_trademark                        0% of your hours spent, 20 still owed - waiting on your hours
+      Trademark and mark of quality
+  fin_trading_post                     0% of your hours spent, 1,662 still owed - waiting on your hours
+      Trading post and remote store
+  fin_usury_law                        0% of your hours spent, 30 still owed - waiting on your hours
+      Usury law and interest regulation
+  fud_fish_curing_and_smoking          0% of your hours spent, 363 still owed - waiting on your hours
+      Large-scale fish curing and smoking
+  fud_grain_storage_silos              0% of your hours spent, 830.4 still owed - waiting on your hours
+      Cylindrical silos for bulk grain storage
+  fud_hay_making_storage               0% of your hours spent, 235 still owed - waiting on your hours
+      Hay making and dry storage
+  fud_whaling_industry                 0% of your hours spent, 2,070 still owed - waiting on your hours
+      Organized whaling industry for oil and meat
+  hom_eraser_breadcrumb                0% of your hours spent, 5 still owed - waiting on your hours
+      Eraser, breadcrumb substitute
+  hom_fireplace_chimney                0% of your hours spent, 271.5 still owed - waiting on your hours
+      Fireplace and chimney
+  hom_flush_toilet_trap                0% of your hours spent, 169.2 still owed - waiting on your hours
+      Flush toilet with S-bend water trap
+  hom_latrine_water_trap               0% of your hours spent, 124.9 still owed - waiting on your hours
+      Latrine water trap (S-bend)
+  hom_punkah_ceiling                   0% of your hours spent, 83 still owed - waiting on your hours
+      Ceiling punkah, servant-pulled
+  hom_safety_pin                       0% of your hours spent, 24.1 still owed - waiting on your hours
+      Safety pin
+  hom_sprung_mattress                  0% of your hours spent, 285.5 still owed - waiting on your hours
+      Sprung mattress
+  hom_toothbrush                       0% of your hours spent, 30.3 still owed - waiting on your hours
+      Toothbrush
+  hom_toys_dolls                       0% of your hours spent, 75.5 still owed - waiting on your hours
+      Toys and dolls
+  hom_umbrella                         0% of your hours spent, 89.7 still owed - waiting on your hours
+      Umbrella
+  horse_collar                         0% of your hours spent, 709.4 still owed - waiting on your hours
+      Rigid padded horse collar, whippletree, nailed horseshoe
+  identity_cover                       0% of your hours spent, 1,580 still owed - waiting on your hours
+      Establish a respectable cover identity
+  if_quill                             0% of your hours spent, 271.2 still owed - waiting on your hours
+      Quill pen
+  lnd_coach                            0% of your hours spent, 837.7 still owed - waiting on your hours
+      Coach
+  lnd_hobby_horse                      0% of your hours spent, 202.8 still owed - waiting on your hours
+      Hobby horse (pedal-less bicycle)
+  lnd_wheelbarrow                      0% of your hours spent, 89 still owed - waiting on your hours
+      Wheelbarrow
+  mat_obsidian_blade                   0% of your hours spent, 210 still owed - waiting on your hours
+      Obsidian blade knapping
+  mat_papyrus                          0% of your hours spent, 402.5 still owed - waiting on your hours
+      Papyrus
+  mat_parchment                        0% of your hours spent, 536.6 still owed - waiting on your hours
+      Parchment
+  md2_plaster_cast                     0% of your hours spent, 218 still owed - waiting on your hours
+      Plaster cast immobilization
+  md2_vector_control                   0% of your hours spent, 210.8 still owed - waiting on your hours
+      Vector control
+  med_amputation                     100% of your hours spent, 12.3 still owed - waiting on the pace it can absorb money: at most 12 a year goes into this (12 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Amputation and prosthetics
+  med_bone_setting                   100% of your hours spent, 9.3 still owed - waiting on the pace it can absorb money: at most 9 a year goes into this (9 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Bone setting
+  med_herbal_pharmacy                  0% of your hours spent, 580 still owed - waiting on your hours
+      Herbal pharmacy (Dioscorides Materia medica)
+  med_obstetric_practice             100% of your hours spent, 18.8 still owed - waiting on the pace it can absorb money: at most 19 a year goes into this (19 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Obstetric practice
+  med_surgical_gloves_mask             0% of your hours spent, 216.8 still owed - waiting on your hours
+      Surgical gloves and mask
+  met_bloomery_bog_iron                0% of your hours spent, 1,210 still owed - waiting on your hours
+      Bloomery smelting of bog iron
+  met_investment_casting               0% of your hours spent, 329.8 still owed - waiting on your hours
+      Investment casting and lost wax
+  met_ore_crushing_sorting             0% of your hours spent, 74.4 still owed - waiting on your hours
+      Ore dressing: crushing and hand sorting
+  mfg_adhesive_bond                    0% of your hours spent, 219.5 still owed - waiting on your hours
+      Adhesive bonding
+  mfg_cold_riveting                    0% of your hours spent, 223 still owed - waiting on your hours
+      Cold riveting
+  mfg_drawing_office                   0% of your hours spent, 541.8 still owed - waiting on your hours
+      Drawing office
+  mfg_enamelling                       0% of your hours spent, 216.8 still owed - waiting on your hours
+      Enamelling
+  mfg_flux                             0% of your hours spent, 209 still owed - waiting on your hours
+      Flux
+  mfg_hot_riveting                     0% of your hours spent, 220 still owed - waiting on your hours
+      Hot riveting
+  mfg_japanning                        0% of your hours spent, 219.5 still owed - waiting on your hours
+      Japanning
+  mfg_mould                            0% of your hours spent, 222.5 still owed - waiting on your hours
+      Casting mould
+  mfg_painting                         0% of your hours spent, 225 still owed - waiting on your hours
+      Painting
+  mfg_production_schedule              0% of your hours spent, 204 still owed - waiting on your hours
+      Production schedule
+  mfg_silver_solder                    0% of your hours spent, 856.1 still owed - waiting on your hours
+      Silver soldering
+  mfg_soft_solder                      0% of your hours spent, 236.5 still owed - waiting on your hours
+      Soft soldering
+  mt2_amalgamation                     0% of your hours spent, 6,296 still owed - waiting on your hours
+      Amalgamation: extracting precious metals with mercury
+  mt2_earthenware                      0% of your hours spent, 230 still owed - waiting on your hours
+      Earthenware: low-fired, porous ceramic for everyday use
+  mt2_pelletising                      0% of your hours spent, 223.5 still owed - waiting on your hours
+      Pelletising: forming ore fines into uniform balls
+  mt2_solder_lead_tin                  0% of your hours spent, 4,713 still owed - waiting on your hours
+      Solder: lead-tin for joining metals by melting
+  mt2_timbering_safety                 0% of your hours spent, 224.4 still owed - waiting on your hours
+      Timbering: wooden support structures for mine stability
+  mt2_type_metal                       0% of your hours spent, 1,883 still owed - waiting on your hours
+      Type metal: lead-tin-antimony for printing type castings
+  opt_anemometer                       0% of your hours spent, 337.2 still owed - waiting on your hours
+      Anemometer (wind speed)
+  opt_manometer                        0% of your hours spent, 315.9 still owed - waiting on your hours
+      Manometer (pressure measurement)
+  prc_straightedge                     0% of your hours spent, 81.8 still owed - waiting on your hours
+      Straightedge and reference straightness
+  prn_wire_mould_deckle                0% of your hours spent, 217.5 still owed - waiting on your hours
+      Wire mould and deckle
+  pwr_coal_seam                        0% of your hours spent, 272.8 still owed - waiting on your hours
+      Coal seam and mining
+  pwr_oil_shale                        0% of your hours spent, 40.4 still owed - waiting on your hours
+      Oil shale and bitumen deposits
+  pwr_peat                             0% of your hours spent, 57.4 still owed - waiting on your hours
+      Peat extraction and burning
+  pwr_petroleum_seeps                  0% of your hours spent, 102 still owed - waiting on your hours
+      Petroleum seeps and collection
+  sc2_institution_citation             0% of your hours spent, 299.3 still owed - waiting on your hours
+      Citation and bibliographic reference
+  sc2_institution_curriculum           0% of your hours spent, 294 still owed - waiting on your hours
+      Curriculum and course sequence
+  sc2_institution_doctorate            0% of your hours spent, 258 still owed - waiting on your hours
+      Doctorate and research degree
+  sc2_institution_examination          0% of your hours spent, 412.8 still owed - waiting on your hours
+      Examination and credentialing
+  sc2_institution_funded_programme     0% of your hours spent, 258 still owed - waiting on your hours
+      Funded research programme
+  sc2_institution_referee              0% of your hours spent, 258 still owed - waiting on your hours
+      Referee and peer review
+  sc2_institution_research_group       0% of your hours spent, 258 still owed - waiting on your hours
+      Research group and principal investigator
+  sc2_institution_textbook             0% of your hours spent, 1,470 still owed - waiting on your hours
+      Textbook and codified knowledge
+  sc2_method_hypothesis                0% of your hours spent, 258 still owed - waiting on your hours
+      Hypothesis and prediction
+  sc2_method_negative_result           0% of your hours spent, 258 still owed - waiting on your hours
+      Negative result and null finding
+  sc2_method_replication               0% of your hours spent, 258 still owed - waiting on your hours
+      Replication and repeatability
+  sc2_notation_decimal_point           0% of your hours spent, 268.3 still owed - waiting on your hours
+      The decimal point convention
+  sc2_notation_exponents               0% of your hours spent, 281.2 still owed - waiting on your hours
+      Exponent notation
+  sc2_notation_positional            100% of your hours spent, 258 still owed - waiting on the pace it can absorb money: at most 258 a year goes into this (258 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Positional notation and place value
+  sc2_notation_roots                   0% of your hours spent, 278.6 still owed - waiting on your hours
+      Root symbols and radical notation
+  sc2_physics_gravitation              0% of your hours spent, 304.4 still owed - waiting on your hours
+      Newton's law of universal gravitation
+  sc2_physics_kinematics               0% of your hours spent, 301.9 still owed - waiting on your hours
+      Kinematics: position, velocity, acceleration
+  sc2_physics_momentum                 0% of your hours spent, 296.7 still owed - waiting on your hours
+      Momentum and impulse
+  sc2_physics_newtons_laws             0% of your hours spent, 236 still owed - waiting on your hours
+      Newton's three laws of motion
+  sc2_probability_axioms               0% of your hours spent, 258 still owed - waiting on your hours
+      Probability axioms and conditional probability
+  scientific_method                    0% of your hours spent, 230 still owed - waiting on your hours
+      Controlled experiment, hypothesis, replication, publication
+  sea_cross_staff                      0% of your hours spent, 310.7 still owed - waiting on your hours
+      Cross-staff for latitude
+  sea_diving_bell                      0% of your hours spent, 968.5 still owed - waiting on your hours
+      Diving bell
+  sea_keel_deep                        0% of your hours spent, 1,258 still owed - waiting on your hours
+      Deep keel and the ability to sail to windward
+  sea_lead_sheathing                 100% of your hours spent, 1,445 still owed - waiting on the pace it can absorb money: at most 1,445 a year goes into this (1,445 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Lead sheathing against shipworm
+  sea_lodestone                        0% of your hours spent, 112.2 still owed - waiting on your hours
+      Lodestone knowledge
+  sea_log_line                         0% of your hours spent, 49.6 still owed - waiting on your hours
+      Log line for speed
+  sea_skeleton_first                   0% of your hours spent, 967.7 still owed - waiting on your hours
+      Skeleton-first hull construction
+  sea_sternpost_rudder                 0% of your hours spent, 427.4 still owed - waiting on your hours
+      Sternpost rudder
+  tex_hand_ginning                     0% of your hours spent, 69.9 still owed - waiting on your hours
+      Hand ginning cotton
+  tex_horizontal_loom                  0% of your hours spent, 225.8 still owed - waiting on your hours
+      Horizontal loom
+  tex_indigo                           0% of your hours spent, 187.8 still owed - waiting on your hours
+      Indigo dyeing
+  tex_mordanting                       0% of your hours spent, 129.3 still owed - waiting on your hours
+      Mordanting dyes with alum
+  tr_bilge_pump                        0% of your hours spent, 329.2 still owed - waiting on your hours
+      Bilge pump
+  tr_block_tackle                      0% of your hours spent, 230.2 still owed - waiting on your hours
+      Block and tackle pulley
+  tr_hopper_wagon                      0% of your hours spent, 266.1 still owed - waiting on your hours
+      Hopper wagon for bulk minerals
+  tr_lateen_sail                       0% of your hours spent, 629 still owed - waiting on your hours
+      Lateen sail
+  tr_reefing                           0% of your hours spent, 200.4 still owed - waiting on your hours
+      Reefing sails
+  tr_semaphore_signal                  0% of your hours spent, 259.3 still owed - waiting on your hours
+      Semaphore signal
+  tr_sleeper_ballast                   0% of your hours spent, 223.4 still owed - waiting on your hours
+      Sleeper and ballast foundation
+  tr_square_rig                        0% of your hours spent, 935 still owed - waiting on your hours
+      Square rig sails
+  tr_wooden_waggonway                  0% of your hours spent, 204.9 still owed - waiting on your hours
+      Wooden waggonway
+  tx2_alum_tanning                     0% of your hours spent, 760 still owed - waiting on your hours
+      Alum tanning: mineral salt curing
+  tx2_asbestos_cloth                   0% of your hours spent, 1,203 still owed - waiting on your hours
+      Asbestos cloth: fire-resistant fabric
+  tx2_beam                             0% of your hours spent, 9.9 still owed - waiting on your hours
+      Beam: warp holder and tension
+  tx2_bleaching_sun                    0% of your hours spent, 6 still owed - waiting on your hours
+      Bleaching by sunlight: oxidative whitening
+  tx2_bottle                           0% of your hours spent, 1,132 still owed - waiting on your hours
+      Bottle: glass container
+  tx2_button_bone                      0% of your hours spent, 10.1 still owed - waiting on your hours
+      Button: bone material
+  tx2_button_horn                      0% of your hours spent, 10 still owed - waiting on your hours
+      Button: horn material
+  tx2_button_shell                     0% of your hours spent, 11.5 still owed - waiting on your hours
+      Button: shell material
+  tx2_carding                          0% of your hours spent, 115.9 still owed - waiting on your hours
+      Carding: opening and aligning fibres
+  tx2_cashmere                         0% of your hours spent, 10.5 still owed - waiting on your hours
+      Cashmere: goat undercoat fibre
+  tx2_comb                             0% of your hours spent, 13 still owed - waiting on your hours
+      Comb: hair grooming tool
+  tx2_corset                           0% of your hours spent, 30 still owed - waiting on your hours
+      Corset: rigid body support garment
+  tx2_count_standard                   0% of your hours spent, 6 still owed - waiting on your hours
+      Yarn count standardisation
+  tx2_currying                         0% of your hours spent, 15 still owed - waiting on your hours
+      Currying: leather finish dressing
+  tx2_cutting_table                    0% of your hours spent, 14 still owed - waiting on your hours
+      Cutting table: stacked cloth cutting
+  tx2_doll                             0% of your hours spent, 83.5 still owed - waiting on your hours
+      Doll: articulated child plaything
+  tx2_drawing_pin                      0% of your hours spent, 28.6 still owed - waiting on your hours
+      Drawing pin: short fastening point
+  tx2_dyeing_fibre                     0% of your hours spent, 715 still owed - waiting on your hours
+      Dyeing in fibre: pre-spin colouration
+  tx2_dyeing_piece                     0% of your hours spent, 721 still owed - waiting on your hours
+      Dyeing in piece: woven cloth colouration
+  tx2_dyeing_yarn                      0% of your hours spent, 718 still owed - waiting on your hours
+      Dyeing in yarn: skein colouration
+  tx2_eye_pointed_needle               0% of your hours spent, 113.8 still owed - waiting on your hours
+      Eye-pointed needle: self-threading sewing
+  tx2_flax_fibre                       0% of your hours spent, 9 still owed - waiting on your hours
+      Flax cultivation and fibre
+  tx2_flyer                            0% of your hours spent, 27.9 still owed - waiting on your hours
+      Flyer: the earliest spinning frame component
+  tx2_heddle                           0% of your hours spent, 9.5 still owed - waiting on your hours
+      Heddle: warp thread carrier and riser
+  tx2_hemp_fibre                       0% of your hours spent, 9 still owed - waiting on your hours
+      Hemp cultivation and fibre
+  tx2_hook_and_eye                     0% of your hours spent, 19.8 still owed - waiting on your hours
+      Hook and eye: wire fastener
+  tx2_jute_fibre                       0% of your hours spent, 10.5 still owed - waiting on your hours
+      Jute cultivation and fibre
+  tx2_mirror                           0% of your hours spent, 316 still owed - waiting on your hours
+      Mirror: reflective glass surface
+  tx2_mohair                           0% of your hours spent, 10.5 still owed - waiting on your hours
+      Mohair: angora goat fibre
+  tx2_needle                           0% of your hours spent, 111.8 still owed - waiting on your hours
+      Needle: sewing implement
+  tx2_paperclip                        0% of your hours spent, 16.6 still owed - waiting on your hours
+      Paperclip: bent wire fastener
+  tx2_pattern_grading                  0% of your hours spent, 55 still owed - waiting on your hours
+      Pattern grading: multi-size scaling
+  tx2_pin                              0% of your hours spent, 11.8 still owed - waiting on your hours
+      Pin: sewing fastener
+  tx2_printing_block                   0% of your hours spent, 55.1 still owed - waiting on your hours
+      Block printing: carved design application
+  tx2_ramie_fibre                      0% of your hours spent, 10.5 still owed - waiting on your hours
+      Ramie cultivation and fibre
+  tx2_resist_dyeing                    0% of your hours spent, 733 still owed - waiting on your hours
+      Resist dyeing: pattern preservation
+  tx2_retting                          0% of your hours spent, 6 still owed - waiting on your hours
+      Retting of flax and hemp fibres
+  tx2_rope_lay                         0% of your hours spent, 9 still owed - waiting on your hours
+      Rope laying: strand twisting
+  tx2_scouring                         0% of your hours spent, 710.5 still owed - waiting on your hours
+      Scouring: removal of grease and soil
+  tx2_selvedge                         0% of your hours spent, 7.5 still owed - waiting on your hours
+      Selvedge: woven cloth edge
+  tx2_shed                             0% of your hours spent, 6 still owed - waiting on your hours
+      Shed: warp separation for pick insertion
+  tx2_silk_fibre                       0% of your hours spent, 309 still owed - waiting on your hours
+      Silk: cultivated fibre
+  tx2_sizing_systems                   0% of your hours spent, 18 still owed - waiting on your hours
+      Sizing systems: body measurement standardisation
+  tx2_spectacle_frame                  0% of your hours spent, 31 still owed - waiting on your hours
+      Spectacle frame: eye support structure
+  tx2_splitting                        0% of your hours spent, 16 still owed - waiting on your hours
+      Splitting: leather layering
+  tx2_twist_insertion                  0% of your hours spent, 9 still owed - waiting on your hours
+      Twist insertion control
+  tx2_warp_sizing                      0% of your hours spent, 9 still owed - waiting on your hours
+      Warp sizing: fibre stiffening
+  tx2_warping_mill                     0% of your hours spent, 21 still owed - waiting on your hours
+      Warping mill: warp thread length setting
+  tx2_watch_case                       0% of your hours spent, 17,415 still owed - waiting on your hours
+      Watch case: portable timepiece housing
+  tx2_wool_fibre                       0% of your hours spent, 9.5 still owed - waiting on your hours
+      Wool: sheep fibre
+  units_standards                      0% of your hours spent, 444 still owed - waiting on your hours
+      Define and publish standard length, mass, time and temperature
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 32%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk; a sacking that costs you anything (80% of them do) takes 0, hedged by nothing yet
+  [165-180] Antonine plague
+  [190-275] Currency debasement
+  [249-262] Plague of Cyprian
+  [235-284] Third century crisis
+  [284-305] Diocletian's reforms and the Price Edict
+  [312-375] The solidus and the end of the debasement
+  [313-400] Christianisation of the empire
+  [376-405] Adrianople and the Gothic settlement
+  [406-460] The crossings, and the sack of Rome
+  [461-492] The end of the western empire
+  [493-526] Ostrogothic Italy under Theodoric
+  [535-554] Justinian's Gothic War
+  [541-545] The Justinianic plague
+  [558-600] Recurrent plague
+  [568-600] The Lombard invasion
+  [634-700] The Arab conquests close the Mediterranean
+  [774-800] The Carolingian renaissance
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > WHY YOU ARE NOT GETTING ON
+  0 things you could begin, 0 of them you could pay for
+
+  WORK IN HAND:
+    ag2_composting - waiting on your hours
+    ag2_guano - waiting on your hours
+    ag2_hopping - waiting on your hours
+    ag2_liming - waiting on your hours
+    ag2_malting - waiting on your hours
+    ag2_marling - waiting on your hours
+    ag2_oil_pressing - waiting on your hours
+    ag2_potash - waiting on your hours
+    ag2_pyrethrum - waiting on your hours
+    ag2_refrigeration_ice - waiting on your hours
+    air_compass_magnetic - waiting on your hours
+    air_kite_basic - waiting on your hours
+    air_observation_balloon_tethered - waiting on your hours
+    arithmetic_positional - waiting on your hours
+    arrival_orientation - waiting on your hours
+    civ_gate_sluice - waiting on your hours
+    civ_lightning_conductor - waiting on your hours
+    civ_sewer_separate - waiting on your hours
+    civ_street_paved - waiting on your hours
+    civ_town_planning - waiting on your hours
+    civ_truss_triangulated - waiting on your hours
+    cn_damp_proof_course - waiting on your hours
+    cn_gypsum_plaster - waiting on your hours
+    cn_pile_driving - waiting on your hours
+    cn_post_lintel - waiting on your hours
+    cn_stone_polish - waiting on your hours
+    com_optical_codebook - waiting on your hours
+    com_signal_flags - waiting on your hours
+    fin_apprenticeship - waiting on your hours
+    fin_arbitrage - waiting on your hours
+    fin_bankruptcy - waiting on your hours
+    fin_bill_exchange - waiting on your hours
+    fin_bimetallism - waiting on your hours
+    fin_cartel - waiting on your hours
+    fin_census - waiting on your hours
+    fin_employment_contract - waiting on your hours
+    fin_ferry - waiting on your hours
+    fin_gambling_house - waiting on your hours
+    fin_guild - waiting on your hours
+    fin_hotel - waiting on your hours
+    fin_inn - waiting on your hours
+    fin_lottery - waiting on your hours
+    fin_marine_insurance - waiting on your hours
+    fin_monopoly - waiting on your hours
+    fin_mortgage - waiting on your hours
+    fin_patent - waiting on your hours
+    fin_pawnshop - waiting on your hours
+    fin_plantation - waiting on your hours
+    fin_postal_service - waiting on your hours
+    fin_racecourse - waiting on your hours
+    fin_seigniorage - waiting on your hours
+    fin_tariff - waiting on your hours
+    fin_theatre_business - waiting on your hours
+    fin_trade_union - waiting on your hours
+    fin_trademark - waiting on your hours
+    fin_trading_post - waiting on your hours
+    fin_usury_law - waiting on your hours
+    fud_fish_curing_and_smoking - waiting on your hours
+    fud_grain_storage_silos - waiting on your hours
+    fud_hay_making_storage - waiting on your hours
+    fud_whaling_industry - waiting on your hours
+    hom_eraser_breadcrumb - waiting on your hours
+    hom_fireplace_chimney - waiting on your hours
+    hom_flush_toilet_trap - waiting on your hours
+    hom_latrine_water_trap - waiting on your hours
+    hom_punkah_ceiling - waiting on your hours
+    hom_safety_pin - waiting on your hours
+    hom_sprung_mattress - waiting on your hours
+    hom_toothbrush - waiting on your hours
+    hom_toys_dolls - waiting on your hours
+    hom_umbrella - waiting on your hours
+    horse_collar - waiting on your hours
+    identity_cover - waiting on your hours
+    if_quill - waiting on your hours
+    lnd_coach - waiting on your hours
+    lnd_hobby_horse - waiting on your hours
+    lnd_wheelbarrow - waiting on your hours
+    mat_obsidian_blade - waiting on your hours
+    mat_papyrus - waiting on your hours
+    mat_parchment - waiting on your hours
+    md2_plaster_cast - waiting on your hours
+    md2_vector_control - waiting on your hours
+    med_amputation - waiting on the pace it can absorb money: at most 12 a year
+    goes into this (12 still owed, about 1 more year at that rate). Money in
+    hand cannot buy it down faster
+    med_bone_setting - waiting on the pace it can absorb money: at most 9 a year
+    goes into this (9 still owed, about 1 more year at that rate). Money in hand
+    cannot buy it down faster
+    med_herbal_pharmacy - waiting on your hours
+    med_obstetric_practice - waiting on the pace it can absorb money: at most 19
+    a year goes into this (19 still owed, about 1 more year at that rate). Money
+    in hand cannot buy it down faster
+    med_surgical_gloves_mask - waiting on your hours
+    met_bloomery_bog_iron - waiting on your hours
+    met_investment_casting - waiting on your hours
+    met_ore_crushing_sorting - waiting on your hours
+    mfg_adhesive_bond - waiting on your hours
+    mfg_cold_riveting - waiting on your hours
+    mfg_drawing_office - waiting on your hours
+    mfg_enamelling - waiting on your hours
+    mfg_flux - waiting on your hours
+    mfg_hot_riveting - waiting on your hours
+    mfg_japanning - waiting on your hours
+    mfg_mould - waiting on your hours
+    mfg_painting - waiting on your hours
+    mfg_production_schedule - waiting on your hours
+    mfg_silver_solder - waiting on your hours
+    mfg_soft_solder - waiting on your hours
+    mt2_amalgamation - waiting on your hours
+    mt2_earthenware - waiting on your hours
+    mt2_pelletising - waiting on your hours
+    mt2_solder_lead_tin - waiting on your hours
+    mt2_timbering_safety - waiting on your hours
+    mt2_type_metal - waiting on your hours
+    opt_anemometer - waiting on your hours
+    opt_manometer - waiting on your hours
+    prc_straightedge - waiting on your hours
+    prn_wire_mould_deckle - waiting on your hours
+    pwr_coal_seam - waiting on your hours
+    pwr_oil_shale - waiting on your hours
+    pwr_peat - waiting on your hours
+    pwr_petroleum_seeps - waiting on your hours
+    sc2_institution_citation - waiting on your hours
+    sc2_institution_curriculum - waiting on your hours
+    sc2_institution_doctorate - waiting on your hours
+    sc2_institution_examination - waiting on your hours
+    sc2_institution_funded_programme - waiting on your hours
+    sc2_institution_referee - waiting on your hours
+    sc2_institution_research_group - waiting on your hours
+    sc2_institution_textbook - waiting on your hours
+    sc2_method_hypothesis - waiting on your hours
+    sc2_method_negative_result - waiting on your hours
+    sc2_method_replication - waiting on your hours
+    sc2_notation_decimal_point - waiting on your hours
+    sc2_notation_exponents - waiting on your hours
+    sc2_notation_positional - waiting on the pace it can absorb money: at most
+    258 a year goes into this (258 still owed, about 1 more year at that rate).
+    Money in hand cannot buy it down faster
+    sc2_notation_roots - waiting on your hours
+    sc2_physics_gravitation - waiting on your hours
+    sc2_physics_kinematics - waiting on your hours
+    sc2_physics_momentum - waiting on your hours
+    sc2_physics_newtons_laws - waiting on your hours
+    sc2_probability_axioms - waiting on your hours
+    scientific_method - waiting on your hours
+    sea_cross_staff - waiting on your hours
+    sea_diving_bell - waiting on your hours
+    sea_keel_deep - waiting on your hours
+    sea_lead_sheathing - waiting on the pace it can absorb money: at most 1,445
+    a year goes into this (1,445 still owed, about 1 more year at that rate).
+    Money in hand cannot buy it down faster
+    sea_lodestone - waiting on your hours
+    sea_log_line - waiting on your hours
+    sea_skeleton_first - waiting on your hours
+    sea_sternpost_rudder - waiting on your hours
+    tex_hand_ginning - waiting on your hours
+    tex_horizontal_loom - waiting on your hours
+    tex_indigo - waiting on your hours
+    tex_mordanting - waiting on your hours
+    tr_bilge_pump - waiting on your hours
+    tr_block_tackle - waiting on your hours
+    tr_hopper_wagon - waiting on your hours
+    tr_lateen_sail - waiting on your hours
+    tr_reefing - waiting on your hours
+    tr_semaphore_signal - waiting on your hours
+    tr_sleeper_ballast - waiting on your hours
+    tr_square_rig - waiting on your hours
+    tr_wooden_waggonway - waiting on your hours
+    tx2_alum_tanning - waiting on your hours
+    tx2_asbestos_cloth - waiting on your hours
+    tx2_beam - waiting on your hours
+    tx2_bleaching_sun - waiting on your hours
+    tx2_bottle - waiting on your hours
+    tx2_button_bone - waiting on your hours
+    tx2_button_horn - waiting on your hours
+    tx2_button_shell - waiting on your hours
+    tx2_carding - waiting on your hours
+    tx2_cashmere - waiting on your hours
+    tx2_comb - waiting on your hours
+    tx2_corset - waiting on your hours
+    tx2_count_standard - waiting on your hours
+    tx2_currying - waiting on your hours
+    tx2_cutting_table - waiting on your hours
+    tx2_doll - waiting on your hours
+    tx2_drawing_pin - waiting on your hours
+    tx2_dyeing_fibre - waiting on your hours
+    tx2_dyeing_piece - waiting on your hours
+    tx2_dyeing_yarn - waiting on your hours
+    tx2_eye_pointed_needle - waiting on your hours
+    tx2_flax_fibre - waiting on your hours
+    tx2_flyer - waiting on your hours
+    tx2_heddle - waiting on your hours
+    tx2_hemp_fibre - waiting on your hours
+    tx2_hook_and_eye - waiting on your hours
+    tx2_jute_fibre - waiting on your hours
+    tx2_mirror - waiting on your hours
+    tx2_mohair - waiting on your hours
+    tx2_needle - waiting on your hours
+    tx2_paperclip - waiting on your hours
+    tx2_pattern_grading - waiting on your hours
+    tx2_pin - waiting on your hours
+    tx2_printing_block - waiting on your hours
+    tx2_ramie_fibre - waiting on your hours
+    tx2_resist_dyeing - waiting on your hours
+    tx2_retting - waiting on your hours
+    tx2_rope_lay - waiting on your hours
+    tx2_scouring - waiting on your hours
+    tx2_selvedge - waiting on your hours
+    tx2_shed - waiting on your hours
+    tx2_silk_fibre - waiting on your hours
+    tx2_sizing_systems - waiting on your hours
+    tx2_spectacle_frame - waiting on your hours
+    tx2_splitting - waiting on your hours
+    tx2_twist_insertion - waiting on your hours
+    tx2_warp_sizing - waiting on your hours
+    tx2_warping_mill - waiting on your hours
+    tx2_watch_case - waiting on your hours
+    tx2_wool_fibre - waiting on your hours
+    units_standards - waiting on your hours
+  NOTHING YOU COULD BEGIN:
+    everything in front of you is either built, already running, or waiting on
+    something. 'available' says which.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] >   COMPLETED 100: Six months of listening before you act
+  COMPLETED 100: Establish a respectable cover identity
+  COMPLETED 100: Amputation and prosthetics
+  COMPLETED 100: Bone setting
+  COMPLETED 100: Obstetric practice
+  COMPLETED 100: Positional notation and place value
+  COMPLETED 100: Lead sheathing against shipworm
+  COMPLETED 100: Define and publish standard length, mass, time and temperature
+  EVENT 100: completed: Six months of listening before you act
+  EVENT 100: completed: Establish a respectable cover identity. You know how; nothing is earning yet - 'open identity_cover' to run it
+  EVENT 100: completed: Define and publish standard length, mass, time and temperature. You know how; nothing is earning yet - 'open units_standards' to run it
+  EVENT 100: completed: Bone setting. You know how; nothing is earning yet - 'open med_bone_setting' to run it
+  EVENT 100: completed: Amputation and prosthetics. You know how; nothing is earning yet - 'open med_amputation' to run it
+  EVENT 100: completed: Obstetric practice. You know how; nothing is earning yet - 'open med_obstetric_practice' to run it
+  EVENT 100: completed: Positional notation and place value
+  EVENT 100: completed: Lead sheathing against shipworm
+  EVENT 100: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 171,270 denarii
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 780,232 den    net -45,126 den/yr (after 33,432 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (201):
+  ag2_composting                       0% of your hours spent, 0 still owed - waiting on your hours
+      Composting
+  ag2_guano                            0% of your hours spent, 0 still owed - waiting on your hours
+      Guano
+  ag2_hopping                          0% of your hours spent, 0 still owed - waiting on your hours
+      Hopping
+  ag2_liming                           0% of your hours spent, 0 still owed - waiting on your hours
+      Liming
+  ag2_malting                          0% of your hours spent, 0 still owed - waiting on your hours
+      Malting
+  ag2_marling                          0% of your hours spent, 0 still owed - waiting on your hours
+      Marling
+  ag2_oil_pressing                     0% of your hours spent, 0 still owed - waiting on your hours
+      Oil pressing
+  ag2_potash                           0% of your hours spent, 0 still owed - waiting on your hours
+      Potash
+  ag2_pyrethrum                        0% of your hours spent, 0 still owed - waiting on your hours
+      Pyrethrum
+  ag2_refrigeration_ice                0% of your hours spent, 0 still owed - waiting on your hours
+      Refrigeration - ice trade
+  air_compass_magnetic                 0% of your hours spent, 0 still owed - waiting on your hours
+      Compass for navigation
+  air_kite_basic                       0% of your hours spent, 0 still owed - waiting on your hours
+      Kite
+  air_observation_balloon_tethered     0% of your hours spent, 1,138 still owed - waiting on your hours
+      Tethered observation balloon
+  arithmetic_positional               67% of your hours spent, 0 still owed - waiting on your hours
+      Decimal positional notation, zero, negative numbers, decimal fractions
+  civ_gate_sluice                      0% of your hours spent, 0 still owed - waiting on your hours
+      Sluice gate for water control
+  civ_lightning_conductor              0% of your hours spent, 142 still owed - waiting on your hours
+      Lightning conductor and grounding
+  civ_sewer_separate                   0% of your hours spent, 765 still owed - waiting on your hours
+      Separate foul and storm sewers
+  civ_street_paved                     0% of your hours spent, 0 still owed - waiting on your hours
+      Paved street and sidewalk
+  civ_town_planning                    0% of your hours spent, 278.8 still owed - waiting on your hours
+      Town planning and street layout
+  civ_truss_triangulated               0% of your hours spent, 0 still owed - waiting on your hours
+      Triangulated truss frame
+  cn_damp_proof_course                 0% of your hours spent, 0 still owed - waiting on your hours
+      Damp proof course barrier layer
+  cn_gypsum_plaster                    0% of your hours spent, 0 still owed - waiting on your hours
+      Gypsum plaster finish
+  cn_pile_driving                      0% of your hours spent, 0 still owed - waiting on your hours
+      Pile driving by drop hammer
+  cn_post_lintel                       0% of your hours spent, 0 still owed - waiting on your hours
+      Post and lintel structure
+  cn_stone_polish                      0% of your hours spent, 0 still owed - waiting on your hours
+      Stone polishing and smoothing
+  com_optical_codebook                 0% of your hours spent, 0 still owed - waiting on your hours
+      Codebook for optical signal tower
+  com_signal_flags                     0% of your hours spent, 0 still owed - waiting on your hours
+      Signal flags for maritime communication
+  fin_apprenticeship                   0% of your hours spent, 0 still owed - waiting on your hours
+      Apprenticeship indenture and training contract
+  fin_arbitrage                        0% of your hours spent, 37.5 still owed - waiting on your hours
+      Arbitrage and price equalisation
+  fin_bankruptcy                       0% of your hours spent, 40 still owed - waiting on your hours
+      Bankruptcy law and insolvency
+  fin_bill_exchange                    0% of your hours spent, 70 still owed - waiting on your hours
+      Bill of exchange
+  fin_bimetallism                      0% of your hours spent, 53.5 still owed - waiting on your hours
+      Bimetallism and fixed exchange
+  fin_cartel                           0% of your hours spent, 53.8 still owed - waiting on your hours
+      Cartel and market sharing agreement
+  fin_census                           0% of your hours spent, 2,532 still owed - waiting on your hours
+      Census and population enumeration
+  fin_employment_contract              0% of your hours spent, 0 still owed - waiting on your hours
+      Contract of employment
+  fin_ferry                            0% of your hours spent, 1,916 still owed - waiting on your hours
+      Ferry and toll crossing
+  fin_gambling_house                   0% of your hours spent, 2,112 still owed - waiting on your hours
+      Gambling house and gaming establishment
+  fin_guild                            0% of your hours spent, 0 still owed - waiting on your hours
+      Guild and monopoly craft
+  fin_hotel                            0% of your hours spent, 5,824 still owed - waiting on your hours
+      Hotel and commercial lodging
+  fin_inn                              0% of your hours spent, 3,538 still owed - waiting on your hours
+      Inn and coaching house
+  fin_lottery                          0% of your hours spent, 2,080 still owed - waiting on your hours
+      Lottery and state gambling
+  fin_marine_insurance                 0% of your hours spent, 4,105 still owed - waiting on your hours
+      Marine insurance
+  fin_monopoly                         0% of your hours spent, 51.1 still owed - waiting on your hours
+      Monopoly and exclusive grant
+  fin_mortgage                         0% of your hours spent, 57.5 still owed - waiting on your hours
+      Mortgage and real estate credit
+  fin_patent                           0% of your hours spent, 61.8 still owed - waiting on your hours
+      Patent and exclusive right
+  fin_pawnshop                         0% of your hours spent, 0 still owed - waiting on your hours
+      Pawnshop and secured loan
+  fin_plantation                       0% of your hours spent, 10,831 still owed - waiting on your hours
+      Plantation and large estate agriculture
+  fin_postal_service                   0% of your hours spent, 4,362 still owed - waiting on your hours
+      Postal service as paid business
+  fin_racecourse                       0% of your hours spent, 5,332 still owed - waiting on your hours
+      Racecourse and pari-mutuel betting
+  fin_seigniorage                      0% of your hours spent, 25 still owed - waiting on your hours
+      Seigniorage and debasement
+  fin_tariff                           0% of your hours spent, 47.5 still owed - waiting on your hours
+      Tariff and import duty
+  fin_theatre_business                 0% of your hours spent, 8,848 still owed - waiting on your hours
+      Theatre as business
+  fin_trade_union                      0% of your hours spent, 88.1 still owed - waiting on your hours
+      Trade union and workers collegium
+  fin_trademark                        0% of your hours spent, 20 still owed - waiting on your hours
+      Trademark and mark of quality
+  fin_trading_post                     0% of your hours spent, 1,662 still owed - waiting on your hours
+      Trading post and remote store
+  fin_usury_law                        0% of your hours spent, 30 still owed - waiting on your hours
+      Usury law and interest regulation
+  fud_fish_curing_and_smoking          0% of your hours spent, 0 still owed - waiting on your hours
+      Large-scale fish curing and smoking
+  fud_grain_storage_silos              0% of your hours spent, 830.4 still owed - waiting on your hours
+      Cylindrical silos for bulk grain storage
+  fud_hay_making_storage               0% of your hours spent, 0 still owed - waiting on your hours
+      Hay making and dry storage
+  fud_whaling_industry                 0% of your hours spent, 2,070 still owed - waiting on your hours
+      Organized whaling industry for oil and meat
+  hom_eraser_breadcrumb                0% of your hours spent, 0 still owed - waiting on your hours
+      Eraser, breadcrumb substitute
+  hom_fireplace_chimney                0% of your hours spent, 0 still owed - waiting on your hours
+      Fireplace and chimney
+  hom_flush_toilet_trap                0% of your hours spent, 0 still owed - waiting on your hours
+      Flush toilet with S-bend water trap
+  hom_latrine_water_trap               0% of your hours spent, 0 still owed - waiting on your hours
+      Latrine water trap (S-bend)
+  hom_punkah_ceiling                   0% of your hours spent, 0 still owed - waiting on your hours
+      Ceiling punkah, servant-pulled
+  hom_safety_pin                       0% of your hours spent, 0 still owed - waiting on your hours
+      Safety pin
+  hom_sprung_mattress                  0% of your hours spent, 285.5 still owed - waiting on your hours
+      Sprung mattress
+  hom_toothbrush                       0% of your hours spent, 0 still owed - waiting on your hours
+      Toothbrush
+  hom_toys_dolls                       0% of your hours spent, 75.5 still owed - waiting on your hours
+      Toys and dolls
+  hom_umbrella                         0% of your hours spent, 0 still owed - waiting on your hours
+      Umbrella
+  horse_collar                         0% of your hours spent, 0 still owed - waiting on your hours
+      Rigid padded horse collar, whippletree, nailed horseshoe
+  if_quill                             0% of your hours spent, 0 still owed - waiting on your hours
+      Quill pen
+  lnd_coach                            0% of your hours spent, 418.8 still owed - waiting on your hours
+      Coach
+  lnd_hobby_horse                      0% of your hours spent, 0 still owed - waiting on your hours
+      Hobby horse (pedal-less bicycle)
+  lnd_wheelbarrow                      0% of your hours spent, 0 still owed - waiting on your hours
+      Wheelbarrow
+  mat_obsidian_blade                   0% of your hours spent, 0 still owed - waiting on your hours
+      Obsidian blade knapping
+  mat_papyrus                          0% of your hours spent, 0 still owed - waiting on your hours
+      Papyrus
+  mat_parchment                        0% of your hours spent, 0 still owed - waiting on your hours
+      Parchment
+  md2_plaster_cast                     0% of your hours spent, 0 still owed - waiting on your hours
+      Plaster cast immobilization
+  md2_vector_control                   0% of your hours spent, 105.4 still owed - waiting on your hours
+      Vector control
+  med_herbal_pharmacy                  0% of your hours spent, 0 still owed - waiting on your hours
+      Herbal pharmacy (Dioscorides Materia medica)
+  med_surgical_gloves_mask             0% of your hours spent, 0 still owed - waiting on your hours
+      Surgical gloves and mask
+  met_bloomery_bog_iron                0% of your hours spent, 1,210 still owed - waiting on your hours
+      Bloomery smelting of bog iron
+  met_investment_casting               0% of your hours spent, 0 still owed - waiting on your hours
+      Investment casting and lost wax
+  met_ore_crushing_sorting             0% of your hours spent, 0 still owed - waiting on your hours
+      Ore dressing: crushing and hand sorting
+  mfg_adhesive_bond                    0% of your hours spent, 219.5 still owed - waiting on your hours
+      Adhesive bonding
+  mfg_cold_riveting                    0% of your hours spent, 0 still owed - waiting on your hours
+      Cold riveting
+  mfg_drawing_office                   0% of your hours spent, 541.8 still owed - waiting on your hours
+      Drawing office
+  mfg_enamelling                       0% of your hours spent, 216.8 still owed - waiting on your hours
+      Enamelling
+  mfg_flux                             0% of your hours spent, 0 still owed - waiting on your hours
+      Flux
+  mfg_hot_riveting                     0% of your hours spent, 0 still owed - waiting on your hours
+      Hot riveting
+  mfg_japanning                        0% of your hours spent, 219.5 still owed - waiting on your hours
+      Japanning
+  mfg_mould                            0% of your hours spent, 0 still owed - waiting on your hours
+      Casting mould
+  mfg_painting                         0% of your hours spent, 0 still owed - waiting on your hours
+      Painting
+  mfg_production_schedule              0% of your hours spent, 0 still owed - waiting on your hours
+      Production schedule
+  mfg_silver_solder                    0% of your hours spent, 856.1 still owed - waiting on your hours
+      Silver soldering
+  mfg_soft_solder                      0% of your hours spent, 0 still owed - waiting on your hours
+      Soft soldering
+  mt2_amalgamation                     0% of your hours spent, 6,296 still owed - waiting on your hours
+      Amalgamation: extracting precious metals with mercury
+  mt2_earthenware                      0% of your hours spent, 0 still owed - waiting on your hours
+      Earthenware: low-fired, porous ceramic for everyday use
+  mt2_pelletising                      0% of your hours spent, 223.5 still owed - waiting on your hours
+      Pelletising: forming ore fines into uniform balls
+  mt2_solder_lead_tin                  0% of your hours spent, 4,713 still owed - waiting on your hours
+      Solder: lead-tin for joining metals by melting
+  mt2_timbering_safety                 0% of your hours spent, 0 still owed - waiting on your hours
+      Timbering: wooden support structures for mine stability
+  mt2_type_metal                       0% of your hours spent, 1,883 still owed - waiting on your hours
+      Type metal: lead-tin-antimony for printing type castings
+  opt_anemometer                       0% of your hours spent, 0 still owed - waiting on your hours
+      Anemometer (wind speed)
+  opt_manometer                        0% of your hours spent, 0 still owed - waiting on your hours
+      Manometer (pressure measurement)
+  prc_straightedge                     0% of your hours spent, 0 still owed - waiting on your hours
+      Straightedge and reference straightness
+  prn_wire_mould_deckle                0% of your hours spent, 0 still owed - waiting on your hours
+      Wire mould and deckle
+  pwr_coal_seam                        0% of your hours spent, 272.8 still owed - waiting on your hours
+      Coal seam and mining
+  pwr_oil_shale                        0% of your hours spent, 0 still owed - waiting on your hours
+      Oil shale and bitumen deposits
+  pwr_peat                             0% of your hours spent, 0 still owed - waiting on your hours
+      Peat extraction and burning
+  pwr_petroleum_seeps                  0% of your hours spent, 102 still owed - waiting on your hours
+      Petroleum seeps and collection
+  sc2_institution_citation             0% of your hours spent, 239.4 still owed - waiting on your hours
+      Citation and bibliographic reference
+  sc2_institution_curriculum           0% of your hours spent, 235.2 still owed - waiting on your hours
+      Curriculum and course sequence
+  sc2_institution_doctorate            0% of your hours spent, 225.8 still owed - waiting on your hours
+      Doctorate and research degree
+  sc2_institution_examination          0% of your hours spent, 361.2 still owed - waiting on your hours
+      Examination and credentialing
+  sc2_institution_funded_programme     0% of your hours spent, 206.4 still owed - waiting on your hours
+      Funded research programme
+  sc2_institution_referee              0% of your hours spent, 225.8 still owed - waiting on your hours
+      Referee and peer review
+  sc2_institution_research_group       0% of your hours spent, 206.4 still owed - waiting on your hours
+      Research group and principal investigator
+  sc2_institution_textbook             0% of your hours spent, 1,286 still owed - waiting on your hours
+      Textbook and codified knowledge
+  sc2_method_hypothesis                0% of your hours spent, 225.8 still owed - waiting on your hours
+      Hypothesis and prediction
+  sc2_method_negative_result           0% of your hours spent, 245.1 still owed - waiting on your hours
+      Negative result and null finding
+  sc2_method_replication               0% of your hours spent, 232.2 still owed - waiting on your hours
+      Replication and repeatability
+  sc2_notation_decimal_point           0% of your hours spent, 134.2 still owed - waiting on your hours
+      The decimal point convention
+  sc2_notation_exponents               0% of your hours spent, 140.6 still owed - waiting on your hours
+      Exponent notation
+  sc2_notation_roots                   0% of your hours spent, 185.8 still owed - waiting on your hours
+      Root symbols and radical notation
+  sc2_physics_gravitation              0% of your hours spent, 243.6 still owed - waiting on your hours
+      Newton's law of universal gravitation
+  sc2_physics_kinematics               0% of your hours spent, 150.9 still owed - waiting on your hours
+      Kinematics: position, velocity, acceleration
+  sc2_physics_momentum                 0% of your hours spent, 197.8 still owed - waiting on your hours
+      Momentum and impulse
+  sc2_physics_newtons_laws             0% of your hours spent, 177 still owed - waiting on your hours
+      Newton's three laws of motion
+  sc2_probability_axioms               0% of your hours spent, 193.5 still owed - waiting on your hours
+      Probability axioms and conditional probability
+  scientific_method                    0% of your hours spent, 115 still owed - waiting on your hours
+      Controlled experiment, hypothesis, replication, publication
+  sea_cross_staff                      0% of your hours spent, 310.7 still owed - waiting on your hours
+      Cross-staff for latitude
+  sea_diving_bell                      0% of your hours spent, 968.5 still owed - waiting on your hours
+      Diving bell
+  sea_keel_deep                        0% of your hours spent, 1,258 still owed - waiting on your hours
+      Deep keel and the ability to sail to windward
+  sea_lodestone                        0% of your hours spent, 0 still owed - waiting on your hours
+      Lodestone knowledge
+  sea_log_line                         0% of your hours spent, 0 still owed - waiting on your hours
+      Log line for speed
+  sea_skeleton_first                   0% of your hours spent, 316.9 still owed - waiting on your hours
+      Skeleton-first hull construction
+  sea_sternpost_rudder                 0% of your hours spent, 0 still owed - waiting on your hours
+      Sternpost rudder
+  tex_hand_ginning                     0% of your hours spent, 0 still owed - waiting on your hours
+      Hand ginning cotton
+  tex_horizontal_loom                  0% of your hours spent, 0 still owed - waiting on your hours
+      Horizontal loom
+  tex_indigo                           0% of your hours spent, 0 still owed - waiting on your hours
+      Indigo dyeing
+  tex_mordanting                       0% of your hours spent, 0 still owed - waiting on your hours
+      Mordanting dyes with alum
+  tr_bilge_pump                        0% of your hours spent, 0 still owed - waiting on your hours
+      Bilge pump
+  tr_block_tackle                      0% of your hours spent, 0 still owed - waiting on your hours
+      Block and tackle pulley
+  tr_hopper_wagon                      0% of your hours spent, 0 still owed - waiting on your hours
+      Hopper wagon for bulk minerals
+  tr_lateen_sail                       0% of your hours spent, 0 still owed - waiting on your hours
+      Lateen sail
+  tr_reefing                           0% of your hours spent, 0 still owed - waiting on your hours
+      Reefing sails
+  tr_semaphore_signal                  0% of your hours spent, 129.7 still owed - waiting on your hours
+      Semaphore signal
+  tr_sleeper_ballast                   0% of your hours spent, 0 still owed - waiting on your hours
+      Sleeper and ballast foundation
+  tr_square_rig                        0% of your hours spent, 0 still owed - waiting on your hours
+      Square rig sails
+  tr_wooden_waggonway                  0% of your hours spent, 102.5 still owed - waiting on your hours
+      Wooden waggonway
+  tx2_alum_tanning                     0% of your hours spent, 0 still owed - waiting on your hours
+      Alum tanning: mineral salt curing
+  tx2_asbestos_cloth                   0% of your hours spent, 1,203 still owed - waiting on your hours
+      Asbestos cloth: fire-resistant fabric
+  tx2_beam                             0% of your hours spent, 0 still owed - waiting on your hours
+      Beam: warp holder and tension
+  tx2_bleaching_sun                    0% of your hours spent, 0 still owed - waiting on your hours
+      Bleaching by sunlight: oxidative whitening
+  tx2_bottle                           0% of your hours spent, 0 still owed - waiting on your hours
+      Bottle: glass container
+  tx2_button_bone                      0% of your hours spent, 0 still owed - waiting on your hours
+      Button: bone material
+  tx2_button_horn                      0% of your hours spent, 0 still owed - waiting on your hours
+      Button: horn material
+  tx2_button_shell                     0% of your hours spent, 0 still owed - waiting on your hours
+      Button: shell material
+  tx2_carding                          0% of your hours spent, 0 still owed - waiting on your hours
+      Carding: opening and aligning fibres
+  tx2_cashmere                         0% of your hours spent, 0 still owed - waiting on your hours
+      Cashmere: goat undercoat fibre
+  tx2_comb                             0% of your hours spent, 0 still owed - waiting on your hours
+      Comb: hair grooming tool
+  tx2_corset                           0% of your hours spent, 0 still owed - waiting on your hours
+      Corset: rigid body support garment
+  tx2_count_standard                   0% of your hours spent, 0 still owed - waiting on your hours
+      Yarn count standardisation
+  tx2_currying                         0% of your hours spent, 0 still owed - waiting on your hours
+      Currying: leather finish dressing
+  tx2_cutting_table                    0% of your hours spent, 0 still owed - waiting on your hours
+      Cutting table: stacked cloth cutting
+  tx2_doll                             0% of your hours spent, 0 still owed - waiting on your hours
+      Doll: articulated child plaything
+  tx2_drawing_pin                      0% of your hours spent, 0 still owed - waiting on your hours
+      Drawing pin: short fastening point
+  tx2_dyeing_fibre                     0% of your hours spent, 0 still owed - waiting on your hours
+      Dyeing in fibre: pre-spin colouration
+  tx2_dyeing_piece                     0% of your hours spent, 0 still owed - waiting on your hours
+      Dyeing in piece: woven cloth colouration
+  tx2_dyeing_yarn                      0% of your hours spent, 0 still owed - waiting on your hours
+      Dyeing in yarn: skein colouration
+  tx2_eye_pointed_needle               0% of your hours spent, 0 still owed - waiting on your hours
+      Eye-pointed needle: self-threading sewing
+  tx2_flax_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Flax cultivation and fibre
+  tx2_flyer                            0% of your hours spent, 0 still owed - waiting on your hours
+      Flyer: the earliest spinning frame component
+  tx2_heddle                           0% of your hours spent, 0 still owed - waiting on your hours
+      Heddle: warp thread carrier and riser
+  tx2_hemp_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Hemp cultivation and fibre
+  tx2_hook_and_eye                     0% of your hours spent, 0 still owed - waiting on your hours
+      Hook and eye: wire fastener
+  tx2_jute_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Jute cultivation and fibre
+  tx2_mirror                           0% of your hours spent, 0 still owed - waiting on your hours
+      Mirror: reflective glass surface
+  tx2_mohair                           0% of your hours spent, 0 still owed - waiting on your hours
+      Mohair: angora goat fibre
+  tx2_needle                           0% of your hours spent, 0 still owed - waiting on your hours
+      Needle: sewing implement
+  tx2_paperclip                        0% of your hours spent, 0 still owed - waiting on your hours
+      Paperclip: bent wire fastener
+  tx2_pattern_grading                  0% of your hours spent, 0 still owed - waiting on your hours
+      Pattern grading: multi-size scaling
+  tx2_pin                              0% of your hours spent, 0 still owed - waiting on your hours
+      Pin: sewing fastener
+  tx2_printing_block                   0% of your hours spent, 0 still owed - waiting on your hours
+      Block printing: carved design application
+  tx2_ramie_fibre                      0% of your hours spent, 0 still owed - waiting on your hours
+      Ramie cultivation and fibre
+  tx2_resist_dyeing                    0% of your hours spent, 0 still owed - waiting on your hours
+      Resist dyeing: pattern preservation
+  tx2_retting                          0% of your hours spent, 0 still owed - waiting on your hours
+      Retting of flax and hemp fibres
+  tx2_rope_lay                         0% of your hours spent, 0 still owed - waiting on your hours
+      Rope laying: strand twisting
+  tx2_scouring                         0% of your hours spent, 0 still owed - waiting on your hours
+      Scouring: removal of grease and soil
+  tx2_selvedge                         0% of your hours spent, 0 still owed - waiting on your hours
+      Selvedge: woven cloth edge
+  tx2_shed                             0% of your hours spent, 0 still owed - waiting on your hours
+      Shed: warp separation for pick insertion
+  tx2_silk_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Silk: cultivated fibre
+  tx2_sizing_systems                   0% of your hours spent, 9 still owed - waiting on your hours
+      Sizing systems: body measurement standardisation
+  tx2_spectacle_frame                  0% of your hours spent, 0 still owed - waiting on your hours
+      Spectacle frame: eye support structure
+  tx2_splitting                        0% of your hours spent, 0 still owed - waiting on your hours
+      Splitting: leather layering
+  tx2_twist_insertion                  0% of your hours spent, 0 still owed - waiting on your hours
+      Twist insertion control
+  tx2_warp_sizing                      0% of your hours spent, 0 still owed - waiting on your hours
+      Warp sizing: fibre stiffening
+  tx2_warping_mill                     0% of your hours spent, 0 still owed - waiting on your hours
+      Warping mill: warp thread length setting
+  tx2_watch_case                       0% of your hours spent, 17,415 still owed - waiting on your hours
+      Watch case: portable timepiece housing
+  tx2_wool_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Wool: sheep fibre
+
+RUNNING AS CONCERNS: 0   (you know how to run 5 more and have not opened them - 'ventures')
+  those shut concerns would clear 19 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 14.4   protection 36%   scandal 0   eminence 0.56
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 8 built by you, 139 granted for free (147 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  17 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 8 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 8 of its nodes
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | 780231 den | you:2000 hr | sch 1 art 1 | rep 14] > ============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 780,232 den    net -45,126 den/yr (after 33,432 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (201):
+  ag2_composting                       0% of your hours spent, 0 still owed - waiting on your hours
+      Composting
+  ag2_guano                            0% of your hours spent, 0 still owed - waiting on your hours
+      Guano
+  ag2_hopping                          0% of your hours spent, 0 still owed - waiting on your hours
+      Hopping
+  ag2_liming                           0% of your hours spent, 0 still owed - waiting on your hours
+      Liming
+  ag2_malting                          0% of your hours spent, 0 still owed - waiting on your hours
+      Malting
+  ag2_marling                          0% of your hours spent, 0 still owed - waiting on your hours
+      Marling
+  ag2_oil_pressing                     0% of your hours spent, 0 still owed - waiting on your hours
+      Oil pressing
+  ag2_potash                           0% of your hours spent, 0 still owed - waiting on your hours
+      Potash
+  ag2_pyrethrum                        0% of your hours spent, 0 still owed - waiting on your hours
+      Pyrethrum
+  ag2_refrigeration_ice                0% of your hours spent, 0 still owed - waiting on your hours
+      Refrigeration - ice trade
+  air_compass_magnetic                 0% of your hours spent, 0 still owed - waiting on your hours
+      Compass for navigation
+  air_kite_basic                       0% of your hours spent, 0 still owed - waiting on your hours
+      Kite
+  air_observation_balloon_tethered     0% of your hours spent, 1,138 still owed - waiting on your hours
+      Tethered observation balloon
+  arithmetic_positional               67% of your hours spent, 0 still owed - waiting on your hours
+      Decimal positional notation, zero, negative numbers, decimal fractions
+  civ_gate_sluice                      0% of your hours spent, 0 still owed - waiting on your hours
+      Sluice gate for water control
+  civ_lightning_conductor              0% of your hours spent, 142 still owed - waiting on your hours
+      Lightning conductor and grounding
+  civ_sewer_separate                   0% of your hours spent, 765 still owed - waiting on your hours
+      Separate foul and storm sewers
+  civ_street_paved                     0% of your hours spent, 0 still owed - waiting on your hours
+      Paved street and sidewalk
+  civ_town_planning                    0% of your hours spent, 278.8 still owed - waiting on your hours
+      Town planning and street layout
+  civ_truss_triangulated               0% of your hours spent, 0 still owed - waiting on your hours
+      Triangulated truss frame
+  cn_damp_proof_course                 0% of your hours spent, 0 still owed - waiting on your hours
+      Damp proof course barrier layer
+  cn_gypsum_plaster                    0% of your hours spent, 0 still owed - waiting on your hours
+      Gypsum plaster finish
+  cn_pile_driving                      0% of your hours spent, 0 still owed - waiting on your hours
+      Pile driving by drop hammer
+  cn_post_lintel                       0% of your hours spent, 0 still owed - waiting on your hours
+      Post and lintel structure
+  cn_stone_polish                      0% of your hours spent, 0 still owed - waiting on your hours
+      Stone polishing and smoothing
+  com_optical_codebook                 0% of your hours spent, 0 still owed - waiting on your hours
+      Codebook for optical signal tower
+  com_signal_flags                     0% of your hours spent, 0 still owed - waiting on your hours
+      Signal flags for maritime communication
+  fin_apprenticeship                   0% of your hours spent, 0 still owed - waiting on your hours
+      Apprenticeship indenture and training contract
+  fin_arbitrage                        0% of your hours spent, 37.5 still owed - waiting on your hours
+      Arbitrage and price equalisation
+  fin_bankruptcy                       0% of your hours spent, 40 still owed - waiting on your hours
+      Bankruptcy law and insolvency
+  fin_bill_exchange                    0% of your hours spent, 70 still owed - waiting on your hours
+      Bill of exchange
+  fin_bimetallism                      0% of your hours spent, 53.5 still owed - waiting on your hours
+      Bimetallism and fixed exchange
+  fin_cartel                           0% of your hours spent, 53.8 still owed - waiting on your hours
+      Cartel and market sharing agreement
+  fin_census                           0% of your hours spent, 2,532 still owed - waiting on your hours
+      Census and population enumeration
+  fin_employment_contract              0% of your hours spent, 0 still owed - waiting on your hours
+      Contract of employment
+  fin_ferry                            0% of your hours spent, 1,916 still owed - waiting on your hours
+      Ferry and toll crossing
+  fin_gambling_house                   0% of your hours spent, 2,112 still owed - waiting on your hours
+      Gambling house and gaming establishment
+  fin_guild                            0% of your hours spent, 0 still owed - waiting on your hours
+      Guild and monopoly craft
+  fin_hotel                            0% of your hours spent, 5,824 still owed - waiting on your hours
+      Hotel and commercial lodging
+  fin_inn                              0% of your hours spent, 3,538 still owed - waiting on your hours
+      Inn and coaching house
+  fin_lottery                          0% of your hours spent, 2,080 still owed - waiting on your hours
+      Lottery and state gambling
+  fin_marine_insurance                 0% of your hours spent, 4,105 still owed - waiting on your hours
+      Marine insurance
+  fin_monopoly                         0% of your hours spent, 51.1 still owed - waiting on your hours
+      Monopoly and exclusive grant
+  fin_mortgage                         0% of your hours spent, 57.5 still owed - waiting on your hours
+      Mortgage and real estate credit
+  fin_patent                           0% of your hours spent, 61.8 still owed - waiting on your hours
+      Patent and exclusive right
+  fin_pawnshop                         0% of your hours spent, 0 still owed - waiting on your hours
+      Pawnshop and secured loan
+  fin_plantation                       0% of your hours spent, 10,831 still owed - waiting on your hours
+      Plantation and large estate agriculture
+  fin_postal_service                   0% of your hours spent, 4,362 still owed - waiting on your hours
+      Postal service as paid business
+  fin_racecourse                       0% of your hours spent, 5,332 still owed - waiting on your hours
+      Racecourse and pari-mutuel betting
+  fin_seigniorage                      0% of your hours spent, 25 still owed - waiting on your hours
+      Seigniorage and debasement
+  fin_tariff                           0% of your hours spent, 47.5 still owed - waiting on your hours
+      Tariff and import duty
+  fin_theatre_business                 0% of your hours spent, 8,848 still owed - waiting on your hours
+      Theatre as business
+  fin_trade_union                      0% of your hours spent, 88.1 still owed - waiting on your hours
+      Trade union and workers collegium
+  fin_trademark                        0% of your hours spent, 20 still owed - waiting on your hours
+      Trademark and mark of quality
+  fin_trading_post                     0% of your hours spent, 1,662 still owed - waiting on your hours
+      Trading post and remote store
+  fin_usury_law                        0% of your hours spent, 30 still owed - waiting on your hours
+      Usury law and interest regulation
+  fud_fish_curing_and_smoking          0% of your hours spent, 0 still owed - waiting on your hours
+      Large-scale fish curing and smoking
+  fud_grain_storage_silos              0% of your hours spent, 830.4 still owed - waiting on your hours
+      Cylindrical silos for bulk grain storage
+  fud_hay_making_storage               0% of your hours spent, 0 still owed - waiting on your hours
+      Hay making and dry storage
+  fud_whaling_industry                 0% of your hours spent, 2,070 still owed - waiting on your hours
+      Organized whaling industry for oil and meat
+  hom_eraser_breadcrumb                0% of your hours spent, 0 still owed - waiting on your hours
+      Eraser, breadcrumb substitute
+  hom_fireplace_chimney                0% of your hours spent, 0 still owed - waiting on your hours
+      Fireplace and chimney
+  hom_flush_toilet_trap                0% of your hours spent, 0 still owed - waiting on your hours
+      Flush toilet with S-bend water trap
+  hom_latrine_water_trap               0% of your hours spent, 0 still owed - waiting on your hours
+      Latrine water trap (S-bend)
+  hom_punkah_ceiling                   0% of your hours spent, 0 still owed - waiting on your hours
+      Ceiling punkah, servant-pulled
+  hom_safety_pin                       0% of your hours spent, 0 still owed - waiting on your hours
+      Safety pin
+  hom_sprung_mattress                  0% of your hours spent, 285.5 still owed - waiting on your hours
+      Sprung mattress
+  hom_toothbrush                       0% of your hours spent, 0 still owed - waiting on your hours
+      Toothbrush
+  hom_toys_dolls                       0% of your hours spent, 75.5 still owed - waiting on your hours
+      Toys and dolls
+  hom_umbrella                         0% of your hours spent, 0 still owed - waiting on your hours
+      Umbrella
+  horse_collar                         0% of your hours spent, 0 still owed - waiting on your hours
+      Rigid padded horse collar, whippletree, nailed horseshoe
+  if_quill                             0% of your hours spent, 0 still owed - waiting on your hours
+      Quill pen
+  lnd_coach                            0% of your hours spent, 418.8 still owed - waiting on your hours
+      Coach
+  lnd_hobby_horse                      0% of your hours spent, 0 still owed - waiting on your hours
+      Hobby horse (pedal-less bicycle)
+  lnd_wheelbarrow                      0% of your hours spent, 0 still owed - waiting on your hours
+      Wheelbarrow
+  mat_obsidian_blade                   0% of your hours spent, 0 still owed - waiting on your hours
+      Obsidian blade knapping
+  mat_papyrus                          0% of your hours spent, 0 still owed - waiting on your hours
+      Papyrus
+  mat_parchment                        0% of your hours spent, 0 still owed - waiting on your hours
+      Parchment
+  md2_plaster_cast                     0% of your hours spent, 0 still owed - waiting on your hours
+      Plaster cast immobilization
+  md2_vector_control                   0% of your hours spent, 105.4 still owed - waiting on your hours
+      Vector control
+  med_herbal_pharmacy                  0% of your hours spent, 0 still owed - waiting on your hours
+      Herbal pharmacy (Dioscorides Materia medica)
+  med_surgical_gloves_mask             0% of your hours spent, 0 still owed - waiting on your hours
+      Surgical gloves and mask
+  met_bloomery_bog_iron                0% of your hours spent, 1,210 still owed - waiting on your hours
+      Bloomery smelting of bog iron
+  met_investment_casting               0% of your hours spent, 0 still owed - waiting on your hours
+      Investment casting and lost wax
+  met_ore_crushing_sorting             0% of your hours spent, 0 still owed - waiting on your hours
+      Ore dressing: crushing and hand sorting
+  mfg_adhesive_bond                    0% of your hours spent, 219.5 still owed - waiting on your hours
+      Adhesive bonding
+  mfg_cold_riveting                    0% of your hours spent, 0 still owed - waiting on your hours
+      Cold riveting
+  mfg_drawing_office                   0% of your hours spent, 541.8 still owed - waiting on your hours
+      Drawing office
+  mfg_enamelling                       0% of your hours spent, 216.8 still owed - waiting on your hours
+      Enamelling
+  mfg_flux                             0% of your hours spent, 0 still owed - waiting on your hours
+      Flux
+  mfg_hot_riveting                     0% of your hours spent, 0 still owed - waiting on your hours
+      Hot riveting
+  mfg_japanning                        0% of your hours spent, 219.5 still owed - waiting on your hours
+      Japanning
+  mfg_mould                            0% of your hours spent, 0 still owed - waiting on your hours
+      Casting mould
+  mfg_painting                         0% of your hours spent, 0 still owed - waiting on your hours
+      Painting
+  mfg_production_schedule              0% of your hours spent, 0 still owed - waiting on your hours
+      Production schedule
+  mfg_silver_solder                    0% of your hours spent, 856.1 still owed - waiting on your hours
+      Silver soldering
+  mfg_soft_solder                      0% of your hours spent, 0 still owed - waiting on your hours
+      Soft soldering
+  mt2_amalgamation                     0% of your hours spent, 6,296 still owed - waiting on your hours
+      Amalgamation: extracting precious metals with mercury
+  mt2_earthenware                      0% of your hours spent, 0 still owed - waiting on your hours
+      Earthenware: low-fired, porous ceramic for everyday use
+  mt2_pelletising                      0% of your hours spent, 223.5 still owed - waiting on your hours
+      Pelletising: forming ore fines into uniform balls
+  mt2_solder_lead_tin                  0% of your hours spent, 4,713 still owed - waiting on your hours
+      Solder: lead-tin for joining metals by melting
+  mt2_timbering_safety                 0% of your hours spent, 0 still owed - waiting on your hours
+      Timbering: wooden support structures for mine stability
+  mt2_type_metal                       0% of your hours spent, 1,883 still owed - waiting on your hours
+      Type metal: lead-tin-antimony for printing type castings
+  opt_anemometer                       0% of your hours spent, 0 still owed - waiting on your hours
+      Anemometer (wind speed)
+  opt_manometer                        0% of your hours spent, 0 still owed - waiting on your hours
+      Manometer (pressure measurement)
+  prc_straightedge                     0% of your hours spent, 0 still owed - waiting on your hours
+      Straightedge and reference straightness
+  prn_wire_mould_deckle                0% of your hours spent, 0 still owed - waiting on your hours
+      Wire mould and deckle
+  pwr_coal_seam                        0% of your hours spent, 272.8 still owed - waiting on your hours
+      Coal seam and mining
+  pwr_oil_shale                        0% of your hours spent, 0 still owed - waiting on your hours
+      Oil shale and bitumen deposits
+  pwr_peat                             0% of your hours spent, 0 still owed - waiting on your hours
+      Peat extraction and burning
+  pwr_petroleum_seeps                  0% of your hours spent, 102 still owed - waiting on your hours
+      Petroleum seeps and collection
+  sc2_institution_citation             0% of your hours spent, 239.4 still owed - waiting on your hours
+      Citation and bibliographic reference
+  sc2_institution_curriculum           0% of your hours spent, 235.2 still owed - waiting on your hours
+      Curriculum and course sequence
+  sc2_institution_doctorate            0% of your hours spent, 225.8 still owed - waiting on your hours
+      Doctorate and research degree
+  sc2_institution_examination          0% of your hours spent, 361.2 still owed - waiting on your hours
+      Examination and credentialing
+  sc2_institution_funded_programme     0% of your hours spent, 206.4 still owed - waiting on your hours
+      Funded research programme
+  sc2_institution_referee              0% of your hours spent, 225.8 still owed - waiting on your hours
+      Referee and peer review
+  sc2_institution_research_group       0% of your hours spent, 206.4 still owed - waiting on your hours
+      Research group and principal investigator
+  sc2_institution_textbook             0% of your hours spent, 1,286 still owed - waiting on your hours
+      Textbook and codified knowledge
+  sc2_method_hypothesis                0% of your hours spent, 225.8 still owed - waiting on your hours
+      Hypothesis and prediction
+  sc2_method_negative_result           0% of your hours spent, 245.1 still owed - waiting on your hours
+      Negative result and null finding
+  sc2_method_replication               0% of your hours spent, 232.2 still owed - waiting on your hours
+      Replication and repeatability
+  sc2_notation_decimal_point           0% of your hours spent, 134.2 still owed - waiting on your hours
+      The decimal point convention
+  sc2_notation_exponents               0% of your hours spent, 140.6 still owed - waiting on your hours
+      Exponent notation
+  sc2_notation_roots                   0% of your hours spent, 185.8 still owed - waiting on your hours
+      Root symbols and radical notation
+  sc2_physics_gravitation              0% of your hours spent, 243.6 still owed - waiting on your hours
+      Newton's law of universal gravitation
+  sc2_physics_kinematics               0% of your hours spent, 150.9 still owed - waiting on your hours
+      Kinematics: position, velocity, acceleration
+  sc2_physics_momentum                 0% of your hours spent, 197.8 still owed - waiting on your hours
+      Momentum and impulse
+  sc2_physics_newtons_laws             0% of your hours spent, 177 still owed - waiting on your hours
+      Newton's three laws of motion
+  sc2_probability_axioms               0% of your hours spent, 193.5 still owed - waiting on your hours
+      Probability axioms and conditional probability
+  scientific_method                    0% of your hours spent, 115 still owed - waiting on your hours
+      Controlled experiment, hypothesis, replication, publication
+  sea_cross_staff                      0% of your hours spent, 310.7 still owed - waiting on your hours
+      Cross-staff for latitude
+  sea_diving_bell                      0% of your hours spent, 968.5 still owed - waiting on your hours
+      Diving bell
+  sea_keel_deep                        0% of your hours spent, 1,258 still owed - waiting on your hours
+      Deep keel and the ability to sail to windward
+  sea_lodestone                        0% of your hours spent, 0 still owed - waiting on your hours
+      Lodestone knowledge
+  sea_log_line                         0% of your hours spent, 0 still owed - waiting on your hours
+      Log line for speed
+  sea_skeleton_first                   0% of your hours spent, 316.9 still owed - waiting on your hours
+      Skeleton-first hull construction
+  sea_sternpost_rudder                 0% of your hours spent, 0 still owed - waiting on your hours
+      Sternpost rudder
+  tex_hand_ginning                     0% of your hours spent, 0 still owed - waiting on your hours
+      Hand ginning cotton
+  tex_horizontal_loom                  0% of your hours spent, 0 still owed - waiting on your hours
+      Horizontal loom
+  tex_indigo                           0% of your hours spent, 0 still owed - waiting on your hours
+      Indigo dyeing
+  tex_mordanting                       0% of your hours spent, 0 still owed - waiting on your hours
+      Mordanting dyes with alum
+  tr_bilge_pump                        0% of your hours spent, 0 still owed - waiting on your hours
+      Bilge pump
+  tr_block_tackle                      0% of your hours spent, 0 still owed - waiting on your hours
+      Block and tackle pulley
+  tr_hopper_wagon                      0% of your hours spent, 0 still owed - waiting on your hours
+      Hopper wagon for bulk minerals
+  tr_lateen_sail                       0% of your hours spent, 0 still owed - waiting on your hours
+      Lateen sail
+  tr_reefing                           0% of your hours spent, 0 still owed - waiting on your hours
+      Reefing sails
+  tr_semaphore_signal                  0% of your hours spent, 129.7 still owed - waiting on your hours
+      Semaphore signal
+  tr_sleeper_ballast                   0% of your hours spent, 0 still owed - waiting on your hours
+      Sleeper and ballast foundation
+  tr_square_rig                        0% of your hours spent, 0 still owed - waiting on your hours
+      Square rig sails
+  tr_wooden_waggonway                  0% of your hours spent, 102.5 still owed - waiting on your hours
+      Wooden waggonway
+  tx2_alum_tanning                     0% of your hours spent, 0 still owed - waiting on your hours
+      Alum tanning: mineral salt curing
+  tx2_asbestos_cloth                   0% of your hours spent, 1,203 still owed - waiting on your hours
+      Asbestos cloth: fire-resistant fabric
+  tx2_beam                             0% of your hours spent, 0 still owed - waiting on your hours
+      Beam: warp holder and tension
+  tx2_bleaching_sun                    0% of your hours spent, 0 still owed - waiting on your hours
+      Bleaching by sunlight: oxidative whitening
+  tx2_bottle                           0% of your hours spent, 0 still owed - waiting on your hours
+      Bottle: glass container
+  tx2_button_bone                      0% of your hours spent, 0 still owed - waiting on your hours
+      Button: bone material
+  tx2_button_horn                      0% of your hours spent, 0 still owed - waiting on your hours
+      Button: horn material
+  tx2_button_shell                     0% of your hours spent, 0 still owed - waiting on your hours
+      Button: shell material
+  tx2_carding                          0% of your hours spent, 0 still owed - waiting on your hours
+      Carding: opening and aligning fibres
+  tx2_cashmere                         0% of your hours spent, 0 still owed - waiting on your hours
+      Cashmere: goat undercoat fibre
+  tx2_comb                             0% of your hours spent, 0 still owed - waiting on your hours
+      Comb: hair grooming tool
+  tx2_corset                           0% of your hours spent, 0 still owed - waiting on your hours
+      Corset: rigid body support garment
+  tx2_count_standard                   0% of your hours spent, 0 still owed - waiting on your hours
+      Yarn count standardisation
+  tx2_currying                         0% of your hours spent, 0 still owed - waiting on your hours
+      Currying: leather finish dressing
+  tx2_cutting_table                    0% of your hours spent, 0 still owed - waiting on your hours
+      Cutting table: stacked cloth cutting
+  tx2_doll                             0% of your hours spent, 0 still owed - waiting on your hours
+      Doll: articulated child plaything
+  tx2_drawing_pin                      0% of your hours spent, 0 still owed - waiting on your hours
+      Drawing pin: short fastening point
+  tx2_dyeing_fibre                     0% of your hours spent, 0 still owed - waiting on your hours
+      Dyeing in fibre: pre-spin colouration
+  tx2_dyeing_piece                     0% of your hours spent, 0 still owed - waiting on your hours
+      Dyeing in piece: woven cloth colouration
+  tx2_dyeing_yarn                      0% of your hours spent, 0 still owed - waiting on your hours
+      Dyeing in yarn: skein colouration
+  tx2_eye_pointed_needle               0% of your hours spent, 0 still owed - waiting on your hours
+      Eye-pointed needle: self-threading sewing
+  tx2_flax_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Flax cultivation and fibre
+  tx2_flyer                            0% of your hours spent, 0 still owed - waiting on your hours
+      Flyer: the earliest spinning frame component
+  tx2_heddle                           0% of your hours spent, 0 still owed - waiting on your hours
+      Heddle: warp thread carrier and riser
+  tx2_hemp_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Hemp cultivation and fibre
+  tx2_hook_and_eye                     0% of your hours spent, 0 still owed - waiting on your hours
+      Hook and eye: wire fastener
+  tx2_jute_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Jute cultivation and fibre
+  tx2_mirror                           0% of your hours spent, 0 still owed - waiting on your hours
+      Mirror: reflective glass surface
+  tx2_mohair                           0% of your hours spent, 0 still owed - waiting on your hours
+      Mohair: angora goat fibre
+  tx2_needle                           0% of your hours spent, 0 still owed - waiting on your hours
+      Needle: sewing implement
+  tx2_paperclip                        0% of your hours spent, 0 still owed - waiting on your hours
+      Paperclip: bent wire fastener
+  tx2_pattern_grading                  0% of your hours spent, 0 still owed - waiting on your hours
+      Pattern grading: multi-size scaling
+  tx2_pin                              0% of your hours spent, 0 still owed - waiting on your hours
+      Pin: sewing fastener
+  tx2_printing_block                   0% of your hours spent, 0 still owed - waiting on your hours
+      Block printing: carved design application
+  tx2_ramie_fibre                      0% of your hours spent, 0 still owed - waiting on your hours
+      Ramie cultivation and fibre
+  tx2_resist_dyeing                    0% of your hours spent, 0 still owed - waiting on your hours
+      Resist dyeing: pattern preservation
+  tx2_retting                          0% of your hours spent, 0 still owed - waiting on your hours
+      Retting of flax and hemp fibres
+  tx2_rope_lay                         0% of your hours spent, 0 still owed - waiting on your hours
+      Rope laying: strand twisting
+  tx2_scouring                         0% of your hours spent, 0 still owed - waiting on your hours
+      Scouring: removal of grease and soil
+  tx2_selvedge                         0% of your hours spent, 0 still owed - waiting on your hours
+      Selvedge: woven cloth edge
+  tx2_shed                             0% of your hours spent, 0 still owed - waiting on your hours
+      Shed: warp separation for pick insertion
+  tx2_silk_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Silk: cultivated fibre
+  tx2_sizing_systems                   0% of your hours spent, 9 still owed - waiting on your hours
+      Sizing systems: body measurement standardisation
+  tx2_spectacle_frame                  0% of your hours spent, 0 still owed - waiting on your hours
+      Spectacle frame: eye support structure
+  tx2_splitting                        0% of your hours spent, 0 still owed - waiting on your hours
+      Splitting: leather layering
+  tx2_twist_insertion                  0% of your hours spent, 0 still owed - waiting on your hours
+      Twist insertion control
+  tx2_warp_sizing                      0% of your hours spent, 0 still owed - waiting on your hours
+      Warp sizing: fibre stiffening
+  tx2_warping_mill                     0% of your hours spent, 0 still owed - waiting on your hours
+      Warping mill: warp thread length setting
+  tx2_watch_case                       0% of your hours spent, 17,415 still owed - waiting on your hours
+      Watch case: portable timepiece housing
+  tx2_wool_fibre                       0% of your hours spent, 0 still owed - waiting on your hours
+      Wool: sheep fibre
+
+RUNNING AS CONCERNS: 0   (you know how to run 5 more and have not opened them - 'ventures')
+  those shut concerns would clear 19 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 14.4   protection 36%   scandal 0   eminence 0.56
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 8 built by you, 139 granted for free (147 total)
+
+AHEAD: 0 technologies at risk; a sacking that costs you anything (80% of them do) takes 0, hedged by nothing yet
+  [165-180] Antonine plague
+  [190-275] Currency debasement
+  [249-262] Plague of Cyprian
+  [235-284] Third century crisis
+  [284-305] Diocletian's reforms and the Price Edict
+  [312-375] The solidus and the end of the debasement
+  [313-400] Christianisation of the empire
+  [376-405] Adrianople and the Gothic settlement
+  [406-460] The crossings, and the sack of Rome
+  [461-492] The end of the western empire
+  [493-526] Ostrogothic Italy under Theodoric
+  [535-554] Justinian's Gothic War
+  [541-545] The Justinianic plague
+  [558-600] Recurrent plague
+  [568-600] The Lombard invasion
+  [634-700] The Arab conquests close the Mediterranean
+  [774-800] The Carolingian renaissance
+
+Fog of war is on: you see the next step, never the road. 8 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 8 of its nodes
+
+[101 AD | 780231 den | you:2000 hr | sch 1 art 1 | rep 14] > bye: True
+
+Ended 101 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_233.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_233.json

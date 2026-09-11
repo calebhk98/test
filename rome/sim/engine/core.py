@@ -441,13 +441,28 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # people this reproduces the same 3.5%-a-year average the smooth
         # version was tuned against; no single person is ever a third of a
         # casualty.
+        _lost = {}
         for t in sorted(self.employees):
             head = int(round(self.employees[t]))
             survivors = sum(1 for _ in range(head) if self.rng.random() >= ATTRITION)
+            if head - survivors > 0:
+                _lost[t] = head - survivors
             if survivors > 0:
                 self.employees[t] = float(survivors)
             else:
                 self.employees.pop(t)
+        # AND SAY SO. Now that a death is a whole person rather than three
+        # hundredths of one, it is a thing that HAPPENED, and it was happening
+        # in complete silence. A break tester hired five scholars, stepped five
+        # years, watched the payroll go five, four, three, three, two, and found
+        # nothing in the log or the events to say why - so they reported it as
+        # staff vanishing, which is exactly what it looks like from the chair.
+        # The rate is right (measured at 0.825 survival over five years against
+        # 0.837 expected, across forty seeds); the reporting was missing.
+        if _lost:
+            self.log.append((yr, "you lose %s to death and to better offers"
+                             % ", ".join("%d %s%s" % (n, t, "" if n == 1 else "s")
+                                         for t, n in sorted(_lost.items()))))
         self._resync_pools()
         # A HOUSEHOLD THAT CANNOT PAY ITS PEOPLE LETS THEM GO. This is the whole
         # answer to "you built it from nothing, so you must be able to rebuild

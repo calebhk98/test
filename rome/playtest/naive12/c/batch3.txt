@@ -1,0 +1,44 @@
+Resumed from /root/.rome-saves/rome_100ad_231.json: 150 AD.
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > REFUSED: the run has ended (the founder died without training successors; the school dispersed and the work was forgotten); nothing more can be started. 'state' shows where you finished and how far you got
+
+======================================================================
+THE RUN IS OVER
+======================================================================
+  the founder died without training successors; the school dispersed and the
+  work was forgotten
+
+  ended in 150 AD
+  you built 0 things; this society already had 139
+  278,856 in hand, 0 people, reputation 1.5, 0 concerns running
+
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    157 nodes in all; you had 6 of them and 151 were still to build
+    the next steps would have been: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic
+======================================================================
+
+   You can still look at anything; 'quit' when you are done.
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > REFUSED: the run has ended (the founder died without training successors; the school dispersed and the work was forgotten); time cannot advance. Use state to see the final position.
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > REFUSED: the run has ended (the founder died without training successors; the school dispersed and the work was forgotten); nothing more can be bought. 'state' shows where you finished and how far you got
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > REFUSED: the run has ended (the founder died without training successors; the school dispersed and the work was forgotten). 'state' shows where you finished and how far you got
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > LEDGER
+Capital: 278,856 den     Revenue: 0 den/yr
+Costs:
+  upkeep of what you built       0
+  living and appearances         4,393
+  of which because you are rich  4,183
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: -4,393     spent on projects last step: 0
+Net/yr after it: -4,393   (this is the figure `state` prints)
+Credit limit: 4,393 (none used)     interest on arrears: 11%     paid so far: 0
+
+[150 AD | 278856 den | you:0 hr | sch 0 art 0 | rep 1] > bye: True
+
+Ended 150 AD. the founder died without training successors; the school dispersed and the work was forgotten
+Saved to /root/.rome-saves/rome_100ad_231.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_231.json
