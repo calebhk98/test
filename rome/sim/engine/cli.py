@@ -878,11 +878,19 @@ def cmd_why(a):
           % (len(need), f"{sum(nodes[x]['ph'] for x in need):,}",
              f"{sum(nodes[x]['_total_cost'] for x in need):,.0f}", critical_path(nodes, k)[0]))
     print("   " + ", ".join(topo_order(nodes, need)))
-    unlocks = [m for m in nodes if k in nodes[m]["pre"]]
+    # req_any COUNTS: see protocol._unlocked_by. Ten nodes, among them the
+    # Norse clinker hull and bog-iron bloomery and the Mexica's chinampa, were
+    # reported as dead ends because this scanned hard prerequisites only.
+    from .protocol import _unlocked_by
+    unlocks = _unlocked_by(k, nodes)
     print("\nDIRECTLY UNLOCKS")
     for u in unlocks or ["(nothing, this is a leaf)"]:
         print("   %s" % (("%-30s %s" % (u, nodes[u]["name"])) if u in nodes else u))
-    blocks = {m for m in nodes if k in closure(nodes, m)} - {k}
+    # FOLLOWING SUBSTITUTION GROUPS TOO: see protocol._downstream_of for why
+    # this is not closure()'s question. The chinampa printed "TOTAL DOWNSTREAM:
+    # 0" while feeding terracing through a req_any option.
+    from .protocol import _downstream_of
+    blocks = _downstream_of(k, nodes)
     print("\nTOTAL DOWNSTREAM: %d nodes depend on this, directly or indirectly." % len(blocks))
     # THE GOAL BY NAME FROM THE TREE, for the same reason as load_strategy's.
     _goal_here = TREE["meta"]["goal_node"] if "TREE" in dir() else None

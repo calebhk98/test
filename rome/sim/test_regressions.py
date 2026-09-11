@@ -6072,6 +6072,86 @@ _leaks = sorted(k for k, v in NODES.items()
 check("no developer change-log marker is shipped in player-facing prose",
       not _leaks, _leaks[:5])
 
+# --- BREAK: three civilisations were told their own signature technology led
+# nowhere. `why` decided what a node unlocks by scanning hard prerequisites
+# only, so anything reached solely as one option of a req_any substitution
+# group ("any of a steam engine, a water wheel or a horse will drive this")
+# read as a dead end. Ten nodes were affected, among them the Norse clinker
+# hull - which really has 466 nodes behind it - the Norse bog-iron bloomery,
+# and the Mexica's chinampa. A play tester filed this against the Norse
+# starting kit as "flagship technologies are dead ends in the graph".
+from engine.protocol import _unlocked_by as _UB, _downstream_of as _DS
+_ra_cases = ("sea_clinker_hull", "met_bloomery_bog_iron", "fud_chinampa")
+for _k_ra in _ra_cases:
+    _un = _UB(_k_ra, NODES)
+    check("%s is not a dead end: something really does need it" % _k_ra,
+          bool(_un), _un)
+check("...and what rests on it is counted, not reported as nothing",
+      all(len(_DS(k, NODES)) >= 1 for k in _ra_cases),
+      {k: len(_DS(k, NODES)) for k in _ra_cases})
+# THE REASON THE CACHED INDEX CANNOT DO THIS. The tree is a directed acyclic
+# graph on `pre` and is NOT acyclic once req_any options are edges too:
+# junction_transistor -> silicon_path -> point_contact_transistor ->
+# junction_transistor is one of four cycles. A bitmask descendant index that
+# assumes a DAG runs out of memory on them, which is exactly what happened
+# when this fix was first attempted in data.py, so the walk that answers a
+# player carries a visited set instead.
+def _cycle_on(edges_of):
+    """Any node reachable from itself, following whatever edges are given."""
+    seen_all = set()
+    for root in sorted(NODES):
+        if root in seen_all:
+            continue
+        stack, seen = [root], set()
+        while stack:
+            cur = stack.pop()
+            for nxt in edges_of(cur):
+                if nxt == root:
+                    return root
+                if nxt not in seen:
+                    seen.add(nxt); stack.append(nxt)
+        seen_all |= seen
+    return None
+
+check("the tree is acyclic on hard prerequisites, which is what closure() "
+      "walks and why it must not follow substitutions",
+      _cycle_on(lambda k: [p for p in NODES[k]["pre"] if p in NODES]) is None,
+      _cycle_on(lambda k: [p for p in NODES[k]["pre"] if p in NODES]))
+
+def _pre_and_any(k):
+    # req_any OPTIONS ARE NOT ALL NODES. A group can offer a MATERIAL as an
+    # alternative to a technology ("any of lead_kg, mat_lead_sheet ..."), so a
+    # walk over these edges has to skip anything that is not a node or it dies
+    # on KeyError: 'lead_kg'. _unlocked_by is safe from this by construction,
+    # because it only ever asks whether a node's options mention k.
+    out = [p for p in NODES[k]["pre"] if p in NODES]
+    for g in (NODES[k].get("req_any") or []):
+        out.extend(o for o in sorted(g.get("options") or {}) if o in NODES)
+    return out
+
+# The cycle is not hypothetical and it is worth naming, because it is the
+# reason data.py's cached descendant index cannot simply be taught about
+# substitutions: junction_transistor needs point_contact_transistor, and
+# point_contact_transistor offers silicon_path as one option of its
+# semiconductor group, and silicon_path comes back round to the junction
+# device. A bitmask DFS that assumes a DAG runs out of memory on that, which
+# is exactly what happened when this fix was first attempted there.
+def _reaches(start, target, edges_of):
+    seen, stack = set(), [start]
+    while stack:
+        cur = stack.pop()
+        for nxt in edges_of(cur):
+            if nxt == target:
+                return True
+            if nxt not in seen:
+                seen.add(nxt); stack.append(nxt)
+    return False
+
+check("...and NOT acyclic once substitutions count, which is why the cached "
+      "bitmask index cannot answer this and a visited set must",
+      _reaches("junction_transistor", "junction_transistor", _pre_and_any),
+      "no cycle found through junction_transistor")
+
 # --- BREAK, round 12: `rush limit:1000` on turn one started 209 things at
 # once, owing 90,944 founder-hours against a lifetime the game itself puts at
 # about 72,000. The next step gave hours to exactly one of them, so "RUNNING

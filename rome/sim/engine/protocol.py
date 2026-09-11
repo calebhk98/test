@@ -1173,7 +1173,16 @@ def _brief(s, nodes, k, fog):
             "calendar_floor_years": n["yrs"], "risk": n["risk"],
             "earns_per_year": round(n["rev"], 1),
             "costs_per_year_after": round(n["up"], 1),
-            "downstream_count": downstream_count(nodes, k)}
+            # _downstream_of, NOT downstream_count. The cached bitmask index
+            # in data.py follows hard prerequisites only, and it must: adding
+            # req_any options to it introduces real CYCLES (junction_transistor
+            # -> silicon_path -> point_contact_transistor -> junction_transistor
+            # is one of four), and a bitmask DFS that assumes a DAG runs out of
+            # memory on them. The tree is acyclic on `pre` and is not acyclic
+            # on `pre` plus substitutions. This walk carries a visited set, so
+            # it is safe on the real graph, and it is the one place the number
+            # is shown to a player as "nothing depends on this".
+            "downstream_count": len(_downstream_of(k, nodes))}
 
 
 def _full_entry(s, nodes, k, fog):
@@ -1654,11 +1663,26 @@ def _node_explain(s, nodes, k):
     # deciding with is what they still have to do.
     _chain_all = closure(nodes, k) - {k}
     need = _chain_all - s.done
-    unlocks = [] if getattr(s, "fog", False) else [m for m in nodes if k in nodes[m]["pre"]]
+    # req_any COUNTS AS UNLOCKING. A node can be reached two ways: as a hard
+    # prerequisite in `pre`, or as one option inside a req_any substitution
+    # group ("any of a steam engine, a water wheel or a horse will drive this").
+    # Scanning `pre` alone reported ten nodes as dead ends that are nothing of
+    # the kind, and they were not obscure ones: the Norse clinker hull and
+    # bog-iron bloomery, and the Mexica's chinampa. Three civilisations were
+    # being told their own signature technology led nowhere, which is exactly
+    # the "flagship starting techs are dead ends" complaint a play tester filed
+    # against the Norse.
+    unlocks = [] if getattr(s, "fog", False) else _unlocked_by(k, nodes)
     # Was: {m for m in nodes if k in closure(nodes, m)} - a full ancestor
     # closure of all 2,831 nodes, per call. Same answers, computed once for the
     # whole tree and cached. See data.descendants.
-    n_blocks = downstream_count(nodes, k)
+    # THE CYCLE-SAFE WALK, not the cached bitmask. See the comment on the same
+    # substitution in _node_explain's sibling below: the index follows hard
+    # prerequisites only and cannot do otherwise, because req_any options make
+    # the graph cyclic. This is the number a player reads as "nothing depends
+    # on this", and `why sea_clinker_hull` was printing DIRECTLY UNLOCKS with a
+    # node named on one line and TOTAL DOWNSTREAM: 0 on the next.
+    n_blocks = len(_downstream_of(k, nodes))
     bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                       "power", "agriculture", "information", "instruments"))
     started = k in s.done or k in s.active
@@ -3712,6 +3736,45 @@ _ID_COMMANDS = ("why", "path", "start", "stop", "bounty", "mothball", "restore")
 # but a player still types its name, not its id, so it needs the same
 # resolution the fog-guarded commands get.
 _NAME_COMMANDS = _ID_COMMANDS + ("open",)
+
+
+def _downstream_of(k, nodes):
+    """Everything that depends on this node, however far away, following hard
+    prerequisites AND substitution groups alike.
+
+    NOT closure(), which answers a different question. closure() is what you
+    MUST have, so it follows `pre` only, and it has to: a req_any group is a
+    list of alternatives and treating every option as required would balloon
+    the goal's own prerequisite set with things nobody needs. But "what rests
+    on this" is the reverse question, and there a substitution option counts,
+    because something really would be harder or impossible without it. The
+    chinampa read "TOTAL DOWNSTREAM: 0" while genuinely feeding terracing.
+    """
+    seen, stack = set(), [k]
+    while stack:
+        cur = stack.pop()
+        for m in _unlocked_by(cur, nodes):
+            if m not in seen:
+                seen.add(m)
+                stack.append(m)
+    seen.discard(k)
+    return seen
+
+
+def _unlocked_by(k, nodes):
+    """Everything that needs this node, whether hard or as one option of a
+    substitution group. sorted() because a set of ids iterates in an order
+    that depends on PYTHONHASHSEED."""
+    out = set()
+    for m, v in nodes.items():
+        if k in v["pre"]:
+            out.add(m)
+            continue
+        for g in (v.get("req_any") or []):
+            if k in (g.get("options") or {}):
+                out.add(m)
+                break
+    return sorted(out)
 
 
 def _did_you_mean(k, nodes, limit=8, s=None):
