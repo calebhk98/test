@@ -702,6 +702,100 @@ class LabourMixin:
             cap *= self.literacy_factor(t)
         return cap + self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
 
+    # ---- a technology can make the SAME worker do more, without replacing
+    # them ------------------------------------------------------------------
+    # THE SECOND QUESTION: before this, nothing in the engine let a
+    # technology raise output per worker while leaving the workforce itself
+    # untouched. Everything market_supply() and labour_pressure() model is
+    # about how many HOURS a trade can supply and what hiring more of them
+    # costs; nothing ever asked an hour, once bought, to be worth more than
+    # any other hour of the same trade. A flying shuttle does not hire a
+    # second weaver or replace the first one - the tree's own note on
+    # tex_flying_shuttle says so ("one weaver now handles wide looms...
+    # triples weaving speed"). That is a real technology this engine had no
+    # way to represent.
+    #
+    # WIRED TO NODES THAT ARE ALREADY IN THE TREE, each cited from its own
+    # note, not invented for this. Deliberately conservative and deliberately
+    # narrow: only nodes whose own note describes making an existing trade's
+    # hour do more work, not nodes that reduce how many people are needed
+    # (that is automation, and the tree already has a separate, correctly
+    # different mechanism for it - see tex_power_loom in commodities.py,
+    # which raises national cloth OUTPUT, not weaver PRODUCTIVITY, and is
+    # deliberately left out of this table). The bonus for each node is a
+    # fraction of what its own note claims, because these numbers compound
+    # with one another and with everything else in the economy, and a
+    # technology tree with forty of these stacked at face value would make
+    # the whole game about which order you build them in rather than what
+    # they cost.
+    #
+    # (node, trade, bonus). Sourced, node by node:
+    #   tex_treadle_loom    "speeds weaving noticeably" - the weakest claim in
+    #                       the chain (the note itself says the weaver still
+    #                       works the shuttle by hand), so the smallest bonus.
+    #   tex_flying_shuttle  "triples weaving speed" - but weaving is a slice
+    #                       of what the `artisan` trade covers in this model
+    #                       (there is no dedicated weaver trade), so the
+    #                       tripling is scaled down hard rather than applied
+    #                       to the whole trade.
+    #   tex_spinning_wheel  "roughly tripling output per spinner" - same
+    #                       dilution reasoning as the shuttle.
+    #   met_trip_hammer     "much faster than hand hammering... foundation of
+    #                       heavy forge work" - smith.
+    #   met_water_ore_stamp "crush ore... far faster than hand crushing" -
+    #                       miner, who does the crushing this replaces.
+    #   met_three_high_mill "doubles throughput" of a rolling mill - smith.
+    #   met_converter_furnace "speed and low labour cost per ton is the
+    #                       payoff" - furnaceman.
+    #   bellows_water_blown "the single highest-leverage mechanical change
+    #                       available... continuous high-volume blast" - the
+    #                       user's own example of a non-automating speed-up;
+    #                       furnaceman.
+    #   mfg_rake_clearance  "saves 30 percent power and doubles tool life" -
+    #                       machinist.
+    #   mfg_hss_development "cuts three times faster than Mushet steel" - the
+    #                       most direct per-hour claim of the set; machinist.
+    #   prc_capstan_turret_lathe "unskilled operator can repeat production" -
+    #                       still an operator, still a machinist, just a much
+    #                       faster one per hour; machinist.
+    LABOUR_PRODUCTIVITY_SOURCES = (
+        ("tex_treadle_loom", "artisan", 0.03),
+        ("tex_flying_shuttle", "artisan", 0.06),
+        ("tex_spinning_wheel", "artisan", 0.05),
+        ("met_trip_hammer", "smith", 0.08),
+        ("met_water_ore_stamp", "miner", 0.08),
+        ("met_three_high_mill", "smith", 0.10),
+        ("met_converter_furnace", "furnaceman", 0.08),
+        ("bellows_water_blown", "furnaceman", 0.10),
+        ("mfg_rake_clearance", "machinist", 0.06),
+        ("mfg_hss_development", "machinist", 0.15),
+        ("prc_capstan_turret_lathe", "machinist", 0.10),
+    )
+    # NEVER MORE THAN HALF AGAIN, however many of the above a run has built.
+    # Every other saturating multiplier in this file (labour_price_factor,
+    # literacy_factor) is capped for the same reason: an uncapped sum of
+    # small, individually-defensible bonuses is still an uncapped sum, and
+    # this compounds with hired_cap, market_supply's own institutional
+    # multipliers, and the project pacing built on top of both.
+    LABOUR_PRODUCTIVITY_CAP = 1.5
+
+    def labour_productivity(self, trade):
+        """How much MORE a real hour of this trade is worth this year, from
+        technology that makes the worker faster rather than replacing them.
+
+        1.0 with nothing built (an hour is an hour, exactly the old
+        behaviour). Multiplies the HOURS a project can draw, in
+        hours_you_can_call_on - not market_supply, and not the wage bill: the
+        workforce is not bigger and is not paid differently, it simply gets
+        more done. See LABOUR_PRODUCTIVITY_SOURCES for what is wired in and
+        why each figure is what it is.
+        """
+        bonus = 0.0
+        for node, tr, add in self.LABOUR_PRODUCTIVITY_SOURCES:
+            if tr == trade and node in self.done:
+                bonus += add
+        return min(self.LABOUR_PRODUCTIVITY_CAP, 1.0 + bonus)
+
     def hours_you_can_call_on(self, t):
         """Hours of this trade a project can actually draw on this year.
 
@@ -724,7 +818,16 @@ class LabourMixin:
         # collapsed into one - found that commissioning bought byte-identical
         # progress and was pointless. Neither is right. Two channels, each
         # bounded, each named wherever the number is printed.
-        return self.market_supply(t) + self.contract_hours.get(t, 0.0)
+        #
+        # PRODUCTIVITY MULTIPLIES THE RESULT, NOT market_supply ITSELF. This
+        # is what turns "the same crew gets more done" into "the market can
+        # supply more people" if it were applied upstream instead - the wall
+        # a project's labour draw actually runs into is how much WORK gets
+        # out of the hours it can call on, which is this number, not how
+        # many people the town could in principle hire (market_supply, still
+        # unchanged, still governs hiring capacity and labour_price_factor).
+        return ((self.market_supply(t) + self.contract_hours.get(t, 0.0))
+                * self.labour_productivity(t))
 
     def hours_reserved(self, t):
         """Hours of this trade you have already bought from an outside shop."""

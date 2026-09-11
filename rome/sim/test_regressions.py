@@ -6676,6 +6676,118 @@ check("the count of nodes offered to `open` as a concern is down from the "
       "break's 1,493, and not collapsed toward zero",
       1300 <= _venture_ct <= 1450, _venture_ct)
 
+# =============================================================================
+# THE USER'S THREE QUESTIONS. Q1: does training ten times as many smiths
+# actually cut the cost of a smith? Q2: can a technology raise output per
+# worker without replacing the worker (labour.py's labour_productivity),
+# and is it wired to real tree nodes rather than invented ones?
+# =============================================================================
+
+# --- Q1: train ten times as many smiths, measure what a smith costs, before
+# and after - exactly as asked, rather than trusting the comment in
+# labour_price_factor that claims the price comes back down. household_room
+# is patched open for this one check because the question is about the
+# PRICING mechanism (labour_pressure vs market_supply), which is orthogonal
+# to the household-capacity gate hire() also enforces; nothing else in this
+# file, and no other check, depends on the patch.
+_orig_room = S.Sim.household_room
+S.Sim.household_room = lambda self: 10_000.0
+try:
+    small = sim(capital=1e9)
+    small.hire("smith", 5)
+    small.year += 10                 # let the hiring-day pressure fully decay
+    big = sim(capital=1e9)
+    big.hire("smith", 50)            # TEN TIMES as many smiths
+    big.year += 10                   # same decay, same settling time
+    cost_small = (S.ANNUAL_WAGE["smith"] * small.wage_index * small.price_index
+                  * small.labour_price_factor("smith"))
+    cost_big = (S.ANNUAL_WAGE["smith"] * big.wage_index * big.price_index
+                * big.labour_price_factor("smith"))
+    check("once the market has settled, a smith costs the SAME base wage "
+          "whether the trade has 5 people in it or 50 - training ten times "
+          "as many smiths does not cut the price below the wage table, it "
+          "only avoids a lasting premium (see the next two checks for what "
+          "training ten times as many DOES change)",
+          abs(cost_big - cost_small) < 0.5, (cost_small, cost_big))
+
+    # What ten-times-the-trade actually buys: the SAME absolute batch of new
+    # hiring pressure is a smaller share of a bigger existing trade, so
+    # expanding a big trade further is cheaper, in the premium it pays,
+    # than expanding a small one by the same amount - this is the real
+    # content of "brings the price back down", not a below-base discount.
+    thin = sim(capital=1e9)
+    thin.hire("smith", 5)
+    thin.year += 10
+    thick = sim(capital=1e9)
+    thick.hire("smith", 50)
+    thick.year += 10
+    thin_capital_before, thick_capital_before = thin.capital, thick.capital
+    thin.hire("smith", 10)
+    thick.hire("smith", 10)
+    fee_thin = thin_capital_before - thin.capital
+    fee_thick = thick_capital_before - thick.capital
+    check("expanding an already-large trade by a fixed amount costs no more "
+          "in fees than expanding a small one by the same amount, once both "
+          "have settled (hire()'s own price factor is read before the new "
+          "batch's pressure is recorded, so a single hire() call never taxes "
+          "itself - only the NEXT one)",
+          abs(fee_thick - fee_thin) < 1.0, (fee_thin, fee_thick))
+
+    per_head_thin = thin.wage_bill() / thin.employees["smith"]
+    per_head_thick = thick.wage_bill() / thick.employees["smith"]
+    check("the standing payroll's per-head cost, measured immediately after "
+          "each identical top-up batch, is lower for the bigger trade - the "
+          "same recent pressure is diluted across more existing people",
+          per_head_thick < per_head_thin,
+          "per head, base=5->15: %.2f   base=50->60: %.2f"
+          % (per_head_thin, per_head_thick))
+finally:
+    S.Sim.household_room = _orig_room
+
+# --- Q2: technology that raises output per worker without replacing them.
+s = sim(capital=1e9)
+check("with nothing built, an hour of a trade's time is worth exactly an "
+      "hour - labour_productivity changes nothing until a real technology "
+      "earns it",
+      s.labour_productivity("smith") == 1.0, s.labour_productivity("smith"))
+
+before_call_on = s.hours_you_can_call_on("smith")
+before_supply = s.market_supply("smith")
+s.done.add("met_trip_hammer")
+after_call_on = s.hours_you_can_call_on("smith")
+after_supply = s.market_supply("smith")
+check("a real productivity technology (the trip hammer, whose note says "
+      "'much faster than hand hammering') raises the WORK a smith's hours "
+      "can produce this year",
+      after_call_on > before_call_on * 1.05, (before_call_on, after_call_on))
+check("...without changing market_supply - the technology makes the "
+      "existing smiths faster, it does not conjure more of them, so hiring "
+      "capacity and labour_price_factor are untouched",
+      after_supply == before_supply, (before_supply, after_supply))
+check("...and leaves an UNRELATED trade's productivity at exactly 1.0 - a "
+      "trip hammer for smiths does not make carpenters faster too",
+      s.labour_productivity("carpenter") == 1.0, s.labour_productivity("carpenter"))
+
+s2 = sim(capital=1e9)
+for _node, _tr, _add in s2.LABOUR_PRODUCTIVITY_SOURCES:
+    s2.done.add(_node)
+check("stacking every productivity technology this run has wired in never "
+      "pushes any trade's multiplier past the cap, however many technologies "
+      "a civilization eventually builds",
+      all(s2.labour_productivity(tr) <= s2.LABOUR_PRODUCTIVITY_CAP + 1e-9
+          for _n, tr, _a in s2.LABOUR_PRODUCTIVITY_SOURCES),
+      [(tr, s2.labour_productivity(tr)) for _n, tr, _a in sorted(
+          s2.LABOUR_PRODUCTIVITY_SOURCES, key=lambda r: r[1])])
+
+check("every node named in LABOUR_PRODUCTIVITY_SOURCES is a real node in "
+      "the compiled tree, not a name that was never wired to anything",
+      all(_n in NODES for _n, _tr, _a in S.Sim.LABOUR_PRODUCTIVITY_SOURCES),
+      [_n for _n, _tr, _a in S.Sim.LABOUR_PRODUCTIVITY_SOURCES if _n not in NODES])
+check("every trade named in LABOUR_PRODUCTIVITY_SOURCES is a real trade in "
+      "the wage table",
+      all(_tr in WAGES for _n, _tr, _a in S.Sim.LABOUR_PRODUCTIVITY_SOURCES),
+      [_tr for _n, _tr, _a in S.Sim.LABOUR_PRODUCTIVITY_SOURCES if _tr not in WAGES])
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
