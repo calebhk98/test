@@ -5165,6 +5165,32 @@ check("...and every field event text names is one this command can look up",
       [r["field"] for r in _vals["values"]])
 
 
+# --- JOB 3d: a long step stops when something it warned about actually
+# happens, rather than running the rest of the years you asked for on top
+# of it. A break tester watched "CLOSE TO THE LIMIT ... while it is still
+# your choice" get ploughed straight through to CREDIT EXHAUSTED inside one
+# big `step`.
+s_se = sim(capital=500.0)
+s_se.end_year = s_se.cfg["start_year"] + 200
+# Plain `start`, not `rush` - this check has to stand on its own before
+# `rush` exists as a command (see JOB 3f, committed separately and later).
+_memo_se = {}
+_ok_se = [k for k in s_se.order if s_se.can_start(k, _memo=_memo_se)]
+_ok_se = [k for k in _ok_se
+          if not (NODES[k]["tier"] == 0 and NODES[k]["ph"] == 0
+                  and NODES[k]["_total_cost"] <= 1)]
+for _k_se in _ok_se[:15]:
+    S._agent_dispatch(s_se, NODES, {"cmd": "start", "id": _k_se})
+_step_ce = S._agent_dispatch(s_se, NODES, {"cmd": "step", "years": 100})
+check("a multi-year step stops the moment credit is actually exhausted, "
+      "rather than running the rest of the years on top of it",
+      bool(_step_ce.get("stopped_early"))
+      and any("CREDIT EXHAUSTED" in e["message"] for e in _step_ce["events"]),
+      _step_ce.get("stopped_early"))
+check("...and it really did stop short of the 100 years asked for",
+      _step_ce["year"] < s_se.cfg["start_year"] + 100, _step_ce["year"])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

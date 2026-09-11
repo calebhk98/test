@@ -2190,6 +2190,8 @@ def render_state(out):
                            if c.get("can_be_restored") else ""))
         for e in events or []:
             head.append("  EVENT %s: %s" % (e.get("year"), e.get("message")))
+        if out.get("stopped_early"):
+            head.append("  " + out["stopped_early"])
         L = head + [""] + L if head else L
 
     also = out.get("also_available")
@@ -5068,13 +5070,27 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # against what left, while every arrival got one. A game whose only
         # score is what you have built has to report subtraction at least as
         # loudly as addition.
+        # STOP WHEN SOMETHING IT WARNED ABOUT ACTUALLY HAPPENS, rather than
+        # running the rest of the years you asked for on top of it. A break
+        # tester watched a `step 12` carry "CLOSE TO THE LIMIT ... while it is
+        # still your choice" (see economy.warn_near_the_limit) straight
+        # through to CREDIT EXHAUSTED, and then spend the REMAINING years of
+        # the same call compounding arrears with nobody able to react - the
+        # choice the warning promised was still theirs had already gone by
+        # before the reply came back. A request for N years is not a promise
+        # to hide what happens in year 1 until year N has also gone by. So
+        # this breaks the loop, not only the request, the moment it fires.
+        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED",)
         completed, lost, events = [], [], []
+        stopped_early = None
         end_year = s.end_year
+        ran = 0
         for _ in range(years):
             if s.dead_reason or s.goal_year or s.year >= end_year:
                 break
             before_done, before_log = set(s.done), len(s.log)
             s.step()
+            ran += 1
             # sorted(), because this is a set difference and a set of strings
             # iterates in an order that depends on PYTHONHASHSEED. Two runs of
             # the same game with the same seed reported the same completions in
@@ -5094,9 +5110,20 @@ def _agent_dispatch_inner(s, nodes, cmd):
             for k in sorted(before_done - s.done):
                 lost.append({"id": k, "name": nodes[k]["name"], "year": s.year,
                              "can_be_restored": k in getattr(s, "mothballed", set())})
-            for y, m in s.log[before_log:]:
+            _this_year = s.log[before_log:]
+            for y, m in _this_year:
                 events.append({"year": y, "message": m})
+            if ran < years and any(mk in m for _, m in _this_year
+                                   for mk in _STEP_STOP_MARKERS):
+                stopped_early = ("stopped after %d of the %d years you asked "
+                                 "for: something happened that you warned "
+                                 "yourself about and should see before more "
+                                 "time passes. Step again when you are ready."
+                                 % (ran, years))
+                break
         out = dict(ok=True, completed=completed, lost=lost, events=events)
+        if stopped_early:
+            out["stopped_early"] = stopped_early
         out.update(_agent_state(s, nodes))
         return out
 
