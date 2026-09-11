@@ -2,15 +2,15 @@
 
 *May 2026 – June 2026*
 
-Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never held a badge if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
+Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never signed anything for the government if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
 
 Eli sends a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder; the document is mostly about the second problem, not the first.
 
-Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name.
+Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, an old joke of Sam's about the food at basic. Ruth texts him alone once, just his name.
 
-The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
+The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they have a file on their own school that's a dozen years deep and mostly wrong, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
 All of them know the law cold. They had sat the same examination; when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth has two numbers ready for him.
 
@@ -78,15 +78,15 @@ sam: thats not a number
 
 Chloe reads all of it twice, standing at her kitchen counter with the coffee going cold beside her the way it does most nights now. Months after he first posted it, she keeps going back to Theo's line about the men over the fence, and already knows what she thinks before she starts typing anything.
 
-chloe: someones had a file on us since before any of us could read. if we get a chance to read theirs back i dont see what there is to decide
+chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
 
 ________________
 
-Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job, and he says so once.
+Theo could have written cleaner rules than anyone else at that table, and he says so once.
 
-theo: i could write this. its the thing i do all day
+theo: i could write this. finding the hole in somebody elses plan is the thing i do all day
 
-theo: and my name cant be anywhere on a document that sets out how to get round the law i get paid to enforce
+theo: and my name cant be anywhere on a document that sets out how to get round the government i get paid to read
 
 So the job falls to Chloe.
 
@@ -98,7 +98,7 @@ Eli spends the run of it badly slept but mostly cheerful, a couple of shirts in 
 
 Chloe turns twenty-one in August, two months after she adds the last page, and it gets mentioned once and then not again. There is no clean place for a birthday next to a document about federal sentencing exposure.
 
-Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold before she remembers it's there. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
+Chloe spends most of that stretch working after the apartment goes quiet. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 
 The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be.
 
@@ -128,7 +128,7 @@ ruth: strike it
 
 The page on what happens if it's noticed is the shortest of them and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all of them stay off the phone with anyone outside the group, a lawyer included, until they are all on one call together. It assumes noticing looks like something happening to one of them. But the version that leaves only a gap closing again before anyone can point to it, quiet and invisible, over before it registers, sits outside every page of it.
 
-They sign off one at a time over the following week. Eli signs first, hours after he sends the document, because for him the answer was already settled.
+They sign off one at a time over the weeks that follow. Eli signs first, hours after Chloe sends it, because for him the answer was already settled.
 
 eli: in
 

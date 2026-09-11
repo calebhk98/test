@@ -7375,7 +7375,7 @@ Eli builds his half after his own shift ends, at a desk under a window that look
 
 Kavi builds his half in the lab he's had since he stayed on, a converted classroom with a window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. Rather than the live feed he works from Eli's logs, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. Testing comes first, against years of his own old coursework logs, because it's the only slow, boring, badly-behaved dataset he already has lying around, and the watcher moves onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
 
-They test it for a month against Nadia's company, on her own live books, before it goes anywhere. Nadia runs the shop through that month on its ordinary rails: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, three hundred small transactions a week moving through systems Eli now holds a key to. Standing at the counter with a pen in her free hand, she checks his daily summary line by line, a supplier's invoice like any other, and sends back exactly one correction in the month, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. Inside the hour, he fixes it. The shop itself keeps to what it always does across those weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
+They test it for a month against the shop, on its own live books, before it goes anywhere. Nadia runs the shop through that month on its ordinary rails: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, three hundred small transactions a week moving through systems Eli now holds a key to. Standing at the counter with a pen in her free hand, she checks his daily summary line by line, a supplier's invoice like any other, and sends back exactly one correction in the month, a timestamp that's read off the server's clock instead of the shop's own time zone. "Fix the clock," she says, not asking. Inside the hour, he fixes it. The shop itself keeps to what it always does across those weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
 
 nadia: if this comes back to my company i will end all of you
 
@@ -7387,7 +7387,7 @@ eli: it will not come back to your company
 
 ________________
 
-The night it goes live, Eli stays at his desk long after the floor around him empties, badge already logged out, screen turned away from the doorway the way it's turned every night for weeks, and calls Kavi rather than messaging him. Kavi picks up mid-swallow of tea, notebook already open on the desk beside the second monitor. Eli reads the deployment target out loud once, an order read back across a counter, and Kavi reads it back once more before either of them touches anything. Then Eli's finger is on the key that matters, one press, and the process starts at the slow pace it will keep from here on: a login here, a reconciliation batch there, the kind of entry an auditor would skim past inside a second. Kavi watches his own screen settle into the specific quiet he built it to settle into, and says one word into the phone. "Running." Eli writes the timestamp on a sticky note he'll lose inside the week, the closest either of them comes to marking the occasion.
+The night it goes live, Eli stays at his own desk long after the rest of the building has gone quiet, screen turned away from the door the way it's turned every night for weeks, and calls Kavi rather than messaging him. Kavi picks up mid-swallow of tea, notebook already open on the desk beside the second monitor. Eli reads the deployment target out loud once, an order read back across a counter, and Kavi reads it back once more before either of them touches anything. Then Eli's finger is on the key that matters, one press, and the process starts at the slow pace it will keep from here on: a login here, a reconciliation batch there, the kind of entry an auditor would skim past inside a second. Kavi watches his own screen settle into the specific quiet he built it to settle into, and says one word into the phone. "Running." Eli writes the timestamp on a sticky note he'll lose inside the week, the closest either of them comes to marking the occasion.
 
 Kavi checks the watcher first every morning, the habit that has him checking a server before he's properly awake, and for the first few weeks each check reads like the last: quiet, ordinary, a job clearing its usual queue at its usual hour. But the change, when it comes in the second week of December, is an entry landing well outside its usual band, and Kavi flags it to Eli before he's finished his tea.
 
@@ -7405,7 +7405,7 @@ The work happens on the floor of her own apartment, papers in a ring around her 
 
 ruth: its one person and i can show it
 
-theo: the government cant show it and theyve had a dozen years
+theo: the government cant show it
 
 ruth: the government is arguing from absence. theyre saying "no state would leave this little" and thats not evidence, thats a shrug
 
@@ -7449,7 +7449,7 @@ Kavi reads the exchange lying on the floor of his lab under the whiteboard, but 
 
 ________________
 
-The chat holds for most of that evening while each of them is somewhere else entirely: Sam finishing a set at a gym a long way from Nadia's shop, Nadia closing out a Tuesday's till a second time to be sure the number holds. Sam breaks it, back at his own kitchen table, phone propped against a mug. Kavi reads the exchange from his lab, marker in hand from the board, and waits for an actual question to show up before he answers.
+The chat holds for most of that evening while each of them is somewhere else entirely: Sam finishing a set at a gym a long way from Nadia's shop. Sam breaks it, back at his own kitchen table, phone propped against a mug. Kavi reads the exchange from his lab, marker in hand from the board, and waits for an actual question to show up before he answers.
 
 sam: shame nobodys already done this
 
@@ -7481,11 +7481,11 @@ theo: i said dont repeat it, i didnt say it was small
 
 kavi: a state doesnt leave four operators walking. thats not their risk tolerance
 
-ruth: this isnt new, sam, it just means there were two attempts
+ruth: sam, it just means there were two attempts, not one
 
 nadia: they caught four operators once
 
-nadia: tighten the polling interval again
+nadia: widen the polling interval again
 
 Eli reads it at his own desk and gets up to check the lock on his door twice before he sits back down.
 
@@ -7497,7 +7497,7 @@ Chloe reads that twice at her own desk, weeks into the job, and sets the phone f
 
 chloe: theo which four
 
-He doesn't answer it that night. Ruth puts it up again in the morning, the two words on their own, and Theo says he will tell them when it matters and not before.
+He doesn't answer it that night. Ruth puts it up again in the morning, the two words on their own, and Theo says he wants to check the file again first.
 
 ________________
 
@@ -7520,15 +7520,15 @@ eli: so lets go and read it
 
 *May 2026 – June 2026*
 
-Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never held a badge if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
+Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never signed anything for the government if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
 
 Eli sends a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder; the document is mostly about the second problem, not the first.
 
-Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name.
+Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, an old joke of Sam's about the food at basic. Ruth texts him alone once, just his name.
 
-The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
+The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they have a file on their own school that's a dozen years deep and mostly wrong, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
 All of them know the law cold. They had sat the same examination; when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth has two numbers ready for him.
 
@@ -7596,15 +7596,15 @@ sam: thats not a number
 
 Chloe reads all of it twice, standing at her kitchen counter with the coffee going cold beside her the way it does most nights now. Months after he first posted it, she keeps going back to Theo's line about the men over the fence, and already knows what she thinks before she starts typing anything.
 
-chloe: someones had a file on us since before any of us could read. if we get a chance to read theirs back i dont see what there is to decide
+chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
 
 ________________
 
-Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job, and he says so once.
+Theo could have written cleaner rules than anyone else at that table, and he says so once.
 
-theo: i could write this. its the thing i do all day
+theo: i could write this. finding the hole in somebody elses plan is the thing i do all day
 
-theo: and my name cant be anywhere on a document that sets out how to get round the law i get paid to enforce
+theo: and my name cant be anywhere on a document that sets out how to get round the government i get paid to read
 
 So the job falls to Chloe.
 
@@ -7616,7 +7616,7 @@ Eli spends the run of it badly slept but mostly cheerful, a couple of shirts in 
 
 Chloe turns twenty-one in August, two months after she adds the last page, and it gets mentioned once and then not again. There is no clean place for a birthday next to a document about federal sentencing exposure.
 
-Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold before she remembers it's there. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
+Chloe spends most of that stretch working after the apartment goes quiet. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 
 The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be.
 
@@ -7646,7 +7646,7 @@ ruth: strike it
 
 The page on what happens if it's noticed is the shortest of them and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all of them stay off the phone with anyone outside the group, a lawyer included, until they are all on one call together. It assumes noticing looks like something happening to one of them. But the version that leaves only a gap closing again before anyone can point to it, quiet and invisible, over before it registers, sits outside every page of it.
 
-They sign off one at a time over the following week. Eli signs first, hours after he sends the document, because for him the answer was already settled.
+They sign off one at a time over the weeks that follow. Eli signs first, hours after Chloe sends it, because for him the answer was already settled.
 
 eli: in
 
