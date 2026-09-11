@@ -6086,6 +6086,65 @@ check("'values' and 'rush' are in the list every unknown-command refusal "
       S.KNOWN_COMMANDS)
 
 
+# --- BREAK: a player asked what opening `arithmetic_positional` (decimal
+# positional notation) means, and how writing down zero creates money or has
+# a cost. It doesn't: the node carried rev=300 and up=100 purely because
+# is_venture() offers `open` to anything with either field set, with no
+# distinction between a notation and a business. A prior pass that day had
+# zeroed upkeep on 1,096 nodes it judged the same way but left their revenue
+# alone, and revenue alone still satisfies is_venture()'s `or`, so the break
+# survived half fixed. The rule applied here: a node earns as a concern only
+# if there is something to open a door on - premises, staff, stock, or a
+# trade a person actually practises for a fee - and not merely because
+# knowing it happens to carry a rev figure. Notation, theorems, financial
+# instruments, circuit theory, and farming/food-processing METHODS applied
+# to a venture that already exists elsewhere in the tree all got their rev
+# (and any leftover up) zeroed; genuinely practised trades and manufactured
+# products did not.
+check("opening `arithmetic_positional` is no longer offered - a notation is "
+      "not a door to open",
+      not sim().is_venture("arithmetic_positional")
+      and NODES["arithmetic_positional"]["rev"] == 0
+      and NODES["arithmetic_positional"]["up"] == 0,
+      (NODES["arithmetic_positional"]["rev"], NODES["arithmetic_positional"]["up"]))
+
+check("circuit theory (Black's 1927 feedback theorem) does not open as a "
+      "concern the way the capacitor it improves still does",
+      not sim().is_venture("el2_negative_feedback_stability_gain")
+      and sim().is_venture("el2_capacitor_electrolytic"),
+      (sim().is_venture("el2_negative_feedback_stability_gain"),
+       sim().is_venture("el2_capacitor_electrolytic")))
+
+check("a financial instrument (a cheque) is not itself a venture; the bank "
+      "that uses one still is",
+      not sim().is_venture("fin_cheque") and sim().is_venture("fin_deposit_bank"),
+      (sim().is_venture("fin_cheque"), sim().is_venture("fin_deposit_bank")))
+
+check("a husbandry method (hybridisation) does not open its own shop; the "
+      "farm it improves still does",
+      not sim().is_venture("ag2_hybridisation") and sim().is_venture("crop_rotation"),
+      (sim().is_venture("ag2_hybridisation"), sim().is_venture("crop_rotation")))
+
+# THE HARD MIDDLE, NOT ZEROED: an assay office is a trade a person practises
+# for a fee - premises, hallmarking equipment, paying customers - same as the
+# physician's practice and surveying business the fix was warned not to
+# destroy by treating every revenue figure as if it were a notation.
+check("a trade practised for a fee (an assay office) still opens as a "
+      "concern, unlike a notation",
+      sim().is_venture("fin_assay_office"), sim().is_venture("fin_assay_office"))
+
+# AGGREGATE, SO A FUTURE EDIT CANNOT DRIFT BACK TOWARD EITHER MISTAKE. Before
+# this fix, is_venture() offered 1,492 of the tree's 2,833 nodes to `open` as
+# going concerns (Rome's own granted set aside); a check tester found the
+# true figure for a Rome start was 1,493. This pins it well below that and
+# well above zero, so a change that either re-inflates the notation-as-shop
+# bug or blindly zeros revenue across the tree (destroying the real income
+# the game depends on) fails here rather than shipping.
+_venture_ct = sum(1 for k in NODES if sim().is_venture(k))
+check("the count of nodes offered to `open` as a concern is down from the "
+      "break's 1,493, and not collapsed toward zero",
+      1300 <= _venture_ct <= 1450, _venture_ct)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

@@ -342,7 +342,7 @@
     "ag2_food_laboratory"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.16,
    "sch": 0.0,
    "sus": 0,
@@ -377,7 +377,7 @@
     "germ_theory"
    ],
    "req_any": [],
-   "rev": 320.0,
+   "rev": 0.0,
    "risk": 0.25,
    "sch": 1.0,
    "sus": 0,
@@ -412,7 +412,7 @@
     "analytical_chemistry"
    ],
    "req_any": [],
-   "rev": 220.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 1.0,
    "sus": 0,
@@ -567,7 +567,7 @@
     "scientific_method"
    ],
    "req_any": [],
-   "rev": 280.0,
+   "rev": 0.0,
    "risk": 0.24,
    "sch": 1.0,
    "sus": 0,
@@ -675,7 +675,7 @@
    "ph": 110.0,
    "pre": [],
    "req_any": [],
-   "rev": 260.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
@@ -915,7 +915,7 @@
    "ph": 80.0,
    "pre": [],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.14,
    "sch": 0.0,
    "sus": 0,
@@ -948,7 +948,7 @@
     "exp_trade_route_extend"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
@@ -996,7 +996,7 @@
      }
     }
    ],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 1.0,
    "sus": 0,
@@ -1438,7 +1438,7 @@
     "sulfuric_retort"
    ],
    "req_any": [],
-   "rev": 350.0,
+   "rev": 0.0,
    "risk": 0.28,
    "sch": 2.0,
    "sus": 0,
@@ -1477,7 +1477,7 @@
     "met_tin_plate"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.13,
    "sch": 0.0,
    "sus": 0,
@@ -1635,7 +1635,7 @@
     "mat_nickel"
    ],
    "req_any": [],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.22,
    "sch": 1.0,
    "sus": 0,
@@ -1708,7 +1708,7 @@
     "analytical_chemistry"
    ],
    "req_any": [],
-   "rev": 260.0,
+   "rev": 0.0,
    "risk": 0.17,
    "sch": 1.0,
    "sus": 0,
@@ -1743,7 +1743,7 @@
     "coal_coke"
    ],
    "req_any": [],
-   "rev": 180.0,
+   "rev": 0.0,
    "risk": 0.14,
    "sch": 0.0,
    "sus": 0,
@@ -1890,7 +1890,7 @@
    "ph": 30.0,
    "pre": [],
    "req_any": [],
-   "rev": 100.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
    "sus": 0,
@@ -1964,7 +1964,7 @@
     "ag2_record_keeping_breeding"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.14,
    "sch": 0.0,
    "sus": 0,
@@ -2071,7 +2071,7 @@
     "ag2_pure_line_selection"
    ],
    "req_any": [],
-   "rev": 350.0,
+   "rev": 0.0,
    "risk": 0.3,
    "sch": 2.0,
    "sus": 0,
@@ -2104,7 +2104,7 @@
     "ag2_controlled_pollination"
    ],
    "req_any": [],
-   "rev": 280.0,
+   "rev": 0.0,
    "risk": 0.25,
    "sch": 1.0,
    "sus": 0,
@@ -2313,7 +2313,7 @@
     "exp_atlantic_crossing"
    ],
    "req_any": [],
-   "rev": 160.0,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
@@ -2569,7 +2569,7 @@
    "ph": 100.0,
    "pre": [],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.14,
    "sch": 0.0,
    "sus": 0,
@@ -2604,7 +2604,7 @@
     "scientific_method"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.3,
    "sch": 0.0,
    "sus": 0,
@@ -2637,7 +2637,7 @@
     "crop_rotation"
    ],
    "req_any": [],
-   "rev": 150.0,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 1.0,
    "sus": 0,
@@ -2745,7 +2745,7 @@
     "scientific_method"
    ],
    "req_any": [],
-   "rev": 180.0,
+   "rev": 0.0,
    "risk": 0.14,
    "sch": 0.0,
    "sus": 0,
@@ -2886,7 +2886,7 @@
     "exp_atlantic_crossing"
    ],
    "req_any": [],
-   "rev": 180.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
@@ -2960,7 +2960,7 @@
     "ag2_herd_book"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.18,
    "sch": 1.0,
    "sus": 0,
@@ -2993,7 +2993,7 @@
     "ag2_record_keeping_breeding"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
@@ -3176,7 +3176,7 @@
     "scientific_method"
    ],
    "req_any": [],
-   "rev": 180.0,
+   "rev": 0.0,
    "risk": 0.14,
    "sch": 0.0,
    "sus": 0,
@@ -3223,7 +3223,7 @@
      }
     }
    ],
-   "rev": 380.0,
+   "rev": 0.0,
    "risk": 0.22,
    "sch": 2.0,
    "sus": 0,
@@ -3255,7 +3255,7 @@
    "ph": 70.0,
    "pre": [],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -3289,7 +3289,7 @@
     "ag2_record_keeping_breeding"
    ],
    "req_any": [],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
@@ -3327,7 +3327,7 @@
     "steam_high_pressure"
    ],
    "req_any": [],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.16,
    "sch": 1.0,
    "sus": 0,
@@ -3363,7 +3363,7 @@
     "microscope_compound"
    ],
    "req_any": [],
-   "rev": 250.0,
+   "rev": 0.0,
    "risk": 0.35,
    "sch": 1.0,
    "sus": 0,
@@ -3509,7 +3509,7 @@
     "ag2_grafting"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.16,
    "sch": 1.0,
    "sus": 0,
@@ -3545,7 +3545,7 @@
     "ag2_soil_testing"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.18,
    "sch": 1.0,
    "sus": 0,
@@ -3581,7 +3581,7 @@
     "ag2_record_keeping_breeding"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 1.0,
    "sus": 0,
@@ -3652,7 +3652,7 @@
    "ph": 100.0,
    "pre": [],
    "req_any": [],
-   "rev": 280.0,
+   "rev": 0.0,
    "risk": 0.18,
    "sch": 1.0,
    "sus": 0,
@@ -3688,7 +3688,7 @@
     "analytical_chemistry"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.18,
    "sch": 1.0,
    "sus": 0,
@@ -3841,7 +3841,7 @@
     "exp_trade_route_extend"
    ],
    "req_any": [],
-   "rev": 220.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
@@ -3875,7 +3875,7 @@
     "ag2_botanic_garden"
    ],
    "req_any": [],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.25,
    "sch": 2.0,
    "sus": 0,
@@ -4199,7 +4199,7 @@
     "ch2_prod_urea"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
@@ -4237,7 +4237,7 @@
     "thermometer"
    ],
    "req_any": [],
-   "rev": 260.0,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
@@ -4270,7 +4270,7 @@
     "germ_theory"
    ],
    "req_any": [],
-   "rev": 280.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
    "sus": 0,
@@ -4307,7 +4307,7 @@
     "glass_labware"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
@@ -4343,7 +4343,7 @@
     "ag2_purifier"
    ],
    "req_any": [],
-   "rev": 240.0,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 0.0,
    "sus": 0,
@@ -4425,7 +4425,7 @@
     "microscope_compound"
    ],
    "req_any": [],
-   "rev": 260.0,
+   "rev": 0.0,
    "risk": 0.16,
    "sch": 1.0,
    "sus": 0,
@@ -6585,7 +6585,7 @@
    "ph": 450.0,
    "pre": [],
    "req_any": [],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 2,
@@ -6593,7 +6593,7 @@
    "traits": [
     "information"
    ],
-   "up": 100.0,
+   "up": 0.0,
    "yrs": 1.0
   },
   {
@@ -25617,7 +25617,7 @@
      }
     }
    ],
-   "rev": 800.0,
+   "rev": 0.0,
    "risk": 0.09,
    "sch": 0.0,
    "sus": 0,
@@ -25625,7 +25625,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 60.0,
+   "up": 0.0,
    "yrs": 0.3
   },
   {
@@ -25673,7 +25673,7 @@
      }
     }
    ],
-   "rev": 234.0,
+   "rev": 0.0,
    "risk": 0.11,
    "sch": 0.0,
    "sus": 0,
@@ -25681,7 +25681,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 24.0,
+   "up": 0.0,
    "yrs": 0.6
   },
   {
@@ -25766,7 +25766,7 @@
     "el2_tuned_circuit_resonance_tank"
    ],
    "req_any": [],
-   "rev": 600.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
    "sus": 0,
@@ -25774,7 +25774,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 80.0,
+   "up": 0.0,
    "yrs": 0.2
   },
   {
@@ -26352,7 +26352,7 @@
      }
     }
    ],
-   "rev": 183.3,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
@@ -26360,7 +26360,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 30.0,
+   "up": 0.0,
    "yrs": 1.0
   },
   {
@@ -26405,7 +26405,7 @@
      }
     }
    ],
-   "rev": 500.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
    "sus": 0,
@@ -26413,7 +26413,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 80.0,
+   "up": 0.0,
    "yrs": 0.2
   },
   {
@@ -26564,7 +26564,7 @@
      }
     }
    ],
-   "rev": 234.7,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -26572,7 +26572,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 36.0,
+   "up": 0.0,
    "yrs": 0.4
   },
   {
@@ -27220,7 +27220,7 @@
      }
     }
    ],
-   "rev": 163.3,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
@@ -27228,7 +27228,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 20.0,
+   "up": 0.0,
    "yrs": 0.6
   },
   {
@@ -27326,7 +27326,7 @@
      }
     }
    ],
-   "rev": 600.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
    "sus": 0,
@@ -27334,7 +27334,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 80.0,
+   "up": 0.0,
    "yrs": 0.2
   },
   {
@@ -28036,7 +28036,7 @@
     "el2_resistor_wirewound"
    ],
    "req_any": [],
-   "rev": 300.0,
+   "rev": 0.0,
    "risk": 0.06,
    "sch": 0.0,
    "sus": 0,
@@ -28044,7 +28044,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 120.0,
+   "up": 0.0,
    "yrs": 0.1
   },
   {
@@ -28629,7 +28629,7 @@
      }
     }
    ],
-   "rev": 700.0,
+   "rev": 0.0,
    "risk": 0.09,
    "sch": 0.0,
    "sus": 0,
@@ -28637,7 +28637,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 50.0,
+   "up": 0.0,
    "yrs": 0.3
   },
   {
@@ -28681,7 +28681,7 @@
      }
     }
    ],
-   "rev": 238.7,
+   "rev": 0.0,
    "risk": 0.09,
    "sch": 0.0,
    "sus": 0,
@@ -28689,7 +28689,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 40.0,
+   "up": 0.0,
    "yrs": 0.3
   },
   {
@@ -28734,7 +28734,7 @@
      }
     }
    ],
-   "rev": 210.0,
+   "rev": 0.0,
    "risk": 0.11,
    "sch": 0.0,
    "sus": 0,
@@ -28742,7 +28742,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 24.0,
+   "up": 0.0,
    "yrs": 0.5
   },
   {
@@ -28779,7 +28779,7 @@
      }
     }
    ],
-   "rev": 150.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -28787,7 +28787,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 20.0,
+   "up": 0.0,
    "yrs": 0.2
   },
   {
@@ -28826,7 +28826,7 @@
      }
     }
    ],
-   "rev": 241.3,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -28834,7 +28834,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 40.0,
+   "up": 0.0,
    "yrs": 0.3
   },
   {
@@ -29370,7 +29370,7 @@
      }
     }
    ],
-   "rev": 298.7,
+   "rev": 0.0,
    "risk": 0.09,
    "sch": 0.0,
    "sus": 3,
@@ -29378,7 +29378,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 60.0,
+   "up": 0.0,
    "yrs": 0.4
   },
   {
@@ -29972,7 +29972,7 @@
     "el2_tuned_circuit_resonance_tank"
    ],
    "req_any": [],
-   "rev": 500.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
    "sus": 0,
@@ -29980,7 +29980,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 80.0,
+   "up": 0.0,
    "yrs": 0.1
   },
   {
@@ -31120,7 +31120,7 @@
      }
     }
    ],
-   "rev": 233.3,
+   "rev": 0.0,
    "risk": 0.11,
    "sch": 0.0,
    "sus": 0,
@@ -31128,7 +31128,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 30.0,
+   "up": 0.0,
    "yrs": 0.5
   },
   {
@@ -31331,7 +31331,7 @@
     "electromagnet"
    ],
    "req_any": [],
-   "rev": 400.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
    "sus": 0,
@@ -31339,7 +31339,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 130.0,
+   "up": 0.0,
    "yrs": 0.2
   },
   {
@@ -31547,7 +31547,7 @@
      }
     }
    ],
-   "rev": 220.7,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -31555,7 +31555,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 30.0,
+   "up": 0.0,
    "yrs": 0.5
   },
   {
@@ -31602,7 +31602,7 @@
      }
     }
    ],
-   "rev": 260.0,
+   "rev": 0.0,
    "risk": 0.13,
    "sch": 0.0,
    "sus": 0,
@@ -31610,7 +31610,7 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 20.0,
+   "up": 0.0,
    "yrs": 1.0
   },
   {
@@ -37081,7 +37081,7 @@
     "fin_market"
    ],
    "req_any": [],
-   "rev": 25.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -37263,7 +37263,7 @@
     "fin_contract_law"
    ],
    "req_any": [],
-   "rev": 46.7,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
@@ -37377,7 +37377,7 @@
     "fin_trademark"
    ],
    "req_any": [],
-   "rev": 25.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -37457,7 +37457,7 @@
     "fin_contract_law"
    ],
    "req_any": [],
-   "rev": 33.3,
+   "rev": 0.0,
    "risk": 0.2,
    "sch": 0.0,
    "sus": 0,
@@ -37616,7 +37616,7 @@
     "fin_bill_exchange"
    ],
    "req_any": [],
-   "rev": 23.3,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -37694,7 +37694,7 @@
     "fin_advertising"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 3,
@@ -38192,7 +38192,7 @@
     "fin_bill_exchange"
    ],
    "req_any": [],
-   "rev": 31.7,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
    "sus": 0,
@@ -38232,7 +38232,7 @@
     "fin_arabic_numerals"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -38308,7 +38308,7 @@
     "fin_bill_exchange"
    ],
    "req_any": [],
-   "rev": 31.7,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -38502,7 +38502,7 @@
     "fin_deposit_bank"
    ],
    "req_any": [],
-   "rev": 46.7,
+   "rev": 0.0,
    "risk": 0.3,
    "sch": 0.0,
    "sus": 0,
@@ -38647,7 +38647,7 @@
     "fin_collegium"
    ],
    "req_any": [],
-   "rev": 50.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 1.0,
    "sus": 0,
@@ -38845,7 +38845,7 @@
     "fin_double_entry"
    ],
    "req_any": [],
-   "rev": 50.0,
+   "rev": 0.0,
    "risk": 0.05,
    "sch": 0.0,
    "sus": 0,
@@ -39226,7 +39226,7 @@
     "md2_vital_registration"
    ],
    "req_any": [],
-   "rev": 100.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
@@ -39235,7 +39235,7 @@
     "commerce",
     "information"
    ],
-   "up": 100.0,
+   "up": 0.0,
    "yrs": 2.0
   },
   {
@@ -39265,7 +39265,7 @@
     "fin_contract_law"
    ],
    "req_any": [],
-   "rev": 38.3,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
@@ -39813,7 +39813,7 @@
     "fin_bill_exchange"
    ],
    "req_any": [],
-   "rev": 18.7,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -40130,7 +40130,7 @@
     "fin_coined_money"
    ],
    "req_any": [],
-   "rev": 16.7,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 0.0,
    "sus": 0,
@@ -40443,7 +40443,7 @@
     "fin_tax_farming"
    ],
    "req_any": [],
-   "rev": 31.7,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 1.0,
    "sus": 0,
@@ -40715,7 +40715,7 @@
     "fin_collegium"
    ],
    "req_any": [],
-   "rev": 50.0,
+   "rev": 0.0,
    "risk": 0.3,
    "sch": 1.0,
    "sus": 0,
@@ -40872,7 +40872,7 @@
     "fin_ledger"
    ],
    "req_any": [],
-   "rev": 30.0,
+   "rev": 0.0,
    "risk": 0.02,
    "sch": 0.0,
    "sus": 0,
@@ -43734,7 +43734,7 @@
     "algebra_symbolic"
    ],
    "req_any": [],
-   "rev": 200.0,
+   "rev": 0.0,
    "risk": 0.08,
    "sch": 1.0,
    "sus": 1,
@@ -43742,7 +43742,7 @@
    "traits": [
     "information"
    ],
-   "up": 50.0,
+   "up": 0.0,
    "yrs": 1.0
   },
   {
@@ -43771,7 +43771,7 @@
     "glass_bead_microscope"
    ],
    "req_any": [],
-   "rev": 600.0,
+   "rev": 0.0,
    "risk": 0.1,
    "sch": 1.0,
    "sus": 5,
@@ -43781,7 +43781,7 @@
     "medical",
     "spectacle"
    ],
-   "up": 150.0,
+   "up": 0.0,
    "yrs": 2.0
   },
   {
@@ -48456,7 +48456,7 @@
     "if_index_card_system"
    ],
    "req_any": [],
-   "rev": 600.0,
+   "rev": 0.0,
    "risk": 0.12,
    "sch": 3.0,
    "sus": 0,
@@ -48464,7 +48464,7 @@
    "traits": [
     "information"
    ],
-   "up": 110.0,
+   "up": 0.0,
    "yrs": 2.0
   },
   {
@@ -57326,7 +57326,7 @@
     "algebra_symbolic"
    ],
    "req_any": [],
-   "rev": 400.0,
+   "rev": 0.0,
    "risk": 0.15,
    "sch": 2.0,
    "sus": 1,
@@ -57334,7 +57334,7 @@
    "traits": [
     "information"
    ],
-   "up": 300.0,
+   "up": 0.0,
    "yrs": 4.0
   },
   {
@@ -98603,7 +98603,7 @@
    "ph": 0.0,
    "pre": [],
    "req_any": [],
-   "rev": 2000.0,
+   "rev": 0.0,
    "risk": 0.0,
    "sch": 0.0,
    "sus": 0,
