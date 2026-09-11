@@ -6,8 +6,13 @@ runs, not the documentation.
 
     python3 rome/sim/demo_commodities.py
 
-No dependency on Sim, a civilization, or a running game: this is the
-standalone framework working on the tech tree and commodities.json alone.
+Sections 1-6 have no dependency on Sim, a civilization, or a running game:
+the standalone framework working on the tech tree and commodities.json
+alone, exactly as originally written. Section 7 is the part that changed:
+economy.py's wire_chain_report() now calls this SAME propagate_demand()
+with a real Sim's own numbers, and that is demonstrated here too, because a
+worked example that only ever ran standalone would leave "is it actually
+wired in" unanswered.
 """
 import json
 import os
@@ -16,8 +21,10 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))         # rome/sim
 ROOT = os.path.dirname(HERE)                               # rome
+sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "engine"))
 import commodities as C
+import simulator as S
 
 
 def load_nodes():
@@ -135,6 +142,27 @@ def main():
     print("   ten years of iron price around its supply/demand fundamental (%.2f den/kg base):"
           % led.commodities["iron"]["base_price_denarii_per_kg"])
     print("   " + ", ".join("%.2f" % p for p in series))
+
+    rule("7. THE SAME MECHANISM, NOW WIRED IN: A REAL SIM'S OWN COPPER NUMBERS")
+    print("   economy.py's wire_chain_report() calls THIS SAME propagate_demand(),")
+    print("   handed a live Sim's reachable copper instead of commodities.json's own")
+    print("   separate national estimate (CommodityLedger's supply_override). Rome")
+    print("   and the Norse do not share one number, because they do not share one coastline.")
+    _TREE, _PRICES, S_NODES, _WAGES, _GOODS = S.load()
+    GOAL = _TREE["meta"]["goal_node"]
+    _LAB, ORDER, _B = S.load_strategy("recommended", S_NODES, GOAL)
+    for civ in ("rome_100ad", "norse_900ad"):
+        sim_s = S.Sim(S_NODES, ORDER, random.Random(1), events=False, manual=True,
+                      civ=S.load_civ(civ))
+        report = sim_s.wire_chain_report(500.0)
+        print("   %-14s: reachable copper %7.1f t/yr -> wire delivered %6.1f t/yr "
+              "(%3.0f%% met), bottleneck %s"
+              % (civ, report["children"]["copper"]["own_capacity_t"],
+                 report["delivered_t"], 100 * report["met_fraction"],
+                 C.CommodityLedger().bottlenecks(report) or "none"))
+    print("   Unlike section 5's standalone figure, these two numbers come from")
+    print("   resource_throttle()'s OWN live accounting (mine_capacity, MARKET_SHARE,")
+    print("   mineral_scale) for the actual civilization in play, not a second guess.")
 
     rule("DONE")
     print("See rome/data/world/COMMODITIES.md for the design, and")

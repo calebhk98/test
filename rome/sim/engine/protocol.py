@@ -4532,10 +4532,16 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # `close` calls took their net from -61,884 to +291,156. The verbs to
         # sink one and to shut one both existed; nothing showed you the books.
         dem = s.annual_material_demand()
+        # copper_wire_kg/wire_drawn_kg and gold_kg: economy.py's
+        # MATERIAL_CHECKS now tracks these against the same copper/gold
+        # supply this row is about (see that table's own comment); this
+        # local key map has to agree or "you actually need" would silently
+        # exclude what 36 electrical nodes and a central bank draw.
         _keys = {"coal": ("coal_kg",), "iron": ("iron_bar_kg", "iron_ore_kg"),
-                 "copper": ("copper_kg",), "lead": ("lead_kg",),
+                 "copper": ("copper_kg", "copper_wire_kg", "wire_drawn_kg"),
+                 "lead": ("lead_kg",),
                  "tin": ("tin_kg",), "silver": ("silver_kg",),
-                 "gold": ("gold_g",)}
+                 "gold": ("gold_kg",)}
         rows = []
         # PENDING WORKINGS COUNT. A shaft takes years to come into production
         # and is paid for the moment you sink it, so a player who has just
@@ -4547,13 +4553,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _pending[_m][1] = min(_pending[_m][1], _ready)
         for m, cap in sorted(s.mine_capacity.items()):
             want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, ()))
+            # ACTUAL yield, not the nominal tonnage sunk: depletion (the
+            # easy ore going) and mining technology (a pump, a drill, a
+            # railway) both move this away from `cap`, and a player whose
+            # coal yield has halved over eighty years has to be able to see
+            # that here, not just infer it from a lower revenue somewhere
+            # else. See economy.py's mine_yield_t()/mine_depletion_note().
+            actual = s.mine_yield_t(m)
             rows.append({
                 "material": m,
-                "tonnes_a_year_it_can_raise": round(cap, 2),
+                "tonnes_a_year_it_can_raise": round(actual, 2),
+                "sunk_capacity_t_per_yr": round(cap, 2),
                 "tonnes_a_year_you_actually_need": round(want, 2),
                 "costs_you_a_year": round(cap * s.MINE_OPEX_PER_T.get(m, 0.0)
-                                          * s.price_index, 1),
-                "using": ("%d%%" % (100.0 * min(1.0, want / cap))) if cap > 0 else "-",
+                                          * s.price_index * s.mining_cost_scale(m), 1),
+                "using": ("%d%%" % (100.0 * min(1.0, want / actual))) if actual > 0 else "-",
+                "yield_note": s.mine_depletion_note(m),
                 "shut_it_with": "close %s" % m})
         for m, (amt, ready) in sorted(_pending.items()):
             rows.append({
