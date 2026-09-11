@@ -14,6 +14,7 @@ import argparse, sys
 
 from .core import Sim
 from . import protocol as _protocol
+from . import settings
 from .data import money_word, money_short
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
@@ -394,6 +395,33 @@ def _civ_for_session(a):
     return asked or "rome_100ad"
 
 
+def _horizon_explicit():
+    """True if --horizon appeared on the actual command line this process was
+    started with, as opposed to argparse's default of 500 that is present in
+    `a.horizon` whether or not anyone typed it. A flag typed by hand always
+    outranks anything remembered from an earlier sitting."""
+    return any(tok == "--horizon" or tok.startswith("--horizon=")
+              for tok in sys.argv)
+
+
+def _resolve_horizon(a, session):
+    """How many years this sitting gets: the --horizon flag if it was
+    actually typed, otherwise whatever the horizon was last set to for this
+    save (see the in-game 'options' command and the New Game wizard, both of
+    which write it to session.meta.json - see settings.py's module docstring
+    for why that lives beside the save rather than inside it), otherwise the
+    flag's ordinary default. A save nobody ever touched 'options' or the menu
+    for has no meta file, so this returns exactly a.horizon and nothing about
+    the flag-driven path changes.
+    """
+    if session and not _horizon_explicit():
+        meta = settings.load_session_meta(session)
+        h = meta.get("horizon_years")
+        if isinstance(h, (int, float)) and h > 0:
+            return int(h)
+    return a.horizon
+
+
 def cmd_play(a):
     """The game, typed, for a person at a keyboard.
 
@@ -420,8 +448,15 @@ def cmd_play(a):
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    session = getattr(a, "session", None)
+    # HOW MANY YEARS THIS SITTING GETS. Ordinarily just the --horizon flag,
+    # but a save the New Game wizard started or the in-game 'options' command
+    # touched remembers its own horizon between sittings - see
+    # _resolve_horizon and settings.py's module docstring for why that is not
+    # simply part of the save file. A flag typed by hand always wins.
+    horizon = _resolve_horizon(a, session)
     cfg = {"immortal": not getattr(a, "mortal", False),
-           "horizon_years": a.horizon}
+           "horizon_years": horizon}
     kit = getattr(a, "kit", None)
     if kit:
         cfg["start_capital"] = STARTING_KITS[kit]["den"]
@@ -429,7 +464,7 @@ def cmd_play(a):
             manual=True, civ=load_civ(_civ_for_session(a)), cfg=cfg)
     s.goal = goal
     s.done_year = {}
-    s.end_year = s.cfg["start_year"] + a.horizon
+    s.end_year = s.cfg["start_year"] + horizon
     s.fog = bool(getattr(a, "fog", False))
     s.revealed = set()
     # The reader is a person typing words, so the worked examples inside every
@@ -437,7 +472,6 @@ def cmd_play(a):
     _protocol.TYPED_HINTS = True
     _protocol.MONEY_SHORT = money_short(s.civ)
 
-    session = getattr(a, "session", None)
     # A --session THAT DOES NOT EXIST IS A TYPO, NOT AN INVITATION. Naming a
     # save file that is not there used to start a brand new default game -
     # Rome 100 AD, whatever you were playing - and then write it over that
@@ -487,6 +521,11 @@ def cmd_play(a):
                     "until you 'open' it. 'stuck' says why you are not getting "
                     "on; 'help' explains the rest; 'quit' leaves."))
         print()
+        print(_wrap("'options' shows the few things you can change without "
+                    "restarting - right now, the horizon and whether the "
+                    "founder can die of old age - and where this game is "
+                    "being saved."))
+        print()
 
     while True:
         # The same figure state reports: the pool LESS hours already sold for
@@ -514,6 +553,17 @@ def cmd_play(a):
             # crash, and the old loop raised EOFError out of the process.
             print()
             break
+        # 'options' IS ANSWERED HERE, NOT BY THE DISPATCHER. It changes
+        # things about the SITTING (the horizon, mortality, where this save
+        # lives) rather than the game state the JSON protocol speaks about,
+        # so it never becomes a command an agent script could send - see
+        # _ingame_options and settings.py's module docstring for what it
+        # covers and why each of those, specifically, is honest to change
+        # without restarting.
+        if line.strip().split()[:1] and line.strip().split()[0].lower() in (
+                "options", "option", "settings"):
+            session = _ingame_options(s, session)
+            continue
         cmd, err = parse_typed(line)
         if err:
             print("   " + err)
@@ -583,6 +633,168 @@ def cmd_play(a):
         print("Saved to %s. Come back with:" % session)
         print("   python3 rome/sim/simulator.py play --session %s" % session)
     return 0
+
+
+def _ingame_options(s, session):
+    """The 'options' command, typed mid-game. Returns the session path to use
+    from here on (unchanged, unless 'move this save' was used).
+
+    ONLY THE THINGS THAT ARE HONEST TO CHANGE WITHOUT RESTARTING ARE OFFERED
+    HERE. Three of the five things a new game asks about are NOT, on purpose:
+
+      - civilisation: the whole world (prices, values, what is missing, what
+        is coming) is keyed to it. There is no "change civilisation" that
+        would not just be starting a different game while pretending to be
+        this one.
+      - starting kit: it names an amount of money the founder arrived with.
+        The founder arrived however many years ago this save's year 1 was;
+        re-picking that now would only ever mean handing yourself money you
+        did not start with, i.e. cheating, dressed as a settings screen.
+      - fog of war: see protocol.load_state's own comment on this - a save
+        played with fog cannot be resumed without it, because there is no
+        way to make a player un-know the whole tree they have already seen.
+        The reverse is just as dishonest: turning fog ON after playing
+        without it would claim to hide a tree this sitting has already been
+        shown in full.
+
+    Horizon and mortality are not like that. The horizon is a date the
+    player is choosing to stop by, not a fact about the world - moving it,
+    either direction, changes nothing about what has already happened.
+    Mortality can honestly move exactly one way: choosing, from this year on,
+    to let the founder age and die is a real choice a person can make midway
+    through anything; choosing to UNDO having already accepted that is not a
+    choice available to anyone in this founder's position, so it is not
+    offered here either - see the menu below, which only ever offers "on".
+    """
+    while True:
+        mortal_on = not s.cfg.get("immortal", True)
+        cur_end = getattr(s, "end_year",
+                          s.cfg["start_year"] + s.cfg.get("horizon_years", 500))
+        print()
+        print("-" * 78)
+        print("   OPTIONS")
+        print("-" * 78)
+        print("   civilisation : %s, %d AD                (fixed for this game)"
+              % (s.civ.get("name", s.civ.get("id", "?")), s.cfg["start_year"]))
+        print("   fog of war   : %-3s                          (fixed for this game)"
+              % ("on" if getattr(s, "fog", False) else "off"))
+        print("   mortality    : %s"
+              % ("on - the founder ages, and can die of it" if mortal_on
+                 else "off - the founder does not age"))
+        print("   horizon      : ends %d AD  (now %d AD, %d years left)"
+              % (cur_end, s.year, max(0, cur_end - s.year)))
+        print("   this save    : %s"
+              % (session or "(not being saved anywhere - restart with --session "
+                            "to change that)"))
+        print()
+        print("   1) change the horizon")
+        print("   2) turn mortality on from this year forward%s"
+              % ("  (already on)" if mortal_on else ""))
+        if session:
+            print("   3) move this save to a different file")
+        print("   b) back to the game")
+        try:
+            raw = input("\n   > ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return session
+        word = raw.split()[0] if raw.split() else ""
+
+        if word in ("", "b", "back"):
+            return session
+
+        elif word in ("1", "horizon"):
+            try:
+                raw2 = input("   New end year (a whole number of AD, > %d): "
+                             % s.year).strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); continue
+            if not raw2:
+                print("   -- unchanged.")
+                continue
+            try:
+                new_end = int(raw2)
+            except ValueError:
+                print("   -- that is not a whole number of years.")
+                continue
+            if new_end <= s.year:
+                print("   -- %d AD has already passed (or is now); the game "
+                      "would end the moment you left this menu. Pick a later "
+                      "year." % new_end)
+                continue
+            new_horizon = new_end - s.cfg["start_year"]
+            s.end_year = new_end
+            s.cfg["horizon_years"] = new_horizon
+            if session:
+                meta = settings.load_session_meta(session)
+                meta["horizon_years"] = new_horizon
+                settings.save_session_meta(session, meta)
+            print("   -- done. This game now ends in %d AD." % new_end)
+
+        elif word in ("2", "mortal", "mortality") and not mortal_on:
+            print(_wrap("From this year on the founder ages, and can die of "
+                        "it, the same as anyone in this world - see 'why' on "
+                        "any of the nodes that outlive one lifetime. This "
+                        "cannot be undone: there is no honest way to give "
+                        "the founder back an immortality already spent part "
+                        "of a life without."))
+            confirm = _ask("   Turn mortality on now? [y/N] ", ["y", "n"], "n")
+            if confirm == "y":
+                # THE SAME DRAW core.py's Sim.__init__ makes for a mortal
+                # founder at year zero (self.life_left = ... rng.gauss(...)),
+                # made here instead because that constructor only ever runs
+                # once, at the start of the game, and this founder is
+                # choosing to become mortal partway through it. See core.py
+                # around "founder remaining lifespan" for the line this
+                # mirrors.
+                mean = s.cfg.get("founder_life_mean", DEFAULTS["founder_life_mean"])
+                sd = s.cfg.get("founder_life_sd", DEFAULTS["founder_life_sd"])
+                s.cfg["immortal"] = False
+                s.life_left = max(5, s.rng.gauss(mean, sd))
+                s.founder_alive = True
+                print("   -- done. Mortality is on from %d AD." % s.year)
+            else:
+                print("   -- unchanged.")
+
+        elif word in ("3", "move", "movesave") and session:
+            try:
+                raw3 = input("   New path for this save (ending .json): ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); continue
+            if not raw3:
+                print("   -- unchanged.")
+                continue
+            newp = os.path.expanduser(raw3)
+            if not newp.lower().endswith(".json"):
+                newp += ".json"
+            if os.path.abspath(newp) == os.path.abspath(session):
+                print("   -- that is where it already is.")
+                continue
+            if os.path.exists(newp):
+                print("   -- %s already exists; pick a name that is not taken."
+                      % newp)
+                continue
+            try:
+                parent = os.path.dirname(os.path.abspath(newp))
+                if parent and not os.path.isdir(parent):
+                    os.makedirs(parent, exist_ok=True)
+                save_state(s, newp)
+            except OSError as e:
+                print("   -- could not write there: %s" % e)
+                continue
+            settings.move_session_meta(session, newp)
+            old = session
+            session = newp
+            try:
+                os.remove(old)
+            except OSError:
+                pass
+            print("   -- moved. This game now saves to %s" % session)
+            print("   Come back to it with:")
+            print("      python3 rome/sim/simulator.py play --session %s" % session)
+
+        else:
+            print("   -- not a choice right now.")
 
 
 # ----------------------------------------------------------------------------
@@ -1055,9 +1267,14 @@ def _pick_session_filename(civ_id):
     """A save name for a game the menu is about to start, picked so it never
     silently overwrites an existing one.
 
-    A relative filename in the current directory, which is exactly what
-    `save` will accept (see _unsafe_path in protocol.py) and exactly where it
-    will actually be written.
+    An absolute path into the save directory (see settings.resolve_save_dir):
+    ~/.rome-saves by default, or wherever a player has redirected saves to
+    from the Options menu, ROME_SAVE_DIR, or both. This is a different path
+    from the one `_unsafe_path` in protocol.py governs - that one is for the
+    typed/JSON 'save' command, a deliberately sandboxed relative filename
+    beside wherever the game was started; this one is for the file the menu
+    and --session write to after every command, which has always been
+    allowed to be absolute.
     """
     # CLAIMED, NOT MERELY CHECKED. This tested os.path.exists and returned the
     # name without creating anything, so six games started at once all saw the
@@ -1071,12 +1288,10 @@ def _pick_session_filename(civ_id):
     # IN A DIRECTORY OF ITS OWN. Eighty-nine save files had accumulated in the
     # repository root beside the source, and a play tester said so: "saves land
     # in the repo root, next to eighty others". A game that writes a file after
-    # every command has to put them somewhere a person can find and delete.
-    d = os.path.join(os.path.expanduser("~"), ".rome-saves")
-    try:
-        os.makedirs(d, exist_ok=True)
-    except OSError:
-        d = "."
+    # every command has to put them somewhere a person can find and delete -
+    # and, now, somewhere a player stuck with a non-persistent $HOME can move
+    # away from entirely. See settings.py's module docstring.
+    d = settings.resolve_save_dir()
     civ_id = os.path.join(d, civ_id)
     highest = 1
     prefix = civ_id + "_"
@@ -1121,38 +1336,22 @@ def _ask(prompt, options, default=None):
         print("   -- I did not understand that. Options: %s" % ", ".join(options))
 
 
-def cmd_menu(a):
-    """The front door for a person, rather than for a script.
-
-    Everything here can be done with command-line flags, and the flags are
-    what a script should use. This exists because "what do I type" was the
-    first thing every human tester had to be told out of band, and because a
-    game about arriving somewhere should be able to tell you where you have
-    arrived before it asks you to make decisions about it.
-    """
+def _load_civ_list():
     civs = []
     for fn in sorted(os.listdir(CIVDIR)):
         if not fn.endswith(".json") or fn.startswith("_"):
             continue
         civs.append(json.load(open(os.path.join(CIVDIR, fn))))
     civs.sort(key=lambda c: c.get("year", 0))
+    return civs
 
-    print()
-    print("=" * 78)
-    print("   ONE PERSON, AND EVERYTHING THEY KNOW".center(78))
-    print("=" * 78)
-    print()
-    print(_wrap(
-        "You are one person, dropped into a pre-industrial society, carrying "
-        "the knowledge of how modern technology works and none of the industry "
-        "that makes it. Knowing how a thing works is free. Building it is not: "
-        "it costs your own hours, other people's hours, money, materials, and "
-        "years you do not get back."))
-    print()
-    print(_wrap(
-        "You arrive alone. No employees, no slaves, nobody who owes you "
-        "anything, and about enough money to eat for a few months."))
-    print()
+
+def _new_game(civs, cfg):
+    """The wizard: pick a civilisation, read where you have landed, choose
+    fog/kit/mortality/horizon, and start. Returns cmd_play's exit code once a
+    game has actually begun, or None if the player backed out first - in
+    which case cmd_menu's own loop is what should run next, not this
+    function again."""
     print("-" * 78)
     print("   WHERE, AND WHEN")
     print("-" * 78)
@@ -1164,13 +1363,20 @@ def cmd_menu(a):
               % (f"{c.get('population', 0):,}", c.get("state_capacity", 0),
                  c.get("price_index", 1.0)))
     print()
+    default_i = next((i for i, c in enumerate(civs, 1)
+                      if c.get("id") == cfg.get("default_civ")), None)
+    prompt = ("   Which one? [1-%d%s, or b to go back] "
+              % (len(civs), (", default %d" % default_i) if default_i else ""))
     while True:
         try:
-            raw = input("   Which one? [1-%d, or q to leave] " % len(civs)).strip()
+            raw = input(prompt).strip()
         except (EOFError, KeyboardInterrupt):
-            print(); return
-        if raw.lower() in ("q", "quit", "exit"):
-            return
+            print(); return None
+        if raw.lower() in ("q", "quit", "exit", "b", "back"):
+            return None
+        if not raw and default_i:
+            civ = civs[default_i - 1]
+            break
         if raw.isdigit() and 1 <= int(raw) <= len(civs):
             civ = civs[int(raw) - 1]
             break
@@ -1201,10 +1407,15 @@ def cmd_menu(a):
                 "could begin today as a one-line summary, and things you have "
                 "heard of but cannot yet start. You cannot see where anything "
                 "leads. With it off you can see the whole tree and plan a "
-                "route through it.", indent="   "))
-    fog = _ask("\n   Fog of war? [Y/n] ", ["y", "n"], "y")
+                "route through it. This cannot be changed once you start - a "
+                "save played with it on can never be resumed without it, and "
+                "one played without it has already seen too much to fog "
+                "again.", indent="   "))
+    fog_default = "y" if cfg.get("default_fog", True) else "n"
+    fog = _ask("\n   Fog of war? [%s] " % ("Y/n" if fog_default == "y" else "y/N"),
+               ["y", "n"], fog_default)
     if fog is None:
-        return
+        return None
     print()
     print("-" * 78)
     print("   WHAT YOU ARRIVED WITH")
@@ -1212,20 +1423,54 @@ def cmd_menu(a):
         print("      %-14s %9s den" % (name, f"{kit['den']:,}"))
         if kit.get("desc"):
             print(_wrap(kit["desc"], indent="         "))
-    kit = _ask("\n   Which? [%s] " % "/".join(STARTING_KITS), list(STARTING_KITS),
-               "poor_scholar")
+    kit_default = cfg.get("default_kit", "poor_scholar")
+    if kit_default not in STARTING_KITS:
+        kit_default = "poor_scholar"
+    kit = _ask("\n   Which? [%s, default %s] " % ("/".join(STARTING_KITS), kit_default),
+               list(STARTING_KITS), kit_default)
     if kit is None:
-        return
+        return None
     print()
     print("-" * 78)
     print(_wrap("MORTALITY. By default the founder does not age, which measures "
                 "the tree rather than a lifespan lottery. Turned on, you get one "
                 "human life and everything you have not made permanent dies with "
                 "you. The premise of the whole game is that one is the honest "
-                "number.", indent="   "))
-    mortal = _ask("\n   Let the founder age and die? [y/N] ", ["y", "n"], "n")
+                "number. You can turn this on later, mid-game, without "
+                "restarting (see the in-game 'options' command) - but not off "
+                "again once it is on, the same as fog.", indent="   "))
+    mortal_default = "y" if cfg.get("default_mortal", False) else "n"
+    mortal = _ask("\n   Let the founder age and die? [%s] "
+                 % ("Y/n" if mortal_default == "y" else "y/N"),
+                 ["y", "n"], mortal_default)
     if mortal is None:
-        return
+        return None
+    print()
+    print("-" * 78)
+    print(_wrap("HORIZON. The game ends automatically this many years after "
+                "arrival, mostly so a run that is truly stuck stops rather than "
+                "running forever. Unlike the choices above, this one you CAN "
+                "change later without restarting - the in-game 'options' "
+                "command.", indent="   "))
+    default_h = cfg.get("default_horizon", 500)
+    while True:
+        try:
+            rawh = input("\n   How many years? [default %d, or b to go back] "
+                         % default_h).strip()
+        except (EOFError, KeyboardInterrupt):
+            print(); return None
+        if rawh.lower() in ("q", "quit", "exit", "b", "back"):
+            return None
+        if not rawh:
+            horizon = default_h
+            break
+        try:
+            horizon = int(rawh)
+            if horizon <= 0:
+                raise ValueError
+            break
+        except ValueError:
+            print("   -- a whole number of years, more than 0.")
 
     # THIS USED TO STOP HERE: print the command for the JSON protocol and ASK
     # whether to play. A tester put it plainly - "it should be the save
@@ -1244,6 +1489,10 @@ def cmd_menu(a):
     # the same dispatcher the JSON protocol uses. `agent` is still there, and
     # is still the right thing for a script.
     session = _pick_session_filename(civ["id"])
+    # THE HORIZON HAS TO SURVIVE A RESUME TOO, and it is not part of what
+    # save_state writes (see settings.py's module docstring) - so it gets
+    # the same sidecar the in-game 'options' command uses to change it later.
+    settings.save_session_meta(session, {"horizon_years": horizon})
     print()
     print("=" * 78)
     print(_wrap(
@@ -1259,7 +1508,7 @@ def cmd_menu(a):
     args = Args()
     args.strategy = "recommended"
     args.seed = 1
-    args.horizon = 500
+    args.horizon = horizon
     args.civ = civ["id"]
     args.kit = kit
     args.mortal = (mortal == "y")
@@ -1267,6 +1516,325 @@ def cmd_menu(a):
     args.session = session
     args.manual = True
     return cmd_play(args)
+
+
+def _load_game(cfg):
+    """List what is in the configured save directory and resume one.
+
+    Enough to choose by, per civilisation: which one, what year it is at,
+    how far along, and when it was last written - see settings.list_saves
+    and settings.humanize_age. A save played WITH fog does not get the
+    goal-progress fraction shown here: that number (X of Y toward the
+    transistor) says how big the whole tree is, which is exactly what fog
+    exists to keep a player from knowing before they have earned it, and a
+    menu screen is not exempt from that just because no Sim object exists
+    yet.
+    """
+    tree, prices, nodes, wages, goods = load()
+    goal = tree["meta"]["goal_node"]
+    need = closure(nodes, goal)
+    civ_index = {c["id"]: c for c in _load_civ_list()}
+    save_dir = settings.resolve_save_dir(cfg)
+    rows = settings.list_saves(save_dir)
+
+    print("-" * 78)
+    print("   LOAD A SAVED GAME")
+    print("-" * 78)
+    print("   looking in: %s" % save_dir)
+    print()
+    if not rows:
+        print(_wrap("Nothing there yet. Start a new game first, or type the "
+                    "path to a save file below if you have one somewhere else."))
+        print()
+    for i, r in enumerate(rows, 1):
+        if not r["readable"]:
+            print("   %d) %s" % (i, r["filename"]))
+            print("      could not be read as a save from this game; skipping "
+                  "its details")
+            print()
+            continue
+        c = civ_index.get(r["civ_id"], {})
+        name = c.get("name", r["civ_id"] or "unknown civilisation")
+        start = c.get("year")
+        year = r["year"]
+        elapsed = ("  (%d years in)" % (year - start)
+                  if isinstance(start, (int, float)) and isinstance(year, (int, float))
+                  else "")
+        print("   %d) %s" % (i, r["filename"]))
+        print("      %s  -  now %s AD%s" % (name, year, elapsed))
+        status = []
+        if r.get("goal_year"):
+            status.append("REACHED THE TRANSISTOR in %s AD" % r["goal_year"])
+        elif r.get("dead_reason"):
+            status.append("ended: %s" % r["dead_reason"])
+        elif r.get("founder_alive") is False:
+            status.append("founder has died")
+        done = r.get("done") or []
+        if r["fog"]:
+            status.append("%d technologies built" % len(done))
+        else:
+            progress = len(need.intersection(done))
+            status.append("%d/%d toward the transistor" % (progress, len(need)))
+        status.append("fog %s" % ("on" if r["fog"] else "off"))
+        if r.get("reputation") is not None:
+            status.append("rep %.0f" % r["reputation"])
+        print("      " + "  |  ".join(status))
+        print("      last played %s" % settings.humanize_age(r["mtime"]))
+        print()
+
+    print("   b) back to the main menu")
+    if rows:
+        pr = "   Which one? [1-%d, p to type a path instead, or b] " % len(rows)
+    else:
+        pr = "   p) type a path to a save file, or b) back"
+    while True:
+        try:
+            raw = input("\n" + pr + "\n   > ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print(); return None
+        low = raw.lower()
+        if low in ("b", "back", "q", "quit", "exit"):
+            return None
+        if low in ("p", "path"):
+            try:
+                path = input("   Path to the save file: ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); return None
+            if not path:
+                continue
+            path = os.path.expanduser(path)
+            if not os.path.exists(path):
+                print("   -- nothing at %s" % path)
+                continue
+            chosen = path
+            break
+        if raw.isdigit() and rows and 1 <= int(raw) <= len(rows):
+            chosen = rows[int(raw) - 1]["path"]
+            break
+        print("   -- a number from the list above, 'p', or 'b'.")
+
+    class Args:
+        pass
+    args = Args()
+    args.strategy = "recommended"
+    args.seed = 1
+    args.horizon = 500
+    args.civ = None
+    args.kit = "poor_scholar"
+    args.mortal = False
+    args.fog = False
+    args.session = chosen
+    args.manual = True
+    return cmd_play(args)
+
+
+def _options_menu(civs, cfg):
+    """Preferences that outlive any one game: where saves go, and what the
+    New Game wizard should default to. Nothing here reaches into a game
+    already running - that is the in-game 'options' command (_ingame_options),
+    a deliberately smaller menu, for the reasons explained on it."""
+    while True:
+        civ_name = next((c.get("name", c["id"]) for c in civs
+                         if c.get("id") == cfg.get("default_civ")),
+                        cfg.get("default_civ"))
+        print()
+        print("-" * 78)
+        print("   OPTIONS")
+        print("-" * 78)
+        print(_wrap("These are defaults offered the next time you start a NEW "
+                    "game (you can still change any of them for that one game "
+                    "when you start it). A game already in progress has its own "
+                    "'options' command, typed while playing, for the couple of "
+                    "these that can honestly change mid-game."))
+        print()
+        print("   1) save location         : %s"
+              % settings.resolve_save_dir(cfg, ensure=False))
+        print("   2) default civilisation   : %s" % civ_name)
+        print("   3) default starting kit   : %s" % cfg.get("default_kit"))
+        print("   4) default fog of war     : %s"
+              % ("on" if cfg.get("default_fog", True) else "off"))
+        print("   5) default mortality      : %s"
+              % ("on" if cfg.get("default_mortal", False) else "off"))
+        print("   6) default horizon        : %d years" % cfg.get("default_horizon", 500))
+        print("   b) back to the main menu")
+        try:
+            raw = input("\n   > ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print(); return cfg
+        word = raw.split()[0] if raw.split() else ""
+
+        if word in ("", "b", "back"):
+            return cfg
+
+        elif word in ("1", "save", "location"):
+            cur = settings.resolve_save_dir(cfg, ensure=False)
+            print(_wrap("Where new games are saved, and where 'Load a saved "
+                        "game' looks. Existing save files are not moved - use "
+                        "'options' inside a game in progress to move that one "
+                        "game's save."))
+            if os.environ.get(settings.SAVE_DIR_ENV):
+                print(_wrap("Note: the %s environment variable is set to %r "
+                            "right now and overrides whatever is chosen here "
+                            "until it is unset."
+                            % (settings.SAVE_DIR_ENV,
+                               os.environ[settings.SAVE_DIR_ENV])))
+            try:
+                raw2 = input("   New save directory [currently %s, blank to "
+                             "leave unchanged]: " % cur).strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); continue
+            if not raw2:
+                continue
+            newdir = os.path.expanduser(raw2)
+            try:
+                os.makedirs(newdir, exist_ok=True)
+                probe = os.path.join(newdir, ".rome-write-test")
+                with open(probe, "w"):
+                    pass
+                os.remove(probe)
+            except OSError as e:
+                print("   -- could not use that directory: %s" % e)
+                continue
+            cfg["save_dir"] = newdir
+            settings.save_config(cfg)
+            print("   -- saved. New games, and 'Load a saved game', will use %s"
+                  % newdir)
+
+        elif word in ("2", "civ", "civilisation"):
+            for i, c in enumerate(civs, 1):
+                print("      %d) %s, %d" % (i, c.get("name", c["id"]), c.get("year", 0)))
+            try:
+                raw2 = input("   Which one? [1-%d, blank to leave unchanged] "
+                             % len(civs)).strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); continue
+            if raw2.isdigit() and 1 <= int(raw2) <= len(civs):
+                cfg["default_civ"] = civs[int(raw2) - 1]["id"]
+                settings.save_config(cfg)
+                print("   -- saved.")
+            elif raw2:
+                print("   -- a number from 1 to %d." % len(civs))
+
+        elif word in ("3", "kit"):
+            kd = cfg.get("default_kit", "poor_scholar")
+            if kd not in STARTING_KITS:
+                kd = "poor_scholar"
+            kit = _ask("   Which? [%s] " % "/".join(STARTING_KITS),
+                       list(STARTING_KITS), kd)
+            if kit:
+                cfg["default_kit"] = kit
+                settings.save_config(cfg)
+                print("   -- saved.")
+
+        elif word in ("4", "fog"):
+            v = _ask("   Fog of war by default? [y/n] ", ["y", "n"],
+                     "y" if cfg.get("default_fog", True) else "n")
+            if v:
+                cfg["default_fog"] = (v == "y")
+                settings.save_config(cfg)
+                print("   -- saved.")
+
+        elif word in ("5", "mortal", "mortality"):
+            v = _ask("   Mortality by default? [y/n] ", ["y", "n"],
+                     "y" if cfg.get("default_mortal", False) else "n")
+            if v:
+                cfg["default_mortal"] = (v == "y")
+                settings.save_config(cfg)
+                print("   -- saved.")
+
+        elif word in ("6", "horizon"):
+            try:
+                raw2 = input("   Default horizon in years [currently %d, blank "
+                             "to leave unchanged]: "
+                             % cfg.get("default_horizon", 500)).strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); continue
+            if not raw2:
+                continue
+            try:
+                h = int(raw2)
+                if h <= 0:
+                    raise ValueError
+            except ValueError:
+                print("   -- a whole number of years, more than 0.")
+                continue
+            cfg["default_horizon"] = h
+            settings.save_config(cfg)
+            print("   -- saved.")
+
+        else:
+            print("   -- 1 to 6, or b.")
+
+
+def cmd_menu(a):
+    """The front door for a person, rather than for a script.
+
+    Everything here can be done with command-line flags, and the flags are
+    what a script should use. This exists because "what do I type" was the
+    first thing every human tester had to be told out of band, and because a
+    game about arriving somewhere should be able to tell you where you have
+    arrived before it asks you to make decisions about it.
+
+    Three doors: start a new game, resume one from a list rather than a
+    remembered filename, or change a few things that should not need a flag
+    every time (chiefly where saves go - see settings.py). Five playtesters
+    reached for --help before this existed; the point of this function is
+    that none of them should have had to know that flag existed at all.
+    """
+    civs = _load_civ_list()
+
+    print()
+    print("=" * 78)
+    print("   ONE PERSON, AND EVERYTHING THEY KNOW".center(78))
+    print("=" * 78)
+    print()
+    print(_wrap(
+        "You are one person, dropped into a pre-industrial society, carrying "
+        "the knowledge of how modern technology works and none of the industry "
+        "that makes it. Knowing how a thing works is free. Building it is not: "
+        "it costs your own hours, other people's hours, money, materials, and "
+        "years you do not get back."))
+    print()
+    print(_wrap(
+        "You arrive alone. No employees, no slaves, nobody who owes you "
+        "anything, and about enough money to eat for a few months."))
+    print()
+
+    while True:
+        cfg = settings.load_config()
+        print("-" * 78)
+        print("   MAIN MENU")
+        print("-" * 78)
+        print()
+        print("   1) New game")
+        print("   2) Load a saved game")
+        print("   3) Options")
+        print("   q) Quit")
+        try:
+            raw = input("\n   > ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print(); return 0
+        word = raw.split()[0] if raw.split() else ""
+
+        if word in ("q", "quit", "exit"):
+            return 0
+        elif word in ("1", "new", "start"):
+            print()
+            rc = _new_game(civs, cfg)
+            if rc is not None:
+                return rc
+            print()
+        elif word in ("2", "load", "resume", "continue"):
+            print()
+            rc = _load_game(cfg)
+            if rc is not None:
+                return rc
+            print()
+        elif word in ("3", "options", "option", "settings"):
+            _options_menu(civs, cfg)
+            print()
+        else:
+            print("   -- 1, 2, 3 or q.\n")
 
 
 def main():
