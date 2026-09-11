@@ -868,7 +868,7 @@ def _agent_help(s, topic=None):
                             '{"cmd":"quote","what":"mine","material":"coal",'
                             '"n":500}, and close it with '
                             '{"cmd":"close","material":"coal"}. Materials: '
-                            + ", ".join(Sim.MINE_CAPEX_PER_T_YR),
+                            + Sim.mine_catalog_hint(Sim),
                 "buy slaves": '{"cmd":"buy","what":"slaves","n":5}. This is '
                               "available because it was the ordinary condition of "
                               "production in most of these societies, and a model "
@@ -4400,9 +4400,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "capital": round(s.capital, 1)}
         if what == "mine":
             mat = cmd.get("material")
-            if mat not in s.MINE_CAPEX_PER_T_YR:
+            # GENERALISED beyond the seven hand-named metals (see
+            # economy.py's mineable()/mine_catalog_hint(), and
+            # COMMODITY_DYNAMISM.md for why the closed list was the actual
+            # bug: "no mine, no supply lever" for anything else the tree
+            # ever asks a node to buy). This is the one gate that used to
+            # make that literally true at the command surface, even though
+            # the seven-name dict membership check lived here, not in
+            # economy.py, which is why the fix has to touch this file.
+            if not s.mineable(mat):
                 return {"ok": False, "error": "material must be one of: "
-                                              + ", ".join(s.MINE_CAPEX_PER_T_YR)}
+                                              + s.mine_catalog_hint()}
             # partial=False: a mine you asked for by name is bought in full or
             # not at all. It used to spend every denarius you had and hand back
             # a fraction, without asking.
@@ -4523,12 +4531,19 @@ def _agent_dispatch_inner(s, nodes, cmd):
                  + s.mine_operating_cost())
         _ramp, _prac = s.still_ramping(), s.practice_note()
         _mkt = s.goods_market_summary()
+        # A PLAYER MUST SEE IT (rome/data/review/COMMODITY_DYNAMISM.md):
+        # material_price_factor() now responds for every material a node
+        # buys, not just the 9 originally tracked commodities, so what it
+        # is doing to costs needs a line here too, not only inside one
+        # project's own `why`. See economy.py's material_market_summary().
+        _mat_mkt = s.material_market_summary()
         return {"ok": True,
                 "capital": round(s.capital, 1),
                 "revenue": round(s.revenue(), 1),
                 "where_the_money_comes_from": s.revenue_sources(),
                 **({"still_building_up_custom": _ramp} if _ramp else {}),
                 **({"about_your_own_practice": _prac} if _prac else {}),
+                **({"materials_costing_you_a_premium": _mat_mkt} if _mat_mkt else {}),
                 **({"the_market_you_sell_into": _mkt} if _mkt else {}),
                 "what_it_costs_you": {
                     "upkeep_of_what_you_built": round(s.upkeep(), 1),
@@ -4713,6 +4728,12 @@ def _agent_dispatch_inner(s, nodes, cmd):
                  "lead": ("lead_kg",),
                  "tin": ("tin_kg",), "silver": ("silver_kg",),
                  "gold": ("gold_kg",)}
+        # GENERALISED (COMMODITY_DYNAMISM.md, economy.py's open_mine() is no
+        # longer limited to these seven names): for a mine in a material
+        # outside the curated list above, the material key IS its own demand
+        # key (see economy.py's _material_tag(), same convention), so a
+        # default of "look up the key by its own name" covers it rather than
+        # silently reporting 0 tonnes needed for anything not in `_keys`.
         rows = []
         # PENDING WORKINGS COUNT. A shaft takes years to come into production
         # and is paid for the moment you sink it, so a player who has just
@@ -4723,7 +4744,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _pending[_m][0] += _amt
             _pending[_m][1] = min(_pending[_m][1], _ready)
         for m, cap in sorted(s.mine_capacity.items()):
-            want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, ()))
+            want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,)))
             # ACTUAL yield, not the nominal tonnage sunk: depletion (the
             # easy ore going) and mining technology (a pump, a drill, a
             # railway) both move this away from `cap`, and a player whose
@@ -4736,7 +4757,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "tonnes_a_year_it_can_raise": round(actual, 2),
                 "sunk_capacity_t_per_yr": round(cap, 2),
                 "tonnes_a_year_you_actually_need": round(want, 2),
-                "costs_you_a_year": round(cap * s.MINE_OPEX_PER_T.get(m, 0.0)
+                "costs_you_a_year": round(cap * s._mine_opex(m)
                                           * s.price_index * s.mining_cost_scale(m), 1),
                 "using": ("%d%%" % (100.0 * min(1.0, want / actual))) if actual > 0 else "-",
                 "yield_note": s.mine_depletion_note(m),
@@ -4746,7 +4767,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "material": m,
                 "tonnes_a_year_it_can_raise": 0.0,
                 "tonnes_a_year_you_actually_need":
-                    round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, ())), 2),
+                    round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,))), 2),
                 "costs_you_a_year": 0.0,
                 "using": "sinking",
                 "ready_in": ready,
@@ -5069,8 +5090,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
             return {"ok": False, "error": err}
         q = s.mine_quote(cmd.get("material"), n)
         if q is None:
-            return {"ok": False, "error": "no such material: %r. Mineable: %s"
-                    % (cmd.get("material"), ", ".join(sorted(Sim.MINE_CAPEX_PER_T_YR)))}
+            return {"ok": False, "error": "no such material: %r. %s"
+                    % (cmd.get("material"), s.mine_catalog_hint())}
         return dict(ok=True, **q)
 
     if op in ("close", "close_mine"):

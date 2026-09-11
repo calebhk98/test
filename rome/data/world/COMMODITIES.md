@@ -79,17 +79,76 @@ would have made worse rather than better if left unfixed. See
 `economy.py`'s `_demand_by_supply_tag()` for the one mechanism shared by
 both.
 
-**What was deliberately NOT taken**: `commodities.py`'s own `price()`,
-`country_output()`, `market_available()`, `monopoly_price()` and
-`trade_partners()` remain exactly what they were -- a standalone,
-self-consistent demonstration of the mechanism on nine commodities,
-exercised by `demo_commodities.py` and asserted by `test_regressions.py`,
-but not the thing `resource_throttle()`/`material_price_factor()` compute
-for the live game. The outcome is ONE commodity model running the game
-(`economy.py`'s), not two, with `commodities.py` kept as a tested library
-that model now genuinely calls into for the one capability it lacked,
-rather than as a second, disconnected economy that happened to live in the
-same repository.
+**What was deliberately NOT taken (as of the pass this section describes)**:
+`commodities.py`'s own `price()`, `country_output()`, `market_available()`,
+`monopoly_price()` and `trade_partners()` remained exactly what they were --
+a standalone, self-consistent demonstration of the mechanism on nine
+commodities, not the thing `resource_throttle()`/`material_price_factor()`
+computed for the live game. **This changed in the pass section 0.1 below
+describes** -- `country_output()` is now a real input to the live price for
+four of these nine (cloth, wool, cotton, copper_wire), and the underlying
+IDEA (a general, elasticity-shaped supply/demand response, not a hand-listed
+one) now covers every material key the tech tree uses, not nine.
+
+## 0.1 Generalised beyond nine: rome/data/review/COMMODITY_DYNAMISM.md
+
+A later audit, run directly against a live `Sim` rather than by reading the
+code, measured the gap section 0 above left open precisely: **149 of the
+162 distinct material keys the tech tree actually uses (about 92%) had a
+price read once from `prices.json` at load time and never revisited for
+scarcity, surplus, population or time**, because `MATERIAL_CHECKS`/
+`MARKET_SHARE` in `economy.py` only ever named 13 keys (9 commodities) by
+hand. Its worked failure was aluminium: "no mine, no supply lever of any
+kind... nothing in `economy.py` even contains the string 'aluminium.'
+Producing an enormous amount of it via electrolysis tech changes nothing."
+The audit's own conclusion was that the gap was not a missing theory --
+`CommodityLedger.price()` already was a correct, general elasticity
+function -- but missing WIRING and missing per-material data.
+
+**What changed.** Rather than hand-authoring ~150 more `commodities.json`
+entries (the audit's own sketch names this as one option but not the only
+one), `economy.py` now derives a commodity for ANY material key generically,
+in three tiers, cheapest-and-most-specific first:
+
+1. The 9 commodities this file already curates (`MATERIAL_CHECKS`/
+   `MARKET_SHARE`, unchanged) -- iron, copper, coal, gold, lead, tin,
+   silver, saltpetre, charcoal.
+2. A `commodities.json` commodity this file curates but `economy.py` never
+   priced against before (cloth, wool, cotton, copper_wire): now read
+   through `CommodityLedger.country_output()` for real, so a built power
+   loom genuinely raising cloth's national output (`produced_by`'s own
+   multiplier) is a real input to a live price, not only to the standalone
+   `demo_commodities.py` demonstration section 0 above described.
+3. Everything else (silk, glass, aluminium, the acids and dyes and
+   alloys of the industrial and chemical ages) -- a generic fallback
+   derived from the one number every material already has, its own book
+   price in `prices.json`, fitted against the curated seven's own
+   capex/opex and national-output figures (see `economy.py`'s own
+   `GENERIC_OUTPUT_ANCHOR_T_PER_YR`/`GENERIC_MINE_CAPEX_MULTIPLE` comments
+   for the fit and its error against a held-out point, gold).
+
+`open_mine()`/`mine_quote()`/`close_mine()` are generalised the same way:
+sinking standing production capacity is no longer limited to the seven
+hand-named metals, so "make a mountain of it" is a real, general lever for
+whatever a recipe needs, not a rule written per commodity. `resource_
+throttle()`, `material_price_factor()` and `material_market_factor()` all
+consume this generically now (`_material_tag()`), rather than skipping any
+material key outside the original 13.
+
+The goods side (`GOODS_CATEGORIES`/`goods_market_factor()`) also changed:
+concerns in the same category now share one total-supply figure instead of
+each pricing off its own private per-node age clock (the audit's other
+headline finding: two identical looms, same age, priced bit-for-bit
+identically, "a time curve wearing a market's clothes"), and the category
+list grew to cover the tree's real consumer/entertainment nodes
+(fermentation, leisure, sound, media, commerce, luxury/spectacle/law,
+personal) with an income effect (`income_factor()`/`essential_price_ratio()`)
+coupling a cheaper, saturated essential market to more spending on
+discretionary goods. See `economy.py`'s own comments on `GOODS_CATEGORIES`,
+`_goods_category_state()` and `income_factor()` for the full reasoning; this
+section exists so a reader of this design doc is not left believing the
+"nine commodities, one wired capability" picture section 0 painted is still
+the whole story.
 
 ## 1. What a commodity is, here
 
@@ -517,6 +576,18 @@ actually binds a plan.
    `supply_override` for the one question (chained-shortage attribution)
    neither function can answer. The regression suite's count grew rather
    than shrank, and stayed green throughout.
+
+   **UPDATE (see section 0.1): a later pass went considerably further.**
+   Rather than migrating `economy.py`'s hand-listed 9/13 to `commodities.
+   json`'s own (separately-sourced) machinery -- the swap this item argued
+   against, and still correctly argues against for the reason given above
+   -- the later pass made `economy.py`'s OWN price-response mechanism
+   generic over every material key the tech tree uses, with a fallback
+   derived from each material's own book price where no curated entry
+   exists. This is not the migration this item describes; it is the
+   smaller, load-bearing-preserving move the item's own reasoning already
+   pointed at ("the numbers were already cross-sourced to agree") extended
+   to materials nobody had cross-sourced anything for yet.
 2. **Recipe cycles and multi-input recipes.** The demonstration chain
    (copper -> copper wire) is linear. A real recipe graph is not: steel
    needs iron AND coal (as coke) AND limestone flux; gunpowder needs three
