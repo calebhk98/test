@@ -625,6 +625,225 @@ class EconomyMixin:
         age = self.year - started
         return min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
 
+    # ---- goods-producing concerns: a market, not a fixed number --------------
+    #
+    # Every OTHER concern in this file pays the tree's flat `rev` for ever,
+    # scaled only by the ramp above and this society's prices. A playtester's
+    # question was exactly the case that breaks: an automated loom should make
+    # an enormous margin the day it opens, because handlooms are everywhere and
+    # power looms are not, and that margin has to erode as the rest of the
+    # world catches up, cushioned by the fact that cheaper cloth pulls in
+    # buyers who could not afford cloth before. `commodities.py` already has a
+    # bounded, elastic price built for exactly this worked example (see
+    # COMMODITIES.md section 4.2), but it is a standalone module Sim has never
+    # imported - its own header says so - because it reasons in tonnes against
+    # a national output table and has no notion of "years since you personally
+    # opened this," or "how rich a population you can reach": Sim already has
+    # both (opened_year, pop_scale, self.economy). This reuses commodities.py's
+    # IDEAS - a bounded, elastic price, and the loom's own twenty-times figure
+    # - natively, rather than bolting a tonnage model onto a system that has
+    # never tracked a single tonne of anything. Wiring commodities.py itself
+    # into Sim is the larger migration COMMODITIES.md section 11 describes and
+    # explicitly defers; this is not that migration.
+    #
+    # SCOPE IS DELIBERATELY NARROW. Only categories that are a tangible good
+    # sold to a broad population get this: cloth (`textiles`), preserved food
+    # and drink (`processing`), books and print matter (`printing`), cameras
+    # and film (`photography`). Mining, instruments, transport and every
+    # institution keep the flat figure - a mine's output already has its own
+    # supply-and-price machinery below (MARKET_SHARE, material_price_factor)
+    # answering a different question (what it costs YOU to buy ore, not what
+    # a workshop earns selling a finished good), and a school or a patron is
+    # exactly what the brief asked to leave alone.
+    #
+    # NUMBERS AND WHERE THEY CAME FROM, per category:
+    #   eta (price elasticity of demand: how much buying responds to price):
+    #     textiles 0.65 - apparel-demand studies typically put clothing's
+    #       own-price elasticity in the 0.6-1.0 range, moderately elastic,
+    #       neither a staple nor a luxury; picked at the inelastic end of that
+    #       range so the early erosion the brief asks for is actually visible
+    #       - at exactly 1.0 (unit elastic) revenue would sit dead flat as
+    #       price moved, which demonstrates nothing. [C]
+    #     processing 0.35 - agricultural-economics estimates for food-at-home
+    #       demand (the USDA's Economic Research Service puts most packaged
+    #       food categories around 0.2-0.6) cluster low: people keep eating
+    #       whether or not canned milk or refined sugar gets cheaper. [C]
+    #     printing 0.80 - discretionary but not a luxury in the pre-mass-media
+    #       world these nodes describe; picked close to, but under, unit
+    #       elastic. [C]
+    #     photography 1.60 - camera and film equipment is squarely a luxury
+    #       good throughout the period this applies to; luxury-goods demand
+    #       studies commonly cite elasticities above 1.5 (fine goods and
+    #       jewellery studies often land in the 1.5-2.5 range). [C]
+    #   floor (price never falls below this fraction of the tree's own
+    #     figure, however saturated the market): textiles and printing start
+    #     from the bound already chosen for cloth (the one tracked commodity
+    #     textiles maps to) in commodities.json, 0.35, nudged up to 0.40;
+    #     processing starts tighter still, 0.45, because preserved food has a
+    #     harder cost floor (a tin and the heat to seal it cost what they
+    #     cost) and a harder ceiling on how much cheaper it can get before
+    #     people just use raw ingredients instead, nudged up to 0.55;
+    #     photography starts from coffee's bound in commodities.json, the one
+    #     other luxury good that file prices, 0.5, nudged up to 0.55. Every
+    #     nudge is the SAME finding: measuring this against the 700-year
+    #     Monte Carlo runs (see the change's own report) showed a civilization
+    #     already winning on the earlier, harsher floors on the edge of the
+    #     700-year horizon (han_china_100ad, 2 of 10 seeds) losing every one
+    #     of them once a goods concern's long-run earnings fell as far as the
+    #     first pass had them fall. A model that turns a marginal win into a
+    #     loss is not "more realistic," it is miscalibrated against a game
+    #     this game already plays close to the edge of - so every floor here
+    #     moved up by 0.05-0.1 from its first-pass figure, softening how much
+    #     of the day-one margin is eventually given up, while leaving the
+    #     shape of the curve (an early, visible decline) untouched.
+    #   tau (years for the market to visibly respond to a new supply):
+    #     textiles 35 - Britain's handloom weavers went from the dominant
+    #       technology to a shrinking minority over roughly thirty to forty
+    #       years, the 1810s to the 1850s; that is the number used for how
+    #       long a cloth market takes to re-equilibrate around a new loom, at
+    #       the slower end of that range for the same reason the floors moved
+    #       - see above. Processing, printing and photography use a longer 40
+    #       [C]: no equally specific diffusion-speed citation exists for
+    #       those, so a longer, explicitly illustrative period stands in for
+    #       one, and the same 700-year-horizon finding argued for slower
+    #       rather than faster.
+    GOODS_CATEGORIES = {
+        "textiles":    {"eta": 0.65, "floor": 0.40, "tau": 35.0},
+        "processing":  {"eta": 0.35, "floor": 0.55, "tau": 40.0},
+        "printing":    {"eta": 0.80, "floor": 0.40, "tau": 40.0},
+        "photography": {"eta": 1.60, "floor": 0.55, "tau": 40.0},
+    }
+
+    def goods_reach_factor(self):
+        """How much further than a purely local market your goods can travel,
+        and so how fast you saturate the market you can reach.
+
+        The brief asks for this explicitly: market size "should depend on...
+        how far your goods can travel." Reuses the exact signals
+        _material_market_tonnes() already uses for the OPPOSITE direction (how
+        far your BUYING reach extends) - a patron's name, citizenship, a
+        standing trade route, a railway, a telegraph - because a network that
+        gets you more iron also gets your cloth to more buyers; it would be an
+        odd model that widened one side of the ledger with these flags and not
+        the other. Capped, like every other compounding multiplier in this
+        file (MARKET_SHARE, material_price_factor), so five flags together do
+        not multiply into an implausible number.
+        """
+        r = 1.0
+        if self.has("citizenship"):                r *= 1.15
+        if self.running("patron_senatorial"):      r *= 1.3
+        if self.running("patron_imperial"):        r *= 1.6
+        if self.running("exp_trade_route_extend"): r *= 1.3
+        if self.running("railway"):                r *= 1.35
+        if self.running("telegraph_electric"):      r *= 1.15
+        return min(r, 3.0)
+
+    def goods_market_factor(self, k):
+        """How a goods-producing concern's revenue has moved, relative to the
+        day it opened, as the market it sells into fills up.
+
+        Exactly 1.0 on the day a concern opens, by construction, so a player
+        who opens one loom still earns the tree's own figure on the first
+        turn - the brief's own requirement. After that, AGE (years this
+        concern has been open, the same clock venture_ramp already uses)
+        drives supply of the same kind of good ever higher: some of it yours
+        if you build a better loom later, most of it the rest of the world's,
+        exactly as economy_index()'s own comment says diffusion works ("each
+        heavy technology that spreads raises output everywhere"). Supply
+        grows LINEARLY with age (one more multiple of its day-one level every
+        `tau` years - no separate "how big can this get" ceiling is guessed
+        at, because the floor/eta pair below already implies one: once price
+        has fallen to its floor, `qty_ratio` cannot rise any further either,
+        so that is where growth actually stops, and inventing a second,
+        independent ceiling risked contradicting the first).
+
+        Price then moves along an ordinary constant-elasticity demand curve:
+        quantity sold varies as price ** (-eta), so solving for the price that
+        clears exactly `supply` gives price_ratio = supply ** (-1/eta),
+        clamped at the floor. Quantity sold is the smaller of what supply can
+        make and what that price will move (min(), because you cannot sell
+        more than the market bears once the floor binds, and once it does,
+        MORE supply beyond that point simply does not find a buyer - the
+        flattening the brief describes). Revenue is price times quantity,
+        both relative to day one, which is `price_ratio * qty_ratio`.
+
+        Population and income raise `tau` rather than a separate ceiling: a
+        bigger, richer reachable market takes longer for the SAME pace of
+        outside diffusion to saturate, because that diffusion is a smaller
+        fraction of a larger whole. Better reach (goods_reach_factor) does
+        the opposite - a well-connected market finds out about, and adopts,
+        a cheaper substitute sooner - which is also why reach shortens the
+        early-mover premium even though it is the same thing that let you
+        reach further buyers in the first place.
+        """
+        cfg = self.GOODS_CATEGORIES.get(self.nodes[k].get("cat"))
+        if not cfg or k not in self.operating:
+            return 1.0
+        started = (getattr(self, "opened_year", None) or {}).get(k)
+        if started is None:
+            started = self.done_year.get(k, self.year)
+        age = max(0.0, self.year - started)
+        reach = self.goods_reach_factor()
+        tau = max(1.0, cfg["tau"] * (self.pop_scale ** 0.5)
+                  * (self.economy ** 0.25) / reach)
+        supply = 1.0 + age / tau
+        eta = cfg["eta"]
+        price_ratio = max(cfg["floor"], min(1.0, supply ** (-1.0 / eta)))
+        qty_ratio = min(supply, price_ratio ** (-eta))
+        return price_ratio * qty_ratio
+
+    def goods_market_note(self, k):
+        """One sentence on why THIS concern's earnings have moved from the
+        tree's own figure - so a player sees why a concern that opened at 400
+        a year now earns 280, instead of being left to notice the number
+        changed and guess why (the brief's own example, in the brief's own
+        words)."""
+        cfg = self.GOODS_CATEGORIES.get(self.nodes[k].get("cat"))
+        if not cfg or k not in self.operating:
+            return None
+        factor = self.goods_market_factor(k)
+        if abs(factor - 1.0) < 0.01:
+            return None
+        n = self.nodes[k]
+        quoted = n["rev"] * self.venture_ramp(k) * self.price_index
+        now = quoted * factor
+        floor_factor = cfg["floor"] ** (1.0 - cfg["eta"])
+        direction = ("fallen, because supply of it - yours and everyone "
+                     "else's - has grown faster than demand"
+                     if factor < 1.0 else
+                     "risen, because the cheaper it got the more buyers it "
+                     "found")
+        return ("the tree quotes %s a year for this; it actually earns about "
+                "%s now. The price this market pays has %s since you opened "
+                "it. It will settle at roughly %s a year once that market is "
+                "fully saturated, not at nothing - there is always a floor "
+                "price and a floor of buyers this kind of good keeps"
+                % ("{:,.0f}".format(quoted), "{:,.0f}".format(now), direction,
+                   "{:,.0f}".format(quoted * floor_factor)))
+
+    def goods_market_summary(self):
+        """Every operating goods concern whose earnings have moved from the
+        tree's own figure, worst first - the aggregate version of
+        goods_market_note(), for `money` rather than one concern at a time."""
+        rows = []
+        for k in sorted(self.operating):
+            cfg = self.GOODS_CATEGORIES.get(self.nodes[k].get("cat"))
+            if not cfg:
+                continue
+            f = self.goods_market_factor(k)
+            if abs(f - 1.0) > 0.01:
+                rows.append((k, f))
+        if not rows:
+            return None
+        rows.sort(key=lambda kv: kv[1])
+        worst = rows[0]
+        return ("%d concern%s selling into a market that has moved since it "
+                "opened: %s is at %d%% of the tree's own figure, because "
+                "supply of what it makes has grown since it opened. "
+                "'ventures' says the same thing for each one"
+                % (len(rows), "" if len(rows) == 1 else "s",
+                   worst[0], round(worst[1] * 100)))
+
     def done_in_order(self):
         """Everything you have finished, in a FIXED order.
 
@@ -735,7 +954,12 @@ class EconomyMixin:
                 if practice:
                     r += n["rev"] * self.PRACTICE_SHARE * attention * self.price_index
                 else:
-                    r += n["rev"] * self.venture_ramp(k) * self.price_index
+                    # goods_market_factor() is 1.0 for anything outside
+                    # GOODS_CATEGORIES, so this changes nothing for the
+                    # services, institutions and patronage the brief asked to
+                    # leave alone - see that method's own comment for why.
+                    r += (n["rev"] * self.venture_ramp(k) * self.price_index
+                          * self.goods_market_factor(k))
         # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
         # pays back inside two years, so its income buys the next one, and a run
         # ended holding three billion denarii against an empire whose entire
@@ -840,6 +1064,11 @@ class EconomyMixin:
                    * self.price_index)
             if practice:
                 amt *= self.practice_attention()
+            else:
+                # SAME FACTOR revenue() APPLIES, so this row and the total it
+                # is supposed to add up to do not silently disagree - see the
+                # "the ledger's parts add up to the revenue it states" check.
+                amt *= self.goods_market_factor(k)
             if amt > 0.5:
                 rows[k] = round(amt, 1)
         # ALL OF IT, OR SAY WHAT IS MISSING. This returned the fifteen largest

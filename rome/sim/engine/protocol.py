@@ -2008,6 +2008,9 @@ def render_money(out):
         if out.get("about_your_own_practice"):
             L.append(_wrap("YOUR PRACTICE: " + out["about_your_own_practice"],
                            indent="    "))
+        if out.get("the_market_you_sell_into"):
+            L.append(_wrap("THE MARKET: " + out["the_market_you_sell_into"],
+                           indent="    "))
     costs = out.get("what_it_costs_you") or {}
     if costs:
         L.append("Costs:")
@@ -3444,12 +3447,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
         fixed = (s.upkeep() + s.living_cost() - _prepaid
                  + s.mine_operating_cost())
         _ramp, _prac = s.still_ramping(), s.practice_note()
+        _mkt = s.goods_market_summary()
         return {"ok": True,
                 "capital": round(s.capital, 1),
                 "revenue": round(s.revenue(), 1),
                 "where_the_money_comes_from": s.revenue_sources(),
                 **({"still_building_up_custom": _ramp} if _ramp else {}),
                 **({"about_your_own_practice": _prac} if _prac else {}),
+                **({"the_market_you_sell_into": _mkt} if _mkt else {}),
                 "what_it_costs_you": {
                     "upkeep_of_what_you_built": round(s.upkeep(), 1),
                     "living_and_appearances": round(s.living_cost() - s.wage_bill(), 1),
@@ -4011,13 +4016,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
             # and never the number the refusal quotes.
             _scale = (s.economy ** 0.75) * s.output_factor * s.price_index
             _sup_s, _sup_a = s.venture_hands(k)
-            return {"id": k, "name": n["name"],
+            # AT THE SAME MARKET PRICE `money` credits, for a goods-producing
+            # concern: goods_market_factor() is 1.0 for anything not in
+            # GOODS_CATEGORIES and for anything not yet open, so this changes
+            # nothing for every other row. See that method's own comment.
+            _mkt = s.goods_market_factor(k) if k in s.operating else 1.0
+            row = {"id": k, "name": n["name"],
                     "earns_a_year": round(n["rev"] * _scale
                                           * (s.venture_ramp(k) if k in s.operating
-                                             else 1.0), 1),
+                                             else 1.0) * _mkt, 1),
                     "costs_a_year": round(n["up"] * s.price_index, 1),
                     "needs": {"scholars": round(_sup_s, 2),
                               "craftsmen": round(_sup_a, 2)}}
+            _note = s.goods_market_note(k)
+            if _note:
+                row["market"] = _note
+            return row
 
         out = {"ok": True,
                "running": [_vrow(k) for k in running] or "nothing",
