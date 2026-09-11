@@ -2131,6 +2131,32 @@ check("starting work this society cannot staff says so at the time",
       _imp[0].get("ok") is True and "cannot supply the labour" in (_imp[0].get("but") or ""),
       _imp[0].get("but"))
 
+# --- BREAK: the fix above ("Make the stated labour ceiling the real one")
+# changed the TEST here to weigh commissioned hours - hours_you_can_call_on,
+# market_supply plus contract_hours - but left the NUMBER PRINTED reading
+# market_supply alone. A player who had commissioned any of the short trade
+# saw `start` quote one ceiling for a project and `stuck` quote a higher one
+# for the identical project a moment later: the exact disagreement that
+# commit's own message said could not happen again ("the statement and the
+# arithmetic cannot disagree"). Reproduced directly: commission 500 scribe-
+# hours (the project is still short), then start logarithms.
+s_lie = sim(capital=10000000.0)
+for _p in NODES["logarithms"]["pre"]:
+    s_lie.done.add(_p)
+s_lie._done_changed()
+s_lie.hire("scholar", 2)
+s_lie.commission("scribe", 500.0)
+_r_start = S._agent_dispatch(s_lie, NODES, {"cmd": "start", "id": "logarithms"})
+_r_stuck = S._agent_dispatch(s_lie, NODES, {"cmd": "stuck"})
+_but = _r_start.get("but") or ""
+_stuck_why = ((_r_stuck.get("what_is_holding_you_up") or [{}])[0]
+              .get("each_waiting_on", {}).get("logarithms", ""))
+check("the ceiling `start` quotes for a short trade is the one `stuck` quotes a moment later",
+      _but and _stuck_why and
+      _but.split("field ")[1].split(" at most")[0]
+      == _stuck_why.split("field ")[1].split(" at most")[0],
+      (_but, _stuck_why))
+
 # 3. The stat that ends the run had no warning and no help topic.
 s = sim(capital=400.0)
 s.eminence = s.cfg["eminence_danger"] * 0.9
@@ -2188,6 +2214,30 @@ s2.hire("carpenter", 1)
 check("...so one hired hand is enough to raise your first workshop",
       s2.start_reason("workshop_first")[0],
       s2.start_reason("workshop_first")[1])
+
+# --- BREAK: the pivot node of the entire game did nothing under --manual, the
+# interactive protocol's only mode. school_founded's own text promises "+4
+# scholars", _complete() added it with a bare self.scholars += 4, and the very
+# next step() called _resync_pools() - unconditionally, every year - which has
+# always recomputed self.scholars purely from self.employees and so overwrote
+# the grant to whatever employees already held. A player who founded the
+# school and then did anything else at all would have read a refusal a year
+# later naming the same scholar shortfall the school was built to answer,
+# with nothing saying why. Fixed by giving the grant its own durable record
+# (_grant_staff) that _resync_pools adds back rather than discards.
+s_gr = sim(capital=10000000.0, manual=True)
+s_gr.done.add("school_founded")
+s_gr._done_changed()
+s_gr.operating.add("school_founded")
+s_gr._grant_staff(scholars=4)
+_after_grant = s_gr.scholars
+s_gr.step()
+check("founding the school still leaves you its scholars a year later",
+      s_gr.scholars >= _after_grant - 1e-6,
+      (_after_grant, s_gr.scholars))
+check("...and a project that needed exactly what it granted can now start",
+      s_gr.effective_scholars() >= 4.0,
+      s_gr.effective_scholars())
 
 # A break tester summed what the ledger listed - 7,101.9 - against a stated
 # revenue of 6,738 and reported that the accounts do not add up. They were
