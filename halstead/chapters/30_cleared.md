@@ -4,11 +4,11 @@
 
 Chloe's blog gets big over the course of a year.
 
-By the following spring she has a readership and an inbox that keeps refilling faster than she clears it.
+By spring she has a readership and an inbox that keeps refilling faster than she clears it.
 
 People keep asking who works with her. The question shows up as a comment under a post, or an email with "research team" somewhere in the subject line, once from an editor at an actual paper who wants to know about syndication and asks, almost as an afterthought, who else is on staff. Chloe's answer never changes: it's just her.
 
-Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. She adds each one to the same sheet she started in February, and by the following winter it runs to a dozen rows, none of them ever willing to say what outlet or company they write for when she asks in return. There's no next move available for rows with no name attached, so she leaves the sheet open on a second tab and keeps working the piece she's actually writing.
+Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. She adds each one to the same sheet she started in February, and by winter it runs to a dozen rows, none of them ever willing to say what outlet or company they write for when she asks in return. There's no next move available for rows with no name attached, so she leaves it and keeps writing.
 
 By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work closed out and a browser full of tabs in three languages open around the piece she's actually working on; a currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes but not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
 
@@ -20,7 +20,7 @@ Hebrew is the second year's, and it goes the way Polish went: a class that moves
 
 Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
-It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
+The written section runs four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, the single gap in it, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
 
 The result arrives by mail weeks later, and she reads it as having sat an exam.
 
@@ -30,17 +30,17 @@ The background investigation takes ten weeks and involves a man named Whitaker w
 
 The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her; most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful; she sends the form in a little after midnight, and days go by before the phone rings.
 
-Then he calls, the second week of October, to set a time; she spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
+Then he calls, the second week of October, to set a time; she spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, on impulse.
 
-Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee, set on the counter, that he doesn't open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 Before he asks her anything, he tells her what the visit is for: a full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
 "Does any of it get released? After. To me, or to anyone else."
 
-"It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
+"It goes into your file," Whitaker says, "and it stays sealed there. Nobody opens it without a reason on record, not you and not whoever comes asking about you later."
 
-That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for; she gives him more than the minimum from the first page onward.
+That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is for; she gives him more than the minimum from the first page onward.
 
 "Residential the whole time?" he asks, pen moving.
 
@@ -48,11 +48,11 @@ That's the whole answer, first try, not something softer built to sound reassuri
 
 "From when?"
 
-"I started that April, a few months after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from. My mother tells it differently than I do and hers is the version I would write down."
+"I started that April, the spring after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from. My mother tells it differently than I do and hers is the version I would write down."
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
-"It is. My mother thought so too, and she is the reason it took a year to arrange. She wanted somebody to say out loud that I could come home whenever I asked to, and nobody would put that in writing for her, so she drove up and stood in the building until they said it to her face. She still keeps the letter they eventually sent, folded in a drawer of its own, in case anybody ever asks her to prove it."
+"It is. My mother thought so too, and it took months to bring her round. She asked everything: what happened if I got sick at night, who was awake, whether she could pull me out on any day, for any reason, and got a straight answer every time. Then the school offered us a house near campus, free as long as I stayed enrolled, and she said no, because giving up our own roof was a way they could make it hard for her to take me back."
 
 Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next: she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
@@ -78,17 +78,17 @@ Whitaker's pen stops for about the length of a word, then starts again. "Sat whe
 
 "Sixteen," Whitaker says, and writes it down, and asks her nothing else about it.
 
-Two published papers come last on that page, and he's already ahead of her on both: he opens the folder, slides out clean printouts, already pulled, a line highlighted on each, before she's finished saying the name of either journal.
+Two published papers come last on that page, and he's already ahead of her on both: he opens the folder, slides out clean printouts, a line highlighted on each, before she's finished saying the name of either journal.
 
 "There's a third one," Chloe says. "It's internal. I can tell you I worked on it, I can tell you when, I can tell you who ran it. I've been asked not to say what it's about, and I said I wouldn't."
 
 Whitaker doesn't look up. "Asked by whom."
 
-"The lead researcher," Chloe says. "She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them, and she said it plainly enough that asking her to write it down would have been an insult."
+"The lead researcher," Chloe says. "She couldn't put an agreement in front of somebody that young, so she told me plainly: the other names were already on it, and if I talked, it landed on them instead of me. I took a week over it before I answered her."
 
-"And you agreed to that," he says.
+"And what did you tell her," he says.
 
-"I did. She'd already gotten everyone else on it to agree to it, and it seemed fair to hold the line she was asking me to hold, not just the one she was asking them to hold."
+"That I would keep it off the phone and off the table. But my name goes on the next agreement somewhere, or I stop telling her anything that isn't already public. She said she'd ask."
 
 Whitaker fills half a page before he looks up. "Anything else in that category?"
 
@@ -114,7 +114,7 @@ He doesn't confirm it, but he doesn't deny it either, and he writes something do
 
 He goes back a page before the next question. "The long field. The one with the wire down the fence. Who did the geometry on that?"
 
-"I did," Chloe says. "She was there for the run in April, but the geometry's mine, from January. I can get you the exam script it started on, if you need it dated."
+"I did," Chloe says. "She was there for the run in March, but the geometry's mine, from April. I can get you the exam script it started on, if you need it dated."
 
 Whitaker writes the offer down next to the answer and doesn't ask for the script.
 
@@ -124,8 +124,8 @@ The funding is what he asks about: who the school's principal donor is, name or 
 
 Along with the answer, he writes the reasoning down, the way he has everything else, and closes the folder on it; the file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time. Then he stands to gather the thermos and the notebook off the table.
 
-At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
+At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before the joke catches up with her, her attention still elsewhere.
 
-The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then a second time, then calls her mother before the coat is off. She gets the machine, and leaves nine words on it before she hangs up: it came through, she'll tell her the whole of it Sunday. Only then does she file it in the kitchen drawer where everything that's needed keeping ends up.
+The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then a second time, then calls her mother before the coat is off. She gets the machine, and leaves a short message before she hangs up: it came through, she'll tell her the whole of it Sunday. Only then does she file it in the kitchen drawer where everything that's needed keeping ends up.
 
-The job starts in January. She turns twenty-one in August.
+The job starts in January, as a trainee. She's sworn in that August, her birthday.
