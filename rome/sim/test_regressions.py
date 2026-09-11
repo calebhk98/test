@@ -4872,6 +4872,117 @@ check("...and no line of that screen runs past the width everything else wraps t
 _cmd2, _err2 = _PT("why horizontal loom")
 check("a multi-word typed name is not truncated to its first word",
       _cmd2 == {"cmd": "why", "id": "horizontal loom"}, _cmd2)
+# --- NEW: a goods-producing concern sells into a MARKET, not a fixed number.
+# A playtester's own example: "an automated loom should be making a lot of
+# money early on, but the profit should decrease over time once supply
+# starts going up... up to some point." See economy.py's GOODS_CATEGORIES
+# and goods_market_factor() for the model this exercises.
+s_lm = sim(civ="rome_100ad", capital=500000.0)
+s_lm.done.add("tex_power_loom")
+s_lm.done_year["tex_power_loom"] = 100
+s_lm._done_changed()
+s_lm.artisans = s_lm.scholars = 80.0
+s_lm.year = 100
+_ok_lm, _msg_lm = s_lm.open_venture("tex_power_loom")
+check("a power loom can be opened, to exercise what it then earns",
+      _ok_lm, _msg_lm)
+check("a freshly opened power loom earns what the tree quotes, not less - "
+      "the first turn is not where this is supposed to show up",
+      abs(s_lm.goods_market_factor("tex_power_loom") - 1.0) < 1e-9,
+      s_lm.goods_market_factor("tex_power_loom"))
+
+s_lm.year = 130        # thirty years of custom later
+_factor_30 = s_lm.goods_market_factor("tex_power_loom")
+check("thirty years on, the same loom earns less, because supply of cloth - "
+      "yours and everyone else's - has caught up with demand",
+      _factor_30 < 0.95, _factor_30)
+check("...but not next to nothing: this kind of good keeps a floor price",
+      _factor_30 > 0.5, _factor_30)
+
+s_lm.year = 400        # long after the market has fully adjusted
+_factor_400 = s_lm.goods_market_factor("tex_power_loom")
+check("...and once the market is saturated it flattens, rather than "
+      "decaying away for ever",
+      abs(_factor_400 - _factor_30) < 0.02, (_factor_30, _factor_400))
+
+# --- The brief's own worked example, almost to the denarius: a concern that
+# earned 400 a year now earning about 280, and a player told why rather
+# than left to notice the number moved.
+s_nt = sim(civ="rome_100ad", capital=500000.0)
+s_nt.done.add("tex_horizontal_loom")
+s_nt.done_year["tex_horizontal_loom"] = 100
+s_nt._done_changed()
+s_nt.artisans = s_nt.scholars = 20.0
+s_nt.year = 100
+s_nt.open_venture("tex_horizontal_loom")
+s_nt.year = 400
+_note = s_nt.goods_market_note("tex_horizontal_loom")
+check("a player reading `ventures` or `money` is told WHY a concern earns "
+      "less than the tree quotes, in plain language",
+      bool(_note) and "tree quotes" in _note and "actually earns" in _note,
+      _note)
+_vrow_nt = S._agent_dispatch(s_nt, NODES, {"cmd": "ventures"})
+_row_nt = next(r for r in _vrow_nt["running"] if r["id"] == "tex_horizontal_loom")
+check("...and `ventures` itself carries the same explanation on the row",
+      "market" in _row_nt and bool(_row_nt["market"]), _row_nt)
+_money_nt = S._agent_dispatch(s_nt, NODES, {"cmd": "money"})
+check("...and `money` says the same thing in aggregate",
+      bool(_money_nt.get("the_market_you_sell_into")), _money_nt.get("the_market_you_sell_into"))
+
+# --- Services, institutions and patronage are untouched: the brief asked
+# for exactly that distinction, and this is the honest way to check it -
+# a node outside GOODS_CATEGORIES gets a factor of exactly 1.0 no matter
+# how old the concern is.
+s_sv = sim(civ="rome_100ad", capital=500000.0)
+_nongood = next(k for k in sorted(NODES)
+               if NODES[k].get("cat") not in s_sv.GOODS_CATEGORIES
+               and s_sv.is_venture(k) and not NODES[k]["pre"])
+s_sv.done.add(_nongood)
+s_sv.done_year[_nongood] = 100
+s_sv._done_changed()
+s_sv.artisans = s_sv.scholars = 50.0
+s_sv.year = 100
+s_sv.open_venture(_nongood)
+s_sv.year = 500
+check("a service, institution or anything outside the goods categories "
+      "still pays the tree's flat figure centuries later, exactly as before",
+      s_sv.goods_market_factor(_nongood) == 1.0, _nongood)
+
+# --- The ledger's own "parts add up to the total" invariant has to survive
+# this too, with an aged loom actually pulling the total below the flat
+# figure - not just in the already-passing young-economy case above.
+s_ld = sim(civ="rome_100ad", capital=500000.0)
+s_ld.done.add("tex_power_loom")
+s_ld.done_year["tex_power_loom"] = 100
+s_ld._done_changed()
+s_ld.artisans = s_ld.scholars = 80.0
+s_ld.year = 100
+s_ld.open_venture("tex_power_loom")
+s_ld.year = 300
+_src_ld = s_ld.revenue_sources()
+check("the ledger's parts still add up to the revenue it states, with an "
+      "aged goods concern pulling the total down",
+      abs(sum(_src_ld.values()) - s_ld.revenue()) < 1.0,
+      (sum(_src_ld.values()), s_ld.revenue()))
+
+# --- Population and reach are supposed to matter - the brief says market
+# size "should depend on the population, on what that society can pay, and
+# on how far your goods can travel." A smaller, poorer, less-connected
+# civilization should see the SAME concern's margin erode faster.
+s_small = sim(civ="norse_900ad", capital=500000.0)
+s_small.done.add("tex_power_loom")
+s_small.done_year["tex_power_loom"] = 100
+s_small._done_changed()
+s_small.artisans = s_small.scholars = 80.0
+s_small.year = 100
+s_small.open_venture("tex_power_loom")
+s_small.year = 110      # ten years in - before EITHER market is fully saturated
+_small_factor = s_small.goods_market_factor("tex_power_loom")
+s_lm.year = 110
+_rome_10 = s_lm.goods_market_factor("tex_power_loom")
+check("a smaller, poorer civilization's market for the same good saturates "
+      "faster than Rome's did at the same age",
+      _small_factor < _rome_10, (_small_factor, _rome_10))
 
 
 print("=" * 72)
