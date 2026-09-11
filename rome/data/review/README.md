@@ -9,6 +9,7 @@ Kept because the provenance of a correction matters as much as the correction.
 | `caps_batch_0..4.json` | The 318 nodes found to be missing a capability prerequisite, split five ways. |
 | `caps_fix_0..4.json` | What five reviewers decided about each of those 318, one node at a time, with a one-line reason each. Note how often the answer is an empty list: 417 of the decisions were "this genuinely needs no capability rung", which is the answer a keyword heuristic can never give. |
 | `SHALLOW_NODES.txt` | Nodes flagged as narrow at the top and shallow all the way down. |
+| `MATERIAL_GATING.md` | Every one of the 162 material keys checked for the rubber bug (`ac69bfb`): a consumer with no route in its own ancestry to a node that can produce the material, still sold it at a flat book price anyway. Found the same bug recurring in 24 materials (84 consumer nodes: aluminium, sulfuric acid, nickel, tungsten, platinum, porcelain, ...), fixed all 24, and separately judged 138 materials genuinely purchasable without personal production (iron, copper, wool and 136 more like them) and 3 (including the goal node's own `indium_g`) as needing a production node that does not exist yet. |
 
 ## The short version of what happened here
 
