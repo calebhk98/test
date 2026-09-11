@@ -682,13 +682,30 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         #     annona is the Roman grain dole. Han China does not have one, and a
         #     model that gives every society Rome's institutions is not modelling
         #     societies at all.
-        for k in self.order:
-            n = self.nodes[k]
-            if self._is_foreign_institution(k):
+        # ONLY THE NODES THAT COULD EVER BE GRANTED THIS WAY, not the whole
+        # tree. tier, ph, _total_cost and foreign-institution status are all
+        # fixed tree/civ data that cannot change after construction (see
+        # _is_foreign_institution), so the set of nodes this loop will ever
+        # look twice at is fixed too - computed once and reused, in the same
+        # relative order as `self.order`, which is what makes this provably
+        # identical to walking the full list every year: every node this
+        # skips was going to fail the same tier/ph/cost/foreign test again
+        # anyway. A Rome run walked all 2,831 nodes here every year for 500+
+        # years to find the same 130 candidates; most of those had also
+        # already been granted and were only ever going to hit `k not in
+        # self.done` and nothing else.
+        cand = getattr(self, "_auto_grant_candidates", None)
+        if cand is None:
+            cand = self._auto_grant_candidates = [
+                k for k in self.order
+                if not self._is_foreign_institution(k)
+                and self.nodes[k]["tier"] == 0 and self.nodes[k]["ph"] == 0
+                and self.nodes[k]["_total_cost"] <= 1]
+        for k in cand:
+            if k in self.done or k in self.active:
                 continue
-            if (n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1
-                    and k not in self.done and k not in self.active
-                    and all(p in self.done for p in n["pre"])):
+            n = self.nodes[k]
+            if all(p in self.done for p in n["pre"]):
                 self.done.add(k)
                 self._done_changed()
                 self.done_year[k] = self.year
@@ -705,11 +722,33 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         #      it with `train`, or turns this on.
         if self.policy.get("auto_train", not self.manual):
             want = {}
+            # LOCAL, PER-YEAR MEMO for market_supply()/trade_available().
+            # Both are pure functions of staff and trades_created, which this
+            # whole block only READS - train(), below, adds to trades_created,
+            # but that happens once, at the very end, after every use of these
+            # memos - so the same handful of distinct trade names (maybe
+            # thirty) get recomputed from scratch once per NODE that lists
+            # them in `lab`, and hundreds of nodes across the tree share the
+            # same absent trade (machinist, engineer, ...). This dict is a
+            # plain local, created fresh every call and discarded when the
+            # block ends, so it needs no invalidation logic at all: nothing
+            # outside this block ever reads it, so it cannot go stale.
+            _ms_memo, _ta_memo = {}, {}
+            def _market_supply(t):
+                v = _ms_memo.get(t)
+                if v is None:
+                    v = _ms_memo[t] = self.market_supply(t)
+                return v
+            def _trade_avail(t):
+                v = _ta_memo.get(t)
+                if v is None:
+                    v = _ta_memo[t] = self.trade_available(t)
+                return v
             # Anything already in hand that has lost its trade comes FIRST: those
             # projects are burning a slot and will be halted if nobody turns up.
             for k in self.active:
                 for t in self.nodes[k]["lab"]:
-                    if self.market_supply(t) <= 0.0:
+                    if _market_supply(t) <= 0.0:
                         want[t] = want.get(t, 0) + 500
             # WORK THE PLAYER COULD START TODAY, not the whole tree. The old
             # test was "direct prerequisites satisfied", which is not "wanted":
@@ -721,23 +760,26 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # you do not have is not a project you need anything for yet.
             # ignore_trade asks the one question that answers that: if this
             # trade existed, would everything ELSE already let it start?
+            # EXISTING IS NOT THE SAME AS ANYBODY BEING LEFT. A trade you
+            # taught stays "available" for ever, so once the last machinist
+            # had died of old age this loop skipped every node that needed
+            # one and nobody was ever taught again. A Rome run built 829
+            # technologies, sat on 31.9M denarii, and could not begin
+            # precision_three_plate - which gates master_screw, the screw
+            # lathe and the entire precision branch, ninety-nine of the
+            # hundred and forty-six nodes on the road to the goal. This is
+            # the same distinction start_reason learned an hour earlier.
+            # Hoisted out of the loop below: it closes only over `self` and
+            # the memos above, never over the loop variable `k`, so defining
+            # it fresh on every one of ~2,800 iterations bought nothing.
+            def _gone(t):
+                return (not _trade_avail(t)
+                        or (_market_supply(t) <= 0.0
+                            and self._trade_headcount_pending(t) <= 0.0))
             for k in self.order:
                 if k in self.done or k in self.active:
                     continue
                 n = self.nodes[k]
-                # EXISTING IS NOT THE SAME AS ANYBODY BEING LEFT. A trade you
-                # taught stays "available" for ever, so once the last machinist
-                # had died of old age this loop skipped every node that needed
-                # one and nobody was ever taught again. A Rome run built 829
-                # technologies, sat on 31.9M denarii, and could not begin
-                # precision_three_plate - which gates master_screw, the screw
-                # lathe and the entire precision branch, ninety-nine of the
-                # hundred and forty-six nodes on the road to the goal. This is
-                # the same distinction start_reason learned an hour earlier.
-                def _gone(t):
-                    return (not self.trade_available(t)
-                            or (self.market_supply(t) <= 0.0
-                                and self._trade_headcount_pending(t) <= 0.0))
                 if not any(_gone(t) for t in n["lab"]):
                     continue
                 if not self.start_reason(k, ignore_trade=True)[0]:
