@@ -870,8 +870,22 @@ class EconomyMixin:
         if not cfg:
             return None
         ages = []
-        for m in sorted(self.operating):
-            if self.nodes[m].get("cat") != cat:
+        # WHICH NODES CAN EVER BE IN THIS CATEGORY IS FIXED AT LOAD TIME,
+        # so walk that (small, cached-once) list and test membership in
+        # `operating` instead of sorting and filtering the whole operating
+        # set on every single call. `cat` never changes after the tree is
+        # loaded, so this cache needs no invalidation. Profiling a 300-year
+        # single-seed run found this function alone (the `sorted(self.
+        # operating)` scan) costing more self time than any other in the
+        # engine - 7.1s of 34.4s total, called 1.5 million times because
+        # goods_market_factor() calls it once per operating concern, and
+        # income_factor() (reached from the SAME call, for every
+        # non-essential concern) calls it again for the essential
+        # category. Only max() and len() are taken from `ages` below, both
+        # order-independent, so dropping the sort changes no result. See
+        # PERFORMANCE.md.
+        for m in self._nodes_in_cat(cat):
+            if m not in self.operating:
                 continue
             started = (getattr(self, "opened_year", None) or {}).get(m)
             if started is None:
@@ -880,6 +894,22 @@ class EconomyMixin:
         if not ages:
             return None
         return len(ages), max(ages), cfg
+
+    def _nodes_in_cat(self, cat):
+        """Every node key that carries this goods category, in the tree's
+        own (stable, insertion) order - independent of PYTHONHASHSEED and
+        never changing after load, so this is built once per run and
+        reused. See _goods_category_state's own comment for why this
+        exists."""
+        cache = getattr(self, "_nodes_by_cat_cache", None)
+        if cache is None:
+            cache = {}
+            for k, n in self.nodes.items():
+                c = n.get("cat")
+                if c:
+                    cache.setdefault(c, []).append(k)
+            self._nodes_by_cat_cache = cache
+        return cache.get(cat, ())
 
     def _goods_category_ratios(self, cat):
         """(price_ratio, qty_ratio, n_active) for a whole category, shared
