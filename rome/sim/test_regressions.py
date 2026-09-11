@@ -5135,6 +5135,25 @@ check("a seed order breaks a tie the critical path itself cannot call, "
       and _syn_order2.index("a") < _syn_order2.index("b"),
       (_syn_order1, _syn_order2))
 
+# --- refine() MUST MEASURE WHAT --strategy ACTUALLY LOADS, not its own raw,
+# unrepaired ~161-node order. The first version of refine() handed
+# `cur_order` straight to `Sim()`, skipping the `topo_stable` repair
+# `load_strategy` always applies - and since the raw CPM order has 132 real
+# topological violations (see the comment after `cpm` in planner.py), that
+# silently measured a different, broken order: a live check of one refine
+# round went from 0/3 trials reaching the goal to 3/3 the moment this was
+# fixed, against the IDENTICAL seeds and the identical starting order. This
+# pins the fix: `_repaired` must agree with what `load_strategy` returns for
+# the same order.
+_p_repaired = PLANNER._repaired(NODES, GOAL, _p_order)
+_p_label2, _p_expected, _p_b2 = S.load_strategy(
+    PLANNER.write_strategy(os.path.join(ROOT, _PLAY_DIR, "refine_check.json"),
+                           "test", [], _p_order),
+    NODES, GOAL)
+check("refine() measures a candidate order the same way --strategy loads it "
+      "(full tree, topo_stable-repaired), not its own raw closure-only list",
+      _p_repaired == _p_expected, (len(_p_repaired), len(_p_expected)))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

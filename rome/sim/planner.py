@@ -69,13 +69,14 @@ no new way for a live, fogged session to see past what it has legitimately
 discovered. It is a developer and optimizer tool, the same category
 `compare`, `sweep` and `sensitivity` already are.
 """
-import argparse, json, os, random, sys
+import argparse, json, os, random, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 from engine.data import (STRATS, closure, load, load_civ, topo_order)
 from engine.core import Sim
+from engine.cli import load_strategy
 
 
 # ----------------------------------------------------------------------------
@@ -262,6 +263,30 @@ def _capture_winner_order(nodes, goal, need, results):
     return seq, best
 
 
+def _repaired(nodes, goal, order):
+    """The order a `Sim` actually gets when this is handed to `--strategy`:
+    extended to cover every node in the tree and passed through
+    `topo_stable`, exactly as `load_strategy` (cli.py) does for any strategy
+    file. `backward_plan`'s own raw output is ONLY the ~149-161 nodes it
+    named, and it is not even internally a valid topological order (see the
+    comment after `cpm` on why slack is not monotonic along an edge) - handing
+    that straight to `Sim` measures a different, unrepaired thing than what a
+    player or `run --strategy` would ever actually see. Round-trips through a
+    real temp file rather than reimplementing `load_strategy`'s "everything
+    else, goal-critical-first, then tier, then cost" fallback ordering here a
+    second time, which is exactly the kind of duplication this module's other
+    comments already argue against.
+    """
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as fh:
+        json.dump({"label": "internal", "rationale": [], "order": order}, fh)
+        path = fh.name
+    try:
+        _label, full, _bounties = load_strategy(path, nodes, goal)
+    finally:
+        os.unlink(path)
+    return full
+
+
 def refine(nodes, goal, s, order, extras, civ, mc, horizon, seed, rounds,
            side_branch_every=8, log=print):
     """CLOSE THE LOOP: plan, measure, capture the winner, re-plan from it.
@@ -286,7 +311,8 @@ def refine(nodes, goal, s, order, extras, civ, mc, horizon, seed, rounds,
     cur_order, cur_extras = order, extras
     best_order, best_extras, best_score = order, extras, None
     for rnd in range(rounds):
-        res = [Sim(nodes, cur_order, random.Random(seed + i), events=True,
+        full = _repaired(nodes, goal, cur_order)
+        res = [Sim(nodes, full, random.Random(seed + i), events=True,
                    civ=load_civ(civ)).run(goal, horizon)
                for i in range(mc)]
         wins = sum(1 for r in res if r.goal_year)
