@@ -2,5 +2,5 @@
 # and type into the same live session. A FIFO is not a file git can usefully
 # carry, and it is gone the moment the session ends.
 *.fifo
-game_in
 ctl.fifo
+game_in
