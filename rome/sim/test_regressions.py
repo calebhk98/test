@@ -6111,9 +6111,7 @@ _p_s = sim(civ="rome_100ad")
 _p_order, _p_c, _p_extras, _p_staff = PLANNER.backward_plan(NODES, GOAL, _p_s, side_branches=0)
 _p_need = PLANNER.closure(NODES, GOAL)
 check("the planner's closure matches `validate`'s own count for the goal",
-      set(_p_need) <= set(_p_order) and
-      len(_p_order) == len(_p_need) + len(_p_staff),
-      (len(_p_need), len(_p_order), len(_p_staff)))
+      len(_p_need) == len(_p_order), (len(_p_need), len(_p_order)))
 # THE STAFFING LAYER, which is the one thing in a plan that the tech tree
 # cannot supply. A node's prerequisites are other nodes; its demand for
 # "eight trained scholars" is a demand on the household, and no amount of
@@ -6121,16 +6119,16 @@ check("the planner's closure matches `validate`'s own count for the goal",
 # to run out of horizon with quantum_solidstate_theory as the first blocked
 # node - the cheapest node in the late programme, wanting eight scholars
 # against a society whose lettered pool tops out at 5.9.
-check("the planner founds the institutions that train people, which the "
+check("the planner names the institutions that train people, which the "
       "goal's own prerequisite closure never mentions",
       _p_staff and all(k not in _p_need for k in _p_staff)
       and "school_founded" in _p_staff and "academy_network" in _p_staff,
       _p_staff)
-check("and founds them before anything on the critical path, because a "
-      "critical path you cannot staff has no start date",
-      max(_p_pos_staff := [_p_order.index(k) for k in _p_staff])
-      < min(_p_order.index(k) for k in _p_need),
-      "institutions occupy positions 0-%d" % max(_p_pos_staff))
+check("...and does not order them, which was measured and made Rome's run "
+      "three centuries worse - 278,000 denarii of founding cost and "
+      "perpetual upkeep against a household that starts with four hundred",
+      all(k not in _p_order for k in _p_staff),
+      [k for k in _p_staff if k in _p_order])
 check("the staffing list is read from the same table staff_capacity() "
       "itself iterates, so the two cannot drift apart",
       all(k in {e[0] for e in S.Sim.STAFF_CAPACITY_SOURCES} for k in _p_staff),

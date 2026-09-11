@@ -291,13 +291,28 @@ def backward_plan(nodes, goal, s, seed_order=None, side_branches=12,
     order = sorted(need, key=key)
     extras = pick_side_branches(nodes, need, s, side_branches) if side_branches else []
     order = interleave(order, extras, side_branch_every)
-    # STAFF BEFORE SPINE. These go at the front, ahead of even the zero-slack
-    # nodes, because they are what makes the zero-slack nodes startable at
-    # all; a critical path you cannot staff has no start date. They are cheap
-    # against the programme and their own prerequisites are filled in by
-    # load_strategy's topological repair, exactly as the side branches' are.
+    # THE STAFFING GAP IS REPORTED, NOT PLANNED AROUND. This is measured, and
+    # it went the other way from what it looks like it should.
+    #
+    # The unstaffed plan blocks: Rome's runs all end on
+    # quantum_solidstate_theory, eleven hundred denarii of physics wanting
+    # eight trained scholars from a society whose lettered pool tops out at
+    # 5.9 - so ordering the eight institutions that train people ahead of the
+    # spine looks like the obvious repair. It is not. Founding them costs
+    # about 278,000 denarii and they carry upkeep from the day they open,
+    # against a household that begins with four hundred. Rome's plan with the
+    # institutions in it, front-loaded or woven in cheapest-first, ended three
+    # centuries WORSE than without them: reputation 9 rather than 97, not one
+    # hectare of coppice planted rather than 320, and blocked on atomic_theory
+    # - eleven hundred denarii and two scholars - which the plan without them
+    # had walked past long before.
+    #
+    # So the honest thing for a planner to do here is say what the wall is and
+    # leave the decision to whoever reads the plan. An institution the
+    # household cannot pay for is not staffing; it is a hole, and which of
+    # these to found, and when, is a judgement about a specific run's income
+    # that a structural pass over the tech tree has no standing to make.
     staffing = pick_staffing(nodes, need, s)
-    order = staffing + [k for k in order if k not in set(staffing)]
     return order, c, extras, staffing
 
 
@@ -460,15 +475,20 @@ def plan(civ="rome_100ad", goal=None, seed_strategy=None, side_branches=12,
         peak_sc = max((nodes[k]["sch"] for k in need), default=0.0)
         peak_ar = max((nodes[k]["art"] for k in need), default=0.0)
         rationale.append(
-            "%d institution(s) that train people, put ahead of the spine: %s. "
-            "Nothing in the goal's prerequisite closure mentions any of them, "
-            "because a node's prerequisites are other nodes and its demand "
-            "for trained staff is a demand on the household. The heaviest "
-            "node on this road wants %.0f trained scholars and %.0f trained "
-            "artisans, against a society that starts with under six lettered "
-            "men available at any price; without the school and the academy "
-            "the critical path has no start date at all."
-            % (len(staffing), ", ".join(staffing), peak_sc, peak_ar))
+            "NOT ORDERED HERE, BUT IN THE WAY: this road wants %.0f trained "
+            "scholars and %.0f trained artisans at its heaviest, and %s "
+            "begins with under six lettered men available at any price. "
+            "Nothing in the goal's prerequisite closure mentions a school, "
+            "because a node's prerequisites are other nodes while its demand "
+            "for trained staff is a demand on the household. The %d "
+            "institution(s) that could supply them - %s - cost about %s "
+            "denarii to found and carry upkeep from the day they open; "
+            "measured, putting them in this order made the run worse, not "
+            "better. When and whether to found them is a judgement about a "
+            "particular run's income, which a structural pass over the tech "
+            "tree cannot make."
+            % (peak_sc, peak_ar, civ, len(staffing), ", ".join(staffing),
+               "{:,.0f}".format(sum(nodes[k]["_total_cost"] for k in staffing))))
     if extras:
         rationale.append(
             "%d revenue-positive side branch(es) outside the goal's own "
