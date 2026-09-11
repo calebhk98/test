@@ -1,4 +1,4 @@
-"""The command line: validate, costs, path, run, compare, play, agent."""
+"""The command line: validate, costs, path, plan, run, compare, play, agent."""
 import collections, json, math, os, random
 from collections import defaultdict
 
@@ -615,6 +615,12 @@ def cmd_agent(a):
         # not a human also asked for a readable view. The readable view - if
         # asked for - is a SEPARATE line on stderr, alongside the JSON, never
         # instead of it, so nothing that parses stdout has to change either.
+        #
+        # ALLOWED TO RAISE BrokenPipeError, on purpose. Every caller below
+        # saves the session BEFORE calling this, so a pipe that closes mid-write
+        # can only cost the reply, never the state change that produced it. See
+        # the save-before-emit comment on the stdin loop for why that ordering
+        # is load-bearing and not cosmetic.
         sys.stdout.write(json.dumps(obj) + "\n")
         sys.stdout.flush()
         if pretty:
@@ -645,9 +651,22 @@ def cmd_agent(a):
             emit({"ok": False, "error": "--script file must contain a JSON list of command objects"})
             return 1
         for c in cmds:
-            emit(_agent_dispatch(s, nodes, c), c.get("cmd") if isinstance(c, dict) else None)
+            resp = _agent_dispatch(s, nodes, c)
+            # SAVE BEFORE YOU SPEAK. See the stdin loop below for why: the same
+            # ordering bug lived in both loops, and only the stdin one is what a
+            # human normally drives, so it is the one the playtesters actually
+            # hit, but a --script run piped through something that closes early
+            # loses exactly the same way.
             if session:
                 save_state(s, session)
+            try:
+                emit(resp, c.get("cmd") if isinstance(c, dict) else None)
+            except BrokenPipeError:
+                try:
+                    sys.stdout.close()
+                except Exception:
+                    pass
+                return 0
         return 0
 
     # REPL over stdin/stdout: one JSON command per line in, one JSON object
@@ -660,7 +679,10 @@ def cmd_agent(a):
         try:
             cmd = json.loads(line)
         except ValueError as e:
-            emit({"ok": False, "error": "invalid JSON: %s" % e})
+            try:
+                emit({"ok": False, "error": "invalid JSON: %s" % e})
+            except BrokenPipeError:
+                break
             continue
         # The dispatcher guards non-object input and replies politely, and then
         # THIS line used to kill the process: cmd.get on a bare null, number,
@@ -674,9 +696,30 @@ def cmd_agent(a):
                     "error": "internal error handling that command: %s: %s. "
                              "The game is intact; try something else."
                              % (type(e).__name__, e)}
-        emit(resp, cmd.get("cmd") if isinstance(cmd, dict) else None)
+        # SAVE FIRST, THEN SPEAK - the same fix `play` already has (see its own
+        # "SAVE FIRST, THEN SPEAK" comment), missing here until now. By this
+        # line `_agent_dispatch` has already mutated `s` in memory - a `step`
+        # command has already moved the calendar - so writing that to disk
+        # cannot be left waiting on whether the reply is printed successfully.
+        # Two testers found the gap independently, the same way: piping `agent`
+        # through `head` closes stdout, SIGPIPE kills the process on the write
+        # below, and whatever had just happened - for one of them, a hundred
+        # years of `step` - was never written to the save at all, though it had
+        # genuinely happened. The game's own help promises you can "close the
+        # terminal, anything" and come back; a promise that holds only when
+        # nobody closes the pipe first is not that promise.
         if session:
             save_state(s, session)
+        try:
+            emit(resp, cmd.get("cmd") if isinstance(cmd, dict) else None)
+        except BrokenPipeError:
+            # Somebody closed the pipe. The game is saved; leave quietly, the
+            # same way `play` does for the same reason.
+            try:
+                sys.stdout.close()
+            except Exception:
+                pass
+            break
         if isinstance(cmd, dict) and cmd.get("cmd") == "quit":
             break
     return 0
@@ -737,6 +780,43 @@ def cmd_sensitivity(a):
                    "the model says this costs more than it returns")
         print("%-24s %7.0f%% %8s %+8s   %s" %
               (k, r, m or "never", ("%d yr" % delay) if m else "n/a", verdict))
+
+
+def cmd_plan(a):
+    """Work backward from the goal instead of walking a hand-written list.
+
+    `run`/`compare` measure how well an `order` copes with bad luck; this is
+    the thing that actually COMPUTES one, by critical-path method over the
+    goal's prerequisite closure, instead of either hand-writing a guess
+    (recommended.json, 0% on Rome at a 700-year horizon) or capturing
+    whatever a lucky trial happened to do (captured_han_386.json - a floor,
+    not a method). See rome/sim/planner.py for the reasoning in full; this is
+    a thin CLI wrapper, the same relationship `cmd_run` has to `Sim.run`.
+
+    NEVER REACHED FROM `play` OR `agent`. Both of those are how a fogged
+    player actually sees this game, and neither one calls this function or
+    imports planner.py; a strategy file is public information a player
+    already has access to (it is a file in the repository, the same as
+    recommended.json), not a live look into a fogged session's own state.
+    """
+    _simdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if _simdir not in sys.path:
+        sys.path.insert(0, _simdir)
+    import planner as _planner
+    order, rationale, _c = _planner.plan(
+        civ=a.civ, goal=a.goal, seed_strategy=a.seed_strategy,
+        side_branches=a.side_branches, side_branch_every=a.side_branch_every,
+        refine_rounds=a.refine_rounds, mc=a.mc, horizon=a.horizon, seed=a.seed)
+    tree, _p, nodes, _w, _g = load()
+    goal = a.goal or tree["meta"]["goal_node"]
+    label = ("PLANNED (CPM): backward-chained from %s over its prerequisite "
+            "closure for %s%s" % (goal, a.civ, ", refined against real trials"
+                                  if a.refine_rounds else ""))
+    _planner.write_strategy(a.out, label, rationale, order)
+    print("wrote %d nodes to %s" % (len(order), a.out))
+    for line in rationale:
+        print("  - " + line)
+    return 0
 
 
 def cmd_why(a):
@@ -1180,6 +1260,33 @@ def main():
     q.add_argument("--mc", type=int, default=200)
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
+    q = sub.add_parser("plan", help="work backward from the goal over its prerequisite "
+                                    "closure (critical-path method) and write a strategy "
+                                    "file, instead of hand-writing one or gambling on a "
+                                    "Monte Carlo run until one happens to win. See "
+                                    "rome/sim/planner.py. A developer/optimizer tool, "
+                                    "like compare/sweep/sensitivity - never reached from "
+                                    "play or agent.")
+    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--goal", default=None)
+    q.add_argument("--out", required=True, metavar="FILE",
+                   help="strategy file to write; feed it back in with --strategy")
+    q.add_argument("--seed-strategy", default=None,
+                   help="a strategy name or path (e.g. captured_han_386, or a "
+                        "previous --out) whose order breaks ties among nodes the "
+                        "critical path itself ranks as equally urgent")
+    q.add_argument("--side-branches", type=int, default=12,
+                   help="how many revenue-positive nodes outside the goal's own "
+                        "requirements to weave in, to fund the spine. 0 disables")
+    q.add_argument("--side-branch-every", type=int, default=8)
+    q.add_argument("--refine-rounds", type=int, default=0,
+                   help="plan, run --mc real trials, capture the winner's finish "
+                        "order, re-plan from it, repeat this many times. 0 (the "
+                        "default) is purely structural and instant")
+    q.add_argument("--mc", type=int, default=12,
+                   help="trials per refinement round (ignored if --refine-rounds 0)")
+    q.add_argument("--horizon", type=int, default=700)
+    q.add_argument("--seed", type=int, default=1)
     sub.add_parser("menu", help="pick a civilisation, read where you have landed, "
                                 "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
@@ -1240,7 +1347,7 @@ def main():
     return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs,
             "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs, "menu": cmd_menu,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play, "agent": cmd_agent,
-            "sensitivity": cmd_sensitivity}[a.cmd](a)
+            "sensitivity": cmd_sensitivity, "plan": cmd_plan}[a.cmd](a)
 
 
 if __name__ == "__main__":

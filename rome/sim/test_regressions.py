@@ -12,6 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 import simulator as S
+import planner as PLANNER
 from engine import commodities as COMMOD
 
 TREE, PRICES, NODES, WAGES, GOODS = S.load()
@@ -5275,6 +5276,173 @@ check("the advice on how to get scholars never points at a different trade "
           for _node, why in s.STAFF_SOURCES.get("scholars", [])),
       s.STAFF_SOURCES.get("scholars"))
 
+# --- SAVE INTEGRITY, JOB 2a: FOG CAN BE REWOUND. A tester described the
+# exploit exactly: "since `load` restores the game but not the player's
+# memory, a player can save, build a node, look at what appeared in
+# `available`, load back, and keep the knowledge. Fog of war is one command
+# away from being off" (rome/playtest/AUDIT_rounds_1_6.md, C1), and reproduced
+# it live: save at year 1300, step to 1350, load the 1300 save, and the fifty
+# years of frontier that had opened up in `available` cost nothing at all,
+# because the ledger went back to 1300 and the knowledge did not. The fix
+# makes `revealed` a ratchet: assigning to it may grow what this running
+# session has seen, never shrink it - a property on FogMixin (engine/fog.py)
+# rather than a change to `load_state` itself, so the guarantee holds for
+# every caller that ever assigns `.revealed`, load_state included, without
+# needing to edit protocol.py. See the comment on the property.
+s_fog = sim(civ="rome_100ad")
+s_fog.fog = True
+s_fog.revealed = {"identity_cover"}
+_fog_save = os.path.join(ROOT, _PLAY_DIR, "fog_rewind.json")
+S.save_state(s_fog, _fog_save)                  # "before you paid for it"
+# Something completes and reveals what it leads to - the same thing
+# _complete() does in projects.py when a project actually finishes.
+s_fog.reveal_from("workshop_first")
+_fog_after = set(s_fog.revealed)
+check("(setup) building something under fog reveals what it leads to",
+      _fog_after > {"identity_cover"}, sorted(_fog_after))
+S.load_state(s_fog, _fog_save)                  # the rewind to before paying
+check("fog cannot be rewound: loading an earlier save keeps everything this "
+      "session has already seen, instead of refunding the look for free",
+      _fog_after <= s_fog.revealed, sorted(_fog_after - s_fog.revealed))
+# A GENUINELY FRESH RESUME - a new process loading someone's save as its very
+# first act, exactly what `--session` does - must be untouched by this: it has
+# seen nothing yet, so the union with nothing is exactly the file's own
+# contents, the same as before this fix existed.
+s_fresh = sim(civ="rome_100ad")
+s_fresh.fog = True
+s_fresh.revealed = set()
+S.load_state(s_fresh, _fog_save)
+check("a fresh resume still sees only what that save file actually recorded",
+      s_fresh.revealed == {"identity_cover"}, sorted(s_fresh.revealed))
+
+# --- SAVE INTEGRITY, JOB 2b: SAVE LOST ON A CLOSED PIPE. Two testers found,
+# independently and the same way, that a command's progress could be lost if
+# the process's own stdout closed mid-reply: `naive6/C/WEIRD_C.md` - "I lost
+# 12 years of play twice before I noticed, because I was piping output
+# through `head`" - and `naive5/C/WEIRD_C.md`, against the game's own promise
+# in `help sittings` that you can "close the terminal, anything" and come back
+# to exactly where you left off. `agent`'s stdin loop wrote the reply and
+# saved the session AFTER it, so a SIGPIPE on that write killed the process
+# before `save_state` ever ran, even though `_agent_dispatch` had already
+# mutated `s` in memory. The fix reorders it to save first, the same as
+# `play` already did; this proves it against the real subprocess, a real
+# closed pipe, and a real file on disk.
+_pipe_sess = os.path.join(ROOT, _PLAY_DIR, "closedpipe.json")
+if os.path.exists(_pipe_sess):
+    os.remove(_pipe_sess)
+_pp = subprocess.Popen(
+    [sys.executable, os.path.join(HERE, "simulator.py"), "agent",
+     "--civ", "rome_100ad", "--seed", "1", "--session", _pipe_sess],
+    stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+    text=True, cwd=ROOT)
+# Close OUR end of stdout before the child ever writes a single byte to it -
+# the same thing `| head -c0`, or a closed terminal, does to a running
+# process. Whatever the child writes after this has nowhere to go.
+_pp.stdout.close()
+try:
+    _pp.stdin.write(json.dumps({"cmd": "step", "years": 3}) + "\n")
+    _pp.stdin.close()
+except BrokenPipeError:
+    pass
+_pp.wait(timeout=60)
+try:
+    _pp.stderr.close()
+except Exception:
+    pass
+_pipe_saved = json.load(open(_pipe_sess))
+check("a command's progress is saved even when the reply that describes it "
+      "cannot be delivered because the reading end of the pipe is gone",
+      _pipe_saved.get("year") == 103, _pipe_saved.get("year"))
+
+# --- JOB 1: THE PLANNER. "Why is the sim a monte carlo sim? We know the end
+# state, right? Or is it too complex to just calculate backwards?" It is not
+# too complex: planner.py works backward from the goal by critical-path
+# method (CPM) over its prerequisite closure, instead of walking a
+# hand-written list. These checks pin the structural properties the measured
+# comparison (rome/playtest or the session report) depends on actually
+# holding, not just the one run that happened to be timed.
+_p_s = sim(civ="rome_100ad")
+_p_order, _p_c, _p_extras = PLANNER.backward_plan(NODES, GOAL, _p_s, side_branches=0)
+_p_need = PLANNER.closure(NODES, GOAL)
+check("the planner's closure matches `validate`'s own count for the goal",
+      len(_p_need) == len(_p_order), (len(_p_need), len(_p_order)))
+_p_zero = [k for k in _p_need if _p_c["slack"][k] <= 1e-6]
+_p_pos = {k: i for i, k in enumerate(_p_order)}
+check("every zero-slack (critical-path) node is ordered before every node "
+      "that has room to wait",
+      max(_p_pos[k] for k in _p_zero) < min(_p_pos[k] for k in _p_need
+                                            if _p_c["slack"][k] > 1e-6),
+      "critical nodes occupy positions 0-%d of %d" % (len(_p_zero) - 1, len(_p_order)))
+check("the critical-path total the planner computes matches `validate`'s "
+      "142-year figure for this tree",
+      abs(_p_c["total"] - S.critical_path(NODES, GOAL)[0]) < 1e-6,
+      (_p_c["total"], S.critical_path(NODES, GOAL)[0]))
+# A strategy file this module writes must reach the engine with no node ever
+# asked to start before its own prerequisite - the thing `load_strategy`'s
+# own `topo_stable` exists to guarantee for ANY strategy file, not only this
+# one, but the planner's raw CPM order is exactly the case that needs it:
+# slack is not monotonic along an edge (see the comment in planner.py), so
+# the unrepaired order has real violations, and this checks the repair that
+# reaches the engine removes every one of them.
+_p_path = os.path.join(ROOT, _PLAY_DIR, "planned_check.json")
+PLANNER.write_strategy(_p_path, "test", [], PLANNER.interleave(
+    _p_order, PLANNER.pick_side_branches(NODES, _p_need, _p_s, 12), 8))
+_p_label, _p_full, _p_bounties = S.load_strategy(_p_path, NODES, GOAL)
+_p_fullpos = {k: i for i, k in enumerate(_p_full)}
+_p_violations = [(p, k) for k in _p_need for p in NODES[k]["pre"]
+                 if p in _p_need and _p_fullpos.get(p, -1) > _p_fullpos.get(k, 10 ** 9)]
+check("a plan this module writes never asks the engine to start something "
+      "before its own prerequisite, once loaded the same way --strategy loads it",
+      not _p_violations, _p_violations[:5])
+check("the side branches a plan weaves in are all revenue-positive and none "
+      "is a technical prerequisite of the goal",
+      _p_extras is not None and all(
+          k not in _p_need and NODES[k]["rev"] > NODES[k]["up"]
+          for k in PLANNER.pick_side_branches(NODES, _p_need, _p_s, 12)),
+      PLANNER.pick_side_branches(NODES, _p_need, _p_s, 12)[:5])
+
+# A SEED IMPROVES TIES, IT DOES NOT OVERRIDE THE GRAPH. Proven on a tiny
+# synthetic DAG rather than the real tree, because the real tree (checked
+# directly) has no two unrelated nodes with identical slack AND identical
+# earliest-start - the tie-break is real but the live data never exercises it,
+# which is exactly the gap a synthetic case is for.
+_syn = {
+    "goal": {"pre": ["a", "b"], "yrs": 0, "ph": 0, "_total_cost": 0},
+    "a":    {"pre": [],         "yrs": 1, "ph": 0, "_total_cost": 10},
+    "b":    {"pre": [],         "yrs": 1, "ph": 0, "_total_cost": 10},
+}
+_syn_order1, _c1, _e1 = PLANNER.backward_plan(_syn, "goal", _p_s, seed_order=["b", "a"],
+                                              side_branches=0)
+_syn_order2, _c2, _e2 = PLANNER.backward_plan(_syn, "goal", _p_s, seed_order=["a", "b"],
+                                              side_branches=0)
+check("(setup) the synthetic pair is a genuine tie: equal slack and equal "
+      "earliest start, with no dependency between them",
+      _c1["slack"]["a"] == _c1["slack"]["b"] and _c1["es"]["a"] == _c1["es"]["b"],
+      (_c1["slack"], _c1["es"]))
+check("a seed order breaks a tie the critical path itself cannot call, "
+      "without needing to change when the seed agrees with the default",
+      _syn_order1.index("b") < _syn_order1.index("a")
+      and _syn_order2.index("a") < _syn_order2.index("b"),
+      (_syn_order1, _syn_order2))
+
+# --- refine() MUST MEASURE WHAT --strategy ACTUALLY LOADS, not its own raw,
+# unrepaired ~161-node order. The first version of refine() handed
+# `cur_order` straight to `Sim()`, skipping the `topo_stable` repair
+# `load_strategy` always applies - and since the raw CPM order has 132 real
+# topological violations (see the comment after `cpm` in planner.py), that
+# silently measured a different, broken order: a live check of one refine
+# round went from 0/3 trials reaching the goal to 3/3 the moment this was
+# fixed, against the IDENTICAL seeds and the identical starting order. This
+# pins the fix: `_repaired` must agree with what `load_strategy` returns for
+# the same order.
+_p_repaired = PLANNER._repaired(NODES, GOAL, _p_order)
+_p_label2, _p_expected, _p_b2 = S.load_strategy(
+    PLANNER.write_strategy(os.path.join(ROOT, _PLAY_DIR, "refine_check.json"),
+                           "test", [], _p_order),
+    NODES, GOAL)
+check("refine() measures a candidate order the same way --strategy loads it "
+      "(full tree, topo_stable-repaired), not its own raw closure-only list",
+      _p_repaired == _p_expected, (len(_p_repaired), len(_p_expected)))
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
