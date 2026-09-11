@@ -62,9 +62,17 @@ def _waiting_on(s, nodes, k, st, bill):
     """What is ACTUALLY holding this project up, checked against today."""
     n = nodes[k]
     frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
+    # WHAT IS LEFT OF EACH TRADE'S TOTAL, not the flat annual figure the
+    # project was once billed whether or not it was still owed. See
+    # ProjectsMixin.lab_year_draw (projects.py): hired-labour hours are a
+    # total drawn down over the project's life, so near the end of a trade's
+    # own balance the true ask is smaller than its nominal pace, and saying
+    # "short" against the bigger, already-paid-down figure would name a
+    # shortfall that no longer exists.
+    lab_left = st.get("lab_left") or n["lab"]
     short = []
     for t, want in (n["lab"] or {}).items():
-        need = want * frac
+        need = min(want / max(1.0, n["yrs"]), lab_left.get(t, want))
         if need <= 0:
             continue
         supply = s.hours_you_can_call_on(t)
@@ -3527,6 +3535,17 @@ def parse_typed(line):
             i += 1
         return out, None
 
+    if op == "open" and nums:
+        # A TRAILING NUMBER IS UNITS, NOT PART OF THE NAME. 'open
+        # school_founded 2' founds a second school - see
+        # ProjectsMixin._expand_institution. No id is only digits, so a
+        # number anywhere in the line is unambiguously this, not a stray word
+        # of a multi-word name.
+        want = " ".join(words)
+        if want not in NODE_IDS:
+            want = NODE_IDS_LOWER.get(want.lower(), want)
+        return {"cmd": "open", "id": want, "units": nums[-1]}, None
+
     if op in ("why", "path", "start", "stop", "bounty", "mothball",
               "restore", "open"):
         if not rest:
@@ -4934,7 +4953,13 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "error": "no such thing as %r%s"
                              % (k, (". did you mean: " + ", ".join(near))
                                 if near else "")}
-        ok, msg = s.open_venture(k)
+        # UNITS: HOW A PLAYER FOUNDS A SECOND SCHOOL. See
+        # ProjectsMixin.open_venture / _expand_institution (projects.py). A
+        # call with no "units" field behaves exactly as it always has.
+        _units = cmd.get("units")
+        if _units is not None and not isinstance(_units, (int, float)):
+            return {"ok": False, "error": "units must be a number"}
+        ok, msg = s.open_venture(k, units=_units)
         if not ok:
             return {"ok": False, "error": msg}
         # The single rule `help` calls out as the one that catches everybody -
@@ -5358,6 +5383,12 @@ SAVE_FIELDS = (
     # ever been written would go empty on resume and `state` would silently
     # stop being able to say it - see _founder_death_info.
     "_founder_death_aged", "_founder_death_year",
+    # HOW MANY UNITS OF EACH SCALABLE INSTITUTION ARE ACTUALLY FOUNDED. See
+    # ProjectsMixin.institution_units (projects.py): a save missing this
+    # entirely - every save from before institutions were quantities - is
+    # read as every open one being exactly 1.0 unit, which is exactly what it
+    # always was, so an old save resumes unchanged.
+    "inst_units",
 )
 
 

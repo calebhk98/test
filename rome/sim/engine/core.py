@@ -1057,8 +1057,13 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     continue
                 if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
                     continue
+                # lab_left starts full here too, for the same reason
+                # start_project (projects.py) sets it at creation rather than
+                # leaving lab_year_draw to guess it from ph_left the first
+                # time it runs - see the comment there.
                 self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
-                                      cost_left=self.project_cost(k))
+                                      cost_left=self.project_cost(k),
+                                      lab_left=dict(n["lab"]))
 
         # 4c. materials. Buy the woodland and dig the beds BEFORE the shortage
         #     bites, which is what a competent manager does and what the old
@@ -1108,10 +1113,19 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # mine sized for the 13 tonnes of bar, stayed throttled for
                 # centuries, and ended with its capital untouched.
                 dem = self.annual_material_demand()
-                keys = {"coal": ("coal_kg",),
-                        "iron": ("iron_bar_kg", "iron_ore_kg"),
-                        "copper": ("copper_kg",), "lead": ("lead_kg",),
-                        "tin": ("tin_kg",), "silver": ("silver_kg",)}[self.binding]
+                # DERIVED FROM MATERIAL_CHECKS, not a second hand-kept copy of
+                # it. This was a literal dict, and the moment copper wire,
+                # drawn wire and gold were added to MATERIAL_CHECKS - so that
+                # 36 electrical nodes and the central bank's thousand
+                # kilograms could be throttled at all - a Rome run died with
+                # KeyError: 'gold' the first year gold was the binding
+                # material. Two lists of the same thing is one list too many,
+                # and the regression suite could not catch it because no check
+                # runs a long enough optimizer game to make gold bind.
+                # sorted(), because this feeds a float sum.
+                keys = tuple(sorted(kk for kk, (bucket, _tag)
+                                    in self.MATERIAL_CHECKS.items()
+                                    if bucket == self.binding))
                 short = sum(dem.get(kk, 0.0) for kk in keys)
                 want = max(0.0, short - self.mine_capacity.get(self.binding, 0.0))
                 self.open_mine(self.binding, min(want, self.capital * 0.25
@@ -1238,30 +1252,26 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # of labourer were the same resource. They are not, and the wage
                 # table has said so all along. What binds now is the scarcest
                 # trade this project actually needs.
-                hh = n["_hired_hours"] * frac
-                worst = 1.0
-                for t, want in n["lab"].items():
-                    need = want * frac
-                    if need <= 0:
-                        continue
-                    have = (self.hours_you_can_call_on(t)
-                            - self.trade_hours_used.get(t, 0.0))
-                    if need > have:
-                        worst = min(worst, max(0.0, have) / need)
+                #
+                # HOURS ARE A TOTAL AND A CEILING NOW, NOT A FIXED ANNUAL TOLL.
+                # See ProjectsMixin.lab_year_draw (projects.py) for the finding
+                # that forced this and the reasoning behind the new shape; this
+                # call site only has to act on what it returns.
+                hh, worst, frac, _abandon = self.lab_year_draw(k, st, frac, hired_left)
+                if _abandon:
+                    self.log.append((yr, "ABANDONED %s: %s" % (k, _abandon)))
+                    self.active.pop(k, None)
+                    self.bountied.discard(k)
+                    continue
                 if worst < 1.0:
-                    frac *= worst
-                    hh *= worst
                     # NEVER ALL OF IT. The refund says "hours offered but not
                     # usable, because the trade was booked" - and with no floor
                     # under it, it could hand back every hour that had actually
-                    # gone in. `logarithms` wants 10,000 scribe-hours a year in
-                    # a society that can field 8,750, so worst is 0.875: a
-                    # break tester watched its founder-hours sit at exactly 5.0
-                    # for ever, the bill fully paid, the calendar long past,
-                    # making no progress at all while holding the entire scribe
-                    # pool and freezing eight other projects behind it - one of
-                    # them scientific_method, a 230-denarius node startable in
-                    # year 100 and still unbuilt in 600 AD with 10.6M in hand.
+                    # gone in. A break tester watched a project's founder-hours
+                    # sit unchanged for ever because its scarcest trade was
+                    # short, the bill fully paid, the calendar long past, making
+                    # no progress at all while holding an entire trade's pool
+                    # and freezing other projects behind it.
                     #
                     # If a fraction `worst` of the work could be done, then a
                     # fraction `worst` of it WAS done, and that much can never
@@ -1277,16 +1287,9 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     # denarii left to pay, and reasonably concluded the spend cap
                     # was broken. It was not: the trades those projects needed
                     # were fully booked, so almost nothing could be paid FOR. The
-                    # mechanic was right and the label was a lie.
-                    st["short_of_trade"] = sorted(
-                        t for t, wnt in n["lab"].items()
-                        if wnt > 0 and (self.hours_you_can_call_on(t)
-                                        - self.trade_hours_used.get(t, 0.0)) < wnt * frac)[:3]
-                else:
-                    st.pop("short_of_trade", None)
-                for t, want in n["lab"].items():
-                    self.trade_hours_used[t] = (self.trade_hours_used.get(t, 0.0)
-                                                + want * frac)
+                    # mechanic was right and the label was a lie. (short_of_trade
+                    # itself is now set inside lab_year_draw, against the same
+                    # pace this comment describes.)
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
                     hh = hired_left
