@@ -7222,7 +7222,7 @@ A woman in the department office finally reads the whole folder, not just the to
 
 The woman repeats that it's the placement anyway, and offers her a pamphlet about tutoring resources that stays on the counter after Ruth leaves. Ruth keeps the folder. The mistake, she decides, is bigger than one office can fix, something upstream of advising and the registrar both. Ruth puts it in the folder under problems she'll solve once she works out who actually owns them.
 
-The classes themselves settle into a shape she recognizes from the middle years at Halstead: a problem set due Friday that takes her forty minutes on a Tuesday, a lecture that spends fifty minutes proving something she could prove in three. In recitation, half the room is still copying the professor's board by the time she's already checked her answer against the back of the book. Out of habit, not ambition, she sits in the third row, and finishes early enough most weeks to read ahead into the following week before the hour is up. When a preceptor hands back a problem set with a perfect score and no comment, she catches him at the door of the section room before he can leave and asks him straight whether a class this easy is normal for the room or just for her. He says he hasn't graded enough of these to know yet, and goes back to his stack. She reads the shrug as confirmation anyway: a correct answer earns silence, and so does a class already pitched at the right level for the room. The reading stays two weeks ahead so she'll have something to do once it catches up.
+The classes themselves settle into a shape she recognizes from the middle years at Halstead: a problem set due Friday that takes her forty minutes on a Tuesday, a lecture that spends fifty minutes proving something she could prove in three. In recitation, half the room is still copying the professor's board by the time she's already checked her answer against the back of the book. Out of habit, not ambition, she sits in the third row, and finishes early enough most weeks to read ahead into the following week before the hour is up. When a preceptor hands back a problem set with a perfect score and no comment, she catches him at the door of the section room before he can leave and asks him straight whether a class this easy is normal for the room or just for her. He says he hasn't graded enough of these to know yet, and goes back to his stack. She reads the shrug as confirmation anyway: a correct answer earns silence, and so does a class already pitched at the right level for the room. The reading stays two weeks ahead of the syllabus and no further: nothing outside it goes in the folder.
 
 By November the study group meets in a fourth-floor common room with a whiteboard that only ever gets erased halfway and a couch that smells faintly of the microwave popcorn someone burns most Tuesdays. They are spread across the low table most weeks with problem sets open, some of them still eating, and Ruth has usually finished her own work early enough to be checking somebody else's arithmetic before anyone asks her to.
 
@@ -7260,9 +7260,9 @@ The proof gets fixed, the thanks given, and then, halfway to the door with his b
 
 The tally she keeps is private: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
 
-A professor breaks it: she likes him, genuinely; in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
+A professor breaks it: she likes him, genuinely; in office hours he stops her three steps into an explanation and won't let her go on until she spells out what she skipped.
 
-His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes. She likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
+His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. She likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only professor here who has pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
 
 "Stop me there. Go back to the sign convention and write out the two lines you skipped between it and the boundary term." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 
@@ -7290,7 +7290,7 @@ Ruth thanks him, packs the loose pages into her folder in the wrong order, and l
 
 Ruth walks out and sits on a wall until the light changes twice.
 
-It's more than what he said. It's that somebody her own age, sharper than most of the room and thoroughly ordinary by the standard she's always used, would have needed two tries at what took her five. Once she's up off the wall she walks past the dorm and leaves her phone in her pocket. The walk takes her past the dining hall and into the library, to a terminal, and to the number instead of the excuse.
+It's more than what he said. It's that somebody her own age, sharper than most of the room and thoroughly ordinary by the standard she's always used, would have gotten there in two of the five passes he needed. Once she's up off the wall she walks past the dorm and leaves her phone in her pocket. The walk takes her past the dining hall and into the library, to a terminal, and to the number instead of the excuse.
 
 Over the following months she goes and finds the numbers herself, and they all say it, each worse than the one before.
 
@@ -7300,11 +7300,11 @@ The rest of them she works through like that, at a carrel on the fourth floor wi
 
 Second language. Reading level. Fractions. Each one she posts into the chat, and each time she watches somebody make a joke inside a minute and move on.
 
-What she types out is fuller than what she actually posts: drafts that spell out the methodology, the sample size, why this is different from the Portuguese class she sat all last year and finished in the bottom third of. Most of the drafts die unsent, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
+What she types out is fuller than what she actually posts: drafts that spell out the methodology, the sample size, why this is different from the advanced Portuguese class of native speakers she sat all last year and finished in the bottom third of. Most of the drafts die unsent, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
 
 In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 
-After that the chat stays open on her phone as always, the unread count climbing the way it does for everyone during finals. Every message gets read, but barely any get answered. Reading is free. Answering commits her to a version of herself still too unfinished to defend out loud, not even to people who've known her twelve years and would, she suspects, take it better than a room of strangers ever did.
+After that the chat stays open on her phone as always, the unread count climbing the way it does for everyone during finals. Every group message gets read, but barely any get answered. Reading is free. Answering commits her to a version of herself still too unfinished to defend out loud, not even to people who've known her twelve years and would, she suspects, take it better than a room of strangers ever did.
 
 ________________
 
@@ -7685,13 +7685,13 @@ They open it in seven different places, each at a different hour, each of them a
 
 There is a file on all ninety-one of them. Every page carries the same header first: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
-Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop carefully, like something that might spill, and go outside for twenty minutes before he comes back in. He opens the group thread first and types "mine has a name in it I already know," and sends it before he can talk himself out of it. Sam answers inside a minute, one line, whose name, and Theo does not tell him. He keeps reading from the line he left off on. That's the whole account anyone else gets of it.
+Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop carefully, like something that might spill, and go outside. He opens the group thread first and types "mine has a name in it I already know," and sends it before he can talk himself out of it. Sam answers inside a minute, one line, whose name, and Theo does not tell him. That's the whole account anyone else gets of it.
 
 The rest of theirs sit somewhere between those. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the company at that point three rooms over a laundromat, the documents stitched together by an analyst who managed to spell her name differently on each page. Eli's notes, in the flat voice of everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of them, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, a few lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease on the apartment she's sitting in right now.
 
-The oldest pages in the file are typed and then scanned, the paper stock visible through the scan the way an old photograph keeps its own grain no matter how many times it's copied. Every file starts with a name, a date, a single photograph taken outside a building none of the analysts have ever set foot inside, and a line noting that contact with the family went no further than the one letter. Thirteen years of updates sit stacked under that first page, thicker in some years than others. The thickness itself is dated.
+The oldest pages in the file are typed and then scanned, the paper stock visible through the scan the way an old photograph keeps its own grain no matter how many times it's copied. Every file starts with a name, its own date, a single photograph taken outside a building none of the analysts have ever set foot inside, and a line noting that contact with the family went no further than the one letter. Thirteen years of updates sit stacked under that first page, thicker in some years than others. The thickness itself is dated.
 
-There's a standing line saying the graduates are believed to be in contact with one another. The line has been rewritten again and again since the file was opened, each version keeping the sentence and changing only the date stamped under it, so that reading down the margin is like watching the same paragraph get retyped once a year by a clerk who has stopped expecting the retyping to change anything. Different initials sign off at the bottom of each version, the handwriting changing often enough across them that whole careers appear to have opened and closed against the one unmoving sentence. The file lists the method as unknown, and collection against the channel comes back empty every time it's tried, but the recommendation is still to keep attempting it. Kavi reads that part twice, the second time slower, the pen in his hand going still for exactly as long as it takes him to get through the sentence about collection failing, and then it starts turning again.
+There's a standing line saying the graduates are believed to be in contact with one another. The line has been rewritten again and again since the file was opened, the word changing once, from students, the year the first class left, and after that only the date stamped under it, so that reading down the margin is like watching the same paragraph get retyped once a year by a clerk who has stopped expecting the retyping to change anything. Different initials sign off at the bottom of each version, the handwriting changing often enough across them that whole careers appear to have opened and closed against the one unmoving sentence. The file lists the method as unknown, and collection against the channel comes back empty every time it's tried, but the recommendation is still to keep attempting it. Kavi reads that part twice, the second time slower, the pen in his hand going still for exactly as long as it takes him to get through the sentence about collection failing, and then it starts turning again.
 
 And there's an incident report from four years back.
 
@@ -7701,11 +7701,11 @@ Seven men come across the car park to rob them. Three of the men are carrying fi
 
 None of the men agrees with the others about the order of it. But they agree it was fast, that one of the students did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 
-The one number in the report that matches exactly what Ruth already had was the time: twenty-two seconds, first word to the last man down, agreed on by all of them, the only detail in the account that was.
+The one number in the report that matches exactly what Ruth already had was the time: twenty-two seconds, first word to the last man down, taken off the gap in the footage instead of out of anyone's memory, the only precise thing in the account.
 
 All of them come back with a blank on what the students looked like.
 
-Chloe reads that line as a translation problem, working out whether *blank* means they genuinely can't picture the faces or only that none of the faces matched anything they'd expected a face like that to look like. The file leaves that open and moves straight to the next paragraph, the level pace it has kept from the first page, as though the distinction were beneath a separate sentence.
+Chloe reads that line as a translation problem, working out whether *blank* means they genuinely can't picture the faces or only that none of the faces matched anything they'd expected a face like that to look like. The file leaves that open and moves straight to the next part, the level pace it has kept from the first page, as though the distinction were beneath a separate sentence.
 
 Then the last paragraph. Footage was sought from the Waffle House, the units either side, a traffic camera, and a municipal camera up the road. All of it is unrecoverable wherever the students appear, but intact everywhere else. No known method.
 
@@ -7733,7 +7733,7 @@ sam: we were so bad that night
 
 ________________
 
-Ruth reads the paragraph about the box a third time before she types anything, then sets her phone face-down on the floor beside her, then picks it back up and posts a line.
+Ruth reads the paragraph about the footage a third time before she types anything, then sets her phone face-down on the floor beside her, then picks it back up and posts a line.
 
 ruth: i built that box in about a weekend so we wouldnt get detention
 
@@ -7769,7 +7769,7 @@ ruth: yes
 
 Chloe reads yes twice before anyone types again, and in the gap she gets up from the desk and pours a glass of water, her hands needing something else to be doing while she waits to see who goes next. Nadia, back at the counter with the shop's lights off around her, reads that silence and stays exactly where she's standing, arms folded, phone propped against the register.
 
-On the page about who is in contact with whom, Chloe and Nadia sit in the same list under the same date. Sam has been between them at every table since they were children and the file has no way of knowing it, so the two of them appear side by side in it. It is not wrong any more.
+On the page about who is in contact with whom, Chloe and Nadia sit in the same list under the same date. Sam has been between them at every table since they were children and the file has no way of knowing it, so the two of them appear side by side in it.
 
 ruth: i keep saying we're ahead
 
@@ -7793,7 +7793,7 @@ eli: ruth i dont know
 
 eli: i have never once been at the top of a room in my life
 
-The chat sits on that line for a while. At his kitchen table Eli sets the phone down on the wood, screen up, and keeps the tap going against the table's edge, the rhythm holding steady throughout, neither faster nor slower than it was before. Ruth leaves her phone where it landed on the floor of the lab and looks at the ceiling for a while, the file still open behind her on the bench, on that page, exactly as unexplained now as it was the first time she read it, years before she ever found out the file existed at all. On Chloe's desk, half a country away, she types into the empty box.
+The chat sits on that line for a while. At his kitchen table Eli sets the phone down on the wood, screen up, and keeps the tap going against the table's edge, the rhythm holding steady throughout, neither faster nor slower than it was before. Ruth leaves her phone where it landed on the floor of the lab and looks at the ceiling for a while, the file still open behind her on the bench, on that page, exactly as unexplained now as it was the night it happened, years before she ever knew the file existed at all. On Chloe's desk, she types into the empty box.
 
 chloe: were about to find out
 
@@ -7808,11 +7808,11 @@ Outside his own apartment, a few blocks from the federal building he'll be back 
 
 *June 2026 – July 2026*
 
-The worm goes quiet on a Thursday in June.
+The financial worm goes quiet on a Thursday in June.
 
-Eli is at the second desk in the corner of the apartment when it happens, the one built for the project rather than for the job that pays him. The job that pays him wants a body at a downtown desk five days a week, but this job only wants results, and leaves him alone to get them. A terminal sits tuned low in a window while he works on something else entirely, a habit left over from every all-nighter of the last few years. The rest of the apartment is dark. This corner is the only light on in the place at this hour. The tool has run for over a year on a schedule he tuned himself to sit inside the noise floor of an ordinary reconciliation job, checking in with a couple of lines every time, faster than it takes to read them. When the check-in misses its window, he lets it sit there for a moment before he does anything about it. A router resets somewhere on the far side of the planet often enough, a scheduler stutters, and the thing usually catches itself inside a minute, quietly, the way it always has. The sentence he's typing gets finished first, the two-finger tap against the desk edge running ahead of it the way it always does, before he looks back at the corner where the report should already be sitting.
+Eli is at the second desk in the corner of the apartment when it happens, the one built for the project rather than for the job that pays him. The job that pays him wants a body at a downtown desk five days a week, but this job only wants results, and leaves him alone to get them. A terminal sits tuned low in a window while he works on something else entirely, a habit left over from every all-nighter of the last few years. The rest of the apartment is dark. This corner is the only light on in the place at this hour. The tool has run since the winter on a schedule he tuned himself to sit inside the noise floor of an ordinary reconciliation job, checking in with a couple of lines every time, faster than it takes to read them. When the check-in misses its window, he lets it sit there for a moment before he does anything about it. A router resets somewhere on the far side of the planet often enough, a scheduler stutters, and the thing usually catches itself inside a minute, quietly, the way it always has. The sentence he's typing gets finished first, before he looks back at the corner where the report should already be sitting.
 
-A check-in doesn't arrive. But nine minutes later, everything is precisely where it should be. State, position, byte for byte what it was.
+A check-in doesn't arrive. But nine minutes later, the report reads exactly as it always does: state, position, byte for byte what it was.
 
 The gap reads as a question rather than a verdict. It is long enough to matter but short enough that a dozen ordinary explanations could cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs are opened instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, and logs that agree read closer to a fact.
 
@@ -7820,9 +7820,9 @@ Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywh
 
 Page five of the document defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. The page is open in the next window before he's finished reading the logs a second time, and he reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All of the logs describe what they have always described: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the thread where Kavi is.
 
-Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the window.
+Kavi's watcher, built to catch anything he could think to make it watch for, reports a healthy process across the window.
 
-It's three in the morning where Kavi actually is, an hour that has always registered to him as perfectly ordinary. He's awake anyway when Eli's message lands, on the steady schedule he's kept since he was a student in the building he still hasn't left. He built the watcher specifically to distrust a clean log; that exact shape of quiet was the design brief. Pulling its own report doesn't feel like checking a tool. It feels like rereading his own handwriting, checking for a lie he'd have had to tell himself first. But the handwriting comes back clean. The watcher logged a continuous, unremarkable process for the entire window, the report it would generate on the calmest night the tool has ever had. Kavi squares the pen on his desk against its mark, then starts reading his own code instead of the log, on the reasoning that if the report is wrong, the reason will be in there and only there. The list he keeps is for questions that have sat unanswered for years, not hours, so this stays off it for now. The file stays open on the desk when he finally goes to sleep, the one concession he makes to how much he'd rather have the answer.
+It's three in the morning where Kavi actually is, an hour that has always registered to him as perfectly ordinary. He's awake anyway when Eli's message lands, on the steady schedule he's kept since he was a student in the building he still hasn't left. He built the watcher specifically to distrust a clean log; that exact shape of quiet was the design brief. Pulling its own report doesn't feel like checking a tool. It feels like rereading his own handwriting, checking for a lie he'd have had to tell himself first. But the handwriting comes back clean. The watcher logged a continuous, unremarkable process for the entire window, the report it would generate on the calmest night the tool has ever had. Kavi starts reading his own code instead of the log, on the reasoning that if the report is wrong, the reason will be in there and only there. The list he keeps is for questions that have sat unanswered for years, not hours, so this stays off it for now. The file stays open on the desk when he finally goes to sleep, the one concession he makes to how much he'd rather have the answer.
 
 eli: somebody stopped it and started it and cleaned up after themselves well enough that the cleanup isnt there either
 
@@ -7860,7 +7860,7 @@ eli: hes not signalling. he made a mistake
 
 eli: hes very slightly wrong about how good we are
 
-By the third time the days are properly hot, the kind of July that makes the apartment's one window unit useless past noon. This one lands in the flat hour of the afternoon, when the street outside goes quiet and even the fan seems to labor at it. Eli catches the missed check-in before Kavi's watcher does, the two-finger tap against the desk edge stopping mid-beat when he notices the empty line where the report should already be sitting. The gap runs longer than it has before, past where it usually settles, but then the report lands anyway: state, position, byte for byte unchanged, exactly as every time before it. Shirt off, he works through the rest of the day anyway, the fan aimed at the back of his neck instead of the screen, the tap keeping its own rhythm against the desk edge whether or not anybody's there to see him doing it.
+By the third time the days are properly hot, the kind of July that makes the apartment's one window unit useless past noon. This one lands in the flat hour of the afternoon, when the street outside goes quiet and even the fan seems to labor at it. Eli catches the missed check-in before Kavi's watcher does, the two-finger tap against the desk edge stopping mid-beat when he notices the empty line where the report should already be sitting. The gap runs longer than it has before, past where it usually settles, but then the report lands anyway: state, position, byte for byte unchanged, exactly as every time before it. Shirt off, he works through the rest of the day anyway, the fan aimed at the back of his neck instead of the screen.
 
 ________________
 
@@ -7890,7 +7890,7 @@ eli: and if hes not even watching that closely and you just taught him we lie to
 
 ruth: fine
 
-kavi: i can tighten the watchers sampling without changing anything he can see. same output on his end, closer look on ours
+kavi: i can tighten the watchers sampling without changing anything he can see. nothing changes at his end, closer look at ours
 
 eli: do that much
 
@@ -7927,7 +7927,7 @@ At four in the morning she comes back, whichever one she is standing in.
 
 priya: does anyone know why the government cares about the school
 
-priya: i have spent a month working out who i annoyed and the only thing left on the list is a building i left four years ago
+priya: i have spent a month working out who i annoyed and the only thing left on the list is a building i left three years ago
 
 ruth: what happened
 
@@ -7965,11 +7965,11 @@ priya: a good fifteen
 
 priya: but nobody did anything advanced. not once, not one thing i have not had done to me on a mat
 
-Eli reads that standing at a kitchen counter with the kettle going behind him, and leaves the kettle to boil itself dry.
+Eli reads that standing at a kitchen counter with the kettle whistling on the stove behind him, and leaves it to boil dry.
 
 priya: they had guns from the start and left them alone until i was already through the line and moving, which was about thirty in
 
-priya: the two i took off the grass went into the engine blocks of the only vehicles on that side of the field, because the alternative was outrunning a van on a farm track
+priya: the two guns i took off the grass went into the engine blocks of the only vehicles on that side of the field, because the alternative was outrunning a van on a farm track
 
 priya: i took them off the grass on the way past. i was not crossing a field empty handed
 
@@ -7999,7 +7999,7 @@ priya: they are american. they say agency and they will not say which one
 
 priya: four days and i have almost nothing out of the pair of them so far. about what i expected
 
-priya: it is also a great deal less than i expected. i cannot get those two to sit together
+priya: it is also a great deal less than i expected. i cannot get their two stories to agree
 
 priya: what they will say, over and over, is that it was me they came for. by name, off a list somebody handed them
 
@@ -8011,7 +8011,7 @@ priya: read it how
 
 kavi: long story and you have been in a field
 
-nadia: the short version is that it was not a normal school, and somebody has been keeping paper on what came out of it since before any of us started
+nadia: the short version is that it was not a normal school, and somebody has been keeping paper on what came out of it since we were kids
 
 priya: then tell me why seventy-five was the number, because whoever picked seventy-five was working off something
 
@@ -8039,7 +8039,7 @@ priya: ruth i finished sixty-fourth out of ninety-one. bottom third four years r
 
 priya: but thank you for the heads up, genuinely
 
-Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, but what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
+Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, but what arrives is the name and number of an intake form, which Priya thanks him for and leaves alone.
 
 priya: although
 
@@ -8051,13 +8051,13 @@ priya: which is a much more useful question than the one i came in with
 
 Ruth finishes the arithmetic she started an hour earlier and posts it without softening it.
 
-ruth: seventy-five people across a field is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it at once
+ruth: seventy-five people, arm's length apart, is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it straight through
 
 Nobody answers it for a long time, and she does not say it a second way.
 
 Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is a form number she saw once already that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
+In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number she saw that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
 
 The ranking goes unmentioned after that. Nadia asks, days later, only to Priya, whether she wants company in the yard with her for a while, but gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave, and Priya tells him the flights are absurd, but he offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, a bolt on the inside of the outer door, a second way out that isn't the stair, a chair braced under the handle rated for more weight than the door itself, most of which she had already done before it arrived.
 
