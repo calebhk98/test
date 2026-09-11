@@ -13,6 +13,7 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    STARTING_KITS, trade_family, closure, critical_path,
                    topo_order, load, load_civ, haversine_km,
                    load_geography, load_resources)
+from . import commodities as _commod
 
 
 class EconomyMixin:
@@ -1257,8 +1258,13 @@ class EconomyMixin:
     # one number: charcoal is bulky, crumbles when carted, and is therefore a
     # LOCAL commodity no matter how much of it the empire makes in total, while
     # coal is barely used by anyone so you can have almost all of it.
+    # gold's 0.01 is not re-guessed: it is commodities.json's own gold entry
+    # (market_share, already reasoned there against the same imperial-mint
+    # scarcity that makes MARKET_SHARE["silver"] this low), so the two files
+    # agree on how tightly a private buyer can get at the metalla's gold.
     MARKET_SHARE = {"charcoal": 0.002, "iron": 0.03, "copper": 0.03, "lead": 0.03,
-                    "tin": 0.05, "silver": 0.01, "coal": 0.50, "saltpetre": 0.0}
+                    "tin": 0.05, "silver": 0.01, "coal": 0.50, "saltpetre": 0.0,
+                    "gold": 0.01}
 
     # Coke and charcoal are not interchangeable at one kg for one kg. A charcoal
     # blast furnace burns about 3 kg of charcoal per kg of iron; a coke furnace
@@ -1321,16 +1327,38 @@ class EconomyMixin:
     # which tracked commodity, and how "your own supply of it" is computed.
     # Factored out of resource_throttle so material_price_factor() below reads
     # the identical figures rather than a second guess at them.
+    #
+    # copper_wire_kg and wire_drawn_kg were UNTHROTTLED before this: 36 real
+    # nodes (the whole el2_ electrical branch, plus gp_magnet_wire_enamelled,
+    # hom_piano, en_rotary_converter...) drew drawn copper wire and none of it
+    # ever competed with copper_kg for the same finite copper supply. This is
+    # precisely the gap COMMODITIES.md section 7 names as "the real test":
+    # wire is copper, drawn, and rome/data/world/commodities.json's own
+    # copper_wire recipe (a 5% drawing loss) already says so -- see
+    # wire_chain_report() below, which asks that exact question against this
+    # civilisation's real copper numbers via commodities.py's
+    # propagate_demand(). gold_kg (fin_central_bank's 1000 kg, tx2_watch_case,
+    # the gold-leaf electroscope) was also untracked despite Sim.open_mine
+    # already supporting a gold mine (MINE_CAPEX_PER_T_YR) and
+    # resources.json already carrying an empire gold figure (9 t/yr) --
+    # nothing wired the two together. gold_g (LEDs, transistors: 1-20 grams)
+    # stays out: annual_material_demand() assumes every *_kg key is
+    # kilograms, so a *_g key divided by 1000 would read as a thousandth of
+    # what it is, an error too small to matter at these gram quantities but
+    # wrong in principle, so it is left alone rather than quietly misread.
     MATERIAL_CHECKS = {
         "charcoal_kg": ("charcoal", "forest1"),
         "firewood_kg": ("charcoal", "forest4"),
         "iron_bar_kg": ("iron", "mine:iron"),
         "iron_ore_kg": ("iron", "mine:iron"),
         "coal_kg":     ("coal", "mine:coal"),
-        "copper_kg":   ("copper", "mine:copper"),
+        "copper_kg":       ("copper", "mine:copper"),
+        "copper_wire_kg":  ("copper", "mine:copper"),
+        "wire_drawn_kg":   ("copper", "mine:copper"),
         "lead_kg":     ("lead", "mine:lead"),
         "tin_kg":      ("tin", "mine:tin"),
         "silver_kg":   ("silver", "mine:silver"),
+        "gold_kg":     ("gold", "mine:gold"),
         "nitre_kg":    ("saltpetre", "nitre"),
     }
 
@@ -1384,6 +1412,38 @@ class EconomyMixin:
             market += 60.0
         return market
 
+    def _demand_by_supply_tag(self, demand):
+        """Group MATERIAL_CHECKS demand by (emp_key, tag) -- i.e. by which
+        SHARED supply it actually draws on -- instead of leaving it split by
+        raw material key.
+
+        Before this, resource_throttle() and material_price_factor() both
+        checked each material key against the WHOLE of its supply
+        independently: iron_bar_kg's need was compared to the full iron
+        supply, then iron_ore_kg's need was compared to that SAME full
+        supply again, as though each had it to itself. A plan needing 5 t/yr
+        of ore and 4 t/yr of bar against a 6 t/yr supply passed both checks
+        (neither 5 nor 4 alone exceeds 6) while actually needing 9 -- fifty
+        per cent more than there is. Adding copper_wire_kg and wire_drawn_kg
+        to MATERIAL_CHECKS without fixing this would have made it worse: a
+        wire-heavy electrical age could show copper as fully supplied by
+        three separate lies at once. Grouping by (emp_key, tag) sums every
+        material key that draws on the SAME pool (iron_bar_kg + iron_ore_kg;
+        now copper_kg + copper_wire_kg + wire_drawn_kg) while keeping
+        charcoal_kg and firewood_kg separate, because they draw on the same
+        forest at DIFFERENT yields per hectare (forest1 vs forest4, see
+        _own_material_supply) and are not simply additive tonne-for-tonne.
+        sorted(): a Counter keyed by tuples is still a dict, and the
+        determinism convention here is to iterate sorted regardless of
+        whether dict insertion order already happens to be safe, so a caller
+        cannot inherit a bug by copying this pattern into a place where it
+        is not.
+        """
+        by_tag = collections.Counter()
+        for mat, pair in sorted(self.MATERIAL_CHECKS.items()):
+            by_tag[pair] += demand.get(mat, 0.0)
+        return by_tag
+
     def resource_throttle(self):
         """How much of this year's planned work the materials will actually support.
 
@@ -1402,8 +1462,7 @@ class EconomyMixin:
         # already true of price_index, self.economy and self.throttle itself.
         demand = self._material_demand_cache = self.annual_material_demand()
         worst, who = 1.0, None
-        for mat, (emp_key, tag) in self.MATERIAL_CHECKS.items():
-            need = demand.get(mat, 0.0)
+        for (emp_key, tag), need in sorted(self._demand_by_supply_tag(demand).items()):
             if need <= 0:
                 continue
             supply = self._own_material_supply(tag) + self._material_market_tonnes(emp_key)
@@ -1442,17 +1501,20 @@ class EconomyMixin:
         "the price of iron fell because supply rose": opening a mine lowers
         what iron costs YOU, specifically because you stop having to buy it
         at the margin.
+
+        Groups demand the same way resource_throttle() now does
+        (_demand_by_supply_tag): the same "checked each key alone" gap
+        applied here too, understating the price pressure of a wire-heavy
+        electrical age on copper by looking at copper_kg's share in
+        isolation from copper_wire_kg's.
         """
         if emp_key not in self.MARKET_SHARE:
             return 1.0
         demand = self._cached_material_demand()
         market = self._material_market_tonnes(emp_key)
         worst = 1.0
-        for mat, (ek, tag) in self.MATERIAL_CHECKS.items():
-            if ek != emp_key:
-                continue
-            need = demand.get(mat, 0.0)
-            if need <= 0:
+        for (ek, tag), need in sorted(self._demand_by_supply_tag(demand).items()):
+            if ek != emp_key or need <= 0:
                 continue
             supply = max(1e-9, self._own_material_supply(tag) + market)
             share = min(1.5, need / supply)
@@ -1479,6 +1541,33 @@ class EconomyMixin:
             total_kg += q
             weighted += q * self.material_price_factor(emp_key)
         return (weighted / total_kg) if total_kg else 1.0
+
+    def wire_chain_report(self, wire_t_per_yr):
+        """Would THIS shortfall in copper wire actually be a copper shortage,
+        or is the wire-drawing bench itself the bottleneck? Named against a
+        real link in the tree (el2_three_wire_distribution_system alone
+        wants 5 t of copper_wire_kg in one build; the whole electrical
+        branch wants far more), because resource_throttle()'s `binding` can
+        only ever say "copper" -- it has no notion that copper_wire_kg is
+        COPPER, manufactured, not a second independent shortage.
+
+        This is `commodities.py`'s `CommodityLedger.propagate_demand()`
+        (COMMODITIES.md section 7, "the real test": a chained shortage
+        attributed to whichever link actually broke), handed THIS
+        civilisation's actual reachable copper -- resource_throttle()'s own
+        `_own_material_supply("mine:copper") + _material_market_tonnes
+        ("copper")` -- via `supply_override`, instead of
+        commodities.json's own separate national estimate. The two
+        happen to agree for Rome (both read from the same
+        resources.json/economy.py MARKET_SHARE figures) but would not for a
+        civilization with a different mineral_scale, which is exactly why
+        overriding with the live number rather than trusting the static one
+        matters.
+        """
+        supply_t = (self._own_material_supply("mine:copper")
+                    + self._material_market_tonnes("copper"))
+        ledger = _commod.CommodityLedger(supply_override={"copper": supply_t})
+        return ledger.propagate_demand("copper_wire", max(0.0, float(wire_t_per_yr)))
 
     # Capital to create one tonne per year of standing extraction capacity, and
     # the recurring cost of actually getting that tonne out. DERIVED, not
@@ -1742,9 +1831,16 @@ class EconomyMixin:
                        "{:,.2f}".format(self.NITRE_COST_PER_M2 * self.price_index)))
         if binding in self.MINE_CAPEX_PER_T_YR:
             dem = self.annual_material_demand()
+            # SAME GROUPING resource_throttle() uses (_demand_by_supply_tag):
+            # copper's shortfall can now come from copper_wire_kg or
+            # wire_drawn_kg as much as from copper_kg itself (36 electrical
+            # nodes draw drawn wire), and this sentence would otherwise name
+            # a "you are X tonnes short" figure that silently excluded them.
             keys = {"coal": ("coal_kg",), "iron": ("iron_bar_kg", "iron_ore_kg"),
-                    "copper": ("copper_kg",), "lead": ("lead_kg",),
-                    "tin": ("tin_kg",), "silver": ("silver_kg",)}.get(binding, ())
+                    "copper": ("copper_kg", "copper_wire_kg", "wire_drawn_kg"),
+                    "lead": ("lead_kg",), "tin": ("tin_kg",),
+                    "silver": ("silver_kg",),
+                    "gold": ("gold_kg",)}.get(binding, ())
             short = max(0.0, sum(dem.get(kk, 0.0) for kk in keys)
                         - self.mine_capacity.get(binding, 0.0))
             t = max(1.0, round(short))

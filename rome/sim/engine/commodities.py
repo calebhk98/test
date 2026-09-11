@@ -1,12 +1,18 @@
 """Commodities as first-class things: iron, wool, coffee, copper, gold...
 
-This is the framework the brief asked for, proved on nine commodities. It is
-NOT wired into `Sim`: `core.py` does not import this module, and nothing
-here reads or writes `Sim` state. That is deliberate, not an oversight -- see
-`rome/data/world/COMMODITIES.md` section "Why standalone" and section 11
-("the hard problems a second pass will hit") for why, and for the seam a
-second pass would use to merge this with `economy.py`'s existing (thinner)
-material-throttle system.
+THIS MODULE IS NOW IMPORTED. `economy.py`'s `wire_chain_report()` calls
+`CommodityLedger.propagate_demand()` -- the one mechanism here with no
+analogue anywhere in the existing code (COMMODITIES.md section 7: a
+recipe-chain demand walk that names WHICH link broke, not one flat
+throttle) -- handed THIS CIVILISATION'S ACTUAL copper numbers via
+`supply_override` below, instead of the independent national estimate
+`commodities.json` would otherwise guess. `core.py` still does not import
+this module and `Sim` still has no inventory (`Ledger`, the stock-tracking
+class below, is exercised by the demo and the regression suite only): see
+`rome/data/world/COMMODITIES.md` section "What was decided" for why a full
+swap of `resource_throttle()`/`MARKET_SHARE`/`material_price_factor()` for
+this module's OWN (separately-sourced) price/national-output machinery was
+rejected, and what was taken instead.
 
 Read `COMMODITIES.md` first. It explains every field in `commodities.json`
 and the reasoning behind every function below; the comments here point back
@@ -49,9 +55,24 @@ class CommodityLedger:
     recipes, prices) lives in commodities.json and needs no tech tree at all.
     """
 
-    def __init__(self, commodities=None, nodes=None):
+    def __init__(self, commodities=None, nodes=None, supply_override=None):
         self.commodities = commodities if commodities is not None else load_commodities()
         self.nodes = nodes or {}
+        # A LIVE SIM KNOWS ITS OWN NUMBERS BETTER THAN THIS FILE DOES. Without
+        # this, country_output() always answers from commodities.json's own
+        # (separately-sourced) national_output_t_per_yr, which is a second
+        # guess at a figure economy.py's MARKET_SHARE/mine_capacity/
+        # mineral_scale already compute precisely for the seven materials
+        # both files track -- exactly the drift section 10.1 of
+        # COMMODITIES.md warns a real merge has to avoid. `supply_override`
+        # is {commodity_id: tonnes_per_year}; when a commodity id is present
+        # here, country_output() returns this number instead of deriving one,
+        # so propagate_demand() reasons about THIS civilisation's actual
+        # copper (say), not a flat Roman-wide estimate that cannot tell Rome
+        # from the Norse. Absent for a commodity (wool, coffee, cotton...)
+        # Sim does not track at all, so those fall back to commodities.json's
+        # own figure exactly as before -- this is additive, not a takeover.
+        self.supply_override = supply_override or {}
         # Reverse index: a material key like "copper_kg" answers for at most
         # one commodity. Built once, not per call -- annual_material_demand()
         # in economy.py has the same shape of cache for the same reason.
@@ -161,6 +182,8 @@ class CommodityLedger:
         specific player's own chain of demand should use propagate_demand()
         instead, which reasons about what YOU, specifically, can reach at
         each step rather than a flat national estimate."""
+        if commodity_id in self.supply_override:
+            return float(self.supply_override[commodity_id])
         c = self.commodities[commodity_id]
         if c.get("recipe"):
             return self._manufactured_output(commodity_id, built)
@@ -198,7 +221,15 @@ class CommodityLedger:
         stands in for what economy.py's MARKET_SHARE escalation by patronage
         (patron_imperial, patron_senatorial, citizenship) does on a live Sim;
         this module has no Sim and no civilization, so it takes that factor
-        as a plain number instead of re-deriving it from patronage flags."""
+        as a plain number instead of re-deriving it from patronage flags.
+
+        When `supply_override` names this commodity, THAT number already IS
+        the reachable tonnage (a live Sim's own market-share/patronage/
+        geology accounting already folded in), so it is returned as-is
+        rather than having a SECOND share fraction applied on top of a
+        figure that is not a raw national total to begin with."""
+        if commodity_id in self.supply_override:
+            return float(self.supply_override[commodity_id])
         c = self.commodities[commodity_id]
         share = float(c.get("market_share", 0.03))
         return self.country_output(commodity_id, built) * min(1.0, share * standing_multiplier)
@@ -337,6 +368,14 @@ class CommodityLedger:
         report = {}
 
         def own_capacity(cid):
+            # A LEAF commodity named in supply_override skips this file's
+            # own national-output guess entirely: economy.py's
+            # wire_chain_report() passes THIS civilisation's actual copper
+            # (mine_capacity plus its own market share at its own standing),
+            # already reachable-tonnage, not a raw national total waiting for
+            # a second share discount. See CommodityLedger's own comment.
+            if cid in self.supply_override:
+                return own_production.get(cid, 0.0) + float(self.supply_override[cid])
             c = self.commodities[cid]
             if c.get("recipe"):
                 base = self._manufacturing_capacity_t_per_yr(cid, built)
