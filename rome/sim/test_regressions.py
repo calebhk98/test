@@ -6218,6 +6218,24 @@ check("the nitre yield and price the advice quotes are the ones the "
 check("saltpetre still cannot simply be bought - the beds are the answer, "
       "not a market share",
       S.Sim.MARKET_SHARE["saltpetre"] == 0.0, S.Sim.MARKET_SHARE["saltpetre"])
+# --- THE HELP ADVERTISED A SPELLING THE PARSER DID NOT ACCEPT, and the
+# failure was silent and expensive. `rush`'s own help says "add limit:N to
+# cap it"; `limit:3` is not a number, so the token scan came back empty, no
+# limit was set, and rush went on to begin everything startable. A Norse
+# player who read the help, wanted three things, and typed exactly what they
+# were told got twenty-one projects and every denarius of their credit. The
+# safest-looking spelling of the most expensive command in the game was the
+# one that removed the safety.
+for _sp in ("rush 3", "rush limit:3", "rush limit 3", "rush limit=3"):
+    check("'%s' caps the rush at three" % _sp,
+          _PT(_sp)[0] == {"cmd": "rush", "limit": 3},
+          _PT(_sp)[0])
+check("a cap that does not parse is refused, not shrugged off into "
+      "starting everything - the one typo a careful player can make must "
+      "not be the typo that begins the whole tree",
+      _PT("rush limit:abc")[0] is None
+      and "not a number" in (_PT("rush limit:abc")[1] or ""),
+      _PT("rush limit:abc"))
 check("platinum is reachable the way its own note and the geography file "
       "both say it is, overland, without rounding the Cape",
       "exp_africa_circumnavigation" not in S.closure(NODES, "mat_platinum_bulk"),

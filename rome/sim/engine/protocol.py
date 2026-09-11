@@ -3482,11 +3482,42 @@ def parse_typed(line):
         return {"cmd": op}, None
 
     if op == "rush":
-        # 'rush' alone starts everything you could begin today; 'rush 5'
-        # caps it at the first five, highest-leverage first.
+        # 'rush' alone starts everything you could begin today; 'rush 5',
+        # 'rush limit:5' and 'rush limit 5' all cap it at the first five,
+        # highest-leverage first.
+        #
+        # limit:N IS THE FORM THE HELP TEXT ADVERTISES - "add limit:N to cap
+        # it" - and it was the one form this did not accept. `limit:3` is not
+        # a number, so `nums` came back empty, no limit was set, and the
+        # command went on to start everything startable. A player who read
+        # the help, wanted three things, and typed exactly what it told them
+        # to type got twenty-one projects and every denarius of their credit.
+        # The safest-looking spelling of the most expensive command in the
+        # game was the one that removed the safety, silently. Same key:value
+        # spelling `state full:true` already takes.
         out = {"cmd": "rush"}
-        if nums:
-            out["limit"] = int(nums[0])
+        _lim = None
+        for w in rest:
+            t = str(w)
+            for pre in ("limit:", "limit=", "n:", "n="):
+                if t.lower().startswith(pre):
+                    v = _typed_number(t[len(pre):])
+                    if v is None:
+                        # AND A CAP THAT DID NOT PARSE IS A REFUSAL, not a
+                        # shrug. Falling through to no limit at all means the
+                        # one typo a player can make while trying to be
+                        # careful is the typo that starts everything.
+                        return None, ("'%s' is not a number of things to "
+                                      "start. 'rush limit:3' begins the three "
+                                      "highest-leverage things you could "
+                                      "begin today; 'rush' alone begins every "
+                                      "one of them." % t[len(pre):])
+                    _lim = v
+                    break
+        if _lim is None and nums:
+            _lim = nums[0]
+        if _lim is not None:
+            out["limit"] = int(_lim)
         return out, None
 
     if op == "state":
