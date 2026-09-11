@@ -866,7 +866,19 @@ def cmd_why(a):
              f"{n['cap']:,}", f"{n['_total_cost']:,.0f}"))
     print("Upkeep          : %s den/yr        Revenue: %s den/yr" % (f"{n['up']:,}", f"{n['rev']:,}"))
     print("Calendar floor  : %.1f years (money cannot buy this down)" % n["yrs"])
-    print("Failure risk    : %.0f%% per attempt" % (100 * n["risk"]))
+    # WHAT A FAILURE COSTS, not only how likely one is. The rate was on the
+    # screen and the sum never was, so three players in a row read "10% per
+    # attempt" as a small thing and were not expecting the 35,433 pence it
+    # took off a 141,824-pence project. The share is a flat 40% every time;
+    # what varies is the size of what you started, which is exactly the
+    # number a player is holding in their head when they decide.
+    if n["risk"]:
+        print("Failure risk    : %.0f%% per attempt - a failure costs %s (40%%) "
+              "and %s of your hours to do again"
+              % (100 * n["risk"], f"{n['_total_cost'] * 0.4:,.0f}",
+                 f"{n['ph'] * 0.4:,.0f}"))
+    else:
+        print("Failure risk    : none")
     print("Staff needed    : %d trained scholars, %d trained artisans" % (n["sch"], n["art"]))
     print("Suspicion       : %+d       State interest: %+d%s" % (n.get("sus", 0), n.get("gov", 0),
           ("  <- OPPOSED. Costs %d%% more, +%d extra suspicion, needs %s"

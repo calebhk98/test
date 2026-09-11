@@ -6218,6 +6218,50 @@ check("the nitre yield and price the advice quotes are the ones the "
 check("saltpetre still cannot simply be bought - the beds are the answer, "
       "not a market share",
       S.Sim.MARKET_SHARE["saltpetre"] == 0.0, S.Sim.MARKET_SHARE["saltpetre"])
+# --- THREE PLAYERS, THREE CIVILISATIONS, THE SAME COMPLAINT. Norse, England
+# and Rome each independently reported being carried into debt they had not
+# decided to take on, and two of them found out what happens past the credit
+# limit by losing a school and a collegium they had built decades earlier.
+# `start` financed the gap between what a project costs and what the
+# household has, silently, at up to twelve per cent. Borrowing to build is a
+# real move and stays allowed; not being told was the bug.
+_cr = sim(civ="england_1300")
+_cr.capital = 1300.0
+_cr_out = S._agent_dispatch(_cr, NODES, {"cmd": "start", "id": "identity_cover"})
+check("starting a project you cannot cover in cash says you are borrowing, "
+      "what it costs a year, and how much room is left",
+      _cr_out.get("ok") and _cr_out.get("on_credit", {}).get("borrowed_now", 0) > 0
+      and _cr_out["on_credit"].get("interest_per_year", 0) > 0
+      and _cr_out["on_credit"].get("no_one_advances_past", 0) > 0,
+      _cr_out.get("on_credit"))
+check("...and names what the creditors do there, which is take things you "
+      "built long ago and had no debt against",
+      "built long ago" in (_cr_out.get("on_credit", {})
+                           .get("what_happens_there") or ""),
+      (_cr_out.get("on_credit") or {}).get("what_happens_there"))
+_cr2 = sim(civ="england_1300")
+_cr2.capital = 50_000.0
+_cr2_out = S._agent_dispatch(_cr2, NODES, {"cmd": "start", "id": "identity_cover"})
+check("a project you can pay for outright says nothing about credit",
+      _cr2_out.get("ok") and "on_credit" not in _cr2_out,
+      sorted(_cr2_out))
+
+# --- THE RATE WAS ON THE SCREEN AND THE SUM NEVER WAS. `why` quoted "10% per
+# attempt" and nothing else; a failure takes a flat 40% of the money and puts
+# 40% of the hours back on the slate. An England player read the single digit
+# as a small thing and lost 35,433 pence off a 141,824-pence project.
+_fw = S._agent_dispatch(sim(civ="england_1300"), NODES,
+                        {"cmd": "why", "id": "lead_metallurgy"})
+check("why says what a failure costs, not only how likely one is",
+      _fw.get("failure_costs", 0) > 0
+      and abs(_fw["failure_costs"] - _fw["cost"]["total"] * 0.4) < 1.0,
+      (_fw.get("failure_costs"), (_fw.get("cost") or {}).get("total")))
+check("...and a work that cannot fail is not given an imaginary danger",
+      S._agent_dispatch(sim(civ="england_1300"), NODES,
+                        {"cmd": "why", "id": "identity_cover"}).get("failure_costs", 0) == 0
+      if NODES["identity_cover"]["risk"] == 0 else True,
+      NODES["identity_cover"]["risk"])
+
 # --- THE HELP ADVERTISED A SPELLING THE PARSER DID NOT ACCEPT, and the
 # failure was silent and expensive. `rush`'s own help says "add limit:N to
 # cap it"; `limit:3` is not a number, so the token scan came back empty, no

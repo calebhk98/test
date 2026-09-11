@@ -1190,6 +1190,16 @@ def _brief(s, nodes, k, fog):
                 "your_hours": n["ph"],
                 "least_years": n["yrs"],
                 "chance_of_failure": n["risk"],
+                # WHAT A FAILURE COSTS, not only how likely one is. A failure
+                # takes a flat 40% of the money and sets 40% of the hours to
+                # do again; the rate was on the screen and the sum never was,
+                # so three players in a row read a single-digit risk as a
+                # small thing and were not expecting what it took off a large
+                # project. Zero when the work cannot fail, so nothing invents
+                # a danger that is not there.
+                "failure_costs": (round(s.project_cost(k) * 0.4, 1)
+                                  if n["risk"] else 0.0),
+                "failure_costs_hours": round(n["ph"] * 0.4, 1) if n["risk"] else 0.0,
                 "earns_per_year": _est if _est is not None else round(n["rev"], 1),
                 "costs_per_year_after": round(n["up"], 1),
                 "how_much_rests_on_this": rests,
@@ -1809,6 +1819,12 @@ def _node_explain(s, nodes, k):
                     "your hours for wages takes another bite"
                     if k in s._practice_set() and n["rev"] else None),
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
+        # THE SUM, NOT ONLY THE RATE. See _node_explain's own note: a failure
+        # takes a flat 40% of the money and puts 40% of the hours back on the
+        # slate, and a player deciding whether to risk it is holding the size
+        # of the project in their head, not the percentage.
+        "failure_costs": round(s.project_cost(k) * 0.4, 1) if n["risk"] else 0.0,
+        "failure_costs_hours": round(n["ph"] * 0.4, 1) if n["risk"] else 0.0,
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
         # THE FIGURE THE GAME ACTUALLY TESTS. start_project gates artisans on
         # craft_hands_available() - staff, plus yourself, plus any hours you
@@ -2504,6 +2520,11 @@ def render_why(out):
     L.append("YOUR HOURS: %s     CALENDAR FLOOR: %s years     FAILURE RISK: %s"
              % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),
                 _pct(out.get("risk"))))
+    if out.get("failure_costs"):
+        L.append("IF IT FAILS: %s gone (40%% of the money) and %s of your "
+                 "hours to do again. It can fail more than once."
+                 % (_fmt_num(out.get("failure_costs")),
+                    _fmt_num(out.get("failure_costs_hours"))))
     staff, have = out.get("staff_needed") or {}, out.get("you_have") or {}
     L.append("STAFF NEEDED: %s scholars, %s artisans   (you have %s, %s%s)"
              % (_fmt_num(staff.get("scholars")), _fmt_num(staff.get("artisans")),
@@ -4220,6 +4241,34 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        "ago is not what you will pay."}
         if _warn_staff:
             out["but"] = _warn_staff
+        # AND SAY WHEN YOU ARE BORROWING TO DO IT. `start` financed the gap
+        # between what a project costs and what the household has, silently,
+        # at up to twelve per cent - three players in a row were carried into
+        # debt they had not decided to take on. One went 750 denarii short of
+        # affordable on turn one and spent the next twenty-five years digging
+        # out while the project sat stalled and the interest compounded.
+        #
+        # Not a refusal. Borrowing to build is a real and often correct move,
+        # and the game already lets you. It is the not-being-told that was
+        # wrong, so this names the gap, the rate, and how much room is left
+        # before the creditors stop being patient - and what they do then,
+        # because both players who found that out found it out by losing a
+        # school and a collegium they had built years earlier.
+        _gap = bill - max(0.0, s.capital)
+        if _gap > 0:
+            _lim = s.credit_limit()
+            _after = -(min(0.0, s.capital) - _gap)
+            out["on_credit"] = {
+                "borrowed_now": round(_gap, 1),
+                "interest_per_year": round(s.debt_interest_rate() * 100, 1),
+                "you_will_owe": round(_after, 1),
+                "no_one_advances_past": round(_lim, 1),
+                "what_happens_there":
+                    "past that limit every project in hand halts unfinished, "
+                    "nobody funds new work for some years, and your creditors "
+                    "take and sell what you are running - including things you "
+                    "built long ago and had no debt against.",
+            }
         # WARN, DO NOT SILENTLY ACCEPT. start_reason() already refuses a trade
         # that does not exist AT ALL (see "THE TRADE HAS TO EXIST" there), but
         # trade_available() goes true the moment you call `train`, two years
