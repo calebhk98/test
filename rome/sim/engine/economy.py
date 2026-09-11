@@ -1373,7 +1373,16 @@ class EconomyMixin:
         if tag == "nitre":
             return self.nitre_bed_m2 * 0.0008
         if tag.startswith("mine:"):
-            return self.mine_capacity.get(tag[5:], 0.0)
+            mat = tag[5:]
+            # DEPLETION AND TECHNOLOGY, not the nominal tonnage you sank
+            # capital into. mine_capacity is a historical record of what
+            # you PAID for; what a working actually YIELDS this year is
+            # that, discounted by how worked-out it is and multiplied by
+            # whatever mining technology has done to counter that -- see
+            # mine_depletion_factor() and mining_tech()'s own comments.
+            yld, _cost = self.mining_tech(mat)
+            return (self.mine_capacity.get(mat, 0.0)
+                    * self.mine_depletion_factor(mat) * yld)
         return 0.0
 
     def _material_market_tonnes(self, emp_key):
@@ -1590,6 +1599,179 @@ class EconomyMixin:
                            "gold": 42000.0}
     MINE_LEAD_YEARS = 3.0        # sinking, drainage, roads, and hiring
 
+    # ---- LAND: what is under your feet is geography, not standing --------
+    #
+    # open_mine()'s ceiling used to depend only on patronage and state
+    # capacity, the SAME number for every material: a founder with an
+    # imperial patron could sink exactly as large a tin mine as an iron one,
+    # in a home province with no tin in it at all. A tester asked the
+    # obvious question this gets wrong: "if I need a lot of coal, can I open
+    # a lot of coal mines? Are mines limited by land area?" No, and yes they
+    # should be. geography.py's mineral_scale() ALREADY answers "how much of
+    # this material's national output can THIS civilisation reach," built
+    # from geography.json's per-region mineral abundance and this
+    # civilization's own home_regions and reach (see its own comment) -- and
+    # it already governs the MARKET half of supply (_material_market_tonnes).
+    # It had simply never been asked about the OWN-MINE half. Reusing it
+    # here, rather than inventing a second geology signal, means a civ that
+    # cannot buy much tin also cannot simply out-organise its way to
+    # unlimited tin by sinking shafts instead -- the same ground is short
+    # either way. Measured: a Rome run's mineral_scale sits at roughly
+    # 1.0-1.2 for every metal but saltpetre (it controls most of its own
+    # ore-bearing provinces); Mexica sits at 0.10-0.17 for iron and coal
+    # (Mesoamerica genuinely worked neither) and 0.47 for copper (it did).
+    def mine_land_ceiling(self, mat):
+        """The largest standing capacity of this material you could ever
+        organise, in tonnes/yr: how big an enterprise your standing and
+        state can run, times whether the ore is actually under your feet,
+        times what mining technology currently lets a working pull out of a
+        given deposit (mining_tech()'s own yield multiplier -- see its
+        comment for why a pump or a railway belongs on THIS side of the
+        ledger and not only on cost)."""
+        sc = float(self.civ.get("state_capacity", 0.5))
+        if self.running("patron_imperial"):     base = 20000.0 + 60000.0 * sc
+        elif self.running("patron_senatorial"): base = 9000.0 + 20000.0 * sc
+        elif self.has("citizenship"):       base = 6000.0 + 8000.0 * sc
+        else:                               base = 3000.0 + 4000.0 * sc
+        base *= 1.0 + min(5.0, max(0.0, self.revenue()) / 60000.0)
+        geo = self.mineral_scale(mat)
+        yld, _cost = self.mining_tech(mat)
+        return base * geo * yld
+
+    # ---- DEPLETION: the easy seam runs out ---------------------------
+    #
+    # A tester's second question: "does mine production go down over time,
+    # as you mine the easy stuff and it gets harder?" It did not -- output
+    # was flat for ever, which is not how any real working behaves. What is
+    # tracked is not raw tonnes extracted (an arbitrary absolute figure with
+    # no natural scale to compare it to across seven wildly different
+    # materials and five civilizations) but INTENSITY: how many YEARS you
+    # have worked this material at what fraction of its own land ceiling.
+    # Mining at 20% of what the ground could ever support barely touches the
+    # easy ore; mining at 100% of it, continuously, is exactly the situation
+    # that historically forced a working deeper, or somewhere else, inside a
+    # few generations. DEPLETION_HALF_LIFE_YRS=120 is a [C] estimate at that
+    # order of magnitude (roughly the span across which real long-worked
+    # Old World deposits -- Rio Tinto's and Laurion's near-surface ore --
+    # went from rich to markedly poorer and needed new technique, several
+    # human generations, not one and not a thousand), chosen deliberately
+    # round rather than fitted to any single citation. Floored at 0.5,
+    # never lower: the easy half of a deposit running out does not mean the
+    # hard half is worthless, and a floor that could reach zero would be the
+    # abolished "unobtainable" category wearing a new name (see open_mine's
+    # own comment on that history). This is intensity-years, not calendar
+    # years, so it accrues faster the harder you lean on a given deposit
+    # relative to what the ground can support -- and slower once technology
+    # (mining_tech(), below) raises that support, which is the whole of
+    # "make depletion something you can fight."
+    DEPLETION_HALF_LIFE_YRS = 120.0
+    DEPLETION_FLOOR = 0.5
+
+    def mine_depletion_factor(self, mat):
+        """Fraction of day-one yield a working of this material still gets,
+        from cumulative intensity (see the class comment above)."""
+        yrs = getattr(self, "mine_intensity_yrs", None)
+        i = (yrs or {}).get(mat, 0.0)
+        return max(self.DEPLETION_FLOOR, 1.0 - i / self.DEPLETION_HALF_LIFE_YRS)
+
+    def _advance_mine_depletion(self):
+        """One year of intensity for every material you currently hold
+        capacity in. Called once a year from commission_mines(), which
+        core.py's step() already calls exactly once a year -- see that
+        function's own comment -- so this needed no new call site."""
+        self.mine_intensity_yrs = getattr(self, "mine_intensity_yrs", collections.Counter())
+        for mat in sorted(self.mine_capacity):
+            ceiling = max(1.0, self.mine_land_ceiling(mat))
+            self.mine_intensity_yrs[mat] += self.mine_capacity[mat] / ceiling
+
+    # ---- TECHNOLOGY: the pump, the railway and cheap steel fight back -----
+    #
+    # A tester's third question, and the important one: does technology
+    # raise yield? It did not, anywhere in the model, which is a real
+    # modelling error -- industrialisation paid for itself largely because
+    # the pumping engine, the railway and cheap steel made ore worth
+    # lifting that was not worth lifting before. Each entry below is a real
+    # node (grepped for steam/pump/newcomen/railway/blast/bessemer/
+    # explosive/nitro/drill against the actual tree, not invented): `yield`
+    # raises mine_land_ceiling() AND mine_depletion_factor()'s effective
+    # output together (a pump does not just let you sink a new shaft, it
+    # means the shaft you already have stops standing idle half-flooded);
+    # `cost` lowers what sinking or running a tonne/yr costs (mining_cost_
+    # scale(), below). Multipliers COMPOUND across every one built, the
+    # same pattern best_multiplier() in commodities.py uses for gold's
+    # pump-times-cyanidation ~20x, because pumping and blasting and a
+    # railway are independent improvements, not alternatives.
+    MINING_TECH = {
+        # Drainage. A flooded shaft simply stops, whatever is below the
+        # water table; a pump makes that ore reachable at all (a land-
+        # ceiling effect) and removes the single largest recurring cost of
+        # a deep working, bailing by hand or beast (a cost effect).
+        # met_mine_pumping is any mechanical lift (water-wheel or animal);
+        # steam_atmospheric IS the Newcomen engine, built specifically to
+        # drain flooding coal and tin workings, so it is both a later tier
+        # and a stronger effect on the same problem, and the two compound.
+        "met_mine_pumping":          {"yield": 1.4, "cost": 0.85},
+        "steam_atmospheric":         {"yield": 1.6, "cost": 0.65},
+        # Blasting and drilling break rock faster per man-hour. They do not
+        # put new ore in the ground, so cost only, no yield term.
+        "met_black_powder_blasting": {"yield": 1.0, "cost": 0.85},
+        "met_dynamite_blasting":     {"yield": 1.0, "cost": 0.65},
+        "pwr_rotary_drilling":       {"yield": 1.0, "cost": 0.80},
+        # A railway does not create ore, it creates REACH: ore too far from
+        # a market to be worth carting becomes worth lifting once a railway
+        # can move it, which is a yield (economically-reachable tonnage)
+        # effect, not a per-tonne extraction-cost effect. Reused from
+        # goods_reach_factor()'s own self.running("railway") check.
+        "railway":                   {"yield": 1.3, "cost": 1.0},
+    }
+    # Iron and coal only. For iron this is the specific historical claim
+    # the job is about: cheap steel did not change how ore comes out of the
+    # ground, it changed whether digging LOW-GRADE ore was worth doing at
+    # all. For coal the link runs the other way -- a cheap-steel industry
+    # is a coking-coal customer large enough to justify the pit, drainage
+    # and rail spur that a smaller demand would not -- but the direction of
+    # the effect (more worth digging, cheaper to sink) is the same, so it
+    # is applied the same way rather than invented as a second mechanism.
+    # blast_furnace and mat_bulk_steel (Bessemer/open-hearth) are the two
+    # real steps of that in the tree, each further from ore than the last.
+    MINING_TECH_STEEL = {
+        "blast_furnace":  {"yield": 1.3, "cost": 0.85},
+        "mat_bulk_steel": {"yield": 1.3, "cost": 0.75},
+    }
+
+    def mining_tech(self, mat):
+        """(yield_mult, cost_mult) technology has bought this material's
+        mining so far. yield_mult >= 1 raises what a working can pull out
+        of the same deposit; cost_mult <= 1 lowers what getting it out
+        costs. Capped/floored like every other compounding factor in this
+        file (MARKET_SHARE, goods_reach_factor): a mine at three times the
+        book yield is a real historical claim, thirty times is the
+        abolished unobtainable category with its sign flipped."""
+        y, c = 1.0, 1.0
+        techs = self.MINING_TECH
+        if mat in ("iron", "coal"):
+            techs = dict(techs, **self.MINING_TECH_STEEL)
+        for node in sorted(techs):
+            if self.running(node):
+                y *= techs[node]["yield"]
+                c *= techs[node]["cost"]
+        return min(y, 3.0), max(0.35, c)
+
+    def mining_cost_scale(self, mat):
+        """What sinking or running a tonne/yr of this material costs THIS
+        YEAR, relative to MINE_CAPEX_PER_T_YR/MINE_OPEX_PER_T's own book
+        price: technology (mining_tech's cost multiplier) against depletion
+        (mine_depletion_factor, inverted -- the same effort recovers less
+        from a half-worked deposit, so it costs proportionally more per
+        tonne) pulling against each other. This is "deeper ones cost more"
+        made concrete, and technology is the only thing that pushes back.
+        Bounded to keep the tension a real decision rather than a runaway:
+        a fully depleted, untooled working costs at most 2x book (not
+        infinite), and full mining technology on a fresh deposit costs no
+        less than 0.4x (not free)."""
+        _y, cost = self.mining_tech(mat)
+        return max(0.4, min(2.5, cost / self.mine_depletion_factor(mat)))
+
     def mine_quote(self, mat, t_per_yr):
         """What a mine would cost, BEFORE you commit to it.
 
@@ -1603,8 +1785,26 @@ class EconomyMixin:
         if cap is None:
             return None
         t = max(0.0, float(t_per_yr))
-        sink = t * cap * self.price_index
-        opex = t * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index
+        scale = self.mining_cost_scale(mat)
+        sink = t * cap * self.price_index * scale
+        opex = t * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index * scale
+        ceiling = self.mine_land_ceiling(mat)
+        room = max(0.0, ceiling - self.mine_capacity.get(mat, 0.0)
+                   - self.mine_pending.get(mat, 0.0))
+        depl = self.mine_depletion_factor(mat)
+        note = ("The yearly cost is charged whether or not you use the "
+                "output, and goes on until you close it. Mothballing is "
+                "not free to reverse: the shaft floods and the crew "
+                "disperses, so reopening means sinking it again.")
+        if scale > 1.05:
+            note += (" This costs %.0f%% of the book price: the easy ore "
+                      "here is going, and nothing you have built yet cuts "
+                      "the cost of getting at what is left (mine pumping, "
+                      "blasting, or a railway would)." % (scale * 100))
+        elif scale < 0.95:
+            note += (" This costs %.0f%% of the book price: what you have "
+                      "built has made this cheaper to get out of the "
+                      "ground." % (scale * 100))
         return {"material": mat,
                 "tonnes_per_year": round(t, 3),
                 "to_sink_it": round(sink, 1),
@@ -1613,13 +1813,48 @@ class EconomyMixin:
                 "you_have": round(self.capital, 1),
                 "you_could_raise": round(self.spending_power("buy"), 1),
                 "you_can_afford_about": round(
-                    self.spending_power("buy") / max(cap * self.price_index, 1e-9), 3),
+                    self.spending_power("buy") / max(cap * self.price_index * scale, 1e-9), 3),
                 "afford_means": "cash plus half the credit line, which is what "
                                 "a lender will advance against a purchase",
-                "note": "The yearly cost is charged whether or not you use the "
-                        "output, and goes on until you close it. Mothballing is "
-                        "not free to reverse: the shaft floods and the crew "
-                        "disperses, so reopening means sinking it again."}
+                "the_ground_here_could_ever_support": round(ceiling, 1),
+                "room_left_before_geology_stops_you": round(room, 1),
+                "current_yield_is_this_fraction_of_day_one": round(depl, 3),
+                "note": note}
+
+    def mine_yield_t(self, mat):
+        """Tonnes a year this working ACTUALLY raises this year, after
+        depletion and technology -- the number `mines` should show, not the
+        nominal tonnage sunk. Same figure _own_material_supply("mine:"+mat)
+        computes; exposed directly so a command surface does not have to
+        know that tag-string convention to ask."""
+        yld, _cost = self.mining_tech(mat)
+        return self.mine_capacity.get(mat, 0.0) * self.mine_depletion_factor(mat) * yld
+
+    def mine_depletion_note(self, mat):
+        """One sentence on why a working's actual output differs from the
+        tonnage you sank capital into, for the same reason goods_market_
+        note() exists for a concern's revenue: a player whose coal yield has
+        fallen over the decades must be able to find out why without
+        guessing. None if there is nothing to explain (a fresh working, no
+        relevant technology)."""
+        if mat not in self.mine_capacity:
+            return None
+        depl = self.mine_depletion_factor(mat)
+        yld, cost = self.mining_tech(mat)
+        if abs(depl - 1.0) < 0.01 and abs(yld - 1.0) < 0.01:
+            return None
+        bits = []
+        if depl < 0.999:
+            bits.append("the easy ore here is %d%% worked out, so the same "
+                        "shaft yields %d%% of its first-year tonnage"
+                        % (round((1.0 - depl) * 100), round(depl * 100)))
+        if yld > 1.001:
+            bits.append("technology you have built raises that back up "
+                        "%.1fx" % yld)
+        elif depl < 0.999:
+            bits.append("mine pumping, drilling or blasting would raise it "
+                        "back up")
+        return "; ".join(bits)
 
     def close_mine(self, mat):
         """Shut your own workings down, on purpose.
@@ -1636,7 +1871,8 @@ class EconomyMixin:
                            if mat in self.MINE_CAPEX_PER_T_YR
                            else "no such material: %s. Mineable: %s"
                                 % (mat, ", ".join(sorted(self.MINE_CAPEX_PER_T_YR))))
-        saved = have * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index
+        saved = (have * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index
+                 * self.mining_cost_scale(mat))
         self.mine_capacity.pop(mat, None)
         self.mine_tranches = [t for t in getattr(self, "mine_tranches", [])
                               if t[0] != mat]
@@ -1667,29 +1903,28 @@ class EconomyMixin:
             return 0.0
         # Scale beyond a local lease needs a concession, which in practice means
         # the fiscus. Metalla were largely imperial property.
-        # The ceiling is about STANDING and STATE CAPACITY, not about one
-        # Rome-specific node id. Keying it on patron_imperial permanently capped
-        # every civilization that has no emperor, which is not a finding about
-        # the Norse, it is a bug about the model. A society with little state
-        # capacity genuinely cannot organise a very large mine, but a chieftain
-        # who can raise a crew can certainly do better than a foreigner with a
-        # local lease.
-        sc = float(self.civ.get("state_capacity", 0.5))
-        if self.running("patron_imperial"):     ceiling = 20000.0 + 60000.0 * sc
-        elif self.running("patron_senatorial"): ceiling = 9000.0 + 20000.0 * sc
-        elif self.has("citizenship"):       ceiling = 6000.0 + 8000.0 * sc
-        else:                               ceiling = 3000.0 + 4000.0 * sc
-        # And scale is buyable. What actually limits a mine is crews, timber,
-        # drainage and someone to run it, all of which a large enterprise can
-        # organise whether or not it holds a title. Without this the Norse run
-        # ended with 259 million denarii unspent and no iron mine, capped at
-        # 3,600 tonnes a year by institutions that civilization does not have.
-        ceiling *= 1.0 + min(5.0, max(0.0, self.revenue()) / 60000.0)
+        # The ceiling is about STANDING, STATE CAPACITY AND GEOLOGY -- see
+        # mine_land_ceiling()'s own comment for why it is geology now, not
+        # standing alone, and for why a society with little state capacity
+        # genuinely cannot organise a very large mine while a chieftain who
+        # can raise a crew can still do better than a foreigner with a local
+        # lease. Without the state-capacity/revenue half of this the Norse
+        # run ended with 259 million denarii unspent and no iron mine, capped
+        # at 3,600 tonnes a year by institutions that civilization does not
+        # have; without the geology half, a founder could sink a tin mine in
+        # a province with no tin in it, at the same size as one with plenty.
+        ceiling = self.mine_land_ceiling(mat)
         t_per_yr = min(t_per_yr, max(0.0, ceiling - self.mine_capacity.get(mat, 0.0)
                                           - self.mine_pending.get(mat, 0.0)))
         if t_per_yr <= 0:
             return 0.0
-        cost = t_per_yr * cap * self.price_index
+        # DEEPER ONES COST MORE. mining_cost_scale() is 1.0 on a fresh
+        # deposit with no relevant technology, so this changes nothing for
+        # an early game; it rises as a deposit already worked hard is asked
+        # for more, and falls back down with mine pumping, drilling,
+        # blasting or a railway -- see that method's own comment.
+        scale = self.mining_cost_scale(mat)
+        cost = t_per_yr * cap * self.price_index * scale
         if cost > self.capital:
             # A COMMAND YOU TYPED IS NOT A STANDING ORDER TO SPEND EVERYTHING.
             # This quietly took every denarius a break tester had and handed
@@ -1700,7 +1935,7 @@ class EconomyMixin:
             # request for a particular mine.
             if not partial:
                 return 0.0
-            t_per_yr = self.capital / (cap * self.price_index)
+            t_per_yr = self.capital / (cap * self.price_index * scale)
             cost = self.capital
         if t_per_yr <= 0:
             return 0.0
@@ -1728,6 +1963,11 @@ class EconomyMixin:
             else:
                 still.append([mat, amount, ready])
         self.mine_tranches = still
+        # ONE YEAR OF DEPLETION. core.py's step() calls commission_mines()
+        # exactly once a year (see its own comment, "materials: buy the
+        # woodland... before the shortage bites"), so this needed no new
+        # call site of its own.
+        self._advance_mine_depletion()
 
     def mothball_mines(self):
         """Stop working what you cannot pay for, worst value first.
@@ -1756,18 +1996,62 @@ class EconomyMixin:
         # number. Debt is now whatever the arithmetic says it is.
 
     def mine_operating_cost(self):
-        """Charged every year the workings stand, whether or not you use them."""
+        """Charged every year the workings stand, whether or not you use them.
+
+        Each material's own mining_cost_scale(): a deposit you have worked
+        hard for a long time, with no pumping or drilling to show for it,
+        costs more than book to keep running, exactly as sinking more of it
+        now does in open_mine()."""
         return sum(self.mine_capacity.get(m, 0.0) * self.MINE_OPEX_PER_T.get(m, 0.0)
-                   for m in self.mine_capacity) * self.price_index
+                   * self.mining_cost_scale(m)
+                   for m in sorted(self.mine_capacity)) * self.price_index
 
     # ~1 iugerum of woodland per 0.25 ha. Named so that `quote forest` and the
     # purchase itself cannot drift apart: a break tester spent 68% of their
     # capital on coppice with no way to ask the price first.
     FOREST_COST_PER_HA = 250.0
+    # Land bounds woodland too, not only mines. geography.json carries no
+    # per-region forest figure to read the way minerals has one, so this is
+    # built from the signal that IS there: how much territory you actually
+    # hold (home_regions, a land-area proxy in the absence of a real
+    # hectare-of-forest number) and how good your state is at organising
+    # land tenure at all (state_capacity) -- a coppice is not a metalla, so
+    # no imperial concession gates it, but fencing off and managing a
+    # woodland at scale still takes an administration capable of holding
+    # the tenure. [C], sized against the one real anchor available:
+    # resources.json's empire-wide 500,000 t/yr of charcoal implies roughly
+    # 667,000 ha under management across the WHOLE Roman world (at
+    # CHARCOAL_PER_HA=0.75 t/ha/yr); Rome's own ceiling below tops out
+    # around 190,000 ha even at full revenue-driven scale-up, comfortably
+    # under that -- no private holding should rival the entire empire's own
+    # managed woodland.
+    FOREST_HA_PER_REGION_BASE   = 1500.0
+    FOREST_HA_PER_REGION_PER_SC = 3500.0
+
+    def forest_land_ceiling(self):
+        """The largest standing coppice you could ever hold, in hectares."""
+        n_regions = max(1, len(self.civ.get("home_regions") or ()))
+        sc = float(self.civ.get("state_capacity", 0.5))
+        base = ((self.FOREST_HA_PER_REGION_BASE
+                 + self.FOREST_HA_PER_REGION_PER_SC * sc) * n_regions)
+        return base * (1.0 + min(5.0, max(0.0, self.revenue()) / 60000.0))
 
     def buy_forest(self, ha):
         """Coppice woodland, bought outright. The cheapest thing in the tree that
         nobody thinks to buy, and the one that decides whether a furnace runs."""
+        room = max(0.0, self.forest_land_ceiling() - self.forest_ha)
+        if ha > room:
+            # SILENT TRUNCATION, not a refusal: open_mine's own ceiling does
+            # the same (the tranche you get is the room there is, not zero),
+            # and a log line, which the player DOES see, is the honest way
+            # to say why the hectares bought were fewer than asked.
+            self.log.append((self.year,
+                             "you can hold at most %.0f hectares of coppice here; "
+                             "bought %.0f, not %.0f" % (self.forest_land_ceiling(),
+                                                        room, ha)))
+            ha = room
+        if ha <= 0:
+            return 0.0
         cost = ha * self.FOREST_COST_PER_HA * self.price_index
         if cost > self.capital:
             return 0.0

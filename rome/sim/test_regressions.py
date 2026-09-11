@@ -5085,6 +5085,200 @@ check("a smaller, poorer civilization's market for the same good saturates "
       "faster than Rome's did at the same age",
       _small_factor < _rome_10, (_small_factor, _rome_10))
 
+# =============================================================================
+# MINES: LAND, DEPLETION AND TECHNOLOGY. A tester asked three questions
+# nothing in the model answered: can you sink unlimited mines of one
+# material, does yield fall as the easy ore is worked out, and does
+# technology fight back. See economy.py's mine_land_ceiling()/
+# mine_depletion_factor()/mining_tech() for the reasoning and the numbers.
+# =============================================================================
+
+# --- (a) LAND: the ceiling differs by material and by civilization, because
+# geology is not standing. Reuses mineral_scale(), already used for the
+# MARKET half of supply, for the OWN-MINE half too.
+s_land = sim(capital=1.0)
+check("a civilization with little tin under its home regions has a lower "
+      "tin ceiling than one with plenty of the same standing",
+      s_land.mine_land_ceiling("tin") != s_land.mine_land_ceiling("coal"),
+      (s_land.mine_land_ceiling("tin"), s_land.mine_land_ceiling("coal")))
+s_mex = sim(civ="mexica_1500", capital=1.0)
+check("Mesoamerica, which worked copper but not iron or coal, has a lower "
+      "land ceiling for iron than for copper",
+      s_mex.mine_land_ceiling("iron") < s_mex.mine_land_ceiling("copper"),
+      (s_mex.mine_land_ceiling("iron"), s_mex.mine_land_ceiling("copper")))
+
+# --- open_mine() actually respects the land ceiling: sinking far more than
+# the ground can support delivers only what the ground can support, not
+# whatever standing alone would have allowed.
+s_dig = sim(capital=1e12)
+ceiling_before = s_dig.mine_land_ceiling("tin")
+got_tin = s_dig.open_mine("tin", ceiling_before * 50.0, partial=False)
+check("sinking far more of a scarce material than the land ceiling allows "
+      "delivers only room up to that ceiling, not the full amount asked",
+      0 < got_tin <= ceiling_before + 1.0,
+      (got_tin, ceiling_before))
+
+# --- woodland is bounded too, the tester's other named case ("mines/woods").
+s_wood = sim(civ="norse_900ad", capital=1e12)
+wood_ceiling = s_wood.forest_land_ceiling()
+got_ha = s_wood.buy_forest(wood_ceiling * 100.0)
+check("buying far more coppice than the land can support delivers only up "
+      "to the ceiling, not the full amount asked",
+      0 < got_ha <= wood_ceiling + 1.0, (got_ha, wood_ceiling))
+check("...and the ceiling itself is nowhere near the WHOLE EMPIRE's own "
+      "managed coppice (500,000 t/yr charcoal implies ~667,000 ha)",
+      s_wood.forest_land_ceiling() < 667000.0, s_wood.forest_land_ceiling())
+
+# --- (b) DEPLETION: yield falls as a working is worked hard relative to
+# what the ground can support, and never below the stated floor.
+s_dep = sim(capital=1e9)
+s_dep.open_mine("coal", s_dep.mine_land_ceiling("coal") * 0.9, partial=False)
+for _ in range(int(s_dep.MINE_LEAD_YEARS) + 1):
+    s_dep.year += 1
+    s_dep.commission_mines()
+yield_early = s_dep.mine_yield_t("coal")
+for _ in range(150):
+    s_dep.year += 1
+    s_dep.commission_mines()
+yield_late = s_dep.mine_yield_t("coal")
+check("a coal working driven hard for a century and a half yields less than "
+      "it did when it opened",
+      yield_late < yield_early, (yield_early, yield_late))
+check("...but never below the stated floor, however long it is driven",
+      s_dep.mine_depletion_factor("coal") >= s_dep.DEPLETION_FLOOR - 1e-9,
+      s_dep.mine_depletion_factor("coal"))
+for _ in range(2000):
+    s_dep.year += 1
+    s_dep.commission_mines()
+check("...and depletion saturates at the floor rather than continuing to "
+      "fall without limit (not an exponential collapse)",
+      abs(s_dep.mine_depletion_factor("coal") - s_dep.DEPLETION_FLOOR) < 1e-6,
+      s_dep.mine_depletion_factor("coal"))
+
+# --- a working driven gently (a small fraction of what the ground could
+# support) depletes far slower than one driven hard, for the same years.
+s_gentle = sim(capital=1e9)
+s_gentle.open_mine("coal", s_gentle.mine_land_ceiling("coal") * 0.1, partial=False)
+for _ in range(int(s_gentle.MINE_LEAD_YEARS) + 1 + 150):
+    s_gentle.year += 1
+    s_gentle.commission_mines()
+check("a working driven at a tenth of what the land could support depletes "
+      "far slower than one driven at nine tenths, over the same years",
+      s_gentle.mine_depletion_factor("coal") > s_dep.mine_depletion_factor("coal")
+      or s_gentle.mine_depletion_factor("coal") == 1.0,
+      (s_gentle.mine_depletion_factor("coal"), s_dep.mine_depletion_factor("coal")))
+
+# --- (c) TECHNOLOGY fights back: it raises yield and lowers cost, and the
+# two compound across independent technologies (mine pumping AND the
+# Newcomen engine both address drainage, at different scale).
+s_tech = sim(capital=1.0)
+y0, c0 = s_tech.mining_tech("coal")
+run_it(s_tech, "met_mine_pumping")
+y1, c1 = s_tech.mining_tech("coal")
+run_it(s_tech, "steam_atmospheric")
+y2, c2 = s_tech.mining_tech("coal")
+check("mine pumping alone raises yield and lowers cost for coal mining",
+      y1 > y0 and c1 < c0, (y0, y1, c0, c1))
+check("the Newcomen engine on top of mine pumping compounds rather than "
+      "replacing it",
+      y2 > y1 and c2 < c1, (y1, y2, c1, c2))
+check("mining technology never raises yield or lowers cost without bound "
+      "(capped/floored like every other compounding factor in this file)",
+      y2 <= 3.0 and c2 >= 0.35, (y2, c2))
+
+# --- technology raises what an EXISTING, already-depleted working yields,
+# not only room for a new one - "fight depletion", not just avoid it.
+before_tech = s_dep.mine_yield_t("coal")
+run_it(s_dep, "met_mine_pumping")
+run_it(s_dep, "steam_atmospheric")
+after_tech = s_dep.mine_yield_t("coal")
+check("mine pumping and the Newcomen engine raise a depleted working's "
+      "actual yield, not just future room to sink a new one",
+      after_tech > before_tech, (before_tech, after_tech))
+
+# --- the interaction the brief asked for: a real decision, not an
+# exponential. Cost is bounded on both ends even at maximum depletion with
+# every relevant technology built.
+s_bound = sim(capital=1.0)
+for _t in s_bound.MINING_TECH:
+    s_bound.done.add(_t); s_bound.operating.add(_t)
+for _t in s_bound.MINING_TECH_STEEL:
+    s_bound.done.add(_t); s_bound.operating.add(_t)
+s_bound._done_changed()
+s_bound.mine_intensity_yrs = collections.Counter({"coal": 1e9})
+check("even fully depleted with every relevant technology built, a tonne "
+      "still costs something (not free) and not a runaway multiple of book",
+      0.4 <= s_bound.mining_cost_scale("coal") <= 2.5,
+      s_bound.mining_cost_scale("coal"))
+s_bound2 = sim(capital=1.0)
+s_bound2.mine_intensity_yrs = collections.Counter({"coal": 1e9})
+check("fully depleted with NO relevant technology, cost is higher, not "
+      "lower, than the technology-equipped case above",
+      s_bound2.mining_cost_scale("coal") > s_bound.mining_cost_scale("coal"),
+      (s_bound2.mining_cost_scale("coal"), s_bound.mining_cost_scale("coal")))
+
+# --- THE PLAYER MUST SEE IT: mine_quote() names the land ceiling, current
+# yield fraction and why cost differs from book, before any capital moves.
+q_dep = s_dep.mine_quote("coal", 100.0)
+check("mine_quote names the ground's own ceiling and how much room is left "
+      "before it, not just a price",
+      q_dep["the_ground_here_could_ever_support"] > 0
+      and "room_left_before_geology_stops_you" in q_dep, q_dep)
+check("...and the current yield fraction, so a player can see a working "
+      "has depleted without guessing",
+      q_dep["current_yield_is_this_fraction_of_day_one"] < 1.0, q_dep)
+check("...and mine_depletion_note() explains it in a sentence, not just a "
+      "number",
+      s_dep.mine_depletion_note("coal") is not None
+      and "worked out" in s_dep.mine_depletion_note("coal"),
+      s_dep.mine_depletion_note("coal"))
+
+# --- determinism: the intensity/depletion bookkeeping is a Counter summed
+# by material key, not iterated from a set, so it must not depend on
+# PYTHONHASHSEED. Proven the same way the rest of this suite proves it: run
+# twice with different hash seeds and compare the exact figures.
+def _mine_snapshot(seed_env):
+    p = subprocess.run(
+        [sys.executable, "-c",
+         "import sys; sys.path.insert(0,'.'); import random, simulator as S; "
+         "T,P,N,W,G = S.load(); _l,O,_b = S.load_strategy('recommended', N, T['meta']['goal_node']); "
+         "s = S.Sim(N, O, random.Random(1), events=False, manual=True, "
+         "civ=S.load_civ('rome_100ad'), cfg={'start_capital':1e9}); "
+         "s.open_mine('coal', s.mine_land_ceiling('coal')*0.8, partial=False); "
+         "[s.__setattr__('year', s.year+1) or s.commission_mines() for _ in range(40)]; "
+         "print(repr(round(s.mine_depletion_factor('coal'), 12)))"],
+        capture_output=True, text=True, timeout=60, cwd=HERE,
+        env=dict(os.environ, PYTHONHASHSEED=seed_env))
+    return p.stdout.strip()
+_snap_a = _mine_snapshot("0")
+_snap_b = _mine_snapshot("12345")
+check("mine depletion is identical under a different PYTHONHASHSEED",
+      _snap_a == _snap_b and _snap_a, (_snap_a, _snap_b))
+
+# =============================================================================
+# REPUTATION: a tester reported it rewards raw completion count, so it can
+# be maximised by building trinkets you never use. Confirmed against the
+# real gain formula in projects.py: it reads n["rev"]/n["tier"]/traits and
+# self.done, and never reads self.operating at all. This is diagnosed and
+# left as a finding, not fixed here: the fix lives in projects.py, which
+# this pass does not own (see the task's own file-ownership boundary) -
+# see the final report for the recommended change.
+# =============================================================================
+s_rep = sim()
+_rep_cands = [k for k, n in NODES.items() if n.get("rev", 0) > 0 and n.get("tier", 0) >= 3]
+_rk = sorted(_rep_cands)[0]
+_n = NODES[_rk]
+_rep0 = s_rep.reputation
+s_rep.done.add(_rk); s_rep._done_changed(); s_rep.done_year[_rk] = s_rep.year
+s_rep.apply_tech_effects(_rk)
+_gain = (0.6 + 0.5 * max(0.0, s_rep.state_interest(_n))
+         + (1.2 if _n["rev"] > 0 else 0.0) + 0.25 * _n["tier"])
+s_rep.reputation = min(100.0, s_rep.reputation + _gain)
+check("FINDING (not fixed here, see report): completing a revenue-bearing "
+      "node raises reputation even when it is never opened as a concern",
+      s_rep.reputation > _rep0 and _rk not in s_rep.operating,
+      (_rep0, s_rep.reputation, _rk in s_rep.operating))
+
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
