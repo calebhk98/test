@@ -4701,6 +4701,12 @@ def _agent_dispatch_inner(s, nodes, cmd):
                  "lead": ("lead_kg",),
                  "tin": ("tin_kg",), "silver": ("silver_kg",),
                  "gold": ("gold_kg",)}
+        # GENERALISED (COMMODITY_DYNAMISM.md, economy.py's open_mine() is no
+        # longer limited to these seven names): for a mine in a material
+        # outside the curated list above, the material key IS its own demand
+        # key (see economy.py's _material_tag(), same convention), so a
+        # default of "look up the key by its own name" covers it rather than
+        # silently reporting 0 tonnes needed for anything not in `_keys`.
         rows = []
         # PENDING WORKINGS COUNT. A shaft takes years to come into production
         # and is paid for the moment you sink it, so a player who has just
@@ -4711,7 +4717,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _pending[_m][0] += _amt
             _pending[_m][1] = min(_pending[_m][1], _ready)
         for m, cap in sorted(s.mine_capacity.items()):
-            want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, ()))
+            want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,)))
             # ACTUAL yield, not the nominal tonnage sunk: depletion (the
             # easy ore going) and mining technology (a pump, a drill, a
             # railway) both move this away from `cap`, and a player whose
@@ -4724,7 +4730,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "tonnes_a_year_it_can_raise": round(actual, 2),
                 "sunk_capacity_t_per_yr": round(cap, 2),
                 "tonnes_a_year_you_actually_need": round(want, 2),
-                "costs_you_a_year": round(cap * s.MINE_OPEX_PER_T.get(m, 0.0)
+                "costs_you_a_year": round(cap * s._mine_opex(m)
                                           * s.price_index * s.mining_cost_scale(m), 1),
                 "using": ("%d%%" % (100.0 * min(1.0, want / actual))) if actual > 0 else "-",
                 "yield_note": s.mine_depletion_note(m),
@@ -4734,7 +4740,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "material": m,
                 "tonnes_a_year_it_can_raise": 0.0,
                 "tonnes_a_year_you_actually_need":
-                    round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, ())), 2),
+                    round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,))), 2),
                 "costs_you_a_year": 0.0,
                 "using": "sinking",
                 "ready_in": ready,
