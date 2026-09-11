@@ -6189,27 +6189,26 @@ check("following `pre` alone understates what the goal needs by the "
 # asking how short it was - while the mine branch beside it took 25% of
 # capital and sized itself to the measured shortfall. A Rome run with
 # staffing and money both solved spent 277 of its years short of saltpetre.
-def _nitre_laid(capital, tonnes_short_per_yr):
-    """One year of the auto_mine nitre branch, against a stated shortfall."""
+def _nitre_laid(capital):
+    """One year of the auto_mine nitre branch at a given wealth."""
     n = sim(civ="rome_100ad")
     n.capital = float(capital)
     n.policy["auto_mine"] = True
     n.nitre_bed_m2 = 0.0
-    n.annual_material_demand = lambda: {"nitre_kg": tonnes_short_per_yr * 1000.0}
     n.binding = "saltpetre"
     before = n.nitre_bed_m2
     n.step()
     return n.nitre_bed_m2 - before
 
-_rich = _nitre_laid(5_000_000.0, 40.0)
-_poor = _nitre_laid(3_000.0, 40.0)
-check("a rich household lays nitre bed in proportion to what it is short "
-      "of - forty tonnes a year wants 50,000 square metres, and the old "
-      "flat ceiling bought a thousand",
-      _rich >= 40.0 / 0.0008 * 0.99, _rich)
-check("...and a poor one is still held to what it can pay for, a quarter "
-      "of its capital, not to the shortfall it cannot afford",
-      _poor <= 3_000.0 * 0.25 / 2.0 + 1e-6, _poor)
+check("the nitre purchase is held to a flat two thousand denarii a year "
+      "however rich the household - sizing it to the shortfall instead, "
+      "the way the mine branch beside it does, measured worse on every "
+      "count and is recorded in core.py as a road not to walk again",
+      _nitre_laid(5_000_000.0) <= 2000.0 / S.Sim.NITRE_COST_PER_M2 + 1e-6,
+      _nitre_laid(5_000_000.0))
+check("...and a poor household is held to a twentieth of its capital",
+      _nitre_laid(3_000.0) <= 3_000.0 * 0.05 / S.Sim.NITRE_COST_PER_M2 + 1e-6,
+      _nitre_laid(3_000.0))
 check("the nitre yield and price the advice quotes are the ones the "
       "purchase actually uses - 0.0008 t/m2 at 2.0 den/m2, so a tonne a "
       "year of shortfall costs 2,500 denarii of bed",

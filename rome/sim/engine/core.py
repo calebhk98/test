@@ -1218,36 +1218,29 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # outside the policy check and took five per cent of a manual
                 # player's capital every year they were short of nitre,
                 # without a line in the log and without anything they typed.
-                # SIZED TO THE SHORTFALL, like the mine branch above it, and
-                # not to a flat ceiling. This used to spend
-                # min(capital * 0.05, 2000) a year - two thousand denarii of
-                # bed however rich the household was, and without ever asking
-                # how short of nitre it actually was. A Rome run that had
-                # solved staffing and money outright, with millions in hand,
-                # spent 277 of its years short of saltpetre laying two
-                # thousand denarii of bed at a time, because the one remedy
-                # the game offers was capped at a figure that suited the
-                # household of year five and never grew with it.
+                # A FLAT CEILING, AND IT IS NOT AN OVERSIGHT. Sizing this to
+                # the measured shortfall the way the mine branch above does
+                # is the obvious symmetry, it was tried, and it measured
+                # WORSE on every count: Rome's saltpetre shortage went from
+                # 277 run-years to 678, its reputation from 99 to 31, and its
+                # first blocked node regressed from point_contact_transistor -
+                # the last step of the whole programme - back to
+                # atomic_theory, which it had cleared in its third century.
+                # Spending a quarter of capital a year against a shortfall
+                # that beds cannot close at any affordable scale starves
+                # everything else, and in a household that falls into arrears
+                # the interest then pins it there. Two thousand denarii a year
+                # is what leaves the rest of the programme funded.
                 #
-                # A bed yields 0.0008 tonnes the square metre each year, so
-                # covering a shortfall of one tonne a year takes 1,250 square
-                # metres and 2,500 denarii. The old ceiling bought 1,000
-                # square metres: eight hundred kilos a year, whatever the
-                # demand.
-                dem = self.annual_material_demand()
-                short_t = max(0.0, sum(dem.get(kk, 0.0) for kk, (bucket, _tag)
-                                       in self.MATERIAL_CHECKS.items()
-                                       if bucket == "saltpetre") / 1000.0
-                              - self.nitre_bed_m2 * self.NITRE_YIELD_T_PER_M2)
-                want_m2 = short_t / self.NITRE_YIELD_T_PER_M2
-                spend = min(want_m2 * self.NITRE_COST_PER_M2,
-                            max(0.0, self.capital) * 0.25)
-                if spend > 0:
-                    self.capital -= spend
-                    self.nitre_bed_m2 += spend / self.NITRE_COST_PER_M2
-                    self.log.append((yr, "laid down %d square metres of nitre bed "
-                                         "for %d denarii (auto_mine)"
-                                     % (spend / self.NITRE_COST_PER_M2, spend)))
+                # The shortage is real and unresolved; more money is not the
+                # answer to it, and this comment is here so the next person to
+                # notice the asymmetry does not spend the afternoon I did.
+                spend = min(self.capital * 0.05, 2000)
+                self.capital -= spend
+                self.nitre_bed_m2 += spend / self.NITRE_COST_PER_M2
+                self.log.append((yr, "laid down %d square metres of nitre bed "
+                                     "for %d denarii (auto_mine)"
+                                 % (spend / self.NITRE_COST_PER_M2, spend)))
         if thr < 0.6 and self.binding:
             # SAY WHAT TO DO ABOUT IT. A play tester read "SHORT OF SALTPETRE:
             # work at 5% of plan" for thirty years and could not find out what
