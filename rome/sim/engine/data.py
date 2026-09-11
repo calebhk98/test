@@ -312,12 +312,55 @@ def is_downstream(nodes, k, target):
     return bool(masks.get(k, 0) >> index[target] & 1)
 
 
+def hard_pre(nodes, k):
+    """Every edge that is genuinely mandatory: `pre`, plus the `req_any` groups
+    that offer exactly one real node and are therefore not a choice at all.
+
+    ONE DEFINITION, used by closure(), topo_order() and critical_path()
+    alike. They disagreed for a while: the closure learned to follow
+    single-option groups and the other two did not, so `mat_manganese` was
+    correctly listed as required and then topologically sorted AFTER the
+    `mat_bulk_steel` that requires it, and the critical path was measured
+    along a graph missing the edge. A requirement the ordering does not know
+    about is a requirement the plan will schedule too late.
+
+    Multi-option groups stay out. Those are real substitutions - silicon or
+    germanium will do - and following all of them both overstates the work and
+    cycles: junction_transistor -> silicon_path -> point_contact_transistor ->
+    junction_transistor is a genuine loop once every option counts. `pre` plus
+    the single-option edges alone is acyclic across all 2,833 nodes, checked
+    directly, which is what makes this safe where the full walk is not.
+    """
+    # DEDUPED, in first-seen order. A node may name the same id in `pre` and
+    # again in a single-option group - el2_valve_voltmeter_high_impedance
+    # names vacuum_tube twice - and topo_order counts in-degree by walking
+    # this list, so a duplicate raises the count by two against a decrement
+    # that can only ever subtract one. The first version of this reported a
+    # "cycle" among ten nodes that have no cycle between them at all: they
+    # were simply the nodes Kahn's algorithm could never finish emitting.
+    n = nodes[k]
+    out, seen = [], set()
+    for p in n["pre"]:
+        if p not in seen:
+            seen.add(p)
+            out.append(p)
+    for grp in (n.get("req_any") or []):
+        opts = grp.get("options") or {}
+        if len(opts) == 1:
+            (opt,) = opts.keys()
+            if opt in nodes and opt not in seen:
+                seen.add(opt)
+                out.append(opt)
+    return out
+
+
 def topo_order(nodes, subset=None):
     """Kahn topological sort. `subset` restricts to a set of ids."""
     keys = set(subset) if subset else set(nodes)
+    hp = {k: hard_pre(nodes, k) for k in keys}
     indeg = {k: 0 for k in keys}
     for k in keys:
-        for p in nodes[k]["pre"]:
+        for p in hp[k]:
             if p in keys:
                 indeg[k] += 1
     ready = sorted([k for k in keys if indeg[k] == 0])
@@ -326,7 +369,7 @@ def topo_order(nodes, subset=None):
         k = ready.pop(0)
         out.append(k)
         for m in sorted(keys):
-            if k in nodes[m]["pre"]:
+            if k in hp[m]:
                 indeg[m] -= 1
                 if indeg[m] == 0:
                     ready.append(m)
@@ -336,13 +379,45 @@ def topo_order(nodes, subset=None):
 
 
 def closure(nodes, goal):
+    """Everything the goal needs, following `pre` AND the `req_any` groups
+    that are not really alternatives at all.
+
+    A `req_any` group is a substitution: any one option satisfies it, so
+    counting all of them as required would both overstate the work and cycle
+    outright - `junction_transistor -> silicon_path -> point_contact_transistor
+    -> junction_transistor` is a real loop once every option counts, and an
+    earlier attempt to index the tree that way was OOM-killed by it.
+
+    But 125 of the tree's groups have exactly ONE option naming a real node.
+    That is not a choice between routes; it is a prerequisite that happened to
+    be authored as a substitution group. `mat_bulk_steel`'s manganese_supply
+    group is `{"mat_manganese": 1.0}` and nothing else, and because this walk
+    used to follow `pre` alone, manganese was not in the goal's closure. A
+    traced Rome run reached year 700 with 111 scholars, 428 artisans and 11.7
+    million denarii and had still not built `mat_bulk_steel` or any of the 51
+    nodes behind it - the whole road to the goal through steel, power and
+    semiconductor purification - because the one tier-4 node in the way was
+    never ranked ahead of the tree's 2,700 optional ones.
+
+    Following the single-option groups takes the goal's closure from 158 nodes
+    to 185 and cannot introduce a cycle: `pre` plus every single-option
+    `req_any` edge in the whole 2,833-node tree is acyclic, checked directly.
+
+    ONE RULEBOOK, deliberately. This lived as a separate `planning_closure` in
+    planner.py for a few hours, on the reasoning that the shared walk had to
+    stay as it was for fog and discovery. That reasoning is backwards: a
+    mandatory prerequisite is mandatory for `validate`'s count, for `why`'s
+    "full chain behind it" and for what the fog reveals, not only for the
+    planner. A second copy of "what does the goal need" is how this project
+    got a household capped at six scholars while its own optimizer held 146.
+    """
     need, stack = set(), [goal]
     while stack:
         c = stack.pop()
-        if c in need:
+        if c in need or c not in nodes:
             continue
         need.add(c)
-        stack.extend(nodes[c]["pre"])
+        stack.extend(hard_pre(nodes, c))
     return need
 
 
@@ -361,7 +436,7 @@ def critical_path(nodes, goal):
         n = nodes[k]
         own = max(n["yrs"], n["ph"] / 2000.0)
         pb, pc = 0.0, []
-        for p in n["pre"]:
+        for p in hard_pre(nodes, k):
             if p in best and best[p] > pb:
                 pb, pc = best[p], chain[p]
         best[k] = pb + own

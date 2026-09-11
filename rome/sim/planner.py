@@ -166,6 +166,33 @@ def pick_side_branches(nodes, need, s, limit):
     (a Han run has no use for Roman citizenship), and anything already
     granted or already a hard prerequisite of the goal is excluded because it
     needs no priority push - it is either free or already first in line.
+
+    NOT PRICED PER CIVILISATION, ON PURPOSE, AND MEASURED. `rev`/`up`/
+    `_total_cost` are the tree's raw, civilisation-unadjusted numbers, so
+    ranking by them ignores what THIS society's own `cost_multipliers` and
+    `price_index` make a candidate actually worth - civ-blind ranking,
+    tried first because it looked like an obvious gap (Rome and Han's
+    strategy files came out byte-for-byte identical, side branches
+    included, which is real and still true). Re-ranking with `net =
+    (rev-up)*price_index` over `cost = _total_cost*civ_cost_factor(k)` -
+    exactly what the engine charges at run time - does produce a genuinely
+    different top-`limit` list per civilisation, and was measured head to
+    head against this version, three seeds, 600-year horizon, fresh
+    civilisation state per trial (reusing one `Sim`-built civ dict across
+    trials was an earlier version of this same test and silently mutated
+    hazard-shifted values across trials, inflating the civ-priced version's
+    apparent results - a trap worth naming so nobody re-walks into it).
+    Civ-priced Rome ended WORSE on every one of the three seeds - capital
+    -4,489 / -1,929 / 91.0m against this version's +11.8m / +6.7m / +198.7m
+    at year 700 - not merely different, worse across the board. The
+    civilisation-blind ranking this function already used favours cheap,
+    short-chain, low-risk ventures (toys, buttons, simple textiles) that
+    happen to serve a poor household better than the theoretically-better-
+    ROI, longer-chain ventures (locomotives, boilers, dynamite) civ-pricing
+    promotes it to instead, whatever their nominal return on capital. Left
+    as is; the real fix for what actually blocks the goal is
+    `closure()` seeing the single-option req_any groups it used to
+    walk straight past, not this.
     """
     cands = []
     for k, n in nodes.items():
