@@ -6218,6 +6218,40 @@ check("the nitre yield and price the advice quotes are the ones the "
 check("saltpetre still cannot simply be bought - the beds are the answer, "
       "not a market share",
       S.Sim.MARKET_SHARE["saltpetre"] == 0.0, S.Sim.MARKET_SHARE["saltpetre"])
+# --- THE SAME HOLE IN A SECOND COMMAND. `available`'s parser read bare words
+# only, so `available all:true` - the spelling `help commands` itself gives -
+# fell through to the subject branch and was used as a search string named
+# "all:true", matching nothing, silently. The same hole swallowed limit:30,
+# find:furnace and every other pair. `state full:true` has always taken this
+# spelling, so a player who learned it there was right to expect it.
+for _av, _want in (("available all", {"cmd": "available", "all": True}),
+                   ("available all:true", {"cmd": "available", "all": True}),
+                   ("available limit:30 offset:30",
+                    {"cmd": "available", "limit": 30, "offset": 30}),
+                   ("available find:furnace",
+                    {"cmd": "available", "find": "furnace"})):
+    check("'%s' is understood" % _av, _PT(_av)[0] == _want, _PT(_av)[0])
+check("a bare subject is still a subject, not mistaken for a flag",
+      _PT("available metallurgy")[0] == {"cmd": "available",
+                                         "subject": "metallurgy"},
+      _PT("available metallurgy")[0])
+
+# --- THE HELP PROMISED SOMETHING THE CODE DELIBERATELY DOES NOT DO. auto_open
+# opens a capability institution at a loss on purpose - a school takes 2,500 a
+# year, hands back 800, and is where twelve of your scholars come from - while
+# its help said it "will NOT open anything whose upkeep exceeds its takings".
+# Two players on different civilisations each watched it open a loss-maker,
+# checked the help, and reported the automation as broken. The code was right.
+_ao = S._agent_dispatch(sim(civ="rome_100ad"), NODES, {"cmd": "policy"})
+_ao_txt = str(_ao)
+check("auto_open's help admits it opens the institutions that train people "
+      "even at a loss, which is what it actually does",
+      "at a loss" in _ao_txt and "scholars come from" in _ao_txt,
+      [l for l in _ao_txt.split(".") if "auto_open" in l][:1])
+check("...and still says what it leaves shut, the case the original "
+      "sentence was written for",
+      "left shut" in _ao_txt, "left shut")
+
 # --- THREE PLAYERS, THREE CIVILISATIONS, THE SAME COMPLAINT. Norse, England
 # and Rome each independently reported being carried into debt they had not
 # decided to take on, and two of them found out what happens past the credit

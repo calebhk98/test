@@ -3555,6 +3555,35 @@ def parse_typed(line):
         #   available limit 30 offset 30
         #   available find furnace sort risk reverse
         out = {"cmd": "available"}
+        # key:value AND key value, BOTH. This loop read bare words only, so
+        # `available all:true` - the spelling `help commands` itself gives -
+        # fell all the way through to the subject branch at the bottom and was
+        # used as a search string named "all:true", silently matching nothing.
+        # A Han player reported it as a documentation bug and was right; the
+        # same hole swallowed limit:30, find:furnace and every other pair.
+        # Splitting on the first colon before the loop fixes the family rather
+        # than the one instance, and `state full:true` has always taken this
+        # spelling, so a player who learned it there was right to expect it.
+        _KEYS = ("all", "find", "search", "named", "afford", "under", "within",
+                 "limit", "offset", "heard", "heard_offset", "sort")
+        _rest = []
+        for w in rest:
+            t = str(w)
+            if ":" in t:
+                a, _, b = t.partition(":")
+                if a.lower() in _KEYS:
+                    _rest.append(a)
+                    # all:true and all:1 mean `all`; all:false means leave it
+                    # off, which is what omitting the word already does.
+                    if a.lower() == "all":
+                        if b.lower() in ("false", "0", "no", "off"):
+                            _rest.pop()
+                        continue
+                    if b:
+                        _rest.append(b)
+                    continue
+            _rest.append(t)
+        rest = _rest
         low = [w.lower() for w in rest]
         i = 0
         while i < len(low):
@@ -5421,16 +5450,27 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "auto_bribe": "pay your way out of a scandal before it kills you",
                     "auto_shed": "let go of WORKS that cost more than they return "
                                  "(this is about buildings and practices, not people)",
-                    # SAY WHAT IT WILL NOT DO. A play tester found their
-                    # nitre beds, lab apparatus and glassware left closed by
-                    # this and concluded the lesson was "don't trust the
-                    # automation". It is not broken; it only opens what plainly
-                    # pays, and a capability you need but which earns less than
-                    # it costs is exactly what it will leave shut.
-                    "auto_open": "open concerns that plainly pay for themselves. "
-                                 "It will NOT open anything whose upkeep exceeds "
-                                 "its takings, however much you need it - open "
-                                 "those yourself with 'open <id>'",
+                    # SAY WHAT IT WILL NOT DO - AND SAY THE EXCEPTION, which
+                    # this did not, so two players on different civilisations
+                    # each watched it open a loss-making concern, checked the
+                    # help, and reported the automation as broken. It is not:
+                    # auto_open_ventures deliberately opens a capability
+                    # institution at a loss, because a school takes 2,500 a
+                    # year and hands back 800 and is where twelve of your
+                    # scholars come from, and the margin test would otherwise
+                    # shut it for ever. An ordinary shop that earns less than
+                    # it costs is still left shut, which is the case the
+                    # original sentence was written for - a play tester whose
+                    # nitre beds and glassware stayed closed. Both halves are
+                    # true and only one of them was written down.
+                    "auto_open": "open concerns that plainly pay for themselves, "
+                                 "and the institutions that train and house "
+                                 "people even when those run at a loss - a "
+                                 "school costs more than it takes and is where "
+                                 "your scholars come from. An ordinary shop that "
+                                 "earns less than it costs is left shut however "
+                                 "much you need it; open those yourself with "
+                                 "'open <id>'",
                 },
                 "note": "Anything switched off here you can still do by hand: hire, "
                         "train, buy, commission, mothball, restore, bribe.",
