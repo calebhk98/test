@@ -4985,6 +4985,80 @@ check("a smaller, poorer civilization's market for the same good saturates "
       _small_factor < _rome_10, (_small_factor, _rome_10))
 
 
+# ============================================================================
+# INTERFACE HONESTY: an estimate instead of a certainty where fog says the
+# player should not have one yet, the game not answering its own questions,
+# and the smaller items testers asked for. protocol.py, fog.py.
+# ============================================================================
+
+# --- JOB 1: revenue is an estimate, not the true figure, for a thing you
+# have never run, under fog. The user asked outright: "should you really be
+# able to tell how much money you would make from researching something?
+# Shouldn't the payback be something you don't know until after research?"
+# and a break tester's own numbers said why it mattered - EARNS/YR under fog
+# was "the only usable heuristic", and got them 95 of the 146 nodes on the
+# road to the goal without working out the tree at all.
+s_fe = sim()
+s_fe.fog = True
+s_fe.revealed = set()
+_av_fe = S._agent_available(s_fe, NODES, {"all": True})
+_est_rows = [r for r in _av_fe["available"] if isinstance(r["earns_per_year"], list)]
+check("available quotes a range, not the true figure, for an unbuilt thing "
+      "under fog",
+      len(_est_rows) > 10, len(_est_rows))
+_r0 = _est_rows[0]
+check("...and the range is an actual range: low is really below high",
+      _r0["earns_per_year"][0] < _r0["earns_per_year"][1], _r0)
+
+_k_fe = _r0["id"]
+_w1 = S._agent_dispatch(s_fe, NODES, {"cmd": "why", "id": _k_fe})
+_w2 = S._agent_dispatch(s_fe, NODES, {"cmd": "why", "id": _k_fe})
+check("the fogged estimate is deterministic - the same game asked the same "
+      "question twice gets the same answer, not a fresh roll",
+      _w1["revenue"] == _w2["revenue"], (_w1["revenue"], _w2["revenue"]))
+
+# NOT A TIGHT SYMMETRIC BAND ON THE TRUTH: "400 +/- 50" gives the truth away
+# just as plainly as the bare number did. Most of the range in a real sample
+# has to sit CLOSER on one side than the other.
+_asym = sum(1 for r in _est_rows
+            if (NODES[r["id"]]["rev"] - r["earns_per_year"][0])
+            != (r["earns_per_year"][1] - NODES[r["id"]]["rev"]))
+check("the estimate is not a tight symmetric band centred on the truth - "
+      "most of a real sample sit closer to one bound than the other",
+      _asym >= len(_est_rows) * 0.5, "%d of %d" % (_asym, len(_est_rows)))
+
+# UPKEEP STAYS EXACT. The user's question was specifically about payback
+# (revenue); upkeep is closer to a quoted price, knowable in advance, and
+# this project already keeps `cost` exact under fog for the same reason.
+_k_up = next((r["id"] for r in _est_rows if NODES[r["id"]]["up"] > 0), None)
+if _k_up:
+    _wu = S._agent_dispatch(s_fe, NODES, {"cmd": "why", "id": _k_up})
+    check("upkeep is exact under fog even for a thing you have never run",
+          _wu["upkeep"] == NODES[_k_up]["up"], (_wu["upkeep"], NODES[_k_up]["up"]))
+
+# NARROWS TO THE EXACT FIGURE ONCE YOU HAVE ACTUALLY RUN IT A FEW YEARS.
+s_ry = sim()
+s_ry.fog = True
+s_ry.revealed = set()
+s_ry.done.add(_k_fe)
+s_ry.done_year[_k_fe] = s_ry.year
+s_ry._done_changed()
+_w_new = S._agent_dispatch(s_ry, NODES, {"cmd": "why", "id": _k_fe})
+check("a freshly finished thing is still a guess - you have not run it yet",
+      isinstance(_w_new["revenue"], list), _w_new["revenue"])
+s_ry.year += 3
+_w_old = S._agent_dispatch(s_ry, NODES, {"cmd": "why", "id": _k_fe})
+check("...and becomes the exact figure after you have actually run it a "
+      "few years",
+      _w_old["revenue"] == NODES[_k_fe]["rev"], _w_old["revenue"])
+
+# FOG OFF: the exact figure, as before.
+s_nf = sim()
+_w_nf = S._agent_dispatch(s_nf, NODES, {"cmd": "why", "id": _k_fe})
+check("with fog off, EARNS/YR is still the exact figure",
+      _w_nf["revenue"] == NODES[_k_fe]["rev"], _w_nf["revenue"])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

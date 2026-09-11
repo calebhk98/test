@@ -3,7 +3,7 @@
 One object per line in, one object per line out. It explains itself: there is
 no protocol document to read, on purpose.
 """
-import collections, json, math, os, random, re
+import collections, hashlib, json, math, os, random, re
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
@@ -899,6 +899,98 @@ def _staff_fields(s, n):
     return out
 
 
+def _coarse_round(x):
+    """Round a fogged revenue guess to a figure a person would actually say
+    aloud - "three to five hundred a year", not "347.2 to 511.8 den/yr".
+    Real-looking precision on a number that is, by construction, not the
+    truth would read as measured rather than guessed, which defeats the
+    point of guessing at all.
+    """
+    x = max(0.0, x)
+    if x == 0:
+        return 0.0
+    step = 5 if x < 100 else 25 if x < 1000 else 100 if x < 10000 else 500
+    return round(x / step) * step
+
+
+def _revenue_known_exactly(s, k):
+    """Have you actually RUN this long enough to know what it earns?
+
+    Granted knowledge (k in s.granted) is answered True unconditionally: it
+    is part of the persona you arrived with, not a prospect you are sizing
+    up, so there is nothing to guess about. Anything else you have finished
+    needs a few years of its own ledger behind it - "a few years" taken
+    literally, three - before the figure stops being a forecast and starts
+    being a fact; done_year missing (a bookkeeping gap, not a fresh
+    completion) defaults to True rather than trapping a player in a fog
+    the engine itself cannot explain.
+    """
+    if k not in s.done:
+        return False
+    if k in s.granted:
+        return True
+    started = s.done_year.get(k)
+    if started is None:
+        return True
+    return (s.year - started) >= 3
+
+
+def _fog_revenue_estimate(s, k):
+    """What `available` and `why` show for EARNS/YR on a thing you have
+    never run, under fog of war: a range, not the true figure.
+
+    The user who asked for this put the question plainly: "should you
+    really be able to tell how much money you would make from researching
+    something? Shouldn't the payback be something you don't know until
+    after research?" A break tester's own numbers say why it matters: under
+    fog they built 540 technologies using EARNS/YR as, in their own words,
+    "the only usable heuristic", and reached 95 of the 146 nodes on the road
+    to the goal that way - not because they had worked out the tree, but
+    because the exact payback figure told them which side branches paid and
+    steered them straight past the spine. Real payback is a thing you learn
+    by running a concern for a few years, not by reading a number off a
+    prospectus before you have so much as broken ground.
+
+    Two things this must never be:
+      - RE-ROLLED. A fresh call to self.rng here would answer differently on
+        two consecutive looks at the same screen, and would also consume a
+        draw from the SAME generator the simulation itself steps with - so
+        merely asking `why` twice would change how the game plays out.
+        Read-only commands must not touch self.rng. Instead this hashes
+        something stable for the LIFE of one game (this civilisation, this
+        goal, this starting purse) together with the node's own id, so the
+        same game asked the same question twice gets the same answer, and a
+        different game is not guaranteed to.
+      - A TIGHT SYMMETRIC BAND ON THE TRUTH. "400 +/- 50" tells you 400 just
+        as plainly as the bare number did, because the midpoint gives it
+        away. The low and high bounds below are pulled by two independently
+        drawn fractions, so the middle of the printed range is not, in
+        general, anywhere near the real figure, and averaging the two bounds
+        does not recover it.
+    It DOES widen with how well this node's own numbers are attested: `conf`
+    is already in the tree data for exactly this reason (A well attested, B
+    probable, C the author's estimate), so a guess about a well-documented
+    Roman trade is tighter than a guess about a Han institution nobody wrote
+    down the takings of, the same as a historian's own uncertainty would be.
+    """
+    n = s.nodes[k]
+    real = n["rev"]
+    if real <= 0:
+        return None          # nothing to estimate; a non-earner is a non-earner under fog too
+    key = "%s|%s|%.1f|%s" % (s.civ.get("id") or s.civ.get("name") or "civ",
+                             getattr(s, "goal", "") or "",
+                             s.cfg.get("start_capital", 0.0), k)
+    h = hashlib.sha256(key.encode("utf-8")).digest()
+    half = {"A": 0.30, "B": 0.55}.get(n.get("conf"), 0.85)
+    lo_frac = 0.35 + (h[0] / 255.0) * 0.55
+    hi_frac = 0.35 + (h[1] / 255.0) * 0.90
+    lo = _coarse_round(real * (1.0 - half * lo_frac))
+    hi = _coarse_round(real * (1.0 + half * hi_frac))
+    if hi <= lo:
+        hi = lo + (5 if lo < 100 else 25 if lo < 1000 else 100)
+    return [lo, hi]
+
+
 def _brief(s, nodes, k, fog):
     """One row of `available`.
     
@@ -918,12 +1010,18 @@ def _brief(s, nodes, k, fog):
     # has a size budget to keep.
     rests = _rests_band(downstream_count(nodes, k)).split(";")[0]
     if fog:
+        # A ROW HERE IS ALWAYS A THING YOU HAVE NOT BUILT - `available` lists
+        # what you could BEGIN, never what you already have - so there is no
+        # "have you run it long enough" case to check; see
+        # _revenue_known_exactly for the one that `why` does need, because
+        # `why` also answers for things you finished years ago.
+        _est = _fog_revenue_estimate(s, k)
         return {"id": k, "name": n["name"],
                 "cost": round(s.project_cost(k), 1),
                 "your_hours": n["ph"],
                 "least_years": n["yrs"],
                 "chance_of_failure": n["risk"],
-                "earns_per_year": round(n["rev"], 1),
+                "earns_per_year": _est if _est is not None else round(n["rev"], 1),
                 "costs_per_year_after": round(n["up"], 1),
                 "how_much_rests_on_this": rests,
                 **_staff_fields(s, n)}
@@ -1474,7 +1572,20 @@ def _node_explain(s, nodes, k):
                  "note": "today's price. It is fixed when you start, not when "
                          "you read it: quotes move with prices, the coinage "
                          "and what a material costs to get."},
-        "upkeep": n["up"], "revenue": n["rev"],
+        # UPKEEP STAYS EXACT, EVEN UNDER FOG, AND REVENUE DOES NOT. Upkeep is
+        # closer to a quoted PRICE than to a forecast - rent, wages and
+        # materials are things you can ask around about before you commit,
+        # the same way `cost` above is already shown exact and fixed the
+        # moment you start. Revenue is different in kind: it is what the
+        # market will actually pay for a thing nobody here has ever sold,
+        # and that is not knowable in advance whatever you ask around, which
+        # is the whole of the user's original question - "shouldn't the
+        # payback be something you don't know until after research?" So
+        # revenue alone is fogged; see _fog_revenue_estimate.
+        "upkeep": n["up"],
+        "revenue": (n["rev"] if (not getattr(s, "fog", False)
+                                 or _revenue_known_exactly(s, k))
+                   else (_fog_revenue_estimate(s, k) or 0.0)),
         # WHAT IT PAYS YOU, which for something in your own practice is a third
         # of the figure above. A break tester read "REVENUE: 500 den/yr" beside
         # a ledger crediting 166.7 for the same node and called it `why`
@@ -1688,6 +1799,17 @@ def _fmt_num(v):
             return "{:,.0f}".format(f) if float(f).is_integer() else "{:,.1f}".format(f)
         return "{:,.2f}".format(f)
     return str(v)
+
+
+def _fmt_range(v):
+    """earns_per_year, under fog, for a thing you have never run: [lo, hi]
+    rather than a bare number - see _fog_revenue_estimate. One column had to
+    read both shapes, so this reads either and falls back to _fmt_num for
+    the ordinary case.
+    """
+    if isinstance(v, (list, tuple)) and len(v) == 2:
+        return "%s-%s" % (_fmt_num(v[0]), _fmt_num(v[1]))
+    return _fmt_num(v)
 
 
 def _pct(v):
@@ -2010,7 +2132,7 @@ def _available_row(e, w=34, purse=None):
         w, (e.get("id") or ""), (e.get("name") or "")[:20],
         _fmt_num(e.get("cost")) + _cost_marker(e, purse),
         _fmt_num(hours), _fmt_num(years), _pct(risk),
-        _fmt_num(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
+        _fmt_range(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
         staff, rests)
 
 
@@ -2168,8 +2290,16 @@ def render_why(out):
     if mat:
         L.append("MATERIALS: " + ", ".join("%s %s" % (m, _fmt_num(q)) for m, q in mat.items()))
     if out.get("upkeep") or out.get("revenue"):
-        L.append("UPKEEP: %s den/yr     REVENUE: %s den/yr"
-                 % (_fmt_num(out.get("upkeep")), _fmt_num(out.get("revenue"))))
+        # A RANGE READS AS A RANGE, NOT AS TWO NUMBERS GLUED TOGETHER. See
+        # _fog_revenue_estimate: under fog, on a thing nobody here has ever
+        # run, this is a guess, and saying so is the whole point of showing
+        # a guess instead of the true figure.
+        _rev = out.get("revenue")
+        _is_est = isinstance(_rev, (list, tuple))
+        L.append("UPKEEP: %s den/yr     REVENUE: %s den/yr%s"
+                 % (_fmt_num(out.get("upkeep")), _fmt_range(_rev),
+                    " (nobody has run this here yet - a guess, not a fact)"
+                    if _is_est else ""))
     if out.get("but_it_pays_YOU") is not None:
         L.append("  BUT IT PAYS YOU %s den/yr: %s"
                  % (_fmt_num(out["but_it_pays_YOU"]), out.get("because") or ""))
