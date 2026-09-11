@@ -274,12 +274,9 @@
   "crank_conrod",
   "water_power_scale",
   "cap_power_water",
-  "blast_furnace",
-  "mat_cast_iron",
   "rag_paper",
   "mat_paper",
   "clock_pendulum",
-  "cap_heat_1300",
   "sea_sternpost_rudder"
  ],
  "state_capacity": 0.6,

@@ -590,7 +590,7 @@
   "rubber_kg": {
    "conf": "C",
    "p": 120.0,
-   "note": "Landolphia and Funtumia vine latex, tapped in west and central Africa and carried up the coast: real, and reachable behind exp_coastal_africa, but with no established trade to buy into, which is what the 95% failure risk on mat_natural_rubber is for. Priced between shellac (40, an existing Indian Ocean trade) and silk (300). It used to sit at 99,999 as a sentinel for the abolished 'unobtainable' tier - a play tester worked out that one kilo was four hundred artisan-years and that a breadcrumb eraser cost 5 denarii against three million for a rubber one. Nothing is unobtainable; it is only elsewhere."
+   "note": "Landolphia and Funtumia vine latex, tapped in west and central Africa and carried up the coast: real, and reachable behind exp_coastal_africa, but with no established trade to buy into, which is what the 95% failure risk on mat_natural_rubber is for. Priced between shellac (40, an existing Indian Ocean trade) and silk (300). It used to sit at 99,999 as a sentinel for the abolished 'unobtainable' tier - a play tester worked out that one kilo was four hundred artisan-years and that a breadcrumb eraser cost 5 denarii against three million for a rubber one. Nothing is unobtainable; it is only elsewhere. This price is not a market price: nobody sells you rubber_kg. It is what tapping and coagulating a kilogram of it yourself costs once you have mat_rubber_coagulated (and, for anything that must not melt in summer or crack in winter - a tyre, a belt, a sole - tl_vulcanized_rubber as well). [AUDIT: see JOB 2 rubber audit, rome/data/tech_tree.json.]"
   },
   "rubber_tubing_kg": {
    "conf": "C",
