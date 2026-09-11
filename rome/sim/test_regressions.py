@@ -7482,6 +7482,86 @@ check("a pure-knowledge node (no revenue, no upkeep) carries no "
       "staff_to_keep_it_open - there is no concern to supervise",
       r[0].get("staff_to_keep_it_open") is None, r[0].get("staff_to_keep_it_open"))
 
+# --- three playtesters: a concern the staffing rule shut never came back on
+# its own once restaffed - reopening it was `auto_open`, a SEPARATE policy
+# defaulting off for a player, so every restaffing was followed by a manual
+# `open`, for ever. "Most of the mid and late game was a repetitive
+# hire-then-reopen treadmill rather than fresh decisions."
+s = sim(capital=50000.0)
+_k = "cementation_steel"
+s.done.add(_k)
+s._done_changed()
+s.employees["artisan"] = 6.0
+s._resync_pools()
+ok, _ = s.open_venture(_k)
+check("set-up: cementation_steel opens with six craftsmen on staff", ok)
+s.employees["artisan"] = 0.0
+s._resync_pools()
+closed = s.close_unstaffed_ventures(s.year)
+check("losing every craftsman shuts a concern that needs them to supervise",
+      closed == [_k] and _k in s.mothballed and _k in getattr(s, "shut_for_staff", {}),
+      closed)
+s.employees["artisan"] = 6.0
+s._resync_pools()
+reopened = s.reopen_restaffed_ventures(s.year)
+check("...and it comes back on its own once restaffed, with no 'open' typed",
+      reopened == [_k] and _k in s.operating and _k not in s.mothballed
+      and _k not in getattr(s, "shut_for_staff", {}), reopened)
+
+# --- and a concern a player shut ON PURPOSE must never reappear on its own -
+# reopen_restaffed_ventures only undoes close_unstaffed_ventures, never `mothball`
+s = sim(capital=50000.0)
+s.done.add(_k)
+s._done_changed()
+s.employees["artisan"] = 6.0
+s._resync_pools()
+s.open_venture(_k)
+s.mothball_work(_k)
+reopened = s.reopen_restaffed_ventures(s.year)
+check("a concern closed on purpose with 'mothball' is never auto-reopened, "
+      "however much staff is free - that is still the player's call",
+      reopened == [] and _k in s.mothballed and _k not in s.operating, reopened)
+
+# --- the treadmill itself, measured: build a realistic spread of concerns,
+# starve them of any staff replacement (auto_hire off, the player default),
+# and count closures against automatic reopenings over 40 years
+def _portfolio_run(auto_hire, years=40):
+    s = sim(civ="norse_900ad", capital=60000.0)
+    s.policy["auto_hire"] = auto_hire
+    cands = sorted((k for k in NODES if s.is_venture(k) and NODES[k]["rev"] > 0),
+                   key=lambda k: -(NODES[k]["rev"] / max(1.0, sum(s.venture_hands(k)))))
+    chosen, need_sch, need_art = [], 0.0, 0.0
+    for k in cands:
+        s.done.add(k)
+        a, b = s.venture_hands(k)
+        if (need_sch + a > 8.0 and need_sch > 0) or (need_art + b > 35.0 and need_art > 0):
+            s.done.discard(k)
+            continue
+        need_sch += a
+        need_art += b
+        chosen.append(k)
+        if len(chosen) >= 25:
+            break
+    s._done_changed()
+    s.employees["scholar"] = round(need_sch) + 1
+    s.employees["artisan"] = round(need_art) + 2
+    s._resync_pools()
+    opened = [k for k in chosen if s.open_venture(k)[0]]
+    reopenings = 0
+    for _ in range(years):
+        before = set(s.operating)
+        s.step()
+        reopenings += len((set(s.operating) - before) & set(opened))
+    return opened, sum(1 for k in opened if k in s.operating), reopenings
+
+_opened, _open_end, _reopenings = _portfolio_run(auto_hire=True)
+check("with auto_hire replacing attrition losses, the portfolio it built "
+      "fully recovers over 40 years - every closure eventually comes back "
+      "on its own once the household can staff it again",
+      _open_end == len(_opened) and _reopenings > 0,
+      "opened %d, open at year 40: %d, auto-reopenings: %d"
+      % (len(_opened), _open_end, _reopenings))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

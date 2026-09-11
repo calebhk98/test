@@ -586,6 +586,57 @@ class ProjectsMixin:
                                 + (" and others" if len(closed) > 4 else ""))))
         return closed
 
+    def reopen_restaffed_ventures(self, yr):
+        """Bring back what the staffing rule shut, the moment you have the
+        people to watch it again - not a policy, the other half of one.
+
+        close_unstaffed_ventures is deliberately not a policy a player can
+        switch off (see its own docstring): it is the world taking back a
+        concern nobody is left to watch. Three playtesters found that the
+        world never gave it back, even after they hired or taught their way
+        past the shortfall - reopening was `auto_open`, a SEPARATE policy
+        that defaults off for a player, and the whole of "most of the mid
+        and late game was a repetitive hire-then-reopen treadmill rather
+        than fresh decisions" is a player retyping `open` on the same
+        handful of ids every few years, for no decision at all: they had
+        already decided to run this concern once, and losing a craftsman to
+        attrition is not a moment that asks them to decide it again.
+
+        So this runs unconditionally, like the rule it undoes, and it is
+        careful to undo only THAT rule: shut_for_staff is set nowhere except
+        close_unstaffed_ventures, so a concern a player shut on purpose with
+        `mothball` never reappears on its own - that is still their call.
+        """
+        _shut = getattr(self, "shut_for_staff", {})
+        cands = [k for k in sorted(_shut)
+                 if k in self.mothballed and k in self.done and k in self.nodes]
+        if not cands:
+            return []
+        # BEST-EARNING FIRST, same idea as auto_open_ventures: when only some
+        # of what closed can be restaffed with what you have free this year,
+        # what comes back first should be what is worth the most, not
+        # whichever id sorts first.
+        cands.sort(key=lambda k: -((self.nodes[k]["rev"] - self.nodes[k]["up"])
+                                   / max(0.01, sum(self.venture_hands(k)))))
+        reopened = []
+        for k in cands:
+            need_sch, need_art = self.venture_hands(k)
+            sch_free, art_free = self.venture_staff_free()
+            if need_sch > sch_free + 0.01 or need_art > art_free + 0.01:
+                continue
+            ok, _msg = self.open_venture(k)
+            if ok:
+                reopened.append(k)
+        if reopened:
+            self.log.append((yr, "you have the people again: %s reopen%s on "
+                                 "their own, now that somebody is free to "
+                                 "watch %s"
+                             % (", ".join(sorted(reopened)[:4])
+                                + (" and others" if len(reopened) > 4 else ""),
+                                "" if len(reopened) == 1 else "s",
+                                "it" if len(reopened) == 1 else "them")))
+        return reopened
+
     def auto_open_ventures(self):
         """Open what plainly pays for itself, best margin first, within the
         staff and the money available. Default ON for the optimizer and OFF
