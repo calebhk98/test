@@ -7454,6 +7454,34 @@ check("the semiconductor-grade graphite crucibles on the road to the goal "
       "bought off the market",
       not _graphite_bad, _graphite_bad)
 
+# --- three players: `why` quoted the BUILD crew as the staff requirement,
+# and `open` actually enforces ongoing SUPERVISION (venture_hands), a
+# different and sometimes larger number never shown before the money was
+# spent. `why` must now show both, from the same function `open` checks.
+r, _, _ = proto([{"cmd": "why", "id": "cementation_steel"}])
+_why_open = r[0]["staff_to_keep_it_open"]
+_s = sim()
+_expect_sch, _expect_art = _s.venture_hands("cementation_steel")
+check("`why`'s supervision figure is computed by the same function `open` "
+      "enforces (venture_hands), not a second estimate of it",
+      abs(_why_open["scholars"] - round(_expect_sch, 2)) < 0.01
+      and abs(_why_open["artisans"] - round(_expect_art, 2)) < 0.01,
+      "why said %s, venture_hands says %.2f/%.2f"
+      % (_why_open, _expect_sch, _expect_art))
+check("the supervision figure can genuinely exceed the build crew shown as "
+      "staff_needed, which is exactly the case a Norse playtester measured "
+      "(2.13 craftsmen enforced against a displayed 2 artisans)",
+      _why_open["artisans"] > r[0]["staff_needed"]["artisans"],
+      "staff_needed %s, staff_to_keep_it_open %s"
+      % (r[0]["staff_needed"], _why_open))
+
+# --- and a node nobody could ever run as a going concern (pure knowledge)
+# gets no supervision figure at all - there is nothing to keep an eye on.
+r, _, _ = proto([{"cmd": "why", "id": "ag2_adulteration_law"}])
+check("a pure-knowledge node (no revenue, no upkeep) carries no "
+      "staff_to_keep_it_open - there is no concern to supervise",
+      r[0].get("staff_to_keep_it_open") is None, r[0].get("staff_to_keep_it_open"))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

@@ -1723,6 +1723,13 @@ def _node_explain(s, nodes, k):
     bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                       "power", "agriculture", "information", "instruments"))
     started = k in s.done or k in s.active
+    # THE SUPERVISION FIGURE, from the SAME function open_venture() enforces
+    # (see venture_hands, projects.py) - not a second estimate of it. Only
+    # meaningful for something that could ever be a going concern; knowledge
+    # alone (is_venture false) has nothing to keep an eye on.
+    _is_venture = s.is_venture(k)
+    _sup_sch, _sup_art = s.venture_hands(k) if _is_venture else (0.0, 0.0)
+    _free_sch, _free_art = s.venture_staff_free() if _is_venture else (0.0, 0.0)
     out = {
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
         # See strip_self_play_advice (fog.py): drops any sentence that ranks
@@ -1859,6 +1866,42 @@ def _node_explain(s, nodes, k):
                s.headcount() + max(0.0, s.household_room()), s._room_advice())
             if (n["art"] > s.headcount() + max(0.0, s.household_room())
                 and n["art"] > s.artisans) else None),
+        # A SECOND STAFF FIGURE, AND IT IS NOT THE SAME NUMBER. staff_needed
+        # above is the BUILD crew - what start_project gates on, and what
+        # goes idle again once the work is finished. A going concern is a
+        # standing commitment on top of that: somebody of yours has to keep
+        # an eye on it every year it runs, which is venture_hands() - a
+        # quarter of the build crew, floored by how much the concern takes
+        # in (see venture_hands's own comment) - and open_venture() is the
+        # ONLY other place this is checked. Three players built something on
+        # the strength of the number above, paid for it in full, and were
+        # then refused at `open` on a bigger number neither `why` nor
+        # `available` had ever shown them - one measured it exactly:
+        # "2.13 craftsmen" enforced against a `why` that had said "2
+        # artisans" and nothing else. Read the SAME function open_venture()
+        # calls, not a second estimate of it, so the two can never drift
+        # apart again.
+        "staff_to_keep_it_open": (
+            {"scholars": round(_sup_sch, 2), "artisans": round(_sup_art, 2)}
+            if _is_venture else None),
+        "staff_to_keep_it_open_means": (
+            "a SEPARATE requirement from staff_needed above, and the one "
+            "'open' actually enforces once this is built: people of your "
+            "own who keep an eye on it every year it runs, not the crew "
+            "that built it. Often smaller than staff_needed - typically a "
+            "quarter of it - but a concern that takes in a great deal needs "
+            "more watching than it took to build, and this can come out "
+            "LARGER. Checked when you 'open' it, not when you 'start' it, "
+            "so know this number before you spend money on the other one."
+            if _is_venture else None),
+        "more_supervision_than_you_have_free_right_now": (
+            "%.2f scholars and %.2f artisans needed to keep it open; you "
+            "have %.2f and %.2f free right now (not already watching "
+            "something else). This is what 'open' will actually check, on "
+            "the day you open it - hire, teach, or close something first."
+            % (_sup_sch, _sup_art, _free_sch, _free_art)
+            if _is_venture and (_sup_sch > _free_sch + 1e-9
+                                or _sup_art > _free_art + 1e-9) else None),
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
         # NOT CHARGED UNTIL YOU OPEN IT. A tester read the upkeep off `why`,
@@ -2534,6 +2577,20 @@ def render_why(out):
                     "more_craftsmen_than_your_household_can_hold"):
         if out.get(_k_warn):
             L.append(_wrap("  !! " + out[_k_warn], indent="     "))
+    # A SECOND, SEPARATE STAFF FIGURE. Not shown at all until `open` refused
+    # somebody on it, which is the exact complaint three play testers filed.
+    # See staff_to_keep_it_open_means for why this is not the line above.
+    open_staff = out.get("staff_to_keep_it_open")
+    if open_staff is not None:
+        L.append("STAFF TO KEEP IT OPEN: %s scholars, %s artisans   "
+                 "(a separate, later requirement - see below)"
+                 % (_fmt_num(open_staff.get("scholars")),
+                    _fmt_num(open_staff.get("artisans"))))
+        if out.get("staff_to_keep_it_open_means"):
+            L.append(_wrap("  " + out["staff_to_keep_it_open_means"], indent="     "))
+        if out.get("more_supervision_than_you_have_free_right_now"):
+            L.append(_wrap("  !! " + out["more_supervision_than_you_have_free_right_now"],
+                            indent="     "))
     lab = out.get("hired_labour") or {}
     if lab:
         L.append("HIRED LABOUR: " + ", ".join("%s %sh" % (t, _fmt_num(h)) for t, h in lab.items()))
