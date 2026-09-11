@@ -841,7 +841,7 @@ def _agent_help(s, topic=None):
                             '{"cmd":"quote","what":"mine","material":"coal",'
                             '"n":500}, and close it with '
                             '{"cmd":"close","material":"coal"}. Materials: '
-                            + ", ".join(Sim.MINE_CAPEX_PER_T_YR),
+                            + Sim.mine_catalog_hint(Sim),
                 "buy slaves": '{"cmd":"buy","what":"slaves","n":5}. This is '
                               "available because it was the ordinary condition of "
                               "production in most of these societies, and a model "
@@ -4373,9 +4373,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "capital": round(s.capital, 1)}
         if what == "mine":
             mat = cmd.get("material")
-            if mat not in s.MINE_CAPEX_PER_T_YR:
+            # GENERALISED beyond the seven hand-named metals (see
+            # economy.py's mineable()/mine_catalog_hint(), and
+            # COMMODITY_DYNAMISM.md for why the closed list was the actual
+            # bug: "no mine, no supply lever" for anything else the tree
+            # ever asks a node to buy). This is the one gate that used to
+            # make that literally true at the command surface, even though
+            # the seven-name dict membership check lived here, not in
+            # economy.py, which is why the fix has to touch this file.
+            if not s.mineable(mat):
                 return {"ok": False, "error": "material must be one of: "
-                                              + ", ".join(s.MINE_CAPEX_PER_T_YR)}
+                                              + s.mine_catalog_hint()}
             # partial=False: a mine you asked for by name is bought in full or
             # not at all. It used to spend every denarius you had and hand back
             # a fraction, without asking.
@@ -4496,12 +4504,19 @@ def _agent_dispatch_inner(s, nodes, cmd):
                  + s.mine_operating_cost())
         _ramp, _prac = s.still_ramping(), s.practice_note()
         _mkt = s.goods_market_summary()
+        # A PLAYER MUST SEE IT (rome/data/review/COMMODITY_DYNAMISM.md):
+        # material_price_factor() now responds for every material a node
+        # buys, not just the 9 originally tracked commodities, so what it
+        # is doing to costs needs a line here too, not only inside one
+        # project's own `why`. See economy.py's material_market_summary().
+        _mat_mkt = s.material_market_summary()
         return {"ok": True,
                 "capital": round(s.capital, 1),
                 "revenue": round(s.revenue(), 1),
                 "where_the_money_comes_from": s.revenue_sources(),
                 **({"still_building_up_custom": _ramp} if _ramp else {}),
                 **({"about_your_own_practice": _prac} if _prac else {}),
+                **({"materials_costing_you_a_premium": _mat_mkt} if _mat_mkt else {}),
                 **({"the_market_you_sell_into": _mkt} if _mkt else {}),
                 "what_it_costs_you": {
                     "upkeep_of_what_you_built": round(s.upkeep(), 1),
@@ -5042,8 +5057,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
             return {"ok": False, "error": err}
         q = s.mine_quote(cmd.get("material"), n)
         if q is None:
-            return {"ok": False, "error": "no such material: %r. Mineable: %s"
-                    % (cmd.get("material"), ", ".join(sorted(Sim.MINE_CAPEX_PER_T_YR)))}
+            return {"ok": False, "error": "no such material: %r. %s"
+                    % (cmd.get("material"), s.mine_catalog_hint())}
         return dict(ok=True, **q)
 
     if op in ("close", "close_mine"):

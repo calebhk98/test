@@ -719,12 +719,104 @@ class EconomyMixin:
     #       those, so a longer, explicitly illustrative period stands in for
     #       one, and the same 700-year-horizon finding argued for slower
     #       rather than faster.
+    #
+    # EXTENDED, rome/data/review/COMMODITY_DYNAMISM.md's second and third
+    # findings. Two gaps in the original four categories, both measured
+    # directly against a live Sim:
+    #
+    # (a) ZERO CROSS-ELASTICITY. "One loom at age 20 earns factor 0.7840.
+    #     With a second identical loom running: 0.7840. With ten: 0.7840."
+    #     goods_market_factor() used each concern's OWN age as a private
+    #     clock standing in for "how saturated is the market" - a real
+    #     number for a lone producer, but a fiction once a second producer
+    #     (yours, or - per this file's existing goods_reach_factor comment
+    #     - the rest of the world's) exists, because nothing summed what
+    #     they were jointly supplying. Fixed below by pricing off the
+    #     CATEGORY's total supply (every concern you operate in it, not one
+    #     node's private clock) rather than one node's own age in isolation.
+    #
+    # (b) NO REAL CONSUMER ECONOMY. The brief's own richest idea: "when the
+    #     public has less money, they buy less. So if the price of food
+    #     goes down, the price people would be willing to pay for diamonds
+    #     or records would go up." That is an ordinary income effect
+    #     (cheaper necessities free up spending on everything else, the
+    #     same logic behind Engel's law) and this file had no channel for
+    #     it at all - `processing` (food) and, say, `photography` (a
+    #     luxury) moved on completely independent clocks. The brief also
+    #     named the actual businesses this should cover - "alcohol, or
+    #     wine... food like pizza... gambling, casinos... books, card
+    #     games, movies, phonographs, record players, newspapers" - and
+    #     grepping the tree for them turns up real, revenue-bearing nodes
+    #     (fud_distillation_spirits, fin_gambling_house, fin_racecourse,
+    #     fin_theatre_business, hom_printed_books, hom_playing_cards_printed,
+    #     if_tin_foil_phonograph, prn_radio_broadcasting,
+    #     fin_newspaper_business...) that were earning the tree's flat
+    #     figure for ever, the same as an aqueduct. `essential` below marks
+    #     which categories are necessities (only `processing`, food, so
+    #     far - the one the brief's own worked example is about) and
+    #     income_factor()/essential_price_ratio() below implement the
+    #     effect: a discretionary category earns more as the player's own
+    #     essential-goods concerns get cheaper, and is neutral (no effect,
+    #     not a penalty) when the player runs none. See those methods' own
+    #     comments for the mechanism and its honest scope limit.
+    #
+    # NEW CATEGORY NUMBERS, same [C] estimation method as the original
+    # four (see the class comment above for how those were reasoned):
+    #   fermentation (alcohol - brewing, distilling, vinegar) 0.55/0.45/35:
+    #     alcohol demand studies commonly cite elasticities of roughly
+    #     0.3-0.9 (a consumption habit, not a nutritional necessity, but
+    #     also not as freely substitutable as a camera); floor and tau
+    #     follow processing's "real cost floor" and textiles' diffusion
+    #     pace respectively, as the closest existing anchors.
+    #   leisure (toys, games, puzzles, books, instruments) 1.10/0.45/35:
+    #     hobby and entertainment goods are usually cited above unit
+    #     elasticity but below photography's fine-goods range.
+    #   sound (phonograph, gramophone, radio broadcasting) 1.30/0.50/35:
+    #     a luxury technology good, the same reasoning as photography but
+    #     slightly less extreme - audio reached a mass market somewhat
+    #     faster, historically, than the camera did.
+    #   media (newspapers, advertising, lending library, telegraph
+    #     business) 0.85/0.40/35: an information good, close to printing's
+    #     own 0.80.
+    #   commerce (inns, hotels, restaurants, department stores, trading
+    #     posts, coffeehouses) 1.00/0.45/30: unit-elastic hospitality and
+    #     retail demand (commonly cited 0.8-1.3); a shorter tau because a
+    #     service business's custom is understood to shift faster than a
+    #     manufacturing good's.
+    #   entertainment (gambling, lotteries, theatre, professional sport,
+    #     racecourses - cat values "luxury", "spectacle" and "law" in the
+    #     tree, which is where fin_gambling_house, fin_lottery,
+    #     fin_theatre_business, fin_racecourse and fin_professional_sport
+    #     actually live) 1.80/0.50/35: the single most discretionary
+    #     bucket here, above photography, matching how elastic gambling
+    #     and spectator-entertainment demand is usually cited to be.
+    #   personal (perfume, cosmetics, toiletries) 1.10/0.45/35: ordinary
+    #     personal-luxury demand, the same order as leisure.
+    # `essential` is omitted (defaults False, i.e. discretionary) on every
+    # category except processing; textiles is left discretionary too,
+    # deliberately - clothing is not modelled as a nutritional necessity
+    # here, only food is, matching the brief's own worked example exactly.
     GOODS_CATEGORIES = {
-        "textiles":    {"eta": 0.65, "floor": 0.40, "tau": 35.0},
-        "processing":  {"eta": 0.35, "floor": 0.55, "tau": 40.0},
-        "printing":    {"eta": 0.80, "floor": 0.40, "tau": 40.0},
-        "photography": {"eta": 1.60, "floor": 0.55, "tau": 40.0},
+        "textiles":      {"eta": 0.65, "floor": 0.40, "tau": 35.0},
+        "processing":    {"eta": 0.35, "floor": 0.55, "tau": 40.0, "essential": True},
+        "printing":      {"eta": 0.80, "floor": 0.40, "tau": 40.0},
+        "photography":   {"eta": 1.60, "floor": 0.55, "tau": 40.0},
+        "fermentation":  {"eta": 0.55, "floor": 0.45, "tau": 35.0},
+        "leisure":       {"eta": 1.10, "floor": 0.45, "tau": 35.0},
+        "sound":         {"eta": 1.30, "floor": 0.50, "tau": 35.0},
+        "media":         {"eta": 0.85, "floor": 0.40, "tau": 35.0},
+        "commerce":      {"eta": 1.00, "floor": 0.45, "tau": 30.0},
+        "luxury":        {"eta": 1.80, "floor": 0.50, "tau": 35.0},
+        "spectacle":     {"eta": 1.80, "floor": 0.50, "tau": 35.0},
+        "law":           {"eta": 1.80, "floor": 0.50, "tau": 35.0},
+        "personal":      {"eta": 1.10, "floor": 0.45, "tau": 35.0},
     }
+    # Which of the categories above are necessities, for income_factor()
+    # below. Kept as its own set rather than scattering an `essential`
+    # check across every reader, matching the class's own convention of
+    # naming a scope decision once rather than repeating the condition.
+    ESSENTIAL_CATEGORIES = frozenset(
+        cat for cat, cfg in GOODS_CATEGORIES.items() if cfg.get("essential"))
 
     def goods_reach_factor(self):
         """How much further than a purely local market your goods can travel,
@@ -750,67 +842,184 @@ class EconomyMixin:
         if self.running("telegraph_electric"):      r *= 1.15
         return min(r, 3.0)
 
-    def goods_market_factor(self, k):
-        """How a goods-producing concern's revenue has moved, relative to the
-        day it opened, as the market it sells into fills up.
+    def _goods_category_state(self, cat):
+        """(n_active, world_age, cfg) for a goods category: every one of
+        YOUR OWN concerns currently operating in it, and how long the
+        oldest of them has been open. None if this is not a goods category
+        at all, or you operate nothing in it.
 
-        Exactly 1.0 on the day a concern opens, by construction, so a player
-        who opens one loom still earns the tree's own figure on the first
-        turn - the brief's own requirement. After that, AGE (years this
-        concern has been open, the same clock venture_ramp already uses)
-        drives supply of the same kind of good ever higher: some of it yours
-        if you build a better loom later, most of it the rest of the world's,
-        exactly as economy_index()'s own comment says diffusion works ("each
-        heavy technology that spreads raises output everywhere"). Supply
-        grows LINEARLY with age (one more multiple of its day-one level every
-        `tau` years - no separate "how big can this get" ceiling is guessed
-        at, because the floor/eta pair below already implies one: once price
-        has fallen to its floor, `qty_ratio` cannot rise any further either,
-        so that is where growth actually stops, and inventing a second,
-        independent ceiling risked contradicting the first).
-
-        Price then moves along an ordinary constant-elasticity demand curve:
-        quantity sold varies as price ** (-eta), so solving for the price that
-        clears exactly `supply` gives price_ratio = supply ** (-1/eta),
-        clamped at the floor. Quantity sold is the smaller of what supply can
-        make and what that price will move (min(), because you cannot sell
-        more than the market bears once the floor binds, and once it does,
-        MORE supply beyond that point simply does not find a buyer - the
-        flattening the brief describes). Revenue is price times quantity,
-        both relative to day one, which is `price_ratio * qty_ratio`.
-
-        Population and income raise `tau` rather than a separate ceiling: a
-        bigger, richer reachable market takes longer for the SAME pace of
-        outside diffusion to saturate, because that diffusion is a smaller
-        fraction of a larger whole. Better reach (goods_reach_factor) does
-        the opposite - a well-connected market finds out about, and adopts,
-        a cheaper substitute sooner - which is also why reach shortens the
-        early-mover premium even though it is the same thing that let you
-        reach further buyers in the first place.
+        THE FIX FOR ZERO CROSS-ELASTICITY. COMMODITY_DYNAMISM.md measured
+        it directly: two identical looms, same age, both showed a revenue
+        factor of 0.7840 - "bit-for-bit identical... neither affected the
+        other at all," because the old formula's only inputs were one
+        node's own age and the civilization-wide scalars, with no shared
+        state for "how much of this is already being made." n_active below
+        is that shared state: every concern in the category counts toward
+        the SAME total supply, so a second loom genuinely competes with
+        the first rather than each independently pretending to have the
+        market alone. world_age uses the OLDEST still-operating concern
+        (max, not min, over each member's own age) so a lone producer's
+        day-one factor is unchanged (see goods_market_factor's own
+        docstring for why that identity matters): with one concern, this
+        is exactly the age that concern's own private clock always used;
+        with several, it is when this player's presence in the category
+        began, which is the right reference point for "how long has
+        outside diffusion had to work on this market."
         """
-        cfg = self.GOODS_CATEGORIES.get(self.nodes[k].get("cat"))
-        if not cfg or k not in self.operating:
-            return 1.0
-        started = (getattr(self, "opened_year", None) or {}).get(k)
-        if started is None:
-            started = self.done_year.get(k, self.year)
-        age = max(0.0, self.year - started)
+        cfg = self.GOODS_CATEGORIES.get(cat)
+        if not cfg:
+            return None
+        ages = []
+        for m in sorted(self.operating):
+            if self.nodes[m].get("cat") != cat:
+                continue
+            started = (getattr(self, "opened_year", None) or {}).get(m)
+            if started is None:
+                started = self.done_year.get(m, self.year)
+            ages.append(max(0.0, self.year - started))
+        if not ages:
+            return None
+        return len(ages), max(ages), cfg
+
+    def _goods_category_ratios(self, cat):
+        """(price_ratio, qty_ratio, n_active) for a whole category, shared
+        by every concern that sells into it - the actual mechanism
+        goods_market_factor() and goods_category_price_ratio() both read,
+        so the two cannot drift apart. None if nothing of this player's is
+        currently operating in the category."""
+        st = self._goods_category_state(cat)
+        if st is None:
+            return None
+        n_active, world_age, cfg = st
         reach = self.goods_reach_factor()
         tau = max(1.0, cfg["tau"] * (self.pop_scale ** 0.5)
                   * (self.economy ** 0.25) / reach)
-        supply = 1.0 + age / tau
+        world_supply = 1.0 + world_age / tau
+        total_supply = world_supply * n_active
         eta = cfg["eta"]
-        price_ratio = max(cfg["floor"], min(1.0, supply ** (-1.0 / eta)))
-        qty_ratio = min(supply, price_ratio ** (-eta))
-        return price_ratio * qty_ratio
+        price_ratio = max(cfg["floor"], min(1.0, total_supply ** (-1.0 / eta)))
+        qty_ratio = min(total_supply, price_ratio ** (-eta))
+        return price_ratio, qty_ratio, n_active
+
+    def goods_category_price_ratio(self, cat):
+        """The price this category's market currently pays, as a fraction
+        of its day-one figure (1.0 = day one; falls toward the category's
+        own floor as supply catches up). None if you operate nothing in
+        it - "we do not know," not "assume 1.0" - see essential_price_ratio
+        for the caller that turns that None into a neutral default.
+        Independent of any one node, unlike goods_market_factor(k): this
+        is the market-wide number income_factor() below needs, since a
+        player's disposable income depends on what food costs in general,
+        not on one specific cannery."""
+        r = self._goods_category_ratios(cat)
+        return None if r is None else r[0]
+
+    def essential_price_ratio(self):
+        """A stand-in for 'the cost of living', averaged over every
+        ESSENTIAL category (today: just `processing`, food) the player
+        currently operates a concern in. 1.0 (neutral) if none - this
+        model only ever learns food got cheaper because the player's own
+        preserving/processing capacity made it so; it has no independent
+        notion of a national food price. That is a real scope limit
+        (COMMODITY_DYNAMISM.md's own finding about population elsewhere in
+        this file: "this is a solo-player economic simulation... not a
+        multi-agent market"), stated rather than hidden behind a default
+        that looks like data.
+        """
+        ratios = [self.goods_category_price_ratio(c)
+                  for c in sorted(self.ESSENTIAL_CATEGORIES)]
+        ratios = [r for r in ratios if r is not None]
+        return sum(ratios) / len(ratios) if ratios else 1.0
+
+    # How much a fully-saturated essential's cheapness (price_ratio at its
+    # own floor) can move discretionary spending. 1.0 means "as much extra
+    # spending power as the essential's own price drop, one-for-one" -
+    # deliberately modest (not the >1 multiplier a strict income-effect
+    # model of Engel curves would license) because this model can only see
+    # ONE essential category's price moving, not a whole household budget,
+    # and overstating it would let a single cannery understate how much
+    # this simplification is worth trusting. [C]
+    INCOME_ELASTICITY = 1.0
+
+    def income_factor(self):
+        """How much extra (or, in principle, less) a population has to
+        spend on everything that is NOT a staple, from how cheap staples
+        currently are.
+
+        The brief's own framing, almost verbatim: "when the public has
+        less money, they buy less. So if the price of food goes down, the
+        price people would be willing to pay for diamonds or records would
+        go up." That is a real, textbook mechanism (an income effect: money
+        freed up by a cheaper necessity gets spent on everything else) and
+        this is the one channel this model can see it through - see
+        essential_price_ratio()'s own comment for the honest scope limit.
+        Neutral (1.0, no effect either way) whenever the player runs no
+        essential concern, so a run that never touches food processing
+        behaves exactly as it did before this pass - see the class comment
+        on GOODS_CATEGORIES for why that identity matters to the test
+        suite. Clamped defensively in case ESSENTIAL_CATEGORIES ever grows
+        to more than one category and their ratios compound oddly; with
+        today's single essential category (processing, floor 0.55) the
+        clamp never actually binds (1.0 + 1.0*(1-0.55) = 1.45).
+        """
+        ratio = self.essential_price_ratio()
+        return max(0.7, min(1.8, 1.0 + self.INCOME_ELASTICITY * (1.0 - ratio)))
+
+    def goods_market_factor(self, k):
+        """How a goods-producing concern's revenue has moved, relative to
+        the day it opened, as the market it sells into fills up - shared
+        with every OTHER concern selling the same kind of good, and lifted
+        or dampened by how cheap the essentials market has made staples if
+        this good is a discretionary one. See _goods_category_state's own
+        comment for the cross-elasticity fix and income_factor's for the
+        income effect; this function's job is only to turn those into one
+        node's own revenue multiplier.
+
+        Exactly 1.0 for a LONE concern on the day it opens, by
+        construction (n_active=1, world_age=0, no essential concern
+        running -> income_factor=1.0), so a player who opens one loom
+        still earns the tree's own figure on the first turn, unchanged
+        from before this pass - the brief's own original requirement.
+        A SECOND concern in the same category, though, does not reset to
+        1.0 even on ITS day one if the first is already mature: it is
+        entering a market that already has supply in it, which is
+        precisely what "compete" has to mean.
+
+        Price then moves along an ordinary constant-elasticity demand
+        curve against the category's SHARED total supply (see
+        _goods_category_ratios): quantity sold varies as price ** (-eta),
+        so solving for the price that clears exactly `total_supply` gives
+        price_ratio = total_supply ** (-1/eta), clamped at the floor;
+        quantity sold is the smaller of what supply can make and what
+        that price will move. Revenue is price times quantity, both
+        relative to day one - but quantity is now a SHARED total, split
+        evenly across every concern currently selling into the category
+        (`/ n_active`), because that total is what the whole category's
+        combined capacity finds buyers for, not what any one concern
+        alone would.
+        """
+        cat = self.nodes[k].get("cat")
+        if k not in self.operating:
+            return 1.0
+        r = self._goods_category_ratios(cat)
+        if r is None:
+            return 1.0
+        price_ratio, qty_ratio, n_active = r
+        factor = price_ratio * qty_ratio / n_active
+        if cat not in self.ESSENTIAL_CATEGORIES:
+            factor *= self.income_factor()
+        return factor
 
     def goods_market_note(self, k):
         """One sentence on why THIS concern's earnings have moved from the
         tree's own figure - so a player sees why a concern that opened at 400
         a year now earns 280, instead of being left to notice the number
         changed and guess why (the brief's own example, in the brief's own
-        words)."""
-        cfg = self.GOODS_CATEGORIES.get(self.nodes[k].get("cat"))
+        words). Also says when competition, not just time, is the reason -
+        the brief's own second question ("do two looms compete") answered
+        on the one screen a player actually reads."""
+        cat = self.nodes[k].get("cat")
+        cfg = self.GOODS_CATEGORIES.get(cat)
         if not cfg or k not in self.operating:
             return None
         factor = self.goods_market_factor(k)
@@ -825,13 +1034,29 @@ class EconomyMixin:
                      if factor < 1.0 else
                      "risen, because the cheaper it got the more buyers it "
                      "found")
-        return ("the tree quotes %s a year for this; it actually earns about "
+        st = self._goods_category_state(cat)
+        n_active = st[0] if st else 1
+        bits = ["the tree quotes %s a year for this; it actually earns about "
                 "%s now. The price this market pays has %s since you opened "
                 "it. It will settle at roughly %s a year once that market is "
                 "fully saturated, not at nothing - there is always a floor "
                 "price and a floor of buyers this kind of good keeps"
                 % ("{:,.0f}".format(quoted), "{:,.0f}".format(now), direction,
-                   "{:,.0f}".format(quoted * floor_factor)))
+                   "{:,.0f}".format(quoted * floor_factor / max(1, n_active)))]
+        if n_active > 1:
+            bits.append("%d concerns of yours are selling into this same "
+                        "market at once and share what it will pay - each "
+                        "one takes home a smaller slice than it would alone"
+                        % n_active)
+        if cfg.get("essential"):
+            bits.append("this is a necessity: people keep buying it "
+                        "whatever it costs, which is why it barely moves "
+                        "with price")
+        elif self.essential_price_ratio() < 0.99:
+            bits.append("food has gotten cheaper in your hands, which "
+                        "leaves people more to spend on a good like this "
+                        "one")
+        return ". ".join(bits)
 
     def goods_market_summary(self):
         """Every operating goods concern whose earnings have moved from the
@@ -849,12 +1074,19 @@ class EconomyMixin:
             return None
         rows.sort(key=lambda kv: kv[1])
         worst = rows[0]
-        return ("%d concern%s selling into a market that has moved since it "
+        cats_sharing = sorted({self.nodes[k].get("cat") for k, _f in rows
+                               if (self._goods_category_state(self.nodes[k].get("cat")) or (1,))[0] > 1})
+        note = ("%d concern%s selling into a market that has moved since it "
                 "opened: %s is at %d%% of the tree's own figure, because "
                 "supply of what it makes has grown since it opened. "
                 "'ventures' says the same thing for each one"
                 % (len(rows), "" if len(rows) == 1 else "s",
                    worst[0], round(worst[1] * 100)))
+        if cats_sharing:
+            note += (". You are running more than one concern selling into "
+                     "the same market in: %s - they are competing with each "
+                     "other, not just with time" % ", ".join(cats_sharing))
+        return note
 
     def done_in_order(self):
         """Everything you have finished, in a FIXED order.
@@ -1303,6 +1535,190 @@ class EconomyMixin:
                     "tin": 0.05, "silver": 0.01, "coal": 0.50, "saltpetre": 0.0,
                     "gold": 0.01}
 
+    # ---- GENERALISING BEYOND THE 9 HAND-NAMED COMMODITIES --------------------
+    #
+    # rome/data/review/COMMODITY_DYNAMISM.md, an audit run directly against
+    # this engine: 149 of the 162 distinct material keys the tech tree uses
+    # (about 92%) had a price read once from prices.json at load time and
+    # never revisited for scarcity, surplus or anything else, because
+    # MATERIAL_CHECKS/MARKET_SHARE above only ever named 13 keys by hand.
+    # Its own worked case was aluminium: "no mine, no supply lever of any
+    # kind... nothing in economy.py even contains the string aluminium."
+    #
+    # The fix below is NOT a per-material rule. It is a generic fallback that
+    # activates for any material key this file has no curated entry for,
+    # using the one number every material already has: its own book price in
+    # prices.json (every material key a node's `mat` dict names MUST have a
+    # prices.json entry already, or data.py's own load() would have raised
+    # building `_material_cost` in the first place - so this genuinely
+    # covers all 162, not just the ones anyone thought to add). A cheap,
+    # plentiful material gets assumed to have a large national output and a
+    # wide buyable share; a dear, rare one gets less of both - fitted, not
+    # guessed, from the curated figures the 9 tracked commodities already
+    # carry: iron (1.0 den/kg) is rated 82,500 t/yr, copper (4.0) 15,000,
+    # gold (3,440) 9. log(output) against log(price) across those three
+    # (four orders of magnitude in price) fits close to output =
+    # 82,500 / price**1.1 - which reproduces gold's real 9 t/yr to within
+    # 20% despite the fit never having seen gold's number, because scarcity
+    # and price genuinely do move together, not because gold is special.
+    # This is exactly the standard COMMODITY_DYNAMISM.md sets: "a commodity
+    # nobody anticipated must behave correctly because the mechanism is
+    # supply and demand, not because somebody wrote a rule for it."
+    GENERIC_OUTPUT_ANCHOR_T_PER_YR = 82500.0
+    GENERIC_OUTPUT_PRICE_EXPONENT = 1.1
+    GENERIC_OUTPUT_FLOOR_T_PER_YR = 5.0
+    GENERIC_OUTPUT_CEILING_T_PER_YR = 400000.0
+
+    def _commodity_ledger(self):
+        """The 9 curated commodities from commodities.json, as a
+        CommodityLedger, cached on the CLASS (not the instance): the file
+        does not change mid-run and building it involves a JSON load, the
+        same reasoning _material_commodity_map below uses. Used two ways:
+        as the reverse index from a material key to a curated commodity id
+        (cast_iron_kg means "iron" there even though MATERIAL_CHECKS has
+        never listed it), and, for the 4 curated-but-never-priced
+        commodities this file's own MARKET_SHARE has never named (cloth,
+        wool, cotton, copper_wire), as the SOURCE of national output and
+        market share instead of the generic price-only guess below - see
+        _generic_national_output_t_per_yr's own comment for why real,
+        sourced data beats a formula wherever it already exists."""
+        cached = getattr(EconomyMixin, "_commod_ledger_cache", None)
+        if cached is None:
+            cached = EconomyMixin._commod_ledger_cache = _commod.CommodityLedger()
+        return cached
+
+    def _material_commodity_map(self):
+        """material key -> curated commodity id, from commodities.json's
+        own material_keys lists. Cached on the class for the same reason
+        as _commodity_ledger."""
+        cached = getattr(EconomyMixin, "_material_commod_map_cache", None)
+        if cached is None:
+            cached = {}
+            for cid, c in self._commodity_ledger().commodities.items():
+                for mk in c.get("material_keys", []):
+                    cached[mk] = cid
+            EconomyMixin._material_commod_map_cache = cached
+        return cached
+
+    def _material_prices(self):
+        """The flat per-kg book price for every material key in
+        prices.json, read directly rather than threaded through Sim's
+        constructor - the same pattern commodities.py's own
+        load_commodities() already uses for its own file. Cached on the
+        class: prices.json does not change mid-run."""
+        cached = getattr(EconomyMixin, "_material_prices_cache", None)
+        if cached is None:
+            raw = json.load(open(os.path.join(_commod.ROOT, "data", "prices.json")))
+            cached = {k: v["p"] for k, v in raw["purchase_prices_denarii"].items()
+                     if isinstance(v, dict) and "p" in v}
+            EconomyMixin._material_prices_cache = cached
+        return cached
+
+    def _book_price_per_kg(self, tag):
+        """Denarii/kg for a raw material key (aluminium_kg, straight out of
+        prices.json) or a curated commodity id (cloth, straight out of
+        commodities.json's own base_price - the two files agree by
+        construction, see commodities.json's own `_doc.reused_from`). None
+        if this file cannot price it at all, which should not happen for
+        any material key the tech tree actually uses (see the class
+        comment above)."""
+        prices = self._material_prices()
+        if tag in prices:
+            return prices[tag]
+        c = self._commodity_ledger().commodities.get(tag)
+        if c:
+            p = float(c.get("base_price_denarii_per_kg", 0.0) or 0.0)
+            return p or None
+        return None
+
+    def _material_tag(self, mat_key):
+        """Which (commodity id, supply-pool tag) a raw material key draws
+        on, generalised beyond the 13 keys MATERIAL_CHECKS names by hand.
+
+        Three tiers, most-specific first: MATERIAL_CHECKS (the 9 originally
+        tracked commodities, unchanged); commodities.json's own
+        material_keys grouping (iron_bloom_kg and cast_iron_kg both mean
+        "iron" there, cloth_bag_kg and linen_kg both mean "cloth," though
+        none of MATERIAL_CHECKS above has ever listed any of them); and,
+        for the material nothing has ever named, its own bare material key
+        as a one-member commodity of itself - "aluminium_kg" becomes the
+        commodity "aluminium_kg" (its own price identifies it; no reverse
+        lookup needed). This is the actual generalisation
+        COMMODITY_DYNAMISM.md's finding describes: 149 of 162 material
+        keys got no price response at all because nothing but membership
+        in a 13-entry hand list was ever asked.
+        """
+        pair = self.MATERIAL_CHECKS.get(mat_key)
+        if pair:
+            return pair
+        cid = self._material_commodity_map().get(mat_key, mat_key)
+        return (cid, "mine:" + cid)
+
+    def _generic_national_output_t_per_yr(self, tag):
+        """National output for a commodity/material this file has no
+        curated resources.json figure for - the MARKET half of supply (see
+        _material_market_tonnes). Prefers real data over a guess wherever
+        real data exists: if `tag` is one of the 4 commodities.json defines
+        but MARKET_SHARE has never priced (cloth, wool, cotton,
+        copper_wire), this reads THAT commodity's own national/manufacturing
+        output through CommodityLedger.country_output() - which already
+        knows a built power loom raises cloth output, or cyanidation raises
+        gold's, per commodities.json's own `produced_by` multipliers. That
+        is COMMODITY_DYNAMISM.md's own third finding wired in for real:
+        "a genuinely general elasticity-based price function... sitting
+        unconnected." Only a material with no curated home at all (silk,
+        glass, the acids and dyes and alloys) falls through to the generic
+        price-derived formula documented on GENERIC_OUTPUT_ANCHOR_T_PER_YR
+        above."""
+        ledger = self._commodity_ledger()
+        if tag in ledger.commodities:
+            return ledger.country_output(tag, built=self.done)
+        price = self._book_price_per_kg(tag)
+        if price is None or price <= 0:
+            return self.GENERIC_OUTPUT_CEILING_T_PER_YR
+        out = self.GENERIC_OUTPUT_ANCHOR_T_PER_YR / (price ** self.GENERIC_OUTPUT_PRICE_EXPONENT)
+        return max(self.GENERIC_OUTPUT_FLOOR_T_PER_YR,
+                   min(self.GENERIC_OUTPUT_CEILING_T_PER_YR, out))
+
+    def _generic_market_share(self, tag):
+        """What fraction of _generic_national_output_t_per_yr an ordinary
+        buyer (no special standing) can reach, for a commodity/material
+        MARKET_SHARE has no curated figure for. Same two-tier preference as
+        the output figure: a commodities.json commodity's own market_share
+        (cloth 0.5, wool 0.4, cotton 1.0 trade-only, copper_wire 0.6) where
+        one exists; otherwise a generic curve fitted the same way
+        GENERIC_OUTPUT was - rarer, dearer materials are held closer (gold
+        0.01, silver 0.01) and cheap bulk ones are wide open (coal 0.50) -
+        clamped well inside that observed range since this is a default
+        for a material nobody has separately reasoned about, not a
+        specific claim."""
+        ledger = self._commodity_ledger()
+        if tag in ledger.commodities:
+            return float(ledger.commodities[tag].get("market_share", 0.03))
+        price = self._book_price_per_kg(tag)
+        if price is None or price <= 0:
+            return 0.20
+        return max(0.01, min(0.35, 0.08 / (max(price, 0.01) ** 0.4)))
+
+    def _normalize_material_name(self, mat):
+        """Accept either spelling when a player names a material: the
+        short curated name a mine has always used ("iron"), or the exact
+        material key the tree itself uses ("aluminium_kg") - a player who
+        has only ever seen `why` quote "aluminium_kg" in a bill of
+        materials should not have to guess it needs no suffix, and the
+        seven original short names must keep working exactly as before."""
+        mat = str(mat or "").strip().lower()
+        if not mat or mat in self.MINE_CAPEX_PER_T_YR:
+            return mat
+        prices = self._material_prices()
+        if mat in prices or mat in self._commodity_ledger().commodities:
+            return mat
+        for suffix in ("_kg", "_g"):
+            cand = mat + suffix
+            if cand in prices:
+                return cand
+        return mat
+
     # Coke and charcoal are not interchangeable at one kg for one kg. A charcoal
     # blast furnace burns about 3 kg of charcoal per kg of iron; a coke furnace
     # burns about 1.6 kg of coke, and coke is about 1.6 kg of coal, so 2.56 kg
@@ -1425,9 +1841,26 @@ class EconomyMixin:
     def _material_market_tonnes(self, emp_key):
         """Tonnes a year of `emp_key` the empire's market will sell you, at
         your current standing. The MARKET half of resource_throttle()'s
-        `supply`; material_price_factor() reads it too."""
+        `supply`; material_price_factor() reads it too.
+
+        GENERALISED: resources.json's empire_output_100ad table and this
+        file's own MARKET_SHARE only ever named a handful of materials by
+        hand, so a material without an entry there used to answer 0 tonnes
+        a year - not "unknown," an actual hard zero, which is why
+        material_price_factor() had to bail out before ever reaching this
+        function at all (see its own comment). A real figure, when one
+        exists, is used unchanged; _generic_national_output_t_per_yr and
+        _generic_market_share supply a reasoned default for everything
+        else, so a material nobody named still has a market rather than
+        not existing.
+        """
         emp = self.res["empire_output_100ad"]
-        share = self.MARKET_SHARE.get(emp_key, 0.03)
+        entry = emp.get(emp_key)
+        national = entry.get("t_per_yr", 0) if entry is not None else (
+                   self._generic_national_output_t_per_yr(emp_key))
+        share = self.MARKET_SHARE.get(emp_key)
+        if share is None:
+            share = self._generic_market_share(emp_key)
         # How much of a market you can command is a function of STANDING, not
         # just of money. A stranger buys at the margin; a man with senatorial
         # backing buys through their agents; a holder of imperial patronage
@@ -1451,7 +1884,7 @@ class EconomyMixin:
         # does track how much local economic activity there is to buy
         # firewood from.
         scale = self.pop_scale if emp_key == "charcoal" else self.mineral_scale(emp_key)
-        market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * scale
+        market = national * share * scale
         # Bengal saltpetre: an existing annual sea route, not a nitre bed.
         # This is the single most useful thing in the geography file.
         if emp_key == "saltpetre" and self.running("exp_trade_route_extend"):
@@ -1484,10 +1917,21 @@ class EconomyMixin:
         whether dict insertion order already happens to be safe, so a caller
         cannot inherit a bug by copying this pattern into a place where it
         is not.
+
+        GENERALISED: this used to iterate MATERIAL_CHECKS's own 13 keys and
+        look each one up in `demand`, so any OTHER key `demand` carried was
+        silently never looked at - not grouped wrong, simply never
+        consulted, which is the exact gap COMMODITY_DYNAMISM.md measured
+        (149 of 162 material keys). annual_material_demand() was already
+        generic over every material key a node's `mat` dict names; this now
+        is too, routing each one through _material_tag (curated grouping
+        where one exists, the material's own bare key otherwise) instead of
+        only the hand-listed 13.
         """
         by_tag = collections.Counter()
-        for mat, pair in sorted(self.MATERIAL_CHECKS.items()):
-            by_tag[pair] += demand.get(mat, 0.0)
+        for mat, amt in sorted(demand.items()):
+            if amt:
+                by_tag[self._material_tag(mat)] += amt
         return by_tag
 
     def resource_throttle(self):
@@ -1506,9 +1950,9 @@ class EconomyMixin:
         # for done_in_order() (see its own comment). Good for one step(): a
         # query between steps reads the demand as of the last one, which is
         # already true of price_index, self.economy and self.throttle itself.
-        demand = self._material_demand_cache = self.annual_material_demand()
+        self._material_demand_cache = self.annual_material_demand()
         worst, who = 1.0, None
-        for (emp_key, tag), need in sorted(self._demand_by_supply_tag(demand).items()):
+        for (emp_key, tag), need in sorted(self._cached_demand_by_tag().items()):
             if need <= 0:
                 continue
             supply = self._own_material_supply(tag) + self._material_market_tonnes(emp_key)
@@ -1526,6 +1970,32 @@ class EconomyMixin:
         there is one. See the comment there."""
         d = getattr(self, "_material_demand_cache", None)
         return d if d is not None else self.annual_material_demand()
+
+    def _cached_demand_by_tag(self):
+        """_demand_by_supply_tag() of the current cached demand, computed
+        once and reused for the rest of this tick.
+
+        material_market_factor() now weighs EVERY material key a project
+        buys (see its own comment on why it must, now that this is general
+        rather than 13 hand-named keys), which means material_price_factor()
+        can be called several times for one project_cost() call, and
+        project_cost() itself is already called once per candidate node
+        `available` considers, every year (see project_cost's own comment
+        on why nothing here can afford to be quadratic). Grouping the
+        demand dict is the one part of that path that is not already O(1),
+        so it is done once per tick and kept, keyed by the demand dict's
+        identity so a new tick (a new annual_material_demand() result)
+        invalidates it automatically rather than by a second flag that
+        could drift out of step with the first.
+        """
+        demand = self._cached_material_demand()
+        key = id(demand)
+        cached = getattr(self, "_demand_by_tag_cache", None)
+        if cached is not None and cached[0] == key:
+            return cached[1]
+        by_tag = self._demand_by_supply_tag(demand)
+        self._demand_by_tag_cache = (key, by_tag)
+        return by_tag
 
     def material_price_factor(self, emp_key):
         """What buying MORE of this tracked commodity costs beyond the flat
@@ -1553,13 +2023,20 @@ class EconomyMixin:
         applied here too, understating the price pressure of a wire-heavy
         electrical age on copper by looking at copper_kg's share in
         isolation from copper_wire_kg's.
+
+        GENERALISED: this used to return exactly 1.0, immediately, for any
+        commodity id not already sitting in the hand-written MARKET_SHARE
+        dict above - the actual mechanism by which COMMODITY_DYNAMISM.md's
+        149 inert material keys never moved at all ("the function's own
+        code explains why... it returns 1.0 immediately"). That early
+        return is gone: `market` now falls back through
+        _material_market_tonnes' own generic default, so an arbitrary
+        commodity id (curated or not) reaches the same saturating curve
+        the 9 originally-tracked ones always used.
         """
-        if emp_key not in self.MARKET_SHARE:
-            return 1.0
-        demand = self._cached_material_demand()
         market = self._material_market_tonnes(emp_key)
         worst = 1.0
-        for (ek, tag), need in sorted(self._demand_by_supply_tag(demand).items()):
+        for (ek, tag), need in sorted(self._cached_demand_by_tag().items()):
             if ek != emp_key or need <= 0:
                 continue
             supply = max(1e-9, self._own_material_supply(tag) + market)
@@ -1568,25 +2045,71 @@ class EconomyMixin:
         return worst
 
     def material_market_factor(self, k):
-        """A project's price pressure from the specific tracked materials it
-        buys, weighted by how many kilograms of each -- the same weighting
-        `_material_cost` already uses implicitly by summing kilogram costs.
-        Materials this table does not track (glass sand, hide, dyestuffs...)
-        are untouched: MARKET_SHARE only exists for materials scarce enough
-        to matter (see its own comment), and so does the price response.
+        """A project's price pressure from the materials it buys, weighted
+        by how many kilograms of each -- the same weighting `_material_cost`
+        already uses implicitly by summing kilogram costs.
+
+        GENERALISED: every material key a node names now gets weighed in,
+        not only the 13 MATERIAL_CHECKS ever listed by hand. Before this,
+        a project buying nothing but glass, silk or aluminium got exactly
+        1.0 back - not a small effect, no effect, because the `continue`
+        below skipped every one of them (see COMMODITY_DYNAMISM.md: "it
+        simply skips any material key not in MATERIAL_CHECKS"). Skipping
+        was correct only in the sense that this file could not yet answer
+        a price for those materials; now it can (_material_tag /
+        material_price_factor's own generalisation), so it does.
         """
         mat = self.nodes[k].get("mat") or {}
         if not mat:
             return 1.0
         total_kg, weighted = 0.0, 0.0
-        for m, q in mat.items():
-            emp_key = self.MATERIAL_CHECKS.get(m, (None, None))[0]
-            if not emp_key:
-                continue
+        for m, q in sorted(mat.items()):
+            emp_key = self._material_tag(m)[0]
             q = float(q)
             total_kg += q
             weighted += q * self.material_price_factor(emp_key)
         return (weighted / total_kg) if total_kg else 1.0
+
+    def material_market_summary(self):
+        """Every raw material currently carrying a real price premium
+        because your own demand is leaning on what the market will sell -
+        the generalised, aggregate version of material_price_factor(), the
+        way goods_market_summary() already is for goods_market_factor().
+
+        A PLAYER MUST SEE IT. Before this pass a material's price response
+        was invisible even for the 9 tracked commodities (nothing
+        aggregated it for `money`) and non-existent for the other 149; now
+        that every material key responds (see material_price_factor's own
+        comment), a player whose project costs rose because they are
+        buying a lot of one thing, or fell because they sank their own
+        mine in it, needs a place that says so in aggregate, not just a
+        per-project `why`.
+        """
+        demand = self._cached_material_demand()
+        if not demand:
+            return None
+        rows, seen = [], set()
+        for mat in sorted(demand):
+            if demand[mat] <= 0:
+                continue
+            emp_key = self._material_tag(mat)[0]
+            if emp_key in seen:
+                continue
+            seen.add(emp_key)
+            f = self.material_price_factor(emp_key)
+            if f > 1.05:
+                rows.append((emp_key, f))
+        if not rows:
+            return None
+        rows.sort(key=lambda kv: -kv[1])
+        worst = rows[0]
+        return ("%d material%s trading above book price because your own "
+                "demand is leaning on what the market will sell: worst is "
+                "%s at %d%% of book. Sinking your own mine or production "
+                "capacity in it brings this back down, the same way it "
+                "does for iron - 'quote mine %s' shows the price"
+                % (len(rows), "" if len(rows) == 1 else "s",
+                   worst[0], round(worst[1] * 100), worst[0]))
 
     def wire_chain_report(self, wire_t_per_yr):
         """Would THIS shortfall in copper wire actually be a copper shortage,
@@ -1635,6 +2158,83 @@ class EconomyMixin:
                            "lead": 18.0, "tin": 95.0, "silver": 2200.0,
                            "gold": 42000.0}
     MINE_LEAD_YEARS = 3.0        # sinking, drainage, roads, and hiring
+
+    # ---- A GENERIC PRODUCTION LEVER FOR ANY MATERIAL, NOT ONLY THESE SEVEN ---
+    #
+    # COMMODITY_DYNAMISM.md's aluminium test, verified by running the engine
+    # directly: "no mine, no supply lever of any kind for it... Nothing in
+    # economy.py even contains the string 'aluminium.' Producing an enormous
+    # amount of it via electrolysis tech changes nothing." open_mine() used
+    # to answer nothing at all (a bare `return 0.0`) for any material not in
+    # MINE_CAPEX_PER_T_YR above - a literal seven-name dictionary, chosen
+    # because those seven are real, well-sourced figures (Roman wage
+    # evidence, attested workings) and they stay exactly as they are here.
+    # For every other material - not just aluminium, whatever the tech tree
+    # is ever extended to include - GENERALISE rather than special-case: the
+    # seven curated figures already show capex tracking a material's own
+    # book price closely (iron 1.0 den/kg -> capex 60, copper 4.0 -> 240,
+    # both a 60x multiple; tin 10.0 -> 420, ~42x; silver 317 -> 9000, ~28x;
+    # gold 3440 -> 160000, ~46x - a 30-60x band holding across four decades
+    # of price). 50, the middle of that band, is the generic multiple.
+    # Running cost tracks capex at close to a fifth across the same seven
+    # (12/60=0.20, 55/240=0.229, 18/80=0.225, 95/420=0.226, 2200/9000=0.244,
+    # 42000/160000=0.2625 - all 0.20-0.26), so generic opex is 0.22x generic
+    # capex. This is a real, general production lever - sink capital, wait
+    # out MINE_LEAD_YEARS, pay to keep it standing - for whatever material
+    # an unanticipated recipe needs, not a rule written for aluminium by name.
+    GENERIC_MINE_CAPEX_MULTIPLE = 50.0
+    GENERIC_MINE_OPEX_SHARE = 0.22
+    GENERIC_MINE_CAPEX_FLOOR = 5.0
+    GENERIC_MINE_CAPEX_CEILING = 400000.0
+
+    def _mine_capex_opex(self, mat):
+        """(capex per t/yr to sink, opex per t/yr to run) for standing
+        production of `mat` - the curated figure for the seven originally
+        tracked metals, unchanged; a generic figure derived from the
+        material's own book price (see the class comment above) for
+        anything else this file can price at all. (None, None) for a name
+        nothing prices - the only way this stays "no such material,"
+        rather than an arbitrary string being accepted."""
+        if mat in self.MINE_CAPEX_PER_T_YR:
+            return self.MINE_CAPEX_PER_T_YR[mat], self.MINE_OPEX_PER_T.get(mat, 0.0)
+        price = self._book_price_per_kg(mat)
+        if price is None or price <= 0:
+            return None, None
+        capex = max(self.GENERIC_MINE_CAPEX_FLOOR,
+                    min(self.GENERIC_MINE_CAPEX_CEILING,
+                        self.GENERIC_MINE_CAPEX_MULTIPLE * price))
+        return capex, capex * self.GENERIC_MINE_OPEX_SHARE
+
+    def _mine_capex(self, mat):
+        capex, _opex = self._mine_capex_opex(mat)
+        return capex
+
+    def _mine_opex(self, mat):
+        _capex, opex = self._mine_capex_opex(mat)
+        return 0.0 if opex is None else opex
+
+    def mineable(self, mat):
+        """Can you sink standing production capacity in this material at
+        all? True for the seven curated metals and, generalised, for any
+        material key or curated commodity id this file can find a book
+        price for - which in practice is anything a node in the tech tree
+        actually buys, since every one of those has a prices.json entry by
+        construction (data.py's own load() could not have computed
+        `_material_cost` otherwise). False only for a name that prices
+        nothing at all: a typo, not a real gap."""
+        return self._mine_capex(self._normalize_material_name(mat)) is not None
+
+    def mine_catalog_hint(self):
+        """What to tell a player who typed a material name this file
+        cannot price. This used to be a hard, closed list of seven
+        hand-named metals (see COMMODITY_DYNAMISM.md); the list itself is
+        still worth naming as the well-sourced headline cases, but it is no
+        longer the whole answer."""
+        named = ", ".join(sorted(self.MINE_CAPEX_PER_T_YR))
+        return ("well-known workings: %s - or any other material key the "
+                "tree uses (for example aluminium_kg), priced from its own "
+                "book price if nothing more specific is known about it"
+                % named)
 
     # ---- LAND: what is under your feet is geography, not standing --------
     #
@@ -1818,13 +2418,14 @@ class EconomyMixin:
         the workings were mothballed for non-payment and they were in debt
         bondage. Every other purchase in this game quotes before it charges.
         """
-        cap = self.MINE_CAPEX_PER_T_YR.get(mat)
+        mat = self._normalize_material_name(mat)
+        cap, opex_per_t = self._mine_capex_opex(mat)
         if cap is None:
             return None
         t = max(0.0, float(t_per_yr))
         scale = self.mining_cost_scale(mat)
         sink = t * cap * self.price_index * scale
-        opex = t * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index * scale
+        opex = t * opex_per_t * self.price_index * scale
         ceiling = self.mine_land_ceiling(mat)
         room = max(0.0, ceiling - self.mine_capacity.get(mat, 0.0)
                    - self.mine_pending.get(mat, 0.0))
@@ -1900,15 +2501,15 @@ class EconomyMixin:
         player to ask. A tester was billed 28.1 a year in perpetuity for a gold
         mine producing 0.0 tonnes and could do nothing about it.
         """
-        mat = str(mat or "").strip().lower()
+        mat = self._normalize_material_name(mat)
         have = self.mine_capacity.get(mat, 0.0)
         pend = [t for t in getattr(self, "mine_tranches", []) if t[0] == mat]
         if not have and not pend:
             return False, ("you have no %s workings, and none being sunk" % mat
-                           if mat in self.MINE_CAPEX_PER_T_YR
-                           else "no such material: %s. Mineable: %s"
-                                % (mat, ", ".join(sorted(self.MINE_CAPEX_PER_T_YR))))
-        saved = (have * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index
+                           if self.mineable(mat)
+                           else "no such material: %s. %s"
+                                % (mat, self.mine_catalog_hint()))
+        saved = (have * self._mine_opex(mat) * self.price_index
                  * self.mining_cost_scale(mat))
         self.mine_capacity.pop(mat, None)
         self.mine_tranches = [t for t in getattr(self, "mine_tranches", [])
@@ -1935,7 +2536,8 @@ class EconomyMixin:
         """
         if t_per_yr <= 0:
             return 0.0
-        cap = self.MINE_CAPEX_PER_T_YR.get(mat)
+        mat = self._normalize_material_name(mat)
+        cap = self._mine_capex(mat)
         if cap is None:
             return 0.0
         # Scale beyond a local lease needs a concession, which in practice means
@@ -2013,14 +2615,13 @@ class EconomyMixin:
         rots and the crew disperses, so bringing capacity back means paying to
         sink it again through open_mine. That is the honest cost of having
         overbuilt."""
-        order = sorted(self.mine_capacity,
-                       key=lambda m: -self.MINE_OPEX_PER_T.get(m, 0.0))
+        order = sorted(self.mine_capacity, key=lambda m: -self._mine_opex(m))
         for m in order:
             if self.capital >= 0:
                 break
             cut = self.mine_capacity[m] * 0.5
             self.mine_capacity[m] -= cut
-            self.capital += cut * self.MINE_OPEX_PER_T.get(m, 0.0) * self.price_index
+            self.capital += cut * self._mine_opex(m) * self.price_index
             self.log.append((self.year, "MOTHBALLED half the %s workings; you could "
                                         "not pay to keep them running" % m))
             if self.mine_capacity[m] < 1.0:
@@ -2039,7 +2640,7 @@ class EconomyMixin:
         hard for a long time, with no pumping or drilling to show for it,
         costs more than book to keep running, exactly as sinking more of it
         now does in open_mine()."""
-        return sum(self.mine_capacity.get(m, 0.0) * self.MINE_OPEX_PER_T.get(m, 0.0)
+        return sum(self.mine_capacity.get(m, 0.0) * self._mine_opex(m)
                    * self.mining_cost_scale(m)
                    for m in sorted(self.mine_capacity)) * self.price_index
 
