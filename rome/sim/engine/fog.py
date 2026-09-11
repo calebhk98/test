@@ -16,6 +16,37 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
 
 
 class FogMixin:
+    # FOG IS A RATCHET, NOT A REWIND. A tester found the exploit in as many
+    # words: "since `load` restores the game but not the player's memory, a
+    # player can save, build a node, look at what appeared in `available`,
+    # load back, and keep the knowledge. Fog of war is one command away from
+    # being off" (playtest/AUDIT_rounds_1_6.md, C1), reproduced live - save at
+    # year 1300, step to 1350, load the 1300 save, and the fifty years of
+    # frontier `available` had shown cost nothing at all, because the ledger
+    # went back to 1300 and the knowledge did not. The dishonest half is not
+    # that reload fails to un-teach a human who already read a name - no save
+    # format can do that - it is that reload also handed back every denarius
+    # and year that discovery cost, for free, as many times as you like.
+    #
+    # The fix is a property instead of a plain attribute, so it holds
+    # regardless of WHICH code assigns to `.revealed` - load_state
+    # (protocol.py) is the path the exploit uses, but this does not require
+    # editing it or knowing about every future caller: assigning a smaller
+    # set here only ever grows what is already known, never shrinks it. A
+    # genuinely fresh Sim is untouched - the first assignment ever made (both
+    # `play` and `agent` set `s.revealed = set()` right after construction,
+    # before any `load_state`) has nothing to union with yet, so it is a
+    # plain replace, exactly as before this existed.
+    @property
+    def revealed(self):
+        return self.__dict__.get("_revealed", set())
+
+    @revealed.setter
+    def revealed(self, value):
+        cur = self.__dict__.get("_revealed")
+        self.__dict__["_revealed"] = (set(value) if cur is None
+                                      else set(cur) | set(value))
+
     def reveal_from(self, k):
         """Completing something teaches you what it leads towards, vaguely."""
         if not getattr(self, "fog", False):
