@@ -4,7 +4,7 @@ Split out of simulator.py, which had grown to 5,600 lines. These are
 methods of Sim; they are a mixin only so that they can live in a file of
 their own. Behaviour is unchanged and verified byte-identical.
 """
-import collections, json, math, os, random
+import collections, json, math, os, random, re
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
@@ -13,6 +13,72 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    STARTING_KITS, trade_family, closure, critical_path,
                    topo_order, load, load_civ, haversine_km,
                    load_geography, load_resources)
+
+
+# THE GAME TELLING YOU WHAT IS IMPORTANT IS THE GAME PLAYING ITSELF. A user
+# asked, about a different number entirely, "shouldn't the payback be
+# something you don't know until after research?" - and a normal-play tester
+# found the same fault in prose rather than in a figure: school_founded's own
+# note calls itself "the pivot of the entire game" and says "every year of
+# delay here costs more than any single technology", and corpus_dispersed's
+# says outright that it is "THE highest expected-value node in the tree".
+# Under fog, which branch matters most is exactly the decision fog exists to
+# leave to the player; a sentence that grades a node against the rest of the
+# tree answers that question for them as plainly as a number would, fog or no
+# fog, because it is the designer's own ranking, not something the founder in
+# the story could know. It is cut everywhere a node's note is shown, not only
+# under fog, because telling a player outright which of their own choices is
+# correct is the same move whether or not the rest of the tree is hidden.
+#
+# NARROW ON PURPOSE, same lesson as FOREIGN_MARKERS and NEVER_ABANDON below.
+# A sentence only qualifies if it BOTH names the game or the tree itself AND
+# makes a ranking claim about it ("highest", "pivot", "largest single", ...),
+# or matches one of the handful of exact phrases below that rank a node
+# without naming "game"/"tree" in so many words ("costs more than any single
+# technology", "must not cut"). A sentence that calls something "the most
+# important instrument" a pilot has, or Cayley's discovery "his single most
+# important insight", is a true statement about the real world and survives -
+# it never mentions the game or the tree at all. Only a sentence that steps
+# outside the fiction to grade the tree's own node against the rest of the
+# tree is self-play, and only those are dropped. Deliberately NOT touched:
+# "Nothing in the technical tree requires it. You may decline..." on
+# school_founded's own note - stating that a thing is optional is the
+# opposite of the fault this exists to fix, and "the whole game" on
+# point_contact_transistor's note ("Getting here from 100 AD is the whole
+# game") is left alone too, because the goal's own identity is already known
+# under fog by design - see help's "what you are trying to do".
+_SELF_PLAY_PHRASES = (
+    "pivot of the entire game",
+    "costs more than any single",
+    "highest expected-value node in the tree",
+    "highest expected-value defensive investment",
+    "highest-leverage thing you can spend money on",
+    "is simply the highest-leverage",
+    "largest single call on your personal hours",
+    "must not cut",
+)
+_SELF_PLAY_META = re.compile(
+    r"\b(the game|this game|the entire game|the tree|this tree)\b", re.I)
+_SELF_PLAY_RANK = re.compile(
+    r"\bhighest\b|\blargest\b|\bpivot\b|\bmost important\b|\bsingle most\b", re.I)
+
+
+def strip_self_play_advice(text):
+    """Drop any sentence that ranks a node against the game or the tree,
+    and hand back what is left. See the block comment above for why, and
+    for exactly what does and does not qualify.
+    """
+    if not text:
+        return text
+    parts = re.split(r'(?<=[.!?]) ', text)
+
+    def _is_self_play(p):
+        low = p.lower()
+        if any(ph in low for ph in _SELF_PLAY_PHRASES):
+            return True
+        return bool(_SELF_PLAY_META.search(p) and _SELF_PLAY_RANK.search(p))
+
+    return " ".join(p for p in parts if not _is_self_play(p)).strip()
 
 
 class FogMixin:
@@ -109,7 +175,12 @@ class FogMixin:
 
     def fog_summary(self, k):
         """One sentence. Deliberately not the whole note, and never the unlocks."""
-        note = (self.nodes[k].get("note") or "").strip()
+        # Stripped before the first sentence is taken, not after: school_
+        # founded's note OPENS with "The pivot of the entire game." - the
+        # exact sentence fog_summary would otherwise hand back as the whole
+        # answer, under fog, for the one command whose entire job is to stay
+        # vague. See strip_self_play_advice above.
+        note = strip_self_play_advice((self.nodes[k].get("note") or "").strip())
         if not note:
             return self.nodes[k]["name"]
         for sep in (". ", "? ", "! "):

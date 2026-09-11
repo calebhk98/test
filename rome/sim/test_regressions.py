@@ -5443,6 +5443,293 @@ _p_label2, _p_expected, _p_b2 = S.load_strategy(
 check("refine() measures a candidate order the same way --strategy loads it "
       "(full tree, topo_stable-repaired), not its own raw closure-only list",
       _p_repaired == _p_expected, (len(_p_repaired), len(_p_expected)))
+# ============================================================================
+# INTERFACE HONESTY: an estimate instead of a certainty where fog says the
+# player should not have one yet, the game not answering its own questions,
+# and the smaller items testers asked for. protocol.py, fog.py.
+# ============================================================================
+
+# --- JOB 1: revenue is an estimate, not the true figure, for a thing you
+# have never run, under fog. The user asked outright: "should you really be
+# able to tell how much money you would make from researching something?
+# Shouldn't the payback be something you don't know until after research?"
+# and a break tester's own numbers said why it mattered - EARNS/YR under fog
+# was "the only usable heuristic", and got them 95 of the 146 nodes on the
+# road to the goal without working out the tree at all.
+s_fe = sim()
+s_fe.fog = True
+s_fe.revealed = set()
+_av_fe = S._agent_available(s_fe, NODES, {"all": True})
+_est_rows = [r for r in _av_fe["available"] if isinstance(r["earns_per_year"], list)]
+check("available quotes a range, not the true figure, for an unbuilt thing "
+      "under fog",
+      len(_est_rows) > 10, len(_est_rows))
+_r0 = _est_rows[0]
+check("...and the range is an actual range: low is really below high",
+      _r0["earns_per_year"][0] < _r0["earns_per_year"][1], _r0)
+
+_k_fe = _r0["id"]
+_w1 = S._agent_dispatch(s_fe, NODES, {"cmd": "why", "id": _k_fe})
+_w2 = S._agent_dispatch(s_fe, NODES, {"cmd": "why", "id": _k_fe})
+check("the fogged estimate is deterministic - the same game asked the same "
+      "question twice gets the same answer, not a fresh roll",
+      _w1["revenue"] == _w2["revenue"], (_w1["revenue"], _w2["revenue"]))
+
+# NOT A TIGHT SYMMETRIC BAND ON THE TRUTH: "400 +/- 50" gives the truth away
+# just as plainly as the bare number did. Most of the range in a real sample
+# has to sit CLOSER on one side than the other.
+_asym = sum(1 for r in _est_rows
+            if (NODES[r["id"]]["rev"] - r["earns_per_year"][0])
+            != (r["earns_per_year"][1] - NODES[r["id"]]["rev"]))
+check("the estimate is not a tight symmetric band centred on the truth - "
+      "most of a real sample sit closer to one bound than the other",
+      _asym >= len(_est_rows) * 0.5, "%d of %d" % (_asym, len(_est_rows)))
+
+# UPKEEP STAYS EXACT. The user's question was specifically about payback
+# (revenue); upkeep is closer to a quoted price, knowable in advance, and
+# this project already keeps `cost` exact under fog for the same reason.
+_k_up = next((r["id"] for r in _est_rows if NODES[r["id"]]["up"] > 0), None)
+if _k_up:
+    _wu = S._agent_dispatch(s_fe, NODES, {"cmd": "why", "id": _k_up})
+    check("upkeep is exact under fog even for a thing you have never run",
+          _wu["upkeep"] == NODES[_k_up]["up"], (_wu["upkeep"], NODES[_k_up]["up"]))
+
+# NARROWS TO THE EXACT FIGURE ONCE YOU HAVE ACTUALLY RUN IT A FEW YEARS.
+s_ry = sim()
+s_ry.fog = True
+s_ry.revealed = set()
+s_ry.done.add(_k_fe)
+s_ry.done_year[_k_fe] = s_ry.year
+s_ry._done_changed()
+_w_new = S._agent_dispatch(s_ry, NODES, {"cmd": "why", "id": _k_fe})
+check("a freshly finished thing is still a guess - you have not run it yet",
+      isinstance(_w_new["revenue"], list), _w_new["revenue"])
+s_ry.year += 3
+_w_old = S._agent_dispatch(s_ry, NODES, {"cmd": "why", "id": _k_fe})
+check("...and becomes the exact figure after you have actually run it a "
+      "few years",
+      _w_old["revenue"] == NODES[_k_fe]["rev"], _w_old["revenue"])
+
+# FOG OFF: the exact figure, as before.
+s_nf = sim()
+_w_nf = S._agent_dispatch(s_nf, NODES, {"cmd": "why", "id": _k_fe})
+check("with fog off, EARNS/YR is still the exact figure",
+      _w_nf["revenue"] == NODES[_k_fe]["rev"], _w_nf["revenue"])
+
+
+# --- JOB 2: the game must not tell you which branch matters most. A
+# normal-play tester quoted school_founded's own note calling itself "the
+# pivot of the entire game" with "every year of delay here costs more than
+# any single technology"; corpus_dispersed, corpus_written and
+# plague_preparedness rank themselves the same way.
+for _spid, _banned in (
+        ("school_founded", ("pivot of the entire game",
+                            "costs more than any single",
+                            "highest-leverage thing you can spend money on")),
+        ("corpus_dispersed", ("highest expected-value node in the tree",)),
+        ("corpus_written", ("largest single call on your personal hours",
+                            "must not cut")),
+        ("plague_preparedness", ("highest expected-value defensive investment",))):
+    _wn = S._node_explain(sim(), NODES, _spid)
+    check("%s's note no longer ranks itself against the rest of the tree"
+          % _spid,
+          all(b not in (_wn.get("note") or "") for b in _banned),
+          _wn.get("note"))
+
+# LEGITIMATE WARNINGS SURVIVE: plague_preparedness still tells you the date
+# and what the node actually does about it - a consequence the player
+# cannot see coming, not a ranking claim, and it must stay.
+_pp = S._node_explain(sim(), NODES, "plague_preparedness")
+check("...but the actual hazard warning underneath it is untouched",
+      "165 AD" in (_pp.get("note") or "")
+      and "decides whether your institute survives" in (_pp.get("note") or ""),
+      _pp.get("note"))
+
+# school_founded's OWN statement that it is optional must survive too - it
+# is the opposite of the fault being fixed.
+_sf = S._node_explain(sim(), NODES, "school_founded")
+check("school_founded's note still says it is optional",
+      "OPTIONAL" in (_sf.get("note") or "")
+      and "Nothing in the technical tree requires it" in (_sf.get("note") or ""),
+      _sf.get("note"))
+
+# UNDER FOG TOO: fog_summary takes its one sentence off the same note, and
+# used to open with exactly the self-play line this exists to cut.
+s_fp = sim()
+s_fp.fog = True
+s_fp.revealed = {"school_founded"}
+check("the fogged one-line summary of school_founded is not its own "
+      "self-rating either",
+      "pivot" not in s_fp.fog_summary("school_founded").lower(),
+      s_fp.fog_summary("school_founded"))
+
+
+# --- JOB 3a: a prerequisite has to be DONE, not merely started. A tester
+# wrote "nothing states whether a prerequisite must be DONE or open" - it
+# has always meant done, and the one sentence that said so lived only in a
+# branch start_blocked_reason pre-empts on every ordinary refusal, so a
+# player who actually hit the refusal never saw it.
+s_pn = sim(capital=1000000.0)
+_pair_pn = None
+for _cand in s_pn.order:
+    if not s_pn.can_start(_cand):
+        continue
+    _dep = next((m for m in NODES if _cand in NODES[m]["pre"]), None)
+    if _dep:
+        _pair_pn = (_cand, _dep)
+        break
+_k1_pn, _k2_pn = _pair_pn
+S._agent_dispatch(s_pn, NODES, {"cmd": "start", "id": _k1_pn})
+_w_pn = S._node_explain(s_pn, NODES, _k2_pn)
+_txt_pn = _RP("why", _w_pn)
+check("a refusal for a started-but-unfinished prerequisite says it has to "
+      "be FINISHED, not merely started - on the path a player actually hits",
+      "FINISHED" in _txt_pn and "not merely started" in _txt_pn,
+      [ln for ln in _txt_pn.splitlines() if "FINISHED" in ln] or _txt_pn[:200])
+
+
+# --- JOB 3b: a fog-safe sense of progress DURING play, and nothing more
+# until the run ends - the total itself is the size of the tree's own
+# spoiler surface, same reasoning as downstream_count being hidden.
+s_pg = sim()
+s_pg.fog = True
+s_pg.revealed = set()
+s_pg.done.add("arithmetic_positional")
+s_pg._done_changed()
+_stpg = S._agent_dispatch(s_pg, NODES, {"cmd": "state"})
+check("under fog, `state` says how many of the goal's road you already have",
+      isinstance(_stpg.get("on_the_road_to_the_goal_so_far"), int)
+      and _stpg["on_the_road_to_the_goal_so_far"] >= 1,
+      _stpg.get("on_the_road_to_the_goal_so_far"))
+check("...but never the total - final_report gives that, once the run is "
+      "over and there is nothing left to spoil",
+      "the_whole_road_was" not in _stpg, sorted(_stpg.keys()))
+s_pg2 = sim()
+_stpg2 = S._agent_dispatch(s_pg2, NODES, {"cmd": "state"})
+check("with fog off, the fog-safe progress field is absent (path/why "
+      "already answer this exactly, by name)",
+      _stpg2.get("on_the_road_to_the_goal_so_far") is None, _stpg2)
+
+
+# --- JOB 3c: the society's own values are readable. Event text has always
+# named these fields directly ("changes the society: w_novelty") with no
+# command that would say what one is; two testers asked for this.
+_vals = S._agent_dispatch(sim(), NODES, {"cmd": "values"})
+check("`values` exists and lists this society's own traits as numbers",
+      _vals.get("ok") and len(_vals.get("values") or []) >= 8, _vals)
+check("...and every field event text names is one this command can look up",
+      {"w_novelty", "w_commerce", "w_magic_fear"} <=
+      {r["field"] for r in _vals["values"]},
+      [r["field"] for r in _vals["values"]])
+
+
+# --- JOB 3d: a long step stops when something it warned about actually
+# happens, rather than running the rest of the years you asked for on top
+# of it. A break tester watched "CLOSE TO THE LIMIT ... while it is still
+# your choice" get ploughed straight through to CREDIT EXHAUSTED inside one
+# big `step`.
+s_se = sim(capital=500.0)
+s_se.end_year = s_se.cfg["start_year"] + 200
+# Plain `start`, not `rush` - this check has to stand on its own before
+# `rush` exists as a command (see JOB 3f, committed separately and later).
+_memo_se = {}
+_ok_se = [k for k in s_se.order if s_se.can_start(k, _memo=_memo_se)]
+_ok_se = [k for k in _ok_se
+          if not (NODES[k]["tier"] == 0 and NODES[k]["ph"] == 0
+                  and NODES[k]["_total_cost"] <= 1)]
+for _k_se in _ok_se[:15]:
+    S._agent_dispatch(s_se, NODES, {"cmd": "start", "id": _k_se})
+_step_ce = S._agent_dispatch(s_se, NODES, {"cmd": "step", "years": 100})
+check("a multi-year step stops the moment credit is actually exhausted, "
+      "rather than running the rest of the years on top of it",
+      bool(_step_ce.get("stopped_early"))
+      and any("CREDIT EXHAUSTED" in e["message"] for e in _step_ce["events"]),
+      _step_ce.get("stopped_early"))
+check("...and it really did stop short of the 100 years asked for",
+      _step_ce["year"] < s_se.cfg["start_year"] + 100, _step_ce["year"])
+
+
+# --- JOB 3e: the founder's death is legible, not one line among many. A
+# normal-play tester in mortal mode found it reported as one more EVENT in a
+# long `step`, with the age nowhere but that one sentence. `sim()` has no
+# mortal switch of its own - nothing in this file needed one before - so
+# this builds the Sim directly, the same way `sim()` itself does.
+s_fd = S.Sim(NODES, ORDER, random.Random(1), events=False, manual=True,
+             civ=S.load_civ("rome_100ad"), cfg={"immortal": False})
+s_fd.goal, s_fd.done_year = GOAL, {}
+s_fd.end_year = s_fd.cfg["start_year"] + 200
+_step_fd = S._agent_dispatch(s_fd, NODES, {"cmd": "step", "years": 150})
+check("the founder's death gets a field of its own in the step that carries "
+      "it, not only a line in events",
+      isinstance(_step_fd.get("the_founder_died_this_step"), dict),
+      _step_fd.get("the_founder_died_this_step"))
+check("...and the age is a number you can read, not prose you have to parse",
+      isinstance((_step_fd.get("the_founder_died_this_step") or {})
+                 .get("aged_about"), int),
+      _step_fd.get("the_founder_died_this_step"))
+check("...and `state` carries the age from then on, not only that one "
+      "step's reply",
+      _step_fd.get("founder_died_aged")
+      == _step_fd["the_founder_died_this_step"]["aged_about"],
+      (_step_fd.get("founder_died_aged"), _step_fd.get("the_founder_died_this_step")))
+check("...and the step stopped there instead of running the rest of the "
+      "150 years requested straight past it",
+      _step_fd["year"] < s_fd.cfg["start_year"] + 150, _step_fd["year"])
+
+# THE AGE SURVIVES A --session RESUME. `log` is not itself a saved field -
+# see SAVE_FIELDS - so a naive read of it for the founder's age would go
+# empty in a freshly constructed process, silently un-reporting an age
+# `state` had already shown once. _founder_death_aged/_founder_death_year
+# are saved fields precisely so this does not happen.
+_sess_fd = os.path.join(ROOT, _rel("founder_death.json"))
+S.save_state(s_fd, _sess_fd)
+s_fd2 = S.Sim(NODES, ORDER, random.Random(1), events=False, manual=True,
+             civ=S.load_civ("rome_100ad"))
+s_fd2.goal, s_fd2.done_year = GOAL, {}
+S.load_state(s_fd2, _sess_fd)
+_st_fd2 = S._agent_dispatch(s_fd2, NODES, {"cmd": "state"})
+check("the founder's age at death survives a save and a fresh process "
+      "loading it back, not only the process that saw it happen",
+      _st_fd2.get("founder_died_aged") == _step_fd.get("founder_died_aged")
+      and _st_fd2.get("founder_died_aged") is not None,
+      (_st_fd2.get("founder_died_aged"), _step_fd.get("founder_died_aged")))
+
+
+# --- JOB 3f: a bulk start for the late game, so it is not pure typing.
+s_ru = sim()
+_ru = S._agent_dispatch(s_ru, NODES, {"cmd": "rush"})
+check("`rush` starts more than one thing in a single call",
+      _ru.get("count_started", 0) >= 2, _ru.get("count_started"))
+check("...and every id it reports started is actually active now",
+      all(r["id"] in s_ru.active for r in _ru["started"]),
+      [r["id"] for r in _ru["started"]])
+check("...and a limit caps how many it actually begins",
+      S._agent_dispatch(sim(), NODES, {"cmd": "rush", "limit": 1})["count_started"] == 1,
+      None)
+
+# FOG-SAFE: `can_start` already guarantees visibility (see is_visible's own
+# docstring - "anything you could start right now is visible by
+# definition"), so this is belt-and-braces: every id `rush` touches under
+# fog really was one the fogged `available` list would also have shown.
+s_ruf = sim()
+s_ruf.fog = True
+s_ruf.revealed = set()
+_avf = {r["id"] for r in S._agent_available(s_ruf, NODES, {"all": True})["available"]}
+_ruf = S._agent_dispatch(s_ruf, NODES, {"cmd": "rush"})
+check("under fog, everything `rush` starts was already on the visible "
+      "`available` list",
+      all(r["id"] in _avf for r in _ruf["started"]),
+      [r["id"] for r in _ruf["started"] if r["id"] not in _avf])
+
+# EVERY NEW COMMAND MUST BE ADVERTISED. Same check the suite already runs
+# for the rest of KNOWN_COMMANDS, pinned here for the two just added so a
+# future edit that forgets to wire one up fails immediately rather than
+# waiting for the general sweep to notice.
+check("'values' and 'rush' are in the list every unknown-command refusal "
+      "advertises",
+      "values" in S.KNOWN_COMMANDS and "rush" in S.KNOWN_COMMANDS,
+      S.KNOWN_COMMANDS)
+
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

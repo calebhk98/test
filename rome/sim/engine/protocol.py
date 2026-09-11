@@ -3,7 +3,7 @@
 One object per line in, one object per line out. It explains itself: there is
 no protocol document to read, on purpose.
 """
-import collections, json, math, os, random, re
+import collections, hashlib, json, math, os, random, re
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
@@ -13,6 +13,7 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    topo_order, load, load_civ, haversine_km,
                    load_geography, load_resources, money_word,
                    downstream_count, is_downstream)
+from .fog import strip_self_play_advice
 
 
 from .core import Sim
@@ -106,6 +107,65 @@ def _waiting_on(s, nodes, k, st, bill):
     return "your hours"
 
 
+# WHAT EACH TRAIT IN self.w ACTUALLY DOES, in the player's own words. Event
+# text has always named these fields directly - "corpus_dispersed changes
+# the society: w_novelty" (see society.apply_tech_effects) - with no command
+# anywhere that would tell a player what w_novelty IS, let alone what it is
+# now. Two testers asked for exactly this, in separate rounds, in close to
+# the same words. Not civ-specific and not a fog spoiler: these field names
+# and what they do are the same across every civilisation, only the starting
+# numbers differ, so naming what the mechanic does is not a leak of
+# anything the founder in the story would not already understand about their
+# own society.
+_VALUE_MEANINGS = {
+    "adaptation_rate": "how fast this society stops being alarmed by "
+                       "something it has now seen for a while",
+    "bribability": "how far money moves scandal down, and how much of an "
+                   "opposed project's delay a bribe buys off",
+    "patronage_weight": "how much protection a patron actually gives you",
+    "w_commerce": "how much the state cares about work it can tax or trade on",
+    "w_eminence_danger": "how dangerous standing out is here - autocracies "
+                         "run this high",
+    "w_information": "how much the state cares about work that spreads ideas",
+    "w_labour_saving": "negative here means a machine that displaces hands "
+                       "is itself alarming, on top of anything else about it",
+    "w_magic_fear": "how alarmed this society is by anything inexplicable "
+                    "or showy",
+    "w_military": "how much the state cares about work it could use militarily",
+    "w_novelty": "negative here means novelty itself is alarming, whatever "
+                "the work actually is",
+    "w_religious_rigidity": "how threatening anything religion-adjacent looks",
+}
+
+
+def _agent_values(s):
+    """What this society actually believes, as numbers you can look up.
+
+    These move over the course of a run - printing raises literacy, the
+    scientific method lowers the fear of the inexplicable - and the only
+    record of a move has ever been a completion's "changes the society:
+    w_novelty, w_commerce" line, naming fields with no way to see what they
+    are or what they are now. This is that way.
+    """
+    w = dict(getattr(s, "w", {}) or {})
+    rows = [{"field": f, "value": round(w[f], 3), "means": _VALUE_MEANINGS.get(f)}
+            for f in sorted(w) if not f.startswith("_")]
+    return {"ok": True, "values": rows,
+            "note": "a completion's own 'changes the society' line says which "
+                    "of these moved and when."}
+
+
+def render_values(out):
+    L = ["WHAT THIS SOCIETY BELIEVES"]
+    for r in out.get("values") or []:
+        L.append("  %-22s %7s  %s" % (r["field"], _factor(r["value"]),
+                                      r.get("means") or ""))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
 def final_report(s, nodes):
     """The scoreboard, once the run is over.
 
@@ -175,6 +235,60 @@ def render_final(out):
         L.append("  the largest things you built: " + ", ".join(big))
     L.append("=" * 70)
     return "\n".join(L)
+
+
+def _goal_progress_count(s, nodes):
+    """How many of the goal's own prerequisites you already have, with
+    nothing named and not even the total - see the block comment where this
+    is used in _agent_state for why the total itself has to stay withheld
+    until the run ends.
+    """
+    goal = getattr(s, "goal", None)
+    if not goal or goal not in nodes:
+        return None
+    need = getattr(s, "_goal_closure", None)
+    if need is None:
+        try:
+            need = s._goal_closure = closure(nodes, goal)
+        except Exception:
+            return None
+    return sum(1 for x in need if x in s.done)
+
+
+def _founder_death_info(s):
+    """When and how old the founder was when they died, or None if not.
+
+    core.py logs "the founder dies, aged about %d" the one time it happens
+    and never stores the age anywhere else - a normal-play tester in mortal
+    mode found their founder's death reported as one more line among sixty
+    in a long `step`'s events, with no field anywhere a script would check
+    first, and the age nowhere but that sentence.
+
+    THE ATTRIBUTES, NOT ONLY THE LOG. `log` is not itself a saved field -
+    see SAVE_FIELDS - so a save taken after the founder's death and resumed
+    in a new process starts that process's `s.log` empty, and scanning it
+    would silently un-report an age that had already been shown once. The
+    step handler sets _founder_death_aged/_founder_death_year the moment it
+    sees the line, and those two ARE saved fields, so this is the fast path
+    and the one that survives a resume. Scanning the log is the fallback,
+    for a Sim driven straight off the engine (as the test suite does) or a
+    save written before this existed.
+    """
+    if s.founder_alive:
+        return None
+    aged = getattr(s, "_founder_death_aged", None)
+    if aged is not None:
+        return {"year": getattr(s, "_founder_death_year", None), "aged_about": aged}
+    cache = getattr(s, "_founder_death_cache", None)
+    if cache is not None:
+        return cache
+    for yr, msg in s.log:
+        if msg.startswith("the founder dies"):
+            m = re.search(r"aged about (\d+)", msg)
+            cache = {"year": yr, "aged_about": int(m.group(1)) if m else None}
+            s._founder_death_cache = cache
+            return cache
+    return None
 
 
 def _agent_state(s, nodes, cmd=None):
@@ -344,6 +458,10 @@ def _agent_state(s, nodes, cmd=None):
         # read it alongside, not in place of, hours_this_year.
         "hours_this_year": getattr(s, "hours_this_year", None),
         "founder_alive": s.founder_alive,
+        # THE AGE ITSELF, AS A FIELD, not only inside a log sentence a script
+        # would have to parse. See _founder_death_info.
+        "founder_died_aged": (_founder_death_info(s) or {}).get("aged_about"),
+        "founder_died_in": (_founder_death_info(s) or {}).get("year"),
         "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
         "directors_extra": round(s.directors_extra, 2),
         # NO "suspicion" FIELD. It was replaced by `scandal` (see core.py: "doing
@@ -469,6 +587,17 @@ def _agent_state(s, nodes, cmd=None):
         "goal_in_words": (s.nodes[s.goal]["name"]
                           if getattr(s, "goal", None) in s.nodes else None),
         "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
+        # THE FOG-SAFE VERSION OF final_report's "146 nodes in all; you had
+        # 122" - a tester called that the most useful line in the game, and
+        # it is withheld until the run ends on purpose: the TOTAL is the size
+        # of the tree's own spoiler surface (same reasoning as
+        # downstream_count being hidden for a single node, just applied to
+        # the whole road at once). So during play this says only how many of
+        # the road's nodes you already have, never how many there are in
+        # all and never which ones remain - you get a sense of progress
+        # without being handed a map.
+        "on_the_road_to_the_goal_so_far": (
+            _goal_progress_count(s, nodes) if getattr(s, "fog", False) else None),
         "fog_of_war": getattr(s, "fog", False),
         "manual": s.manual, "ended": end_reason is not None, "end_reason": end_reason,
     }
@@ -603,8 +732,13 @@ def _agent_help(s, topic=None):
             "why <id>": "everything known about one thing",
             "start <id>": "begin work on something",
             "stop <id>": "abandon it, losing what you have spent",
+            "rush": "start everything you could begin today in one go, "
+                    "highest-leverage first; add limit:N to cap it",
             "step <years>": "let time pass",
             "money": "the whole ledger: what comes in, what goes out",
+            "values": "what this society actually believes, as numbers - the "
+                     "same fields a completion's 'changes the society' line "
+                     "names",
             "log": "your own history - what you did and what followed, most "
                    "recent first; add failures:true, find, since/before, "
                    "order, offset. Never the whole thing in one go",
@@ -899,6 +1033,98 @@ def _staff_fields(s, n):
     return out
 
 
+def _coarse_round(x):
+    """Round a fogged revenue guess to a figure a person would actually say
+    aloud - "three to five hundred a year", not "347.2 to 511.8 den/yr".
+    Real-looking precision on a number that is, by construction, not the
+    truth would read as measured rather than guessed, which defeats the
+    point of guessing at all.
+    """
+    x = max(0.0, x)
+    if x == 0:
+        return 0.0
+    step = 5 if x < 100 else 25 if x < 1000 else 100 if x < 10000 else 500
+    return round(x / step) * step
+
+
+def _revenue_known_exactly(s, k):
+    """Have you actually RUN this long enough to know what it earns?
+
+    Granted knowledge (k in s.granted) is answered True unconditionally: it
+    is part of the persona you arrived with, not a prospect you are sizing
+    up, so there is nothing to guess about. Anything else you have finished
+    needs a few years of its own ledger behind it - "a few years" taken
+    literally, three - before the figure stops being a forecast and starts
+    being a fact; done_year missing (a bookkeeping gap, not a fresh
+    completion) defaults to True rather than trapping a player in a fog
+    the engine itself cannot explain.
+    """
+    if k not in s.done:
+        return False
+    if k in s.granted:
+        return True
+    started = s.done_year.get(k)
+    if started is None:
+        return True
+    return (s.year - started) >= 3
+
+
+def _fog_revenue_estimate(s, k):
+    """What `available` and `why` show for EARNS/YR on a thing you have
+    never run, under fog of war: a range, not the true figure.
+
+    The user who asked for this put the question plainly: "should you
+    really be able to tell how much money you would make from researching
+    something? Shouldn't the payback be something you don't know until
+    after research?" A break tester's own numbers say why it matters: under
+    fog they built 540 technologies using EARNS/YR as, in their own words,
+    "the only usable heuristic", and reached 95 of the 146 nodes on the road
+    to the goal that way - not because they had worked out the tree, but
+    because the exact payback figure told them which side branches paid and
+    steered them straight past the spine. Real payback is a thing you learn
+    by running a concern for a few years, not by reading a number off a
+    prospectus before you have so much as broken ground.
+
+    Two things this must never be:
+      - RE-ROLLED. A fresh call to self.rng here would answer differently on
+        two consecutive looks at the same screen, and would also consume a
+        draw from the SAME generator the simulation itself steps with - so
+        merely asking `why` twice would change how the game plays out.
+        Read-only commands must not touch self.rng. Instead this hashes
+        something stable for the LIFE of one game (this civilisation, this
+        goal, this starting purse) together with the node's own id, so the
+        same game asked the same question twice gets the same answer, and a
+        different game is not guaranteed to.
+      - A TIGHT SYMMETRIC BAND ON THE TRUTH. "400 +/- 50" tells you 400 just
+        as plainly as the bare number did, because the midpoint gives it
+        away. The low and high bounds below are pulled by two independently
+        drawn fractions, so the middle of the printed range is not, in
+        general, anywhere near the real figure, and averaging the two bounds
+        does not recover it.
+    It DOES widen with how well this node's own numbers are attested: `conf`
+    is already in the tree data for exactly this reason (A well attested, B
+    probable, C the author's estimate), so a guess about a well-documented
+    Roman trade is tighter than a guess about a Han institution nobody wrote
+    down the takings of, the same as a historian's own uncertainty would be.
+    """
+    n = s.nodes[k]
+    real = n["rev"]
+    if real <= 0:
+        return None          # nothing to estimate; a non-earner is a non-earner under fog too
+    key = "%s|%s|%.1f|%s" % (s.civ.get("id") or s.civ.get("name") or "civ",
+                             getattr(s, "goal", "") or "",
+                             s.cfg.get("start_capital", 0.0), k)
+    h = hashlib.sha256(key.encode("utf-8")).digest()
+    half = {"A": 0.30, "B": 0.55}.get(n.get("conf"), 0.85)
+    lo_frac = 0.35 + (h[0] / 255.0) * 0.55
+    hi_frac = 0.35 + (h[1] / 255.0) * 0.90
+    lo = _coarse_round(real * (1.0 - half * lo_frac))
+    hi = _coarse_round(real * (1.0 + half * hi_frac))
+    if hi <= lo:
+        hi = lo + (5 if lo < 100 else 25 if lo < 1000 else 100)
+    return [lo, hi]
+
+
 def _brief(s, nodes, k, fog):
     """One row of `available`.
     
@@ -918,12 +1144,18 @@ def _brief(s, nodes, k, fog):
     # has a size budget to keep.
     rests = _rests_band(downstream_count(nodes, k)).split(";")[0]
     if fog:
+        # A ROW HERE IS ALWAYS A THING YOU HAVE NOT BUILT - `available` lists
+        # what you could BEGIN, never what you already have - so there is no
+        # "have you run it long enough" case to check; see
+        # _revenue_known_exactly for the one that `why` does need, because
+        # `why` also answers for things you finished years ago.
+        _est = _fog_revenue_estimate(s, k)
         return {"id": k, "name": n["name"],
                 "cost": round(s.project_cost(k), 1),
                 "your_hours": n["ph"],
                 "least_years": n["yrs"],
                 "chance_of_failure": n["risk"],
-                "earns_per_year": round(n["rev"], 1),
+                "earns_per_year": _est if _est is not None else round(n["rev"], 1),
                 "costs_per_year_after": round(n["up"], 1),
                 "how_much_rests_on_this": rests,
                 **_staff_fields(s, n)}
@@ -945,7 +1177,11 @@ def _full_entry(s, nodes, k, fog):
             e["trades_needed"] = sorted(n["lab"])
     else:
         e["prerequisites"] = n["pre"]
-        e["note"] = n["note"]
+        # See strip_self_play_advice: a node's own note is data written by a
+        # designer ranking it against the rest of the tree, not something the
+        # founder in the story could know, and that stays cut whether or not
+        # fog is on - see the block comment in fog.py.
+        e["note"] = strip_self_play_advice(n["note"])
     return e
 
 
@@ -1414,7 +1650,13 @@ def _node_explain(s, nodes, k):
     started = k in s.done or k in s.active
     out = {
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
-        "note": n["note"], "kb": n["kb"],
+        # See strip_self_play_advice (fog.py): drops any sentence that ranks
+        # this node against the game or the tree itself - "the pivot of the
+        # entire game", "THE highest expected-value node in the tree" - and
+        # keeps everything else the note says. Applied here, not only under
+        # fog: telling a player outright which of their own choices is
+        # correct is the game answering its own question either way.
+        "note": strip_self_play_advice(n["note"]), "kb": n["kb"],
         "founder_hours": n["ph"],
         # Two different kinds of people, and a tester reasonably read the two
         # fields as contradicting each other ("hired_labour names an engineer,
@@ -1474,7 +1716,20 @@ def _node_explain(s, nodes, k):
                  "note": "today's price. It is fixed when you start, not when "
                          "you read it: quotes move with prices, the coinage "
                          "and what a material costs to get."},
-        "upkeep": n["up"], "revenue": n["rev"],
+        # UPKEEP STAYS EXACT, EVEN UNDER FOG, AND REVENUE DOES NOT. Upkeep is
+        # closer to a quoted PRICE than to a forecast - rent, wages and
+        # materials are things you can ask around about before you commit,
+        # the same way `cost` above is already shown exact and fixed the
+        # moment you start. Revenue is different in kind: it is what the
+        # market will actually pay for a thing nobody here has ever sold,
+        # and that is not knowable in advance whatever you ask around, which
+        # is the whole of the user's original question - "shouldn't the
+        # payback be something you don't know until after research?" So
+        # revenue alone is fogged; see _fog_revenue_estimate.
+        "upkeep": n["up"],
+        "revenue": (n["rev"] if (not getattr(s, "fog", False)
+                                 or _revenue_known_exactly(s, k))
+                   else (_fog_revenue_estimate(s, k) or 0.0)),
         # WHAT IT PAYS YOU, which for something in your own practice is a third
         # of the figure above. A break tester read "REVENUE: 500 den/yr" beside
         # a ledger crediting 166.7 for the same node and called it `why`
@@ -1690,6 +1945,17 @@ def _fmt_num(v):
     return str(v)
 
 
+def _fmt_range(v):
+    """earns_per_year, under fog, for a thing you have never run: [lo, hi]
+    rather than a bare number - see _fog_revenue_estimate. One column had to
+    read both shapes, so this reads either and falls back to _fmt_num for
+    the ordinary case.
+    """
+    if isinstance(v, (list, tuple)) and len(v) == 2:
+        return "%s-%s" % (_fmt_num(v[0]), _fmt_num(v[1]))
+    return _fmt_num(v)
+
+
 def _pct(v):
     """A 0..1 fraction as a percentage a person reads at a glance.
 
@@ -1776,8 +2042,14 @@ def render_state(out):
     # of them ends with everything you have not made permanent dying with you.
     _src = out.get("where_your_hours_come_from") or {}
     _dep = _src.get("deputies_who_direct_work_for_you") or 0
+    # THE AGE, ON THE LINE THAT ALREADY SAYS DEAD OR ALIVE, not only inside a
+    # log sentence from however many years ago: a normal-play tester in
+    # mortal mode never saw an age anywhere but that one line in `events`.
     L.append("You: %s%s, %s founder-hours free this year%s"
-             % ("alive" if out.get("founder_alive") else "DEAD",
+             % ("alive" if out.get("founder_alive") else
+                ("DEAD (aged about %s at death, in %s)"
+                 % (out.get("founder_died_aged"), out.get("founder_died_in"))
+                 if out.get("founder_died_aged") is not None else "DEAD"),
                 " and ageing" if out.get("founder_ages") else " (you do not age)",
                 _fmt_num(out.get("founder_hours_available")),
                 ("   (%s of your own, plus %s deputies directing work in your "
@@ -1939,6 +2211,12 @@ def render_state(out):
             L.append("Aiming at: %s%s" % (out["goal_in_words"],
                      ("  -- REACHED in %s AD" % out.get("goal_year"))
                      if out.get("goal_reached") else ""))
+        # HOW MANY, NEVER HOW MANY OF HOW MANY. See the field's own comment
+        # in _agent_state for why the total stays withheld until the run is
+        # over.
+        if out.get("on_the_road_to_the_goal_so_far") is not None:
+            L.append("On the road there so far: %s of its nodes"
+                     % _fmt_num(out["on_the_road_to_the_goal_so_far"]))
     elif out.get("goal"):
         L.append("")
         L.append("Goal: %s%s" % (out["goal"],
@@ -1947,8 +2225,15 @@ def render_state(out):
     completed = out.get("completed")
     events = out.get("events")
     lost = out.get("lost")
-    if completed or events or lost:
+    fdts = out.get("the_founder_died_this_step")
+    if completed or events or lost or fdts:
         head = []
+        # THE LOUDEST LINE IN THE REPLY, not one more EVENT line among sixty.
+        # See _founder_death_info and the step handler's own comment on why
+        # a multi-year step stops here rather than running on past it.
+        if fdts:
+            head.append("  *** THE FOUNDER HAS DIED, aged about %s, in %s ***"
+                        % (fdts.get("aged_about"), fdts.get("year")))
         for c in completed or []:
             head.append("  %s %s: %s"
                         % ("THIS SOCIETY NOW HAS" if c.get("granted")
@@ -1960,6 +2245,8 @@ def render_state(out):
                            if c.get("can_be_restored") else ""))
         for e in events or []:
             head.append("  EVENT %s: %s" % (e.get("year"), e.get("message")))
+        if out.get("stopped_early"):
+            head.append("  " + out["stopped_early"])
         L = head + [""] + L if head else L
 
     also = out.get("also_available")
@@ -2010,7 +2297,7 @@ def _available_row(e, w=34, purse=None):
         w, (e.get("id") or ""), (e.get("name") or "")[:20],
         _fmt_num(e.get("cost")) + _cost_marker(e, purse),
         _fmt_num(hours), _fmt_num(years), _pct(risk),
-        _fmt_num(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
+        _fmt_range(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
         staff, rests)
 
 
@@ -2168,8 +2455,16 @@ def render_why(out):
     if mat:
         L.append("MATERIALS: " + ", ".join("%s %s" % (m, _fmt_num(q)) for m, q in mat.items()))
     if out.get("upkeep") or out.get("revenue"):
-        L.append("UPKEEP: %s den/yr     REVENUE: %s den/yr"
-                 % (_fmt_num(out.get("upkeep")), _fmt_num(out.get("revenue"))))
+        # A RANGE READS AS A RANGE, NOT AS TWO NUMBERS GLUED TOGETHER. See
+        # _fog_revenue_estimate: under fog, on a thing nobody here has ever
+        # run, this is a guess, and saying so is the whole point of showing
+        # a guess instead of the true figure.
+        _rev = out.get("revenue")
+        _is_est = isinstance(_rev, (list, tuple))
+        L.append("UPKEEP: %s den/yr     REVENUE: %s den/yr%s"
+                 % (_fmt_num(out.get("upkeep")), _fmt_range(_rev),
+                    " (nobody has run this here yet - a guess, not a fact)"
+                    if _is_est else ""))
     if out.get("but_it_pays_YOU") is not None:
         L.append("  BUT IT PAYS YOU %s den/yr: %s"
                  % (_fmt_num(out["but_it_pays_YOU"]), out.get("because") or ""))
@@ -2196,19 +2491,24 @@ def render_why(out):
                 L.append("  (%s is how somebody who did not have it would get "
                          "there)" % ", ".join(direct))
         elif missing:
-            # KNOWN, NOT RUNNING. Since knowing a thing and operating it became
-            # two different states, a play tester reasonably asked which one a
-            # prerequisite wants, and nothing anywhere said. It wants the
-            # knowledge: finish the work once and it counts for ever, whether
-            # or not you keep the concern open.
             L.append("MISSING PREREQUISITES: " + ", ".join(missing))
-            L.append("  (a prerequisite has to be FINISHED, not merely started, "
-                     "and it stays finished: you need not keep it running.)")
         elif direct:
             L.append("PREREQUISITES (all met, and finished counts for ever): "
                      + ", ".join(direct))
         else:
             L.append("PREREQUISITES: none, you can start this on arrival")
+    # DONE, NOT MERELY OPEN - SAID ONCE, WHICHEVER BRANCH ABOVE ACTUALLY
+    # FIRED. A tester wrote "nothing states whether a prerequisite must be
+    # DONE or open"; it has always meant done, but the one sentence that used
+    # to say so lived only in the `elif missing:` branch just above, which
+    # start_blocked_reason (the common case - see its own comment) pre-empts
+    # on every refusal that actually has missing prerequisites, so a player
+    # who hit this refusal in the ordinary way never saw it at all. Printed
+    # here instead, off the same `missing` list, it is reachable whichever of
+    # the two branches actually wrote the list out.
+    if out.get("missing_prerequisites"):
+        L.append("  (a prerequisite has to be FINISHED, not merely started, "
+                 "and it stays finished: you need not keep it running.)")
 
     if out.get("chain_size") is not None:
         L.append("")
@@ -2684,6 +2984,20 @@ def render_policy(out):
     return "\n".join(L)
 
 
+def render_rush(out):
+    L = ["RUSH: %d started, %d not" % (out.get("count_started", 0),
+                                       out.get("count_not_started", 0))]
+    for r in out.get("started") or []:
+        L.append("  STARTED %s (%s): %s" % (r.get("id"), _fmt_num(r.get("cost")),
+                                            r.get("name")))
+    for r in out.get("not_started") or []:
+        L.append("  NOT STARTED %s: %s" % (r.get("id"), r.get("why")))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
 _RENDERERS = {
     "policy": render_policy,
     "state": render_state, "step": render_step, "available": render_available,
@@ -2692,6 +3006,7 @@ _RENDERERS = {
     "hazards": render_risk, "ventures": render_ventures,
     "mines": render_mines, "workings": render_mines,
     "stuck": render_stuck, "log": render_log, "history": render_log,
+    "values": render_values, "rush": render_rush,
     "final": render_final,
 }
 
@@ -2925,8 +3240,8 @@ def _flag(v, default=False):
 # Kept beside the dispatcher so that adding a command and forgetting to
 # advertise it is a visible omission rather than a silent one.
 KNOWN_COMMANDS = (
-    "state", "available", "why", "path", "start", "stop", "step",
-    "money", "risk", "labour", "policy", "help", "log",
+    "state", "available", "why", "path", "start", "stop", "rush", "step",
+    "money", "risk", "values", "labour", "policy", "help", "log",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
@@ -2977,6 +3292,8 @@ TYPED_ALIASES = {
     "workings": "mines", "mine": "mines", "pits": "mines",
     "blocked": "stuck", "help_me": "stuck", "why_stuck": "stuck",
     "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
+    "beliefs": "values", "traits": "values", "society": "values",
+    "startall": "rush", "start_all": "rush", "muster": "rush",
 }
 
 
@@ -3093,8 +3410,16 @@ def parse_typed(line):
     words = [w for w in rest if _typed_number(w) is None]
     nums = [_typed_number(w) for w in rest if _typed_number(w) is not None]
 
-    if op in ("money", "risk", "quit"):
+    if op in ("money", "risk", "values", "quit"):
         return {"cmd": op}, None
+
+    if op == "rush":
+        # 'rush' alone starts everything you could begin today; 'rush 5'
+        # caps it at the first five, highest-leverage first.
+        out = {"cmd": "rush"}
+        if nums:
+            out["limit"] = int(nums[0])
+        return out, None
 
     if op == "state":
         # 'state full' and 'state full:true' both mean the same thing, and a
@@ -3768,6 +4093,68 @@ def _agent_dispatch_inner(s, nodes, cmd):
         s.log.append((s.year, "stopped: %s (%s)" % (nodes[k]["name"], why)))
         return {"ok": True, "stopped": k, "what_happened": why}
 
+    if op == "rush":
+        # BULK START, FOG-SAFE. A break tester in the late game had thirty
+        # or forty things startable at once and nothing to do but type
+        # `start <id>` thirty or forty times - "the late game is pure
+        # typing" - and every one of those ids was already something
+        # `can_start` had already cleared, the same check `available` uses
+        # to decide what to list at all, so acting on all of them at once
+        # hands back nothing a player could not already see for themselves.
+        if ended:
+            return {"ok": False,
+                    "error": "the run has ended (%s); nothing more can be "
+                             "started. 'state' shows where you finished and "
+                             "how far you got" % ended}
+        try:
+            limit = (int(cmd.get("limit")) if cmd.get("limit") is not None
+                     else None)
+        except (TypeError, ValueError):
+            return {"ok": False, "error": "limit must be a whole number"}
+        if limit is not None and limit < 1:
+            return {"ok": False, "error": "limit must be at least 1"}
+        _memo = {}
+        _ok = [k for k in s.order if s.can_start(k, _memo=_memo)]
+        # THE SAME EXCLUSION `available` USES: a node with no cost, no hours
+        # and nothing else standing in its way is not a decision, it is
+        # about to be handed to you for free whatever you type.
+        _ok = [k for k in _ok
+               if not (nodes[k]["tier"] == 0 and nodes[k]["ph"] == 0
+                       and nodes[k]["_total_cost"] <= 1
+                       and not s._is_foreign_institution(k))]
+        # HIGHEST-LEVERAGE FIRST, INTERNALLY ONLY. This never shows a player
+        # a downstream_count - that is a fog spoiler, see _node_explain's own
+        # comment on it - it only uses the number to decide which of several
+        # things your money cannot all cover gets it first, the same number
+        # `available`'s own "most_rests_on_these" digest already uses to
+        # decide what to show you. Ranking by it here leaks nothing, because
+        # the ranking itself is never printed, only which ids got started.
+        _ok.sort(key=lambda k: (-downstream_count(nodes, k), s.project_cost(k)))
+        started, not_started = [], []
+        for k in _ok:
+            if limit is not None and len(started) >= limit:
+                break
+            ok2, why = s.start_project(k)
+            if ok2:
+                n = nodes[k]
+                # SAY SO, for the same reason the single-id `start` does: a
+                # player reading `log` back should see every begun-work as a
+                # choice they made, not a completion that appeared unasked.
+                if s.active.get(k, {}).get("spent", 0.0) <= 0.5:
+                    s.log.append((s.year, "started: %s" % n["name"]))
+                started.append({"id": k, "name": n["name"],
+                                "cost": round(s.active.get(k, {}).get(
+                                    "cost_left", s.project_cost(k)), 1)})
+            else:
+                not_started.append({"id": k, "why": why})
+        return {"ok": True, "started": started, "count_started": len(started),
+                "not_started": not_started,
+                "count_not_started": len(not_started),
+                "note": "tried everything you could begin today, "
+                        "highest-leverage first, until your credit ran out "
+                        "or the list did. 'why <id>' on anything in "
+                        "not_started says exactly why it stopped there."}
+
     if op == "bounty":
         if ended:
             return {"ok": False, "error": "the run has ended (%s); nothing more can be bought. 'state' shows where you finished and how far you got" % ended}
@@ -3948,6 +4335,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
         return {"ok": True, "knowledge_risk": kr,
                 "note": "What history is about to do to you, and what you have "
                         "built that blunts it. Every hazard here is fightable."}
+
+    if op == "values":
+        return _agent_values(s)
 
     if op in ("money", "ledger", "accounts"):
         # LESS THE YEAR YOU HAVE ALREADY PAID FOR. `hire` takes a finder's fee
@@ -4820,13 +5210,32 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # against what left, while every arrival got one. A game whose only
         # score is what you have built has to report subtraction at least as
         # loudly as addition.
+        # STOP WHEN SOMETHING IT WARNED ABOUT ACTUALLY HAPPENS, rather than
+        # running the rest of the years you asked for on top of it. A break
+        # tester watched a `step 12` carry "CLOSE TO THE LIMIT ... while it is
+        # still your choice" (see economy.warn_near_the_limit) straight
+        # through to CREDIT EXHAUSTED, and then spend the REMAINING years of
+        # the same call compounding arrears with nobody able to react - the
+        # choice the warning promised was still theirs had already gone by
+        # before the reply came back. A request for N years is not a promise
+        # to hide what happens in year 1 until year N has also gone by. So
+        # this breaks the loop, not only the request, the moment it fires.
+        # A normal-play tester in mortal mode hit the equivalent fault for
+        # the founder's own death: it landed inside a `step 60` and the call
+        # ran eleven more years past it - far enough to also trip the
+        # no-successor catastrophe - before the player got a turn to react.
+        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED", "the founder dies")
         completed, lost, events = [], [], []
+        founder_died_this_step = None
+        stopped_early = None
         end_year = s.end_year
+        ran = 0
         for _ in range(years):
             if s.dead_reason or s.goal_year or s.year >= end_year:
                 break
             before_done, before_log = set(s.done), len(s.log)
             s.step()
+            ran += 1
             # sorted(), because this is a set difference and a set of strings
             # iterates in an order that depends on PYTHONHASHSEED. Two runs of
             # the same game with the same seed reported the same completions in
@@ -4846,9 +5255,30 @@ def _agent_dispatch_inner(s, nodes, cmd):
             for k in sorted(before_done - s.done):
                 lost.append({"id": k, "name": nodes[k]["name"], "year": s.year,
                              "can_be_restored": k in getattr(s, "mothballed", set())})
-            for y, m in s.log[before_log:]:
+            _this_year = s.log[before_log:]
+            for y, m in _this_year:
                 events.append({"year": y, "message": m})
+                if m.startswith("the founder dies"):
+                    _age = re.search(r"aged about (\d+)", m)
+                    _age_n = int(_age.group(1)) if _age else None
+                    founder_died_this_step = {"year": y, "aged_about": _age_n}
+                    # SAVED, NOT ONLY LOGGED - see _founder_death_info's own
+                    # comment on why the log alone cannot be trusted to
+                    # survive a save and a resume.
+                    s._founder_death_aged, s._founder_death_year = _age_n, y
+            if ran < years and any(mk in m for _, m in _this_year
+                                   for mk in _STEP_STOP_MARKERS):
+                stopped_early = ("stopped after %d of the %d years you asked "
+                                 "for: something happened that you warned "
+                                 "yourself about and should see before more "
+                                 "time passes. Step again when you are ready."
+                                 % (ran, years))
+                break
         out = dict(ok=True, completed=completed, lost=lost, events=events)
+        if founder_died_this_step:
+            out["the_founder_died_this_step"] = founder_died_this_step
+        if stopped_early:
+            out["stopped_early"] = stopped_early
         out.update(_agent_state(s, nodes))
         return out
 
@@ -4908,6 +5338,11 @@ SAVE_FIELDS = (
     # after a `--session` reload would report nothing for a figure the player
     # just saw.
     "hours_this_year",
+    # THE FOUNDER'S AGE AT DEATH, so it survives a --session reload. `log`
+    # is not a saved field, so without these two the one place the age had
+    # ever been written would go empty on resume and `state` would silently
+    # stop being able to say it - see _founder_death_info.
+    "_founder_death_aged", "_founder_death_year",
 )
 
 
