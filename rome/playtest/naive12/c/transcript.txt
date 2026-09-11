@@ -1,0 +1,86 @@
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 

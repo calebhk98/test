@@ -1,0 +1,6 @@
+# Play testers drive the game through a named pipe so they can read its output
+# and type into the same live session. A FIFO is not a file git can usefully
+# carry, and it is gone the moment the session ends.
+*.fifo
+game_in
+ctl.fifo
