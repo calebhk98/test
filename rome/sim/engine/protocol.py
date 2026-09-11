@@ -255,6 +255,42 @@ def _goal_progress_count(s, nodes):
     return sum(1 for x in need if x in s.done)
 
 
+def _founder_death_info(s):
+    """When and how old the founder was when they died, or None if not.
+
+    core.py logs "the founder dies, aged about %d" the one time it happens
+    and never stores the age anywhere else - a normal-play tester in mortal
+    mode found their founder's death reported as one more line among sixty
+    in a long `step`'s events, with no field anywhere a script would check
+    first, and the age nowhere but that sentence.
+
+    THE ATTRIBUTES, NOT ONLY THE LOG. `log` is not itself a saved field -
+    see SAVE_FIELDS - so a save taken after the founder's death and resumed
+    in a new process starts that process's `s.log` empty, and scanning it
+    would silently un-report an age that had already been shown once. The
+    step handler sets _founder_death_aged/_founder_death_year the moment it
+    sees the line, and those two ARE saved fields, so this is the fast path
+    and the one that survives a resume. Scanning the log is the fallback,
+    for a Sim driven straight off the engine (as the test suite does) or a
+    save written before this existed.
+    """
+    if s.founder_alive:
+        return None
+    aged = getattr(s, "_founder_death_aged", None)
+    if aged is not None:
+        return {"year": getattr(s, "_founder_death_year", None), "aged_about": aged}
+    cache = getattr(s, "_founder_death_cache", None)
+    if cache is not None:
+        return cache
+    for yr, msg in s.log:
+        if msg.startswith("the founder dies"):
+            m = re.search(r"aged about (\d+)", msg)
+            cache = {"year": yr, "aged_about": int(m.group(1)) if m else None}
+            s._founder_death_cache = cache
+            return cache
+    return None
+
+
 def _agent_state(s, nodes, cmd=None):
     active = {}
     for k, st in s.active.items():
@@ -422,6 +458,10 @@ def _agent_state(s, nodes, cmd=None):
         # read it alongside, not in place of, hours_this_year.
         "hours_this_year": getattr(s, "hours_this_year", None),
         "founder_alive": s.founder_alive,
+        # THE AGE ITSELF, AS A FIELD, not only inside a log sentence a script
+        # would have to parse. See _founder_death_info.
+        "founder_died_aged": (_founder_death_info(s) or {}).get("aged_about"),
+        "founder_died_in": (_founder_death_info(s) or {}).get("year"),
         "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
         "directors_extra": round(s.directors_extra, 2),
         # NO "suspicion" FIELD. It was replaced by `scandal` (see core.py: "doing
@@ -2000,8 +2040,14 @@ def render_state(out):
     # of them ends with everything you have not made permanent dying with you.
     _src = out.get("where_your_hours_come_from") or {}
     _dep = _src.get("deputies_who_direct_work_for_you") or 0
+    # THE AGE, ON THE LINE THAT ALREADY SAYS DEAD OR ALIVE, not only inside a
+    # log sentence from however many years ago: a normal-play tester in
+    # mortal mode never saw an age anywhere but that one line in `events`.
     L.append("You: %s%s, %s founder-hours free this year%s"
-             % ("alive" if out.get("founder_alive") else "DEAD",
+             % ("alive" if out.get("founder_alive") else
+                ("DEAD (aged about %s at death, in %s)"
+                 % (out.get("founder_died_aged"), out.get("founder_died_in"))
+                 if out.get("founder_died_aged") is not None else "DEAD"),
                 " and ageing" if out.get("founder_ages") else " (you do not age)",
                 _fmt_num(out.get("founder_hours_available")),
                 ("   (%s of your own, plus %s deputies directing work in your "
@@ -2177,8 +2223,15 @@ def render_state(out):
     completed = out.get("completed")
     events = out.get("events")
     lost = out.get("lost")
-    if completed or events or lost:
+    fdts = out.get("the_founder_died_this_step")
+    if completed or events or lost or fdts:
         head = []
+        # THE LOUDEST LINE IN THE REPLY, not one more EVENT line among sixty.
+        # See _founder_death_info and the step handler's own comment on why
+        # a multi-year step stops here rather than running on past it.
+        if fdts:
+            head.append("  *** THE FOUNDER HAS DIED, aged about %s, in %s ***"
+                        % (fdts.get("aged_about"), fdts.get("year")))
         for c in completed or []:
             head.append("  %s %s: %s"
                         % ("THIS SOCIETY NOW HAS" if c.get("granted")
@@ -5080,8 +5133,13 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # before the reply came back. A request for N years is not a promise
         # to hide what happens in year 1 until year N has also gone by. So
         # this breaks the loop, not only the request, the moment it fires.
-        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED",)
+        # A normal-play tester in mortal mode hit the equivalent fault for
+        # the founder's own death: it landed inside a `step 60` and the call
+        # ran eleven more years past it - far enough to also trip the
+        # no-successor catastrophe - before the player got a turn to react.
+        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED", "the founder dies")
         completed, lost, events = [], [], []
+        founder_died_this_step = None
         stopped_early = None
         end_year = s.end_year
         ran = 0
@@ -5113,6 +5171,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _this_year = s.log[before_log:]
             for y, m in _this_year:
                 events.append({"year": y, "message": m})
+                if m.startswith("the founder dies"):
+                    _age = re.search(r"aged about (\d+)", m)
+                    _age_n = int(_age.group(1)) if _age else None
+                    founder_died_this_step = {"year": y, "aged_about": _age_n}
+                    # SAVED, NOT ONLY LOGGED - see _founder_death_info's own
+                    # comment on why the log alone cannot be trusted to
+                    # survive a save and a resume.
+                    s._founder_death_aged, s._founder_death_year = _age_n, y
             if ran < years and any(mk in m for _, m in _this_year
                                    for mk in _STEP_STOP_MARKERS):
                 stopped_early = ("stopped after %d of the %d years you asked "
@@ -5122,6 +5188,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                  % (ran, years))
                 break
         out = dict(ok=True, completed=completed, lost=lost, events=events)
+        if founder_died_this_step:
+            out["the_founder_died_this_step"] = founder_died_this_step
         if stopped_early:
             out["stopped_early"] = stopped_early
         out.update(_agent_state(s, nodes))
@@ -5183,6 +5251,11 @@ SAVE_FIELDS = (
     # after a `--session` reload would report nothing for a figure the player
     # just saw.
     "hours_this_year",
+    # THE FOUNDER'S AGE AT DEATH, so it survives a --session reload. `log`
+    # is not a saved field, so without these two the one place the age had
+    # ever been written would go empty on resume and `state` would silently
+    # stop being able to say it - see _founder_death_info.
+    "_founder_death_aged", "_founder_death_year",
 )
 
 

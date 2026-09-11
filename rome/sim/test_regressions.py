@@ -5191,6 +5191,52 @@ check("...and it really did stop short of the 100 years asked for",
       _step_ce["year"] < s_se.cfg["start_year"] + 100, _step_ce["year"])
 
 
+# --- JOB 3e: the founder's death is legible, not one line among many. A
+# normal-play tester in mortal mode found it reported as one more EVENT in a
+# long `step`, with the age nowhere but that one sentence. `sim()` has no
+# mortal switch of its own - nothing in this file needed one before - so
+# this builds the Sim directly, the same way `sim()` itself does.
+s_fd = S.Sim(NODES, ORDER, random.Random(1), events=False, manual=True,
+             civ=S.load_civ("rome_100ad"), cfg={"immortal": False})
+s_fd.goal, s_fd.done_year = GOAL, {}
+s_fd.end_year = s_fd.cfg["start_year"] + 200
+_step_fd = S._agent_dispatch(s_fd, NODES, {"cmd": "step", "years": 150})
+check("the founder's death gets a field of its own in the step that carries "
+      "it, not only a line in events",
+      isinstance(_step_fd.get("the_founder_died_this_step"), dict),
+      _step_fd.get("the_founder_died_this_step"))
+check("...and the age is a number you can read, not prose you have to parse",
+      isinstance((_step_fd.get("the_founder_died_this_step") or {})
+                 .get("aged_about"), int),
+      _step_fd.get("the_founder_died_this_step"))
+check("...and `state` carries the age from then on, not only that one "
+      "step's reply",
+      _step_fd.get("founder_died_aged")
+      == _step_fd["the_founder_died_this_step"]["aged_about"],
+      (_step_fd.get("founder_died_aged"), _step_fd.get("the_founder_died_this_step")))
+check("...and the step stopped there instead of running the rest of the "
+      "150 years requested straight past it",
+      _step_fd["year"] < s_fd.cfg["start_year"] + 150, _step_fd["year"])
+
+# THE AGE SURVIVES A --session RESUME. `log` is not itself a saved field -
+# see SAVE_FIELDS - so a naive read of it for the founder's age would go
+# empty in a freshly constructed process, silently un-reporting an age
+# `state` had already shown once. _founder_death_aged/_founder_death_year
+# are saved fields precisely so this does not happen.
+_sess_fd = os.path.join(ROOT, _rel("founder_death.json"))
+S.save_state(s_fd, _sess_fd)
+s_fd2 = S.Sim(NODES, ORDER, random.Random(1), events=False, manual=True,
+             civ=S.load_civ("rome_100ad"))
+s_fd2.goal, s_fd2.done_year = GOAL, {}
+S.load_state(s_fd2, _sess_fd)
+_st_fd2 = S._agent_dispatch(s_fd2, NODES, {"cmd": "state"})
+check("the founder's age at death survives a save and a fresh process "
+      "loading it back, not only the process that saw it happen",
+      _st_fd2.get("founder_died_aged") == _step_fd.get("founder_died_aged")
+      and _st_fd2.get("founder_died_aged") is not None,
+      (_st_fd2.get("founder_died_aged"), _step_fd.get("founder_died_aged")))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
