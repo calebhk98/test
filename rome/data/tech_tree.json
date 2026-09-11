@@ -51916,7 +51916,9 @@
    "note": "Filament life determined by evaporation rate; higher temperature gives more current but shorter life. Wehnelt cap focuses emission. Tungsten chosen for high melting point and low evaporation.",
    "ph": 100.0,
    "pre": [
-    "discharge_xray"
+    "discharge_xray",
+    "mat_tungsten",
+    "met_powder_metallurgy"
    ],
    "req_any": [],
    "rev": 800.0,

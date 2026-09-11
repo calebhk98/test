@@ -970,8 +970,57 @@ class EconomyMixin:
         # does stop the bleeding, and knowing how to do something costs nothing
         # to know.
         practice_set = self._practice_set()
-        return sum(self.nodes[k]["up"] for k in self.done_in_order()
+        return sum(self.institution_upkeep(k) for k in self.done_in_order()
                    if k in self.operating or k in practice_set)
+
+    # What a school costs on the day you found it, as a share of what it costs
+    # once it is full: the building, the lease, and one teacher.
+    INSTITUTION_FLOOR = 0.20
+
+    def institution_upkeep(self, k):
+        """What this concern actually costs to keep open THIS year.
+
+        For almost everything, its upkeep. For an establishment whose purpose is
+        to support PEOPLE - a school, an academy, a workshop, a licensed
+        collegium, a freedman staff - it scales with how much of that support you
+        are using, because a school with three scholars in it does not cost what
+        a school with forty does. Endowed schools historically scaled with
+        enrolment and so should this.
+
+        This is the bridge the capability change needed. Making capability follow
+        running() was right: a founder used to collect a school's twelve
+        scholars and an imperial patron's sixty thousand of credit without ever
+        opening either, and without paying a denarius toward them. But it priced
+        every institution as though the place were full on the day you founded
+        it, and that killed the first rung of the ladder.
+        """
+        n = self.nodes[k]
+        up = n["up"]
+        if k not in self.CAPABILITY_INSTITUTIONS or up <= 0:
+            return up
+        places = self.institution_places(k)
+        if places <= 0:
+            return up
+        used = min(1.0, self.headcount() / max(1.0, places))
+        return up * (self.INSTITUTION_FLOOR
+                     + (1.0 - self.INSTITUTION_FLOOR) * used)
+
+    def institution_places(self, k):
+        """Roughly how many people this establishment is built to support.
+
+        Read off the same table staff_capacity() and supervision_room() use, so
+        that the cost of a place and the existence of a place cannot drift
+        apart. Anything absent is sized by its own upkeep at about a wage a
+        head, the right order for a building whose cost is its people.
+        """
+        PLACES = {"workshop_first": 12.0, "school_founded": 34.0,
+                  "academy_network": 120.0, "freedman_staff": 10.0,
+                  "collegium_licensed": 3.0, "patron_senatorial": 10.0,
+                  "patron_imperial": 64.0, "endowment_land": 14.0,
+                  "corpus_dispersed": 8.0, "interchangeable_parts": 44.0}
+        if k in PLACES:
+            return PLACES[k]
+        return max(1.0, self.nodes[k]["up"] / 250.0)
 
     # ---- raw material supply ------------------------------------------------
     CHARCOAL_PER_HA = 0.75          # tonnes per hectare per year, sustainable

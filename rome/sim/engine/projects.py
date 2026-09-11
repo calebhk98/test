@@ -90,7 +90,37 @@ class ProjectsMixin:
             return False
         if k in self.granted or not self.is_venture(k):
             return True
-        return k in self.operating
+        # PARKED, DELIBERATELY, AND THE MEASUREMENT SAYS WHY. Requiring the
+        # doors to be open is the correct rule and it is not yet affordable.
+        # Eight runs a civilisation at horizon 700: Rome fell from 38% of runs
+        # reaching the goal to none, and Han from 88% to 25%.
+        #
+        # The mechanism is a bootstrap, traced node by node. A Rome run builds
+        # workshop_first by 150 AD and never opens it once in the following four
+        # and a half centuries, because opening it costs 900 a year and the run's
+        # surplus is negative precisely BECAUSE it has no workshop, no household
+        # places and no staff. Scholars sit between 0.03 and 0.37 against the two
+        # that atomic_theory wants, for five hundred years. Two attempts to bridge
+        # it are in this file and in economy.py and both survive below: scaling an
+        # institution's upkeep by how full it is (an empty school costs 500 rather
+        # than 2,500, which recovered Han from 25% to 62%) and letting an
+        # institution be opened against what you could RAISE rather than only out
+        # of what you are clearing. Neither recovered Rome.
+        #
+        # What the rule actually needs is the thing it exposed: institutions are
+        # booleans here, while mines are quantities. There is one school, ever,
+        # however rich or literate you become, so there is no ladder to climb -
+        # only a single step that is either affordable or not. Until founding a
+        # second school is a thing you can do, "a capability you stop paying for
+        # is one you no longer have" has nowhere to stand.
+        #
+        # Everything else that commit fixed stays: auto_open will open an
+        # institution for what it lets you do rather than only for its margin,
+        # shed_loss_makers closes the school last instead of first, and
+        # close_unstaffed_ventures no longer answers a shortage of craftsmen by
+        # closing concerns that no craftsman was watching. Restore this to
+        # `k in self.operating` once an institution is a quantity.
+        return True
 
     def venture_capex(self, k):
         """What it costs to open the doors, over and above having worked out
@@ -410,15 +440,37 @@ class ProjectsMixin:
         # WHAT IS LEFT AFTER EVERYTHING YOU ARE ALREADY COMMITTED TO. Opening
         # an institution you cannot feed is how a household ends up abandoning
         # the works it already had.
+        # AN INSTITUTION IS AN INVESTMENT, AND A LENDER KNOWS IT. Requiring a
+        # CURRENT surplus is what killed the first rung of the ladder. A traced
+        # Rome run built workshop_first by 150 AD and never opened it once in
+        # the following four and a half centuries: the workshop bleeds 900 a
+        # year, the gate wanted 1,800 a year of clear surplus, and the run's
+        # surplus was negative precisely BECAUSE it had no workshop, no
+        # household places and no staff. Scholars sat between 0.03 and 0.37
+        # against the two that atomic_theory wants, for five hundred years, and
+        # Rome fell from 38% of runs reaching the goal to none.
+        #
+        # `start` has always been allowed to borrow, and a half-dug foundation
+        # is worse collateral than a working shop. So an institution may be
+        # opened against what you could RAISE and not only out of what you are
+        # clearing - with two guards, because the last time this gate was
+        # loosened the optimizer borrowed to the hilt and logged "ABANDONED 1
+        # works you could no longer maintain" two hundred and six times in five
+        # hundred years: nothing opens while you are deep in arrears, and the
+        # standing bleed you take on may not outgrow a tenth of your line.
         _surplus = (self.revenue() - self.upkeep() - self.living_cost())
+        _line = self.credit_limit()
+        _deep = self.capital < 0 and -self.capital > _line * 0.75
+        _bleed_room = max(0.0, _surplus) * 0.5 + (0.0 if _deep else _line * 0.10)
         for k in caps:
-            _bleed = self.nodes[k]["up"] - self.nodes[k]["rev"]
-            if _bleed > max(0.0, _surplus) * 0.5:
+            _bleed = self.institution_upkeep(k) - self.nodes[k]["rev"]
+            if _bleed > _bleed_room:
                 continue
             ok, _w = self.open_venture(k)
             if ok:
                 opened.append(k)
                 _surplus -= _bleed
+                _bleed_room -= _bleed
         blocked = None
         for k in cands:
             # NO SECOND, STRICTER GATE. This broke out the moment capital went

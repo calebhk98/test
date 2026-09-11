@@ -22,7 +22,13 @@ from .protocol import (
 
 
 def load_strategy(name, nodes, goal):
-    path = os.path.join(STRATS, name + ".json")
+    # A NAME OR A PATH. --save-winner writes a strategy file wherever you ask it
+    # to, and there was no way to read one back: this looked only inside the
+    # strategies directory for name + ".json", so the captured order of a run
+    # that actually reached the goal could be written and never used.
+    path = os.path.join(STRATS, str(name) + ".json")
+    if not os.path.exists(path) and os.path.exists(str(name)):
+        path = str(name)
     if os.path.exists(path):
         s = json.load(open(path))
         order = [k for k in s["order"] if k in nodes]
@@ -269,6 +275,54 @@ def cmd_run(a):
                 bounty_set=(set() if a.no_bounties else bounties)).run(goal, a.horizon)
         res.append(s)
     _summarise(res, "%s%s" % (label, "  [events disabled]" if a.no_events else ""))
+    # KEEP THE PATH OF A RUN THAT WORKED. When a trial reaches the goal it
+    # proves an order of work that gets there in this civilisation, and the
+    # engine threw that away and went back to walking the same fixed list from
+    # recommended.json on the next invocation. A whole day of balance work in
+    # this project was spent measuring a strategy that loses while runs that won
+    # were being discarded unread.
+    #
+    # The order is done_year, not done_in_order(): what matters for a strategy
+    # is the sequence the work was FINISHED in, which is the sequence a player
+    # would have to start it in. Granted technologies are dropped because they
+    # are not choices anybody made, and ties within a year are broken by id so
+    # the file is reproducible.
+    if getattr(a, "save_winner", None):
+        won = [s for s in res if s.goal_year]
+        if not won:
+            sys.stderr.write("no trial reached the goal, so there is no winning "
+                             "order to save\n")
+        else:
+            best = min(won, key=lambda s: s.goal_year)
+            # ONLY WHAT THE GOAL NEEDS. The first version of this saved every
+            # node the winning trial finished - 2,676 of them - and feeding that
+            # back scored 0% against the 25% of the strategy it was captured
+            # from, because the optimizer then ground through hundreds of side
+            # branches the trial had built for revenue before it reached the
+            # work that mattered. A finish order over everything is not a plan.
+            # The 149 nodes of the goal's closure, in the order a run that won
+            # actually completed them, is.
+            _need = closure(nodes, goal)
+            seq = sorted((k for k in best.done
+                          if k in _need and k not in best.granted),
+                         key=lambda k: (best.done_year.get(k, 0), k))
+            out = {"label": "CAPTURED: the order a run that reached the goal in "
+                            "%d AD actually finished its work in" % best.goal_year,
+                   "rationale": [
+                       "Not designed. Observed: trial seed %d of a --mc %d run on "
+                       "%s reached %s in %d AD, and this is the sequence it "
+                       "finished things in."
+                       % (a.seed + res.index(best), a.mc, a.civ, goal,
+                          best.goal_year),
+                       "A captured order is a floor on what is achievable, not a "
+                       "recommendation: it carries whatever luck that trial had, "
+                       "and it includes side branches that trial happened to "
+                       "build and may not have needed."],
+                   "order": seq}
+            with open(a.save_winner, "w") as fh:
+                json.dump(out, fh, indent=1)
+            sys.stderr.write("saved the winning order (%d nodes, goal in %d AD) "
+                             "to %s\n" % (len(seq), best.goal_year, a.save_winner))
     if a.trace:
         s = res[0]
         print("\n--- trace of run 0 ---")
@@ -1114,6 +1168,13 @@ def main():
                        help="turn the founder's mortality back on (default: immortal, "
                             "so the run measures the TREE and not a lifespan lottery)")
         q.add_argument("--trace", action="store_true")
+        # WRITE DOWN A PATH THAT WORKED, so the next measurement can start from
+        # evidence instead of from the same losing list. Feed the file back in
+        # with --strategy <path>.
+        q.add_argument("--save-winner", metavar="FILE", default=None,
+                       help="if any trial reaches the goal, write the order the "
+                            "best one finished its work in to FILE, as a "
+                            "strategy you can pass back to --strategy")
     q = sub.add_parser("sensitivity")
     q.add_argument("--strategy", default="recommended")
     q.add_argument("--mc", type=int, default=200)

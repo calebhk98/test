@@ -4386,6 +4386,26 @@ _rub_users = sorted(k for k, v in NODES.items()
                     if any("rubber" in m for m in (v.get("mat") or {})))
 _ungated = [k for k in _rub_users
             if not ({"mat_natural_rubber", "mat_synthetic_rubber"} & _anc_of(k))]
+# --- BREAK: a node whose own note names a material it does not require. The
+# blind prerequisite audit found in2_electron_source_cathode saying "Tungsten
+# chosen for high melting point and low evaporation" with no tungsten anywhere
+# in its ancestry. Ductile tungsten filament wire is the Coolidge process and
+# is a real achievement: tungsten is too brittle to draw until it is sintered
+# from powder and worked hot, which is why powder metallurgy belongs here too.
+#
+# It was nearly deferred on a misread number. mat_tungsten's closure is 102
+# nodes, which looked like adding a hundred nodes to a 145-node goal path - but
+# 101 of those 102 were already in that closure, so the MARGINAL addition is
+# one. Raw closure size is the wrong quantity to price a new edge with.
+_cath = NODES["in2_electron_source_cathode"]["pre"]
+check("the cathode that is made of tungsten requires tungsten",
+      "mat_tungsten" in _cath, _cath)
+check("...and the powder metallurgy that makes tungsten drawable at all",
+      "met_powder_metallurgy" in _cath, _cath)
+check("...and the note that named it is still the reason it is there",
+      "tungsten" in (NODES["in2_electron_source_cathode"].get("note") or "").lower(),
+      (NODES["in2_electron_source_cathode"].get("note") or "")[:90])
+
 check("nothing can be made of rubber without first securing rubber",
       not _ungated, _ungated)
 check("(and there really are rubber recipes to gate)", len(_rub_users) > 10,
