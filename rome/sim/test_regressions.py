@@ -7865,6 +7865,174 @@ for _cat, _cfg in S.Sim.GOODS_CATEGORIES.items():
           "ratios actually computes for one lone, fully-saturated concern"
           % _cat,
           0.0 < _asym < 1.0, _asym)
+# ======================================================================
+# ROUND 8g: a five-report playtest sweep of protocol.py / cli.py (display).
+# ======================================================================
+
+from engine.protocol import (render_state as _RSTATE, render_risk as _RRISK,
+                             render_why as _RWHY, render_ventures as _RVENT,
+                             render_path as _RPATH)
+
+# --- FINDING: "finished, stays finished" meant three different things -
+# a plain prerequisite, a structural bonus, and a non-DAG gate - and the
+# engine said it the same way for all three. `why` now names a
+# CAPABILITY_INSTITUTIONS node for what it is, and leaves an ordinary
+# prerequisite alone.
+_s_cap = sim(civ="rome_100ad", capital=5000000.0)
+_wr_cap = S._agent_dispatch(_s_cap, NODES, {"cmd": "why", "id": "workshop_first"})
+check("why flags a capability institution as needing to stay OPEN, not "
+      "only built",
+      bool(_wr_cap.get("this_is_a_capability_you_must_keep_open")),
+      _wr_cap.get("this_is_a_capability_you_must_keep_open"))
+check("...and the sentence appears on the rendered page too",
+      "KEEP THIS OPEN" in _RWHY(_wr_cap), _RWHY(_wr_cap))
+_wr_plain = S._agent_dispatch(_s_cap, NODES, {"cmd": "why", "id": "scientific_method"})
+check("...while an ordinary prerequisite (not a capability institution) is "
+      "not flagged the same way",
+      _wr_plain.get("this_is_a_capability_you_must_keep_open") is None,
+      _wr_plain.get("this_is_a_capability_you_must_keep_open"))
+
+# --- FINDING: `ventures` scored identity_cover/workshop_first (structural
+# bonuses) and patron_local (a non-DAG gate) exactly like an ordinary
+# earn/cost business, so a Rome player could not tell them apart from a
+# shuttered shop. They now get their own list.
+_s_vcap = sim(civ="rome_100ad", capital=5000000.0)
+_s_vcap.done.update(["identity_cover", "tex_horizontal_loom"])
+_s_vcap._done_changed()
+_vt_cap = S._agent_dispatch(_s_vcap, NODES, {"cmd": "ventures"})
+_cap_ids = [r.get("id") for r in (_vt_cap.get(
+    "capabilities_you_know_how_to_run_but_have_not_opened") or [])
+    if isinstance(r, dict)]
+_ord_ids = [r.get("id") for r in (_vt_cap.get(
+    "you_know_how_but_have_not_opened") or []) if isinstance(r, dict)]
+check("ventures puts an idle capability institution in its own list, not "
+      "the ordinary earn/cost one",
+      "identity_cover" in _cap_ids and "identity_cover" not in _ord_ids,
+      (_cap_ids, _ord_ids))
+check("...and leaves an ordinary idle business in the ordinary list",
+      "tex_horizontal_loom" in _ord_ids and "tex_horizontal_loom" not in _cap_ids,
+      (_cap_ids, _ord_ids))
+
+# --- FINDING: the headline "net X/yr" conflated one-off project spend with
+# recurring burn, so `state` looked like it was about to go broke on any
+# turn a player started something expensive. `state` now prints the
+# recurring figure plainly, not only the after-spend one.
+_s_net = sim(civ="rome_100ad", capital=50000.0)
+_st_net = S._agent_dispatch(_s_net, NODES, {"cmd": "start", "id": "scientific_method"})
+_stt_net = S._agent_dispatch(_s_net, NODES, {"cmd": "state"})
+_rendered_net = _RSTATE(_stt_net)
+check("state's money line names the recurring net as the one to watch",
+      "recurring" in _rendered_net and "one to watch" in _rendered_net,
+      _rendered_net.splitlines()[4:7])
+check("...and, once a project has actually taken spend, also shows the "
+      "one-off after-spend figure alongside it",
+      (_stt_net.get("project_spend_this_year") or 0) <= 0.5
+      or "one-off" in _rendered_net,
+      (_stt_net.get("project_spend_this_year"), _rendered_net.splitlines()[4:7]))
+
+# --- FINDING: an undocumented per-project throttle (cost divided by the
+# calendar floor, however much cash is in hand) already explained itself on
+# `state`; it said nothing on `why` for that same active project, which is
+# the screen a player checking on one stalled project by name would reach
+# for.
+_s_thr = sim(civ="han_china_100ad", capital=5000000.0)
+_ok_thr, _ = _s_thr.start_project("sc2_method_negative_result")
+_s_thr.step()
+_wr_thr = S._agent_dispatch(_s_thr, NODES, {"cmd": "why", "id": "sc2_method_negative_result"})
+check("why on an ACTIVE project says what it is waiting on, not just ACTIVE",
+      bool(_wr_thr.get("waiting_on")), _wr_thr.get("waiting_on"))
+check("...and, with abundant cash against a 20-year calendar floor, names "
+      "the pace throttle by the same words `state` uses for it",
+      "pace it can absorb money" in (_wr_thr.get("waiting_on") or ""),
+      _wr_thr.get("waiting_on"))
+
+# --- FINDING: `risk`'s per-year percentages read as one low-stakes roll,
+# when the engine actually checks them independently EVERY year a hazard's
+# window is open. A Rome player was sacked twice in the same window having
+# read exactly this kind of figure as safe. The screen now says the window
+# is repeated and what it adds up to.
+_s_haz = sim(civ="rome_100ad")
+_s_haz.events = True
+_s_haz.year = 240          # inside Rome's Third Century Crisis, 235-284
+_rk = S._agent_dispatch(_s_haz, NODES, {"cmd": "risk"})
+_crisis = next((h for h in (_rk.get("knowledge_risk") or {}).get(
+    "known_hazards_ahead") or [] if "Third century" in h.get("name", "")), None)
+check("a real dated, multi-year sacking hazard exists to check against",
+      _crisis is not None, [h.get("name") for h in
+      (_rk.get("knowledge_risk") or {}).get("known_hazards_ahead") or []])
+if _crisis:
+    _rendered_risk = _RRISK(_rk)
+    check("risk says a per-year hazard is rolled EVERY year of its window, "
+          "not once",
+          "checked EVERY year" in _rendered_risk and "chance" in _rendered_risk,
+          [ln for ln in _rendered_risk.splitlines() if "checked EVERY year" in ln])
+    check("...and the cumulative chance across the window is higher than "
+          "the bare per-year figure, which is the whole point",
+          any("100%" in ln or "chance at least one sacking" in ln
+              for ln in _rendered_risk.splitlines()),
+          [ln for ln in _rendered_risk.splitlines() if "sacking lands" in ln])
+
+# --- FINDING: `path <goal>` is the actual walkthrough and was buried in one
+# line of `help commands`, absent from the five starter verbs, and answered
+# a different question from `available` - "what the goal still needs" never
+# joined to "what I could start today". A Han player scripted the
+# intersection themselves outside the game. `path` now does the join.
+_s_pth2 = sim(civ="rome_100ad")
+_rp2 = S._agent_dispatch(_s_pth2, NODES, {"cmd": "path", "id": GOAL})
+check("path names how many of the remaining nodes are startable today",
+      isinstance(_rp2.get("startable_today_count"), int)
+      and _rp2["startable_today_count"] >= 1,
+      _rp2.get("startable_today_count"))
+_av2 = S._agent_dispatch(_s_pth2, NODES, {"cmd": "available", "all": True})
+_av_ids = {e["id"] for e in (_av2.get("available") or []) if isinstance(e, dict)}
+_path_startable_ids = {e["id"] for e in (_rp2.get("startable_today_toward_this") or [])
+                       if isinstance(e, dict)}
+check("...and every one of those is genuinely on `available` too - the "
+      "join is a real intersection, not an invented list",
+      _path_startable_ids <= _av_ids, _path_startable_ids - _av_ids)
+_welcome = S._agent_dispatch(_s_pth2, NODES, {"cmd": "help"})
+check("...and path is now reachable from the welcome screen, not only "
+      "buried in `help commands`",
+      '"cmd":"path"' in str(_welcome), _welcome.get("help"))
+check("path has its own rendering, not a raw key/value dump",
+      "ROUTE TO" in _RPATH(_rp2) and "STARTABLE TODAY" in _RPATH(_rp2),
+      _RPATH(_rp2)[:80])
+
+# --- FINDING: `train` and `hire` are two required steps for a taught
+# (TRADES_ABSENT) trade, and neither train's own success message nor a
+# project's `why` said so beforehand - the refusal only ever appeared at
+# `start`.
+_s_th = sim(civ="han_china_100ad", capital=5000000.0)
+_tr = S._agent_dispatch(_s_th, NODES, {"cmd": "train", "trade": "machinist", "n": 1})
+check("train's own success message says a second step (hire) still stands "
+      "between training a taught trade and a project being able to use it",
+      bool(_tr.get("means")) and "hire" in _tr["means"], _tr.get("means"))
+_wr_th = S._agent_dispatch(_s_th, NODES, {"cmd": "why", "id": "ag2_baler"})
+check("why on a project needing that just-taught trade says nobody can do "
+      "the work yet, before `start` ever refuses it",
+      "machinist" in (_wr_th.get("trades_taught_but_nobody_here_to_do_them_yet") or []),
+      _wr_th.get("trades_taught_but_nobody_here_to_do_them_yet"))
+check("...and the same sentence appears on the rendered page",
+      "TAUGHT, BUT NOBODY HERE" in _RWHY(_wr_th), _RWHY(_wr_th))
+
+# --- FINDING (same root cause as above): closing a capability institution
+# for the upkeep back used to read exactly like closing an ordinary
+# business - a Mexica player did this and lost the capability silently,
+# twice. `mothball` now says so.
+_s_mb = sim(civ="rome_100ad", capital=5000000.0)
+_s_mb.done.add("identity_cover"); _s_mb._done_changed()
+_s_mb.open_venture("identity_cover")
+_mb_out = S._agent_dispatch(_s_mb, NODES, {"cmd": "mothball", "id": "identity_cover"})
+check("mothballing a capability institution says more than its upkeep "
+      "stopped",
+      _mb_out.get("ok") and bool(_mb_out.get("but"))
+      and "capability" in _mb_out["but"], _mb_out.get("but"))
+_s_mb2 = sim(civ="rome_100ad", capital=5000000.0)
+_s_mb2.done.add("tex_horizontal_loom"); _s_mb2._done_changed()
+_s_mb2.open_venture("tex_horizontal_loom")
+_mb_out2 = S._agent_dispatch(_s_mb2, NODES, {"cmd": "mothball", "id": "tex_horizontal_loom"})
+check("...and an ordinary business closing carries no such warning",
+      _mb_out2.get("ok") and "but" not in _mb_out2, _mb_out2)
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
