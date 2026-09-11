@@ -6,7 +6,7 @@ and three of those were defects in the fix for the previous one. That pattern is
 the reason this file exists: a fix verified once by hand is a fix that silently
 rots. Run it with `python3 rome/sim/test_regressions.py`.
 """
-import json, os, random, subprocess, sys, time
+import glob, json, os, random, subprocess, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -639,7 +639,19 @@ check("gunpowder claims no saltpetre it has not earned via nitre_beds",
 norse_hazards = S.load_civ("norse_900ad")["hazards"]
 check("the Norse civilization has more than one dated hazard",
       len(norse_hazards) > 1, "only %d" % len(norse_hazards))
-_EFFECT_FIELDS = ("staff_loss", "sack_chance", "output_factor", "real_erosion")
+_EFFECT_FIELDS = ("staff_loss", "sack_chance", "output_factor", "real_erosion",
+                   # "values" was missing from this tuple even though it has
+                   # been a real, engine-read effect field since the
+                   # Christianisation gradual-shift mechanism was added (see
+                   # _shocks in society.py) - Rome's Ostrogothic Italy, Han's
+                   # Jin reunification and several Mexica entries are all
+                   # already values-only and this check simply never looked
+                   # at them, because it only ever scanned Norse. Adding the
+                   # Norse settlement-of-Iceland, Hakon-Hakonarson and
+                   # Reformation entries - each a real event whose honest
+                   # effect on this society is what it believes, not a body
+                   # count or a burned field - is what caught the gap.
+                   "values")
 inert = [h["name"] for h in norse_hazards if not any(f in h for f in _EFFECT_FIELDS)]
 check("no Norse hazard is purely decorative (no effect field the engine reads)",
       not inert, str(inert))
@@ -4396,6 +4408,137 @@ _cheap, _, _ = proto([{"cmd": "available", "limit": 2}])
 check("...and does not mark what you can plainly afford",
       "A * after COST" not in _RP("available", _cheap),
       _RP("available", _cheap)[:200])
+
+
+# --- JOB 1: "something happens shortly after the game starts and then
+# nothing happens for centuries" was the same shape of complaint across
+# several rounds of playtesting, on more than one civilization. Audited and
+# fixed by adding real, dated events; this check keeps the fix from rotting
+# by failing if a future edit to a civilization file reopens a long silent
+# stretch. Ninety years is generous against what every file now actually
+# does (England's worst remaining gap is 63, Norse's is 86) but still catches
+# the kind of quarter-millennium silence the audit found.
+for _cf in sorted(glob.glob(os.path.join(ROOT, "data", "civilizations", "*.json"))):
+    _cid = os.path.basename(_cf)[:-5]
+    if _cid.startswith("_"):
+        continue
+    _cd = json.load(open(_cf))
+    _start = _cd["year"]
+    _windows = sorted((h["years"][0], h["years"][1]) for h in _cd.get("hazards", []))
+    _prev, _gaps = _start, []
+    for (_a, _b) in _windows:
+        _gaps.append(_a - _prev)
+        _prev = max(_prev, _b)
+    check("%s: no silent stretch longer than 90 years between its dated "
+          "events" % _cid,
+          all(g <= 90 for g in _gaps), _gaps)
+    if _cid != "mexica_1500":
+        # The Mexica's list runs out at the edge of real history, not at the
+        # horizon - extending it past here would mean inventing the future,
+        # which the drug war entry's own note says this file will not do.
+        # Every OTHER civilization's list should reach close to the end of
+        # the 500-700 year run the brief asked for.
+        check("%s: its events reach close to the end of a 700-year run, "
+              "not just the first half of it" % _cid,
+              (_start + 700) - _prev <= 90, (_start, _prev))
+
+# --- JOB 2: A PLAGUE MOVES THE WHOLE SOCIETY, NOT JUST YOUR OWN HOUSEHOLD. A
+# playtester watched the Black Death take a third of their own staff and
+# nothing else happen anywhere in the game, and asked why a mortality event
+# this size left the rest of the economy untouched - no dearer hiring, no
+# dearer wages, nothing. self.pop_deficit (core.py, fed by _shocks in
+# society.py) is the fix: the hazard now also costs the whole labour market
+# people, and a smaller labour market pays more to hire from.
+s = sim(civ="england_1300")
+s.year = 1348
+s._shocks(1348)
+check("the Black Death costs the whole society people, not only your own "
+      "household",
+      abs(s.pop_deficit - 0.45) < 1e-6, s.pop_deficit)
+
+# --- your own quarantine (plague_preparedness) protects your own household
+# - that is what hazard_relief already does to the personal staff_loss above
+# - and must NOT also soften the society-wide figure: the rest of the world
+# never built your hedge.
+s2 = sim(civ="england_1300")
+s2.done.add("plague_preparedness"); s2.operating.add("plague_preparedness")
+s2._done_changed()
+s2.year = 1348
+s2._shocks(1348)
+check("a hedge against plague shields your own staff, not the whole "
+      "population's labour market",
+      abs(s2.pop_deficit - 0.45) < 1e-6, s2.pop_deficit)
+
+# --- scarcer labour is dearer labour, and it shows up the very next time the
+# year turns over, not only once the deficit has fully resolved.
+_base_wage = s.wage_index
+s.year = 1349
+s._demographic_recovery(1349)
+check("wages rise the year after a mortality shock, because the labour "
+      "market just got smaller",
+      s.wage_index > _base_wage * 1.2, (_base_wage, s.wage_index))
+check("the wage cascade is LOGGED, so a player can see why their wage bill "
+      "jumped instead of having to notice it in the accounts",
+      any("running" in m and "above normal" in m for _y, m in s.log),
+      [m for _y, m in s.log if "wage" in m.lower()])
+
+# --- it fades on the clock the hazard earned, not instantly and not
+# forever - the actual brief: "the effect decaying back over a historically
+# plausible recovery period rather than being permanent or instant".
+s4 = sim(civ="england_1300")
+s4.year = 1348
+s4._shocks(1348)
+for _yr in range(1349, 1349 + 50):
+    s4._demographic_recovery(_yr)
+_mid_premium = s4.wage_index / _base_wage - 1.0
+for _yr in range(1349 + 50, 1349 + 150):
+    s4._demographic_recovery(_yr)
+_end_premium = s4.wage_index / _base_wage - 1.0
+check("fifty years on, the wage premium from the Black Death is still "
+      "substantial, not gone in a handful of years",
+      _mid_premium > 0.10, _mid_premium)
+check("...and by England's roughly 150-year demographic recovery it has "
+      "mostly faded, not stayed at its peak forever",
+      _end_premium < 0.05, _end_premium)
+
+# --- a milder mortality event earns a shorter recovery than the Black
+# Death's 150 years, in proportion to how much of the population it
+# actually took, not the same horizon regardless of size.
+s5 = sim(civ="rome_100ad")
+for _yr in range(165, 181):
+    s5.year = _yr
+    s5._shocks(_yr)
+    if s5.pop_deficit > 0:
+        break
+check("the Antonine plague (28% of staff) earns a shorter demographic "
+      "recovery than the Black Death's (45%) 150 years, scaled to size",
+      0 < s5._pop_recovery_years < 150.0, s5._pop_recovery_years)
+
+# --- JOB 3: TECHNOLOGY RAISES THE POPULATION, SLOWLY. Sanitation,
+# antisepsis, crop rotation and the like should feed back into a bigger
+# labour market eventually, but a lower death rate shows up in the headcount
+# a generation later, not the day a latrine opens - so apply_tech_effects
+# must queue the gain rather than apply it the year the node completes.
+s6 = sim(civ="rome_100ad")
+_base_pop = s6._pop_scale_base
+s6.apply_tech_effects("sanitation_antisepsis")
+check("a population-raising technology does not move the population the "
+      "instant it completes",
+      s6._pop_scale_base == _base_pop, s6._pop_scale_base)
+for _yr in range(100, 100 + 40):
+    s6._demographic_recovery(_yr)
+check("...but it has fully landed by the end of its forty-year ramp",
+      abs(s6._pop_scale_base - (_base_pop + 0.02)) < 1e-6, s6._pop_scale_base)
+check("...and the gain stops growing once it has landed, rather than "
+      "compounding forever",
+      not s6._pop_tech_pending, s6._pop_tech_pending)
+s6.apply_tech_effects("sanitation_antisepsis")
+for _yr in range(140, 140 + 20):
+    s6._demographic_recovery(_yr)
+check("halfway through a SECOND such technology's ramp, only half of its "
+      "own gain has landed - the ramp does not dump the total on year one",
+      abs(s6._pop_scale_base - (_base_pop + 0.02 + 0.01)) < 1e-6,
+      s6._pop_scale_base)
 
 
 print("=" * 72)

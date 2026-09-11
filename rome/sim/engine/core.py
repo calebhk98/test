@@ -42,8 +42,29 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.cfg["start_year"] = int(self.civ.get("year", self.cfg["start_year"]))
         self.price_index = float(self.civ.get("price_index", 1.0))
         self.wage_index = float(self.civ.get("wage_index", 1.0))
+        self._wage_index_base = self.wage_index
         self.state_capacity = float(self.civ.get("state_capacity", 0.7))
         self.pop_scale = max(0.05, float(self.civ.get("population", 65e6)) / 65e6)
+        # A PLAGUE IS A HIT TO THE WHOLE LABOUR MARKET, NOT ONLY TO YOU. A
+        # playtester watched the Black Death take a third of their own staff
+        # and nothing else happen to the world around them, and asked why a
+        # mortality event this size left everybody ELSE's wages untouched.
+        # self._pop_scale_base is this civilization's steady-state size;
+        # self.pop_deficit is how far below it the whole society currently
+        # sits, and self.pop_scale (read everywhere else in the engine) is
+        # always base * (1 - deficit). _demographic_recovery() below is the
+        # only place that moves deficit, wage_index or pop_scale_base after
+        # today; _shocks() in society.py only ever adds to the deficit.
+        self._pop_scale_base = self.pop_scale
+        self.pop_deficit = 0.0
+        self._pop_recovery_years = 0.0
+        # Population-raising technologies (sanitation, antisepsis, crop
+        # rotation, canning...) queue their effect here instead of applying
+        # it the year they complete - see apply_tech_effects in society.py.
+        # Each entry is [fraction-of-baseline added per year, years left to
+        # add it]: a lower death rate shows up in a headcount a generation
+        # later, not the day a latrine opens.
+        self._pop_tech_pending = []
         self.year = self.cfg["start_year"]
         c = self.cfg
         # AT THIS SOCIETY'S PRICES, like everything else you will spend it on.
@@ -254,6 +275,74 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # completions for things they had never started. Rome's amphitheatre
         # and barrel vault are not the founder's work and are not news.
         self.grant_ambient()
+
+    def _demographic_recovery(self, yr):
+        """Mortality shocks fade and population-raising technologies build in.
+
+        Two unrelated inputs move the same two numbers, self.pop_scale and
+        self.wage_index, and they are handled together because both ARE the
+        same underlying thing: how many people this society has to work with
+        this year. A staff_loss hazard in _shocks() (society.py) adds to
+        self.pop_deficit, the fraction the whole society currently sits
+        below its baseline size. A population-raising technology adds to
+        self._pop_scale_base through self._pop_tech_pending, queued by
+        apply_tech_effects() (society.py).
+
+        The deficit decays EXPONENTIALLY rather than healing on a fixed
+        clock, so a run always reads "a little better than last year" rather
+        than sitting frozen until some cliff-edge recovery date:
+        deficit *= exp(-1/tau), with tau set so that after
+        self._pop_recovery_years the deficit is down to about 5% of where
+        the shock left it (e**-3 ~= 0.05, the standard "three time
+        constants" rule of thumb). England's population took roughly 150
+        years to regain its pre-Black-Death level (Broadberry et al.,
+        British Economic Growth, 2015), and england_1300.json's Black Death
+        entry is staff_loss 0.45, so 150 years is calibrated to THAT hazard
+        specifically; every other hazard's recovery horizon scales off it in
+        proportion to how much of the population it actually took, so the
+        Antonine plague (0.28) gets a shorter, gentler recovery than the
+        Black Death, not the same 150 years regardless of size.
+        """
+        if self.pop_deficit > 1e-6:
+            tau = max(10.0, self._pop_recovery_years) / 3.0
+            self.pop_deficit *= math.exp(-1.0 / tau)
+        else:
+            self.pop_deficit = 0.0
+        if self._pop_tech_pending:
+            still = []
+            for per_year, years_left in self._pop_tech_pending:
+                self._pop_scale_base += per_year
+                if years_left > 1:
+                    still.append((per_year, years_left - 1))
+            self._pop_tech_pending = still
+        self.pop_scale = max(0.05, self._pop_scale_base * (1.0 - self.pop_deficit))
+        # LABOUR SCARCER, SO DEARER. Elasticity 0.9 means a population still a
+        # third below trend (deficit 0.33) carries about a 30% wage premium;
+        # run for a century, as the Black Death's deficit roughly does before
+        # it has decayed away, and that compounds into the rough doubling
+        # Phelps Brown and Hopkins' English real-wage index shows across the
+        # century after 1348, without the elasticity itself needing to be
+        # implausibly large. wage_index is what ANNUAL_WAGE, WAGES and every
+        # hiring, teaching and payroll cost in the engine are already
+        # multiplied by, so this one number is the whole of "higher wages
+        # raise the cost of everything built with labour" - nothing else
+        # downstream needs to change.
+        self.wage_index = self._wage_index_base * (1.0 + 0.9 * self.pop_deficit)
+        # SAY WHY THE WAGE BILL MOVED. A plague that quietly doubles every
+        # hiring and teaching cost for decades and never says so reads as the
+        # economy drifting for no reason - exactly the complaint this whole
+        # mechanism exists to answer. Throttled the same way the debasement
+        # and output_factor messages are (see _shocks): once when it is worth
+        # mentioning, then a reminder at most every 15 years, not every year
+        # of a shortfall that can run for a century.
+        premium = (self.wage_index / self._wage_index_base - 1.0) * 100
+        if premium > 0.5 and yr - getattr(self, "_said_wage_cascade", -999) >= 15:
+            self._said_wage_cascade = yr
+            self.log.append((yr, "population still %d%% below trend: wages "
+                                 "(and anything billed in them) are running "
+                                 "%d%% above normal for here, and will ease "
+                                 "as the population does"
+                             % (round(self.pop_deficit * 100), round(premium))))
 
     # -- helpers ------------------------------------------------------------
 
@@ -665,6 +754,10 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # own hazard list, not from Rome's dates baked into the engine
         if self.output_factor < 1.0:
             self.output_factor = min(1.0, self.output_factor + 0.006)
+        # Population and the wage premium it drives recover/build in on their
+        # own clock too, and must run before this year's shocks get a chance
+        # to add a fresh deficit - see _demographic_recovery for why.
+        self._demographic_recovery(yr)
 
         # 3. dated shocks
         if self.events:

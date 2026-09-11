@@ -192,6 +192,30 @@
     568,
     600
    ]
+  },
+  {
+   "name": "The Arab conquests close the Mediterranean",
+   "note": "Within a century of Muhammad's death in 632, Arab armies had taken Syria and Egypt from Byzantium (634-642), swept across North Africa and taken Carthage itself in 698, and crossed into Spain in 711. Henri Pirenne's thesis - that it is this, and not the fifth-century invasions, which actually ends the ancient Mediterranean as a single economic space - is contested on details but not on the basic shape: papyrus from Egypt, African red slip ware and the grain fleets all stop reaching Italy across this window, a sea that had been Rome's own for six centuries becomes a frontier, and whatever reaches Ravenna or Rome now comes from a much smaller world.",
+   "output_factor": 0.85,
+   "values": {
+    "w_commerce": -0.1
+   },
+   "years": [
+    634,
+    700
+   ]
+  },
+  {
+   "name": "The Carolingian renaissance",
+   "note": "Charlemagne's court at Aachen gathers Alcuin of York and a real revival of schooling, a standardised minuscule hand that makes copying faster and more legible, and a currency reform (the silver denier, not by coincidence the ancestor of the word this file still counts in) stable enough to use; he is crowned Emperor in Rome on Christmas Day 800 by Leo III, the first time the title is claimed in the west since 476. It is a revival built on a much smaller base than the old empire - most of Charlemagne's Europe could not read - but a play tester who reached the year 600 and asked the game why two centuries of total silence followed found, correctly, that nothing here answered them; this is the first thing since the Lombards that is not a catastrophe.",
+   "values": {
+    "w_novelty": 0.05,
+    "patronage_weight": -0.03
+   },
+   "years": [
+    774,
+    800
+   ]
   }
  ],
  "home_regions": [

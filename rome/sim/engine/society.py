@@ -267,6 +267,16 @@ class SocietyMixin:
                              "manumit, though they are untrained for three years")],
     }
 
+    # A lower death rate shows up in the census a generation later, not the
+    # year the node completes, so a "population" tech effect is spread over
+    # this many years rather than dumped on the first one. Forty years is
+    # two adult generations, which is about how long it takes a mortality
+    # improvement to finish working its way through age structure into a
+    # visibly larger population, and it is short enough that a civilization
+    # which never stops building these nodes still cannot make the ramp
+    # itself the fast part of the cascade.
+    POP_TECH_RAMP_YEARS = 40
+
     def apply_tech_effects(self, k):
         """Building something changes what this society is like.
 
@@ -299,6 +309,22 @@ class SocietyMixin:
                 self.civ[field] = max(0.0, min(1.0, before + delta))
                 if field == "state_capacity":
                     self.state_capacity = self.civ[field]
+                changed.append(field)
+            elif field == "population":
+                # SANITATION, ANTISEPSIS, BETTER FOOD AND THE LIKE RAISE THE
+                # POPULATION, AND THAT FEEDS BACK: more people is a bigger
+                # labour market and a bigger ceiling on trade (see pop_scale
+                # in economy.py, labour.py and geography.py). Unlike every
+                # other field above, this does NOT land in one year - a
+                # lower death rate shows up in the headcount a generation
+                # later, not the day a latrine opens - so it is queued here
+                # and spread over RAMP_YEARS by _demographic_recovery() in
+                # core.py, the same file that drives the mortality side of
+                # this same cascade. `delta` is this technology's total,
+                # eventual addition to this civilization's baseline
+                # population, as a fraction of it.
+                self._pop_tech_pending.append(
+                    (delta / self.POP_TECH_RAMP_YEARS, self.POP_TECH_RAMP_YEARS))
                 changed.append(field)
         if changed:
             self.log.append((self.year, "%s changes the society: %s"
@@ -629,6 +655,23 @@ class SocietyMixin:
                 # against nobody. It was: they had nothing to lose. An event
                 # should report the harm it did, not the harm it would have
                 # done to somebody else.
+                # THE WHOLE SOCIETY LOST PEOPLE TOO, not only your household,
+                # and your own hedges do not change that: the quarantine you
+                # built protects your people, not everyone else's labour
+                # market. A playtester found a plague that hit them and
+                # nobody else, and asked why their wage bill never moved
+                # afterward the way the real Black Death moved England's.
+                # This uses the hazard's RAW rate, never `loss` above, which
+                # is personal and already reduced by your own hedges; and it
+                # compounds onto any deficit still open from an earlier,
+                # unfinished recovery rather than overwriting it, because two
+                # plagues in one lifetime are worse than either alone.
+                # _demographic_recovery() in core.py is what reads this back
+                # out into pop_scale and wage_index, and lets it decay.
+                raw = h["staff_loss"]
+                self.pop_deficit = 1.0 - (1.0 - self.pop_deficit) * (1.0 - raw)
+                self._pop_recovery_years = max(self._pop_recovery_years,
+                                                150.0 * (raw / 0.45))
                 _hit = []
                 if _people_before > 0.05:
                     _hit.append("staff -%d%%" % (loss * 100))
@@ -637,6 +680,11 @@ class SocietyMixin:
                                 % "{:,.0f}".format(cash))
                 if not _hit:
                     _hit.append("you had nothing it could take")
+                if raw > 0.01:
+                    _hit.append("population -%d%% society-wide, which will keep "
+                                "wages (and everything paid in them) dear for "
+                                "roughly the next %d years"
+                                % (raw * 100, round(self._pop_recovery_years)))
                 self.log.append((yr, "%s: %s%s"
                                  % (h.get("name", "hazard"), ", ".join(_hit),
                                     " (would have been -%d%%: %s)"

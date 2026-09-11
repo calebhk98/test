@@ -243,6 +243,38 @@
     1982,
     1995
    ]
+  },
+  {
+   "name": "NAFTA and the end of PRI hegemony",
+   "note": "The North American Free Trade Agreement took effect on 1 January 1994, the same year the peso crisis above technically begins with the Chiapas uprising and the assassination of the ruling party's own presidential candidate, Luis Donaldo Colosio. It takes six more years for the rest of the one-party system Mexico had lived under since 1929 to give way: Vicente Fox's win in July 2000 is the first time the Institutional Revolutionary Party has lost the presidency in seventy-one years. Trade opens and the old patronage machine that had run every election loses its grip at the same time, which is why both belong in one entry.",
+   "values": {
+    "w_commerce": 0.1,
+    "patronage_weight": -0.08,
+    "w_novelty": 0.05
+   },
+   "years": [
+    1994,
+    2000
+   ]
+  },
+  {
+   "name": "The drug war",
+   "note": "President Felipe Calderon declared war on the cartels in December 2006 and deployed the army against them; the killing that followed is usually put at well over a hundred thousand dead by the mid-2010s and has not stopped since, concentrated in particular states and along particular trafficking routes rather than spread evenly, which is why this is modelled as a standing, low sack risk and a drag on trade rather than as a single mortality event. This file stops adding history at approximately the point it is being written, 2026: nothing after that is invented, and the long quiet stretch after this entry toward the edge of a 700-year run is the honest shape of not yet knowing what happens next, not a gap in the research.",
+   "output_factor": 0.92,
+   "sack_chance": 0.02,
+   "years": [
+    2006,
+    2024
+   ]
+  },
+  {
+   "name": "The Puebla-Morelos earthquake",
+   "note": "Magnitude 7.1, struck midday on 19 September 2017 - the thirty-second anniversary, to the day, of the 1985 quake above - and brought down more than forty buildings in Mexico City alone along with heavy damage across Puebla and Morelos. Far smaller than 1985 in both magnitude and death toll (around 370 dead against the earlier quake's thousands), modelled the same way and at roughly a third of its risk.",
+   "sack_chance": 0.04,
+   "years": [
+    2017,
+    2017
+   ]
   }
  ],
  "home_regions": [

@@ -32,6 +32,19 @@
  },
  "hazards": [
   {
+   "name": "The regency cycle and the Partisan Prohibitions",
+   "note": "Emperor He died in 105 leaving an infant heir, and for most of the second century the throne passes to boy emperors under a regency of their mother's clan, who are then removed by the palace eunuchs when the boy comes of age and wants his own men in - four times over, by the reigns of Shang, Chong and Zhi alone. Under Emperor Huan this hardens into open persecution: the Partisan Prohibitions of 166 and 169 barred the reformist scholar-officials who had denounced the eunuchs' faction from office for life, hollowing out exactly the class of administrator this civilization's whole advantage rests on. This is what a break tester meant by nothing happening for eighty years: the fall of the Han did not begin with the Yellow Turbans, it began here.",
+   "output_factor": 0.94,
+   "values": {
+    "patronage_weight": 0.06,
+    "w_novelty": -0.04
+   },
+   "years": [
+    125,
+    169
+   ]
+  },
+  {
    "name": "Yellow Turban rebellion",
    "note": "Not a bandit revolt: the Way of Supreme Peace was a millenarian Daoist religious movement, and it very nearly took the dynasty down. The court's lasting reaction, applied gradually below as shifts in what this society values, is to stop treating unlicensed religious movements as a nuisance and start treating them as a standing threat to the state, a genuine tightening relative to the easy tolerance of alchemy and technical craft this civilization's baseline shifts in what this society values describes.",
    "sack_chance": 0.2,
@@ -137,6 +150,42 @@
    "years": [
     581,
     600
+   ]
+  },
+  {
+   "name": "Tang founding and the Zhenguan peace",
+   "note": "Li Yuan took the throne in 618 as Sui authority collapsed under the weight of the canal corvee; his son Li Shimin, Emperor Taizong, is the one who matters, and the Zhenguan era (626-649) of his reign is the single period later Chinese historiography holds up as the model of good government - a legal code completed in 637, the examination system widened rather than narrowed, the Eastern Turkic Khaganate broken in 630 so the Silk Road reopens under a single protector again, and Taizong's own recorded habit of accepting correction from his ministers, most famously Wei Zheng, without having them executed for it. One court, one currency, one examination, and it lasts.",
+   "values": {
+    "w_commerce": 0.1,
+    "patronage_weight": -0.05,
+    "w_novelty": 0.05
+   },
+   "years": [
+    618,
+    660
+   ]
+  },
+  {
+   "name": "Empress Wu's Zhou interregnum",
+   "note": "Wu Zetian rose from concubine to empress to, in 690, emperor in her own name, the only woman ever to hold the title in Chinese history, ruling as the Zhou dynasty until she was forced to abdicate in 705. She expanded the examinations and drew administrators from outside the established aristocratic clans to build a base independent of them, and patronised Buddhism heavily - the Longmen grottoes' largest carvings date from her reign - in a court that had previously ranked the imperial ancestral cult above it. It is a genuine anomaly inside an otherwise unbroken line of male emperors, and the succeeding Tang restoration treated her as one, which is why her own effect on how rigid orthodoxy is runs the opposite way from the Buddhist patronage under Northern Wei above: a woman emperor and a favoured foreign religion together read, to the literati who wrote the history, as exactly what a rigid order is supposed to prevent.",
+   "values": {
+    "w_religious_rigidity": -0.05,
+    "w_novelty": 0.05
+   },
+   "years": [
+    690,
+    705
+   ]
+  },
+  {
+   "name": "The An Lushan rebellion",
+   "note": "An Lushan, a frontier general of Sogdian and Turkic descent who had risen high in Xuanzong's favour, declared his own dynasty and took both capitals, Luoyang in 755 and Chang'an in 756, sending the court fleeing west; the emperor's own guard mutinied at Mawei and forced him to have his favourite consort Yang Guifei put to death before they would go on. The rebellion was put down by 763 only with the help of Uighur cavalry the Tang had to pay for in loot and tribute, and the census after it records something like two-thirds of the registered population of 755 simply gone from the rolls - the true death toll is disputed and was certainly inflated by flight and lost registration rather than killing alone, but by any reading this is the worst single demographic event in the file and the one the Tang never fully recovers its old reach from.",
+   "output_factor": 0.55,
+   "sack_chance": 0.12,
+   "staff_loss": 0.25,
+   "years": [
+    755,
+    763
    ]
   }
  ],

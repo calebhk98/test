@@ -195,6 +195,47 @@
     1700,
     1800
    ]
+  },
+  {
+   "name": "The Napoleonic Wars and the Continental System",
+   "note": "Britain is at war with France for all but one year between 1793 and 1815. Napoleon's Continental System, decreed from Berlin in 1806, tries to close every port in Europe to British trade; Britain's own Orders in Council answer in kind. Trade did not stop - smuggling and re-export through neutral flags were both large - but it ran at a real cost and a real risk of seizure the whole time, and the war itself absorbed a workforce and a tax base that would otherwise have gone to anything else. Unlike the Hundred Years War this is not fought on English soil, so it costs trade and money rather than a sack.",
+   "output_factor": 0.87,
+   "years": [
+    1803,
+    1815
+   ]
+  },
+  {
+   "name": "The Great Exhibition and Victorian confidence in the machine",
+   "note": "Paxton's Crystal Palace opened in Hyde Park on 1 May 1851 and six million people, a third of the population, went through it over five months, to look at machinery as the main attraction rather than as a threat to anyone's trade. It is the clearest single marker of the thing Allen's agricultural-revolution entry above says started only reluctantly: by 1851 a device that replaces a man's work is something Britain holds a celebration of. No damage fields: this is the one unambiguously good year in the file between the Black Death and the twentieth century.",
+   "values": {
+    "w_novelty": 0.08,
+    "w_labour_saving": 0.08
+   },
+   "years": [
+    1851,
+    1851
+   ]
+  },
+  {
+   "name": "The First World War",
+   "note": "Roughly 880,000 British dead out of a population of about 46 million, concentrated almost entirely among working-age men, plus four years in which a large share of everything the country could make went to the trenches rather than to trade. The war is also why income tax, conscription and rationing all become things a British state can simply do, which the financial-revolution and Royal Society entries above would not have predicted from 1720.",
+   "output_factor": 0.78,
+   "staff_loss": 0.025,
+   "years": [
+    1914,
+    1918
+   ]
+  },
+  {
+   "name": "The Second World War",
+   "note": "About 450,000 British dead, smaller as a share of the population than the First War, but the material disruption is larger: the Blitz, convoy losses in the Atlantic, and an economy converted almost wholly to war production under rationing that outlasted the war itself into the early 1950s. Britain emerges victorious and essentially bankrupt, which is the real backdrop to everything that follows this horizon.",
+   "output_factor": 0.72,
+   "staff_loss": 0.015,
+   "years": [
+    1939,
+    1945
+   ]
   }
  ],
  "home_regions": [

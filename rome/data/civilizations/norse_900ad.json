@@ -56,6 +56,18 @@
  },
  "hazards": [
   {
+   "name": "The settlement of Iceland and the founding of the Althing",
+   "note": "The settlement wave that began around 874 is essentially complete by 900, and in 930 the settlers founded the Althing at Thingvellir, a general assembly of free farmers with no king over it - the oldest continuously-referenced parliamentary institution in Europe. No damage fields: this is a new country and a working assembly appearing where there was nothing, and it is exactly the kind of thing the game had been silent about for the first century of play, which is why it is here rather than left to the Christianisation entry below to carry alone.",
+   "values": {
+    "w_commerce": 0.05,
+    "w_novelty": 0.05
+   },
+   "years": [
+    900,
+    930
+   ]
+  },
+  {
    "name": "Christianisation and political consolidation",
    "note": "The real effect of this is not mainly deaths but a change to the VALUES vector, applied gradually below: how much doctrine constrains what may be said and how readily an inexplicable effect is called sorcery both rise sharply as the old plural, no-doctrine seidr-tolerant religion gives way to a Church with a creed and an inquisition's ancestor -- what got you patronised in 950 gets you denounced in 1080. the fall in trade and output covers the physical, smaller half of the same event: temple-burnings, forced conversions and the kings' wars that came with them (Olaf Tryggvason's campaigns from 995, climaxing at the Battle of Stiklestad in 1030) visibly disrupted production and occasionally burned things down.",
    "output_factor": 0.85,
@@ -79,6 +91,30 @@
    ]
   },
   {
+   "name": "Hakon Hakonarson's peace and the Landslov",
+   "note": "The 1240 succession settlement that ends the civil war era above is the start of Norway's medieval high point, not just the stopping of a war: Hakon Hakonarson's long reign (1217-1263) and his son Magnus Lagabote's Landslov of 1274, the first law code for the whole kingdom rather than a patchwork of regional things, are what a break tester's audit found nothing at all standing for between 1240 and the Little Ice Age entry sixty years later. Trade with the Hanseatic towns and Iceland's tribute in 1262-64 both belong to this same window of a kingdom that, briefly, works.",
+   "values": {
+    "w_commerce": 0.06,
+    "patronage_weight": -0.04
+   },
+   "years": [
+    1240,
+    1280
+   ]
+  },
+  {
+   "name": "The Kalmar Union",
+   "note": "Olaf Haakonsson inherited both the Norwegian and Danish crowns as a child in 1380, and after the 1397 Kalmar meeting Norway is a junior partner in a union crowned in Denmark, not a kingdom with its own court to be patronised by any more. Norway's own royal line dies out entirely with Olaf, which the Icelandic and Norwegian annals both mark as the moment there is no longer a king who is only theirs.",
+   "output_factor": 0.92,
+   "values": {
+    "patronage_weight": 0.08
+   },
+   "years": [
+    1397,
+    1450
+   ]
+  },
+  {
    "name": "Black Death in Scandinavia",
    "note": "Reached Norway in 1349 on an English ship putting in at Bergen and killed on a scale even worse than England's, by some estimates more than half the population; entire farms and valleys were abandoned and some were never resettled. Recurs at reduced severity through the late 14th century, same as everywhere else in Europe, but this is the first and worst wave.",
    "staff_loss": 0.55,
@@ -94,6 +130,18 @@
    "years": [
     1300,
     1400
+   ]
+  },
+  {
+   "name": "The Scandinavian Reformation",
+   "note": "Christian III imposed Lutheranism on Denmark-Norway by force after winning the Count's Feud in 1536, and the church ordinance of 1537 dissolved the Norwegian monasteries and put their land and rents in the crown's hands the same way Henry VIII's dissolution did in England a few years earlier. Norway's own archbishopric at Nidaros, the last independent Norwegian institution of any weight, ends with it. Unlike England's confessional whiplash this does not reverse: Denmark-Norway stays Lutheran, and stays one settled doctrine instead of the old plural, no-creed religion the Christianisation entry above describes replacing.",
+   "values": {
+    "w_religious_rigidity": 0.12,
+    "w_magic_fear": 0.05
+   },
+   "years": [
+    1536,
+    1560
    ]
   }
  ],
