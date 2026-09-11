@@ -2797,9 +2797,20 @@ class EconomyMixin:
         # for everything it built and ate at Roman prices, and a cheap one got
         # the discount twice. Bread costs what bread costs where you are.
         px = self.price_index
+        # CALLED ONCE, NOT THREE TIMES. revenue() and wage_bill() are each
+        # pure functions of state that does not move within this call (no
+        # project completes, no venture opens, nothing is hired between
+        # here and the return), so the two more calls this used to make -
+        # one more of each, below - recomputed the same figures for no
+        # reason. Profiling a 300-year single-seed run found revenue()
+        # alone costing 2.4s of its own time and 21.9s cumulative over
+        # 28,423 calls; living_cost() was responsible for two of every
+        # three of those calls. See PERFORMANCE.md.
+        rev = self.revenue()
+        wages = self.wage_bill()
         base = 120.0 * px                             # bare subsistence, one person
         household = 90.0 * px * (1 + self.freedmen * 0.5 + self.slaves * 0.35)
-        tax = max(0.0, self.revenue()) * 0.06         # portoria, vicesima, local dues
+        tax = max(0.0, rev) * 0.06                     # portoria, vicesima, local dues
         status = 0.0
         if self.has("citizenship"):        status += 200 * px
         if self.running("patron_senatorial"):  status += 900 * px
@@ -2817,9 +2828,8 @@ class EconomyMixin:
         # You spend on appearances out of what is left after eating; never more
         # than the nominal figure, and never so much that the appearances
         # themselves starve you.
-        room = max(0.0, self.revenue() - base - household - tax
-                   - self.upkeep() - self.wage_bill())
+        room = max(0.0, rev - base - household - tax - self.upkeep() - wages)
         status = min(status, room * 0.75 + max(0.0, self.capital) * 0.015)
-        return base + household + tax + status + self.wage_bill()
+        return base + household + tax + status + wages
 
     HOURS_PER_PERSON_YEAR = 2000.0   # prices.json: a 10-hour day, 250 days, less feasts
