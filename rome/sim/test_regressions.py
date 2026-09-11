@@ -668,7 +668,12 @@ import time as _time
 # rest of abstract science) were not, even though several of those nodes carry
 # real upkeep the same way Newton's laws does. A loss-making node that is
 # neither is the control: it SHOULD still be shed.
-_KNOW1, _KNOW2, _LOSS = "md2_cell_theory", "md2_dna", "hom_eraser_breadcrumb"
+# hom_eraser_breadcrumb used to be that control, but the JOB 1 upkeep audit
+# correctly zeroed its upkeep (a rubber eraser is a technique, not an
+# establishment), so it stopped bleeding money and stopped exercising this
+# path. met_ore_crushing_sorting is a real establishment kind of node (it
+# stayed in the audit's kept "mining" category) that still carries upkeep.
+_KNOW1, _KNOW2, _LOSS = "md2_cell_theory", "md2_dna", "met_ore_crushing_sorting"
 s = sim()
 check("theory and knowledge categories are protected the same way physics is",
       s.never_abandon(_KNOW1) and s.never_abandon("sc2_physics_newtons_laws"),
@@ -1614,14 +1619,23 @@ check("you cannot commit to more work than cash and credit could ever cover",
 # S14. A node that costs nothing to build and 20 a year to keep could be shut
 # down and brought back around the annual tick for nothing, so its upkeep was
 # optional. The engine already gets this right for mines.
-# Not "and not NODES[k]['pre']" any more: the JOB 1 upkeep audit zeroed `up`
-# on every technique (knowledge costs nothing to keep), which emptied that
-# out for a no-prerequisite node specifically. `s.done.add` below bypasses
-# the normal start flow and its prerequisite checks entirely, so a node with
-# real prerequisites is exactly as usable here as one without.
+# This used to pick its own candidate by filter (up>0, no prerequisite,
+# project_cost under 1 denarius); the JOB 1 upkeep audit zeroed `up` on every
+# node that filter used to find (they were all techniques, correctly), and
+# every remaining up>0/no-prerequisite/near-free node turned out to be
+# something auto-granted on turn one (a capability rung, a road network) -
+# excluded by `not in s.granted` and so invisible to the filter too. There is
+# also a sharper reason to stop computing this dynamically: `s.done.add`
+# below bypasses `start`'s own prerequisite check, but restore_work has its
+# OWN separate check ("you no longer have what it stands on") that reads real
+# prerequisites regardless of how `done` was populated, so a candidate with
+# unmet prerequisites makes restore_work silently refuse and charge nothing -
+# which reads as exactly the bug this check exists to catch, for a completely
+# different reason. met_ore_crushing_sorting has no prerequisite, was not
+# auto-granted (its `ph` is not zero), and kept its upkeep in the audit as
+# real mining-establishment cost, so it is named directly rather than found.
 s = sim(civ="england_1300", capital=50000.0)
-_free = [k for k in NODES if NODES[k]["up"] > 0 and s.project_cost(k) < 1.0
-         and k not in s.granted]
+_free = ["met_ore_crushing_sorting"]
 s.done.add(_free[0])
 s._done_changed()
 s.mothball_work(_free[0])
@@ -5090,10 +5104,17 @@ check("placing a whisker a few hundredths of a millimetre apart now requires som
 check("the germanium surface now gets a chemical/electrolytic etch, not mechanical lapping alone",
       "el2_electropolishing_etching_surface_finish" in NODES["gp_whisker_forming"]["pre"],
       NODES["gp_whisker_forming"]["pre"])
+# mat_gold sits on gp_whisker_forming, one step short of the goal, not on
+# point_contact_transistor directly - a first attempt put it on the goal
+# itself and a fog regression test caught the leak: mat_gold is tier0/ph0,
+# auto-granted and therefore always is_visible(), and the goal is the one
+# node `why` always answers under fog, so direct_prerequisites (unlike
+# every other node, where is_visible() filters it) named the goal's own
+# prerequisite from turn one.
 check("the contact alloys are real prerequisites now, not just bare material costs",
-      "mat_gold" in NODES["point_contact_transistor"]["pre"]
+      "mat_gold" in NODES["gp_whisker_forming"]["pre"]
       and "phosphor_bronze_alloy" in NODES["gp_whisker_forming"]["pre"],
-      (NODES["point_contact_transistor"]["pre"], NODES["gp_whisker_forming"]["pre"]))
+      NODES["gp_whisker_forming"]["pre"])
 check("the whole goal closure grew by exactly the 2+2+1+3=8 nodes the audit "
       "claimed as marginal cost, not more",
       len(S.closure(NODES, GOAL)) == 157, len(S.closure(NODES, GOAL)))

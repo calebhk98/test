@@ -44373,14 +44373,15 @@
     "phosphor_bronze_g": 20.0
    },
    "name": "Point contact whisker forming",
-   "note": "Two springy phosphor bronze points are set onto the polished germanium surface a few hundredths of a millimetre apart, close enough that the depletion regions they create can interact. A bare point merely rectifies, like the galena detector; what makes it amplify is the forming pulse, a brief surge of current driven backward through each point after it is set, which locally heats and alloys a tiny puddle of the metal into the germanium and converts that point's contact from a simple barrier into one that can inject carriers. Point spacing and forming pulse energy are both found by trial on scrap slices before touching a slab you mean to keep. Seeing the gap is its own problem: setting two points \"a few hundredths of a millimetre apart\" by eye is not possible, which is why this now requires microscope_compound. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.] Lapping alone leaves a mechanically damaged surface; the real 1947 process finished it with a chemical/electrolytic etch as well, which is why this now also requires el2_electropolishing_etching_surface_finish, alongside prc_lapping_plate on point_contact_transistor itself. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.] phosphor_bronze_g was charged as a material cost here with nothing gating it; phosphor_bronze_alloy is now a direct prerequisite. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.]",
+   "note": "Two springy phosphor bronze points are set onto the polished germanium surface a few hundredths of a millimetre apart, close enough that the depletion regions they create can interact. A bare point merely rectifies, like the galena detector; what makes it amplify is the forming pulse, a brief surge of current driven backward through each point after it is set, which locally heats and alloys a tiny puddle of the metal into the germanium and converts that point's contact from a simple barrier into one that can inject carriers. Point spacing and forming pulse energy are both found by trial on scrap slices before touching a slab you mean to keep. Seeing the gap is its own problem: setting two points \"a few hundredths of a millimetre apart\" by eye is not possible, which is why this now requires microscope_compound. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.] Lapping alone leaves a mechanically damaged surface; the real 1947 process finished it with a chemical/electrolytic etch as well, which is why this now also requires el2_electropolishing_etching_surface_finish, alongside prc_lapping_plate on point_contact_transistor itself. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.] phosphor_bronze_g was charged as a material cost here with nothing gating it; phosphor_bronze_alloy is now a direct prerequisite. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.] The gold this recipe (and the final assembly downstream of it) already charged for was floating free of the tree with nothing gating it; it is now a real prerequisite here, one step short of the goal so it stays properly hidden under fog rather than naming itself on the goal's own always-visible summary. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.]",
    "ph": 200.0,
    "pre": [
     "cap_tol_10um",
     "daniell_cell",
     "microscope_compound",
     "el2_electropolishing_etching_surface_finish",
-    "phosphor_bronze_alloy"
+    "phosphor_bronze_alloy",
+    "mat_gold"
    ],
    "req_any": [],
    "rev": 400.0,
@@ -86835,7 +86836,7 @@
     "phosphor_bronze_g": 60.0
    },
    "name": "Point-contact transistor",
-   "note": "THE GOAL. An n-type germanium slab with two phosphor bronze points a fraction of a millimetre apart, plus a forming pulse. Fragile, noisy, irreproducible and it amplifies. Bardeen, Brattain and Shockley, December 1947. Getting here from 100 AD is the whole game. [AUDIT: upkeep removed - a technique costs nothing to keep knowing; it is not an establishment with premises, staff or a standing cost. See JOB 1 upkeep audit.] The gold this recipe already charged for was floating free of the tree with nothing gating it; it is now a real prerequisite, not just a cost. [AUDIT: see JOB 4 blind-prerequisite audit, rome/data/review/BLIND_TREE_phase2.md.]",
+   "note": "THE GOAL. An n-type germanium slab with two phosphor bronze points a fraction of a millimetre apart, plus a forming pulse. Fragile, noisy, irreproducible and it amplifies. Bardeen, Brattain and Shockley, December 1947. Getting here from 100 AD is the whole game. [AUDIT: upkeep removed - a technique costs nothing to keep knowing; it is not an establishment with premises, staff or a standing cost. See JOB 1 upkeep audit.]",
    "ph": 900.0,
    "pre": [
     "galena_detector",
@@ -86844,8 +86845,7 @@
     "prc_lapping_plate",
     "quantum_solidstate_theory",
     "single_crystal",
-    "vacuum_tube",
-    "mat_gold"
+    "vacuum_tube"
    ],
    "req_any": [
     {
