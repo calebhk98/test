@@ -6167,9 +6167,35 @@ while _stk:
     _stk.extend(NODES[_c]["pre"])
 check("following `pre` alone understates what the goal needs by the "
       "req_any groups that are not really alternatives - 158 nodes against "
-      "the 185 actually required",
-      _pre_only < _p_need and len(_p_need) - len(_pre_only) == 27,
+      "the 168 actually required",
+      _pre_only < _p_need and len(_p_need) - len(_pre_only) == 10,
       (len(_pre_only), len(_p_need)))
+# --- THE DATA SAID OVERLAND IN THREE PLACES AND THE TREE SAID ROUND THE
+# CAPE. mat_platinum_bulk's own note says the Ural placers are "reachable
+# overland through Scythian and Sarmatian trade without crossing any ocean";
+# geography.json lists platinum in siberia_urals as well as americas_south
+# and repeats the sentence; and the node's only prerequisite was
+# exp_africa_circumnavigation. Once closure() started following single-option
+# req_any groups this stopped being a curiosity and became load-bearing:
+# platinum is required for the glass-to-metal seal, so the goal's closure
+# grew an entire age of exploration - six expedition nodes, the sextant, the
+# compass, the lodestone, the cross-staff, the backstaff and a world map,
+# seventeen nodes in all - to fetch a metal the data says is on a wagon road.
+check("platinum is reachable the way its own note and the geography file "
+      "both say it is, overland, without rounding the Cape",
+      "exp_africa_circumnavigation" not in S.closure(NODES, "mat_platinum_bulk"),
+      sorted(x for x in S.closure(NODES, "mat_platinum_bulk")
+             if x.startswith("exp_")))
+check("...and the goal no longer requires an age of exploration to reach a "
+      "transistor: one trade route, not six voyages",
+      sorted(x for x in S.closure(NODES, GOAL) if x.startswith("exp_"))
+      == ["exp_trade_route_extend"],
+      sorted(x for x in S.closure(NODES, GOAL) if x.startswith("exp_")))
+check("the Colombian placers are still a route, just not the only one",
+      "americas_south" in (GEO_MATS := S.load_geography()
+                           ["located_materials"]["platinum"]["regions"])
+      and "siberia_urals" in GEO_MATS,
+      GEO_MATS)
 check("mat_bulk_steel (on the critical path) is gated on mat_manganese "
       "through exactly one req_any option, no real alternative offered",
       NODES["mat_bulk_steel"]["req_any"] ==
