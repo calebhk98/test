@@ -7635,4 +7635,1111 @@ AHEAD: 74 technologies at risk; a sacking that costs you anything (80% of them d
 
 Goal: point_contact_transistor
 
-[181 AD | 1180478 den | you:7698 hr | sch 28 art 98 | rep 88] > 
+[181 AD | 1180478 den | you:7698 hr | sch 28 art 98 | rep 88] >   COMPLETED 182: High temperature (clay contraction and colour pyrometry)
+  COMPLETED 182: Write the corpus: everything you know, in plain quantitative Greek and Latin
+  EVENT 181: you lose 3 artisans to death and to better offers
+  EVENT 181: population still 54% below trend: wages (and anything billed in them) are running 49% above normal for here, and will ease as the population does
+  EVENT 182: you lose 7 artisans, 1 scholar to death and to better offers
+  EVENT 182: completed: High temperature (clay contraction and colour pyrometry)
+  EVENT 182: Write the corpus: everything you know, in plain quantitative Greek and Latin changes the society: literacy_elite, w_magic_fear
+  EVENT 182: completed: Write the corpus: everything you know, in plain quantitative Greek and Latin
+  EVENT 183: you lose 2 artisans, 1 scholar to death and to better offers
+
+============================================================
+YEAR 184   (416 years to the horizon at 600)
+============================================================
+
+Money: 1,619,262 den    net +151,142 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 8,820 founder-hours free this year   (2,000 of your own, plus 3.8 deputies directing work in your name at 1,800 hours each)
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 73   (you know how to run 24 more and have not opened them - 'ventures')
+
+EMPLOY: 148 people, 75,832 den/yr in wages
+  household places: 148.0 of 214.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  artisan          108
+  chemist          4
+  machinist        2
+  scholar          34
+  counting yourself and hours you have bought: 35.0 scholars and 111.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 83.5   protection 92%   scandal 0   eminence 18.3
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 18.2 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+    'withdraw' halves this now and gives up half the reputation you hold above
+    what your work alone is worth (24.6). That is a real price - reputation is
+    your credit, your protection, your wages and the pace of your projects - and
+    it is the only thing that lowers prominence the year you do it.
+  technologies: 179 built by you, 141 granted for free (320 total)
+
+AHEAD: 74 technologies at risk if a hazard lands, hedged by corpus_written
+  16 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[184 AD | 1619261 den | you:8820 hr | sch 35 art 111 | rep 83] > started: cap_heat_1600
+name: Sustained 1600 C (regenerative preheat)
+founder hours needed: 300
+calendar floor years: 3
+the bill you have taken on: 4,000
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[184 AD | 1619261 den | you:8820 hr | sch 35 art 111 | rep 83] > RUSH: 119 started, 642 not
+  STARTED sulfuric_retort (9,389): Oil of vitriol by dry distillation of green vitriol
+  STARTED destructive_distillation (19,179): Destructive distillation of wood and coal
+  STARTED chm_pressure_gauge (1,200): Bourdon tube pressure gauge and safety relief valve
+  STARTED mil_serpentine_powder (28.2): Serpentine powder
+  STARTED mat_pozzolana (277.8): Pozzolana and hydraulic concrete
+  STARTED lnd_iron_edge_rail (1,439): Iron edge rail
+  STARTED tr_sprung_buffer (254): Sprung coupling buffer
+  STARTED air_three_axis_control (148.8): Three-axis control: roll, pitch, yaw
+  STARTED sc2_probability_central_limit (207.5): Central limit theorem
+  STARTED tr_screw_coupling (215.6): Screw coupling
+  STARTED tr_axle_bearing_box (273.3): Axle bearing journal box
+  STARTED tr_riveted_plating (411.9): Riveted hull plating
+  STARTED fud_selective_breeding_pedigree (177.5): Selective breeding with written pedigrees
+  STARTED sc2_physics_em_wave (244): Electromagnetic wave and radiation
+  STARTED prn_type_matrix (70.5): Type matrix
+  STARTED mfg_rake_clearance (228.4): Rake and clearance angles
+  STARTED en_poncelet_wheel (357.7): Poncelet water wheel
+  STARTED civ_neutral_axis (100): Neutral axis in bending
+  STARTED fud_root_cellar_storage (515.5): Root cellar and cool storage construction
+  STARTED en_post_mill (596.4): Post mill
+  STARTED tl_chain_drive (1,016): Chain drive: roller chain
+  STARTED tr_fore_aft_rig (1,060): Fore-and-aft rig
+  STARTED com_mechanical_calculator (2,497): Mechanical calculator - Pascal and Leibniz designs
+  STARTED corpus_dispersed (13,866): Print and disperse hundreds of copies across three continents
+  STARTED mat_gutta_percha (40,477): Gutta percha
+  STARTED md2_case_series (269.8): Case series analysis
+  STARTED tex_treadle_loom (302.3): Treadle loom
+  STARTED tl_spoked_wheel (619.4): Improved spoked wheel
+  STARTED tl_leaf_spring (725.8): Leaf spring: stacked flat
+  STARTED tx2_fulling (863.5): Fulling: cloth densification
+  STARTED cn_plumbing_stack (885.4): Plumbing vertical stack system
+  STARTED in2_mercury_barometer (948): Mercury barometer: column height
+  STARTED med_epidemiology_statistics (969): Epidemiology, statistics, and vital registration
+  STARTED fin_deposit_bank (2,145): Deposit bank and current account
+  STARTED if_lithography (3,688): Lithography
+  STARTED fin_university (5,700): University and degree-granting institution
+  STARTED tx2_hackling (18): Hackling: combing and grading fibres
+  STARTED fin_promissory_note (28): Promissory note
+  STARTED mil_bomb_general_purpose (61.4): Bomb, general purpose
+  STARTED md2_vital_registration (190.4): Vital registration system
+  STARTED md2_cell_theory (200): Cell as basic unit of life
+  STARTED md2_nervous_system (200): Nervous system structure and function
+  STARTED tex_spinning_wheel (219.7): Spinning wheel with flyer
+  STARTED sc2_calculus_derivative (257.3): The derivative as instantaneous rate of change
+  STARTED sc2_calculus_pde (269.8): Partial differential equations
+  STARTED pwr_coking (341.9): Coking: coal to coke
+  STARTED cn_lattice_truss (713.9): Lattice truss for beams
+  STARTED tl_plate_clutch (842.1): Plate clutch: disk friction
+  STARTED opt_transit_instrument (940.9): Transit instrument (meridian telescope)
+  STARTED com_antenna_ground (948.9): Antenna and ground system for radio
+  STARTED ag2_threshing_machine (1,125): Threshing machine
+  STARTED if_punched_card (1,620): Punched card
+  STARTED lnd_macadam (2,207): Macadam road surface
+  STARTED if_type_mould (2,630): Adjustable type mould
+  STARTED if_punch_and_matrix (3,082): Punch and matrix for type
+  STARTED med_valetudinaria (4,496): Military field hospital (valetudinaria)
+  STARTED fin_newspaper_business (8,145): Newspaper as business and subscription
+  STARTED patron_imperial (21,250): Imperial patronage
+  STARTED fud_bottling_sealed_cork (115): Bottling with cork closure and sealed glass
+  STARTED mt2_quenching_water (245): Water quenching: rapid cooling of austenite to form martensite
+  STARTED civ_tunnel_rock_drill (275.9): Rock drilling and tunnelling
+  STARTED hom_perfume_distilled (331.5): Perfume, distilled alcohol base
+  STARTED mfg_die_set (433.7): Die set
+  STARTED cn_retaining_wall (681): Retaining wall gravity structure
+  STARTED mfg_wire_drawing (1,101): Wire drawing bench
+  STARTED prc_planer_machine (1,163): Planing machine (bed and tool)
+  STARTED air_varnished_silk_envelope (1,647): Varnished silk envelope
+  STARTED prn_intermittent_motion (2,349): Intermittent film movement
+  STARTED if_screw_press (3,078): Screw press for printing
+  STARTED fin_postal_service (4,362): Postal service as paid business
+  STARTED hot_air_balloon (4,599): Hot air balloon for observation
+  STARTED logarithms (9,856): Logarithms and computed tables
+  STARTED fud_nitrogen_fixing_understanding (40): Recognition of nitrogen-fixing legume crops
+  STARTED com_cryptography_substitution (54.4): Substitution and polyalphabetic ciphers
+  STARTED com_optical_codebook (59.5): Codebook for optical signal tower
+  STARTED civ_foundation_spread (60): Spread footing on compacted soil
+  STARTED fin_patent (61.8): Patent and exclusive right
+  STARTED fin_limited_liability (88.7): Limited liability
+  STARTED tex_fitted_garment (120.2): Fitted garment tailoring
+  STARTED tex_canvas (135.4): Canvas cloth
+  STARTED mfg_production_schedule (170): Production schedule
+  STARTED com_information_theory (182.6): Information theory - entropy and the bit
+  STARTED mil_percussion_cap (189): Percussion cap
+  STARTED md2_circulation (200): Circulation of the blood
+  STARTED mfg_flux (209): Flux
+  STARTED ag2_grafting (230): Grafting
+  STARTED opt_plano_convex_lens (232.2): Plano-convex reading lens
+  STARTED sc2_algebra_determinant (249): Determinants and matrix inversion
+  STARTED md2_plant_chemistry (260): Plant chemistry extraction
+  STARTED hom_fireplace_chimney (271.5): Fireplace and chimney
+  STARTED ag2_coulter (272.6): Coulter
+  STARTED en_overshot_wheel (281): Overshot water wheel
+  STARTED hom_washing_machine_hand (293.9): Washing machine, hand-powered
+  STARTED opt_manometer (315.9): Manometer (pressure measurement)
+  STARTED in2_tape_measure_steel (323.4): Steel measuring tape: wound on reel
+  STARTED ag2_bone_meal (327.2): Bone meal
+  STARTED ag2_herd_book (384): Herd book
+  STARTED md2_clinical_thermometer (387.4): Clinical thermometer
+  STARTED opt_nicol_prism (415.7): Nicol prism for polarized light
+  STARTED ag2_cultivator (454.6): Cultivator
+  STARTED met_green_sand_mold (455.5): Green sand molding for casting
+  STARTED met_annealing_recrystallization (456.5): Annealing and recrystallization
+  STARTED pwr_water_turbine_fourneyron (513): Water turbine (Fourneyron)
+  STARTED tl_coil_spring (620.3): Coil spring: helical wire
+  STARTED fud_seed_drill (688.8): Mechanical seed drill
+  STARTED sea_charts_navigation (714): Navigation charts
+  STARTED sea_diving_bell (970.2): Diving bell
+  STARTED prc_scraped_surface_plate (1,091): Hand-scraped surface plate and why it beats grinding
+  STARTED if_printing_ink (1,111): Printing ink, oil-based
+  STARTED med_hypodermic_syringe (1,146): Hypodermic syringe and hollow needle
+  STARTED in2_joule_thomson_valve (1,513): Joule-Thomson expansion valve
+  STARTED if_adding_machine (2,742): Adding machine
+  STARTED fin_canal_company (108,079): Canal company and inland waterway
+  STARTED endowment_land (158,080): Endow the institute in land, not coin
+  STARTED fin_employment_contract (10): Contract of employment
+  STARTED tx2_drawing (12): Drawing: fibre blending and extension
+  STARTED tx2_cutting_table (14): Cutting table: stacked cloth cutting
+  STARTED tx2_sizing_systems (18): Sizing systems: body measurement standardisation
+  STARTED tex_hand_ginning (69.9): Hand ginning cotton
+  NOT STARTED fin_trademark: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_coffee_trade_import: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_usury_law: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_toothbrush: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mil_naval_mine: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_tariff: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_pattern_grading: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_printing_block: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_guild: not begun: the 118 things already started this turn owe 17,595 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_ore_crushing_sorting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_toys_dolls: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mil_incendiary_bomb: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_factor_safety: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_woodblock_carving: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_bone_meal_fertilizer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_sugar_cane_cultivation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_latrine_water_trap: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_ledger: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_stone_polish: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_propeller_wing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_wire_drawn: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mil_rifling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_mandrel_chuck: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_gate_sluice: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_stone_saw: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_lamp_argand: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vector_control: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_plaster_cast: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_frame_first_construction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_vegetable_oil_extraction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_annealing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_hay_making_storage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_malting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_staining_methylene: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_brazing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_statistical_mechanics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_field_bleaching: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_spirometer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_tumbling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_biopsy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_saponification: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_sugar_voyage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_roof_king_post: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_nicotine_pesticide: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_bechamp_reduction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_cellulose_acetate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_seed_trade: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_polyester: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_halogenation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_handwashing_semmelweis: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_friedel_crafts: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_addition_polymerisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_pure_line_selection: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_botanic_garden: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED lnd_boneshaker: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED lnd_spring_leaf: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mat_parchment: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_abbe_condenser: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_pantograph_copying: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_agricultural_treatises: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_nitrogen_cycle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_intaglio_engraving: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_yeast_pure_culture: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_yeast_culture: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_geometry_trigonometry: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_damp_proof_course: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_drill_press: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_plane_table: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_electromagnetic_wave_theory: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_crane_treadwheel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_brake_shoe: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_universal_joint: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_analytical_balance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_fuel_pump: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_water_pump: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_riveted_connection: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_enclosure_of_common_land: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_white_cast_iron: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_scouring: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_sericulture: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_oil_pump: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_cream_separator: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_sewer_separate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_mechanical_reaper: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_iron_column: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_soil_compaction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED lnd_coach: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_pot_still: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_groin_vault: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_intake_valve: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_safety_lamps_ventilation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_radiator: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_sliding_gearbox: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_aqueduct: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_reverberatory: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_knitting_frame: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_standard_weights: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_epicyclic_gearbox: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_astronomical_tables: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_playing_card: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_matches: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_index_card_system: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_formwork_shuttering: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_trading_post: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_mine_pumping: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_dam_gravity: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_census: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_futures: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_racecourse: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_hotel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED plague_preparedness: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_theatre_business: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_department_store: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_count_standard: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_selvedge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_sliver_preparation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_flax_fibre: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_hemp_fibre: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_twist_insertion: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_warp_sizing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_beam: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_button_horn: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_button_bone: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_cashmere: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_jute_fibre: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_mohair: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_ramie_fibre: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_spring_motor: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_button_shell: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_pin: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_comb: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_three_field_rotation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_guano_import_trade: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_currying: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_apprenticeship: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_splitting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_balloon_ballast: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_paperclip: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_hook_and_eye: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_warping_mill: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_safety_pin: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_tea_trade_import: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_seigniorage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_drawing_pin: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_corset: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_spectacle_frame: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_cheque: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_button: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_cotton_ginning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_arbitrage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_postcard: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_bankruptcy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_oil_shale: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_doubling_frame: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_treadwheel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_cordage_paperboard: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_cap_frame: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_discounting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_endorsement: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_log_line: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_monopoly: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_elevator_pitch: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_bimetallism: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_cartel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_turnips_winter_fodder: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_sizing_surface: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mil_operational_research: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_peat: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_mortgage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_rudder_vertical: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_balloon_valve: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_envelope_gummed: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_playing_cards_printed: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_straightedge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_punkah_ceiling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_doll: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_compass_magnetic: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_trade_union: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED lnd_wheelbarrow: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_umbrella: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_horse_gin: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_parachute: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_gypsum_plaster: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_fire_assay: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_traverse_board: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_stethoscope_percussion: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_charcoal_burning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_paper_bag: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_needle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_goldbeater_skin: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_press_stud: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_vinegar_production: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_liming_acid_soils: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_guano: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_marling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_shoddy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_hand_papermaking: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_quarrying_wedge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_brewing_with_hops: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_norse_waterwheel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_lathe_faceplate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_industrial_hygiene: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_lightning_conductor: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_latch_needle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_penstock: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_square_reference: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_matches_friction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_coolant_cutting_fluid: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_liming: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_hopping: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED com_error_detecting_code: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_kite_basic: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_altimeter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_composting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_potash: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_flush_toilet_trap: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_norfolk_course: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_rail_gauge_standardization: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_maintenance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_layering: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_jigsaw_puzzle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_foundation_piles: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_green_manure: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_tailstock_deadcentre: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_pit_latrine: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_roasting_calcining: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_carpet_sweeper: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_hydraulic_mining: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_indigo: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_cardboard_box: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_smeaton_efficiency: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_percussion: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_statistics_mortality_table: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_caulking_oakum: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_reefing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_stoping_ore_extraction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_stoneware: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_drifting_horizontal: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_wooden_waggonway: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_watertight_bulkhead: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_cosmetics_modern_warning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_surgical_mask: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_doctorate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_funded_programme: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_referee: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_research_group: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_method_controlled_experiment: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_method_hypothesis: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_method_negative_result: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_method_peer_criticism: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_method_replication: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_probability_combinatorics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_statistics_mean_variance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_least_squares: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_statistics_randomisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_statistics_anova: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_child_clinic: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_shaft_sinking_mining: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_log_sounding: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mat_obsidian_blade: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_meat_inspection: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_maternal_clinic: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_erosion_control: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_cutting_fluid: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_surgical_gown: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_decimal_point: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_surgical_drape: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_surgical_gloves_mask: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_enamelling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_chair_key: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_wire_mould_deckle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_catgut_suture: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_ligature_haemostasis: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_euler_buckling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_japanning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_adhesive_bond: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_equals_sign: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_operator_symbols: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_malt_production: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_rice_cultivation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_mould: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_method_lab_notebook: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_cold_riveting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_pelletising: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_roots: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_zero: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_timbering_safety: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_cement_varieties: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED com_signal_flags: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_painting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_peat_fuel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_decimal_fraction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_exponents: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED air_hydrogen_generation_charcoal: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_mangle_wringer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_sounding_machine_lead_line: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_negative: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_chain_surveyor: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_hull_sheathing_wood: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_rigging_block_lashing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_interpolation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_numerical_methods: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_earthenware: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_metronome: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_block_tackle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_local_anaesthesia: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_saline_resuscitation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_notation_scientific: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_forge_weld: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_newtons_laws: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_bill_materials: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_normalising: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_post_lintel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_soft_solder: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_curriculum: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_back_gear: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_quadratic: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_geometry_coordinate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_momentum: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_calculus_fundamental_theorem: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_bottling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_patent_disclosure: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_snap_gauge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_citation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_orthographic: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_leat_and_weir: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_oil_pressing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_austenitizing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_kinematics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_binomial: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_contour_ploughing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_trompe: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_gravitation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_infinite_series: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_polynomial: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_geometry_conics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_haemostat: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_electrostatics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_magnetostatics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_hernia_repair: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_spinal_anaesthesia: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_energy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_complex_numbers: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_calculus_limit: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_spectrum: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_quenching_brine: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_harrow: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_horseshoe: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_bone_china: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_vector: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_traction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_thread_gauge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_matrix: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_kinetic_theory: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_wave_motion: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_skin_graft: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_calculus_integral: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_calculus_ode: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_prod_ether: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_smallpox: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_stockless_anchor: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_physics_maxwell_equations: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_copper_reverberatory: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_work_hardening: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_three_jaw_chuck: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_appendicectomy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_caesarean_section: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_thyroidectomy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_hopper_wagon: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_melting_point: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_calculus_fourier_transform: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_medical_licensing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_algebra_tensor: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_nursing_profession: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_carburising: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_cholera: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_prod_acetic_acid: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_tape_measure: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_solvent_extraction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_go_gauge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_zinc_by_retort: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_printed_books: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_hygrometer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_town_planning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_copper_converter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_pyrethrum: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_refrigeration_ice: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_gastrectomy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_pertussis: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_typhoid: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_glass_plate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_pulp_stamper: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_tetanus: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_sprung_mattress: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_diphtheria: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_plague: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_prod_xylene: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_spherometer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_galvanising: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_medical_statistics: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_plug_gauge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_roller: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_bridge_timber_truss: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_prod_acetone: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_reflux: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_gravimetric: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_mole: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_sleeping_car: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_block_tackle_hoist: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_chaff_cutter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_cheese_families: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_plant_quarantine: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_bridge_cast_iron: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_paper_chromatography: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_safety_lamp_mining: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_le_chatelier: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_permanganate_oxidation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_prod_citric_acid: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED pwr_millpond: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_ring_gauge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_capstan: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_polystyrene: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_dichromate_oxidation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_four_jaw_chuck: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_windlass: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_grease_cup: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_yellow_fever: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_recrystallisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_equilibrium: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_shot_blasting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_colorimetry: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_tempered_glass_safety: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_mirror: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_turntable: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_coffee_voyage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_pmma: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_urea_formaldehyde: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_mast_stepping: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_fractional_crystallisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_redox_titration: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_azeotropic_distillation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mat_papyrus: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_buna: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_neoprene: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_viscose: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_materials_testing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_titrimetry: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_bakelite: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_nylon: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_bilge_pump: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_investment_casting: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_colligative: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_sulfonation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_examination: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_glass_fibre_insulation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_thermochemistry: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_polymer_silicone: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_stirrup: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_gasworks_ammonia: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_sublimation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_anemometer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_artificial_horizon_bubble: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_tile_drainage: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_complexometric: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_analysis_indicator_dyes: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_spectacles_refraction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_phase_rule: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_core_box: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_aldol: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_phys_overpotential: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_tuberculin_test: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED md2_vaccine_rabies: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_wardian_case: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_grignard: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_tempering_color: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_ion_exchange: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_wood_pulp: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_rxn_condensation_polymerisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_whippletree: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_soxhlet: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_fish_curing_and_smoking: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED com_napiers_bones: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_column_chromatography: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_undershot_wheel: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prc_compound_slide_rest: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_subsoiler: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_resistant_variety: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_veterinary_vaccination: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_chain_cable: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_precise_levelling: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_quenching_oil: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_double_glazing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_root_cutter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_air_filter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_wire_rope_brake: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_biological_control: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_dead_axle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_plain_bearing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_heavy_mouldboard_plough_coulter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_distillation_spirits: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_tedder: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_tandem_harness: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_level: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_kerbing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_pyrometer_contraction: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_magic_lantern: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_clinker_planking: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_sewing_machine_hand: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_street_paved: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_optical_glass_development: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_nitrite_curing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_rope_walk: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_crystallisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_transmission_lubrication: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_muffler: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_grain_size_control: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_tuning_fork_oscillator: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_water_ore_stamp: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_stellar_parallax: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_thermostat: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_bridge_wrought_iron_truss: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ch2_lab_vacuum_distillation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_herbal_pharmacy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_grey_cast_iron: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_calorimeter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_handbrake: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED arrival_orientation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_continuous_batch: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_oil_immersion_objective: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_flameproofing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_pocket_watch: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_nutrition_vitamins: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_lime_sulphur: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_iron_gall_ink: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_clock_drive: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_carvel_planking: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_microtome_sliding: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_scaffolding: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_dyeing_fibre: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_dyeing_yarn: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_dyeing_piece: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_envelope_flap: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_trip_hammer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_vaccination_progression: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_friction_match: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_resist_dyeing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_flying_buttress: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_cone_clutch: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_shampoo: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_cam_follower: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_alum_tanning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_aneroid_barometer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_cataloguing_system: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_cupola_furnace: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_lead_arsenate: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_quenching_media: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_mass_soap: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_grain_storage_silos: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_dyeing_garment: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_crane_derrick: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_equatorial_mount: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_waterproofing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mfg_silver_solder: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_roller_bearing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_ether_anaesthesia: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tr_square_rig: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_connecting_rod: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_trussed_arch: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_drawn_tube: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_sewing_machine: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_skeleton_first: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_galvanizing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_mechanical_clock_home: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_carbon_paper: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_pawnshop: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_corrosion_stoneware: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_piston_assembly: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_chase_and_forme: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_vegetable_tanning: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_bottle: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_pontoon_bridge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sc2_institution_textbook: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_aneroid_capsule: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_bordeaux_mixture: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_asbestos_cloth: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED prn_index_concordance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_keel_deep: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_bloomery_bog_iron: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_singeing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tl_disc_brake: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_gravimeter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_hardness_test: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED cn_asphalt_roofing: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_bourdon_gauge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_microtome_rotary: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED hom_piano: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_parkes_process: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_type_metal: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_mercerisation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_almanac: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_vector_control: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_activated_carbon: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_corrosion_lead: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_laminated_glass_safety: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fud_whaling_industry: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_reinsurance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_lending_library: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_lottery: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_gambling_house: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED ag2_silage_silo: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED met_drop_hammer: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED med_endoscope: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_balance_spring_watch: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_bookbinding_case: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_gravimeter_spring_balance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_filter_press: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_focal_plane_shutter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED chm_evaporator_surface: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED el2_lightning_arrestor_gap: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED if_leaf_shutter: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_fire_insurance: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_survey_map: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED sea_clinker_hull: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED in2_gas_thermometry_absolute: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_inn: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_platinum_group_metals: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED el2_switch_knife: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED el2_insulator_pin_porcelain: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED civ_monumental_stone: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED opt_standards_laboratory: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_solder_lead_tin: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_gunmetal_alloy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tex_rayon_viscose: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_bell_metal: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_amalgamation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mt2_pewter_alloy: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_plantation: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED en_fuse: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED tx2_watch_case: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_toll_bridge: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED mat_cryolite: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+  NOT STARTED fin_turnpike_trust: not begun: the 119 things already started this turn owe 17,625 of your hours, and you have about 8,820 a year. Beginning more would not make them go faster, only leave them all standing still
+
+tried everything you could begin today, highest-leverage first, until your
+credit ran out or the list did. 'why <id>' on anything in not_started says
+exactly why it stopped there.
+
+[184 AD | 1619261 den | you:8820 hr | sch 35 art 111 | rep 83] >   COMPLETED 184: Bone meal
+  COMPLETED 184: Coulter
+  COMPLETED 184: Cultivator
+  COMPLETED 184: Grafting
+  COMPLETED 184: Herd book
+  COMPLETED 184: Varnished silk envelope
+  COMPLETED 184: Spread footing on compacted soil
+  COMPLETED 184: Rock drilling and tunnelling
+  COMPLETED 184: Substitution and polyalphabetic ciphers
+  COMPLETED 184: Information theory - entropy and the bit
+  COMPLETED 184: Codebook for optical signal tower
+  COMPLETED 184: Overshot water wheel
+  COMPLETED 184: Contract of employment
+  COMPLETED 184: Bottling with cork closure and sealed glass
+  COMPLETED 184: Recognition of nitrogen-fixing legume crops
+  COMPLETED 184: Mechanical seed drill
+  COMPLETED 184: Fireplace and chimney
+  COMPLETED 184: Perfume, distilled alcohol base
+  COMPLETED 184: Washing machine, hand-powered
+  COMPLETED 184: Adding machine
+  COMPLETED 184: Printing ink, oil-based
+  COMPLETED 184: Joule-Thomson expansion valve
+  COMPLETED 184: Steel measuring tape: wound on reel
+  COMPLETED 184: Clinical thermometer
+  COMPLETED 184: Plant chemistry extraction
+  COMPLETED 184: Hypodermic syringe and hollow needle
+  COMPLETED 184: Military field hospital (valetudinaria)
+  COMPLETED 184: Annealing and recrystallization
+  COMPLETED 184: Green sand molding for casting
+  COMPLETED 184: Die set
+  COMPLETED 184: Flux
+  COMPLETED 184: Production schedule
+  COMPLETED 184: Percussion cap
+  COMPLETED 184: Manometer (pressure measurement)
+  COMPLETED 184: Nicol prism for polarized light
+  COMPLETED 184: Plano-convex reading lens
+  COMPLETED 184: Intermittent film movement
+  COMPLETED 184: Navigation charts
+  COMPLETED 184: Canvas cloth
+  COMPLETED 184: Fitted garment tailoring
+  COMPLETED 184: Hand ginning cotton
+  COMPLETED 184: Coil spring: helical wire
+  COMPLETED 184: Drawing: fibre blending and extension
+  EVENT 184: you lose 4 artisans, 1 chemist, 2 scholars to death and to better offers
+  EVENT 184: you now have 4 deputies directing work in your name: your year is 9,291 hours instead of 2,000. They came with the institutions you built
+  EVENT 184: completed: Hand ginning cotton
+  EVENT 184: FAILED at Cutting table: stacked cloth cutting: it did not work. 40% of the hours are to do again (24 of your own) and 6 is gone. Attempt 2.
+  EVENT 184: completed: Drawing: fibre blending and extension
+  EVENT 184: completed: Contract of employment
+  EVENT 184: completed: Adding machine
+  EVENT 184: completed: Joule-Thomson expansion valve
+  EVENT 184: completed: Hypodermic syringe and hollow needle
+  EVENT 184: completed: Printing ink, oil-based
+  EVENT 184: FAILED at Diving bell: it did not work. 40% of the hours are to do again (48 of your own) and 387 is gone. Attempt 2.
+  EVENT 184: completed: Navigation charts
+  EVENT 184: Mechanical seed drill changes the society: population
+  EVENT 184: completed: Mechanical seed drill
+  EVENT 184: completed: Coil spring: helical wire
+  EVENT 184: completed: Annealing and recrystallization
+  EVENT 184: completed: Green sand molding for casting
+  EVENT 184: completed: Cultivator
+  EVENT 184: completed: Nicol prism for polarized light
+  EVENT 184: completed: Clinical thermometer
+  EVENT 184: completed: Herd book
+  EVENT 184: completed: Bone meal
+  EVENT 184: completed: Steel measuring tape: wound on reel
+  EVENT 184: completed: Manometer (pressure measurement)
+  EVENT 184: completed: Washing machine, hand-powered
+  EVENT 184: completed: Overshot water wheel
+  EVENT 184: completed: Coulter
+  EVENT 184: completed: Fireplace and chimney
+  EVENT 184: completed: Plant chemistry extraction
+  EVENT 184: completed: Plano-convex reading lens
+  EVENT 184: completed: Grafting
+  EVENT 184: completed: Flux
+  EVENT 184: completed: Percussion cap
+  EVENT 184: completed: Information theory - entropy and the bit
+  EVENT 184: completed: Production schedule
+  EVENT 184: completed: Canvas cloth
+  EVENT 184: completed: Fitted garment tailoring
+  EVENT 184: completed: Spread footing on compacted soil
+  EVENT 184: completed: Codebook for optical signal tower
+  EVENT 184: completed: Substitution and polyalphabetic ciphers
+  EVENT 184: completed: Recognition of nitrogen-fixing legume crops
+  EVENT 184: completed: Intermittent film movement
+  EVENT 184: completed: Varnished silk envelope
+  EVENT 184: completed: Die set
+  EVENT 184: completed: Perfume, distilled alcohol base
+  EVENT 184: completed: Rock drilling and tunnelling
+  EVENT 184: FAILED at Water quenching: rapid cooling of austenite to form martensite: it did not work. 40% of the hours are to do again (40 of your own) and 98 is gone. Attempt 2.
+  EVENT 184: completed: Bottling with cork closure and sealed glass
+  EVENT 184: completed: Military field hospital (valetudinaria)
+
+============================================================
+YEAR 185   (415 years to the horizon at 600)
+============================================================
+
+Money: 1,562,218 den    net -40,594 den/yr (after 209,927 den into projects this year)
+You: alive (you do not age), 9,291 founder-hours free this year   (2,000 of your own, plus 4.0 deputies directing work in your name at 1,800 hours each)
+
+RUNNING (77):
+  ag2_threshing_machine                0% of your hours spent, 0 still owed - waiting on your hours
+      Threshing machine
+  air_three_axis_control               0% of your hours spent, 0 still owed - waiting on your hours
+      Three-axis control: roll, pitch, yaw
+  cap_heat_1600                        0% of your hours spent, 2,667 still owed - waiting on your hours
+      Sustained 1600 C (regenerative preheat)
+  chm_pressure_gauge                   0% of your hours spent, 0 still owed - waiting on your hours
+      Bourdon tube pressure gauge and safety relief valve
+  civ_neutral_axis                     0% of your hours spent, 0 still owed - waiting on your hours
+      Neutral axis in bending
+  cn_lattice_truss                     0% of your hours spent, 0 still owed - waiting on your hours
+      Lattice truss for beams
+  cn_plumbing_stack                    0% of your hours spent, 147.6 still owed - waiting on your hours
+      Plumbing vertical stack system
+  cn_retaining_wall                  100% of your hours spent, 227 still owed - waiting on the pace it can absorb money: at most 454 a year goes into this (227 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Retaining wall gravity structure
+  com_antenna_ground                   0% of your hours spent, 0 still owed - waiting on your hours
+      Antenna and ground system for radio
+  com_mechanical_calculator            0% of your hours spent, 499.3 still owed - waiting on your hours
+      Mechanical calculator - Pascal and Leibniz designs
+  corpus_dispersed                     0% of your hours spent, 13,866 still owed - waiting on nobody to do the work: scribe (wants 375 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Print and disperse hundreds of copies across three continents
+  destructive_distillation             0% of your hours spent, 12,730 still owed - waiting on your hours
+      Destructive distillation of wood and coal
+  en_poncelet_wheel                    0% of your hours spent, 59.6 still owed - waiting on your hours
+      Poncelet water wheel
+  en_post_mill                         0% of your hours spent, 298.2 still owed - waiting on your hours
+      Post mill
+  endowment_land                     100% of your hours spent, 79,040 still owed - waiting on the pace it can absorb money: at most 79,040 a year goes into this (79,040 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Endow the institute in land, not coin
+  fin_canal_company                  100% of your hours spent, 86,463 still owed - waiting on the pace it can absorb money: at most 21,616 a year goes into this (86,463 still owed, about 4 more years at that rate). Money in hand cannot buy it down faster
+      Canal company and inland waterway
+  fin_deposit_bank                     0% of your hours spent, 2,145 still owed - waiting on nobody to do the work: scribe (wants 100 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Deposit bank and current account
+  fin_limited_liability              100% of your hours spent, 44.3 still owed - waiting on the pace it can absorb money: at most 44 a year goes into this (44 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Limited liability
+  fin_newspaper_business              60% of your hours spent, 8,145 still owed - waiting on nobody to do the work: scribe (wants 100 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Newspaper as business and subscription
+  fin_patent                         100% of your hours spent, 30.9 still owed - waiting on the pace it can absorb money: at most 31 a year goes into this (31 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Patent and exclusive right
+  fin_postal_service                 100% of your hours spent, 2,181 still owed - waiting on the pace it can absorb money: at most 2,181 a year goes into this (2,181 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Postal service as paid business
+  fin_promissory_note                  0% of your hours spent, 28 still owed - waiting on nobody to do the work: scribe (wants 40 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Promissory note
+  fin_university                       0% of your hours spent, 5,700 still owed - waiting on nobody to do the work: scribe (wants 100 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      University and degree-granting institution
+  fud_root_cellar_storage              0% of your hours spent, 0 still owed - waiting on your hours
+      Root cellar and cool storage construction
+  fud_selective_breeding_pedigree      0% of your hours spent, 177.5 still owed - waiting on nobody to do the work: scribe (wants 40 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Selective breeding with written pedigrees
+  hot_air_balloon                    100% of your hours spent, 2,282 still owed - waiting on the pace it can absorb money: at most 2,316 a year goes into this (2,282 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Hot air balloon for observation
+  if_lithography                       0% of your hours spent, 1,844 still owed - waiting on your hours
+      Lithography
+  if_punch_and_matrix                 23% of your hours spent, 0 still owed - waiting on your hours
+      Punch and matrix for type
+  if_punched_card                      0% of your hours spent, 0 still owed - waiting on your hours
+      Punched card
+  if_screw_press                     100% of your hours spent, 1,026 still owed - waiting on the pace it can absorb money: at most 2,052 a year goes into this (1,026 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Screw press for printing
+  if_type_mould                        0% of your hours spent, 0 still owed - waiting on your hours
+      Adjustable type mould
+  in2_mercury_barometer                0% of your hours spent, 0 still owed - waiting on your hours
+      Mercury barometer: column height
+  lnd_iron_edge_rail                   0% of your hours spent, 479.5 still owed - waiting on your hours
+      Iron edge rail
+  lnd_macadam                          0% of your hours spent, 0 still owed - waiting on your hours
+      Macadam road surface
+  logarithms                         100% of your hours spent, 7,392 still owed - waiting on nobody to do the work: scribe (wants 3332 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Logarithms and computed tables
+  mat_gutta_percha                     0% of your hours spent, 20,239 still owed - waiting on your hours
+      Gutta percha
+  mat_pozzolana                        0% of your hours spent, 0 still owed - waiting on your hours
+      Pozzolana and hydraulic concrete
+  md2_case_series                      0% of your hours spent, 0 still owed - waiting on your hours
+      Case series analysis
+  md2_cell_theory                      0% of your hours spent, 0 still owed - waiting on your hours
+      Cell as basic unit of life
+  md2_circulation                    100% of your hours spent, 100 still owed - waiting on the pace it can absorb money: at most 100 a year goes into this (100 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Circulation of the blood
+  md2_nervous_system                   0% of your hours spent, 100 still owed - waiting on your hours
+      Nervous system structure and function
+  md2_vital_registration               0% of your hours spent, 190.4 still owed - waiting on nobody to do the work: scribe (wants 40 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Vital registration system
+  med_epidemiology_statistics          0% of your hours spent, 0 still owed - waiting on your hours
+      Epidemiology, statistics, and vital registration
+  mfg_rake_clearance                   0% of your hours spent, 0 still owed - waiting on your hours
+      Rake and clearance angles
+  mfg_wire_drawing                   100% of your hours spent, 254.1 still owed - waiting on the pace it can absorb money: at most 847 a year goes into this (254 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Wire drawing bench
+  mil_bomb_general_purpose             0% of your hours spent, 0 still owed - waiting on your hours
+      Bomb, general purpose
+  mil_serpentine_powder                0% of your hours spent, 0 still owed - waiting on your hours
+      Serpentine powder
+  mt2_quenching_water                 60% of your hours spent, 0 still owed - waiting on your hours
+      Water quenching: rapid cooling of austenite to form martensite
+  opt_transit_instrument               0% of your hours spent, 0 still owed - waiting on your hours
+      Transit instrument (meridian telescope)
+  patron_imperial                    100% of your hours spent, 14,167 still owed - waiting on the pace it can absorb money: at most 7,083 a year goes into this (14,167 still owed, about 3 more years at that rate). Money in hand cannot buy it down faster
+      Imperial patronage
+  prc_planer_machine                 100% of your hours spent, 387.8 still owed - waiting on the pace it can absorb money: at most 776 a year goes into this (388 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Planing machine (bed and tool)
+  prc_scraped_surface_plate          100% of your hours spent, 818.5 still owed - waiting on the pace it can absorb money: at most 273 a year goes into this (819 still owed, about 3 more years at that rate). Money in hand cannot buy it down faster
+      Hand-scraped surface plate and why it beats grinding
+  prn_type_matrix                      0% of your hours spent, 0 still owed - waiting on your hours
+      Type matrix
+  pwr_coking                           0% of your hours spent, 111.5 still owed - waiting on your hours
+      Coking: coal to coke
+  pwr_water_turbine_fourneyron       100% of your hours spent, 171 still owed - waiting on the pace it can absorb money: at most 342 a year goes into this (171 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Water turbine (Fourneyron)
+  sc2_algebra_determinant            100% of your hours spent, 186.8 still owed - waiting on the pace it can absorb money: at most 62 a year goes into this (187 still owed, about 3 more years at that rate). Money in hand cannot buy it down faster
+      Determinants and matrix inversion
+  sc2_calculus_derivative              0% of your hours spent, 257.3 still owed - waiting on nobody to do the work: scribe (wants 60 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      The derivative as instantaneous rate of change
+  sc2_calculus_pde                     0% of your hours spent, 269.8 still owed - waiting on nobody to do the work: scribe (wants 38 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Partial differential equations
+  sc2_physics_em_wave                  0% of your hours spent, 244 still owed - waiting on nobody to do the work: scribe (wants 37 hours a year; the scribes here can supply 38538 but your other work has them booked)
+      Electromagnetic wave and radiation
+  sc2_probability_central_limit        0% of your hours spent, 172.9 still owed - waiting on your hours
+      Central limit theorem
+  sea_diving_bell                     60% of your hours spent, 0 still owed - waiting on your hours
+      Diving bell
+  sulfuric_retort                      0% of your hours spent, 4,660 still owed - waiting on your hours
+      Oil of vitriol by dry distillation of green vitriol
+  tex_spinning_wheel                   0% of your hours spent, 0 still owed - waiting on your hours
+      Spinning wheel with flyer
+  tex_treadle_loom                     0% of your hours spent, 0 still owed - waiting on your hours
+      Treadle loom
+  tl_chain_drive                       0% of your hours spent, 0 still owed - waiting on your hours
+      Chain drive: roller chain
+  tl_leaf_spring                       0% of your hours spent, 0 still owed - waiting on your hours
+      Leaf spring: stacked flat
+  tl_plate_clutch                      0% of your hours spent, 0 still owed - waiting on your hours
+      Plate clutch: disk friction
+  tl_spoked_wheel                      0% of your hours spent, 0 still owed - waiting on your hours
+      Improved spoked wheel
+  tr_axle_bearing_box                  0% of your hours spent, 0 still owed - waiting on your hours
+      Axle bearing journal box
+  tr_fore_aft_rig                      0% of your hours spent, 0 still owed - waiting on your hours
+      Fore-and-aft rig
+  tr_riveted_plating                   0% of your hours spent, 206 still owed - waiting on your hours
+      Riveted hull plating
+  tr_screw_coupling                    0% of your hours spent, 0 still owed - waiting on your hours
+      Screw coupling
+  tr_sprung_buffer                     0% of your hours spent, 0 still owed - waiting on your hours
+      Sprung coupling buffer
+  tx2_cutting_table                   60% of your hours spent, 0 still owed - waiting on your hours
+      Cutting table: stacked cloth cutting
+  tx2_fulling                          0% of your hours spent, 0 still owed - waiting on your hours
+      Fulling: cloth densification
+  tx2_hackling                         0% of your hours spent, 0 still owed - waiting on your hours
+      Hackling: combing and grading fibres
+  tx2_sizing_systems                 100% of your hours spent, 9 still owed - waiting on the pace it can absorb money: at most 9 a year goes into this (9 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Sizing systems: body measurement standardisation
+
+RUNNING AS CONCERNS: 73   (you know how to run 45 more and have not opened them - 'ventures')
+  those shut concerns would clear 3,868 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 153 people, 76,882 den/yr in wages
+  household places: 153.0 of 227.6 used - what you can feed, house and oversee. 'labour' says what raises it.
+  artisan          113
+  chemist          3
+  machinist        2
+  scholar          35
+  counting yourself and hours you have bought: 36.0 scholars and 116.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 97.8   protection 92%   scandal 0.77   eminence 18.6
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+    and RISING: up 0.80 last year. At that rate you cross the line in about 32 year(s), and the chance above is only true of where you stand today
+  EMINENCE is dangerous above 26 (settles near 22.4 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+    'withdraw' halves this now and gives up half the reputation you hold above
+    what your work alone is worth (25.0). That is a real price - reputation is
+    your credit, your protection, your wages and the pace of your projects - and
+    it is the only thing that lowers prominence the year you do it.
+  technologies: 222 built by you, 141 granted for free (363 total)
+
+AHEAD: 89 technologies at risk if a hazard lands, hedged by corpus_written
+  16 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[185 AD | 1562218 den | you:9290 hr | sch 36 art 116 | rep 98] > 
