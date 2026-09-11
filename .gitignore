@@ -29,3 +29,11 @@ rome/playtest/naive3/*.out
 .claude/worktrees/
 rome/playtest/scratchpad/
 tutorial-runs/
+
+# Scratch session saves written by the performance and interface audits while
+# driving the game to profile it: bad0.json, unknown_node.json and friends are
+# deliberately malformed or throwaway states, not deliverables. The audit
+# write-ups (PERF_AUDIT.md and the files under rome/data/review/) are what is
+# worth keeping from those runs.
+_loadtest_tmp/
+_playtest_tmp/
