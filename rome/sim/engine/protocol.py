@@ -484,6 +484,28 @@ def _agent_state(s, nodes, cmd=None):
         "reputation": round(s.reputation, 1),
         "scandal": round(s.scandal, 2), "eminence": round(s.eminence, 2),
         "protection": round(s.protection, 3), "familiarity": round(s.familiarity, 3),
+        # HOW EDUCATED THIS SOCIETY IS, AND HOW FAR THAT COULD GO. Answering
+        # the user's own question - "can I create a 90%+ literate
+        # population" - needs the ceiling shown alongside the current
+        # figure, not just the figure alone: a founder watching
+        # literacy_general climb with no sense of where it stops cannot tell
+        # a slow success from a mechanism that has already maxed out. See
+        # SocietyMixin.literacy_ceiling_general/_elite and agrarian_slack
+        # (society.py).
+        "literacy": {
+            "general": round(float(s.civ.get("literacy_general", 0.0)), 3),
+            "general_ceiling_now": round(s.literacy_ceiling_general(), 3),
+            "elite": round(float(s.civ.get("literacy_elite", 0.0)), 3),
+            "elite_ceiling": round(s.literacy_ceiling_elite(), 3),
+            "schools_actually_teaching": s._schooling_flow() > 0.0,
+            "farm_labour_freed_by_mechanisation": round(s.agrarian_slack(), 3),
+        },
+        # HOW MUCH OF WHAT YOU RUN HAS LEAKED TO COMPETITORS. See
+        # SocietyMixin.diffusion_share/diffusion_index (society.py) for what
+        # moves this; it is not yet spent anywhere in this engine's own
+        # pricing, only reported, because that spending is another agent's
+        # seam to wire in (see that function's own docstring).
+        "diffusion_index": round(s.diffusion_index(), 3),
         # A playtester could not tell the difference between technologies the
         # society already had and ones they had earned: about 140 nodes complete
         # in year one and appeared in done_count as if the player had built
@@ -538,6 +560,11 @@ def _agent_state(s, nodes, cmd=None):
                   "than dismissing one person at a time. 1.32 artisans is the "
                   "wage and output of one artisan plus a third of another's.")),
         "trades_you_created": sorted(s.trades_created),
+        # WHICH OF THOSE THE SOCIETY NOW SUPPLIES ON ITS OWN. See
+        # SocietyMixin.advance_society (society.py): once a taught trade has
+        # been established long enough, with schools actually running, it
+        # stops being only the founder's secret.
+        "trades_society_now_has_on_its_own": sorted(s.trades_endemic),
         "mothballed": sorted(getattr(s, "mothballed", set())),
         "policy": dict(s.policy),
         "in_bondage_for_debt": round(getattr(s, "bondage_years_left", 0.0), 1),
@@ -5539,6 +5566,13 @@ SAVE_FIELDS = (
     # read as every open one being exactly 1.0 unit, which is exactly what it
     # always was, so an old save resumes unchanged.
     "inst_units",
+    # WHEN a taught trade was first taught, and which taught trades this
+    # society has since naturalised on its own - see
+    # SocietyMixin.advance_society (society.py). Missing entirely, as in
+    # every save from before this existed, reads back as "no trade has been
+    # taught long enough yet to naturalise", which is exactly true of a save
+    # from before the mechanism could ever have fired.
+    "trade_introduced_year", "trades_endemic",
 )
 
 
@@ -5616,7 +5650,11 @@ _SET_FIELDS_OF_NODE_IDS = ("done", "granted", "mothballed", "operating",
                            "bountied",
                            "revealed")
 # Checked against the wage table instead, which is what they actually are.
-_SET_FIELDS_OF_TRADE_NAMES = ("trades_created",)
+# trades_endemic holds trade names for the same reason trades_created does
+# (see the comment just above) and needs exactly the same protection: it is
+# a set of TRADE names, not node ids, so it belongs here and not in
+# _SET_FIELDS_OF_NODE_IDS.
+_SET_FIELDS_OF_TRADE_NAMES = ("trades_created", "trades_endemic")
 
 
 def _validate_save(blob, s):

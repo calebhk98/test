@@ -6509,6 +6509,239 @@ check("every trade named in LABOUR_PRODUCTIVITY_SOURCES is a real trade in "
       "the wage table",
       all(_tr in WAGES for _n, _tr, _a in S.Sim.LABOUR_PRODUCTIVITY_SOURCES),
       [_tr for _n, _tr, _a in S.Sim.LABOUR_PRODUCTIVITY_SOURCES if _tr not in WAGES])
+# EDUCATING A WHOLE SOCIETY. The user's own question: "can we make the whole
+# country's literacy rates improve? What if we make 5,000 schools and
+# tractors and food production... can I create a 90%+ literate population?"
+# See SocietyMixin.advance_society (society.py).
+# ONE Sim, reused for every node: _is_agri_mechanisation reads only fixed
+# tree data (see its own docstring), so which Sim answers is irrelevant, and
+# the `_venture_ct` check a little above this one shows what happens to a
+# check's running time when it constructs a fresh Sim per node instead -
+# this file's own 3-second rule (see check() timing) exists precisely so a
+# check does not silently become the slowest thing in the suite this way.
+_s0_agri = sim()
+_agri_nodes = sorted(k for k in NODES if _s0_agri._is_agri_mechanisation(k))
+check("a genuinely farm-labour-saving slice of the tree exists and is a "
+      "modest fraction of it, not the whole `food`-tagged sprawl",
+      35 <= len(_agri_nodes) <= 45, len(_agri_nodes))
+
+s_noschool = sim(capital=2000000.0, manual=False)
+for k in _agri_nodes:
+    s_noschool.done.add(k)
+s_noschool._done_changed()
+_gen0 = s_noschool.civ["literacy_general"]
+for i in range(1, 301):
+    s_noschool.advance_society(s_noschool.year + i)
+check("mechanising every farm technology with no school ever running moves "
+      "literacy not at all - this is something a society is TAUGHT, not a "
+      "free drift",
+      s_noschool.civ["literacy_general"] == _gen0, s_noschool.civ["literacy_general"])
+
+s_school = run_it(sim(capital=2000000.0, manual=False), "school_founded")
+_gen0b = s_school.civ["literacy_general"]
+_ceil_noagri = s_school.literacy_ceiling_general()
+for i in range(1, 401):
+    s_school.advance_society(s_school.year + i)
+check("a single running school, with no mechanised farming, raises "
+      "literacy over generations but plateaus well short of near-universal",
+      _gen0b < s_school.civ["literacy_general"] <= _ceil_noagri + 1e-6
+      and s_school.civ["literacy_general"] < 0.5,
+      (round(s_school.civ["literacy_general"], 3), round(_ceil_noagri, 3)))
+
+s_max = run_it(sim(capital=2000000.0, manual=False),
+               "school_founded", "academy_network")
+s_max.inst_units = {"school_founded": 9.0, "academy_network": 9.0}
+for k in _agri_nodes:
+    s_max.done.add(k)
+s_max._done_changed()
+check("agrarian_slack saturates at 1.0 once enough of the farm-labour-saving "
+      "branch is done, not only once every last node of it is",
+      s_max.agrarian_slack() == 1.0, s_max.agrarian_slack())
+for i in range(1, 701):
+    s_max.advance_society(s_max.year + i)
+check("heavy schooling AND agricultural mechanisation together, over "
+      "centuries, can reach a 90%+ literate general population - the "
+      "user's own question, answered yes",
+      s_max.civ["literacy_general"] >= 0.85, s_max.civ["literacy_general"])
+check("...but never above the model's own ceiling: some fraction of any "
+      "pre-transistor-era population is never a schooling question at all",
+      s_max.civ["literacy_general"] <= 0.90 + 1e-6, s_max.civ["literacy_general"])
+check("the lettered/propertied class closes most of its own gap too, on "
+      "the same schooling, independent of farm mechanisation",
+      s_max.civ["literacy_elite"] >= 0.95, s_max.civ["literacy_elite"])
+
+_few_agri = sim(capital=2000000.0)
+for k in _agri_nodes[:5]:
+    _few_agri.done.add(k)
+_few_agri._done_changed()
+check("a handful of mechanised techniques frees only a little slack, not "
+      "the whole ceiling",
+      0.0 < _few_agri.agrarian_slack() < 0.6, _few_agri.agrarian_slack())
+
+# --- determinism: agrarian_slack and _advance_literacy iterate self.done
+# (a set) and self.civ (a dict) only through counts and direct key reads,
+# never a float sum in an order that depends on PYTHONHASHSEED, but this is
+# proven rather than merely argued, the same way the rest of this suite
+# proves determinism elsewhere.
+def _edu_snapshot(seed_env):
+    p = subprocess.run(
+        [sys.executable, "-c",
+         "import sys; sys.path.insert(0,'.'); import random, simulator as S; "
+         "T,P,N,W,G = S.load(); _l,O,_b = S.load_strategy('recommended', N, T['meta']['goal_node']); "
+         "s = S.Sim(N, O, random.Random(1), events=False, manual=False, "
+         "civ=S.load_civ('rome_100ad'), cfg={'start_capital':5000000.0}); "
+         "s.goal, s.done_year = T['meta']['goal_node'], {}; "
+         "s.done.add('school_founded'); s.operating.add('school_founded'); "
+         "s.done.add('academy_network'); s.operating.add('academy_network'); "
+         "s.inst_units = {'school_founded': 9.0, 'academy_network': 9.0}; "
+         "[s.done.add(k) for k in sorted(N) if s._is_agri_mechanisation(k)]; "
+         "s._done_changed(); "
+         "s.trades_created.add('electrician'); "
+         "[s.advance_society(s.year + i) for i in range(1, 201)]; "
+         "print(repr((round(s.civ['literacy_general'], 12), "
+         "round(s.civ['literacy_elite'], 12), "
+         "'electrician' in s.trades_endemic, "
+         "round(s.employees.get('electrician', 0.0), 12))))"],
+        capture_output=True, text=True, timeout=60, cwd=HERE,
+        env=dict(os.environ, PYTHONHASHSEED=seed_env))
+    return p.stdout.strip()
+_edu_a = _edu_snapshot("0")
+_edu_b = _edu_snapshot("98765")
+check("literacy growth and trade absorption are identical under a "
+      "different PYTHONHASHSEED",
+      _edu_a == _edu_b and _edu_a, (_edu_a, _edu_b))
+
+# =============================================================================
+# A TRADE THE FOUNDER INTRODUCED BECOMES A TRADE THE SOCIETY HAS. The user's
+# sharpest question: "if I invent electricity, you can't say that after 100
+# years I still can't find anyone who can make or research generators." See
+# SocietyMixin._advance_trade_absorption/_grow_endemic_trade (society.py).
+s_noteach = sim(capital=5000000.0, manual=False)
+s_noteach.trades_created.add("electrician")
+for i in range(1, 401):
+    s_noteach.advance_society(s_noteach.year + i)
+check("a taught trade never naturalises without a single school ever "
+      "running, however long the run - this is exactly what 'after 100 "
+      "years I'm still the only electrician' looks like when nothing was "
+      "ever built to change it",
+      "electrician" not in s_noteach.trades_endemic
+      and s_noteach.employees.get("electrician", 0.0) == 0.0,
+      (sorted(s_noteach.trades_endemic), s_noteach.employees.get("electrician")))
+
+s_teach = run_it(sim(capital=5000000.0, manual=False),
+                 "school_founded", "academy_network")
+s_teach.inst_units = {"school_founded": 9.0, "academy_network": 9.0}
+s_teach.trades_created.add("electrician")
+_yrs_needed = s_teach._trade_absorption_years(s_teach._schooling_flow())
+check("heavy schooling brings absorption well under the ~110-year "
+      "unschooled base, and never under the 35-year one-lifetime floor",
+      35.0 <= _yrs_needed < 110.0, _yrs_needed)
+_y0 = s_teach.year
+_not_yet_year = _y0 + max(1, int(_yrs_needed) - 5)
+for yr in range(_y0 + 1, _not_yet_year + 1):
+    s_teach.advance_society(yr)
+check("...and not endemic before that many years have actually passed",
+      "electrician" not in s_teach.trades_endemic, s_teach.year - _y0)
+_after_year = _y0 + int(_yrs_needed) + 10
+for yr in range(_not_yet_year + 1, _after_year + 1):
+    s_teach.advance_society(yr)
+check("a heavily-schooled society naturalises a taught trade within about "
+      "a century of the founder introducing it",
+      "electrician" in s_teach.trades_endemic, s_teach.year - _y0)
+for yr in range(_after_year + 1, _after_year + 101):
+    s_teach.advance_society(yr)
+check("...and goes on to actually produce its own electricians, for free, "
+      "bounded by the exact same literate_capacity() wall a founder hiring "
+      "or teaching them by hand is bounded by",
+      0 < s_teach.employees.get("electrician", 0.0)
+      <= s_teach.literate_capacity("electrician") + 1e-6,
+      (round(s_teach.employees.get("electrician", 0.0), 2),
+       round(s_teach.literate_capacity("electrician"), 2)))
+
+_sess_edu = os.path.join(ROOT, _rel("education.json"))
+S.save_state(s_teach, _sess_edu)
+s_teach2 = S.Sim(NODES, ORDER, random.Random(1), events=False, manual=True,
+                 civ=S.load_civ("rome_100ad"))
+s_teach2.goal, s_teach2.done_year = GOAL, {}
+S.load_state(s_teach2, _sess_edu)
+check("which trades have naturalised, and when each was introduced, "
+      "survive a save and a fresh process loading it back",
+      s_teach2.trades_endemic == s_teach.trades_endemic
+      and s_teach2.trade_introduced_year == s_teach.trade_introduced_year,
+      (sorted(s_teach2.trades_endemic), s_teach2.trade_introduced_year))
+
+_st_edu, _, _ = proto([{"cmd": "state"}])
+check("`state` reports this society's literacy and how far it could go "
+      "from here",
+      "literacy" in _st_edu[0]
+      and 0.0 <= _st_edu[0]["literacy"]["general"] <= 1.0
+      and _st_edu[0]["literacy"]["general_ceiling_now"]
+          >= _st_edu[0]["literacy"]["general"],
+      _st_edu[0].get("literacy"))
+check("...and which taught trades the society has absorbed on its own",
+      "trades_society_now_has_on_its_own" in _st_edu[0],
+      _st_edu[0].get("trades_society_now_has_on_its_own"))
+
+# =============================================================================
+# WHAT YOU BUILT DOES NOT STAY YOURS. "You selling gunpowder to the
+# military, someone else will likely want some of that money. Over a
+# generation or two." See SocietyMixin.diffusion_share/diffusion_index
+# (society.py) - a number exposed for a competitive-pricing pass to spend,
+# deliberately not yet spent in revenue() itself (see that function's own
+# docstring for why, and for the seam left for the agent doing that work).
+_rev_node = next(k for k in sorted(NODES) if NODES[k].get("rev", 0) > 0)
+_no_rev_node = next(k for k in sorted(NODES) if NODES[k].get("rev", 0) <= 0)
+
+s_dif = sim(capital=1000000.0)
+check("a technology nobody has opened for business has nothing to leak",
+      s_dif.diffusion_share(_rev_node) == 0.0, s_dif.diffusion_share(_rev_node))
+s_dif.done.add(_rev_node); s_dif.operating.add(_rev_node)
+s_dif.done_year[_rev_node] = s_dif.year
+check("freshly opened, on the day the doors open, none of its edge has "
+      "leaked yet - the brief's own requirement, echoing goods_market_factor's",
+      s_dif.diffusion_share(_rev_node) == 0.0, s_dif.diffusion_share(_rev_node))
+s_dif.year += int(s_dif.VENTURE_DIFFUSION_HALF_LIFE_YEARS)
+_half = s_dif.diffusion_share(_rev_node)
+check("about half the edge is gone after one half-life",
+      0.45 <= _half <= 0.55, _half)
+s_dif.year += 400
+_far = s_dif.diffusion_share(_rev_node)
+check("...but a first mover never loses all of it, however long the "
+      "venture runs - capped, like every other saturating share in this file",
+      abs(_far - s_dif.VENTURE_DIFFUSION_CAP) < 1e-6, _far)
+
+s_dif2 = sim(capital=1000000.0)
+s_dif2.done.add(_no_rev_node); s_dif2.operating.add(_no_rev_node)
+s_dif2.done_year[_no_rev_node] = s_dif2.cfg["start_year"] - 200
+check("a concern with no revenue at all has no market to leak into, "
+      "however long it has been open",
+      s_dif2.diffusion_share(_no_rev_node) == 0.0,
+      s_dif2.diffusion_share(_no_rev_node))
+
+s_dif3 = sim(capital=1000000.0)
+s_dif3.done.add(_rev_node); s_dif3.operating.add(_rev_node)
+s_dif3.done_year[_rev_node] = s_dif3.year
+s_dif3.year += 20
+_plain = s_dif3.diffusion_share(_rev_node)
+s_dif3.done.add("corpus_dispersed"); s_dif3.operating.add("corpus_dispersed")
+s_dif3._done_changed()
+_published = s_dif3.diffusion_share(_rev_node)
+check("published knowledge (corpus_dispersed) escapes to competitors "
+      "faster than a secret kept in one workshop - reusing the model's own "
+      "existing idea of how knowledge spreads rather than inventing a "
+      "second one",
+      _published > _plain, (_plain, _published))
+
+check("diffusion_index is 0 with nothing operating",
+      sim().diffusion_index() == 0.0, sim().diffusion_index())
+check("...and rises, revenue-weighted, once something is",
+      s_dif3.diffusion_index() > 0.0, s_dif3.diffusion_index())
+
+_st_dif, _, _ = proto([{"cmd": "state"}])
+check("`state` reports how much of what you run has diffused to competitors",
+      "diffusion_index" in _st_dif[0]
+      and 0.0 <= _st_dif[0]["diffusion_index"] <= 1.0,
+      _st_dif[0].get("diffusion_index"))
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
