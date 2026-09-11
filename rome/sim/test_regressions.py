@@ -5153,6 +5153,18 @@ check("with fog off, the fog-safe progress field is absent (path/why "
       _stpg2.get("on_the_road_to_the_goal_so_far") is None, _stpg2)
 
 
+# --- JOB 3c: the society's own values are readable. Event text has always
+# named these fields directly ("changes the society: w_novelty") with no
+# command that would say what one is; two testers asked for this.
+_vals = S._agent_dispatch(sim(), NODES, {"cmd": "values"})
+check("`values` exists and lists this society's own traits as numbers",
+      _vals.get("ok") and len(_vals.get("values") or []) >= 8, _vals)
+check("...and every field event text names is one this command can look up",
+      {"w_novelty", "w_commerce", "w_magic_fear"} <=
+      {r["field"] for r in _vals["values"]},
+      [r["field"] for r in _vals["values"]])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

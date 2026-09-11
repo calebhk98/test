@@ -107,6 +107,65 @@ def _waiting_on(s, nodes, k, st, bill):
     return "your hours"
 
 
+# WHAT EACH TRAIT IN self.w ACTUALLY DOES, in the player's own words. Event
+# text has always named these fields directly - "corpus_dispersed changes
+# the society: w_novelty" (see society.apply_tech_effects) - with no command
+# anywhere that would tell a player what w_novelty IS, let alone what it is
+# now. Two testers asked for exactly this, in separate rounds, in close to
+# the same words. Not civ-specific and not a fog spoiler: these field names
+# and what they do are the same across every civilisation, only the starting
+# numbers differ, so naming what the mechanic does is not a leak of
+# anything the founder in the story would not already understand about their
+# own society.
+_VALUE_MEANINGS = {
+    "adaptation_rate": "how fast this society stops being alarmed by "
+                       "something it has now seen for a while",
+    "bribability": "how far money moves scandal down, and how much of an "
+                   "opposed project's delay a bribe buys off",
+    "patronage_weight": "how much protection a patron actually gives you",
+    "w_commerce": "how much the state cares about work it can tax or trade on",
+    "w_eminence_danger": "how dangerous standing out is here - autocracies "
+                         "run this high",
+    "w_information": "how much the state cares about work that spreads ideas",
+    "w_labour_saving": "negative here means a machine that displaces hands "
+                       "is itself alarming, on top of anything else about it",
+    "w_magic_fear": "how alarmed this society is by anything inexplicable "
+                    "or showy",
+    "w_military": "how much the state cares about work it could use militarily",
+    "w_novelty": "negative here means novelty itself is alarming, whatever "
+                "the work actually is",
+    "w_religious_rigidity": "how threatening anything religion-adjacent looks",
+}
+
+
+def _agent_values(s):
+    """What this society actually believes, as numbers you can look up.
+
+    These move over the course of a run - printing raises literacy, the
+    scientific method lowers the fear of the inexplicable - and the only
+    record of a move has ever been a completion's "changes the society:
+    w_novelty, w_commerce" line, naming fields with no way to see what they
+    are or what they are now. This is that way.
+    """
+    w = dict(getattr(s, "w", {}) or {})
+    rows = [{"field": f, "value": round(w[f], 3), "means": _VALUE_MEANINGS.get(f)}
+            for f in sorted(w) if not f.startswith("_")]
+    return {"ok": True, "values": rows,
+            "note": "a completion's own 'changes the society' line says which "
+                    "of these moved and when."}
+
+
+def render_values(out):
+    L = ["WHAT THIS SOCIETY BELIEVES"]
+    for r in out.get("values") or []:
+        L.append("  %-22s %7s  %s" % (r["field"], _factor(r["value"]),
+                                      r.get("means") or ""))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
 def final_report(s, nodes):
     """The scoreboard, once the run is over.
 
@@ -635,6 +694,9 @@ def _agent_help(s, topic=None):
             "stop <id>": "abandon it, losing what you have spent",
             "step <years>": "let time pass",
             "money": "the whole ledger: what comes in, what goes out",
+            "values": "what this society actually believes, as numbers - the "
+                     "same fields a completion's 'changes the society' line "
+                     "names",
             "log": "your own history - what you did and what followed, most "
                    "recent first; add failures:true, find, since/before, "
                    "order, offset. Never the whole thing in one go",
@@ -2873,6 +2935,7 @@ _RENDERERS = {
     "hazards": render_risk, "ventures": render_ventures,
     "mines": render_mines, "workings": render_mines,
     "stuck": render_stuck, "log": render_log, "history": render_log,
+    "values": render_values,
     "final": render_final,
 }
 
@@ -3107,7 +3170,7 @@ def _flag(v, default=False):
 # advertise it is a visible omission rather than a silent one.
 KNOWN_COMMANDS = (
     "state", "available", "why", "path", "start", "stop", "step",
-    "money", "risk", "labour", "policy", "help", "log",
+    "money", "risk", "values", "labour", "policy", "help", "log",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
@@ -3158,6 +3221,7 @@ TYPED_ALIASES = {
     "workings": "mines", "mine": "mines", "pits": "mines",
     "blocked": "stuck", "help_me": "stuck", "why_stuck": "stuck",
     "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
+    "beliefs": "values", "traits": "values", "society": "values",
 }
 
 
@@ -3274,7 +3338,7 @@ def parse_typed(line):
     words = [w for w in rest if _typed_number(w) is None]
     nums = [_typed_number(w) for w in rest if _typed_number(w) is not None]
 
-    if op in ("money", "risk", "quit"):
+    if op in ("money", "risk", "values", "quit"):
         return {"cmd": op}, None
 
     if op == "state":
@@ -4129,6 +4193,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
         return {"ok": True, "knowledge_risk": kr,
                 "note": "What history is about to do to you, and what you have "
                         "built that blunts it. Every hazard here is fightable."}
+
+    if op == "values":
+        return _agent_values(s)
 
     if op in ("money", "ledger", "accounts"):
         # LESS THE YEAR YOU HAVE ALREADY PAID FOR. `hire` takes a finder's fee
