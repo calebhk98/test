@@ -2,9 +2,18 @@
  "label": "PLANNED (CPM): backward-chained from junction_transistor over its prerequisite closure for rome_100ad",
  "rationale": [
   "Computed backward from the goal by critical-path method (CPM) over its 158-node prerequisite closure, not observed from a lucky run: 33 of those nodes have zero slack (142.2 years of critical-path floor total) and are ordered first; everything else is ordered by how much room it has to wait without delaying the goal.",
+  "8 institution(s) that train people, put ahead of the spine: collegium_licensed, freedman_staff, school_founded, corpus_dispersed, patron_senatorial, patron_imperial, academy_network, endowment_land. Nothing in the goal's prerequisite closure mentions any of them, because a node's prerequisites are other nodes and its demand for trained staff is a demand on the household. The heaviest node on this road wants 25 trained scholars and 200 trained artisans, against a society that starts with under six lettered men available at any price; without the school and the academy the critical path has no start date at all.",
   "12 revenue-positive side branch(es) outside the goal's own requirements, chosen for rome_100ad's own economy by return on capital (net annual revenue per denarius of setup cost) and woven in roughly one per 8 spine nodes so the household has something to run while the spine is being built, rather than waiting on the engine's own reactive fallback to notice it is starving."
  ],
  "order": [
+  "collegium_licensed",
+  "freedman_staff",
+  "school_founded",
+  "corpus_dispersed",
+  "patron_senatorial",
+  "patron_imperial",
+  "academy_network",
+  "endowment_land",
   "identity_cover",
   "patron_local",
   "workshop_first",

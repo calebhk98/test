@@ -331,6 +331,51 @@ class LabourMixin:
                                    "nearest first, so the first is what to work "
                                    "towards."))
 
+    # WHO TRAINS PEOPLE, AND HOW MANY OF THEM.
+    #
+    # (node, scholars, artisans, directors, scales_with_units, must_be_running)
+    #
+    # The first nine are institutions the founder establishes: a school, a
+    # licensed collegium, a patron, an endowment, a network of academies, and
+    # the books that let people teach themselves. The rest are the late game's
+    # own engine - each heavy industrial work trains the workforce that makes
+    # the next one possible.
+    #
+    # scales_with_units: a second school trains a second school's worth of
+    # scholars, so these are linear in institution_units (1.0 for a run that
+    # never founds more than the original unit; the diminishing return lives
+    # in what each further unit COSTS, see institution_unit_cost). The fixed
+    # ones are singular by nature - there is one imperial patron.
+    #
+    # must_be_running: capacity that depends on a going concern disappears
+    # when the concern does. bessemer_openhearth is the exception: a society
+    # that has learned to make steel this way does not forget the men it
+    # trained if one works closes.
+    STAFF_CAPACITY_SOURCES = (
+        ("workshop_first",         0.0,   6.0, 0.0, True,  True),
+        ("freedman_staff",         0.0,  10.0, 0.0, True,  True),
+        ("school_founded",        12.0,  12.0, 2.0, True,  True),
+        ("collegium_licensed",     3.0,   0.0, 0.0, True,  True),
+        ("patron_senatorial",      4.0,   6.0, 0.0, False, True),
+        ("patron_imperial",       14.0,  50.0, 2.0, False, True),
+        ("endowment_land",         6.0,   8.0, 1.0, False, True),
+        ("academy_network",       40.0,  50.0, 6.0, True,  True),
+        ("corpus_dispersed",       8.0,   0.0, 1.0, False, True),
+        ("interchangeable_parts",  4.0,  40.0, 0.0, False, True),
+        ("crucible_steel",         0.0,  12.0, 0.0, False, True),
+        ("blast_furnace",          0.0,  15.0, 0.0, False, True),
+        ("telegraph_electric",     6.0,  25.0, 0.0, False, True),
+        ("steam_high_pressure",    0.0,  45.0, 0.0, False, True),
+        # met_open_hearth_furnace, NOT "bessemer_openhearth", which is the id
+        # this line carried for as long as it existed and which is not in the
+        # tree: self.has() of a node that does not exist is False for ever, so
+        # the sixty-five artisans the late game's biggest single training step
+        # was supposed to hand over were never handed over once.
+        ("met_open_hearth_furnace", 6.0,  65.0, 0.0, False, False),
+        ("railway",                8.0,  95.0, 0.0, False, True),
+        ("power_grid",            45.0, 130.0, 6.0, False, True),
+    )
+
     def staff_capacity(self):
         """How many trained people the institution can support.
 
@@ -351,31 +396,21 @@ class LabourMixin:
         # each further unit is where the diminishing return lives (see
         # ProjectsMixin.institution_unit_cost); this is simply how big the
         # place you paid for actually is.
-        _wf = self.institution_units("workshop_first")
-        _fs = self.institution_units("freedman_staff")
-        _sf = self.institution_units("school_founded")
-        _cl = self.institution_units("collegium_licensed")
-        if self.running("workshop_first"):     ar += 6 * _wf
-        if self.running("freedman_staff"):     ar += 10 * _fs
-        if self.running("school_founded"):     sc += 12 * _sf; ar += 12 * _sf; di += 2.0 * _sf
-        if self.running("collegium_licensed"): sc += 3 * _cl
-        if self.running("patron_senatorial"):  sc += 4;  ar += 6
-        if self.running("patron_imperial"):    sc += 14; ar += 50; di += 2.0
-        if self.running("endowment_land"):     sc += 6;  ar += 8;  di += 1.0
-        if self.running("academy_network"):
-            _an = self.institution_units("academy_network")
-            sc += 40 * _an; ar += 50 * _an; di += 6.0 * _an
-        if self.running("corpus_dispersed"):   sc += 8;  di += 1.0   # people teach themselves from your books
-        # Industrialisation compounds: each heavy node trains the workforce that
-        # makes the next one possible. This is the engine of the late game.
-        if self.running("interchangeable_parts"): ar += 40; sc += 4
-        if self.running("crucible_steel"):     ar += 12
-        if self.running("blast_furnace"):      ar += 15
-        if self.running("telegraph_electric"): ar += 25; sc += 6
-        if self.running("steam_high_pressure"):ar += 45
-        if self.has("bessemer_openhearth"):ar += 65; sc += 6
-        if self.running("railway"):            ar += 95; sc += 8
-        if self.running("power_grid"):         sc += 45; ar += 130; di += 6.0
+        # STAFF_CAPACITY_SOURCES is the whole list, in one place, because the
+        # planner needs to read it too. A plan built from the tech tree alone
+        # cannot see any of this: nothing in the goal's prerequisite closure
+        # mentions a school, so a purely structural plan walked into
+        # quantum_solidstate_theory's demand for eight trained scholars with a
+        # society that tops out at 5.9 of them and sat there until the horizon
+        # ran out. The list had to stop being an if-chain only this function
+        # could read before the planner could be taught to build the school.
+        for key, _sc, _ar, _di, scaled, must_run in self.STAFF_CAPACITY_SOURCES:
+            if not (self.running(key) if must_run else self.has(key)):
+                continue
+            u = self.institution_units(key) if scaled else 1.0
+            sc += _sc * u
+            ar += _ar * u
+            di += _di * u
         # LITERACY BOUNDS THE SCHOLAR CEILING. A school, an academy or an
         # imperial patron can only produce as many scholars as this society
         # has literate, propertied people to draw them from (literacy_factor

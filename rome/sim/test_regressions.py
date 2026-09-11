@@ -6108,10 +6108,38 @@ check("a command's progress is saved even when the reply that describes it "
 # comparison (rome/playtest or the session report) depends on actually
 # holding, not just the one run that happened to be timed.
 _p_s = sim(civ="rome_100ad")
-_p_order, _p_c, _p_extras = PLANNER.backward_plan(NODES, GOAL, _p_s, side_branches=0)
+_p_order, _p_c, _p_extras, _p_staff = PLANNER.backward_plan(NODES, GOAL, _p_s, side_branches=0)
 _p_need = PLANNER.closure(NODES, GOAL)
 check("the planner's closure matches `validate`'s own count for the goal",
-      len(_p_need) == len(_p_order), (len(_p_need), len(_p_order)))
+      set(_p_need) <= set(_p_order) and
+      len(_p_order) == len(_p_need) + len(_p_staff),
+      (len(_p_need), len(_p_order), len(_p_staff)))
+# THE STAFFING LAYER, which is the one thing in a plan that the tech tree
+# cannot supply. A node's prerequisites are other nodes; its demand for
+# "eight trained scholars" is a demand on the household, and no amount of
+# ordering the closure correctly satisfies it. Both civilisations' plans used
+# to run out of horizon with quantum_solidstate_theory as the first blocked
+# node - the cheapest node in the late programme, wanting eight scholars
+# against a society whose lettered pool tops out at 5.9.
+check("the planner founds the institutions that train people, which the "
+      "goal's own prerequisite closure never mentions",
+      _p_staff and all(k not in _p_need for k in _p_staff)
+      and "school_founded" in _p_staff and "academy_network" in _p_staff,
+      _p_staff)
+check("and founds them before anything on the critical path, because a "
+      "critical path you cannot staff has no start date",
+      max(_p_pos_staff := [_p_order.index(k) for k in _p_staff])
+      < min(_p_order.index(k) for k in _p_need),
+      "institutions occupy positions 0-%d" % max(_p_pos_staff))
+check("the staffing list is read from the same table staff_capacity() "
+      "itself iterates, so the two cannot drift apart",
+      all(k in {e[0] for e in S.Sim.STAFF_CAPACITY_SOURCES} for k in _p_staff),
+      sorted(_p_staff))
+check("every node staff_capacity() credits actually exists in the tree - "
+      "bessemer_openhearth did not, so its sixty-five artisans were never "
+      "once handed over",
+      [e[0] for e in S.Sim.STAFF_CAPACITY_SOURCES if e[0] not in NODES] == [],
+      [e[0] for e in S.Sim.STAFF_CAPACITY_SOURCES if e[0] not in NODES])
 _p_zero = [k for k in _p_need if _p_c["slack"][k] <= 1e-6]
 _p_pos = {k: i for i, k in enumerate(_p_order)}
 check("every zero-slack (critical-path) node is ordered before every node "
@@ -6157,9 +6185,9 @@ _syn = {
     "a":    {"pre": [],         "yrs": 1, "ph": 0, "_total_cost": 10},
     "b":    {"pre": [],         "yrs": 1, "ph": 0, "_total_cost": 10},
 }
-_syn_order1, _c1, _e1 = PLANNER.backward_plan(_syn, "goal", _p_s, seed_order=["b", "a"],
+_syn_order1, _c1, _e1, _s1 = PLANNER.backward_plan(_syn, "goal", _p_s, seed_order=["b", "a"],
                                               side_branches=0)
-_syn_order2, _c2, _e2 = PLANNER.backward_plan(_syn, "goal", _p_s, seed_order=["a", "b"],
+_syn_order2, _c2, _e2, _s2 = PLANNER.backward_plan(_syn, "goal", _p_s, seed_order=["a", "b"],
                                               side_branches=0)
 check("(setup) the synthetic pair is a genuine tie: equal slack and equal "
       "earliest start, with no dependency between them",

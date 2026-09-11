@@ -183,6 +183,56 @@ def pick_side_branches(nodes, need, s, limit):
     return [k for _, k in cands[:limit]]
 
 
+def pick_staffing(nodes, need, s):
+    """The institutions that TRAIN PEOPLE, which the goal's own prerequisite
+    closure never mentions and a purely structural plan therefore never
+    builds.
+
+    THIS IS THE HOLE CPM CANNOT SEE. A node's prerequisites are other nodes;
+    its `sch`/`art` requirement - "8 trained scholars, 16 trained artisans" -
+    is a requirement on the HOUSEHOLD, and nothing in the tech tree supplies
+    it. quantum_solidstate_theory is the cheapest node in the whole late
+    programme (3,200 denarii, two prerequisites, both tier 0) and it wants
+    eight trained scholars against a society whose lettered pool tops out at
+    5.9 of them. A plan that orders the closure perfectly and never founds a
+    school arrives there in year forty and is still sitting there six
+    centuries later, which is exactly what both civilisations' plans did:
+    "ran out of horizon", first blocked node quantum_solidstate_theory.
+
+    The list is not repeated here. It is read from
+    `LabourMixin.STAFF_CAPACITY_SOURCES`, the same table `staff_capacity()`
+    itself iterates, so the planner cannot drift out of step with the rule it
+    is planning against - the failure mode that once put a second,
+    hand-maintained copy of a material list in core.py and cost a KeyError in
+    a run forty years deep.
+
+    Ordered by what each one costs, cheapest first: the school that makes the
+    next hundred years possible is worth founding before the endowment that
+    doubles it.
+    """
+    want = []
+    for key, sc, ar, _di, _scaled, _run in Sim.STAFF_CAPACITY_SOURCES:
+        if sc <= 0 and ar <= 0:
+            continue
+        if key not in nodes or key in need or key in s.done or key in s.granted:
+            continue
+        # INSTITUTIONS, NOT INDUSTRIAL WORKS. The same table also credits the
+        # late game's heavy industry - a railway trains ninety-five artisans,
+        # a power grid a hundred and thirty - and that is true, but a railway
+        # is not something you found in year five to staff a laboratory. The
+        # three institutional categories are exactly the nine places whose
+        # whole purpose is to train and hold people; everything else in the
+        # table earns its staff as a side effect of being built when the
+        # programme can afford it, which the CPM ordering already handles.
+        if nodes[key]["cat"] not in ("institution", "social", "information"):
+            continue
+        if nodes[key]["cat"] == "unobtainable" or s._is_foreign_only(key):
+            continue
+        want.append(key)
+    want.sort(key=lambda k: (nodes[k]["_total_cost"], k))
+    return want
+
+
 def interleave(order, extras, every=8):
     """Weave `extras` into `order` at a steady rate rather than dumping them
     all at the front or all at the back.
@@ -241,7 +291,14 @@ def backward_plan(nodes, goal, s, seed_order=None, side_branches=12,
     order = sorted(need, key=key)
     extras = pick_side_branches(nodes, need, s, side_branches) if side_branches else []
     order = interleave(order, extras, side_branch_every)
-    return order, c, extras
+    # STAFF BEFORE SPINE. These go at the front, ahead of even the zero-slack
+    # nodes, because they are what makes the zero-slack nodes startable at
+    # all; a critical path you cannot staff has no start date. They are cheap
+    # against the programme and their own prerequisites are filled in by
+    # load_strategy's topological repair, exactly as the side branches' are.
+    staffing = pick_staffing(nodes, need, s)
+    order = staffing + [k for k in order if k not in set(staffing)]
+    return order, c, extras, staffing
 
 
 def _capture_winner_order(nodes, goal, need, results):
@@ -334,7 +391,7 @@ def refine(nodes, goal, s, order, extras, civ, mc, horizon, seed, rounds,
             # the trial budget on a repeat.
             log("  no trial reached the goal this round; stopping refinement early")
             break
-        cur_order, _c, cur_extras = backward_plan(
+        cur_order, _c, cur_extras, _staff = backward_plan(
             nodes, goal, s, seed_order=seq,
             side_branches=len(extras), side_branch_every=side_branch_every)
     return best_order, best_extras, best_score
@@ -375,8 +432,9 @@ def plan(civ="rome_100ad", goal=None, seed_strategy=None, side_branches=12,
     goal = goal or tree["meta"]["goal_node"]
     s = Sim(nodes, [], random.Random(seed), events=False, civ=load_civ(civ))
     seed_order = load_seed(seed_strategy, nodes)
-    order, c, extras = backward_plan(nodes, goal, s, seed_order, side_branches,
-                                     side_branch_every)
+    order, c, extras, staffing = backward_plan(nodes, goal, s, seed_order,
+                                               side_branches,
+                                               side_branch_every)
     score = None
     if refine_rounds:
         order, extras, score = refine(nodes, goal, s, order, extras, civ, mc,
@@ -398,6 +456,19 @@ def plan(civ="rome_100ad", goal=None, seed_strategy=None, side_branches=12,
             "among nodes the graph itself ranks as equally urgent, never to "
             "override the CPM ordering of two nodes at different slack."
             % (seed_strategy, len(seed_order)))
+    if staffing:
+        peak_sc = max((nodes[k]["sch"] for k in need), default=0.0)
+        peak_ar = max((nodes[k]["art"] for k in need), default=0.0)
+        rationale.append(
+            "%d institution(s) that train people, put ahead of the spine: %s. "
+            "Nothing in the goal's prerequisite closure mentions any of them, "
+            "because a node's prerequisites are other nodes and its demand "
+            "for trained staff is a demand on the household. The heaviest "
+            "node on this road wants %.0f trained scholars and %.0f trained "
+            "artisans, against a society that starts with under six lettered "
+            "men available at any price; without the school and the academy "
+            "the critical path has no start date at all."
+            % (len(staffing), ", ".join(staffing), peak_sc, peak_ar))
     if extras:
         rationale.append(
             "%d revenue-positive side branch(es) outside the goal's own "
