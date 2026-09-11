@@ -93,3 +93,74 @@ arrears; fatal probabilities no longer rounding to 0%; the scandal trend;
 reporting its count; the ledger's double-billed hiring advance; a dead founder
 starting projects; `close <material>` on a half-sunk shaft; the com_ family
 filed under electricity.
+
+## Added 2026-09-11, after the user read the audits
+
+### The two rulebooks, which is the worst thing found so far
+
+`hire scholar 12` is refused with "this society's literacy will not supply
+more than 5.9 scholars in total, ever, at any price". In the same state,
+`auto_hire` reaches 146.4 scholars in forty years, because it writes
+`self.scholars` directly and never goes through `hire()`. The goal and three
+other nodes on the road to it want 25 scholars. So a person at a keyboard is
+hard-walled at about six against a requirement of twenty-five, while the
+automation ignores the wall by a factor of twenty-five. Measured, not inferred.
+
+That single asymmetry is the best explanation anyone has offered for why
+testers called the literacy ceiling "the single thing that decided whether
+their run could be won", and for why hand play and `run --mc` disagree so
+violently that one reaches 122 of 146 nodes while the other reaches none.
+
+Fixing it needs both halves at once, because either alone makes things worse:
+auto_hire must respect the ceiling, AND the ceiling must be able to reach what
+the tree asks for.
+
+### The ceiling is also mislabelled, and barely moves
+
+The refusal states a fact about Rome. It is not one: the binding quantity is
+`hired_hours_cap_base`, 25,000 hours, which is this household's reach into the
+labour market. Rome's literacy_elite is already 0.900, and since it cannot
+exceed 1.0, the entire printing/paper/school/academy/library mechanism can move
+Rome's scholar ceiling from 5.88 to 6.36. An eight per cent gain is not what
+the argument for printing rests on.
+
+### Institutions are flags; mines are quantities
+
+open_mine takes a tonnage and forest_ha is an area, so you can sink many mines
+and buy more coppice. school_founded is a boolean: one school, ever. You cannot
+found five, or five thousand, however rich or literate you become. That
+asymmetry is why the literacy ladder dead-ends, and it is the same shape of
+problem as the capability change ran into.
+
+Missing alongside it: no land constraint on mines or woodland; no depletion as
+the easy seams are worked out; no yield gain from technology. All three were
+asked for and none exists.
+
+### The optimizer should plan, not walk, and should learn from its own wins
+
+`run --mc` is a greedy walk over a fixed order from recommended.json. It does
+not look ahead and does not know the goal; Monte Carlo only averages over event
+randomness. The tree is a DAG with a known goal and a 145-node closure, so
+backward chaining with costs and calendar floors is both better and tractable
+at this size. And when a run DOES reach the goal its build order is discarded -
+caching it as a strategy file is cheap and would have saved most of a day.
+
+These two are worth more than any remaining item above, because every balance
+judgement in this project has been measured with an instrument that plays badly.
+
+### The blind prerequisite audit was biased, and should be re-run
+
+Two flaws, both in how it was briefed. It looked up each node's real
+prerequisites in the middle of its walk, which fed it tree knowledge that
+contaminated every later guess. And it recorded its guesses in conversation
+rather than in a file, so it certainly drifted and forgot some. Re-run it by
+completing the whole imagined breadth-first walk into a file FIRST, and looking
+anything up only at the very end.
+
+### Wire tungsten into the cathode
+
+Real finding, deferred only for cost: in2_electron_source_cathode's own note
+says "Tungsten chosen for high melting point and low evaporation" and mat_tungsten
+is not among its prerequisites. Check the MARGINAL closure before pricing the
+work: much of mat_tungsten's 101-node closure may already be in the goal's 145,
+in which case the true addition is far smaller than the raw number suggests.
