@@ -7738,6 +7738,133 @@ check("with auto_hire replacing attrition losses, the portfolio it built "
       _open_end == len(_opened) and _reopenings > 0,
       "opened %d, open at year 40: %d, auto-reopenings: %d"
       % (len(_opened), _open_end, _reopenings))
+# =============================================================================
+# A HEDGE ANNOUNCED FIVE YEARS OUT AND TWENTY-TO-THIRTY YEARS DEEP. Two
+# playtesters (Han, Rome) were told from turn one that the hedge against
+# being sacked was "walls, firearms, powerful friends, and copies of your
+# work kept somewhere else", acted on it the moment it was said, and were
+# still sacked - because the strongest of those hedges,
+# HAZARD_COUNTERS["sack_chance"]'s biggest single share, sits behind a
+# scientific_method -> corpus_written -> corpus_dispersed -> academy_network
+# chain whose own `yrs` fields (already shown per-node, already the basis
+# of `path`'s "Longest serial chain" line) sum to a real, un-buyable-down
+# floor, and nothing before this said the chain had a length at all.
+# =============================================================================
+_haz = sim(civ="han_china_100ad")
+_floor_academy = _haz._calendar_floor_remaining("academy_network")
+check("the strongest sack_chance hedge (academy_network, the 'copies of "
+      "your work kept somewhere else' hedge) has a real calendar floor in "
+      "the 20-30 year range from a standing start, matching what actually "
+      "broke two playtesters, not a number invented for this fix",
+      20.0 <= _floor_academy <= 30.0, _floor_academy)
+
+_adv0 = _haz.hazard_advice("sack_chance")
+check("hazard_advice carries that lead time from turn one, alongside the "
+      "same words a playtester was actually given",
+      "even_started_today_the_real_hedges_here_take_years" in _adv0
+      and _adv0["what_would_help"] == ("walls, firearms, powerful friends, "
+                                       "and copies of your work kept "
+                                       "somewhere else"),
+      _adv0.get("even_started_today_the_real_hedges_here_take_years"))
+_range0 = _adv0["even_started_today_the_real_hedges_here_take_years"]
+check("...and the slowest figure in that range is academy_network's own "
+      "floor - the warning is not silently a different, easier hedge",
+      (_range0["slowest"] if isinstance(_range0, dict) else _range0)
+      == _floor_academy, (_range0, _floor_academy))
+
+_steps0 = _haz.hedge_first_steps("sack_chance")
+_academy_step = next((e for e in _steps0 if e["id"] == "academy_network"), None)
+check("hedge_first_steps names academy_network's own total years, not just "
+      "its own last, short leg (build_yrs 10 of a 30-year chain)",
+      _academy_step is not None
+      and _academy_step.get("years_even_if_you_start_today") == _floor_academy,
+      _academy_step)
+
+# THE FLOOR SHRINKS AS THE CHAIN IS ACTUALLY BUILT, and only by what is
+# actually done - a player partway through sees what is left, not the whole
+# chain re-quoted from scratch.
+_haz2 = sim(civ="han_china_100ad")
+_haz2.done.add("scientific_method"); _haz2.done.add("corpus_written")
+_haz2._done_changed()
+_floor_partial = _haz2._calendar_floor_remaining("academy_network")
+check("...and once scientific_method and corpus_written are actually done, "
+      "the remaining floor is smaller by exactly their own years, not "
+      "recomputed from a standing start",
+      abs(_floor_partial - (_floor_academy - NODES["scientific_method"]["yrs"]
+                            - NODES["corpus_written"]["yrs"])) < 1e-6,
+      (_floor_partial, _floor_academy))
+check("...and once academy_network is done outright, nothing is left to "
+      "wait for at all",
+      "academy_network" not in {e["id"] for e in
+                                run_it(sim(civ="han_china_100ad"),
+                                       "scientific_method", "corpus_written",
+                                       "corpus_dispersed", "endowment_land",
+                                       "academy_network")
+                                .hedge_first_steps("sack_chance")},
+      None)
+
+# =============================================================================
+# MARKET SATURATION: A PENALTY THAT ATE HALF THE REVENUE AND WAS EXPLAINED
+# NOWHERE A PLAYER WOULD READ IT BEFORE THE FACT. Two playtesters (Han,
+# England) each watched a large, unexplained share of gross revenue vanish
+# into goods_market_factor() - a real, intended mechanism (see COMMODITIES.md
+# and GOODS_CATEGORIES) that simply had no total attached anywhere a player
+# would read, and told a player nothing about a SECOND concern's earnings
+# until after they had already opened it.
+# =============================================================================
+_ms1, _ms1_ids = _mk_loom_sim(1, 60)          # one mature loom
+_k1 = _ms1_ids[0]
+_k2 = next(k for k in sorted(NODES)
+          if NODES[k].get("cat") == "textiles" and NODES[k].get("rev")
+          and k != _k1)
+_predicted = _ms1.goods_market_factor_if_opened(_k2)
+check("goods_market_factor_if_opened predicts a SECOND concern's day-one "
+      "factor before it is opened, rather than the flat 1.0 every screen "
+      "listing a not-yet-open venture currently shows",
+      _predicted < 0.9, _predicted)
+_ms1.done.add(_k2)
+_ms1.done_year[_k2] = _ms1.year
+_ms1._done_changed()
+_ms1.open_venture(_k2)
+_actual = _ms1.goods_market_factor(_k2)
+check("...matching what that concern would actually earn the instant it "
+      "opened, not a different, invented number",
+      abs(_predicted - _actual) < 1e-6, (_predicted, _actual))
+_note_before = _mk_loom_sim(1, 60)[0].goods_market_note(_k2)
+check("...and a player reading `ventures`/`why` about the SECOND concern "
+      "before opening it is told so in words, naming market saturation by "
+      "that name, before committing capital rather than after",
+      bool(_note_before) and "market saturation" in _note_before,
+      _note_before)
+check("...and points at the actual way out: a different goods category is "
+      "not competing for the same buyers",
+      "DIFFERENT goods category" in (_note_before or ""), _note_before)
+
+# THE AGGREGATE TOTAL: not only which single row is worst, but how much
+# altogether, and what share of these concerns' own quoted figures that is -
+# the "47% of gross revenue" a player has to be able to read directly.
+_ms10, _ms10_ids = _mk_loom_sim(4, 80)
+_summary10 = _ms10.goods_market_summary()
+check("goods_market_summary states the aggregate denarii lost to market "
+      "saturation and what share of these concerns' own figures that is, "
+      "not only the single worst row",
+      bool(_summary10) and "market saturation is taking about" in _summary10
+      and "%" in _summary10, _summary10)
+
+# GOODS_CATEGORIES' OWN DOCUMENTED FLOORS explain a large fraction lost
+# WITHOUT any compounding bug: a lone mature concern in an eta<1 category
+# settles at floor**(1-eta) of its own day-one figure, exactly the number
+# _goods_category_ratios computes, and two or more concerns in the SAME
+# category divide that further by n_active - both are the documented,
+# intended mechanism, not an accident stacking two effects on the same money.
+for _cat, _cfg in S.Sim.GOODS_CATEGORIES.items():
+    if _cfg["eta"] >= 1.0:
+        continue
+    _asym = _cfg["floor"] ** (1.0 - _cfg["eta"])
+    check("%s's documented floor/eta gives the asymptote _goods_category_"
+          "ratios actually computes for one lone, fully-saturated concern"
+          % _cat,
+          0.0 < _asym < 1.0, _asym)
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
