@@ -5237,6 +5237,42 @@ check("the founder's age at death survives a save and a fresh process "
       (_st_fd2.get("founder_died_aged"), _step_fd.get("founder_died_aged")))
 
 
+# --- JOB 3f: a bulk start for the late game, so it is not pure typing.
+s_ru = sim()
+_ru = S._agent_dispatch(s_ru, NODES, {"cmd": "rush"})
+check("`rush` starts more than one thing in a single call",
+      _ru.get("count_started", 0) >= 2, _ru.get("count_started"))
+check("...and every id it reports started is actually active now",
+      all(r["id"] in s_ru.active for r in _ru["started"]),
+      [r["id"] for r in _ru["started"]])
+check("...and a limit caps how many it actually begins",
+      S._agent_dispatch(sim(), NODES, {"cmd": "rush", "limit": 1})["count_started"] == 1,
+      None)
+
+# FOG-SAFE: `can_start` already guarantees visibility (see is_visible's own
+# docstring - "anything you could start right now is visible by
+# definition"), so this is belt-and-braces: every id `rush` touches under
+# fog really was one the fogged `available` list would also have shown.
+s_ruf = sim()
+s_ruf.fog = True
+s_ruf.revealed = set()
+_avf = {r["id"] for r in S._agent_available(s_ruf, NODES, {"all": True})["available"]}
+_ruf = S._agent_dispatch(s_ruf, NODES, {"cmd": "rush"})
+check("under fog, everything `rush` starts was already on the visible "
+      "`available` list",
+      all(r["id"] in _avf for r in _ruf["started"]),
+      [r["id"] for r in _ruf["started"] if r["id"] not in _avf])
+
+# EVERY NEW COMMAND MUST BE ADVERTISED. Same check the suite already runs
+# for the rest of KNOWN_COMMANDS, pinned here for the two just added so a
+# future edit that forgets to wire one up fails immediately rather than
+# waiting for the general sweep to notice.
+check("'values' and 'rush' are in the list every unknown-command refusal "
+      "advertises",
+      "values" in S.KNOWN_COMMANDS and "rush" in S.KNOWN_COMMANDS,
+      S.KNOWN_COMMANDS)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

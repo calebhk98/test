@@ -732,6 +732,8 @@ def _agent_help(s, topic=None):
             "why <id>": "everything known about one thing",
             "start <id>": "begin work on something",
             "stop <id>": "abandon it, losing what you have spent",
+            "rush": "start everything you could begin today in one go, "
+                    "highest-leverage first; add limit:N to cap it",
             "step <years>": "let time pass",
             "money": "the whole ledger: what comes in, what goes out",
             "values": "what this society actually believes, as numbers - the "
@@ -2982,6 +2984,20 @@ def render_policy(out):
     return "\n".join(L)
 
 
+def render_rush(out):
+    L = ["RUSH: %d started, %d not" % (out.get("count_started", 0),
+                                       out.get("count_not_started", 0))]
+    for r in out.get("started") or []:
+        L.append("  STARTED %s (%s): %s" % (r.get("id"), _fmt_num(r.get("cost")),
+                                            r.get("name")))
+    for r in out.get("not_started") or []:
+        L.append("  NOT STARTED %s: %s" % (r.get("id"), r.get("why")))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
 _RENDERERS = {
     "policy": render_policy,
     "state": render_state, "step": render_step, "available": render_available,
@@ -2990,7 +3006,7 @@ _RENDERERS = {
     "hazards": render_risk, "ventures": render_ventures,
     "mines": render_mines, "workings": render_mines,
     "stuck": render_stuck, "log": render_log, "history": render_log,
-    "values": render_values,
+    "values": render_values, "rush": render_rush,
     "final": render_final,
 }
 
@@ -3224,7 +3240,7 @@ def _flag(v, default=False):
 # Kept beside the dispatcher so that adding a command and forgetting to
 # advertise it is a visible omission rather than a silent one.
 KNOWN_COMMANDS = (
-    "state", "available", "why", "path", "start", "stop", "step",
+    "state", "available", "why", "path", "start", "stop", "rush", "step",
     "money", "risk", "values", "labour", "policy", "help", "log",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
@@ -3277,6 +3293,7 @@ TYPED_ALIASES = {
     "blocked": "stuck", "help_me": "stuck", "why_stuck": "stuck",
     "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
     "beliefs": "values", "traits": "values", "society": "values",
+    "startall": "rush", "start_all": "rush", "muster": "rush",
 }
 
 
@@ -3395,6 +3412,14 @@ def parse_typed(line):
 
     if op in ("money", "risk", "values", "quit"):
         return {"cmd": op}, None
+
+    if op == "rush":
+        # 'rush' alone starts everything you could begin today; 'rush 5'
+        # caps it at the first five, highest-leverage first.
+        out = {"cmd": "rush"}
+        if nums:
+            out["limit"] = int(nums[0])
+        return out, None
 
     if op == "state":
         # 'state full' and 'state full:true' both mean the same thing, and a
@@ -4067,6 +4092,68 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # kind of thing a player asked `log` to be able to find again.
         s.log.append((s.year, "stopped: %s (%s)" % (nodes[k]["name"], why)))
         return {"ok": True, "stopped": k, "what_happened": why}
+
+    if op == "rush":
+        # BULK START, FOG-SAFE. A break tester in the late game had thirty
+        # or forty things startable at once and nothing to do but type
+        # `start <id>` thirty or forty times - "the late game is pure
+        # typing" - and every one of those ids was already something
+        # `can_start` had already cleared, the same check `available` uses
+        # to decide what to list at all, so acting on all of them at once
+        # hands back nothing a player could not already see for themselves.
+        if ended:
+            return {"ok": False,
+                    "error": "the run has ended (%s); nothing more can be "
+                             "started. 'state' shows where you finished and "
+                             "how far you got" % ended}
+        try:
+            limit = (int(cmd.get("limit")) if cmd.get("limit") is not None
+                     else None)
+        except (TypeError, ValueError):
+            return {"ok": False, "error": "limit must be a whole number"}
+        if limit is not None and limit < 1:
+            return {"ok": False, "error": "limit must be at least 1"}
+        _memo = {}
+        _ok = [k for k in s.order if s.can_start(k, _memo=_memo)]
+        # THE SAME EXCLUSION `available` USES: a node with no cost, no hours
+        # and nothing else standing in its way is not a decision, it is
+        # about to be handed to you for free whatever you type.
+        _ok = [k for k in _ok
+               if not (nodes[k]["tier"] == 0 and nodes[k]["ph"] == 0
+                       and nodes[k]["_total_cost"] <= 1
+                       and not s._is_foreign_institution(k))]
+        # HIGHEST-LEVERAGE FIRST, INTERNALLY ONLY. This never shows a player
+        # a downstream_count - that is a fog spoiler, see _node_explain's own
+        # comment on it - it only uses the number to decide which of several
+        # things your money cannot all cover gets it first, the same number
+        # `available`'s own "most_rests_on_these" digest already uses to
+        # decide what to show you. Ranking by it here leaks nothing, because
+        # the ranking itself is never printed, only which ids got started.
+        _ok.sort(key=lambda k: (-downstream_count(nodes, k), s.project_cost(k)))
+        started, not_started = [], []
+        for k in _ok:
+            if limit is not None and len(started) >= limit:
+                break
+            ok2, why = s.start_project(k)
+            if ok2:
+                n = nodes[k]
+                # SAY SO, for the same reason the single-id `start` does: a
+                # player reading `log` back should see every begun-work as a
+                # choice they made, not a completion that appeared unasked.
+                if s.active.get(k, {}).get("spent", 0.0) <= 0.5:
+                    s.log.append((s.year, "started: %s" % n["name"]))
+                started.append({"id": k, "name": n["name"],
+                                "cost": round(s.active.get(k, {}).get(
+                                    "cost_left", s.project_cost(k)), 1)})
+            else:
+                not_started.append({"id": k, "why": why})
+        return {"ok": True, "started": started, "count_started": len(started),
+                "not_started": not_started,
+                "count_not_started": len(not_started),
+                "note": "tried everything you could begin today, "
+                        "highest-leverage first, until your credit ran out "
+                        "or the list did. 'why <id>' on anything in "
+                        "not_started says exactly why it stopped there."}
 
     if op == "bounty":
         if ended:
