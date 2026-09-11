@@ -4198,7 +4198,16 @@
    "pre": [
     "ch2_prod_urea"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "ammonia_supply",
+     "options": {
+      "mat_ammonia": 1.0,
+      "chm_haber_bosch": 1.0,
+      "chm_solvay_process": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.12,
    "sch": 0.0,
@@ -5695,7 +5704,14 @@
     "cap_tol_100um",
     "mat_bulk_steel"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "aluminium_supply",
+     "options": {
+      "mat_aluminium": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -7018,7 +7034,23 @@
     "analytical_chemistry",
     "sulfuric_retort"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    },
+    {
+     "group": "zinc_metal_supply",
+     "options": {
+      "mat_zinc": 1.0,
+      "zinc_metal": 1.0,
+      "zinc_industry_scale": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.0,
    "sch": 0.0,
@@ -12920,7 +12952,17 @@
     "cap_heat_1100",
     "charcoal_industrial"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "steam_supply",
+     "options": {
+      "steam_atmospheric": 1.0,
+      "steam_watt": 1.0,
+      "cap_power_steam": 1.0,
+      "steam_high_pressure": 1.0
+     }
+    }
+   ],
    "rev": 2500.0,
    "risk": 0.05,
    "sch": 0.0,
@@ -13491,7 +13533,14 @@
     "crucible_steel",
     "thermodynamics_theory"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.1,
    "sch": 1.0,
@@ -13799,7 +13848,14 @@
     "lead_chamber",
     "sulfuric_retort"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 8000.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -15035,7 +15091,14 @@
     "chm_catalyst_concept",
     "nitric_acid"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 10000.0,
    "risk": 0.1,
    "sch": 0.0,
@@ -15830,7 +15893,14 @@
     "chm_deacon_process",
     "hydrochloric_acid"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "manganese_supply",
+     "options": {
+      "mat_manganese": 1.0
+     }
+    }
+   ],
    "rev": 2000.0,
    "risk": 0.1,
    "sch": 0.0,
@@ -22820,7 +22890,15 @@
     "com_photolithography",
     "quantum_solidstate_theory"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.25,
    "sch": 2.0,
@@ -23606,7 +23684,15 @@
     "cap_power_electric",
     "cap_tol_1um"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
@@ -23738,7 +23824,14 @@
     "electromagnet",
     "vacuum_tube"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -24751,7 +24844,14 @@
     "cap_tol_100um",
     "com_vacuum_tube_tetrode"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.09,
    "sch": 0.0,
@@ -24796,7 +24896,14 @@
    "pre": [
     "vacuum_tube"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
@@ -25342,7 +25449,14 @@
     "em_theory",
     "vacuum_pumps"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 3000.0,
    "risk": 0.3,
    "sch": 10.0,
@@ -25817,6 +25931,12 @@
      "options": {
       "mat_copper": 1.0
      }
+    },
+    {
+     "group": "molybdenum_supply",
+     "options": {
+      "mt2_molybdenum_extraction": 1.0
+     }
     }
    ],
    "rev": 171.7,
@@ -26084,6 +26204,12 @@
       "mat_aluminium": 0.85,
       "mat_brass": 1.0,
       "mat_copper": 0.95
+     }
+    },
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
      }
     }
    ],
@@ -29031,6 +29157,12 @@
      "options": {
       "mat_glass": 1.0
      }
+    },
+    {
+     "group": "selenium_supply",
+     "options": {
+      "pwr_selenium_metal": 1.0
+     }
     }
    ],
    "rev": 600.0,
@@ -29203,6 +29335,12 @@
      "group": "mechanism",
      "options": {
       "boring_mill": 1.0
+     }
+    },
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
      }
     }
    ],
@@ -29706,6 +29844,12 @@
      "options": {
       "mat_brass": 0.95,
       "mat_copper": 1.0
+     }
+    },
+    {
+     "group": "selenium_supply",
+     "options": {
+      "pwr_selenium_metal": 1.0
      }
     }
    ],
@@ -31705,7 +31849,14 @@
     "electroplating",
     "power_grid"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "cryolite_supply",
+     "options": {
+      "mat_cryolite": 1.0
+     }
+    }
+   ],
    "rev": 55000.0,
    "risk": 0.35,
    "sch": 8.0,
@@ -31796,7 +31947,15 @@
     "analytical_chemistry",
     "daniell_cell"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 5500.0,
    "risk": 0.2,
    "sch": 3.0,
@@ -33949,7 +34108,14 @@
    "pre": [
     "en_transmission_line"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
+     }
+    }
+   ],
    "rev": 900.0,
    "risk": 0.12,
    "sch": 0.0,
@@ -34886,7 +35052,14 @@
     "cap_heat_2000",
     "cap_tol_10um"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
+     }
+    }
+   ],
    "rev": 751.5,
    "risk": 0.25,
    "sch": 0.0,
@@ -35398,7 +35571,14 @@
     "cap_tol_1mm",
     "pwr_high_voltage_transmission"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
+     }
+    }
+   ],
    "rev": 1600.0,
    "risk": 0.13,
    "sch": 0.0,
@@ -35815,7 +35995,14 @@
     "cap_tol_100um",
     "en_alternator"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
+     }
+    }
+   ],
    "rev": 1500.0,
    "risk": 0.14,
    "sch": 0.0,
@@ -41273,7 +41460,15 @@
     "cap_vac_1torr",
     "fud_sugar_cane_cultivation"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 400.0,
    "risk": 0.2,
    "sch": 1.0,
@@ -43119,7 +43314,15 @@
     "fud_bone_meal_fertilizer",
     "sulfuric_retort"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
@@ -43653,7 +43856,14 @@
     "fused_quartz",
     "gecl4_purification"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "pure_graphite_supply",
+     "options": {
+      "mat_graphite_pure": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.35,
    "sch": 18.0,
@@ -44099,7 +44309,14 @@
     "cap_vac_1torr",
     "fused_quartz"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
+     }
+    }
+   ],
    "rev": 500.0,
    "risk": 0.18,
    "sch": 0.0,
@@ -44217,7 +44434,14 @@
     "el2_induction_heating_inductor_coupling",
     "glass_clear"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "phosphorus_supply",
+     "options": {
+      "chm_phosphorus_extraction": 1.0
+     }
+    }
+   ],
    "rev": 350.0,
    "risk": 0.14,
    "sch": 0.0,
@@ -44258,7 +44482,20 @@
     "cap_tol_100um",
     "glass_clear"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    },
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 400.0,
    "risk": 0.16,
    "sch": 0.0,
@@ -47339,7 +47576,15 @@
    "pre": [
     "sulfuric_retort"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 1400.0,
    "risk": 0.25,
    "sch": 2.0,
@@ -47382,7 +47627,15 @@
     "hydrochloric_acid",
     "lead_metallurgy"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 500.0,
    "risk": 0.35,
    "sch": 3.0,
@@ -47966,7 +48219,14 @@
     "cap_vac_1e3",
     "electromagnet"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 1800.0,
    "risk": 0.18,
    "sch": 4.0,
@@ -49729,7 +49989,16 @@
     "if_halftone_screen",
     "photography"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "zinc_metal_supply",
+     "options": {
+      "mat_zinc": 1.0,
+      "zinc_metal": 1.0,
+      "zinc_industry_scale": 1.0
+     }
+    }
+   ],
    "rev": 1000.0,
    "risk": 0.15,
    "sch": 3.0,
@@ -55923,6 +56192,12 @@
       "coal_coke": 0.6,
       "mat_petroleum_refined": 1.0
      }
+    },
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
     }
    ],
    "rev": 1500.0,
@@ -56587,7 +56862,14 @@
     "cap_heat_1100",
     "cap_tol_1mm"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 800.0,
    "risk": 0.22,
    "sch": 1.0,
@@ -57709,7 +57991,14 @@
     "mt2_basic_converter",
     "mt2_silica_brick_refractory"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "manganese_supply",
+     "options": {
+      "mat_manganese": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.25,
    "sch": 4.0,
@@ -61641,7 +61930,14 @@
    "pre": [
     "md2_xray_plate"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -64823,7 +65119,14 @@
     "discharge_xray",
     "vacuum_pumps"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -65709,7 +66012,15 @@
    "pre": [
     "analytical_chemistry"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 1000.0,
    "risk": 0.05,
    "sch": 1.0,
@@ -66308,7 +66619,15 @@
     "mercury_supply",
     "mat_natural_rubber"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "rubber_tubing_supply",
+     "options": {
+      "mat_rubber_coagulated": 1.0,
+      "mat_synthetic_rubber": 1.0
+     }
+    }
+   ],
    "rev": 200.0,
    "risk": 0.05,
    "sch": 0.0,
@@ -66821,7 +67140,14 @@
     "cap_heat_1600",
     "cap_heat_3000"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "calcium_carbide_supply",
+     "options": {
+      "chm_alkali_waste": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.18,
    "sch": 1.0,
@@ -67523,7 +67849,15 @@
     "electroplating",
     "mat_copper"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 300.0,
    "risk": 0.1,
    "sch": 1.0,
@@ -67747,7 +68081,15 @@
     "cap_heat_0700",
     "zinc_metal"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.12,
    "sch": 1.0,
@@ -67832,7 +68174,26 @@
     "atomic_theory",
     "met_phase_diagram_knowledge"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "chromium_supply",
+     "options": {
+      "mat_chromium": 1.0
+     }
+    },
+    {
+     "group": "manganese_supply",
+     "options": {
+      "mat_manganese": 1.0
+     }
+    },
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.18,
    "sch": 1.0,
@@ -68084,7 +68445,15 @@
     "cap_tol_100um",
     "microscope_compound"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.12,
    "sch": 1.0,
@@ -68383,7 +68752,20 @@
     "cap_tol_1mm",
     "mt2_sintering_process"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    },
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
@@ -68893,7 +69275,15 @@
     "electroplating",
     "mat_tin"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.11,
    "sch": 1.0,
@@ -69292,7 +69682,15 @@
     "electrolysis_industrial",
     "mat_aluminium"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -71377,7 +71775,14 @@
     "cap_heat_1600",
     "mfg_mushet_steel"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.35,
    "sch": 0.0,
@@ -71898,7 +72303,14 @@
     "crucible_steel",
     "mfg_carbon_steel_tool"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.25,
    "sch": 0.0,
@@ -73519,7 +73931,14 @@
     "mat_chromium",
     "mfg_mushet_steel"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 0.0,
@@ -75393,7 +75812,14 @@
    "pre": [
     "mil_bomb_sight"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "aluminium_supply",
+     "options": {
+      "mat_aluminium": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.06,
    "sch": 0.0,
@@ -76098,7 +76524,14 @@
    "pre": [
     "mil_bomb_sight"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "aluminium_supply",
+     "options": {
+      "mat_aluminium": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.07,
    "sch": 0.0,
@@ -76265,7 +76698,14 @@
    "pre": [
     "mil_machine_gun_recoil"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "aluminium_supply",
+     "options": {
+      "mat_aluminium": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.05,
    "sch": 0.0,
@@ -80744,7 +81184,14 @@
    "pre": [
     "mat_nickel"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.22,
    "sch": 0.0,
@@ -81314,7 +81761,14 @@
    "pre": [
     "cap_heat_1100"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "celluloid_supply",
+     "options": {
+      "mat_celluloid": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.16,
    "sch": 0.0,
@@ -84146,7 +84600,15 @@
     "nitre_beds",
     "sulfuric_retort"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 2200.0,
    "risk": 0.3,
    "sch": 2.0,
@@ -84402,7 +84864,14 @@
     "cap_measure_elec",
     "cap_tol_10um"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 500.0,
    "risk": 0.15,
    "sch": 1.0,
@@ -84781,7 +85250,14 @@
     "discharge_xray",
     "electromagnet"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "tungsten_supply",
+     "options": {
+      "mat_tungsten": 1.0
+     }
+    }
+   ],
    "rev": 800.0,
    "risk": 0.25,
    "sch": 2.0,
@@ -87811,7 +88287,14 @@
     "cap_tol_10um",
     "precision_three_plate"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "chromium_supply",
+     "options": {
+      "mat_chromium": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 1.0,
@@ -88030,7 +88513,14 @@
     "cap_tol_10um",
     "precision_three_plate"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "alumina_supply",
+     "options": {
+      "ch2_process_bayer": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.08,
    "sch": 0.0,
@@ -88804,7 +89294,14 @@
     "scientific_method",
     "units_standards"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 3.0,
@@ -91884,7 +92381,21 @@
     "cap_gas_o2h2",
     "cap_measure_elec"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    },
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.25,
    "sch": 1.0,
@@ -92051,7 +92562,14 @@
     "cap_tol_100um",
     "motor_transformer_ac"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "porcelain_supply",
+     "options": {
+      "mat_porcelain": 1.0
+     }
+    }
+   ],
    "rev": 1000.0,
    "risk": 0.12,
    "sch": 0.0,
@@ -92662,7 +93180,15 @@
     "cap_heat_1100",
     "copper_refining"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 200.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -98799,7 +99325,14 @@
     "sea_electromagnetic_wave_theory",
     "vacuum_tube"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "quartz_tube_supply",
+     "options": {
+      "fused_quartz": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 1.0,
@@ -99252,7 +99785,14 @@
     "hydrofluoric_acid",
     "junction_transistor"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "pure_graphite_supply",
+     "options": {
+      "mat_graphite_pure": 1.0
+     }
+    }
+   ],
    "rev": 40000.0,
    "risk": 0.45,
    "sch": 30.0,
@@ -99302,7 +99842,14 @@
     "semiconductor_metrology",
     "zone_refining"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "pure_graphite_supply",
+     "options": {
+      "mat_graphite_pure": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.45,
    "sch": 25.0,
@@ -100014,7 +100561,15 @@
     "mat_chlorine",
     "tex_field_bleaching"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    }
+   ],
    "rev": 800.0,
    "risk": 0.14,
    "sch": 1.0,
@@ -100985,7 +101540,21 @@
     "cap_heat_1300",
     "mat_charcoal"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "sulfuric_acid_supply",
+     "options": {
+      "lead_chamber": 1.0,
+      "chm_contact_sulfuric": 1.0
+     }
+    },
+    {
+     "group": "wood_pulp_supply",
+     "options": {
+      "prn_wood_pulp": 1.0
+     }
+    }
+   ],
    "rev": 2200.0,
    "risk": 0.16,
    "sch": 2.0,
@@ -105126,7 +105695,14 @@
     "electromagnet",
     "lnd_otto_cycle_four_stroke"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "platinum_supply",
+     "options": {
+      "mat_platinum_bulk": 1.0
+     }
+    }
+   ],
    "rev": 350.0,
    "risk": 0.1,
    "sch": 0.0,
@@ -111453,7 +112029,15 @@
    "pre": [
     "tx2_printing_block"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "bleach_supply",
+     "options": {
+      "mat_chlorine": 1.0,
+      "chm_bleaching_powder": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -113427,7 +114011,14 @@
     "cap_measure_temp",
     "ch2_polymer_polyester"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "petroleum_refined_supply",
+     "options": {
+      "mat_petroleum_refined": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.15,
    "sch": 0.0,
@@ -115686,7 +116277,14 @@
     "gp_glass_metal_seal",
     "in2_electron_source_cathode"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "nickel_supply",
+     "options": {
+      "mat_nickel": 1.0
+     }
+    }
+   ],
    "rev": 12000.0,
    "risk": 0.4,
    "sch": 14.0,
@@ -116017,7 +116615,14 @@
     "motor_transformer_ac",
     "semiconductor_metrology"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "pure_graphite_supply",
+     "options": {
+      "mat_graphite_pure": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.45,
    "sch": 25.0,
