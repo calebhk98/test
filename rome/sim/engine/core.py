@@ -846,7 +846,21 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # currency debasement and war damage now come from the civilization's
         # own hazard list, not from Rome's dates baked into the engine
         if self.output_factor < 1.0:
-            self.output_factor = min(1.0, self.output_factor + 0.006)
+            # A STATE THAT CAN DEFEND ITSELF REBUILDS FASTER. This used to be
+            # a flat rate no matter what the founder had done about the war -
+            # a civilization that built the whole military branch and one
+            # that ignored it recovered from the SAME war at the SAME speed,
+            # which is the finding that started this change: measured against
+            # a founder with none of the tree's 111+ military nodes, nothing
+            # about the state's fortunes moved at all. military_leverage() is
+            # the same count update_protection() and
+            # hazard_relief("output_factor") (society.py) already read off
+            # self.done; at full leverage the recovery rate doubles, so an
+            # armed empire is back to normal trade in roughly half the years
+            # an unarmed one takes, not instantly - the war still happened
+            # and the years it cost are not given back.
+            self.output_factor = min(1.0, self.output_factor
+                                     + 0.006 * (1.0 + self.military_leverage()))
         # Population and the wage premium it drives recover/build in on their
         # own clock too, and must run before this year's shocks get a chance
         # to add a fresh deficit - see _demographic_recovery for why.

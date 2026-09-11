@@ -162,5 +162,20 @@
  "md2_vaccine_cholera": {
   "w_magic_fear": -0.06,
   "w_novelty": 0.05
+ },
+ "mil_general_staff": {
+  "state_capacity": 0.03,
+  "_why": "A standing body that plans war as a profession rather than an amateur's occasional business is exactly the kind of organisational capacity railway (0.07) and semaphore_telegraph (0.05) are already scored for, at a smaller weight because a staff without the railway or the wire to move on is still mostly paperwork."
+ },
+ "mil_conscription_reserve": {
+  "state_capacity": 0.04,
+  "_why": "Registering, calling up and accounting for a fraction of the whole adult population, on a schedule, is a bureaucratic reach no earlier institution in this tree needed - the same reach a census or a land survey needs, applied to people instead of fields."
+ },
+ "mil_logistics_discipline": {
+  "state_capacity": 0.02
+ },
+ "mil_arsenal_manufacturing": {
+  "state_capacity": 0.02,
+  "_why": "A state that manufactures its own arms to a standard, rather than buying them piecemeal from smiths, is administering an industry - the same category of capacity fin_double_entry and arithmetic_positional are scored for, applied to gunmaking instead of the treasury."
  }
 }

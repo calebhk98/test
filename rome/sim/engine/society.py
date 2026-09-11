@@ -49,6 +49,37 @@ class SocietyMixin:
             a *= 0.75
         return a
 
+    def military_leverage(self):
+        """How much of the military branch this founder can put in a patron's
+        hands: the count that "if I woke up in Rome and made cannon" is
+        actually asking about.
+
+        Measured against a founder with none of the 111+ military, weapon and
+        fortification nodes, the ONLY effect any of them had anywhere in the
+        engine was `weapon_democratising` raising suspicion (see alarm_of) -
+        arming a state you already live in was a pure liability. This is the
+        other half: a founder who hands a patron the flintlock or the bastion
+        fort is worth more to him, which is what update_protection() and
+        hazard_relief("output_factor") below both spend it on.
+
+        Sqrt-scaled and capped at 1.0, the same shape standing_floor() uses
+        for earned work: the FIRST working gun matters enormously to a patron
+        shopping for an edge over his rivals, the fortieth barely adds
+        anything he does not already have. Counts DONE, not merely operating
+        - see `has` vs `running` in projects.py - because a fortification
+        design or a powder formula is something a patron's arsenal keeps
+        knowing whether or not you personally still run a workshop on it.
+        Reaches 1.0 at 25 nodes, a little over a fifth of the tree's military
+        branch, so this cannot be maxed by a token gesture, and cannot be
+        maxed by "build everything military" either - both would make the
+        branch a strategy unto itself, which the other ~2,700 nodes on the
+        way to a transistor should not have to compete with.
+        """
+        n = sum(1 for k in self.done if "military" in self.nodes[k].get("traits", ()))
+        if n <= 0:
+            return 0.0
+        return min(1.0, math.sqrt(n / 25.0))
+
     def update_protection(self):
         """Standing, office and MONEY all protect. The old model had money only
         endangering you, which is backwards: wealth buys advocates, priesthoods,
@@ -58,6 +89,19 @@ class SocietyMixin:
         if self.running("patron_local"):        p += 0.18 * w["patronage_weight"]
         if self.running("patron_senatorial"):   p += 0.26 * w["patronage_weight"]
         if self.running("patron_imperial"):     p += 0.32 * w["patronage_weight"]
+        # AN ARMOURER IS PROTECTED DIFFERENTLY FROM A PHILOSOPHER, AND ONLY
+        # WHEN SOMEBODY WANTS WHAT HE MAKES. Sejanus's people were safe until
+        # they no longer had anything Tiberius needed, and the same logic
+        # runs the other way: a patron who can call on your powder mill or
+        # your bastion design has a reason to keep you out of court that
+        # identity_cover and citizenship do not supply on their own. Gated on
+        # having a patron at all - knowing how to cast a cannon with nobody
+        # to sell it to is not leverage, it is just a dangerous thing to be
+        # caught doing, which is exactly what alarm_of's weapon_democratising
+        # term already charges you for and this does NOT cancel.
+        if (self.running("patron_local") or self.running("patron_senatorial")
+                or self.running("patron_imperial")):
+            p += 0.09 * w["patronage_weight"] * self.military_leverage()
         # IT SAYS "REDUCES ALL FUTURE SUSPICION" AND IT DID NOTHING OF THE KIND.
         # identity_cover's entire implementation was +1.0 to the reputation
         # floor and +400 to the credit limit, and the suspicion it promised to
@@ -510,7 +554,43 @@ class SocietyMixin:
             if got:
                 mult *= (1.0 - share)
                 why.append(label)
+        if kind == "output_factor":
+            m, reason = self._military_war_relief()
+            if reason:
+                mult *= m
+                why.append(reason)
         return mult, why
+
+    def _military_war_relief(self):
+        """A state that can fight loses less of its economy when it has to.
+
+        Every output_factor hazard in every civilization file - Rome's third
+        century crisis and Gothic settlement, Han's rebellions and
+        fragmentations, England's civil wars, the Mexica wars of
+        independence and revolution - IS a war, a rebellion, or the
+        administrative aftermath of one; none of them is a plague or a
+        famine, which hit staff_loss and real_erosion instead (see the
+        `years` these hazards share with `sack_chance` and `values` in the
+        civilization files). So this is not gated per-hazard the way
+        HAZARD_COUNTERS entries are: it is one diminishing term, on the same
+        military_leverage() count update_protection() reads, applied
+        wherever `output_factor` is. Deliberately NOT applied to staff_loss:
+        a founder with cannon should not cure the Antonine plague, and most
+        staff_loss hazards in the civilization files are exactly that -
+        disease and famine - with no sack_chance or output_factor alongside
+        them to say otherwise.
+
+        Capped at 0.30, matching endowment_land's own share in
+        HAZARD_COUNTERS["output_factor"] rather than exceeding it: land of
+        your own and an army of your own are comparable hedges, and neither
+        should dwarf the other.
+        """
+        lev = self.military_leverage()
+        if lev <= 0.0:
+            return 1.0, None
+        share = 0.30 * lev
+        return (1.0 - share), ("an army and treasury the state can call on "
+                               "(military strength %d%%)" % round(lev * 100))
 
     def hazard_advice(self, kind):
         """What KIND of thing would help, without naming what you cannot see.
@@ -522,8 +602,8 @@ class SocietyMixin:
         words = {"staff_loss": "clean water, quarantine, and eventually inoculation",
                  "sack_chance": "walls, firearms, powerful friends, and copies of "
                                 "your work kept somewhere else",
-                 "output_factor": "land and power of your own, and not depending on "
-                                  "trade that a war can cut",
+                 "output_factor": "land and power of your own, not depending on trade "
+                                  "a war can cut, and a state that can fight back",
                  "real_erosion": "metal you dug yourself, land, and a way to prove "
                                  "what a coin contains"}
         mult, why = self.hazard_relief(kind)
@@ -777,7 +857,7 @@ class SocietyMixin:
                                    "- build it again first" % ", ".join(_corpus)
                                    if _corpus else "")))
             if "output_factor" in h:
-                relief, _why = self.hazard_relief("output_factor")
+                relief, why = self.hazard_relief("output_factor")
                 # relief moves the floor back toward 1.0 rather than scaling the
                 # damage: self-sufficiency means less of your income was ever
                 # coming through the thing the war cut.
@@ -796,8 +876,18 @@ class SocietyMixin:
                 if before > self.output_factor and yr - said.get(key, -99) >= 20:
                     said[key] = yr
                     self._said_output = said
-                    self.log.append((yr, "%s: trade and output fall to %d%% of normal"
-                                     % (key, self.output_factor * 100)))
+                    # SAY WHAT HELD. A founder who armed the state before the
+                    # war arrived measured protection 0.019 to 0.019 against
+                    # one who never touched the military branch, and every
+                    # other hazard message in this file already names its
+                    # hedges - staff_loss says "would have been"; sack_chance
+                    # says "comes to nothing (%s)". This one said nothing,
+                    # which is indistinguishable from doing nothing.
+                    self.log.append((yr, "%s: trade and output fall to %d%% of "
+                                         "normal%s"
+                                     % (key, self.output_factor * 100,
+                                        " (your own strength holds off worse: %s)"
+                                        % "; ".join(why[:3]) if why else "")))
             if "real_erosion" in h:
                 relief, why = self.hazard_relief("real_erosion")
                 self.money_real *= (1 - h["real_erosion"])

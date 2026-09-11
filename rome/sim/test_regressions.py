@@ -207,6 +207,16 @@ s.apply_tech_effects("scientific_method")
 check("a technology changes the society that built it",
       s.w["w_magic_fear"] < f0, "%.2f -> %.2f" % (f0, s.w["w_magic_fear"]))
 
+# --- the user: an organised army is a more capable state, not only a safer
+# founder - general_staff is the same state_capacity field railway and
+# semaphore_telegraph already use for "the state gets more capable of acting"
+s = sim()
+sc0 = s.civ["state_capacity"]
+s.apply_tech_effects("mil_general_staff")
+check("standing a general staff up raises what the state can organise and "
+      "compel, the same as railway or the telegraph does",
+      s.civ["state_capacity"] > sc0, "%.3f -> %.3f" % (sc0, s.civ["state_capacity"]))
+
 # --- Norse WEIRD: abandonment shed a persona and softlocked the run
 s = sim(civ="norse_900ad", capital=1000000.0)
 s.start_project("identity_cover")
@@ -385,6 +395,119 @@ s2 = sim()
 s2.mine_capacity["gold"] = 1.0
 gold, _ = s2.hazard_relief("real_erosion")
 check("your own gold mine blunts a debasement", gold < 0.5, "%.2f" % gold)
+
+# --- the user: "if I woke up in Rome and made cannons, that should massively
+# affect a lot of things, and shouldn't that make the country bigger / win
+# more wars?" Measured before this round of changes: a founder who built
+# every one of the tree's 111+ military, weapon and fortification nodes
+# differed from one who built none in exactly one respect anywhere in the
+# engine - weapon_democratising raising suspicion (see alarm_of). Nothing
+# protected the founder, nothing changed what a war cost the state, nothing
+# recovered faster. These checks pin the fix and the boundary around it: the
+# branch now matters, and does not matter so much that it swallows the tree.
+_MIL_NODES = sorted(k for k in NODES if "military" in (NODES[k].get("traits") or ()))
+check("the tree still has a real military branch to test against",
+      len(_MIL_NODES) >= 100, len(_MIL_NODES))
+
+s = sim()
+lev0 = s.military_leverage()
+s.done.add(_MIL_NODES[0])
+lev1 = s.military_leverage()
+for k in _MIL_NODES[:25]:
+    s.done.add(k)
+lev25 = s.military_leverage()
+for k in _MIL_NODES:
+    s.done.add(k)
+levall = s.military_leverage()
+check("military strength is zero for a founder who has built none of the "
+      "branch, rises with the first node, and saturates well short of the "
+      "whole branch (so the branch cannot be a strategy unto itself)",
+      lev0 == 0.0 and 0.0 < lev1 < lev25 == 1.0 and levall == 1.0,
+      (lev0, lev1, lev25, levall))
+
+s_bare = sim()
+s_bare.update_protection()
+s_mil_nopatron = sim()
+for k in _MIL_NODES:
+    s_mil_nopatron.done.add(k)
+s_mil_nopatron.update_protection()
+check("a cannon foundry with nobody to sell to protects the founder not at "
+      "all - the leverage is with a patron, not the hardware itself",
+      abs(s_mil_nopatron.protection - s_bare.protection) < 1e-9,
+      (s_bare.protection, s_mil_nopatron.protection))
+
+s_patron = sim()
+run_it(s_patron, "patron_imperial")
+s_patron.update_protection()
+s_patron_mil = sim()
+run_it(s_patron_mil, "patron_imperial")
+for k in _MIL_NODES:
+    s_patron_mil.done.add(k)
+s_patron_mil.update_protection()
+check("an armourer with an imperial patron to arm is protected more than "
+      "the same patron without the armoury, and the gain is a real fraction "
+      "of a percent, not a rounding error or a dominant strategy on its own",
+      0.02 < s_patron_mil.protection - s_patron.protection < 0.12,
+      (s_patron.protection, s_patron_mil.protection))
+
+s_out_bare = sim()
+out_bare, _ = s_out_bare.hazard_relief("output_factor")
+s_out_mil = sim()
+for k in _MIL_NODES:
+    s_out_mil.done.add(k)
+out_mil, out_why = s_out_mil.hazard_relief("output_factor")
+check("a war costs an armed empire's trade less than an unarmed one's - "
+      "every output_factor hazard in these civilization files is a war or "
+      "its administrative aftermath, and this is the branch's answer to it",
+      out_mil < out_bare and any("military strength" in w for w in out_why),
+      (out_bare, out_mil, out_why))
+
+staff_bare, _ = s_out_bare.hazard_relief("staff_loss")
+staff_mil, _ = s_out_mil.hazard_relief("staff_loss")
+check("military technology gives no relief against staff loss - most "
+      "staff_loss hazards in these civilizations are disease and famine, "
+      "not war, and a founder with cannon should not cure the Antonine "
+      "plague",
+      staff_bare == staff_mil, (staff_bare, staff_mil))
+
+s_rec_bare = sim(); s_rec_bare.output_factor = 0.7
+s_rec_mil = sim()
+for k in _MIL_NODES:
+    s_rec_mil.done.add(k)
+s_rec_mil.output_factor = 0.7
+s_rec_bare.step()
+s_rec_mil.step()
+check("an armed empire's trade recovers from a war faster than an unarmed "
+      "one's, year over year, and the war still happened either way - this "
+      "is recovery speed, not a rewrite of the event",
+      s_rec_mil.output_factor > s_rec_bare.output_factor > 0.7,
+      (s_rec_bare.output_factor, s_rec_mil.output_factor))
+
+# --- the Mexica case: the sharpest test named in the brief. Firearms and
+# steel should plausibly blunt a sacking; they must not un-happen the
+# Spanish arrival, whose dates are untouched, or cure the same contact
+# epidemics that hit staff_loss, which nothing military should touch.
+s_mex = sim(civ="mexica_1500")
+_spanish = next(h for h in s_mex.civ["hazards"] if "Spanish" in h.get("name", ""))
+check("the Spanish invasion still arrives on its historical date, unmoved "
+      "by anything this change does",
+      _spanish["years"] == [1519, 1521], _spanish["years"])
+check("the Spanish invasion hazard carries no staff_loss of its own - the "
+      "contact epidemics are a separate, later hazard entry, so military "
+      "technology (which never touches staff_loss) cannot appear to cure "
+      "them by touching this one",
+      "staff_loss" not in _spanish, sorted(_spanish))
+_mex_bare = sim(civ="mexica_1500")
+_sack_bare, _ = _mex_bare.hazard_relief("sack_chance")
+_mex_mil = sim(civ="mexica_1500")
+for k in _MIL_NODES:
+    if k in NODES:
+        _mex_mil.done.add(k)
+_sack_mil, _sack_why = _mex_mil.hazard_relief("sack_chance")
+check("a Mexica founder who had built firearms and fortification before "
+      "the Spanish arrived would face a real, non-zero chance of a "
+      "sacking still - the counterfactual is blunted, never zeroed",
+      0.0 < _sack_mil < _sack_bare, (_sack_bare, _sack_mil, _sack_why[:3]))
 
 # --- the user: downstream_count is a fog spoiler
 p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "agent",
