@@ -26,8 +26,15 @@ class EconomyMixin:
         f = 0.5 + 0.55 * math.sqrt(max(0, earned))
         if self.running("corpus_written"):     f += 3.0
         if self.running("corpus_dispersed"):   f += 6.0
-        if self.running("school_founded"):     f += 4.0
-        if self.running("academy_network"):    f += 10.0
+        # SQRT, NOT LINEAR. A third schoolhouse does not make you three times
+        # as well known as the first one did - the standing a school buys is
+        # mostly in having founded one at all, not in its size - so further
+        # units add less each time, the same curve `earned` above already
+        # uses for the same reason.
+        if self.running("school_founded"):
+            f += 4.0 * self.institution_units("school_founded") ** 0.5
+        if self.running("academy_network"):
+            f += 10.0 * self.institution_units("academy_network") ** 0.5
         if self.running("patron_senatorial"):  f += 3.0
         if self.running("patron_imperial"):    f += 8.0
         if self.running("identity_cover"):     f += 1.0
@@ -99,7 +106,11 @@ class EconomyMixin:
         if self.running("patron_local"):       base += 3000.0
         if self.running("patron_senatorial"):  base += 15000.0
         if self.running("patron_imperial"):    base += 60000.0
-        if self.running("collegium_licensed"): base += 4000.0
+        # LINEAR, NOT SQRT: a licensed collegium's credit is collateral, not
+        # fame, and three of them really do stand behind three times the
+        # borrowing the first one did.
+        if self.running("collegium_licensed"):
+            base += 4000.0 * self.institution_units("collegium_licensed")
         if self.running("endowment_land"):     base += 30000.0      # real collateral
         base += max(0.0, self.reputation) * 250.0
         base += self.forest_ha * 120.0                           # also collateral
@@ -954,11 +965,19 @@ class EconomyMixin:
                 if practice:
                     r += n["rev"] * self.PRACTICE_SHARE * attention * self.price_index
                 else:
+                    # A SCHOOL YOU FOUNDED THREE OF EARNS THREE SCHOOLS' WORTH.
+                    # institution_units is 1.0 for everything that was never
+                    # expanded - the whole rest of the tree, and a single
+                    # ordinary founding of the five that CAN be - so this
+                    # changes nothing for a run that never asks `open` for a
+                    # second one. See ProjectsMixin.institution_units.
+                    _units = (self.institution_units(k)
+                              if k in self.SCALABLE_INSTITUTIONS else 1.0)
                     # goods_market_factor() is 1.0 for anything outside
                     # GOODS_CATEGORIES, so this changes nothing for the
                     # services, institutions and patronage the brief asked to
                     # leave alone - see that method's own comment for why.
-                    r += (n["rev"] * self.venture_ramp(k) * self.price_index
+                    r += (n["rev"] * _units * self.venture_ramp(k) * self.price_index
                           * self.goods_market_factor(k))
         # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
         # pays back inside two years, so its income buys the next one, and a run
@@ -1224,10 +1243,25 @@ class EconomyMixin:
         it, and that killed the first rung of the ladder.
         """
         n = self.nodes[k]
-        up = n["up"]
+        # A THIRD SCHOOL COSTS THREE SCHOOLS' UPKEEP, at three schools' worth
+        # of places to fill it against - both sides of this scale together so
+        # a run that never founds more than the original single unit sees
+        # exactly the arithmetic it always did. See
+        # ProjectsMixin.institution_units.
+        #
+        # NOT YET OPEN MEANS "WHAT WOULD A FIRST FOUNDING COST", not zero.
+        # auto_open_ventures (projects.py) calls this on things it has not
+        # opened yet to decide whether to; institution_units answers 0 for
+        # anything not currently operating, and multiplying by that turned
+        # every unopened institution's prospective upkeep into a small
+        # negative number (upkeep 0 against real revenue), which read as free
+        # and let the affordability gate through on nothing.
+        _units = (self.institution_units(k) if k in self.operating else 1.0) \
+            if k in self.SCALABLE_INSTITUTIONS else 1.0
+        up = n["up"] * _units
         if k not in self.CAPABILITY_INSTITUTIONS or up <= 0:
             return up
-        places = self.institution_places(k)
+        places = self.institution_places(k) * _units
         if places <= 0:
             return up
         used = min(1.0, self.headcount() / max(1.0, places))
@@ -1235,7 +1269,10 @@ class EconomyMixin:
                      + (1.0 - self.INSTITUTION_FLOOR) * used)
 
     def institution_places(self, k):
-        """Roughly how many people this establishment is built to support.
+        """Roughly how many people ONE UNIT of this establishment is built to
+        support - see institution_upkeep, which multiplies this by
+        institution_units(k) itself, so callers wanting the total should read
+        that, not this, for anything in SCALABLE_INSTITUTIONS.
 
         Read off the same table staff_capacity() and supervision_room() use, so
         that the cost of a place and the existence of a place cannot drift

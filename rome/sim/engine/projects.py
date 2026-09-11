@@ -62,6 +62,112 @@ class ProjectsMixin:
         "sanitation_antisepsis", "school_founded", "steam_high_pressure",
         "telegraph_electric", "workshop_first"))
 
+    # ---- AN INSTITUTION IS A QUANTITY, WHERE A SECOND ONE MEANS ANYTHING --
+    # "Can you have multiple things? What if I wanted to raise literacy to
+    # 90%+, and wanted to open 5,000 schools?" is the question that exposed
+    # the asymmetry running()'s own parked comment names: a mine is
+    # open_mine(material, tonnes_per_year) and a forest is forest_ha, both
+    # quantities you sink more into as the money and the people to staff them
+    # turn up, while school_founded, workshop_first and their kind are one
+    # boolean, ever, however rich or literate the household becomes.
+    #
+    # Not every CAPABILITY_INSTITUTIONS entry gets this. A patronage
+    # (patron_local/senatorial/imperial) is one man's opinion of you, not a
+    # building - "five imperial patrons" is not a richer version of one, it is
+    # nonsense. A singular achievement (endowment_land, corpus_written,
+    # sanitation_antisepsis, identity_cover, the heavy-industry techniques)
+    # is a state the whole household is in, not a count of sites. What a
+    # school, a workshop, a licensed collegium, an academy and a freedman
+    # staff have that those do not is exactly the thing the parked comment
+    # points at: each is a PLACE that supports a number of people
+    # (institution_places, economy.py), and a second school built across town
+    # supports more people for a reason a second emperor's goodwill does not.
+    SCALABLE_INSTITUTIONS = frozenset((
+        "workshop_first", "school_founded", "academy_network",
+        "freedman_staff", "collegium_licensed"))
+
+    def institution_units(self, k):
+        """How much of this institution is actually running, as a number
+        rather than a flag.
+
+        0 if it is not open. 1.0 is a single, ordinary founding - exactly the
+        size every rev/up/places/room figure elsewhere in the engine was
+        always calibrated against, so a run that never expands one of these
+        behaves EXACTLY as it did before this existed. Above 1.0 is genuine
+        expansion; below 1.0 (see open_venture's `units` argument) is a
+        starter founding smaller than the historically-calibrated size, which
+        is the actual bridge running() needed: the reason the first workshop
+        was never affordable was that there was no way to found a SMALL one.
+        For anything not in SCALABLE_INSTITUTIONS this is just running() cast
+        to a float, because there is nothing to found a second of.
+        """
+        if k not in self.SCALABLE_INSTITUTIONS:
+            return 1.0 if self.running(k) else 0.0
+        if k not in self.operating:
+            return 0.0
+        return max(0.0, getattr(self, "inst_units", {}).get(k, 1.0))
+
+    def institution_unit_ceiling(self, k):
+        """The most units of this institution the empire can actually fill.
+
+        Bounded by population, and - the user's own instinct, and a real,
+        historically sound one - by food: "a lot of rural people without good
+        farming don't really want their kids to go to school, they want them
+        working for food or money". This model has no literal tonnes-of-grain
+        ledger, but it already has the right proxy for exactly that
+        constraint: literacy_general, civ data's measure of how much of the
+        population is NOT tied to subsistence farming and so could plausibly
+        be literate at all (see labour.py's LITERACY_REFERENCE_GENERAL and its
+        own comment on why Rome's is 0.12). A school's ceiling rising with
+        literacy_general is not a coincidence dressed up as a rule: it is the
+        same fact - a farming society can spare few hands for a classroom -
+        counted from the other side, and it is also the virtuous circle the
+        user was reaching for, because schools are one of the things that
+        raise literacy_general in the first place (apply_tech_effects,
+        society.py).
+
+        One unit here is NOT one literal schoolhouse; at this model's scale
+        # one unit is already the whole of Rome's original school_founded (34
+        # places, institution_places, economy.py) and "5,000 schools" is the
+        # player's mental picture of what investing several further units of
+        # capacity buys, not a count this engine tracks building by building -
+        # the same abstraction a "tonnes_per_year" mine already uses for
+        # however many actual shafts that tonnage comes out of.
+        """
+        if k not in self.SCALABLE_INSTITUTIONS:
+            return 1.0
+        if k in ("school_founded", "academy_network"):
+            lit = max(0.02, float(self.civ.get("literacy_general", 0.12)))
+            return max(1.0, 6.0 * self.pop_scale ** 0.5 * (lit / 0.12) ** 0.5)
+        # Workshops, collegia and a freedman staff draw on craftsmen rather
+        # than the literate few, so population alone bounds them, not literacy.
+        return max(1.0, 4.0 * self.pop_scale ** 0.5)
+
+    # HOW MUCH DEARER EACH FURTHER UNIT IS, past the first. A second school
+    # does not double the supply of people fit to teach in one: it draws on
+    # the same small pool of the literate and the propertied the first one
+    # already drew down, so founding it costs more than the first did, by a
+    # growing margin, well before the population/literacy ceiling above ever
+    # bites. 0.5 means the tenth unit's marginal founding cost is 5.5 times
+    # the first's - steep enough that a founder pursues the ceiling by
+    # raising literacy and population rather than by brute-force spending,
+    # which is the whole reason the ceiling and the cost curve are two
+    # separate mechanisms rather than one.
+    INSTITUTION_EXPANSION_CONVEXITY = 0.5
+
+    def institution_unit_cost(self, k, have_units, add_units):
+        """Denarii to take this institution from `have_units` to
+        `have_units + add_units`, where 1.0 unit costs exactly what founding
+        it has always cost (venture_capex) - so a run that only ever founds
+        the original single unit pays exactly what it always paid.
+        """
+        base = self.venture_capex(k)
+        c = self.INSTITUTION_EXPANSION_CONVEXITY
+
+        def f(u):
+            return u + c * 0.5 * max(0.0, u - 1.0) ** 2
+        return base * max(0.0, f(have_units + add_units) - f(have_units))
+
     # ---- BUILT, versus BUILT AND STILL RUNNING ----------------------------
     # `has` answers "do you know how / did you build it", and for a piece of
     # knowledge that is the whole story. For an establishment it is not. A
@@ -90,37 +196,33 @@ class ProjectsMixin:
             return False
         if k in self.granted or not self.is_venture(k):
             return True
-        # PARKED, DELIBERATELY, AND THE MEASUREMENT SAYS WHY. Requiring the
-        # doors to be open is the correct rule and it is not yet affordable.
-        # Eight runs a civilisation at horizon 700: Rome fell from 38% of runs
-        # reaching the goal to none, and Han from 88% to 25%.
+        # UNPARKED. This returned True unconditionally for a long time, with a
+        # comment recording why: requiring the doors to be open sent Rome from
+        # 38% of runs reaching the goal to none, because a workshop or a
+        # school was a single boolean, one size, ever, so a founder who could
+        # not afford the WHOLE of it could not afford any of it - "there is no
+        # ladder to climb, only a single step that is either affordable or
+        # not". Two earlier bridges (scaling an institution's upkeep by how
+        # full it is, in economy.py; letting one be opened against what you
+        # could raise rather than only what you were clearing, in
+        # auto_open_ventures below) both survive and both helped Han without
+        # ever recovering Rome, because neither one touched the actual defect:
+        # there was no smaller size to start at.
         #
-        # The mechanism is a bootstrap, traced node by node. A Rome run builds
-        # workshop_first by 150 AD and never opens it once in the following four
-        # and a half centuries, because opening it costs 900 a year and the run's
-        # surplus is negative precisely BECAUSE it has no workshop, no household
-        # places and no staff. Scholars sit between 0.03 and 0.37 against the two
-        # that atomic_theory wants, for five hundred years. Two attempts to bridge
-        # it are in this file and in economy.py and both survive below: scaling an
-        # institution's upkeep by how full it is (an empty school costs 500 rather
-        # than 2,500, which recovered Han from 25% to 62%) and letting an
-        # institution be opened against what you could RAISE rather than only out
-        # of what you are clearing. Neither recovered Rome.
-        #
-        # What the rule actually needs is the thing it exposed: institutions are
-        # booleans here, while mines are quantities. There is one school, ever,
-        # however rich or literate you become, so there is no ladder to climb -
-        # only a single step that is either affordable or not. Until founding a
-        # second school is a thing you can do, "a capability you stop paying for
-        # is one you no longer have" has nowhere to stand.
-        #
-        # Everything else that commit fixed stays: auto_open will open an
-        # institution for what it lets you do rather than only for its margin,
-        # shed_loss_makers closes the school last instead of first, and
-        # close_unstaffed_ventures no longer answers a shortage of craftsmen by
-        # closing concerns that no craftsman was watching. Restore this to
-        # `k in self.operating` once an institution is a quantity.
-        return True
+        # SCALABLE_INSTITUTIONS is that smaller size. institution_units(k) can
+        # now sit below 1.0 - a starter founding, a fraction of the cost and
+        # the yearly bleed of the historically-calibrated full size - and
+        # auto_open_ventures founds exactly as much of one as the household's
+        # surplus will carry rather than refusing the whole thing. Measured
+        # the same way the parked comment was: eight runs a civilisation at
+        # horizon 700, `captured_han_386.json` (the strategy that scores 100%
+        # on both civilisations with this rule parked). See the measurement
+        # recorded in this file's own test suite / the commit that unparked
+        # this for the numbers; the short version is that Rome's median year
+        # reached and median technologies built held, where requiring the
+        # doors open with institutions still booleans had cost Rome the run
+        # outright.
+        return k in self.operating
 
     def venture_capex(self, k):
         """What it costs to open the doors, over and above having worked out
@@ -228,8 +330,20 @@ class ProjectsMixin:
         return (max(0.0, self.effective_scholars() - sch_used),
                 max(0.0, self.artisans + own - art_used))
 
-    def open_venture(self, k, pay=True):
-        """Start actually running something you have worked out how to do."""
+    def open_venture(self, k, pay=True, units=None):
+        """Start actually running something you have worked out how to do.
+
+        `units` only means anything for SCALABLE_INSTITUTIONS (see that set's
+        comment, above CAPABILITY_INSTITUTIONS): how much capacity to found,
+        where 1.0 is the ordinary, historically-calibrated size every other
+        figure in the engine assumes. Omit it and a first founding is 1.0,
+        exactly as before. Ask for LESS and you found a starter place - a
+        fraction of the cost, a fraction of the yearly bleed, a fraction of
+        what it gives back - which is the actual bridge running() needed: the
+        old rule could not be afforded at any income because there was no
+        smaller size to start at. Ask for units on something ALREADY open and
+        you are asking to expand it - see _expand_institution.
+        """
         if k not in self.nodes:
             return False, "no such node"
         if k not in self.done:
@@ -255,10 +369,28 @@ class ProjectsMixin:
                            "nothing to open and nothing it would earn. It has "
                            "already changed what you can build")
         if k in self.operating:
+            if k in self.SCALABLE_INSTITUTIONS and units and float(units) > 0:
+                return self._expand_institution(k, float(units), pay)
             return False, "you are already running that"
         n = self.nodes[k]
+        scalable = k in self.SCALABLE_INSTITUTIONS
+        # A STARTER FOUNDING IS STILL A FOUNDING, NOT A TOY. Below a fifth of
+        # the ordinary size there would be nothing left standing between "a
+        # schoolroom" and "no school at all", so this is a floor on what
+        # `units` may ask for on a first opening, not a ceiling.
+        #
+        # REOPENING RESTORES WHAT WAS THERE, not the default single unit. A
+        # closed school does not un-build the extra wings it grew before it
+        # shut; only `units` explicitly asked for here changes the size.
+        if scalable and units is not None:
+            u = max(0.2, float(units))
+        elif scalable:
+            u = getattr(self, "inst_units", {}).get(k, 1.0)
+        else:
+            u = 1.0
         sch_free, art_free = self.venture_staff_free()
         need_sch, need_art = self.venture_hands(k)
+        need_sch, need_art = need_sch * u, need_art * u
         # A HUNDREDTH OF A PERSON IS NOBODY. The comparison was exact and the
         # message rounded to one decimal, so a break tester read "it needs 0.0
         # craftsmen to supervise, and you have 0.0" - a refusal that
@@ -271,7 +403,7 @@ class ProjectsMixin:
                            "have %.2f and %.2f not already watching something "
                            "else. Hire, teach, or close something."
                            % (need_sch, need_art, sch_free, art_free))
-        fee = self.venture_capex(k)
+        fee = self.venture_capex(k) * (u if scalable else 1.0)
         # A SHOP THAT LOST ITS KEEPER IS NOT A SHOP YOU HAVE TO BUILD AGAIN.
         # Staff attrition runs at 3.5% a year, so a household sitting near the
         # supervision line loses a concern most years and pays the full stock
@@ -304,6 +436,11 @@ class ProjectsMixin:
         self.mothballed.discard(k)
         _shut.pop(k, None)
         self.shut_for_staff = _shut
+        if scalable:
+            iu = getattr(self, "inst_units", None)
+            if iu is None:
+                iu = self.inst_units = {}
+            iu[k] = u
         # WHEN THE DOORS OPENED, which is when custom starts to find you. See
         # venture_ramp: this used to read the year you worked the thing OUT, so
         # opening late skipped the ramp entirely. Reopening something you had
@@ -312,8 +449,60 @@ class ProjectsMixin:
         if _oy is None:
             _oy = self.opened_year = {}
         _oy.setdefault(k, self.year)
-        return True, ("%s open: it earns %s a year and costs %s a year to run"
-                      % (k, "{:,.0f}".format(n["rev"]), "{:,.0f}".format(n["up"])))
+        rev_now, up_now = n["rev"] * u, n["up"] * u
+        return True, ("%s open%s: it earns %s a year and costs %s a year to run"
+                      % (k, "" if u == 1.0 else " at %.2f of a full founding" % u,
+                         "{:,.0f}".format(rev_now), "{:,.0f}".format(up_now)))
+
+    # HOW A PLAYER OPENS A SECOND SCHOOL. Send `units` to the SAME "open"
+    # command: {"cmd":"open","id":"school_founded"} founds the first, ordinary
+    # one exactly as it always did, and {"cmd":"open","id":"school_founded",
+    # "units":2} on a school already open founds a second, taking it to 2.0
+    # units of capacity. Reusing "open" rather than adding a new verb means a
+    # save and an agent that has never heard of expansion still speaks a
+    # protocol that works: the field is simply absent from every call it never
+    # makes.
+    def _expand_institution(self, k, add_units, pay=True):
+        """Found more of an institution that is already open."""
+        have = self.institution_units(k)
+        ceiling = self.institution_unit_ceiling(k)
+        room = max(0.0, ceiling - have)
+        if room < 0.02:
+            return False, ("%s is already as big as this many people can fill: "
+                           "about %.1f units of it, bounded by the population "
+                           "(and, for a school or an academy, by how much of it "
+                           "literacy says is not needed on the land)"
+                           % (k, ceiling))
+        add_units = min(add_units, room)
+        n = self.nodes[k]
+        sch_free, art_free = self.venture_staff_free()
+        need_sch, need_art = self.venture_hands(k)
+        need_sch, need_art = need_sch * add_units, need_art * add_units
+        if need_sch > sch_free + 0.01 or need_art > art_free + 0.01:
+            return False, ("nobody free to keep an eye on the extra %.2f units "
+                           "of it: it needs %.2f more scholars and %.2f more "
+                           "craftsmen to supervise, and you have %.2f and %.2f "
+                           "not already watching something else"
+                           % (add_units, need_sch, need_art, sch_free, art_free))
+        fee = self.institution_unit_cost(k, have, add_units)
+        if pay:
+            if fee > self.spending_power("buy"):
+                return False, ("expanding %s by %.2f units costs %s denarii, and "
+                               "between %s in cash and what anyone will advance "
+                               "against a purchase you can raise %s"
+                               % (k, add_units, "{:,.0f}".format(fee),
+                                  "{:,.0f}".format(self.capital),
+                                  "{:,.0f}".format(self.spending_power("buy"))))
+            self.capital -= fee
+        iu = getattr(self, "inst_units", None)
+        if iu is None:
+            iu = self.inst_units = {}
+        iu[k] = have + add_units
+        rev_now, up_now = n["rev"] * iu[k], n["up"] * iu[k]
+        return True, ("%s expanded from %.2f to %.2f units for %s denarii: it "
+                      "now earns about %s a year and costs about %s to run"
+                      % (k, have, iu[k], "{:,.0f}".format(fee),
+                         "{:,.0f}".format(rev_now), "{:,.0f}".format(up_now)))
 
     def close_venture(self, k):
         """Stop running it. You keep the knowledge; you stop paying for it and
@@ -464,13 +653,72 @@ class ProjectsMixin:
         _bleed_room = max(0.0, _surplus) * 0.5 + (0.0 if _deep else _line * 0.10)
         for k in caps:
             _bleed = self.institution_upkeep(k) - self.nodes[k]["rev"]
-            if _bleed > _bleed_room:
+            if _bleed <= _bleed_room:
+                ok, _w = self.open_venture(k)
+                if ok:
+                    opened.append(k)
+                    _surplus -= _bleed
+                    _bleed_room -= _bleed
                 continue
-            ok, _w = self.open_venture(k)
+            # TOO DEAR AT FULL SIZE - FOUND IT SMALLER. This is the actual
+            # bridge running() needed and mines already had: workshop_first
+            # bled 900 a year against a surplus that was negative BECAUSE
+            # there was no workshop, so the full-size gate above refused it
+            # for four and a half centuries straight. A place you can only
+            # afford a fifth of is still a place; institution_units below
+            # 1.0 is what open_venture calls a starter founding.
+            if k not in self.SCALABLE_INSTITUTIONS or _bleed <= 0:
+                continue
+            starter = max(0.0, min(1.0, _bleed_room / _bleed))
+            if starter < 0.2:
+                continue
+            ok, _w = self.open_venture(k, units=starter)
             if ok:
                 opened.append(k)
-                _surplus -= _bleed
-                _bleed_room -= _bleed
+                _spent = _bleed * starter
+                _surplus -= _spent
+                _bleed_room -= _spent
+        # AND CLIMB THE LADDER ONCE IT IS OPEN - BUT ONLY ON REAL MONEY AND
+        # REAL DEMAND, NOT ON THE STARTER FOUNDING'S CREDIT ALLOWANCE. A break
+        # tester traced Rome under captured_han_386.json straight into the
+        # thing this was supposed to cure: workshop_first opened, and this
+        # loop then expanded it to 4.0 units purely because `_bleed_room`
+        # (which includes a TENTH OF THE CREDIT LINE, the borrowing allowance
+        # the starter founding above genuinely needs to break the original
+        # deadlock) looked positive most years - without ever checking
+        # whether the household could actually CARRY 3,600 a year of upkeep
+        # against 1,300 of revenue. Every further unit is discretionary
+        # growth, not survival, and discretionary growth has no business
+        # spending a bootstrap allowance meant for the one step that has none.
+        # So: real cash flow only (no credit line here), and only when the
+        # place is actually full enough to want more room - a household with
+        # 14 people is not short of a 12-place workshop, whatever it can
+        # technically still borrow.
+        if _surplus > 0.01:
+            for k in sorted(self.SCALABLE_INSTITUTIONS):
+                if k not in self.operating or _surplus <= 0.01:
+                    continue
+                have = self.institution_units(k)
+                ceiling = self.institution_unit_ceiling(k)
+                room = ceiling - have
+                if room < 0.05:
+                    continue
+                places_now = self.institution_places(k) * have
+                if self.headcount() < places_now * 0.85:
+                    continue        # not full enough yet to be worth more
+                per_unit = self.nodes[k]["up"] - self.nodes[k]["rev"]
+                # AT MOST A QUARTER OF THIS YEAR'S REAL SURPLUS, and at most
+                # one further unit a year - growth, not a second bootstrap.
+                afford_room = _surplus * 0.25
+                step = min(1.0, room) if per_unit <= 0 else \
+                    max(0.0, min(1.0, room, afford_room / per_unit))
+                if step < 0.1:
+                    continue
+                ok, _w = self.open_venture(k, units=step)
+                if ok:
+                    opened.append(k)
+                    _spent = max(0.0, per_unit) * step
+                    _surplus -= _spent
         blocked = None
         for k in cands:
             # NO SECOND, STRICTER GATE. This broke out the moment capital went
@@ -1084,8 +1332,16 @@ class ProjectsMixin:
         # entry is stale the moment you begin again - and while it stands,
         # `available` hides the node and `restore` claims it can reopen it.
         self.mothballed.discard(k)
+        # lab_left STARTS FULL, SET HERE - not lazily the first time
+        # lab_year_draw runs. step() reduces ph_left for THIS year before it
+        # ever reaches the labour section, so a lazy init reading ph_left at
+        # that point sees a project already most of the way through its
+        # founder-hours and (wrongly) concludes the hired-labour total must be
+        # nearly done too. Setting the real total here, before any of that
+        # runs, is what fixed it.
         self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0,
-                              spent=_already, cost_left=price)
+                              spent=_already, cost_left=price,
+                              lab_left=dict(n["lab"]))
         if _already > 0.5:
             self.log.append((self.year, "%s begun again; the %s denarii already "
                                         "paid on it before comes off the bill"
@@ -1126,6 +1382,122 @@ class ProjectsMixin:
                       if kept > 0.5 else "stopped; nothing had been paid yet")
 
     # -- main loop ----------------------------------------------------------
+
+    # A HIRED TRADE'S HOURS ARE A TOTAL, NOT A TOLL DUE EVERY YEAR. Before this,
+    # a project wanting 1,200 smith-hours over a 4-year calendar floor demanded
+    # exactly 300 a year, every year, whatever the trade could actually supply:
+    # three smiths free or thirty, it drew the same 300 and wasted the rest. A
+    # break tester asked the obvious question about it: "why do some researches
+    # require a labor hours/year? Could you not spend half as much for twice as
+    # long? I can see labour being a CAP - you can't do a billion hours in a
+    # year - but a company being unable to spend twice as much for half as long
+    # feels wrong." Both halves were right, and lab_year_draw is the honest
+    # shape of the constraint: a TOTAL (n["lab"][t], drawn down in
+    # st["lab_left"]), a per-year CEILING somewhat above the pace the node was
+    # calibrated at (a site has only so many benches, so extra hands beyond a
+    # multiple of that still go to waste), and a maximum calendar SPAN past
+    # which the undertaking is abandoned rather than left to drift for
+    # centuries - see lab_max_span just below for what that span is and why.
+    #
+    # A site can field more than its calibrated crew, but not without limit.
+    LAB_CREW_RATE_MULT = 4.0
+
+    def lab_max_span(self, k):
+        """The most years a project may spend trying to find enough of a
+        hired trade before it is given up on.
+
+        Forty years is a working lifetime - the span between becoming
+        competent at a trade and retiring from it - and no single human
+        undertaking should be allowed to out-live the people who began it:
+        past that, the people who understood the early stages are dead or
+        have moved on, and continuing is not finishing the same project, it
+        is starting a new one that happens to reuse the site. A
+        node whose OWN calendar floor (n["yrs"]) is already longer than ten
+        years is one this tree already marks as diffusion-limited rather than
+        personal - see core.py's POP_TECH_RAMP_YEARS and the `floor` logic in
+        step() - so it earns proportionately more room, to a ceiling of four
+        times its own floor rather than an unbounded one.
+        """
+        n = self.nodes[k]
+        return max(40.0, float(n["yrs"]) * 4.0)
+
+    def lab_year_draw(self, k, st, frac, hired_left):
+        """This year's hired-labour draw for active project `k`.
+
+        Returns (hh, worst, frac, abandon): `hh` is the total hired hours
+        drawn this year (what step() checks against `hired_left`), `worst` is
+        the worst-supplied trade's shortfall against ITS OWN historical pace
+        (unchanged meaning from before: this still drives the founder-hours
+        give-back in step(), because a trade that came up short really did
+        waste some of the year's effort), `frac` is the money-pacing fraction,
+        reduced exactly as before when a trade came up short of its own pace,
+        and `abandon` is None or a reason the project should be dropped
+        because it ran out of calendar (see lab_max_span above).
+
+        Mutates st["lab_left"] and self.trade_hours_used as a side effect,
+        exactly where the code this replaced did.
+        """
+        n = self.nodes[k]
+        lab_left = st.get("lab_left")
+        if lab_left is None:
+            # AN OLD SAVE NEVER TRACKED THIS FIELD. The best guess available is
+            # that the same share of each trade's total is left as is left of
+            # the founder-hours total - generous rather than punitive: a
+            # project nine tenths done on its own hours is assumed nine tenths
+            # done on its hired hours too, not reset to owing the lot.
+            _left_frac = min(1.0, st.get("ph_left", n["ph"]) / max(1.0, n["ph"]))
+            lab_left = {t: want * _left_frac for t, want in n["lab"].items()}
+            st["lab_left"] = lab_left
+        hh = 0.0
+        worst = 1.0
+        for t, want in n["lab"].items():
+            left = lab_left.get(t, 0.0)
+            if left <= 0 or want <= 0:
+                continue
+            nominal = want / max(1.0, n["yrs"])
+            have = max(0.0, self.hours_you_can_call_on(t)
+                       - self.trade_hours_used.get(t, 0.0))
+            # THE CEILING IS A CREW, NOT A CALENDAR, so take whatever of this
+            # is both USEFUL (no more than is left to do) and AVAILABLE (no
+            # more than the trade can actually supply this year), up to the
+            # site's own headroom above its calibrated pace.
+            drawn = min(left, nominal * self.LAB_CREW_RATE_MULT, have)
+            lab_left[t] = max(0.0, left - drawn)
+            self.trade_hours_used[t] = self.trade_hours_used.get(t, 0.0) + drawn
+            hh += drawn
+            # THE WARNING IS STILL DRAWN AT THE OLD PACE. Extra capacity above
+            # the historical figure is a bonus with no penalty either way; a
+            # SHORTFALL below the pace the node was actually calibrated
+            # against is what give-back and "short of trade" have always
+            # meant, and moving the goalposts to the new, larger ceiling would
+            # warn about a shortage of hands nobody ever expected to exist.
+            target = min(nominal, left)
+            if target > 0:
+                worst = min(worst, drawn / target)
+        if worst < 1.0:
+            frac *= worst
+            st["short_of_trade"] = sorted(
+                t for t, left in lab_left.items()
+                if left > 0 and (self.hours_you_can_call_on(t)
+                                  - self.trade_hours_used.get(t, 0.0))
+                < min(left, n["lab"][t] / max(1.0, n["yrs"])))[:3]
+        else:
+            st.pop("short_of_trade", None)
+        # THE DEADLINE. A trade that never clears its balance used to mean the
+        # project crept forward for ever at whatever sliver of progress could
+        # be found, which is how `logarithms` sat at 5.0 founder-hours for two
+        # hundred and seventy-five years in a civilisation that could field
+        # 8,750 scribe-hours against the 10,000 it wanted: technically still
+        # moving, never actually finishing, and never SAID to have failed.
+        # People die and what they knew goes with them; nothing here pretends
+        # otherwise.
+        if st["yrs"] >= self.lab_max_span(k) and any(v > 0.5 for v in lab_left.values()):
+            unmet = sorted(t for t, v in lab_left.items() if v > 0.5)
+            return hh, worst, frac, (
+                "after %d years there was still not enough %s here to finish "
+                "it. What was spent is lost; you still know what you learned "
+                "along the way" % (int(self.lab_max_span(k)), " or ".join(unmet[:2])))
+        return hh, worst, frac, None
 
     def _complete(self, k):
         n = self.nodes[k]

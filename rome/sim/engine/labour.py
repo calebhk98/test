@@ -230,14 +230,27 @@ class LabourMixin:
         # arrival and never asked for.
         base_sc, base_ar = 0.0, 0.0
         sc = ar = di = 0.0
-        if self.running("workshop_first"):     ar += 6
-        if self.running("freedman_staff"):     ar += 10
-        if self.running("school_founded"):     sc += 12; ar += 12; di += 2.0
-        if self.running("collegium_licensed"): sc += 3
+        # A SECOND SCHOOL TRAINS A SECOND SCHOOL'S WORTH OF SCHOLARS. Linear in
+        # institution_units, which is 1.0 for a run that never founds more than
+        # the original single unit - exactly the constants below, unchanged -
+        # and the actual capacity a further unit buys otherwise. The COST of
+        # each further unit is where the diminishing return lives (see
+        # ProjectsMixin.institution_unit_cost); this is simply how big the
+        # place you paid for actually is.
+        _wf = self.institution_units("workshop_first")
+        _fs = self.institution_units("freedman_staff")
+        _sf = self.institution_units("school_founded")
+        _cl = self.institution_units("collegium_licensed")
+        if self.running("workshop_first"):     ar += 6 * _wf
+        if self.running("freedman_staff"):     ar += 10 * _fs
+        if self.running("school_founded"):     sc += 12 * _sf; ar += 12 * _sf; di += 2.0 * _sf
+        if self.running("collegium_licensed"): sc += 3 * _cl
         if self.running("patron_senatorial"):  sc += 4;  ar += 6
         if self.running("patron_imperial"):    sc += 14; ar += 50; di += 2.0
         if self.running("endowment_land"):     sc += 6;  ar += 8;  di += 1.0
-        if self.running("academy_network"):    sc += 40; ar += 50; di += 6.0
+        if self.running("academy_network"):
+            _an = self.institution_units("academy_network")
+            sc += 40 * _an; ar += 50 * _an; di += 6.0 * _an
         if self.running("corpus_dispersed"):   sc += 8;  di += 1.0   # people teach themselves from your books
         # Industrialisation compounds: each heavy node trains the workforce that
         # makes the next one possible. This is the engine of the late game.
@@ -330,18 +343,37 @@ class LabourMixin:
         them every year, and you can only supervise so many.
         """
         room = 6.0 + 14.0 * self.directors_extra
-        if self.running("workshop_first"):  room += 6.0
-        if self.running("school_founded"):  room += 10.0
-        if self.running("academy_network"): room += 30.0
+        if self.running("workshop_first"):
+            room += 6.0 * self.institution_units("workshop_first")
+        if self.running("school_founded"):
+            room += 10.0 * self.institution_units("school_founded")
+        if self.running("academy_network"):
+            room += 30.0 * self.institution_units("academy_network")
         return room
 
     def hired_cap(self):
         # a civilization of 1.5 million cannot staff what one of 65 million can
         cap = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
-        if self.running("school_founded"):    cap *= 2.0
-        if self.running("freedman_staff"):    cap *= 1.5
+        # 1.0 + (mult - 1.0) * sqrt(units): exactly the old `cap *= mult` at
+        # units 1.0 (a run that never expands sees the identical multiplier),
+        # and SQRT rather than linear beyond that - because these multipliers
+        # already compound with one another (a school, an academy and a
+        # freedman staff open together and their factors multiply), and a
+        # break tester's Rome run climbed school_founded to 8.85 units and
+        # academy_network to 8.75 on the back of literacy growth alone, which
+        # at a linear rate would have multiplied hired_cap by roughly 9 x 13
+        # from these two terms alone. Diminishing returns belong on what a
+        # place trains, same as they already do on what it costs to found
+        # (institution_unit_cost) - a second school teaches nearly as many
+        # more people as the first did; a ninth does not teach nine times as
+        # many as one did.
+        if self.running("school_founded"):
+            cap *= 1.0 + 1.0 * self.institution_units("school_founded") ** 0.5
+        if self.running("freedman_staff"):
+            cap *= 1.0 + 0.5 * self.institution_units("freedman_staff") ** 0.5
         if self.running("patron_imperial"):   cap *= 3.0
-        if self.running("academy_network"):   cap *= 2.5
+        if self.running("academy_network"):
+            cap *= 1.0 + 1.5 * self.institution_units("academy_network") ** 0.5
         if self.running("interchangeable_parts"): cap *= 1.5
         return cap
 
@@ -540,9 +572,11 @@ class LabourMixin:
         else:
             share = 0.25          # glassblowers, engravers, opticians' forebears
         cap = base * share
-        if self.running("school_founded"):        cap *= 2.0
+        if self.running("school_founded"):
+            cap *= 1.0 + 1.0 * self.institution_units("school_founded") ** 0.5
         if self.running("patron_imperial"):       cap *= 3.0
-        if self.running("academy_network"):       cap *= 2.5
+        if self.running("academy_network"):
+            cap *= 1.0 + 1.5 * self.institution_units("academy_network") ** 0.5
         if self.running("interchangeable_parts"): cap *= 1.5
         # A trade that needs reading cannot be bought past how many people
         # here can read (FINDINGS_ROUND2 section Q). scholar and scribe are
