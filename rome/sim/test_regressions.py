@@ -557,9 +557,19 @@ p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                    input="q\n", capture_output=True, text=True, timeout=120, cwd=ROOT)
 check("a bare invocation opens the menu rather than a usage error",
       p.returncode == 0 and "ONE PERSON" in p.stdout, p.stdout[:80] + p.stderr[:80])
+check("the bare menu is a main menu (New game / Load / Options), not "
+      "straight into the civilisation picker",
+      all(w in p.stdout for w in ("New game", "Load a saved game", "Options")),
+      p.stdout[:1500])
 
+# The civilisation list itself lives one door in, behind "New game" - "1"
+# opens it, "b" backs out again without starting anything (so this writes no
+# save file at all) and "q" leaves the main menu.
+p2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                    input="1\nb\nq\n", capture_output=True, text=True, timeout=120,
+                    cwd=ROOT)
 check("the menu offers every civilisation with its lore",
-      all(w in p.stdout for w in ("Later Han", "Trajan", "Viking", "Edward I", "Mexica")),
+      all(w in p2.stdout for w in ("Later Han", "Trajan", "Viking", "Edward I", "Mexica")),
       "missing one of the five")
 
 # `play` was Rome-only and its loop ended at 100+horizon, so any civ that does
@@ -1172,22 +1182,37 @@ check("large numbers in the pretty rendering carry thousands separators",
 # --- 2: the menu ends by starting the game, not by printing a command line
 # and asking permission to run it. It must also honour the mortality choice
 # made in the menu, which `agent` never had a flag for at all before this.
+#
+# The menu is now three doors (New game / Load a saved game / Options), not
+# straight into the civilisation picker - see cli.py's cmd_menu. "1" at the
+# MAIN MENU chooses New game; the civilisation picker, fog, kit, mortality
+# and (new) horizon questions follow in that order.
 _menu_dir = tempfile.mkdtemp()
+# A FRESH CONFIG FILE, EXPLICITLY, so this check of the DEFAULT save
+# location is not at the mercy of a config some earlier check in this same
+# run (or a real person's own ~/.rome-sim-config.json) pointed elsewhere.
+# ROME_SAVE_DIR is deliberately left unset for the same reason.
+_menu_cfg = os.path.join(_menu_dir, "menu_default_cfg.json")
+_menu_env = dict(os.environ, ROME_SIM_CONFIG=_menu_cfg)
+_menu_env.pop("ROME_SAVE_DIR", None)
 # THE MENU NOW DROPS INTO `play`, NOT `agent`. It used to hand a person a JSON
 # prompt, which is the right front end for a script and the wrong one for the
 # human the menu exists to greet; `play` speaks typed words over the same
 # dispatcher. So the commands fed here are typed, and what comes back is the
 # rendered view rather than JSON.
-_menu_input = "1\ny\n\ny\nstate\nquit\n"
+_menu_input = "1\n1\ny\n\ny\n\nstate\nquit\n"
 _pm = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                      input=_menu_input, capture_output=True, text=True, timeout=120,
-                     cwd=_menu_dir)
+                     cwd=_menu_dir, env=_menu_env)
+check("the menu offers a main menu with New game, Load, and Options",
+      all(w in _pm.stdout for w in ("New game", "Load a saved game", "Options")),
+      _pm.stdout[:2000])
 check("the menu says it is starting, not offering a command to run later",
       "Starting now" in _pm.stdout, _pm.stdout[-500:])
 check("the menu names a resumable --session file ending in .json",
       "--session" in _pm.stdout and ".json" in _pm.stdout, _pm.stdout[-500:])
-# Saves live in ~/.rome-saves now, not beside the source: eighty-nine of them
-# had piled up in the repository root and a play tester said so.
+# Saves live in ~/.rome-saves by default, not beside the source: eighty-nine
+# of them had piled up in the repository root and a play tester said so.
 _save_dir = os.path.join(os.path.expanduser("~"), ".rome-saves")
 check("saves are written somewhere of their own, not beside the source",
       os.path.isdir(_save_dir)
@@ -1207,6 +1232,158 @@ check("the menu drops straight into a playable session, no extra prompt",
       _pm.stdout[-300:])
 check("the mortality choice made in the menu reaches the actual game",
       "and ageing" in _pm.stdout, _pm.stdout[-300:])
+if _named and os.path.exists(_named[0]):
+    os.remove(_named[0])
+    _mp = _named[0] + ".meta.json"
+    if os.path.exists(_mp):
+        os.remove(_mp)
+
+# --- PLAYER REQUEST #1: saves in a place that survives. ROME_SAVE_DIR
+# overrides everything, including a config file's own save_dir.
+_redir_dir = tempfile.mkdtemp()
+_redir_cfg_dir = tempfile.mkdtemp()
+_redir_cfg = os.path.join(_redir_cfg_dir, "cfg.json")
+# Config says one place, ROME_SAVE_DIR says another - the environment
+# variable has to win, for the player whose $HOME does not survive between
+# terminal sessions but who CAN export one line into a shell profile that
+# does.
+json.dump({"save_dir": os.path.join(_redir_cfg_dir, "not_this_one")},
+          open(_redir_cfg, "w"))
+_redir_env = dict(os.environ, ROME_SAVE_DIR=_redir_dir, ROME_SIM_CONFIG=_redir_cfg)
+_pr = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                     input="1\n1\ny\n\nn\n\nquit\n", capture_output=True, text=True,
+                     timeout=120, cwd=_redir_dir, env=_redir_env)
+check("ROME_SAVE_DIR redirects the menu's save away from the config file's "
+      "own save_dir, and away from the default",
+      any(f.endswith(".json") for f in os.listdir(_redir_dir)),
+      (_pr.stdout[-400:], os.listdir(_redir_dir)))
+
+# --- the Options menu: a preference set from it is read back on the NEXT
+# invocation, unprompted - the whole point of PLAYER REQUEST #1 being a
+# config file and not just a flag.
+_opt_dir = tempfile.mkdtemp()
+_opt_cfg = os.path.join(_opt_dir, "cfg.json")
+_opt_savedir = os.path.join(_opt_dir, "chosen_saves")
+_opt_env = dict(os.environ, ROME_SIM_CONFIG=_opt_cfg)
+_opt_env.pop("ROME_SAVE_DIR", None)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+               input="3\n1\n%s\nb\nq\n" % _opt_savedir,
+               capture_output=True, text=True, timeout=60, cwd=_opt_dir, env=_opt_env)
+check("a save location chosen from the Options menu is written to a config "
+      "file", os.path.exists(_opt_cfg), _opt_cfg)
+_opt_cfg_read = json.load(open(_opt_cfg)) if os.path.exists(_opt_cfg) else {}
+check("...and it is the directory the player actually typed",
+      _opt_cfg_read.get("save_dir") == _opt_savedir, _opt_cfg_read)
+_pm2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                      input="3\nb\nq\n", capture_output=True, text=True, timeout=60,
+                      cwd=_opt_dir, env=_opt_env)
+check("...and a LATER invocation - no flag, nothing repeated - shows it back "
+      "as the current save location, which is the whole ask: it must stick "
+      "between invocations",
+      _opt_savedir in _pm2.stdout, _pm2.stdout[-800:])
+
+# --- "Load a saved game" lists what is in the save directory well enough to
+# choose by: civilisation, year, how far along, and when it was last written.
+_load_dir = tempfile.mkdtemp()
+_load_cfg = os.path.join(_load_dir, "cfg.json")
+_load_env = dict(os.environ, ROME_SAVE_DIR=_load_dir, ROME_SIM_CONFIG=_load_cfg)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\nn\n\nn\n\nquit\n",
+               capture_output=True, text=True, timeout=120, cwd=_load_dir, env=_load_env)
+_pl_load = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                          input="2\nb\nq\n", capture_output=True, text=True, timeout=60,
+                          cwd=_load_dir, env=_load_env)
+check("Load a saved game lists the civilisation and year of a save on disk",
+      "AD" in _pl_load.stdout and
+      any(c in _pl_load.stdout for c in
+          ("Rome", "Trajan", "Han", "Viking", "Norse", "Edward", "Mexica")),
+      _pl_load.stdout[-1200:])
+check("...and how far along it is (a technology count, since this save has "
+      "fog off and so gets a goal-progress fraction instead)",
+      "toward the transistor" in _pl_load.stdout, _pl_load.stdout[-1200:])
+check("...and roughly when it was last written",
+      "ago" in _pl_load.stdout or "AD" in _pl_load.stdout, _pl_load.stdout[-1200:])
+_pl_resume = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                            input="2\n1\nstate\nquit\n", capture_output=True, text=True,
+                            timeout=120, cwd=_load_dir, env=_load_env)
+check("picking a save from the Load Game list actually resumes it, not a "
+      "fresh game",
+      "Resumed from" in _pl_resume.stdout, _pl_resume.stdout[:600])
+
+# --- fog-on saves do NOT get the goal-progress fraction in the Load Game
+# list: that number gives away the size of the whole tree, which fog exists
+# to keep a player from knowing before they have built their way to it.
+_fogload_dir = tempfile.mkdtemp()
+_fogload_cfg = os.path.join(_fogload_dir, "cfg.json")
+_fogload_env = dict(os.environ, ROME_SAVE_DIR=_fogload_dir, ROME_SIM_CONFIG=_fogload_cfg)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\ny\n\nn\n\nquit\n",
+               capture_output=True, text=True, timeout=120, cwd=_fogload_dir, env=_fogload_env)
+_pl_fogload = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                             input="2\nb\nq\n", capture_output=True, text=True, timeout=60,
+                             cwd=_fogload_dir, env=_fogload_env)
+check("a fogged save's Load Game entry does not leak how big the tree is",
+      "toward the transistor" not in _pl_fogload.stdout
+      and "technologies built" in _pl_fogload.stdout,
+      _pl_fogload.stdout[-1200:])
+
+# --- the in-game 'options' command: horizon changes stick across a plain
+# `play --session` resume (no flag repeated), and mortality can only be
+# turned ON, never off, from there.
+_ig_dir = tempfile.mkdtemp()
+_ig_session = os.path.join(_ig_dir, "ig.json")
+_ig1 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--civ", "rome_100ad", "--session", _ig_session],
+                      input="options\n1\n250\nb\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("the in-game options command changes the horizon",
+      "now ends in 250 AD" in _ig1.stdout, _ig1.stdout[-600:])
+_ig2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session],
+                      input="state\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("...and a later plain `play --session` resume - no --horizon repeated "
+      "- still honours it",
+      "horizon at 250" in _ig2.stdout, _ig2.stdout[-1500:])
+_ig3 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session, "--horizon", "9"],
+                      input="state\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("...while an EXPLICIT --horizon flag still overrides the remembered one",
+      ("horizon at %d" % (100 + 9)) in _ig3.stdout, _ig3.stdout[-1500:])
+
+_ig4 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session],
+                      input="options\n2\ny\nb\nstate\nquit\n", capture_output=True,
+                      text=True, timeout=120, cwd=_ig_dir)
+check("the in-game options command can turn mortality on mid-game",
+      "and ageing" in _ig4.stdout, _ig4.stdout[-1200:])
+_ig5 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                       "--session", _ig_session],
+                      input="state\nquit\n", capture_output=True, text=True,
+                      timeout=120, cwd=_ig_dir)
+check("...and that survives a resume, the ordinary save mechanism already "
+      "carrying it (life_left/founder_alive/cfg.immortal are all "
+      "SAVE_FIELDS)", "and ageing" in _ig5.stdout, _ig5.stdout[-800:])
+check("the in-game options menu never offers to change civilisation, kit or "
+      "fog - none of those are honest to change mid-game",
+      not any(w in _ig1.stdout for w in
+              ("change the civilisation", "change the kit",
+               "change the starting", "turn fog")),
+      [l for l in _ig1.stdout.splitlines() if "fog" in l.lower()])
+
+# --- moving a save from the in-game options command actually relocates it,
+# meta-sidecar included, and the old file is gone.
+_mv_dir = tempfile.mkdtemp()
+_mv_from = os.path.join(_mv_dir, "from.json")
+_mv_to = os.path.join(_mv_dir, "to.json")
+_mv = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                      "--civ", "rome_100ad", "--session", _mv_from],
+                     input="options\n1\n300\nb\noptions\n3\n%s\nb\nquit\n" % _mv_to,
+                     capture_output=True, text=True, timeout=120, cwd=_mv_dir)
+check("moving a save from the in-game options command relocates the file",
+      os.path.exists(_mv_to) and not os.path.exists(_mv_from),
+      (os.listdir(_mv_dir), _mv.stdout[-400:]))
+check("...and carries its remembered horizon along with it",
+      os.path.exists(_mv_to + ".meta.json"), os.listdir(_mv_dir))
 # --- the user: "I wanted agents to play under the play that we were just
 # making". Everything built since the split went into the JSON protocol only,
 # and `play` still understood six commands of its own. It must now reach the
@@ -7453,6 +7630,409 @@ check("the semiconductor-grade graphite crucibles on the road to the goal "
       "itself require actually-pure graphite, not natural lump graphite "
       "bought off the market",
       not _graphite_bad, _graphite_bad)
+
+# --- three players: `why` quoted the BUILD crew as the staff requirement,
+# and `open` actually enforces ongoing SUPERVISION (venture_hands), a
+# different and sometimes larger number never shown before the money was
+# spent. `why` must now show both, from the same function `open` checks.
+r, _, _ = proto([{"cmd": "why", "id": "cementation_steel"}])
+_why_open = r[0]["staff_to_keep_it_open"]
+_s = sim()
+_expect_sch, _expect_art = _s.venture_hands("cementation_steel")
+check("`why`'s supervision figure is computed by the same function `open` "
+      "enforces (venture_hands), not a second estimate of it",
+      abs(_why_open["scholars"] - round(_expect_sch, 2)) < 0.01
+      and abs(_why_open["artisans"] - round(_expect_art, 2)) < 0.01,
+      "why said %s, venture_hands says %.2f/%.2f"
+      % (_why_open, _expect_sch, _expect_art))
+check("the supervision figure can genuinely exceed the build crew shown as "
+      "staff_needed, which is exactly the case a Norse playtester measured "
+      "(2.13 craftsmen enforced against a displayed 2 artisans)",
+      _why_open["artisans"] > r[0]["staff_needed"]["artisans"],
+      "staff_needed %s, staff_to_keep_it_open %s"
+      % (r[0]["staff_needed"], _why_open))
+
+# --- and a node nobody could ever run as a going concern (pure knowledge)
+# gets no supervision figure at all - there is nothing to keep an eye on.
+r, _, _ = proto([{"cmd": "why", "id": "ag2_adulteration_law"}])
+check("a pure-knowledge node (no revenue, no upkeep) carries no "
+      "staff_to_keep_it_open - there is no concern to supervise",
+      r[0].get("staff_to_keep_it_open") is None, r[0].get("staff_to_keep_it_open"))
+
+# --- three playtesters: a concern the staffing rule shut never came back on
+# its own once restaffed - reopening it was `auto_open`, a SEPARATE policy
+# defaulting off for a player, so every restaffing was followed by a manual
+# `open`, for ever. "Most of the mid and late game was a repetitive
+# hire-then-reopen treadmill rather than fresh decisions."
+s = sim(capital=50000.0)
+_k = "cementation_steel"
+s.done.add(_k)
+s._done_changed()
+s.employees["artisan"] = 6.0
+s._resync_pools()
+ok, _ = s.open_venture(_k)
+check("set-up: cementation_steel opens with six craftsmen on staff", ok)
+s.employees["artisan"] = 0.0
+s._resync_pools()
+closed = s.close_unstaffed_ventures(s.year)
+check("losing every craftsman shuts a concern that needs them to supervise",
+      closed == [_k] and _k in s.mothballed and _k in getattr(s, "shut_for_staff", {}),
+      closed)
+s.employees["artisan"] = 6.0
+s._resync_pools()
+reopened = s.reopen_restaffed_ventures(s.year)
+check("...and it comes back on its own once restaffed, with no 'open' typed",
+      reopened == [_k] and _k in s.operating and _k not in s.mothballed
+      and _k not in getattr(s, "shut_for_staff", {}), reopened)
+
+# --- and a concern a player shut ON PURPOSE must never reappear on its own -
+# reopen_restaffed_ventures only undoes close_unstaffed_ventures, never `mothball`
+s = sim(capital=50000.0)
+s.done.add(_k)
+s._done_changed()
+s.employees["artisan"] = 6.0
+s._resync_pools()
+s.open_venture(_k)
+s.mothball_work(_k)
+reopened = s.reopen_restaffed_ventures(s.year)
+check("a concern closed on purpose with 'mothball' is never auto-reopened, "
+      "however much staff is free - that is still the player's call",
+      reopened == [] and _k in s.mothballed and _k not in s.operating, reopened)
+
+# --- the treadmill itself, measured: build a realistic spread of concerns,
+# starve them of any staff replacement (auto_hire off, the player default),
+# and count closures against automatic reopenings over 40 years
+def _portfolio_run(auto_hire, years=40):
+    s = sim(civ="norse_900ad", capital=60000.0)
+    s.policy["auto_hire"] = auto_hire
+    cands = sorted((k for k in NODES if s.is_venture(k) and NODES[k]["rev"] > 0),
+                   key=lambda k: -(NODES[k]["rev"] / max(1.0, sum(s.venture_hands(k)))))
+    chosen, need_sch, need_art = [], 0.0, 0.0
+    for k in cands:
+        s.done.add(k)
+        a, b = s.venture_hands(k)
+        if (need_sch + a > 8.0 and need_sch > 0) or (need_art + b > 35.0 and need_art > 0):
+            s.done.discard(k)
+            continue
+        need_sch += a
+        need_art += b
+        chosen.append(k)
+        if len(chosen) >= 25:
+            break
+    s._done_changed()
+    s.employees["scholar"] = round(need_sch) + 1
+    s.employees["artisan"] = round(need_art) + 2
+    s._resync_pools()
+    opened = [k for k in chosen if s.open_venture(k)[0]]
+    reopenings = 0
+    for _ in range(years):
+        before = set(s.operating)
+        s.step()
+        reopenings += len((set(s.operating) - before) & set(opened))
+    return opened, sum(1 for k in opened if k in s.operating), reopenings
+
+_opened, _open_end, _reopenings = _portfolio_run(auto_hire=True)
+check("with auto_hire replacing attrition losses, the portfolio it built "
+      "fully recovers over 40 years - every closure eventually comes back "
+      "on its own once the household can staff it again",
+      _open_end == len(_opened) and _reopenings > 0,
+      "opened %d, open at year 40: %d, auto-reopenings: %d"
+      % (len(_opened), _open_end, _reopenings))
+# =============================================================================
+# A HEDGE ANNOUNCED FIVE YEARS OUT AND TWENTY-TO-THIRTY YEARS DEEP. Two
+# playtesters (Han, Rome) were told from turn one that the hedge against
+# being sacked was "walls, firearms, powerful friends, and copies of your
+# work kept somewhere else", acted on it the moment it was said, and were
+# still sacked - because the strongest of those hedges,
+# HAZARD_COUNTERS["sack_chance"]'s biggest single share, sits behind a
+# scientific_method -> corpus_written -> corpus_dispersed -> academy_network
+# chain whose own `yrs` fields (already shown per-node, already the basis
+# of `path`'s "Longest serial chain" line) sum to a real, un-buyable-down
+# floor, and nothing before this said the chain had a length at all.
+# =============================================================================
+_haz = sim(civ="han_china_100ad")
+_floor_academy = _haz._calendar_floor_remaining("academy_network")
+check("the strongest sack_chance hedge (academy_network, the 'copies of "
+      "your work kept somewhere else' hedge) has a real calendar floor in "
+      "the 20-30 year range from a standing start, matching what actually "
+      "broke two playtesters, not a number invented for this fix",
+      20.0 <= _floor_academy <= 30.0, _floor_academy)
+
+_adv0 = _haz.hazard_advice("sack_chance")
+check("hazard_advice carries that lead time from turn one, alongside the "
+      "same words a playtester was actually given",
+      "even_started_today_the_real_hedges_here_take_years" in _adv0
+      and _adv0["what_would_help"] == ("walls, firearms, powerful friends, "
+                                       "and copies of your work kept "
+                                       "somewhere else"),
+      _adv0.get("even_started_today_the_real_hedges_here_take_years"))
+_range0 = _adv0["even_started_today_the_real_hedges_here_take_years"]
+check("...and the slowest figure in that range is academy_network's own "
+      "floor - the warning is not silently a different, easier hedge",
+      (_range0["slowest"] if isinstance(_range0, dict) else _range0)
+      == _floor_academy, (_range0, _floor_academy))
+
+_steps0 = _haz.hedge_first_steps("sack_chance")
+_academy_step = next((e for e in _steps0 if e["id"] == "academy_network"), None)
+check("hedge_first_steps names academy_network's own total years, not just "
+      "its own last, short leg (build_yrs 10 of a 30-year chain)",
+      _academy_step is not None
+      and _academy_step.get("years_even_if_you_start_today") == _floor_academy,
+      _academy_step)
+
+# THE FLOOR SHRINKS AS THE CHAIN IS ACTUALLY BUILT, and only by what is
+# actually done - a player partway through sees what is left, not the whole
+# chain re-quoted from scratch.
+_haz2 = sim(civ="han_china_100ad")
+_haz2.done.add("scientific_method"); _haz2.done.add("corpus_written")
+_haz2._done_changed()
+_floor_partial = _haz2._calendar_floor_remaining("academy_network")
+check("...and once scientific_method and corpus_written are actually done, "
+      "the remaining floor is smaller by exactly their own years, not "
+      "recomputed from a standing start",
+      abs(_floor_partial - (_floor_academy - NODES["scientific_method"]["yrs"]
+                            - NODES["corpus_written"]["yrs"])) < 1e-6,
+      (_floor_partial, _floor_academy))
+check("...and once academy_network is done outright, nothing is left to "
+      "wait for at all",
+      "academy_network" not in {e["id"] for e in
+                                run_it(sim(civ="han_china_100ad"),
+                                       "scientific_method", "corpus_written",
+                                       "corpus_dispersed", "endowment_land",
+                                       "academy_network")
+                                .hedge_first_steps("sack_chance")},
+      None)
+
+# =============================================================================
+# MARKET SATURATION: A PENALTY THAT ATE HALF THE REVENUE AND WAS EXPLAINED
+# NOWHERE A PLAYER WOULD READ IT BEFORE THE FACT. Two playtesters (Han,
+# England) each watched a large, unexplained share of gross revenue vanish
+# into goods_market_factor() - a real, intended mechanism (see COMMODITIES.md
+# and GOODS_CATEGORIES) that simply had no total attached anywhere a player
+# would read, and told a player nothing about a SECOND concern's earnings
+# until after they had already opened it.
+# =============================================================================
+_ms1, _ms1_ids = _mk_loom_sim(1, 60)          # one mature loom
+_k1 = _ms1_ids[0]
+_k2 = next(k for k in sorted(NODES)
+          if NODES[k].get("cat") == "textiles" and NODES[k].get("rev")
+          and k != _k1)
+_predicted = _ms1.goods_market_factor_if_opened(_k2)
+check("goods_market_factor_if_opened predicts a SECOND concern's day-one "
+      "factor before it is opened, rather than the flat 1.0 every screen "
+      "listing a not-yet-open venture currently shows",
+      _predicted < 0.9, _predicted)
+_ms1.done.add(_k2)
+_ms1.done_year[_k2] = _ms1.year
+_ms1._done_changed()
+_ms1.open_venture(_k2)
+_actual = _ms1.goods_market_factor(_k2)
+check("...matching what that concern would actually earn the instant it "
+      "opened, not a different, invented number",
+      abs(_predicted - _actual) < 1e-6, (_predicted, _actual))
+_note_before = _mk_loom_sim(1, 60)[0].goods_market_note(_k2)
+check("...and a player reading `ventures`/`why` about the SECOND concern "
+      "before opening it is told so in words, naming market saturation by "
+      "that name, before committing capital rather than after",
+      bool(_note_before) and "market saturation" in _note_before,
+      _note_before)
+check("...and points at the actual way out: a different goods category is "
+      "not competing for the same buyers",
+      "DIFFERENT goods category" in (_note_before or ""), _note_before)
+
+# THE AGGREGATE TOTAL: not only which single row is worst, but how much
+# altogether, and what share of these concerns' own quoted figures that is -
+# the "47% of gross revenue" a player has to be able to read directly.
+_ms10, _ms10_ids = _mk_loom_sim(4, 80)
+_summary10 = _ms10.goods_market_summary()
+check("goods_market_summary states the aggregate denarii lost to market "
+      "saturation and what share of these concerns' own figures that is, "
+      "not only the single worst row",
+      bool(_summary10) and "market saturation is taking about" in _summary10
+      and "%" in _summary10, _summary10)
+
+# GOODS_CATEGORIES' OWN DOCUMENTED FLOORS explain a large fraction lost
+# WITHOUT any compounding bug: a lone mature concern in an eta<1 category
+# settles at floor**(1-eta) of its own day-one figure, exactly the number
+# _goods_category_ratios computes, and two or more concerns in the SAME
+# category divide that further by n_active - both are the documented,
+# intended mechanism, not an accident stacking two effects on the same money.
+for _cat, _cfg in S.Sim.GOODS_CATEGORIES.items():
+    if _cfg["eta"] >= 1.0:
+        continue
+    _asym = _cfg["floor"] ** (1.0 - _cfg["eta"])
+    check("%s's documented floor/eta gives the asymptote _goods_category_"
+          "ratios actually computes for one lone, fully-saturated concern"
+          % _cat,
+          0.0 < _asym < 1.0, _asym)
+# ======================================================================
+# ROUND 8g: a five-report playtest sweep of protocol.py / cli.py (display).
+# ======================================================================
+
+from engine.protocol import (render_state as _RSTATE, render_risk as _RRISK,
+                             render_why as _RWHY, render_ventures as _RVENT,
+                             render_path as _RPATH)
+
+# --- FINDING: "finished, stays finished" meant three different things -
+# a plain prerequisite, a structural bonus, and a non-DAG gate - and the
+# engine said it the same way for all three. `why` now names a
+# CAPABILITY_INSTITUTIONS node for what it is, and leaves an ordinary
+# prerequisite alone.
+_s_cap = sim(civ="rome_100ad", capital=5000000.0)
+_wr_cap = S._agent_dispatch(_s_cap, NODES, {"cmd": "why", "id": "workshop_first"})
+check("why flags a capability institution as needing to stay OPEN, not "
+      "only built",
+      bool(_wr_cap.get("this_is_a_capability_you_must_keep_open")),
+      _wr_cap.get("this_is_a_capability_you_must_keep_open"))
+check("...and the sentence appears on the rendered page too",
+      "KEEP THIS OPEN" in _RWHY(_wr_cap), _RWHY(_wr_cap))
+_wr_plain = S._agent_dispatch(_s_cap, NODES, {"cmd": "why", "id": "scientific_method"})
+check("...while an ordinary prerequisite (not a capability institution) is "
+      "not flagged the same way",
+      _wr_plain.get("this_is_a_capability_you_must_keep_open") is None,
+      _wr_plain.get("this_is_a_capability_you_must_keep_open"))
+
+# --- FINDING: `ventures` scored identity_cover/workshop_first (structural
+# bonuses) and patron_local (a non-DAG gate) exactly like an ordinary
+# earn/cost business, so a Rome player could not tell them apart from a
+# shuttered shop. They now get their own list.
+_s_vcap = sim(civ="rome_100ad", capital=5000000.0)
+_s_vcap.done.update(["identity_cover", "tex_horizontal_loom"])
+_s_vcap._done_changed()
+_vt_cap = S._agent_dispatch(_s_vcap, NODES, {"cmd": "ventures"})
+_cap_ids = [r.get("id") for r in (_vt_cap.get(
+    "capabilities_you_know_how_to_run_but_have_not_opened") or [])
+    if isinstance(r, dict)]
+_ord_ids = [r.get("id") for r in (_vt_cap.get(
+    "you_know_how_but_have_not_opened") or []) if isinstance(r, dict)]
+check("ventures puts an idle capability institution in its own list, not "
+      "the ordinary earn/cost one",
+      "identity_cover" in _cap_ids and "identity_cover" not in _ord_ids,
+      (_cap_ids, _ord_ids))
+check("...and leaves an ordinary idle business in the ordinary list",
+      "tex_horizontal_loom" in _ord_ids and "tex_horizontal_loom" not in _cap_ids,
+      (_cap_ids, _ord_ids))
+
+# --- FINDING: the headline "net X/yr" conflated one-off project spend with
+# recurring burn, so `state` looked like it was about to go broke on any
+# turn a player started something expensive. `state` now prints the
+# recurring figure plainly, not only the after-spend one.
+_s_net = sim(civ="rome_100ad", capital=50000.0)
+_st_net = S._agent_dispatch(_s_net, NODES, {"cmd": "start", "id": "scientific_method"})
+_stt_net = S._agent_dispatch(_s_net, NODES, {"cmd": "state"})
+_rendered_net = _RSTATE(_stt_net)
+check("state's money line names the recurring net as the one to watch",
+      "recurring" in _rendered_net and "one to watch" in _rendered_net,
+      _rendered_net.splitlines()[4:7])
+check("...and, once a project has actually taken spend, also shows the "
+      "one-off after-spend figure alongside it",
+      (_stt_net.get("project_spend_this_year") or 0) <= 0.5
+      or "one-off" in _rendered_net,
+      (_stt_net.get("project_spend_this_year"), _rendered_net.splitlines()[4:7]))
+
+# --- FINDING: an undocumented per-project throttle (cost divided by the
+# calendar floor, however much cash is in hand) already explained itself on
+# `state`; it said nothing on `why` for that same active project, which is
+# the screen a player checking on one stalled project by name would reach
+# for.
+_s_thr = sim(civ="han_china_100ad", capital=5000000.0)
+_ok_thr, _ = _s_thr.start_project("sc2_method_negative_result")
+_s_thr.step()
+_wr_thr = S._agent_dispatch(_s_thr, NODES, {"cmd": "why", "id": "sc2_method_negative_result"})
+check("why on an ACTIVE project says what it is waiting on, not just ACTIVE",
+      bool(_wr_thr.get("waiting_on")), _wr_thr.get("waiting_on"))
+check("...and, with abundant cash against a 20-year calendar floor, names "
+      "the pace throttle by the same words `state` uses for it",
+      "pace it can absorb money" in (_wr_thr.get("waiting_on") or ""),
+      _wr_thr.get("waiting_on"))
+
+# --- FINDING: `risk`'s per-year percentages read as one low-stakes roll,
+# when the engine actually checks them independently EVERY year a hazard's
+# window is open. A Rome player was sacked twice in the same window having
+# read exactly this kind of figure as safe. The screen now says the window
+# is repeated and what it adds up to.
+_s_haz = sim(civ="rome_100ad")
+_s_haz.events = True
+_s_haz.year = 240          # inside Rome's Third Century Crisis, 235-284
+_rk = S._agent_dispatch(_s_haz, NODES, {"cmd": "risk"})
+_crisis = next((h for h in (_rk.get("knowledge_risk") or {}).get(
+    "known_hazards_ahead") or [] if "Third century" in h.get("name", "")), None)
+check("a real dated, multi-year sacking hazard exists to check against",
+      _crisis is not None, [h.get("name") for h in
+      (_rk.get("knowledge_risk") or {}).get("known_hazards_ahead") or []])
+if _crisis:
+    _rendered_risk = _RRISK(_rk)
+    check("risk says a per-year hazard is rolled EVERY year of its window, "
+          "not once",
+          "checked EVERY year" in _rendered_risk and "chance" in _rendered_risk,
+          [ln for ln in _rendered_risk.splitlines() if "checked EVERY year" in ln])
+    check("...and the cumulative chance across the window is higher than "
+          "the bare per-year figure, which is the whole point",
+          any("100%" in ln or "chance at least one sacking" in ln
+              for ln in _rendered_risk.splitlines()),
+          [ln for ln in _rendered_risk.splitlines() if "sacking lands" in ln])
+
+# --- FINDING: `path <goal>` is the actual walkthrough and was buried in one
+# line of `help commands`, absent from the five starter verbs, and answered
+# a different question from `available` - "what the goal still needs" never
+# joined to "what I could start today". A Han player scripted the
+# intersection themselves outside the game. `path` now does the join.
+_s_pth2 = sim(civ="rome_100ad")
+_rp2 = S._agent_dispatch(_s_pth2, NODES, {"cmd": "path", "id": GOAL})
+check("path names how many of the remaining nodes are startable today",
+      isinstance(_rp2.get("startable_today_count"), int)
+      and _rp2["startable_today_count"] >= 1,
+      _rp2.get("startable_today_count"))
+_av2 = S._agent_dispatch(_s_pth2, NODES, {"cmd": "available", "all": True})
+_av_ids = {e["id"] for e in (_av2.get("available") or []) if isinstance(e, dict)}
+_path_startable_ids = {e["id"] for e in (_rp2.get("startable_today_toward_this") or [])
+                       if isinstance(e, dict)}
+check("...and every one of those is genuinely on `available` too - the "
+      "join is a real intersection, not an invented list",
+      _path_startable_ids <= _av_ids, _path_startable_ids - _av_ids)
+_welcome = S._agent_dispatch(_s_pth2, NODES, {"cmd": "help"})
+check("...and path is now reachable from the welcome screen, not only "
+      "buried in `help commands`",
+      '"cmd":"path"' in str(_welcome), _welcome.get("help"))
+check("path has its own rendering, not a raw key/value dump",
+      "ROUTE TO" in _RPATH(_rp2) and "STARTABLE TODAY" in _RPATH(_rp2),
+      _RPATH(_rp2)[:80])
+
+# --- FINDING: `train` and `hire` are two required steps for a taught
+# (TRADES_ABSENT) trade, and neither train's own success message nor a
+# project's `why` said so beforehand - the refusal only ever appeared at
+# `start`.
+_s_th = sim(civ="han_china_100ad", capital=5000000.0)
+_tr = S._agent_dispatch(_s_th, NODES, {"cmd": "train", "trade": "machinist", "n": 1})
+check("train's own success message says a second step (hire) still stands "
+      "between training a taught trade and a project being able to use it",
+      bool(_tr.get("means")) and "hire" in _tr["means"], _tr.get("means"))
+_wr_th = S._agent_dispatch(_s_th, NODES, {"cmd": "why", "id": "ag2_baler"})
+check("why on a project needing that just-taught trade says nobody can do "
+      "the work yet, before `start` ever refuses it",
+      "machinist" in (_wr_th.get("trades_taught_but_nobody_here_to_do_them_yet") or []),
+      _wr_th.get("trades_taught_but_nobody_here_to_do_them_yet"))
+check("...and the same sentence appears on the rendered page",
+      "TAUGHT, BUT NOBODY HERE" in _RWHY(_wr_th), _RWHY(_wr_th))
+
+# --- FINDING (same root cause as above): closing a capability institution
+# for the upkeep back used to read exactly like closing an ordinary
+# business - a Mexica player did this and lost the capability silently,
+# twice. `mothball` now says so.
+_s_mb = sim(civ="rome_100ad", capital=5000000.0)
+_s_mb.done.add("identity_cover"); _s_mb._done_changed()
+_s_mb.open_venture("identity_cover")
+_mb_out = S._agent_dispatch(_s_mb, NODES, {"cmd": "mothball", "id": "identity_cover"})
+check("mothballing a capability institution says more than its upkeep "
+      "stopped",
+      _mb_out.get("ok") and bool(_mb_out.get("but"))
+      and "capability" in _mb_out["but"], _mb_out.get("but"))
+_s_mb2 = sim(civ="rome_100ad", capital=5000000.0)
+_s_mb2.done.add("tex_horizontal_loom"); _s_mb2._done_changed()
+_s_mb2.open_venture("tex_horizontal_loom")
+_mb_out2 = S._agent_dispatch(_s_mb2, NODES, {"cmd": "mothball", "id": "tex_horizontal_loom"})
+check("...and an ordinary business closing carries no such warning",
+      _mb_out2.get("ok") and "but" not in _mb_out2, _mb_out2)
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

@@ -1056,6 +1056,41 @@ class SocietyMixin:
         return (1.0 - share), ("an army and treasury the state can call on "
                                "(military strength %d%%)" % round(lev * 100))
 
+    def _calendar_floor_remaining(self, goal):
+        """Minimum calendar years before `goal` is finished, even if every
+        prerequisite still open were started TODAY - critical_path()'s own
+        floor (see data.py), minus whatever of that chain is already done.
+
+        THE NUMBER THE WARNING WAS MISSING. A Han playtester was told from
+        turn one that the hedge against being sacked was "copies of your
+        work kept somewhere else" and, having acted on that the moment it
+        was said, still lost the corpus to the Yellow Turban rebellion -
+        twice, some of it rebuilt and lost again. The advice was right and
+        the words never changed; what was missing was that the strongest
+        hedge in HAZARD_COUNTERS["sack_chance"] (academy_network, sharing
+        0.40 of the risk, the biggest single number in that list) sits at
+        the end of scientific_method -> corpus_written -> corpus_dispersed
+        -> academy_network, a chain whose OWN yrs fields (data already
+        carried, already shown per-node as `calendar_floor_years` by
+        protocol.py, and already the basis of the `path` command's own
+        "Longest serial chain" line) sum to a 30-year floor - not something
+        five years' warning is enough for, and nothing before this said the
+        chain had a length at all, only that it existed.
+
+        Reuses critical_path(), the SAME function `path` already calls for
+        exactly this question about a goal node - not a second notion of
+        "how long something takes" invented for hazards - and only sums the
+        portion of the winning chain not already in self.done, so a player
+        partway through the chain sees what is actually left, not the whole
+        chain's floor from scratch every time.
+        """
+        if goal not in self.nodes:
+            return None
+        _total, chain = critical_path(self.nodes, goal)
+        remaining = sum(max(self.nodes[k]["yrs"], self.nodes[k]["ph"] / 2000.0)
+                        for k in chain if k not in self.done)
+        return round(remaining, 1)
+
     def hazard_advice(self, kind):
         """What KIND of thing would help, without naming what you cannot see.
 
@@ -1090,6 +1125,26 @@ class SocietyMixin:
             step = self.hedge_first_steps(kind)
             if step:
                 out["you_could_begin_now_toward_it"] = step
+            # AND HOW LONG BEFORE ANY OF IT HELPS. Numbers only, never a node
+            # id, so this tells nothing fog would hide: two playtesters (Han,
+            # Rome) each acted on `what_would_help` the moment they read it and
+            # were sacked anyway, because the strongest real hedge among these
+            # words is not a purchase, it is a multi-decade diffusion chain -
+            # see _calendar_floor_remaining's own comment. Given as a range
+            # because these words bundle several genuinely different hedges
+            # (a patron is bought in a few years; three dispersed academies are
+            # not), and the range is the honest shape of the answer: some of
+            # this is fast, and the slowest part is not.
+            floors = sorted(
+                f for node, _share, _label in self.HAZARD_COUNTERS.get(kind, ())
+                if not node.startswith("_") and node in self.nodes
+                and not self.has(node)
+                for f in [self._calendar_floor_remaining(node)]
+                if f is not None)
+            if floors:
+                out["even_started_today_the_real_hedges_here_take_years"] = (
+                    {"quickest": floors[0], "slowest": floors[-1]}
+                    if floors[0] != floors[-1] else floors[0])
         return out
 
     def hedge_first_steps(self, kind, limit=4):
@@ -1106,10 +1161,12 @@ class SocietyMixin:
         """
         want = []
         leads_to = {}
+        counters = set()
         for node, _share, label in self.HAZARD_COUNTERS.get(kind, ()):
             if node not in self.nodes or node in self.done:
                 continue
             want.append((0, node))
+            counters.add(node)
             leads_to.setdefault(node, label)
             for pre in self.nodes[node]["pre"]:
                 if pre in self.nodes and pre not in self.done:
@@ -1132,11 +1189,22 @@ class SocietyMixin:
             if getattr(self, "fog", False) and not self.is_visible(k, _memo=memo):
                 continue
             ok, why = self.start_reason(k)
-            out.append({"id": k, "name": self.nodes[k]["name"],
-                        "cost": round(self.project_cost(k), 1),
-                        "because_it_gives_you": leads_to.get(k),
-                        "can_begin_now": bool(ok),
-                        "waiting_on": None if ok else why})
+            entry = {"id": k, "name": self.nodes[k]["name"],
+                     "cost": round(self.project_cost(k), 1),
+                     "because_it_gives_you": leads_to.get(k),
+                     "can_begin_now": bool(ok),
+                     "waiting_on": None if ok else why}
+            # THE WHOLE ROAD, not just this one node's own calendar floor. A
+            # step that "can begin now" and costs little reads as quick; for
+            # a HAZARD_COUNTERS entry itself (not one of its prerequisites)
+            # this is often the LAST of several such steps, each looking
+            # equally beginnable, with a total the size of a human generation
+            # behind it. See _calendar_floor_remaining.
+            if k in counters:
+                floor = self._calendar_floor_remaining(k)
+                if floor is not None:
+                    entry["years_even_if_you_start_today"] = floor
+            out.append(entry)
             if len(out) >= limit:
                 break
         # What you can start comes first: it is the part you can act on today.

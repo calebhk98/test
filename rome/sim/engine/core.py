@@ -725,6 +725,13 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # RISE - "EMPLOY: 0 people" with seventeen concerns running, and the
         # same loom still paying 435 a year in 1800 with nobody employed,
         # straight through the Black Death.
+        # THE OTHER HALF OF THE SAME RULE, and applied FIRST: staff hired or
+        # taught this same year (the block just above) should get first claim
+        # on reclaiming what attrition shut, before anything is judged still
+        # short and closed again. See reopen_restaffed_ventures's own
+        # docstring for why this is not gated by auto_open - three
+        # playtesters spent most of a run on the treadmill this closes.
+        self.reopen_restaffed_ventures(yr)
         self.close_unstaffed_ventures(yr)
         # Open what plainly pays for itself, before the books are struck: a
         # concern you opened this year is a concern that earns this year.
@@ -1099,7 +1106,18 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                            if self.nodes[k]["rev"] - self.nodes[k]["up"] > 0]
                 earners.sort(key=lambda k: self.project_cost(k)
                              / max(1.0, self.nodes[k]["rev"] - self.nodes[k]["up"]))
-                candidates = earners + [k for k in self.order if k not in set(earners)]
+                # `set(earners)` HOISTED OUT OF THE COMPREHENSION. Written
+                # inline as `if k not in set(earners)`, this rebuilt the set
+                # from scratch on every one of the 2,833 iterations of the
+                # walk over self.order - one throwaway set per node, an
+                # O(|order| x |earners|) rebuild for what a single set
+                # covers in O(|order|). Profiling a 300-year single-seed run
+                # found this one line costing 0.81s of self time over just
+                # 21 calls - a tight-money branch, but each call did the
+                # equivalent of an extra multi-hundred-thousand-item pass.
+                # See PERFORMANCE.md.
+                _earner_set = set(earners)
+                candidates = earners + [k for k in self.order if k not in _earner_set]
             for k in candidates:
                 if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
                     break

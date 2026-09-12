@@ -732,6 +732,21 @@ def _agent_help(s, topic=None):
                 "start <id>": "begin it",
                 "step <years>": "let time pass",
             },
+            # THE ACTUAL WALKTHROUGH, and it used to appear in exactly one
+            # line of `help commands` and nowhere near the five above. An
+            # England player spent about forty minutes guessing before
+            # finding it, and said it "trivially reorganized the rest of
+            # play" once they had. It is also the answer to the single most
+            # requested thing two other players asked for in separate
+            # sessions: what the goal still needs, joined to what you could
+            # start on it today, instead of two separate reports you cross
+            # off against each other by eye.
+            **({} if fog else {
+                "and the sixth, once you have a goal in mind": (
+                    "{\"cmd\":\"path\",\"id\":\"<goal>\"} - everything still "
+                    "standing between here and there, AND which of those "
+                    "you could start TODAY. This is the walkthrough."),
+            }),
             # See cmd_play's opening screen for why this is not buried in a
             # topic: a finished concern earns nothing until its doors open, and
             # a tester left seven of them shut and went bankrupt in year three.
@@ -797,7 +812,11 @@ def _agent_help(s, topic=None):
             "bribe <amount>": "spend money to reduce a scandal",
             "policy": "every automatic behaviour, and a switch for each",
             "path <id>": ("not available under fog of war" if fog
-                          else "what something still needs"),
+                          else "the route to one thing: everything still "
+                               "standing between here and there, AND which "
+                               "of those you could start today - the "
+                               "walkthrough, effectively; try 'path' on "
+                               "your goal first"),
             "save <file> / load <file>": "write or read a game",
             "help": "this; add a topic",
             "quit": "stop",
@@ -1723,6 +1742,13 @@ def _node_explain(s, nodes, k):
     bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                       "power", "agriculture", "information", "instruments"))
     started = k in s.done or k in s.active
+    # THE SUPERVISION FIGURE, from the SAME function open_venture() enforces
+    # (see venture_hands, projects.py) - not a second estimate of it. Only
+    # meaningful for something that could ever be a going concern; knowledge
+    # alone (is_venture false) has nothing to keep an eye on.
+    _is_venture = s.is_venture(k)
+    _sup_sch, _sup_art = s.venture_hands(k) if _is_venture else (0.0, 0.0)
+    _free_sch, _free_art = s.venture_staff_free() if _is_venture else (0.0, 0.0)
     out = {
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
         # See strip_self_play_advice (fog.py): drops any sentence that ranks
@@ -1859,6 +1885,42 @@ def _node_explain(s, nodes, k):
                s.headcount() + max(0.0, s.household_room()), s._room_advice())
             if (n["art"] > s.headcount() + max(0.0, s.household_room())
                 and n["art"] > s.artisans) else None),
+        # A SECOND STAFF FIGURE, AND IT IS NOT THE SAME NUMBER. staff_needed
+        # above is the BUILD crew - what start_project gates on, and what
+        # goes idle again once the work is finished. A going concern is a
+        # standing commitment on top of that: somebody of yours has to keep
+        # an eye on it every year it runs, which is venture_hands() - a
+        # quarter of the build crew, floored by how much the concern takes
+        # in (see venture_hands's own comment) - and open_venture() is the
+        # ONLY other place this is checked. Three players built something on
+        # the strength of the number above, paid for it in full, and were
+        # then refused at `open` on a bigger number neither `why` nor
+        # `available` had ever shown them - one measured it exactly:
+        # "2.13 craftsmen" enforced against a `why` that had said "2
+        # artisans" and nothing else. Read the SAME function open_venture()
+        # calls, not a second estimate of it, so the two can never drift
+        # apart again.
+        "staff_to_keep_it_open": (
+            {"scholars": round(_sup_sch, 2), "artisans": round(_sup_art, 2)}
+            if _is_venture else None),
+        "staff_to_keep_it_open_means": (
+            "a SEPARATE requirement from staff_needed above, and the one "
+            "'open' actually enforces once this is built: people of your "
+            "own who keep an eye on it every year it runs, not the crew "
+            "that built it. Often smaller than staff_needed - typically a "
+            "quarter of it - but a concern that takes in a great deal needs "
+            "more watching than it took to build, and this can come out "
+            "LARGER. Checked when you 'open' it, not when you 'start' it, "
+            "so know this number before you spend money on the other one."
+            if _is_venture else None),
+        "more_supervision_than_you_have_free_right_now": (
+            "%.2f scholars and %.2f artisans needed to keep it open; you "
+            "have %.2f and %.2f free right now (not already watching "
+            "something else). This is what 'open' will actually check, on "
+            "the day you open it - hire, teach, or close something first."
+            % (_sup_sch, _sup_art, _free_sch, _free_art)
+            if _is_venture and (_sup_sch > _free_sch + 1e-9
+                                or _sup_art > _free_art + 1e-9) else None),
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
         # NOT CHARGED UNTIL YOU OPEN IT. A tester read the upkeep off `why`,
@@ -1868,6 +1930,28 @@ def _node_explain(s, nodes, k):
         "revenue_and_upkeep_apply_only_once_opened": (
             True if (n["rev"] > 0 or n["up"] > 0) and k not in s.granted
             and k not in s.operating else None),
+        # "FINISHED, STAYS FINISHED" MEANS THREE DIFFERENT THINGS, and this
+        # engine said it the same way for all three. Most of what you build is
+        # a plain prerequisite: done once, it counts for ever, whatever you do
+        # with it afterward (see missing_prerequisites below, which reads
+        # `done`, never `running`). A CAPABILITY_INSTITUTIONS node is not that:
+        # a school's scholars, a workshop's household places, a patron's
+        # credit, and a patron's willingness to have his name behind
+        # something the state is wary of, ALL stop the moment you close the
+        # doors, exactly like its revenue and upkeep above - even though the
+        # knowledge of how to run one never leaves you. A Mexica player lost
+        # two multi-year stretches to closing these for the capital back, and
+        # a Rome player separately could not tell which of `identity_cover`,
+        # `workshop_first` and `patron_local` (all sitting identically in
+        # `ventures`) actually needed to stay open. This says which kind a
+        # node is, in the one place a player reads before deciding.
+        "this_is_a_capability_you_must_keep_open": (
+            "yes - it is knowledge (that part is permanent), but scholars it "
+            "supports, household places it adds, credit or standing it lends "
+            "you, or a future start it clears all stop the moment you close "
+            "it, the same as its revenue and upkeep. Closing it for the "
+            "capital back gives up all of that, not only the money."
+            if k in s.CAPABILITY_INSTITUTIONS else None),
         # ONLY WHAT YOU HAVE HEARD OF. These are read for a visible node, where
         # every prerequisite is either done or itself heard of - except on the
         # goal, which `why` answers under fog because the status line names it
@@ -1951,6 +2035,21 @@ def _node_explain(s, nodes, k):
         # name in someone else's sentence either.
         "start_blocked_reason": None if started else s.fog_scrub(s.start_reason(k)[1]),
     }
+    # WHAT IS ACTUALLY HOLDING AN ACTIVE PROJECT UP, on the one screen a
+    # player names it by id to read. `state` already says this for every
+    # RUNNING project (see _waiting_on's own comment: a project can only
+    # absorb its cost divided by its calendar floor in any one year,
+    # however much cash is in hand, and a Han player watched abundant
+    # capital sit idle against cheap projects for years before inferring the
+    # mechanism themselves). `why <id>` on that same project said nothing of
+    # the kind - STATUS: ACTIVE and no more - which is exactly the screen a
+    # player checking on one specific stalled project would reach for.
+    if k in s.active:
+        _st = s.active[k]
+        _bill = _st.get("cost_left")
+        if _bill is None:
+            _bill = max(0.0, s.project_cost(k) - _st["spent"])
+        out["waiting_on"] = _waiting_on(s, nodes, k, _st, _bill)
     # Say what the two labour fields mean ONLY when this node makes it matter.
     # A tester read them as contradicting each other, so the explanation earns
     # its place; carrying it on every reply whether or not the node hires anyone
@@ -1961,6 +2060,25 @@ def _node_explain(s, nodes, k):
         out["hired_labour_means"] = ("hours of a trade bought in for this job only. "
                                      "These trades do not exist here yet and must "
                                      "be taught; see the labour command.")
+    # TRAIN AND HIRE ARE TWO STEPS, and a project asking for a taught trade
+    # went quiet about it the moment `train` was called - trade_available()
+    # (what `absent` above checks) goes true instantly, years before anyone
+    # actually graduates or is hired in. `start` catches the real shortage
+    # (market_supply, not trade_available) and refuses; `why` said nothing
+    # about it beforehand. A Rome player hit that refusal with no warning on
+    # either this screen or train's own success message.
+    _taught_but_empty = sorted(t for t in n["lab"]
+                               if t not in absent and s.market_supply(t) <= 0.0)
+    if _taught_but_empty:
+        out["trades_taught_but_nobody_here_to_do_them_yet"] = _taught_but_empty
+        out["trades_taught_but_nobody_here_means"] = (
+            "the trade exists here, but nobody is trained and ready: a "
+            "project draws only on people actually held in a taught trade, "
+            "never a general market for it. If someone is still learning "
+            "this may still let the work start and then stall at 0 progress "
+            "on this trade until they finish; if nobody is even learning it "
+            "yet, starting is refused outright. Check 'labour' for who is "
+            "in training, or 'hire' to add people to this trade right now.")
     if n["art"] > s.artisans or n["sch"] > s.effective_scholars():
         out["staff_needed_means"] = ("people kept on your own staff, who understand "
                                      "your methods and stay when this is finished. "
@@ -2105,14 +2223,33 @@ def render_state(out):
     net_after = out.get("net_after_project_spend")
     net_plain = out.get("net_per_year")
     spend = out.get("project_spend_this_year")
-    money_line = "Money: %s den" % _fmt_num(out.get("capital"))
-    if net_after is not None:
-        money_line += "    net %s%s den/yr (after %s den into projects this year)" % (
-            "+" if net_after >= 0 else "", _fmt_num(net_after), _fmt_num(spend or 0))
+    L.append("Money: %s den" % _fmt_num(out.get("capital")))
+    # BOTH NUMBERS, ALWAYS - NOT ONE HIDING THE OTHER. This used to print
+    # net_after_project_spend alone whenever it was present, which is every
+    # turn: it is capital in less what you owe, less whatever went into
+    # projects THIS YEAR, so starting one expensive thing made the household
+    # look about to go broke on the very turn it was investing soundly. A
+    # play tester read that plunge on every build and could not tell "the
+    # household is failing" from "the household just paid for a workshop"
+    # without a second command (`money`) the tutorial never points at. The
+    # recurring figure - what standing income clears with nothing new
+    # started - is the honest one to watch, and it now prints on the same
+    # line `state` is read from every turn instead of one command away.
+    if net_plain is not None and net_after is not None:
+        L.append("  net %s%s den/yr, recurring - this is the one to watch"
+                 % ("+" if net_plain >= 0 else "", _fmt_num(net_plain)))
+        if abs(spend or 0) > 0.5 or round(net_after, 1) != round(net_plain, 1):
+            L.append("  this year also put %s den into projects, leaving "
+                     "%s%s den/yr after that (one-off, not a sign the "
+                     "recurring figure above has changed)"
+                     % (_fmt_num(spend or 0),
+                        "+" if net_after >= 0 else "", _fmt_num(net_after)))
+    elif net_after is not None:
+        L.append("  net %s%s den/yr (after %s den into projects this year)"
+                 % ("+" if net_after >= 0 else "", _fmt_num(net_after), _fmt_num(spend or 0)))
     elif net_plain is not None:
-        money_line += "    standing net %s%s den/yr (does not count project spend)" % (
-            "+" if net_plain >= 0 else "", _fmt_num(net_plain))
-    L.append(money_line)
+        L.append("  standing net %s%s den/yr (does not count project spend)"
+                 % ("+" if net_plain >= 0 else "", _fmt_num(net_plain)))
     if out.get("in_bondage_for_debt"):
         L.append("IN DEBT BONDAGE: %s years left owing %s den"
                  % (_fmt_num(out["in_bondage_for_debt"]), _fmt_num(out.get("debt_still_to_work_off"))))
@@ -2534,6 +2671,20 @@ def render_why(out):
                     "more_craftsmen_than_your_household_can_hold"):
         if out.get(_k_warn):
             L.append(_wrap("  !! " + out[_k_warn], indent="     "))
+    # A SECOND, SEPARATE STAFF FIGURE. Not shown at all until `open` refused
+    # somebody on it, which is the exact complaint three play testers filed.
+    # See staff_to_keep_it_open_means for why this is not the line above.
+    open_staff = out.get("staff_to_keep_it_open")
+    if open_staff is not None:
+        L.append("STAFF TO KEEP IT OPEN: %s scholars, %s artisans   "
+                 "(a separate, later requirement - see below)"
+                 % (_fmt_num(open_staff.get("scholars")),
+                    _fmt_num(open_staff.get("artisans"))))
+        if out.get("staff_to_keep_it_open_means"):
+            L.append(_wrap("  " + out["staff_to_keep_it_open_means"], indent="     "))
+        if out.get("more_supervision_than_you_have_free_right_now"):
+            L.append(_wrap("  !! " + out["more_supervision_than_you_have_free_right_now"],
+                            indent="     "))
     lab = out.get("hired_labour") or {}
     if lab:
         L.append("HIRED LABOUR: " + ", ".join("%s %sh" % (t, _fmt_num(h)) for t, h in lab.items()))
@@ -2554,12 +2705,21 @@ def render_why(out):
     if out.get("but_it_pays_YOU") is not None:
         L.append("  BUT IT PAYS YOU %s den/yr: %s"
                  % (_fmt_num(out["but_it_pays_YOU"]), out.get("because") or ""))
+    if out.get("revenue_and_upkeep_apply_only_once_opened"):
+        L.append("  NOT CHARGED OR EARNED UNTIL YOU OPEN IT: finishing this "
+                 "buys the knowledge; the figures above only start moving "
+                 "once you 'open' it.")
+    if out.get("this_is_a_capability_you_must_keep_open"):
+        L.append(_wrap("  KEEP THIS OPEN: " + out["this_is_a_capability_you_must_keep_open"],
+                       indent="    "))
 
     L.append("")
     status = ("DONE" if out.get("done") else
               "ACTIVE" if out.get("active") else
               "CAN START NOW" if out.get("can_start_now") else "BLOCKED")
     L.append("STATUS: %s" % status)
+    if out.get("active") and out.get("waiting_on"):
+        L.append(_wrap("  waiting on: " + out["waiting_on"], indent="    "))
     if out.get("start_blocked_reason"):
         # start_blocked_reason is already the full, human-authored sentence -
         # when it is naming missing prerequisites (the common case) it says
@@ -2622,6 +2782,11 @@ def render_why(out):
         L.append("")
         L.append(_wrap(out.get("hired_labour_means") or ""))
         L.append("TRADES NOT YET TAUGHT HERE: " + ", ".join(out["trades_that_do_not_exist_here"]))
+    if out.get("trades_taught_but_nobody_here_to_do_them_yet"):
+        L.append("")
+        L.append("TAUGHT, BUT NOBODY HERE TO DO IT YET: "
+                 + ", ".join(out["trades_taught_but_nobody_here_to_do_them_yet"]))
+        L.append(_wrap(out.get("trades_taught_but_nobody_here_means") or ""))
     if out.get("staff_needed_means"):
         L.append(_wrap(out["staff_needed_means"]))
     return "\n".join(L)
@@ -2664,11 +2829,13 @@ def render_money(out):
                 continue
             L.append("  %-30s %s"
                      % (k.lstrip("_").replace("_", " "), _fmt_num(v)))
-    L.append("Net/yr before the work in hand: %s     spent on projects last step: %s"
+    L.append("Net/yr before the work in hand: %s   (recurring - `state` "
+             "prints this same figure)     spent on projects last step: %s"
              % (_fmt_num(out.get("net_per_year")),
                 _fmt_num(out.get("spent_on_projects_last_year"))))
     if out.get("net_after_project_spend") is not None:
-        L.append("Net/yr after it: %s   (this is the figure `state` prints)"
+        L.append("Net/yr after it: %s   (one-off; `state` prints this too, "
+                 "alongside the recurring figure above)"
                  % _fmt_num(out.get("net_after_project_spend")))
     L.append("Credit limit: %s (%s used)     interest on arrears: %s     paid so far: %s"
              % (_fmt_num(out.get("credit_limit")),
@@ -2875,15 +3042,16 @@ def render_ventures(out):
         L.append("  %-34s %10s %10s %8s" % ("ID", "EARNS/YR", "COSTS/YR", "NEEDS"))
         for r in run:
             nd = r.get("needs") or {}
-            L.append("  %-34s %10s %10s %4s sch %3s cr"
+            L.append("  %-34s %10s %10s %4s sch %3s cr%s"
                      % (r.get("id"), _fmt_num(r.get("earns_a_year")),
                         _fmt_num(r.get("costs_a_year")),
-                        _fmt_num(nd.get("scholars")), _fmt_num(nd.get("craftsmen"))))
+                        _fmt_num(nd.get("scholars")), _fmt_num(nd.get("craftsmen")),
+                        "   [CAPABILITY - see below]" if r.get("capability") else ""))
     else:
         L.append("  nothing")
     idle = out.get("you_know_how_but_have_not_opened")
     L.append("")
-    L.append("YOU KNOW HOW, AND HAVE NOT OPENED")
+    L.append("YOU KNOW HOW, AND HAVE NOT OPENED  (ordinary earn/cost businesses)")
     if isinstance(idle, list) and idle:
         L.append("  %-34s %10s %10s %10s" % ("ID", "EARNS/YR", "COSTS/YR", "TO OPEN"))
         for r in idle:
@@ -2894,6 +3062,21 @@ def render_ventures(out):
         L.append("  nothing")
     if out.get("and_more_you_could_open"):
         L.append("  ...and %s more" % _fmt_num(out["and_more_you_could_open"]))
+    # CAPABILITIES ARE NOT EARN/COST DECISIONS, and a table that scored them
+    # as one is exactly what put identity_cover and patron_local in the same
+    # row a Rome player could not tell apart. A separate heading, with money
+    # figures still shown for reference but a standing warning that money is
+    # not the whole story here.
+    cap_idle = out.get("capabilities_you_know_how_to_run_but_have_not_opened")
+    if isinstance(cap_idle, list) and cap_idle:
+        L.append("")
+        L.append("YOU KNOW HOW, AND HAVE NOT OPENED  (capabilities - NOT judged "
+                 "on money alone; 'why <id>' says what each one actually does)")
+        L.append("  %-34s %10s %10s %10s" % ("ID", "EARNS/YR", "COSTS/YR", "TO OPEN"))
+        for r in cap_idle:
+            L.append("  %-34s %10s %10s %10s"
+                     % (r.get("id"), _fmt_num(r.get("earns_a_year")),
+                        _fmt_num(r.get("costs_a_year")), _fmt_num(r.get("to_open_it"))))
     if out.get("your_practice_is_not_a_venture"):
         L.append("")
         L.append(_wrap("YOUR PRACTICE (not a concern, and not listed above): "
@@ -2906,6 +3089,7 @@ def render_ventures(out):
 
 def render_risk(out):
     kr = out.get("knowledge_risk") or out
+    year = out.get("year")
     L = ["KNOWLEDGE AT RISK"]
     L.append("technologies at risk: %s     chance lost if a site is sacked: %s     fraction lost when it happens: %s"
              % (_fmt_num(kr.get("technologies_at_risk")), _pct(kr.get("loss_chance_if_a_site_is_sacked")),
@@ -2927,6 +3111,27 @@ def render_risk(out):
         yrs = h.get("years") or [0, 0]
         tag = "IN PROGRESS" if h.get("in_progress") else "%s-%s" % (yrs[0], yrs[-1])
         L.append("[%s] %s" % (tag, h.get("name")))
+        # REPEATED ROLLS, NOT ONE. A per-year percentage over a window that
+        # can run decades reads as one low-stakes check, and it is not one:
+        # the engine rolls it independently EVERY year the window is open
+        # (SocietyMixin._shocks runs once per simulated year, and this same
+        # hazard is tested again each time). A Rome player, shown a figure
+        # like this and told nothing about the window, built the hedges the
+        # game suggested, was sacked twice in the same window anyway, and
+        # lost about 300,000 denarii and 17 in-progress projects. Say what
+        # the window actually adds up to, not only the one year's die.
+        _p_year = h.get("sack_chance_per_year")
+        if _p_year:
+            _y0, _y1 = yrs[0], yrs[-1]
+            _from = max(_y0, year) if year is not None else _y0
+            _span = max(1, int(round(_y1 - _from)) + 1)
+            _p_eff = h.get("sack_chance_after_what_you_have_built")
+            _p_use = _p_eff if _p_eff is not None else _p_year
+            _cum = 1.0 - (1.0 - max(0.0, min(1.0, _p_use))) ** _span
+            L.append("  %s a year, checked EVERY year of this %d-year window "
+                     "- not once: about %s chance at least one sacking lands "
+                     "somewhere in it before the window closes"
+                     % (_pct(_p_year), _span, _pct(_cum)))
         if h.get("note"):
             L.append(_wrap(h["note"], indent="  "))
         for kind, advice in (h.get("what_you_can_do") or {}).items():
@@ -3087,12 +3292,51 @@ def render_rush(out):
     return "\n".join(L)
 
 
+def render_path(out):
+    """The route to one goal, and - the join nobody had - which of the
+    nodes still standing between here and there you could actually begin
+    today. See the op handler's own comment: two players asked for exactly
+    this, and a third built their own script outside the game to get it.
+    """
+    L = ["ROUTE TO %s  [%s]" % (out.get("name"), out.get("id"))]
+    if out.get("done"):
+        L.append("You have already built this.")
+        return "\n".join(L)
+    L.append("%s node(s) still stand between here and there; %s of them you "
+             "could start TODAY, %s are still waiting on something else"
+             % (_fmt_num(out.get("remaining_count")),
+                _fmt_num(out.get("startable_today_count")),
+                _fmt_num(out.get("still_waiting_on_something_else"))))
+    L.append("")
+    rows = out.get("startable_today_toward_this")
+    L.append("STARTABLE TODAY, TOWARD THIS GOAL  (cheapest first)")
+    if isinstance(rows, list) and rows:
+        _w = max([34] + [len(e.get("id") or "") for e in rows])
+        L.append("%-*s %-20s %9s %7s %5s %5s %8s %7s %6s %6s"
+                 % (_w, "ID", "NAME", "COST", "HOURS", "YEARS", "RISK", "EARNS/YR",
+                    "UPKEEP", "STAFF", "RESTS"))
+        for e in rows:
+            L.append(_available_row(e, _w, None))
+        if out.get("and_more_startable_today"):
+            L.append("...and %s more" % _fmt_num(out["and_more_startable_today"]))
+    else:
+        L.append("  nothing - " + (out.get("note") or
+                 "everything left on this route is waiting on something else"))
+    if out.get("on_this_route_but_shut_down"):
+        L.append("")
+        L.append("ON THIS ROUTE BUT SHUT DOWN: "
+                 + ", ".join(out["on_this_route_but_shut_down"]))
+        if out.get("reopen_them_with"):
+            L.append(_wrap("  " + out["reopen_them_with"]))
+    return "\n".join(L)
+
+
 _RENDERERS = {
     "policy": render_policy,
     "state": render_state, "step": render_step, "available": render_available,
     "why": render_why, "money": render_money, "ledger": render_money,
     "accounts": render_money, "labour": render_labour, "risk": render_risk,
-    "hazards": render_risk, "ventures": render_ventures,
+    "hazards": render_risk, "ventures": render_ventures, "path": render_path,
     "mines": render_mines, "workings": render_mines,
     "stuck": render_stuck, "log": render_log, "history": render_log,
     "values": render_values, "rush": render_rush,
@@ -4185,8 +4429,27 @@ def _agent_dispatch_inner(s, nodes, cmd):
         need = closure(nodes, k)
         order = topo_order(nodes, need)
         remaining = [x for x in order if x not in s.done]
-        out = {"ok": True, "id": k, "done": k in s.done,
+        out = {"ok": True, "id": k, "name": nodes[k]["name"], "done": k in s.done,
                "remaining_count": len(remaining), "remaining": remaining}
+        # THE JOIN NOBODY HAD: "what the goal still needs" and "what I could
+        # start today" were two separate reports - this one, and `available`
+        # - and by midgame nearly everything on `available`'s several-hundred
+        # row list is irrelevant to any one goal. A Han player wrote their own
+        # regex script outside the game to intersect the two; an England
+        # player asked for exactly this. Do the intersection here, once,
+        # cheapest first, so it never has to be done by eye or by script
+        # again.
+        _startable = sorted((x for x in remaining if s.can_start(x)),
+                            key=lambda x: s.project_cost(x))
+        out["startable_today_count"] = len(_startable)
+        out["startable_today_toward_this"] = (
+            [_brief(s, nodes, x, False) for x in _startable[:30]] or "nothing yet")
+        if len(_startable) > 30:
+            out["and_more_startable_today"] = len(_startable) - 30
+        out["still_waiting_on_something_else"] = len(remaining) - len(_startable)
+        if remaining and not _startable:
+            out["note"] = ("nothing on the route is startable today - see "
+                           "'stuck' for what the nearest of them are waiting on")
         # A ROUTE THAT DOES NOT SAY "RESTORE" IS A ROUTE YOU CANNOT FOLLOW. A
         # break tester drove a run mechanically from `path` after a sack:
         # `path` listed lead_chamber as remaining, `start` answered "you built
@@ -4620,7 +4883,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op in ("risk", "hazards"):
         kr = s.knowledge_risk()
-        return {"ok": True, "knowledge_risk": kr,
+        return {"ok": True, "knowledge_risk": kr, "year": s.year,
                 "note": "What history is about to do to you, and what you have "
                         "built that blunts it. Every hazard here is fightable."}
 
@@ -5099,9 +5362,29 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, msg = s.train(cmd.get("trade"), n, cmd.get("from"))
         if not ok:
             return {"ok": False, "error": msg}
-        return {"ok": True, "training": msg, "capital": round(s.capital, 1),
-                "your_hours_left_this_year": round(
-                    max(0.0, s.director_pool() - s.director_hours_committed()), 1)}
+        out = {"ok": True, "training": msg, "capital": round(s.capital, 1),
+               "your_hours_left_this_year": round(
+                   max(0.0, s.director_pool() - s.director_hours_committed()), 1)}
+        # TRAIN AND HIRE ARE TWO SEPARATE STEPS, and this message was the only
+        # one a player saw at the moment they took the first of them. This
+        # trade did not exist here before, and a project's hired_labour for it
+        # draws only on people you have trained or hired INTO it - there is no
+        # open market to fall back on the way there is for a smith or a
+        # scribe. Nobody can do that work until the people above finish
+        # learning, and 'hire' is how you add more without that wait, now that
+        # the trade exists to hire into at all. A Rome player found this out
+        # only when `start` refused a project outright, having read nothing on
+        # this screen or on `why` that named the gap in advance.
+        _trade = str(cmd.get("trade") or "").strip().lower()
+        if _trade in TRADES_ABSENT:
+            out["means"] = (
+                "%s now exists here, but nobody can do that work yet: a "
+                "project needing it draws only on people trained or hired "
+                "into this exact trade, never a general market. "
+                "'hire %s <n>' adds more right away, without waiting; "
+                "otherwise the people above are it until they finish."
+                % (_trade, _trade))
+        return out
 
     if op in ("commission", "job"):
         if ended:
@@ -5126,7 +5409,21 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # choice gets a line of its own too.
         s.log.append((s.year, "mothballed: %s (%s)"
                      % (nodes[_mb_id]["name"] if _mb_id in nodes else _mb_id, msg)))
-        return {"ok": True, "mothballed": msg, "upkeep": round(s.upkeep(), 1)}
+        out = {"ok": True, "mothballed": msg, "upkeep": round(s.upkeep(), 1)}
+        # SAY WHAT ELSE CLOSES WITH IT. A Mexica player shut capability
+        # institutions for the capital back and lost two multi-year
+        # stretches to it silently - the upkeep saving was the only thing
+        # this reply ever mentioned. `mothball` takes effect before this
+        # runs, so `s.CAPABILITY_INSTITUTIONS` already tells the truth about
+        # what just stopped.
+        if _mb_id in s.CAPABILITY_INSTITUTIONS:
+            out["but"] = (
+                "this was a capability, not only an expense: scholars it "
+                "supported, household places it added, credit or standing "
+                "it lent you, or a future start it cleared have ALL stopped "
+                "too, the same as its upkeep. 'restore %s' brings it back "
+                "for a fraction of the original cost." % _mb_id)
+        return out
 
     if op == "restore":
         _rs_id = cmd.get("id")
@@ -5297,13 +5594,34 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _note = s.goods_market_note(k)
             if _note:
                 row["market"] = _note
+            # A CAPABILITY, NOT ONLY A BUSINESS. Every other row here is a
+            # straightforward earn-vs-cost decision; these are not, because
+            # closing one loses scholars it supports, household places it
+            # adds, credit or standing it lends, or a future start it clears
+            # - none of which show up in earns/costs at all. A Rome player
+            # could not tell `identity_cover` and `workshop_first` (real
+            # capabilities) apart from an ordinary shuttered business by
+            # looking at this exact table; a Mexica player closed some of
+            # these for the capital back and lost the capability along with
+            # it, twice, having no way to see the difference here either.
+            if k in s.CAPABILITY_INSTITUTIONS:
+                row["capability"] = ("yes - more than income; see 'why %s'" % k)
             return row
 
+        # CAPABILITY INSTITUTIONS GET THEIR OWN LIST. Sorting them into the
+        # ordinary earn/cost table invited exactly the misreading above; a
+        # separate heading says outright that these are not evaluated the
+        # same way.
+        _idle_ordinary = [k for k in idle if k not in s.CAPABILITY_INSTITUTIONS]
+        _idle_capability = [k for k in idle if k in s.CAPABILITY_INSTITUTIONS]
         out = {"ok": True,
                "running": [_vrow(k) for k in running] or "nothing",
                "you_know_how_but_have_not_opened":
                    [dict(_vrow(k), to_open_it=round(s.venture_capex(k), 1))
-                    for k in idle[:20]] or "nothing",
+                    for k in _idle_ordinary[:20]] or "nothing",
+               "capabilities_you_know_how_to_run_but_have_not_opened":
+                   [dict(_vrow(k), to_open_it=round(s.venture_capex(k), 1))
+                    for k in _idle_capability] or "nothing",
                "people_free_to_run_something_new": {
                    "scholars": round(sch_free, 2), "craftsmen": round(art_free, 2)},
                # YOU ARE IN THAT COUNT. `ventures` said "1 scholars, 1
@@ -5341,7 +5659,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        "Of the things in the TREE, only what you are RUNNING "
                        "earns anything or costs anything. 'open <id>' starts "
                        "one, 'mothball <id>' stops it, and you keep the "
-                       "knowledge either way."}
+                       "knowledge either way. The capability list below is "
+                       "not judged on money the way the ordinary one is - see "
+                       "each one's own 'why' before deciding whether to open "
+                       "or close it."}
         # THE PRACTICE IS NOT A VENTURE, AND IT IS WHERE YOUR MONEY COMES FROM.
         # A break tester read "RUNNING: nothing" and "only what you are RUNNING
         # earns anything" on the same screen as a ledger paying 233.5 a year
@@ -5354,8 +5675,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "%s You did not open it and you cannot close it; it is not "
                 "listed here, and it is most of your income until you build "
                 "something. See 'money'." % _prac_note)
-        if len(idle) > 20:
-            out["and_more_you_could_open"] = len(idle) - 20
+        if len(_idle_ordinary) > 20:
+            out["and_more_you_could_open"] = len(_idle_ordinary) - 20
         return out
 
     if op == "policy":
