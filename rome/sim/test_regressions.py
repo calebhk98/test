@@ -9614,26 +9614,65 @@ check("bare 'save' (no filename) writes a new milestone file distinct from "
       "the ongoing --session file, rather than doing nothing or colliding "
       "with it",
       "saved a copy of" in _sess2.stdout, _sess2.stdout[-600:])
+# NOT its own ".meta.json" sidecar, which now exists too (the milestone's
+# "checkpoint" marker - see settings.is_checkpoint) and would otherwise also
+# match "_saved_...json": the same exclusion settings.list_saves itself
+# already applies when it walks this same directory.
 _sess_milestones = [f for f in os.listdir(_sess_saves)
-                    if "_saved_" in f and f.endswith(".json")]
+                    if "_saved_" in f and f.endswith(".json")
+                    and not f.endswith(".meta.json")]
 check("...and that file actually exists, separate from the session file",
       len(_sess_milestones) == 1
       and os.path.exists(os.path.join(_sess_saves, _sess_milestones[0]))
       and os.path.exists(_sess_session),
       os.listdir(_sess_saves))
 _sess_milestone_year = re.search(r"saved a copy of (\d+) AD", _sess2.stdout)
+_milestone_path = os.path.join(_sess_saves, _sess_milestones[0])
+_milestone_bytes_before = (open(_milestone_path, "rb").read()
+                           if os.path.exists(_milestone_path) else None)
+# A SEPARATE ROME_SAVE_DIR, deliberately NOT _sess_saves: resuming a
+# checkpoint now forks a fresh session file (see cli.py's `checkpoint_source`),
+# claimed via settings.resolve_save_dir() the same way a brand new game's
+# session file is - and leaving that fork in _sess_saves would change which
+# file the `_sess3`/`_sess4` bare-'load' checks further down pick up as "the
+# most recently written save", which is a real file this test would then be
+# quietly depending on the order of rather than testing what it says it does.
+_sess_resume_env = dict(os.environ, ROME_SAVE_DIR=tempfile.mkdtemp())
 _sess_resumed = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
-                                "play", "--session",
-                                os.path.join(_sess_saves, _sess_milestones[0])],
-                               input="state\nquit\n", capture_output=True,
-                               text=True, timeout=60)
+                                "play", "--session", _milestone_path],
+                               input="step 5\nstate\nquit\n", capture_output=True,
+                               text=True, timeout=60, env=_sess_resume_env)
 check("...and it round-trips: resuming directly from the milestone file "
-      "reads back the exact year it was saved at",
+      "reads back the exact year it was saved at, and says out loud that "
+      "this is a frozen checkpoint rather than quietly adopting it as the "
+      "new autosave target",
       _sess_milestone_year
-      and ("Resumed from %s: %s AD." % (
-          os.path.join(_sess_saves, _sess_milestones[0]),
-          _sess_milestone_year.group(1))) in _sess_resumed.stdout,
-      (_sess_milestone_year, _sess_resumed.stdout[:300]))
+      and ("Resumed the checkpoint at %s: %s AD." % (
+          _milestone_path, _sess_milestone_year.group(1))) in _sess_resumed.stdout
+      and "autosaving to" in _sess_resumed.stdout,
+      (_sess_milestone_year, _sess_resumed.stdout[:500]))
+# THE PLAYER'S ACTUAL COMPLAINT, PROVED DIRECTLY: a player deep into a long
+# campaign who resumed a manual checkpoint to diagnose something else found
+# the checkpoint itself was not staying put - the first reload had already
+# moved it. Several years were just played starting from this exact file
+# (the "step 5" above); the one thing that matters is that the bytes on disk
+# for the checkpoint itself never moved, not even once, while that happened.
+check("a manual checkpoint is BYTE-IDENTICAL on disk after being resumed and "
+      "played forward several years - the file itself stays a frozen "
+      "snapshot, which is the whole point of a checkpoint",
+      _milestone_bytes_before is not None
+      and os.path.exists(_milestone_path)
+      and open(_milestone_path, "rb").read() == _milestone_bytes_before,
+      _milestone_path)
+_forked_named = re.search(r"autosaving to (\S+) instead", _sess_resumed.stdout)
+check("...and what actually received those played years is a genuinely "
+      "separate file, distinct from both the checkpoint and the ongoing "
+      "--session file it was never touching in the first place",
+      _forked_named
+      and os.path.exists(_forked_named.group(1))
+      and _forked_named.group(1) not in (_milestone_path, _sess_session),
+      (_forked_named and _forked_named.group(1),
+       os.listdir(_sess_resume_env["ROME_SAVE_DIR"])))
 _sess3 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
                         "--session", _sess_session],
                        input="load\nb\nquit\n", capture_output=True,
@@ -9691,6 +9730,60 @@ check("...accepting starts a genuinely new game through the same wizard, "
       and len([f for f in os.listdir(_sess7_saves) if f.endswith(".json")
               and not f.endswith(".meta.json")]) == 2,
       os.listdir(_sess7_saves))
+
+# --- THE SAME FREEZE PROPERTY, AGAIN, AGAINST A REAL CAMPAIGN SAVE - not a
+# few years of synthetic play. rome/playtest/fixtures/rome_380_corpus_bug.json
+# is another agent's regression fixture for a different bug (a real 380 AD
+# Rome save); it is read here, never written to, and its own sha256 is
+# checked below precisely so a future edit to this file notices immediately
+# if it ever became something this test touches instead of merely reads.
+import hashlib
+import shutil
+_corpus_fixture = os.path.join(ROOT, "rome", "playtest", "fixtures",
+                               "rome_380_corpus_bug.json")
+_corpus_sha_before = hashlib.sha256(open(_corpus_fixture, "rb").read()).hexdigest()
+check("the corpus-bug fixture this check borrows is the exact file another "
+      "agent's regression test owns - if this hash ever does not match, that "
+      "fixture changed underneath this check and it is reading the wrong "
+      "thing",
+      _corpus_sha_before ==
+      "186ffd77368b12f305146e46ddf3ef944672ad96b055b2d773b7b51065af3970",
+      _corpus_sha_before)
+_corpus_ckpt_dir = tempfile.mkdtemp()
+# A FRESH COPY, NAMED LIKE A MILESTONE - the fixture itself is never opened
+# for writing, and this check exercises exactly the same checkpoint-detection
+# a real player's bare 'save' output is recognised by (settings.is_checkpoint,
+# matched on the "_saved_<N>.json" pattern _pick_milestone_filename always
+# writes), rather than inventing a second way to mark a file frozen just for
+# this test.
+_corpus_ckpt = os.path.join(_corpus_ckpt_dir, "rome_100ad_saved_1.json")
+shutil.copyfile(_corpus_fixture, _corpus_ckpt)
+_corpus_ckpt_before = open(_corpus_ckpt, "rb").read()
+_corpus_resume_env = dict(os.environ, ROME_SAVE_DIR=tempfile.mkdtemp())
+_corpus_resumed = subprocess.run(
+    [sys.executable, os.path.join(HERE, "simulator.py"), "play",
+     "--session", _corpus_ckpt],
+    input="step 6\nstate\nquit\n", capture_output=True, text=True,
+    timeout=120, env=_corpus_resume_env)
+check("resuming a real 380 AD campaign checkpoint and playing six more years "
+      "from it forks a new session file and says so, the same as the "
+      "synthetic milestone above",
+      "Resumed the checkpoint at %s: 380 AD." % _corpus_ckpt
+      in _corpus_resumed.stdout
+      and "autosaving to" in _corpus_resumed.stdout,
+      _corpus_resumed.stdout[:500])
+check("...and six played years later, the checkpoint copy is still "
+      "BYTE-IDENTICAL to what it was before this process ever touched it - "
+      "this is the player's actual complaint, proved against a real, "
+      "realistic save rather than only a short synthetic one",
+      open(_corpus_ckpt, "rb").read() == _corpus_ckpt_before,
+      _corpus_ckpt)
+check("...and the original fixture file itself was never opened for writing "
+      "at any point in this - a copy was made before any of this ran, and "
+      "only the copy's path was ever handed to --session",
+      hashlib.sha256(open(_corpus_fixture, "rb").read()).hexdigest()
+      == _corpus_sha_before,
+      _corpus_fixture)
 
 # =============================================================================
 # THE INDUSTRIAL DASHBOARD: `capacity`, `economy`, `changes`. A player who
