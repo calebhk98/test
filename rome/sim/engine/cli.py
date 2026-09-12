@@ -655,21 +655,43 @@ def cmd_play(a):
               "game there, say which civilisation with --civ." % session)
         return 1
     fresh = not (session and os.path.exists(session)) or _is_claimed_slot(session)
+    # A CHECKPOINT DOES NOT GET AUTOSAVED OVER, EVER - see settings.is_checkpoint's
+    # own comment for the whole story. `checkpoint_source` stays None for an
+    # ordinary resume, in which case nothing below this differs from before:
+    # `session` keeps naming the same file it always did, and it goes on
+    # autosaving to it after every command, exactly as an ongoing session
+    # always has. Only when the file being resumed is a frozen milestone does
+    # `session` get reassigned - to a freshly claimed file, the same way a
+    # brand new game's session file is claimed (_pick_session_filename) - so
+    # that looking at a checkpoint to diagnose something never becomes the act
+    # that moves it.
+    checkpoint_source = None
     if not fresh:
         try:
             load_state(s, session)
         except Exception as e:
             print("could not read the save file %r: %s" % (session, e))
             return 1
-        print("Resumed from %s: %d AD." % (session, s.year))
+        if settings.is_checkpoint(session):
+            checkpoint_source = session
+            session = _pick_session_filename(s.civ.get("id") or "game")
+        else:
+            print("Resumed from %s: %d AD." % (session, s.year))
 
-    if fresh and session:
+    if (fresh or checkpoint_source) and session:
         # WRITE IT NOW, not after the first command. The menu tells the player
         # "Saved to X. Come back with ..." and a break tester quit before
         # typing anything, found no file, followed the printed line anyway and
         # was dropped into a different civilisation's fresh game. A save the
-        # game has promised has to exist from the moment it is promised.
+        # game has promised has to exist from the moment it is promised. The
+        # same promise holds for a checkpoint's forked session file: it has
+        # been named out loud below, so it has to be real from that moment on.
         save_state(s, session)
+    if checkpoint_source:
+        print("Resumed the checkpoint at %s: %d AD. A checkpoint stays "
+              "exactly as it is - nothing you do now writes back into it. "
+              "From here on, this game is autosaving to %s instead."
+              % (checkpoint_source, s.year, session))
     # THE WELCOME AND TUTORIAL TEXT IS A PREFERENCE NOW (Options: "show the
     # welcome message and tutorial on new games"). A player on their fifth
     # new game does not need the five starter verbs explained again every
@@ -1146,6 +1168,14 @@ def _ingame_save_milestone(s, session):
     except OSError as e:
         print("   -- could not write there: %s" % e)
         return
+    # MARKED AS FROZEN, in the file's own sidecar - not only by its name. See
+    # settings.is_checkpoint for why both signals exist: the filename alone
+    # (matched by _pick_milestone_filename's own pattern) already says this is
+    # a milestone, but this marker is what keeps that true if the file is
+    # later renamed through the game's own "move this save" option, which
+    # already carries a sidecar's fields to the new name
+    # (settings.move_session_meta).
+    settings.save_session_meta(path, {"checkpoint": True})
     print("   -- saved a copy of %d AD to %s" % (s.year, path))
     if session:
         print("      (this game's ongoing save at %s is untouched, and keeps "
@@ -1206,6 +1236,21 @@ def _ingame_load(cfg, s, session, a):
     # because some earlier game's flag was still set. Either way, a load is
     # a new look at a position this process has not narrated yet.
     a._said_end = False
+    # A CHECKPOINT SWITCHED TO IS STILL A CHECKPOINT - same guarantee as a
+    # checkpoint named on the command line (see cmd_play's own comment on
+    # `checkpoint_source`, right above the equivalent check there): switching
+    # this running game to a frozen milestone must not turn the very next
+    # command into the write that unfreezes it. This is the one other place
+    # besides cmd_play/cmd_agent that can point the ongoing autosave at a
+    # file, so it needs the identical fork.
+    if settings.is_checkpoint(chosen):
+        forked = _pick_session_filename(s.civ.get("id") or "game")
+        save_state(s, forked)
+        print("   -- switched to the checkpoint at %s: %d AD. A checkpoint "
+              "stays exactly as it is - nothing you do now writes back into "
+              "it. From here on, this game is autosaving to %s instead."
+              % (chosen, s.year, forked))
+        return forked
     print("   -- switched to %s: %d AD." % (chosen, s.year))
     return chosen
 
@@ -1250,6 +1295,7 @@ def cmd_agent(a):
     pretty = bool(getattr(a, "pretty", False))
 
     session = getattr(a, "session", None)
+    checkpoint_source = None
     if session and os.path.exists(session) and not _is_claimed_slot(session):
         try:
             load_state(s, session)
@@ -1258,6 +1304,22 @@ def cmd_agent(a):
                 {"ok": False, "error": "could not read the save file %r: %s" % (session, e)}
             ) + "\n")
             return 1
+        # A FROZEN CHECKPOINT DOES NOT BECOME THE AUTOSAVE TARGET HERE EITHER
+        # - same fix, same reason, as cmd_play's own `checkpoint_source` (see
+        # its comment there for the whole story). `agent` has no screen to
+        # print prose to, so this is said on stderr instead, the same channel
+        # the opening "welcome" briefing already uses for anything the
+        # protocol itself did not ask for.
+        if settings.is_checkpoint(session):
+            checkpoint_source = session
+            session = _pick_session_filename(s.civ.get("id") or "game")
+            save_state(s, session)
+            sys.stderr.write(json.dumps(
+                {"checkpoint_resumed":
+                 "%s is a frozen checkpoint; nothing further is written back "
+                 "into it. This run is autosaving to %s instead."
+                 % (checkpoint_source, session)}) + "\n")
+            sys.stderr.flush()
 
     def emit(obj, op=None):
         # THE JSON LINE IS UNCHANGED, ALWAYS, REGARDLESS OF --pretty. It is

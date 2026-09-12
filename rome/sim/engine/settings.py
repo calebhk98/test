@@ -94,6 +94,7 @@ automatically. That is a project of its own, not a field in this file.
 """
 import json
 import os
+import re
 import shutil
 import time
 
@@ -319,6 +320,65 @@ def move_session_meta(old_session, new_session):
             os.remove(old_path)
         except OSError:
             pass
+
+
+# ---------------------------------------------------------------------------
+# CHECKPOINTS: a manual save is frozen, an ongoing session is not.
+#
+# --session autosaves after every command, which is correct and wanted for an
+# ongoing game - it is the one file that is always the LATEST word on where
+# that game stands. A milestone (cli.py's bare 'save', mid-game) is a
+# different thing on purpose: a moment a player chose to be able to come back
+# to. Before this existed, "come back to it" meant pointing --session (or the
+# main menu's Load screen, or the in-game bare 'load') AT the milestone file,
+# which is exactly what turned it into the new autosave target - the very
+# next command overwrote it, and a player who saved 380 AD to return to found
+# it quietly became 420 AD the first time they looked. A player deep into a
+# long campaign, using checkpoints to isolate a bug, discovered this the hard
+# way: the first reload had already moved the evidence.
+#
+# is_checkpoint below is what the three resume paths (cli.py's cmd_play,
+# cmd_agent, and _ingame_load) all check before deciding whether resuming a
+# file may go on autosaving to that same file, or has to fork a new one - see
+# cli.py's own comments at each of those call sites for what happens once the
+# answer is yes.
+_MILESTONE_RE = re.compile(r"_saved_\d+\.json$")
+
+
+def is_checkpoint(path):
+    """Whether `path` names a frozen checkpoint rather than an ordinary,
+    freely-autosaved session file.
+
+    Two independent signals, either one enough:
+
+    1. THE FILENAME. Every milestone this game itself has ever written
+       matches this pattern - see cli.py's _pick_milestone_filename - so a
+       milestone nobody has touched by hand is always caught here, with no
+       sidecar required at all (and no sidecar existed for milestones before
+       this fix, so this is also what recognises one saved by an older
+       version of the game).
+    2. THE SIDECAR. _ingame_save_milestone also stamps a "checkpoint": true
+       marker into the file's own .meta.json (see save_session_meta below).
+       This is what keeps the answer right if the file is later renamed or
+       moved BY THE GAME'S OWN "move this save" option (move_session_meta
+       carries every sidecar field, this one included, to the new name) -
+       the filename pattern alone would stop matching the moment the name
+       changed. A rename made by hand, outside the game entirely, has no
+       sidecar to carry either way and is not something this can see; that is
+       the same limit civ_of_save/goal_of_save already live with for any
+       other fact a save's own filename does not carry.
+
+    Neither signal costs anything to check speculatively: an ordinary file a
+    player simply happens to name in the milestone's own pattern is treated
+    as frozen too, which only ever means a resume forks a fresh session
+    file instead of writing back into the one they typed - never a lost
+    game, and always said out loud when it happens.
+    """
+    if not path:
+        return False
+    if _MILESTONE_RE.search(os.path.basename(path)):
+        return True
+    return bool(load_session_meta(path).get("checkpoint"))
 
 
 # ---------------------------------------------------------------------------
