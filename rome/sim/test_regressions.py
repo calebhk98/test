@@ -11935,6 +11935,83 @@ check("RETRY_RISK_FLOOR and RETRY_CALENDAR_CAP, the retry-learning constants "
       _s_ctl.RETRY_RISK_FLOOR == 0.40 and _s_ctl.RETRY_CALENDAR_CAP == 0.65,
       (_s_ctl.RETRY_RISK_FLOOR, _s_ctl.RETRY_CALENDAR_CAP))
 
+# THE PATRONAGE REFUSAL LEAKED AN ID, AND HANDED OUT A COMMAND THAT WOULD BE
+# REFUSED. A naive Mexica player read "get at least a local patron first:
+# 'start patron_local'" in `available`, typed exactly that, and was told by
+# the same engine one command later: "you have never heard of any such
+# thing." Two faults in one line. Under fog it is a free reveal of an
+# undiscovered node, which is the third time this exact filter has been
+# skipped by a second caller (start_reason had it, `bounty` skipped it, and
+# `why` leaked another node's id through its kb path). And the advice is
+# worth nothing in any case when the command it names is refused.
+_s_pat = sim(civ="mexica_1500")
+_s_pat.fog = True
+_s_pat.revealed = set()
+_pat_wary = None
+for _k in sorted(NODES):
+    _ok, _w = _s_pat.start_reason(_k)
+    if _w and "state is wary" in _w:
+        _pat_wary = _w
+        break
+check("the patronage refusal fires for a fogged Mexica founder at all, so "
+      "the rest of these checks are testing something real",
+      _pat_wary is not None, _pat_wary)
+check("...and does not name patron_local, which this founder has never "
+      "heard of and could not start if they tried",
+      _pat_wary is not None and "patron_local" not in _pat_wary, _pat_wary)
+check("...and still says what is actually wanted, in words rather than an "
+      "id, so the refusal remains useful advice",
+      _pat_wary is not None and "patron" in _pat_wary
+      and "before anyone here will let you begin" in _pat_wary, _pat_wary)
+
+_s_pat2 = sim(civ="mexica_1500")      # no fog: the id IS the useful answer
+_pat_wary2 = None
+for _k in sorted(NODES):
+    _ok, _w = _s_pat2.start_reason(_k)
+    if _w and "state is wary" in _w:
+        _pat_wary2 = _w
+        break
+# A REFUSAL MAY NEVER RECOMMEND A REFUSAL. That was the whole complaint, and
+# the fog was only half of it: patron_local itself wants identity_cover, so
+# even with the fog off "get a local patron first: 'start patron_local'" sent
+# the player into "missing prerequisites: identity_cover". So the rule is
+# conditional, and both branches are checked: name the command only when it
+# would actually be accepted, and otherwise name what is standing in the way.
+_pat_can2, _ = _s_pat2.start_reason("patron_local")
+check("without fog, the refusal names 'start patron_local' only when that "
+      "command would actually be accepted, and otherwise says what "
+      "patron_local is itself waiting on",
+      (("start patron_local" in _pat_wary2) if _pat_can2
+       else ("start patron_local" not in _pat_wary2
+             and "itself wants" in _pat_wary2)), (_pat_can2, _pat_wary2))
+
+_s_pat4 = sim(civ="mexica_1500")
+_s_pat4.done.add("identity_cover")
+_s_pat4._done_changed()
+_pat_wary4 = None
+for _k in sorted(NODES):
+    _ok, _w = _s_pat4.start_reason(_k)
+    if _w and "state is wary" in _w:
+        _pat_wary4 = _w
+        break
+_pat_can4, _pat_why4 = _s_pat4.start_reason("patron_local")
+check("...and once patron_local IS startable, the refusal hands over the "
+      "exact command, and that command is genuinely accepted",
+      _pat_can4 and _pat_wary4 is not None
+      and "start patron_local" in _pat_wary4, (_pat_why4, _pat_wary4))
+
+# THE SENATORIAL HALF OF THE SAME LINE, which had the identical hardcoded id.
+_s_pat3 = sim(civ="rome_100ad")
+_s_pat3.fog = True
+_s_pat3.revealed = set()
+_pat_sen = [_w for _w in
+            (_s_pat3.start_reason(_k)[1] for _k in sorted(NODES))
+            if _w and "actively opposes" in _w]
+check("the senatorial-patronage refusal does not leak its id under fog "
+      "either",
+      not any("patron_senatorial" in _w for _w in _pat_sen),
+      _pat_sen[:1])
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

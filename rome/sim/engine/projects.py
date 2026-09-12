@@ -1619,21 +1619,60 @@ class ProjectsMixin:
             # patron first" was the whole message, and a play tester who read
             # it several times never connected it to `patron_local`, which was
             # sitting startable in the list in front of them the entire time.
+            #
+            # BUT ONLY IF THEY HAVE HEARD OF IT. A Mexica play tester read this
+            # exact line in `available`, typed the command it gave them, and
+            # was told "you have never heard of any such thing" - by the same
+            # engine, one command later. Naming an undiscovered id here is the
+            # third instance of one filter living in one place: start_reason
+            # had it, `bounty` skipped it, `why` leaked another node's id
+            # through a kb path, and this line skipped it too. The advice is
+            # worth nothing when the command it gives is refused, and under
+            # fog it is worse than nothing, because it is a free reveal.
             return False, ("the state is wary of this (state interest %.1f); "
-                           "get at least a local patron first: 'start "
-                           "patron_local'%s"
-                           % (si, "" if "patron_local" not in self.done else
-                              ", which you have built - 'open patron_local' to "
-                              "put his name behind you"))
+                           "%s"
+                           % (si, self._patron_advice("patron_local",
+                                                      "a local patron's name "
+                                                      "behind you")))
         if si < -1.2 and not (self.running("patron_senatorial") or self.protection > 0.45):
-            return False, ("the state actively opposes this (state interest %.1f); "
-                           "you need senatorial patronage ('start "
-                           "patron_senatorial'%s), or protection above 0.45 "
-                           "(you have %.2f)"
-                           % (si, ", which you have built - 'open "
-                              "patron_senatorial'" if "patron_senatorial"
-                              in self.done else "", self.protection))
+            return False, ("the state actively opposes this (state interest "
+                           "%.1f); %s, or protection above 0.45 (you have "
+                           "%.2f)"
+                           % (si, self._patron_advice("patron_senatorial",
+                                                      "patronage at the very "
+                                                      "top"),
+                              self.protection))
         return True, None
+
+    def _patron_advice(self, k, in_world):
+        """What to tell a player who needs `k` before they may begin.
+
+        The id and the command only when they have heard of it; the same
+        advice in plain words when they have not, which under fog is most of
+        the time this fires. `in_world` is that plain-words version.
+        """
+        if not self.is_visible(k):
+            return "you will need %s before anyone here will let you begin" % in_world
+        if k in self.done:
+            return ("get %s: you have built it already, so 'open %s' to put "
+                    "it behind you" % (in_world, k))
+        # AND IT HAS TO BE STARTABLE, or this is still a refusal recommending
+        # a refusal. patron_local itself needs identity_cover, so even with
+        # the fog off, "get a local patron first: 'start patron_local'" sent
+        # the player straight into "missing prerequisites: identity_cover".
+        # Prerequisites read directly rather than through start_reason,
+        # because this is called FROM start_reason and a second entry into it
+        # is a recursion this line does not need: the missing-prereq case is
+        # the one that actually bit, and the fog filter for naming them
+        # already exists.
+        missing = [p for p in self.nodes[k]["pre"] if p not in self.done]
+        if missing:
+            seen = [p for p in missing if self.is_visible(p)]
+            return ("get %s first, which itself wants %s"
+                    % (in_world,
+                       ", ".join(seen) if seen
+                       else "something you have not heard of yet"))
+        return "get %s first: 'start %s'" % (in_world, k)
 
     def can_start(self, k, _memo=None):
         return self.start_reason(k, _memo=_memo)[0]
