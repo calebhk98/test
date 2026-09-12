@@ -4614,6 +4614,28 @@ def render_labour(out):
         L = ["TRADE: %s (%s)" % (t.get("trade"), t.get("kind"))]
         L.append("exists here: %s" % t.get("exists_here"))
         L.append("a year of one: %s den     wage: %s den/hr" % (_fmt_num(t.get("a_year_of_one")), _fmt_num(t.get("wage_per_hour"))))
+        # THE HIRE YOU ARE CONTEMPLATING, NOT THE PRICE ABOVE. That price is
+        # the market as it stands; hiring moves it, and wage_bill then
+        # charges the new price to everyone of this trade you have, not
+        # only the one you are adding.
+        if t.get("hiring_moves_the_price"):
+            L.append("%ss ARE SCARCE ENOUGH HERE THAT HIRING ONE MOVES THE "
+                     "PRICE: once hired, every %s you have costs %s den/yr, "
+                     "not %s - so with %s on staff already, your wage bill "
+                     "for %ss would go from %s to %s den/yr the moment you "
+                     "do this, not just the new hire's share of it."
+                     % (t.get("trade"), t.get("trade"),
+                        _fmt_num(t.get("a_year_of_one_after_you_hire_one")),
+                        _fmt_num(t.get("a_year_of_one")), _fmt_num(t.get("you_employ")),
+                        t.get("trade"), _fmt_num(t.get("wage_bill_for_this_trade_now")),
+                        _fmt_num(t.get("wage_bill_for_this_trade_after_hiring_one_more"))))
+        elif t.get("a_year_of_one_after_you_hire_one") is not None:
+            # QUIET WHEN THE MOVE IS ORDINARY. Hiring one more of almost any
+            # trade nudges its price a little; this says so plainly but
+            # without a banner, so the loud warning above stays meaningful
+            # when it does appear.
+            L.append("hiring one more would make it %s den/yr"
+                     % _fmt_num(t.get("a_year_of_one_after_you_hire_one")))
         L.append("you employ: %s     the town can supply: %s hours"
                  % (_fmt_num(t.get("you_employ")),
                     _fmt_num(t.get("hours_the_market_can_supply"))))
@@ -7274,6 +7296,51 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                     "the ones they have taught since" % t)
                                    if t in s.trades_created
                                    else TRADE_NOTES.get(t, ""))})
+                # THE HIRE YOU ARE CONTEMPLATING, NOT THE MARKET AS IT STANDS.
+                # a_year_of_one above is true the instant it is quoted and can
+                # be false one command later: hiring is what moves
+                # labour_price_factor, and wage_bill charges the NEW factor
+                # to every head of the trade you then have, not only the one
+                # you added. A Norse player was quoted "a year of one: 525"
+                # for a scholar, hired one, and the standing wage bill came to
+                # 847.92 - 61% more - from exactly this. See
+                # labour_price_factor_after_hiring's own docstring for the
+                # full account; this is that forecast, priced and put on the
+                # one screen a player actually reads before committing.
+                if s.trade_available(t):
+                    _lpf_after = s.labour_price_factor_after_hiring(t, 1.0)
+                    _rate_after = round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index
+                                        * s.price_index * _lpf_after, 0)
+                    # ALWAYS SHOWN, QUIETLY: this is the number the task is
+                    # actually about, and it belongs on the screen whether or
+                    # not the move is large enough to also earn the banner
+                    # below.
+                    r["a_year_of_one_after_you_hire_one"] = _rate_after
+                    # THE BANNER IS FOR SCARCITY, NOT ARITHMETIC. One more
+                    # hire measurably moves the price of almost any trade in
+                    # a town this size - labourer's base pool is roughly a
+                    # dozen person-years, so even it crosses a 0.5% move from
+                    # a single hire. Flagging that every time would be a
+                    # warning nobody reads by the tenth trade. 5% (the same
+                    # bound `labour_pressure` itself treats as worth a name,
+                    # see labour_price_factor's own note on what "roughly
+                    # doubles the price at the whole of it" means) is where a
+                    # single hire stops being noise and starts being the
+                    # reason your wage bill actually moved - which is what
+                    # the Norse scholar case (1.0 to 1.615) plainly was and a
+                    # common trade like labourer or smith (~1.01) plainly
+                    # is not.
+                    if _lpf_after > 1.05:
+                        _have = s.employees.get(t, 0.0)
+                        r["hiring_moves_the_price"] = True
+                        # NOT JUST THE NEW HIRE. The whole point is that this
+                        # rate applies to everyone you already have too, the
+                        # instant you take one more on - so the bill, not
+                        # only the per-head rate, is what has to be shown.
+                        r["wage_bill_for_this_trade_now"] = round(
+                            _have * r["a_year_of_one"], 0)
+                        r["wage_bill_for_this_trade_after_hiring_one_more"] = round(
+                            (_have + 1.0) * _rate_after, 0)
             return r
         if one:
             r = row(one, long=True)

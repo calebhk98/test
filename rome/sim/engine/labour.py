@@ -268,6 +268,14 @@ class LabourMixin:
             d = self._labour_pressure = {}
         d[trade] = (self.labour_pressure(trade) + max(0.0, hours), self.year)
 
+    def _labour_price_factor_from(self, pressure, supply):
+        """The one curve behind labour_price_factor - split out so a forecast
+        can share it exactly rather than recomputing it (see
+        labour_price_factor_after_hiring)."""
+        supply = max(1.0, supply)
+        share = min(1.5, pressure / supply)
+        return 1.0 + 0.9 * share * share
+
     def labour_price_factor(self, trade):
         """What hiring, commissioning or keeping MORE of this trade costs
         beyond the wage table, from how hard you have recently leaned on its
@@ -284,9 +292,45 @@ class LabourMixin:
         machinists is what makes hiring the fifty-first one cheap again, not
         merely possible.
         """
-        supply = max(1.0, self.market_supply(trade))
-        share = min(1.5, self.labour_pressure(trade) / supply)
-        return 1.0 + 0.9 * share * share
+        return self._labour_price_factor_from(self.labour_pressure(trade),
+                                               self.market_supply(trade))
+
+    def labour_price_factor_after_hiring(self, trade, n=1.0):
+        """What labour_price_factor(trade) becomes the INSTANT you hire n
+        more - not the market as it stands, the hire you are contemplating.
+
+        This is the number `hire` itself effectively charges from the moment
+        the new people are on the books (see wage_bill, which applies the
+        CURRENT labour_price_factor to every head of a trade, not only the
+        newest one): a Norse player was quoted "a year of one: 525" for a
+        scholar, hired one, and the standing wage bill came to 847.92 - 61%
+        more - because that one hire pushed labour_price_factor for scholars
+        from 1.0 to 1.615 against a near-empty local supply. The quote and
+        the bill were never inconsistent; the quote just priced the market
+        as it stood, one command before the player's own action moved it.
+
+        Genuinely simulates the hire rather than re-deriving market_supply's
+        formula a second time (which differs for a taught-only trade): adds
+        n to employees[trade], reads the real market_supply(trade) back, and
+        undoes the change. labour_pressure needs no such trick - it is a
+        running total, not a function of current headcount - so n more
+        hours are simply added to it, exactly as _add_labour_pressure would.
+        """
+        n = max(0.0, n)
+        if n <= 0:
+            return self.labour_price_factor(trade)
+        add_hours = n * self.HOURS_PER_PERSON_YEAR
+        before = self.employees.get(trade, 0.0)
+        self.employees[trade] = before + n
+        try:
+            supply_after = self.market_supply(trade)
+        finally:
+            if before:
+                self.employees[trade] = before
+            else:
+                self.employees.pop(trade, None)
+        pressure_after = self.labour_pressure(trade) + add_hours
+        return self._labour_price_factor_from(pressure_after, supply_after)
 
     # What each of these adds to the CEILING on people, taken from
     # staff_capacity below so the advice and the arithmetic cannot drift apart.
@@ -965,6 +1009,35 @@ class LabourMixin:
             return 0.0, total
         return max(0.0, total - mine), mine
 
+    def _cash_in_hand_refusal(self, what, fee):
+        """Refuse a wage, an apprentice's keep, or a job's fee for want of
+        cash - and say WHY it is refused outright rather than borrowed, which
+        `start` would be allowed to do for the identical shortfall.
+
+        This is deliberate, not an oversight: spending_power's own docstring
+        (economy.py) explains it - a lender advances against work already
+        under way, which is what starting a project can point to. A payroll,
+        an apprentice's keep, or a one-off commission fee is money that is
+        simply spent the moment it changes hands, with nothing left to
+        repossess, so none of the three may draw more than half the credit
+        line, where a project may draw the whole of it. An England player hit
+        this mid-crisis and called it arbitrary because the refusal never
+        said so - it only ever showed capital, never the reason or the room
+        that WAS there. One message for hire, train and commission, so the
+        three cannot drift apart from each other or from this reasoning.
+        """
+        room = self.capital + self.credit_limit() * 0.5
+        return ("%s costs %s denarii, due now - not on credit past half your "
+                "line. You have %s in hand and could raise about %s more of "
+                "your credit line for this (not all of it: a lender funds "
+                "work already under way, which is what starting a project "
+                "can point to; a wage, an apprentice's keep or a commission "
+                "fee is money simply spent, and nothing stands behind that "
+                "the way a half-built project does). You are %s short."
+                % (what, "{:,.0f}".format(fee), "{:,.0f}".format(self.capital),
+                   "{:,.0f}".format(max(0.0, room)),
+                   "{:,.0f}".format(max(0.0, fee - room))))
+
     def hire(self, trade, n):
         """Take someone onto the staff permanently. They are paid every year."""
         trade = str(trade or "").strip().lower()
@@ -1012,8 +1085,8 @@ class LabourMixin:
         fee = (n * ANNUAL_WAGE.get(trade, 375.0) * self.wage_index * self.price_index
               * self.labour_price_factor(trade))
         if fee > self.capital + self.credit_limit() * 0.5:
-            return False, ("hiring %g %ss costs %.0f denarii in advance and you have %.0f"
-                           % (n, trade, fee, self.capital))
+            return False, self._cash_in_hand_refusal(
+                "hiring %g %s%s" % (n, trade, "" if n == 1 else "s"), fee)
         room = self.household_room()
         if n > room:
             # TRUNCATED, NOT ROUNDED, and it says what a whole number of people
@@ -1176,8 +1249,9 @@ class LabourMixin:
         fee = (n * ANNUAL_WAGE.get(frm, 375.0) * 1.2 * self.wage_index * self.price_index
               * self.labour_price_factor(frm))
         if fee > self.capital + self.credit_limit() * 0.5:
-            return False, ("you must keep them fed while they learn: %.0f denarii, "
-                           "and you have %.0f" % (fee, self.capital))
+            return False, self._cash_in_hand_refusal(
+                "keeping %g %s%s fed while they learn"
+                % (n, trade, "" if n == 1 else "s"), fee)
         self.capital -= fee
         self.teaching_hours_this_year = getattr(self, "teaching_hours_this_year", 0.0) + hours
         self.trades_created.add(trade)
@@ -1189,9 +1263,20 @@ class LabourMixin:
         # reply was six words about two years' time. Teaching is the most
         # expensive thing you can do with a year and it never said so.
         _left = max(0.0, self.director_pool() - self.director_hours_committed())
-        return True, ("%g %s%s will be ready in %d. It took %s of your own hours "
-                      "(%s left this year) and %s denarii to keep them while "
-                      "they learn"
+        # WHAT HAS HAPPENED, AND WHAT IS STILL NEEDED - not just the first
+        # half. A Rome player trained 2 machinists, read "will be ready in
+        # 141", and expected them simply to be at work by then; `labour
+        # machinist` still read "you employ: 0" at year 141 because they had
+        # not yet finished (ready is the year they MATURE, not the year they
+        # start). What this never said, in either direction: they cannot do
+        # a day of the work before that year, and core.py adds them to
+        # self.employees itself the moment they do, automatically - no
+        # 'hire' needed to put THESE apprentices to work.
+        return True, ("%g %s%s will be ready in %d, and join your staff "
+                      "automatically that year - no 'hire' needed for them. "
+                      "Until then they cannot do a day of the work. It took "
+                      "%s of your own hours (%s left this year) and %s "
+                      "denarii to keep them while they learn"
                       % (n, trade, "s" if n != 1 else "", self.year + 2,
                          "{:,.0f}".format(hours), "{:,.0f}".format(_left),
                          "{:,.0f}".format(fee)))
@@ -1303,8 +1388,8 @@ class LabourMixin:
         fee = (hours * WAGES[trade] * 1.6 * self.wage_index * self.price_index
               * self.labour_price_factor(trade))
         if fee > self.capital + self.credit_limit() * 0.5:
-            return False, ("%.0f hours of a %s costs %.0f denarii and you have %.0f"
-                           % (hours, trade, fee, self.capital))
+            return False, self._cash_in_hand_refusal(
+                "%.0f hours of a %s" % (hours, trade), fee)
         self.capital -= fee
         self.contract_hours[trade] = self.contract_hours.get(trade, 0.0) + hours
         self.commissioned[trade] = self.commissioned.get(trade, 0.0) + hours

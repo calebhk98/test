@@ -866,7 +866,20 @@ class ProjectsMixin:
                             "recurring income. %s"
                             % (name, word, cost, fix))
             else:
-                headline = ("%s is within %s %s of closure"
+                # THE DIRECTION OF SAFETY, UNMISTAKABLE. "is within N
+                # craftsmen of closure" read, on first sight, like a
+                # countdown - an England player hired more staff, watched
+                # this number climb 1.3 to 2.3, and took the rise for the
+                # situation getting WORSE before working out that bigger
+                # here means safer. "has N spare craftsmen before it
+                # closes" cannot be misread the same way: spare is
+                # obviously a good thing to have more of, and it is the
+                # same word the no-slack branch just above already uses
+                # ("has no spare %s: losing just one more closes it
+                # outright") - the two headlines now share one vocabulary
+                # for the same fact instead of two that could be read as
+                # opposites of each other.
+                headline = ("%s has %s spare %s before it closes"
                             % (name, ("%.1f" % room).rstrip("0").rstrip("."),
                                word))
             out.append({"id": k, "name": name, "within": round(max(0.0, room), 1),
