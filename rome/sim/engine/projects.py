@@ -667,6 +667,94 @@ class ProjectsMixin:
                                 "it" if len(reopened) == 1 else "them")))
         return reopened
 
+    # ---- A WARNING BEFORE THE DOOR SHUTS, NOT AN AUTOMATION THAT OPENS IT --
+    # close_unstaffed_ventures closes a concern the moment attrition pushes
+    # the household's own staff below what keeping it open needs, and
+    # reopen_restaffed_ventures now (see its own docstring) brings it back
+    # the moment the shortfall is made good - between them the engine already
+    # does the closing and the reopening on its own. Players were clear they
+    # want neither automated further: what they asked for is to SEE a closure
+    # coming while there is still a year or two to react - hire, teach,
+    # stop something else on purpose - in their own words, "power grid
+    # supervision is within 5 craftsmen of closure." This is that sentence,
+    # not a third policy: it changes nothing about who gets hired, taught or
+    # shut, only what the player is told before the staffing rule decides it
+    # for them.
+    #
+    # THE SAME SLACK BAND close_unstaffed_ventures ITSELF USES, not a fresh
+    # threshold invented for this: SLACK=0.5 there is the hysteresis that
+    # stops a concern flapping open and shut across an exact tie, so "room
+    # before closure" has to be measured against that same cushion or this
+    # would warn about a closure that was never actually imminent (or stay
+    # silent until after the real threshold had already passed).
+    STAFFING_WARNING_BAND = 5.0
+
+    def staffing_closure_warnings(self, limit=3):
+        """Which running concern the staffing rule would shut NEXT if
+        attrition keeps biting, and how many people of slack still stand
+        between here and that - see the section comment above for why this
+        exists instead of a third automation.
+
+        Silent while the household is comfortably staffed (the common case):
+        only reports when the SAME margin close_unstaffed_ventures itself
+        would act on has shrunk to STAFFING_WARNING_BAND or less, in
+        whichever of scholars or craftsmen actually binds for that concern -
+        a concern that only ever drew on scholars is not put on notice by a
+        shortage of craftsmen, and the other way round.
+        """
+        if not self.operating:
+            return []
+        sch_used, art_used = self.venture_staff_used()
+        own = self.FOUNDER_IS_WORTH if self.founder_alive else 0.0
+        SLACK = 0.5   # close_unstaffed_ventures' own hysteresis band
+        sch_room = self.effective_scholars() + SLACK - sch_used
+        art_room = self.artisans + own + SLACK - art_used
+        if sch_room > self.STAFFING_WARNING_BAND and art_room > self.STAFFING_WARNING_BAND:
+            return []
+        _holders = [k for k in sorted(self.operating)
+                    if self.venture_hands(k)[1] > 0.005
+                    or self.venture_hands(k)[0] > 0.005]
+        if not _holders:
+            return []
+        # SAME ORDER close_unstaffed_ventures would close in - dearest to
+        # keep, for what it ties up, first - so the concerns named here are
+        # exactly the ones actually at risk, not merely the largest.
+        ranked = sorted(_holders,
+                        key=lambda k: ((self.nodes[k]["rev"] - self.nodes[k]["up"])
+                                       / max(0.01, self.venture_hands(k)[1]),
+                                       -self.venture_hands(k)[1]))
+        out = []
+        for k in ranked:
+            sch_need, art_need = self.venture_hands(k)
+            candidates = []
+            if sch_need > 0.005:
+                candidates.append(("scholars", sch_room))
+            if art_need > 0.005:
+                candidates.append(("craftsmen", art_room))
+            if not candidates:
+                continue
+            # WHICHEVER OF ITS OWN TRADES IS SCARCEST, not whichever this
+            # concern happens to need most: a concern that ties up both a
+            # scholar and three craftsmen is at risk the moment EITHER pool
+            # runs out, so the tighter of the two is what actually decides
+            # when it closes.
+            word, room = min(candidates, key=lambda c: c[1])
+            if room > self.STAFFING_WARNING_BAND:
+                continue
+            name = self.nodes[k]["name"]
+            if room <= 0.05:
+                headline = ("%s has no %s free this year and is next in line "
+                            "to close" % (name, word))
+            else:
+                headline = ("%s is within %s %s of closure"
+                            % (name, ("%.1f" % room).rstrip("0").rstrip("."),
+                               word))
+            out.append({"id": k, "name": name, "within": round(max(0.0, room), 1),
+                       "of": word, "headline": headline})
+            if len(out) >= limit:
+                break
+        return out
+
     def auto_open_ventures(self):
         """Open what plainly pays for itself, best margin first, within the
         staff and the money available. Default ON for the optimizer and OFF
@@ -1598,12 +1686,106 @@ class ProjectsMixin:
                 "along the way" % (int(self.lab_max_span(k)), " or ".join(unmet[:2])))
         return hh, worst, frac, None
 
+    # ---- A FAILED ATTEMPT TEACHES YOU SOMETHING -----------------------------
+    # A player who had already won the game objected to the mechanic just
+    # below as it stood: a failure reset the calendar floor to zero and rolled
+    # again at the SAME probability, which models a society trying the exact
+    # same programme with the exact same odds as if the first attempt had
+    # never happened. Their own words: "if I fail my first crystal-growing
+    # programme, that failure itself teaches my engineers a huge amount. My
+    # next attempt should not be probabilistically identical." They also
+    # named the other half of it themselves - "the second attempt should
+    # probably inherit some progress" - because a high-pressure steam system
+    # or a zone-refining line is not only an engineering problem, it is a
+    # SOCIAL one: workshops retooled, a workforce that has seen the process
+    # once, suppliers who already adjusted, regulators or patrons who already
+    # sat through the pitch. A technical failure at the end does not erase
+    # that diffusion, which is most of what a long calendar floor represents
+    # in the first place (see _calendar_floor_remaining's own comment on what
+    # these floors are actually made of).
+    #
+    # So this does BOTH, because they answer two different questions the
+    # player asked in the same breath: the risk term is the ENGINEERING
+    # lesson (what failed, and why, is now known and will not recur in the
+    # same way), the calendar term is the SOCIAL one (the groundwork already
+    # laid does not have to be laid twice). Both are diminishing and both are
+    # capped strictly short of removing the danger or the wait entirely -
+    # "should never be free" was the explicit brief, and a mechanic that let
+    # enough failures drive the risk to zero or the wait to nothing would
+    # just be a slower way of removing the hazard altogether, which is not
+    # what was asked for.
+    #
+    # RISK: multiplies the node's own base risk by a factor that starts at
+    # 1.0 (attempt one is not "probabilistically identical" to anything - it
+    # IS the first data point, nothing has been learned yet) and decays
+    # toward RETRY_RISK_FLOOR as failures accumulate, geometrically, so the
+    # first failure buys the most and every one after buys less. Floored well
+    # above zero: an engineering team that has failed four times still faces
+    # a real chance of failing a fifth, because "we now understand this
+    # failure mode" does not mean "we have found every failure mode".
+    RETRY_RISK_FLOOR = 0.40        # never cheaper than 40% of the naive risk
+    RETRY_RISK_DECAY = 0.6         # each failure closes 40% of what is left
+
+    def _retry_risk_multiplier(self, k):
+        m = self.failed_attempts.get(k, 0)
+        if m <= 0:
+            return 1.0
+        return (self.RETRY_RISK_FLOOR
+                + (1.0 - self.RETRY_RISK_FLOOR) * self.RETRY_RISK_DECAY ** m)
+
+    # CALENDAR: a fraction of the years already spent on THIS attempt is
+    # banked toward the next one instead of being erased, on the same
+    # diminishing, capped shape as the risk term above and for the same
+    # reason - RETRY_CALENDAR_CAP is comfortably short of 1.0 so a retried
+    # programme is never instantly ready, only readier than the last one.
+    # Read off self.active[k]["yrs"] AT THE MOMENT OF FAILURE, not off a
+    # recomputed floor: core.py's own completion gate (the reputation-
+    # shrinking floor for diffusion-limited nodes) already decided how many
+    # years this attempt actually took before calling here, and banking a
+    # share of THAT figure keeps this consistent with whatever the floor
+    # happened to be without this file needing a second copy of core.py's
+    # formula that could drift out of step with it.
+    RETRY_CALENDAR_CAP = 0.65      # at most 65% of the elapsed clock survives
+    RETRY_CALENDAR_DECAY = 0.5     # each failure closes half of what is left
+
+    def _retry_calendar_retain(self, k):
+        m = self.failed_attempts.get(k, 0)
+        if m <= 0:
+            return 0.0
+        return self.RETRY_CALENDAR_CAP * (1.0 - self.RETRY_CALENDAR_DECAY ** m)
+
+    def effective_risk(self, k):
+        """This node's actual chance of failing on its NEXT attempt, after
+        whatever retry-learning its past failures have already bought (see
+        _retry_risk_multiplier just above). Equal to the bare node risk the
+        first time anything is tried. A screen quoting a node's risk once
+        failed_attempts[k] is above zero should read THIS, not the tree's
+        bare n["risk"] - that number is no longer what the dice use.
+        """
+        return self.nodes[k]["risk"] * self._retry_risk_multiplier(k)
+
     def _complete(self, k):
         n = self.nodes[k]
-        if self.rng.random() < n["risk"]:
+        _risk_this_attempt = self.effective_risk(k)
+        if self.rng.random() < _risk_this_attempt:
+            _yrs_before = self.active[k]["yrs"]
             self.failed_attempts[k] += 1
             self.active[k]["ph_left"] = n["ph"] * 0.4
-            self.active[k]["yrs"] = 0.0
+            # THE CALENDAR CLOCK IS NOT WIPED. It used to be set to 0.0
+            # unconditionally, restarting the same multi-year diffusion
+            # process from nothing every time - the exact complaint above.
+            # Even ONE failed attempt already did real social groundwork
+            # (workshops retooled, a workforce that has seen it once, a
+            # regulator who already sat through the pitch), so the first
+            # failure already banks a real share of the elapsed clock, not
+            # zero - it is the risk term above, not this one, that has
+            # nothing to show after only one failure. What this banks keeps
+            # growing, with diminishing returns, as failed_attempts[k] grows,
+            # and is capped well short of the whole clock (RETRY_CALENDAR_CAP)
+            # so a retried programme is only ever readier, never instantly
+            # ready.
+            _retain = self._retry_calendar_retain(k)
+            self.active[k]["yrs"] = _yrs_before * _retain
             _lost = n["_total_cost"] * 0.4 * self.cost_money_factor()
             self.capital -= _lost
             # SAY SO. The roll has always worked - 40 failures in 200 at a
@@ -1618,13 +1800,29 @@ class ProjectsMixin:
             # to do again is forty per cent of the work; the line said sixty
             # and a break tester who measured the hours reported the stated
             # penalty as never charged. It was charged. The sentence was wrong.
+            # AND NOW SAY WHAT WAS LEARNED, in the same breath as the loss -
+            # a player who has just been told a program failed should also be
+            # told, in the same sentence, that the next attempt is not a
+            # repeat of this one: the engineering is better understood
+            # (chance of failure quoted for next time) and some of the
+            # groundwork survives (years already banked toward the next
+            # attempt's own floor).
+            _next_risk = self.effective_risk(k)
+            _banked = self.active[k]["yrs"]
             self.log.append((self.year,
                              "FAILED at %s: it did not work. %d%% of the hours "
                              "are to do again (%s of your own) and %s is gone. "
-                             "Attempt %d."
+                             "Attempt %d. What went wrong is now understood well "
+                             "enough that the next attempt's chance of failing "
+                             "this way is %d%%, down from the %d%% this attempt "
+                             "just faced, and %.1f of the %.1f years already "
+                             "spent count toward next time's wait."
                              % (n["name"], 40, "{:,.0f}".format(n["ph"] * 0.4),
                                 "{:,.0f}".format(max(0.0, _lost)),
-                                self.failed_attempts[k] + 1)))
+                                self.failed_attempts[k] + 1,
+                                round(_next_risk * 100),
+                                round(_risk_this_attempt * 100),
+                                _banked, _yrs_before)))
             return
         del self.active[k]
         self.bountied.discard(k)

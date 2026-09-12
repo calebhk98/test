@@ -9749,6 +9749,147 @@ check("no command in KNOWN_COMMANDS prints the raw id of a node this fogged "
       "command at once, so the next command to grow this bug is caught "
       "here rather than by a playtester, the way `bounty` was",
       not _fogscan_leaks, _fogscan_leaks)
+# --- a failed attempt teaches you something (projects.py: retry learning) ---
+# A player who had already won the game: a failed high-pressure steam system
+# used to reset the calendar floor to zero and roll again at the identical
+# probability, as if the first attempt had never happened. Now failed_attempts
+# (counted since before this round, never spent) buys BOTH a smaller chance of
+# failing the same way twice and a banked share of the calendar clock - see
+# projects.py's own section comment on _complete for the full reasoning.
+_s_rl = sim(capital=10 ** 9)
+_rl_k = [k for k in NODES if NODES[k]["risk"] >= 0.15][0]
+# _retry_risk_multiplier reads failed_attempts off the Sim itself, so the
+# cleanest way to check the whole decaying sequence is to walk it forward by
+# setting failed_attempts directly rather than actually rolling failures.
+_seq = []
+for _m in range(5):
+    _s_rl.failed_attempts[_rl_k] = _m
+    _seq.append(_s_rl.effective_risk(_rl_k))
+check("attempt one faces the bare, untrained risk - nothing has been "
+      "learned yet because nothing has failed yet",
+      _seq[0] == NODES[_rl_k]["risk"], _seq[0])
+check("each later attempt's risk is strictly lower than the one before it, "
+      "and a fourth attempt (three failures in) is meaningfully better than "
+      "the first, not just marginally",
+      all(_seq[i] < _seq[i - 1] for i in range(1, 5))
+      and _seq[3] <= _seq[0] * 0.75, _seq)
+check("...but it is never a guarantee: risk never reaches zero, bounded "
+      "below by RETRY_RISK_FLOOR's own share of the bare risk",
+      all(s_ >= NODES[_rl_k]["risk"] * _s_rl.RETRY_RISK_FLOOR - 1e-9 for s_ in _seq),
+      _seq)
+_s_rl.failed_attempts[_rl_k] = 0
+
+class _AlwaysFails(random.Random):
+    """0.0 is below every risk the tree defines, so this fails every roll -
+    the mirror image of path_search.py's own DetRNG, which returns 1.0 to
+    never fail anything."""
+    def random(self):
+        return 0.0
+
+
+_s_cal = sim(capital=10 ** 9)
+_cal_k = [k for k in NODES if NODES[k]["risk"] >= 0.15 and NODES[k]["yrs"] >= 5][0]
+_cal_floor = NODES[_cal_k]["yrs"]
+_s_cal.rng = _AlwaysFails()
+_banked = []
+for _ in range(4):
+    _s_cal.active[_cal_k] = dict(ph_left=0.0, yrs=_cal_floor, spent=0.0,
+                                 cost_left=0.0)
+    _s_cal.done.discard(_cal_k)
+    _s_cal._complete(_cal_k)
+    _banked.append(_s_cal.active[_cal_k]["yrs"])
+check("even the FIRST failure already banks a real share of the elapsed "
+      "clock - the social groundwork a failed attempt leaves behind does "
+      "not vanish with it",
+      0 < _banked[0] < _cal_floor, (_banked, _cal_floor))
+check("every later failure banks MORE of the clock than the one before, "
+      "with shrinking increments, and never the full floor",
+      all(_banked[i] > _banked[i - 1] for i in range(1, 4))
+      and all(b < _cal_floor for b in _banked), (_banked, _cal_floor))
+check("...capped well short of the whole floor - RETRY_CALENDAR_CAP's own "
+      "share - so a retried programme is readier, never instantly ready",
+      _banked[-1] <= _cal_floor * _s_cal.RETRY_CALENDAR_CAP + 1e-6, _banked)
+
+# --- a hazard timeline that escalates, instead of reading the same at 150 --
+# years out and at 5 (society.py: hazard_timeline, wired into fog.py's
+# knowledge_risk as the `risk` command's "timeline"). A Rome player watched
+# "hedged by nothing yet" sit unchanged for a hundred and fifty years and
+# lost a third of their progress the year the hazard landed anyway; the fix
+# is that the SAME hazard's own words change as the gap between "when it
+# lands" and "how long the hedge takes" closes.
+_s_tl = sim(civ="rome_100ad")
+_s_tl.year = 150
+_tl_far = next((r for r in _s_tl.hazard_timeline()
+               if r["name"] == "Third century crisis"), None)
+_s_tl2 = sim(civ="rome_100ad")
+_s_tl2.year = 234
+_tl_near = next((r for r in _s_tl2.hazard_timeline()
+                 if r["name"] == "Third century crisis"), None)
+check("hazard_timeline names the Third century crisis while it is still "
+      "visibly ahead and again once it is nearly here",
+      _tl_far is not None and _tl_near is not None, (_tl_far, _tl_near))
+check("the SAME hazard's urgency tag escalates as the date closes in - "
+      "'on the horizon' far out, something sharper once even the fastest "
+      "hedge could no longer finish in time",
+      _tl_far and _tl_near and _tl_far["urgency"] != _tl_near["urgency"]
+      and _tl_far["urgency"] in ("on the horizon", "hedged")
+      and _tl_near["urgency"] in ("too late to hedge", "stopgap only",
+                                  "begin hedge now", "happening now"),
+      (_tl_far, _tl_near))
+check("hazard_timeline is sorted nearest first",
+      [r["years_until"] for r in _s_tl.hazard_timeline()]
+      == sorted(r["years_until"] for r in _s_tl.hazard_timeline()),
+      [r["years_until"] for r in _s_tl.hazard_timeline()])
+_rk_tl = S._agent_dispatch(_s_tl, NODES, {"cmd": "risk"})
+check("the `risk` command itself carries the compact timeline, not just "
+      "the per-kind breakdown",
+      isinstance(_rk_tl.get("knowledge_risk", {}).get("timeline"), list)
+      and len(_rk_tl["knowledge_risk"]["timeline"]) > 0, _rk_tl.get("knowledge_risk"))
+
+# --- a warning before the door shuts (projects.py: staffing_closure_warnings)
+# close_unstaffed_ventures closes a concern the household can no longer
+# supervise; reopen_restaffed_ventures (landed separately) already brings it
+# back once restaffed. What was still missing: seeing it coming. "Power grid
+# supervision is within 5 craftsmen of closure" - a warning, not a third
+# automation; nothing here hires, teaches or stops anything on its own.
+_s_sw = sim(civ="rome_100ad")
+_sw_cands = [k for k in NODES if NODES[k].get("rev", 0) > 0][:30]
+_s_sw.done.update(_sw_cands)
+_s_sw._done_changed()
+_s_sw.artisans, _s_sw.scholars = 40.0, 10.0
+for _k in _sw_cands:
+    _s_sw.open_venture(_k)
+check("comfortably staffed: no staffing warning at all",
+      _s_sw.staffing_closure_warnings() == [], _s_sw.staffing_closure_warnings())
+_sw_sch_used, _sw_art_used = _s_sw.venture_staff_used()
+_s_sw.artisans = _sw_art_used + 3.0   # inside STAFFING_WARNING_BAND (5)
+_sw_warn = _s_sw.staffing_closure_warnings()
+check("within the band: a warning names a real operating concern and how "
+      "many craftsmen stand between here and its closure",
+      bool(_sw_warn) and _sw_warn[0]["id"] in _s_sw.operating
+      and _sw_warn[0]["of"] == "craftsmen" and _sw_warn[0]["within"] > 0
+      and "within" in _sw_warn[0]["headline"]
+      and "closure" in _sw_warn[0]["headline"], _sw_warn)
+check("the concern it names is the same one close_unstaffed_ventures would "
+      "actually close first (dearest to keep, for what it ties up)",
+      _sw_warn and _sw_warn[0]["id"] == sorted(
+          [k for k in _s_sw.operating if _s_sw.venture_hands(k)[1] > 0.005
+           or _s_sw.venture_hands(k)[0] > 0.005],
+          key=lambda k: ((NODES[k]["rev"] - NODES[k]["up"])
+                         / max(0.01, _s_sw.venture_hands(k)[1]),
+                         -_s_sw.venture_hands(k)[1]))[0],
+      _sw_warn)
+_sw_before = set(_s_sw.operating)
+_s_sw.artisans = _sw_art_used - 2.0    # room exhausted
+_sw_warn2 = _s_sw.staffing_closure_warnings()
+check("room exhausted: the warning says so plainly rather than quoting a "
+      "negative number of craftsmen",
+      bool(_sw_warn2) and "next in line to close" in _sw_warn2[0]["headline"],
+      _sw_warn2)
+check("this is a warning, not a cure: calling it changes nothing about "
+      "who is still operating - only close_unstaffed_ventures itself does "
+      "the closing, on its own schedule, unchanged by this",
+      set(_s_sw.operating) == _sw_before, sorted(_s_sw.operating))
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

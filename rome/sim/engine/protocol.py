@@ -1162,6 +1162,12 @@ def _agent_state(s, nodes, cmd=None):
         # when it is waiting on the calendar, not on you - _waiting_on
         # returns "the calendar" for precisely that case - so that is the
         # signal, not a guess at intent.
+        # WHICH CONCERN SHUTS NEXT, while there is still time to hire. The
+        # staffing rule closing a concern is not a policy a player can switch
+        # off - it is the world taking back something nobody is left to watch -
+        # and a concern that shuts itself now reopens once restaffed. What three
+        # players still asked for was the year's notice, not the cure.
+        "supervision_close_to_the_edge": s.staffing_closure_warnings() or None,
         "free_hours_going_unused": (
             ("%s founder-hours this year are going into nothing: every "
              "project you have in hand is only waiting on the calendar "
@@ -1964,7 +1970,12 @@ def _brief(s, nodes, k, fog):
                 "cost": round(s.project_cost(k), 1),
                 "your_hours": n["ph"],
                 "least_years": n["yrs"],
-                "chance_of_failure": n["risk"],
+                # effective_risk, NOT n["risk"]. Once a project has failed
+                # once, retry learning means the tree's bare figure is no
+                # longer what the dice use, and quoting it would understate
+                # what a second attempt is worth - the opposite of the lie
+                # this screen used to tell about failure costing nothing.
+                "chance_of_failure": s.effective_risk(k),
                 # WHAT A FAILURE COSTS, not only how likely one is. A failure
                 # takes a flat 40% of the money and sets 40% of the hours to
                 # do again; the rate was on the screen and the sum never was,
@@ -1982,7 +1993,7 @@ def _brief(s, nodes, k, fog):
     return {"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
             **_staff_fields(s, n),
             "cost": round(s.project_cost(k), 1), "founder_hours": n["ph"],
-            "calendar_floor_years": n["yrs"], "risk": n["risk"],
+            "calendar_floor_years": n["yrs"], "risk": s.effective_risk(k),
             "earns_per_year": round(n["rev"], 1),
             "costs_per_year_after": round(n["up"], 1),
             # _downstream_of, NOT downstream_count. The cached bitmask index
@@ -2655,7 +2666,11 @@ def _node_explain(s, nodes, k):
                     "third of what the tree quotes for the trade, and selling "
                     "your hours for wages takes another bite"
                     if k in s._practice_set() and n["rev"] else None),
-        "calendar_floor_years": n["yrs"], "risk": n["risk"],
+        "calendar_floor_years": n["yrs"], "risk": s.effective_risk(k),
+        # WHAT THE FAILURES SO FAR HAVE BOUGHT, said out loud, because a
+        # number that quietly improves is a number a player cannot plan with.
+        "attempts_already_failed": int(getattr(s, "failed_attempts", {}).get(k, 0)),
+        "risk_before_any_attempt": n["risk"],
         # THE SUM, NOT ONLY THE RATE. See _node_explain's own note: a failure
         # takes a flat 40% of the money and puts 40% of the hours back on the
         # slate, and a player deciding whether to risk it is holding the size
@@ -3093,6 +3108,8 @@ def render_state(out):
                  % (_fmt_num(_src.get("you")), _fmt_num(_dep),
                     _fmt_num(_src.get("hours_each_deputy_adds"))))
                 if _dep else ""))
+    for _w in (out.get("supervision_close_to_the_edge") or []):
+        L.append(_wrap("  " + _w))
     if out.get("free_hours_going_unused"):
         L.append(_wrap("  " + out["free_hours_going_unused"]))
 
@@ -3490,6 +3507,13 @@ def render_why(out):
     L.append("YOUR HOURS: %s     CALENDAR FLOOR: %s years     FAILURE RISK: %s"
              % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),
                 _pct(out.get("risk"))))
+    if out.get("attempts_already_failed"):
+        L.append("ATTEMPTS ALREADY FAILED: %d. The risk above is what the next "
+                 "attempt actually faces; it was %s before anyone tried. What "
+                 "went wrong last time is not lost on the people who will try "
+                 "again."
+                 % (out["attempts_already_failed"],
+                    _pct(out.get("risk_before_any_attempt"))))
     if out.get("failure_costs"):
         L.append("IF IT FAILS: %s gone (40%% of the money) and %s of your "
                  "hours to do again. It can fail more than once."
