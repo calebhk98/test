@@ -25952,7 +25952,8 @@
     "infrastructure"
    ],
    "up": 3200.0,
-   "yrs": 5.0
+   "yrs": 5.0,
+   "failure_kind": "process_control"
   },
   {
    "_src": "core",
@@ -32708,7 +32709,8 @@
     "infrastructure"
    ],
    "up": 40000.0,
-   "yrs": 15.0
+   "yrs": 15.0,
+   "failure_kind": "process_control"
   },
   {
    "_src": "core",
@@ -45014,7 +45016,8 @@
     "inexplicable"
    ],
    "up": 0.0,
-   "yrs": 3.0
+   "yrs": 3.0,
+   "failure_kind": "process_control"
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]  [REVIEWED: prerequisite(s) cap_pure_6N added by a reviewer working node by node. Reason: fractional distillation of volatile germanium tetrachloride requires high-purity refining technique]",
@@ -45059,7 +45062,8 @@
     "inexplicable"
    ],
    "up": 0.0,
-   "yrs": 5.0
+   "yrs": 5.0,
+   "failure_kind": "process_control"
   },
   {
    "_src": "core",
@@ -45893,7 +45897,8 @@
     "infrastructure"
    ],
    "up": 6000.0,
-   "yrs": 7.0
+   "yrs": 7.0,
+   "failure_kind": "process_control"
   },
   {
    "_src": "12_household.json",
@@ -57020,7 +57025,8 @@
     "spectacle"
    ],
    "up": 5500.0,
-   "yrs": 5.0
+   "yrs": 5.0,
+   "failure_kind": "process_control"
   },
   {
    "_internal": "[SCALED: this is an INDUSTRY, not a demonstration. At 200 tonnes of product a year it consumes about 300 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 400 hectares of forest under permanent management, which you must own before you light it.]",
@@ -102389,7 +102395,8 @@
     "inexplicable"
    ],
    "up": 0.0,
-   "yrs": 5.0
+   "yrs": 5.0,
+   "failure_kind": "process_control"
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]  [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
@@ -102698,7 +102705,8 @@
     "infrastructure"
    ],
    "up": 12000.0,
-   "yrs": 12.0
+   "yrs": 12.0,
+   "failure_kind": "process_control"
   },
   {
    "_internal": "[REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: piston-cylinder precision for efficient sealing and smooth operation]",
@@ -119579,7 +119587,8 @@
     "inexplicable"
    ],
    "up": 0.0,
-   "yrs": 6.0
+   "yrs": 6.0,
+   "failure_kind": "process_control"
   },
   {
    "_src": "01_materials.json",
@@ -119825,6 +119834,503 @@
     "value": 0.85
    },
    "yrs": 0.0
+  },
+  {
+   "id": "ctl_governor_stability_theory",
+   "name": "Governor stability theory (Maxwell 1868)",
+   "tier": 2,
+   "cat": "control_theory",
+   "pre": [
+    "en_centrifugal_governor",
+    "calculus"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_governor_stability_theory",
+   "ph": 150.0,
+   "lab": {
+    "scholar": 200.0
+   },
+   "mat": {},
+   "cap": 60.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.3,
+   "dev_years": 3,
+   "dev_people": 1,
+   "risk": 0.08,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "James Clerk Maxwell, 'On Governors', Proceedings of the Royal Society, 1868. Writes the governor's own differential equation and shows the roots of its characteristic equation, not the mechanism's craftsmanship, decide whether speed settles to the setpoint or grows into a hunt. The first proof that a feedback loop can be mathematically unstable no matter how well it is built.",
+   "yrs": 0.3,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_routh_criterion",
+   "name": "Routh's stability criterion",
+   "tier": 3,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_governor_stability_theory",
+    "sc2_algebra_polynomial"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_governor_stability_theory",
+   "ph": 170.0,
+   "lab": {
+    "scholar": 230.0
+   },
+   "mat": {},
+   "cap": 40.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.3,
+   "dev_years": 2,
+   "dev_people": 1,
+   "risk": 0.09,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Edward Routh, Adams Prize essay, 1877, generalises Maxwell's two- and three-term cases to a characteristic polynomial of any order: arrange its coefficients in a triangular array and read stability off the signs of one column, with no root ever solved for.",
+   "yrs": 0.3,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_hurwitz_criterion",
+   "name": "Hurwitz's stability criterion",
+   "tier": 3,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_governor_stability_theory",
+    "sc2_algebra_determinant"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_governor_stability_theory",
+   "ph": 170.0,
+   "lab": {
+    "scholar": 230.0
+   },
+   "mat": {},
+   "cap": 40.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.3,
+   "dev_years": 3,
+   "dev_people": 1,
+   "risk": 0.09,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Adolf Hurwitz, 1895, answering a direct request from Aurel Stodola, whose steam turbine governors would not settle: arranges the same coefficients into a square array and tests the sign of a sequence of its leading determinants. Later proved identical to Routh's test in different clothing, reached without either man knowing of the other's work.",
+   "yrs": 0.3,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_nyquist_stability_criterion",
+   "name": "Nyquist stability criterion",
+   "tier": 4,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_routh_criterion",
+    "ctl_hurwitz_criterion",
+    "el2_negative_feedback_stability_gain",
+    "sc2_algebra_complex_numbers"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_nyquist_stability_criterion",
+   "ph": 220.0,
+   "lab": {
+    "engineer": 240.0,
+    "scholar": 80.0
+   },
+   "mat": {},
+   "cap": 80.0,
+   "up": 0.0,
+   "build_yrs": 0.3,
+   "adopt_yrs": 0.5,
+   "dev_years": 2,
+   "dev_people": 1,
+   "risk": 0.11,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 2.0,
+   "conf": "C",
+   "note": "Harry Nyquist, Bell Labs, 1932, answers the question Black's 1927 feedback amplifier raised in practice: plot the open loop's gain and phase as one curve in the complex plane across every frequency, and count how many times that curve encircles the point minus one. The count of encirclements, not the size of the gain, says whether closing the loop rings, settles, or runs away.",
+   "yrs": 0.5,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_bode_plot_margins",
+   "name": "Bode plot, gain margin and phase margin",
+   "tier": 4,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_nyquist_stability_criterion",
+    "logarithms"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_nyquist_stability_criterion",
+   "ph": 160.0,
+   "lab": {
+    "engineer": 200.0
+   },
+   "mat": {},
+   "cap": 40.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.4,
+   "dev_years": 6,
+   "dev_people": 1,
+   "risk": 0.08,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Hendrik Bode, Bell Labs, published through the early 1940s. Plots log gain and phase separately against log frequency; straight-line asymptotes make Nyquist's encirclement test readable by eye, and the safety margin collapses to two numbers, gain margin and phase margin, that a working engineer can design a loop to hit rather than merely check afterward.",
+   "yrs": 0.4,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_root_locus",
+   "name": "Root locus method",
+   "tier": 4,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_routh_criterion",
+    "ctl_hurwitz_criterion",
+    "sc2_algebra_complex_numbers"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_nyquist_stability_criterion",
+   "ph": 170.0,
+   "lab": {
+    "engineer": 210.0
+   },
+   "mat": {},
+   "cap": 40.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.4,
+   "dev_years": 1,
+   "dev_people": 1,
+   "risk": 0.1,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Walter Evans, 1948. Plots exactly where the closed loop's poles sit in the complex plane as one gain is turned up from zero to infinity, by a short set of geometric rules on the open loop's own poles and zeros. A designer reads off, by eye, the highest gain that still leaves the poles short of the instability boundary, instead of re-solving Routh's array for every candidate gain in turn.",
+   "yrs": 0.4,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_minorsky_pid_law",
+   "name": "Minorsky's three-term control law",
+   "tier": 3,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_governor_stability_theory",
+    "newtonian_mechanics"
+   ],
+   "traits": [
+    "information",
+    "military"
+   ],
+   "kb": "89_remaining_arts.md#ctl_minorsky_pid_law",
+   "ph": 200.0,
+   "lab": {
+    "engineer": 260.0,
+    "scholar": 60.0
+   },
+   "mat": {},
+   "cap": 60.0,
+   "up": 0.0,
+   "build_yrs": 0.3,
+   "adopt_yrs": 0.4,
+   "dev_years": 3,
+   "dev_people": 1,
+   "risk": 0.12,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Nicolas Minorsky, 1922, watches a human helmsman steer the battleship USS New Mexico and formalises what the man is actually doing: correcting in proportion to the present heading error, to how fast that error is changing, and to how long and how far it has persisted. Weighting and adding those three terms is the first explicit proportional-integral-derivative control law, tested and logged at sea.",
+   "yrs": 0.4,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_pneumatic_process_controller",
+   "name": "Pneumatic process controller",
+   "tier": 4,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_minorsky_pid_law",
+    "cap_power_steam"
+   ],
+   "req_any": [
+    {
+     "group": "air_supply",
+     "options": {
+      "cap_power_steam": 1.0,
+      "cap_power_electric": 0.9
+     }
+    },
+    {
+     "group": "sensing_element",
+     "options": {
+      "opt_bourdon_gauge": 1.0,
+      "in2_thermocouple": 0.95,
+      "thermometer": 0.7
+     }
+    }
+   ],
+   "traits": [
+    "infrastructure",
+    "labour_saving"
+   ],
+   "kb": "89_remaining_arts.md#ctl_minorsky_pid_law",
+   "ph": 260.0,
+   "lab": {
+    "engineer": 260.0,
+    "machinist": 200.0
+   },
+   "mat": {
+    "brass_kg": 8.0,
+    "leather_kg": 4.0,
+    "bronze_kg": 4.0
+   },
+   "cap": 600.0,
+   "up": 80.0,
+   "build_yrs": 0.8,
+   "adopt_yrs": 1.5,
+   "dev_years": 9,
+   "dev_people": 3,
+   "risk": 0.16,
+   "rev": 1500.0,
+   "sch": 0.0,
+   "art": 2.0,
+   "conf": "C",
+   "note": "Instrument makers, Foxboro's Stabilog of 1931 foremost, turn Minorsky's three terms into a compressed-air relay: a bellows reads the process deviation and strokes a nozzle, and the output air pressure, proportional to the error plus its own integral over time, directly positions a diaphragm valve with no electricity on the plant floor at all. This is the device that actually holds a furnace, distillation column or autoclave at its setpoint instead of requiring an operator to watch a gauge and turn a handle by hand.",
+   "yrs": 1.5,
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "ctl_ziegler_nichols_tuning",
+   "name": "Ziegler-Nichols tuning rules",
+   "tier": 4,
+   "cat": "control_theory",
+   "pre": [
+    "ctl_pneumatic_process_controller"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#ctl_minorsky_pid_law",
+   "ph": 140.0,
+   "lab": {
+    "engineer": 180.0
+   },
+   "mat": {},
+   "cap": 20.0,
+   "up": 0.0,
+   "build_yrs": 0.1,
+   "adopt_yrs": 0.3,
+   "dev_years": 1,
+   "dev_people": 2,
+   "risk": 0.1,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "John Ziegler and Nathaniel Nichols, Taylor Instrument Companies, 1942. Two short recipes, one from a single open-loop step test, one from pushing the closed loop to the edge of a sustained oscillation and timing its period, hand a plant engineer usable proportional, integral and derivative settings without ever writing down the process's own differential equation.",
+   "yrs": 0.3,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "mfg_queueing_theory",
+   "name": "Queueing theory (Erlang)",
+   "tier": 3,
+   "cat": "organisation",
+   "pre": [
+    "com_telephone_manual_exchange",
+    "sc2_probability_axioms"
+   ],
+   "traits": [
+    "information",
+    "commerce"
+   ],
+   "kb": "89_remaining_arts.md#mfg_queueing_theory",
+   "ph": 150.0,
+   "lab": {
+    "scholar": 200.0
+   },
+   "mat": {},
+   "cap": 30.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.6,
+   "dev_years": 3,
+   "dev_people": 1,
+   "risk": 0.1,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Agner Krarup Erlang, Copenhagen Telephone Company, 1909. Models calls as arriving at random and holding a trunk for a random time, and derives the formula for the chance an arriving call finds every trunk already busy. An exchange can now be SIZED to a stated grade of service, one blocked call in a hundred, say, instead of guessed and found either wanting or wastefully oversized.",
+   "yrs": 0.6,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "mfg_linear_programming_simplex",
+   "name": "Linear programming and the simplex method",
+   "tier": 4,
+   "cat": "organisation",
+   "pre": [
+    "mil_operational_research",
+    "sc2_algebra_matrix"
+   ],
+   "traits": [
+    "information",
+    "commerce"
+   ],
+   "kb": "89_remaining_arts.md#mfg_queueing_theory",
+   "ph": 250.0,
+   "lab": {
+    "scholar": 280.0,
+    "engineer": 100.0
+   },
+   "mat": {},
+   "cap": 60.0,
+   "up": 0.0,
+   "build_yrs": 0.3,
+   "adopt_yrs": 1,
+   "dev_years": 2,
+   "dev_people": 2,
+   "risk": 0.14,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "George Dantzig, working on United States Air Force planning problems, 1947 (Leonid Kantorovich reached an equivalent formulation in 1939, unpublished in the West for years). Proves the best of every feasible allocation under linear constraints always sits at a CORNER of the constraint region, never in its interior, so an algorithm need only walk from corner to adjacent corner, improving each step, instead of searching a continuous space. The simplex method is that walk: the first time scarce-resource allocation is solved rather than argued over.",
+   "yrs": 1.0,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "mfg_gantt_chart",
+   "name": "Gantt chart",
+   "tier": 2,
+   "cat": "organisation",
+   "pre": [
+    "mfg_production_schedule"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#mfg_queueing_theory",
+   "ph": 100.0,
+   "lab": {
+    "engineer": 140.0
+   },
+   "mat": {},
+   "cap": 10.0,
+   "up": 0.0,
+   "build_yrs": 0.1,
+   "adopt_yrs": 0.3,
+   "dev_years": 2,
+   "dev_people": 1,
+   "risk": 0.07,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Henry Gantt, about 1910 to 1915, building on Karol Adamiecki's earlier and less-known 1896 harmonogram. Draws every task as a horizontal bar against one shared calendar axis, start to finish, the whole schedule on a single page, as used at scale on Hoover Dam's construction. A manager sees which jobs are running late at a glance, instead of finding out from the foreman after the fact.",
+   "yrs": 0.3,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
+  },
+  {
+   "id": "mfg_critical_path_method",
+   "name": "Critical path method",
+   "tier": 4,
+   "cat": "organisation",
+   "pre": [
+    "mfg_gantt_chart",
+    "mfg_linear_programming_simplex"
+   ],
+   "traits": [
+    "information"
+   ],
+   "kb": "89_remaining_arts.md#mfg_queueing_theory",
+   "ph": 220.0,
+   "lab": {
+    "engineer": 260.0
+   },
+   "mat": {},
+   "cap": 30.0,
+   "up": 0.0,
+   "build_yrs": 0.2,
+   "adopt_yrs": 0.6,
+   "dev_years": 1,
+   "dev_people": 3,
+   "risk": 0.13,
+   "rev": 0.0,
+   "sch": 0.0,
+   "art": 1.0,
+   "conf": "C",
+   "note": "Morgan Walker and James Kelley for DuPont and Remington Rand, 1957, and in parallel the United States Navy's PERT for the Polaris programme, 1958. Draws the project as a network of tasks and dependencies rather than one bar chart, and shows only ONE chain through that network, the critical path, has zero slack. Every other task can slip for free within its own float; a single day lost anywhere on the critical path is a day lost on the whole project.",
+   "yrs": 0.6,
+   "req_any": [],
+   "gov": 0,
+   "sus": 0,
+   "_src": "62_control_ops_deep.json"
   }
  ]
 }

@@ -29,15 +29,15 @@ in this directory, read that one.
 | [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 194 |
 | [`55_semiconductors.md`](55_semiconductors.md) | Vacuum, high purity and semiconductors | 13 | 17 |
 | [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 71 |
-| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 152 |
+| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 153 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 58 |
 | [`76_farming_food_deep.md`](76_farming_food_deep.md) |  | 115 | 112 |
-| [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 57 |
+| [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 59 |
 | [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 189 |
 | [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 192 |
 | [`87_construction.md`](87_construction.md) |  | 101 | 94 |
 | [`88_media_signals.md`](88_media_signals.md) |  | 100 | 80 |
-| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 214 | 184 |
+| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 227 | 197 |
 | [`90_textiles.md`](90_textiles.md) |  | 20 | 198 |
 | [`91_household.md`](91_household.md) |  | 27 | 67 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
@@ -1283,6 +1283,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `med_sterile_technique` | 2 | 100.0 | _(module has no anchor)_ |
 | `med_vaccination_progression` | 2 | 150.0 | _(module has no anchor)_ |
 | `plague_preparedness` | 2 | 700.0 | [`quarantine_publichealth`](70_medicine_biology.md#quarantine_publichealth---quarantine-clean-water-sewage-separation-and-food-inspection-custodia-cura-aquarum-no-single-roman-term-covers-the-whole-programme) |
+| `goal_public_health` | 3 | 0.0 | [`public_health`](70_medicine_biology.md#public_health) **BROKEN** |
 | `md2_activated_sludge` | 3 | 250.0 | _(module has no anchor)_ |
 | `md2_adrenaline` | 3 | 140.0 | _(module has no anchor)_ |
 | `md2_anaesthetic_machine` | 3 | 250.0 | _(module has no anchor)_ |
@@ -1520,6 +1521,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `rag_paper` | 1 | 400.0 | _(module has no anchor)_ |
 | `semaphore_telegraph` | 1 | 700.0 | _(module has no anchor)_ |
 | `corpus_dispersed` | 2 | 800.0 | _(module has no anchor)_ |
+| `goal_literacy_common` | 2 | 0.0 | [`literacy`](80_information_printing.md#literacy) **BROKEN** |
 | `if_lithography` | 2 | 200.0 | _(module has no anchor)_ |
 | `if_typewriter` | 2 | 300.0 | _(module has no anchor)_ |
 | `prn_calotype_process` | 2 | 250.0 | _(module has no anchor)_ |
@@ -1553,6 +1555,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_radio_broadcasting` | 3 | 300.0 | _(module has no anchor)_ |
 | `if_linotype_machine` | 4 | 600.0 | _(module has no anchor)_ |
 | `prn_monotype_machine` | 4 | 500.0 | _(module has no anchor)_ |
+| `goal_literate_nation` | 5 | 0.0 | [`literacy`](80_information_printing.md#literacy) **BROKEN** |
 
 ### 85_transport_civil.md
 
@@ -2188,6 +2191,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `civ_method_joints` | 2 | 150.0 | [`civ_statics`](89_remaining_arts.md#civ_statics---statics-forces-and-moments-in-balance) |
 | `civ_neutral_axis` | 2 | 120.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
 | `civ_statics` | 2 | 200.0 | [`civ_statics`](89_remaining_arts.md#civ_statics---statics-forces-and-moments-in-balance) |
+| `ctl_governor_stability_theory` | 2 | 150.0 | [`ctl_governor_stability_theory`](89_remaining_arts.md#ctl_governor_stability_theory---stability-theory-maxwells-governor-equations-routh-and-hurwitz-criteria-nyquist-bode-root-locus) |
 | `fin_assay_office` | 2 | 180.0 | [`fin_standard_weights`](89_remaining_arts.md#fin_standard_weights---standard-weights-assay-office-customs-house) |
 | `fin_census` | 2 | 200.0 | [`fin_census`](89_remaining_arts.md#fin_census---census-survey-statistics-office-mortality-table) |
 | `fin_civil_service_exam` | 2 | 180.0 | [`fin_government`](89_remaining_arts.md#fin_government---standing-bureaucracy-post-office-civil-service-exam) |
@@ -2229,6 +2233,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_blueprint` | 2 | 140.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
 | `mfg_change_order` | 2 | 120.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
 | `mfg_drawing_office` | 2 | 150.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_gantt_chart` | 2 | 100.0 | [`mfg_queueing_theory`](89_remaining_arts.md#mfg_queueing_theory---operations-research-queueing-theory-linear-programming-and-the-simplex-method-gantt-charts-the-critical-path-method) |
 | `mfg_inventory_mgmt` | 2 | 120.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
 | `mfg_maintenance` | 2 | 130.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
 | `mfg_orthographic` | 2 | 130.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
@@ -2266,6 +2271,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sc2_physics_wave_motion` | 2 | 130.0 | [`sc2_physics_elasticity`](89_remaining_arts.md#sc2_physics_elasticity---elasticity-wave-motion-acoustics-aerodynamic-lift) |
 | `civ_bending_moment` | 3 | 200.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
 | `civ_euler_buckling` | 3 | 180.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
+| `ctl_hurwitz_criterion` | 3 | 170.0 | [`ctl_governor_stability_theory`](89_remaining_arts.md#ctl_governor_stability_theory---stability-theory-maxwells-governor-equations-routh-and-hurwitz-criteria-nyquist-bode-root-locus) |
+| `ctl_minorsky_pid_law` | 3 | 200.0 | [`ctl_minorsky_pid_law`](89_remaining_arts.md#ctl_minorsky_pid_law---the-designed-process-controller-three-term-pid-control-the-pneumatic-controller-ziegler-nichols-tuning) |
+| `ctl_routh_criterion` | 3 | 170.0 | [`ctl_governor_stability_theory`](89_remaining_arts.md#ctl_governor_stability_theory---stability-theory-maxwells-governor-equations-routh-and-hurwitz-criteria-nyquist-bode-root-locus) |
 | `fin_commodity_exchange` | 3 | 180.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
 | `fin_joint_stock` | 3 | 250.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
 | `fin_learned_society` | 3 | 200.0 | [`fin_university`](89_remaining_arts.md#fin_university---academic-and-research-institutions) |
@@ -2291,6 +2299,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `met_spectroscopic_assay` | 3 | 160.0 | [`met_metallography`](89_remaining_arts.md#met_metallography---metal-structure-analysis-metallography-phase-diagrams-spectroscopy) |
 | `mfg_dimensioning` | 3 | 160.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
 | `mfg_quality_dept` | 3 | 160.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
+| `mfg_queueing_theory` | 3 | 150.0 | [`mfg_queueing_theory`](89_remaining_arts.md#mfg_queueing_theory---operations-research-queueing-theory-linear-programming-and-the-simplex-method-gantt-charts-the-critical-path-method) |
 | `mfg_work_study` | 3 | 200.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
 | `mil_conscription_reserve` | 3 | 60.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
 | `mil_cryptanalysis` | 3 | 110.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
@@ -2300,6 +2309,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sc2_physics_wave_mechanics` | 3 | 180.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
 | `civ_elasticity_theory` | 4 | 300.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
 | `civ_soil_mechanics` | 4 | 250.0 | [`civ_materials_testing`](89_remaining_arts.md#civ_materials_testing---materials-testing-safety-factor-soil-mechanics) |
+| `ctl_bode_plot_margins` | 4 | 160.0 | [`ctl_nyquist_stability_criterion`](89_remaining_arts.md#ctl_nyquist_stability_criterion---nyquist-criterion-bode-plot-and-margins-root-locus) |
+| `ctl_nyquist_stability_criterion` | 4 | 220.0 | [`ctl_nyquist_stability_criterion`](89_remaining_arts.md#ctl_nyquist_stability_criterion---nyquist-criterion-bode-plot-and-margins-root-locus) |
+| `ctl_pneumatic_process_controller` | 4 | 260.0 | [`ctl_minorsky_pid_law`](89_remaining_arts.md#ctl_minorsky_pid_law---the-designed-process-controller-three-term-pid-control-the-pneumatic-controller-ziegler-nichols-tuning) |
+| `ctl_root_locus` | 4 | 170.0 | [`ctl_nyquist_stability_criterion`](89_remaining_arts.md#ctl_nyquist_stability_criterion---nyquist-criterion-bode-plot-and-margins-root-locus) |
+| `ctl_ziegler_nichols_tuning` | 4 | 140.0 | [`ctl_minorsky_pid_law`](89_remaining_arts.md#ctl_minorsky_pid_law---the-designed-process-controller-three-term-pid-control-the-pneumatic-controller-ziegler-nichols-tuning) |
 | `gp_exhaust_pinchoff` | 4 | 100.0 | [`gp_exhaust_pinchoff`](89_remaining_arts.md#gp_exhaust_pinchoff---exhaust-and-pinch-off-technique) |
 | `gp_getter` | 4 | 130.0 | [`gp_getter`](89_remaining_arts.md#gp_getter---chemical-getter) |
 | `gp_glass_metal_seal` | 4 | 150.0 | [`gp_glass_metal_seal`](89_remaining_arts.md#gp_glass_metal_seal---glass-to-metal-vacuum-seal) |
@@ -2313,6 +2327,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mat_rubber_coagulated` | 4 | 150.0 | [`mat_rubber_coagulated`](89_remaining_arts.md#mat_rubber_coagulated) **BROKEN** |
 | `md2_dna` | 4 | 150.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
 | `met_fatigue_testing` | 4 | 280.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
+| `mfg_critical_path_method` | 4 | 220.0 | [`mfg_queueing_theory`](89_remaining_arts.md#mfg_queueing_theory---operations-research-queueing-theory-linear-programming-and-the-simplex-method-gantt-charts-the-critical-path-method) |
+| `mfg_linear_programming_simplex` | 4 | 250.0 | [`mfg_queueing_theory`](89_remaining_arts.md#mfg_queueing_theory---operations-research-queueing-theory-linear-programming-and-the-simplex-method-gantt-charts-the-critical-path-method) |
 | `mil_operational_research` | 4 | 120.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
 | `gp_controlled_atmosphere_chamber` | 5 | 180.0 | [`gp_controlled_atmosphere_chamber`](89_remaining_arts.md#gp_controlled_atmosphere_chamber---controlled-atmosphere-furnace-chamber) |
 | `gp_czochralski_puller` | 5 | 200.0 | [`gp_czochralski_puller`](89_remaining_arts.md#gp_czochralski_puller---seed-and-pull-crystal-grower) |
@@ -2918,7 +2934,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 855 |
+| linked to a specific recipe entry | 871 |
 | linked to a domain module, no specific entry | 1874 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 88 |
@@ -2934,4 +2950,7 @@ The undocumented nodes, listed so the gap is visible rather than hidden:
 - `met_bloomery_bog_iron` points at `10_metallurgy.md#bloomery_iron`, but that module has no such `###` entry
 - `mat_rubber_coagulated` points at `89_remaining_arts.md#mat_rubber_coagulated`, but that module has no such `###` entry
 - `phosphor_bronze_alloy` points at `10_metallurgy.md#phosphor_bronze_alloy`, but that module has no such `###` entry
+- `goal_literacy_common` points at `80_information_printing.md#literacy`, but that module has no such `###` entry
+- `goal_literate_nation` points at `80_information_printing.md#literacy`, but that module has no such `###` entry
+- `goal_public_health` points at `70_medicine_biology.md#public_health`, but that module has no such `###` entry
 

@@ -2021,15 +2021,62 @@ class ProjectsMixin:
             return 0.0
         return self.RETRY_CALENDAR_CAP * (1.0 - self.RETRY_CALENDAR_DECAY ** m)
 
+    # CONTROL RELIEF: a player who holds a working process controller faces
+    # a lower chance of failing any node whose OWN stated failure mode is
+    # holding a continuous process at temperature, rate or composition - a
+    # zone-refining run, a Czochralski pull, a fractional distillation, a
+    # high-pressure boiler - rather than a one-shot mechanical build. This
+    # answers the player who reached zone_refining with a mature economy
+    # and complete prerequisites and found only dice waiting: the historical
+    # mitigation for "a process you cannot hold at temperature or rate" is
+    # closed-loop control (Minorsky 1922, the pneumatic three-term
+    # controller, Ziegler-Nichols tuning - see ctl_pneumatic_process_
+    # controller in the tree), not a bigger workshop or more capital.
+    #
+    # WHICH NODES QUALIFY IS DATA, NOT A LIST HERE. A node opts in by
+    # carrying failure_kind: "process_control" in the tree itself - the
+    # tag lives beside the other properties of the technology (risk, tier,
+    # traits) in tech_tree.json / the branch files, the same place every
+    # other fact about a node lives. Nine core nodes carry it today
+    # (zone_refining, single_crystal, gecl4_purification, ge_reduction,
+    # lead_chamber, crucible_steel, high_temp_furnace, steam_high_pressure,
+    # electrolysis_industrial), chosen because each one's OWN note already
+    # describes a continuous hold-at-setpoint failure character, not because
+    # this function needed somewhere to point.
+    #
+    # BOUNDED, ON PURPOSE. CONTROL_RELIEF_FACTOR is a flat 35% cut, and nothing
+    # about it depends on failed_attempts, so it neither stacks unboundedly
+    # with retry-learning nor ever reaches zero by itself: a controlled
+    # zone_refining run at 0.45 base risk drops to about 0.29 on a first
+    # attempt, meaningfully more survivable, still a real coin's chance of
+    # failing. RETRY_RISK_FLOOR is untouched (this multiplies alongside it,
+    # not instead of it) so the worst case, many failures AND a controller,
+    # is 0.45 * RETRY_RISK_FLOOR * CONTROL_RELIEF_FACTOR =~ 0.12, never a
+    # formality. The brief was explicit that zone_refining's tension is the
+    # game's best late tension and this must not remove it, only mitigate it.
+    CONTROL_RELIEF_FACTOR = 0.65    # 35% off, earned, never stacks to zero
+    CONTROL_RELIEF_CAPABILITY = "ctl_pneumatic_process_controller"
+
+    def _control_relief_multiplier(self, k):
+        if self.nodes[k].get("failure_kind") != "process_control":
+            return 1.0
+        if self.CONTROL_RELIEF_CAPABILITY not in self.done:
+            return 1.0
+        return self.CONTROL_RELIEF_FACTOR
+
     def effective_risk(self, k):
         """This node's actual chance of failing on its NEXT attempt, after
         whatever retry-learning its past failures have already bought (see
-        _retry_risk_multiplier just above). Equal to the bare node risk the
-        first time anything is tried. A screen quoting a node's risk once
-        failed_attempts[k] is above zero should read THIS, not the tree's
-        bare n["risk"] - that number is no longer what the dice use.
+        _retry_risk_multiplier just above) AND whatever control-theory relief
+        a completed process controller has earned it (see
+        _control_relief_multiplier just above). Equal to the bare node risk
+        the first time anything is tried, with no controller built. A screen
+        quoting a node's risk once failed_attempts[k] is above zero, or once
+        the controller is done, should read THIS, not the tree's bare
+        n["risk"] - that number is no longer what the dice use.
         """
-        return self.nodes[k]["risk"] * self._retry_risk_multiplier(k)
+        return (self.nodes[k]["risk"] * self._retry_risk_multiplier(k)
+                * self._control_relief_multiplier(k))
 
     # ---- WHAT A RISKY NODE ACTUALLY COSTS IN CALENDAR TIME -----------------
     # `effective_risk` and `calendar_floor` answer two separate questions -
