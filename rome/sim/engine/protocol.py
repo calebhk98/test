@@ -3247,11 +3247,25 @@ def _agent_log(s, cmd=None):
 
 def _rests_band(n):
     """How much rests on a node, in the words a person in the year 100 could
-    actually use. The exact count is a fog spoiler; the band is not."""
+    actually use. The exact count is a fog spoiler; the band is not.
+
+    "NOTHING ELSE" HAS TO MEAN ZERO. The bottom band used to cover everything
+    from 0 to 3, so a node with real dependents was described as having none,
+    and a naive Rome player caught the game contradicting itself inside a
+    minute: `why met_ore_crushing_sorting` said "nothing else rests on this"
+    while met_jigging_gravity, sitting visible in their own list, gave
+    "missing prerequisites: met_ore_crushing_sorting". They found the same
+    pair again with in2_tape_measure_steel and
+    in2_baseline_measurement_apparatus. Banding is the right answer to the
+    spoiler problem, since the exact count is a map of the tree; a band whose
+    words are false is not. Vague is allowed here, wrong is not - so 1 to 3
+    gets its own rung and the bottom one means what it says.
+    """
     return ("almost everything" if n > 1200 else
             "a great deal" if n > 300 else
             "a fair amount" if n > 40 else
             "a few things" if n > 3 else
+            "a little" if n > 0 else
             "nothing else; this is worth having for itself")
 
 
@@ -4108,6 +4122,7 @@ def render_state(out):
 # The short forms of the bands, so the column stays a column.
 _RESTS_SHORT = {"almost everything": "ALL", "a great deal": "much",
                 "a fair amount": "some", "a few things": "few",
+                "a little": "1-3",
                 "nothing else; this is worth having for itself": "-"}
 
 

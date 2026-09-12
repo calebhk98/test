@@ -12050,6 +12050,54 @@ check("...and it was off by default, which is the whole of why they did not "
       sim(civ="england_1300").policy.get("auto_open") is False,
       sim(civ="england_1300").policy)
 
+# "NOTHING ELSE RESTS ON THIS" HAS TO MEAN ZERO. A naive Rome player caught
+# the game contradicting itself inside a minute: `why met_ore_crushing_sorting`
+# answered "HOW MUCH RESTS ON THIS: nothing else; this is worth having for
+# itself", while met_jigging_gravity, visible in their own list, refused with
+# "missing prerequisites: met_ore_crushing_sorting". They found the same pair
+# again in in2_tape_measure_steel and in2_baseline_measurement_apparatus. The
+# bottom band covered 0 through 3. Banding is the right answer to the spoiler
+# problem - the exact count is a map of the tree - but a band whose words are
+# false is not. Vague is allowed, wrong is not.
+check("only a genuine zero is described as having nothing resting on it",
+      _PROTO._rests_band(0).startswith("nothing else")
+      and not any(_PROTO._rests_band(_n).startswith("nothing else")
+                  for _n in (1, 2, 3, 4, 41, 301, 1201)),
+      [(_n, _PROTO._rests_band(_n)) for _n in (0, 1, 2, 3, 4)])
+check("...and the bands still climb, so the new rung did not break the "
+      "ladder",
+      len({_PROTO._rests_band(_n) for _n in (0, 1, 4, 41, 301, 1201)}) == 6,
+      [_PROTO._rests_band(_n) for _n in (0, 1, 4, 41, 301, 1201)])
+check("...and every band has a short form for the column that renders it",
+      all(_PROTO._rests_band(_n) in _PROTO._RESTS_SHORT
+          for _n in (0, 1, 4, 41, 301, 1201)),
+      sorted(_PROTO._RESTS_SHORT))
+
+# THE TWO PAIRS THEY ACTUALLY REPORTED, end to end through `why`.
+_s_rb = sim()
+for _a, _b in (("met_ore_crushing_sorting", "met_jigging_gravity"),
+               ("in2_tape_measure_steel",
+                "in2_baseline_measurement_apparatus")):
+    _rb_why = S._agent_dispatch(_s_rb, NODES, {"cmd": "why", "id": _a})
+    _rb_rests = _rb_why.get("how_much_rests_on_this")
+    check("%s does not claim nothing rests on it, when %s names it as a "
+          "missing prerequisite" % (_a, _b),
+          _a in NODES[_b]["pre"]
+          and not (_rb_rests or "").startswith("nothing else"),
+          (_rb_rests, NODES[_b]["pre"]))
+
+# AND THE CLASS: no node with a dependent may say nothing rests on it.
+_rb_kids = collections.Counter()
+for _k, _n in NODES.items():
+    for _p in _n["pre"]:
+        _rb_kids[_p] += 1
+_rb_liars = [_k for _k in sorted(NODES)
+             if _rb_kids[_k] > 0
+             and _PROTO._rests_band(_rb_kids[_k]).startswith("nothing else")]
+check("no node in the whole tree that something else depends on is "
+      "described as having nothing resting on it",
+      not _rb_liars, _rb_liars[:8])
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
