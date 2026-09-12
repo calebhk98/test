@@ -1416,6 +1416,72 @@ class SocietyMixin:
         self.capital -= lost
         return lost
 
+    def _resolve_hazard_condition(self, h, yr, a):
+        """History on rails, but the household is allowed to have changed
+        the ground it runs on.
+
+        A dated hazard's `years` window used to be the whole story: the
+        Third-Century Crisis or the African grain fleet failing in 439 fired
+        on schedule no matter what the player had built, which is the exact
+        complaint a player who had spent three centuries industrialising
+        made - technology changed how much a hazard hurt, never whether it
+        happened. This is the fix, and it is deliberately narrow: only a
+        hazard whose CIVILIZATION FILE gives it a `condition` is touched at
+        all, so a hazard with none - which is most of them - fires exactly
+        as before. See the civilization files themselves for which hazards
+        got one and why: in every case the note names a MATERIAL cause (a
+        supply line, a building material, a drainage engine) that a rich
+        household's own building can plausibly remove, never a succession, a
+        religious policy or an administrative reform - one household in 300
+        AD did not choose the emperor, and none of those hazards carry a
+        `condition` at all.
+
+        `condition` names exactly one numeric field on the hazard
+        (`field`), a list of tech ids the player must have ALL of
+        (`requires_all`), and what happens when they do (`outcome`:
+        "avert" drops the field for this hazard entirely, "alter" scales
+        it via `alter_scale`, which is how much of the ORIGINAL shortfall
+        - 1 minus the field, for output_factor; the field itself for the
+        rest - survives). Returns `h` unchanged, or a SHALLOW COPY with
+        that one field adjusted; every other field on the hazard (a sack
+        risk, a values shift) is untouched, because a household that fed
+        itself did not thereby also arm itself or convert the Church.
+
+        Told, not silent, in all three cases - fires as written, fires
+        altered, or is averted - the once, the year the hazard's window
+        opens (`yr == a`), keyed on the hazard's own name so a multi-year
+        window does not repeat itself every year it stays open.
+        """
+        cond = h.get("condition")
+        if not cond:
+            return h
+        field = cond.get("field")
+        need = cond.get("requires_all") or []
+        met = all(self.has(n) for n in need)
+        if yr == a:
+            said = getattr(self, "_said_condition", None)
+            if said is None:
+                said = self._said_condition = set()
+            key = h.get("name", "hazard")
+            if key not in said:
+                said.add(key)
+                msg = cond.get("met_message" if met else "unmet_message")
+                if msg:
+                    self.log.append((yr, msg))
+        if not met or field not in h:
+            return h
+        h2 = dict(h)
+        outcome = cond.get("outcome")
+        scale = cond.get("alter_scale", 1.0)
+        if outcome == "avert":
+            del h2[field]
+        elif outcome == "alter":
+            if field == "output_factor":
+                h2[field] = 1.0 - (1.0 - h[field]) * scale
+            else:
+                h2[field] = h[field] * scale
+        return h2
+
     def _shocks(self, yr):
         """Dated catastrophes, read from the CIVILIZATION file.
 
@@ -1430,6 +1496,7 @@ class SocietyMixin:
             a, b = h.get("years", [0, 0])
             if not (a <= yr <= b):
                 continue
+            h = self._resolve_hazard_condition(h, yr, a)
             if "staff_loss" in h and r.random() < 0.32:
                 relief, why = self.hazard_relief("staff_loss")
                 loss = h["staff_loss"] * relief
@@ -1469,23 +1536,48 @@ class SocietyMixin:
                 self.pop_deficit = 1.0 - (1.0 - self.pop_deficit) * (1.0 - raw)
                 self._pop_recovery_years = max(self._pop_recovery_years,
                                                 150.0 * (raw / 0.45))
+                # SEVERITY HONESTY: the words have to match `loss`, the
+                # number the mechanic just applied above, not `raw`, the
+                # historical hazard's own unmitigated figure - a tester
+                # whose sanitation and quarantine cut a 28% plague down to
+                # 0.4% still read "staff -0%... (would have been -28%: ...)"
+                # in the same breath, and came away certain they had just
+                # lived through a 28% plague, because the sentence restated
+                # 28% twice and the near-zero number once. `relief` (mult)
+                # is the SAME diminishing fraction hazard_relief and
+                # hazard_advice already compute, and hazard_timeline's own
+                # "hedged" cutoff is this same 0.75 - reused, not a second
+                # estimate of what your hedges did.
                 _hit = []
                 if _people_before > 0.05:
-                    _hit.append("staff -%d%%" % (loss * 100))
+                    if why and relief <= 0.25:
+                        _hit.append("staff -%d%%, held off almost entirely "
+                                    "by what you built (%s)"
+                                    % (loss * 100, "; ".join(why)))
+                    elif why and relief <= 0.75:
+                        _hit.append("staff -%d%% (softened by %s)"
+                                    % (loss * 100, "; ".join(why)))
+                    else:
+                        _hit.append("staff -%d%%" % (loss * 100))
                 if cash > 0.5:
                     _hit.append("%s gone with the trade that stopped"
                                 % "{:,.0f}".format(cash))
                 if not _hit:
                     _hit.append("you had nothing it could take")
+                msg = "%s: %s" % (h.get("name", "hazard"), ", ".join(_hit))
+                # THE WHOLE SOCIETY LOST PEOPLE TOO, not only your household,
+                # and your own hedges do not change that: the quarantine you
+                # built protects your people, not everyone else's labour
+                # market (see the comment on `raw` above). Kept as a
+                # SEPARATE sentence, explicitly "either way", so a household
+                # that came through nearly untouched does not read this
+                # empire-wide toll as its own.
                 if raw > 0.01:
-                    _hit.append("population -%d%% society-wide, which will keep "
-                                "wages (and everything paid in them) dear for "
-                                "roughly the next %d years"
-                                % (raw * 100, round(self._pop_recovery_years)))
-                self.log.append((yr, "%s: %s%s"
-                                 % (h.get("name", "hazard"), ", ".join(_hit),
-                                    " (would have been -%d%%: %s)"
-                                    % (h["staff_loss"] * 100, "; ".join(why)) if why else "")))
+                    msg += (". Empire-wide, population -%d%% - wages (and "
+                            "everything paid in them) stay dear for roughly "
+                            "the next %d years either way"
+                            % (raw * 100, round(self._pop_recovery_years)))
+                self.log.append((yr, msg))
             if "sack_chance" in h:
                 relief, why = self.hazard_relief("sack_chance")
                 p = h["sack_chance"] * relief

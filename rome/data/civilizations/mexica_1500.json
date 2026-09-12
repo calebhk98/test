@@ -151,6 +151,14 @@
    "output_factor": 0.5,
    "sack_chance": 0.07,
    "staff_loss": 0.12,
+   "condition": {
+    "field": "output_factor",
+    "requires_all": ["met_mine_pumping"],
+    "outcome": "alter",
+    "alter_scale": 0.5,
+    "met_message": "The wars of independence: the mining districts are the first thing wrecked, and across New Spain the deep workings flood the moment the drainage engines stop - but your own pumps are yours, not a government's, and they keep running through the war, so the flooding that ends everyone else's decade only half-touches yours. (The war itself, the shootings, the changing sides, are none of them yours to stop.)",
+    "unmet_message": "The wars of independence: your workings drain on engines that depend on the same capital everyone else's does, and when the war stops it, the flood takes your decade the way it took New Spain's."
+   },
    "years": [
     1810,
     1821

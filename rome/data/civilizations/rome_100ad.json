@@ -124,6 +124,13 @@
    "output_factor": 0.72,
    "sack_chance": 0.04,
    "staff_loss": 0.1,
+   "condition": {
+    "field": "output_factor",
+    "requires_all": ["endowment_land", "crop_rotation"],
+    "outcome": "avert",
+    "met_message": "The crossings, and the sack of Rome: Geiseric takes Carthage in 439 and with it the African grain that had fed Rome since Augustus - but your household never ate off that fleet. Land of your own, worked in fields that do not fail together, means the grain crisis that guts everyone else's ledger passes yours by. (The Rhine crossings, Alaric's sack and Attila's march are none of them yours to prevent: sack risk and staff are unaffected.)",
+    "unmet_message": "The crossings, and the sack of Rome: your table still depends on the African grain fleet, so when Geiseric takes Carthage this window, your trade and output fall exactly as Rome's did."
+   },
    "years": [
     406,
     460
@@ -197,6 +204,13 @@
    "name": "The Arab conquests close the Mediterranean",
    "note": "Within a century of Muhammad's death in 632, Arab armies had taken Syria and Egypt from Byzantium (634-642), swept across North Africa and taken Carthage itself in 698, and crossed into Spain in 711. Henri Pirenne's thesis - that it is this, and not the fifth-century invasions, which actually ends the ancient Mediterranean as a single economic space - is contested on details but not on the basic shape: papyrus from Egypt, African red slip ware and the grain fleets all stop reaching Italy across this window, a sea that had been Rome's own for six centuries becomes a frontier, and whatever reaches Ravenna or Rome now comes from a much smaller world.",
    "output_factor": 0.85,
+   "condition": {
+    "field": "output_factor",
+    "requires_all": ["endowment_land", "water_power_scale", "civ_road_paved"],
+    "outcome": "avert",
+    "met_message": "The Arab conquests close the Mediterranean: the papyrus, the African red slip ware and the grain fleets stop reaching Italy - but none of them were ever reaching you. Land, power and roads that are your own, not shipped in across a sea that has just become a frontier, mean the closing of the Mediterranean does not touch your output. (The sea is still closed, and the society's regard for commerce still falls with it - that is not yours to hold back.)",
+    "unmet_message": "The Arab conquests close the Mediterranean: your workshop still drew on the goods that crossed that sea, so when it closes, your trade and output fall with everyone else's."
+   },
    "values": {
     "w_commerce": -0.1
    },
