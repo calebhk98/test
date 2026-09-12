@@ -2,11 +2,10 @@
 
 Two different things share this file, and the difference matters:
 
-  1. THE CONFIG - a handful of preferences (where saves go, what the New
-     Game wizard should default to) that live OUTSIDE any one game, at a
-     fixed place on disk, and are read again on the NEXT invocation of the
-     process. This is what makes "put my saves somewhere else" stick without
-     a flag: see PLAYER REQUEST #1 below.
+  1. THE CONFIG - a handful of preferences that live OUTSIDE any one game,
+     at a fixed place on disk, and are read again on the NEXT invocation of
+     the process. This is what makes "put my saves somewhere else" stick
+     without a flag: see PLAYER REQUEST #1 below.
 
   2. PER-SESSION META - a couple of fields (right now, just the horizon) that
      belong to one save file but are not part of the save format the engine
@@ -17,7 +16,41 @@ Two different things share this file, and the difference matters:
 
 Nothing in this module is imported by, or imports, protocol.py/core.py/
 projects.py/labour.py/society.py/economy.py: it is filesystem bookkeeping
-around the engine, not the engine.
+around the engine, not the engine. (protocol.py does carry a couple of
+module-level variables this module's VALUES end up in - DISPLAY_WIDTH,
+DEFAULT_AVAILABLE_LIMIT - but cli.py is what copies them there; this module
+still never imports protocol.py, nor the reverse.)
+
+THE CONFIG IS FOR THE APPLICATION, NOT FOR ANY ONE GAME. An earlier version
+of this file, and of the main-menu Options screen built on it, held
+"defaults for the next new game" here too - which civilisation, which
+starting kit, fog of war, mortality, the horizon - on the reasoning that a
+player who always starts the same way shouldn't have to retype it. That
+reasoning was sound, but CONFIG_PATH is the wrong place for it: these are
+facts about a PLAYTHROUGH, the same way fog and mortality are, and a player
+asking "why is the save location next to 'which civilisation' on the same
+settings screen" was asking the right question - the owner's own words, on
+being shown that screen, were "change where saves are, change language,
+change window size, etc? Not about each save, like fog or mortality?" So
+the Options screen now holds only what is actually about the PROGRAM: where
+saves go, how wide a line is, how many rows a table shows before paging,
+and whether the welcome/tutorial text prints for a game that has not
+started yet.
+
+The "remembered default civilisation/kit/fog/mortality/horizon" capability
+is not deleted, because a player who favours one civilisation and one kit
+still should not have to retype them - it just no longer has a settings
+screen of its own. _new_game (cli.py) still prefills its five questions from
+whatever was chosen LAST TIME, and silently writes this sitting's answers
+back as the new "last time" the moment the wizard finishes, the same way a
+text editor remembers your last file dialog folder without asking you to
+configure it. DEFAULT_CIV etc., below, are that memory; nothing edits them
+directly any more.
+
+Changing the horizon mid-game, or turning mortality on mid-game, are
+reasonable things a player reaches for WHILE PLAYING, not before - that
+capability lives in cli.py's in-game 'options' command (_ingame_options),
+unrelated to this file's config and not moved by any of the above.
 
 PLAYER REQUEST #1 - "saves in a place that survives": several players run
 somewhere the default save directory (~/.rome-saves) is not the durable
@@ -33,9 +66,35 @@ survives in a given environment works:
      thing that survives
   3. ~/.rome-saves, unchanged, for everyone who has not asked for anything
      else
+
+DISPLAY WIDTH - "change window size": the renderers in protocol.py wrap text
+and size tables to a number of columns that used to be a bare constant
+(76, in most places), which is exactly the "terminal of a particular size"
+assumption that cost players truncated ids on a narrower terminal. A player
+can set an explicit width from Options; left alone (None), resolve_
+display_width below asks the terminal itself via shutil.get_terminal_size,
+and only falls back to the old hardcoded number when there is no terminal
+to ask (a pipe, a redirected file, the test suite) - so nothing a script or
+a regression check reads changes because this preference exists.
+
+LANGUAGE - deliberately absent. The natural fourth item on a "window size,
+save location" list is "language", and it is not here: this codebase has no
+internationalisation to switch on. _localise_words/_localise_money in
+protocol.py swap the NAME of the currency per civilisation (denarii,
+hacksilver, beans, pence) - flavour, not translation - and the many
+thousands of words of node notes (rome/data/tech_tree.json) and the
+rome/knowledge/ corpus exist in English only. A menu entry offering
+"language" with nothing behind it would be worse than no entry: a setting
+that silently does nothing. Real language support would mean translating
+every node note and every rendered sentence in protocol.py/cli.py (not a
+small rewrite - protocol.py alone is thousands of lines of prose, generated
+sentence by sentence from game state) and deciding what happens to
+rome/knowledge/, which is English prose no translation layer touches
+automatically. That is a project of its own, not a field in this file.
 """
 import json
 import os
+import shutil
 import time
 
 
@@ -53,19 +112,83 @@ CONFIG_PATH_ENV = "ROME_SIM_CONFIG"
 _DEFAULT_SAVE_DIR = os.path.join(os.path.expanduser("~"), ".rome-saves")
 _DEFAULT_CONFIG_PATH = os.path.join(os.path.expanduser("~"), ".rome-sim-config.json")
 
-# What the New Game wizard offers before a player has ever changed anything,
-# and what a bare `play`/`agent` invocation still uses - identical to the
-# flag defaults in main() (data.DEFAULTS, STARTING_KITS), repeated here as
-# plain values rather than imported, so this module never has to import the
-# engine to know what "unset" means.
+# APPLICATION PREFERENCES - the main-menu Options screen, in full. Every one
+# of these is about the program, never about a playthrough: see the module
+# docstring's "THE CONFIG IS FOR THE APPLICATION" section for why fog,
+# mortality and the rest of a game's own setup are not in this list.
+#
+# display_width: None means "ask the terminal" (resolve_display_width,
+#   below); an explicit number is a player override, for a terminal that
+#   cannot be asked (some multiplexers, a logged session) or one the player
+#   simply wants narrower or wider than their actual window.
+# rows_per_page: how many rows a long, pageable table (chiefly `available`,
+#   searched or paged) shows before a player has to ask for more.
+# show_welcome: whether the one-time-per-new-game arrival paragraph and
+#   starter-verb tutorial print. A player on their fifth new game does not
+#   need the five starter verbs explained again; see cmd_play and cmd_menu.
 CONFIG_DEFAULTS = {
     "save_dir": None,          # None means "use the rule above"
+    "display_width": None,     # None means "ask the terminal; see below"
+    "rows_per_page": 30,
+    "show_welcome": True,
+    # REMEMBERED, NOT CONFIGURED - see the module docstring. These four plus
+    # the horizon are the New Game wizard's last-used answers, written back
+    # by cli.py's _new_game the moment a game actually starts, and are not
+    # edited from the Options screen; they exist so a player who favours
+    # one civilisation and kit is not asked to retype them, not so there is
+    # a settings page for "which civilisation".
     "default_civ": "rome_100ad",
     "default_kit": "poor_scholar",
     "default_fog": True,
     "default_mortal": False,
     "default_horizon": 500,
 }
+
+# THE OLD HARDCODED NUMBERS, named, so a process that cannot ask its
+# terminal (a pipe, a redirected file, every subprocess the test suite
+# spawns) sees the exact width/page-size the game always used, not some
+# other arbitrary number - see resolve_display_width.
+FALLBACK_DISPLAY_WIDTH = 76
+FALLBACK_ROWS_PER_PAGE = 30
+
+
+def resolve_display_width(cfg=None):
+    """How many columns to wrap text to and size tables for: an explicit
+    player override (cfg['display_width']) if one is set, otherwise the
+    terminal's own width via shutil.get_terminal_size().
+
+    shutil.get_terminal_size already does the right thing for "cannot be
+    detected": it checks the COLUMNS environment variable, then asks the
+    OS for the real size of whatever is attached to stdout, and only when
+    NEITHER of those works (stdout is a pipe or a redirected file, exactly
+    what every subprocess in this repository's own test suite runs with)
+    does it fall back to the `fallback` argument - which is why that
+    argument is FALLBACK_DISPLAY_WIDTH, the number every renderer already
+    hardcoded, rather than some other guess. A test, or a player piping
+    output to a file, sees precisely the old behaviour; a player at a real
+    terminal gets its actual width.
+    """
+    if cfg is None:
+        cfg = load_config()
+    override = cfg.get("display_width")
+    if isinstance(override, (int, float)) and override > 0:
+        return int(override)
+    return shutil.get_terminal_size(
+        fallback=(FALLBACK_DISPLAY_WIDTH, 24)).columns
+
+
+def resolve_rows_per_page(cfg=None):
+    """How many rows a long table pages by before a player has to ask for
+    more (see protocol.DEFAULT_AVAILABLE_LIMIT). A bare positive integer
+    from the config, or FALLBACK_ROWS_PER_PAGE if it is missing or not one -
+    never zero or negative, which would page nothing at all."""
+    if cfg is None:
+        cfg = load_config()
+    try:
+        n = int(cfg.get("rows_per_page", FALLBACK_ROWS_PER_PAGE))
+    except (TypeError, ValueError):
+        n = FALLBACK_ROWS_PER_PAGE
+    return n if n > 0 else FALLBACK_ROWS_PER_PAGE
 
 
 def config_path():
