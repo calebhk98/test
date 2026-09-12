@@ -1073,15 +1073,71 @@ def cmd_plan(a):
     if _simdir not in sys.path:
         sys.path.insert(0, _simdir)
     import planner as _planner
-    order, rationale, _c = _planner.plan(
-        civ=a.civ, goal=a.goal, seed_strategy=a.seed_strategy,
-        side_branches=a.side_branches, side_branch_every=a.side_branch_every,
-        refine_rounds=a.refine_rounds, mc=a.mc, horizon=a.horizon, seed=a.seed)
     tree, _p, nodes, _w, _g = load()
     goal = a.goal or tree["meta"]["goal_node"]
-    label = ("PLANNED (CPM): backward-chained from %s over its prerequisite "
-            "closure for %s%s" % (goal, a.civ, ", refined against real trials"
-                                  if a.refine_rounds else ""))
+    if not a.search_rounds:
+        # UNCHANGED FROM BEFORE. Purely structural CPM, optionally refined
+        # against real trials - the path every existing caller and test
+        # already exercises.
+        order, rationale, _c = _planner.plan(
+            civ=a.civ, goal=a.goal, seed_strategy=a.seed_strategy,
+            side_branches=a.side_branches, side_branch_every=a.side_branch_every,
+            refine_rounds=a.refine_rounds, mc=a.mc, horizon=a.horizon, seed=a.seed)
+        label = ("PLANNED (CPM): backward-chained from %s over its "
+                "prerequisite closure for %s%s" % (goal, a.civ,
+                ", refined against real trials" if a.refine_rounds else ""))
+        _planner.write_strategy(a.out, label, rationale, order)
+        print("wrote %d nodes to %s" % (len(order), a.out))
+        for line in rationale:
+            print("  - " + line)
+        return 0
+    # SOLVE THE DICE-FREE PROBLEM FIRST (see rome/sim/path_search.py):
+    # diagnose the binding constraint against a trial with the dice removed
+    # entirely and relax it, round by round, and USE that order directly -
+    # not merely as a --seed-strategy tie-break for a fresh CPM pass, which
+    # would silently re-run `pick_side_branches`/`interleave` and put every
+    # side branch the search pulled to the end right back into the middle of
+    # the spine, undoing the one relaxation move that does that.
+    import path_search as _search
+    _search.ensure_fixed_hash_seed()
+    seed_order = _planner.load_seed(a.seed_strategy, nodes)
+    order, extras, history = _search.search(
+        civ=a.civ, goal=a.goal, side_branches=a.side_branches,
+        side_branch_every=a.side_branch_every, rounds=a.search_rounds,
+        horizon=a.search_horizon, backlog_ratio=a.search_backlog_ratio,
+        seed_order=seed_order)
+    last = history[-1]
+    rationale = [
+        "Deterministic search (path_search.py): critical-path order, then "
+        "%d round(s) of diagnosing the binding constraint against a "
+        "dice-free trial (no events, no project failures, immortal "
+        "founder, %d-year horizon) and relaxing it, keeping whichever "
+        "round scored best." % (len(history), a.search_horizon),
+        "Final round %d: %d/%d closure nodes done%s. Scarce trade(s) "
+        "diagnosed: %s."
+        % (last["round"], last["closure_done"], len(closure(nodes, goal)),
+           (", goal reached %d AD" % last["goal_year"]) if last["goal_year"] else "",
+           ", ".join(last["scarce_trades"]) or "(none)"),
+    ]
+    if a.refine_rounds:
+        # SAME RELATIONSHIP `plan()` ALREADY HAS TO `refine()`: the search's
+        # own order and side branches become what gets measured and
+        # advanced round by round, instead of planner.plan() deriving a
+        # fresh CPM pass that does not know about the search's relaxation.
+        s = Sim(nodes, [], random.Random(a.seed), events=False, civ=load_civ(a.civ))
+        order, extras, score = _planner.refine(
+            nodes, goal, s, order, extras, a.civ, a.mc, a.horizon, a.seed,
+            a.refine_rounds, a.side_branch_every)
+        if score is not None:
+            rationale.append(
+                "Refined over %d round(s) of %d trials each at a %d-year "
+                "horizon (seed %d), starting from the search's own order: "
+                "%d/%d trials reached the goal in the final round."
+                % (a.refine_rounds, a.mc, a.horizon, a.seed, score[0], a.mc))
+    label = ("PLANNED (CPM + deterministic search%s): backward-chained from "
+            "%s over its prerequisite closure for %s" % (
+                ", refined against real trials" if a.refine_rounds else "",
+                goal, a.civ))
     _planner.write_strategy(a.out, label, rationale, order)
     print("wrote %d nodes to %s" % (len(order), a.out))
     for line in rationale:
@@ -2012,6 +2068,24 @@ def main():
                    help="trials per refinement round (ignored if --refine-rounds 0)")
     q.add_argument("--horizon", type=int, default=700)
     q.add_argument("--seed", type=int, default=1)
+    # DETERMINISTIC SEARCH: solve the dice-free problem first (see
+    # rome/sim/path_search.py), instead of only computing one structural CPM
+    # pass. --search-rounds 0 (the default) leaves `plan` exactly as it was;
+    # a nonzero value diagnoses the binding constraint against a dice-free
+    # trial of the CPM order (no events, no project failures, immortal
+    # founder - see path_search.DetRNG) and relaxes it, round by round,
+    # keeping whichever round's order actually scored best.
+    q.add_argument("--search-rounds", type=int, default=0,
+                   help="diagnose the binding constraint against a dice-free "
+                        "trial and relax it, up to this many rounds, before "
+                        "applying --refine-rounds (if any). 0 (default) skips "
+                        "this and is purely the structural CPM pass")
+    q.add_argument("--search-horizon", type=int, default=500,
+                   help="dice-free horizon used WHILE searching (kept short "
+                        "for speed - see path_search.py's own module "
+                        "docstring on why a longer, slower verification run "
+                        "is a separate step, not part of the search loop)")
+    q.add_argument("--search-backlog-ratio", type=float, default=6.0)
     sub.add_parser("menu", help="pick a civilisation, read where you have landed, "
                                 "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
