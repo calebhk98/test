@@ -9328,6 +9328,42 @@ check("...capped well short of the whole floor - RETRY_CALENDAR_CAP's own "
       "share - so a retried programme is readier, never instantly ready",
       _banked[-1] <= _cal_floor * _s_cal.RETRY_CALENDAR_CAP + 1e-6, _banked)
 
+# --- a hazard timeline that escalates, instead of reading the same at 150 --
+# years out and at 5 (society.py: hazard_timeline, wired into fog.py's
+# knowledge_risk as the `risk` command's "timeline"). A Rome player watched
+# "hedged by nothing yet" sit unchanged for a hundred and fifty years and
+# lost a third of their progress the year the hazard landed anyway; the fix
+# is that the SAME hazard's own words change as the gap between "when it
+# lands" and "how long the hedge takes" closes.
+_s_tl = sim(civ="rome_100ad")
+_s_tl.year = 150
+_tl_far = next((r for r in _s_tl.hazard_timeline()
+               if r["name"] == "Third century crisis"), None)
+_s_tl2 = sim(civ="rome_100ad")
+_s_tl2.year = 234
+_tl_near = next((r for r in _s_tl2.hazard_timeline()
+                 if r["name"] == "Third century crisis"), None)
+check("hazard_timeline names the Third century crisis while it is still "
+      "visibly ahead and again once it is nearly here",
+      _tl_far is not None and _tl_near is not None, (_tl_far, _tl_near))
+check("the SAME hazard's urgency tag escalates as the date closes in - "
+      "'on the horizon' far out, something sharper once even the fastest "
+      "hedge could no longer finish in time",
+      _tl_far and _tl_near and _tl_far["urgency"] != _tl_near["urgency"]
+      and _tl_far["urgency"] in ("on the horizon", "hedged")
+      and _tl_near["urgency"] in ("too late to hedge", "stopgap only",
+                                  "begin hedge now", "happening now"),
+      (_tl_far, _tl_near))
+check("hazard_timeline is sorted nearest first",
+      [r["years_until"] for r in _s_tl.hazard_timeline()]
+      == sorted(r["years_until"] for r in _s_tl.hazard_timeline()),
+      [r["years_until"] for r in _s_tl.hazard_timeline()])
+_rk_tl = S._agent_dispatch(_s_tl, NODES, {"cmd": "risk"})
+check("the `risk` command itself carries the compact timeline, not just "
+      "the per-kind breakdown",
+      isinstance(_rk_tl.get("knowledge_risk", {}).get("timeline"), list)
+      and len(_rk_tl["knowledge_risk"]["timeline"]) > 0, _rk_tl.get("knowledge_risk"))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

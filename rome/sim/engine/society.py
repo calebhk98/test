@@ -1211,6 +1211,191 @@ class SocietyMixin:
         out.sort(key=lambda e: not e["can_begin_now"])
         return out
 
+    # ---- A TIMELINE, NOT A WALL OF TEXT THAT NEVER CHANGES -----------------
+    # `risk` already had dates, yearly odds, cumulative danger and what prior
+    # choices buy against each - a winning player called that combination one
+    # of the strongest systems in the game. What it did not have was ONE
+    # compact, chronological answer to "what is coming, how soon, and am I
+    # covered" - that reply is scattered across a single flat `hedged_by`
+    # (one word for the whole civilisation, not per hazard) and a list of
+    # hazard rows each carrying its own sack/staff-loss percentages several
+    # keys deep. And `hedged_by` itself never changed its wording as a date
+    # got closer: a Rome player watched it read "nothing yet" for a hundred
+    # and fifty years, across a hazard that eventually arrived anyway, and
+    # lost 22 technologies, 1.38 million denarii and 47 staff in the single
+    # turn it landed - a third of their critical-path progress. The words had
+    # been true every one of those years and had stopped being a WARNING long
+    # before that, because a sentence that reads identically five years out
+    # and a hundred and fifty years out carries no information about which of
+    # those it is.
+    #
+    # THE FIX IS NOT A COUNTDOWN. A bare "N years left" still reads the same
+    # at every distance greater than zero - what actually has to escalate is
+    # the relationship between the calendar and the hedge itself. The real
+    # hedges in HAZARD_COUNTERS have lead times of their own (see
+    # _calendar_floor_remaining - up to thirty years for academy_network's
+    # own dispersal chain) and a hazard that is fifty years off with a five-
+    # year hedge is not urgent, while the SAME fifty years against a thirty-
+    # year hedge is already something to be starting now, not later - it is
+    # the gap between the two clocks that should set the tone, not either
+    # clock alone.
+    #
+    # Three clean levels come out of comparing "years until it arrives" to
+    # "years the live hedges still need". Two such lead times are kept, not
+    # one, because they escalate at DIFFERENT moments: the QUICKEST counter
+    # among HAZARD_COUNTERS (some relief, soonest) and the SLOWEST (the
+    # strongest one among the same counters - the thirty-year
+    # academy_network dispersal chain, for sack_chance). A player still has
+    # time to begin the quick, partial answer well after it is already too
+    # late for the one actually carrying the largest share of the relief, so
+    # the bands below are four, nearest first (HORIZON_MULT gives the margin
+    # on the furthest boundary - calm vs "begin now" - because a player who
+    # starts exactly on the strong hedge's own floor has no slack left for
+    # anything going wrong with it):
+    #   - past the strong hedge's own floor by a comfortable margin: plenty
+    #     of time, said once and then left alone.
+    #   - inside that margin, strong hedge not yet begun: begin it now -
+    #     there is still time, but not much of it.
+    #   - past the strong hedge's own floor, but still within the quick
+    #     hedge's: a partial answer can still finish; the real one cannot.
+    #   - past even the quick hedge's own floor: too late to finish anything
+    #     from a cold start; the event is coming regardless of what begins
+    #     today.
+    # A hazard already well hedged, or already in progress, or with no known
+    # hedge at all, reports that plainly instead of forcing it into one of
+    # these four bands.
+    HAZARD_TIMELINE_BEGIN_NOW_MULT = 1.5
+    # Which urgency tags keep their full sentence once a row is past the
+    # nearest one - see the note where this is applied, in hazard_timeline
+    # itself, for why position in the list is the wrong thing to key this on.
+    HAZARD_TIMELINE_WARN_TAGS = frozenset(
+        {"happening now", "too late to hedge", "stopgap only", "begin hedge now"})
+
+    @staticmethod
+    def _yr_words(n):
+        n = round(n)
+        return "%d year" % n if n == 1 else "%d years" % n
+
+    def hazard_timeline(self, limit=4):
+        """What is coming, how many years off, and whether what stands
+        between now and then is enough - one line per hazard, nearest first.
+
+        This is `risk`'s missing compact view: every number in it (years
+        until, current relief, the fastest hedge's own lead time) is already
+        computed elsewhere in this file (hazard_relief, hazard_advice,
+        _calendar_floor_remaining) - this only arranges them chronologically
+        and picks the words that should change as the gap between "when it
+        lands" and "how long the hedge takes" closes. See the section
+        comment above for why that gap, not the bare year count, is what
+        actually has to escalate.
+        """
+        rows = []
+        for h in (self.civ.get("hazards") or []):
+            yrs = h.get("years") or []
+            if not yrs:
+                continue
+            y0 = yrs[0]
+            y1 = yrs[1] if len(yrs) > 1 else yrs[0]
+            if self.year > y1:
+                continue                      # already survived, or missed
+            in_progress = y0 <= self.year <= y1
+            years_until = 0 if in_progress else (y0 - self.year)
+            name = h.get("name", "hazard")
+            kinds = [kd for kd in
+                     ("staff_loss", "sack_chance", "output_factor", "real_erosion")
+                     if kd in h]
+            if not kinds:
+                continue
+            # THE LEAST-DEFENDED SIDE OF IT, not an average, and its OWN
+            # hedge's own lead time - not the quickest lead time among ALL
+            # the kinds this hazard happens to carry. A hazard that is both
+            # a sacking risk (hedged, for real, only by a thirty-year
+            # academy_network dispersal chain) and an output shock (hedged
+            # by things as quick as two years) is exactly as urgent as the
+            # sacking half if that is the half nothing has been built
+            # against - taking the faster OTHER kind's lead time here would
+            # have said "two years will cover you" about a risk a two-year
+            # hedge does nothing for, which is the averaging mistake the
+            # section comment above warns against, just one kind's own floor
+            # away from where it would actually bite.
+            # QUICKEST (some relief, started cold, soonest) and SLOWEST (the
+            # strongest real hedge among the same counters - up to the
+            # thirty-year academy_network chain for sack_chance) are both
+            # kept, because they escalate at DIFFERENT times: a player still
+            # has time for a partial answer after it is already too late for
+            # the one that actually carries the largest share of the relief.
+            worst_mult, quick_hedge, strong_hedge = 0.0, None, None
+            for kd in kinds:
+                mult, _why = self.hazard_relief(kd)
+                if mult <= worst_mult:
+                    continue
+                worst_mult = mult
+                quick_hedge = strong_hedge = None
+                if mult > 0.75:
+                    advice = self.hazard_advice(kd)
+                    fl = advice.get("even_started_today_the_real_hedges_here_take_years")
+                    if isinstance(fl, dict):
+                        quick_hedge, strong_hedge = fl.get("quickest"), fl.get("slowest")
+                    elif isinstance(fl, (int, float)):
+                        quick_hedge = strong_hedge = fl
+            hedged = worst_mult <= 0.75
+            _yu = self._yr_words(years_until)
+            if in_progress:
+                urgency = "happening now"
+                headline = ("%s: under way now%s"
+                            % (name, "" if hedged else
+                               ", and built defences do not cover most of it"))
+            elif hedged:
+                urgency = "hedged"
+                headline = "%s: %s off, already well hedged" % (name, _yu)
+            elif quick_hedge is None:
+                urgency = "no hedge found"
+                headline = ("%s: %s off, unhedged, no hedge visible yet"
+                            % (name, _yu))
+            elif years_until <= quick_hedge:
+                urgency = "too late to hedge"
+                headline = ("%s: only %s left; even the fastest hedge needs "
+                            "about %s - it is coming regardless"
+                            % (name, _yu, self._yr_words(quick_hedge)))
+            elif strong_hedge and strong_hedge > quick_hedge and years_until <= strong_hedge:
+                urgency = "stopgap only"
+                headline = ("%s: %s off - a quick hedge (%s) could still "
+                            "finish, the strong one (%s) could not"
+                            % (name, _yu, self._yr_words(quick_hedge),
+                               self._yr_words(strong_hedge)))
+            elif years_until <= (strong_hedge or quick_hedge) * self.HAZARD_TIMELINE_BEGIN_NOW_MULT:
+                urgency = "begin hedge now"
+                headline = ("%s: %s off; the real hedge needs %s - time is "
+                            "short" % (name, _yu,
+                                      self._yr_words(strong_hedge or quick_hedge)))
+            else:
+                urgency = "on the horizon"
+                headline = ("%s: %s off, unhedged, plenty of time to build "
+                            "one (%s)" % (name, _yu,
+                                          self._yr_words(strong_hedge or quick_hedge)))
+            rows.append({"name": name, "years_until": years_until,
+                         "in_progress": in_progress, "urgency": urgency,
+                         "headline": headline})
+        rows.sort(key=lambda r: (0 if r["in_progress"] else 1, r["years_until"]))
+        rows = rows[:limit]
+        # COMPACT EXCEPT WHERE IT IS ACTUALLY A WARNING, same reasoning
+        # knowledge_risk's own known_hazards_ahead already applies to its
+        # "note"/"what_you_can_do" fields, but keyed on URGENCY rather than
+        # bare position in the list: a hazard that is calm stays calm
+        # whether it is first or sixth on the list, and a hazard that is not
+        # - "too late to hedge", "stopgap only", "begin hedge now",
+        # "happening now" - is exactly the one case this whole method exists
+        # to NOT bury in a compact name-and-number line. The single nearest
+        # entry keeps its sentence regardless, so the reply always orients
+        # on at least one real sentence even in a run where everything left
+        # is calm.
+        for i, r in enumerate(rows):
+            if i == 0 or r["urgency"] in self.HAZARD_TIMELINE_WARN_TAGS:
+                continue
+            r.pop("headline", None)
+            r.pop("in_progress", None)
+        return rows
+
     def lose_capital(self, fraction, floor_at_zero=True):
         """Destroy a fraction of what you HAVE. Never a fraction of what you owe.
 

@@ -317,6 +317,13 @@ class FogMixin:
         # Norse hazards do not sack anything, and a playtester watched this
         # advertise a loss risk and recommend a hedge for a full 500 year run in
         # which no sacking could ever occur. Risk you cannot face is not risk.
+        # A COMPACT CHRONOLOGICAL VIEW, sorted nearest-first, that says the
+        # same thing `known_hazards_ahead` says in scattered, per-kind detail
+        # but ESCALATES as a date closes in rather than repeating itself -
+        # see hazard_timeline's own comment (society.py) for why "hedged_by:
+        # nothing yet" sitting unchanged on this screen for a hundred and
+        # fifty years was the actual defect, not merely the lack of a list.
+        timeline = self.hazard_timeline()
         can_be_sacked = any(h.get("sacks_a_site") for h in upcoming)
         if not can_be_sacked:
             return {
@@ -329,6 +336,7 @@ class FogMixin:
                 "note": "no remaining hazard for this civilization sacks a site, "
                         "so nothing here is currently at risk of being forgotten",
                 "known_hazards_ahead": upcoming,
+                "timeline": timeline,
             }
         return {
             "technologies_at_risk": at_risk,
@@ -356,6 +364,7 @@ class FogMixin:
                  else "there is said to be a way to guard against this; "
                       "you have not found it yet")),
             "known_hazards_ahead": upcoming,
+            "timeline": timeline,
         }
 
     # Institutions that belong to one named society. Granting them to everyone
