@@ -10362,6 +10362,65 @@ check("no command in KNOWN_COMMANDS prints the raw id of a node this fogged "
       "command at once, so the next command to grow this bug is caught "
       "here rather than by a playtester, the way `bounty` was",
       not _fogscan_leaks, _fogscan_leaks)
+
+# =============================================================================
+# A GENERIC COMMAND-POINTER SCANNER. `state`'s own footer once pointed a
+# player at `training_pending` with nothing behind it - "did you mean: "
+# answered with a command that does not exist - and the fix for that one
+# name would not have caught the next one. This walks every reply
+# KNOWN_COMMANDS and help can produce, collects every "{"cmd":"X"}" and
+# "see 'X'" pointer found anywhere in them, and asserts X is something
+# the parser - parse_typed's own KNOWN_COMMANDS/TYPED_ALIASES check -
+# actually accepts. Generic across every command at once, the same shape
+# as the fog scanner above, so the next stale pointer is caught here.
+# =============================================================================
+from engine.protocol import TYPED_ALIASES as _TYPED_ALIASES
+
+
+def _strings_of(obj):
+    if isinstance(obj, str):
+        yield obj
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            yield from _strings_of(v)
+    elif isinstance(obj, (list, tuple)):
+        for v in obj:
+            yield from _strings_of(v)
+
+
+_ptr_sim = sim(capital=5_000_000.0)
+_ptr_strings = []
+for _pc in S.KNOWN_COMMANDS:
+    if _pc in ("save", "load", "quit", "step"):
+        continue            # side effects unrelated to what this scans for
+    _pobj = dict(_fogscan_args.get(_pc, {}))
+    _pobj["cmd"] = _pc
+    try:
+        _pr = S._agent_dispatch(_ptr_sim, NODES, _pobj)
+    except Exception:
+        continue             # a crash is a different bug
+    _ptr_strings.extend(_strings_of(_pr))
+for _pt in list(S.HELP_TOPICS) + [None]:
+    _ptr_strings.extend(_strings_of(S._agent_help(_ptr_sim, _pt)))
+_ptr_cmd_re = re.compile(r'\{"cmd":"([A-Za-z_]+)"')
+_ptr_see_re = re.compile(r"see '([A-Za-z_]+)")
+_ptr_found = set()
+for _ps in _ptr_strings:
+    _ptr_found.update(_ptr_cmd_re.findall(_ps))
+    _ptr_found.update(_ptr_see_re.findall(_ps))
+_ptr_accepted = set(S.KNOWN_COMMANDS) | set(_TYPED_ALIASES.keys())
+_ptr_bad = sorted(_ptr_found - _ptr_accepted)
+check("every command every reply in KNOWN_COMMANDS or help points a player "
+      "at - every {\"cmd\":\"X\"} and every bare see 'X' - is a command the "
+      "parser actually accepts, walked generically so the class of bug "
+      "`training_pending` was (advertised, not implemented) cannot come "
+      "back under a different name",
+      not _ptr_bad, (_ptr_bad, sorted(_ptr_found)))
+check("...and the scan actually found real pointers to check - an empty "
+      "result from a broken scanner would pass this test for the wrong "
+      "reason",
+      len(_ptr_found) >= 10, sorted(_ptr_found))
+
 # --- a failed attempt teaches you something (projects.py: retry learning) ---
 # A player who had already won the game: a failed high-pressure steam system
 # used to reset the calendar floor to zero and roll again at the identical
