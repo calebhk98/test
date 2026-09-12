@@ -252,7 +252,12 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.forest_ha = 0.0        # coppice you own, in hectares
         self.nitre_bed_m2 = 0.0
         self.market_pressure = 0.0  # how hard you have recently leaned on the slave market
-        self.mine_capacity = {}     # material -> tonnes/yr of your OWN workings
+        # A WORKING IS A THING: material, rated capacity, the year it was
+        # commissioned, what it cost to sink, and its own depletion clock -
+        # see economy.py's class comment above _workings_of(). mine_capacity
+        # is now a property computed from this list (economy.py), not a
+        # second number kept in sync by hand.
+        self.mines = []             # your OWN workings - see EconomyMixin
         self.mine_pending = {}      # sunk but not yet producing
         self.mine_ready = {}        # material -> year it comes on stream
         self.mine_cost_paid = 0.0

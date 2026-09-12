@@ -323,18 +323,33 @@ def _power_status(s, nodes):
 
 
 def _agent_mines(s):
-    """A list of your own mines: material, rated capacity, actual output
-    after depletion and technology, operating cost, utilisation, and whether
-    it is actually supplying any of this year's demand or merely standing
-    there being paid for. See the `mines`/`workings` dispatch below and
-    _agent_capacity, which both call this rather than keeping two copies of
-    the same arithmetic.
+    """A list of your own mines, ONE ROW PER WORKING: the material it
+    raises, its rated capacity, its actual output after ITS OWN depletion
+    and current technology, what it costs to run, its utilisation, the
+    year it was commissioned, and whether it is actually supplying any of
+    this year's demand or merely standing there being paid for. See the
+    `mines`/`workings` dispatch below and _agent_capacity, which both call
+    this rather than keeping two copies of the same arithmetic.
 
-    auto_mine quietly took 353,039 a year against 467,227 of revenue for a
-    play tester, and there was no command anywhere that named what they
-    owned or what it cost; two `close` calls took their net from -61,884 to
-    +291,156. The verbs to sink one and to shut one both existed; nothing
-    showed you the books.
+    A player who had already won the game asked for exactly this: "a mines
+    command showing each mine, resource key, rated capacity, actual
+    output, operating cost, utilization, commissioning year, and whether
+    it is currently supplying anything would have prevented several
+    confusing decisions." Before economy.py's self.mines existed there was
+    no "it" to ask any of this about - mine_capacity was one float per
+    material, so a mine had no individual identity, no commissioning year,
+    and no per-working depletion; a shaft opened last year read as
+    depleted as one opened three centuries earlier because they were the
+    same number. This does not fabricate what that model never recorded:
+    a working carried over from a save written before this existed has
+    "commissioned_year": None, shown as "unknown" (see load_state's own
+    migration comment), never a guessed year.
+
+    Separately, auto_mine quietly took 353,039 a year against 467,227 of
+    revenue for a play tester, and there was no command anywhere that named
+    what they owned or what it cost; two `close` calls took their net from
+    -61,884 to +291,156. The verbs to sink one and to shut one both
+    existed; nothing showed you the books.
     """
     dem = s.annual_material_demand()
     # copper_wire_kg/wire_drawn_kg and gold_kg: economy.py's MATERIAL_CHECKS
@@ -356,44 +371,82 @@ def _agent_mines(s):
     rows = []
     # PENDING WORKINGS COUNT. A shaft takes years to come into production
     # and is paid for the moment you sink it, so a player who has just
-    # bought one and types `mines` must not be told they own none.
+    # bought one and types `mines` must not be told they own none. Not yet
+    # a working - it has no commissioning year until commission_mines()
+    # actually makes it one - so these stay grouped by material, as before.
     _pending = {}
-    for _m, _amt, _ready in sorted(getattr(s, "mine_tranches", [])):
+    for _t in sorted(getattr(s, "mine_tranches", [])):
+        _m, _amt, _ready = _t[0], _t[1], _t[2]
         _pending.setdefault(_m, [0.0, _ready])
         _pending[_m][0] += _amt
         _pending[_m][1] = min(_pending[_m][1], _ready)
-    for m, cap in sorted(s.mine_capacity.items()):
+    # GROUPED BY MATERIAL, ordered by commissioning year within it, so
+    # several workings of the same seam read as a chronology, not a jumble.
+    # self.mines is a list (append/commission order), not a set, so the
+    # groupby itself needs no sorted() to be deterministic across hash
+    # seeds - only the final row order does, hence the explicit sort key.
+    by_mat = {}
+    for w in getattr(s, "mines", ()):
+        by_mat.setdefault(w["material"], []).append(w)
+    for m in sorted(by_mat):
+        workings = by_mat[m]
         want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,)))
-        # ACTUAL yield, not the nominal tonnage sunk: depletion (the
-        # easy ore going) and mining technology (a pump, a drill, a
-        # railway) both move this away from `cap`, and a player whose
-        # coal yield has halved over eighty years has to be able to see
-        # that here, not just infer it from a lower revenue somewhere
-        # else. See economy.py's mine_yield_t()/mine_depletion_note().
-        actual = s.mine_yield_t(m)
-        rows.append({
-            "material": m,
-            "tonnes_a_year_it_can_raise": round(actual, 2),
-            "sunk_capacity_t_per_yr": round(cap, 2),
-            "tonnes_a_year_you_actually_need": round(want, 2),
-            "costs_you_a_year": round(cap * s._mine_opex(m)
-                                      * s.price_index * s.mining_cost_scale(m), 1),
-            "using": ("%d%%" % (100.0 * min(1.0, want / actual))) if actual > 0 else "-",
-            # WHETHER IT IS ACTUALLY SUPPLYING ANYTHING, as a plain flag, not
-            # only as a percentage a reader has to interpret. A tester's own
-            # question was exactly this: does the game count a mine as real
-            # supply, or only as an economic asset sitting on the books?
-            "actually_supplying_demand": bool(want > 0 and actual > 0),
-            "yield_note": s.mine_depletion_note(m),
-            "shut_it_with": "close %s" % m})
+        total_rated = sum(w["capacity"] for w in workings)
+        for w in sorted(workings, key=lambda w: (
+                w.get("opened_year") if w.get("opened_year") is not None
+                else -1)):
+            # ACTUAL yield, not the nominal tonnage sunk: THIS working's
+            # own depletion (the easy ore going, aged from its own
+            # commissioning year - see economy.py's class comment above
+            # _workings_of) and current mining technology both move this
+            # away from rated capacity, and a player whose coal yield has
+            # halved over eighty years has to be able to see that here,
+            # not just infer it from a lower revenue somewhere else.
+            actual = s.mine_yield_t_for(w)
+            # UTILISATION: rated capacity against what is really being
+            # drawn - the question the player actually asked. Demand for
+            # this material is shared across its workings in proportion to
+            # their own rated capacity (the model has no finer-grained way
+            # to say which working feeds which furnace); what a working
+            # can actually be drawn on for is capped by its OWN yield, so
+            # a fully depleted working shows low utilisation even when
+            # every tonne it can still raise is being used, and an unused
+            # one shows 0% however healthy its seam is - exactly the
+            # distinction between a real supply and an economic asset the
+            # player asked to see.
+            share = want * (w["capacity"] / total_rated) if total_rated > 0 else 0.0
+            drawn = min(share, actual)
+            util = (drawn / w["capacity"]) if w["capacity"] > 0 else 0.0
+            rows.append({
+                "material": m,
+                "commissioned_year": w.get("opened_year") if w.get("opened_year")
+                                     is not None else "unknown (from a save "
+                                     "written before per-working tracking "
+                                     "existed)",
+                "rated_capacity_t_per_yr": round(w["capacity"], 2),
+                "actual_output_t_per_yr": round(actual, 2),
+                "material_demand_t_per_yr": round(want, 2),
+                "costs_you_a_year": round(s.mine_operating_cost_for(w), 1),
+                "utilization": ("%d%%" % round(100.0 * util))
+                               if w["capacity"] > 0 else "-",
+                # WHETHER IT IS ACTUALLY SUPPLYING ANYTHING, as a plain flag,
+                # not only as a percentage a reader has to interpret. A
+                # tester's own question was exactly this: does the game
+                # count a mine as real supply, or only as an economic asset
+                # sitting on the books?
+                "actually_supplying_demand": bool(drawn > 1e-9),
+                "yield_note": s.mine_depletion_note_for(w),
+                "shut_it_with": "close %s" % m})
     for m, (amt, ready) in sorted(_pending.items()):
         rows.append({
             "material": m,
-            "tonnes_a_year_it_can_raise": 0.0,
-            "tonnes_a_year_you_actually_need":
+            "commissioned_year": "pending",
+            "rated_capacity_t_per_yr": 0.0,
+            "actual_output_t_per_yr": 0.0,
+            "material_demand_t_per_yr":
                 round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,))), 2),
             "costs_you_a_year": 0.0,
-            "using": "sinking",
+            "utilization": "sinking",
             "actually_supplying_demand": False,
             "ready_in": ready,
             "tonnes_a_year_when_it_is_ready": round(amt, 2),
@@ -406,7 +459,9 @@ def _agent_mines(s):
             "note": "Workings are charged every year they stand, whether or "
                     "not you use what they raise. One you no longer need is "
                     "money going out for nothing: 'close <material>'. "
-                    "Reopening means sinking it again."}
+                    "Reopening means sinking it again. 'close' shuts every "
+                    "working of that material at once - there is no way to "
+                    "shut just one of several workings in the same seam."}
 
 
 def _portfolio_constraint(waiting):
@@ -566,9 +621,13 @@ def render_capacity(out):
     L.append("  MINES  (see 'mines' for the full table)")
     if isinstance(mines, list) and mines:
         for r in mines:
-            L.append("    %-10s raises %8s of %8s needed  supplying: %s"
-                     % (r["material"], _fmt_num(r["tonnes_a_year_it_can_raise"]),
-                        _fmt_num(r["tonnes_a_year_you_actually_need"]),
+            yr = r.get("commissioned_year")
+            yr_s = "%d" % yr if isinstance(yr, (int, float)) else str(yr)
+            L.append("    %-10s (since %6s) raises %8s of %8s needed  "
+                     "supplying: %s"
+                     % (r["material"], yr_s,
+                        _fmt_num(r.get("actual_output_t_per_yr")),
+                        _fmt_num(r.get("material_demand_t_per_yr")),
                         "yes" if r.get("actually_supplying_demand") else "no"))
     else:
         L.append("    none")
@@ -3742,15 +3801,17 @@ def render_mines(out):
     L = ["YOUR OWN WORKINGS"]
     rows = out.get("mines_you_own")
     if isinstance(rows, list) and rows:
-        L.append("  %-10s %10s %10s %8s %12s" % ("MATERIAL", "CAN RAISE",
-                                                 "YOU NEED", "USING", "COSTS/YR"))
+        L.append("  %-9s %8s %10s %10s %6s %6s %10s" % (
+            "MATERIAL", "SINCE", "RATED", "ACTUAL", "UTIL", "SUPPLY", "COST/YR"))
         for r in rows:
-            L.append("  %-10s %10s %10s %8s %12s%s"
-                     % (r["material"],
-                        _fmt_num(r.get("tonnes_a_year_when_it_is_ready")
-                                 or r["tonnes_a_year_it_can_raise"]),
-                        _fmt_num(r["tonnes_a_year_you_actually_need"]),
-                        r.get("using") or "-",
+            yr = r.get("commissioned_year")
+            yr_s = "%d" % yr if isinstance(yr, (int, float)) else str(yr)
+            L.append("  %-9s %8s %10s %10s %6s %6s %10s%s"
+                     % (r["material"], yr_s,
+                        _fmt_num(r.get("rated_capacity_t_per_yr")),
+                        _fmt_num(r.get("actual_output_t_per_yr")),
+                        r.get("utilization") or "-",
+                        "yes" if r.get("actually_supplying_demand") else "no",
                         _fmt_num(r["costs_you_a_year"]),
                         "   (ready %s)" % _fmt_num(r["ready_in"])
                         if r.get("ready_in") else ""))
@@ -3758,7 +3819,8 @@ def render_mines(out):
         L.append("  they cost %s den/yr in all, against revenue of %s"
                  % (_fmt_num(out.get("they_cost_you_a_year_in_all")),
                     _fmt_num(out.get("your_revenue_is"))))
-        L.append("  shut one with 'close <material>'")
+        L.append("  shut one with 'close <material>' (shuts every working of "
+                 "that material at once)")
     else:
         L.append("  none")
     pend = out.get("still_being_sunk") or {}
@@ -7069,7 +7131,17 @@ SAVE_FIELDS = (
     "year", "capital", "done", "granted", "active", "done_year", "training",
     "scholars", "artisans", "directors_extra", "reputation", "suspicion",
     "scandal", "eminence", "protection", "familiarity", "forest_ha",
-    "nitre_bed_m2", "mine_capacity", "mine_pending", "mine_ready",
+    "nitre_bed_m2", "mine_pending", "mine_ready",
+    # WORKINGS, PLURAL: mine_capacity used to be the saved field, one float
+    # per material; it is now a computed property (economy.py), so what
+    # gets saved is the list it is computed FROM - each working with its
+    # own material, capacity, commissioning year, capex and depletion
+    # clock. Missing entirely, as in every save from before workings
+    # existed, reads back as no workings at all - see load_state's own
+    # migration of a genuinely old "mine_capacity" blob into this shape,
+    # which does not happen here but right after this loop, because it has
+    # to know whether "mines" was actually present in the file first.
+    "mines",
     "mine_tranches", "market_pressure", "slaves", "freedmen",
     "manumitted_total", "goal_year", "dead_reason", "insolvent_years",
     "bribes_ytd", "living_cost_paid", "mine_cost_paid", "spend_last_year",
@@ -7389,6 +7461,22 @@ def load_state(s, path):
         if isinstance(v, dict) and "__set__" in v:
             v = set(v["__set__"])
         setattr(s, f, v)
+    # A SAVE FROM BEFORE WORKINGS EXISTED still names real capacity, under
+    # the old field name "mine_capacity" (one float per material - see
+    # SAVE_FIELDS's own comment on "mines"). "mines" is not in SAVE_FIELDS
+    # any more, so the loop above never touches it, and a file that
+    # predates this change has no "mines" key at all to have skipped. Carry
+    # that capacity forward as one working per material rather than losing
+    # it outright - but do NOT invent the year it was commissioned, which
+    # this file never recorded and a dashboard agent was right to refuse to
+    # fabricate: "opened_year": None, shown as "unknown" rather than a
+    # guess (see _agent_mines/render_mines).
+    if "mines" not in blob and isinstance(blob.get("mine_capacity"), dict):
+        s.mines = [{"material": m, "capacity": float(amt),
+                    "opened_year": None, "capex_paid": None,
+                    "intensity_yrs": 0.0}
+                   for m, amt in sorted(blob["mine_capacity"].items())
+                   if isinstance(amt, (int, float)) and amt > 0]
     # `operating` JUST WENT BACK TO BEING A PLAIN SET. The generic setattr
     # above has no idea self.operating is normally an _InvalidatingSet (see
     # economy.py) and replaced it with whatever plain `set(...)` came out of
