@@ -4762,6 +4762,76 @@ check("...and a player running everything is not nagged about it",
       S._agent_state(sim(), NODES).get("shut_concerns_would_earn_a_year") is None,
       S._agent_state(sim(), NODES).get("shut_concerns_would_earn_a_year"))
 
+# --- THE GENERAL CASE the corpus bug was one instance of: has() gates the
+# tree and the goal, running() gates the payout, and `shut_concerns` above
+# only ever covered the payout being MONEY. A player who built patron_
+# imperial and then let it close keeps appearing on `available` to have
+# "a patron with soldiers" - has() never stops being true - while every
+# running()-gated number that patron actually paid (protection, credit,
+# state funding, status - update_protection and credit_limit in society.py
+# and economy.py) silently went to zero, and nothing on any screen said so
+# until this.
+s_cg = sim(capital=50000.0)
+s_cg.done.add("patron_imperial")
+s_cg.done.add("corpus_dispersed")
+s_cg._done_changed()
+_cg_gaps = s_cg.capability_gaps()
+check("a capability institution that is done but not operating is named, "
+      "by id, with the specific benefit it is not collecting right now",
+      {g["id"] for g in _cg_gaps} == {"patron_imperial", "corpus_dispersed"},
+      _cg_gaps)
+check("the warning has the exact shape asked for: 'Critical capability "
+      "completed but not operating: <id>. <benefit> is currently "
+      "inactive.', with the fix command that actually reopens it",
+      all(g["warning"] == ("Critical capability completed but not "
+                           "operating: %s. %s is currently inactive."
+                           % (g["id"], g["benefit_switched_off"]))
+          and g["fix"] == "open %s" % g["id"]
+          for g in _cg_gaps),
+      _cg_gaps)
+check("...and closes the moment the doors reopen - this is a LIVE check of "
+      "running(), not a one-time note",
+      (s_cg.operating.add("patron_imperial"),
+       {g["id"] for g in s_cg.capability_gaps()})[1] == {"corpus_dispersed"},
+      s_cg.capability_gaps())
+s_cg.operating.discard("patron_imperial")
+check("plague_preparedness is deliberately never warned about: its only "
+      "measurable protection (HAZARD_COUNTERS) is has()-gated like corpus, "
+      "so closing it costs nothing today, and a false alarm here is "
+      "exactly the wall-of-text failure this feature exists to avoid",
+      "plague_preparedness" not in s_cg.NOT_OPERATING_BENEFIT,
+      sorted(s_cg.NOT_OPERATING_BENEFIT))
+check("fin_university's sole benefit is shared (an `or`) with "
+      "school_founded in update_protection, so it is only named while "
+      "BOTH are closed, never while school_founded alone still covers it",
+      (lambda s: (
+          s.done.add("fin_university"), s.done.add("school_founded"),
+          s.operating.add("school_founded"), s._done_changed(),
+          "fin_university" not in {g["id"] for g in s.capability_gaps()})[-1]
+      )(sim()),
+      "checked fin_university/school_founded or-gate")
+_st_cg = S._agent_state(s_cg, NODES)
+check("`state` - the screen a player rereads every year - carries this "
+      "warning too, not only a command nobody runs unprompted",
+      _st_cg.get("critical_capabilities_not_operating") is not None
+      and {g["id"] for g in _st_cg["critical_capabilities_not_operating"]}
+          == {"corpus_dispersed", "patron_imperial"},
+      _st_cg.get("critical_capabilities_not_operating"))
+check("...and says nothing when every completed capability is open",
+      S._agent_state(sim(), NODES).get(
+          "critical_capabilities_not_operating") is None,
+      S._agent_state(sim(), NODES).get("critical_capabilities_not_operating"))
+_risk_cg = s_cg.knowledge_risk()
+check("`risk` - the screen whose whole job is telling you what protects "
+      "you - carries the same warning, independent of `state`",
+      _risk_cg.get("critical_capabilities_not_operating") is not None
+      and {g["id"] for g in _risk_cg["critical_capabilities_not_operating"]}
+          == {"corpus_dispersed", "patron_imperial"},
+      _risk_cg.get("critical_capabilities_not_operating"))
+check("the id named is never hidden under fog - a player has always "
+      "already discovered anything in their own `done`",
+      all(s_cg.is_visible(g["id"]) for g in _cg_gaps), _cg_gaps)
+
 # --- BREAK: auto_mine took 353,039 a year against 467,227 of revenue and
 # there was no command that named what you owned or what it cost.
 s_mn = sim(capital=2000000.0)

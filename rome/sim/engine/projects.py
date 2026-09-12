@@ -62,6 +62,85 @@ class ProjectsMixin:
         "sanitation_antisepsis", "school_founded", "steam_high_pressure",
         "telegraph_electric", "workshop_first"))
 
+    # ---- DONE VERSUS OPERATING, MADE LOUD --------------------------------
+    # The corpus bug (see core.py's Sim.corpus_hedge, and the commit that
+    # introduced it) was one specific case of a general shape: a screen
+    # promised a running()-gated payout by reading has(). That one case is
+    # fixed now. This is the general case - every OTHER capability in
+    # CAPABILITY_INSTITUTIONS whose running()-gated effect a player can
+    # actually lose without any screen ever saying so.
+    #
+    # Each value names what switches off, in the player's own words, not a
+    # number - the numbers already live with the one function that computes
+    # each effect (update_protection, standing_floor, credit_limit,
+    # goods_reach_factor, staff_capacity, workshop_output - see the running()
+    # call sites in each). This table only says WHICH of those just went
+    # quiet, so nothing here can drift out of step with what those functions
+    # actually pay: a number is never invented here, only named.
+    #
+    # plague_preparedness is the one CAPABILITY_INSTITUTIONS member
+    # deliberately absent: its only running()-gated reference left in the
+    # engine is a dead local (`prep` in society.py's _shocks) that nothing
+    # reads, and its real hazard relief (HAZARD_COUNTERS) is has()-gated like
+    # corpus - so closing it costs nothing measurable today. Warning about it
+    # anyway would be exactly the false alarm this exists to avoid.
+    NOT_OPERATING_BENEFIT = {
+        "academy_network": "Scholar and artisan training, standing, and its "
+                           "reduction of eminence risk",
+        "blast_furnace": "Artisan training capacity",
+        "collegium_licensed": "Scholar capacity, protection and credit",
+        "corpus_dispersed": "Standing, and the faster diffusion of "
+                            "technology through the economy",
+        "corpus_written": "Standing",
+        "crucible_steel": "Artisan training capacity",
+        "endowment_land": "Protection, credit and the lower interest rate",
+        "exp_trade_route_extend": "The trade-route revenue bonus",
+        "fin_argentarii": "The lower interest rate",
+        "fin_university": "Protection",
+        "freedman_staff": "Artisan capacity",
+        "identity_cover": "Protection, credit and standing",
+        "interchangeable_parts": "The price markup and staff-capacity bonus",
+        "patron_imperial": "Protection, credit, state funding and status",
+        "patron_local": "Protection and credit",
+        "patron_senatorial": "Protection, credit and status",
+        "power_grid": "The price markup and staff-capacity bonus",
+        "railway": "The trade-reach revenue bonus and staff capacity",
+        "sanitation_antisepsis": "Your extra life-expectancy",
+        "school_founded": "Scholar and artisan training and the standing it earns",
+        "steam_high_pressure": "Artisan training capacity",
+        "telegraph_electric": "The trade-reach revenue bonus and staff capacity",
+        "workshop_first": "Artisan capacity",
+    }
+
+    def capability_gaps(self):
+        """Completed capability institutions that are NOT currently operating,
+        each with the real running()-gated benefit it is not collecting right
+        now. See NOT_OPERATING_BENEFIT above for why the list this walks is
+        CAPABILITY_INSTITUTIONS minus plague_preparedness.
+
+        fin_university is the one entry needing its own gate here rather than
+        in the table: its sole running()-gated effect (update_protection,
+        society.py) is an `or` with school_founded, so closing it costs
+        nothing while school_founded is still open, and warning anyway would
+        be a false alarm.
+        """
+        out = []
+        for k in sorted(self.NOT_OPERATING_BENEFIT):
+            if k not in self.nodes or not self.has(k) or self.running(k):
+                continue
+            if k == "fin_university" and self.running("school_founded"):
+                continue
+            benefit = self.NOT_OPERATING_BENEFIT[k]
+            out.append({
+                "id": k,
+                "benefit_switched_off": benefit,
+                "warning": ("Critical capability completed but not "
+                           "operating: %s. %s is currently inactive."
+                           % (k, benefit)),
+                "fix": "open %s" % k,
+            })
+        return out
+
     # ---- AN INSTITUTION IS A QUANTITY, WHERE A SECOND ONE MEANS ANYTHING --
     # "Can you have multiple things? What if I wanted to raise literacy to
     # 90%+, and wanted to open 5,000 schools?" is the question that exposed
