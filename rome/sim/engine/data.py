@@ -445,6 +445,100 @@ def critical_path(nodes, goal):
 
 
 # ----------------------------------------------------------------------------
+# Goals: DATA, not code. One registry, `meta.goals` in tech_tree.json, that
+# `validate`, `path`, `plan`, the menu's new-game wizard and every command
+# below that takes `--goal` all read - so there is exactly one list of what
+# a player or a measurement can aim at, not one opinion per command.
+#
+# A goal is always a real node id. An ordinary goal's node is the thing you
+# build, the same as `junction_transistor` always was; a THRESHOLD-shaped
+# goal (raise literacy past some level, cut epidemic mortality by some
+# fraction) is a checkpoint node carrying a `win_condition` field instead of
+# a normal cost - see projects.py's start_reason (which refuses to let
+# anyone "start" one by hand) and core.py's per-year check (which completes
+# it itself the moment the live measurement crosses the target). Either way
+# `closure()`, `critical_path()`, `topo_order()` and `Sim.run()` take one
+# node id and never need to know which kind it is; that is the whole point
+# of modelling a threshold as a node rather than as a second mechanism.
+# ----------------------------------------------------------------------------
+
+def goal_catalog(tree, nodes=None):
+    """The roster of selectable goals, in the order tech_tree.json lists
+    them. Pass `nodes` to check every entry actually names a real node - a
+    cheap check worth making once, in `validate`, rather than trusting the
+    data file silently."""
+    goals = tree["meta"].get("goals") or []
+    if nodes is not None:
+        bad = [g["node"] for g in goals if g.get("node") not in nodes]
+        if bad:
+            raise SystemExit("tech_tree.json meta.goals names nodes that do "
+                             "not exist: %s" % ", ".join(bad))
+    return goals
+
+
+def goal_lookup(tree, node_id):
+    """The goal_catalog entry for `node_id`, or None if it is not one of the
+    named, selectable goals (an arbitrary node id is still a legal --goal
+    for `path`/`plan` - see resolve_goal - it just has no menu entry)."""
+    for g in tree["meta"].get("goals") or ():
+        if g.get("node") == node_id:
+            return g
+    return None
+
+
+def resolve_goal(tree, nodes, name):
+    """The node id a `--goal` flag should resolve to: `name` itself if it
+    names a real node, the tree's own default (meta.goal_node) if `name` is
+    falsy, or a clear refusal naming the selectable goals otherwise. One
+    function so every command that takes --goal agrees with every other one
+    on what "no --goal" means and what an unknown one is told, instead of
+    each command writing `a.goal or tree["meta"]["goal_node"]` itself and
+    drifting - the same "one rulebook" reasoning as closure()'s own
+    docstring, and this project has shipped that exact second-opinion bug
+    enough times this week to stop inviting a sixth.
+    """
+    if not name:
+        return tree["meta"]["goal_node"]
+    if name not in nodes:
+        known = ", ".join(sorted(g["node"] for g in tree["meta"].get("goals") or ()))
+        raise SystemExit("no such goal or node: %r. Selectable goals: %s"
+                         % (name, known))
+    return name
+
+
+# A node's `win_condition` names a metric Sim knows how to read (see
+# core.py's _win_condition_value, the only other place this table is read),
+# and this is the one place that turns it into a sentence a player can read
+# - used when `start_reason` refuses to let anyone start one by hand, and
+# anywhere else that explains what a threshold goal actually is. Each
+# template takes the target value already formatted as a percentage; every
+# metric here is a 0..1 fraction, which is the only shape `win_condition`
+# currently supports and the only one either of the two current threshold
+# goals needs.
+WIN_CONDITION_LABELS = {
+    "literacy_general": "the general population's literacy reaches %s",
+    "literacy_elite": "the lettered and propertied class's literacy reaches %s",
+    "epidemic_relief": ("the measures you have built have cut %s of what "
+                        "epidemics and famine would otherwise take"),
+}
+
+
+def win_condition_describe(n):
+    """The player-facing sentence for a node's win_condition, or a plain
+    fallback for a metric this table does not yet name - never a KeyError,
+    the same reasoning validate's own required-field check gives for why a
+    missing piece of display data must degrade, not crash, a player's
+    session."""
+    wc = n.get("win_condition") or {}
+    metric, op, val = wc.get("metric"), wc.get("op"), wc.get("value")
+    pct = "%d%%" % round((val or 0.0) * 100)
+    tmpl = WIN_CONDITION_LABELS.get(metric)
+    if tmpl:
+        return tmpl % pct
+    return "a measurement (%s %s %s) is met" % (metric, op, val)
+
+
+# ----------------------------------------------------------------------------
 # Simulation
 # ----------------------------------------------------------------------------
 

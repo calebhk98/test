@@ -1241,6 +1241,17 @@ class ProjectsMixin:
         if k not in self.nodes:
             return False, "no such node"
         n = self.nodes[k]
+        if n.get("win_condition"):
+            # A THRESHOLD GOAL, NOT A PROJECT. This is measured, not built:
+            # nobody ever spends hours or money on it, so it is never
+            # offered as something to start, whatever its (always zero)
+            # cost fields say and however satisfied its `pre` looks. It
+            # completes itself the moment the live measurement crosses the
+            # target - see core.py's per-year win-condition check, the only
+            # other place that reads this field. See
+            # win_condition_describe() for the player-facing sentence.
+            return False, ("this is not something you build; it happens on "
+                           "its own once %s" % win_condition_describe(n))
         if k in self.done:
             # A MOTHBALLED WORK IS NOT FRESH RESEARCH, and it is not "already
             # done" either: you know how, and the plant is gone. `restore` puts

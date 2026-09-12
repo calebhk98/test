@@ -894,6 +894,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # a year's schooling gain is visible to this same year's teaching
         # decisions rather than lagging a full step behind them.
         self.advance_society(yr)
+        # 2c. THRESHOLD GOALS. A node carrying a `win_condition` (see
+        # data.py's WIN_CONDITION_LABELS and tech_tree.json's own goals
+        # using one) is never built - start_reason refuses it outright -
+        # it completes itself the moment a live measurement crosses its
+        # target. Checked here, right after the literacy/trade growth this
+        # same measurement usually depends on has moved for the year, so a
+        # threshold crossed this year is seen this year rather than lagging
+        # a full step behind it.
+        self._check_win_conditions(yr)
 
         # 3. dated shocks
         if self.events:
@@ -1808,6 +1817,62 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             self._random_events(yr)
 
         self.year += 1
+
+    # ---- THRESHOLD GOALS: completed by measurement, not by labour ---------
+    # A goal need not be a thing you build. "Raise literacy past a fifth" or
+    # "cut what epidemics take by four-fifths" are states of the whole
+    # society, not a project with hours and materials - see data/tech_tree.json
+    # meta.goals and its own note on why a threshold is still modelled as a
+    # node (so closure()/critical_path()/Sim.run() never need a second idea
+    # of what a goal is) rather than as a second mechanism bolted on beside
+    # the ordinary one.
+    WIN_CONDITION_METRICS = frozenset(
+        ("literacy_general", "literacy_elite", "epidemic_relief"))
+
+    def _win_condition_value(self, metric):
+        """The live number a win_condition's `metric` names, 0..1. Raises for
+        a metric this engine does not know how to read - at load time, via
+        `validate`, not mid-game - rather than silently reading 0 forever for
+        a typo no playtest would otherwise catch."""
+        if metric in ("literacy_general", "literacy_elite"):
+            return float(self.civ.get(metric, 0.0))
+        if metric == "epidemic_relief":
+            # hazard_relief returns the SURVIVING fraction of the harm
+            # (1.0 = no protection at all); relief is what is cut, the rest
+            # of it - see society.py's own docstring on the diminishing,
+            # never-quite-zero shape of that number.
+            return 1.0 - self.hazard_relief("staff_loss")[0]
+        raise ValueError("unknown win_condition metric %r" % metric)
+
+    def _check_win_conditions(self, yr):
+        """Once a year: every node carrying a `win_condition` that is not
+        already done gets checked against the live measurement it names,
+        and completes itself - exactly like a normal completion (done,
+        done_year, the log, goal_year if it is the running goal) but with
+        no cost charged and no `apply_tech_effects`/reputation/scandal call,
+        because nobody did any work; a measurement crossed a line. Sorted
+        so the order is reproducible under a fixed PYTHONHASHSEED, the same
+        reasoning `topo_order` and the attrition loop above already give
+        for walking `self.nodes`/`self.done` in id order rather than a bare
+        set's own iteration order.
+        """
+        for k in sorted(self.nodes):
+            if k in self.done:
+                continue
+            wc = self.nodes[k].get("win_condition")
+            if not wc:
+                continue
+            val = self._win_condition_value(wc["metric"])
+            op, target = wc["op"], wc["value"]
+            met = (val >= target) if op == ">=" else (val <= target) if op == "<=" else False
+            if not met:
+                continue
+            self.done.add(k)
+            self._done_changed()
+            self.done_year[k] = yr
+            self.log.append((yr, "achieved: " + self.nodes[k]["name"]))
+            if k == self.goal and self.goal_year is None:
+                self.goal_year = yr
 
     def run(self, goal, horizon=None):
         self.goal = goal

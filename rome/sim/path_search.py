@@ -121,7 +121,7 @@ def ensure_fixed_hash_seed(seed="0"):
     env = dict(os.environ, PYTHONHASHSEED=seed)
     os.execvpe(sys.executable, [sys.executable] + sys.argv, env)
 
-from engine.data import TRADES_ABSENT, closure, load, load_civ
+from engine.data import TRADES_ABSENT, closure, load, load_civ, resolve_goal
 from engine.core import Sim
 from engine.cli import load_strategy, topo_stable
 
@@ -318,7 +318,7 @@ def search(civ="rome_100ad", goal=None, side_branches=12, side_branch_every=8,
     """
     ensure_fixed_hash_seed()
     tree, prices, nodes, wages, goods = load()
-    goal = goal or tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, goal)
     need = closure(nodes, goal)
     s0 = Sim(nodes, [], random.Random(1), events=False, civ=load_civ(civ))
     order, c, extras, staffing = _planner.backward_plan(
@@ -402,7 +402,7 @@ def main():
                                     a.side_branch_every, a.rounds, a.horizon,
                                     a.backlog_ratio, seed_order=seed_order)
     tree, _p, nodes, _w, _g = load()
-    goal = a.goal or tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, a.goal)
     last = history[-1]
     rationale = [
         "Deterministic search (rome/sim/path_search.py): CPM order, then up "
