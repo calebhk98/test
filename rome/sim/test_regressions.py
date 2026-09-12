@@ -10457,6 +10457,130 @@ check("the floor table itself is still there, still per-civilisation, and "
       and _CLI.DICE_FREE_FLOOR_YEARS.get("han_china_100ad") == 451,
       _CLI.DICE_FREE_FLOOR_YEARS)
 
+# --- control theory and operations research: the measured gap a player who
+# had completed 2,822 of 2,836 nodes asked for (Maxwell/Routh/Hurwitz/Nyquist/
+# Bode/root-locus stability theory; Minorsky/pneumatic/Ziegler-Nichols process
+# control; Erlang queueing theory, Dantzig's simplex, Gantt/critical-path
+# scheduling), plus the ONE new multiplier in effective_risk it pays for.
+_ctl_new_ids = ["ctl_governor_stability_theory", "ctl_routh_criterion",
+                "ctl_hurwitz_criterion", "ctl_nyquist_stability_criterion",
+                "ctl_bode_plot_margins", "ctl_root_locus",
+                "ctl_minorsky_pid_law", "ctl_pneumatic_process_controller",
+                "ctl_ziegler_nichols_tuning", "mfg_queueing_theory",
+                "mfg_linear_programming_simplex", "mfg_gantt_chart",
+                "mfg_critical_path_method"]
+check("every new control-theory / operations-research node parsed into the "
+      "merged tree under the id the branch file gave it",
+      all(k in NODES for k in _ctl_new_ids),
+      [k for k in _ctl_new_ids if k not in NODES])
+check("Maxwell's 1868 governor paper is cited by name and date, not just "
+      "gestured at, and sits behind the SAME centrifugal governor the tree "
+      "already lets a player build",
+      "Maxwell" in NODES["ctl_governor_stability_theory"]["note"]
+      and "1868" in NODES["ctl_governor_stability_theory"]["note"]
+      and "en_centrifugal_governor" in NODES["ctl_governor_stability_theory"]["pre"],
+      NODES["ctl_governor_stability_theory"]["note"])
+check("Nyquist's criterion sits on top of Black's 1927 feedback amplifier "
+      "already in the tree (el2_negative_feedback_stability_gain), the exact "
+      "'no body of theory that tells you whether a loop will hunt or hold' "
+      "gap named against it",
+      "el2_negative_feedback_stability_gain"
+      in NODES["ctl_nyquist_stability_criterion"]["pre"],
+      NODES["ctl_nyquist_stability_criterion"]["pre"])
+check("Minorsky 1922 and Ziegler-Nichols 1942 are both cited by name and "
+      "date on the process-controller side of the cluster",
+      "Minorsky" in NODES["ctl_minorsky_pid_law"]["note"]
+      and "1922" in NODES["ctl_minorsky_pid_law"]["note"]
+      and "Ziegler" in NODES["ctl_ziegler_nichols_tuning"]["note"]
+      and "1942" in NODES["ctl_ziegler_nichols_tuning"]["note"],
+      (NODES["ctl_minorsky_pid_law"]["note"],
+       NODES["ctl_ziegler_nichols_tuning"]["note"]))
+check("Erlang 1909 (queueing) and Dantzig 1947 (simplex) are cited by name "
+      "and date, and queueing theory is wired to the telephone exchange the "
+      "tree already has, exactly as the brief specified",
+      "Erlang" in NODES["mfg_queueing_theory"]["note"]
+      and "1909" in NODES["mfg_queueing_theory"]["note"]
+      and "com_telephone_manual_exchange" in NODES["mfg_queueing_theory"]["pre"]
+      and "Dantzig" in NODES["mfg_linear_programming_simplex"]["note"]
+      and "1947" in NODES["mfg_linear_programming_simplex"]["note"],
+      (NODES["mfg_queueing_theory"]["note"],
+       NODES["mfg_linear_programming_simplex"]["note"]))
+check("the critical path method sits next to the SAME production-schedule "
+      "neighbourhood (mfg_production_schedule via mfg_gantt_chart) the brief "
+      "named as where these belong, not off on their own",
+      "mfg_production_schedule" in NODES["mfg_gantt_chart"]["pre"],
+      NODES["mfg_gantt_chart"]["pre"])
+check("none of the 13 new nodes was inserted as a prerequisite of anything "
+      "that already existed - they consume the existing tree, the existing "
+      "tree does not consume them, so the goal's closure cannot have moved",
+      not any(k in (n.get("pre", []) or [])
+              or any(k in gp.get("options", {}) for gp in n.get("req_any", []) or [])
+              for i, n in NODES.items() for k in _ctl_new_ids
+              if i not in _ctl_new_ids),
+      "a pre-existing node references a new one")
+check("...and the goal's required closure is still exactly 168 nodes, "
+      "unchanged by adding a whole optional side-branch of theory",
+      len(S.closure(NODES, GOAL)) == 168, len(S.closure(NODES, GOAL)))
+
+# failure_kind is a property of the NODE, in the tree data, not a list kept
+# in the engine - this is what CONTROL_RELIEF_CAPABILITY in projects.py
+# actually reads. Pin the exact set so a future edit that silently widens or
+# narrows it (the padding failure mode the brief warned about) is caught.
+_process_control_ids = {"zone_refining", "single_crystal", "gecl4_purification",
+                         "ge_reduction", "lead_chamber", "crucible_steel",
+                         "high_temp_furnace", "steam_high_pressure",
+                         "electrolysis_industrial"}
+_tagged = {k for k, n in NODES.items() if n.get("failure_kind") == "process_control"}
+check("exactly the nine continuous hold-at-setpoint processes are tagged "
+      "failure_kind=process_control - each one's OWN note already describes "
+      "holding a temperature, rate or composition, which is why it was "
+      "chosen and nothing else was",
+      _tagged == _process_control_ids, sorted(_tagged))
+check("none of the 13 new control-theory/operations-research nodes tagged "
+      "itself for relief - the controller mitigates OTHER processes' risk, "
+      "it does not cheapen its own construction",
+      not (_tagged & set(_ctl_new_ids)), _tagged & set(_ctl_new_ids))
+
+# effective_risk is the one true answer (projects.py's own docstring, and
+# the reason this must live nowhere else): exercise it directly rather than
+# rolling dice, the same style as the retry-learning check just above it.
+_s_ctl = sim(capital=10 ** 9)
+_bare = NODES["zone_refining"]["risk"]
+check("with no process controller built, a process_control node's "
+      "effective_risk is untouched - relief is earned, not ambient",
+      _s_ctl.effective_risk("zone_refining") == _bare,
+      _s_ctl.effective_risk("zone_refining"))
+_s_ctl.done.add("ctl_pneumatic_process_controller")
+_ctl_relieved = _s_ctl.effective_risk("zone_refining")
+check("building the controller cuts a 45% node to a real, still-substantial "
+      "chance of failure - meaningfully survivable, not a formality: down "
+      "by CONTROL_RELIEF_FACTOR (35%), to about 0.29, not to zero and not "
+      "to a rounding error",
+      abs(_ctl_relieved - _bare * _s_ctl.CONTROL_RELIEF_FACTOR) < 1e-9
+      and 0.20 < _ctl_relieved < 0.35,
+      _ctl_relieved)
+_bare_other = NODES["screw_lathe"]["risk"]
+check("the SAME controller gives no relief at all to a node that was never "
+      "tagged process_control - screw_lathe's risk is a one-shot mechanical "
+      "build, not a held process, and the relief must not leak onto it",
+      _s_ctl.effective_risk("screw_lathe") == _bare_other,
+      _s_ctl.effective_risk("screw_lathe"))
+for _m in range(4):
+    _s_ctl.failed_attempts["zone_refining"] = _m
+check("relief and retry-learning multiply together rather than one "
+      "overriding the other, and the combination still never reaches zero "
+      "- floored by RETRY_RISK_FLOOR times CONTROL_RELIEF_FACTOR times the "
+      "bare risk, comfortably above nothing",
+      _s_ctl.effective_risk("zone_refining")
+      >= _bare * _s_ctl.RETRY_RISK_FLOOR * _s_ctl.CONTROL_RELIEF_FACTOR - 1e-9
+      and _s_ctl.effective_risk("zone_refining") < _ctl_relieved,
+      _s_ctl.effective_risk("zone_refining"))
+_s_ctl.failed_attempts["zone_refining"] = 0
+check("RETRY_RISK_FLOOR and RETRY_CALENDAR_CAP, the retry-learning constants "
+      "this change was told not to touch, still hold their original values",
+      _s_ctl.RETRY_RISK_FLOOR == 0.40 and _s_ctl.RETRY_CALENDAR_CAP == 0.65,
+      (_s_ctl.RETRY_RISK_FLOOR, _s_ctl.RETRY_CALENDAR_CAP))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
