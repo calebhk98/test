@@ -174,6 +174,683 @@ def render_values(out):
     return "\n".join(L)
 
 
+# ---------------------------------------------------------------------------
+# THE INDUSTRIAL DASHBOARD. A player who had already won the game asked for
+# one command that answers "what physical capability does my society
+# currently have, not just what I know how to build" - tonnages and
+# kilowatts, not tech names. Every figure below reads a function economy.py
+# (or this file) already computes for some OTHER purpose: resource_throttle's
+# own supply-vs-demand arithmetic, mine_yield_t, hours_you_can_call_on,
+# _agent_state's own per-project accounting. Nothing here is a second copy of
+# a number computed somewhere else - see _power_status's own note for the one
+# place that would have needed one and does not get it: the tree narrates
+# power capability in kilowatts and megawatts (node names, notes) but nothing
+# in the engine ever turns that into a tracked wattage, so this reports the
+# capability gate honestly instead of inventing a figure to match the prose.
+# ---------------------------------------------------------------------------
+
+def _material_capacity_rows(s):
+    """Capacity, demand and surplus/shortfall for every material currently in
+    demand, or in which you have sunk your own capacity even if nothing
+    currently needs it - the same own-supply-plus-market arithmetic
+    resource_throttle() already runs to find the ONE worst-binding material
+    (see economy.py's _own_material_supply/_material_market_tonnes), laid
+    out for every material instead of only the worst.
+    """
+    demand = s.annual_material_demand()
+    by_tag = s._demand_by_supply_tag(demand)
+    rows = {}
+    for (emp_key, tag), need in by_tag.items():
+        own = s._own_material_supply(tag)
+        market = s._material_market_tonnes(emp_key)
+        rows[emp_key] = {
+            "material": emp_key,
+            "capacity_t_per_yr": round(own + market, 1),
+            "your_own_capacity_t_per_yr": round(own, 1),
+            "market_capacity_t_per_yr": round(market, 1),
+            "demand_t_per_yr": round(need, 1),
+            "surplus_t_per_yr": round(own + market - need, 1)}
+    # OWNED CAPACITY WITH NO CURRENT DEMAND. A mine you sank and no longer
+    # need does not simply vanish from what you could still supply.
+    for mat in s.mine_capacity:
+        if mat in rows:
+            continue
+        own = s._own_material_supply("mine:" + mat)
+        market = s._material_market_tonnes(mat)
+        rows[mat] = {
+            "material": mat,
+            "capacity_t_per_yr": round(own + market, 1),
+            "your_own_capacity_t_per_yr": round(own, 1),
+            "market_capacity_t_per_yr": round(market, 1),
+            "demand_t_per_yr": 0.0,
+            "surplus_t_per_yr": round(own + market, 1)}
+    for mat, r in rows.items():
+        if mat in s.mine_capacity:
+            note = s.mine_depletion_note(mat)
+            if note:
+                r["yield_note"] = note
+    # WORST SHORTFALL FIRST - the bottleneck a player actually has to reason
+    # about belongs at the top, not buried alphabetically.
+    return sorted(rows.values(), key=lambda r: (r["surplus_t_per_yr"], -r["demand_t_per_yr"]))
+
+
+# THE POWER LADDER, in the order the tree actually builds it. Each entry is a
+# real capability node; the label is the tree's OWN description of its scale
+# (node name/note), not a number this file made up - see _power_status.
+_POWER_LADDER = (
+    ("cap_power_muscle", "muscle and animal power"),
+    ("cap_power_water", "water power, tens of kW on one shaft"),
+    ("cap_power_steam", "portable steam power, hundreds of kW"),
+    ("cap_power_electric", "local electric power, kW scale (workshop-scale)"),
+    ("cap_power_grid", "grid electric power, MW scale (central generation)"))
+
+
+def _power_status(s, nodes):
+    """What this society can generate, at what scale, and - once
+    electrification has actually begun for THIS player - which visible
+    projects are waiting on workshop-scale power versus the grid.
+
+    NEVER a generation figure in kilowatts and never a demand figure either:
+    nothing in economy.py tracks either one anywhere, for any project, so a
+    number here would be invented for this screen alone and would be exactly
+    the kind of second, unverified copy of a figure this codebase has been
+    burned by five times this week. What IS real and tracked is whether each
+    rung of the ladder has been built; that is what this reports.
+
+    FOG: a rung is named only once it is visible (built, active, or
+    revealed) - the ladder itself is not spoiled by naming an unbuilt lower
+    rung, since is_visible already governs which rungs qualify. The
+    workshop-versus-grid split on projects goes further: it distinguishes
+    the two scales for a project only once the player has themselves
+    discovered BOTH cap_power_electric and, separately, cap_power_grid -
+    naming "this needs the grid" before the player has ever heard of a grid
+    would hand over the existence of the next tier exactly the way `bounty`
+    once handed over power_grid's id by naming a raw prerequisite; here nothing
+    is named until it is not a prerequisite the player would be seeing for
+    the first time.
+    """
+    tiers = []
+    highest = None
+    for nid, label in _POWER_LADDER:
+        if nid not in nodes or not s.is_visible(nid):
+            continue
+        built = s.has(nid)
+        tiers.append({"capability": label, "id": nid, "built": built})
+        if built:
+            highest = label
+    out = {
+        "power_tiers_you_have_discovered": tiers or "none yet",
+        "highest_you_have_built": highest,
+        "note": ("this does not track electricity generation or demand in "
+                 "kilowatts anywhere - only whether a given scale of power "
+                 "capability has actually been built. That is as precise "
+                 "as the engine itself is; a number more exact than this "
+                 "would be invented for this screen alone."),
+    }
+    elec_known = s.is_visible("cap_power_electric")
+    grid_known = s.is_visible("cap_power_grid")
+    if elec_known:
+        workshop_scale, grid_scale = [], []
+        for k, n in nodes.items():
+            if k in s.done or not s.is_visible(k):
+                continue
+            pre = n.get("pre") or []
+            if grid_known and not s.has("cap_power_grid") and "cap_power_grid" in pre:
+                grid_scale.append(k)
+            elif not s.has("cap_power_electric") and "cap_power_electric" in pre:
+                workshop_scale.append(k)
+        if workshop_scale:
+            out["waiting_on_workshop_scale_power"] = sorted(workshop_scale)
+        if grid_scale:
+            out["waiting_on_grid_scale_power"] = sorted(grid_scale)
+    return out
+
+
+def _agent_mines(s):
+    """A list of your own mines: material, rated capacity, actual output
+    after depletion and technology, operating cost, utilisation, and whether
+    it is actually supplying any of this year's demand or merely standing
+    there being paid for. See the `mines`/`workings` dispatch below and
+    _agent_capacity, which both call this rather than keeping two copies of
+    the same arithmetic.
+
+    auto_mine quietly took 353,039 a year against 467,227 of revenue for a
+    play tester, and there was no command anywhere that named what they
+    owned or what it cost; two `close` calls took their net from -61,884 to
+    +291,156. The verbs to sink one and to shut one both existed; nothing
+    showed you the books.
+    """
+    dem = s.annual_material_demand()
+    # copper_wire_kg/wire_drawn_kg and gold_kg: economy.py's MATERIAL_CHECKS
+    # now tracks these against the same copper/gold supply this row is
+    # about (see that table's own comment); this local key map has to
+    # agree or "you actually need" would silently exclude what 36
+    # electrical nodes and a central bank draw.
+    _keys = {"coal": ("coal_kg",), "iron": ("iron_bar_kg", "iron_ore_kg"),
+             "copper": ("copper_kg", "copper_wire_kg", "wire_drawn_kg"),
+             "lead": ("lead_kg",),
+             "tin": ("tin_kg",), "silver": ("silver_kg",),
+             "gold": ("gold_kg",)}
+    # GENERALISED (COMMODITY_DYNAMISM.md, economy.py's open_mine() is no
+    # longer limited to these seven names): for a mine in a material
+    # outside the curated list above, the material key IS its own demand
+    # key (see economy.py's _material_tag(), same convention), so a
+    # default of "look up the key by its own name" covers it rather than
+    # silently reporting 0 tonnes needed for anything not in `_keys`.
+    rows = []
+    # PENDING WORKINGS COUNT. A shaft takes years to come into production
+    # and is paid for the moment you sink it, so a player who has just
+    # bought one and types `mines` must not be told they own none.
+    _pending = {}
+    for _m, _amt, _ready in sorted(getattr(s, "mine_tranches", [])):
+        _pending.setdefault(_m, [0.0, _ready])
+        _pending[_m][0] += _amt
+        _pending[_m][1] = min(_pending[_m][1], _ready)
+    for m, cap in sorted(s.mine_capacity.items()):
+        want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,)))
+        # ACTUAL yield, not the nominal tonnage sunk: depletion (the
+        # easy ore going) and mining technology (a pump, a drill, a
+        # railway) both move this away from `cap`, and a player whose
+        # coal yield has halved over eighty years has to be able to see
+        # that here, not just infer it from a lower revenue somewhere
+        # else. See economy.py's mine_yield_t()/mine_depletion_note().
+        actual = s.mine_yield_t(m)
+        rows.append({
+            "material": m,
+            "tonnes_a_year_it_can_raise": round(actual, 2),
+            "sunk_capacity_t_per_yr": round(cap, 2),
+            "tonnes_a_year_you_actually_need": round(want, 2),
+            "costs_you_a_year": round(cap * s._mine_opex(m)
+                                      * s.price_index * s.mining_cost_scale(m), 1),
+            "using": ("%d%%" % (100.0 * min(1.0, want / actual))) if actual > 0 else "-",
+            # WHETHER IT IS ACTUALLY SUPPLYING ANYTHING, as a plain flag, not
+            # only as a percentage a reader has to interpret. A tester's own
+            # question was exactly this: does the game count a mine as real
+            # supply, or only as an economic asset sitting on the books?
+            "actually_supplying_demand": bool(want > 0 and actual > 0),
+            "yield_note": s.mine_depletion_note(m),
+            "shut_it_with": "close %s" % m})
+    for m, (amt, ready) in sorted(_pending.items()):
+        rows.append({
+            "material": m,
+            "tonnes_a_year_it_can_raise": 0.0,
+            "tonnes_a_year_you_actually_need":
+                round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,))), 2),
+            "costs_you_a_year": 0.0,
+            "using": "sinking",
+            "actually_supplying_demand": False,
+            "ready_in": ready,
+            "tonnes_a_year_when_it_is_ready": round(amt, 2),
+            "shut_it_with": "close %s" % m})
+    return {"ok": True,
+            "mines_you_own": rows or "none",
+            "they_cost_you_a_year_in_all": round(s.mine_operating_cost(), 1),
+            "your_revenue_is": round(s.revenue(), 1),
+            "still_being_sunk": {m: v[1] for m, v in sorted(_pending.items())},
+            "note": "Workings are charged every year they stand, whether or "
+                    "not you use what they raise. One you no longer need is "
+                    "money going out for nothing: 'close <material>'. "
+                    "Reopening means sinking it again."}
+
+
+def _portfolio_constraint(waiting):
+    """Which of the five things a project could be waiting on, from the
+    exact sentence _waiting_on already builds for `state` - a second
+    classifier reading the same words back, not a second guess at what is
+    actually binding."""
+    if not isinstance(waiting, str):
+        return "unclear"
+    if waiting.startswith("nobody to do the work"):
+        return "staffing"
+    if waiting.startswith("money") or "pace it can absorb money" in waiting:
+        return "money"
+    if waiting == "the calendar":
+        return "calendar"
+    if waiting == "your hours":
+        return "your_own_attention"
+    return "unclear"
+
+
+_PORTFOLIO_ORDER = {"staffing": 0, "money": 1, "your_own_attention": 2,
+                    "calendar": 3, "unclear": 4}
+
+
+def _portfolio_rows(nodes, active_out):
+    """Every project you have in hand, grouped by what is actually
+    constraining it, reusing _agent_state's own per-project accounting
+    (waiting_on, founder-hours, risk) rather than a second copy of it - the
+    same active dict `state` already returns, resorted so several long
+    clocks running at once read as one screen instead of requiring a player
+    to hold each one in their head.
+    """
+    rows = []
+    for k, a in active_out.items():
+        n = nodes[k]
+        constraint = _portfolio_constraint(a.get("waiting_on"))
+        row = {
+            "id": k, "name": a["name"], "constraint": constraint,
+            "waiting_on": a.get("waiting_on"),
+            "founder_hours_left": a.get("founder_hours_left"),
+            "founder_hours_total": a.get("founder_hours_total"),
+            "years_in_progress": a.get("years_in_progress"),
+            "calendar_years_left": round(
+                max(0.0, float(n["yrs"]) - float(a.get("years_in_progress") or 0.0)), 1),
+            "still_to_pay": a.get("still_to_pay"),
+            "chance_of_failure": n.get("risk") or None,
+        }
+        if "will_be_abandoned_in_years" in a:
+            row["will_be_abandoned_in_years"] = a["will_be_abandoned_in_years"]
+            row["because_nobody_here_can"] = a.get("because_nobody_here_can")
+        rows.append(row)
+    rows.sort(key=lambda r: (_PORTFOLIO_ORDER.get(r["constraint"], 9),
+                             -(r["founder_hours_left"] or 0.0)))
+    return rows
+
+
+def _spare_capacity(s, state_out):
+    """Founder-hours, staff and cash flow not currently spoken for: enough
+    to teach parallelism without saying what to build with it. Every figure
+    here is hours_you_can_call_on(t)/trade_hours_used - the same pair
+    _waiting_on already reads per project - summed by trade family instead
+    of read one project at a time, plus the spending figures `money`/`state`
+    already compute for their own screens.
+    """
+    families = {}
+    for t in WAGES:
+        if not s.trade_available(t):
+            continue
+        fam = trade_family(t)
+        d = families.setdefault(fam, [0.0, 0.0])
+        supply = s.hours_you_can_call_on(t)
+        used = min(supply, s.trade_hours_used.get(t, 0.0))
+        d[0] += supply
+        d[1] += used
+    rows = []
+    for fam, (supply, used) in sorted(families.items()):
+        spare = max(0.0, supply - used)
+        if supply <= 0:
+            continue
+        rows.append({"trade_family": fam,
+                     "spare_hours_this_year": round(spare, 0),
+                     "spare_people_equivalent": round(
+                         spare / s.HOURS_PER_PERSON_YEAR, 1)})
+    return {
+        "founder_hours_available": state_out.get("founder_hours_available"),
+        "free_hours_going_unused": state_out.get("free_hours_going_unused"),
+        "spare_by_trade_family": rows or "none",
+        "you_could_raise_right_now": round(s.spending_power("buy"), 1),
+        "credit_limit": round(s.credit_limit(), 1),
+        "standing_net_per_year": state_out.get("net_per_year"),
+        "note": "standing net per year is this household's own ordinary-year "
+                "surplus or deficit before this year's project spend - "
+                "roughly how much more annual project spend you could "
+                "sustain going forward if it is positive, not cash sitting "
+                "idle today. 'money' shows how it is made up.",
+    }
+
+
+def _agent_capacity(s, nodes, cmd=None):
+    """The industrial dashboard: physical capability, not just known
+    technologies. One underlying summary for resources, power, mines, the
+    project portfolio and spare capacity, because a player reasoning about
+    a bottleneck needs all five in the same place, not six commands to
+    cross-reference by hand.
+    """
+    state_out = _agent_state(s, nodes)
+    active_out = state_out.get("active") or {}
+    return {
+        "ok": True,
+        "resources": _material_capacity_rows(s),
+        "power": _power_status(s, nodes),
+        "mines": _agent_mines(s),
+        "portfolio": _portfolio_rows(nodes, active_out),
+        "spare_capacity": _spare_capacity(s, state_out),
+        "resource_throttle": state_out.get("resource_throttle"),
+        "throttle_binding": state_out.get("throttle_binding"),
+        "note": "'mines' gives the same mine rows with more room; 'labour' "
+                "gives any one trade in full; 'money' gives the ledger this "
+                "reads its cash figures from.",
+    }
+
+
+def render_capacity(out):
+    L = ["THE INDUSTRIAL DASHBOARD"]
+    res = out.get("resources") or []
+    if res:
+        L.append("")
+        L.append("  RESOURCES")
+        L.append("  %-14s %12s %12s %12s" % ("MATERIAL", "CAPACITY/YR",
+                                             "DEMAND/YR", "SURPLUS/YR"))
+        for r in res:
+            L.append("  %-14s %12s %12s %12s%s"
+                     % (r["material"], _fmt_num(r["capacity_t_per_yr"]),
+                        _fmt_num(r["demand_t_per_yr"]),
+                        _fmt_num(r["surplus_t_per_yr"]),
+                        "  SHORT" if r["surplus_t_per_yr"] < 0 else ""))
+            if r.get("yield_note"):
+                L.append(_wrap(r["yield_note"], indent="      "))
+    pw = out.get("power") or {}
+    L.append("")
+    L.append("  POWER")
+    tiers = pw.get("power_tiers_you_have_discovered")
+    if isinstance(tiers, list) and tiers:
+        for t in tiers:
+            L.append("    [%s] %s" % ("x" if t["built"] else " ", t["capability"]))
+    else:
+        L.append("    nothing discovered yet")
+    if pw.get("waiting_on_workshop_scale_power"):
+        L.append("    waiting on workshop-scale power: "
+                 + ", ".join(pw["waiting_on_workshop_scale_power"]))
+    if pw.get("waiting_on_grid_scale_power"):
+        L.append("    waiting on the grid: " + ", ".join(pw["waiting_on_grid_scale_power"]))
+    if pw.get("note"):
+        L.append(_wrap(pw["note"], indent="    "))
+    mines = (out.get("mines") or {}).get("mines_you_own")
+    L.append("")
+    L.append("  MINES  (see 'mines' for the full table)")
+    if isinstance(mines, list) and mines:
+        for r in mines:
+            L.append("    %-10s raises %8s of %8s needed  supplying: %s"
+                     % (r["material"], _fmt_num(r["tonnes_a_year_it_can_raise"]),
+                        _fmt_num(r["tonnes_a_year_you_actually_need"]),
+                        "yes" if r.get("actually_supplying_demand") else "no"))
+    else:
+        L.append("    none")
+    port = out.get("portfolio") or []
+    L.append("")
+    L.append("  PROJECT PORTFOLIO")
+    if port:
+        for r in port:
+            L.append("    %-28s [%s]  %s hrs left, %s yrs left, risk %s"
+                     % (r["name"], r["constraint"].replace("_", " "),
+                        _fmt_num(r["founder_hours_left"]),
+                        _fmt_num(r["calendar_years_left"]), _pct(r["chance_of_failure"])))
+            L.append(_wrap("waiting on: " + str(r["waiting_on"]), indent="      "))
+    else:
+        L.append("    nothing in hand")
+    sp = out.get("spare_capacity") or {}
+    L.append("")
+    L.append("  SPARE CAPACITY")
+    L.append("    founder-hours free this year: %s"
+             % _fmt_num(sp.get("founder_hours_available")))
+    fam = sp.get("spare_by_trade_family")
+    if isinstance(fam, list) and fam:
+        L.append("    " + "; ".join("%s: %s free (%s hrs)"
+                                    % (f["trade_family"], _fmt_num(f["spare_people_equivalent"]),
+                                       _fmt_num(f["spare_hours_this_year"])) for f in fam))
+    L.append("    you could raise %s now; %s standing net/yr"
+             % (_fmt_num(sp.get("you_could_raise_right_now")),
+                _fmt_num(sp.get("standing_net_per_year"))))
+    if sp.get("free_hours_going_unused"):
+        L.append(_wrap("  " + sp["free_hours_going_unused"]))
+    return "\n".join(L)
+
+
+def _dashboard_snapshot(s):
+    """One year's worth of the numbers `changes` diffs against later - a
+    timestamped copy of figures already computed elsewhere (price_index,
+    literacy, mine_capacity, ...), not a new figure of its own. Called once
+    per simulated year from the `step` dispatch below."""
+    return {
+        "year": s.year,
+        "price_index": round(s.price_index, 4),
+        "wage_index": round(s.wage_index, 4),
+        "literacy_general": round(float(s.civ.get("literacy_general", 0.0)), 4),
+        "literacy_elite": round(float(s.civ.get("literacy_elite", 0.0)), 4),
+        "capital": round(s.capital, 1),
+        "revenue": round(s.revenue(), 1),
+        "credit_limit": round(s.credit_limit(), 1),
+        "throttle": round(s.throttle, 3),
+        "binding": s.binding,
+        "operating_count": len(s.operating),
+        "done_earned": len(s.done - s.granted),
+        "employees_total": round(sum(s.employees.values()), 2),
+        "scholars": round(s.scholars, 2),
+        "artisans": round(s.artisans, 2),
+        "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
+        "scandal": round(s.scandal, 2),
+        "reputation": round(s.reputation, 1),
+        "eminence": round(s.eminence, 2),
+    }
+
+
+def _agent_economy(s, cmd=None):
+    """A short, readable economic summary, with detail behind an explicit
+    ask rather than printed by default - major prices, wages, cost of
+    living, literacy, market saturation and household capacity, all read
+    from figures `money`/`labour`/`state` already compute for their own
+    screens, plus what has moved most recently using the same yearly
+    snapshots `changes` reads.
+    """
+    full = bool((cmd or {}).get("full"))
+    hist = getattr(s, "_dashboard_history", None) or []
+    moved = {}
+    if hist:
+        now = hist[-1]
+        for n_yrs in (5, 10):
+            cutoff = s.year - n_yrs
+            base = None
+            for rec in hist:
+                if rec["year"] <= cutoff:
+                    base = rec
+                else:
+                    break
+            if base is not None:
+                moved["last_%d_years" % n_yrs] = {
+                    "price_index": round(now["price_index"] - base["price_index"], 4),
+                    "wage_index": round(now["wage_index"] - base["wage_index"], 4),
+                    "literacy_general": round(
+                        now["literacy_general"] - base["literacy_general"], 4)}
+    out = {
+        "ok": True,
+        "price_index": round(s.price_index, 4),
+        "wage_index": round(s.wage_index, 4),
+        "cost_of_living_a_year": round(s.living_cost() - s.wage_bill(), 1),
+        "literacy": {"general": round(float(s.civ.get("literacy_general", 0.0)), 3),
+                     "elite": round(float(s.civ.get("literacy_elite", 0.0)), 3)},
+        "household_places_used_of_all": "%.1f of %.1f" % (
+            s.headcount(), s.headcount() + max(0.0, s.household_room())),
+        "where_the_money_comes_from": s.revenue_sources(),
+        "market_saturation": s.goods_market_summary(),
+        "materials_at_a_premium": s.material_market_summary(),
+        "what_moved_most": moved or "not enough history yet - step forward "
+                                    "and ask again",
+        "more_detail": '{"cmd":"economy","full":true}',
+    }
+    if full:
+        # THE SAME PER-MATERIAL FACTOR money's own material_market_summary
+        # already aggregates into one worst-case note, here as the rows that
+        # note is built from, for every tracked commodity rather than just
+        # the worst one.
+        rows, seen = [], set()
+        for pair in s.MATERIAL_CHECKS.values():
+            ek = pair[0]
+            if ek in seen:
+                continue
+            seen.add(ek)
+            rows.append({"material": ek,
+                        "price_factor_over_book": round(s.material_price_factor(ek), 3)})
+        out["tracked_material_prices"] = sorted(rows, key=lambda r: -r["price_factor_over_book"])
+        # THE SAME FORMULA `labour`'s own row() uses for "a_year_of_one", not
+        # a second version of a wage this file already prints elsewhere.
+        out["wages_by_trade"] = [
+            {"trade": t, "a_year_of_one": round(
+                ANNUAL_WAGE.get(t, 375.0) * s.wage_index * s.price_index
+                * s.labour_price_factor(t), 0)}
+            for t in sorted(WAGES) if s.trade_available(t)]
+    return out
+
+
+def render_economy(out):
+    L = ["THE ECONOMY"]
+    L.append("  price index %s   wage index %s   cost of living %s/yr"
+             % (_factor(out.get("price_index")), _factor(out.get("wage_index")),
+                _fmt_num(out.get("cost_of_living_a_year"))))
+    lit = out.get("literacy") or {}
+    L.append("  literacy: general %s, elite %s"
+             % (_pct(lit.get("general")), _pct(lit.get("elite"))))
+    L.append("  household places used: %s" % out.get("household_places_used_of_all"))
+    if out.get("market_saturation"):
+        L.append("")
+        L.append(_wrap(out["market_saturation"], indent="  "))
+    if out.get("materials_at_a_premium"):
+        L.append(_wrap(out["materials_at_a_premium"], indent="  "))
+    moved = out.get("what_moved_most")
+    if isinstance(moved, dict) and moved:
+        L.append("")
+        L.append("  WHAT HAS MOVED MOST")
+        for span, vals in sorted(moved.items()):
+            L.append("    %s: price index %+.3f, wage index %+.3f, literacy %+.3f"
+                     % (span.replace("_", " "), vals["price_index"],
+                        vals["wage_index"], vals["literacy_general"]))
+    if out.get("tracked_material_prices"):
+        L.append("")
+        L.append("  MATERIALS ABOVE BOOK PRICE")
+        for r in out["tracked_material_prices"]:
+            if r["price_factor_over_book"] > 1.01:
+                L.append("    %-10s %sx book" % (r["material"],
+                                                 _factor(r["price_factor_over_book"])))
+    return "\n".join(L)
+
+
+def _agent_changes(s, nodes, cmd=None):
+    """What materially changed over the last N years - the diff a player
+    otherwise has to work out by holding two screens in their head, which is
+    exactly what one of our own testers had to do to diagnose a bug. Reads
+    the yearly snapshots `step` records (_dashboard_snapshot) rather than
+    recomputing anything; see that function for what is actually stored.
+    """
+    raw = (cmd or {}).get("years", 5)
+    if isinstance(raw, bool):
+        return {"ok": False, "error": "years must be a number, not true or false"}
+    try:
+        years = int(raw)
+    except (TypeError, ValueError):
+        return {"ok": False, "error": "years must be an integer"}
+    if float(raw) != years:
+        return {"ok": False, "error": "years must be a whole number of years. "
+                                      "Nothing was changed."}
+    if years < 1:
+        return {"ok": False, "error": "years must be >= 1"}
+    hist = getattr(s, "_dashboard_history", None) or []
+    if not hist:
+        return {"ok": False, "error": "nothing has been recorded yet; step "
+                                      "forward a year first, then ask again"}
+    now = hist[-1]
+    cutoff = s.year - years
+    baseline = None
+    for rec in hist:
+        if rec["year"] <= cutoff:
+            baseline = rec
+        else:
+            break
+    if baseline is None:
+        earliest = hist[0]["year"]
+        return {"ok": False,
+                "error": ("this run's own record only goes back to %d AD, %d "
+                          "years ago; ask for %d or fewer"
+                          % (earliest, s.year - earliest, s.year - earliest))}
+    moved = {
+        "price_index": round(now["price_index"] - baseline["price_index"], 4),
+        "wage_index": round(now["wage_index"] - baseline["wage_index"], 4),
+        "literacy_general": round(
+            now["literacy_general"] - baseline["literacy_general"], 4),
+        "literacy_elite": round(
+            now["literacy_elite"] - baseline["literacy_elite"], 4),
+        "capital": round(now["capital"] - baseline["capital"], 1),
+        "revenue": round(now["revenue"] - baseline["revenue"], 1),
+        "credit_limit": round(now["credit_limit"] - baseline["credit_limit"], 1),
+        "employees_total": round(
+            now["employees_total"] - baseline["employees_total"], 2),
+        "scholars": round(now["scholars"] - baseline["scholars"], 2),
+        "artisans": round(now["artisans"] - baseline["artisans"], 2),
+        "operating_count": now["operating_count"] - baseline["operating_count"],
+        "technologies_completed": now["done_earned"] - baseline["done_earned"],
+        "scandal": round(now["scandal"] - baseline["scandal"], 2),
+        "reputation": round(now["reputation"] - baseline["reputation"], 1),
+        "eminence": round(now["eminence"] - baseline["eminence"], 2),
+    }
+    then_cap = baseline.get("mine_capacity") or {}
+    now_cap = now.get("mine_capacity") or {}
+    cap_changes = []
+    for m in sorted(set(then_cap) | set(now_cap)):
+        d = round(now_cap.get(m, 0.0) - then_cap.get(m, 0.0), 1)
+        if abs(d) > 0.05:
+            cap_changes.append({"material": m, "change_t_per_yr": d})
+
+    def _uniq(seq):
+        return list(dict.fromkeys(seq))
+
+    completed, revealed, opened, closed = [], [], [], []
+    for rec in hist:
+        if rec["year"] <= cutoff:
+            continue
+        completed.extend(rec.get("completed") or [])
+        revealed.extend(rec.get("revealed_added") or [])
+        opened.extend(rec.get("concerns_opened") or [])
+        closed.extend(rec.get("concerns_closed") or [])
+    completed = _uniq(completed)
+    revealed = _uniq([k for k in revealed if k not in completed])
+    opened = _uniq(opened)
+    closed = _uniq([k for k in closed if k not in opened])
+    # A HANDFUL OF WORDS, NOT THE WHOLE LOG. Anything the engine already
+    # logged as happening TO this player over the window, filtered to the
+    # kind of thing a player would call a political event rather than
+    # ordinary bookkeeping ("hired a smith"). The log itself is already
+    # player-facing prose (see `log`); this only picks out a slice of it.
+    _MARKERS = ("sack", "denounced", "founder dies", "plague", "crisis",
+               "scandal", "credit exhausted", "insolvency", "war", "revolt",
+               "famine", "fire", "died", "denunciation")
+    events = [{"year": y, "message": m} for y, m in s.log
+             if cutoff < y <= s.year and any(mk in m.lower() for mk in _MARKERS)]
+    return {
+        "ok": True,
+        "from_year": baseline["year"], "to_year": now["year"],
+        "moved": moved,
+        "bottleneck": {"then": baseline.get("binding"), "now": now.get("binding")},
+        "capacity_gained_or_lost": cap_changes or "none",
+        "technologies_completed": completed or "none",
+        "technologies_newly_heard_of": revealed or "none",
+        "concerns_opened": opened or "none",
+        "concerns_closed": closed or "none",
+        "notable_events": events or "none",
+    }
+
+
+def render_changes(out):
+    L = ["WHAT CHANGED, %s to %s AD" % (out.get("from_year"), out.get("to_year"))]
+    m = out.get("moved") or {}
+    L.append("  price index %+.3f   wage index %+.3f   literacy %+.3f (general)"
+             % (m.get("price_index", 0.0), m.get("wage_index", 0.0),
+                m.get("literacy_general", 0.0)))
+    L.append("  capital %s%s   revenue %s%s/yr   %s technologies completed"
+             % ("+" if m.get("capital", 0) >= 0 else "", _fmt_num(m.get("capital")),
+                "+" if m.get("revenue", 0) >= 0 else "", _fmt_num(m.get("revenue")),
+                _fmt_num(m.get("technologies_completed"))))
+    bn = out.get("bottleneck") or {}
+    if bn.get("then") != bn.get("now"):
+        L.append("  bottleneck moved: %s -> %s" % (bn.get("then"), bn.get("now")))
+    elif bn.get("now"):
+        L.append("  bottleneck unchanged: %s" % bn.get("now"))
+    cap = out.get("capacity_gained_or_lost")
+    if isinstance(cap, list) and cap:
+        L.append("  capacity: " + ", ".join(
+            "%s %+.1f t/yr" % (r["material"], r["change_t_per_yr"]) for r in cap))
+    for label, key in (("built", "technologies_completed"),
+                       ("newly heard of", "technologies_newly_heard_of"),
+                       ("opened", "concerns_opened"), ("closed", "concerns_closed")):
+        v = out.get(key)
+        if isinstance(v, list) and v:
+            L.append("  %s: %s" % (label, ", ".join(v)))
+    ev = out.get("notable_events")
+    if isinstance(ev, list) and ev:
+        L.append("")
+        L.append("  NOTABLE EVENTS")
+        for e in ev:
+            L.append(_wrap("%d: %s" % (e["year"], e["message"]), indent="    "))
+    return "\n".join(L)
+
+
 def final_report(s, nodes):
     """The scoreboard, once the run is over.
 
@@ -1828,7 +2505,17 @@ def _node_explain(s, nodes, k):
         # keeps everything else the note says. Applied here, not only under
         # fog: telling a player outright which of their own choices is
         # correct is the game answering its own question either way.
-        "note": strip_self_play_advice(n["note"]), "kb": n["kb"],
+        "note": strip_self_play_advice(n["note"]),
+        # FOG-SCRUBBED. The knowledge-base citation is a section anchor into
+        # a shared markdown file, and the tree's own convention names most
+        # anchors after the node id they document - so "kb":
+        # "...#ag2_norfolk_course" on a completely unrelated, visible node
+        # names a hidden node's id in plain sight, the same class of leak
+        # `bounty` had with a raw prerequisite list. Found by the generic
+        # fog scanner in test_regressions.py (which exists to catch exactly
+        # this on the NEXT command too), not by a playtester. fog_scrub is
+        # the one filter every such free-text field goes through.
+        "kb": s.fog_scrub(n["kb"]),
         "founder_hours": n["ph"],
         # Two different kinds of people, and a tester reasonably read the two
         # fields as contradicting each other ("hired_labour names an engineer,
@@ -3466,6 +4153,9 @@ _RENDERERS = {
     "mines": render_mines, "workings": render_mines,
     "stuck": render_stuck, "log": render_log, "history": render_log,
     "values": render_values, "rush": render_rush,
+    "capacity": render_capacity, "industry": render_capacity,
+    "dashboard": render_capacity,
+    "economy": render_economy, "changes": render_changes,
     "final": render_final,
 }
 
@@ -3725,6 +4415,7 @@ KNOWN_COMMANDS = (
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
+    "capacity", "economy", "changes",
     "save", "load", "quit",
 )
 
@@ -3774,6 +4465,10 @@ TYPED_ALIASES = {
     "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
     "beliefs": "values", "traits": "values", "society": "values",
     "startall": "rush", "start_all": "rush", "muster": "rush",
+    "overview": "capacity", "industry": "capacity", "dashboard": "capacity",
+    "infrastructure": "capacity", "power": "capacity",
+    "prices": "economy", "econ": "economy",
+    "diff": "changes", "recap": "changes", "summary": "changes",
 }
 
 
@@ -4154,6 +4849,16 @@ def parse_typed(line):
 
     if op == "stuck":
         return {"cmd": "stuck"}, None
+
+    if op == "capacity":
+        return {"cmd": "capacity"}, None
+
+    if op == "economy":
+        return {"cmd": "economy", "full": "full" in [w.lower() for w in words]}, None
+
+    if op == "changes":
+        # 'changes' alone means the last 5 years; 'changes 10' means ten.
+        return {"cmd": "changes", "years": (nums[0] if nums else 5)}, None
 
     if op == "bribe":
         if not nums:
@@ -5438,76 +6143,18 @@ def _agent_dispatch_inner(s, nodes, cmd):
         return out
 
     if op in ("mines", "workings"):
-        # A LIST OF YOUR OWN MINES. auto_mine quietly took 353,039 a year
-        # against 467,227 of revenue for a play tester, and there was no
-        # command anywhere that named what they owned or what it cost; two
-        # `close` calls took their net from -61,884 to +291,156. The verbs to
-        # sink one and to shut one both existed; nothing showed you the books.
-        dem = s.annual_material_demand()
-        # copper_wire_kg/wire_drawn_kg and gold_kg: economy.py's
-        # MATERIAL_CHECKS now tracks these against the same copper/gold
-        # supply this row is about (see that table's own comment); this
-        # local key map has to agree or "you actually need" would silently
-        # exclude what 36 electrical nodes and a central bank draw.
-        _keys = {"coal": ("coal_kg",), "iron": ("iron_bar_kg", "iron_ore_kg"),
-                 "copper": ("copper_kg", "copper_wire_kg", "wire_drawn_kg"),
-                 "lead": ("lead_kg",),
-                 "tin": ("tin_kg",), "silver": ("silver_kg",),
-                 "gold": ("gold_kg",)}
-        # GENERALISED (COMMODITY_DYNAMISM.md, economy.py's open_mine() is no
-        # longer limited to these seven names): for a mine in a material
-        # outside the curated list above, the material key IS its own demand
-        # key (see economy.py's _material_tag(), same convention), so a
-        # default of "look up the key by its own name" covers it rather than
-        # silently reporting 0 tonnes needed for anything not in `_keys`.
-        rows = []
-        # PENDING WORKINGS COUNT. A shaft takes years to come into production
-        # and is paid for the moment you sink it, so a player who has just
-        # bought one and types `mines` must not be told they own none.
-        _pending = {}
-        for _m, _amt, _ready in sorted(getattr(s, "mine_tranches", [])):
-            _pending.setdefault(_m, [0.0, _ready])
-            _pending[_m][0] += _amt
-            _pending[_m][1] = min(_pending[_m][1], _ready)
-        for m, cap in sorted(s.mine_capacity.items()):
-            want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,)))
-            # ACTUAL yield, not the nominal tonnage sunk: depletion (the
-            # easy ore going) and mining technology (a pump, a drill, a
-            # railway) both move this away from `cap`, and a player whose
-            # coal yield has halved over eighty years has to be able to see
-            # that here, not just infer it from a lower revenue somewhere
-            # else. See economy.py's mine_yield_t()/mine_depletion_note().
-            actual = s.mine_yield_t(m)
-            rows.append({
-                "material": m,
-                "tonnes_a_year_it_can_raise": round(actual, 2),
-                "sunk_capacity_t_per_yr": round(cap, 2),
-                "tonnes_a_year_you_actually_need": round(want, 2),
-                "costs_you_a_year": round(cap * s._mine_opex(m)
-                                          * s.price_index * s.mining_cost_scale(m), 1),
-                "using": ("%d%%" % (100.0 * min(1.0, want / actual))) if actual > 0 else "-",
-                "yield_note": s.mine_depletion_note(m),
-                "shut_it_with": "close %s" % m})
-        for m, (amt, ready) in sorted(_pending.items()):
-            rows.append({
-                "material": m,
-                "tonnes_a_year_it_can_raise": 0.0,
-                "tonnes_a_year_you_actually_need":
-                    round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, (m,))), 2),
-                "costs_you_a_year": 0.0,
-                "using": "sinking",
-                "ready_in": ready,
-                "tonnes_a_year_when_it_is_ready": round(amt, 2),
-                "shut_it_with": "close %s" % m})
-        return {"ok": True,
-                "mines_you_own": rows or "none",
-                "they_cost_you_a_year_in_all": round(s.mine_operating_cost(), 1),
-                "your_revenue_is": round(s.revenue(), 1),
-                "still_being_sunk": {m: v[1] for m, v in sorted(_pending.items())},
-                "note": "Workings are charged every year they stand, whether or "
-                        "not you use what they raise. One you no longer need is "
-                        "money going out for nothing: 'close <material>'. "
-                        "Reopening means sinking it again."}
+        # See _agent_mines above: the one place this arithmetic is written,
+        # shared with `capacity`, so the two screens cannot drift apart.
+        return _agent_mines(s)
+
+    if op in ("capacity", "industry", "dashboard"):
+        return _agent_capacity(s, nodes, cmd)
+
+    if op == "economy":
+        return _agent_economy(s, cmd)
+
+    if op == "changes":
+        return _agent_changes(s, nodes, cmd)
 
     if op == "labour":
         one = (cmd.get("trade") or "").strip().lower()
@@ -6269,8 +6916,25 @@ def _agent_dispatch_inner(s, nodes, cmd):
             if s.dead_reason or s.goal_year or s.year >= end_year:
                 break
             before_done, before_log = set(s.done), len(s.log)
+            # FOR `changes`: what a bare node-or-concern-set diff cannot tell
+            # you on its own - WHEN it changed. revealed/operating only ever
+            # grow or lose members silently; snapshotting the sets either
+            # side of this one year's step() is the one place that year's
+            # own diff can still be taken, cheaply, before it is gone.
+            before_revealed = set(getattr(s, "revealed", set()))
+            before_operating = set(s.operating)
             s.step()
             ran += 1
+            hist = getattr(s, "_dashboard_history", None)
+            if hist is None:
+                hist = s._dashboard_history = []
+            _snap = _dashboard_snapshot(s)
+            _snap["revealed_added"] = sorted(
+                set(getattr(s, "revealed", set())) - before_revealed)
+            _snap["concerns_opened"] = sorted(s.operating - before_operating)
+            _snap["concerns_closed"] = sorted(before_operating - s.operating)
+            _snap["completed"] = sorted(s.done - before_done)
+            hist.append(_snap)
             # sorted(), because this is a set difference and a set of strings
             # iterates in an order that depends on PYTHONHASHSEED. Two runs of
             # the same game with the same seed reported the same completions in
@@ -6399,6 +7063,12 @@ SAVE_FIELDS = (
     # taught long enough yet to naturalise", which is exactly true of a save
     # from before the mechanism could ever have fired.
     "trade_introduced_year", "trades_endemic",
+    # ONE SNAPSHOT A YEAR, for `changes` and `economy`'s "what moved most" -
+    # see _dashboard_snapshot. Missing entirely, as in every save from
+    # before this existed, reads back as no history at all, which `changes`
+    # already handles by name ("nothing has been recorded yet"); it is not
+    # backfilled, because there is nothing honest to backfill it from.
+    "_dashboard_history",
 )
 
 
