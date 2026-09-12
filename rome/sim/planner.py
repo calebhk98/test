@@ -74,8 +74,8 @@ import argparse, json, os, random, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from engine.data import (STRATS, closure, load, load_civ, topo_order,
-                         resolve_goal)
+from engine.data import (STRATS, closure, downstream_count, load, load_civ,
+                         topo_order, resolve_goal)
 from engine.core import Sim
 from engine.cli import load_strategy
 
@@ -324,27 +324,46 @@ def interleave(order, extras, every=8):
 
 def backward_plan(nodes, goal, s, seed_order=None, side_branches=12,
                    side_branch_every=8):
-    """Order the goal's closure by CPM slack, tie-broken by a seed order where
-    the graph itself cannot tell two nodes apart, then weave in a handful of
-    self-funding side branches.
+    """Order the goal's closure by CPM slack, tie-broken by how much of the
+    tree a node unlocks and then by a seed order where the graph still
+    cannot tell two nodes apart, then weave in a handful of self-funding
+    side branches.
 
     A SEED IS A TIE-BREAK, NOT AN OVERRIDE. The structural ranking (slack,
-    then earliest start - "of two things with equal room to wait, do the one
-    that unblocks something sooner") always decides between nodes in
-    different slack bands; a seed's position only decides between nodes the
-    graph says are equally urgent, which is exactly where real evidence about
-    staffing and cash flow (which the graph does not model) is worth more
-    than a graph-only tiebreaker like id order. This is how a captured winner
-    or a previous plan IMPROVES the result instead of merely being copied:
-    the graph fixes whatever was wrong about the seed's ordering of
+    then descendant count, then earliest start - "of two things with equal
+    room to wait, do the one that unblocks more of the tree, and between
+    two that unblock the same amount, the one that unblocks it sooner")
+    always decides between nodes in different slack bands; a seed's
+    position only decides between nodes the graph says are equally urgent,
+    which is exactly where real evidence about staffing and cash flow
+    (which the graph does not model) is worth more than a graph-only
+    tiebreaker like id order. This is how a captured winner or a previous
+    plan IMPROVES the result instead of merely being copied: the graph
+    fixes whatever was wrong about the seed's ordering of
     genuinely-different-urgency nodes (recommended.json's failure mode), and
     the seed supplies the fine sequencing the graph has no opinion about.
+
+    DESCENDANT COUNT (`downstream_count`, `engine/data.py` - already cached
+    as a bitmask per node, so this costs nothing extra to read) breaks ties
+    within a slack band toward the node that unblocks the most OTHER work,
+    not merely the one with the least room to wait. This is the one piece
+    of the 434 AD player's own account of how they actually played
+    (rome/playtest/fixtures/rome_434_goal_startable.json; see
+    PATH_SEARCH.md section 7) that is purely structural - "a cheap isolated
+    node is less valuable early than a 2-year node unlocking fifteen
+    branches" - and costs nothing to add regardless of whether it moves
+    this tree's measured floor (tested: it does not, for either
+    civilisation, and regresses neither - see PATH_SEARCH.md). Left in
+    because it is the more honest ranking on its own terms, the same
+    standard `pick_side_branches`' reachability attempt was held to and
+    failed.
     """
     need = closure(nodes, goal)
     c = cpm(nodes, need)
     seed_rank = {k: i for i, k in enumerate(seed_order or ())}
+    dc = {k: downstream_count(nodes, k) for k in need}
     def key(k):
-        return (round(c["slack"][k], 3), round(c["es"][k], 3),
+        return (round(c["slack"][k], 3), -dc[k], round(c["es"][k], 3),
                 seed_rank.get(k, 10 ** 9), nodes[k]["_total_cost"], k)
     order = sorted(need, key=key)
     extras = pick_side_branches(nodes, need, s, side_branches) if side_branches else []
