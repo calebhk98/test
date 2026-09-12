@@ -1502,21 +1502,40 @@ class SocietyMixin:
                     # bare event line against an unexplained fall in capital is
                     # how a player stops trusting the ledger.
                     _cap0 = max(0.0, self.capital)
-                    _people0 = self.artisans + self.scholars
+                    # EVERY TRADE YOU HIRED, NOT ONLY THE TWO GENERIC POOLS.
+                    # A player watched the event announce "92.7 of your
+                    # people gone" and then read `state`'s employees_total -
+                    # the headcount screen actually shows - sitting exactly
+                    # where it was. This branch reduced artisans, scholars
+                    # and directors_extra and left self.employees (hired
+                    # smiths, scribes, masons - for a developed household,
+                    # most of its people) completely untouched, while the
+                    # plague family right above DOES reduce employees (see
+                    # its own `for t in self.employees` loop). A sack is not
+                    # gentler to hired staff than a plague; the two hazards
+                    # had simply drifted apart. _people0/_people_after now
+                    # count the same population the announcement claims to
+                    # describe and `state` actually renders.
+                    _people0 = (self.artisans + self.scholars
+                                + sum(self.employees.values()))
                     _act0 = len(self.active)
                     self.lose_capital(0.60)
                     self.artisans *= 0.55; self.scholars *= 0.55
+                    for t in list(self.employees):
+                        self.employees[t] *= 0.55
                     self.directors_extra *= 0.65
                     for k in sorted(self.active):
                         self.active[k]["ph_left"] = self.nodes[k]["ph"]
                         self.active[k]["yrs"] = 0.0
+                    _people_after = (self.artisans + self.scholars
+                                     + sum(self.employees.values()))
                     _took = []
                     if _cap0 - max(0.0, self.capital) > 0.5:
                         _took.append("%s taken"
                                      % "{:,.0f}".format(_cap0 - max(0.0, self.capital)))
-                    if _people0 - (self.artisans + self.scholars) > 0.05:
+                    if _people0 - _people_after > 0.05:
                         _took.append("%.1f of your people gone"
-                                     % (_people0 - (self.artisans + self.scholars)))
+                                     % (_people0 - _people_after))
                     if _act0:
                         _took.append("%d project%s back to the beginning"
                                      % (_act0, "" if _act0 == 1 else "s"))

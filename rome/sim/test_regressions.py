@@ -4466,6 +4466,60 @@ _h2 = s_hg.knowledge_risk()["hedged_by"]
 check("building the corpus hedges you; opening it changes nothing",
       _h0 is None and _h1 == "corpus_written" and _h2 == _h1, (_h0, _h1, _h2))
 
+# --- BREAK: "the event reported ~92.7 people gone, but the subsequent
+# payroll/headcount did not appear to fall by anything close to that
+# amount." Reproduced directly against _shocks(): a sack reduced artisans,
+# scholars and directors_extra and left self.employees - hired smiths,
+# scribes, masons, for a developed household most of its actual headcount -
+# completely untouched, while the plague family a few lines above this one
+# in the same function DOES reduce employees (its own `for t in self.
+# employees` loop). The number the log announced was real for the
+# population it measured; it was just the wrong population - not the one
+# `state`'s employees_total (the screen a player actually reads as
+# "headcount") reports.
+s_shg = sim(capital=500000.0)
+s_shg.artisans, s_shg.scholars, s_shg.directors_extra = 20.0, 10.0, 5.0
+s_shg.employees = {"smith": 40.0, "scribe": 30.0, "mason": 20.0}
+# directors_extra is deliberately NOT part of this total: the announcement
+# never counted it (nor does the plague family's own _people_before, a few
+# lines above this hazard in the same function) even though it too is
+# reduced by the event - only artisans, scholars and every hired trade are
+# "your people" in the sense this message means.
+_shg_total0 = s_shg.artisans + s_shg.scholars + sum(s_shg.employees.values())
+_shg_emp0 = sum(s_shg.employees.values())
+class _ShgZeroRNG:
+    def random(self):
+        return 0.0
+    def sample(self, population, k):
+        return list(population)[:k]
+s_shg.rng = _ShgZeroRNG()
+s_shg.civ = dict(s_shg.civ)
+s_shg.civ["hazards"] = [{"name": "TEST SACK", "years": [s_shg.year, s_shg.year],
+                         "sack_chance": 1.0}]
+_before_shg = len(s_shg.log)
+s_shg._shocks(s_shg.year)
+_shg_msgs = [m for _, m in s_shg.log[_before_shg:] if "a site is sacked" in m]
+_shg_announced = float(re.search(r"([\d.]+) of your people gone",
+                                 _shg_msgs[0]).group(1)) if _shg_msgs else 0.0
+_shg_total1 = s_shg.artisans + s_shg.scholars + sum(s_shg.employees.values())
+check("a sack's own report of how many people are gone and the actual fall "
+      "in total headcount (artisans + scholars + every hired trade) are "
+      "the same number, not two that drifted apart",
+      _shg_announced > 0
+      and abs((_shg_total0 - _shg_total1) - _shg_announced) < 0.05,
+      (_shg_announced, _shg_total0 - _shg_total1))
+check("...and that headcount fall is NOT zero just because most of this "
+      "household's people are hired trade staff rather than the generic "
+      "artisan/scholar pools - this was the actual bug: a sack that hit "
+      "everyone except whoever `employees` tracked",
+      sum(s_shg.employees.values()) < _shg_emp0,
+      (sum(s_shg.employees.values()), _shg_emp0))
+check("...and `state`'s own employees_total - what a player rereads as "
+      "payroll/headcount - reflects that same fall",
+      abs(S._agent_dispatch(s_shg, NODES, {"cmd": "state"})["employees_total"]
+          - sum(s_shg.employees.values())) < 1e-6,
+      S._agent_dispatch(s_shg, NODES, {"cmd": "state"})["employees_total"])
+
 # --- BREAK, the one that actually cost a run: `risk` and the sack disagreed
 # about what a closed corpus is worth. `risk` read has() (fixed already, see
 # the comment above it: "books that exist are books that exist") and the
