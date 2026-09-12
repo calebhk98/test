@@ -2053,6 +2053,15 @@ def _agent_state(s, nodes, cmd=None):
         # getting close to the throne raises it by half - but neither was
         # visible, and an unseen lever is not a choice.
         "prominence": s.eminence_report(),
+        # THE OTHER HALF OF BEING LARGE. eminence_report() above is the
+        # court's jealousy of a great man; this is the treasury's own
+        # interest in a large enterprise - requisition, a pressed office, a
+        # demand for military supply, and confiscation as a tail risk at the
+        # top of the same scale - which used to not exist at all: a player
+        # who had already won with 691 employees and 1.1 billion denarii
+        # found the state had never once reacted to any of it. See
+        # SocietyMixin.state_pressure_report (society.py).
+        "state_attention": s.state_pressure_report(),
         "credit_limit": round(s.credit_limit(), 1),
         "debt_interest_rate": round(s.debt_interest_rate(), 4),
         "interest_paid_total": round(getattr(s, "interest_paid", 0.0), 1),

@@ -233,6 +233,19 @@
   "sea_magnetic_compass"
  ],
  "state_capacity": 0.9,
+ "state_pressure": {
+  "_doc": "See rome_100ad.json's own state_pressure._doc for the shape this object takes and how society.py reads it.",
+  "requisition_name": "the salt and iron monopolies",
+  "requisition_note": "Salt and iron were state monopolies since Emperor Wu's reign - the Discourses on Salt and Iron (81 BC) record the court debate over exactly this policy - and the corvee could be called on a household's own hands as readily as on its goods. An ironworks or a saltern good enough to notice is, in Han law, a business the state already claims a right to run.",
+  "requisition_base_share": 0.20,
+  "office_name": "a commandery post",
+  "office_note": "An examined man of property could be named to a commandery office he had not sought, answerable afterward for the district's own tax quota out of his own estate if the harvest or the rolls came up short - a liability the examination system handed out along with the prestige.",
+  "office_base_share": 0.05,
+  "military_name": "the imperial workshops",
+  "military_note": "The Han already ran imperial armouries turning out crossbow locks to interchangeable tolerance; a household that can do the same is a supplier the state expects to hear from, not a curiosity it leaves alone.",
+  "confiscation_name": "clan and property seizure",
+  "confiscation_note": "Han law could extend punishment to a condemned man's whole clan and estate, and the Partisan Prohibitions barred entire families from office for life. A fortune the court cannot go on taxing is a fortune the court can simply take, clan and all."
+ },
  "urban_fraction": 0.1,
  "values": {
   "_note": "Merchants rank BELOW farmers and artisans in Confucian order, so w_commerce is negative: getting rich is not a route to status here, passing the examinations is. But alchemy and technical craft are far less likely to be called sorcery than in Rome.",

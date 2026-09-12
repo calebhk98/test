@@ -181,6 +181,19 @@
   "exp_openocean_navigation"
  ],
  "state_capacity": 0.15,
+ "state_pressure": {
+  "_doc": "See rome_100ad.json's own state_pressure._doc for the shape this object takes and how society.py reads it. With state_capacity this low, state_notice() (society.py) almost never crosses even the lowest threshold here - correctly: 'the thing is an assembly, not a state' (this file's own institutions.note). Were this society to spend centuries building the kings, bishops, written law and towns its own opening.what_is_coming already promises, state_capacity rises (the same _TECH_EFFECTS.json deltas every civilisation reads) and this mechanic starts to bite on its own, which is the honest way for that promise to come true.",
+  "requisition_name": "what is owed at the thing",
+  "requisition_note": "There is no tax office in Viking-age Scandinavia. What a household owes is assessed and announced at the thing, the assembly of free men, as a levy toward a specific expedition, a hosting obligation (veizla) to a chieftain's retinue, or a fine set by the law-speaker. It is real, and it is also the weakest version of this pressure in the whole file, because there is barely a state to enforce it.",
+  "requisition_base_share": 0.09,
+  "office_name": "standing watch for the leidang",
+  "office_note": "A levy muster could call a household's own ship and crew to a king's or jarl's service; refusing a summons a chieftain could actually enforce cost standing at the next thing, not a fine collected by any office.",
+  "office_base_share": 0.03,
+  "military_name": "a chieftain's muster",
+  "military_note": "A household that can arm men well is a household a chieftain wants in his own following, not a rival's; good iron gets noticed long before any king could requisition it by law.",
+  "confiscation_name": "outlawry and the seizure of the estate",
+  "confiscation_note": "Outlawry (skoggangr) stripped a man of the law's protection and let anyone take his property without penalty - the one confiscation in this file that needs no state at all, only enough enemies at the thing."
+ },
  "urban_fraction": 0.03,
  "values": {
   "_note": "Positive w_labour_saving because labour is scarce, not cheap: exactly the reverse of Rome, and the reason a labour-saving machine is welcome here and resented there. Very high w_commerce, high novelty tolerance, and seidr is feared but not prosecuted by a state, because there is no state.",

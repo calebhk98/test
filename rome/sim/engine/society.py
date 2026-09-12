@@ -116,6 +116,17 @@ class SocietyMixin:
         if self.running("collegium_licensed"):  p += 0.10
         if self.running("endowment_land"):      p += 0.08   # conspicuous benefaction
         if self.running("fin_university") or self.running("school_founded"): p += 0.06
+        # BOTH A BURDEN AND A SHIELD. Once this household is large enough for
+        # the state to press a civic office on it (state_notice() past
+        # STATE_NOTICE_THRESHOLD - see office_report(), _state_pressure()),
+        # that office costs money every year AND is itself standing: the
+        # historical pattern this answers is that the very rich were pressed
+        # into exactly this kind of service, not offered it. Unlike the
+        # patron_* terms above, this needs nothing built - it is not a choice
+        # - which is the whole point: "the version you do not get to decline
+        # cheaply".
+        if self.state_notice() > self.STATE_NOTICE_THRESHOLD:
+            p += 0.10
         p += min(0.30, self.reputation / 260.0)
         # BRIBERY, ADVOCACY AND PIETY: an explicit, spendable defence.
         income = max(1.0, self.revenue())
@@ -287,6 +298,388 @@ class SocietyMixin:
         # the shape the whole mechanic is about.
         h *= (1.0 - 0.15 * self.familiarity)
         return h
+
+    # ---- THE STATE NOTICES YOU ----------------------------------------------
+    # A player who had already won the game - 691 employees, 1.1 billion
+    # denarii, working firearms, a power grid, a railway - filed the sharper
+    # half of a complaint about history being on rails: technology changed how
+    # much a dated hazard hurt, never whether the state itself reacted to what
+    # had been built under it. The state never once requisitioned the
+    # household's output, demanded military supply, pressed an office on it,
+    # or threatened confiscation. Pre-industrial state predation on a large
+    # private fortune is one of the most reliable facts of the period this
+    # game is set in - the annona and the munera, the Han salt and iron
+    # monopolies, English purveyance, Mexica tribute are not colour, they are
+    # how these states paid for themselves - and scandal (the only existing
+    # political counterweight) saturates and is bribed away long before a
+    # household reaches this scale (see 6b in core.py's step()).
+    #
+    # THIS DOES NOT INVENT A SECOND POLITICAL SCALE. Every input below is a
+    # number the engine already tracks for another purpose - eminence,
+    # capital, headcount (labour.py), military_leverage() above, this civil-
+    # isation's own state_capacity - combined freshly for THIS question, the
+    # same way military_leverage() and prominence_hazard() each already
+    # recombine self.done/self.reputation/self.capital for their own
+    # different questions. Nothing here is stored as a new persistent stat
+    # that decays or grows on its own clock the way reputation/scandal/
+    # eminence/protection do; state_notice() is recomputed from those every
+    # time it is read, so there is nothing new to save, load, or drift.
+    #
+    # state_capacity (0..1 per civilisation, _SCHEMA.md's own "can the state
+    # fund and compel a large project?") is the FIRST factor, not an
+    # afterthought: Rome (0.85) and Han (0.9) start near their own ceiling, so
+    # for them this whole mechanic is gated almost entirely by household scale
+    # below, exactly as history would predict for two empires that already
+    # had annona fleets and salt monopolies running before this household's
+    # founder was born. Norse (0.15) caps the PRODUCT so low that none of the
+    # thresholds below can be crossed at all while the state stays that weak -
+    # "the thing is an assembly, not a state" (norse_900ad.json's own
+    # institutions note) - which is the honest answer for a society with no
+    # tax office, not a gap in the mechanic. A Norse run that spends centuries
+    # building the institutions this civilisation's own opening text predicts
+    # ("kings, bishops, written law, taxes and towns") raises state_capacity
+    # by the same tech effects (mil_conscription_reserve, fin_central_bank,
+    # telegraph and railway among them - see _TECH_EFFECTS.json) that do it
+    # for everyone else, and can eventually cross these same lines; that is
+    # the mechanic correctly answering "what if the player builds the state
+    # up", not a special case written in for it.
+    HOUSEHOLD_HEADCOUNT_SATURATES_AT = 500.0
+    # Ten times prominence_hazard's own 250,000-denarii "visibly rich" line,
+    # deliberately: that number marks enough personal wealth for a courtier to
+    # envy, which is a different and smaller bar than enough FISCAL scale for
+    # a treasury to think assessing your output is worth an official's time.
+    # A household a few times richer than a senator is eminence's problem,
+    # already modelled; a household whose output could supply an army or a
+    # grain fleet is this one's, and that is a ten-million-denarii household,
+    # not a quarter-million one - see the measured trajectories in this
+    # section's own commit for where Rome and Han actually cross it.
+    HOUSEHOLD_WEALTH_SATURATES_AT = 10000000.0
+
+    def household_scale(self):
+        """0..1: how large and visible this household is to a state deciding
+        whether it is worth the bother of leaning on - not a new stat, a
+        fresh combination of three the engine already has. Headcount
+        (labour.py's own employees+slaves+freedmen) and visible wealth are
+        weighted heaviest, because a state assessing a household for
+        requisition or tribute is counting workshops and granaries, not
+        court gossip; eminence (already the engine's own measure of personal
+        prominence) contributes a smaller share, because a household can be
+        economically enormous and personally obscure - the exact shape of
+        the player complaint this answers, reached at 4,213 employees and
+        1.77 billion denarii while eminence itself never once crossed its
+        own danger line (see the Rome dice-free trial this mechanic was
+        measured against). Every term sqrt-saturates or caps at 1.0, the same
+        diminishing shape military_leverage() and agrarian_slack() already
+        use: the five-hundredth employee does not make you five hundred
+        times more noticeable than the first.
+        """
+        head = self.headcount()
+        head_s = min(1.0, math.sqrt(max(0.0, head)
+                                    / self.HOUSEHOLD_HEADCOUNT_SATURATES_AT))
+        wealth_s = min(1.0, max(0.0, self.capital)
+                       / self.HOUSEHOLD_WEALTH_SATURATES_AT)
+        danger = self.cfg["eminence_danger"]
+        emin_s = min(1.0, max(0.0, self.eminence) / danger)
+        return 0.45 * head_s + 0.35 * wealth_s + 0.20 * emin_s
+
+    def state_notice(self):
+        """0..1: state_capacity times household_scale() - the single gate
+        every pressure below checks before it does anything. Below its
+        thresholds nobody in government has a reason to know this household
+        exists; above them, the state's own capacity to organise and compel
+        (state_capacity) decides how hard that interest bites, exactly the
+        reading Diocletian's own hazard note (rome_100ad.json) gives that
+        field: his reforms make the state heavier, not the household richer,
+        and the patronage shift that hazard already carries is the other
+        half of the same fact this mechanic spends on requisition instead.
+        """
+        return self.state_capacity * self.household_scale()
+
+    # Below this, the state has bigger things to do than assess one
+    # household: the measured Han dice-free trial (strategies/planned_han.json,
+    # deterministic_sim) crosses it around year 400-420, a hundred and thirty-
+    # odd years before that trial's own goal year of 551, not in some epilogue
+    # after the tree is already finished - see this section's commit message
+    # for the full trajectory. Requisition and office share this one line:
+    # both are the state treating an enterprise as large enough to count,
+    # just in two different registers (goods taken vs. a burden of service).
+    STATE_NOTICE_THRESHOLD = 0.35
+    # Arms draw attention at a lower bar than general economic weight - "a
+    # household that can make firearms in 400 AD Rome will be asked for
+    # them" does not wait for the household to also be rich - so this is
+    # lower, paired with its own floor on military_leverage() below rather
+    # than on notice alone.
+    STATE_NOTICE_THRESHOLD_MILITARY = 0.20
+    # Roughly one military-branch node done (military_leverage() reaches
+    # 0.20 at n=1 of 25 - see that method's own docstring): the FIRST working
+    # gun, not a standing army, is already enough for a state that can fight
+    # to want an accounting of it.
+    MIL_LEVERAGE_FLOOR_FOR_DEMAND = 0.20
+    MILITARY_DEMAND_COOLDOWN_YEARS = 20.0
+    MILITARY_DEMAND_ANNUAL_CHANCE = 0.10
+    # The tail risk, and deliberately a much higher line than the one above:
+    # confiscation is not the ordinary cost of being noticed, it is what
+    # happens at the very top of the same scale, to a household the state
+    # has decided is too large to go on merely taxing. Measured against both
+    # dice-free trials, this is crossed only in the final quarter-to-sixth of
+    # the run (Han: ~80 years before goal; Rome: inside the explosive final
+    # staffing surge that actually finishes the tree, not after it) - see
+    # this section's commit message. Never lowered to make this bite earlier:
+    # a tail risk that fires in the middle of an ordinary run is not a tail
+    # risk, it is a second flat tax wearing a dice roll.
+    STATE_NOTICE_THRESHOLD_CONFISCATION = 0.75
+    CONFISCATION_MAX_RATE = 0.28
+    CONFISCATION_CAPITAL_LOSS = 0.25
+
+    def _notice_over(self, threshold):
+        """0..1: how far past `threshold` state_notice() stands, as a share
+        of the remaining distance to full notice - the same shape
+        hazard_relief's own diminishing counters and prominence_hazard's
+        `settles_at` use for "starts at nothing right at the line and closes
+        in on its ceiling", not a cliff the year the line is crossed.
+        """
+        n = self.state_notice()
+        if n <= threshold:
+            return 0.0
+        return min(1.0, (n - threshold) / (1.0 - threshold))
+
+    def requisition_report(self):
+        """(share of this year's revenue, [why it is smaller than listed])
+        the state takes as goods at its own price rather than the market's -
+        Rome's annona and munera, Han's salt and iron monopolies, English
+        purveyance, Norse dues at the thing, Mexica tribute (see each civil-
+        isation file's own `state_pressure.requisition_note`). Bargainable:
+        protection is exactly the patronage and standing a household already
+        spends on everything else in this file, and it works here too,
+        because a well-connected man negotiates his assessment down; it does
+        not buy exemption, because the state's claim on your surplus does not
+        go away, only its price.
+        """
+        if self.state_notice() <= self.STATE_NOTICE_THRESHOLD:
+            return 0.0, []
+        sp = self.civ.get("state_pressure") or {}
+        base = float(sp.get("requisition_base_share", 0.15))
+        share = base * self._notice_over(self.STATE_NOTICE_THRESHOLD)
+        why = []
+        if self.protection > 0:
+            share *= (1.0 - 0.55 * self.protection)
+            why.append("bargained down by standing and patronage (protection "
+                       "%d%%)" % round(self.protection * 100))
+        return max(0.0, share), why
+
+    def office_report(self):
+        """(share of this year's revenue, office's name in this civilisation)
+        a pressed civic office costs every year it runs - Rome's decurionate,
+        a Han commandery post, the English shrievalty, standing watch for a
+        Norse leidang muster, a Mexica cuauhpilli commission. UNLIKE
+        requisition, protection does not discount this: the whole point of
+        this pressure, as against the patron nodes a household chooses to
+        build, is that it is not bought off cheaply. What it gives back
+        instead is protection itself - see update_protection()'s own use of
+        this same gate - the historical pattern that the very rich were
+        pressed into service that cost them money and also shielded them.
+        """
+        if self.state_notice() <= self.STATE_NOTICE_THRESHOLD:
+            return 0.0, None
+        sp = self.civ.get("state_pressure") or {}
+        base = float(sp.get("office_base_share", 0.05))
+        share = base * self._notice_over(self.STATE_NOTICE_THRESHOLD)
+        return max(0.0, share), sp.get("office_name", "a civic office")
+
+    def military_demand_eligible(self):
+        """Is this household both militarily useful and visible enough that
+        a state which can fight would bother asking it for supply?
+
+        military_leverage() alone is not enough - it is earned the moment a
+        node is done, on paper, and a state does not write to a household it
+        has never heard of - so this also requires state_notice() past its
+        own (lower) military line. Reusing military_leverage() rather than a
+        hand-picked list of gunpowder-branch ids is deliberate: that count
+        already is this engine's one answer to "how much of the military
+        tree has this founder actually got", read by update_protection() and
+        hazard_relief("output_factor") for two other questions already: a
+        third reader does not get to define "militarily significant" its own
+        way.
+        """
+        return (self.military_leverage() >= self.MIL_LEVERAGE_FLOOR_FOR_DEMAND
+                and self.state_notice() > self.STATE_NOTICE_THRESHOLD_MILITARY)
+
+    def confiscation_risk(self):
+        """(yearly probability, [what is holding it off]) of the tail risk at
+        the top of the state-notice scale - distinct from the eminence-driven
+        confiscation core.py's step() already rolls (that one is the court's
+        jealousy of a great man, unbribable by design, see prominence_hazard's
+        own docstring); this one is the treasury deciding a fortune it can no
+        longer tax is a fortune worth simply taking, and it answers to the
+        four things that actually mitigated that historically: a patron high
+        enough to matter and general standing (protection, which already
+        blends both), dispersal of the household's own holdings (academy_
+        network or endowment_land - "too dispersed to seize at a stroke", the
+        same reading sack_chance's HAZARD_COUNTERS already give academy_
+        network), and being useful to the state (military_leverage() again -
+        a state does not strip clean the one workshop that arms it).
+        """
+        over = self._notice_over(self.STATE_NOTICE_THRESHOLD_CONFISCATION)
+        if over <= 0.0:
+            return 0.0, []
+        p = self.CONFISCATION_MAX_RATE * over
+        mitig, why = 1.0, []
+        if self.protection > 0:
+            mitig *= (1.0 - 0.5 * self.protection)
+            why.append("a patron and standing high enough to matter")
+        dispersal = 0.0
+        if self.has("academy_network"):
+            dispersal = max(dispersal, 0.35)
+        elif self.has("endowment_land"):
+            dispersal = max(dispersal, 0.20)
+        if dispersal > 0:
+            mitig *= (1.0 - dispersal)
+            why.append("holdings too dispersed to be seized at a stroke")
+        lev = self.military_leverage()
+        if lev > 0:
+            mitig *= (1.0 - 0.4 * lev)
+            why.append("too useful to the state to strip clean")
+        return p * mitig, why
+
+    def state_pressure_report(self):
+        """What `risk`/`state` shows BEFORE any of this bites - the same
+        obligation eminence_report() already meets for prominence, answering
+        the brief's own fairness standard: a confiscation with no warning is
+        the same unfairness as the silent staffing cliff an earlier round
+        fixed. Deliberately terse - `state full` has a hard readability
+        budget this engine already enforces (see test_regressions.py's own
+        "state full stays readable") - so a dormant household (the common
+        case for most of a run under the measured trajectories) gets a bare
+        null and nothing else, and only what is actually live gets a field
+        of its own.
+        """
+        notice = self.state_notice()
+        req_share, _req_why = self.requisition_report()
+        off_share, off_name = self.office_report()
+        conf_p, conf_why = self.confiscation_risk()
+        sp = self.civ.get("state_pressure") or {}
+        # NULL, NOT A SENTENCE, WHEN DORMANT. `state full` has a measured
+        # 9,000-byte readability budget (test_regressions.py's own "state
+        # full stays readable") that the densest civilisation files already
+        # sit close to; most of a run has nothing live to report here (see
+        # this mechanic's own commit message for how late these thresholds
+        # are actually crossed), so the common case costs almost nothing
+        # rather than one more always-present sentence.
+        if req_share <= 0.0005 and off_share <= 0.0005 and conf_p <= 0.0 \
+                and not self.military_demand_eligible():
+            return None
+        out = {"now": round(notice, 3), "noticed_above": self.STATE_NOTICE_THRESHOLD,
+               "confiscation_risk_above": self.STATE_NOTICE_THRESHOLD_CONFISCATION}
+        if req_share > 0.0005:
+            out["requisition"] = ("%s takes about %d%% of this year's revenue"
+                                  % (sp.get("requisition_name", "the state"),
+                                     round(req_share * 100)))
+        if off_share > 0.0005 and off_name:
+            out["office"] = ("%s costs about %d%% of revenue a year, and "
+                             "buys protection in return" % (off_name, round(off_share * 100)))
+        if self.military_demand_eligible():
+            out["military_supply"] = ("%s may demand your output; refusing a "
+                                      "state that can still fight is not free"
+                                      % sp.get("military_name", "the arsenal"))
+        if conf_p > 0:
+            out["confiscation_chance_this_year"] = round(conf_p, 4)
+            out["confiscation_reduced_by"] = conf_why
+        out["what_helps"] = ("a patron or standing; holdings not all in one "
+                             "place; being useful to a state that fights")
+        return out
+
+    def _state_pressure(self, yr):
+        """Once a year: the state notices what this household has become,
+        and acts on it. See the section comment above `household_scale` for
+        the full argument; this is only the yearly application of the four
+        reports above.
+        """
+        notice = self.state_notice()
+        rev = max(0.0, self.revenue())
+        sp = self.civ.get("state_pressure") or {}
+
+        req_share, req_why = self.requisition_report()
+        off_share, off_name = self.office_report()
+        took = (req_share + off_share) * rev
+        if took > 0.5:
+            self.capital -= took
+            last = getattr(self, "_said_requisition", -999)
+            if yr - last >= 15:
+                self._said_requisition = yr
+                bits = ["%s takes %s this year" % (
+                    sp.get("requisition_name", "the state"),
+                    "{:,.0f}".format(req_share * rev))]
+                if req_why:
+                    bits.append("; ".join(req_why))
+                if off_share > 0.0005 and off_name:
+                    bits.append("%s costs %s more, and is not something you "
+                                "get to decline cheaply"
+                                % (off_name, "{:,.0f}".format(off_share * rev)))
+                self.log.append((yr, "THE STATE HAS NOTICED YOU: " + "; ".join(bits)))
+        elif notice > self.STATE_NOTICE_THRESHOLD * 0.7:
+            # APPROACHING, NOT YET BITING. The same fairness standard as
+            # eminence's own "YOU ARE BECOMING CONSPICUOUS" warning in
+            # core.py's step(): a player should see this coming before the
+            # first denarius is actually taken, not discover it in the
+            # ledger after the fact.
+            band = int(notice / max(0.01, self.STATE_NOTICE_THRESHOLD * 0.1))
+            if band > int(getattr(self, "_said_notice_approach", 0)):
+                self._said_notice_approach = band
+                self.log.append((yr, "this household is becoming large enough "
+                                     "for the state to take an interest: "
+                                     "notice %.2f against a line of %.2f. A "
+                                     "patron or standing, and holdings that "
+                                     "are not all in one place, are what "
+                                     "blunt it when it arrives"
+                                     % (notice, self.STATE_NOTICE_THRESHOLD)))
+
+        if self.events and self.military_demand_eligible():
+            last = getattr(self, "last_military_demand", -999)
+            if (yr - last >= self.MILITARY_DEMAND_COOLDOWN_YEARS
+                    and self.rng.random() < self.MILITARY_DEMAND_ANNUAL_CHANCE):
+                self.last_military_demand = yr
+                lev = self.military_leverage()
+                take = rev * (0.10 + 0.10 * lev) * (1.0 - 0.4 * self.protection)
+                take = max(0.0, take)
+                self.capital -= take
+                name = sp.get("military_name", "the arsenal")
+                self.log.append((yr, "%s asks for your output: %s handed over "
+                                     "in powder, iron or finished pieces. "
+                                     "Refusing a state that can still fight "
+                                     "is not free, and this was the cheaper "
+                                     "choice"
+                                 % (name, "{:,.0f}".format(take))))
+
+        p, conf_why = self.confiscation_risk()
+        if p > 0.0:
+            band = int(p / 0.05)
+            last_band = int(getattr(self, "_said_confiscation_band", -1))
+            if band > last_band:
+                self._said_confiscation_band = band
+                self.log.append((yr, "THE TREASURY IS LOOKING AT YOUR FORTUNE: "
+                                     "a %d%% chance this year of outright "
+                                     "confiscation, against a scale that "
+                                     "only keeps climbing while this "
+                                     "household grows. %s"
+                                 % (round(p * 100),
+                                    ("Held off by: " + "; ".join(conf_why))
+                                    if conf_why else
+                                    "Nothing you have built is holding it "
+                                    "off yet")))
+            if self.events and self.rng.random() < p:
+                had = max(0.0, self.capital)
+                self.lose_capital(self.CONFISCATION_CAPITAL_LOSS)
+                lost = had - max(0.0, self.capital)
+                self.reputation = max(0.0, self.reputation - 6)
+                name = sp.get("confiscation_name", "confiscation")
+                self.log.append((yr, "%s: the state takes what it judges a "
+                                     "fortune too large to go on merely "
+                                     "taxing - %s gone"
+                                 % (name, "{:,.0f}".format(lost)
+                                    if lost > 0.5 else "nothing, because you "
+                                    "were holding none")))
+        else:
+            self._said_confiscation_band = -1
 
     # The FIRST answer to "I have no staff" is now the obvious one, which the
     # model did not have until this round: hire somebody. A tester spent five
