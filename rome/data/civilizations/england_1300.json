@@ -301,6 +301,19 @@
   "sea_sternpost_rudder"
  ],
  "state_capacity": 0.6,
+ "state_pressure": {
+  "_doc": "See rome_100ad.json's own state_pressure._doc for the shape this object takes and how society.py reads it.",
+  "requisition_name": "purveyance",
+  "requisition_note": "Purveyance let the Crown take goods and transport for the royal household at a fixed, below-market price, enforced by royal officers with the power of distraint; it was a standing grievance from Magna Carta's clause 28 onward, and a household with a visible surplus was exactly who the purveyor called on first.",
+  "requisition_base_share": 0.13,
+  "office_name": "the shrievalty",
+  "office_note": "Sheriffs and other unpaid county offices were pressed onto men of the right income, who then answered with their own estate for any shortfall in what the office owed the Exchequer - a burden substantial enough that wealthy men regularly paid fines specifically to be excused it.",
+  "office_base_share": 0.05,
+  "military_name": "the Crown's monopoly patents on arms",
+  "military_note": "Letters patent (in force here by 1331) let the Crown grant, and just as easily claim, exclusive rights over a trade it judged militarily useful; a founder casting a working gun attracts exactly that kind of royal interest.",
+  "confiscation_name": "attainder",
+  "confiscation_note": "Attainder stripped a condemned man of his property outright with no separate trial of the facts required after conviction - the Crown's sharpest tool against a subject who has become too large to simply tax."
+ },
  "urban_fraction": 0.12,
  "values": {
   "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, which had no doctrine to offend. Guilds resist labour-saving machinery violently and have legal standing to do it.",

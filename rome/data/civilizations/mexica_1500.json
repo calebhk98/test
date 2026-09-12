@@ -322,6 +322,19 @@
   "mat_obsidian_blade"
  ],
  "state_capacity": 0.8,
+ "state_pressure": {
+  "_doc": "See rome_100ad.json's own state_pressure._doc for the shape this object takes and how society.py reads it.",
+  "requisition_name": "the tribute of the calpixque",
+  "requisition_note": "The tlatoani's tribute collectors, the calpixque, assessed tribute in kind on a fixed schedule recorded in documents like the Codex Mendoza - cacao, featherwork, cloth, metal - and a calpulli producing more than its neighbours simply had a larger quota fixed on it, not a lighter one.",
+  "requisition_base_share": 0.22,
+  "office_name": "a cuauhpilli commission",
+  "office_note": "Commoners who distinguished themselves, especially in war, could be raised to the cuauhpilli, a service nobility that came with land and duties at once - an honour that was also a standing claim on the man's time and output for the state that raised him.",
+  "office_base_share": 0.05,
+  "military_name": "the tlatoani's armouries",
+  "military_note": "A producer of obsidian-edged weapons or featherwork armour at any scale was already supplying the macehualtin levies and the pochteca's own guarded caravans; the Triple Alliance's wars were frequent enough that such a workshop was never overlooked for long.",
+  "confiscation_name": "forfeiture to the tlatoani",
+  "confiscation_note": "Property of a noble disgraced or executed reverted to the tlatoani's own disposal; the theocratic hierarchy this file's own _note_eminence already names as dangerous to stand outside of is the same hierarchy that decides whether your holdings stay yours."
+ },
  "urban_fraction": 0.25,
  "values": {
   "_note": "w_religious_rigidity 0.9 is the dominant constraint: the calendar and the ritual cycle govern the year and anything touching them is dangerous. But an inexplicable effect is likelier to be read as divine favour than as a crime, so w_magic_fear is LOWER than Rome's, which is a genuinely different strategic situation.",

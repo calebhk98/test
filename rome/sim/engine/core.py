@@ -1698,6 +1698,17 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                                      "institution is what survives you"
                                  % (self.eminence, _danger)))
         self.update_protection()
+        # THE STATE NOTICES YOU. Requisition, the pressed office, a demand
+        # for military supply, and the tail confiscation risk at the top of
+        # the same scale - see SocietyMixin's own "THE STATE NOTICES YOU"
+        # section (society.py) for the whole mechanic. Run after
+        # update_protection() so this year's patronage and office standing
+        # are what requisition/confiscation actually bargain against, and
+        # before scandal/eminence below so a confiscation this mechanic
+        # causes and the eminence-driven one further down are never
+        # resolved in the same breath as two unrelated draws on the same
+        # stale numbers.
+        self._state_pressure(yr)
         self.scandal *= 0.90
         # Eminence accumulates in a SEPARATE pool, because bribery does not
         # touch it. You can buy a magistrate, an accuser and a jury. You cannot
