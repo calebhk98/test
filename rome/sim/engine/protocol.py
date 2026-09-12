@@ -103,7 +103,17 @@ def _waiting_on(s, nodes, k, st, bill):
     # "short" against the bigger, already-paid-down figure would name a
     # shortfall that no longer exists.
     lab_left = st.get("lab_left") or n["lab"]
-    short = []
+    # TWO DIFFERENT FACTS, NOT ONE. "this society can field 3.5 scribes" and
+    # "the scribes here can supply 8,750 but your other work has them booked"
+    # used to share one label, "nobody to do the work", and a player with
+    # one chemist left after attrition could not tell, in one glance, a
+    # shortage no amount of portfolio management would fix from one their
+    # OWN other projects were causing by outbidding this one for the same
+    # trade - which 'stop' on something else actually answers. Kept as two
+    # lists so the message - and _portfolio_constraint's classification of
+    # it, below - can tell them apart.
+    staffing_short = []
+    booked_short = []
     for t, want in (n["lab"] or {}).items():
         need = min(want / max(1.0, n["yrs"]), lab_left.get(t, want))
         if need <= 0:
@@ -116,14 +126,22 @@ def _waiting_on(s, nodes, k, st, bill):
             # changes every step. Say the first, and only mention the second
             # when it is what is actually binding.
             if supply < need:
-                short.append("%s (wants %.0f hours a year; this society can "
-                             "field %.0f at most)" % (t, need, max(0.0, supply)))
+                staffing_short.append(
+                    "%s (wants %.0f hours a year; this society can "
+                    "field %.0f at most)" % (t, need, max(0.0, supply)))
             else:
-                short.append("%s (wants %.0f hours a year; the %ss here can "
-                             "supply %.0f but your other work has them booked)"
-                             % (t, need, t, max(0.0, supply)))
-    if short:
-        return "nobody to do the work: " + "; ".join(sorted(short)[:3])
+                booked_short.append(
+                    "%s (wants %.0f hours a year; the %ss here can "
+                    "supply %.0f but your other work has them booked)"
+                    % (t, need, t, max(0.0, supply)))
+    if staffing_short:
+        return "nobody to do the work: " + "; ".join(sorted(staffing_short)[:3])
+    if booked_short:
+        # A DIFFERENT SENTENCE FOR A DIFFERENT REMEDY. The society CAN field
+        # this trade; it is your own other active work that has it booked.
+        # Teaching or hiring more does nothing here - 'portfolio' (the
+        # aggregate demand-vs-supply view) or stopping something else does.
+        return "trade hours already booked: " + "; ".join(sorted(booked_short)[:3])
     if st["ph_left"] <= 0 and bill > 0.5:
         # MONEY YOU HAVE IS NOT MONEY YOU ARE SHORT OF. step() pays at most one
         # year's instalment - the cost divided by the node's calendar floor -
@@ -145,6 +163,37 @@ def _waiting_on(s, nodes, k, st, bill):
                                         "{:,.0f}".format(per_year)))
     if st["ph_left"] <= 0:
         return "the calendar"
+    # MATERIALS. One economy-wide shortage (charcoal, iron ore, saltpetre...)
+    # scales EVERY active project's offered hours down by the same factor -
+    # see core.py step() 5, "per = ... * self.throttle" - so a project with
+    # founder-hours still to spend and nobody short on trade or money can
+    # still be making less of them than the pool alone would suggest, for a
+    # reason that is neither staffing, money nor the calendar. Only said when
+    # it is genuinely biting (2% is noise); resource_throttle() itself is the
+    # one place that number is computed, read here rather than re-derived.
+    _thr = s.resource_throttle()
+    if _thr < 0.98 and s.binding:
+        return ("materials: a shortage of %s has every project (this one "
+                "included) running at %d%% of the pace its hours alone "
+                "would allow; 'capacity' shows the shortfall"
+                % (s.binding, round(_thr * 100)))
+    # FOUNDER HOURS - AND WHY THIS MUCH OF THEM. Before this, a project
+    # sharing the pool with ten others and one sitting alone both said the
+    # identical "your hours", and a player who had already won the game
+    # asked for the difference in so many words: "This project is receiving
+    # 420 of your 25,000 available directed hours this year because 11
+    # active projects are sharing organizational attention." The numbers
+    # below are read from step()'s own bookkeeping (core.py, "pool_rank_
+    # this_year" and neighbours) - never recomputed - so this sentence and
+    # what actually happened cannot disagree.
+    _rank = st.get("pool_rank_this_year")
+    _count = st.get("pool_active_count_this_year")
+    _total = st.get("pool_total_this_year")
+    if _rank and _count and _count > 1:
+        return ("your hours: priority #%d of %d active projects sharing "
+                "this year's %s directed hours; 'portfolio' shows what "
+                "each one is getting and why"
+                % (_rank, _count, "{:,.0f}".format(_total or 0.0)))
     return "your hours"
 
 
@@ -506,25 +555,44 @@ def _agent_mines(s):
 
 
 def _portfolio_constraint(waiting):
-    """Which of the five things a project could be waiting on, from the
+    """Which of the SIX things a project could be waiting on, from the
     exact sentence _waiting_on already builds for `state` - a second
     classifier reading the same words back, not a second guess at what is
-    actually binding."""
+    actually binding.
+
+    Used to be five, with "nobody to do the work" covering both an absolute
+    staffing shortage and a trade your OWN other active work has booked -
+    two different facts with two different remedies, now two different
+    buckets (see _waiting_on's own comment on the split). "materials" is new
+    outright: a project can be short of nothing - staff, money, trade,
+    calendar - and still be making less progress than its hours alone would
+    buy, because the whole economy is throttled by one scarce input.
+    """
     if not isinstance(waiting, str):
         return "unclear"
     if waiting.startswith("nobody to do the work"):
         return "staffing"
+    if waiting.startswith("trade hours already booked"):
+        return "trade_hours"
+    if waiting.startswith("materials:"):
+        return "materials"
     if waiting.startswith("money") or "pace it can absorb money" in waiting:
         return "money"
     if waiting == "the calendar":
         return "calendar"
-    if waiting == "your hours":
-        return "your_own_attention"
+    if waiting == "your hours" or waiting.startswith("your hours:"):
+        return "founder_hours"
     return "unclear"
 
 
-_PORTFOLIO_ORDER = {"staffing": 0, "money": 1, "your_own_attention": 2,
-                    "calendar": 3, "unclear": 4}
+# ORDER A PLAYER SHOULD TRIAGE IN: the things only they can fix (staffing,
+# trade hours, money) before the things that are just the calendar or their
+# own queue running its course. "materials" sits with the other three
+# actionable causes - buy the woodland, sink the mine - ahead of the two
+# that are not really problems, only pace.
+_PORTFOLIO_ORDER = {"staffing": 0, "trade_hours": 1, "materials": 2,
+                    "money": 3, "founder_hours": 4, "calendar": 5,
+                    "unclear": 6}
 
 
 def _portfolio_rows(nodes, active_out):
@@ -544,6 +612,16 @@ def _portfolio_rows(nodes, active_out):
             "waiting_on": a.get("waiting_on"),
             "founder_hours_left": a.get("founder_hours_left"),
             "founder_hours_total": a.get("founder_hours_total"),
+            # READ, NOT RECOMPUTED. These four come straight off the same
+            # st dict step()'s own allocator loop wrote them to (core.py,
+            # "pool_total_this_year" and neighbours) - the actual share this
+            # project got this year, and why, never a second guess at it
+            # that could end up disagreeing with what was actually applied.
+            "hours_offered_this_year": a.get("hours_offered_this_year"),
+            "hours_effective_this_year": a.get("hours_effective_this_year"),
+            "pool_rank_this_year": a.get("pool_rank_this_year"),
+            "pool_active_count_this_year": a.get("pool_active_count_this_year"),
+            "pool_total_this_year": a.get("pool_total_this_year"),
             "years_in_progress": a.get("years_in_progress"),
             "calendar_years_left": round(
                 max(0.0, float(n["yrs"]) - float(a.get("years_in_progress") or 0.0)), 1),
@@ -598,6 +676,62 @@ def _spare_capacity(s, state_out):
                 "roughly how much more annual project spend you could "
                 "sustain going forward if it is positive, not cash sitting "
                 "idle today. 'money' shows how it is made up.",
+    }
+
+
+def _trade_demand_rows(s):
+    """trade_demand_vs_supply (projects.py), with the family a player
+    actually hires by attached and sorted worst-first - the aggregate
+    picture a player needs BEFORE committing to one more project that
+    shares a trade already oversubscribed: "the game reported 10,000-25,000
+    founder-hours free, while a project requiring only hundreds of hours
+    advanced very slowly because of the active portfolio" was never a
+    founder-hours problem at all in the run that said it; it was this.
+    """
+    rows = []
+    for t, d in s.trade_demand_vs_supply().items():
+        rows.append({
+            "trade": t, "trade_family": trade_family(t),
+            "demand_hours_this_year": d["demand_hours_this_year"],
+            "supply_hours_this_year": d["supply_hours_this_year"],
+            "oversubscribed": d["oversubscribed"],
+            "projects_drawing_on_it": d["projects_drawing_on_it"],
+        })
+    rows.sort(key=lambda r: (not r["oversubscribed"],
+                             r["supply_hours_this_year"] - r["demand_hours_this_year"]))
+    return rows
+
+
+def _agent_portfolio(s, nodes, cmd=None):
+    """The screen a player who had already won the game asked for four
+    separate times in one run: what every active project is actually
+    getting this year, why, and whether the portfolio as a whole is asking
+    its trades for more than they can give - all of it read back from the
+    allocator's own bookkeeping (core.py step(), projects.py trade_draw_
+    plan/trade_demand_vs_supply), never recomputed here.
+    """
+    state_out = _agent_state(s, nodes)
+    active_out = state_out.get("active") or {}
+    rows = _portfolio_rows(nodes, active_out)
+    pool_total = state_out.get("founder_hours_available")
+    count = len(active_out)
+    return {
+        "ok": True,
+        "active_project_count": count,
+        "founder_hours_available_this_year": pool_total,
+        "free_hours_going_unused": state_out.get("free_hours_going_unused"),
+        "projects": rows,
+        "trade_hours_demand_vs_supply": _trade_demand_rows(s),
+        "note": ("%d active project%s %s sharing this year's %s directed "
+                "hours; each row above shows what IT got and why. "
+                "'trade_hours_demand_vs_supply' is the same question for "
+                "every hired trade your portfolio draws on, summed across "
+                "all of them, before you commit to one more."
+                % (count, "" if count == 1 else "s",
+                   "is" if count == 1 else "are",
+                   "{:,.0f}".format(pool_total or 0.0))) if count else
+                "nothing active yet - 'available' or 'stuck' says what you "
+                "could begin today.",
     }
 
 
@@ -719,6 +853,49 @@ def render_capacity(out):
                 _fmt_num(sp.get("standing_net_per_year"))))
     if sp.get("free_hours_going_unused"):
         L.append(_wrap("  " + sp["free_hours_going_unused"]))
+    return "\n".join(L)
+
+
+def render_portfolio(out):
+    L = ["PROJECT PORTFOLIO"]
+    rows = out.get("projects") or []
+    L.append("  %d active project%s, %s founder-hours available this year"
+             % (out.get("active_project_count") or 0,
+                "" if out.get("active_project_count") == 1 else "s",
+                _fmt_num(out.get("founder_hours_available_this_year"))))
+    if rows:
+        for r in rows:
+            _rank = r.get("pool_rank_this_year")
+            _count = r.get("pool_active_count_this_year")
+            L.append("")
+            L.append("  %-28s [%s]" % (r["name"], r["constraint"].replace("_", " ")))
+            L.append("    this year: %s offered, %s effective, of %s hrs "
+                     "total to go%s"
+                     % (_fmt_num(r.get("hours_offered_this_year")),
+                        _fmt_num(r.get("hours_effective_this_year")),
+                        _fmt_num(r.get("founder_hours_total")),
+                        ("  (priority #%s of %s active)" % (_rank, _count))
+                        if _rank and _count else ""))
+            L.append(_wrap("waiting on: " + str(r.get("waiting_on")), indent="      "))
+    else:
+        L.append("  nothing in hand - 'available' or 'stuck' says what you "
+                 "could begin today")
+    trows = out.get("trade_hours_demand_vs_supply") or []
+    L.append("")
+    L.append("  TRADE-HOUR DEMAND VS SUPPLY THIS YEAR")
+    if trows:
+        for t in trows:
+            L.append("    %-14s demand %8s   supply %8s%s"
+                     % (t["trade"], _fmt_num(t["demand_hours_this_year"]),
+                        _fmt_num(t["supply_hours_this_year"]),
+                        ("   OVERSUBSCRIBED - queued: " +
+                         ", ".join(t["projects_drawing_on_it"][:3]))
+                        if t["oversubscribed"] else ""))
+    else:
+        L.append("    nothing active draws on a hired trade")
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
     return "\n".join(L)
 
 
@@ -1532,6 +1709,22 @@ def _agent_state(s, nodes, cmd=None):
                      # short - see hours_this_year for the whole year's picture.
                      "hours_offered_this_year": st.get("hours_offered_this_year", 0.0),
                      "hours_effective_this_year": st.get("hours_effective_this_year", 0.0),
+                     # WHY THIS MUCH, READ BACK FROM THE ALLOCATOR ITSELF.
+                     # core.py's step() (5. progress) writes these four onto
+                     # the same st dict as it decides each project's share of
+                     # the pool; `portfolio` and _waiting_on's own "your
+                     # hours" sentence both read them from here, so the share
+                     # a player is TOLD and the share that was actually
+                     # applied are the same number by construction, not by
+                     # agreement between two pieces of code that happen to
+                     # compute it the same way. None before the first step()
+                     # a fresh project has lived through.
+                     "pool_rank_this_year": st.get("pool_rank_this_year"),
+                     "pool_active_count_this_year":
+                         st.get("pool_active_count_this_year"),
+                     "pool_total_this_year": st.get("pool_total_this_year"),
+                     "pool_remaining_before_this_year":
+                         st.get("pool_remaining_before_this_year"),
                      "underfunded_this_year": st.get("underfunded_this_year", False),
                      # Only present when it is underfunded, and it says why: a
                      # playtester in deep arrears saw hours offered and none
@@ -4810,7 +5003,7 @@ _RENDERERS = {
     "stuck": render_stuck, "log": render_log, "history": render_log,
     "values": render_values, "rush": render_rush,
     "capacity": render_capacity, "industry": render_capacity,
-    "dashboard": render_capacity,
+    "dashboard": render_capacity, "portfolio": render_portfolio,
     "economy": render_economy, "changes": render_changes,
     "final": render_final, "score": render_score,
 }
@@ -5071,7 +5264,7 @@ KNOWN_COMMANDS = (
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
-    "capacity", "economy", "changes", "score",
+    "capacity", "economy", "changes", "score", "portfolio",
     "save", "load", "quit",
 )
 
@@ -5280,8 +5473,14 @@ def parse_typed(line):
     words = [w for w in rest if _typed_number(w) is None]
     nums = [_typed_number(w) for w in rest if _typed_number(w) is not None]
 
-    if op in ("money", "risk", "values", "quit", "score"):
+    if op in ("money", "values", "quit", "score"):
         return {"cmd": op}, None
+
+    if op == "risk":
+        # 'risk json' prints the raw reply - see 'portfolio json' and
+        # 'state json' just below for the same fix in the same family.
+        return {"cmd": "risk",
+               "json": "json" in [w.lower() for w in words]}, None
 
     if op == "rush":
         # 'rush' alone starts everything you could begin today; 'rush 5',
@@ -5324,9 +5523,17 @@ def parse_typed(line):
 
     if op == "state":
         # 'state full' and 'state full:true' both mean the same thing, and a
-        # player who has read the JSON docs will type the second.
-        want_full = bool(rest) and rest[0].lower().split(":")[0] == "full"
-        return {"cmd": "state", "full": want_full}, None
+        # player who has read the JSON docs will type the second. 'state
+        # json' (in any position, 'state full json' included) prints the
+        # raw reply instead of the rendered screen: every player of this
+        # game is an AI agent parsing text, and several have lost runs to
+        # parsing prose that was never meant to be machine-readable.
+        low_rest = [w.lower() for w in rest]
+        want_full = bool(rest) and low_rest[0].split(":")[0] == "full"
+        out = {"cmd": "state", "full": want_full}
+        if "json" in low_rest:
+            out["json"] = True
+        return out, None
 
     if op == "available":
         # 'available' alone is the digest. The rest are the same narrowings the
@@ -5508,6 +5715,17 @@ def parse_typed(line):
 
     if op == "capacity":
         return {"cmd": "capacity"}, None
+
+    if op == "portfolio":
+        # 'portfolio json' prints the raw reply instead of the rendered
+        # table - see _absorb_key_colons's own family of fixes for why this
+        # is scanned across all of `words`, not just rest[0]: a player typing
+        # 'portfolio json' after reading the JSON docs should not have that
+        # silently ignored the way 'state full' once would have been had it
+        # come second. Every player of this game is an AI agent parsing
+        # text, and prose is not a stable interface to parse.
+        return {"cmd": "portfolio",
+               "json": "json" in [w.lower() for w in words]}, None
 
     if op == "economy":
         return {"cmd": "economy", "full": "full" in [w.lower() for w in words]}, None
@@ -6105,6 +6323,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # higher one for the identical project a moment later, which is the exact
         # thing that commit's own message promised could not happen again.
         _impossible = []
+        _impossible_trades = set()
         _n0 = nodes[k]
         _frac0 = min(1.0, 1.0 / max(1.0, _n0["yrs"]))
         for _t, _want in (_n0["lab"] or {}).items():
@@ -6113,6 +6332,39 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 _impossible.append("%s (wants %.0f hours a year; this society can "
                                    "field %.0f at most)"
                                    % (_t, _need, max(0.0, s.hours_you_can_call_on(_t))))
+                _impossible_trades.add(_t)
+        # OVERSUBSCRIBED IS NOT THE SAME AS IMPOSSIBLE. The society may be
+        # able to field the trade this wants and STILL not have enough of
+        # it left once your own OTHER active work is already drawing on it
+        # - "the first workshop/lab sat at 60% until I stopped adding new
+        # work for a year", from a player who could not see this coming
+        # until it had already happened. trade_demand_vs_supply (projects.py)
+        # is the CURRENT portfolio's own demand, before this project is
+        # added; trade_draw_plan(k, None) is this project's own full want,
+        # since it has not started and so owes the whole thing. Same two
+        # calls `portfolio` makes to build the aggregate table - reused
+        # here, not re-derived, so `start`'s warning and `portfolio`'s own
+        # figures can never tell two different stories about the same year.
+        _demand_now = s.trade_demand_vs_supply()
+        _oversub = []
+        for _t, _p in s.trade_draw_plan(k, None).items():
+            if _t in _impossible_trades:
+                continue          # already said, and said more plainly
+            _supply = s.hours_you_can_call_on(_t)
+            if _supply <= 0:
+                continue
+            _existing = _demand_now.get(_t, {}).get("demand_hours_this_year", 0.0)
+            _competitors = len(_demand_now.get(_t, {}).get("projects_drawing_on_it", ()))
+            _new_total = _existing + _p["desired"]
+            if _new_total > _supply + 1e-6:
+                _oversub.append(
+                    "%s: this portfolio would want %s hours a year against "
+                    "%s this society can supply (%d other active project%s "
+                    "already drawing on it); this one competes for what is "
+                    "left, it does not get %s to itself"
+                    % (_t, "{:,.0f}".format(_new_total), "{:,.0f}".format(_supply),
+                       _competitors, "" if _competitors == 1 else "s",
+                       "{:,.0f}".format(_p["desired"])))
         ok, why = s.start_project(k)
         if not ok:
             return {"ok": False, "error": why}
@@ -6151,6 +6403,16 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        "this project. Quotes move with prices, the coinage and "
                        "what a material costs to get: a figure you read years "
                        "ago is not what you will pay."}
+        # SAID AT THE MOMENT OF COMMITMENT, NOT DISCOVERED 60% IN. A player
+        # who had already won the game found the first workshop/lab stalled
+        # at 60% "until I stopped adding new work for a year", with nothing
+        # at `start` time to have told them the trade they needed was
+        # already spoken for by their own other projects.
+        if _oversub:
+            out["this_oversubscribes_a_trade"] = (
+                "started - but %s. 'portfolio' shows the full demand-vs-"
+                "supply table before your next start"
+                % "; ".join(_oversub))
         # TAUGHT ONCE, AT THE MOMENT IT FIRST MATTERS. A blind playthrough
         # spent its whole early game treating one long calendar-floor project
         # as "the active research" and only discovered parallel play - running
@@ -6817,6 +7079,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op in ("capacity", "industry", "dashboard"):
         return _agent_capacity(s, nodes, cmd)
+
+    if op == "portfolio":
+        return _agent_portfolio(s, nodes, cmd)
 
     if op == "economy":
         return _agent_economy(s, cmd)
@@ -7538,6 +7803,54 @@ def _agent_dispatch_inner(s, nodes, cmd):
                              "%d. Ask for %d or fewer, or fewer still if you want "
                              "to see what happens on the way."
                              % (left, s.end_year, left)}
+        # WARN BEFORE, NOT AFTER, A MULTI-YEAR STEP WASTES HOURS. "Founder-
+        # hours do not bank. A player can have long calendar-floor projects
+        # running, use `step 5`, and unintentionally throw away thousands of
+        # usable founder-hours if they did not fill the portfolio first" -
+        # from a player who had already won the game. Checked against THIS
+        # year only, before any of the requested years run: free_hours_
+        # going_unused is the exact same test `state` already uses (every
+        # active project already calendar-locked, or nothing active at all,
+        # with a real pool still free) - read here, not recomputed, so this
+        # warning and that field can never disagree about what "idle" means.
+        # Non-blocking: it says so and proceeds, it does not refuse the step.
+        multi_year_hours_warning = None
+        if years > 1:
+            _pre_state = _agent_state(s, nodes)
+            _idle_note = _pre_state.get("free_hours_going_unused")
+            if _idle_note:
+                # A STARTABLE PROJECT HAS TO EXIST, or the warning would be
+                # telling a player to do something they cannot do. Early
+                # exit on the first hit - see `stuck`'s own _startable for
+                # the same full-tree scan, accepted there for the same
+                # reason: nothing cheaper tells you whether ANYTHING at all
+                # is startable right now.
+                _could_start = next(
+                    (x for x in nodes if x not in s.done and x not in s.active
+                     and s.can_start(x)), None)
+                if _could_start:
+                    # DOES IT ACTUALLY BANK? Checked against step()'s own
+                    # code, not assumed: core.py's step() computes `pool`
+                    # fresh every year from director_pool() minus this
+                    # year's commitments, and whatever of it 5b's wage-work
+                    # branch does not spend either is simply never written
+                    # anywhere - no field on `self` carries a "leftover
+                    # hours" balance into the next call. It does not partly
+                    # bank; it does not bank at all.
+                    multi_year_hours_warning = (
+                        "before stepping %d years: %s founder-hours this "
+                        "year are already going to waste, and '%s' is one "
+                        "thing you could start today that would use some of "
+                        "them. Founder-hours do not bank at all: step() "
+                        "draws a fresh pool every year, and what goes "
+                        "unused this year is simply gone, never carried "
+                        "into the next one - so 'step %d' spends this "
+                        "year's slack exactly as idle as it is right now, "
+                        "%d more times over, unless you start something "
+                        "first. Proceeding anyway."
+                        % (years, "{:,.0f}".format(
+                               _pre_state.get("founder_hours_available") or 0.0),
+                           nodes[_could_start]["name"], years, years))
         # LOST, not only completed. A normal-play tester lost fourteen finished
         # works inside a single `step 12` - among them corpus_written and
         # school_founded, which they called the pivot of the entire game - and
@@ -7656,6 +7969,8 @@ def _agent_dispatch_inner(s, nodes, cmd):
             out["the_founder_died_this_step"] = founder_died_this_step
         if stopped_early:
             out["stopped_early"] = stopped_early
+        if multi_year_hours_warning:
+            out["multi_year_hours_warning"] = multi_year_hours_warning
         out.update(_agent_state(s, nodes))
         return out
 

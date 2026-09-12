@@ -1791,6 +1791,90 @@ class ProjectsMixin:
         n = self.nodes[k]
         return max(40.0, float(n["yrs"]) * 4.0)
 
+    def _effective_lab_left(self, k, st):
+        """What is left of each hired trade's total for active project `k`,
+        read-only: never writes st["lab_left"], unlike lab_year_draw (the
+        only place that is allowed to initialise it for real, because doing
+        so is itself a decision - the guess below - that should happen once
+        per project, not once per caller that wants to look).
+
+        AN OLD SAVE NEVER TRACKED THIS FIELD. The best guess available is
+        that the same share of each trade's total is left as is left of the
+        founder-hours total - generous rather than punitive: a project nine
+        tenths done on its own hours is assumed nine tenths done on its
+        hired hours too, not reset to owing the lot.
+        """
+        lab_left = st.get("lab_left")
+        if lab_left is not None:
+            return lab_left
+        n = self.nodes[k]
+        _left_frac = min(1.0, st.get("ph_left", n["ph"]) / max(1.0, n["ph"]))
+        return {t: want * _left_frac for t, want in n["lab"].items()}
+
+    def trade_draw_plan(self, k, lab_left=None):
+        """What project `k` would like to draw from each hired trade this
+        year, if the trade could supply it without limit - the DEMAND side
+        of lab_year_draw's per-trade loop, read-only and with no knowledge of
+        what any OTHER project wants or what the trade can actually supply.
+
+        `lab_left` is what is left of each trade's total: None means a
+        project that has not started yet, so the full want is still owed.
+        For an active project pass self._effective_lab_left(k, st) (or
+        st["lab_left"] directly once lab_year_draw has initialised it).
+
+        lab_year_draw calls this for nominal/ceiling/left and then clamps
+        each trade to what it can actually supply this year (hours_you_can_
+        call_on minus what earlier-ranked projects already took) - the
+        SUPPLY side. Anything reporting the portfolio's aggregate demand
+        before that allocation runs (trade_demand_vs_supply below, and the
+        oversubscription check `start` runs before committing) calls this
+        the same way, so a forecast and the real allocator can disagree
+        about what a project GETS, never about what it WANTS.
+        """
+        n = self.nodes[k]
+        out = {}
+        for t, want in n["lab"].items():
+            left = want if lab_left is None else lab_left.get(t, 0.0)
+            if left <= 0 or want <= 0:
+                continue
+            nominal = want / max(1.0, n["yrs"])
+            ceiling = nominal * self.LAB_CREW_RATE_MULT
+            out[t] = {"nominal": nominal, "left": left, "ceiling": ceiling,
+                      "desired": min(left, ceiling)}
+        return out
+
+    def trade_demand_vs_supply(self):
+        """Aggregate, by hired trade: what this year's ACTIVE portfolio
+        wants from it (summed trade_draw_plan 'desired', the same demand
+        figure lab_year_draw is about to act on) against what the trade can
+        actually supply (hours_you_can_call_on) - read-only, so calling this
+        to look never changes what lab_year_draw later does.
+
+        A player who had already won the game asked for exactly this, to
+        see BEFORE committing to one more project: "the portfolio UI could
+        make aggregate trade-hour demand vs supply easier to see" - their
+        own run had one chemist left, 3,000 trade-hours a year, and a dozen
+        projects each quietly assuming they would get all of it.
+        """
+        demand = collections.defaultdict(float)
+        by_trade = collections.defaultdict(list)
+        # sorted(): this feeds float sums, and self.active is a dict whose
+        # key order depends on PYTHONHASHSEED.
+        for k in sorted(self.active):
+            st = self.active[k]
+            for t, p in self.trade_draw_plan(
+                    k, self._effective_lab_left(k, st)).items():
+                demand[t] += p["desired"]
+                by_trade[t].append(k)
+        out = {}
+        for t in sorted(demand):
+            supply = self.hours_you_can_call_on(t)
+            out[t] = {"demand_hours_this_year": round(demand[t], 1),
+                      "supply_hours_this_year": round(supply, 1),
+                      "oversubscribed": bool(demand[t] > supply + 1e-6),
+                      "projects_drawing_on_it": sorted(by_trade[t])}
+        return out
+
     def lab_year_draw(self, k, st, frac, hired_left):
         """This year's hired-labour draw for active project `k`.
 
@@ -1805,33 +1889,29 @@ class ProjectsMixin:
         because it ran out of calendar (see lab_max_span above).
 
         Mutates st["lab_left"] and self.trade_hours_used as a side effect,
-        exactly where the code this replaced did.
+        exactly where the code this replaced did. The DEMAND side of the
+        numbers below (nominal, ceiling, left) comes from trade_draw_plan,
+        the same read-only formula anything reporting on the portfolio before
+        this runs also calls - only the SUPPLY clamp (`have`) and the mutation
+        are done here, which is the real allocation and happens exactly once
+        a year, inside step().
         """
         n = self.nodes[k]
-        lab_left = st.get("lab_left")
-        if lab_left is None:
-            # AN OLD SAVE NEVER TRACKED THIS FIELD. The best guess available is
-            # that the same share of each trade's total is left as is left of
-            # the founder-hours total - generous rather than punitive: a
-            # project nine tenths done on its own hours is assumed nine tenths
-            # done on its hired hours too, not reset to owing the lot.
-            _left_frac = min(1.0, st.get("ph_left", n["ph"]) / max(1.0, n["ph"]))
-            lab_left = {t: want * _left_frac for t, want in n["lab"].items()}
-            st["lab_left"] = lab_left
+        if st.get("lab_left") is None:
+            st["lab_left"] = self._effective_lab_left(k, st)
+        lab_left = st["lab_left"]
         hh = 0.0
         worst = 1.0
-        for t, want in n["lab"].items():
-            left = lab_left.get(t, 0.0)
-            if left <= 0 or want <= 0:
-                continue
-            nominal = want / max(1.0, n["yrs"])
+        plan = self.trade_draw_plan(k, lab_left)
+        for t, p in plan.items():
+            left, nominal = p["left"], p["nominal"]
             have = max(0.0, self.hours_you_can_call_on(t)
                        - self.trade_hours_used.get(t, 0.0))
             # THE CEILING IS A CREW, NOT A CALENDAR, so take whatever of this
             # is both USEFUL (no more than is left to do) and AVAILABLE (no
             # more than the trade can actually supply this year), up to the
             # site's own headroom above its calibrated pace.
-            drawn = min(left, nominal * self.LAB_CREW_RATE_MULT, have)
+            drawn = min(left, p["ceiling"], have)
             lab_left[t] = max(0.0, left - drawn)
             self.trade_hours_used[t] = self.trade_hours_used.get(t, 0.0) + drawn
             hh += drawn

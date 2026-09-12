@@ -11388,6 +11388,369 @@ _fp_free = [k for k, n in NODES.items()
 check("the free capability nodes the hint exists for are still free: no "
       "cost, no hours, no years, no risk",
       len(_fp_free) >= 8, sorted(_fp_free))
+# =============================================================================
+# PROJECT SCHEDULING, MADE LEGIBLE. A player who had already won the game
+# raised this in four separate places across a 500-year run: founder-hours
+# reported as free while a cheap project crawled because of the active
+# portfolio; one workshop stuck at 60% for a year with no visible cause;
+# "waiting on your hours" hard to reconcile with the displayed free hours;
+# and trade-hour demand from a shrunk staff competing invisibly across a
+# dozen projects. Five things below, one per deliverable.
+# =============================================================================
+from engine.protocol import _agent_portfolio as _APORT, render_portfolio as _RPORT
+
+# --- 1. PER-PROJECT ALLOCATION, READ FROM THE ALLOCATOR ITSELF. core.py's
+# step() (5. progress) now writes pool_total/rank/active_count/remaining_
+# before onto each active project's own st dict AS IT DECIDES each one's
+# share, and _agent_state/`portfolio` read those fields back rather than
+# recomputing a share that could disagree with what was actually applied.
+# Two founder-hours-only institutions (no hired trade at all, so nothing
+# here is about staffing) share one pool: sc2_institution_doctorate started
+# second and so sits at the front of `order` - priority #1, offered its
+# full 150 hours against the WHOLE 2,000-hour pool; sc2_institution_
+# curriculum is priority #2, offered its 120 against what was left AFTER
+# the first one's share, 1,850.
+_s_alloc = sim(civ="rome_100ad", capital=5_000_000.0)
+_s_alloc.start_project("sc2_institution_curriculum")
+_s_alloc.start_project("sc2_institution_doctorate")
+_s_alloc.step()
+_st_doc = _s_alloc.active["sc2_institution_doctorate"]
+_st_cur = _s_alloc.active["sc2_institution_curriculum"]
+check("the allocator stores WHY a project got its share: pool total, this "
+      "project's rank in the queue, and how many active projects shared "
+      "the pool, all on the same st dict step() itself decided from",
+      _st_doc["pool_rank_this_year"] == 1 and _st_cur["pool_rank_this_year"] == 2
+      and _st_doc["pool_active_count_this_year"] == 2
+      and _st_cur["pool_active_count_this_year"] == 2
+      and _st_doc["pool_total_this_year"] == 2000.0,
+      (_st_doc, _st_cur))
+check("the higher-priority project's own share came off the FULL pool, and "
+      "the next one in line saw only what was left after it - the exact "
+      "arithmetic behind 'this project is receiving N of your M available "
+      "directed hours because K active projects are sharing attention'",
+      _st_doc["pool_remaining_before_this_year"] == 2000.0
+      and _st_cur["pool_remaining_before_this_year"]
+      == 2000.0 - _st_doc["hours_offered_this_year"]
+      and _st_doc["hours_offered_this_year"] == 150.0
+      and _st_cur["hours_offered_this_year"] == 120.0,
+      (_st_doc["pool_remaining_before_this_year"],
+       _st_cur["pool_remaining_before_this_year"]))
+_pf_alloc = S._agent_dispatch(_s_alloc, NODES, {"cmd": "portfolio"})
+_pf_rows = {r["id"]: r for r in _pf_alloc["projects"]}
+check("`portfolio` prints the SAME numbers the allocator stored - not a "
+      "second guess at them: displayed share and applied share can never "
+      "differ, because they are read from the identical st dict",
+      _pf_rows["sc2_institution_doctorate"]["hours_offered_this_year"]
+      == _st_doc["hours_offered_this_year"]
+      and _pf_rows["sc2_institution_doctorate"]["hours_effective_this_year"]
+      == _st_doc["hours_effective_this_year"]
+      and _pf_rows["sc2_institution_doctorate"]["pool_rank_this_year"]
+      == _st_doc["pool_rank_this_year"]
+      and _pf_rows["sc2_institution_curriculum"]["hours_offered_this_year"]
+      == _st_cur["hours_offered_this_year"],
+      _pf_rows)
+# THE SAME INVARIANT, THROUGH A JSON ROUND-TRIP - what an agent parsing
+# `portfolio json` actually receives, not the live Python dict.
+_pf_parsed = json.loads(json.dumps(_pf_alloc))
+_pf_parsed_rows = {r["id"]: r for r in _pf_parsed["projects"]}
+check("the same equality survives a real json.dumps/json.loads round trip",
+      _pf_parsed_rows["sc2_institution_doctorate"]["hours_offered_this_year"]
+      == _st_doc["hours_offered_this_year"],
+      _pf_parsed_rows["sc2_institution_doctorate"])
+
+# --- 2a. PER-TRADE DEMAND VS SUPPLY, AGGREGATED, BEFORE COMMITTING. "With
+# only one active chemist remaining after attrition, numerous projects
+# reached ~60% founder work but then stalled because their chemist-hours
+# were all competing for the same 3,000 annual trade-hours." Six chemist-
+# using projects, one shared trade, supply pinned to 1,500 - well under
+# what six projects each wanting hundreds of hours would want at once.
+_s_dem = sim(civ="rome_100ad", capital=5_000_000.0)
+_dem_targets = sorted(k for k in NODES
+                      if (NODES[k].get("lab") or {}).get("chemist"))[:6]
+for _k in _dem_targets:
+    _n = NODES[_k]
+    _s_dem.active[_k] = dict(ph_left=float(_n["ph"]), yrs=0.0, spent=0.0,
+                             cost_left=_s_dem.project_cost(_k),
+                             lab_left=dict(_n["lab"]))
+_dem_real_hycco = _s_dem.hours_you_can_call_on
+_s_dem.hours_you_can_call_on = (
+    lambda t, _r=_dem_real_hycco: 1500.0 if t == "chemist" else _r(t))
+# INDEPENDENTLY DERIVED, from trade_draw_plan (the same read-only formula
+# lab_year_draw itself uses for the demand side) called once per project -
+# not the aggregate function under test - so a break in the aggregation
+# loop shows up as a mismatch here.
+_expect_demand = sum(
+    _s_dem.trade_draw_plan(_k, None).get("chemist", {}).get("desired", 0.0)
+    for _k in _dem_targets)
+_dvs = _s_dem.trade_demand_vs_supply()
+check("trade_demand_vs_supply sums each active project's own read-only "
+      "demand for the trade, not a second, independently-guessed total",
+      abs(_dvs["chemist"]["demand_hours_this_year"] - _expect_demand) < 0.5,
+      (_dvs["chemist"]["demand_hours_this_year"], _expect_demand))
+check("...against what the trade can actually supply this year, and flags "
+      "the portfolio as oversubscribed on it when demand exceeds supply",
+      _dvs["chemist"]["supply_hours_this_year"] == 1500.0
+      and _dvs["chemist"]["oversubscribed"] is True
+      and _expect_demand > 1500.0, _dvs["chemist"])
+check("...and names every project actually drawing on it, so a player can "
+      "see which of their own projects are competing, not only that some "
+      "of them are",
+      set(_dvs["chemist"]["projects_drawing_on_it"]) == set(_dem_targets),
+      _dvs["chemist"]["projects_drawing_on_it"])
+_port_dem = _APORT(_s_dem, NODES)
+_port_dem_row = next(r for r in _port_dem["trade_hours_demand_vs_supply"]
+                     if r["trade"] == "chemist")
+check("`portfolio`'s own trade-demand table reads the identical numbers, "
+      "never a re-derived estimate that could disagree with them",
+      _port_dem_row["demand_hours_this_year"]
+      == _dvs["chemist"]["demand_hours_this_year"]
+      and _port_dem_row["oversubscribed"] == _dvs["chemist"]["oversubscribed"],
+      _port_dem_row)
+
+# --- 2b. THE SAME OVERSUBSCRIPTION, VISIBLE AT `start` ITSELF. "The first
+# workshop/lab sat at 60% until I stopped adding new work for a year" - a
+# player should not have to discover this 60% in. One chemist-needing
+# project already active and holding 80 of a pinned 150-hour chemist
+# supply; starting a second that alone would fit (100 <= 150) but not
+# alongside the first (80 + 100 > 150) must say so AT the moment of
+# commitment, not merely let it start silently and crawl.
+_s_over = sim(civ="rome_100ad", capital=5_000_000.0)
+_s_over.trades_created.add("chemist")
+_s_over.employees["chemist"] = 20.0
+_s_over._resync_pools()
+_over_real_hycco = _s_over.hours_you_can_call_on
+_s_over.hours_you_can_call_on = (
+    lambda t, _r=_over_real_hycco: 150.0 if t == "chemist" else _r(t))
+_ok_over, _why_over = _s_over.start_project("md2_local_anaesthesia")
+check("(setup) the first chemist-needing project starts cleanly on its own",
+      _ok_over, _why_over)
+_resp_over = S._agent_dispatch(_s_over, NODES,
+                               {"cmd": "start", "id": "md2_staining_methylene"})
+check("a `start` that would oversubscribe a trade says so in the "
+      "confirmation itself, naming the trade, the portfolio's new total "
+      "demand and what the trade can actually supply",
+      _resp_over.get("ok") is True
+      and "chemist" in (_resp_over.get("this_oversubscribes_a_trade") or "")
+      and "180" in _resp_over["this_oversubscribes_a_trade"]
+      and "150" in _resp_over["this_oversubscribes_a_trade"],
+      _resp_over.get("this_oversubscribes_a_trade"))
+check("...and it does not block the start - overcommitting is still the "
+      "player's call, only an informed one now",
+      "md2_staining_methylene" in _s_over.active, sorted(_s_over.active))
+
+# --- 3. FIVE PRECISE REASONS, NOT A BLURRED "NOBODY TO DO THE WORK". The
+# weak spot the player named was specifically the labour cases: an absolute
+# staffing shortage and a trade your OWN other work has booked used to
+# share one label and one remedy-less sentence.
+from engine.protocol import _portfolio_constraint as _PCON
+_s_staff = sim(civ="rome_100ad", capital=1e9)
+_staff_k = next(k for k in NODES if (NODES[k].get("lab") or {}).get("chemist"))
+_n_staff = NODES[_staff_k]
+_s_staff.active[_staff_k] = dict(ph_left=float(_n_staff["ph"]), yrs=0.0,
+                                 spent=0.0, cost_left=_s_staff.project_cost(_staff_k),
+                                 lab_left=dict(_n_staff["lab"]))
+_w_staff = _WO(_s_staff, NODES, _staff_k, _s_staff.active[_staff_k],
+              _s_staff.active[_staff_k]["cost_left"])
+check("an ABSOLUTE staffing shortage (this society can field none of the "
+      "trade at all) is its own precise reason",
+      _w_staff.startswith("nobody to do the work") and _PCON(_w_staff) == "staffing",
+      _w_staff)
+
+_s_book = sim(civ="rome_100ad", capital=1e9)
+_s_book.trades_created.add("chemist")
+_s_book.employees["chemist"] = 20.0
+_s_book._resync_pools()
+_n_book = NODES[_staff_k]
+_s_book.active[_staff_k] = dict(ph_left=float(_n_book["ph"]), yrs=0.0,
+                                spent=0.0, cost_left=_s_book.project_cost(_staff_k),
+                                lab_left=dict(_n_book["lab"]))
+_s_book.trade_hours_used["chemist"] = _s_book.hours_you_can_call_on("chemist") - 1.0
+_w_book = _WO(_s_book, NODES, _staff_k, _s_book.active[_staff_k],
+             _s_book.active[_staff_k]["cost_left"])
+check("a trade your OWN other active work has already booked - the society "
+      "CAN field it - is a DIFFERENT, distinctly-worded reason with a "
+      "different remedy (stop something else, do not go hire or teach)",
+      _w_book.startswith("trade hours already booked") and _PCON(_w_book) == "trade_hours"
+      and _w_book != _w_staff, _w_book)
+
+_s_mat = sim(civ="rome_100ad", capital=1e9)
+_s_mat.active["gunpowder"] = dict(
+    ph_left=float(NODES["gunpowder"]["ph"]), yrs=0.0, spent=0.0,
+    cost_left=_s_mat.project_cost("gunpowder"), lab_left=dict(NODES["gunpowder"]["lab"]))
+_w_mat = _WO(_s_mat, NODES, "gunpowder", _s_mat.active["gunpowder"],
+            _s_mat.active["gunpowder"]["cost_left"])
+check("a project short of nothing - staff, money, calendar - can still be "
+      "waiting on MATERIALS: one economy-wide shortage (here, saltpetre for "
+      "gunpowder) scales every project's hours down by the same factor, and "
+      "that is now a fifth, distinct, named reason",
+      _w_mat.startswith("materials:") and "saltpetre" in _w_mat
+      and _PCON(_w_mat) == "materials", _w_mat)
+check("calendar and money, the two the player already called clear, are "
+      "untouched by any of this",
+      _PCON("the calendar") == "calendar"
+      and _PCON("money: 40 still owed and this year's instalment of 10 is "
+               "more than you can raise") == "money", None)
+check("'your hours', enriched with the allocator's own rank/pool figures "
+      "(deliverable 1), still classifies as the founder-hours bucket",
+      _PCON("your hours") == "founder_hours"
+      and _PCON("your hours: priority #1 of 2 active projects sharing "
+               "this year's 2,000 directed hours; more") == "founder_hours",
+      None)
+
+# --- 4. WARN BEFORE A MULTI-YEAR STEP WASTES HOURS. "Founder-hours do not
+# bank. A player can have long calendar-floor projects running, use `step
+# 5`, and unintentionally throw away thousands of usable founder-hours if
+# they did not fill the portfolio first." Verified against step() itself,
+# not assumed: core.py computes `pool` fresh every year from director_pool()
+# minus this year's commitments (core.py step(), "4b. start new projects"),
+# and nothing on `self` ever carries a leftover balance into the next call -
+# it does not partly bank, it does not bank at all, which is exactly the
+# player's own assumption, so the warning below says so plainly rather than
+# hedging on a partial-banking case that does not exist.
+_s_idle = sim(civ="rome_100ad", capital=5_000_000.0)
+_s_idle.end_year = _s_idle.cfg["start_year"] + _s_idle.cfg["horizon_years"]
+_s_idle.start_project("sc2_institution_curriculum")
+_s_idle.start_project("sc2_institution_doctorate")
+_s_idle.step()
+_year_before_multi_step = _s_idle.year
+# CAPTURED BEFORE THE STEP RUNS. Once step(years=5) executes it changes the
+# pool this year's idle-hours figure was about; the warning has to be
+# checked against what the pool was BEFORE any of the five years ran.
+_pre_idle_hours = max(0.0, _s_idle.director_pool()
+                      - _s_idle.director_hours_committed())
+_resp_idle = S._agent_dispatch(_s_idle, NODES, {"cmd": "step", "years": 5})
+check("a multi-year step warns, up front, when this year alone already has "
+      "substantial founder-hours going to waste and something is genuinely "
+      "startable that could use them",
+      bool(_resp_idle.get("multi_year_hours_warning"))
+      and "founder-hours" in _resp_idle["multi_year_hours_warning"], _resp_idle.get("multi_year_hours_warning"))
+check("...names the actual number of hours at stake, read from the same "
+      "founder-hours-available figure `state` itself reports, not a second "
+      "guess at it",
+      "{:,.0f}".format(_pre_idle_hours) in (_resp_idle.get("multi_year_hours_warning") or ""),
+      (_pre_idle_hours, _resp_idle.get("multi_year_hours_warning")))
+check("...and says plainly that hours do not bank AT ALL, checked against "
+      "step()'s own code rather than repeated as an assumption",
+      "do not bank" in (_resp_idle.get("multi_year_hours_warning") or ""),
+      _resp_idle.get("multi_year_hours_warning"))
+check("it warns and proceeds - the years still actually run",
+      _resp_idle.get("ok") is True and _resp_idle["year"] > _year_before_multi_step,
+      _resp_idle.get("year"))
+_s_idle1 = sim(civ="rome_100ad", capital=5_000_000.0)
+_s_idle1.end_year = _s_idle1.cfg["start_year"] + _s_idle1.cfg["horizon_years"]
+_s_idle1.start_project("sc2_institution_curriculum")
+_s_idle1.start_project("sc2_institution_doctorate")
+_s_idle1.step()
+_resp_1yr = S._agent_dispatch(_s_idle1, NODES, {"cmd": "step", "years": 1})
+check("a single-year step never carries this warning - it exists only to "
+      "protect a MULTI-year request from spending the same idle year "
+      "more than once unnoticed",
+      _resp_1yr.get("multi_year_hours_warning") is None, _resp_1yr)
+
+# --- 5. MACHINE-READABLE OUTPUT MODES. Every player of this game is an AI
+# agent parsing text, and several have lost runs to parsing prose that was
+# never meant to be a machine interface.
+check("'state json'/'portfolio json'/'risk json' are understood by the "
+      "typed parser, in any position, alongside their existing modifiers",
+      _PT("state json")[0] == {"cmd": "state", "full": False, "json": True}
+      and _PT("state full json")[0] == {"cmd": "state", "full": True, "json": True}
+      and _PT("portfolio json")[0] == {"cmd": "portfolio", "json": True}
+      and _PT("portfolio")[0] == {"cmd": "portfolio", "json": False}
+      and _PT("risk json")[0] == {"cmd": "risk", "json": True}
+      and _PT("hazards json")[0] == {"cmd": "risk", "json": True},
+      (_PT("state json"), _PT("portfolio json"), _PT("risk json")))
+# THE JSON MUST NOT BE A FOG BYPASS. Reusing the exact same fogged founder
+# and hidden-node set the generic fog scanner above already built: the
+# JSON this session would emit for 'state json'/'portfolio json'/'risk
+# json' is exactly json.dumps(the same resp dict render_pretty renders), so
+# checking it here is checking the one shared source both paths read from.
+for _jc in ("state", "portfolio", "risk"):
+    _jresp = S._agent_dispatch(_fogscan, NODES, {"cmd": _jc})
+    _jtext = json.dumps(_jresp)
+    check("'%s json' parses as valid JSON" % _jc,
+          json.loads(_jtext) == _jresp, _jtext[:200])
+    _jtokens = set(_word_re.findall(_jtext))
+    _jleak = sorted(_fogscan_hidden & _jtokens)
+    _jprose = _RP(_jc, _jresp)
+    _jprose_leak = sorted(_fogscan_hidden & set(_word_re.findall(_jprose)))
+    check("a node this fogged founder has never heard of is absent from "
+          "'%s'`s JSON exactly as it is absent from its rendered prose "
+          "(both read the identical resp dict; the JSON is not a second, "
+          "unfiltered path)" % _jc,
+          not _jleak and not _jprose_leak,
+          (_jleak, _jprose_leak, _jc))
+
+# NO RENDERER MAY CRASH ON A RICH GAME. A player agent reported the readable
+# view of `state` and `step 1` vanishing entirely, replaced by "(could not
+# render a readable view of this reply: TypeError: can only concatenate str
+# (not \"dict\") to str)", once it had several projects running and several
+# concerns open. That was render_state appending staffing-warning DICTS as
+# bare strings, and it is fixed - but the class is the point: render_pretty
+# catches everything on purpose, so a formatter bug costs the formatting and
+# never the session, which is exactly why one can sit there unnoticed. The
+# suite had only ever called the engine methods directly, never the
+# renderers, which is how it survived. So: build a household rich enough to
+# populate every optional section, then render every op in the table.
+# THE STATE HAS TO ACTUALLY CARRY THE OPTIONAL SECTIONS, or this proves
+# nothing. A first version of this check built a busy household, rendered
+# everything, passed - and went on passing with the original bug put back,
+# because a busy household is not by itself a household whose concerns are
+# one artisan from closing, so render_state never reached the line that
+# crashed. Mutation-tested since: with the dict appended bare again, the
+# `state` entry below reports the apology and this check fails.
+_s_rr = sim(capital=400000.0)
+_s_rr.end_year = _s_rr.cfg["start_year"] + _s_rr.cfg["horizon_years"]
+_rr_cands = [k for k in sorted(NODES) if NODES[k].get("rev", 0) > 0][:30]
+_s_rr.done.update(_rr_cands)
+_s_rr._done_changed()
+_s_rr.artisans, _s_rr.scholars = 40.0, 10.0
+for _k in _rr_cands:
+    _s_rr.open_venture(_k)
+_rr_started = 0
+for _k in ORDER:
+    if _rr_started >= 6:
+        break
+    if _s_rr.start_reason(_k)[0]:
+        _s_rr.start_project(_k)
+        _rr_started += 1
+# one craftsman from closing something, which is the state that broke it
+_rr_sch_used, _rr_art_used = _s_rr.venture_staff_used()
+_s_rr.artisans = _rr_art_used - 0.6
+assert _s_rr.staffing_closure_warnings(), \
+    "the renderer sweep needs a live staffing warning or it proves nothing"
+
+_rr_cmds = {"state": {"cmd": "state"}, "step": None, "labour": {"cmd": "labour"},
+            "money": {"cmd": "money"}, "risk": {"cmd": "risk"},
+            "ventures": {"cmd": "ventures"}, "mines": {"cmd": "mines"},
+            "stuck": {"cmd": "stuck"}, "log": {"cmd": "log"},
+            "values": {"cmd": "values"}, "policy": {"cmd": "policy"},
+            "capacity": {"cmd": "capacity"}, "portfolio": {"cmd": "portfolio"},
+            "economy": {"cmd": "economy"}, "changes": {"cmd": "changes"},
+            "available": {"cmd": "available"}, "score": {"cmd": "score"}}
+_rr_broken = []
+for _op, _payload in sorted(_rr_cmds.items()):
+    if _payload is None:
+        continue
+    try:
+        _resp = S._agent_dispatch(_s_rr, NODES, _payload)
+    except Exception as _e:
+        _rr_broken.append((_op, "dispatch raised %s: %s" % (type(_e).__name__, _e)))
+        continue
+    _txt = _PROTO.render_pretty(_op, _resp)
+    if "could not render a readable view" in (_txt or ""):
+        _rr_broken.append((_op, _txt[:160]))
+check("every command's readable view renders on a household with projects "
+      "running, concerns open and staffing short - the state a player agent "
+      "was in when the whole annual report vanished behind a TypeError",
+      not _rr_broken, _rr_broken)
+
+# AND THE ONE THAT ACTUALLY BROKE, through the renderer rather than the engine
+# method, on a state where the warning is live.
+_rr_state = S._agent_dispatch(_s_rr, NODES, {"cmd": "state"})
+_rr_step = _PROTO.render_pretty("step", S._agent_dispatch(_s_rr, NODES,
+                                                          {"cmd": "step", "years": 1}))
+check("...including `step`, the other command the report named",
+      "could not render a readable view" not in (_rr_step or ""), _rr_step[:200])
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

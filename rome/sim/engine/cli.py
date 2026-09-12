@@ -903,7 +903,20 @@ def cmd_play(a):
         if session:
             save_state(s, session)
         try:
-            _text = render_pretty(cmd.get("cmd"), resp)
+            # 'state json' / 'portfolio json' / 'risk json': the raw reply,
+            # one line, instead of the rendered screen. Every player of this
+            # game is an AI agent parsing text, and several have lost runs
+            # to parsing a prose table that was never meant to be a machine
+            # interface - `agent` already gives a script this on every
+            # command; this is the same line, on demand, inside `play`. It
+            # is THE SAME resp dict `render_pretty` below would otherwise
+            # render, produced by the one dispatcher both paths call, so
+            # the prose and this JSON can never disagree about what
+            # happened, and fog is scrubbed exactly once, upstream of both.
+            if cmd.get("json"):
+                _text = json.dumps(resp)
+            else:
+                _text = render_pretty(cmd.get("cmd"), resp)
             _took = time.time() - _t0
             # Only when it is worth knowing. A tenth of a second on every line
             # is noise that would bury the one command that took nine seconds.
