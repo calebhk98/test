@@ -3081,6 +3081,28 @@ def _agent_available(s, nodes, cmd=None):
                                         % DEFAULT_AVAILABLE_LIMIT),
                "all of it at once": '{"cmd":"available","all":true} (large)'},
            "you_could_raise_for_a_project": round(purse, 1)}
+    # SAID ONCE, THE FIRST TIME THIS LIST IS EVEN LOOKED AT - not on every
+    # `available`, which would bury it in noise by the tenth call. "MOST
+    # RESTS ON THESE" is the one piece of unprompted advice this screen
+    # gives a brand-new player, and five different playtests of five
+    # different civilisations read it exactly as intended - as "start
+    # these" - and started two or three of the leverage items together on
+    # turn one. Each one was priced correctly and honestly on ITS OWN `why`
+    # screen; almost none of them earn anything even once finished and
+    # opened (see earns_per_year on the rows above), and a poor_scholar's
+    # opening capital does not cover two or three of them at once. That is
+    # not a reason to stop recommending them - they really are the spine
+    # of the tree - it is a reason to say, in the same breath, that they
+    # add up.
+    if leverage and not getattr(s, "_said_stack_caution", False):
+        s._said_stack_caution = True
+        # SHORT ON PURPOSE - this reply has a byte budget (see the "wall of
+        # text" check) and 'start' itself carries the full explanation once
+        # it actually matters (its own "total_committed_across_active_work"
+        # field). This is the pointer, not the essay.
+        out["stacking_several_is_the_trap"] = (
+            "each is priced fairly alone; most earn nothing even opened. "
+            "'start' warns with your real total once stacking is unsafe.")
     if fog and heard_block:
         out["heard_of_but_cannot_begin"] = heard_block
         if heard_more:
@@ -6547,6 +6569,58 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "take and sell what you are running - including things you "
                     "built long ago and had no debt against.",
             }
+        # THE AGGREGATE ANSWER, NOT A SECOND ONE. `on_credit` just above
+        # already answers "can THIS project be financed" - correctly - by
+        # comparing THIS project's own bill to cash on hand. What it cannot
+        # see is that other active work is drawing on the exact same cash at
+        # the exact same time: a Rome opening that started scientific_method
+        # (230) and then units_standards (444) read "you would borrow: 44"
+        # on the second start, because 444 against 400 capital IS only a
+        # 44-denarius gap taken alone - and then watched capital fall past
+        # -150 within the year, because scientific_method's own 230 still
+        # unpaid was drawing on the identical purse at the identical time.
+        # The forecast was not wrong about its own project; it was silent
+        # about everyone else already in hand. Every playtest of this
+        # opening hit some version of the same thing: two or three
+        # foundations, each priced honestly on its own screen, together
+        # asking for more than the household currently holds. This is that
+        # aggregate: committed_spend() (economy.py) is the exact same sum
+        # `money`'s "still_owed_on_work_in_hand" already prints, read here
+        # instead of re-totalled, and funding_capacity() is the identical
+        # number the un-manual director's own start heuristic already uses
+        # to avoid over-committing itself (step(), core.py) - given here as
+        # the real ceiling, not a second formula that could drift from it.
+        _committed = s.committed_spend()
+        _cash = max(0.0, s.capital)
+        if _committed > _cash and len(s.active) > 1:
+            _capacity = s.funding_capacity()
+            out["total_committed_across_active_work"] = {
+                "you_have_promised": round(_committed, 1),
+                "across_projects_in_hand": len(s.active),
+                "you_currently_hold": round(_cash, 1),
+                "likely_to_draw_on_credit_between_them": round(
+                    _committed - _cash, 1),
+                "your_real_ceiling_if_it_comes_to_that": round(_capacity, 1),
+                "what_this_means": (
+                    "not what this ONE project costs - the total still owed "
+                    "across all %d projects in hand at once, including this "
+                    "one, against what you actually hold right now. Above, "
+                    "'on_credit' priced only this project against your cash; "
+                    "your other work in hand draws on the same cash at the "
+                    "same time, so the real combined draw is bigger than "
+                    "that figure alone suggests. 'your_real_ceiling' is "
+                    "what funding_capacity() judges you could service in "
+                    "total before it stops being safe - cash, half your "
+                    "credit line, and about five years of what your "
+                    "standing income can spare - not a hard limit today. "
+                    "Individually affordable commitments can still be "
+                    "collectively ruinous; 'money' shows the same "
+                    "committed total, and 'portfolio' shows which projects "
+                    "it is spread across. This is a warning, not a "
+                    "refusal - taking on debt on purpose is a real choice "
+                    "the game lets you make."
+                    % len(s.active)),
+            }
         # WARN, DO NOT SILENTLY ACCEPT. start_reason() already refuses a trade
         # that does not exist AT ALL (see "THE TRADE HAS TO EXIST" there), but
         # trade_available() goes true the moment you call `train`, two years
@@ -6964,8 +7038,19 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "of_that_limit_you_have_used": (
                     "%d%%" % (100.0 * -s.capital / max(1e-9, s.credit_limit()))
                     if s.capital < 0 and s.credit_limit() > 0 else "none"),
-                "still_owed_on_work_in_hand": round(
-                    sum(st.get("cost_left") or 0.0 for st in s.active.values()), 1)}
+                # committed_spend(), NOT A SECOND SUM OF THE SAME FIELD - this
+                # used to total st["cost_left"] itself, inline, and 'start'
+                # needed the identical total for its own aggregate warning
+                # (see committed_spend()'s docstring, economy.py). One call,
+                # read from both places.
+                "still_owed_on_work_in_hand": round(s.committed_spend(), 1),
+                # THE OTHER HALF OF THE SAME QUESTION 'start' NOW WARNS ABOUT:
+                # what you have promised (just above) against what you can
+                # actually expect to have. See funding_capacity()'s own
+                # docstring for why this is the same number the un-manual
+                # director's own start heuristic already used to avoid
+                # over-committing itself.
+                "you_could_actually_fund_up_to": round(s.funding_capacity(), 1)}
 
     if op in ("stuck", "why_stuck", "blocked"):
         # THE QUESTION EVERY TESTER ASKED, in different words. "There's no 'why

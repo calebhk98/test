@@ -1190,12 +1190,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # years - then bled for four centuries. Every other net in this
                 # program was taught to count arrears; this one was missed
                 # because it is not a net, it is a budget.
-                fixed = (self.upkeep() + self.living_cost()
-                         + self.mine_operating_cost()
-                         + max(0.0, -self.capital) * self.debt_interest_rate())
-                room = (max(0.0, self.capital) + self.credit_limit() * 0.5
-                        + max(0.0, self.revenue() - fixed) * 5.0
-                        - sum(st.get("cost_left") or 0.0 for st in self.active.values()))
+                #
+                # funding_capacity()/committed_spend() (economy.py), NOT A
+                # SECOND COPY OF THIS FORMULA. This heuristic is where the
+                # formula was first worked out; it has since been factored
+                # out so the player-facing aggregate warning in `start`
+                # (protocol.py) answers the identical question with the
+                # identical number, rather than risking the two quietly
+                # drifting apart.
+                room = self.funding_capacity() - self.committed_spend()
                 if self.project_cost(k) > room:
                     continue
                 if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
@@ -1328,6 +1331,17 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # self.active before we would get to it. See the hours_this_year
         # summary this feeds, below the loop.
         hours_effective_total = 0.0
+        # NAMED, NOT JUST STORED ON THE PROJECT. `why_underfunded` (set below,
+        # in the arrears branch) answered "why is this stalled" when a player
+        # thought to ask `why` or `portfolio` - but a Rome playtester lost
+        # several turns of confusion before finding it, and wrote that the
+        # consequence "isn't obvious from any single screen... reads more
+        # like flavor than a mechanical warning". Founder-hours are the one
+        # resource that never banks: a year of them lost to arrears and never
+        # announced is the least fair thing a status screen can leave out.
+        # Collected here and logged once, after the loop, so a step that
+        # starves three projects at once gets one clear line, not three.
+        _arrears_hours_lost = []
         # WHY A PROJECT IS GETTING THE SHARE IT IS GETTING, STORED HERE AND
         # NOWHERE ELSE. A player who had already won the game asked for
         # exactly this: "this project is receiving 420 of your 25,000
@@ -1559,6 +1573,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                         "draw on, so the hours offered this year did almost "
                         "nothing" if self.capital < 0 else
                         "this year's instalment is more than the purse will bear")
+                    # SAY IT NOW, NOT ONLY WHEN ASKED. `why_underfunded` sits on
+                    # the project and answers the question if a player thinks
+                    # to check `why` or `portfolio` - but the founder-hours lost
+                    # here never come back, whatever the player does next, and
+                    # nothing prompted them to look. Recorded here (only the
+                    # arrears case, only if it actually cost real hours) and
+                    # logged once below, after the loop.
+                    if self.capital < 0 and give_back > 1.0:
+                        _arrears_hours_lost.append((k, round(give_back, 0)))
                 else:
                     st.pop("underfunded_this_year", None)
                     st.pop("why_underfunded", None)
@@ -1603,6 +1626,29 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     self._complete(k)
                 elif st["ph_left"] <= 0 and st["yrs"] >= floor and st["cost_left"] > 0.5:
                     st["waiting_on_money"] = True
+
+        # ARREARS COSTS YOU THE YEAR'S HOURS, NOT JUST THE MONEY - SAY SO. This
+        # is the Rome playtester's sharpest complaint: "the arrears mechanic
+        # silently wastes founder-hours, not just money", discovered only
+        # after several turns of a project sitting at "did almost nothing"
+        # with no explanation on the turn itself. Founder-hours are the one
+        # resource in this whole model that never banks (see step 5b and
+        # `state`'s free_hours_going_unused): a year of them lost silently is
+        # worse than a year of money lost, because money can be earned back
+        # on the same footing next year and this cannot be earned back at
+        # all. Named per project, so 'why <id>' and this line never disagree
+        # about which project or how much.
+        if _arrears_hours_lost:
+            _total_lost = sum(h for _, h in _arrears_hours_lost)
+            _names = ", ".join("%s (%s hr)" % (k, "{:,.0f}".format(h))
+                                for k, h in _arrears_hours_lost)
+            self.log.append((yr, "IN ARREARS: %s founder-hours meant for %s did "
+                                 "almost nothing this year, on top of the money "
+                                 "- that time does not come back, arrears or not. "
+                                 "'work' sells idle hours for wages instead of "
+                                 "losing them here; clearing the arrears is what "
+                                 "stops it happening again"
+                             % ("{:,.0f}".format(_total_lost), _names)))
 
         # Snapshot BEFORE 5b spends more of `remaining` on wage work: otherwise
         # offered_to_projects below double-counts wage hours as though they had

@@ -251,6 +251,51 @@ class EconomyMixin:
         serviceable = floor + max(0.0, earning) * 5.0
         return max(min(base, serviceable), floor) * self.price_index
 
+    def committed_spend(self):
+        """What is still owed, in total, across every project in hand at once.
+
+        Not any one project's own remaining bill - the SUM across all of
+        `active`, because they all draw on the same purse and the same
+        credit line. Half of the answer to "can I afford this", the other
+        half being funding_capacity() just below: a project's own `why`/
+        `start` forecast (protocol.py's "on_credit" block) already answers
+        whether THAT ONE project can be financed, honestly and correctly,
+        in isolation. It says nothing about what else is already in hand,
+        and every playtest of this opening found the same trap: two or
+        three foundation techs, each individually affordable and each
+        correctly priced on its own screen, stacked into a debt spiral
+        that nothing added up until the interest was already compounding.
+        """
+        return sum(st.get("cost_left") or 0.0 for st in self.active.values())
+
+    def funding_capacity(self):
+        """What you can actually expect to have to spend on projects.
+
+        Cash in hand, half the credit line (the rest stays in reserve
+        against ordinary running costs, the same half `spending_power`
+        holds back for anything that is not itself a `start`), and about
+        five years of whatever surplus the standing income can add once
+        fixed costs and today's arrears interest are paid. See
+        committed_spend() for what this is compared against: the aggregate
+        question is committed_spend() <= funding_capacity(), not any
+        single project's own cost against this number alone.
+
+        This formula already existed, doing this exact job, for the
+        un-manual director's own start heuristic (see step(), core.py) -
+        added there because the naive "three times capital plus six years
+        of gross revenue" heuristic let the optimizer commit to more than
+        a household could ever fund, the same mistake every human
+        playtester made once at the keyboard. Factored out here so the
+        player-facing aggregate warning (protocol.py's `start` handler)
+        uses the identical number rather than a second formula that could
+        quietly drift from it - one rule in two places is how a game like
+        this accumulates its worst bugs.
+        """
+        fixed = (self.upkeep() + self.living_cost() + self.mine_operating_cost()
+                 + max(0.0, -self.capital) * self.debt_interest_rate())
+        return (max(0.0, self.capital) + self.credit_limit() * 0.5
+                + max(0.0, self.revenue() - fixed) * 5.0)
+
     def shed_loss_makers(self, yr):
         """In arrears, stop maintaining anything that costs more than it returns.
 
