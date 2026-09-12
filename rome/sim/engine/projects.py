@@ -901,10 +901,29 @@ class ProjectsMixin:
         # return a third in their first year, and Rome logged "ABANDONED 1
         # works you could no longer maintain" two hundred and six times in five
         # hundred years. Half the credit line is the line: below it you can
-        # still open your way out, above it you are digging.
+        # still open your way out, above it you are digging - for an
+        # INSTITUTION, which is a standing bleed against money you do not yet
+        # have coming in (see the caps/scalable-growth guards right below,
+        # unchanged by what follows).
+        #
+        # A completed, ordinary, net-positive concern (`cands`, below) is a
+        # different thing, and measuring it as a household-debt question was
+        # the wrong quantity. A traced Rome run built `exp_trade_route_extend`
+        # - cost 4,800, net +1,700/year, capex to OPEN it a further 1,800 -
+        # by year 117, and this blanket return refused to so much as look at
+        # it for the next ~850 years because the household owed more than
+        # half its credit line, even though opening it would have cost 1,800
+        # against a line of several thousand and paid for itself within a
+        # year. Sunk capex earning nothing, forever, is worse for the
+        # household AND its creditors than letting it open. So: gate the
+        # INSTITUTIONS below on the household's arrears, same as always, but
+        # let an ordinary concern answer for itself - its own payback period,
+        # not the size of the hole it would be dug from - in the `cands` loop
+        # near the end of this function, which already refuses (via
+        # `open_venture`) anything whose capex it cannot actually raise or
+        # whose supervision it cannot actually staff.
         _room = max(0.0, self.capital) + self.credit_limit() * 0.5
-        if self.capital < 0 and -self.capital > self.credit_limit() * 0.5:
-            return []
+        _deep_arrears = self.capital < 0 and -self.capital > self.credit_limit() * 0.5
         # AND THE ONES WHOSE WORTH IS NOT AT THE DOOR. A school takes 2,500 a
         # year and hands back 800, so the margin test above shuts it out for
         # ever - and a school is where twelve of your scholars come from.
@@ -912,7 +931,12 @@ class ProjectsMixin:
         # strength of the capability, at a loss, provided the loss is one the
         # household can actually carry. Cheapest to keep first, so a poor
         # founder gets the workshop and the local patron before the academy.
-        caps = sorted((k for k in sorted(self.done)
+        # STILL NOTHING WHILE DEEP IN ARREARS: an institution is a standing
+        # bleed against revenue the household does not have, which is exactly
+        # the case the ABANDONED-206 history above warns about, and nothing in
+        # this paragraph is the bug this change is for.
+        caps = [] if _deep_arrears else sorted(
+                      (k for k in sorted(self.done)
                        if k in self.CAPABILITY_INSTITUTIONS
                        and k not in self.operating and self.is_venture(k)
                        and self.nodes[k]["rev"] <= self.nodes[k]["up"]),
@@ -986,7 +1010,7 @@ class ProjectsMixin:
         # place is actually full enough to want more room - a household with
         # 14 people is not short of a 12-place workshop, whatever it can
         # technically still borrow.
-        if _surplus > 0.01:
+        if _surplus > 0.01 and not _deep_arrears:
             for k in sorted(self.SCALABLE_INSTITUTIONS):
                 if k not in self.operating or _surplus <= 0.01:
                     continue
@@ -1011,6 +1035,18 @@ class ProjectsMixin:
                     opened.append(k)
                     _spent = max(0.0, per_unit) * step
                     _surplus -= _spent
+        # A CONCERN THAT PAYS FOR ITS OWN DOOR WITHIN A SEASON OR TWO IS NOT
+        # WHAT THE ABANDONED-206 HISTORY IS ABOUT. That history is ventures
+        # whose capex is large against their annual net - borrow to the hilt,
+        # and the debt outruns what they pay back before they even finish
+        # ramping up. A venture whose capex clears inside PAYBACK_LIMIT_YEARS
+        # is the opposite case: refusing it while deep in arrears leaves its
+        # capex sunk for nothing, which helps neither the household nor
+        # whoever it owes. `open_venture` still refuses, on its own numbers,
+        # anything whose capex cannot actually be raised or whose supervision
+        # cannot actually be staffed - this only widens what is even offered
+        # to it while the household is deep in arrears.
+        PAYBACK_LIMIT_YEARS = 3.0
         blocked = None
         for k in cands:
             # NO SECOND, STRICTER GATE. This broke out the moment capital went
@@ -1023,6 +1059,19 @@ class ProjectsMixin:
             # hundred years. open_venture already refuses what you cannot
             # raise, and a lender will advance against a shop with stock in it
             # as readily as against half-built work.
+            if _deep_arrears:
+                n = self.nodes[k]
+                _payback = self.venture_capex(k) / max(0.01, n["rev"] - n["up"])
+                if _payback > PAYBACK_LIMIT_YEARS:
+                    if blocked is None:
+                        blocked = (k, ("it would take %.1f years to pay for its "
+                                       "own doors, and nothing slower than %.0f "
+                                       "opens while you are this deep in arrears; "
+                                       "clear enough debt to cross half your "
+                                       "credit line, or wait for it to look "
+                                       "quicker against what you can raise"
+                                       % (_payback, PAYBACK_LIMIT_YEARS)))
+                    continue
             ok, why = self.open_venture(k)
             if ok:
                 opened.append(k)

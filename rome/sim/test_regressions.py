@@ -3625,6 +3625,51 @@ check("auto_open opens nothing it cannot pay the capex on",
 check("auto_open says why the best concern is still shut",
       any(_v in m for _, m in s_ao.log), [m for _, m in s_ao.log][:2])
 
+# --- BREAK: auto_open_ventures blanket-refused EVERYTHING once a household
+# owed more than half its credit line, including an already-completed,
+# already-earning ordinary concern whose capex it could raise many times over
+# and whose payback was months, not years. A traced Rome run built
+# exp_trade_route_extend (cost 4,800, net +1,700/year, capex to open a
+# further 1,800) by year 117 and then sat on it, unopened, for roughly 850
+# years for exactly this reason: sunk capex earning nothing, ever.
+s_deep = sim(capital=-50000.0)
+_short = "hom_lamp_argand"      # rev 400, up 8, capex ~31: weeks, not years
+assert NODES[_short]["rev"] > NODES[_short]["up"], _short
+s_deep.done.add(_short); s_deep._done_changed()
+_cl_deep = s_deep.credit_limit()
+check("the household in this check really is deep in arrears (over half its credit line)",
+      s_deep.capital < 0 and -s_deep.capital > _cl_deep * 0.5,
+      (s_deep.capital, _cl_deep))
+_opened_deep = s_deep.auto_open_ventures()
+check("a completed concern that pays for its own door within months opens "
+      "even while deep in arrears",
+      _short in _opened_deep, (_short, _opened_deep))
+
+# ...and a genuinely slow one - the shape the ABANDONED-206 history is
+# actually about - still does not, on the same deep-arrears household.
+s_deep2 = sim(capital=-50000.0)
+_long = "fin_stamp"             # rev 200, up 100, capex ~348: years to clear
+assert NODES[_long]["rev"] > NODES[_long]["up"], _long
+s_deep2.done.add(_long); s_deep2._done_changed()
+_opened_deep2 = s_deep2.auto_open_ventures()
+check("a completed concern that would take years to pay for its own door "
+      "still stays shut while deep in arrears",
+      _long not in _opened_deep2, (_long, _opened_deep2))
+check("...and the refusal names its own payback period and what would clear it",
+      any("pay for its own doors" in m and "clear enough debt" in m
+          for _, m in s_deep2.log),
+      [m for _, m in s_deep2.log])
+
+# ...and an INSTITUTION - which is what the original ABANDONED-206 regression
+# is actually about (a standing bleed against revenue you do not have) - stays
+# exactly as blocked as before: this change only widens what an ordinary,
+# already-earning concern is offered while deep in arrears, nothing else.
+s_deep3 = sim(capital=-50000.0)
+s_deep3.done.add("workshop_first"); s_deep3._done_changed()
+_opened_deep3 = s_deep3.auto_open_ventures()
+check("an institution still opens nothing while deep in arrears, exactly as before",
+      "workshop_first" not in _opened_deep3, _opened_deep3)
+
 # --- BREAK: `buy nitre`. Saltpetre is made, not mined, and there was no
 # command that made any: only step(), which took 5% of a MANUAL player's
 # capital every year they were short, silently.
