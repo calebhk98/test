@@ -10457,6 +10457,68 @@ check("the floor table itself is still there, still per-civilisation, and "
       and _CLI.DICE_FREE_FLOOR_YEARS.get("han_china_100ad") == 451,
       _CLI.DICE_FREE_FLOOR_YEARS)
 
+# RETRY LEARNING HAS TO SURVIVE A SAVE. failed_attempts drives
+# _retry_risk_multiplier and _retry_calendar_retain, and it was not in
+# SAVE_FIELDS, so every resume reset the household to "nothing has ever been
+# tried". The player who won the game reported repeated 45% failures with "no
+# strategic mitigation visible": the mitigation was there and the save
+# round-trip was deleting it.
+import collections as _coll
+from engine import protocol as _PROTO
+
+_fa_path = os.path.join(HERE, "_fa_roundtrip.json")
+_s_fa = sim()
+_s_fa.failed_attempts["zone_refining"] = 3
+_s_fa.shortages["iron"] = 7
+_risk_before = _s_fa.effective_risk("zone_refining")
+_cal_before = _s_fa._retry_calendar_retain("zone_refining")
+_PROTO.save_state(_s_fa, _fa_path)
+_s_fa2 = sim()
+_PROTO.load_state(_s_fa2, _fa_path)
+check("three failures on zone_refining still stand after a save and a "
+      "resume, so the next attempt is the 23.8% the learning bought and not "
+      "the bare 45%",
+      abs(_s_fa2.effective_risk("zone_refining") - _risk_before) < 1e-9
+      and abs(_s_fa2.effective_risk("zone_refining") - 0.2383) < 0.001,
+      (_risk_before, _s_fa2.effective_risk("zone_refining")))
+check("the calendar already spent on those attempts survives the resume too",
+      abs(_s_fa2._retry_calendar_retain("zone_refining") - _cal_before) < 1e-9
+      and _cal_before > 0.5,
+      (_cal_before, _s_fa2._retry_calendar_retain("zone_refining")))
+check("a resumed save can still count a NEW failure: the accumulators come "
+      "back as a defaultdict and a Counter, not as the plain dicts JSON "
+      "hands back, which would raise KeyError on the first += ",
+      (isinstance(_s_fa2.failed_attempts, _coll.defaultdict)
+       and isinstance(_s_fa2.shortages, _coll.Counter)),
+      (type(_s_fa2.failed_attempts).__name__, type(_s_fa2.shortages).__name__))
+_s_fa2.failed_attempts["never_seen_node"] += 1
+_s_fa2.shortages["never_seen_material"] += 1
+check("and incrementing an id the save never mentioned works rather than "
+      "raising",
+      _s_fa2.failed_attempts["never_seen_node"] == 1
+      and _s_fa2.shortages["never_seen_material"] == 1,
+      (dict(_s_fa2.failed_attempts), dict(_s_fa2.shortages)))
+check("the diagnostic shortage tally is continuous across a resume as well",
+      _s_fa2.shortages.get("iron") == 7, dict(_s_fa2.shortages))
+try:
+    os.remove(_fa_path)
+except OSError:
+    pass
+
+# AND THE CLASS, NOT JUST THE INSTANCE. Both fields that were missing are
+# accumulators - a defaultdict and a Counter that code does `+= 1` into - and
+# that is the shape of state most likely to be added without anyone
+# remembering the save contract. Any future one has to be saved or
+# deliberately named here, rather than silently resetting every resume.
+_NOT_SAVED_ON_PURPOSE = frozenset()
+_accum = {k for k, v in vars(sim()).items()
+          if isinstance(v, (_coll.defaultdict, _coll.Counter))}
+check("every accumulator a fresh Sim carries is either in SAVE_FIELDS or "
+      "listed as deliberately unsaved, so the next one added cannot quietly "
+      "reset on every resume the way retry learning did",
+      _accum <= (set(_PROTO.SAVE_FIELDS) | _NOT_SAVED_ON_PURPOSE),
+      sorted(_accum - (set(_PROTO.SAVE_FIELDS) | _NOT_SAVED_ON_PURPOSE)))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

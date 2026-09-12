@@ -7267,6 +7267,26 @@ SAVE_FIELDS = (
     # already handles by name ("nothing has been recorded yet"); it is not
     # backfilled, because there is nothing honest to backfill it from.
     "_dashboard_history",
+    # RETRY LEARNING, WHICH WAS BEING ERASED BY THE VERY ACT OF SAVING.
+    # failed_attempts is what _retry_risk_multiplier and
+    # _retry_calendar_retain are computed from (projects.py), so a node the
+    # household has failed three times faces 0.53 of its bare risk and banks
+    # 56.9% of the elapsed clock toward the next attempt. None of that was
+    # in this tuple, so it all reset to "nothing has ever been tried" on
+    # every resume: three failures on zone_refining went from a 23.8% next
+    # attempt back to the full 45%, and `why`'s own attempts_already_failed
+    # told the player 0 about a node they had failed six times. The player
+    # who won this game complained that repeated 45% failures had "no
+    # strategic mitigation visible" - the mitigation existed and the save
+    # round-trip was deleting it. A defaultdict comes back from JSON as a
+    # plain dict, which is promoted in load_state before anything adds to it.
+    #
+    # `shortages` is the same omission with far lower stakes: a diagnostic
+    # tally of which material bound in which year, read by `run`/`compare`'s
+    # cross-seed summary (cli.py) and by nothing that decides anything. It
+    # is here so that a resumed game's own record of what it has been short
+    # of is continuous, not because any mechanic reads it.
+    "failed_attempts", "shortages",
 )
 
 
@@ -7516,6 +7536,16 @@ def load_state(s, path):
         if isinstance(v, dict) and "__set__" in v:
             v = set(v["__set__"])
         setattr(s, f, v)
+    # PROMOTE THE ACCUMULATORS BACK, before anything adds to one. JSON has no
+    # defaultdict and no Counter, so the loop above has just put plain dicts
+    # where projects.py does `self.failed_attempts[k] += 1` and economy.py
+    # does `self.shortages[who] += 1`, both of which raise KeyError on a new
+    # key in a plain dict. Same shape as economy.py's own _material_stock
+    # promotion, done here rather than lazily because these two are written
+    # to directly rather than through an accessor.
+    s.failed_attempts = collections.defaultdict(
+        int, {k: int(v) for k, v in (getattr(s, "failed_attempts", None) or {}).items()})
+    s.shortages = collections.Counter(getattr(s, "shortages", None) or {})
     # A SAVE FROM BEFORE WORKINGS EXISTED still names real capacity, under
     # the old field name "mine_capacity" (one float per material - see
     # SAVE_FIELDS's own comment on "mines"). "mines" is not in SAVE_FIELDS
