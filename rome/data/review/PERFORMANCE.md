@@ -234,3 +234,196 @@ architectural change - a real accumulator with a real invalidation
 contract, not a one-line cache - and it is recommended, but not attempted
 in this pass, in favour of leaving four small, independent, easily-rebased
 commits behind instead of one large one that conflicts with everybody.
+
+## Addendum: `capability_factor()`, made incremental-by-invalidation
+
+A later pass picked this up once core.py, projects.py, economy.py and
+society.py were no longer being edited concurrently. Same method as
+above throughout: `cProfile` over `Sim.run()`, single seed, single trial,
+300 simulated years, `rome_100ad` on `planned_rome`, plus un-profiled wall
+clock on the same run, plus a single `--horizon 700` seed (no `--mc`, per
+the ground rule against sweeps) for the shape of the actually-reported
+problem.
+
+### The invalidation contract
+
+`self.done` already has one: `_done_changed()`, called by hand at every
+site that adds to or removes from `self.done`, clearing `self._done_seq`
+(`done_in_order()`'s cache). `self.granted` needed no separate signal: every
+site that adds to `self.granted` does so in the same breath as adding to
+`self.done` and calling `_done_changed()` (core.py x2, society.py x1 -
+checked by reading all three), and nothing ever removes from `granted`, so
+`_done_changed()` already covers it.
+
+`self.operating` had no signal at all, and is mutated (`.add`/`.discard`)
+from ten call sites, not nine as the estimate above had it - core.py (2),
+projects.py (5), economy.py (2), society.py (1) - plus three places that
+replace it wholesale (`self.operating = X`): a fresh `Sim.__init__`,
+`load_state`'s generic `setattr` loop, and one test.
+
+Two shapes were tried.
+
+**First: a property.** `self.operating` became a property backed by an
+`_InvalidatingSet` (a `set` subclass that calls a callback on every
+mutating method - `add`, `discard`, `remove`, `pop`, `clear`, `update`,
+`difference_update`, `intersection_update`, `symmetric_difference_update`,
+and the in-place operators), with the property's setter re-wrapping
+whatever was assigned so that whole-object replacement - `load_state` in
+particular - kept invalidating too. This is the same pattern `revealed`
+(engine/fog.py) already uses, for the same reason (a ratchet there, an
+invalidating cache here), and it is correct: every one of the nine-or-ten
+mutation sites started invalidating the cache automatically, with nothing
+added to any of them.
+
+Measured, it made the profiled run slower, not faster: **22.1s -> 27.5s**,
+44.2M -> 60.4M calls. `self.operating` turned out to be read - membership
+tests, iteration, `sorted(...)` - roughly **16.2 million times** in this
+one 300-year run (`_goods_category_state` and `goods_market_factor` alone
+account for most of that; `_goods_category_state` is fix #2 from the
+section above, and it is exactly as hot now as it was then). A property
+intercepts every one of those reads to protect a few thousand writes a
+run; the interception cost, paid 16.2M times, was far larger than what
+caching `capability_factor()` saved. Read `_operating_changed()`'s comment
+in economy.py for the full account - it is left in the source because the
+next person to reach for "just make it a property" should see the number
+that made this one turn back.
+
+**Second, and what is actually committed: a plain attribute holding an
+`_InvalidatingSet`.** Reads are exactly as fast as a plain `set` - `in`,
+iteration, `sorted()`, truthiness are the base class's own C-level methods,
+inherited unchanged, with no Python-level interception at all. Only the
+nine-or-ten call sites that actually mutate it pay anything, and what they
+pay is one attribute lookup and a comparison (`_fire()` only calls the
+callback when membership actually changed), a few thousand times a run.
+
+That leaves exactly the gap the property closed and the plain attribute
+does not: whole-object replacement. `Sim.__init__` needs nothing (there is
+nothing yet to invalidate). `load_state`'s generic `setattr(s, f, v)` loop
+(protocol.py) is the real one, and it is not always acting on a
+freshly-constructed `Sim` - `load` issued mid-session through the
+agent/play JSON protocol runs it against the *same* long-lived object a
+player goes on playing in, not a new one, so a `setattr` that silently
+downgrades `self.operating` to a plain, non-invalidating `set` would stay
+broken for the rest of that process's life, the first time anything after
+that `load` opened or closed a concern. `Sim._reset_operating()` closes
+that one door explicitly - re-wrap in a fresh `_InvalidatingSet`, invalidate
+once - called once from `load_state` right after its generic loop, instead
+of taxing sixteen million reads to guard a gap with exactly one entrance.
+
+`_done_changed()` was extended by one line (`self._cap_factor = None`) to
+invalidate `capability_factor()`'s cache too, since that function also
+filters by `self.done`/`self.granted`; a parallel `_operating_changed()`
+does the equivalent for `self.operating`, called automatically by the
+`_InvalidatingSet`, by nothing else, and by hand nowhere.
+
+### Why the cache holds a recomputed result, not a running total
+
+`capability_factor()` sums `n["rev"] * (1.0 + 0.25 * n["tier"])` over
+`done_in_order()` (a list, fixed order - this was already cached and
+already deterministic before this pass), filtered by `self.granted`/
+`self.operating`. An accumulator that added a node's weight in when it
+entered the sum and subtracted it when it left would be faster still, and
+was rejected: float addition is not associative, and the order nodes
+enter or leave `self.done`/`self.operating` at runtime (a tech finishing,
+a venture closing and later reopening, a sacking) is not the order
+`done_in_order()` walks them in. An incrementally-maintained total would
+therefore drift from a full recompute in its last bits over a long run -
+a behaviour change, not merely a speed one, exactly the risk the
+instructions for this pass called out by name. The cache instead holds the
+*result* of calling the exact same loop, in the exact same order, with the
+exact same arithmetic, recomputed whole on invalidation - bit-identical to
+calling the uncached version every time, by construction, while still
+turning ~17,000 calls into however many times `self.done`/`self.operating`
+actually change in a run (665 `_operating_changed` + 514 `_done_changed` =
+1,179 in this 300-year profile, not 17,000).
+
+### Profile: before -> after (300 simulated years, single seed)
+
+| | before | after |
+|---|---:|---:|
+| total calls | 44,215,157 | 44,200,317 |
+| total time (profiled) | 22.086s | 21.374s |
+| `capability_factor()` calls | 18,673 | 18,673 |
+| `capability_factor()` self time | 1.129s | 0.095s |
+| `capability_factor()` cumulative | 1.139s | 0.098s |
+| `_operating_changed`/`_done_changed` calls | - | 665 / 514 |
+
+`capability_factor()`'s own self time fell 92%; everything else in the hot
+path (`_goods_category_state`, `_goods_category_ratios`,
+`goods_market_factor`, `venture_ramp`, `credit_limit`, `living_cost`) is
+unchanged within measurement noise - this fix touches only
+`capability_factor()` and `self.operating`'s mutation sites, nothing it
+calls or is called by. Total call count barely moved (14,840 fewer calls,
+the difference between 18,673 cache-recomputes-that-would-have-happened
+and 1,179 that actually did, each one a handful of list/dict operations),
+which is the clearest evidence the plain-attribute `_InvalidatingSet`
+route has none of the property's per-read tax: nothing got cheaper to call
+that wasn't meant to, and nothing got more expensive either.
+
+Unprofiled wall clock, `simulator.py run --civ rome_100ad --strategy
+rome/sim/strategies/planned_rome.json --mc 1 --horizon 300 --seed 1`,
+mean of 3 runs each:
+
+```
+before: 7.45s
+after:  7.20s      (~3.4% faster)
+```
+
+On the actual reported shape of the problem - single seed, `--horizon
+700`, no `--mc`:
+
+```
+before: 131.3s, 150.1s   (mean 140.7s)
+after:  140.2s, 130.8s   (mean 135.5s)
+output: byte-for-byte identical in every run, before and after
+```
+
+This pair is noisy - the machine was shared with other agents running
+simulations concurrently throughout this measurement, per this project's
+own ground rules, and a single 700-year run is long enough (2-2.5 minutes)
+for that contention to swing a result by ten or more seconds either way,
+which is larger than this fix's true effect at this tree size. The mean
+across two runs each still lands in the same ~3-4% direction as the
+tighter, lower-noise 300-year measurement (3 repetitions, small spread);
+neither pair is large enough on its own to prove a precise percentage at
+horizon 700, but both agree on the sign. This fix was always expected to
+be smaller than the four it follows: the profile at the top of this
+document already shows `capability_factor()` at 1.1s of a 22s run, not the
+multi-second, quadratic-shaped costs fixes #2 and #4 removed - "plausibly
+the next-largest win" is what the closing section above called it, and a
+few percent on top of an already-fixed run is what it turned out to be.
+
+### Determinism
+
+Same seed (`--seed 1`), `--horizon 300`, run in separate processes under
+`PYTHONHASHSEED=1`, `999`, `555`, `777`, before this pass's changes and
+after: all six stdouts are byte-for-byte identical -
+md5 `2ec62257b694b65387edf6cb878fc2b3` in every case. The `--horizon 700`
+runs above were also diffed byte-for-byte against each other (before vs.
+after) and are identical despite the ten-digit swing in wall clock. No
+cache added here changes the order anything is summed in:
+`capability_factor()`'s cache holds the finished result of the same
+`done_in_order()` walk the uncached version did, not a total built by
+adding and subtracting pieces in a different order (see above).
+
+### What is still left on the table
+
+`revenue()`'s own loop still walks `done_in_order()` once per call,
+calling `venture_ramp()` and `goods_market_factor()` for every operating
+node every time - that part was deliberately not touched here, and is not
+simply cacheable the way `capability_factor()` was: `venture_ramp(k)`
+depends on `self.year` (it changes every single simulated year by
+definition, ramping a concern up over its first few years) and
+`goods_market_factor(k)` depends on the *whole current `operating` set in
+`k`'s category* (market saturation - opening a second concern in the same
+category changes the first one's figure too), not on `self.done`/
+`self.operating` membership alone. A cache keyed the way
+`capability_factor()`'s is would be wrong on any year nothing in `done`/
+`operating` changed but the calendar or a competing venture did - which is
+most years - the same trap `PERF_AUDIT.md` already declined for
+`start_reason`/`can_start`, for the identical reason. Revisiting that
+would need a cache keyed on `(self.year, frozenset of that category's
+operating members)` or similar, which is a real multi-key invalidation
+design, not a one-line extension of this one, and was left alone rather
+than risk getting a correctness-sensitive key wrong under the same
+instruction that governed this whole pass.

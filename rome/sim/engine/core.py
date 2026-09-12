@@ -10,7 +10,7 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    load_geography, load_resources)
 
 
-from .economy import EconomyMixin
+from .economy import EconomyMixin, _InvalidatingSet
 from .fog import FogMixin
 from .geography import GeographyMixin
 from .labour import LabourMixin
@@ -77,6 +77,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.capital = float(c["start_capital"]) * self.price_index
         self.done = set()
         self._done_seq = None
+        self._cap_factor = None   # capability_factor()'s cache; see economy.py
         self.training = []        # [[artisan_capacity, year_it_matures], ...]
         self.granted = set()      # held because the SOCIETY has it, not because you built it
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
@@ -119,7 +120,12 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # and upkeep follow this set and nothing else does. See is_venture and
         # open_venture in projects.py: completing the research used to start
         # paying you whether or not you ever opened the doors.
-        self.operating = set()
+        #
+        # An _InvalidatingSet (economy.py), not a plain set: every .add/
+        # .discard/.update/... invalidates capability_factor()'s cache
+        # through the object itself. See _operating_changed()'s comment in
+        # economy.py for why this is a set subclass and not a property.
+        self.operating = _InvalidatingSet(on_change=self._operating_changed)
         self.bondage_years_left = 0.0    # years of service still owed for a debt
         self.bondage_debt = 0.0
         self.credit_frozen_until = 0     # year until which nobody will fund new work

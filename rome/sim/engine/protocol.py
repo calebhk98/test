@@ -6305,6 +6305,16 @@ def load_state(s, path):
         if isinstance(v, dict) and "__set__" in v:
             v = set(v["__set__"])
         setattr(s, f, v)
+    # `operating` JUST WENT BACK TO BEING A PLAIN SET. The generic setattr
+    # above has no idea self.operating is normally an _InvalidatingSet (see
+    # economy.py) and replaced it with whatever plain `set(...)` came out of
+    # the save - correct in content, but silently unable to invalidate
+    # capability_factor()'s cache on any future .add/.discard. That is a
+    # real gap, not a theoretical one: `load` reached through the agent/play
+    # JSON protocol runs this against the SAME long-lived Sim a session goes
+    # on playing in, not a fresh one, and every open/close/mothball after
+    # this point mutates .operating directly. Re-wrap it, once, here.
+    s._reset_operating()
     # The game this save IS, not whatever the command line happened to say.
     if "_fog" in blob:
         s.fog = bool(blob["_fog"])
