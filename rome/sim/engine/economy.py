@@ -12,7 +12,7 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
                    STARTING_KITS, trade_family, closure, critical_path,
                    topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+                   load_geography, load_resources, hard_pre)
 from . import commodities as _commod
 
 
@@ -2469,6 +2469,341 @@ class EconomyMixin:
             out.add(("saltpetre", "nitre"))
         return out
 
+    # ---- electricity: a physical quantity, not a capability flag ----------
+    #
+    # THE GAP THIS CLOSES. cap_power_electric, cap_power_grid, cap_power_steam
+    # and cap_power_water are capability nodes whose own NAMES narrate a scale
+    # ("kW scale", "MW scale", "portable, hundreds of kW", "tens of kW on one
+    # shaft" - see tech_tree.json) and nothing anywhere ever turned that prose
+    # into a tracked watt. Two consequences, both real: a player who wanted a
+    # generation/demand/reserve-margin display could not be given one (the
+    # `capacity` command's power section said so outright), and - worse -
+    # electrolytic aluminium, the electric arc furnace, zone refining and a
+    # zinc smelter's own ancillary load all list `power_grid` in their `pre`
+    # and are charged nothing whatsoever for the electricity that prerequisite
+    # implies they need. The aluminium/rubber/etc. MATERIAL gating audit
+    # (MATERIAL_GATING.md) closed exactly this shape of hole for MATERIALS
+    # two days before this was written; this closes it for the one input
+    # that check does not see, because a material key has always been
+    # something `mat` can name and a watt never was.
+    #
+    # THE MODEL. Two sides, matched the way every other tracked commodity in
+    # this file is: GENERATION (a rated kW contributed by every prime-mover
+    # and generator node you have actually finished building - see
+    # generation_breakdown_kw) and DEMAND (a kW drawn by every operating or
+    # under-construction concern whose own prerequisite closure requires
+    # cap_power_electric, cap_power_grid, or the literal power_grid node -
+    # see _electricity_demand_kw). resource_throttle() below folds the two
+    # together into the SAME worst-binding-constraint arithmetic iron and
+    # copper already use, rather than inventing a second scarcity vocabulary:
+    # electricity can become `self.binding`, appears in `self.shortages` the
+    # same way "iron" or "saltpetre" already do, and reports itself through
+    # the same `throttle_binding`/`why` machinery. It does NOT go through the
+    # stock-banking half of that function (see the comment where it is
+    # folded in, below) because a rated kilowatt is a RATE, not an inventory:
+    # unlike a mine's unworked ore, a kilowatt of unused generating capacity
+    # this year does not stockpile for next year, and unlike every other
+    # tracked commodity, there is no market anywhere in this model that will
+    # sell you a shortfall of electricity - you either generated it or you
+    # did not.
+    #
+    # WHERE THE NUMBERS CAME FROM, AND WHERE THEY ARE A JUDGEMENT CALL.
+    #
+    # GENERATION: the tree's OWN cap_power_* names/notes state an order of
+    # magnitude, never an exact figure - "tens of kW", "kW scale", "hundreds
+    # of kW", "MW scale" (see POWER_ANCHOR_KW immediately below). Turning
+    # "tens" into 30, "hundreds" into 300 and "MW scale" into 3,000 is a
+    # judgement call, made explicitly here rather than smuggled into a bare
+    # number with no comment: each is the geometric-ish midpoint of the
+    # decade the tree's own prose names. cap_power_electric's "kW scale" is
+    # deliberately smaller than cap_power_water's "tens of kW", not a
+    # contradiction: cap_power_electric's own note is "one dynamo on the
+    # millpond shaft you already built... enough for arc lights,
+    # electroplating, a laboratory" - a small slice of an existing shaft's
+    # mechanical output diverted through a dynamo, not the shaft's whole
+    # output turned electrical. Every node in GENERATION_LOCAL_NODES/
+    # GENERATION_GRID_NODES/TRANSMISSION_NODES/MECHANICAL_PRIME_MOVER_CHAINS
+    # was found by grepping the whole tree for every node whose id, name or
+    # `cat` names a prime mover or an electrical generator (water_prime,
+    # steam_prime, electrical_gen, wind_prime, power_station, grid_operations,
+    # plus the dynamo/alternator family by name) - a closed, enumerable set
+    # today the way the 162 material keys MATERIAL_CHECKS started against
+    # never was, so curating it by hand here costs the same one line per
+    # future generation node that MATERIAL_CHECKS already costs per future
+    # tracked commodity. Deliberately EXCLUDED from that set: dynamo/
+    # alternator WINDING VARIANTS (el2_dynamo_series/shunt/compound_wound,
+    # el2_alternator_rotating_field) and small auxiliary machines (en_exciter,
+    # en_three_phase_gen, en_rotary_converter) - these refine or condition an
+    # existing generator's output (regulation, phase, AC/DC conversion) and
+    # do not represent a second, additional installation; counting them
+    # would double the same generator's rating for every regulation upgrade
+    # bought on top of it. Also excluded, for the mirror-image reason: the
+    # water-wheel/turbine and steam-turbine FAMILIES are each a linear
+    # upgrade chain at one site (undershot -> overshot -> breastshot ->
+    # poncelet -> fourneyron -> francis -> kaplan; impulse -> curtis ->
+    # reaction), not seven separate wheels - MECHANICAL_PRIME_MOVER_CHAINS
+    # reports whichever is the BEST one you have finished, not their sum,
+    # and (see generation_breakdown_kw's own note) is informational only:
+    # it is not summed into electrical generation at all, because a bare
+    # water wheel or steam turbine with no dynamo or alternator attached
+    # turns nothing electrical, and that gate is already the existing `pre`
+    # graph's job (dynamo's own prerequisites already include
+    # water_power_scale; en_alternator's already include cap_power_steam).
+    #
+    # DEMAND: only two nodes get an individually-researched, real-world-cited
+    # specific energy (ELECTRICAL_PROCESSES) - Hall-Heroult aluminium
+    # electrolysis (13-17 kWh per kg of aluminium, historical/modern range;
+    # applied to electrolysis_industrial's own bauxite_kg draw at a 4.5:1
+    # bauxite-to-aluminium mass ratio, Bayer process) and a submerged-arc
+    # ferroalloy/carbide furnace (several thousand kWh per tonne of product
+    # is the real range; applied to arc_furnace_ferroalloys' own iron_ore_kg
+    # draw at a simplifying 1:1 ore-to-product mass assumption, since the
+    # tree carries no separate output-mass field for this node - flagged
+    # here as the one approximation in this pair). Everything else this
+    # file found gated on cap_power_electric/cap_power_grid/power_grid in
+    # its own prerequisite closure (81 further nodes: workshop electronics,
+    # vacuum-tube and radio equipment, welding, battery charging, the
+    # semiconductor line itself, and zinc_industry_scale's own ancillary
+    # load, whose actual smelting energy is charcoal/coal-fired per its own
+    # note, not electrical - see GENERIC_ELECTRIC_LOAD_KW) gets ONE shared,
+    # flat, modest figure rather than a hand-picked number apiece - the same
+    # curate-the-important-cases-and-generalise-the-rest shape
+    # _generic_market_share/_generic_national_output_t_per_yr already use
+    # for materials, chosen so this file does not re-acquire the "13 hand-
+    # named commodities out of 162" gap COMMODITY_DYNAMISM.md measured, in a
+    # new unit.
+    #
+    # NOTES TOO VAGUE TO USE, NAMED HONESTLY: no node anywhere in the tree
+    # carries a wattage or an output-mass figure for zone_refining, mfg_
+    # anodising, met_electro_refining, or any of the mt2_*_electrolysis/
+    # electrowinning nodes - their own `mat` dicts name reagents (graphite,
+    # sulfuric acid, sulfur, lime) at bench-to-pilot quantities, not a
+    # product mass a specific-energy figure could be applied to
+    # defensibly. Each falls back to GENERIC_ELECTRIC_LOAD_KW rather than a
+    # number invented to look more precise than the data supports.
+    HOURS_PER_YEAR = 8760.0
+
+    POWER_ANCHOR_KW = {
+        "cap_power_water": 30.0,     # note: "tens of kW on one shaft"
+        "cap_power_electric": 10.0,  # note: "kW scale" (see the class
+                                      # comment above for why this is
+                                      # smaller than cap_power_water's own)
+        "cap_power_steam": 300.0,    # note: "portable, hundreds of kW"
+        "cap_power_grid": 3000.0,    # note: "MW scale"
+    }
+
+    # Standalone local generators: each an actual, distinct machine, so
+    # multiple different ones (a dynamo AND a wind generator) add.
+    GENERATION_LOCAL_NODES = {
+        "dynamo": "cap_power_electric",
+        "en_wind_electric": "cap_power_electric",
+        "en_alternator": "cap_power_steam",
+    }
+    # Grid-scale generating STATIONS (power_station category) - distinct
+    # from power_grid itself, which is transmission/distribution only (its
+    # own `pre` is wires, substations, transformers and steel; no generator
+    # anywhere in it - confirmed by reading it).
+    GENERATION_GRID_NODES = {
+        "en_hydroelectric_station": "cap_power_grid",
+        "en_thermal_station": "cap_power_grid",
+    }
+    TRANSMISSION_NODES = {
+        "power_grid": "cap_power_grid",
+    }
+    # Mechanical prime movers, informational only (see the class comment):
+    # each list is one upgrade CHAIN at a single site, so only the best
+    # member you have finished counts, never the sum of the chain.
+    MECHANICAL_PRIME_MOVER_CHAINS = {
+        "water": (("en_undershot_wheel", "en_overshot_wheel", "en_breastshot_wheel",
+                   "en_poncelet_wheel", "en_fourneyron_turbine", "en_francis_turbine",
+                   "en_kaplan_turbine", "en_pelton_wheel"), "cap_power_water"),
+        "steam": (("en_steam_turbine_impulse", "en_steam_turbine_curtis",
+                   "en_steam_turbine_reaction"), "cap_power_steam"),
+    }
+
+    def generation_breakdown_kw(self):
+        """What this civilisation can actually generate and transmit, in
+        real kilowatts, right now - local (workshop-scale) generation, grid-
+        scale generating stations, grid transmission capacity, and the best
+        mechanical prime mover on each site (informational; see the class
+        comment above for why mechanical power is never summed into
+        electrical generation directly). `total_kw` - local plus grid - is
+        what resource_throttle() checks electrical demand against.
+        """
+        local_kw = sum(self.POWER_ANCHOR_KW[tier]
+                       for nid, tier in sorted(self.GENERATION_LOCAL_NODES.items())
+                       if nid in self.done)
+        grid_kw = sum(self.POWER_ANCHOR_KW[tier]
+                     for nid, tier in sorted(self.GENERATION_GRID_NODES.items())
+                     if nid in self.done)
+        transmission_kw = sum(self.POWER_ANCHOR_KW[tier]
+                              for nid, tier in sorted(self.TRANSMISSION_NODES.items())
+                              if nid in self.done)
+        mechanical_kw = {}
+        for fam, (chain, tier) in sorted(self.MECHANICAL_PRIME_MOVER_CHAINS.items()):
+            mechanical_kw[fam] = (self.POWER_ANCHOR_KW[tier]
+                                  if any(nid in self.done for nid in chain) else 0.0)
+        return {
+            "local_kw": local_kw,
+            "grid_kw": grid_kw,
+            "transmission_kw": transmission_kw,
+            "mechanical_kw": mechanical_kw,
+            "total_kw": local_kw + grid_kw,
+        }
+
+    def generation_capacity_kw(self):
+        """The one number resource_throttle() needs: total_kw, cached."""
+        return self.generation_breakdown_kw()["total_kw"]
+
+    # Hall-Heroult aluminium electrolysis: 13-17 kWh/kg aluminium is the
+    # historical-to-modern range; 15 (the midpoint) is used. Bayer process
+    # bauxite yield is roughly 4-5 t bauxite per t aluminium (ore grade and
+    # process losses vary); 4.5 (the midpoint) is used, so the constant
+    # below is kWh per kg of BAUXITE (electrolysis_industrial's own `mat`
+    # key), not per kg of aluminium the tree never states a mass for.
+    ALUMINIUM_KWH_PER_KG = 15.0
+    BAUXITE_PER_ALUMINIUM_KG = 4.5
+    # Submerged-arc ferroalloy/carbide furnaces: several thousand kWh per
+    # tonne of product is the real range for this FAMILY of processes
+    # (ferrosilicon, ferrochrome, calcium carbide - all listed in
+    # arc_furnace_ferroalloys' own note) - far higher than plain scrap-steel
+    # EAF remelting (a few hundred kWh/t), because this node is specifically
+    # the carbide/ferroalloy family, not steel remelting. Applied to the
+    # node's own iron_ore_kg draw at a simplifying 1:1 ore-to-product mass
+    # assumption - the one approximation in this pair, disclosed because the
+    # tree carries no separate output-mass field for this node.
+    FERROALLOY_KWH_PER_KG_ORE = 5.0
+    # Anything else gated on cap_power_electric/cap_power_grid/power_grid
+    # that this file cannot characterise individually - a modest generic
+    # workshop load, the same order of magnitude as cap_power_electric's own
+    # anchor and a full order of magnitude under the two curated heavy loads
+    # above, so an uncharacterised node's demand is present but never
+    # dominant.
+    GENERIC_ELECTRIC_LOAD_KW = 15.0
+
+    ELECTRICAL_PROCESSES = {
+        "electrolysis_industrial": ("bauxite_kg",
+                                    ALUMINIUM_KWH_PER_KG / BAUXITE_PER_ALUMINIUM_KG),
+        "arc_furnace_ferroalloys": ("iron_ore_kg", FERROALLOY_KWH_PER_KG_ORE),
+    }
+
+    # cap_power_electric/cap_power_grid are the CAPABILITY flags; power_grid
+    # is the literal transmission node some tier-5 process nodes name in
+    # `pre` directly without ever naming the capability flag too (arc_
+    # furnace_ferroalloys, zinc_industry_scale - see the class comment).
+    # All three are treated as "this node needs generated electricity",
+    # because that is what each one actually means physically, regardless
+    # of which of the three a given node's author happened to write down.
+    _ELECTRICITY_GATE_TOKENS = frozenset(
+        {"cap_power_electric", "cap_power_grid", "power_grid"})
+
+    def _electricity_load_node_ids(self):
+        """Every node id whose own prerequisite closure needs generated
+        electricity - computed once, from self.nodes (the static tree, not
+        this run's state), and cached for the Sim's whole life; nothing
+        here changes as a run progresses. A single memoised recursion over
+        hard_pre(), not one closure() walk per candidate node: this file's
+        own MATERIAL_GATING precedent (a cycle-safe visited-set walk of the
+        whole tree once) is the reused shape, not the per-node closure()
+        calls _power_status/_material_capacity_rows make elsewhere for a
+        handful of rows at a time.
+        """
+        cached = getattr(self, "_electricity_load_ids_cache", None)
+        if cached is not None:
+            return cached
+        tokens = self._ELECTRICITY_GATE_TOKENS
+        memo = {}
+
+        def gated(k, on_stack):
+            if k in memo:
+                return memo[k]
+            if k in tokens:
+                memo[k] = True
+                return True
+            if k in on_stack or k not in self.nodes:
+                # Cycle guard: hard_pre's own single-option req_any edges are
+                # acyclic tree-wide (see closure()'s own comment), but this
+                # walk is defensive of that invariant rather than trusting
+                # it silently - an unexpected cycle answers "not gated"
+                # rather than recursing forever.
+                return False
+            on_stack.add(k)
+            result = any(gated(p, on_stack) for p in hard_pre(self.nodes, k))
+            on_stack.discard(k)
+            memo[k] = result
+            return result
+
+        # UPKEEP IS NOT THE TEST OF WHETHER WORK DRAWS POWER. This required
+        # up > 0 as a proxy for "a real installation rather than a technique",
+        # which was reasonable on its own and wrong in combination with an
+        # earlier decision: upkeep was deliberately stripped from 1,096
+        # technique nodes, because a technique is not a going concern you
+        # maintain. The two together hid 118 electricity-gated nodes that draw
+        # material - MORE than the 111 that were kept - including
+        # zone_refining, single_crystal and mfg_anodising, which are about as
+        # electrical as this tree gets and sit squarely on the road to the
+        # goal. A zone refiner melting a germanium boat by induction is
+        # consuming kilowatts whether or not the tree charges it rent.
+        #
+        # The upkeep test survives where it is genuinely the right question -
+        # see the caller, which applies it to the STANDING draw of something
+        # already built and running. Work in hand draws power because the work
+        # is happening, not because it pays rent.
+        ids = {k for k, n in self.nodes.items()
+              if n.get("mat") and gated(k, set())}
+        self._electricity_load_ids_cache = ids
+        return ids
+
+    def _node_annual_tonnes(self, k, mat_key):
+        """Tonnes/yr of mat_key ONE node draws, using the exact per-node
+        annualisation annual_material_demand() applies when it sums this
+        across every node in one pass - factored out so the curated
+        electrical processes below can ask for a single node's own draw
+        (electrolysis_industrial's bauxite, not the tree-wide bauxite total
+        - iron_ore_kg in particular is drawn by many non-electrical nodes,
+        and reusing the tree-wide total would attribute every blast furnace
+        and forge's ore to arc_furnace_ferroalloys' electric arc)."""
+        n = self.nodes.get(k)
+        if n is None:
+            return 0.0
+        q = float((n.get("mat") or {}).get(mat_key, 0.0))
+        if q <= 0:
+            return 0.0
+        span = max(1.0, float(n.get("build_yrs") or n.get("yrs") or 1.0))
+        if k in self.active:
+            return q / span / 1000.0
+        if k in self.done and float(n.get("up") or 0) > 0:
+            return 0.5 * q / span / 1000.0
+        return 0.0
+
+    def _electricity_demand_kw(self):
+        """Average continuous kW drawn by work in hand - the electrical
+        mirror of annual_material_demand(), in kilowatts instead of tonnes.
+        `sorted()` throughout: this feeds a float sum, and set/dict
+        iteration order is not guaranteed stable across PYTHONHASHSEED
+        values (see this file's own determinism convention elsewhere)."""
+        total = 0.0
+        curated = self.ELECTRICAL_PROCESSES
+        for k, (mat_key, kwh_per_kg) in sorted(curated.items()):
+            t_per_yr = self._node_annual_tonnes(k, mat_key)
+            if t_per_yr <= 0:
+                continue
+            total += (t_per_yr * 1000.0 * kwh_per_kg) / self.HOURS_PER_YEAR
+        for k in sorted(self._electricity_load_node_ids() - set(curated)):
+            n = self.nodes.get(k)
+            if n is None:
+                continue
+            if k in self.active:
+                total += self.GENERIC_ELECTRIC_LOAD_KW
+            elif (k in self.done and float(n.get("up") or 0) > 0
+                  and k in getattr(self, "operating", ())):
+                # STANDING draw, where upkeep IS the right question: a thing
+                # that costs nothing to keep is not an installation humming
+                # away in the background, and one that is built but shut draws
+                # nothing either.
+                total += 0.5 * self.GENERIC_ELECTRIC_LOAD_KW
+        return total
+
     def resource_throttle(self):
         """How much of this year's planned work the materials will actually support.
 
@@ -2504,13 +2839,29 @@ class EconomyMixin:
         # "...and stops once your own supply covers the need", which does
         # exactly that). Unchanged content means replaying the cached
         # (worst, who) is not a shortcut, it is the actual answer.
+        # ELECTRICITY. Computed here, not inside the stock loop below (see
+        # the class comment on _electricity_demand_kw/generation_breakdown_kw
+        # for why it never touches `stock`), but its have/need both have to
+        # be part of the signature: dynamo, en_alternator and the other
+        # generation nodes all carry mat={} (a capability/machine node, not
+        # a material purchase), so finishing one changes generation_capacity_
+        # kw without changing `industrial`/`lab`/mine_capacity/forest_ha/
+        # nitre_bed_m2/stock at all - the exact case the cache below would
+        # otherwise silently replay a now-stale (worst, who) for.
+        elec_need = self._electricity_demand_kw()
+        elec_have = self.generation_capacity_kw()
         sig = (tuple(sorted(industrial.items())), tuple(sorted(lab.items())),
                tuple(sorted(self.mine_capacity.items())), self.forest_ha,
-               self.nitre_bed_m2, tuple(sorted(stock.items())))
+               self.nitre_bed_m2, tuple(sorted(stock.items())),
+               elec_need, elec_have)
         if sig == getattr(self, "_stock_throttle_sig", None):
             self.throttle, self.binding = self._stock_throttle_cache
             return self.throttle
         worst, who = 1.0, None
+        if elec_need > 1e-9 and elec_have < elec_need:
+            f = max(0.05, elec_have / elec_need)
+            if f < worst:
+                worst, who = f, "electricity"
         all_tags = set(industrial) | set(lab) | self._own_production_tags()
         for emp_key, tag in sorted(all_tags):
             ind_need = industrial.get((emp_key, tag), 0.0)
@@ -2554,7 +2905,7 @@ class EconomyMixin:
         # it - so an immediate repeat call's sig (computed from that same,
         # now-settled stock) matches and replays rather than spending again.
         self._stock_throttle_sig = (sig[0], sig[1], sig[2], sig[3], sig[4],
-                                     tuple(sorted(stock.items())))
+                                     tuple(sorted(stock.items())), sig[6], sig[7])
         self._stock_throttle_cache = (worst, who)
         if who:
             self.shortages[who] += 1
