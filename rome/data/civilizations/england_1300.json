@@ -109,6 +109,13 @@
    "name": "The dearth of the 1590s",
    "note": "Four consecutive cold wet summers and failed harvests, 1594 to 1597. Grain prices roughly doubled; parish burial registers in the north-west, Cumberland and Westmorland in particular, show genuine famine mortality, while the south got off with high prices and hunger. The Poor Law of 1598, consolidated in 1601 and in force for two and a half centuries, is the state's answer to it. Modest here because it was regional, not national.",
    "staff_loss": 0.08,
+   "condition": {
+    "field": "staff_loss",
+    "requires_all": ["crop_rotation", "ag2_silage_silo"],
+    "outcome": "avert",
+    "met_message": "The dearth of the 1590s: four cold wet summers fail the harvest across the north, but fields that do not fail together and fodder kept through a bad winter mean your household does not go hungry for it.",
+    "unmet_message": "The dearth of the 1590s: your granary is open to a bad harvest the same way everyone else's is, and four in a row is exactly that."
+   },
    "years": [
     1594,
     1597
@@ -142,6 +149,13 @@
    "name": "The Great Fire of London",
    "note": "It began in Thomas Farriner's bakehouse in Pudding Lane in the small hours of 2 September 1666 and burned for four days: thirteen thousand two hundred houses, eighty-seven parish churches, the Royal Exchange, the Custom House and old St Paul's - about four fifths of the walled City. Fewer than a dozen deaths were recorded and almost every trade stock inside the walls was lost. It is modelled as a one-year sack risk rather than as a loss of staff because that is precisely what it did: it destroyed the site, the stock and the papers and left the people. The rebuilding acts of 1667 required brick and stone rather than timber, and the first fire insurance office opened in 1681, so this is a hazard that England answered.",
    "sack_chance": 0.2,
+   "condition": {
+    "field": "sack_chance",
+    "requires_all": ["civ_fireproofing"],
+    "outcome": "avert",
+    "met_message": "The Great Fire of London: Pudding Lane catches and thirteen thousand timber houses go with it, but your own premises are already the fire-resistant brick and stone the 1667 rebuilding acts will force on everyone else - the fire does not reach you.",
+    "unmet_message": "The Great Fire of London: your workshop is timber and thatch like the rest of the City, and on the night of 2 September 1666 that is exactly what burns."
+   },
    "years": [
     1666,
     1666
@@ -179,6 +193,13 @@
    "name": "The great frost and the dearth of 1740",
    "note": "The winter of 1739-40 is the coldest in the Central England Temperature series, which begins in 1659. The 1740 harvest failed across northern Europe, and 1741 was the worst peacetime mortality year of the English eighteenth century. In Ireland the same two years are the bliain an air, the year of the slaughter, in which something like a fifth to a quarter of the population died - proportionally worse than the famine of the 1840s, and much less remembered.",
    "staff_loss": 0.07,
+   "condition": {
+    "field": "staff_loss",
+    "requires_all": ["crop_rotation", "ag2_silage_silo"],
+    "outcome": "avert",
+    "met_message": "The great frost and the dearth of 1740: the coldest winter in the record fails the harvest from Ireland to the Baltic, but your fields rotate and your fodder is stored against exactly this, so the dearth does not reach your table.",
+    "unmet_message": "The great frost and the dearth of 1740: you still live one harvest at a time with nothing held against a bad year, and 1740 is the worst one in a century."
+   },
    "years": [
     1740,
     1741

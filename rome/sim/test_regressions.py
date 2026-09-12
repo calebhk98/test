@@ -5873,6 +5873,132 @@ check("halfway through a SECOND such technology's ramp, only half of its "
       "own gain has landed - the ramp does not dump the total on year one",
       abs(s6._pop_scale_base - (_base_pop + 0.02 + 0.01)) < 1e-6,
       s6._pop_scale_base)
+
+# =============================================================================
+# SEVERITY HONESTY: the words attached to a dated hazard must match `loss`,
+# the number the mitigation mechanic actually applied, never `raw`, the
+# hazard's own historical unmitigated figure - a player whose sanitation and
+# quarantine cut the Antonine plague's 28% down to a fraction of a percent
+# still read "(would have been -28%: ...)" glued onto the same sentence and
+# reasonably called it a catastrophe.
+def _plague_line(mitigated_nodes):
+    _s = sim(civ="rome_100ad", capital=1000000.0)
+    if mitigated_nodes:
+        run_it(_s, *mitigated_nodes)
+    _s.scholars, _s.artisans = 50.0, 200.0
+    for _t in list(_s.employees):
+        _s.employees[_t] = 50.0
+    _s.rng = random.Random(1)          # a seed that rolls the 32% plague check
+    _s.year = 165
+    _s._shocks(165)
+    return next((_m for _y, _m in _s.log if "Antonine plague" in _m), "")
+
+
+_HEAVY = ["sanitation_antisepsis", "med_quarantine_sanitation", "germ_theory",
+          "md2_isolation_hospital", "med_vaccination_progression",
+          "md2_vaccine_smallpox", "md2_vaccine_plague", "md2_vaccine_typhoid",
+          "md2_sand_filtration", "soap_hard", "med_nursing_profession",
+          "plague_preparedness", "crop_rotation", "ag2_silage_silo",
+          "fud_canning_appert_method"]
+_line_none = _plague_line([])
+_line_heavy = _plague_line(_HEAVY)
+_line_some = _plague_line(["sanitation_antisepsis", "med_quarantine_sanitation"])
+check("an unmitigated plague states its own historical rate plainly",
+      "staff -28%" in _line_none, _line_none)
+check("a heavily mitigated plague's OWN clause never re-quotes the "
+      "historical -28% as if it were the outcome - only the near-zero "
+      "figure the mechanic actually applied",
+      "held off almost entirely" in _line_heavy
+      and "would have been" not in _line_heavy
+      and "staff -28%" not in _line_heavy.split(".")[0],
+      _line_heavy)
+check("a partially mitigated plague is 'softened', not 'held off almost "
+      "entirely' and not silent about the hedge either",
+      "softened by" in _line_some, _line_some)
+check("the empire-wide toll is still told, in every case, as a separate "
+      "fact explicitly not the household's own experience",
+      all("Empire-wide, population -28%" in _l and "either way" in _l
+          for _l in (_line_none, _line_heavy, _line_some)),
+      (_line_none, _line_heavy, _line_some))
+
+# =============================================================================
+# HISTORICAL EVENTS ANSWER TO WHAT WAS ACTUALLY BUILT: a dated hazard whose
+# civilization file gives it a `condition` must fire as written, fire
+# altered, or be averted depending on live player state - and the player
+# must be told which, in every case. Political/religious/administrative
+# hazards carry no `condition` at all and are untouched by any of this (see
+# the civilization files' own reasoning); these are the ones that do.
+def _hazard(civname, hazard_name):
+    _c = S.load_civ(civname)
+    return next(h for h in _c["hazards"] if h["name"] == hazard_name)
+
+
+_rome_crossing = _hazard("rome_100ad", "The crossings, and the sack of Rome")
+_s_unmet = sim(civ="rome_100ad")
+_h_unmet = _s_unmet._resolve_hazard_condition(dict(_rome_crossing), 406, 406)
+check("Rome, dependent on the African grain fleet: the grain crisis of 439 "
+      "fires exactly as written",
+      _h_unmet.get("output_factor") == _rome_crossing["output_factor"]
+      and "grain fleet, so when Geiseric" in _s_unmet.log[0][1],
+      _s_unmet.log)
+_s_met = sim(civ="rome_100ad")
+run_it(_s_met, "endowment_land", "crop_rotation")
+_h_met = _s_met._resolve_hazard_condition(dict(_rome_crossing), 406, 406)
+check("...but a household that already feeds itself has its output_factor "
+      "hit from THIS hazard averted, told with the real cause, and its "
+      "sack risk and staff loss left alone",
+      "output_factor" not in _h_met
+      and "sack_chance" in _h_met and "staff_loss" in _h_met
+      and "never ate off that fleet" in _s_met.log[0][1],
+      _h_met)
+
+_rome_arab = _hazard("rome_100ad", "The Arab conquests close the Mediterranean")
+_s_met2 = sim(civ="rome_100ad")
+run_it(_s_met2, "endowment_land", "water_power_scale", "civ_road_paved")
+_h_met2 = _s_met2._resolve_hazard_condition(dict(_rome_arab), 634, 634)
+check("a household with its own land, power and roads is untouched when "
+      "the Mediterranean closes, and the society's commerce values field "
+      "is UNCHANGED by this (political attitude, not household ledger)",
+      "output_factor" not in _h_met2 and "values" in _h_met2
+      and _h_met2["values"] == _rome_arab["values"],
+      _h_met2)
+
+_en_dearth = _hazard("england_1300", "The dearth of the 1590s")
+_s_en_met = sim(civ="england_1300")
+run_it(_s_en_met, "crop_rotation", "ag2_silage_silo")
+_h_en_met = _s_en_met._resolve_hazard_condition(dict(_en_dearth), 1594, 1594)
+check("resilient farming averts the weather-driven 1590s dearth entirely",
+      "staff_loss" not in _h_en_met, _h_en_met)
+_s_en_unmet = sim(civ="england_1300")
+_h_en_unmet = _s_en_unmet._resolve_hazard_condition(dict(_en_dearth), 1594, 1594)
+check("...and without it, four failed harvests cost what they always did",
+      _h_en_unmet.get("staff_loss") == _en_dearth["staff_loss"],
+      _h_en_unmet)
+
+_en_fire = _hazard("england_1300", "The Great Fire of London")
+_s_fp = sim(civ="england_1300")
+run_it(_s_fp, "civ_fireproofing")
+_h_fp = _s_fp._resolve_hazard_condition(dict(_en_fire), 1666, 1666)
+check("fireproof construction averts the Great Fire's sack risk for a "
+      "household already built in brick and stone",
+      "sack_chance" not in _h_fp, _h_fp)
+
+_mx_war = _hazard("mexica_1500", "The wars of independence")
+_s_mx_met = sim(civ="mexica_1500")
+run_it(_s_mx_met, "met_mine_pumping")
+_h_mx_met = _s_mx_met._resolve_hazard_condition(dict(_mx_war), 1810, 1810)
+_mx_floor_met = 1.0 - (1.0 - _mx_war["output_factor"]) * 0.5
+check("a household with its own mine pumps is ALTERED, not fully spared, "
+      "by the wars of independence - the war itself still runs",
+      abs(_h_mx_met["output_factor"] - _mx_floor_met) < 1e-9
+      and "sack_chance" in _h_mx_met,
+      _h_mx_met)
+
+check("a hazard with no `condition` at all - Diocletian's reforms, the "
+      "purely political case - is untouched by any of this machinery",
+      "condition" not in _hazard("rome_100ad",
+                                 "Diocletian's reforms and the Price Edict"),
+      "ok")
 # =============================================================================
 # NAMES, NOT JUST IDS: testers found it jarring that `state` and `available`
 # print a human NAME ("Reaper-binder") while every command that acts on a
