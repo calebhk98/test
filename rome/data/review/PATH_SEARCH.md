@@ -550,6 +550,8 @@ rationale, not hidden.
 | dice-free, plain CPM order (`plan`, no search) | **1,119 AD / 1,019 years** | **551 AD / 451 years** |
 | dice-free, CPM + search (moves 1-2, scarce-trade relaxation) | 1,121 AD (one side branch pulled; no real change) | 551 AD (recognises success on round 0, no relaxation needed) |
 | dice-free, CPM + search + move 3 (`grow_supply`, this session's addition) | **1,119 AD - unchanged** (8 institutions tried, 0 kept) | **551 AD - unchanged** (no capital trap diagnosed; move 3 never triggers) |
+| + descendant-centrality tie-break (section 7) | **1,119 AD - unchanged** | **551 AD - unchanged** |
+| goal STARTABLE (167/168, the fixture's own milestone), same order | **1,115 AD / 1,015 years** | reaches full 168/168 at 551, so identical |
 
 **The search is not faster than the plain CPM order on this tree, for
 either civilisation, even with a genuine capacity-growing move added to
@@ -589,3 +591,72 @@ that comment does not say which strategy it measured, and Rome's own
 current. `engine/data.py` is not this module's file to correct; this is
 recorded here so whoever owns it next does not take that comment at face
 value either.
+
+## 7. A fuller account of the same player, and the sharper benchmark it sets
+
+The 434 AD fixture (section 4) turned out to be a checkpoint, not the end
+of that playthrough. The same player finished the run: goal completed **599
+AD**, 2,822 of 2,833 technologies (99.6% of the whole tree), 1.1 billion
+denarii, 691.7 employees, 89.8% general literacy, 168/168 road nodes -
+having deliberately delayed finishing the already-startable goal by 165
+years to keep building. Their own account of how they would script it
+sharpens the benchmark this report has to answer, and names three ideas
+this session tried against the current tree:
+
+- **Descendant centrality** ("a cheap isolated node is less valuable early
+  than a 2-year node unlocking fifteen branches"): implemented in
+  `planner.backward_plan` as a tie-break within a CPM slack band, using
+  `engine/data.py`'s own cached `downstream_count`, which costs nothing
+  extra to read. Tested against both civilisations at multiple horizons:
+  changes NEITHER Rome's nor Han's dice-free floor by a single year or a
+  single denarius. Section 4.4 already explains why - the early game's
+  throughput is capped by concurrent-project and credit limits, not by
+  which of a small handful of simultaneously-legal nodes gets preferred -
+  and this is a second, independent confirmation of that finding, this
+  time from a genuinely different and better-motivated ranking principle
+  than plain CPM slack. Kept anyway (see its own docstring): it is the
+  more honest ranking on its own terms and regresses nothing.
+
+- **Expected attempts** (`1/(1-p)` for a failure-prone node, so a
+  95%-failure import averages 20 attempts and should be started early and
+  retried opportunistically rather than saved for the end) and **a mop-up
+  set working backward from the horizon** are both real, well-reasoned
+  ideas about that player's OWN bottleneck - the last 11 of 2,833
+  technologies, mostly high-failure late-game imports started too late in
+  a run that was otherwise essentially finished. Neither one is reachable
+  by this module: both are properties of a run WITH the dice on (`p` is a
+  literal, seeded failure probability; a "mop-up" schedule is a plan
+  against a specific unlucky sequence of past failures), and `path_search.
+  py`'s whole method, by design and by this brief's own instruction, is
+  the dice-OFF measurement - `DetRNG.random()` always returns 1.0, so no
+  node in a dice-free trial ever fails at all, and there is no `p` for
+  `1/(1-p)` to be computed FROM. Applying either idea here would mean
+  quietly turning some risk back on inside a module whose entire point is
+  measuring the policy with the dice removed - exactly the kind of engine-
+  reaching change the brief asked this session to flag rather than make.
+  Recorded as future work for whichever module measures Rome WITH events
+  on (`compare`/`sweep`/`sensitivity`, none of which are this session's
+  files), not silently declined.
+
+### The sharper benchmark, answered plainly
+
+The brief's own correction: the player's goal was startable at 434 AD -
+**334 years**, not the 599 it took to actually finish, and the instrument
+this session is fixing should be measured against that number, not full
+completion. Measured directly (the same "closure minus the goal itself"
+reading section 4.1 already uses, on the dice-free trial `backward_plan` +
+`grow_supply` + descendant-centrality actually produces): the goal becomes
+startable at **year 1,115 - 1,015 years**, when `single_crystal`, the last
+of the closure's 167 non-goal nodes, finally completes. **The honest
+answer is no: this instrument, even with every move this session added and
+tested, does not get Rome to a startable goal within 350 years dice-free -
+it takes roughly three times as long as a real player, playing under fog,
+with real dice, on their SECOND attempt.** That is not a number this report
+tuned toward; it is what `single_crystal`'s own `done_year` says when the
+strategy this session actually ships is run out to where it stops
+changing. Section 4.3's diagnosis says exactly why a dice-free instrument
+measuring a fixed, ordered priority list cannot close a gap whose cause is
+the automatic optimizer's own reactive credit and labour behaviour, not
+the order of a list - and every move tried in sections 4.4, 4.5, 5 and this
+section, honestly measured rather than assumed, is additional evidence for
+that diagnosis, not against it.
