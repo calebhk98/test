@@ -232,4 +232,254 @@ baked into the scenario, all the way out to the World Wars, each with its
 own staff-loss/sack-chance percentages and a list of techs that would
 mitigate it - genuinely impressive scripted breadth for a text sim.
 
+## [1320-1346 AD] The iron/agriculture push, and a second, worse debt spiral
+
+Built met_bloomery_bog_iron (iron smelting - directly answers the
+England intro's "what is missing: cheap iron"). Opened it as a concern:
+420/yr. Then en_breastshot_wheel (a water-mill, 800/yr). Both together with
+the pawnshop pushed recurring net income from +28/yr up past +300/yr, which
+let me afford proper staff for the first time (hired a second smith, then a
+scholar).
+
+Ran into a SECOND, bigger debt spiral around 1336-1339: I fast-forwarded
+with `step 3` instead of stepping one year at a time (to save my own time,
+not the character's), and in that gap: the Hundred Years War started
+(scripted, historical, right on schedule for 1337) and cut trade/output to
+88%, my newly-trained engineer sat idle costing 688/yr wages with nothing
+to do, and interest compounded - by the time I looked again capital was
+-1,877 and recurring net was -757.5/yr. LESSON: multi-year `step N` is
+efficient but blind - if something like a war or a market shift lands
+inside the skipped span, you only find out after the fact and after
+several years of unseen compounding damage, rather than being able to
+react year 1. I'd tell the designers this is probably fine/intended (real
+history doesn't pause for you either), but it's worth flagging that a
+player optimizing for their OWN time (as I was, trying to cover more
+calendar in fewer commands) is pushed toward exactly the play style
+(multi-year blind stepping) that the debt-and-arrears system punishes
+hardest. Recovered by firing the idle engineer (cut -688/yr immediately)
+and grinding `work scholar 2000` for several years.
+
+Started crop_rotation (Legume rotation / three-field system) once solvent
+again - a 6-year-floor, 3,104p project, deliberately chosen for its huge
+quoted revenue (2,300-3,900/yr). This put me into a THIRD debt spiral
+(pace-limited at 517p/yr, so it dragged the whole 1336-1343 stretch), but
+it was worth it: once open, it alone earns 3,000/yr against 800 upkeep.
+
+Then the Black Death landed, 1348-1350, again exactly on the schedule the
+game told me on day one (15/48 years - I'm now 48 years in). Effect: "staff
+-38%, 898 gone with the trade that stopped. Empire-wide population -45% -
+wages stay dear for roughly the next 150 years". All three of my open
+concerns immediately flashed "has no spare craftsmen: losing just one more
+closes it outright" - a real, sudden crisis that took immediate hiring
+(hire smith 3) to avert losing ~2,780 pence/yr of income in one stroke.
+Also: for the first time a random "fire in the thatched lanes" hazard
+actually cost me money (277 pence) instead of the "destroyed nothing,
+because you were holding none" I'd seen a dozen times before - the flavour
+text is genuinely load-bearing, not decorative; it only bites once you own
+something exposed to it.
+
+Learned that HIRING (unlike starting a research project) needs cash IN
+HAND right now, not credit: `hire smith 2` was flatly REFUSED with
+"costs 495 pence in advance and you have -1697" while I was in debt, even
+though my credit limit had lots of headroom. Projects can run you into
+debt automatically; adding staff cannot. Distinct rule, easy to miss, and
+it bit me right when I most needed to hire (mid-crisis, no cash) - had to
+grind wages first, then hire.
+
+By 1350 the economy had genuinely transformed: revenue 4,411 pence/yr
+across crop_rotation (3,078), the water wheel (821), the bloomery (431),
+the pawnshop (308) and my own practice (239), against upkeep+wages+living
+costs of roughly the same. 15-16 technologies built.
+
+## [1350-1355 AD] Hit a real structural wall: the literacy ceiling
+
+Built identity_cover and patron_local (both "HOW MUCH RESTS ON THIS:
+almost everything", both pure standing/political unlocks with 0 revenue)
+specifically because newtonian_mechanics turned out to be gated behind
+them: trying to `start newtonian_mechanics` was flat REFUSED with "the
+state is wary of this (state interest -1.0); get at least a local patron
+first" - a political/social prerequisite that fog hadn't shown me until I
+had enough scholars to actually attempt the node. That was a genuine
+surprise: I assumed prerequisites were purely technical (other techs) but
+some are about your STANDING in society, checked separately from the
+tech-tree dependency graph.
+
+Got newtonian_mechanics built (1353) by hiring a 3rd scholar (had to fire a
+smith first purely to free a household-capacity slot - "household places:
+6.0 of 6.0 used" is a hard cap on live-in staff separate from the labour
+market's own per-trade ceiling). Checked `why em_theory` (the next node,
+clearly on the path toward the goal: em_theory -> quantum_solidstate_theory
+-> presumably the transistor eventually) and hit a wall that isn't about
+money at all: "needs 4 trained scholars, you have 3.0 ... literacy here
+will never let you HIRE more than 2.2" - i.e. I am at, or very near, the
+hard ceiling on how many scholars this whole KINGDOM can supply me, at any
+price, given current literacy. The only way past it is `school_founded`
+(12,650 pence, 4-year floor, "CALENDAR FLOOR is set by diffusion, not by
+construction: the economy needs roughly a generation... money cannot buy
+this down") or other literacy-raising tech (printing, paper, libraries).
+
+This is where I stopped: 1355 AD (55 years into a 500-year run), 17
+technologies built by me (148 total with the free starting set), a
+6-concern economy grossing ~4,400+ pence/yr, 3 scholars + 3 smiths on
+staff, reputation 11.4, and a clear, concrete, well-explained next
+objective (save ~12,650 pence and 4 calendar years for school_founded)
+that the game itself pointed me at rather than leaving me guessing.
+Session state is autosaved at
+/root/.rome-saves/england_1300_4.json and resumable with
+`python3 rome/sim/simulator.py play --session /root/.rome-saves/england_1300_4.json`.
+
+======================================================================
+# FINAL SUMMARY - how far I got, what stopped me, what I'd change
+
+## How far I got
+
+Played from the main menu through full setup (England/1300 AD, fog of war
+ON, poor_scholar start, mortality off, goal = the flagship "Grown and alloy
+junction transistors", Standard 500-year horizon) to **1355 AD, i.e. 55
+years of a 500-year run**, entirely through the game's own text interface,
+no source reading.
+
+End-of-session state:
+- 17 technologies built personally (148 total counting the 131 granted
+  free at setup)
+- 6 open economic "concerns": a pawnshop, a bloomery iron works, a
+  breastshot water wheel, a three-field crop-rotation farming system, a
+  respectable cover identity, and a local patron - plus my starting
+  medical practice
+- Recurring revenue around 4,400+ pence/yr, roughly breakeven net at the
+  moment I stopped (had just spent down cash hiring a third scholar)
+- Staff: 3 scholars (counting myself) and 4 craft hands (myself + 3
+  smiths)
+- Reputation 11.4, protection 31%, scandal 0.42 (safely under the danger
+  threshold of 25), eminence 0.13
+- Survived, on schedule, both historical hazards the game told me about on
+  day one: the Great Famine (1315) and the Black Death (1348-1350, which
+  cost me 38% of staff and forced emergency hiring to save three concerns
+  from auto-closing)
+- Currently mid-way along what looks like the correct physics spine toward
+  the goal: scientific_method -> arithmetic_positional -> geometry_analytic
+  -> algebra_symbolic -> calculus -> newtonian_mechanics (built) -> em_theory
+  -> quantum_solidstate_theory (both still ahead)
+
+## What stopped me
+
+Two things, one practical and one structural:
+
+1. **Practical**: this was a long, deliberately-paced playtest and I chose
+   to stop at a natural checkpoint rather than push further, once I'd
+   exercised most of the game's major systems (research, concerns/
+   businesses, hiring/firing/training, debt and credit, scandal/eminence/
+   protection, the labour-market supply ceiling, household-capacity caps,
+   scripted historical hazards, political/standing-gated prerequisites,
+   and the scoring rubric) and had solid, representative notes on each.
+
+2. **Structural, and this is the real "stopped here"**: the next node on
+   the path to the goal, em_theory, is blocked not by money or by my own
+   founder-hours but by a hard **literacy ceiling** - "you have 3.0
+   [scholars], literacy here will never let you HIRE more than 2.2" - i.e.
+   Edward I's England, at its current state of literacy, cannot supply me
+   a 4th scholar at any price. The only way past that is school_founded
+   (12,650 pence, a 4-year floor set by "diffusion, not construction" that
+   money cannot buy down) or other literacy-raising tech. That's a
+   genuine, well-telegraphed economic/demographic wall, not a bug or a
+   dead end - the game clearly wants you to go build the big, slow
+   institutional project next. I stopped right at the point of taking that
+   decision, having banked enough understanding of the economy to know it
+   was achievable (my income comfortably covers it within a handful of
+   years of saving) but not yet having spent the in-game years to get
+   there.
+
+I never hit a hard game-over, was never denounced for scandal, never had
+a concern actually close on me (came close twice - "no spare craftsmen,
+losing just one more closes it outright" - and both times caught it with
+emergency hiring in time), and never ran past the credit ceiling.
+
+## What I'd tell the people who made it
+
+**What works very well:**
+- The economic model is genuinely coherent and forces real trade-offs:
+  every "start" has a visible calendar floor, hour cost, money cost,
+  failure risk and (crucially) a pre-commitment credit forecast that
+  literally tells you "you would borrow X, you would then owe Y" before
+  you commit. I made debt-spiral mistakes anyway, but every single time
+  the information to avoid them had already been shown to me - that's
+  good, honest design, and my mistakes are on me, not on missing
+  information.
+- The historical hazard timeline (`risk`) is remarkable - the Great
+  Famine and Black Death landed on their real historical years, with
+  believable, sourced-feeling effects (staff loss, wage inflation lasting
+  "150 years"), and dozens more scripted events run out to the World Wars.
+- The "why <id>" screen is excellent and almost always sufficient to
+  decide whether to build something, including flavour text that
+  frequently explains WHY something is hard (e.g. scientific_method:
+  "the hard part is not stating it, it is displacing Aristotelian
+  authority... their defenders hold the chairs, the patronage and the
+  medical guild").
+- Small mechanical touches that reward attention: the labour market has
+  real per-trade supply ceilings independent of your own money/hours; a
+  trade you teach into existence has nobody able to do the work until
+  someone is actually trained in it; household capacity is a separate
+  hard cap from the labour market; opening a concern ramps up over 3
+  years rather than snapping to full revenue; staff attrition (~3.5%/yr)
+  is modelled as continuous FTE decay, not discrete deaths, and is
+  explained as such when you ask.
+
+**What confused me, or cost real time to work out:**
+- `auto_open` did not open my first profitable concern (the pawnshop) even
+  though its own description says it "opens concerns that plainly pay for
+  themselves" - I had to notice and open it by hand. I never found out why
+  (didn't dig into source, as instructed), but the discrepancy between the
+  policy's stated behaviour and what I actually observed is worth a look.
+- The "X is within N craftsmen of closure" warning is ambiguous on first
+  read. After hiring more staff the number went UP (1.3 -> 2.3), which
+  read at first like the situation getting WORSE before I worked out
+  (never fully confirmed) that bigger = safer here. A rephrase like "N
+  craftsmen of headroom before closure" would remove the ambiguity
+  outright.
+- Some prerequisites are political/social (state approval, needing a
+  patron) rather than technical, and under fog of war you only discover
+  this by trying to `start` the node and getting refused, not from
+  anything shown beforehand in `available` or `why` for the blocking
+  patron item. That felt like a real "how was I supposed to know that"
+  moment, though I recognize under fog SOME things must stay hidden by
+  design - maybe `why` on the blocked node itself could hint at a
+  political gate the way it already hints at missing technical
+  prerequisites.
+- Multi-year `step N` is efficient (fewer commands) but genuinely
+  dangerous: a scripted event (the Hundred Years War, in my case) landed
+  inside a skipped span and I only discovered the resulting debt spiral
+  well after the fact, several years of compounding interest later,
+  rather than at the moment I could still have reacted. I don't think
+  this needs fixing (real history doesn't pause), but it's worth the
+  designers knowing that the game currently nudges an efficiency-minded
+  player toward the play style its own economy punishes hardest.
+- Hiring staff requires cash on hand and is flatly refused during debt,
+  even with unused credit headroom, while STARTING a research project
+  will happily borrow against that same credit automatically. Two
+  different rules for what looks like the same kind of spending; consistent
+  once you know it, surprising until you hit it (right when it hurts most
+  - mid financial-crisis, unable to hire the staff that would fix the
+  crisis).
+
+**What I wanted to do and couldn't (yet):**
+- Get a 4th scholar to unblock em_theory - genuinely can't, not a
+  UI gap, just where the run currently stands (needs school_founded or
+  equivalent literacy tech first).
+- I was curious what `path <goal>` and `available fewest_missing` would
+  show with fog off, and what the full tech tree looks like, but did not
+  turn fog off or peek - stayed inside the constraint as asked.
+- I noticed a `bounty <id>` command (pay someone else to solve a problem)
+  advertised on at least two "why" screens (met_bloomery_bog_iron,
+  case_hardening) but never had a concrete reason to use it in this
+  session - would be worth a dedicated playtest of its own.
+
+**Overall**: this is a dense, honest, well-explained simulation. Nothing I
+hit felt actually broken; the few things that confused me were either
+information that existed and I didn't connect (my debt spirals) or minor
+wording ambiguities (the craftsmen-of-closure phrasing) rather than
+missing functionality. I would happily keep playing this - the literacy
+ceiling I stopped at is a compelling, legible obstacle, exactly the kind
+of "now go build the big slow thing" beat a good long-form strategy game
+should produce around the 50-year mark of a 500-year run.
+
 

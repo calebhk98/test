@@ -12012,6 +12012,44 @@ check("the senatorial-patronage refusal does not leak its id under fog "
       not any("patron_senatorial" in _w for _w in _pat_sen),
       _pat_sen[:1])
 
+# THE POLICY SCREEN GROUPS BY WHAT IS ACTUALLY RUNNING. An England play
+# tester read auto_open's description ("opens concerns that plainly pay for
+# themselves"), built a pawnshop that plainly paid for itself, watched
+# nothing happen, and reported the policy as not matching its own
+# description. The screen was correct - "off" was printed directly above that
+# sentence - but every description is in the present indicative, so a reader
+# scanning them reads eleven statements of what the game is doing while ten
+# of them are hypothetical. Verified separately that auto_open itself is not
+# broken: with the policy on, auto_open_ventures does open that pawnshop.
+_s_pol = sim(civ="england_1300")
+_pol_out = S._agent_dispatch(_s_pol, NODES, {"cmd": "policy"})
+_pol_txt = _PROTO.render_policy(_pol_out)
+check("the policy screen says which automatic behaviours are running now "
+      "and which are only descriptions of what would happen",
+      "RUNNING NOW:" in _pol_txt and "NOT RUNNING" in _pol_txt
+      and "WOULD do if you turned it on" in _pol_txt, _pol_txt[:300])
+check("...with every switch still listed exactly once between the two "
+      "groups, none dropped by the grouping",
+      all(_k in _pol_txt for _k in (_pol_out.get("policy") or {}))
+      and all(_pol_txt.count("  %-18s " % _k) == 1
+              for _k in (_pol_out.get("policy") or {})),
+      sorted(_pol_out.get("policy") or {}))
+
+# AND THE THING THEY THOUGHT WAS BROKEN IS NOT BROKEN.
+_s_pol2 = sim(civ="england_1300")
+_s_pol2.done.add("fin_pawnshop")
+_s_pol2._done_changed()
+check("auto_open really would open a concern that plainly pays for itself: "
+      "the pawnshop's 144 to open against 250 a year clear is a payback "
+      "well under a year, and auto_open_ventures takes it",
+      "fin_pawnshop" in _s_pol2.auto_open_ventures(),
+      (NODES["fin_pawnshop"]["rev"], NODES["fin_pawnshop"]["up"],
+       _s_pol2.venture_capex("fin_pawnshop")))
+check("...and it was off by default, which is the whole of why they did not "
+      "see it happen",
+      sim(civ="england_1300").policy.get("auto_open") is False,
+      sim(civ="england_1300").policy)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

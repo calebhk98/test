@@ -4911,12 +4911,39 @@ def render_policy(out):
         L.append(_wrap(out["these_are_approximations_not_optimal_play"],
                        indent="  "))
         L.append("")
+    # GROUPED BY WHETHER THEY ARE ACTUALLY RUNNING, not listed alphabetically
+    # with the state as a word at the end of a name. An England play tester
+    # read "auto_open ... opens concerns that plainly pay for themselves",
+    # built a pawnshop that plainly paid for itself, watched nothing happen,
+    # and wrote it up as the policy not matching its own description. The
+    # screen was right - "off" was printed directly above that sentence - but
+    # every description here is in the present indicative, so a reader
+    # scanning descriptions reads eleven statements of what the game is doing
+    # and has to carry a separate column in their head to know that ten of
+    # them are hypothetical. Two headings cost nothing and remove the
+    # ambiguity: what is running, and what is not.
     pol = out.get("policy") or {}
     does = out.get("what_each_does") or {}
-    for k in sorted(pol):
-        L.append("  %-18s %s" % (k, "ON" if pol[k] else "off"))
-        if does.get(k):
-            L.append(_wrap(does[k], width=DISPLAY_WIDTH - 8, indent="        "))
+    on = [k for k in sorted(pol) if pol[k]]
+    off = [k for k in sorted(pol) if not pol[k]]
+    for head, keys, empty in (
+            ("RUNNING NOW:", on, "  nothing is automatic just now: every one "
+                                 "of these is off, and the game does only "
+                                 "what you tell it to."),
+            ("NOT RUNNING - these describe what each WOULD do if you turned "
+             "it on:", off, None)):
+        if not keys:
+            if empty:
+                L.append("")
+                L.append(_wrap(empty))
+            continue
+        L.append("")
+        L.append("  " + head if len(head) < 40 else _wrap("  " + head))
+        for k in keys:
+            L.append("  %-18s %s" % (k, "ON" if pol[k] else "off"))
+            if does.get(k):
+                L.append(_wrap(does[k], width=DISPLAY_WIDTH - 8,
+                               indent="        "))
     if out.get("changed"):
         L.append("")
         L.append("  changed: %s" % out["changed"])
