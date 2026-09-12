@@ -445,6 +445,16 @@ def cmd_play(a):
     where your choices do not count; `run --trace` is still the way to watch
     the optimizer work.
     """
+    # THE APPLICATION'S OWN PREFERENCES, APPLIED ONCE, HERE - not only from
+    # the menu. `play` typed directly (no menu at all) is still a human at a
+    # keyboard, on their own terminal, and display width/rows-per-page/
+    # whether the tutorial prints are preferences about THAT, not about
+    # which flags were passed - see _apply_display_prefs and settings.py's
+    # module docstring. None of this touches `agent`. Named app_cfg, not
+    # cfg: `cfg` below is the Sim's own config dict (immortal/horizon_years/
+    # start_capital) and already existed under that name; the two must not
+    # collide.
+    app_cfg = _apply_display_prefs()
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
@@ -499,7 +509,14 @@ def cmd_play(a):
         # was dropped into a different civilisation's fresh game. A save the
         # game has promised has to exist from the moment it is promised.
         save_state(s, session)
-    if fresh:
+    # THE WELCOME AND TUTORIAL TEXT IS A PREFERENCE NOW (Options: "show the
+    # welcome message and tutorial on new games"). A player on their fifth
+    # new game does not need the five starter verbs explained again every
+    # time; a player who has never seen this game does. Gated as one block,
+    # not line by line, because it is all the same kind of text - what a
+    # first-timer needs and nobody else does - and a veteran who has turned
+    # it off still gets the arrival capital/year from 'state' on request.
+    if fresh and app_cfg.get("show_welcome", True):
         print()
         print(_wrap("You arrive in %d AD with %d %s and nothing else: no "
                     "employees, no slaves, and nobody who owes you anything. "
@@ -1252,7 +1269,45 @@ def cmd_civs(a):
     return 0
 
 
-def _wrap(text, width=76, indent="   "):
+# THE APPLICATION'S OWN DISPLAY WIDTH - see _apply_display_prefs below and
+# settings.py's module docstring ("DISPLAY WIDTH"). Starts at the number
+# this file's own _wrap always hardcoded, so a process that never calls
+# _apply_display_prefs (nothing in this file does on import; every
+# human-facing entry point calls it exactly once, at its own top) renders
+# exactly as it always did.
+_DISPLAY_WIDTH = 76
+
+
+def _apply_display_prefs(cfg=None):
+    """Read the application's display preferences once and apply them for
+    the rest of this process: how wide a line wraps (here, and in
+    protocol.py's renderers - see protocol.DISPLAY_WIDTH's own comment) and
+    how many rows a long table pages by default (protocol.
+    DEFAULT_AVAILABLE_LIMIT). Returns the config, so a caller that already
+    needs it (cmd_menu, _new_game, _options_menu) is not reading the file
+    twice.
+
+    CALLED FROM EVERY HUMAN-FACING ENTRY POINT - cmd_menu and cmd_play - and
+    from NOWHERE in cmd_agent. `agent` speaks a stable JSON protocol (and,
+    with --pretty, a readable rendering alongside it) that a script or
+    another process depends on looking the same regardless of whose
+    terminal, or whose saved preferences, happen to be on the machine it
+    runs on; a human's own cosmetic choices about their own terminal have no
+    business changing what a script sees. See settings.py's module
+    docstring for where these preferences actually live.
+    """
+    if cfg is None:
+        cfg = settings.load_config()
+    global _DISPLAY_WIDTH
+    _DISPLAY_WIDTH = settings.resolve_display_width(cfg)
+    _protocol.DISPLAY_WIDTH = _DISPLAY_WIDTH
+    _protocol.DEFAULT_AVAILABLE_LIMIT = settings.resolve_rows_per_page(cfg)
+    return cfg
+
+
+def _wrap(text, width=None, indent="   "):
+    if width is None:
+        width = _DISPLAY_WIDTH
     words, lines, cur = text.split(), [], ""
     for w in words:
         if len(cur) + len(w) + 1 > width:
@@ -1487,6 +1542,23 @@ def _new_game(civs, cfg):
         except ValueError:
             print("   -- a whole number of years, more than 0.")
 
+    # REMEMBERED FOR NEXT TIME, SILENTLY - not a settings screen's job. A
+    # player who favours one civilisation and kit should not have to retype
+    # them every game, and used to be able to set that from the main-menu
+    # Options screen; that screen is for the APPLICATION now (see
+    # settings.py's module docstring), so the wizard remembers its own
+    # answers instead, the way a file dialog remembers its last folder. This
+    # writes back exactly the five fields CONFIG_DEFAULTS calls "default_*",
+    # and nothing else cfg might hold (display width, rows per page, the
+    # welcome toggle) - those are the player's, set from Options, and this
+    # wizard has no business overwriting them.
+    cfg["default_civ"] = civ["id"]
+    cfg["default_kit"] = kit
+    cfg["default_fog"] = (fog == "y")
+    cfg["default_mortal"] = (mortal == "y")
+    cfg["default_horizon"] = horizon
+    settings.save_config(cfg)
+
     # THIS USED TO STOP HERE: print the command for the JSON protocol and ASK
     # whether to play. A tester put it plainly - "it should be the save
     # starting. It should have you pick, then you immediately jump in" - and
@@ -1643,34 +1715,41 @@ def _load_game(cfg):
     return cmd_play(args)
 
 
-def _options_menu(civs, cfg):
-    """Preferences that outlive any one game: where saves go, and what the
-    New Game wizard should default to. Nothing here reaches into a game
-    already running - that is the in-game 'options' command (_ingame_options),
-    a deliberately smaller menu, for the reasons explained on it."""
+def _options_menu(cfg):
+    """Preferences about the APPLICATION, not about any one game: where
+    saves go, how wide a line wraps, how many rows a long table shows
+    before paging, and whether the welcome/tutorial text prints on a new
+    game. See settings.py's module docstring for why this screen holds
+    exactly these and none of the things a playthrough itself decides
+    (civilisation, starting kit, fog, mortality, horizon) - those are
+    remembered from the New Game wizard's last answers instead (see
+    _new_game), and the couple of them that are honestly changeable
+    mid-game (horizon, mortality) have their own, much smaller, in-game
+    'options' command (_ingame_options) for a game already running.
+    """
     while True:
-        civ_name = next((c.get("name", c["id"]) for c in civs
-                         if c.get("id") == cfg.get("default_civ")),
-                        cfg.get("default_civ"))
+        cfg = _apply_display_prefs(cfg)
+        cur_width = settings.resolve_display_width(cfg)
+        width_src = ("override" if isinstance(cfg.get("display_width"), (int, float))
+                                   and cfg["display_width"] else
+                    "detected from your terminal")
         print()
         print("-" * 78)
         print("   OPTIONS")
         print("-" * 78)
-        print(_wrap("These are defaults offered the next time you start a NEW "
-                    "game (you can still change any of them for that one game "
-                    "when you start it). A game already in progress has its own "
-                    "'options' command, typed while playing, for the couple of "
-                    "these that can honestly change mid-game."))
+        print(_wrap("Preferences about this PROGRAM, not about any one game - "
+                    "they apply whether you are starting a new one, loading an "
+                    "old one, or running it from the command line with flags. "
+                    "What a single playthrough is (civilisation, starting kit, "
+                    "fog, mortality, the horizon) is asked when that game "
+                    "starts, not here."))
         print()
-        print("   1) save location         : %s"
+        print("   1) save location      : %s"
               % settings.resolve_save_dir(cfg, ensure=False))
-        print("   2) default civilisation   : %s" % civ_name)
-        print("   3) default starting kit   : %s" % cfg.get("default_kit"))
-        print("   4) default fog of war     : %s"
-              % ("on" if cfg.get("default_fog", True) else "off"))
-        print("   5) default mortality      : %s"
-              % ("on" if cfg.get("default_mortal", False) else "off"))
-        print("   6) default horizon        : %d years" % cfg.get("default_horizon", 500))
+        print("   2) display width      : %d columns (%s)" % (cur_width, width_src))
+        print("   3) rows per table      : %d" % settings.resolve_rows_per_page(cfg))
+        print("   4) welcome/tutorial text on new games : %s"
+              % ("on" if cfg.get("show_welcome", True) else "off"))
         print("   b) back to the main menu")
         try:
             raw = input("\n   > ").strip().lower()
@@ -1715,70 +1794,72 @@ def _options_menu(civs, cfg):
             print("   -- saved. New games, and 'Load a saved game', will use %s"
                   % newdir)
 
-        elif word in ("2", "civ", "civilisation"):
-            for i, c in enumerate(civs, 1):
-                print("      %d) %s, %d" % (i, c.get("name", c["id"]), c.get("year", 0)))
+        elif word in ("2", "width", "display"):
+            print(_wrap("How many columns text wraps to and tables are sized "
+                        "for. Left alone, the game asks your terminal and uses "
+                        "that (right now it reads %d). Set a number to "
+                        "override it - for a terminal that cannot be asked, or "
+                        "one you simply want narrower or wider - or type "
+                        "'auto' to go back to asking the terminal."
+                        % settings.resolve_display_width(
+                            dict(cfg, display_width=None))))
             try:
-                raw2 = input("   Which one? [1-%d, blank to leave unchanged] "
-                             % len(civs)).strip()
+                raw2 = input("   New width [currently %d (%s), a number, "
+                             "'auto', or blank to leave unchanged]: "
+                             % (cur_width, width_src)).strip().lower()
             except (EOFError, KeyboardInterrupt):
                 print(); continue
-            if raw2.isdigit() and 1 <= int(raw2) <= len(civs):
-                cfg["default_civ"] = civs[int(raw2) - 1]["id"]
+            if not raw2:
+                continue
+            if raw2 in ("auto", "detect", "default"):
+                cfg["display_width"] = None
                 settings.save_config(cfg)
-                print("   -- saved.")
-            elif raw2:
-                print("   -- a number from 1 to %d." % len(civs))
-
-        elif word in ("3", "kit"):
-            kd = cfg.get("default_kit", "poor_scholar")
-            if kd not in STARTING_KITS:
-                kd = "poor_scholar"
-            kit = _ask("   Which? [%s] " % "/".join(STARTING_KITS),
-                       list(STARTING_KITS), kd)
-            if kit:
-                cfg["default_kit"] = kit
-                settings.save_config(cfg)
-                print("   -- saved.")
-
-        elif word in ("4", "fog"):
-            v = _ask("   Fog of war by default? [y/n] ", ["y", "n"],
-                     "y" if cfg.get("default_fog", True) else "n")
-            if v:
-                cfg["default_fog"] = (v == "y")
-                settings.save_config(cfg)
-                print("   -- saved.")
-
-        elif word in ("5", "mortal", "mortality"):
-            v = _ask("   Mortality by default? [y/n] ", ["y", "n"],
-                     "y" if cfg.get("default_mortal", False) else "n")
-            if v:
-                cfg["default_mortal"] = (v == "y")
-                settings.save_config(cfg)
-                print("   -- saved.")
-
-        elif word in ("6", "horizon"):
+                print("   -- saved. Width will be asked from your terminal "
+                      "from now on.")
+                continue
             try:
-                raw2 = input("   Default horizon in years [currently %d, blank "
-                             "to leave unchanged]: "
-                             % cfg.get("default_horizon", 500)).strip()
+                w = int(raw2)
+                if w < 20:
+                    raise ValueError
+            except ValueError:
+                print("   -- a whole number of columns (at least 20), 'auto', "
+                      "or blank.")
+                continue
+            cfg["display_width"] = w
+            settings.save_config(cfg)
+            print("   -- saved. %d columns from now on." % w)
+
+        elif word in ("3", "rows", "page"):
+            try:
+                raw2 = input("   Rows per table before paging [currently %d, "
+                             "blank to leave unchanged]: "
+                             % settings.resolve_rows_per_page(cfg)).strip()
             except (EOFError, KeyboardInterrupt):
                 print(); continue
             if not raw2:
                 continue
             try:
-                h = int(raw2)
-                if h <= 0:
+                n = int(raw2)
+                if n <= 0:
                     raise ValueError
             except ValueError:
-                print("   -- a whole number of years, more than 0.")
+                print("   -- a whole number of rows, more than 0.")
                 continue
-            cfg["default_horizon"] = h
+            cfg["rows_per_page"] = n
             settings.save_config(cfg)
             print("   -- saved.")
 
+        elif word in ("4", "welcome", "tutorial"):
+            v = _ask("   Show the welcome message and tutorial on new games? "
+                     "[y/n] ", ["y", "n"],
+                     "y" if cfg.get("show_welcome", True) else "n")
+            if v:
+                cfg["show_welcome"] = (v == "y")
+                settings.save_config(cfg)
+                print("   -- saved.")
+
         else:
-            print("   -- 1 to 6, or b.")
+            print("   -- 1 to 4, or b.")
 
 
 def cmd_menu(a):
@@ -1797,26 +1878,34 @@ def cmd_menu(a):
     that none of them should have had to know that flag existed at all.
     """
     civs = _load_civ_list()
+    # THE APPLICATION'S OWN PREFERENCES, BEFORE THE FIRST LINE IS PRINTED, so
+    # even this opening banner wraps to a player's chosen/detected width -
+    # see _apply_display_prefs. Reloaded every time the loop comes back
+    # around (below) so a width or welcome-text change made from Options
+    # takes effect the moment the player is back at this menu, with no
+    # restart.
+    cfg = _apply_display_prefs()
 
-    print()
-    print("=" * 78)
-    print("   ONE PERSON, AND EVERYTHING THEY KNOW".center(78))
-    print("=" * 78)
-    print()
-    print(_wrap(
-        "You are one person, dropped into a pre-industrial society, carrying "
-        "the knowledge of how modern technology works and none of the industry "
-        "that makes it. Knowing how a thing works is free. Building it is not: "
-        "it costs your own hours, other people's hours, money, materials, and "
-        "years you do not get back."))
-    print()
-    print(_wrap(
-        "You arrive alone. No employees, no slaves, nobody who owes you "
-        "anything, and about enough money to eat for a few months."))
-    print()
+    if cfg.get("show_welcome", True):
+        print()
+        print("=" * 78)
+        print("   ONE PERSON, AND EVERYTHING THEY KNOW".center(78))
+        print("=" * 78)
+        print()
+        print(_wrap(
+            "You are one person, dropped into a pre-industrial society, carrying "
+            "the knowledge of how modern technology works and none of the industry "
+            "that makes it. Knowing how a thing works is free. Building it is not: "
+            "it costs your own hours, other people's hours, money, materials, and "
+            "years you do not get back."))
+        print()
+        print(_wrap(
+            "You arrive alone. No employees, no slaves, nobody who owes you "
+            "anything, and about enough money to eat for a few months."))
+        print()
 
     while True:
-        cfg = settings.load_config()
+        cfg = _apply_display_prefs()
         print("-" * 78)
         print("   MAIN MENU")
         print("-" * 78)
@@ -1846,7 +1935,7 @@ def cmd_menu(a):
                 return rc
             print()
         elif word in ("3", "options", "option", "settings"):
-            _options_menu(civs, cfg)
+            _options_menu(cfg)
             print()
         else:
             print("   -- 1, 2, 3 or q.\n")

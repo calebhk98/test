@@ -1425,7 +1425,11 @@ def _agent_available(s, nodes, cmd=None):
 
     # A LIST was asked for: a subject, a search, an explicit page, or everything.
     if find or want_subject or limit or offset or show_all or afford is not None:
-        page = sel if show_all else sel[offset:offset + (limit or 30)]
+        # THIRTY AT A TIME WAS A BARE NUMBER; DEFAULT_AVAILABLE_LIMIT IS THE
+        # SAME NUMBER, now the one a player can raise from the Options
+        # screen - see its own comment, near TYPED_HINTS - instead of typing
+        # limit:N by hand on every page of a long search or subject list.
+        page = sel if show_all else sel[offset:offset + (limit or DEFAULT_AVAILABLE_LIMIT)]
         out = {"ok": True, "count": len(sel), "of_everything_startable": len(ok),
                # The same figure the digest carries, so a paged list can mark
                # what you could not raise today. See _cost_marker.
@@ -1534,7 +1538,8 @@ def _agent_available(s, nodes, cmd=None):
                "one subject": '{"cmd":"available","subject":"metallurgy"}',
                "by name": '{"cmd":"available","find":"furnace"}',
                "what you can pay for": '{"cmd":"available","afford":%d}' % int(max(0, purse)),
-               "a page of everything": '{"cmd":"available","limit":30,"offset":0}',
+               "a page of everything": ('{"cmd":"available","limit":%d,"offset":0}'
+                                        % DEFAULT_AVAILABLE_LIMIT),
                "all of it at once": '{"cmd":"available","all":true} (large)'},
            "you_could_raise_for_a_project": round(purse, 1)}
     if fog and heard_block:
@@ -2178,7 +2183,14 @@ def _pct(v):
     return "%.0f%%" % f
 
 
-def _wrap(text, width=76, indent=""):
+def _wrap(text, width=None, indent=""):
+    # WIDTH DEFAULTS TO DISPLAY_WIDTH, NOT A LITERAL NUMBER, so the one
+    # player-facing preference for it (cli.py's Options screen, "display
+    # width") reaches every caller that does not ask for a specific width of
+    # its own - see DISPLAY_WIDTH's own comment, near TYPED_HINTS, for who
+    # sets it and why `agent` never does.
+    if width is None:
+        width = DISPLAY_WIDTH
     if not text:
         return ""
     words, lines, cur = str(text).split(), [], ""
@@ -2495,7 +2507,15 @@ def _cost_marker(e, purse):
     return "" if c <= purse else "*"
 
 
-def _available_row(e, w=34, purse=None):
+def _available_row(e, w=None, purse=None):
+    # THE FLOOR SCALES WITH DISPLAY_WIDTH, NOT A BARE 34. render_available
+    # already grows this per-table to fit the longest id on the page (see
+    # its own comment on _w below), so a narrow default never truncated one;
+    # this only gives a wide terminal the same extra breathing room _wrap
+    # gets, and reproduces exactly 34 at DISPLAY_WIDTH's own old default
+    # (76), so nothing here moves for a player who has changed nothing.
+    if w is None:
+        w = max(34, DISPLAY_WIDTH - 42)
     hours = e.get("founder_hours", e.get("your_hours"))
     years = e.get("calendar_floor_years", e.get("least_years"))
     risk = e.get("risk", e.get("chance_of_failure"))
@@ -3259,7 +3279,7 @@ def render_policy(out):
     for k in sorted(pol):
         L.append("  %-18s %s" % (k, "ON" if pol[k] else "off"))
         if does.get(k):
-            L.append(_wrap(does[k], width=68, indent="        "))
+            L.append(_wrap(does[k], width=DISPLAY_WIDTH - 8, indent="        "))
     if out.get("changed"):
         L.append("")
         L.append("  changed: %s" % out["changed"])
@@ -3354,6 +3374,27 @@ TYPED_HINTS = False
 # The short form used in the compact lines ("400 den", "net +12 den/yr"). Set
 # alongside TYPED_HINTS by whichever front end is rendering; see MONEY_WORDS.
 MONEY_SHORT = "den"
+
+# HOW WIDE A LINE IS, AND HOW MANY ROWS A PAGE SHOWS, BEFORE A PLAYER ASKS
+# FOR SOMETHING ELSE. Both used to be bare numbers scattered through _wrap's
+# own default, _available_row's column floor, and _agent_available's page
+# slice - which means the game was silently assuming one terminal size and
+# one page length for everyone, and a player whose actual terminal was
+# narrower lost ids off the edge of a table they meant to copy one out of.
+# These are APPLICATION preferences now (cli.py's main-menu Options screen,
+# "display width" and "rows per table"; see settings.py's module docstring
+# for why they are application-level and not part of any one save), set
+# once at the top of cli.py's human-facing entry points - the menu and
+# `play` - via cli.py's _apply_display_prefs. `agent` never calls it: its
+# JSON protocol (and the --pretty rendering alongside it) is a stable
+# machine interface and must render exactly as it always has regardless of
+# whichever human happens to be running the script, on whatever terminal.
+# The values below are exactly what every caller already hardcoded, so a
+# process that never touches these (every `agent` invocation, and any
+# `play`/menu session before a player has ever opened Options) renders
+# byte-for-byte as it did before this existed.
+DISPLAY_WIDTH = 76
+DEFAULT_AVAILABLE_LIMIT = 30
 
 
 def _typed_form(obj):

@@ -1191,8 +1191,18 @@ _menu_dir = tempfile.mkdtemp()
 # A FRESH CONFIG FILE, EXPLICITLY, so this check of the DEFAULT save
 # location is not at the mercy of a config some earlier check in this same
 # run (or a real person's own ~/.rome-sim-config.json) pointed elsewhere.
-# ROME_SAVE_DIR is deliberately left unset for the same reason.
-_menu_cfg = os.path.join(_menu_dir, "menu_default_cfg.json")
+# ROME_SAVE_DIR is deliberately left unset for the same reason. IN A
+# DIRECTORY OF ITS OWN, NOT _menu_dir: the New Game wizard now remembers its
+# own answers as next time's defaults (civilisation/kit/fog/mortality/
+# horizon moved off the Options screen - see settings.py's module docstring
+# - onto "whatever was played last"), which means finishing the wizard
+# below writes this config file once, and _menu_dir is also the directory
+# the "nothing beside the source" check just below reads back - a config
+# file is not a game save, but it would still be a .json file sitting in
+# the same directory that check is examining, for a reason that has nothing
+# to do with what that check exists to catch.
+_menu_cfg_dir = tempfile.mkdtemp()
+_menu_cfg = os.path.join(_menu_cfg_dir, "menu_default_cfg.json")
 _menu_env = dict(os.environ, ROME_SIM_CONFIG=_menu_cfg)
 _menu_env.pop("ROME_SAVE_DIR", None)
 # THE MENU NOW DROPS INTO `play`, NOT `agent`. It used to hand a person a JSON
@@ -1384,6 +1394,216 @@ check("moving a save from the in-game options command relocates the file",
       (os.listdir(_mv_dir), _mv.stdout[-400:]))
 check("...and carries its remembered horizon along with it",
       os.path.exists(_mv_to + ".meta.json"), os.listdir(_mv_dir))
+
+# =============================================================================
+# THE CORRECTION: Options is for the APPLICATION, not for any one game. The
+# main-menu Options screen used to hold defaults for the NEXT new game
+# (civilisation, starting kit, fog, mortality, horizon) - the wrong things,
+# by the owner's own words: "change where saves are, change language, change
+# window size, etc? Not about each save, like fog or mortality?" It now holds
+# save location (unchanged), display width, rows per table, and whether the
+# welcome/tutorial text prints. The five per-game defaults are not deleted -
+# they move to "whatever the New Game wizard was told last time", written
+# back silently the moment a game actually starts (cli.py's _new_game), with
+# no settings screen of their own; horizon/mortality's own mid-game-changeable
+# capability stays exactly where it was, the in-game 'options' command.
+# =============================================================================
+
+_appopt_dir = tempfile.mkdtemp()
+_appopt_cfg = os.path.join(_appopt_dir, "cfg.json")
+_appopt_env = dict(os.environ, ROME_SIM_CONFIG=_appopt_cfg)
+_appopt_env.pop("ROME_SAVE_DIR", None)
+_appopt = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                         input="3\nb\nq\n", capture_output=True, text=True,
+                         timeout=60, cwd=_appopt_dir, env=_appopt_env)
+check("the main-menu Options screen offers the application preferences",
+      all(w in _appopt.stdout for w in
+          ("save location", "display width", "rows per table",
+           "welcome/tutorial")),
+      _appopt.stdout[-1200:])
+check("...and no longer offers the per-game defaults that used to live here - "
+      "civilisation, starting kit, fog, and mortality are a playthrough's own "
+      "business, decided when that game starts, not a standing preference",
+      not any(w in _appopt.stdout for w in
+              ("default civilisation", "default starting kit",
+               "default fog of war", "default mortality",
+               "default horizon")),
+      _appopt.stdout[-1200:])
+
+# --- display width: an explicit override set from Options sticks (same
+# pattern as save location), and it actually changes how wide a line wraps,
+# not just what the Options screen echoes back.
+_dw_dir = tempfile.mkdtemp()
+_dw_cfg = os.path.join(_dw_dir, "cfg.json")
+_dw_env = dict(os.environ, ROME_SIM_CONFIG=_dw_cfg)
+_dw_env.pop("ROME_SAVE_DIR", None)
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+               input="3\n2\n150\nb\nq\n", capture_output=True, text=True,
+               timeout=60, cwd=_dw_dir, env=_dw_env)
+_dw_cfg_read = json.load(open(_dw_cfg)) if os.path.exists(_dw_cfg) else {}
+check("a display width set from Options is written to the config file",
+      _dw_cfg_read.get("display_width") == 150, _dw_cfg_read)
+_dw_saves = tempfile.mkdtemp()
+_dw_env2 = dict(os.environ, ROME_SIM_CONFIG=_dw_cfg, ROME_SAVE_DIR=_dw_saves)
+_dw_session = os.path.join(_dw_dir, "wide.json")
+_dw_play = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
+                           "play", "--civ", "rome_100ad", "--session", _dw_session],
+                          input="quit\n", capture_output=True, text=True,
+                          timeout=120, env=_dw_env2)
+_dw_arrival_lines = [l for l in _dw_play.stdout.splitlines()
+                     if l.strip().startswith("You arrive in")]
+check("a wider display width actually produces a longer wrapped line than "
+      "the old hardcoded 76 ever could",
+      _dw_arrival_lines and len(_dw_arrival_lines[0]) > 76,
+      _dw_arrival_lines)
+from engine import cli as _CLI, settings as _SETTINGS
+from engine import protocol as _protocol
+_narrow_lines = _CLI._wrap("word " * 40, width=30, indent="   ").splitlines()
+_wide_lines = _CLI._wrap("word " * 40, width=150, indent="   ").splitlines()
+check("...and, directly: cli._wrap actually uses the width it is given "
+      "(narrower wraps the same text into visibly more lines than wider)",
+      len(_narrow_lines) > len(_wide_lines) and len(_wide_lines) >= 1,
+      (len(_narrow_lines), len(_wide_lines)))
+check("...and _apply_display_prefs is what carries an Options override into "
+      "both cli._wrap's own default and protocol.DISPLAY_WIDTH - the one "
+      "place every renderer reads it from, per protocol.py's own comment",
+      (lambda: (_CLI._apply_display_prefs({"display_width": 222}),
+               _CLI._DISPLAY_WIDTH == 222 and _protocol.DISPLAY_WIDTH == 222
+               )[1])(),
+      (_CLI._DISPLAY_WIDTH, _protocol.DISPLAY_WIDTH))
+# Reset the module globals _apply_display_prefs just changed, so no later
+# check in this file (many of which render through the same shared protocol
+# module, in-process) is silently run at width 222 instead of the default.
+_CLI._apply_display_prefs(dict(_SETTINGS.CONFIG_DEFAULTS))
+
+# --- rows per table: a preference set from Options changes the default page
+# size of a long, filtered `available` list - the exact "paging through long
+# lists thirty at a time by hand" complaint this exists to fix.
+_rpp_dir = tempfile.mkdtemp()
+_rpp_cfg = os.path.join(_rpp_dir, "cfg.json")
+json.dump({"rows_per_page": 4}, open(_rpp_cfg, "w"))
+_rpp_saves = tempfile.mkdtemp()
+_rpp_env = dict(os.environ, ROME_SIM_CONFIG=_rpp_cfg, ROME_SAVE_DIR=_rpp_saves)
+_rpp_play = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
+                            "play", "--civ", "rome_100ad", "--session",
+                            os.path.join(_rpp_dir, "s.json")],
+                           input="available find a\nquit\n", capture_output=True,
+                           text=True, timeout=120, env=_rpp_env)
+check("a 'rows per table' preference of 4 pages a filtered `available` list "
+      "at 4 rows, not the old bare 30",
+      "1-4 matching" in _rpp_play.stdout, _rpp_play.stdout[:1500])
+
+# --- the welcome/tutorial text is a preference, default on (nothing changes
+# for a player who has never touched Options), and off actually suppresses it.
+_wt_on_dir = tempfile.mkdtemp()
+_wt_on_saves = tempfile.mkdtemp()
+_wt_on_env = dict(os.environ, ROME_SIM_CONFIG=os.path.join(_wt_on_dir, "nope.json"),
+                  ROME_SAVE_DIR=_wt_on_saves)
+_wt_on = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
+                         "play", "--civ", "rome_100ad", "--session",
+                         os.path.join(_wt_on_dir, "s.json")],
+                        input="quit\n", capture_output=True, text=True,
+                        timeout=120, env=_wt_on_env)
+check("with no preference ever set, the welcome/tutorial text still prints "
+      "on a new game - nothing changes for a player who has never opened "
+      "Options", "five to start with" in _wt_on.stdout, _wt_on.stdout[:800])
+_wt_off_dir = tempfile.mkdtemp()
+_wt_off_cfg = os.path.join(_wt_off_dir, "cfg.json")
+json.dump({"show_welcome": False}, open(_wt_off_cfg, "w"))
+_wt_off_saves = tempfile.mkdtemp()
+_wt_off_env = dict(os.environ, ROME_SIM_CONFIG=_wt_off_cfg, ROME_SAVE_DIR=_wt_off_saves)
+_wt_off = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
+                          "play", "--civ", "rome_100ad", "--session",
+                          os.path.join(_wt_off_dir, "s.json")],
+                         input="quit\n", capture_output=True, text=True,
+                         timeout=120, env=_wt_off_env)
+check("...and turning it off from Options actually suppresses it on a "
+      "player's fifth new game, not just on the Options screen itself",
+      "five to start with" not in _wt_off.stdout
+      and "You arrive in" not in _wt_off.stdout,
+      _wt_off.stdout[:800])
+check("...while the session still starts and is still playable with it off",
+      _wt_off.returncode == 0 and "Saved to" in _wt_off.stdout,
+      _wt_off.stdout[-300:])
+
+# --- none of this reaches `agent`: its JSON protocol, and the --pretty
+# rendering alongside it, is a stable machine interface that must not vary
+# with a human's own saved terminal preferences.
+_agentpref_cfg = os.path.join(tempfile.mkdtemp(), "cfg.json")
+json.dump({"display_width": 200, "rows_per_page": 2}, open(_agentpref_cfg, "w"))
+_agentpref_env = dict(os.environ, ROME_SIM_CONFIG=_agentpref_cfg)
+_ap = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "agent",
+                      "--civ", "rome_100ad", "--pretty"],
+                     input=json.dumps({"cmd": "available", "find": "a"}) + "\n"
+                           + json.dumps({"cmd": "quit"}) + "\n",
+                     capture_output=True, text=True, timeout=60,
+                     env=_agentpref_env)
+check("a saved display-width/rows-per-page preference never reaches `agent` "
+      "- its --pretty rendering still pages at the old default of 30, "
+      "regardless of what a human's own config file says",
+      "1-30 matching" in _ap.stderr and "1-2 matching" not in _ap.stderr,
+      _ap.stderr[:1200])
+
+# --- the New Game wizard remembers its own last answers as next time's
+# defaults, with no settings screen of its own - see settings.py's module
+# docstring. Play once with non-default choices; a LATER invocation offers
+# those same choices as the default, and accepting every default (blank)
+# actually starts a game with them.
+_rem_dir = tempfile.mkdtemp()
+_rem_cfg = os.path.join(_rem_dir, "cfg.json")
+_rem_saves = tempfile.mkdtemp()
+_rem_env = dict(os.environ, ROME_SIM_CONFIG=_rem_cfg, ROME_SAVE_DIR=_rem_saves)
+# civ 1 (han_china_100ad, not the hardcoded default_civ rome_100ad), fog OFF,
+# kit 'merchant' (not the hardcoded default_kit poor_scholar), mortality ON,
+# horizon 321 (not the hardcoded default_horizon 500) - every one of the
+# five deliberately NOT what CONFIG_DEFAULTS starts with.
+_rem1 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                       input="1\n1\nn\nmerchant\ny\n321\nquit\n",
+                       capture_output=True, text=True, timeout=120, env=_rem_env)
+_rem_cfg_read = json.load(open(_rem_cfg)) if os.path.exists(_rem_cfg) else {}
+check("finishing the New Game wizard remembers every answer as next time's "
+      "default, with no Options screen involved",
+      _rem_cfg_read.get("default_civ") == "han_china_100ad"
+      and _rem_cfg_read.get("default_kit") == "merchant"
+      and _rem_cfg_read.get("default_fog") is False
+      and _rem_cfg_read.get("default_mortal") is True
+      and _rem_cfg_read.get("default_horizon") == 321,
+      _rem_cfg_read)
+_rem2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                       input="1\nb\nq\n", capture_output=True, text=True,
+                       timeout=60, env=_rem_env)
+check("...and the civilisation picker offers that remembered choice as its "
+      "default the next time the wizard is opened",
+      "default 1" in _rem2.stdout, _rem2.stdout[-800:])
+_rem3 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                       input="1\n\n\n\n\n\nstate\nquit\n", capture_output=True,
+                       text=True, timeout=120, env=_rem_env)
+check("...and accepting every default (blank through all five questions) "
+      "actually starts the remembered civilisation, not rome_100ad",
+      "LATER HAN EMPIRE" in _rem3.stdout.upper(), _rem3.stdout[:2000])
+# NOT A BARE 4,000: Han's own price index (0.75x Rome, printed on the WHERE
+# AND WHEN screen) scales the merchant kit's nominal capital, so the honest
+# check is "more than the poor_scholar default (400), a lot more" rather
+# than the kit's own unscaled number.
+import re as _re_rem
+_rem3_capital = _re_rem.search(r"You arrive in \d+ AD with ([\d,]+)", _rem3.stdout)
+check("...and the remembered kit (merchant, not poor_scholar) - far more "
+      "starting capital than poor_scholar's 400, scaled by Han's own price "
+      "index rather than a bare copy of the kit's nominal den figure",
+      _rem3_capital and int(_rem3_capital.group(1).replace(",", "")) > 1000,
+      _rem3.stdout[:2000])
+check("...the remembered mortality (on)",
+      "and ageing" in _rem3.stdout, _rem3.stdout[-900:])
+check("...and the remembered horizon (321 years)",
+      "421" in _rem3.stdout, _rem3.stdout[-900:])
+
+# --- the in-game 'options' command (horizon, mortality mid-game) is
+# untouched by any of the above - it is not part of the application's
+# config file and was not moved.
+check("the in-game options command still changes the horizon, unrelated to "
+      "any of the application preferences above",
+      "now ends in 250 AD" in _ig1.stdout, _ig1.stdout[-600:])
+
 # --- the user: "I wanted agents to play under the play that we were just
 # making". Everything built since the split went into the JSON protocol only,
 # and `play` still understood six commands of its own. It must now reach the
