@@ -11332,6 +11332,63 @@ check("...and the tree on disk is provably byte-for-byte unchanged by that "
       "against the in-memory NODES this whole suite has since mutated)",
       open(_tree_path, "rb").read() == _tree_bytes_before, None)
 
+# A FREE PREREQUISITE SHOULD SAY IT IS FREE. Eight cap_* nodes cost nothing,
+# take no time and cannot fail, and a player still has to start each by hand.
+# The player who won this game called the refusal that names one of them
+# "administrative": it said "missing prerequisites: cap_measure_temp" and
+# nothing about the thing behind that name being one free command away. They
+# are not auto-granted, because each carries 20 a year of upkeep if it is ever
+# opened and that is the player's decision to make, and they never need
+# opening to satisfy a prerequisite (start_reason tests `p not in self.done`).
+_s_fp = sim()
+_s_fp.done.add("thermometer"); _s_fp._done_changed()
+_, _fp_why = _s_fp.start_reason("chm_crystallisation")
+check("a refusal whose missing prerequisite is free, instant and startable "
+      "now says so and gives the command, instead of naming it and stopping",
+      "costs nothing, takes no time and cannot fail" in (_fp_why or "")
+      and "start cap_measure_temp" in (_fp_why or ""), _fp_why)
+
+_s_fp2 = sim()          # thermometer NOT done, so cap_measure_temp is blocked
+_, _fp_why2 = _s_fp2.start_reason("chm_crystallisation")
+check("...and stays quiet about a free node that is itself blocked, which "
+      "would be a second refusal wearing the first one's clothes",
+      "costs nothing" not in (_fp_why2 or ""), _fp_why2)
+
+_, _fp_why3 = sim().start_reason("junction_transistor")
+check("an ordinary expensive prerequisite gets no such hint",
+      "costs nothing" not in (_fp_why3 or ""), _fp_why3)
+
+# UNDER FOG IT MAY NOT NAME WHAT THE PLAYER CANNOT SEE. The hint is built from
+# the same `known` list the fog filter already produced, so this is a check
+# that it stays built from it.
+_s_fpf = sim()
+_s_fpf.fog = True
+_s_fpf.revealed = set()
+_s_fpf.done.add("thermometer"); _s_fpf._done_changed()
+_fp_hidden = [k for k in ("cap_measure_temp", "cap_measure_elec",
+                          "cap_power_water", "cap_power_steam")
+              if not _s_fpf.is_visible(k)]
+_fp_msgs = []
+for _k in sorted(NODES):
+    if any(h in NODES[_k]["pre"] for h in _fp_hidden):
+        _, _w = _s_fpf.start_reason(_k)
+        if _w:
+            _fp_msgs.append(_w)
+check("under fog the free-prerequisite hint never names a capability the "
+      "player has not heard of",
+      bool(_fp_hidden) and not any(h in m for m in _fp_msgs for h in _fp_hidden),
+      (_fp_hidden, _fp_msgs[:2]))
+
+# AND THE PREMISE. If one of these ever acquires a cost, the sentence above
+# stops being true, so the set it describes has to stay genuinely free.
+_fp_free = [k for k, n in NODES.items()
+            if k.startswith("cap_") and (n.get("_total_cost") or 0) <= 1
+            and (n.get("ph") or 0) == 0 and (n.get("yrs") or 0) == 0
+            and (n.get("risk") or 0) == 0 and n["tier"] > 0]
+check("the free capability nodes the hint exists for are still free: no "
+      "cost, no hours, no years, no risk",
+      len(_fp_free) >= 8, sorted(_fp_free))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

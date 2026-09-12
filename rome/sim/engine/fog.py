@@ -189,15 +189,70 @@ class FogMixin:
         known = [p for p in missing if self.is_visible(p, _memo=_memo)]
         hidden = len(missing) - len(known)
         if not getattr(self, "fog", False) or not hidden:
-            return "missing prerequisites: " + ", ".join(missing)
+            msg = "missing prerequisites: " + ", ".join(missing)
+            return msg + self._free_prereq_hint(missing)
         bits = []
         if known:
             bits.append("missing prerequisites: " + ", ".join(known))
         bits.append("%d other thing%s you have not heard of yet"
                     % (hidden, "" if hidden == 1 else "s"))
-        return "; and ".join(bits) if known else \
+        msg = "; and ".join(bits) if known else \
             ("this needs %s, and you do not yet know what %s"
              % (bits[-1], "they are" if hidden > 1 else "it is"))
+        # ONLY EVER THE VISIBLE ONES. `known` is already the fog filter this
+        # whole method exists to apply, so the hint is built from it and a
+        # hidden prerequisite is never named by the hint either.
+        return msg + self._free_prereq_hint(known)
+
+    # WHAT IT COSTS TO SAY YES. Eight nodes in this tree - cap_measure_temp,
+    # cap_measure_elec, cap_measure_mass_mg, cap_measure_time_s,
+    # cap_power_water, cap_power_steam, cap_power_electric, cap_power_grid -
+    # cost nothing, take no hours, take no years and cannot fail. They are the
+    # engine's way of saying "you built a thermometer, so now you can measure
+    # temperature", and a player still has to start each one by hand.
+    #
+    # A player who won this game called that out: "thermometer completion does
+    # not itself satisfy later high-temperature work until the zero-cost
+    # cap_measure_temp capability is separately started/completed. Mechanically
+    # consistent with the game's knowledge/capability distinction, but can feel
+    # administrative." They are right that it is consistent and right that it
+    # reads as paperwork, and the refusal they were reading said only "missing
+    # prerequisites: cap_measure_temp" - a name, with no indication that the
+    # thing behind it is free and one command away.
+    #
+    # NOT AUTO-GRANTED, deliberately. Each of these carries 20 a year of
+    # upkeep if it is ever OPENED, so completing them on the player's behalf
+    # would be spending their money on a decision they were never asked about.
+    # They do not need opening to satisfy a prerequisite - start_reason tests
+    # `p not in self.done`, not operating - so the honest fix is to say what
+    # the refusal was already about: this one is free, start it.
+    FREE_PREREQ_NAMED_AT_MOST = 3
+
+    def _free_prereq_hint(self, missing):
+        """", and X costs nothing..." for whichever missing prerequisites are
+        free, instant and startable right now - or "" when none are."""
+        ready = []
+        for p in missing:
+            n = self.nodes.get(p)
+            if not n:
+                continue
+            if ((n.get("_total_cost") or 0) > 1 or (n.get("ph") or 0) > 0
+                    or (n.get("yrs") or 0) > 0 or (n.get("risk") or 0) > 0):
+                continue
+            # ONLY IF THEY CAN ACT ON IT NOW. Naming a free node that is
+            # itself blocked is not help, it is a second refusal wearing the
+            # first one's clothes.
+            if all(q in self.done for q in n["pre"]):
+                ready.append(p)
+        if not ready:
+            return ""
+        ready = ready[:self.FREE_PREREQ_NAMED_AT_MOST]
+        if len(ready) == 1:
+            return (". %s costs nothing, takes no time and cannot fail: "
+                    "start %s" % (ready[0], ready[0]))
+        return (". %s cost nothing, take no time and cannot fail: start "
+                "them now (%s)"
+                % (", ".join(ready), ", ".join("start " + p for p in ready)))
 
     def fog_scrub(self, text):
         """Strip node ids the player has not discovered out of a message."""
