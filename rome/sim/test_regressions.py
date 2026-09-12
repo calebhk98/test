@@ -6,7 +6,7 @@ and three of those were defects in the fix for the previous one. That pattern is
 the reason this file exists: a fix verified once by hand is a fix that silently
 rots. Run it with `python3 rome/sim/test_regressions.py`.
 """
-import collections, glob, json, os, random, subprocess, sys, time
+import collections, copy, glob, json, os, random, re, subprocess, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -7226,12 +7226,24 @@ check("...and what rests on it is counted, not reported as nothing",
       all(len(_DS(k, NODES)) >= 1 for k in _ra_cases),
       {k: len(_DS(k, NODES)) for k in _ra_cases})
 # THE REASON THE CACHED INDEX CANNOT DO THIS. The tree is a directed acyclic
-# graph on `pre` and is NOT acyclic once req_any options are edges too:
-# junction_transistor -> silicon_path -> point_contact_transistor ->
-# junction_transistor is one of four cycles. A bitmask descendant index that
-# assumes a DAG runs out of memory on them, which is exactly what happened
-# when this fix was first attempted in data.py, so the walk that answers a
-# player carries a visited set instead.
+# graph on `pre` and is NOT acyclic once req_any options are edges too: one
+# example is hydrochloric_acid, whose sulfuric_acid_supply group offers
+# chm_contact_sulfuric as an alternative to lead_chamber, and
+# chm_contact_sulfuric needs cap_pure_4N, which needs analytical_chemistry,
+# which needs hydrochloric_acid back again - a real cycle if that branch of
+# the substitution is the one walked, even though a player who takes the
+# other branch (lead_chamber) never sees it. A bitmask descendant index that
+# assumes a DAG runs out of memory on cycles like this, which is exactly what
+# happened when this fix was first attempted in data.py, so the walk that
+# answers a player carries a visited set instead.
+#
+# naive14's point_contact_transistor/single_crystal fix (TOP_PROBLEMS #1)
+# removed a DIFFERENT cycle that used to live here - junction_transistor ->
+# point_contact_transistor -> (req_any option) silicon_path ->
+# junction_transistor - because that edge was itself the bug: the node's own
+# note said it did not need single_crystal or its silicon_path alternative at
+# all. Losing that cycle is the fix working, not a regression, which is why
+# the check below no longer hardcodes a path through junction_transistor.
 def _cycle_on(edges_of):
     """Any node reachable from itself, following whatever edges are given."""
     seen_all = set()
@@ -7265,11 +7277,11 @@ def _pre_and_single_option_any(k):
                 out.append(opt)
     return out
 check("pre plus every single-option req_any edge is still acyclic over the "
-      "whole tree - the safety margin the single-option walk rests on, since a "
-      "multi-option group (two or more real alternatives) walked the same "
-      "way genuinely can cycle (junction_transistor -> silicon_path -> "
-      "point_contact_transistor -> junction_transistor is real) and must "
-      "never be",
+      "whole tree - the safety margin the single-option walk rests on, since "
+      "a multi-option group (two or more real alternatives) walked the same "
+      "way genuinely can cycle (hydrochloric_acid -> chm_contact_sulfuric -> "
+      "cap_pure_4N -> analytical_chemistry -> hydrochloric_acid is real) and "
+      "must never be",
       _cycle_on(_pre_and_single_option_any) is None,
       _cycle_on(_pre_and_single_option_any))
 
@@ -7284,13 +7296,13 @@ def _pre_and_any(k):
         out.extend(o for o in sorted(g.get("options") or {}) if o in NODES)
     return out
 
-# The cycle is not hypothetical and it is worth naming, because it is the
-# reason data.py's cached descendant index cannot simply be taught about
-# substitutions: junction_transistor needs point_contact_transistor, and
-# point_contact_transistor offers silicon_path as one option of its
-# semiconductor group, and silicon_path comes back round to the junction
-# device. A bitmask DFS that assumes a DAG runs out of memory on that, which
-# is exactly what happened when this fix was first attempted there.
+# _cycle_on (above) is a root-reachability check that skips any node once it
+# has been SEEN from an earlier root, so it can miss a cycle that does not
+# happen to include whichever root sorted(NODES) tries first - it is safe
+# for the two checks above because pre and pre-plus-single-option are both
+# genuinely acyclic there (nothing to miss), but not a safe way to CONFIRM a
+# cycle exists, so this checks direct reachability from the one node the
+# cycle above was traced through instead.
 def _reaches(start, target, edges_of):
     seen, stack = set(), [start]
     while stack:
@@ -7302,10 +7314,11 @@ def _reaches(start, target, edges_of):
                 seen.add(nxt); stack.append(nxt)
     return False
 
-check("...and NOT acyclic once substitutions count, which is why the cached "
-      "bitmask index cannot answer this and a visited set must",
-      _reaches("junction_transistor", "junction_transistor", _pre_and_any),
-      "no cycle found through junction_transistor")
+check("...and NOT acyclic once every substitution option counts as an edge, "
+      "which is why the cached bitmask index cannot answer this and a "
+      "visited set must",
+      _reaches("hydrochloric_acid", "hydrochloric_acid", _pre_and_any),
+      "no cycle found through hydrochloric_acid")
 
 # --- BREAK, round 12: `rush limit:1000` on turn one started 209 things at
 # once, owing 90,944 founder-hours against a lifetime the game itself puts at
@@ -8289,6 +8302,218 @@ _s_mb2.open_venture("tex_horizontal_loom")
 _mb_out2 = S._agent_dispatch(_s_mb2, NODES, {"cmd": "mothball", "id": "tex_horizontal_loom"})
 check("...and an ordinary business closing carries no such warning",
       _mb_out2.get("ok") and "but" not in _mb_out2, _mb_out2)
+
+# --- naive14: AN OUTSIDE PLAYER WON BLIND AS LATER HAN WITH FOG ON AND AN
+# IMMORTAL FOUNDER (grown and alloy junction transistors, 575 AD, 168/168
+# required nodes) and reported what nearly cost them the run anyway. See
+# rome/playtest/naive14/EXTERNAL_TOP_PROBLEMS.md and
+# EXTERNAL_BLIND_PLAYTHROUGH.md.
+#
+# TOP_PROBLEMS #1, rated most damaging: point_contact_transistor's own note
+# says Bardeen and Brattain worked POLYCRYSTALLINE germanium in December
+# 1947 "with no pulled crystal and no zone refining, neither of which
+# existed yet" - and the node still would not start without a semiconductor
+# from single_crystal or silicon_path, which forced an entire post-1947
+# manufacturing programme (arc furnace, zone refining, single-crystal
+# growth, each with a multi-year floor and a near-coinflip failure rate)
+# onto the path to a device whose own text says it did not need any of
+# that. Checked against the tree: the node already lists ge_reduction in
+# `pre` and already consumes 200g of germanium_g in `mat` - the purified
+# polycrystalline metal its note describes - so the req_any group was a
+# second, contradictory gate stacked on a prerequisite the node already
+# had. single_crystal stays required for junction_transistor itself
+# (unconditionally, in `pre`), which is the node whose own note says a
+# single crystal is what makes the device MANUFACTURABLE - so the
+# recommendation (let the 1947 device build on polycrystalline
+# germanium, keep single-crystal growth mandatory for the transistor
+# that replaces it) holds and is now how the tree reads.
+check("point_contact_transistor no longer gates on single_crystal/"
+      "silicon_path - the contradiction between its own note and its "
+      "prerequisite graph is gone",
+      NODES["point_contact_transistor"]["req_any"] == [],
+      NODES["point_contact_transistor"]["req_any"])
+check("...the mechanism that used to refuse to start it (substitution_"
+      "quality, the req_any gate) now clears trivially, with neither "
+      "single_crystal nor silicon_path done",
+      sim(civ="han_china_100ad").substitution_quality("point_contact_transistor")
+      == (1.0, True),
+      sim(civ="han_china_100ad").substitution_quality("point_contact_transistor"))
+check("...while single_crystal is still mandatory for the goal itself - "
+      "the manufacturable junction transistor, not its 1947 proof of "
+      "concept, is where single-crystal growth belongs",
+      "single_crystal" in NODES["junction_transistor"]["pre"],
+      NODES["junction_transistor"]["pre"])
+check("...and the goal's required closure is unchanged at 168 nodes - "
+      "loosening the contradictory gate did not also loosen what the "
+      "goal actually needs",
+      len(S.closure(NODES, GOAL)) == 168, len(S.closure(NODES, GOAL)))
+
+# THE BUG CLASS, not just the one instance: a node's own note disclaiming a
+# prerequisite ("no X and no Y, neither of which existed yet", "X had not
+# yet been invented", ...) while `pre` or a req_any option - single-choice
+# OR a genuine multi-way substitution, since that is exactly how this one
+# shipped invisibly past closure() - still names that same thing. The
+# window searched is the disclaiming sentence itself, narrowed to the
+# actual "no X"/"without X" spans in it, not the whole sentence: a note is
+# allowed to mention germanium (from ge_reduction, a real and correct
+# prerequisite) in the same breath as disclaiming pulled crystals and zone
+# refining, and a keyword match against the whole sentence flagged exactly
+# that as a false positive before the window was narrowed.
+def _disclaimed_prereq_contradictions(nodes):
+    disclaim_pats = (r"neither of which existed yet", r"none of which existed yet",
+                      r"did not yet exist", r"had not yet been invented",
+                      r"not yet invented", r"yet to be invented")
+    negation_span = re.compile(
+        r"\b(?:no|without)\s+([a-z][a-z\- ]{2,40}?)"
+        r"(?=\s*,|\s+and\s+no\b|\s+and\s+without\b|\s+neither\b|\s+none\b|\s*\.|$)")
+    stop = set("and the for with from that this into over under being than "
+               "then which what when were was has have had does did already "
+               "both only also even more most make made gives give were "
+               "being could would should before after still about".split())
+
+    def keywords(text):
+        return {w for w in re.findall(r"[a-z]{5,}", text.lower()) if w not in stop}
+
+    out = []
+    for k, n in sorted(nodes.items()):
+        low = (n.get("note") or "").lower()
+        hit = None
+        for pat in disclaim_pats:
+            m = re.search(pat, low)
+            if m:
+                hit = m
+                break
+        if not hit:
+            continue
+        sent_start = low.rfind(".", 0, hit.start())
+        sent_start = 0 if sent_start == -1 else sent_start + 1
+        window = low[sent_start:hit.start()]
+        wkw = set()
+        for span in negation_span.findall(window):
+            wkw |= keywords(span)
+        if not wkw:
+            continue
+        prereq_ids = list(n.get("pre") or [])
+        for g in (n.get("req_any") or []):
+            prereq_ids.extend((g.get("options") or {}).keys())
+        for pid in prereq_ids:
+            pn = nodes.get(pid)
+            if not pn:
+                continue
+            pkw = keywords(pn.get("name") or "") | {pid.lower()}
+            if wkw & pkw:
+                out.append((k, pid, hit.group(0), sorted(wkw & pkw)))
+    return out
+
+
+check("the bug class, not just the instance: no node's note disclaims a "
+      "prerequisite as not having existed yet while the node's own pre "
+      "or req_any (including a genuine multi-option substitution) still "
+      "requires it - re-run against a restored copy of the original "
+      "req_any to confirm this scanner actually catches the fix it is "
+      "here to pin",
+      _disclaimed_prereq_contradictions(NODES) == [],
+      _disclaimed_prereq_contradictions(NODES))
+_nodes_predisclaim = copy.deepcopy(NODES)
+_nodes_predisclaim["point_contact_transistor"]["req_any"] = [
+    {"group": "semiconductor", "options": {"silicon_path": 0.9, "single_crystal": 1.0}}]
+check("...and the scanner is not vacuous: it does flag the original, "
+      "now-fixed req_any when restored on a copy of the tree",
+      _disclaimed_prereq_contradictions(_nodes_predisclaim) != [],
+      _disclaimed_prereq_contradictions(_nodes_predisclaim))
+
+# --- TOP_PROBLEMS #4, generalised: EVERY `located_material` node rolls
+# `self.rng.random() < n["risk"]` every year it is active, with no modifier
+# of any kind. Ten of the category's eleven nodes shared risk 0.95 - the
+# single highest value anywhere in the 2,833-node tree outside this one
+# category (`expedition`, the category modelling the actual voyage these
+# sit behind in `pre`, averages 0.35 and tops out at 0.55), and the
+# eleventh (med_coca_alkaloid) was already tuned to 0.25, which is why this
+# reads as an unrevisited placeholder rather than a researched figure: none
+# of these notes describe a 19-in-20 failure, they describe buying an
+# already-characterised commodity from people who already produce it, or
+# carrying home seed stock of a crop grown locally forever after. This is
+# what cost the naive14 player "years" on platinum specifically (gating the
+# vacuum tube, hence the goal) with "no visible way to improve the odds" -
+# pinned at the category level so a future located_material node cannot
+# reintroduce the same placeholder unnoticed.
+_located_risks = {k: n["risk"] for k, n in NODES.items() if n.get("cat") == "located_material"}
+check("no located_material node rolls a near-certain failure every year - "
+      "0.95 was an unrevisited placeholder copied across ten of the "
+      "category's eleven nodes, not a researched figure",
+      _located_risks and max(_located_risks.values()) <= 0.3,
+      sorted(_located_risks.items(), key=lambda kv: -kv[1])[:3])
+
+# --- TOP_PROBLEMS #12, generalised beyond the one platinum instance
+# already named there: a data file (as opposed to the `kb` field's
+# deliberate rome/knowledge/*.md citations, shown to the player on every
+# `why` screen as an in-fiction "recipe" reference) is not something a
+# player's own note should ever send them to read.
+_geo_leaks = [k for k, n in NODES.items() if "data/world/" in (n.get("note") or "")]
+check("no node's player-facing note sends the player to read a data file "
+      "out of the game - ten notes did ('See data/world/geography.json "
+      "...'), platinum among them, found and fixed as a family rather "
+      "than one at a time",
+      _geo_leaks == [], _geo_leaks)
+
+# --- naive14, ROUND 2 (a Mexica fog-off run): the civilization's own intro
+# says "no wheel in practical use... no amount of teaching will fix it", but
+# tr_hopper_wagon was startable turn one with empty `pre`, and the needs_first
+# mechanism that already exists for exactly this purpose (and is already used
+# for harness/saddle/pack-animal nodes) never named it. Verified against the
+# actual tree, not assumed: a wheeled CART needs something to pull it, which
+# is the real Mesoamerican absence (there are wheeled toys; there is no
+# draught animal), so the fix gates the vehicles on exp_import_draught_animals
+# alongside the harnesses, and deliberately leaves the wheel concept itself
+# (lnd_wheel_spoked), human-powered wheeled things (lnd_wheelbarrow,
+# lnd_litter) and anything turned by water or by people (en_overshot_wheel
+# and kin) alone - they owe nothing to a draught animal.
+_mex_needs_first = S.load_civ("mexica_1500")["needs_first"]["draught animals"]["ids"]
+_GATED_VEHICLES = ("tr_hopper_wagon", "lnd_two_wheel_cart", "lnd_four_wheel_cart",
+                   "mil_artillery_carriage", "pwr_animal_treadmill")
+check("the wheeled/animal-powered vehicles a Mexica player actually reached "
+      "turn one are now in the same needs_first group as the harnesses, not "
+      "a separate, unenforced list",
+      all(k in _mex_needs_first for k in _GATED_VEHICLES),
+      [k for k in _GATED_VEHICLES if k not in _mex_needs_first])
+_s_mex2 = sim(civ="mexica_1500")
+check("...and a fresh Mexica founder cannot start any of them turn one",
+      not any(_s_mex2.can_start(k) for k in _GATED_VEHICLES),
+      [k for k in _GATED_VEHICLES if _s_mex2.can_start(k)])
+check("...including the ambient-grant path, not only explicit `start` - "
+      "pwr_animal_treadmill is tier 0 with no cost, which is exactly what "
+      "grant_ambient() hands out for free the moment prerequisites clear, "
+      "and it already checks needs_first before doing so",
+      "pwr_animal_treadmill" not in _s_mex2.done, "pwr_animal_treadmill")
+_s_mex3 = sim(civ="mexica_1500")
+_s_mex3.done.add("exp_import_draught_animals")
+_s_mex3._done_changed()
+# needs_first(), not can_start(): mil_artillery_carriage also needs
+# mat_wrought_iron and mil_trunnion, real and unrelated prerequisites this
+# fix does not touch (Mexica's own handicap is "no iron", a separate,
+# legitimate constraint) - so the thing this check must confirm is that the
+# draught-animal GATE specifically is gone, not that every other real
+# requirement has also been met by one node on its own.
+check("...and importing draught animals lifts the gate on all of them, the "
+      "same way it already does for horse_collar and the rest - checked as "
+      "needs_first() clearing, not as can_start(), since a vehicle can "
+      "have its own further, unrelated prerequisites (mil_artillery_carriage "
+      "still wants iron and a trunnion)",
+      all(_s_mex3.needs_first(k)[0] is None for k in _GATED_VEHICLES),
+      [(k, _s_mex3.needs_first(k)) for k in _GATED_VEHICLES
+       if _s_mex3.needs_first(k)[0] is not None])
+_s_mex4 = sim(civ="mexica_1500")
+check("the wheel concept itself, human-powered wheeled transport, and "
+      "water/human-turned machinery are NOT swept into the same gate - "
+      "only the animal-drawn vehicles were the bug",
+      _s_mex4.can_start("lnd_wheel_spoked") is False
+      and "lnd_wheel_spoked" in _s_mex4.done  # already granted, not gated
+      and "lnd_litter" in _s_mex4.done
+      and "cap_power_muscle" in _s_mex4.done,
+      (_s_mex4.can_start("lnd_wheel_spoked"),
+       "lnd_wheel_spoked" in _s_mex4.done,
+       "lnd_litter" in _s_mex4.done,
+       "cap_power_muscle" in _s_mex4.done))
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

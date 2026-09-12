@@ -300,7 +300,7 @@
    },
    "mat": {},
    "name": "Three geographically separated academies",
-   "note": "Alexandria (dry, preserves papyrus), a western site, an eastern site. The Third Century Crisis will destroy at least one. Redundancy is the only defence and it is not optional. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. THE STATE WILL ACTIVELY RESIST THIS. A large private association operating across several provinces is precisely what Roman government fears: a faction. Trajan refuses Pliny even a licensed fire brigade at Nicomedia for this reason (Ep. 10.34). You need senatorial or imperial cover before you attempt it, and you should site the three houses under three different patrons so that it does not look like one organisation.",
+   "note": "Three houses, sited far enough apart, geographically and politically, that no single disaster or crackdown takes all of them at once: a dry archive site, a western site, an eastern site. Every civilization you can play has its own version of this problem and its own ground to choose (Alexandria's papyrus-preserving dryness is the Roman answer; look to what your own geography and political map actually offer). Redundancy is the only defence and it is not optional. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. THE STATE WILL ACTIVELY RESIST THIS. A private association spanning several regions looks like exactly what every pre-modern government fears: a faction with a loyalty of its own (Trajan refuses Pliny even a licensed fire brigade at Nicomedia for this reason, Ep. 10.34). You need the favour of whoever actually rules where you are before you attempt it, and you should site the three houses under three different patrons so that it does not look like one organisation.",
    "ph": 2500.0,
    "pre": [
     "corpus_dispersed",
@@ -22042,7 +22042,7 @@
    },
    "mat": {},
    "name": "Licensed collegium of physicians and teachers",
-   "note": "Unlicensed associations are illegal; Trajan refuses Pliny even a fire brigade at Nicomedia (Ep. 10.34) for fear of factions. Get the licence or your school is a conspiracy.",
+   "note": "Unlicensed associations are illegal in most of these societies, and for the same reason: a state that cannot see inside a private association suspects it is a faction (Trajan refuses Pliny even a fire brigade at Nicomedia for exactly this fear, Ep. 10.34). Get the licence, under whatever name your own government gives it, or your school is read as a conspiracy.",
    "ph": 350.0,
    "pre": [
     "citizenship",
@@ -37304,7 +37304,7 @@
    },
    "mat": {},
    "name": "Deposit bankers (argentarii)",
-   "note": "Money changers and deposit takers in Rome. Accept deposits, testify to witnesses about amounts held, but do not systematically lend.",
+   "note": "Money changers and deposit takers, attested across the ancient world (Rome's argentarii are the best-documented case): accept deposits, testify to witnesses about amounts held, but do not yet systematically lend.",
    "ph": 150.0,
    "pre": [],
    "req_any": [],
@@ -41615,14 +41615,14 @@
    "lab": {},
    "mat": {},
    "name": "Cacao",
-   "note": "NOT UNOBTAINABLE. One voyage for seed stock, then transplant. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. Cacao is a Caribbean and Mesoamerican tree crop: one voyage for seed stock, then transplant and grow it forever. The same Atlantic crossing that reaches potato and maize reaches this too.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -42627,14 +42627,14 @@
    "lab": {},
    "mat": {},
    "name": "Maize",
-   "note": "NOT UNOBTAINABLE. One voyage for seed stock. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. Maize is a Mesoamerican grain: one voyage for seed stock, then it is yours to grow every season after. The same crossing that reaches potato and cacao reaches this too.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -42861,14 +42861,14 @@
    "lab": {},
    "mat": {},
    "name": "The potato",
-   "note": "NOT UNOBTAINABLE. Two to four times the calories per hectare of wheat on poor ground. One voyage, then you grow it forever. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. Two to four times the calories per hectare of wheat on poor ground. The plant is Andean: one voyage for seed stock out of South America, then you grow it forever.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -58271,14 +58271,14 @@
    "lab": {},
    "mat": {},
    "name": "Sodium nitrate",
-   "note": "NOT UNOBTAINABLE, and also not needed. Bengal saltpetre is already on a trade route reachable by long-distance sea trade (Rome's India route is one example) and supplied the world's gunpowder for centuries, and nitre beds work anywhere. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE, and also not needed. Bengal saltpetre is already on a trade route reachable by long-distance sea trade (Rome's India route is one example) and supplied the world's gunpowder for centuries, and nitre beds work anywhere. The Chilean desert deposits are real and reachable the same way potato and cacao are, but you will not need them.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -58472,7 +58472,7 @@
     }
    ],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -58776,14 +58776,14 @@
    "lab": {},
    "mat": {},
    "name": "Gutta percha",
-   "note": "NOT UNOBTAINABLE. Palaquium latex from Malaya, reached by extending east whatever long-distance ocean trade route you already have (Rome already sails there annually). Indian and Malay traders already carry it partway. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. Palaquium latex from Malaya, reached by extending east whatever long-distance ocean trade route you already have (Rome already sails there annually). Indian and Malay traders already carry it partway.",
    "ph": 120.0,
    "pre": [
     "exp_trade_route_extend"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -59145,14 +59145,14 @@
    "lab": {},
    "mat": {},
    "name": "Natural rubber",
-   "note": "NOT UNOBTAINABLE. Hevea is Amazonian, but Landolphia and Funtumia vines in West and Central Africa yield real rubber and were the basis of a large industry in the 1890s. West Africa is COASTAL SAILING from the Pillars of Hercules and Hanno the Carthaginian did it around 500 BC. You need a voyage down a coast and the knowledge of which vine to tap, not an ocean crossing. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. Hevea is Amazonian, but Landolphia and Funtumia vines in West and Central Africa yield real rubber and were the basis of a large industry in the 1890s. West Africa is COASTAL SAILING from the Pillars of Hercules and Hanno the Carthaginian did it around 500 BC. You need a voyage down a coast and the knowledge of which vine to tap, not an ocean crossing.",
    "ph": 60.0,
    "pre": [
     "exp_coastal_africa"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -59178,14 +59178,14 @@
    "lab": {},
    "mat": {},
    "name": "New World crops",
-   "note": "NOT UNOBTAINABLE. These are CROPS, not commodities: you need seed stock once and then you grow them forever. One successful voyage home with potato seed changes the caloric ceiling of European agriculture permanently. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. These are CROPS, not commodities, out of the Americas: you need seed stock once and then you grow them forever. One successful voyage home with potato seed changes the caloric ceiling of agriculture permanently.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -59528,14 +59528,14 @@
    "lab": {},
    "mat": {},
    "name": "Platinum",
-   "note": "NOT UNOBTAINABLE. Colombian and Ural placers. The Urals are reachable overland through Scythian and Sarmatian trade without crossing any ocean. See data/world/geography.json for where it is and what reaching it costs. Take the overland road: extend the eastern trade routes and buy Ural placer metal from the people who already work it. Rounding the Cape for the Colombian placers will also get you there, at far greater cost.",
+   "note": "NOT UNOBTAINABLE. Colombian and Ural placers. The Urals are reachable overland through Scythian and Sarmatian trade without crossing any ocean. Take the overland road: extend the eastern trade routes and buy Ural placer metal from the people who already work it. Rounding the Cape for the Colombian placers will also get you there, at far greater cost.",
    "ph": 60.0,
    "pre": [
     "exp_trade_route_extend"
    ],
    "req_any": [],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -59666,7 +59666,7 @@
    },
    "mat": {},
    "name": "Quinine from cinchona",
-   "note": "NOT UNOBTAINABLE, only Andean. Malaria is endemic across much of the Mediterranean and the tropical world, which makes this worth an ocean crossing by itself wherever it is a problem for you. Once you have it, TRANSPLANT it: the Dutch and British both moved cinchona out of Peru and broke the monopoly. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE, only Andean. Malaria is endemic across much of the Mediterranean and the tropical world, which makes this worth an ocean crossing by itself wherever it is a problem for you. Once you have it, TRANSPLANT it: the Dutch and British both moved cinchona out of Peru and broke the monopoly.",
    "ph": 150.0,
    "pre": [
     "exp_americas_factory",
@@ -59681,7 +59681,7 @@
     }
    ],
    "rev": 0.0,
-   "risk": 0.95,
+   "risk": 0.15,
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
@@ -65524,7 +65524,7 @@
    "lab": {},
    "mat": {},
    "name": "Cocaine from coca",
-   "note": "NOT UNOBTAINABLE, only Andean. The first effective local anaesthetic. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE, only Andean. The first effective local anaesthetic, from the same Andean slopes as cinchona bark: one voyage reaches both.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
@@ -87339,15 +87339,7 @@
     "quantum_solidstate_theory",
     "vacuum_tube"
    ],
-   "req_any": [
-    {
-     "group": "semiconductor",
-     "options": {
-      "silicon_path": 0.9,
-      "single_crystal": 1.0
-     }
-    }
-   ],
+   "req_any": [],
    "rev": 0.0,
    "risk": 0.45,
    "sch": 25.0,

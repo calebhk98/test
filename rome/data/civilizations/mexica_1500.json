@@ -341,13 +341,18 @@
     "ag2_horse_hoe",
     "en_horse_gin",
     "horse_collar",
+    "lnd_four_wheel_cart",
     "lnd_harness_throat_girth",
     "lnd_horse_saddle_basic",
     "lnd_mule_transport",
     "lnd_ox_transport",
+    "lnd_two_wheel_cart",
+    "mil_artillery_carriage",
+    "pwr_animal_treadmill",
     "tl_horse_tram",
     "tl_stirrup",
-    "tl_tandem_harness"
+    "tl_tandem_harness",
+    "tr_hopper_wagon"
    ]
   },
   "seagoing sail": {
