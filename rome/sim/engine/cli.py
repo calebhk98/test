@@ -77,12 +77,24 @@ DICE_FREE_FLOOR_YEARS = {
 # number because the engine only ever took one. Endless is not a bigger
 # number wearing a disguise - see ENDLESS_HORIZON_YEARS below for exactly
 # what it is and is not.
+# CHALLENGE'S NOTE NO LONGER QUOTES THE DICE-FREE FLOOR, AND MUST NOT. It used
+# to say 400 years was "short of the measured dice-free floor for at least one
+# civilisation ... means playing better than the unlucky-proof plan", pointing
+# at DICE_FREE_FLOOR_YEARS above. Every word of that was true about the
+# instrument and false as advice: a player reading it concludes Rome cannot be
+# won in 400 years, and a player has since reached the same Rome goal's
+# startable point in 334 years (rome/playtest/fixtures/
+# rome_434_goal_startable.json) under fog, on a second attempt, with the
+# point-contact transistor failing six times in a row. 1,019 is not a floor
+# under play, it is one policy's ceiling - see DICE_FREE_FLOOR_YEARS' own
+# comment and PATH_SEARCH.md section 4. The note says what the setting is for
+# instead, and the only per-goal number a player is given in this wizard is
+# critical_path's, computed for the goal they actually picked.
 # (key, label, years-or-None, one-line description)
 HORIZON_MODES = (
     ("challenge", "Challenge", 400,
-     "a tight run - short of the measured dice-free floor for at least one "
-     "civilisation (see above), so reaching the goal on this setting, on "
-     "that civilisation, means playing better than the unlucky-proof plan"),
+     "a tight run - enough calendar for the transistor if you play well, "
+     "with little room left over for bad luck"),
     ("standard", "Standard", 500,
      "the game's own long-standing default"),
     ("relaxed", "Relaxed", 650,

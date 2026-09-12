@@ -10434,6 +10434,29 @@ check("this is a warning, not a cure: calling it changes nothing about "
       "the closing, on its own schedule, unchanged by this",
       set(_s_sw.operating) == _sw_before, sorted(_s_sw.operating))
 
+# THE HORIZON MENU MUST NOT SELL THE PLANNER'S FLOOR AS A DIFFICULTY CLAIM.
+# Challenge's note used to say 400 years was "short of the measured dice-free
+# floor ... means playing better than the unlucky-proof plan". True about the
+# instrument, false as advice: a player reached the same Rome goal's startable
+# point in 334 years under fog, on a second attempt, with the point-contact
+# transistor failing six times. DICE_FREE_FLOOR_YEARS stays in the file as a
+# measurement of one policy, and the menu a player reads stays out of the
+# business of telling them what is reachable, because critical_path already
+# tells them that for the goal they actually picked.
+from engine import cli as _CLI
+
+_hz_notes = " ".join(n for _k, _l, _y, n in _CLI.HORIZON_MODES).lower()
+check("no horizon-mode description quotes the dice-free floor or calls any "
+      "setting unreachable",
+      not any(w in _hz_notes for w in
+              ("dice-free", "unlucky-proof", "1,019", "1019", "451")),
+      _hz_notes)
+check("the floor table itself is still there, still per-civilisation, and "
+      "still the number PATH_SEARCH.md measured",
+      _CLI.DICE_FREE_FLOOR_YEARS.get("rome_100ad") == 1019
+      and _CLI.DICE_FREE_FLOOR_YEARS.get("han_china_100ad") == 451,
+      _CLI.DICE_FREE_FLOOR_YEARS)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
