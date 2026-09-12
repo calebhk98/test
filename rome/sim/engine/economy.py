@@ -738,39 +738,56 @@ class EconomyMixin:
         self._done_seq = None
         self._cap_factor = None
 
-    @property
-    def operating(self):
-        """What you RUN, as opposed to what you know how to do (`done`).
-
-        Backed by an `_InvalidatingSet` (see its class comment just above
-        EconomyMixin) rather than a plain `set`, so that every `.add`/
-        `.discard`/`.update`/... - all nine-odd call sites across
-        core.py/projects.py/economy.py/society.py, and any future one -
-        invalidates capability_factor()'s cache through the property's
-        backing object itself, not through a convention those call sites
-        have to remember.
-        """
-        return self._operating
-
-    @operating.setter
-    def operating(self, value):
-        """Whole-object replacement - `s.operating = X` - as `load_state`
-        (protocol.py) does via a generic `setattr` loop it should not need
-        to know any of this to get right. Rewraps `X` in a fresh
-        `_InvalidatingSet` (so it keeps invalidating after the swap) and
-        invalidates once immediately, since the new membership is not
-        generally the old membership plus or minus a few keys."""
-        self._operating = _InvalidatingSet(value, on_change=self._operating_changed)
-        self._operating_changed()
-
     def _operating_changed(self):
         """Call after anything adds to or removes from self.operating.
 
-        The `_InvalidatingSet` behind the `operating` property calls this
-        for every mutation automatically; nothing else needs to call it by
-        hand. See capability_factor(), its only reader at the moment.
+        The `_InvalidatingSet` self.operating is built from (see that
+        class's comment, just above EconomyMixin) calls this on every
+        mutation automatically - every `.add`/`.discard`/`.update`/... from
+        any of the nine-odd call sites across core.py/projects.py/
+        economy.py/society.py, and any future one, with nothing for any of
+        them to remember. See capability_factor(), its only reader so far.
+
+        A property (`self.operating` intercepting every READ, the way
+        `revealed` in engine/fog.py intercepts every WRITE) was tried first
+        and measured worse, not better: self.operating is read in the
+        hottest loop in the engine - `_goods_category_state` and
+        `goods_market_factor` alone read it roughly sixteen million times
+        in the 300-year profile this fix was measured against - so a
+        property's per-access overhead, paid on every one of those reads to
+        protect a few thousand writes, cost far more than capability_factor
+        saved; a 300-year profiled run got SLOWER (22.1s -> 27.5s). An
+        `_InvalidatingSet` intercepts only mutation, which is what actually
+        needs intercepting, at none of that cost: plain attribute reads
+        (`in`, `for`, `sorted(...)`, truthiness) are exactly as fast as a
+        plain set, unmeasurably so, because they are a plain set's own
+        C-level methods, inherited unchanged.
+
+        The gap a property would have closed is whole-object replacement -
+        `s.operating = X`, which only two places in this codebase do: a
+        fresh Sim's own __init__ (core.py), where there is nothing yet to
+        invalidate, and load_state's generic `setattr` loop (protocol.py),
+        which is NOT always acting on a freshly-constructed Sim - `load`
+        issued mid-session through the agent/play JSON protocol loads into
+        the SAME long-lived object a player goes on playing in, and every
+        open/close/mothball after that load mutates .operating directly.
+        Left alone, that setattr would silently downgrade self.operating to
+        a plain, non-invalidating set for the rest of that process's life.
+        load_state calls _reset_operating() (below) once, right after its
+        generic loop, to close that one specific gap explicitly instead of
+        taxing sixteen million reads to close a gap with exactly one door.
         """
         self._cap_factor = None
+
+    def _reset_operating(self):
+        """Re-wrap self.operating in a fresh `_InvalidatingSet` and
+        invalidate once. See the long comment on _operating_changed() for
+        why this exists and why it is not a property instead: this is the
+        one call site (load_state, protocol.py) that replaces
+        self.operating wholesale on a Sim that may go on being mutated
+        afterward in the same process."""
+        self.operating = _InvalidatingSet(self.operating, on_change=self._operating_changed)
+        self._operating_changed()
 
     def venture_ramp(self, k):
         """How much of its full takings a concern is making, 0..1.
