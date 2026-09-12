@@ -6743,14 +6743,68 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        if s.is_venture(k) and k not in s.operating
                        and nodes[k]["rev"] > nodes[k]["up"])
         if _shut:
-            _best = max(_shut, key=lambda k: nodes[k]["rev"] - nodes[k]["up"])
-            reasons.append({"what": "things you built and never opened",
-                            "why": "%d finished concern(s) are shut and earning "
-                                   "nothing. The best of them is %s, which would "
-                                   "earn %s a year against %s of upkeep: 'open %s'"
-                                   % (len(_shut), _best,
-                                      "{:,.0f}".format(nodes[_best]["rev"]),
-                                      "{:,.0f}".format(nodes[_best]["up"]), _best)})
+            # DO NOT RECOMMEND A COMMAND THAT WILL FAIL. This used to pick
+            # the best-margin shut concern by revenue minus upkeep alone and
+            # tell the player to 'open' it, without ever checking whether
+            # open_venture would actually let them. A household deep in the
+            # credit-exhaustion/named-trade trap (see PATH_SEARCH.md) sits
+            # with free_art at 0.00-0.03 for centuries: this command was
+            # measured telling such a household "open lens_grinding", which
+            # needs 2.13 craftsmen to supervise and fails outright - advice
+            # that spends a turn on a refusal and reads as the game having
+            # lied about what it just told you to do.
+            _sch_free, _art_free = s.venture_staff_free()
+            _shut_for_staff = getattr(s, "shut_for_staff", {})
+            def _capex_now(_k):
+                _fee = s.venture_capex(_k)
+                if (_k in _shut_for_staff
+                        and s.year - _shut_for_staff[_k] <= s.STAFF_CLOSURE_GRACE):
+                    _fee *= 0.1
+                return _fee
+            def _openable(_k):
+                _need_sch, _need_art = s.venture_hands(_k)
+                return (_need_sch <= _sch_free + 0.01
+                        and _need_art <= _art_free + 0.01
+                        and _capex_now(_k) <= s.spending_power("buy"))
+            _really_openable = [k for k in _shut if _openable(k)]
+            if _really_openable:
+                _best = max(_really_openable,
+                           key=lambda k: nodes[k]["rev"] - nodes[k]["up"])
+                reasons.append({"what": "things you built and never opened",
+                                "why": "%d finished concern(s) are shut and "
+                                       "earning nothing. The best you could "
+                                       "actually open right now is %s, which "
+                                       "would earn %s a year against %s of "
+                                       "upkeep: 'open %s'"
+                                       % (len(_shut), _best,
+                                          "{:,.0f}".format(nodes[_best]["rev"]),
+                                          "{:,.0f}".format(nodes[_best]["up"]),
+                                          _best)})
+            else:
+                _best = max(_shut, key=lambda k: nodes[k]["rev"] - nodes[k]["up"])
+                _need_sch, _need_art = s.venture_hands(_best)
+                if _need_sch > _sch_free + 0.01 or _need_art > _art_free + 0.01:
+                    _why = ("it needs %.2f scholars and %.2f craftsmen to "
+                            "supervise it, and you have %.2f and %.2f not "
+                            "already watching something else"
+                            % (_need_sch, _need_art, _sch_free, _art_free))
+                else:
+                    _why = ("opening it costs %s denarii, and between cash "
+                            "and what anyone will advance you can raise %s"
+                            % ("{:,.0f}".format(_capex_now(_best)),
+                               "{:,.0f}".format(s.spending_power("buy"))))
+                reasons.append({"what": "things you built and cannot open yet",
+                                "why": "%d finished concern(s) are shut and "
+                                       "earning nothing, and none of them can "
+                                       "be opened right now. The best is %s, "
+                                       "which would earn %s a year against "
+                                       "%s of upkeep, but %s. Hire, teach, or "
+                                       "close something to free the hands, "
+                                       "or raise the money, and try again"
+                                       % (len(_shut), _best,
+                                          "{:,.0f}".format(nodes[_best]["rev"]),
+                                          "{:,.0f}".format(nodes[_best]["up"]),
+                                          _why)})
         if not _startable:
             reasons.append({"what": "nothing you could begin",
                             "why": "everything in front of you is either built, "

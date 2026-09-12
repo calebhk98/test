@@ -5337,6 +5337,66 @@ check("...and `state` advertises it every turn",
       any("stuck" in x for x in (_rst[0].get("also_available") or [])),
       _rst[0].get("also_available"))
 
+# --- BREAK: "things you built and never opened" picked the best-margin shut
+# concern by revenue minus upkeep alone and told the player to 'open' it,
+# without ever checking whether open_venture would actually agree - measured
+# directly against the dice-free Rome credit/named-trade trap (PATH_SEARCH.md):
+# at year 700, free_art sits at 0.00 and `stuck` was recommending 'open
+# lens_grinding', which needs 2.13 craftsmen to supervise and refuses outright.
+# lens_grinding needs more craftsmen to supervise (2.13) than a fresh
+# household has free even before anything else competes for them (founder
+# alone is worth 1.0), so this is reproducible with nothing but a closed
+# prerequisite chain, no multi-century run required.
+s_shut = sim(capital=10_000_000.0)
+for _p in S.closure(NODES, "lens_grinding"):
+    s_shut.done.add(_p)
+s_shut.done.add("lens_grinding")
+s_shut._done_changed()
+check("lens_grinding is done, not operating, and genuinely profitable - the "
+      "exact shape 'stuck' looks for",
+      s_shut.is_venture("lens_grinding")
+      and "lens_grinding" not in s_shut.operating
+      and NODES["lens_grinding"]["rev"] > NODES["lens_grinding"]["up"],
+      (s_shut.is_venture("lens_grinding"), "lens_grinding" in s_shut.operating))
+_sch_free_sg, _art_free_sg = s_shut.venture_staff_free()
+_need_sch_sg, _need_art_sg = s_shut.venture_hands("lens_grinding")
+check("...and a fresh household genuinely cannot supervise it yet",
+      _need_art_sg > _art_free_sg + 0.01,
+      (_need_art_sg, _art_free_sg))
+_stuck_shut = S._agent_dispatch(s_shut, NODES, {"cmd": "stuck"})
+_shut_reason = next((r for r in _stuck_shut["what_is_holding_you_up"]
+                    if isinstance(r, dict)
+                    and r.get("what", "").startswith("things you built")),
+                   None)
+check("`stuck` never tells a player to 'open' something open_venture will "
+      "actually refuse",
+      _shut_reason is not None
+      and "'open lens_grinding'" not in _shut_reason.get("why", ""),
+      _shut_reason)
+check("...and instead says the true reason (craftsmen, here) it cannot be "
+      "opened, so a player knows what to fix rather than spending a turn on "
+      "a refusal",
+      _shut_reason is not None and "craftsmen to supervise" in _shut_reason.get("why", ""),
+      _shut_reason.get("why") if _shut_reason else None)
+
+# ...and the old, simpler advice still fires once the household genuinely CAN
+# open the thing - the fix narrows the claim, it does not silence it.
+s_can = sim(capital=10_000_000.0)
+for _p in S.closure(NODES, "lens_grinding"):
+    s_can.done.add(_p)
+s_can.done.add("lens_grinding")
+s_can._done_changed()
+s_can.artisans = 10.0
+_stuck_can = S._agent_dispatch(s_can, NODES, {"cmd": "stuck"})
+_can_reason = next((r for r in _stuck_can["what_is_holding_you_up"]
+                   if isinstance(r, dict)
+                   and r.get("what") == "things you built and never opened"),
+                  None)
+check("...and once there really are enough hands free, `stuck` goes back to "
+      "naming the concrete 'open X' command",
+      _can_reason is not None and "'open lens_grinding'" in _can_reason.get("why", ""),
+      _can_reason)
+
 
 # --- BREAK: a trade you taught counts as existing for ever, so once the last
 # machinist had died of old age auto_train skipped every node that needed one
