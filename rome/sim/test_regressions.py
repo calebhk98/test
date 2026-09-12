@@ -4466,6 +4466,60 @@ _h2 = s_hg.knowledge_risk()["hedged_by"]
 check("building the corpus hedges you; opening it changes nothing",
       _h0 is None and _h1 == "corpus_written" and _h2 == _h1, (_h0, _h1, _h2))
 
+# --- BREAK: "the event reported ~92.7 people gone, but the subsequent
+# payroll/headcount did not appear to fall by anything close to that
+# amount." Reproduced directly against _shocks(): a sack reduced artisans,
+# scholars and directors_extra and left self.employees - hired smiths,
+# scribes, masons, for a developed household most of its actual headcount -
+# completely untouched, while the plague family a few lines above this one
+# in the same function DOES reduce employees (its own `for t in self.
+# employees` loop). The number the log announced was real for the
+# population it measured; it was just the wrong population - not the one
+# `state`'s employees_total (the screen a player actually reads as
+# "headcount") reports.
+s_shg = sim(capital=500000.0)
+s_shg.artisans, s_shg.scholars, s_shg.directors_extra = 20.0, 10.0, 5.0
+s_shg.employees = {"smith": 40.0, "scribe": 30.0, "mason": 20.0}
+# directors_extra is deliberately NOT part of this total: the announcement
+# never counted it (nor does the plague family's own _people_before, a few
+# lines above this hazard in the same function) even though it too is
+# reduced by the event - only artisans, scholars and every hired trade are
+# "your people" in the sense this message means.
+_shg_total0 = s_shg.artisans + s_shg.scholars + sum(s_shg.employees.values())
+_shg_emp0 = sum(s_shg.employees.values())
+class _ShgZeroRNG:
+    def random(self):
+        return 0.0
+    def sample(self, population, k):
+        return list(population)[:k]
+s_shg.rng = _ShgZeroRNG()
+s_shg.civ = dict(s_shg.civ)
+s_shg.civ["hazards"] = [{"name": "TEST SACK", "years": [s_shg.year, s_shg.year],
+                         "sack_chance": 1.0}]
+_before_shg = len(s_shg.log)
+s_shg._shocks(s_shg.year)
+_shg_msgs = [m for _, m in s_shg.log[_before_shg:] if "a site is sacked" in m]
+_shg_announced = float(re.search(r"([\d.]+) of your people gone",
+                                 _shg_msgs[0]).group(1)) if _shg_msgs else 0.0
+_shg_total1 = s_shg.artisans + s_shg.scholars + sum(s_shg.employees.values())
+check("a sack's own report of how many people are gone and the actual fall "
+      "in total headcount (artisans + scholars + every hired trade) are "
+      "the same number, not two that drifted apart",
+      _shg_announced > 0
+      and abs((_shg_total0 - _shg_total1) - _shg_announced) < 0.05,
+      (_shg_announced, _shg_total0 - _shg_total1))
+check("...and that headcount fall is NOT zero just because most of this "
+      "household's people are hired trade staff rather than the generic "
+      "artisan/scholar pools - this was the actual bug: a sack that hit "
+      "everyone except whoever `employees` tracked",
+      sum(s_shg.employees.values()) < _shg_emp0,
+      (sum(s_shg.employees.values()), _shg_emp0))
+check("...and `state`'s own employees_total - what a player rereads as "
+      "payroll/headcount - reflects that same fall",
+      abs(S._agent_dispatch(s_shg, NODES, {"cmd": "state"})["employees_total"]
+          - sum(s_shg.employees.values())) < 1e-6,
+      S._agent_dispatch(s_shg, NODES, {"cmd": "state"})["employees_total"])
+
 # --- BREAK, the one that actually cost a run: `risk` and the sack disagreed
 # about what a closed corpus is worth. `risk` read has() (fixed already, see
 # the comment above it: "books that exist are books that exist") and the
@@ -4761,6 +4815,76 @@ check("state says in money what your shut concerns would earn",
 check("...and a player running everything is not nagged about it",
       S._agent_state(sim(), NODES).get("shut_concerns_would_earn_a_year") is None,
       S._agent_state(sim(), NODES).get("shut_concerns_would_earn_a_year"))
+
+# --- THE GENERAL CASE the corpus bug was one instance of: has() gates the
+# tree and the goal, running() gates the payout, and `shut_concerns` above
+# only ever covered the payout being MONEY. A player who built patron_
+# imperial and then let it close keeps appearing on `available` to have
+# "a patron with soldiers" - has() never stops being true - while every
+# running()-gated number that patron actually paid (protection, credit,
+# state funding, status - update_protection and credit_limit in society.py
+# and economy.py) silently went to zero, and nothing on any screen said so
+# until this.
+s_cg = sim(capital=50000.0)
+s_cg.done.add("patron_imperial")
+s_cg.done.add("corpus_dispersed")
+s_cg._done_changed()
+_cg_gaps = s_cg.capability_gaps()
+check("a capability institution that is done but not operating is named, "
+      "by id, with the specific benefit it is not collecting right now",
+      {g["id"] for g in _cg_gaps} == {"patron_imperial", "corpus_dispersed"},
+      _cg_gaps)
+check("the warning has the exact shape asked for: 'Critical capability "
+      "completed but not operating: <id>. <benefit> is currently "
+      "inactive.', with the fix command that actually reopens it",
+      all(g["warning"] == ("Critical capability completed but not "
+                           "operating: %s. %s is currently inactive."
+                           % (g["id"], g["benefit_switched_off"]))
+          and g["fix"] == "open %s" % g["id"]
+          for g in _cg_gaps),
+      _cg_gaps)
+check("...and closes the moment the doors reopen - this is a LIVE check of "
+      "running(), not a one-time note",
+      (s_cg.operating.add("patron_imperial"),
+       {g["id"] for g in s_cg.capability_gaps()})[1] == {"corpus_dispersed"},
+      s_cg.capability_gaps())
+s_cg.operating.discard("patron_imperial")
+check("plague_preparedness is deliberately never warned about: its only "
+      "measurable protection (HAZARD_COUNTERS) is has()-gated like corpus, "
+      "so closing it costs nothing today, and a false alarm here is "
+      "exactly the wall-of-text failure this feature exists to avoid",
+      "plague_preparedness" not in s_cg.NOT_OPERATING_BENEFIT,
+      sorted(s_cg.NOT_OPERATING_BENEFIT))
+check("fin_university's sole benefit is shared (an `or`) with "
+      "school_founded in update_protection, so it is only named while "
+      "BOTH are closed, never while school_founded alone still covers it",
+      (lambda s: (
+          s.done.add("fin_university"), s.done.add("school_founded"),
+          s.operating.add("school_founded"), s._done_changed(),
+          "fin_university" not in {g["id"] for g in s.capability_gaps()})[-1]
+      )(sim()),
+      "checked fin_university/school_founded or-gate")
+_st_cg = S._agent_state(s_cg, NODES)
+check("`state` - the screen a player rereads every year - carries this "
+      "warning too, not only a command nobody runs unprompted",
+      _st_cg.get("critical_capabilities_not_operating") is not None
+      and {g["id"] for g in _st_cg["critical_capabilities_not_operating"]}
+          == {"corpus_dispersed", "patron_imperial"},
+      _st_cg.get("critical_capabilities_not_operating"))
+check("...and says nothing when every completed capability is open",
+      S._agent_state(sim(), NODES).get(
+          "critical_capabilities_not_operating") is None,
+      S._agent_state(sim(), NODES).get("critical_capabilities_not_operating"))
+_risk_cg = s_cg.knowledge_risk()
+check("`risk` - the screen whose whole job is telling you what protects "
+      "you - carries the same warning, independent of `state`",
+      _risk_cg.get("critical_capabilities_not_operating") is not None
+      and {g["id"] for g in _risk_cg["critical_capabilities_not_operating"]}
+          == {"corpus_dispersed", "patron_imperial"},
+      _risk_cg.get("critical_capabilities_not_operating"))
+check("the id named is never hidden under fog - a player has always "
+      "already discovered anything in their own `done`",
+      all(s_cg.is_visible(g["id"]) for g in _cg_gaps), _cg_gaps)
 
 # --- BREAK: auto_mine took 353,039 a year against 467,227 of revenue and
 # there was no command that named what you owned or what it cost.
@@ -10292,6 +10416,65 @@ check("no command in KNOWN_COMMANDS prints the raw id of a node this fogged "
       "command at once, so the next command to grow this bug is caught "
       "here rather than by a playtester, the way `bounty` was",
       not _fogscan_leaks, _fogscan_leaks)
+
+# =============================================================================
+# A GENERIC COMMAND-POINTER SCANNER. `state`'s own footer once pointed a
+# player at `training_pending` with nothing behind it - "did you mean: "
+# answered with a command that does not exist - and the fix for that one
+# name would not have caught the next one. This walks every reply
+# KNOWN_COMMANDS and help can produce, collects every "{"cmd":"X"}" and
+# "see 'X'" pointer found anywhere in them, and asserts X is something
+# the parser - parse_typed's own KNOWN_COMMANDS/TYPED_ALIASES check -
+# actually accepts. Generic across every command at once, the same shape
+# as the fog scanner above, so the next stale pointer is caught here.
+# =============================================================================
+from engine.protocol import TYPED_ALIASES as _TYPED_ALIASES
+
+
+def _strings_of(obj):
+    if isinstance(obj, str):
+        yield obj
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            yield from _strings_of(v)
+    elif isinstance(obj, (list, tuple)):
+        for v in obj:
+            yield from _strings_of(v)
+
+
+_ptr_sim = sim(capital=5_000_000.0)
+_ptr_strings = []
+for _pc in S.KNOWN_COMMANDS:
+    if _pc in ("save", "load", "quit", "step"):
+        continue            # side effects unrelated to what this scans for
+    _pobj = dict(_fogscan_args.get(_pc, {}))
+    _pobj["cmd"] = _pc
+    try:
+        _pr = S._agent_dispatch(_ptr_sim, NODES, _pobj)
+    except Exception:
+        continue             # a crash is a different bug
+    _ptr_strings.extend(_strings_of(_pr))
+for _pt in list(S.HELP_TOPICS) + [None]:
+    _ptr_strings.extend(_strings_of(S._agent_help(_ptr_sim, _pt)))
+_ptr_cmd_re = re.compile(r'\{"cmd":"([A-Za-z_]+)"')
+_ptr_see_re = re.compile(r"see '([A-Za-z_]+)")
+_ptr_found = set()
+for _ps in _ptr_strings:
+    _ptr_found.update(_ptr_cmd_re.findall(_ps))
+    _ptr_found.update(_ptr_see_re.findall(_ps))
+_ptr_accepted = set(S.KNOWN_COMMANDS) | set(_TYPED_ALIASES.keys())
+_ptr_bad = sorted(_ptr_found - _ptr_accepted)
+check("every command every reply in KNOWN_COMMANDS or help points a player "
+      "at - every {\"cmd\":\"X\"} and every bare see 'X' - is a command the "
+      "parser actually accepts, walked generically so the class of bug "
+      "`training_pending` was (advertised, not implemented) cannot come "
+      "back under a different name",
+      not _ptr_bad, (_ptr_bad, sorted(_ptr_found)))
+check("...and the scan actually found real pointers to check - an empty "
+      "result from a broken scanner would pass this test for the wrong "
+      "reason",
+      len(_ptr_found) >= 10, sorted(_ptr_found))
+
 # --- a failed attempt teaches you something (projects.py: retry learning) ---
 # A player who had already won the game: a failed high-pressure steam system
 # used to reset the calendar floor to zero and roll again at the identical

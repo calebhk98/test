@@ -335,6 +335,7 @@ class FogMixin:
                 "better_hedge_available": None,
                 "note": "no remaining hazard for this civilization sacks a site, "
                         "so nothing here is currently at risk of being forgotten",
+                "critical_capabilities_not_operating": self.capability_gaps() or None,
                 "known_hazards_ahead": upcoming,
                 "timeline": timeline,
             }
@@ -349,6 +350,11 @@ class FogMixin:
             # and found this 20% low, which is exactly 1 - 0.8.
             "expected_technologies_lost_per_sacking": round(at_risk * frac, 1),
             "and_the_chance_a_sacking_costs_you_anything": round(chance, 2),
+            # done versus operating, on the ONE screen whose whole job is
+            # telling you what protects you. `hedged_by` below only answers
+            # the sack hedge (has(), by design - see corpus_hedge); this
+            # answers everything else this run has completed but let lapse.
+            "critical_capabilities_not_operating": self.capability_gaps() or None,
             **({"you_have_already_lost": len(_gone),
                 "and_have_to_build_again": _gone[:10],
                 "the_most_recent_went_in": self.forgotten[_gone[0]]} if _gone else {}),

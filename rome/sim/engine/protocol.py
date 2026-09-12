@@ -1556,6 +1556,13 @@ def _agent_state(s, nodes, cmd=None):
             nodes[k]["rev"] - nodes[k]["up"] for k in s.done
             if s.is_venture(k) and k not in s.operating
             and nodes[k]["rev"] > nodes[k]["up"]), 0) or None,
+        # THE SAME GAP, for the handful of capabilities whose running()-gated
+        # payout is not revenue at all - protection, standing, credit, a
+        # staff ceiling - and so never showed up in shut_concerns above. This
+        # is `state`, the screen a player actually rereads every year, which
+        # is exactly where the corpus bug's lesson said a DONE/OPERATING
+        # split has to be loud: see ProjectsMixin.capability_gaps.
+        "critical_capabilities_not_operating": s.capability_gaps() or None,
         # net_per_year counts the STANDING flows only. It never counted what
         # projects consume, which is usually the largest outflow by far, so a
         # playtester watched it report a healthy positive number for eight
