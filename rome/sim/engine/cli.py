@@ -22,6 +22,85 @@ from .protocol import (
     parse_typed, render_final, render_pretty, save_state)
 
 
+# ----------------------------------------------------------------------------
+# DIFFICULTY, PRESENTED HONESTLY, AS WHAT IT ACTUALLY IS HERE: how long you
+# have. The horizon was already a plain number the engine takes; a player who
+# had just won the whole game proposed naming a few points on that same line
+# - Challenge/Standard/Relaxed/Endless - rather than asking for four bare
+# numbers with no sense of what any of them mean.
+#
+# THE ONE THING A NAME CANNOT FIX ON ITS OWN: the SAME horizon is a
+# completely different offer depending which civilisation it is attached to.
+# Measured with every stroke of luck removed - no events, no project
+# failures, an immortal founder, the game's own planner doing the ordering -
+# reaching the current goal has taken about 451 years from Han China and
+# about 1,017 from Rome (see rome/data/review/PATH_SEARCH.md for the method
+# and the full tables). A 500-year Standard is generous for the one and
+# short of reachable for the other, and a menu that offers both civilisations
+# and both horizons with nothing connecting them is offering a choice it has
+# not explained. See _new_game's own use of this table for where that
+# connection actually gets said out loud, to whichever civilisation a player
+# has just picked.
+#
+# NOT RECOMPUTED HERE, EVER. A single dice-free trial takes anywhere from
+# several seconds (a short horizon, as path_search.py's own search rounds
+# run it) to minutes (a full-length one, per PATH_SEARCH.md's own timing
+# notes) - far too slow for a menu a player is sitting in front of, and nor
+# is it this file's place to duplicate planner.py/path_search.py's own
+# measurement. Hand-updated if that document's own numbers change; a
+# civilisation not in this table is simply not given a number, rather than
+# being handed a guess dressed as a fact.
+DICE_FREE_FLOOR_YEARS = {
+    "han_china_100ad": 451,
+    "rome_100ad": 1017,
+}
+
+# NAMED, NOT INVENTED. Every one of these is the SAME knob the engine always
+# had (a plain year count the run ends at) - nothing here scales a cost, a
+# risk, or a failure rate. The request named Challenge 400, Standard 500 and
+# Relaxed "600-700"; 650 is the middle of that range, still a single whole
+# number because the engine only ever took one. Endless is not a bigger
+# number wearing a disguise - see ENDLESS_HORIZON_YEARS below for exactly
+# what it is and is not.
+# (key, label, years-or-None, one-line description)
+HORIZON_MODES = (
+    ("challenge", "Challenge", 400,
+     "a tight run - short of the measured dice-free floor for at least one "
+     "civilisation (see above), so reaching the goal on this setting, on "
+     "that civilisation, means playing better than the unlucky-proof plan"),
+    ("standard", "Standard", 500,
+     "the game's own long-standing default"),
+    ("relaxed", "Relaxed", 650,
+     "room to recover from genuinely bad luck"),
+    ("endless", "Endless", None,
+     "no deadline at all - play until you choose to stop"),
+)
+
+# WHAT "ENDLESS" ACTUALLY IS: a very large, ordinary, finite number of years,
+# not a true absence of one. A save file, `state`'s own JSON reply, and every
+# bit of arithmetic anywhere in this engine that reads a horizon
+# (`end_year - year`, `start_year + horizon_years`, and so on) expects a
+# plain number, never `None` or infinity - and this file is not the place to
+# teach all of those call sites a special "no limit" value, several of which
+# live in protocol.py. 9,999 years is the answer instead: an order of
+# magnitude past the longest dice-free floor measured for any civilisation
+# above (1,017, for Rome) and further past that than any real game has ever
+# been played, so nobody playing an actual game reaches it - which is the
+# only property "endless" needs to have in practice. `run`/`compare`/`plan`
+# and flag-driven `play`/`agent` never see this constant at all: it is
+# reached only from the New Game wizard and the in-game 'options' command
+# choosing it explicitly, never from a bare --horizon flag, whose own
+# argparse default (500) is completely unchanged by any of this.
+ENDLESS_HORIZON_YEARS = 9999
+
+
+def _is_endless_horizon(end_year, start_year):
+    """Whether an end_year amounts to the Endless mode above, for display
+    purposes only - nothing about how the game actually runs checks this;
+    it only decides whether a screen says 'no deadline' or a specific year."""
+    return (end_year - start_year) >= ENDLESS_HORIZON_YEARS
+
+
 def load_strategy(name, nodes, goal):
     # A NAME OR A PATH. --save-winner writes a strategy file wherever you ask it
     # to, and there was no way to read one back: this looked only inside the
@@ -554,7 +633,22 @@ def cmd_play(a):
                     "it costs), 'start <name>' (begin it) and 'step' (let a "
                     "year pass). When something is FINISHED it earns nothing "
                     "until you 'open' it. 'stuck' says why you are not getting "
-                    "on; 'help' explains the rest; 'quit' leaves."))
+                    "on; 'quit' leaves."))
+        print()
+        # THE FIVE ABOVE ARE A START, NOT THE WHOLE GAME, and saying so only
+        # in passing - "'help' explains the rest", one clause at the end of a
+        # paragraph about something else - undersold it badly: a player who
+        # went on to win the entire game reported believing there were only
+        # five help topics in total, and reached for `help` for the first
+        # time only once a command she typed did not exist. There are far
+        # more commands than these five, and `help` is where the rest of them
+        # actually live, a topic at a time - named here, not left as a single
+        # word to take on faith.
+        print(_wrap("These five are a beginning, not the whole of it - there "
+                    "are far more commands than this. 'help' lists the rest, "
+                    "one topic at a time: %s. Reach for it the moment you "
+                    "type a word the game does not know, not only once you "
+                    "are stuck." % ", ".join(_protocol.HELP_TOPICS)))
         # THE WALKTHROUGH, NOT BURIED. `path <goal>` lays out everything
         # still standing between here and one thing AND which of it you
         # could start today, and it used to be findable only inside `help
@@ -610,9 +704,42 @@ def cmd_play(a):
         # _ingame_options and settings.py's module docstring for what it
         # covers and why each of those, specifically, is honest to change
         # without restarting.
-        if line.strip().split()[:1] and line.strip().split()[0].lower() in (
-                "options", "option", "settings"):
+        _tokens = line.strip().split()
+        _word0 = _tokens[0].lower() if _tokens else ""
+        if _word0 in ("options", "option", "settings"):
             session = _ingame_options(s, session)
+            continue
+        # SESSION COMMANDS, BARE ONLY - see the block comment above
+        # _ingame_saves for why these four exist and why each is intercepted
+        # here rather than reaching parse_typed. 'save <file>'/'load <file>'
+        # WITH an argument are deliberately left alone: those still fall
+        # through to the JSON protocol's own sandboxed save/load below,
+        # unchanged from before any of this existed.
+        if _word0 == "saves" and len(_tokens) == 1:
+            _ingame_saves(app_cfg, session)
+            continue
+        if _word0 == "save" and len(_tokens) == 1:
+            _ingame_save_milestone(s, session)
+            continue
+        if _word0 == "load" and len(_tokens) == 1:
+            session = _ingame_load(app_cfg, s, session, a)
+            continue
+        if _word0 == "menu" and len(_tokens) == 1:
+            # NOT A LOSS. This game has already been saved after every
+            # command that reached this point (see "SAVE FIRST, THEN SPEAK"
+            # below) and --session itself is untouched - 'menu' only means
+            # "I am done looking at this one for now", and cmd_menu's own
+            # Load screen (or a bare resume with --session) is how to come
+            # straight back to it.
+            print()
+            return cmd_menu(a)
+        if _word0 == "restart" and len(_tokens) == 1:
+            _confirm = _ask("   Start a different game? This one stays "
+                            "exactly as saved, and you can resume it later. "
+                            "[y/N] ", ["y", "n"], "n")
+            if _confirm == "y":
+                print()
+                return _new_game(_load_civ_list(), app_cfg)
             continue
         cmd, err = parse_typed(line)
         if err:
@@ -731,8 +858,16 @@ def _ingame_options(s, session):
         print("   mortality    : %s"
               % ("on - the founder ages, and can die of it" if mortal_on
                  else "off - the founder does not age"))
-        print("   horizon      : ends %d AD  (now %d AD, %d years left)"
-              % (cur_end, s.year, max(0, cur_end - s.year)))
+        # NO DEADLINE, SAID PLAINLY - not a nine-digit year nobody asked to
+        # read. Endless is still, underneath, the large-but-ordinary number
+        # ENDLESS_HORIZON_YEARS describes (see its own comment on why); this
+        # is the one screen in cli.py that knows that and says the honest
+        # thing instead of the literal one.
+        if _is_endless_horizon(cur_end, s.cfg["start_year"]):
+            print("   horizon      : none - Endless. Play until you choose to stop.")
+        else:
+            print("   horizon      : ends %d AD  (now %d AD, %d years left)"
+                  % (cur_end, s.year, max(0, cur_end - s.year)))
         print("   this save    : %s"
               % (session or "(not being saved anywhere - restart with --session "
                             "to change that)"))
@@ -755,23 +890,29 @@ def _ingame_options(s, session):
 
         elif word in ("1", "horizon"):
             try:
-                raw2 = input("   New end year (a whole number of AD, > %d): "
+                raw2 = input("   New end year (a whole number of AD, > %d), "
+                             "or 'endless' for no deadline at all: "
                              % s.year).strip()
             except (EOFError, KeyboardInterrupt):
                 print(); continue
             if not raw2:
                 print("   -- unchanged.")
                 continue
-            try:
-                new_end = int(raw2)
-            except ValueError:
-                print("   -- that is not a whole number of years.")
-                continue
-            if new_end <= s.year:
-                print("   -- %d AD has already passed (or is now); the game "
-                      "would end the moment you left this menu. Pick a later "
-                      "year." % new_end)
-                continue
+            if raw2.lower() in ("endless", "none", "forever", "no deadline",
+                               "no limit", "unlimited"):
+                new_end = s.year + ENDLESS_HORIZON_YEARS
+            else:
+                try:
+                    new_end = int(raw2)
+                except ValueError:
+                    print("   -- that is not a whole number of years, or "
+                          "'endless'.")
+                    continue
+                if new_end <= s.year:
+                    print("   -- %d AD has already passed (or is now); the "
+                          "game would end the moment you left this menu. Pick "
+                          "a later year." % new_end)
+                    continue
             new_horizon = new_end - s.cfg["start_year"]
             s.end_year = new_end
             s.cfg["horizon_years"] = new_horizon
@@ -779,7 +920,9 @@ def _ingame_options(s, session):
                 meta = settings.load_session_meta(session)
                 meta["horizon_years"] = new_horizon
                 settings.save_session_meta(session, meta)
-            print("   -- done. This game now ends in %d AD." % new_end)
+            print("   -- done. This game now has no deadline (Endless)."
+                  if _is_endless_horizon(new_end, s.cfg["start_year"]) else
+                  "   -- done. This game now ends in %d AD." % new_end)
 
         elif word in ("2", "mortal", "mortality") and not mortal_on:
             print(_wrap("From this year on the founder ages, and can die of "
@@ -845,6 +988,144 @@ def _ingame_options(s, session):
 
         else:
             print("   -- not a choice right now.")
+
+
+# ----------------------------------------------------------------------------
+# SESSION COMMANDS, TYPED DIRECTLY WHILE PLAYING - no backing out to the main
+# menu and back in. A player who had just won the whole game said autosaves
+# plus the manual saves they made at moments that mattered to them were a
+# real part of how they played, and none of 'saves' (what do I have),
+# 'load' (switch to a different one) or 'menu' (go back without losing this
+# one) existed as something you could simply type. 'save <file>' and
+# 'load <file>' already worked mid-game - they are the JSON protocol's own
+# sandboxed commands (see protocol.py's SAVE_SUFFIXES/_unsafe_path and help
+# topic 'save'/'load'), reachable here because cmd_play's loop hands every
+# typed line to the same parser and dispatcher the JSON protocol uses. What
+# did not exist was anything that knows about the SAVE DIRECTORY cli.py
+# itself manages (settings.resolve_save_dir, settings.list_saves) - the bare
+# forms below, intercepted in cmd_play before a line ever reaches that
+# parser, the same way 'options' already is.
+# ----------------------------------------------------------------------------
+
+def _ingame_saves(cfg, session):
+    """'saves', typed bare mid-game: what is in the configured save
+    directory, without leaving for the main menu's Load screen. Read-only -
+    'load', typed bare, is what switches this session to one of them."""
+    save_dir, rows, civ_index, need = _save_listing(cfg)
+    print()
+    print("-" * 78)
+    print("   SAVES  (in %s)" % save_dir)
+    print("-" * 78)
+    if not rows:
+        print(_wrap("Nothing there yet."))
+        print()
+        return
+    cur_abs = os.path.abspath(session) if session else None
+    for i, r in enumerate(rows, 1):
+        marker = ("<- this game" if cur_abs
+                  and os.path.abspath(r["path"]) == cur_abs else None)
+        _print_save_row(i, r, civ_index, need, marker)
+    print(_wrap("'load' switches this session to one of these; 'save' on "
+                "its own keeps a new copy of exactly this moment, alongside "
+                "whatever this game is already autosaving to."))
+    print()
+
+
+def _pick_milestone_filename(civ_id):
+    """A distinct filename for a manual, in-play 'save' - never the name
+    --session is already autosaving to, so a milestone asked for by name is
+    never quietly overwritten by the very next ordinary turn's autosave.
+    Same claim-by-creating discipline as _pick_session_filename, for the
+    same reason: two milestones saved in the same second must not collide."""
+    d = settings.resolve_save_dir()
+    prefix = os.path.join(d, civ_id) + "_saved_"
+    i = 1
+    while True:
+        candidate = "%s%d.json" % (prefix, i)
+        try:
+            os.close(os.open(candidate, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644))
+            return candidate
+        except FileExistsError:
+            i += 1
+        except OSError:
+            return candidate
+
+
+def _ingame_save_milestone(s, session):
+    """'save', typed bare mid-game (no filename): a snapshot of exactly this
+    moment, kept in the managed save directory alongside whatever --session
+    is already autosaving to - so a player can come back to THIS point
+    later even after the ongoing game has moved well past it. 'save <file>'
+    with a name is untouched: that is still the JSON protocol's own
+    sandboxed save, a relative path beside wherever the game was started."""
+    path = _pick_milestone_filename(s.civ.get("id") or "game")
+    try:
+        save_state(s, path)
+    except OSError as e:
+        print("   -- could not write there: %s" % e)
+        return
+    print("   -- saved a copy of %d AD to %s" % (s.year, path))
+    if session:
+        print("      (this game's ongoing save at %s is untouched, and keeps "
+              "saving after every command as before)" % session)
+
+
+def _ingame_load(cfg, s, session, a):
+    """'load', typed bare mid-game: switch this running game to a different
+    save in the managed directory, without going back to the main menu.
+    Returns the session path to use from here on - unchanged if nothing was
+    picked or the load was refused. 'load <file>' with a name is untouched:
+    that is still the JSON protocol's own sandboxed relative load.
+
+    A save from a different civilisation is refused, loudly, by load_state
+    itself (_validate_save checks `_civ` against this running game's own) -
+    not re-checked here, so there is exactly one place that decides it.
+    """
+    save_dir, rows, civ_index, need = _save_listing(cfg)
+    print()
+    print("-" * 78)
+    print("   LOAD A DIFFERENT SAVE  (in %s)" % save_dir)
+    print("-" * 78)
+    if not rows:
+        print(_wrap("Nothing there to switch to."))
+        print()
+        return session
+    for i, r in enumerate(rows, 1):
+        _print_save_row(i, r, civ_index, need)
+    print("   b) never mind, keep playing this one")
+    try:
+        raw = input("\n   Which one? [1-%d, or b] " % len(rows)).strip().lower()
+    except (EOFError, KeyboardInterrupt):
+        print(); return session
+    if raw in ("", "b", "back", "q", "quit"):
+        return session
+    if not (raw.isdigit() and 1 <= int(raw) <= len(rows)):
+        print("   -- a number from the list above, or b.")
+        return session
+    chosen = rows[int(raw) - 1]["path"]
+    try:
+        load_state(s, chosen)
+    except Exception as e:
+        print("   -- could not load %s: %s" % (chosen, e))
+        return session
+    # THE HORIZON, AGAIN, THE SAME WAY _resolve_horizon DOES AT STARTUP. It
+    # is not part of what load_state restores (see settings.py's module
+    # docstring) - it lives in a sidecar keyed to THIS filename, so switching
+    # files means reading that file's own sidecar, not keeping whatever
+    # horizon the game just left behind.
+    meta = settings.load_session_meta(chosen)
+    h = meta.get("horizon_years")
+    if isinstance(h, (int, float)) and h > 0:
+        s.cfg["horizon_years"] = int(h)
+        s.end_year = s.cfg["start_year"] + int(h)
+    # A STALE "already said the ending" FLAG WOULD LIE HERE TWICE OVER: it
+    # could suppress the scoreboard for a save that HAD already ended, or
+    # (after this session later ends on its own) skip announcing THAT ending
+    # because some earlier game's flag was still set. Either way, a load is
+    # a new look at a position this process has not narrated yet.
+    a._said_end = False
+    print("   -- switched to %s: %d AD." % (chosen, s.year))
+    return chosen
 
 
 # ----------------------------------------------------------------------------
@@ -1591,30 +1872,110 @@ def _new_game(civs, cfg):
         return None
     print()
     print("-" * 78)
-    print(_wrap("HORIZON. The game ends automatically this many years after "
-                "arrival, mostly so a run that is truly stuck stops rather than "
-                "running forever. Unlike the choices above, this one you CAN "
-                "change later without restarting - the in-game 'options' "
-                "command.", indent="   "))
+    print(_wrap("DIFFICULTY, IN THIS GAME, MEANS ONE THING: how long you have. "
+                "Nothing below changes what anything costs or how likely it is "
+                "to fail - the tree and the risk are the same whatever you "
+                "pick here. What changes is only the calendar you are racing.",
+                indent="   "))
+    print()
+    # THE ONE HONEST THING A MODE MENU CAN SAY HERE: the same number of years
+    # is a completely different offer depending which civilisation it is
+    # attached to - see DICE_FREE_FLOOR_YEARS's own comment for the measurement
+    # and rome/data/review/PATH_SEARCH.md for the method. Said to the player
+    # NOW, about the civilisation they just picked, rather than left for them
+    # to discover by overshooting a horizon that was never going to be enough.
+    _goal_name = None
+    try:
+        _tree, _prices, _nodes, _wages, _goods = load()
+        _goal_name = _nodes.get(_tree["meta"]["goal_node"], {}).get("name")
+    except Exception:
+        pass
+    _floor = DICE_FREE_FLOOR_YEARS.get(civ["id"])
+    if _floor is not None:
+        print(_wrap("For %s specifically: measured with no bad luck at all, "
+                    "reaching %s from here takes about %d years. Challenge "
+                    "and Standard, below, both end well short of that; "
+                    "Relaxed does too."
+                    % (civ.get("name", civ["id"]), _goal_name or "the goal",
+                       _floor), indent="   "))
+    else:
+        print(_wrap("How generous a given number of years is depends heavily "
+                    "on which civilisation you are playing: measured with no "
+                    "bad luck at all, the same goal has taken as few as about "
+                    "450 years from one starting point and over 1,000 from "
+                    "another (see rome/data/review/PATH_SEARCH.md). %s has "
+                    "not been measured the same way, so take the numbers "
+                    "below as a guess until you have actually played it once."
+                    % civ.get("name", civ["id"]), indent="   "))
+    print()
+    for i, (_key, _label, _yrs, _note) in enumerate(HORIZON_MODES, 1):
+        print("   %d) %-10s %s" % (i, _label,
+              ("%d years - %s" % (_yrs, _note)) if _yrs else _note))
+    print("   %d) an exact number of years" % (len(HORIZON_MODES) + 1))
+    # THE REMEMBERED DEFAULT MUST STILL ACCEPT IN ONE BLANK LINE, the same
+    # contract every other question in this wizard already has (see "REMEMBERED
+    # FOR NEXT TIME" below) - whether last time's horizon happens to match a
+    # named preset or not. A player who remembered 321 years specifically
+    # must not be routed through an extra "how many years?" prompt just
+    # because 321 is not one of the four named numbers.
     default_h = cfg.get("default_horizon", 500)
+    _mode_by_years = {m[2]: m[0] for m in HORIZON_MODES if m[2]}
+    _mode_by_years[ENDLESS_HORIZON_YEARS] = "endless"
+    _default_key = _mode_by_years.get(default_h)
+    _default_idx = (next(i for i, m in enumerate(HORIZON_MODES, 1)
+                         if m[0] == _default_key)
+                    if _default_key else len(HORIZON_MODES) + 1)
     while True:
         try:
-            rawh = input("\n   How many years? [default %d, or b to go back] "
-                         % default_h).strip()
+            rawh = input("\n   Which? [1-%d, default %d, or b to go back] "
+                         % (len(HORIZON_MODES) + 1, _default_idx)).strip().lower()
         except (EOFError, KeyboardInterrupt):
             print(); return None
-        if rawh.lower() in ("q", "quit", "exit", "b", "back"):
+        if rawh in ("q", "quit", "exit", "b", "back"):
             return None
         if not rawh:
+            if _default_key:
+                _key, _label, _yrs, _note = HORIZON_MODES[_default_idx - 1]
+                horizon = _yrs if _yrs else ENDLESS_HORIZON_YEARS
+                break
+            # No preset matches the remembered horizon - accept IT directly,
+            # not the custom prompt's own separate default, with no second
+            # question asked.
             horizon = default_h
             break
-        try:
-            horizon = int(rawh)
-            if horizon <= 0:
-                raise ValueError
+        if rawh.isdigit() and 1 <= int(rawh) <= len(HORIZON_MODES) + 1:
+            choice = int(rawh)
+        else:
+            _match = next((i for i, m in enumerate(HORIZON_MODES, 1)
+                          if rawh in (m[0], m[1].lower())), None)
+            if _match is None:
+                print("   -- a number from 1 to %d, a name, or b."
+                      % (len(HORIZON_MODES) + 1))
+                continue
+            choice = _match
+        if choice == len(HORIZON_MODES) + 1:
+            try:
+                rawh2 = input("   How many years? [default %d, or b to go "
+                              "back] " % default_h).strip()
+            except (EOFError, KeyboardInterrupt):
+                print(); return None
+            if rawh2.lower() in ("q", "quit", "exit", "b", "back"):
+                return None
+            if not rawh2:
+                horizon = default_h
+                break
+            try:
+                horizon = int(rawh2)
+                if horizon <= 0:
+                    raise ValueError
+            except ValueError:
+                print("   -- a whole number of years, more than 0.")
+                continue
             break
-        except ValueError:
-            print("   -- a whole number of years, more than 0.")
+        else:
+            _key, _label, _yrs, _note = HORIZON_MODES[choice - 1]
+            horizon = _yrs if _yrs else ENDLESS_HORIZON_YEARS
+            break
 
     # REMEMBERED FOR NEXT TIME, SILENTLY - not a settings screen's job. A
     # player who favours one civilisation and kit should not have to retype
@@ -1679,17 +2040,12 @@ def _new_game(civs, cfg):
     return cmd_play(args)
 
 
-def _load_game(cfg):
-    """List what is in the configured save directory and resume one.
-
-    Enough to choose by, per civilisation: which one, what year it is at,
-    how far along, and when it was last written - see settings.list_saves
-    and settings.humanize_age. A save played WITH fog does not get the
-    goal-progress fraction shown here: that number (X of Y toward the
-    transistor) says how big the whole tree is, which is exactly what fog
-    exists to keep a player from knowing before they have earned it, and a
-    menu screen is not exempt from that just because no Sim object exists
-    yet.
+def _save_listing(cfg):
+    """(save_dir, rows, civ_index, need) - everything both `_load_game` (the
+    main-menu door) and `_ingame_saves`/`_ingame_load` (the same list, typed
+    mid-game - see PLAYER REQUEST #3 below) print a save row from. One
+    implementation, so the two screens cannot quietly drift apart the way
+    the fog-progress fraction almost did when this was still duplicated.
     """
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
@@ -1697,6 +2053,60 @@ def _load_game(cfg):
     civ_index = {c["id"]: c for c in _load_civ_list()}
     save_dir = settings.resolve_save_dir(cfg)
     rows = settings.list_saves(save_dir)
+    return save_dir, rows, civ_index, need
+
+
+def _print_save_row(i, r, civ_index, need, marker=None):
+    """The lines `_load_game`, `_ingame_saves` and `_ingame_load` all print
+    for one save: which civilisation, how far along, when it was last
+    touched. A save played WITH fog does not get the goal-progress fraction
+    shown here: that number (X of Y toward the transistor) says how big the
+    whole tree is, which is exactly what fog exists to keep a player from
+    knowing before they have earned it, and a listing screen is not exempt
+    from that just because no Sim object exists yet.
+    """
+    if not r["readable"]:
+        print("   %d) %s" % (i, r["filename"]))
+        print("      could not be read as a save from this game; skipping "
+              "its details")
+        print()
+        return
+    c = civ_index.get(r["civ_id"], {})
+    name = c.get("name", r["civ_id"] or "unknown civilisation")
+    start = c.get("year")
+    year = r["year"]
+    elapsed = ("  (%d years in)" % (year - start)
+              if isinstance(start, (int, float)) and isinstance(year, (int, float))
+              else "")
+    print("   %d) %s%s" % (i, r["filename"], "   %s" % marker if marker else ""))
+    print("      %s  -  now %s AD%s" % (name, year, elapsed))
+    status = []
+    if r.get("goal_year"):
+        status.append("REACHED THE TRANSISTOR in %s AD" % r["goal_year"])
+    elif r.get("dead_reason"):
+        status.append("ended: %s" % r["dead_reason"])
+    elif r.get("founder_alive") is False:
+        status.append("founder has died")
+    done = r.get("done") or []
+    if r["fog"]:
+        status.append("%d technologies built" % len(done))
+    else:
+        progress = len(need.intersection(done))
+        status.append("%d/%d toward the transistor" % (progress, len(need)))
+    status.append("fog %s" % ("on" if r["fog"] else "off"))
+    if r.get("reputation") is not None:
+        status.append("rep %.0f" % r["reputation"])
+    print("      " + "  |  ".join(status))
+    print("      last played %s" % settings.humanize_age(r["mtime"]))
+    print()
+
+
+def _load_game(cfg):
+    """List what is in the configured save directory and resume one.
+
+    See _print_save_row for what each entry shows and why.
+    """
+    save_dir, rows, civ_index, need = _save_listing(cfg)
 
     print("-" * 78)
     print("   LOAD A SAVED GAME")
@@ -1708,40 +2118,7 @@ def _load_game(cfg):
                     "path to a save file below if you have one somewhere else."))
         print()
     for i, r in enumerate(rows, 1):
-        if not r["readable"]:
-            print("   %d) %s" % (i, r["filename"]))
-            print("      could not be read as a save from this game; skipping "
-                  "its details")
-            print()
-            continue
-        c = civ_index.get(r["civ_id"], {})
-        name = c.get("name", r["civ_id"] or "unknown civilisation")
-        start = c.get("year")
-        year = r["year"]
-        elapsed = ("  (%d years in)" % (year - start)
-                  if isinstance(start, (int, float)) and isinstance(year, (int, float))
-                  else "")
-        print("   %d) %s" % (i, r["filename"]))
-        print("      %s  -  now %s AD%s" % (name, year, elapsed))
-        status = []
-        if r.get("goal_year"):
-            status.append("REACHED THE TRANSISTOR in %s AD" % r["goal_year"])
-        elif r.get("dead_reason"):
-            status.append("ended: %s" % r["dead_reason"])
-        elif r.get("founder_alive") is False:
-            status.append("founder has died")
-        done = r.get("done") or []
-        if r["fog"]:
-            status.append("%d technologies built" % len(done))
-        else:
-            progress = len(need.intersection(done))
-            status.append("%d/%d toward the transistor" % (progress, len(need)))
-        status.append("fog %s" % ("on" if r["fog"] else "off"))
-        if r.get("reputation") is not None:
-            status.append("rep %.0f" % r["reputation"])
-        print("      " + "  |  ".join(status))
-        print("      last played %s" % settings.humanize_age(r["mtime"]))
-        print()
+        _print_save_row(i, r, civ_index, need)
 
     print("   b) back to the main menu")
     if rows:

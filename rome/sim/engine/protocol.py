@@ -25,8 +25,18 @@ def _agent_end_reason(s):
     end_year = getattr(s, "end_year", s.cfg["start_year"] + s.cfg["horizon_years"])
     if s.dead_reason:
         return s.dead_reason
-    if s.goal_year:
-        return "goal reached: %s completed in %d AD" % (s.goal, s.goal_year)
+    # REACHING THE GOAL IS NOT AN ENDING ANY MORE. A player who won wrote: "I
+    # wanted to keep going after the transistor. I had this enormous
+    # industrial/research civilization and a giant untouched tree. Stopping
+    # immediately after the victory screen would waste the most developed state
+    # the player has ever created." They are right, and the tree agrees with
+    # them - the goal's prerequisite closure is 168 nodes of 2,833, so a won run
+    # has barely touched it. The win is recorded in s.goal_year for ever and the
+    # run carries on until the founder dies or the horizon arrives.
+    #
+    # `run` and `compare` are unaffected: Sim.run() in core.py stops at the goal
+    # on its own, which is what every measurement in this repository wants and
+    # what keeps a dice-free trial cheap. This is the interactive path only.
     if s.year >= end_year:
         # Under fog there IS no stated goal, so saying the player failed to reach
         # one is incoherent. A tester finished a 500 year run and was told they
@@ -40,6 +50,12 @@ def _agent_end_reason(s):
                     "own and did not reach %s."
                     % (end_year, len(s.done - s.granted),
                        s.nodes[s.goal]["name"].lower() if s.goal in s.nodes else "the goal"))
+        if s.goal_year:
+            return ("the horizon at %d AD is reached. You reached %s in %d AD "
+                    "and kept building for %d years after it."
+                    % (end_year,
+                       s.nodes[s.goal]["name"].lower() if s.goal in s.nodes
+                       else "the goal", s.goal_year, end_year - s.goal_year))
         return "ran out of horizon (%d AD) without reaching the goal" % end_year
     return None
 
@@ -1159,7 +1175,19 @@ def _agent_state(s, nodes, cmd=None):
                 and all(v["founder_hours_left"] <= 0 for v in active.values())
                 and max(0.0, s.director_pool()
                         - s.director_hours_committed()) > 200)
-            else None),
+            # AND WHEN NOTHING IS RUNNING AT ALL, which the first branch cannot
+            # see because it requires `active` to be non-empty. A player who
+            # steps a year with an empty slate loses those hours exactly as
+            # completely, and hours do not carry.
+            else ("%s founder-hours this year are going into nothing at all: "
+                  "you have no work in hand. Hours do not carry to next year. "
+                  "'available' or 'stuck' says what you could begin today."
+                  % "{:,.0f}".format(max(0.0, s.director_pool()
+                                         - s.director_hours_committed()))
+                  if (not active
+                      and max(0.0, s.director_pool()
+                              - s.director_hours_committed()) > 200)
+                  else None)),
         "founder_hours_sold_for_wages_this_year": round(
             getattr(s, "wage_hours_this_year", 0.0), 1),
         # WHERE THE HOURS COME FROM. A play tester watched their year grow from
@@ -6913,7 +6941,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
         end_year = s.end_year
         ran = 0
         for _ in range(years):
-            if s.dead_reason or s.goal_year or s.year >= end_year:
+            if s.dead_reason or s.year >= end_year:
                 break
             before_done, before_log = set(s.done), len(s.log)
             # FOR `changes`: what a bare node-or-concern-set diff cannot tell
@@ -6965,6 +6993,16 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     # comment on why the log alone cannot be trusted to
                     # survive a save and a resume.
                     s._founder_death_aged, s._founder_death_year = _age_n, y
+            # AND STOP THE YEAR YOU WIN. Reaching the goal is no longer an
+            # ending, so without this a `step 50` that crosses the finish line
+            # would run on for another forty-nine years and mention it in
+            # passing. It is the one moment in a run most worth handing back.
+            if ran < years and s.goal_year == s.year:
+                stopped_early = ("stopped after %d of the %d years you asked "
+                                 "for: you reached it. Step again when you "
+                                 "have had a look around."
+                                 % (ran, years))
+                break
             if ran < years and any(mk.lower() in m.lower() for _, m in _this_year
                                    for mk in _STEP_STOP_MARKERS):
                 stopped_early = ("stopped after %d of the %d years you asked "
