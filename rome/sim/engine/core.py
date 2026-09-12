@@ -373,6 +373,33 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
     def has(self, k):
         return k in self.done
 
+    # THE ONE PLACE that answers "what is my corpus worth against a
+    # sacking" - the sack in SocietyMixin._shocks and the `risk` reply in
+    # FogMixin.knowledge_risk used to each carry their own copy of this
+    # table, and they drifted: `risk` was fixed to read `has()` (a corpus
+    # that is written and dispersed does not stop existing because the
+    # scriptorium that produced it closed - copies already in other
+    # people's hands are still in other people's hands), and the sack was
+    # never brought along, so it kept reading `running()` and applied
+    # corpus_written's weaker 0.45/0.22 to a household `risk` was telling,
+    # in the same breath, it had corpus_dispersed's 0.12/0.08. A player
+    # who trusted the screen lost nearly three times what they were told
+    # to expect. Call this, from both places, rather than re-deriving it -
+    # that is the only way to make the two screens unable to disagree
+    # again.
+    def corpus_hedge(self):
+        """(loss_chance, fraction_lost, hedge_name) a sacking faces right now.
+
+        `has`, not `running`: see the comment above `has` itself and
+        FogMixin.knowledge_risk for the fuller argument. `hedge_name` is
+        None if neither corpus exists yet.
+        """
+        if self.has("corpus_dispersed"):
+            return 0.12, 0.08, "corpus_dispersed"
+        if self.has("corpus_written"):
+            return 0.45, 0.22, "corpus_written"
+        return 0.80, 0.40, None
+
     # ---- GEOGRAPHY: reach and material cost, FOR THE CIVILIZATION IN PLAY --
     # geography.json used to hard-code one `reach` per region, measured from
     # Italy, and nothing in this file ever read it as a cost: `civs` printed

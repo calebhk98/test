@@ -1524,9 +1524,12 @@ class SocietyMixin:
                                      % (h.get("name", "crisis"),
                                         ", ".join(_took)
                                         or "you had nothing it could take")))
-                    if self.running("corpus_dispersed"):   pl, frac = 0.12, 0.08
-                    elif self.running("corpus_written"):   pl, frac = 0.45, 0.22
-                    else:                              pl, frac = 0.80, 0.40
+                    # Sim.corpus_hedge (core.py) is the one place this is
+                    # decided, and `risk` calls the same method - see its
+                    # own comment for why this used to quote `running()`
+                    # and tell a player, in `risk`, that they had a hedge
+                    # `running()` said had already lapsed.
+                    pl, frac, _hedge_before = self.corpus_hedge()
                     if r.random() < pl:
                         # sorted() matters: self.done is a SET and iterates in an
                         # order that depends on PYTHONHASHSEED, so feeding it
@@ -1534,9 +1537,19 @@ class SocietyMixin:
                         # different answer every invocation.
                         # Never the society's own inheritance: you can lose what
                         # YOU built, not what the civilization has always known.
+                        # Nor corpus_dispersed: its whole definition is that
+                        # copies exist in other people's hands, beyond this
+                        # one site - a sack here cannot reach a copy sitting
+                        # in a library three provinces away. corpus_written,
+                        # one set of books in one place, stays losable; only
+                        # dispersal is out of a single raid's reach. This is
+                        # about a SACK specifically - mothballing or
+                        # abandoning the corpus yourself is a different
+                        # mechanism and still applies.
                         losable = sorted(k for k in self.done
                                          if self.nodes[k]["tier"] >= 2
-                                         and k not in self.granted)
+                                         and k not in self.granted
+                                         and k != "corpus_dispersed")
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
                             _lost = getattr(self, "forgotten", None)
@@ -1587,7 +1600,17 @@ class SocietyMixin:
                                    ", ".join(_named[:8])
                                    + (" and %d more" % (len(_named) - 8)
                                       if len(_named) > 8 else ""),
-                                   "" if self.running("corpus_dispersed")
+                                   # BEFORE the loss, not after: `drop` has
+                                   # already come out of `self.done` by this
+                                   # point, so re-asking `self.done` here
+                                   # could tell a player the corpus was
+                                   # "never printed and dispersed" in the
+                                   # same sentence that says the corpus
+                                   # itself just went - both about the same
+                                   # sacking. _hedge_before was read when
+                                   # the sack started, before anything was
+                                   # taken.
+                                   "" if _hedge_before == "corpus_dispersed"
                                    else " (the corpus was never printed and "
                                         "dispersed)",
                                    ". THE CORPUS ITSELF WENT (%s): your hedge "
