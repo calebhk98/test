@@ -4340,6 +4340,40 @@ check("...and says why, and what brings it back down",
       _dear.get("dearer_than_usual_by") and "supply" in (_dear.get("because") or ""),
       _dear.get("because"))
 
+# --- BREAK (naive15/norse): "labour scholar" quoted 525 for a year of one
+# scholar, the player hired one, and the standing wage bill came to 847.92 -
+# 61% more - because that one hire bid labour_price_factor up for every
+# scholar they then had, not only the new one. The quote and the bill were
+# never inconsistent (both compute the same formula at the instant each is
+# read); what was missing is a FORECAST: what hiring is about to do to the
+# price, shown before the player commits, not just the market as it stands.
+s_fc = sim(civ="norse_900ad", capital=None)
+s_fc.capital = 560.0
+_fc0 = S._agent_dispatch(s_fc, NODES, {"cmd": "labour", "trade": "scholar"})["trade"]
+check("the quote for a scarce trade forecasts what hiring one now would "
+      "make EVERY one of that trade cost - not just today's market price",
+      _fc0.get("hiring_moves_the_price") is True
+      and _fc0["a_year_of_one_after_you_hire_one"] > _fc0["a_year_of_one"],
+      (_fc0.get("a_year_of_one"), _fc0.get("a_year_of_one_after_you_hire_one")))
+check("...and it is the real forecast, not a guess: hiring one for real "
+      "lands within a rounding error of the number just quoted",
+      abs(S._agent_dispatch(s_fc, NODES,
+          {"cmd": "hire", "trade": "scholar", "n": 1})["annual_wage_bill"]
+          - _fc0["a_year_of_one_after_you_hire_one"]) < 1.0,
+      (_fc0["a_year_of_one_after_you_hire_one"],))
+_fc_txt = _protocol.render_pretty(
+    "labour", S._agent_dispatch(s_fc, NODES, {"cmd": "labour", "trade": "scholar"}))
+check("...and the readable screen states the forecast plainly, not just in "
+      "the JSON",
+      "MOVES THE PRICE" in _fc_txt and "not just the new hire" in _fc_txt,
+      _fc_txt)
+# An abundant trade is not put on notice by one hire - the forecast has to
+# be selective, not a blanket disclaimer on every quote.
+s_fc2 = sim(capital=2000000.0)
+_fc_ab = S._agent_dispatch(s_fc2, NODES, {"cmd": "labour", "trade": "labourer"})["trade"]
+check("an abundant trade's quote is not flagged as price-moving from one hire",
+      not _fc_ab.get("hiring_moves_the_price"), _fc_ab)
+
 # --- BREAK: engineers count as SCHOLARS and cannot supervise a workshop. A
 # play tester was poor for thirty years over it; swapping three engineers for
 # three artisans took their net from -155 a year to +4,164.
@@ -4367,6 +4401,70 @@ def _deputies_are_announced():
 slow_check("gaining a deputy is announced with what it does to your year, "
            "once per whole deputy rather than every year",
            _deputies_are_announced)
+
+# --- BREAK (naive15/england): "hire smith 2 was flatly REFUSED with 'costs
+# 495 pence in advance and you have -1697' ... even though my credit limit
+# had lots of headroom" - the asymmetry (hire/train/commission may draw only
+# half the credit line; start may draw the whole of it) is deliberate and
+# documented (economy.py: spending_power - a lender funds work already under
+# way, not a payroll or a one-off fee), so the fix is the message, not the
+# arithmetic: it must say WHICH rule this is and WHY, not just decline.
+s_asym = sim(capital=0.0)
+s_asym.capital = -s_asym.credit_limit() * 0.5 - 50.0   # just past hire's half-line room
+_ok_h, _msg_h = s_asym.hire("smith", 1)
+check("a cash-short hire is still refused (the asymmetry itself is kept, "
+      "not loosened)", _ok_h is False, (_ok_h, _msg_h))
+check("...but the refusal now says WHICH rule this is: half the credit "
+      "line, not all of it",
+      "half" in _msg_h and "credit line" in _msg_h, _msg_h)
+check("...and WHY: a lender funds work under way (what starting a project "
+      "can point to), not a payroll or a one-off fee",
+      "work already under way" in _msg_h
+      and ("payroll" in _msg_h or "wage" in _msg_h), _msg_h)
+_fee_h = 1.0 * S.ANNUAL_WAGE.get("smith", 375.0) * s_asym.wage_index * s_asym.price_index \
+    * s_asym.labour_price_factor("smith")
+check("...and still states the plain facts a refusal always has: the exact "
+      "cost hire() actually computed",
+      "{:,.0f}".format(round(_fee_h)) in _msg_h, (_fee_h, _msg_h))
+# The identical family (train's keep-fed fee, commission's job fee) shares
+# the SAME wording, written once, so the three cannot drift apart from each
+# other or from the reasoning behind them (rather than each re-deriving its
+# own capital+credit*0.5 comparison AND its own separate explanation).
+_ok_t, _msg_t = s_asym.train("machinist", 1, None)
+check("train's cash-short refusal uses the identical reasoning as hire's, "
+      "not a second wording for the same rule",
+      _ok_t is False and "half" in _msg_t and "work already under way" in _msg_t,
+      _msg_t)
+s_asym2 = sim(capital=0.0)
+s_asym2.capital = -s_asym2.credit_limit() * 0.5 - 50.0
+_ok_c, _msg_c = s_asym2.commission("smith", 2000.0)
+check("commission's cash-short refusal uses the same reasoning too",
+      _ok_c is False and "half" in _msg_c and "work already under way" in _msg_c,
+      _msg_c)
+
+# --- BREAK (naive15/rome): "`train <trade> <n>` creates the trade and starts
+# teaching specific people, but does NOT put them on your payroll ... the
+# confirmation message after `train` says 'training: 2 machinists will be
+# ready in 141' which reads like they'll just show up working." Verified
+# against the engine itself (core.py step(), section 0): trained people in a
+# real trade ARE added to self.employees automatically the year they mature
+# - no separate `hire` is needed for THEM - but nothing said so, and nothing
+# said they cannot work a day before that year either.
+s_tr = sim(capital=100000.0)
+_ok_tr, _msg_tr = s_tr.train("machinist", 2, None)
+check("the training confirmation says what is STILL needed: nothing, for "
+      "these apprentices - they join staff on their own, no 'hire' required",
+      _ok_tr and "join your staff automatically" in _msg_tr
+      and "no 'hire' needed" in _msg_tr, _msg_tr)
+check("...and says what they cannot do yet: a day of the work, before the "
+      "year named",
+      _ok_tr and "cannot do a day of the work" in _msg_tr, _msg_tr)
+_ready_year = s_tr.year + 2
+for _ in range(3):
+    s_tr.step()
+check("...and this is not just a promise: they really are on the books, "
+      "unprompted, by the year named",
+      s_tr.employees.get("machinist", 0.0) >= 1.999, s_tr.employees.get("machinist"))
 
 
 # --- BREAK: F34, "numbers that do not reconcile, collected". Every one of
@@ -10825,8 +10923,8 @@ check("within the band: a warning names a real operating concern and how "
       "many craftsmen stand between here and its closure",
       bool(_sw_warn) and _sw_warn[0]["id"] in _s_sw.operating
       and _sw_warn[0]["of"] == "craftsmen" and _sw_warn[0]["within"] > 0
-      and "within" in _sw_warn[0]["headline"]
-      and "closure" in _sw_warn[0]["headline"], _sw_warn)
+      and "spare" in _sw_warn[0]["headline"]
+      and "closes" in _sw_warn[0]["headline"], _sw_warn)
 check("the concern it names is the same one close_unstaffed_ventures would "
       "actually close first (dearest to keep, for what it ties up)",
       _sw_warn and _sw_warn[0]["id"] == sorted(
@@ -10848,6 +10946,39 @@ check("this is a warning, not a cure: calling it changes nothing about "
       "the closing, on its own schedule, unchanged by this",
       set(_s_sw.operating) == _sw_before, sorted(_s_sw.operating))
 
+# --- BREAK: an England player hired more staff, watched this warning's own
+# number climb 1.3 to 2.3, and read the RISE as the situation getting WORSE
+# before working out that bigger means safer - "the 'X is within N
+# craftsmen of closure' warning is ambiguous on first read". The fix is the
+# wording, not the arithmetic: "spare" reads as safer the more of it there
+# is, the same as the no-slack sibling just above ("has no spare craftsmen:
+# losing just one more closes it outright"), and never says "within" at all
+# any more, which read like a countdown.
+_s_sw2 = sim(civ="rome_100ad")
+_s_sw2.done.update(_sw_cands)
+_s_sw2._done_changed()
+_s_sw2.artisans, _s_sw2.scholars = 40.0, 10.0
+for _k in _sw_cands:
+    _s_sw2.open_venture(_k)
+_sw2_sch_used, _sw2_art_used = _s_sw2.venture_staff_used()
+_s_sw2.artisans = _sw2_art_used + 1.3
+_sw_before_hire = _s_sw2.staffing_closure_warnings()
+_room_before = _sw_before_hire[0]["within"] if _sw_before_hire else None
+_s_sw2.artisans += 1.0   # hire one more craftsman
+_sw_after_hire = _s_sw2.staffing_closure_warnings()
+_room_after = _sw_after_hire[0]["within"] if _sw_after_hire else None
+check("hiring more staff moves the reported room UP, same as the England "
+      "run (1.3 -> 2.3)",
+      _room_before is not None and _room_after is not None
+      and _room_after > _room_before,
+      (_room_before, _room_after))
+check("...and the headline itself uses 'spare', which only reads one way "
+      "(more is safer) - never the old 'within N ... of closure' phrasing, "
+      "which read like a countdown when the number rose",
+      _sw_before_hire and "spare" in _sw_before_hire[0]["headline"]
+      and "within" not in _sw_before_hire[0]["headline"]
+      and "of closure" not in _sw_before_hire[0]["headline"],
+      _sw_before_hire and _sw_before_hire[0]["headline"])
 # THE HORIZON MENU MUST NOT SELL THE PLANNER'S FLOOR AS A DIFFICULTY CLAIM.
 # Challenge's note used to say 400 years was "short of the measured dice-free
 # floor ... means playing better than the unlucky-proof plan". True about the
@@ -11159,9 +11290,9 @@ check("...and names the command that fixes it - a real {\"cmd\":\"hire\"} "
       _sw_warn3 and '"cmd":"hire"' in _sw_warn3[0]["fix"]
       and _sw_warn3[0]["fix"] in _sw_warn3[0]["headline"], _sw_warn3)
 check("within the band but NOT down to the last one: one_loss_closes_it is "
-      "false, and the headline stays the earlier 'within N' sentence",
+      "false, and the headline stays the earlier 'N spare' sentence",
       _sw_warn and _sw_warn[0]["one_loss_closes_it"] is False
-      and "within" in _sw_warn[0]["headline"], _sw_warn)
+      and "spare" in _sw_warn[0]["headline"], _sw_warn)
 check("room already exhausted (<=0.05): also costed and fixed, same as the "
       "one-loss-away case",
       _sw_warn2 and _sw_warn2[0]["recurring_income_at_risk"] > 0
