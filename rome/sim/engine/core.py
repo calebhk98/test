@@ -1328,9 +1328,28 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # self.active before we would get to it. See the hours_this_year
         # summary this feeds, below the loop.
         hours_effective_total = 0.0
-        for k in active_sorted:
+        # WHY A PROJECT IS GETTING THE SHARE IT IS GETTING, STORED HERE AND
+        # NOWHERE ELSE. A player who had already won the game asked for
+        # exactly this: "this project is receiving 420 of your 25,000
+        # available directed hours this year because 11 active projects are
+        # sharing organizational attention" - and the only honest way to
+        # print that sentence is to read the numbers this loop actually used,
+        # never to guess at them again from outside. pool_total/active_count
+        # are the same for every project processed this step; rank and
+        # remaining_before are this project's own position in the queue and
+        # what was left of the pool when its own turn came. _agent_state and
+        # `portfolio` (protocol.py) read these fields back verbatim - they do
+        # not, and must not, recompute a share that could then disagree with
+        # what this loop actually handed out.
+        _pool_total_this_year = pool
+        _pool_active_count_this_year = len(active_sorted)
+        for _pool_rank, k in enumerate(active_sorted, start=1):
                 st = self.active[k]
                 n = self.nodes[k]
+                st["pool_total_this_year"] = _pool_total_this_year
+                st["pool_active_count_this_year"] = _pool_active_count_this_year
+                st["pool_rank_this_year"] = _pool_rank
+                st["pool_remaining_before_this_year"] = round(remaining, 1)
                 # IS THERE ANYBODY TO DO THE WORK? If a trade this project needs
                 # has vanished since it started (the machinists you taught died
                 # out, say), nothing can be done on it this year, and your own
