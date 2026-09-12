@@ -1563,9 +1563,11 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # the actual capital movement by a factor of 89, which a tester
                 # caught by comparing three numbers in a single `state` reply.
                 self._spend_this_year = getattr(self, "_spend_this_year", 0.0) + money
-                floor = n["yrs"]
-                if n["yrs"] >= 5:   # diffusion-limited nodes, not physical curing
-                    floor = max(2.0, n["yrs"] / (1.0 + self.reputation / 90.0))
+                # calendar_floor(k), NOT a second copy of this formula -
+                # expected_calendar_years (projects.py) needs the identical
+                # figure to project retries honestly, and a rule living in
+                # two places is how this kind of arithmetic drifts apart.
+                floor = self.calendar_floor(k)
                 # THE BILL HAS TO BE PAID. Hours done and years elapsed are not
                 # enough; if the money never arrived, the thing was never built.
                 # HALF AN HOUR IS NOTHING LEFT TO DO. The give-back hands back a
