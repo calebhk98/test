@@ -672,7 +672,7 @@ def cmd_play(a):
         except Exception as e:
             print("could not read the save file %r: %s" % (session, e))
             return 1
-        if False and settings.is_checkpoint(session):  # TEMP: disabled to prove the check catches it
+        if settings.is_checkpoint(session):
             checkpoint_source = session
             session = _pick_session_filename(s.civ.get("id") or "game")
         else:
