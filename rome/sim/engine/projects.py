@@ -667,6 +667,94 @@ class ProjectsMixin:
                                 "it" if len(reopened) == 1 else "them")))
         return reopened
 
+    # ---- A WARNING BEFORE THE DOOR SHUTS, NOT AN AUTOMATION THAT OPENS IT --
+    # close_unstaffed_ventures closes a concern the moment attrition pushes
+    # the household's own staff below what keeping it open needs, and
+    # reopen_restaffed_ventures now (see its own docstring) brings it back
+    # the moment the shortfall is made good - between them the engine already
+    # does the closing and the reopening on its own. Players were clear they
+    # want neither automated further: what they asked for is to SEE a closure
+    # coming while there is still a year or two to react - hire, teach,
+    # stop something else on purpose - in their own words, "power grid
+    # supervision is within 5 craftsmen of closure." This is that sentence,
+    # not a third policy: it changes nothing about who gets hired, taught or
+    # shut, only what the player is told before the staffing rule decides it
+    # for them.
+    #
+    # THE SAME SLACK BAND close_unstaffed_ventures ITSELF USES, not a fresh
+    # threshold invented for this: SLACK=0.5 there is the hysteresis that
+    # stops a concern flapping open and shut across an exact tie, so "room
+    # before closure" has to be measured against that same cushion or this
+    # would warn about a closure that was never actually imminent (or stay
+    # silent until after the real threshold had already passed).
+    STAFFING_WARNING_BAND = 5.0
+
+    def staffing_closure_warnings(self, limit=3):
+        """Which running concern the staffing rule would shut NEXT if
+        attrition keeps biting, and how many people of slack still stand
+        between here and that - see the section comment above for why this
+        exists instead of a third automation.
+
+        Silent while the household is comfortably staffed (the common case):
+        only reports when the SAME margin close_unstaffed_ventures itself
+        would act on has shrunk to STAFFING_WARNING_BAND or less, in
+        whichever of scholars or craftsmen actually binds for that concern -
+        a concern that only ever drew on scholars is not put on notice by a
+        shortage of craftsmen, and the other way round.
+        """
+        if not self.operating:
+            return []
+        sch_used, art_used = self.venture_staff_used()
+        own = self.FOUNDER_IS_WORTH if self.founder_alive else 0.0
+        SLACK = 0.5   # close_unstaffed_ventures' own hysteresis band
+        sch_room = self.effective_scholars() + SLACK - sch_used
+        art_room = self.artisans + own + SLACK - art_used
+        if sch_room > self.STAFFING_WARNING_BAND and art_room > self.STAFFING_WARNING_BAND:
+            return []
+        _holders = [k for k in sorted(self.operating)
+                    if self.venture_hands(k)[1] > 0.005
+                    or self.venture_hands(k)[0] > 0.005]
+        if not _holders:
+            return []
+        # SAME ORDER close_unstaffed_ventures would close in - dearest to
+        # keep, for what it ties up, first - so the concerns named here are
+        # exactly the ones actually at risk, not merely the largest.
+        ranked = sorted(_holders,
+                        key=lambda k: ((self.nodes[k]["rev"] - self.nodes[k]["up"])
+                                       / max(0.01, self.venture_hands(k)[1]),
+                                       -self.venture_hands(k)[1]))
+        out = []
+        for k in ranked:
+            sch_need, art_need = self.venture_hands(k)
+            candidates = []
+            if sch_need > 0.005:
+                candidates.append(("scholars", sch_room))
+            if art_need > 0.005:
+                candidates.append(("craftsmen", art_room))
+            if not candidates:
+                continue
+            # WHICHEVER OF ITS OWN TRADES IS SCARCEST, not whichever this
+            # concern happens to need most: a concern that ties up both a
+            # scholar and three craftsmen is at risk the moment EITHER pool
+            # runs out, so the tighter of the two is what actually decides
+            # when it closes.
+            word, room = min(candidates, key=lambda c: c[1])
+            if room > self.STAFFING_WARNING_BAND:
+                continue
+            name = self.nodes[k]["name"]
+            if room <= 0.05:
+                headline = ("%s has no %s free this year and is next in line "
+                            "to close" % (name, word))
+            else:
+                headline = ("%s is within %s %s of closure"
+                            % (name, ("%.1f" % room).rstrip("0").rstrip("."),
+                               word))
+            out.append({"id": k, "name": name, "within": round(max(0.0, room), 1),
+                       "of": word, "headline": headline})
+            if len(out) >= limit:
+                break
+        return out
+
     def auto_open_ventures(self):
         """Open what plainly pays for itself, best margin first, within the
         staff and the money available. Default ON for the optimizer and OFF

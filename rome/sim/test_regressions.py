@@ -9364,6 +9364,51 @@ check("the `risk` command itself carries the compact timeline, not just "
       isinstance(_rk_tl.get("knowledge_risk", {}).get("timeline"), list)
       and len(_rk_tl["knowledge_risk"]["timeline"]) > 0, _rk_tl.get("knowledge_risk"))
 
+# --- a warning before the door shuts (projects.py: staffing_closure_warnings)
+# close_unstaffed_ventures closes a concern the household can no longer
+# supervise; reopen_restaffed_ventures (landed separately) already brings it
+# back once restaffed. What was still missing: seeing it coming. "Power grid
+# supervision is within 5 craftsmen of closure" - a warning, not a third
+# automation; nothing here hires, teaches or stops anything on its own.
+_s_sw = sim(civ="rome_100ad")
+_sw_cands = [k for k in NODES if NODES[k].get("rev", 0) > 0][:30]
+_s_sw.done.update(_sw_cands)
+_s_sw._done_changed()
+_s_sw.artisans, _s_sw.scholars = 40.0, 10.0
+for _k in _sw_cands:
+    _s_sw.open_venture(_k)
+check("comfortably staffed: no staffing warning at all",
+      _s_sw.staffing_closure_warnings() == [], _s_sw.staffing_closure_warnings())
+_sw_sch_used, _sw_art_used = _s_sw.venture_staff_used()
+_s_sw.artisans = _sw_art_used + 3.0   # inside STAFFING_WARNING_BAND (5)
+_sw_warn = _s_sw.staffing_closure_warnings()
+check("within the band: a warning names a real operating concern and how "
+      "many craftsmen stand between here and its closure",
+      bool(_sw_warn) and _sw_warn[0]["id"] in _s_sw.operating
+      and _sw_warn[0]["of"] == "craftsmen" and _sw_warn[0]["within"] > 0
+      and "within" in _sw_warn[0]["headline"]
+      and "closure" in _sw_warn[0]["headline"], _sw_warn)
+check("the concern it names is the same one close_unstaffed_ventures would "
+      "actually close first (dearest to keep, for what it ties up)",
+      _sw_warn and _sw_warn[0]["id"] == sorted(
+          [k for k in _s_sw.operating if _s_sw.venture_hands(k)[1] > 0.005
+           or _s_sw.venture_hands(k)[0] > 0.005],
+          key=lambda k: ((NODES[k]["rev"] - NODES[k]["up"])
+                         / max(0.01, _s_sw.venture_hands(k)[1]),
+                         -_s_sw.venture_hands(k)[1]))[0],
+      _sw_warn)
+_sw_before = set(_s_sw.operating)
+_s_sw.artisans = _sw_art_used - 2.0    # room exhausted
+_sw_warn2 = _s_sw.staffing_closure_warnings()
+check("room exhausted: the warning says so plainly rather than quoting a "
+      "negative number of craftsmen",
+      bool(_sw_warn2) and "next in line to close" in _sw_warn2[0]["headline"],
+      _sw_warn2)
+check("this is a warning, not a cure: calling it changes nothing about "
+      "who is still operating - only close_unstaffed_ventures itself does "
+      "the closing, on its own schedule, unchanged by this",
+      set(_s_sw.operating) == _sw_before, sorted(_s_sw.operating))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
