@@ -5815,7 +5815,7 @@
    "yrs": 0.3
   },
   {
-   "_internal": "[AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "_internal": "[AUDIT: State interest and suspicion were unset and have been defaulted from the category.] [FIXED after independent audit: tier raised to match its barometer dependency.]",
    "_src": "16_aviation.json",
    "_total_cost": 57.0,
    "adopt_yrs": 0.0,
@@ -5839,7 +5839,7 @@
     "glass_raw_kg": 0.3
    },
    "name": "Pitot tube",
-   "note": "A simple tube with an opening into the airstream and a side port. Dynamic pressure at the front is higher than static pressure at the side. The difference is proportional to velocity squared. This is purely fluid statics, not magic. [FIXED after independent audit: tier raised to match its barometer dependency.]",
+   "note": "A simple tube with an opening into the airstream and a side port. Dynamic pressure at the front is higher than static pressure at the side. The difference is proportional to velocity squared. This is purely fluid statics, not magic.",
    "ph": 80.0,
    "pre": [
     "barometer",
@@ -13119,7 +13119,7 @@
     "iron_bar_kg": 50.0
    },
    "name": "Aniline from benzene via nitrobenzene",
-   "note": "Oleum nitrates benzene to nitrobenzene in minutes. Reduction with iron powder in dilute acid yields aniline. Aniline is a colourless liquid, bp 184 C, that polymerises in air to a black tar unless kept dry. It is the keystone of synthetic dyes and must be kept under nitrogen or mineral oil. [FIXED after independent audit: nitration of benzene needs nitric acid, which was missing. The Bechamp reduction uses iron in dilute acid, not hydrogen, so the industrial_gases prerequisite was not load-bearing and has been removed.]",
+   "note": "Oleum nitrates benzene to nitrobenzene in minutes. Reduction with iron powder in dilute acid yields aniline. Aniline is a colourless liquid, bp 184 C, that polymerises in air to a black tar unless kept dry. It is the keystone of synthetic dyes and must be kept under nitrogen or mineral oil.",
    "ph": 180.0,
    "pre": [
     "chm_benzene",
@@ -13136,7 +13136,8 @@
     "inexplicable"
    ],
    "up": 250.0,
-   "yrs": 1.0
+   "yrs": 1.0,
+   "_internal": "[FIXED after independent audit: nitration of benzene needs nitric acid, which was missing. The Bechamp reduction uses iron in dilute acid, not hydrogen, so the industrial_gases prerequisite was not load-bearing and has been removed.]"
   },
   {
    "_internal": "[AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
@@ -13282,7 +13283,7 @@
     "formaldehyde_kg": 200.0
    },
    "name": "Bakelite: phenol-formaldehyde plastic",
-   "note": "Phenol and formaldehyde condense at 150-180 C in the presence of acid catalyst. The resin is thermoset: once cured, it cannot be remelted. Bakelite is hard, brittle, and heat-resistant. It is used for electrical insulation, radio bodies, and industrial equipment. It was the first fully synthetic plastic and dominated the 1920s. [FIXED after independent audit: the note said phenol and formaldehyde condense, but formaldehyde appeared in neither the prerequisites nor the materials.]",
+   "note": "Phenol and formaldehyde condense at 150-180 C in the presence of acid catalyst. The resin is thermoset: once cured, it cannot be remelted. Bakelite is hard, brittle, and heat-resistant. It is used for electrical insulation, radio bodies, and industrial equipment. It was the first fully synthetic plastic and dominated the 1920s.",
    "ph": 150.0,
    "pre": [
     "chm_formaldehyde_synthesis",
@@ -13298,7 +13299,8 @@
    "tier": 4,
    "traits": [],
    "up": 900.0,
-   "yrs": 1.0
+   "yrs": 1.0,
+   "_internal": "[FIXED after independent audit: the note said phenol and formaldehyde condense, but formaldehyde appeared in neither the prerequisites nor the materials.]"
   },
   {
    "_src": "18_chemicals.json",
@@ -14178,7 +14180,7 @@
     "limestone_kg": 200.0
    },
    "name": "Cyanamide process: nitrogen fixation by carbide",
-   "note": "Calcium carbide is made by arc furnace: limestone and coke to 3000 C in one step. The carbide then reacts with nitrogen gas at 1000 C to yield calcium cyanamide, which hydrolyses to ammonia. This route predates Haber-Bosch and requires less pressure, but yields fewer tonnes per unit energy. Arc furnace demands kilowatts of electric power. [FIXED after independent audit: the cyanamide route runs through calcium carbide, which needs the electric arc furnace.]",
+   "note": "Calcium carbide is made by arc furnace: limestone and coke to 3000 C in one step. The carbide then reacts with nitrogen gas at 1000 C to yield calcium cyanamide, which hydrolyses to ammonia. This route predates Haber-Bosch and requires less pressure, but yields fewer tonnes per unit energy. Arc furnace demands kilowatts of electric power.",
    "ph": 200.0,
    "pre": [
     "arc_furnace_ferroalloys",
@@ -14196,7 +14198,8 @@
     "infrastructure"
    ],
    "up": 400.0,
-   "yrs": 1.5
+   "yrs": 1.5,
+   "_internal": "[FIXED after independent audit: the cyanamide route runs through calcium carbide, which needs the electric arc furnace.]"
   },
   {
    "_src": "18_chemicals.json",
@@ -14265,7 +14268,7 @@
     "sulfuric_acid_kg": 400.0
    },
    "name": "Synthetic detergent from petroleum sulfonic acid",
-   "note": "Synthetic detergents are made by sulfonation of alkenes from cracking petroleum fractions. The sulfonic acid is neutralised with soda ash. Detergent molecules have a long nonpolar hydrocarbon tail that dissolves in grease and a polar sulfonate head that dissolves in water. Synthetic detergents work better in cold water than soap and do not leave scum. [FIXED after independent audit: sulfonation needs sulfuric acid and the neutralisation needs soda ash; neither was listed.]",
+   "note": "Synthetic detergents are made by sulfonation of alkenes from cracking petroleum fractions. The sulfonic acid is neutralised with soda ash. Detergent molecules have a long nonpolar hydrocarbon tail that dissolves in grease and a polar sulfonate head that dissolves in water. Synthetic detergents work better in cold water than soap and do not leave scum.",
    "ph": 150.0,
    "pre": [
     "mat_petroleum_refined",
@@ -14281,7 +14284,8 @@
     "inexplicable"
    ],
    "up": 150.0,
-   "yrs": 1.0
+   "yrs": 1.0,
+   "_internal": "[FIXED after independent audit: sulfonation needs sulfuric acid and the neutralisation needs soda ash; neither was listed.]"
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
@@ -22126,7 +22130,7 @@
     "timber_m3": 3.0
    },
    "name": "Analytical engine - programmable mechanical computer",
-   "note": "Babbage's design for a universal mechanical computer: a large mill (arithmetic unit) and store (memory), programmed by punched cards like Jacquard looms. It could perform any sequence of arithmetic operations, conditional on intermediate results. The killer insight: a general-purpose machine can solve many problems if programmed differently. Ada Lovelace sketched an algorithm for it (1843). It was never built (same tolerance problems as the Difference Engine), but it was the conceptual foundation of the stored-program computer. [FIXED after independent audit: the note itself said Babbage failed on tolerance, and the node listed no tolerance prerequisite at all.]",
+   "note": "Babbage's design for a universal mechanical computer: a large mill (arithmetic unit) and store (memory), programmed by punched cards like Jacquard looms. It could perform any sequence of arithmetic operations, conditional on intermediate results. The killer insight: a general-purpose machine can solve many problems if programmed differently. Ada Lovelace sketched an algorithm for it (1843). It was never built (same tolerance problems as the Difference Engine), but it was the conceptual foundation of the stored-program computer.",
    "ph": 250.0,
    "pre": [
     "cap_tol_100um",
@@ -22141,7 +22145,8 @@
    "tier": 3,
    "traits": [],
    "up": 0.0,
-   "yrs": 4.0
+   "yrs": 4.0,
+   "_internal": "[FIXED after independent audit: the note itself said Babbage failed on tolerance, and the node listed no tolerance prerequisite at all.]"
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
@@ -42311,7 +42316,7 @@
     "timber_m3": 5.0
    },
    "name": "Hay making and dry storage",
-   "note": "Cut grass at peak nutrition, dry thoroughly in sun and wind, store in dry barn or haybarn. Timing and weather are critical - rain-soaked hay rots or molts. Enables winter feeding of draft animals when pasture is gone. [FIXED after independent audit: hay needs a scythe and a dry barn, both of which any settled agricultural society already has. Crop rotation is unrelated.]",
+   "note": "Cut grass at peak nutrition, dry thoroughly in sun and wind, store in dry barn or haybarn. Timing and weather are critical - rain-soaked hay rots or molts. Enables winter feeding of draft animals when pasture is gone.",
    "ph": 100.0,
    "pre": [],
    "req_any": [],
@@ -42324,7 +42329,8 @@
     "food"
    ],
    "up": 0.0,
-   "yrs": 1.0
+   "yrs": 1.0,
+   "_internal": "[FIXED after independent audit: hay needs a scythe and a dry barn, both of which any settled agricultural society already has. Crop rotation is unrelated.]"
   },
   {
    "_internal": "[AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
@@ -47037,7 +47043,7 @@
     "clay_kg": 30.0
    },
    "name": "Enclosed stove",
-   "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture. [FIXED after independent audit: it consumed 40 kg of cast iron at tier 1. There is no cast iron yet outside societies that already have a blast furnace or an equivalent cast-iron tradition (Han China already has one); it cannot be a cheap early win anywhere else.]",
+   "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture.",
    "ph": 100.0,
    "pre": [
     "blast_furnace",
@@ -47053,7 +47059,8 @@
    "tier": 2,
    "traits": [],
    "up": 0.0,
-   "yrs": 1.0
+   "yrs": 1.0,
+   "_internal": "[FIXED after independent audit: it consumed 40 kg of cast iron at tier 1. There is no cast iron yet outside societies that already have a blast furnace or an equivalent cast-iron tradition (Han China already has one); it cannot be a cheap early win anywhere else.]"
   },
   {
    "_src": "12_household.json",
@@ -47529,7 +47536,7 @@
     "olive_oil_kg": 300.0
    },
    "name": "Hot air balloon for observation",
-   "note": "Low technology, moderate cost, high spectacle, and the State wants it for siege observation and signalling. Also one of the fastest ways to be accused of sorcery, so fly it first for the army with the governor watching, never privately at night. Linen sized with oil is the envelope. [FIXED after independent audit: paper and distilled spirits were listed and neither is load-bearing. An oiled linen envelope over a wood fire needs sailcloth and oil, both tier 0 and already available in any of these societies.]",
+   "note": "Low technology, moderate cost, high spectacle, and the State wants it for siege observation and signalling. Also one of the fastest ways to be accused of sorcery, so fly it first for the army with the governor watching, never privately at night. Linen sized with oil is the envelope.",
    "ph": 400.0,
    "pre": [
     "tex_sailcloth"
@@ -47545,7 +47552,8 @@
     "military"
    ],
    "up": 0.0,
-   "yrs": 2.0
+   "yrs": 2.0,
+   "_internal": "[FIXED after independent audit: paper and distilled spirits were listed and neither is load-bearing. An oiled linen envelope over a wood fire needs sailcloth and oil, both tier 0 and already available in any of these societies.]"
   },
   {
    "_src": "core",
@@ -65280,7 +65288,7 @@
     "charcoal_kg": 1.0
    },
    "name": "Aspirin (acetylsalicylic acid)",
-   "note": "Acetylation of salicylic acid (from willow bark). Safer than salicylate because absorbed slowly. Reduces fever, pain, inflammation. Bayer trademark. [FIXED after independent audit: acetylation needs acetic anhydride, from acetic acid via wood distillation. Nitric acid was wrong and has been removed.]",
+   "note": "Acetylation of salicylic acid (from willow bark). Safer than salicylate because absorbed slowly. Reduces fever, pain, inflammation. Bayer trademark.",
    "ph": 80.0,
    "pre": [
     "destructive_distillation"
@@ -65295,7 +65303,8 @@
     "medical"
    ],
    "up": 100.0,
-   "yrs": 0.5
+   "yrs": 0.5,
+   "_internal": "[FIXED after independent audit: acetylation needs acetic anhydride, from acetic acid via wood distillation. Nitric acid was wrong and has been removed.]"
   },
   {
    "_src": "21_medicine.json",
@@ -65321,7 +65330,7 @@
     "steel_noric_kg": 50.0
    },
    "name": "Autoclave for steam sterilization",
-   "note": "Sealed vessel with high-pressure steam at 120 C for 15 minutes sterilizes instruments. Requires precision engineering; leaks render it useless. [FIXED after independent audit: the heat rung was redundant with the high pressure steam prerequisite.]",
+   "note": "Sealed vessel with high-pressure steam at 120 C for 15 minutes sterilizes instruments. Requires precision engineering; leaks render it useless.",
    "ph": 150.0,
    "pre": [
     "glass_labware",
@@ -65338,7 +65347,8 @@
     "spectacle"
    ],
    "up": 0.0,
-   "yrs": 0.5
+   "yrs": 0.5,
+   "_internal": "[FIXED after independent audit: the heat rung was redundant with the high pressure steam prerequisite.]"
   },
   {
    "_src": "21_medicine.json",
@@ -67483,7 +67493,7 @@
     "timber_m3": 3.0
    },
    "name": "Cupola furnace for iron casting",
-   "note": "A small tall furnace that melts scrap and pig iron for casting into sand moulds. Much hotter than an open hearth because the stack draft is strong. The problem is contamination from coke ash unless you use charcoal and then your fuel bill is punishing. Solves small-batch casting need cheaply. [FIXED after independent audit: it was tier 1 while depending on the blast furnace, which is a major independent metallurgical leap.]",
+   "note": "A small tall furnace that melts scrap and pig iron for casting into sand moulds. Much hotter than an open hearth because the stack draft is strong. The problem is contamination from coke ash unless you use charcoal and then your fuel bill is punishing. Solves small-batch casting need cheaply.",
    "ph": 150.0,
    "pre": [
     "blast_furnace",
@@ -67500,7 +67510,8 @@
     "infrastructure"
    ],
    "up": 120.0,
-   "yrs": 1.8
+   "yrs": 1.8,
+   "_internal": "[FIXED after independent audit: it was tier 1 while depending on the blast furnace, which is a major independent metallurgical leap.]"
   },
   {
    "_src": "19_metallurgy_mining.json",
@@ -68075,7 +68086,7 @@
     "zinc_kg": 20.0
    },
    "name": "Galvanizing with zinc coating",
-   "note": "Dip clean iron into molten zinc. Zinc bonds metallurgically to iron and protects it from rust. The zinc-iron interface layer is hard and brittle; if you bend the bar sharply right after galvanizing it spalls and exposes the iron. Needs a pickling step with acid to remove rust and oxide before the dip, and flux (powdered chloride) to prevent oxidation of the zinc. [FIXED after independent audit: molten zinc is about 450 C, nowhere near a blast furnace. Zinc metal was also listed twice.]",
+   "note": "Dip clean iron into molten zinc. Zinc bonds metallurgically to iron and protects it from rust. The zinc-iron interface layer is hard and brittle; if you bend the bar sharply right after galvanizing it spalls and exposes the iron. Needs a pickling step with acid to remove rust and oxide before the dip, and flux (powdered chloride) to prevent oxidation of the zinc.",
    "ph": 120.0,
    "pre": [
     "cap_heat_0700",
@@ -68099,7 +68110,8 @@
     "infrastructure"
    ],
    "up": 0.0,
-   "yrs": 1.5
+   "yrs": 1.5,
+   "_internal": "[FIXED after independent audit: molten zinc is about 450 C, nowhere near a blast furnace. Zinc metal was also listed twice.]"
   },
   {
    "_src": "19_metallurgy_mining.json",
@@ -68978,7 +68990,7 @@
     "iron_ore_kg": 100.0
    },
    "name": "Roasting and calcining ore",
-   "note": "Heat ore in an open pile to drive off volatile sulfur and water, and to crack the rock for easier reduction. Many sulfide ores cannot be smelted without roasting first; the roast fumes are toxic. Needs a scholar to understand empirical craft proportion or roasters waste half their ore. [FIXED after independent audit: the word stoichiometry is anachronistic for a tier 1 node; Richter is 1792. Ancient roasters worked by craft knowledge.]",
+   "note": "Heat ore in an open pile to drive off volatile sulfur and water, and to crack the rock for easier reduction. Many sulfide ores cannot be smelted without roasting first; the roast fumes are toxic. Needs a scholar to understand empirical craft proportion or roasters waste half their ore.",
    "ph": 60.0,
    "pre": [
     "cap_heat_1100",
@@ -68992,7 +69004,8 @@
    "tier": 1,
    "traits": [],
    "up": 50.0,
-   "yrs": 0.6
+   "yrs": 0.6,
+   "_internal": "[FIXED after independent audit: the word stoichiometry is anachronistic for a tier 1 node; Richter is 1792. Ancient roasters worked by craft knowledge.]"
   },
   {
    "_src": "19_metallurgy_mining.json",
@@ -85897,7 +85910,7 @@
     "calcite_kg": 3.0
    },
    "name": "Nicol prism for polarized light",
-   "note": "Calcite (Iceland spar) crystal cut and cemented at Brewster angle passes one polarization. Extraordinary ray refracted 90 degrees, separated by cement into wasted beam. Alignment precise to 1 degree. [FIXED after independent audit: a Nicol prism is cleaved calcite. Glass cannot substitute: birefringence is the entire mechanism.]",
+   "note": "Calcite (Iceland spar) crystal cut and cemented at Brewster angle passes one polarization. Extraordinary ray refracted 90 degrees, separated by cement into wasted beam. Alignment precise to 1 degree.",
    "ph": 100.0,
    "pre": [
     "cap_tol_100um",
@@ -85913,7 +85926,8 @@
     "spectacle"
    ],
    "up": 15.0,
-   "yrs": 0.5
+   "yrs": 0.5,
+   "_internal": "[FIXED after independent audit: a Nicol prism is cleaved calcite. Glass cannot substitute: birefringence is the entire mechanism.]"
   },
   {
    "_src": "23_optics_instruments.json",
@@ -86051,7 +86065,7 @@
    "yrs": 1.0
   },
   {
-   "_internal": "[REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: photoemissive surface in vacuum tube needs high vacuum]",
+   "_internal": "[REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: photoemissive surface in vacuum tube needs high vacuum] [FIXED after independent audit: a photoemissive surface needs an alkali metal, which was not in the materials.]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 1871.2,
    "adopt_yrs": 0.0,
@@ -86075,7 +86089,7 @@
     "copper_kg": 0.5
    },
    "name": "Photocell (photoelectric detector)",
-   "note": "Cesium or other photoemissive surface in vacuum emits electrons when light strikes. Current amplified by dynamo or triode. Single photon detectable in dark conditions. [FIXED after independent audit: a photoemissive surface needs an alkali metal, which was not in the materials.]",
+   "note": "Cesium or other photoemissive surface in vacuum emits electrons when light strikes. Current amplified by dynamo or triode. Single photon detectable in dark conditions.",
    "ph": 180.0,
    "pre": [
     "cap_vac_1e3",
@@ -86932,7 +86946,7 @@
     "timber_m3": 0.15
    },
    "name": "Stroboscope (periodic light)",
-   "note": "Rotating disk or electric lamp flash synchronized to object rotation freezes motion. Variable frequency allows measuring RPM directly. Spectator error (aliasing) common. [FIXED after independent audit: a mechanical stroboscope is a slotted disc and needs no photography.]",
+   "note": "Rotating disk or electric lamp flash synchronized to object rotation freezes motion. Variable frequency allows measuring RPM directly. Spectator error (aliasing) common.",
    "ph": 140.0,
    "pre": [
     "cap_power_electric"
@@ -86945,7 +86959,8 @@
    "tier": 3,
    "traits": [],
    "up": 35.0,
-   "yrs": 0.6
+   "yrs": 0.6,
+   "_internal": "[FIXED after independent audit: a mechanical stroboscope is a slotted disc and needs no photography.]"
   },
   {
    "_src": "23_optics_instruments.json",
@@ -88372,7 +88387,7 @@
     "iron_bar_kg": 40.0
    },
    "name": "Honing machine for cylinder bores",
-   "note": "Multiple small honing stones in rotating mandrel cut on expansion, removing 0.002 to 0.005 inch (50-125 micron) from bore. Produces 0.5 micron finish and 0.01mm roundness. Critical for engine cylinders and hydraulic actuators. [FIXED after independent audit: honing works to a micron; the 0.01 mm rung understated it.]",
+   "note": "Multiple small honing stones in rotating mandrel cut on expansion, removing 0.002 to 0.005 inch (50-125 micron) from bore. Produces 0.5 micron finish and 0.01mm roundness. Critical for engine cylinders and hydraulic actuators.",
    "ph": 100.0,
    "pre": [
     "cap_power_electric",
@@ -88388,7 +88403,8 @@
     "labour_saving"
    ],
    "up": 70.0,
-   "yrs": 1.0
+   "yrs": 1.0,
+   "_internal": "[FIXED after independent audit: honing works to a micron; the 0.01 mm rung understated it.]"
   },
   {
    "_src": "20_precision.json",
@@ -88555,7 +88571,7 @@
     "cast_iron_kg": 30.0
    },
    "name": "Lathe faceplate and driving plates",
-   "note": "Cast-iron plate bolts to spindle nose; work bolts to plate. Hand-scraped face ensures coplanarity to 1mm. Without it, work runout is uncontrolled. Enables chucking of large irregular work. [FIXED after independent audit: it listed no lathe at all. Corrected to the treadle lathe with a flywheel, which is the right tier 1 parent; an automated first pass had wrongly attached the tier 2 turret lathe.]",
+   "note": "Cast-iron plate bolts to spindle nose; work bolts to plate. Hand-scraped face ensures coplanarity to 1mm. Without it, work runout is uncontrolled. Enables chucking of large irregular work.",
    "ph": 40.0,
    "pre": [
     "cap_tol_1mm",
@@ -88572,7 +88588,8 @@
     "labour_saving"
    ],
    "up": 0.0,
-   "yrs": 0.2
+   "yrs": 0.2,
+   "_internal": "[FIXED after independent audit: it listed no lathe at all. Corrected to the treadle lathe with a flywheel, which is the right tier 1 parent; an automated first pass had wrongly attached the tier 2 turret lathe.]"
   },
   {
    "_src": "20_precision.json",
@@ -88598,7 +88615,7 @@
     "steel_noric_kg": 4.0
    },
    "name": "Lead screw error correction cam and follower",
-   "note": "Grinding a lead screw leaves periodic runout (0.05mm). Measuring runout and grinding a cam follower that compensates enables 0.01mm lead accuracy. Follower attached to tool post cancels runout. Expensive, rarely done. Enables perfect pitch on long lead screws. [FIXED after independent audit: it was tier 2 while depending on a tier 3 measuring instrument.]",
+   "note": "Grinding a lead screw leaves periodic runout (0.05mm). Measuring runout and grinding a cam follower that compensates enables 0.01mm lead accuracy. Follower attached to tool post cancels runout. Expensive, rarely done. Enables perfect pitch on long lead screws.",
    "ph": 100.0,
    "pre": [
     "cap_tol_100um",
@@ -88615,7 +88632,8 @@
     "labour_saving"
    ],
    "up": 0.0,
-   "yrs": 0.8
+   "yrs": 0.8,
+   "_internal": "[FIXED after independent audit: it was tier 2 while depending on a tier 3 measuring instrument.]"
   },
   {
    "_src": "20_precision.json",
@@ -99978,7 +99996,7 @@
     "glass_raw_kg": 20.0
    },
    "name": "Prism and grating spectroscope",
-   "note": "Highest information yield per denarius of any instrument you can build. Emission lines identify elements you have no other way to detect, and much later it is how you verify that your germanium is actually germanium. [FIXED after independent audit: a ruled grating needs the finest screw you own; the node declared no tolerance rung.]",
+   "note": "Highest information yield per denarius of any instrument you can build. Emission lines identify elements you have no other way to detect, and much later it is how you verify that your germanium is actually germanium.",
    "ph": 500.0,
    "pre": [
     "atomic_theory",
@@ -99996,7 +100014,8 @@
     "spectacle"
    ],
    "up": 600.0,
-   "yrs": 2.0
+   "yrs": 2.0,
+   "_internal": "[FIXED after independent audit: a ruled grating needs the finest screw you own; the node declared no tolerance rung.]"
   },
   {
    "_src": "core",
@@ -105823,7 +105842,7 @@
     "leather_kg": 2.0
    },
    "name": "Stirrup with foot loop",
-   "note": "Metal foot-loops hanging from saddle revolutionise horseback riding. Rider can brace legs, rise from seat, and deliver force in combat or work. This is as much a military technology as a transport one. [FIXED after independent audit: the horse collar is draught harness and has nothing to do with a mounted rider's balance. The real missing input is a framed saddle.]",
+   "note": "Metal foot-loops hanging from saddle revolutionise horseback riding. Rider can brace legs, rise from seat, and deliver force in combat or work. This is as much a military technology as a transport one.",
    "ph": 60.0,
    "pre": [
     "mat_leather",
@@ -105849,7 +105868,8 @@
     "labour_saving"
    ],
    "up": 30.0,
-   "yrs": 0.2
+   "yrs": 0.2,
+   "_internal": "[FIXED after independent audit: the horse collar is draught harness and has nothing to do with a mounted rider's balance. The real missing input is a framed saddle.]"
   },
   {
    "_src": "45a_transport_land_deep.json",

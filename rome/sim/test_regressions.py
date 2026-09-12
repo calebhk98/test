@@ -6615,6 +6615,42 @@ check("the nitre yield and price the advice quotes are the ones the "
 check("saltpetre still cannot simply be bought - the beds are the answer, "
       "not a market share",
       S.Sim.MARKET_SHARE["saltpetre"] == 0.0, S.Sim.MARKET_SHARE["saltpetre"])
+# --- DEVELOPER MARKERS IN PLAYER PROSE, THE SECOND TIME. A strip pass removed
+# 1,108 `[AUDIT: ...]` markers from node notes after a first-time tester found
+# one in the win condition itself. It matched that one phrase, and 22 nodes
+# carried a DIFFERENT one - "[FIXED after independent audit: ...]" - which an
+# outside player then found in a furnace description and reported as
+# immersion-breaking. The markers are worth keeping; `note` is not where they
+# belong. `_internal` is read by nothing in rome/sim/engine.
+#
+# This check is deliberately about the SHAPE rather than a list of phrases,
+# because the thing that failed twice was a phrase list.
+_BRACKETED = __import__("re").compile(r"\[[^\]]{0,400}\]")
+_DEV_WORDS = ("audit", "fixed after", "todo", "fixme", "xxx", "see job",
+              "provenance", "heuristic", "my own", "treat as a floor")
+_leaks = []
+for _k, _n in sorted(NODES.items()):
+    for _m in _BRACKETED.findall(_n.get("note") or ""):
+        if any(_w in _m.lower() for _w in _DEV_WORDS):
+            _leaks.append((_k, _m[:70]))
+check("no node's player-facing note carries a bracketed developer aside - "
+      "an outside player found '[FIXED after independent audit: ...]' in a "
+      "furnace description after the first strip pass missed that phrase",
+      _leaks == [], _leaks[:4])
+check("...and the markers were moved rather than destroyed, so the "
+      "provenance of an inferred edge is still recoverable",
+      sum(1 for _n in NODES.values()
+          if "FIXED after independent audit" in (_n.get("_internal") or "")) == 22,
+      sum(1 for _n in NODES.values()
+          if "FIXED after independent audit" in (_n.get("_internal") or "")))
+check("nothing in the engine reads _internal, which is what makes it safe "
+      "to keep developer notes there",
+      not any("_internal" in open(os.path.join(HERE, "engine", _f)).read()
+              for _f in ("core.py", "economy.py", "projects.py", "labour.py",
+                         "society.py", "protocol.py", "cli.py", "fog.py",
+                         "data.py")),
+      "engine files mentioning _internal")
+
 # --- THE SAME HOLE IN A SECOND COMMAND. `available`'s parser read bare words
 # only, so `available all:true` - the spelling `help commands` itself gives -
 # fell through to the subject branch and was used as a search string named
