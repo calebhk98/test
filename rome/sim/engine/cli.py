@@ -522,6 +522,24 @@ def cmd_play(a):
                     "employees, no slaves, and nobody who owes you anything. "
                     "What you have is everything you know."
                     % (s.year, s.capital, money_word(s.civ))))
+        # THE KIT SAID 4,000 AND YOU ARRIVED WITH 3,000, SILENTLY. Every
+        # kit's figure (STARTING_KITS) is priced in Rome 100 AD denarii, the
+        # same currency project_cost and everything else is calibrated
+        # through - see price_index's own comment in data.py - and is then
+        # converted at THIS civilisation's prices before a denarius of it
+        # ever reaches the ledger. A blind Han playthrough picked "merchant,
+        # 4,000 den" off the kit list and read "You arrive ... with 3000
+        # cash" one screen later with no statement anywhere that the two
+        # numbers were the same kit. The arithmetic was always right; only
+        # the silence was a bug.
+        if kit and abs(s.price_index - 1.0) > 0.002:
+            _quoted = STARTING_KITS.get(kit, {}).get("den")
+            if _quoted:
+                print(_wrap('The "%s" kit is quoted in Rome\'s prices (%d den); '
+                            "here, prices run at %.3gx Rome's, so that arrived "
+                            "as %d %s, not %d."
+                            % (kit, _quoted, s.price_index, s.capital,
+                               money_word(s.civ), _quoted)))
         print()
         # `open` BELONGS IN THE OPENING. Finishing a project earns you
         # nothing until you open its doors, auto_open ships off for a player

@@ -1451,7 +1451,20 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 fixed = self.living_cost() + self.upkeep() + self.mine_operating_cost()
                 reserve = max(0.0, fixed - self.revenue())
                 purse = self.capital + self.credit_limit() * 0.6 - reserve
-                if money > purse:
+                # NOTHING OWED IS NOT THE SAME AS NOTHING AFFORDABLE. A
+                # project with cost_left already at zero asks for money=0
+                # this year, and money(0) > purse was still true whenever
+                # purse itself had gone negative - deep arrears, not this
+                # project's own bill - so a FULLY PAID project, needing not
+                # one more denarius, was refunded nearly all of per anyway
+                # (funded_frac forced to 0.0 below whenever money <= 0) and
+                # made zero hour progress purely calendar-waiting projects
+                # should still be free to make. Three playtesters on three
+                # civilisations hit this as "arrears freezes ALL
+                # founder-hour progress, even on fully-paid work" - and they
+                # were exactly right: the gate was on the household's purse,
+                # not on whether this project needed anything from it.
+                if money > 0 and money > purse:
                     # PROPORTIONAL, not a flat half. This used to refund
                     # exactly per*0.5 whenever the purse fell short AT ALL,
                     # whether by one denarius or by the whole bill, which is

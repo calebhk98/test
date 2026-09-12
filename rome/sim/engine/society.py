@@ -1375,8 +1375,29 @@ class SocietyMixin:
                             _corpus = [c for c in ("corpus_written",
                                                    "corpus_dispersed")
                                        if c in drop]
+                            # AND WHAT IT DOES TO THE ROAD YOU ARE ACTUALLY ON.
+                            # Naming the lost ids was the first fix; a Rome
+                            # player with a real goal set still found out the
+                            # road had gotten longer only by re-running `path`
+                            # afterwards and comparing it by hand to what they
+                            # remembered - a sack that silently undid a third
+                            # of their critical-path progress in one turn.
+                            # Said here, once, in the same breath as the loss
+                            # itself, using the same goal-closure `never_
+                            # abandon` already computes and caches.
+                            _on_road = 0
+                            _goal = getattr(self, "goal", None)
+                            if _goal and _goal in self.nodes:
+                                try:
+                                    _gc = getattr(self, "_goal_closure", None)
+                                    if _gc is None:
+                                        _gc = self._goal_closure = closure(
+                                            self.nodes, _goal)
+                                    _on_road = sum(1 for x in drop if x in _gc)
+                                except Exception:
+                                    _on_road = 0
                             self.log.append((yr, "KNOWLEDGE LOST: %d technolog%s "
-                                                 "forgotten - %s%s%s"
+                                                 "forgotten - %s%s%s%s"
                                 % (len(drop), "y" if len(drop) == 1 else "ies",
                                    ", ".join(_named[:8])
                                    + (" and %d more" % (len(_named) - 8)
@@ -1387,7 +1408,12 @@ class SocietyMixin:
                                    ". THE CORPUS ITSELF WENT (%s): your hedge "
                                    "against this is gone and 'risk' will say so "
                                    "- build it again first" % ", ".join(_corpus)
-                                   if _corpus else "")))
+                                   if _corpus else "",
+                                   (". %d of these stood on the road to your "
+                                    "goal: the route is longer than it was a "
+                                    "moment ago - 'path' will show the rebuilt "
+                                    "shape of it" % _on_road)
+                                   if _on_road else "")))
             if "output_factor" in h:
                 relief, why = self.hazard_relief("output_factor")
                 # relief moves the floor back toward 1.0 rather than scaling the

@@ -296,7 +296,14 @@ class LabourMixin:
         ("academy_network", 50), ("interchangeable_parts", 40),
         ("crucible_steel", 12), ("blast_furnace", 15),
         ("telegraph_electric", 25), ("steam_high_pressure", 45),
-        ("bessemer_openhearth", 65), ("railway", 95), ("power_grid", 130),
+        # met_open_hearth_furnace, NOT "bessemer_openhearth" - same stale id
+        # STAFF_CAPACITY_SOURCES carried below until it was corrected there;
+        # this second table was not updated in the same pass, so `k in
+        # self.nodes` silently dropped it from every piece of advice this
+        # function gives and the sixty-five places an open-hearth furnace is
+        # actually worth (see staff_capacity(), which DOES use the right id)
+        # were never once offered as a reason to build or reopen one.
+        ("met_open_hearth_furnace", 65), ("railway", 95), ("power_grid", 130),
     )
 
     def _room_advice(self):
@@ -309,6 +316,19 @@ class LabourMixin:
         game's own message suggests works. They were right: the room comes from
         institutions and heavy industry, and nothing pointed at those.
         """
+        # A CLOSED ROOM SOURCE IS NOT A MISSING ONE. staff_capacity() already
+        # drops a source's places the moment its venture is not running (see
+        # STAFF_CAPACITY_SOURCES's must_be_running), and the advice below used
+        # to filter only on `k not in self.done` - so a school built, then
+        # shut for want of a supervisor, vanished from this text entirely: not
+        # counted (correctly), and never named as the cheapest way back,
+        # either. A player who hit the ceiling it had been holding up was
+        # told to build endowment_land or court an imperial patron instead of
+        # simply reopening what they already owned.
+        reopen = [(k, add) for k, add in self.ROOM_SOURCES
+                  if k in self.done and k in self.nodes and k not in self.operating
+                  and self.is_venture(k)]
+        reopen.sort(key=lambda kv: -kv[1])
         want = [(k, add) for k, add in self.ROOM_SOURCES
                 if k not in self.done and k in self.nodes
                 and self.is_visible(k)]
@@ -319,14 +339,25 @@ class LabourMixin:
         def _distance(k):
             return len(closure(self.nodes, k) - self.done)
         want.sort(key=lambda kv: (_distance(kv[0]), -kv[1]))
+        _reopen_bit = (
+            ("you already have %s, shut: reopening %s is cheaper than "
+             "building anything else. "
+             % (" and ".join("%s (+%d)" % (k, a) for k, a in reopen[:2]),
+                "it" if len(reopen) == 1 else "them"))
+            if reopen else "")
         if not want:
+            if reopen:
+                return ("Room is not bought, it is built - or in this case, "
+                        "reopened: %s'open %s'."
+                        % (_reopen_bit, reopen[0][0]))
             return ("Room comes from institutions and heavy industry, and you "
                     "have every one of them this society offers; what is left "
                     "grows on its own as they run.")
         _now = [(k, a) for k, a in want if self.start_reason(k)[0]]
-        return ("Room is not bought, it is built: %s. Each is somewhere for "
+        return ("Room is not bought, it is built: %s%s. Each is somewhere for "
                 "people to work and somebody to oversee them.%s"
-                % ("; ".join("%s (+%d places)" % (k, a) for k, a in want[:3]),
+                % (_reopen_bit,
+                   "; ".join("%s (+%d places)" % (k, a) for k, a in want[:3]),
                    "" if _now else " None is startable today; they are listed "
                                    "nearest first, so the first is what to work "
                                    "towards."))
@@ -546,6 +577,16 @@ class LabourMixin:
         for node, why in self.STAFF_SOURCES.get(kind, []):
             if node in ("BUY", "HIRE"):
                 bits.append(why)
+            # CLOSED IS NOT MISSING. market_supply() only applies a source's
+            # multiplier via running(node), so a school built and then shut
+            # for want of a supervisor stops widening the hiring pool exactly
+            # as if it had never been built - and this advice, filtering on
+            # `node not in self.done`, fell silent about it rather than
+            # naming the actual remedy. Reopening costs a supervisor, not a
+            # second institution; say that first.
+            elif node in self.done and node not in self.operating and self.is_venture(node):
+                bits.append("reopen %s ('open %s') - you already built this; "
+                            "it is only shut" % (node, node))
             elif node not in self.done and self.is_visible(node):
                 # NOT A CIRCLE. `why workshop_first` says it is blocked for want
                 # of artisans, and the advice on how to get artisans said "build

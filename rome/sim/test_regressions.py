@@ -1526,6 +1526,42 @@ check("...while the session still starts and is still playable with it off",
       _wt_off.returncode == 0 and "Saved to" in _wt_off.stdout,
       _wt_off.stdout[-300:])
 
+# --- BREAK: the merchant kit is quoted at 4,000 den, Han's price_index is
+# 0.750, and the first playable screen said "You arrive in 100 AD with 3000
+# cash" with no word anywhere connecting the two numbers. A blind Han
+# playthrough picked the kit because it was the recommended middle income
+# and then reported the 1,000-den gap as unexplained, twice, as both a
+# balance worry and a trust issue. The arithmetic was always right; only
+# the silence was a bug.
+_mk_dir = tempfile.mkdtemp()
+_mk_env = dict(os.environ, ROME_SIM_CONFIG=os.path.join(_mk_dir, "nope.json"),
+               ROME_SAVE_DIR=tempfile.mkdtemp())
+_mk_play = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
+                           "play", "--civ", "han_china_100ad", "--kit", "merchant",
+                           "--session", os.path.join(_mk_dir, "s.json")],
+                          input="quit\n", capture_output=True, text=True,
+                          timeout=120, env=_mk_env)
+check("a civilisation whose price_index differs from Rome's explains the "
+      "gap between the kit's quoted denarii and the cash actually arrived "
+      "with, on the same screen that shows both numbers",
+      "4000" in _mk_play.stdout and "0.75" in _mk_play.stdout
+      and "Rome" in _mk_play.stdout,
+      _mk_play.stdout[:1200])
+# --- and Rome itself (price_index 1.0) says nothing extra: there is no gap
+# to explain, and a sentence explaining a non-existent discrepancy would be
+# its own new confusion.
+_mkr_dir = tempfile.mkdtemp()
+_mkr_env = dict(os.environ, ROME_SIM_CONFIG=os.path.join(_mkr_dir, "nope.json"),
+                ROME_SAVE_DIR=tempfile.mkdtemp())
+_mkr_play = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
+                            "play", "--civ", "rome_100ad", "--kit", "merchant",
+                            "--session", os.path.join(_mkr_dir, "s.json")],
+                           input="quit\n", capture_output=True, text=True,
+                           timeout=120, env=_mkr_env)
+check("...while a civilisation at Rome's own prices gets no such sentence "
+      "at all, since there is no gap to explain",
+      "is quoted in Rome" not in _mkr_play.stdout, _mkr_play.stdout[:1200])
+
 # --- none of this reaches `agent`: its JSON protocol, and the --pretty
 # rendering alongside it, is a stable machine interface that must not vary
 # with a human's own saved terminal preferences.
@@ -4421,6 +4457,43 @@ _h2 = s_hg.knowledge_risk()["hedged_by"]
 check("building the corpus hedges you; opening it changes nothing",
       _h0 is None and _h1 == "corpus_written" and _h2 == _h1, (_h0, _h1, _h2))
 
+# --- BREAK: naming WHAT was forgotten (the fix above) is not the same as
+# saying what it did to the road to the goal. A Rome player with a real goal
+# set lost 22 technologies to a triple crisis - about a third of all
+# critical-path progress, undone in one turn - and the KNOWLEDGE LOST line
+# said nothing about the goal; they found the regression only by re-running
+# `path` afterwards and comparing it by hand to what they remembered. Forced
+# deterministic (random.random always 0, sample always takes the front of
+# the list) so this does not depend on finding a lucky seed.
+class _AlwaysZeroRNG:
+    def random(self):
+        return 0.0
+    def sample(self, population, k):
+        return list(population)[:k]
+s_kr2 = sim(capital=1_000_000.0)
+_gc2 = sorted(S.closure(NODES, GOAL))
+_on_road_cands = [k for k in _gc2 if NODES[k]["tier"] >= 2][:6]
+check("a tier>=2 node on the actual road to the goal exists to test "
+      "against - this is a property of the live tree, not a fixture",
+      len(_on_road_cands) >= 1, _on_road_cands)
+s_kr2.done.update(_on_road_cands)
+s_kr2._done_changed()
+s_kr2.rng = _AlwaysZeroRNG()
+s_kr2.civ = dict(s_kr2.civ)
+s_kr2.civ["hazards"] = [{"name": "TEST CRISIS", "years": [s_kr2.year, s_kr2.year],
+                         "sack_chance": 1.0}]
+_before_kr2 = len(s_kr2.log)
+s_kr2._shocks(s_kr2.year)
+_kr2_msgs = [m for _, m in s_kr2.log[_before_kr2:] if "KNOWLEDGE LOST" in m]
+check("the KNOWLEDGE LOST event names how many of the forgotten "
+      "technologies stood on the road to the current goal, in the same "
+      "breath as the loss itself",
+      bool(_kr2_msgs) and "road to your goal" in _kr2_msgs[0],
+      _kr2_msgs)
+check("...and points at 'path' as where to see the route's new shape, "
+      "rather than leaving that to be discovered by comparison",
+      bool(_kr2_msgs) and "'path'" in _kr2_msgs[0], _kr2_msgs)
+
 # --- BREAK: twenty concerns, twenty-five years, income flat, because nothing
 # said on the main screen what leaving them shut was costing.
 s_sh = sim(capital=50000.0)
@@ -4712,8 +4785,55 @@ check("...and names the nearest of them first, not the largest",
       _why_rm[_why_rm.index("built"):][:120])
 s_rm2 = sim(capital=1000000.0)
 s_rm2.done.update(NODES); s_rm2._done_changed()
+# OPEN, not just built: a ROOM_SOURCES entry that is done but not operating
+# is exactly the case the next block tests (reopen advice, not "you have
+# everything"), so "every one of them" has to mean everything built AND
+# running, the same distinction run_it exists to set up everywhere else.
+s_rm2.operating.update(k for k, _ in s_rm2.ROOM_SOURCES if k in NODES)
 check("...and says so plainly when you already hold every one of them",
       "every one of them" in s_rm2._room_advice(), s_rm2._room_advice())
+
+# --- BREAK: a ROOM_SOURCES institution built and then SHUT (attrition, a
+# bad year, or the player's own `mothball`) vanished from this advice
+# entirely - filtered out for being `in self.done`, exactly like something
+# never built, even though staff_capacity() had already stopped counting
+# its places the moment it closed. The advice recommended building a new,
+# dearer institution instead of reopening the one already paid for.
+s_rm3 = sim(capital=1000000.0)
+run_it(s_rm3, "workshop_first", "school_founded")
+_advice_open = s_rm3._room_advice()
+s_rm3.operating.discard("school_founded")
+_advice_shut = s_rm3._room_advice()
+check("a shut room-source is offered back as the cheap fix, not silently "
+      "dropped from the advice",
+      "school_founded" in _advice_shut and "reopen" in _advice_shut.lower(),
+      _advice_shut)
+check("...and it is not also still claimed as an open place in the same "
+      "breath",
+      "school_founded" not in _advice_open or "reopen" not in _advice_open.lower(),
+      (_advice_open, _advice_shut))
+
+# --- and the same fix, for the scholar/artisan hiring-pool advice
+# (_staff_advice / STAFF_SOURCES), which has its own, separate list.
+s_sa = sim(capital=1000000.0)
+run_it(s_sa, "school_founded")
+s_sa.operating.discard("school_founded")
+_staff_shut = s_sa._staff_advice("scholars")
+check("the scholar-pool advice offers to reopen a shut school rather than "
+      "silently treating it as already covered",
+      "school_founded" in _staff_shut and "reopen" in _staff_shut.lower(),
+      _staff_shut)
+
+# --- BREAK: ROOM_SOURCES carried a stale id, "bessemer_openhearth", which
+# does not exist in the tree (the real id is met_open_hearth_furnace) -
+# STAFF_CAPACITY_SOURCES was corrected to the real id and this second,
+# separate table was not, so the 65 places an open-hearth furnace is worth
+# were never once offered as advice even though the arithmetic (via
+# staff_capacity) already counted them correctly.
+check("ROOM_SOURCES names real node ids only - no stale reference silently "
+      "filtered out of every reply that reads this table",
+      all(k in NODES for k, _ in s_rm3.ROOM_SOURCES),
+      [k for k, _ in s_rm3.ROOM_SOURCES if k not in NODES])
 
 
 # --- BREAK: three places said the town could field 8,750 scribe-hours a year,
@@ -5231,6 +5351,107 @@ s_sp2.paid_towards = {"identity_cover": s_sp2.project_cost("identity_cover") - 5
 check("...and a nearly-paid project is not refused for its gross price",
       s_sp2.start_project("identity_cover")[0],
       s_sp2.start_reason("identity_cover"))
+
+# --- BREAK: `start` discounts a halted project's remaining bill by what was
+# already sunk into it (see _paid_now above) - but `why` kept quoting the
+# gross sticker price forever, for a project a creditor or the player's own
+# `stop` had halted partway. An England player planning from `why` was
+# planning against a number the engine would never actually charge; the
+# real, discounted figure showed up only inside a `start` refusal or its
+# success line, after the fact.
+s_wp = sim(capital=1000.0)
+_wp_k = next(kk for kk in s_wp.order if s_wp.can_start(kk) and NODES[kk]["ph"] > 0)
+s_wp.start_project(_wp_k)
+s_wp.active[_wp_k]["spent"] = 500.0
+s_wp.stop_project(_wp_k)
+_wp_out = S._agent_dispatch(s_wp, NODES, {"cmd": "why", "id": _wp_k})
+check("`why` on a halted, partly-paid project shows both the gross total "
+      "and what 'start' would actually charge, with the sunk amount "
+      "accounting for the difference",
+      _wp_out["cost"].get("already_paid_towards_this") == 500.0
+      and abs(_wp_out["cost"]["what_start_would_actually_charge"]
+              - (_wp_out["cost"]["total"] - 500.0)) < 0.5,
+      _wp_out["cost"])
+check("...and it matches what `start` would actually bill, not a second "
+      "estimate of it",
+      abs(_wp_out["cost"]["what_start_would_actually_charge"]
+          - S._agent_dispatch(s_wp, NODES, {"cmd": "start", "id": _wp_k}
+                              )["the_bill_you_have_taken_on"]) < 0.5,
+      (_wp_out["cost"]["what_start_would_actually_charge"],))
+# And the ordinary case - nothing sunk into this node - gets no such field.
+s_wp2 = sim(capital=1000.0)
+_wp2_k = next(kk for kk in s_wp2.order if s_wp2.can_start(kk))
+_wp2_out = S._agent_dispatch(s_wp2, NODES, {"cmd": "why", "id": _wp2_k})
+check("...while a project with nothing sunk into it gets no discount "
+      "field at all - there is nothing to discount",
+      "already_paid_towards_this" not in _wp2_out["cost"], _wp2_out["cost"])
+
+# --- BREAK: a newly opened venture ramps to its full quoted revenue over
+# revenue_ramp_years (3) - real, reasonable, and, per an England playtester,
+# announced nowhere but a footnote inside `money` (still_ramping()), read
+# only after the gap between the quote and the ledger had already confused
+# somebody. Said now, in the same breath as the figure it qualifies, right
+# when opening is the moment that starts the clock.
+s_ow = sim(capital=1_000_000.0)
+s_ow.done.add("fin_pawnshop")
+s_ow._done_changed()
+_ow_ok, _ow_msg = s_ow.open_venture("fin_pawnshop")
+check("opening a revenue-earning concern says it ramps up over time, in "
+      "the same success message that quotes the mature figure",
+      _ow_ok and str(s_ow.cfg["revenue_ramp_years"]) in _ow_msg
+      and "less at first" in _ow_msg,
+      _ow_msg)
+# A pure-cost capability (no revenue at all) has nothing to ramp, and gets
+# no such note - there is no custom to find it.
+s_ow2 = sim(capital=1_000_000.0)
+s_ow2.done.add("identity_cover")
+s_ow2._done_changed()
+_ow2_ok, _ow2_msg = s_ow2.open_venture("identity_cover")
+check("...while a zero-revenue capability gets no ramp note at all",
+      _ow2_ok and "ramp" not in _ow2_msg.lower()
+      and "less at first" not in _ow2_msg,
+      _ow2_msg)
+
+# --- BREAK: a Han playtester opened a net-loss concern four separate
+# times, three of them after already having caught and written up the
+# mistake once, because EARNS/YR and UPKEEP/YR sit side by side on every
+# screen and nothing ever subtracts them for the reader. Flagged now, at
+# the one moment a player could still back out - opening itself - for any
+# ordinary venture where upkeep exceeds revenue even fully ramped up.
+s_ln = sim(capital=1_000_000.0)
+_ln_k = next((k for k, n in NODES.items()
+             if n.get("up", 0) > n.get("rev", 0) > 0
+             and k not in s_ln.CAPABILITY_INSTITUTIONS), None)
+check("a real, non-capability net-loss-making node exists in the tree to "
+      "test against",
+      _ln_k is not None, _ln_k)
+if _ln_k:
+    s_ln.done.add(_ln_k)
+    s_ln._done_changed()
+    _ln_ok, _ln_msg = s_ln.open_venture(_ln_k)
+    check("opening an ordinary concern that costs more than it earns, even "
+          "fully ramped, is flagged right there in the success message - "
+          "not left for the reader to subtract two numbers themselves",
+          _ln_ok and "costs more than it earns" in _ln_msg
+          and "{:,.0f}".format(NODES[_ln_k]["up"] - NODES[_ln_k]["rev"])
+          in _ln_msg,
+          _ln_msg)
+# A capability institution (a school, a workshop, a patron...) losing money
+# is the INTENDED shape of the trade, never flagged as a mistake here.
+s_ln2 = sim(capital=1_000_000.0)
+_ln2_k = next((k for k in s_ln2.CAPABILITY_INSTITUTIONS
+              if NODES.get(k, {}).get("up", 0) > NODES.get(k, {}).get("rev", 0)),
+             None)
+check("a capability institution that runs at a loss by design exists to "
+      "test the exclusion against",
+      _ln2_k is not None, _ln2_k)
+if _ln2_k:
+    s_ln2.done.add(_ln2_k)
+    s_ln2._done_changed()
+    _ln2_ok, _ln2_msg = s_ln2.open_venture(_ln2_k)
+    check("...and opening it gets no 'costs more than it earns' warning - "
+          "that loss is the point, not a mistake",
+          _ln2_ok and "costs more than it earns" not in _ln2_msg, _ln2_msg)
 
 
 # --- BREAK: "MOST RESTS ON THESE" heads its list with items at 230 to 1,580
@@ -6695,10 +6916,10 @@ check("...and still says what it leaves shut, the case the original "
 _cr = sim(civ="england_1300")
 _cr.capital = 1300.0
 _cr_out = S._agent_dispatch(_cr, NODES, {"cmd": "start", "id": "identity_cover"})
-check("starting a project you cannot cover in cash says you are borrowing, "
-      "what it costs a year, and how much room is left",
-      _cr_out.get("ok") and _cr_out.get("on_credit", {}).get("borrowed_now", 0) > 0
-      and _cr_out["on_credit"].get("interest_per_year", 0) > 0
+check("starting a project you cannot cover in cash says you would be "
+      "borrowing, what it costs a year, and how much room is left",
+      _cr_out.get("ok") and _cr_out.get("on_credit", {}).get("you_would_borrow", 0) > 0
+      and _cr_out["on_credit"].get("interest_per_year_on_it", 0) > 0
       and _cr_out["on_credit"].get("no_one_advances_past", 0) > 0,
       _cr_out.get("on_credit"))
 check("...and names what the creditors do there, which is take things you "
@@ -6706,6 +6927,22 @@ check("...and names what the creditors do there, which is take things you "
       "built long ago" in (_cr_out.get("on_credit", {})
                            .get("what_happens_there") or ""),
       (_cr_out.get("on_credit") or {}).get("what_happens_there"))
+# --- BREAK: this block said "borrowed_now" and "you_will_owe" on the exact
+# command that had not borrowed a denarius yet - credit only actually draws
+# down at step resolution - and a Norse player read "borrowed now: 123.8"
+# here, then "(none used)" on `money` in the very next command, and called
+# it a ledger contradiction. It was. The numbers were always right; only the
+# tense was a lie.
+check("the credit warning reads as a forecast, not a completed action - "
+      "nothing has actually been borrowed by 'start' itself",
+      "forecast" in (_cr_out.get("on_credit", {})
+                    .get("nothing_is_borrowed_yet") or "").lower(),
+      (_cr_out.get("on_credit") or {}).get("nothing_is_borrowed_yet"))
+_cr_money = S._agent_dispatch(_cr, NODES, {"cmd": "money"})
+check("...and `money` agrees that no credit is actually in use the moment "
+      "after 'start' returns it, matching the forecast framing above",
+      _cr_money.get("of_that_limit_you_have_used") == "none",
+      _cr_money.get("of_that_limit_you_have_used"))
 _cr2 = sim(civ="england_1300")
 _cr2.capital = 50_000.0
 _cr2_out = S._agent_dispatch(_cr2, NODES, {"cmd": "start", "id": "identity_cover"})
@@ -7121,13 +7358,277 @@ _ok_se = [k for k in _ok_se
 for _k_se in _ok_se[:15]:
     S._agent_dispatch(s_se, NODES, {"cmd": "start", "id": _k_se})
 _step_ce = S._agent_dispatch(s_se, NODES, {"cmd": "step", "years": 100})
+# CLOSE TO THE LIMIT now interrupts a batched step too (see the dedicated
+# check below), and it fires strictly BEFORE exhaustion by design - so this
+# same household may now stop there first, on the way to the exhaustion
+# this test is actually about. Keep stepping through any such earlier stop;
+# the property under test is that it reaches, and stops AT, exhaustion
+# eventually, never running past it within one call.
+_saw_exhausted = any("CREDIT EXHAUSTED" in e["message"] for e in _step_ce["events"])
+_hops = 0
+while (not _saw_exhausted and _step_ce.get("stopped_early")
+       and s_se.year < s_se.end_year and _hops < 20):
+    _step_ce = S._agent_dispatch(s_se, NODES,
+                                 {"cmd": "step",
+                                  "years": min(100, s_se.end_year - s_se.year)})
+    _saw_exhausted = any("CREDIT EXHAUSTED" in e["message"]
+                        for e in _step_ce["events"])
+    _hops += 1
 check("a multi-year step stops the moment credit is actually exhausted, "
       "rather than running the rest of the years on top of it",
-      bool(_step_ce.get("stopped_early"))
-      and any("CREDIT EXHAUSTED" in e["message"] for e in _step_ce["events"]),
-      _step_ce.get("stopped_early"))
+      bool(_step_ce.get("stopped_early")) and _saw_exhausted,
+      (_step_ce.get("stopped_early"), _hops))
 check("...and it really did stop short of the 100 years asked for",
-      _step_ce["year"] < s_se.cfg["start_year"] + 100, _step_ce["year"])
+      s_se.year < s_se.cfg["start_year"] + 100, s_se.year)
+
+# --- BREAK: the interrupt above existed for the FATAL warning only.
+# warn_near_the_limit's own docstring says it exists to give you a chance to
+# react "while there is still a decision left" - stop a project, mothball a
+# loss-maker, fire somebody - and it fired into the log exactly as promised,
+# but a batched `step` read straight past it and kept running, so the
+# decision it offered was gone four years before the player's next turn,
+# when CREDIT EXHAUSTED (which DID interrupt) finally showed up. Two players
+# on two different civilisations reported this independently. The warning
+# that still leaves you a choice is the one that most needs to interrupt;
+# the fatal one needs it least, since nothing is left to choose by then.
+s_wn = sim(capital=500.0)
+s_wn.end_year = s_wn.cfg["start_year"] + 200
+_lim_wn = s_wn.credit_limit()
+# Set up just past the 70% warning threshold, comfortably short of the 100%
+# that would also trip CREDIT EXHAUSTED in the same year - the two markers
+# have to be tested apart, or a step that stops for the wrong reason would
+# still pass.
+s_wn.capital = -(0.85 * _lim_wn)
+_step_wn = S._agent_dispatch(s_wn, NODES, {"cmd": "step", "years": 50})
+check("a multi-year step stops the moment it is CLOSE TO THE LIMIT too, not "
+      "only once credit is fully exhausted",
+      bool(_step_wn.get("stopped_early"))
+      and any("CLOSE TO THE LIMIT" in e["message"] for e in _step_wn["events"])
+      and not any("CREDIT EXHAUSTED" in e["message"] for e in _step_wn["events"]),
+      (_step_wn.get("stopped_early"),
+       [e["message"] for e in _step_wn["events"]]))
+check("...leaving most of the requested years unspent, not run through",
+      _step_wn["year"] < s_wn.cfg["start_year"] + 100, _step_wn["year"])
+
+
+# =============================================================================
+# FOG LEAK #3: `bounty` named hidden prerequisites outright where `why` -
+# reading the exact same missing list through start_reason's visibility
+# filter - correctly said only "N other things you have not heard of yet".
+# An external blind playthrough found three examples (industrial zinc
+# leaking power_grid, the getter leaking its induction-coupling prerequisite,
+# the vacuum tube leaking its hidden cathode) because `bounty` built its own
+# "missing prerequisites" list straight off n["pre"], with no fog filter of
+# its own. Reproduced generically below rather than pinned to one node name,
+# so it keeps catching this the next time a command grows a second copy of
+# the missing-prerequisite sentence instead of calling
+# missing_prereq_message (fog.py) - the one place this is now written.
+# =============================================================================
+_bl = sim(capital=1_000_000.0)
+_bl.fog = True
+_bl.revealed = set()
+_bl_cats = ("glass_optics", "metallurgy", "precision", "power", "agriculture",
+           "information", "instruments")
+_bl_candidates = [k for k, n in NODES.items()
+                  if n["tier"] <= 2 and n["cat"] in _bl_cats and n["pre"]
+                  and any(p not in _bl.done for p in n["pre"])]
+_bl_target = None
+_bl_hidden = []
+for _k in _bl_candidates:
+    _n = NODES[_k]
+    _missing = [p for p in _n["pre"] if p not in _bl.done]
+    _hidden = [p for p in _missing if not _bl.is_visible(p)]
+    if _hidden:
+        _bl_target, _bl_hidden = _k, _hidden
+        break
+check("a bounty-eligible-by-type node with at least one hidden prerequisite "
+      "exists to test against - this is a property of the live tree, not "
+      "an invented fixture",
+      _bl_target is not None, _bl_target)
+if _bl_target:
+    # HEARD OF THE NODE ITSELF, not its prerequisites - the same state a
+    # revealed-but-not-yet-startable entry is in under ordinary play.
+    _bl.revealed = {_bl_target}
+    _bl_out = S._agent_dispatch(_bl, NODES, {"cmd": "bounty", "id": _bl_target})
+    _bl_why = S._agent_dispatch(_bl, NODES, {"cmd": "why", "id": _bl_target})
+    check("`bounty` does not print the raw id of a prerequisite the player "
+          "has not heard of",
+          _bl_out.get("ok") is False
+          and not any(h in (_bl_out.get("error") or "") for h in _bl_hidden),
+          (_bl_out.get("error"), _bl_hidden))
+    check("...and says the same 'N things you have not heard of' shape `why` "
+          "gives for the identical node, not a different, leakier sentence",
+          "have not heard of" in (_bl_out.get("error") or ""),
+          _bl_out.get("error"))
+    check("...matching exactly what start_reason/`why` computes for the same "
+          "missing list - one fog filter, not two that could drift apart",
+          _bl_out.get("error") == _bl.missing_prereq_message(
+              [p for p in NODES[_bl_target]["pre"] if p not in _bl.done]),
+          (_bl_out.get("error"),
+           _bl.missing_prereq_message(
+               [p for p in NODES[_bl_target]["pre"] if p not in _bl.done])))
+
+# --- the second half of the same finding: the game told a player "X is
+# already active; stop it first if you want to switch to a bounty instead",
+# they stopped it, and `bounty` then refused as not bounty-eligible - advice
+# to make an irreversible move (losing the hours and money already spent)
+# toward an outcome the game could have ruled out before ever suggesting it.
+# Find a real node that is tier>2 (never bounty-eligible) and has no missing
+# prerequisites, so it can actually be made `active`.
+_bls = sim(capital=1_000_000.0)
+_bls_target = next((k for k in _bls.order
+                    if NODES[k]["tier"] > 2 and _bls.can_start(k)), None)
+check("a real, startable, never-bounty-eligible (tier > 2) node exists to "
+      "test the ordering against",
+      _bls_target is not None, _bls_target)
+if _bls_target:
+    _ok_bls, _why_bls = _bls.start_project(_bls_target)
+    check("set-up: the node is actually active",
+          _ok_bls and _bls_target in _bls.active, _why_bls)
+    _bls_out = S._agent_dispatch(_bls, NODES, {"cmd": "bounty", "id": _bls_target})
+    check("bounty on an active, never-eligible node is refused for "
+          "ineligibility, not advised to 'stop it first' toward an outcome "
+          "that was never going to work",
+          _bls_out.get("ok") is False
+          and "stop it first" not in (_bls_out.get("error") or ""),
+          _bls_out.get("error"))
+    check("...and the refusal actually explains why it is not eligible "
+          "(tier/category), the real reason, rather than a generic one",
+          "not bounty-eligible" in (_bls_out.get("error") or ""),
+          _bls_out.get("error"))
+
+
+# --- BREAK: 'available reverse:true' - the exact key:value spelling
+# `help commands` advertises - fell through to the subject branch and was
+# read as a search for the literal text "reverse:true", matching nothing,
+# with no error. Same shape as the all:true/limit:N hole fixed earlier;
+# 'reverse' is a bare flag like 'all', not a value key, and had never been
+# added to the colon pre-pass. 'log failures:true' carried the identical
+# hole with an even quieter failure (no subject fallback there at all, so
+# the flag was just silently dropped).
+_rt1, _ = _PT("available sort:risk reverse:true")
+check("'available sort:risk reverse:true' parses reverse as the boolean "
+      "flag it is, not as a search subject",
+      _rt1 == {"cmd": "available", "sort": "risk", "reverse": True}, _rt1)
+_rt2, _ = _PT("available reverse:true")
+check("...and the same spelling with nothing else on the line still works",
+      _rt2 == {"cmd": "available", "reverse": True}, _rt2)
+_rt3, _ = _PT("available reverse:false")
+check("...and reverse:false means leave it off, the same as never typing "
+      "the word, exactly like all:false already does",
+      _rt3 == {"cmd": "available"}, _rt3)
+_rt4, _ = _PT("log failures:true")
+check("'log failures:true' sets the failures flag rather than being "
+      "silently dropped",
+      _rt4 == {"cmd": "log", "failures": True}, _rt4)
+_rt5, _ = _PT("log oldest:true")
+check("...and the same fix covers log's other bare-flag words (oldest, "
+      "newest, forward, backward, recent), not only 'failures'",
+      _rt5.get("order") == "oldest", _rt5)
+
+
+# =============================================================================
+# PARALLELISM IS THE CENTRAL MECHANIC AND NOTHING TAUGHT IT. An external
+# blind playthrough treated a long calendar-floor project as exclusive
+# research time for most of its early game, only discovering that spare
+# founder-hours and staff could run other projects in the background after
+# an outside hint - which their own write-up calls probably the difference
+# between finishing comfortably and risking the 600 AD horizon. Two fixes:
+# a one-time note the first time a real multi-year project starts, and free
+# founder-hours surfaced prominently (not just as one quiet field) when
+# every active project is purely waiting on the calendar.
+# =============================================================================
+_par = sim(capital=1_000_000.0)
+_par_target = next((k for k in _par.order
+                    if NODES[k]["yrs"] >= 2 and _par.can_start(k)), None)
+check("a real startable multi-year project exists to test the tutorial "
+      "note against",
+      _par_target is not None, _par_target)
+if _par_target:
+    _par_out = S._agent_dispatch(_par, NODES, {"cmd": "start", "id": _par_target})
+    _par_note = _par_out.get("a_calendar_floor_is_not_exclusive_research_time", "")
+    check("starting the first long-calendar-floor project explains that "
+          "the floor is not exclusive research time, and says to spend "
+          "the spare hours on something else",
+          "a_calendar_floor_is_not_exclusive_research_time" in _par_out
+          and "else" in _par_note,
+          _par_note)
+    _par_target2 = next((k for k in _par.order
+                         if NODES[k]["yrs"] >= 2 and _par.can_start(k)), None)
+    if _par_target2:
+        _par_out2 = S._agent_dispatch(_par, NODES, {"cmd": "start", "id": _par_target2})
+        check("...but only once - a second long project in the same run "
+              "does not repeat the tutorial note",
+              "a_calendar_floor_is_not_exclusive_research_time" not in _par_out2,
+              _par_out2.get("a_calendar_floor_is_not_exclusive_research_time"))
+
+# --- free hours, shouted, when everything running is calendar-bound.
+_fh = sim(capital=1_000_000.0)
+_fh_target = next((k for k in _fh.order
+                   if NODES[k]["yrs"] >= 3 and NODES[k]["ph"] > 0
+                   and _fh.can_start(k)), None)
+check("a startable project with real founder-hours AND a real calendar "
+      "floor exists to test this against",
+      _fh_target is not None, _fh_target)
+if _fh_target:
+    S._agent_dispatch(_fh, NODES, {"cmd": "start", "id": _fh_target})
+    # Force the project's own hours fully spent for the year without
+    # touching anything else about the sim, so it is purely calendar-bound -
+    # the exact state _waiting_on reports as "the calendar".
+    _fh.active[_fh_target]["ph_left"] = 0.0
+    _fh_state = S._agent_dispatch(_fh, NODES, {"cmd": "state"})
+    check("when every active project is only waiting on the calendar and "
+          "real founder-hours sit unused, state says so prominently rather "
+          "than leaving it to one quiet field",
+          bool(_fh_state.get("free_hours_going_unused")),
+          _fh_state.get("free_hours_going_unused"))
+    # `step`'s reply is built from this exact same _agent_state() call
+    # (protocol.py: "out.update(_agent_state(s, nodes))"), so the field
+    # reaches it automatically - not re-asserted by actually calling step()
+    # here, which would advance the year and recompute ph_left out from
+    # under the fixture this check depends on.
+    import inspect as _insp
+    check("...and the field is assigned inside _agent_state() itself, which "
+          "`step`'s own reply is built from - not something 'state' adds on "
+          "top afterward",
+          "free_hours_going_unused" in _insp.getsource(_protocol._agent_state),
+          "checked _agent_state's own source")
+
+
+# =============================================================================
+# `available sort nearest` MEASURED DISTANCE TO BECOMING STARTABLE, NEVER
+# DISTANCE TO A GOAL - and nothing said so. An external blind playthrough,
+# goal set to the junction transistor, read "available sort nearest" as a
+# goal-aware planner because nothing told it otherwise, and got agriculture.
+# Renamed to fewest_missing (old spellings kept working); `stuck` now says
+# outright, under fog, that its goal-aware branch is switched off rather
+# than silently falling back to generic advice that looks like the real
+# answer.
+# =============================================================================
+check("'fewest_missing' is the advertised sort key now, not the misleading "
+      "'nearest'",
+      "fewest_missing" in _protocol._SORT_KEY_NAMES and "nearest" not in _protocol._SORT_KEY_NAMES,
+      _protocol._SORT_KEY_NAMES)
+check("...but the old spelling still works, for any script already using it",
+      "nearest" in _protocol._SORT_KEYS and "fewest_missing" in _protocol._SORT_KEYS,
+      sorted(_protocol._SORT_KEYS))
+_stuck_goal = sim(capital=1_000_000.0)
+_stuck_goal.fog = True
+_stuck_goal.revealed = set()
+_stuck_out = S._agent_dispatch(_stuck_goal, NODES, {"cmd": "stuck"})
+check("`stuck`, under fog with a goal set, says outright that it cannot "
+      "check the goal's route - the same candour `rush` already has about "
+      "its own limits - rather than silently giving generic advice with no "
+      "explanation of what it could not do",
+      "this_does_not_know_your_goal" in _stuck_out,
+      _stuck_out.get("this_does_not_know_your_goal"))
+_stuck_nofog = sim(capital=1_000_000.0)
+_stuck_nofog.fog = False
+check("...and says nothing of the kind with fog off, where the goal-aware "
+      "branch actually runs",
+      "this_does_not_know_your_goal" not in S._agent_dispatch(
+          _stuck_nofog, NODES, {"cmd": "stuck"}),
+      "fog off: no such field")
 
 
 # --- JOB 3e: the founder's death is legible, not one line among many. A
@@ -7954,6 +8455,183 @@ check("...and it comes back on its own once restaffed, with no 'open' typed",
       reopened == [_k] and _k in s.operating and _k not in s.mothballed
       and _k not in getattr(s, "shut_for_staff", {}), reopened)
 
+# --- BREAK: the closing message promises "reopening soon costs a tenth of
+# what opening did" - a player who instead reaches for `restore` (the verb
+# that actually exists for "this is shut, bring it back") got a plain
+# number with no word of which price it was, so a full-price restore 20
+# years later read as the game breaking its own promise rather than the
+# promise simply having lapsed. Same root cause as the earlier double-
+# charge bug: an unexplained number and a wrong number look identical to a
+# player who cannot see the arithmetic behind either.
+s_rg = sim(capital=1_000_000.0)
+_kg = "cementation_steel"
+# restore_work, unlike open_venture, checks that every prerequisite is
+# still done - so, unlike the plain open/close fixture above, this one
+# needs the whole ancestry marked done too.
+s_rg.done.update(NODES[_kg]["pre"])
+s_rg.done.add(_kg)
+s_rg._done_changed()
+s_rg.employees["artisan"] = 6.0
+s_rg._resync_pools()
+s_rg.open_venture(_kg)
+s_rg.employees["artisan"] = 0.0
+s_rg._resync_pools()
+s_rg.close_unstaffed_ventures(s_rg.year)
+check("set-up: the closure is recorded as staffing-caused, with the year "
+      "it happened",
+      _kg in getattr(s_rg, "shut_for_staff", {}), s_rg.shut_for_staff)
+_ok_rg, _msg_rg = s_rg.restore_work(_kg)
+check("restoring within the grace window names that it is the discounted "
+      "price, not a bare number",
+      _ok_rg and "discounted tenth" in _msg_rg, _msg_rg)
+# Now the same closure, but restored only after the grace window has
+# lapsed - same setup, advanced past STAFF_CLOSURE_GRACE before restoring.
+s_rg2 = sim(capital=1_000_000.0)
+s_rg2.done.update(NODES[_kg]["pre"])
+s_rg2.done.add(_kg)
+s_rg2._done_changed()
+s_rg2.employees["artisan"] = 6.0
+s_rg2._resync_pools()
+s_rg2.open_venture(_kg)
+s_rg2.employees["artisan"] = 0.0
+s_rg2._resync_pools()
+s_rg2.close_unstaffed_ventures(s_rg2.year)
+s_rg2.year += s_rg2.STAFF_CLOSURE_GRACE + 1
+_ok_rg2, _msg_rg2 = s_rg2.restore_work(_kg)
+check("...and restoring after the window has lapsed says outright that the "
+      "discount window is gone and this is the full price, rather than "
+      "silently charging ten times the number the closure message quoted",
+      _ok_rg2 and "too long for the tenth" in _msg_rg2, _msg_rg2)
+check("...and the lapsed-window fee really is about ten times the "
+      "in-grace one, so the explanation matches the arithmetic",
+      float(_msg_rg2.split("for ")[1].split(" denarii")[0].replace(",", ""))
+      > 5 * float(_msg_rg.split("for ")[1].split(" denarii")[0].replace(",", "")),
+      (_msg_rg, _msg_rg2))
+
+# --- BREAK: an England playtester watched their own credit-freeze unlock
+# date move silently three times - 1313, then 1320, then 1330 - because a
+# second INSOLVENCY SETTLED while the first freeze had not yet lifted
+# extends credit_frozen_until with a plain max(), and nothing in the event
+# text said the date had changed. A deadline that quietly slides is worse
+# than a longer fixed one would have been.
+s_fz = sim(capital=1000.0)
+_lim_fz = s_fz.credit_limit()
+s_fz.capital = -(_lim_fz * 1.5)
+s_fz.last_settlement = -999
+s_fz.credit_frozen_until = 110   # an earlier freeze, STILL in force at yr=105
+_before_log_fz = len(s_fz.log)
+s_fz.enforce_credit_limit(105)
+check("settling again while an earlier freeze is still in force extends "
+      "the unlock date...",
+      s_fz.credit_frozen_until == 117, s_fz.credit_frozen_until)
+_fz_msgs = [m for _, m in s_fz.log[_before_log_fz:] if "INSOLVENCY SETTLED" in m]
+check("...and says so in the same event, naming both the old and the new "
+      "date, rather than moving the deadline with no word about it",
+      bool(_fz_msgs) and "110" in _fz_msgs[0] and "117" in _fz_msgs[0],
+      _fz_msgs)
+# And the ordinary case - no prior freeze in force - gets no such addendum,
+# because nothing moved.
+s_fz2 = sim(capital=1000.0)
+s_fz2.capital = -(s_fz2.credit_limit() * 1.5)
+s_fz2.last_settlement = -999
+_before_log_fz2 = len(s_fz2.log)
+s_fz2.enforce_credit_limit(105)
+_fz2_msgs = [m for _, m in s_fz2.log[_before_log_fz2:] if "INSOLVENCY SETTLED" in m]
+check("...while a first-ever settlement, with nothing to extend, says "
+      "nothing about a moved date",
+      bool(_fz2_msgs) and "moves with every settlement" not in _fz2_msgs[0],
+      _fz2_msgs)
+
+# --- BREAK (REGRESSION): `state`'s "recurring" net_per_year is supposed to
+# be the STANDING figure - its own comment says so - and read plain
+# revenue() instead of revenue_capacity(), which a lender-facing figure
+# (credit_limit) already reads for the identical reason its own docstring
+# gives: "a lender does not cut your line because you took a job this
+# year." Selling founder-hours with `work` swung net_per_year for exactly
+# one year and reverted the instant the calendar rolled over - the label
+# was lying about what kind of number it was.
+s_nr = sim(capital=100000.0)
+_net_before = S._agent_dispatch(s_nr, NODES, {"cmd": "state"}).get("net_per_year")
+_pay_nr, _ = s_nr.work_for_wages("scholar", 1500)
+check("set-up: selling founder-hours for wages actually registers as this "
+      "year's wage_hours_this_year",
+      s_nr.wage_hours_this_year > 0 and _pay_nr > 0,
+      (s_nr.wage_hours_this_year, _pay_nr))
+_after = S._agent_dispatch(s_nr, NODES, {"cmd": "state"})
+check("net_per_year (the 'recurring' figure) does not swing just because "
+      "this year's hours were sold for wages",
+      abs(_after.get("net_per_year") - _net_before) < 5.0,
+      (_net_before, _after.get("net_per_year")))
+check("...while net_after_project_spend - explicitly THIS year's figure - "
+      "still does reflect it, so the fix narrowed the right field rather "
+      "than hiding the swing everywhere",
+      abs(_after.get("net_after_project_spend") - _net_before) > 50.0,
+      (_net_before, _after.get("net_after_project_spend")))
+# `money`'s own net_per_year carries the identical label and the identical
+# bug (protocol.py: "THE SAME FIGURE `state` PRINTS").
+s_nr2 = sim(capital=100000.0)
+_money_before = S._agent_dispatch(s_nr2, NODES, {"cmd": "money"}).get("net_per_year")
+s_nr2.work_for_wages("scholar", 1500)
+_money_after = S._agent_dispatch(s_nr2, NODES, {"cmd": "money"}).get("net_per_year")
+check("`money`'s net_per_year is insulated from the same one-year swing, "
+      "matching `state`'s",
+      abs(_money_after - _money_before) < 5.0,
+      (_money_before, _money_after))
+# And stall_diagnosis's own net, which explicitly claims to be "the same
+# net the ledger prints", has to actually be computed the same way now
+# that the ledger's own figure changed.
+import inspect as _insp2
+check("stall_diagnosis computes its net from revenue_capacity(), the same "
+      "call net_per_year now makes, not a second copy of the old bug",
+      "revenue_capacity()" in _insp2.getsource(S.Sim.stall_diagnosis),
+      "checked stall_diagnosis's own source")
+
+# =============================================================================
+# BREAK, REPORTED INDEPENDENTLY ON THREE CIVILISATIONS: "in arrears freezes
+# ALL founder-hour progress even on fully-paid projects." Confirmed exactly:
+# step()'s hour-allocation guarded the year's money draw with `if money >
+# purse`, where `purse` is the household's own affordability (capital plus
+# part of credit, less fixed costs) - but a project whose cost_left is
+# already 0 asks for money=0 this YEAR, and 0 > purse is still true whenever
+# the HOUSEHOLD'S purse has gone negative, nothing to do with this project's
+# own bill. That forced funded_frac to 0.0 and refunded nearly the whole
+# year's hours on a project that needed not one more denarius - a pure
+# calendar wait turned into no progress at all, for as long as the
+# household stayed in arrears, however long that ran.
+# =============================================================================
+s_af = sim(capital=1000.0)
+_af_k = next(kk for kk in NODES if NODES[kk]["yrs"] >= 3 and NODES[kk]["ph"] > 500)
+_af_n = NODES[_af_k]
+# Injected directly into `active`, bypassing prerequisite legality, to
+# isolate step()'s hour-allocation arithmetic from whether this particular
+# node could be started today - the bug is in the allocation, not the gate.
+s_af.active[_af_k] = dict(ph_left=float(_af_n["ph"]), yrs=0.0,
+                          spent=s_af.project_cost(_af_k), cost_left=0.0,
+                          lab_left=dict(_af_n["lab"]))
+_lim_af = s_af.credit_limit()
+_fixed_af = s_af.living_cost() + s_af.upkeep() + s_af.mine_operating_cost()
+_reserve_af = max(0.0, _fixed_af - s_af.revenue())
+# Mildly in arrears - well clear of credit_limit (so enforce_credit_limit
+# does not wipe `active` out from under this check), but still enough for
+# THIS PROJECT's own purse (capital + 0.6*limit - reserve) to be negative.
+s_af.capital = -(_reserve_af + 0.6 * _lim_af) - 50.0
+check("set-up: in arrears, but nowhere near the credit limit itself, with "
+      "a project that owes nothing further",
+      s_af.capital > -_lim_af
+      and s_af.active[_af_k]["cost_left"] == 0.0, s_af.capital)
+_ph_before_af = s_af.active[_af_k]["ph_left"]
+s_af.step()
+check("a fully-paid project still makes real hour progress while the "
+      "household is in arrears, rather than being refunded almost "
+      "everything it was offered for a shortfall that is not its own",
+      _af_k in s_af.active
+      and s_af.active[_af_k]["ph_left"] < _ph_before_af - 100,
+      (_ph_before_af, s_af.active.get(_af_k, {}).get("ph_left")))
+check("...and it is not marked underfunded, because nothing was actually "
+      "short - there was nothing left to pay for",
+      not s_af.active.get(_af_k, {}).get("underfunded_this_year"),
+      s_af.active.get(_af_k, {}).get("why_underfunded"))
+
 # --- and a concern a player shut ON PURPOSE must never reappear on its own -
 # reopen_restaffed_ventures only undoes close_unstaffed_ventures, never `mothball`
 s = sim(capital=50000.0)
@@ -8266,6 +8944,80 @@ check("...and path is now reachable from the welcome screen, not only "
 check("path has its own rendering, not a raw key/value dump",
       "ROUTE TO" in _RPATH(_rp2) and "STARTABLE TODAY" in _RPATH(_rp2),
       _RPATH(_rp2)[:80])
+
+# --- FINDING, RAISED TWICE: `path` was promoted into the welcome screen's
+# starter verbs on the strength of one player calling it decisive, and three
+# MORE players then hit the problem that promotion exposed: early in any
+# tree the critical path is almost pure knowledge, zero revenue, and `path`
+# pointed firmly at it with no word that none of it earns a denarius. One
+# player started four DIFFERENT path items over five years - each
+# individually affordable on the day it was started - and spent the next 24
+# years in a debt spiral with two insolvencies and a reputation crash,
+# because can_start asks "could I begin this, today, alone", never "could I
+# afford several of these together". The fix is NOT gated on the household
+# already being broke, because by the time recurring income actually goes
+# negative the damage from several affordable-alone starts is often already
+# done; it is said plainly, every time the route cannot pay for itself on
+# its own, with the COMBINED bill of everything listed, which individual
+# affordability checks never show.
+_s_pay = sim(civ="rome_100ad")
+_rp_pay_ok = S._agent_dispatch(_s_pay, NODES, {"cmd": "path", "id": GOAL})
+check("set-up: on a fresh turn-one Rome game every startable node on the "
+      "route to the goal earns nothing by itself - this is the real "
+      "opening, not an invented fixture",
+      bool(_rp_pay_ok.get("startable_today_toward_this"))
+      and all(e.get("earns_per_year", 0) <= 0
+              for e in _rp_pay_ok["startable_today_toward_this"]
+              if isinstance(e, dict)),
+      [(e.get("id"), e.get("earns_per_year"))
+       for e in _rp_pay_ok.get("startable_today_toward_this") or []])
+check("`path` says outright, from turn one, that an all-knowledge route "
+      "will not cover costs and names a command that finds what actually "
+      "pays - not only after the household is already in the red, which "
+      "is too late to prevent the debt these players were carried into",
+      "earns" in (_rp_pay_ok.get("this_route_pays_for_nothing") or "")
+      and '"sort":"earns"' in (_rp_pay_ok.get("this_route_pays_for_nothing") or ""),
+      _rp_pay_ok.get("this_route_pays_for_nothing"))
+check("...and the warning reaches the rendered page too, not only the JSON",
+      "!!" in _RPATH(_rp_pay_ok) and "sort" in _RPATH(_rp_pay_ok),
+      _RPATH(_rp_pay_ok))
+# A route with at least one real earner among today's startable nodes must
+# NOT get the all-knowledge warning: the condition is "nothing on this list
+# pays", not "you are poor" - found by scanning the tree for a goal whose
+# critical path has a revenue-positive node startable right now, rather
+# than assuming one exists.
+_s_scan = sim(civ="rome_100ad")
+_earning_goal = next((g for g in NODES
+                     if any(NODES[p]["rev"] > 0 and _s_scan.can_start(p)
+                            for p in S.closure(NODES, g))), None)
+check("a goal with a real earner on its startable-today route exists to "
+      "test the negative case against",
+      _earning_goal is not None, _earning_goal)
+if _earning_goal:
+    _rp_eg = S._agent_dispatch(sim(civ="rome_100ad"), NODES,
+                               {"cmd": "path", "id": _earning_goal})
+    check("...and that route gets no 'pays for nothing' warning",
+          "this_route_pays_for_nothing" not in _rp_eg,
+          _rp_eg.get("this_route_pays_for_nothing"))
+
+# --- THE COMBINED BILL, not each item's own affordability. Several
+# individually-affordable starts are not one affordable start; this is the
+# exact number the England playtester needed and never had before losing
+# 24 years to debt over it.
+_s_comb = sim(civ="rome_100ad", capital=1.0)
+_rp_comb = S._agent_dispatch(_s_comb, NODES, {"cmd": "path", "id": GOAL})
+check("set-up: a household with almost nothing to spend, tested against "
+      "the same all-knowledge opening route",
+      bool(_rp_comb.get("startable_today_toward_this")), _rp_comb)
+_comb_total = sum(_s_comb.project_cost(e["id"])
+                  for e in _rp_comb["startable_today_toward_this"])
+check("`path` names the combined cost of everything listed against what "
+      "can actually be raised, when that combined cost exceeds it - the "
+      "one number individual affordability checks never show",
+      "these_together_cost_more_than_you_can_raise" in _rp_comb
+      and "{:,.0f}".format(_comb_total) in
+          _rp_comb["these_together_cost_more_than_you_can_raise"],
+      (_comb_total, _rp_comb.get("these_together_cost_more_than_you_can_raise")))
 
 # --- FINDING: `train` and `hire` are two required steps for a taught
 # (TRADES_ABSENT) trade, and neither train's own success message nor a

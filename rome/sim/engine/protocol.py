@@ -424,7 +424,18 @@ def _agent_state(s, nodes, cmd=None):
                                          - s.mine_operating_cost()
                                          - max(0.0, -s.capital) * s.debt_interest_rate()
                                          - getattr(s, "spend_last_year", 0.0), 1),
-        "net_per_year": round(s.revenue() - s.upkeep() - s.living_cost()
+        # THE STANDING FIGURE HAS TO READ THE STANDING REVENUE. This counts
+        # "the STANDING flows only" per the comment on shut_concerns above -
+        # the household's ordinary-year position, not this particular year's
+        # - and was reading plain revenue(), which dips for a year whenever
+        # `work` sells founder-hours: a player who sold hours watched this
+        # swing to -193/yr and revert the moment the calendar rolled over.
+        # revenue_capacity() (economy.py) exists for exactly this - it is
+        # what credit_limit() already reads, with the identical reasoning in
+        # its own docstring ("a lender does not cut your line because you
+        # took a job this year") - and this field claimed to be the same
+        # kind of number without actually being computed as one.
+        "net_per_year": round(s.revenue_capacity() - s.upkeep() - s.living_cost()
                               + min(s.living_cost(),
                                     getattr(s, "wages_prepaid", 0.0))
                               - s.mine_operating_cost()
@@ -446,6 +457,32 @@ def _agent_state(s, nodes, cmd=None):
         # wage work.
         "founder_hours_available": round(
             max(0.0, s.director_pool() - s.director_hours_committed()), 1),
+        # FREE HOURS, SHOUTED, WHEN THEY ARE GOING TO WASTE, not one quiet
+        # number among fifty. A blind playthrough treated a long
+        # calendar-floor project as though it were the active research,
+        # even with thousands of founder-hours spent on nothing that year,
+        # and only started running several projects in parallel after an
+        # outside hint changed the run materially - their own account calls
+        # it probably decisive. This is the central mechanic of the game
+        # (see help's "how a turn works") and nothing taught it. Every
+        # active project's own hours are fully spent for the year exactly
+        # when it is waiting on the calendar, not on you - _waiting_on
+        # returns "the calendar" for precisely that case - so that is the
+        # signal, not a guess at intent.
+        "free_hours_going_unused": (
+            ("%s founder-hours this year are going into nothing: every "
+             "project you have in hand is only waiting on the calendar "
+             "now, not on you or your money. A calendar floor is not "
+             "exclusive research time - start something else alongside "
+             "it while it runs. 'available' or 'stuck' says what you "
+             "could begin today."
+             % "{:,.0f}".format(max(0.0, s.director_pool()
+                                    - s.director_hours_committed())))
+            if (active
+                and all(v["founder_hours_left"] <= 0 for v in active.values())
+                and max(0.0, s.director_pool()
+                        - s.director_hours_committed()) > 200)
+            else None),
         "founder_hours_sold_for_wages_this_year": round(
             getattr(s, "wage_hours_this_year", 0.0), 1),
         # WHERE THE HOURS COME FROM. A play tester watched their year grow from
@@ -777,8 +814,12 @@ def _agent_help(s, topic=None):
             "available": "what you could begin today, summarised by subject; "
                          "add subject, find, afford, limit/offset, or all:true; "
                          "add sort (price/hours/years/earns/upkeep/risk/alpha/"
-                         "nearest) and reverse to change the order, and page "
-                         "with offset/heard_offset all the way to the end",
+                         "fewest_missing) and reverse to change the order, and "
+                         "page with offset/heard_offset all the way to the end. "
+                         "fewest_missing is about the heard-of list only - it "
+                         "orders by how few of a thing's OWN prerequisites are "
+                         "still missing, not by distance to any goal you have "
+                         "set; see 'path <goal>' for that, once fog is off",
             "why <id>": "everything known about one thing",
             "start <id>": "begin work on something",
             "stop <id>": "abandon it, losing what you have spent",
@@ -895,7 +936,17 @@ def _agent_help(s, topic=None):
                 "manumit": '{"cmd":"buy","what":"manumit","n":5} frees people you '
                            "hold. They then work better, and it is the decent thing.",
                 "debt": "You may spend past what you have, as far as somebody will "
-                        "lend you and no further. Arrears cost interest."}
+                        "lend you and no further. Arrears cost interest. "
+                        "Money in arrears also stalls HOUR progress on work "
+                        "you already have in hand: a project still owing "
+                        "money draws on what you could raise this year, and "
+                        "if that is nothing, its hours mostly go to waste "
+                        "rather than into the work - not just the money, the "
+                        "founder-hours too. 'state' shows which active "
+                        "project this is happening to and names the cause "
+                        "(why_underfunded); a project already fully paid is "
+                        "never affected by this, whatever else is in "
+                        "arrears."}
 
     if topic in ("automatic", "policy"):
         return {"what happens on its own": (
@@ -1278,16 +1329,28 @@ _SORT_KEYS = {
     "alpha": lambda s, n, k: n[k]["name"].lower(),
     "alphabetical": lambda s, n, k: n[k]["name"].lower(),
     "name": lambda s, n, k: n[k]["name"].lower(),
-    # NEAREST: fewest of its own prerequisites still missing. Every node in
-    # the STARTABLE list has zero missing by definition, so this only
-    # discriminates the heard-of list - asking for it on the startable list
-    # is harmless, not an error, and falls back to id order.
+    # FEWEST_MISSING: fewest of its OWN direct prerequisites still missing -
+    # i.e. closest to becoming startable, never distance to whatever goal is
+    # set. Every node in the STARTABLE list has zero missing by definition,
+    # so this only discriminates the heard-of list; asking for it on the
+    # startable list is harmless, not an error, and falls back to id order
+    # there, which is exactly what misled a goal-directed player: with the
+    # goal set to the junction transistor, "available sort nearest" kept
+    # opening with agriculture, because id order is what "no missing
+    # prerequisites to discriminate by" falls back to, and nothing about the
+    # name "nearest" said it meant anything other than "nearest to your
+    # goal". `path <goal>` answers that real question - "what could I start
+    # today toward this" - without leaking the hidden tree; this key never
+    # did and was never trying to, so it is renamed to say what it actually
+    # measures. "near"/"nearest" still work, for any script already using
+    # them, but no longer appear in the advertised list below.
+    "fewest_missing": lambda s, n, k: sum(1 for p in n[k]["pre"] if p not in s.done),
     "near": lambda s, n, k: sum(1 for p in n[k]["pre"] if p not in s.done),
     "nearest": lambda s, n, k: sum(1 for p in n[k]["pre"] if p not in s.done),
 }
 
 _SORT_KEY_NAMES = ("price", "hours", "years", "earns", "upkeep", "risk",
-                   "alpha", "nearest")
+                   "alpha", "fewest_missing")
 
 
 def _agent_available(s, nodes, cmd=None):
@@ -1479,7 +1542,9 @@ def _agent_available(s, nodes, cmd=None):
                     "%d more, %s; ask again with heard_offset %d"
                     % (heard_more,
                        ("sorted by %s%s" % (sort_by, " reversed" if reverse else ""))
-                       if _sort_fn else "nearest first",
+                       if _sort_fn else "fewest missing prerequisites first, "
+                                        "which is not the same as nearest to "
+                                        "your goal",
                        heard_from + len(heard_block)))
         return out
 
@@ -1547,7 +1612,8 @@ def _agent_available(s, nodes, cmd=None):
         if heard_more:
             out["and_more_you_have_heard_of"] = (
                 'ask again with {"cmd":"available","heard_offset":%d} for %d '
-                "more, nearest first"
+                "more, fewest missing prerequisites first (not nearest to "
+                "your goal - see 'path <goal>' for that, once fog is off)"
                 % (heard_from + len(heard_block), heard_more))
     if fog:
         out["note"] = ("Under fog you see only what you could begin now, and things "
@@ -1821,7 +1887,32 @@ def _node_explain(s, nodes, k):
                  "as_of_year": s.year,
                  "note": "today's price. It is fixed when you start, not when "
                          "you read it: quotes move with prices, the coinage "
-                         "and what a material costs to get."},
+                         "and what a material costs to get.",
+                 # THE STICKER PRICE IS NOT WHAT `start` WOULD ACTUALLY CHARGE,
+                 # once money is already sunk into this node - start_project's
+                 # own _paid_now discount (see that function) subtracts
+                 # paid_towards[k] before billing a single denarius, but this
+                 # screen kept quoting the gross total forever, for a project
+                 # a creditor or the player's own `stop` had halted partway.
+                 # An England player planning from `why` was planning against
+                 # a number the engine would never actually charge; the real,
+                 # discounted figure showed up only inside a `start` refusal
+                 # or its success line, after the fact.
+                 **({"already_paid_towards_this": round(
+                        min(s.project_cost(k),
+                            max(0.0, getattr(s, "paid_towards", {}).get(k, 0.0))), 1),
+                     "what_start_would_actually_charge": round(
+                        max(0.0, s.project_cost(k)
+                            - min(s.project_cost(k),
+                                  max(0.0, getattr(s, "paid_towards", {}).get(k, 0.0)))), 1),
+                     "why_less_than_the_total_above":
+                        "this much was already paid in before the work "
+                        "stopped, halted by a creditor or by your own "
+                        "'stop'; it stands to your credit and comes off "
+                        "the bill the moment you start this again"}
+                    if k not in s.done and k not in s.active
+                    and max(0.0, (getattr(s, "paid_towards", {}) or {}).get(k, 0.0)) > 0.5
+                    else {})},
         # UPKEEP STAYS EXACT, EVEN UNDER FOG, AND REVENUE DOES NOT. Upkeep is
         # closer to a quoted PRICE than to a forecast - rent, wages and
         # materials are things you can ask around about before you commit,
@@ -2287,6 +2378,8 @@ def render_state(out):
                  % (_fmt_num(_src.get("you")), _fmt_num(_dep),
                     _fmt_num(_src.get("hours_each_deputy_adds"))))
                 if _dep else ""))
+    if out.get("free_hours_going_unused"):
+        L.append(_wrap("  " + out["free_hours_going_unused"]))
 
     active = out.get("active") or {}
     L.append("")
@@ -2674,6 +2767,11 @@ def render_why(out):
                 _factor(cost.get("scarce_material_premium")),
                 _factor(cost.get("opposition_factor")),
                 _factor(cost.get("price_index"))))
+    if cost.get("already_paid_towards_this"):
+        L.append("!! %s den already sunk into this before it stopped: "
+                 "'start' would actually charge %s den, not the total "
+                 "above" % (_fmt_num(cost["already_paid_towards_this"]),
+                            _fmt_num(cost.get("what_start_would_actually_charge"))))
     L.append("YOUR HOURS: %s     CALENDAR FLOOR: %s years     FAILURE RISK: %s"
              % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),
                 _pct(out.get("risk"))))
@@ -2895,6 +2993,9 @@ def render_stuck(out):
         L.append("  " + str(hole.get("you_are_stuck", "")).upper())
         for w in hole.get("what_would_change_it") or []:
             L.append(_wrap("- " + w, indent="    "))
+    if out.get("this_does_not_know_your_goal"):
+        L.append("")
+        L.append(_wrap(out["this_does_not_know_your_goal"], indent="  "))
     return "\n".join(L)
 
 
@@ -3348,6 +3449,11 @@ def render_path(out):
                  + ", ".join(out["on_this_route_but_shut_down"]))
         if out.get("reopen_them_with"):
             L.append(_wrap("  " + out["reopen_them_with"]))
+    if out.get("this_route_pays_for_nothing"):
+        L.append("")
+        L.append(_wrap("!! " + out["this_route_pays_for_nothing"]))
+    if out.get("these_together_cost_more_than_you_can_raise"):
+        L.append(_wrap("!! " + out["these_together_cost_more_than_you_can_raise"]))
     return "\n".join(L)
 
 
@@ -3742,6 +3848,45 @@ def _resolve_by_name(text):
     return []
 
 
+def _absorb_key_colons(rest, flag_keys, value_keys):
+    """Normalise 'key:value' typed tokens into the plain words the rest of a
+    command's own parser already reads one at a time.
+
+    'sort:risk' becomes the two words 'sort', 'risk' - value_keys, where the
+    value matters. 'all:true' becomes the one bare word 'all'; 'all:false'
+    is dropped outright, the same as never typing it - flag_keys, a word
+    whose own presence IS the value and which a command's follow-up loop
+    turns into True on sight.
+
+    Every one of these was the same break, found three times: a typed
+    key:value pair that `help commands` itself advertises fell straight
+    through a loop that only read bare words, with no error - 'available
+    all:true' became a search for the literal string "all:true" and quietly
+    matched nothing, then 'available ... limit:N', then 'available
+    reverse:true'. Fixing the instance in front of you each time is how it
+    kept coming back in a fourth command; this is the one place it is fixed
+    for every caller that uses it, including the next one.
+    """
+    out = []
+    for w in rest:
+        t = str(w)
+        if ":" in t:
+            a, _, b = t.partition(":")
+            al = a.lower()
+            if al in flag_keys:
+                if b.lower() in ("false", "0", "no", "off"):
+                    continue          # same as never having typed it
+                out.append(a)
+                continue
+            if al in value_keys:
+                out.append(a)
+                if b:
+                    out.append(b)
+                continue
+        out.append(t)
+    return out
+
+
 def parse_typed(line):
     """One typed line -> (command dict, None), or (None, a refusal to show).
 
@@ -3845,30 +3990,16 @@ def parse_typed(line):
         # fell all the way through to the subject branch at the bottom and was
         # used as a search string named "all:true", silently matching nothing.
         # A Han player reported it as a documentation bug and was right; the
-        # same hole swallowed limit:30, find:furnace and every other pair.
-        # Splitting on the first colon before the loop fixes the family rather
-        # than the one instance, and `state full:true` has always taken this
-        # spelling, so a player who learned it there was right to expect it.
-        _KEYS = ("all", "find", "search", "named", "afford", "under", "within",
-                 "limit", "offset", "heard", "heard_offset", "sort")
-        _rest = []
-        for w in rest:
-            t = str(w)
-            if ":" in t:
-                a, _, b = t.partition(":")
-                if a.lower() in _KEYS:
-                    _rest.append(a)
-                    # all:true and all:1 mean `all`; all:false means leave it
-                    # off, which is what omitting the word already does.
-                    if a.lower() == "all":
-                        if b.lower() in ("false", "0", "no", "off"):
-                            _rest.pop()
-                        continue
-                    if b:
-                        _rest.append(b)
-                    continue
-            _rest.append(t)
-        rest = _rest
+        # same hole swallowed limit:30, find:furnace and every other pair, and
+        # - found later, same shape exactly - `reverse:true`, which fell
+        # through to the same subject branch and was read as a search for the
+        # literal text "reverse:true". See _absorb_key_colons, which now does
+        # this for every caller rather than once per command found missing it.
+        rest = _absorb_key_colons(
+            rest,
+            flag_keys=("all", "reverse", "reversed", "desc", "descending"),
+            value_keys=("find", "search", "named", "afford", "under", "within",
+                        "limit", "offset", "heard", "heard_offset", "sort"))
         low = [w.lower() for w in rest]
         i = 0
         while i < len(low):
@@ -3935,6 +4066,18 @@ def parse_typed(line):
         #   log since 300             log before 200 oldest
         #   log limit 50 offset 50
         out = {"cmd": "log"}
+        # SAME FAMILY, SAME FIX. 'log failures:true' was the same shape as
+        # 'available all:true' - a key:value pair `help` never tells anyone
+        # NOT to type, read by a loop that only matched bare words - except
+        # here there is no subject fallback to land in, so it failed even
+        # more quietly: the flag was simply dropped, with the command
+        # reporting ok:true on a plain, unfiltered log instead of erroring or
+        # searching. See _absorb_key_colons.
+        rest = _absorb_key_colons(
+            rest,
+            flag_keys=("failures", "failure", "fails", "fail",
+                      "oldest", "forward", "newest", "backward", "recent"),
+            value_keys=("find", "search", "since", "before", "limit", "offset"))
         low = [w.lower() for w in rest]
         i = 0
         while i < len(low):
@@ -4491,6 +4634,69 @@ def _agent_dispatch_inner(s, nodes, cmd):
         if remaining and not _startable:
             out["note"] = ("nothing on the route is startable today - see "
                            "'stuck' for what the nearest of them are waiting on")
+        # A ROUTE CAN BE ENTIRELY TRUE AND ENTIRELY UNABLE TO PAY THE RENT.
+        # `path` was promoted into the welcome screen's own starter verbs
+        # because an earlier player called it the thing that reorganised
+        # their whole run - and a second player, who saw it immediately
+        # because of that promotion, reported the half that promotion
+        # exposed: early in any tree the critical path is almost pure
+        # knowledge, zero revenue, and this screen - now the game's own
+        # first suggestion - pointed firmly at it with no word that none of
+        # it earns a denarius. They found a profitable concern only by
+        # guessing to sort `available` by earnings, which nothing here or in
+        # the welcome text mentions. Following the game's own first piece of
+        # advice should not be how a new player walks into the opening debt
+        # trap this engine otherwise warns about everywhere else.
+        #
+        # PROMOTING THIS SCREEN MADE THE PROBLEM IT REVEALS MORE DAMAGING, NOT
+        # LESS. Three more players hit this once `path` became a starter verb.
+        # One read the income gap correctly and recovered by abandoning `path`
+        # for `available sort earns reverse`, unprompted by anything in the
+        # game. A second started four DIFFERENT path items over five years -
+        # each individually affordable on the day it was started - and spent
+        # the next 24 years in a debt spiral with two insolvencies and a
+        # reputation crash, because each one's own affordability check has no
+        # memory of the others: "nothing warns that several individually
+        # affordable path items can be collectively unaffordable," in their
+        # own words, and they are right - `can_start` asks "could I begin
+        # this, today, on its own", which is a different and smaller question
+        # than "could I finish several of these together". A third reached
+        # the identical trap through `rush` instead.
+        #
+        # So this is not gated on already being insolvent any more - that
+        # caught the damage, never the cause, and by the time recurring
+        # income actually goes negative the debt is often already taken.
+        # Said plainly, every time the route itself cannot pay for itself,
+        # whether or not today's ledger happens to look fine yet; and said
+        # with the COMBINED bill of everything listed above, not each item's
+        # own affordability, which is the exact number these players were
+        # never shown before committing to more than one.
+        if _startable and all(nodes[x]["rev"] <= 0 for x in _startable):
+            _combined = sum(s.project_cost(x) for x in _startable)
+            _raise = s.spending_power("start")
+            out["this_route_pays_for_nothing"] = (
+                "every one of the %d things above is knowledge or "
+                "infrastructure - none earns a denarius by itself. This "
+                "route will not cover your costs; something off it has to. "
+                "{\"cmd\":\"available\",\"sort\":\"earns\",\"reverse\":true} "
+                "finds what actually pays today - building one of those "
+                "alongside the route is not a detour from it, it is how you "
+                "afford to keep walking it." % len(_startable))
+            # THE COMBINED BILL, not each item's own affordability. Several
+            # individually-affordable starts are not one affordable start;
+            # `can_start` has no memory of its own earlier answers, so the
+            # first time a player can see the total is here, where several
+            # are listed together.
+            if _combined > _raise:
+                out["these_together_cost_more_than_you_can_raise"] = (
+                    "starting everything listed above would cost %s in "
+                    "all, against %s you could actually raise today. Each "
+                    "one passed its OWN affordability check when it was "
+                    "priced; that is not the same question as whether you "
+                    "can afford several of them at once. Pick one, or a few, "
+                    "not all of them - and see what pays before spending "
+                    "the rest."
+                    % ("{:,.0f}".format(_combined), "{:,.0f}".format(_raise)))
         # A ROUTE THAT DOES NOT SAY "RESTORE" IS A ROUTE YOU CANNOT FOLLOW. A
         # break tester drove a run mechanically from `path` after a sack:
         # `path` listed lead_chamber as remaining, `start` answered "you built
@@ -4572,9 +4778,55 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        "this project. Quotes move with prices, the coinage and "
                        "what a material costs to get: a figure you read years "
                        "ago is not what you will pay."}
+        # TAUGHT ONCE, AT THE MOMENT IT FIRST MATTERS. A blind playthrough
+        # spent its whole early game treating one long calendar-floor project
+        # as "the active research" and only discovered parallel play - running
+        # several things at once while a multi-year project sits in the
+        # background - after an outside hint, which their own write-up calls
+        # probably the difference between finishing comfortably and risking
+        # the horizon. This is the central mechanic of the game and the
+        # welcome text never says it. Fired once, on the first project whose
+        # calendar floor is long enough that it cannot be the only thing in
+        # hand for a while - not every multi-year start, which would be noise
+        # by the fifth one.
+        if n["yrs"] >= 2 and not getattr(s, "_said_parallelism", False):
+            s._said_parallelism = True
+            out["a_calendar_floor_is_not_exclusive_research_time"] = (
+                "%s will take at least %d year%s, whatever else you do. That "
+                "time is not spent watching it: your founder-hours and staff "
+                "are free the moment this year's share of the work is paid "
+                "for, and nothing stops you spending them on something else "
+                "in the meantime. The strongest play is usually to keep "
+                "several things running at once - start preparing the next "
+                "layer now rather than waiting for this one to finish."
+                % (n["name"], n["yrs"], "" if n["yrs"] == 1 else "s"))
         if _warn_staff:
             out["but"] = _warn_staff
-        # AND SAY WHEN YOU ARE BORROWING TO DO IT. `start` financed the gap
+        # BUILD STAFF AND OPERATING STAFF ARE DIFFERENT NUMBERS, and a player
+        # can clear the first (checked above, and by start_project itself),
+        # pay the whole bill, and only discover the second - venture_hands(),
+        # what 'open' actually enforces - refuses them once the work is
+        # already finished. `why` has shown this for a while (same
+        # computation, see staff_to_keep_it_open there); three playtesters
+        # missed it anyway in a long page and found out at 'open' instead.
+        # Said here too, at the one other moment it can still change
+        # anything, with today's free staff - not a promise, since attrition
+        # and hiring between now and completion can move either number.
+        if s.is_venture(k):
+            _sup_sch, _sup_art = s.venture_hands(k)
+            _free_sch, _free_art = s.venture_staff_free()
+            if _sup_sch > _free_sch + 1e-9 or _sup_art > _free_art + 1e-9:
+                out["today_you_could_not_open_this_when_it_is_done"] = (
+                    "keeping it open will want %.2f scholars and %.2f "
+                    "artisans of your own watching it; you have %.2f and "
+                    "%.2f free right now, with nothing else committed. That "
+                    "is a different, usually smaller number than the crew "
+                    "that builds it, and it is checked only when you 'open' "
+                    "it - not now. Staffing can change before this "
+                    "finishes, for better or worse; if it has not by then, "
+                    "hire, teach, or close something first."
+                    % (_sup_sch, _sup_art, _free_sch, _free_art))
+        # AND SAY WHEN THIS WOULD BORROW TO FINISH. `start` financed the gap
         # between what a project costs and what the household has, silently,
         # at up to twelve per cent - three players in a row were carried into
         # debt they had not decided to take on. One went 750 denarii short of
@@ -4587,14 +4839,30 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # before the creditors stop being patient - and what they do then,
         # because both players who found that out found it out by losing a
         # school and a collegium they had built years earlier.
+        #
+        # A FORECAST, NOT A RECEIPT - the keys have to say so. `start` itself
+        # borrows nothing: credit only actually draws down at step resolution,
+        # if and when cash genuinely goes negative paying this year's share.
+        # The first version of this block said "borrowed_now", in the past
+        # tense, on the very command that had not borrowed a denarius yet - a
+        # Norse player read "borrowed now: 123.8" here and "(none used)" on
+        # `money` in the next breath and rightly called it a ledger
+        # contradiction. Same numbers, same warning; they describe what WILL
+        # happen if the project runs to completion on today's cash, not what
+        # has.
         _gap = bill - max(0.0, s.capital)
         if _gap > 0:
             _lim = s.credit_limit()
             _after = -(min(0.0, s.capital) - _gap)
             out["on_credit"] = {
-                "borrowed_now": round(_gap, 1),
-                "interest_per_year": round(s.debt_interest_rate() * 100, 1),
-                "you_will_owe": round(_after, 1),
+                "nothing_is_borrowed_yet": (
+                    "this is a forecast, not a receipt: credit only actually "
+                    "draws down at step resolution, if cash runs short paying "
+                    "this year's share. These figures are what happens if it "
+                    "does, on today's numbers."),
+                "you_would_borrow": round(_gap, 1),
+                "interest_per_year_on_it": round(s.debt_interest_rate() * 100, 1),
+                "you_would_then_owe": round(_after, 1),
                 "no_one_advances_past": round(_lim, 1),
                 "what_happens_there":
                     "past that limit every project in hand halts unfinished, "
@@ -4747,14 +5015,26 @@ def _agent_dispatch_inner(s, nodes, cmd):
             return {"ok": False, "error": "unknown node id %r" % k}
         if k in s.done:
             return {"ok": False, "error": "%s is already done" % k}
-        if k in s.active:
-            return {"ok": False, "error": "%s is already active; stop it first if you want "
-                                          "to switch to a bounty instead" % k}
+        # ELIGIBILITY FIRST, ALWAYS - a tester was told to stop an active
+        # mat_platinum_bulk in order to switch it to a bounty, did so, and
+        # then had `bounty mat_platinum_bulk` refused as not bounty-eligible:
+        # advice the game itself could have checked before giving. Since an
+        # active project's prerequisites are already satisfied (that is what
+        # let it start), eligibility here depends only on tier/category, so
+        # checking it before the "already active" branch costs nothing and
+        # never sends a player to stop something that could not become a
+        # bounty anyway.
         if not s.bounty_eligible(k):
             n = nodes[k]
             missing = [p for p in n["pre"] if p not in s.done]
             if missing:
-                return {"ok": False, "error": "missing prerequisites: " + ", ".join(missing)}
+                # SAME FOG FILTER `why` USES, not a second one. This used to
+                # print every missing prerequisite by raw id regardless of
+                # whether the player had ever heard of it - industrial zinc
+                # leaked power_grid this way, the getter leaked its induction-
+                # heating coupling, and the vacuum tube leaked its hidden
+                # cathode prerequisite.
+                return {"ok": False, "error": s.missing_prereq_message(missing)}
             return {"ok": False,
                     "error": "not bounty-eligible (tier %d, category %s): a craftsman "
                              "in %s could not recognise success at this without "
@@ -4763,6 +5043,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
                              "already exists here and success is visible."
                              % (n["tier"], n["cat"],
                                 s.civ.get("name", "this society"))}
+        if k in s.active:
+            return {"ok": False, "error": "%s is already active; stop it first if you want "
+                                          "to switch to a bounty instead" % k}
         price = (nodes[k]["_total_cost"] * 2.5 * s.civ_cost_factor(k)
                  * s.material_cost_factor(k) * s.cost_money_factor())
         if not s.post_bounty(k):
@@ -4978,8 +5261,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     # "+9.5 a year" while capital fell 105 and then 117.
                     "interest_on_arrears": round(
                         max(0.0, -s.capital) * s.debt_interest_rate(), 1)},
+                # revenue_capacity(), not revenue() - this is the STANDING
+                # figure (see the comment two lines below, and state's own
+                # net_per_year, protocol.py: same fix, same reason). A
+                # player who sold founder-hours with `work` watched this
+                # swing to -193/yr for exactly one year and back, which is
+                # not what "recurring" means.
                 "net_per_year": round(
-                    s.revenue() - fixed
+                    s.revenue_capacity() - fixed
                     - max(0.0, -s.capital) * s.debt_interest_rate(), 1),
                 "spent_on_projects_last_year": round(getattr(s, "spend_last_year", 0.0), 1),
                 # THE SAME FIGURE `state` PRINTS. A break tester read `state`
@@ -5031,6 +5320,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # unrelated things elsewhere in the tree were startable. Nobody is
         # stuck for want of a bottling shed.
         _goal = getattr(s, "goal", None)
+        _goal_routing_off_under_fog = False
         if _goal in nodes and not _fog:
             _road = closure(nodes, _goal) - s.done
             _road_open = [k for k in _road if s.start_reason(k)[0]]
@@ -5043,6 +5333,20 @@ def _agent_dispatch_inner(s, nodes, cmd):
                            % (len(_road), _near[0],
                               s.start_reason(_near[0])[1]),
                     "the_nearest_few": _near[:5]})
+        elif _goal in nodes and _fog:
+            # SAY SO, THE WAY `rush` DOES. A blind Han run with the goal set
+            # to the junction transistor hit hundreds of affordable things
+            # late in the game and was told to open a profitable concern
+            # instead of being pointed at the one real blocker - not because
+            # this command was broken, but because the road-to-the-goal
+            # branch above is switched off under fog of war for exactly the
+            # reason 'path' gives for doing the same: naming what is left on
+            # a route to something not fully discovered would hand over the
+            # hidden tree. The silence read as "everything below is the real
+            # answer" when it was really "the one analysis that could answer
+            # this did not run". A player should be told that, not left to
+            # infer it from an unhelpful reply.
+            _goal_routing_off_under_fog = True
         # STARTING NOTHING IS THE COMMONEST WAY TO GET NOWHERE, and this
         # command - whose whole job is "why you are not getting on" - said
         # "nothing: you have work in hand, money to pay for it and people to do
@@ -5122,6 +5426,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
                    if _startable else None)}
         if _stall:
             out["and_you_are_in_a_hole"] = _stall
+        if _goal_routing_off_under_fog:
+            out["this_does_not_know_your_goal"] = (
+                "fog of war is on, so this cannot check whether anything "
+                "below is actually on the route to your goal, or name the "
+                "one thing blocking it - that would leak the hidden tree, "
+                "the same reason 'path' refuses outright under fog. "
+                "Everything above is general advice, not goal-directed; "
+                "'why <id>' on anything you have heard of is still the way "
+                "to reason toward the goal by hand.")
         return out
 
     if op in ("mines", "workings"):
@@ -5936,7 +6249,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
         # gets rewritten: the death line was recapitalised to say what the
         # death MEANS and silently stopped matching here, which cost the step
         # its stop and the reply its death field.
-        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED", "FOUNDER DIES")
+        # CLOSE TO THE LIMIT BELONGS HERE TOO, and did not: the comment above
+        # describes exactly this warning being cut short so the choice it
+        # offers is still real, but the tuple itself never named it, so a
+        # batched step ran straight past "stop a project... while it is
+        # still your choice" and only broke four years later on the fatal
+        # CREDIT EXHAUSTED that warning exists to prevent. The one event that
+        # still leaves you options is the one this most needed to interrupt
+        # for; the fatal one needs it least, since there is nothing left to
+        # choose by the time it fires.
+        _STEP_STOP_MARKERS = ("CREDIT EXHAUSTED", "FOUNDER DIES",
+                              "CLOSE TO THE LIMIT")
         completed, lost, events = [], [], []
         founder_died_this_step = None
         stopped_early = None
@@ -6040,7 +6363,7 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
-    "_said_scandal",
+    "_said_scandal", "_said_parallelism",
     "_said_deputies",
     "_said_near_limit",
     "shut_for_staff",
