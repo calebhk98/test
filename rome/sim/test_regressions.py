@@ -1210,7 +1210,7 @@ _menu_env.pop("ROME_SAVE_DIR", None)
 # human the menu exists to greet; `play` speaks typed words over the same
 # dispatcher. So the commands fed here are typed, and what comes back is the
 # rendered view rather than JSON.
-_menu_input = "1\n1\ny\n\ny\n\nstate\nquit\n"
+_menu_input = "1\n1\ny\n\ny\n\n\nstate\nquit\n"
 _pm = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                      input=_menu_input, capture_output=True, text=True, timeout=120,
                      cwd=_menu_dir, env=_menu_env)
@@ -1261,7 +1261,7 @@ json.dump({"save_dir": os.path.join(_redir_cfg_dir, "not_this_one")},
           open(_redir_cfg, "w"))
 _redir_env = dict(os.environ, ROME_SAVE_DIR=_redir_dir, ROME_SIM_CONFIG=_redir_cfg)
 _pr = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
-                     input="1\n1\ny\n\nn\n\nquit\n", capture_output=True, text=True,
+                     input="1\n1\ny\n\nn\n\n\nquit\n", capture_output=True, text=True,
                      timeout=120, cwd=_redir_dir, env=_redir_env)
 check("ROME_SAVE_DIR redirects the menu's save away from the config file's "
       "own save_dir, and away from the default",
@@ -1297,7 +1297,7 @@ check("...and a LATER invocation - no flag, nothing repeated - shows it back "
 _load_dir = tempfile.mkdtemp()
 _load_cfg = os.path.join(_load_dir, "cfg.json")
 _load_env = dict(os.environ, ROME_SAVE_DIR=_load_dir, ROME_SIM_CONFIG=_load_cfg)
-subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\nn\n\nn\n\nquit\n",
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\nn\n\nn\n\n\nquit\n",
                capture_output=True, text=True, timeout=120, cwd=_load_dir, env=_load_env)
 _pl_load = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                           input="2\nb\nq\n", capture_output=True, text=True, timeout=60,
@@ -1309,7 +1309,8 @@ check("Load a saved game lists the civilisation and year of a save on disk",
       _pl_load.stdout[-1200:])
 check("...and how far along it is (a technology count, since this save has "
       "fog off and so gets a goal-progress fraction instead)",
-      "toward the transistor" in _pl_load.stdout, _pl_load.stdout[-1200:])
+      "toward Grown and alloy junction transistors" in _pl_load.stdout,
+      _pl_load.stdout[-1200:])
 check("...and roughly when it was last written",
       "ago" in _pl_load.stdout or "AD" in _pl_load.stdout, _pl_load.stdout[-1200:])
 _pl_resume = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
@@ -1325,13 +1326,13 @@ check("picking a save from the Load Game list actually resumes it, not a "
 _fogload_dir = tempfile.mkdtemp()
 _fogload_cfg = os.path.join(_fogload_dir, "cfg.json")
 _fogload_env = dict(os.environ, ROME_SAVE_DIR=_fogload_dir, ROME_SIM_CONFIG=_fogload_cfg)
-subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\ny\n\nn\n\nquit\n",
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")], input="1\n1\ny\n\nn\n\n\nquit\n",
                capture_output=True, text=True, timeout=120, cwd=_fogload_dir, env=_fogload_env)
 _pl_fogload = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                              input="2\nb\nq\n", capture_output=True, text=True, timeout=60,
                              cwd=_fogload_dir, env=_fogload_env)
 check("a fogged save's Load Game entry does not leak how big the tree is",
-      "toward the transistor" not in _pl_fogload.stdout
+      "toward Grown and alloy junction transistors" not in _pl_fogload.stdout
       and "technologies built" in _pl_fogload.stdout,
       _pl_fogload.stdout[-1200:])
 
@@ -1591,10 +1592,11 @@ _rem_saves = tempfile.mkdtemp()
 _rem_env = dict(os.environ, ROME_SIM_CONFIG=_rem_cfg, ROME_SAVE_DIR=_rem_saves)
 # civ 1 (han_china_100ad, not the hardcoded default_civ rome_100ad), fog OFF,
 # kit 'merchant' (not the hardcoded default_kit poor_scholar), mortality ON,
-# horizon 321 (not the hardcoded default_horizon 500) - every one of the
-# five deliberately NOT what CONFIG_DEFAULTS starts with.
+# goal left at its default (blank - not under test here), horizon 321 (not
+# the hardcoded default_horizon 500) - every one of the four under test
+# deliberately NOT what CONFIG_DEFAULTS starts with.
 _rem1 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
-                       input="1\n1\nn\nmerchant\ny\n321\nquit\n",
+                       input="1\n1\nn\nmerchant\ny\n\n321\nquit\n",
                        capture_output=True, text=True, timeout=120, env=_rem_env)
 _rem_cfg_read = json.load(open(_rem_cfg)) if os.path.exists(_rem_cfg) else {}
 check("finishing the New Game wizard remembers every answer as next time's "
@@ -1612,9 +1614,9 @@ check("...and the civilisation picker offers that remembered choice as its "
       "default the next time the wizard is opened",
       "default 1" in _rem2.stdout, _rem2.stdout[-800:])
 _rem3 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
-                       input="1\n\n\n\n\n\nstate\nquit\n", capture_output=True,
+                       input="1\n\n\n\n\n\n\nstate\nquit\n", capture_output=True,
                        text=True, timeout=120, env=_rem_env)
-check("...and accepting every default (blank through all five questions) "
+check("...and accepting every default (blank through all six questions) "
       "actually starts the remembered civilisation, not rome_100ad",
       "LATER HAN EMPIRE" in _rem3.stdout.upper(), _rem3.stdout[:2000])
 # NOT A BARE 4,000: Han's own price index (0.75x Rome, printed on the WHERE
@@ -5438,17 +5440,33 @@ if _ln_k:
           _ln_msg)
 # A capability institution (a school, a workshop, a patron...) losing money
 # is the INTENDED shape of the trade, never flagged as a mistake here.
+# sorted(), not CAPABILITY_INSTITUTIONS' own frozenset order: a bare
+# frozenset of strings iterates in whatever order this process's
+# PYTHONHASHSEED happens to give it, and one candidate here
+# (fin_argentarii) is a societal institution open_venture refuses outright
+# for a reason that has nothing to do with cost - "next()" over the
+# unsorted set picked it about one run in ten and failed the check below
+# for a refusal this test was never asking about. Trying candidates in a
+# fixed order and skipping ones that cannot be opened at all asks the
+# actual question - does an OPENABLE loss-making institution get warned
+# about its loss - reproducibly.
 s_ln2 = sim(capital=1_000_000.0)
-_ln2_k = next((k for k in s_ln2.CAPABILITY_INSTITUTIONS
-              if NODES.get(k, {}).get("up", 0) > NODES.get(k, {}).get("rev", 0)),
-             None)
-check("a capability institution that runs at a loss by design exists to "
-      "test the exclusion against",
-      _ln2_k is not None, _ln2_k)
-if _ln2_k:
-    s_ln2.done.add(_ln2_k)
+_ln2_cands = sorted(k for k in s_ln2.CAPABILITY_INSTITUTIONS
+                    if NODES.get(k, {}).get("up", 0) > NODES.get(k, {}).get("rev", 0))
+_ln2_k, _ln2_ok, _ln2_msg = None, False, ""
+for _cand in _ln2_cands:
+    s_ln2.done.add(_cand)
     s_ln2._done_changed()
-    _ln2_ok, _ln2_msg = s_ln2.open_venture(_ln2_k)
+    _ok, _msg = s_ln2.open_venture(_cand)
+    if _ok:
+        _ln2_k, _ln2_ok, _ln2_msg = _cand, _ok, _msg
+        break
+    s_ln2.done.discard(_cand)
+    s_ln2._done_changed()
+check("a capability institution that runs at a loss by design, and can "
+      "actually be opened, exists to test the exclusion against",
+      _ln2_k is not None, (_ln2_cands, _ln2_msg))
+if _ln2_k:
     check("...and opening it gets no 'costs more than it earns' warning - "
           "that loss is the point, not a mistake",
           _ln2_ok and "costs more than it earns" not in _ln2_msg, _ln2_msg)

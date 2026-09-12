@@ -74,7 +74,8 @@ import argparse, json, os, random, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from engine.data import (STRATS, closure, load, load_civ, topo_order)
+from engine.data import (STRATS, closure, load, load_civ, topo_order,
+                         resolve_goal)
 from engine.core import Sim
 from engine.cli import load_strategy
 
@@ -471,7 +472,7 @@ def plan(civ="rome_100ad", goal=None, seed_strategy=None, side_branches=12,
     trials, and hand back (order, rationale_lines, cpm_summary).
     """
     tree, prices, nodes, wages, goods = load()
-    goal = goal or tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, goal)
     s = Sim(nodes, [], random.Random(seed), events=False, civ=load_civ(civ))
     seed_order = load_seed(seed_strategy, nodes)
     order, c, extras, staffing = backward_plan(nodes, goal, s, seed_order,
@@ -558,7 +559,7 @@ def main():
                                a.side_branch_every, a.refine_rounds, a.mc,
                                a.horizon, a.seed)
     tree, _p, nodes, _w, _g = load()
-    goal = a.goal or tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, a.goal)
     label = ("PLANNED (CPM): backward-chained from %s over its prerequisite "
             "closure for %s%s" % (goal, a.civ,
                                   ", refined against real trials" if a.refine_rounds else ""))

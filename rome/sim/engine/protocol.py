@@ -6417,6 +6417,11 @@ def save_state(s, path):
             v = {"__set__": sorted(v)}
         blob[f] = v
     blob["_civ"] = s.civ.get("id")
+    # THE GOAL YOU CHOSE, same reasoning as _fog/_immortal just below: it is
+    # a choice the menu asked about when this game began, not a flag that
+    # should silently reset to the transistor because a resume happened to
+    # omit --goal. See load_state.
+    blob["_goal"] = getattr(s, "goal", None)
     blob["_civ_live"] = {k: s.civ.get(k) for k in
                          ("literacy_general", "literacy_elite", "state_capacity")}
     blob["_weights"] = dict(s.w)
@@ -6584,6 +6589,21 @@ def civ_of_save(path):
         return None
 
 
+def goal_of_save(path):
+    """Which goal a save file was playing toward, or None if it will not
+    say (an older save, or one the file on disk does not match). Same
+    reasoning as civ_of_save just above, and used the same way: a resumed
+    session should not need --goal repeated any more than it needs --civ
+    repeated, and a strategy order picked before the save is even read
+    would be picked for the wrong goal.
+    """
+    try:
+        with open(path) as fh:
+            return (json.load(fh) or {}).get("_goal")
+    except (OSError, ValueError, AttributeError):
+        return None
+
+
 def load_state(s, path):
     """Read a save from `path` and apply it to `s`, or raise ValueError with
     a clear reason and leave `s` completely untouched.
@@ -6645,6 +6665,12 @@ def load_state(s, path):
             s.revealed = set()
     if "_immortal" in blob:
         s.cfg["immortal"] = bool(blob["_immortal"])
+    # A save from before goal selection existed has no "_goal" at all, and
+    # one whose goal node a later tree edit removed should not crash a
+    # resume - either way, fall back to whatever the command line/default
+    # already set on `s` before this was called, rather than raise.
+    if blob.get("_goal") in s.nodes:
+        s.goal = blob["_goal"]
     if blob.get("_rng"):
         try:
             _v, _keys, _g = blob["_rng"]

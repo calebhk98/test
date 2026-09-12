@@ -141,6 +141,9 @@ CONFIG_DEFAULTS = {
     "default_kit": "poor_scholar",
     "default_fog": True,
     "default_mortal": False,
+    # None means "the tree's own default" (meta.goal_node, the transistor) -
+    # see _new_game, which resolves this the same way resolve_goal() does.
+    "default_goal": None,
     "default_horizon": 500,
 }
 
@@ -366,6 +369,7 @@ def list_saves(save_dir):
                 "founder_alive": blob.get("founder_alive", True),
                 "dead_reason": blob.get("dead_reason"),
                 "goal_year": blob.get("goal_year"),
+                "goal": blob.get("_goal"),
                 "reputation": blob.get("reputation"),
                 "scholars": blob.get("scholars"),
                 "artisans": blob.get("artisans"),

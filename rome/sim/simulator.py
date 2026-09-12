@@ -35,7 +35,7 @@ from engine.data import (ANNUAL_WAGE, CIVDIR, DEFAULTS, GEOFILE, PRICES,
                          TRADES_ABSENT, TRADE_FAMILY, TRADE_NOTES, TREE, WAGES,
                          closure, critical_path, haversine_km, load, load_civ,
                          load_geography, load_resources, topo_order,
-                         trade_family,
+                         trade_family, goal_catalog, goal_lookup, resolve_goal,
                          # The private loaders too. They are private, and they
                          # are also part of what `import simulator` used to
                          # give you, and a split is not the moment to decide
@@ -51,9 +51,9 @@ from engine.protocol import (_agent_available, _agent_dispatch,  # noqa: F401
                              SAVE_FIELDS, SUBJECTS, HELP_TOPICS,
                              KNOWN_COMMANDS)
 from engine.cli import (cmd_agent, cmd_civs, cmd_compare, cmd_costs,  # noqa: F401
-                        cmd_path, cmd_play, cmd_run, cmd_sensitivity, cmd_sweep,
-                        cmd_validate, cmd_why, cmd_menu, load_strategy, main, topo_stable,
-                        _summarise)
+                        cmd_goals, cmd_path, cmd_play, cmd_run, cmd_sensitivity,
+                        cmd_sweep, cmd_validate, cmd_why, cmd_menu, load_strategy,
+                        main, topo_stable, _summarise)
 
 if __name__ == "__main__":
     main()

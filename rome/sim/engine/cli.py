@@ -18,8 +18,8 @@ from . import settings
 from .data import money_word, money_short
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
-    _agent_state, _node_explain, civ_of_save, final_report, load_state,
-    parse_typed, render_final, render_pretty, save_state)
+    _agent_state, _node_explain, civ_of_save, goal_of_save, final_report,
+    load_state, parse_typed, render_final, render_pretty, save_state)
 
 
 def load_strategy(name, nodes, goal):
@@ -164,29 +164,89 @@ def cmd_validate(a):
         topo_order(nodes)
     except RuntimeError as e:
         errs.append(str(e))
-    goal = tree["meta"]["goal_node"]
-    need = closure(nodes, goal)
+
+    # EVERY SELECTABLE GOAL, not just the default. meta.goals is the single
+    # roster `goals`, the new-game wizard and every --goal flag all read
+    # (see data.py's goal_catalog/resolve_goal) - a goal naming a node that
+    # does not exist would not fail anywhere else until a player actually
+    # picked it, which is exactly the kind of bug this command exists to
+    # catch before that.
+    default_goal = tree["meta"]["goal_node"]
+    if default_goal not in nodes:
+        errs.append("meta.goal_node %r does not exist" % default_goal)
+    catalog = goal_catalog(tree)
+    goal_rows = []
+    for g in catalog:
+        node = g.get("node")
+        if node not in nodes:
+            errs.append("meta.goals: %r names a node that does not exist" % node)
+            continue
+        need = closure(nodes, node)
+        yrs, chain = critical_path(nodes, node)
+        goal_rows.append((g, node, need, yrs, chain))
+
     print("nodes            : %d" % len(nodes))
     print("edges            : %d" % sum(len(n["pre"]) for n in nodes.values()))
-    print("required for goal: %d  (%d are optional: revenue, survival, side branches)"
-          % (len(need), len(nodes) - len(need)))
-    yrs, chain = critical_path(nodes, goal)
-    print("critical path    : %.1f years of irreducible serial time, %d nodes deep" % (yrs, len(chain)))
     print("total capital     : %s den across all %d nodes" % (f"{sum(n['_total_cost'] for n in nodes.values()):,.0f}", len(nodes)))
     print("total founder hrs : %s" % f"{sum(n['ph'] for n in nodes.values()):,}")
+    print()
+    print("GOALS (%d selectable; 'goals' prints this table alone)" % len(goal_rows))
+    print("%-34s %9s %10s  %s" % ("name", "closure", "floor(yr)", "node"))
+    print("-" * 90)
+    for g, node, need, yrs, chain in goal_rows:
+        print("%-34s %9d %10.1f  %s%s"
+              % (g.get("name", node)[:34], len(need), yrs, node,
+                 "  <- DEFAULT" if node == default_goal else ""))
     print()
     if errs:
         print("ERRORS:"); [print("  " + e) for e in errs]
     if warns:
         print("WARNINGS:"); [print("  " + w) for w in warns]
+
+    # REACHABILITY, PER CIVILISATION - opt in with --deep, because this runs
+    # a real dice-free Sim (see path_search.deterministic_sim) once per
+    # civilisation for every goal above, and that is seconds of real work
+    # per trial rather than the instant structural checks above it. A lower
+    # bound, not a verdict: this is one CPM-ordered trial with no search-
+    # rounds relaxation, the same "does the straightforward plan even get
+    # there" question path_search.py's own module docstring asks of the
+    # transistor itself - a goal this reports as "not reached" may still be
+    # reachable with a smarter order (see plan --search-rounds) or more
+    # calendar time than the capped probe horizon below allows.
+    if getattr(a, "deep", False) and not errs:
+        print()
+        print("REACHABILITY (dice-free, immortal, one CPM-ordered trial per "
+              "civilisation, capped horizon - a lower bound, see above)")
+        _simdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        if _simdir not in sys.path:
+            sys.path.insert(0, _simdir)
+        import planner as _planner
+        from path_search import deterministic_sim
+        civ_ids = sorted(x[:-5] for x in os.listdir(CIVDIR)
+                         if x.endswith(".json") and not x.startswith("_"))
+        for g, node, need, yrs, chain in goal_rows:
+            probe_horizon = min(350, max(50, int(math.ceil(yrs * 2.5))))
+            cells = []
+            for civ in civ_ids:
+                s0 = Sim(nodes, [], random.Random(1), events=False, civ=load_civ(civ))
+                order, c, extras, staffing = _planner.backward_plan(
+                    nodes, node, s0, side_branches=12, side_branch_every=8)
+                full = _planner._repaired(nodes, node, order)
+                s = deterministic_sim(nodes, full, node, civ, probe_horizon)
+                cells.append("%s: %s" % (civ, ("%d AD" % s.goal_year) if s.goal_year
+                                         else "not within %dy" % probe_horizon))
+            print("  %-30s %s" % (g.get("name", node)[:30], "  |  ".join(cells)))
+
     if not errs:
-        print("OK: tree is a valid DAG, fully priced, goal reachable.")
+        print()
+        print("OK: tree is a valid DAG, fully priced, every selectable goal's "
+              "closure and critical path compute cleanly.")
     return 1 if errs else 0
 
 
 def cmd_path(a):
     tree, prices, nodes, wages, goods = load()
-    goal = a.goal or tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, a.goal)
     need = closure(nodes, goal)
     order = topo_order(nodes, need)
     cum_cost = cum_ph = 0.0
@@ -278,7 +338,7 @@ def _summarise(results, label):
 
 def cmd_run(a):
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, getattr(a, "goal", None))
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
     res = []
     for i in range(a.mc):
@@ -347,7 +407,7 @@ def cmd_run(a):
 
 def cmd_compare(a):
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, getattr(a, "goal", None))
     for name in ["rush", "topo", "recommended"]:
         try:
             label, order, bounties = load_strategy(name, nodes, goal)
@@ -393,6 +453,28 @@ def _civ_for_session(a):
                 raise SystemExit(1)
             return saved
     return asked or "rome_100ad"
+
+
+def _goal_for_session(a, tree, nodes):
+    """Which goal to start the strategy order for, honouring the save above
+    the command line - same reasoning and same shape as _civ_for_session
+    just above, and for the same reason: the order `load_strategy` hands
+    back depends on the goal's own closure (see load_strategy's goal
+    argument), so a resumed game has to know its goal BEFORE that call, not
+    only after load_state runs.
+    """
+    session = getattr(a, "session", None)
+    asked = getattr(a, "goal", None)
+    if session and os.path.exists(session) and not _is_claimed_slot(session):
+        saved = goal_of_save(session)
+        if saved and saved in nodes:
+            if asked and asked != saved:
+                print("that save is playing toward %s; you asked for %s. Drop "
+                      "the --goal flag to resume it, or point --session "
+                      "somewhere else." % (saved, asked))
+                raise SystemExit(1)
+            return saved
+    return resolve_goal(tree, nodes, asked)
 
 
 def _horizon_explicit():
@@ -456,7 +538,7 @@ def cmd_play(a):
     # collide.
     app_cfg = _apply_display_prefs()
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
+    goal = _goal_for_session(a, tree, nodes)
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
     session = getattr(a, "session", None)
     # HOW MANY YEARS THIS SITTING GETS. Ordinarily just the --horizon flag,
@@ -868,7 +950,7 @@ def cmd_agent(a):
     human at a keyboard; `agent` is that guarantee for a script or an LLM.
     """
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
+    goal = _goal_for_session(a, tree, nodes)
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
     # `run`/`compare`/`play` all take --mortal; `agent` silently did not, so
     # the founder was immortal in every scripted or JSON-driven game no
@@ -1020,7 +1102,7 @@ def cmd_sensitivity(a):
     that are prerequisites of the goal cannot be ablated and are reported as such.
     """
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, getattr(a, "goal", None))
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
     need = closure(nodes, goal)
 
@@ -1037,7 +1119,7 @@ def cmd_sensitivity(a):
           (a.strategy, base_rate, base_med))
     print("A node's value shows up in the CALENDAR at least as much as in the")
     print("success rate, so both are scored. 'delay' is how many years later the")
-    print("median run reaches the transistor when this node is never built.\n")
+    print("median run reaches the goal (%s) when this node is never built.\n" % goal)
     print("%-24s %8s %8s %8s   %s" % ("node removed", "success", "median", "delay", "verdict"))
     print("-" * 78)
     cands = ["plague_preparedness", "corpus_written", "corpus_dispersed", "printing_press",
@@ -1092,7 +1174,7 @@ def cmd_plan(a):
         sys.path.insert(0, _simdir)
     import planner as _planner
     tree, _p, nodes, _w, _g = load()
-    goal = a.goal or tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, a.goal)
     if not a.search_rounds:
         # UNCHANGED FROM BEFORE. Purely structural CPM, optionally refined
         # against real trials - the path every existing caller and test
@@ -1231,14 +1313,8 @@ def cmd_why(a):
     from .protocol import _downstream_of
     blocks = _downstream_of(k, nodes)
     print("\nTOTAL DOWNSTREAM: %d nodes depend on this, directly or indirectly." % len(blocks))
-    # THE GOAL BY NAME FROM THE TREE, for the same reason as load_strategy's.
-    _goal_here = TREE["meta"]["goal_node"] if "TREE" in dir() else None
-    if _goal_here is None:
-        try:
-            _goal_here = load()[0]["meta"]["goal_node"]
-        except Exception:
-            _goal_here = None
-    if _goal_here and _goal_here in blocks:
+    _goal_here = resolve_goal(tree, nodes, getattr(a, "goal", None))
+    if _goal_here in blocks or _goal_here == k:
         print("   INCLUDING THE GOAL. This node is on the critical path.")
 
 
@@ -1251,7 +1327,7 @@ def cmd_sweep(a):
     visibility, and visibility in Trajanic Rome is dangerous.
     """
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
+    goal = resolve_goal(tree, nodes, getattr(a, "goal", None))
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
     sweeps = {
         "capital":  ("start_capital", [2000, 5000, 10320, 25000, 50000, 200000, 1000000]),
@@ -1291,6 +1367,35 @@ def cmd_sweep(a):
                "%s (%d)" % (worst[0][:44], worst[1]) if worst[1] else "-"))
     print("\nWatch the failure column, not the success column. When it changes, the")
     print("binding constraint has changed and so should your strategy.")
+
+
+def cmd_goals(a):
+    """List every selectable goal: the transistor and every alternative in
+    data/tech_tree.json meta.goals, with its closure size and dice-free
+    critical-path floor - the same pair of numbers 'validate' prints, on
+    their own, for picking a goal rather than auditing the tree. See
+    'validate --deep' for whether each one is actually reachable, one CPM
+    trial per civilisation.
+    """
+    tree, prices, nodes, wages, goods = load()
+    default_goal = tree["meta"]["goal_node"]
+    catalog = goal_catalog(tree, nodes)
+    print("%-34s %9s %10s  %-11s %s" % ("name", "closure", "floor(yr)", "scale", "node"))
+    print("-" * 100)
+    for g in catalog:
+        node = g["node"]
+        need = closure(nodes, node)
+        yrs, _chain = critical_path(nodes, node)
+        print("%-34s %9d %10.1f  %-11s %s%s"
+              % (g.get("name", node)[:34], len(need), yrs, g.get("scale", ""), node,
+                 "  <- DEFAULT" if node == default_goal else ""))
+        if g.get("blurb"):
+            print("    " + g["blurb"])
+        wc = nodes[node].get("win_condition")
+        if wc:
+            print("    won by measurement, not by building: %s"
+                  % win_condition_describe(nodes[node]))
+    return 0
 
 
 def cmd_civs(a):
@@ -1492,10 +1597,11 @@ def _load_civ_list():
 
 def _new_game(civs, cfg):
     """The wizard: pick a civilisation, read where you have landed, choose
-    fog/kit/mortality/horizon, and start. Returns cmd_play's exit code once a
+    fog/kit/mortality/goal/horizon, and start. Returns cmd_play's exit code once a
     game has actually begun, or None if the player backed out first - in
     which case cmd_menu's own loop is what should run next, not this
     function again."""
+    tree, _prices, nodes, _wages, _goods = load()
     print("-" * 78)
     print("   WHERE, AND WHEN")
     print("-" * 78)
@@ -1591,6 +1697,52 @@ def _new_game(civs, cfg):
         return None
     print()
     print("-" * 78)
+    print(_wrap("THE GOAL. The transistor (1951) is the original target and "
+                "still the default, and from scratch it takes centuries - which "
+                "is the whole reason the founder does not age by default. Below "
+                "are the alternatives: achievements a single lifetime can "
+                "actually finish, and a handful almost as large as the "
+                "transistor itself. 'closure' is how many other things it needs "
+                "first; 'floor' is the fewest calendar years that work could "
+                "possibly take, with every dice roll going your way.",
+                indent="   "))
+    print()
+    goals = goal_catalog(tree, nodes)
+    default_goal_id = cfg.get("default_goal") or tree["meta"]["goal_node"]
+    if default_goal_id not in nodes:
+        default_goal_id = tree["meta"]["goal_node"]
+    default_gi = next((i for i, g in enumerate(goals, 1)
+                       if g["node"] == default_goal_id), 1)
+    for i, g in enumerate(goals, 1):
+        node = g["node"]
+        need = closure(nodes, node)
+        yrs, _c = critical_path(nodes, node)
+        print("   %d) %s  (closure %d, floor %.0fy%s)"
+              % (i, g.get("name", node), len(need), yrs,
+                 ", %s" % g["scale"] if g.get("scale") else ""))
+        if g.get("blurb"):
+            print(_wrap(g["blurb"], indent="         "))
+        if nodes[node].get("win_condition"):
+            print(_wrap("Won by measurement, not by building: %s."
+                        % win_condition_describe(nodes[node]), indent="         "))
+    print()
+    while True:
+        try:
+            rawg = input("   Which one? [1-%d, default %d, or b to go back] "
+                         % (len(goals), default_gi)).strip()
+        except (EOFError, KeyboardInterrupt):
+            print(); return None
+        if rawg.lower() in ("q", "quit", "exit", "b", "back"):
+            return None
+        if not rawg:
+            goal = goals[default_gi - 1]["node"]
+            break
+        if rawg.isdigit() and 1 <= int(rawg) <= len(goals):
+            goal = goals[int(rawg) - 1]["node"]
+            break
+        print("   -- a number from 1 to %d." % len(goals))
+    print()
+    print("-" * 78)
     print(_wrap("HORIZON. The game ends automatically this many years after "
                 "arrival, mostly so a run that is truly stuck stops rather than "
                 "running forever. Unlike the choices above, this one you CAN "
@@ -1622,7 +1774,7 @@ def _new_game(civs, cfg):
     # Options screen; that screen is for the APPLICATION now (see
     # settings.py's module docstring), so the wizard remembers its own
     # answers instead, the way a file dialog remembers its last folder. This
-    # writes back exactly the five fields CONFIG_DEFAULTS calls "default_*",
+    # writes back exactly the six fields CONFIG_DEFAULTS calls "default_*",
     # and nothing else cfg might hold (display width, rows per page, the
     # welcome toggle) - those are the player's, set from Options, and this
     # wizard has no business overwriting them.
@@ -1630,6 +1782,7 @@ def _new_game(civs, cfg):
     cfg["default_kit"] = kit
     cfg["default_fog"] = (fog == "y")
     cfg["default_mortal"] = (mortal == "y")
+    cfg["default_goal"] = goal
     cfg["default_horizon"] = horizon
     settings.save_config(cfg)
 
@@ -1668,6 +1821,7 @@ def _new_game(civs, cfg):
         pass
     args = Args()
     args.strategy = "recommended"
+    args.goal = goal
     args.seed = 1
     args.horizon = horizon
     args.civ = civ["id"]
@@ -1692,8 +1846,18 @@ def _load_game(cfg):
     yet.
     """
     tree, prices, nodes, wages, goods = load()
-    goal = tree["meta"]["goal_node"]
-    need = closure(nodes, goal)
+    default_goal = tree["meta"]["goal_node"]
+    # EACH SAVE NAMES ITS OWN GOAL NOW (see protocol.py's _goal/save_state),
+    # so the closure a save's progress is measured against has to be THAT
+    # goal's, not always the transistor's - an old save with no "_goal" at
+    # all falls back to the tree's default, the same thing play/agent do.
+    _need_cache = {}
+    def _need_for(goal_id):
+        goal_id = goal_id if goal_id in nodes else default_goal
+        hit = _need_cache.get(goal_id)
+        if hit is None:
+            hit = _need_cache[goal_id] = closure(nodes, goal_id)
+        return goal_id, hit
     civ_index = {c["id"]: c for c in _load_civ_list()}
     save_dir = settings.resolve_save_dir(cfg)
     rows = settings.list_saves(save_dir)
@@ -1723,9 +1887,11 @@ def _load_game(cfg):
                   else "")
         print("   %d) %s" % (i, r["filename"]))
         print("      %s  -  now %s AD%s" % (name, year, elapsed))
+        goal_id, need = _need_for(r.get("goal"))
+        goal_name = (nodes[goal_id]["name"] if goal_id in nodes else goal_id)
         status = []
         if r.get("goal_year"):
-            status.append("REACHED THE TRANSISTOR in %s AD" % r["goal_year"])
+            status.append("REACHED THE GOAL (%s) in %s AD" % (goal_name, r["goal_year"]))
         elif r.get("dead_reason"):
             status.append("ended: %s" % r["dead_reason"])
         elif r.get("founder_alive") is False:
@@ -1735,7 +1901,7 @@ def _load_game(cfg):
             status.append("%d technologies built" % len(done))
         else:
             progress = len(need.intersection(done))
-            status.append("%d/%d toward the transistor" % (progress, len(need)))
+            status.append("%d/%d toward %s" % (progress, len(need), goal_name))
         status.append("fog %s" % ("on" if r["fog"] else "off"))
         if r.get("reputation") is not None:
             status.append("rep %.0f" % r["reputation"])
@@ -2020,20 +2186,39 @@ def main():
     # NOT required: typing the bare command should open the menu rather than
     # print a usage error at somebody who has just arrived.
     sub = p.add_subparsers(dest="cmd", required=False)
-    sub.add_parser("validate")
+    q = sub.add_parser("validate")
+    q.add_argument("--deep", action="store_true",
+                   help="also run one dice-free, immortal, CPM-ordered trial per "
+                        "goal per civilisation (see 'goals' for the roster) and "
+                        "report whether each one reaches its goal within a capped "
+                        "horizon - a lower bound on reachability, not a verdict. "
+                        "Takes real time (one Sim trial per cell); the structural "
+                        "checks above run either way and are instant.")
     sub.add_parser("civs")
+    sub.add_parser("goals", help="list the selectable goals - the transistor and every "
+                                 "alternative in data/tech_tree.json meta.goals - with "
+                                 "each one's closure size and dice-free critical-path floor.")
     q = sub.add_parser("path"); q.add_argument("goal", nargs="?")
     q = sub.add_parser("costs"); q.add_argument("--top", type=int, default=20)
     q = sub.add_parser("why"); q.add_argument("node")
+    q.add_argument("--goal", default=None,
+                   help="which goal to report 'on the critical path' against. "
+                        "Default: the tree's own default goal (the transistor).")
     q = sub.add_parser("sweep")
     q.add_argument("axis", choices=["capital", "lifespan", "hours", "mortality"])
     q.add_argument("--strategy", default="recommended")
+    q.add_argument("--goal", default=None,
+                   help="which goal to sweep against. See 'goals' for the roster; "
+                        "default is the tree's own default (the transistor).")
     q.add_argument("--mc", type=int, default=200)
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
     for name in ("run", "compare"):
         q = sub.add_parser(name)
         q.add_argument("--strategy", default="recommended")
+        q.add_argument("--goal", default=None,
+                       help="which goal to aim at. See 'goals' for the roster; "
+                            "default is the tree's own default (the transistor).")
         q.add_argument("--mc", type=int, default=200)
         q.add_argument("--seed", type=int, default=1)
         q.add_argument("--horizon", type=int, default=500)
@@ -2056,6 +2241,10 @@ def main():
                             "strategy you can pass back to --strategy")
     q = sub.add_parser("sensitivity")
     q.add_argument("--strategy", default="recommended")
+    q.add_argument("--goal", default=None,
+                   help="which goal to measure sensitivity against. See 'goals' "
+                        "for the roster; default is the tree's own default "
+                        "(the transistor).")
     q.add_argument("--mc", type=int, default=200)
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
@@ -2108,6 +2297,11 @@ def main():
                                 "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
     q.add_argument("--strategy", default="recommended")
+    q.add_argument("--goal", default=None,
+                   help="which goal to play toward. See 'goals' for the roster "
+                        "(the transistor and every alternative); default is the "
+                        "tree's own default. Omit when resuming a --session: "
+                        "the save says which goal it is.")
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
     q.add_argument("--civ", default=None,
@@ -2131,6 +2325,10 @@ def main():
     q.add_argument("--strategy", default="recommended",
                    help="only used to seed the display order in 'available'; nothing "
                         "is auto-started, this command always runs manual")
+    q.add_argument("--goal", default=None,
+                   help="which goal to play toward. See 'goals' for the roster; "
+                        "default is the tree's own default. Omit when resuming a "
+                        "--session: the save says which goal it is.")
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
     q.add_argument("--civ", default=None,
@@ -2163,6 +2361,7 @@ def main():
         a.cmd = "menu"
     return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs,
             "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs, "menu": cmd_menu,
+            "goals": cmd_goals,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play, "agent": cmd_agent,
             "sensitivity": cmd_sensitivity, "plan": cmd_plan}[a.cmd](a)
 
