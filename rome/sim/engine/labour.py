@@ -690,18 +690,56 @@ class LabourMixin:
         # off 259 a year of practice. That is realistic - a trained man does
         # not dig ditches for preference - but the game charged it silently and
         # the player had to work it out from the ledger.
+        # DO NOT BLOCK IT - WARN ABOUT IT. Selling hours is a legitimate way to
+        # dig out of debt, and this command already lets a player sell every
+        # one of them; the missing part, found the same way by both a Norse
+        # and a Han playtester, was that nothing said so. One watched a
+        # project sit at "waiting on: your hours" for turn after turn with no
+        # explanation while they kept working all 2,000 hours a year; the
+        # other worked out the fix - work (2000 - hours the project still
+        # wants) - only by noticing the stuck percentage and reasoning
+        # backward, and asked for exactly this: "have work either warn you if
+        # you are about to starve your own active project of its last hours,
+        # or show remaining-hours-needed somewhere more prominent." Computed
+        # from project_hour_pace/active_hours_still_wanted (projects.py), the
+        # same formula step() itself uses to hand out the pool, so this can
+        # never warn about a shortfall step() would not also produce.
+        _starve = None
+        _wanted = self.active_hours_still_wanted()
+        if _wanted:
+            _after = max(0.0, self.director_pool() - self.director_hours_committed())
+            _short = {kk: vv for kk, vv in _wanted.items() if vv > _after + 0.5}
+            if _short:
+                _named = sorted(_short.items(), key=lambda kv: -kv[1])[:2]
+                _more = len(_short) - len(_named)
+                _bits = ["%s (wants about %.0f more of your hours this year)"
+                        % (kk, vv) for kk, vv in _named]
+                _starve = (
+                    "this leaves only %.0f of your own hours for the rest of "
+                    "the year, and %s: %s%s. Nothing is lost - what it does "
+                    "not get this year it gets next - but if that is not what "
+                    "you meant, work fewer hours. Selling them anyway is a "
+                    "fair move if it is cash you need right now."
+                    % (_after,
+                       "it still wants more than that" if len(_short) == 1
+                       else "these still want more than that",
+                       "; ".join(_bits),
+                       (", and %d more" % _more) if _more else ""))
         lost = before_practice - self.revenue()
         if lost > pay:
             # THE THREE NUMBERS HAVE TO SUBTRACT. Rounding each separately gave
             # "you earned 128 ... was worth 234 ... so this cost you 105", and
             # a break tester did the subtraction. Round first, then subtract.
             _p, _l = round(pay), round(lost)
-            return pay, ("you earned %s, and the practice those hours were "
-                         "running was worth %s a year - so this cost you %s. "
-                         "Wage work is for when you have no practice to lose."
-                         % ("{:,.0f}".format(_p), "{:,.0f}".format(_l),
-                            "{:,.0f}".format(_l - _p)))
-        return pay, None
+            _msg = ("you earned %s, and the practice those hours were "
+                    "running was worth %s a year - so this cost you %s. "
+                    "Wage work is for when you have no practice to lose."
+                    % ("{:,.0f}".format(_p), "{:,.0f}".format(_l),
+                       "{:,.0f}".format(_l - _p)))
+            if _starve:
+                _msg += " Also: " + _starve
+            return pay, _msg
+        return pay, _starve
 
     def wage_bill(self):
         """What your standing staff costs you every year, by trade.

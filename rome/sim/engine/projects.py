@@ -1114,8 +1114,24 @@ class ProjectsMixin:
         if k in self.granted:
             return False, ("that is something the society has, not something you "
                            "maintain; there is no upkeep of yours to stop")
-        if self.nodes[k]["up"] <= 0:
-            return False, "that costs nothing to keep; there is nothing to save"
+        # MONEY IS NOT THE ONLY THING THIS TOOL CAN FREE. This used to refuse
+        # outright whenever upkeep was zero, on the theory that nothing was
+        # being saved - true of the money, and false of the staff: a concern
+        # with no money upkeep at all can still tie up a fraction of a
+        # scholar or craftsman in venture_hands (a going concern's "your
+        # people already spoken for" table), and a Mexica playtester ran into
+        # exactly that: a fully-built concern short 0.01 of a craftsman it
+        # needed to open, with the only 0.01 to be had sitting inside a
+        # zero-upkeep practice `mothball` would not touch, on the grounds
+        # there was "nothing to save" - true of the money, false of the
+        # craftsman-time the player was actually short of. Ask what THIS
+        # tool actually releases (money upkeep, and, if it is running,
+        # supervision time) rather than asking about money alone.
+        sch_held, art_held = self.venture_hands(k) if k in self.operating else (0.0, 0.0)
+        if self.nodes[k]["up"] <= 0 and sch_held <= 0.005 and art_held <= 0.005:
+            return False, ("that has no money upkeep of yours to stop paying, and "
+                           "nobody of yours is tied up supervising it either; "
+                           "there is nothing to save")
         # A DELIBERATE SHUTDOWN IS NOT AN ABANDONMENT. never_abandon exists to
         # stop the ENGINE quietly deleting a step you need and then refusing to
         # fund rebuilding it. A player choosing to close something down is the
@@ -1140,11 +1156,23 @@ class ProjectsMixin:
         if not was_running:
             return True, ("%s was not running, so there was nothing to stop "
                           "paying for. You still know how to do it." % k)
-        return True, ("%s shut down; you stop paying %s a year for it and stop "
-                      "earning the %s a year it brought in. You still know how "
-                      "to do it, and 'restore %s' opens it again"
-                      % (k, "{:,.0f}".format(self.nodes[k]["up"]),
-                         "{:,.0f}".format(self.nodes[k]["rev"]), k))
+        # SAY WHAT WAS ACTUALLY FREED, not only the money. A concern held
+        # together by staff time alone (up<=0, sch_held/art_held>0, the exact
+        # case above) used to be unreachable by this method at all; now that
+        # it can be shut, the confirmation has to say so, or freeing 0.75
+        # craftsmen would read as a no-op that happened to succeed.
+        _freed = []
+        if self.nodes[k]["up"] > 0 or self.nodes[k]["rev"] > 0:
+            _freed.append("you stop paying %s a year for it and stop earning "
+                          "the %s a year it brought in"
+                          % ("{:,.0f}".format(self.nodes[k]["up"]),
+                             "{:,.0f}".format(self.nodes[k]["rev"])))
+        if sch_held > 0.005 or art_held > 0.005:
+            _freed.append("it frees %.2f scholars and %.2f craftsmen who were "
+                          "tied up supervising it" % (sch_held, art_held))
+        return True, ("%s shut down: %s. You still know how to do it, and "
+                      "'restore %s' opens it again"
+                      % (k, "; ".join(_freed), k))
 
     def restore_work(self, k):
         """Bring a mothballed work back, and open its doors again.
@@ -1810,6 +1838,34 @@ class ProjectsMixin:
     #
     # A site can field more than its calibrated crew, but not without limit.
     LAB_CREW_RATE_MULT = 4.0
+
+    def project_hour_pace(self, k):
+        """How many of YOUR OWN hours active project `k` would draw this year
+        if nothing else competed for the pool - step()'s own uncapped want,
+        read here rather than re-derived, so anything reporting on it before
+        the allocation runs (the 'work' warning below) cannot silently
+        disagree with what step() actually offers.
+        """
+        st, n = self.active[k], self.nodes[k]
+        return (max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))
+                * getattr(self, "throttle", 1.0))
+
+    def active_hours_still_wanted(self):
+        """{project id: hours} for every active project that would still like
+        a real amount of your own time this year, at the pace project_hour_
+        pace gives it - not what it will actually get (that depends on how
+        many other projects are ahead of it in the pool this year), just what
+        it is still asking for. Sorted iteration: this feeds a caller that
+        may sum or rank it, and self.active's own order is not fixed.
+        """
+        out = {}
+        for k in sorted(self.active):
+            if k not in self.nodes:
+                continue
+            pace = self.project_hour_pace(k)
+            if pace > 0.5:
+                out[k] = pace
+        return out
 
     def lab_max_span(self, k):
         """The most years a project may spend trying to find enough of a
