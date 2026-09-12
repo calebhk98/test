@@ -1362,8 +1362,27 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # never paid, so it could never complete, so it never released
                 # the slot. Four of those deadlocked a run at 98 technologies for
                 # two hundred and fifty years.
+                #
+                # ONLY A TRADE THIS PROJECT STILL OWES SOMETHING TO. This used to
+                # test n["lab"]'s ORIGINAL total (`want > 0`), which never goes
+                # back to zero no matter how much of that trade's hours the
+                # project has already drawn - lab_year_draw and trade_draw_plan
+                # both correctly stop asking a trade for more once lab_left hits
+                # zero, but this check kept vetoing the project on it forever. A
+                # Han playtester fired a specialist whose hired-labour line
+                # already read "0% owed" - the trade had nothing left to give
+                # this project - and the very next step killed it anyway with
+                # "no engineer here", a reason `why` had never shown because
+                # `_waiting_on` (protocol.py) already knew, correctly, that
+                # lab_left made this trade a non-issue. Two places answering
+                # "does this project still need this trade" differently; this
+                # makes the stall check agree with the one that draws the hours.
+                _lab_left = st.get("lab_left")
+                if _lab_left is None:
+                    _lab_left = n["lab"]
                 blocked = [t for t, want in n["lab"].items()
-                           if want > 0 and self.market_supply(t) <= 0.0]
+                           if want > 0 and _lab_left.get(t, want) > 0
+                           and self.market_supply(t) <= 0.0]
                 if blocked:
                     st["stalled_years"] = st.get("stalled_years", 0) + 1
                     st["blocked_on_trades"] = blocked
@@ -1394,7 +1413,11 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                         st["hours_effective_this_year"] = 0.0
                     continue
                 st["stalled_years"] = 0
-                per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))) * self.throttle
+                # project_hour_pace (projects.py) is this same formula, read
+                # rather than re-derived, so 'work's own pre-sale warning
+                # about starving an active project can never disagree with
+                # what this loop actually offers it.
+                per = min(remaining, self.project_hour_pace(k)) * self.throttle
                 remaining -= per
                 # WHAT WAS ACTUALLY TAKEN OFF, which is not the same as what was
                 # offered: `per` is allowed to exceed ph_left (the max() above

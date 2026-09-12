@@ -134,6 +134,20 @@ def _waiting_on(s, nodes, k, st, bill):
                     "%s (wants %.0f hours a year; the %ss here can "
                     "supply %.0f but your other work has them booked)"
                     % (t, need, t, max(0.0, supply)))
+    # BOTH, WHEN BOTH ARE TRUE, NOT JUST THE FIRST ONE FOUND. This loop already
+    # knows every trade this project is short on; returning the moment
+    # staffing_short had anything in it silently dropped booked_short even
+    # when both were populated by the SAME loop above - a project short one
+    # trade absolutely and a second only to its own other work looked, from
+    # here, exactly like the first shortage was the whole story. A Han
+    # playtester who fired a specialist on the strength of a single named
+    # blocker found a second, undisplayed one waiting behind it. _portfolio_
+    # constraint still classifies this by its leading words, so the merged
+    # sentence keeps "nobody to do the work" first and unchanged.
+    if staffing_short and booked_short:
+        return ("nobody to do the work: " + "; ".join(sorted(staffing_short)[:3])
+                + ". Also short, but only because your own other work has it "
+                  "booked: " + "; ".join(sorted(booked_short)[:3]))
     if staffing_short:
         return "nobody to do the work: " + "; ".join(sorted(staffing_short)[:3])
     if booked_short:
