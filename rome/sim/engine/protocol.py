@@ -3402,7 +3402,18 @@ def render_state(out):
                            " (restore brings it back for a fraction of the cost)"
                            if c.get("can_be_restored") else ""))
         for e in events or []:
-            head.append("  EVENT %s: %s" % (e.get("year"), e.get("message")))
+            # "DURING 381", NOT "EVENT 381". step() captures the year at the
+            # top, logs everything that happens during that year under it, and
+            # increments at the end - so an event is stamped with the year being
+            # LIVED THROUGH while the prompt underneath already reads the next
+            # one. A player reproducing a disaster from a save read "EVENT 381"
+            # beside a prompt saying 382, concluded the event had not fired, and
+            # spent a while chasing that. The year is right; "EVENT 381" implied
+            # "as of 381" when it means "in the course of 381". Said the other
+            # way, the two screens stop contradicting each other - and nothing
+            # in any save or log changes, which a shift of the stamped year
+            # itself could not have promised.
+            head.append("  DURING %s: %s" % (e.get("year"), e.get("message")))
         if out.get("stopped_early"):
             head.append("  " + out["stopped_early"])
         L = head + [""] + L if head else L
