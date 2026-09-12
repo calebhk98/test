@@ -262,28 +262,33 @@ _POWER_LADDER = (
 
 
 def _power_status(s, nodes):
-    """What this society can generate, at what scale, and - once
-    electrification has actually begun for THIS player - which visible
-    projects are waiting on workshop-scale power versus the grid.
+    """What this society can generate, transmit and draw, in real kilowatts,
+    and - once electrification has actually begun for THIS player - which
+    visible projects are waiting on workshop-scale power versus the grid.
 
-    NEVER a generation figure in kilowatts and never a demand figure either:
-    nothing in economy.py tracks either one anywhere, for any project, so a
-    number here would be invented for this screen alone and would be exactly
-    the kind of second, unverified copy of a figure this codebase has been
-    burned by five times this week. What IS real and tracked is whether each
-    rung of the ladder has been built; that is what this reports.
+    REAL FIGURES NOW, not only a capability gate: economy.py's
+    generation_breakdown_kw()/_electricity_demand_kw() (see that file's own
+    long comment on where every number in them came from, and where the
+    tree's own notes were too vague to give one) turn the ladder's names -
+    "kW scale", "tens of kW", "hundreds of kW", "MW scale" - into tracked
+    watts, the same way resource_throttle() already tracks iron and copper.
+    This screen reads those functions; it computes nothing of its own.
 
     FOG: a rung is named only once it is visible (built, active, or
     revealed) - the ladder itself is not spoiled by naming an unbuilt lower
     rung, since is_visible already governs which rungs qualify. The
-    workshop-versus-grid split on projects goes further: it distinguishes
-    the two scales for a project only once the player has themselves
-    discovered BOTH cap_power_electric and, separately, cap_power_grid -
-    naming "this needs the grid" before the player has ever heard of a grid
-    would hand over the existence of the next tier exactly the way `bounty`
-    once handed over power_grid's id by naming a raw prerequisite; here nothing
-    is named until it is not a prerequisite the player would be seeing for
-    the first time.
+    generation/demand FIGURES are safe to show even so: both functions sum
+    only over self.done/self.active, and is_visible(k) is unconditionally
+    true for anything in either set (fog.py's own definition) - a number is
+    never built from a node the player has not already built or started
+    themselves. The workshop-versus-grid split on projects goes further: it
+    distinguishes the two scales for a project only once the player has
+    themselves discovered BOTH cap_power_electric and, separately,
+    cap_power_grid - naming "this needs the grid" before the player has ever
+    heard of a grid would hand over the existence of the next tier exactly
+    the way `bounty` once handed over power_grid's id by naming a raw
+    prerequisite; here nothing is named until it is not a prerequisite the
+    player would be seeing for the first time.
     """
     tiers = []
     highest = None
@@ -297,12 +302,31 @@ def _power_status(s, nodes):
     out = {
         "power_tiers_you_have_discovered": tiers or "none yet",
         "highest_you_have_built": highest,
-        "note": ("this does not track electricity generation or demand in "
-                 "kilowatts anywhere - only whether a given scale of power "
-                 "capability has actually been built. That is as precise "
-                 "as the engine itself is; a number more exact than this "
-                 "would be invented for this screen alone."),
     }
+    if not tiers:
+        out["note"] = ("nothing discovered yet: no generation, no demand.")
+        return out
+    gen = s.generation_breakdown_kw()
+    demand_kw = s._electricity_demand_kw()
+    total_kw = gen["total_kw"]
+    out["generation_kw"] = {"local_workshop_scale": round(gen["local_kw"], 1),
+                             "grid_scale": round(gen["grid_kw"], 1),
+                             "total": round(total_kw, 1)}
+    out["demand_kw"] = round(demand_kw, 1)
+    out["reserve_margin"] = (None if demand_kw <= 1e-9 else
+                             round((total_kw - demand_kw) / demand_kw, 3))
+    out["transmission_capacity_kw"] = round(gen["transmission_kw"], 1)
+    mech = gen["mechanical_kw"]
+    if mech.get("water") or mech.get("steam"):
+        out["mechanical_shaft_power_kw"] = {k: round(v, 1)
+                                            for k, v in sorted(mech.items()) if v}
+    if s.binding == "electricity":
+        out["electricity_is_the_binding_constraint"] = True
+        out["throttle"] = round(s.throttle, 3)
+    out["note"] = ("generation and demand are both averaged continuous "
+                   "kilowatts, the same annual-flow convention every other "
+                   "tracked resource in this engine uses - not an "
+                   "instantaneous or peak reading.")
     elec_known = s.is_visible("cap_power_electric")
     grid_known = s.is_visible("cap_power_grid")
     if elec_known:
@@ -554,6 +578,26 @@ def render_capacity(out):
             L.append("    [%s] %s" % ("x" if t["built"] else " ", t["capability"]))
     else:
         L.append("    nothing discovered yet")
+    gen = pw.get("generation_kw")
+    if gen:
+        L.append("    generation: %s kW local + %s kW grid = %s kW total"
+                 % (_fmt_num(gen["local_workshop_scale"]), _fmt_num(gen["grid_scale"]),
+                    _fmt_num(gen["total"])))
+        L.append("    demand: %s kW" % _fmt_num(pw.get("demand_kw")))
+        rm = pw.get("reserve_margin")
+        L.append("    reserve margin: %s"
+                 % ("no demand yet" if rm is None else _pct(rm) if rm >= 0
+                    else "SHORT by " + _pct(-rm)))
+        if pw.get("transmission_capacity_kw"):
+            L.append("    grid transmission capacity: %s kW"
+                     % _fmt_num(pw["transmission_capacity_kw"]))
+        if pw.get("mechanical_shaft_power_kw"):
+            L.append("    mechanical shaft power available: "
+                     + ", ".join("%s %s kW" % (k, _fmt_num(v))
+                                 for k, v in pw["mechanical_shaft_power_kw"].items()))
+        if pw.get("electricity_is_the_binding_constraint"):
+            L.append("    ELECTRICITY IS THE BINDING CONSTRAINT this year "
+                     "(throttle %s)" % _pct(pw.get("throttle")))
     if pw.get("waiting_on_workshop_scale_power"):
         L.append("    waiting on workshop-scale power: "
                  + ", ".join(pw["waiting_on_workshop_scale_power"]))

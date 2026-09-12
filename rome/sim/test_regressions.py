@@ -9602,20 +9602,41 @@ check("...and capacity/demand/surplus actually add up the way the labels "
           - (_iron_row["capacity_t_per_yr"] - _iron_row["demand_t_per_yr"])) < 0.5,
       _iron_row)
 
-# --- `capacity`'s power section never invents a kilowatt or megawatt figure:
-# nothing in economy.py tracks electricity generation or demand anywhere,
-# and a dashboard is exactly where an invented number to match the tree's
-# own "MW scale" prose would have slipped in unnoticed.
-check("the power section says outright that it does not track kilowatts or "
-      "demand, rather than quietly inventing a figure to match the tree's "
-      "own 'kW scale'/'MW scale' prose in cap_power_electric/cap_power_grid",
-      "kilowatt" in (_dash.get("power") or {}).get("note", "").lower(),
-      _dash.get("power"))
-check("...and reports no number anywhere under 'power' except the built "
-      "flag and an id - no generation, no demand, no reserve margin",
-      not any(isinstance(v, (int, float)) and not isinstance(v, bool)
-             for t in (_dash["power"].get("power_tiers_you_have_discovered") or [])
-             for k, v in t.items() if k not in ("id",)),
+# --- `capacity`'s power section reports REAL generation/demand/reserve
+# margin figures now (economy.py's generation_breakdown_kw()/
+# _electricity_demand_kw()), not a second, unverified copy of them - proved
+# the same way the mines check above proves capacity/mines share one
+# computation: read straight off the same Sim and compare to the number.
+_s_pow = sim(capital=2_000_000.0)
+for _pk in ("cap_power_water", "water_power_scale", "dynamo", "cap_power_electric",
+            "cap_power_steam", "en_alternator"):
+    if _pk in NODES:
+        _s_pow.done.add(_pk)
+        _s_pow.operating.add(_pk)
+_s_pow._done_changed()
+_powdash = S._agent_dispatch(_s_pow, NODES, {"cmd": "capacity"})["power"]
+check("with a dynamo and an alternator actually built, the dashboard shows "
+      "real generation, not a capability gate - and the SAME number "
+      "generation_breakdown_kw() itself computes, not a second guess at it",
+      _powdash.get("generation_kw", {}).get("total")
+      == round(_s_pow.generation_breakdown_kw()["total_kw"], 1)
+      and _powdash["generation_kw"]["total"] > 0,
+      _powdash)
+check("...and demand is the same figure _electricity_demand_kw() computes",
+      _powdash.get("demand_kw") == round(_s_pow._electricity_demand_kw(), 1),
+      _powdash)
+check("...and reserve margin is (generation - demand) / demand, arithmetic "
+      "a player can check by hand rather than a label with no formula",
+      _powdash.get("reserve_margin") is None
+      or abs(_powdash["reserve_margin"]
+             - (_powdash["generation_kw"]["total"] - _powdash["demand_kw"])
+               / max(1e-9, _powdash["demand_kw"])) < 0.01,
+      _powdash)
+check("a founder with NOTHING electrical built yet gets zero generation "
+      "and zero demand, not an invented figure - the capacity dashboard "
+      "and a bare Sim agree because both read the same functions",
+      _dash["power"].get("generation_kw", {}).get("total") == 0
+      and _dash["power"].get("demand_kw") == 0,
       _dash["power"])
 
 # --- FOG: the power ladder must name only tiers the player has actually
