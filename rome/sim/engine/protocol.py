@@ -7069,6 +7069,15 @@ SAVE_FIELDS = (
     "_said_deputies",
     "_said_near_limit",
     "shut_for_staff",
+    # TONNES ON HAND. Own production a year did not use banks here instead of
+    # evaporating, which is what lets a twenty-gram gold demand be met by
+    # buying twenty grams rather than by commissioning a mine. It has to
+    # survive a save: without it a resumed game silently starts at zero stock
+    # and plays differently from the one that was saved, which is the same
+    # class of fault as the fog that could be rewound by reloading. Counter
+    # round-trips through JSON as a plain object and comes back a dict, which
+    # the accessor treats alike.
+    "_material_stock_ledger",
     "last_withdrawal",
     "wages_prepaid",
     # WHAT AN INSTITUTION GAVE YOU OUTRIGHT (see _grant_staff, labour.py).

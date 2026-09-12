@@ -2183,10 +2183,16 @@ class EconomyMixin:
     # already supporting a gold mine (MINE_CAPEX_PER_T_YR) and
     # resources.json already carrying an empire gold figure (9 t/yr) --
     # nothing wired the two together. gold_g (LEDs, transistors: 1-20 grams)
-    # stays out: annual_material_demand() assumes every *_kg key is
-    # kilograms, so a *_g key divided by 1000 would read as a thousandth of
-    # what it is, an error too small to matter at these gram quantities but
-    # wrong in principle, so it is left alone rather than quietly misread.
+    # is NOT added here, still: annual_material_demand() assumes every *_kg
+    # key is kilograms, so a *_g key divided by 1000 would read as a
+    # thousandth of what it is. That used to be "an error too small to
+    # matter... but wrong in principle." It now matters: resource_throttle()
+    # routes every *_g key through the LAB-SCALE stock path instead (see its
+    # own comment and LAB_SCALE_SUFFIX below), which corrects the grams/
+    # kilograms reading at the one place that was ever misreading it, rather
+    # than by adding gold_g to this dict (that would make grams of gold
+    # compete with fin_central_bank's tonnes for the same ANNUAL FLOW, which
+    # is precisely the stock-vs-flow confusion this path exists to undo).
     MATERIAL_CHECKS = {
         "charcoal_kg": ("charcoal", "forest1"),
         "firewood_kg": ("charcoal", "forest4"),
@@ -2322,6 +2328,147 @@ class EconomyMixin:
                 by_tag[self._material_tag(mat)] += amt
         return by_tag
 
+    # ---- stock vs flow -----------------------------------------------------
+    #
+    # A playtester who won the game put this more sharply than anything in
+    # the design notes: "If I require 20 grams of gold for a device, creating
+    # a tonne/year mining operation should obviously be ridiculous.
+    # Realistically, I would just buy 20 grams. This argues strongly for
+    # separating stock inventories from annual production capacity."
+    #
+    # Everything above this point (MATERIAL_CHECKS, _own_material_supply,
+    # _material_market_tonnes) answers in TONNES PER YEAR, a flow, and
+    # nothing anywhere carried a balance across years: a mine's surplus
+    # output in excess of what that year's building programme used simply
+    # evaporated rather than banking (the gap DOCS_VS_ENGINE.md ranked #3,
+    # "nothing you produce outlives the year you produced it"). That is one
+    # half of the fix - a running stock, in tonnes, that PRODUCTION and
+    # MARKET PURCHASES feed and CONSUMPTION draws down, carried on the Sim
+    # instance across the whole run (lazily, like _material_demand_cache
+    # below it: EconomyMixin does not own Sim.__init__).
+    #
+    # The other half is the playtester's actual complaint: a handful of
+    # material keys in this tree are authored in GRAMS, not kilograms
+    # (caesium_g, diamond_g, germanium_g, gold_g, indium_g,
+    # phosphor_bronze_g, platinum_g - every *_g key in use, see
+    # COMMODITY_DYNAMISM's audit), because whoever wrote chm_catalyst_concept
+    # or point_contact_transistor meant a benchtop quantity, not a shipment.
+    # No list of "laboratory materials" is hand-picked here - the *_kg/*_g
+    # distinction is the tree's OWN, already-general convention for exactly
+    # this (see the MATERIAL_CHECKS comment above), so it generalises the
+    # same way _material_tag already does: any future node that needs a
+    # gram-scale quantity of anything gets this for free by being written
+    # with a *_g key, the same way it already gets priced by
+    # _book_price_per_kg without anyone adding it to a list. A *_g key's
+    # demand is met from stock - and, whatever stock cannot cover, bought
+    # outright on the spot, uncapped by mine or market flow - and NEVER sets
+    # `binding`: buying a gram of something is a purchase, not a capacity
+    # call, so it is never the reason a year's work is throttled. A *_kg
+    # key's demand is unchanged in kind: it still has to clear the same
+    # flow check as before, just against a supply that now includes
+    # whatever is banked in stock, not only this year's flow.
+    LAB_SCALE_SUFFIX = "_g"
+
+    def _material_stock(self):
+        """Tonnes of each tracked commodity (by emp_key) carried over from
+        previous years - the stock half of stock vs flow. Lazily created on
+        first use and then kept for the life of the Sim: EconomyMixin is a
+        mixin, not __init__, and a fresh Counter is exactly what a household
+        that has banked nothing yet should read as having. NOT part of
+        save_state()'s SAVE_FIELDS (protocol.py, not this file's to edit);
+        a resumed save starts its stock over at zero rather than carrying
+        last session's balance, which undersells a banked surplus but never
+        invents material that is not there - the safe direction to be wrong
+        in.
+
+        Deliberately a plain Counter, not commodities.py's own `Ledger`
+        (also "a stock, not a flow," by its own docstring): Ledger works in
+        kilograms and by commodity id, keyed for a module core.py still does
+        not import; everything around resource_throttle() already works in
+        TONNES and by emp_key, and the accounting below (own production vs
+        market headroom, lab-scale vs industrial) needs that arithmetic
+        inline, not behind add()/remove(). Reaching for Ledger here would
+        buy a second unit system and a cross-module dependency, not a
+        simpler mechanism - the "what was decided" COMMODITIES.md already
+        documents for why commodities.py stays a library Sim calls into for
+        specific answers (wire_chain_report's propagate_demand) rather than
+        a second source of truth Sim's own state has to agree with."""
+        s = getattr(self, "_material_stock_ledger", None)
+        if s is None:
+            s = self._material_stock_ledger = collections.Counter()
+        elif not isinstance(s, collections.Counter):
+            # A RESUMED SAVE HANDS THIS BACK AS A PLAIN DICT. It is in
+            # SAVE_FIELDS so that a reloaded game is the same game - without it
+            # a resume silently restarted at zero stock and played differently
+            # from the run that was saved, the same class of fault as a fog
+            # that could be rewound by reloading. JSON has no Counter, so
+            # promote whatever came back before anything adds to it.
+            s = self._material_stock_ledger = collections.Counter(s)
+        return s
+
+    def material_stock_t(self, emp_key):
+        """Tonnes of `emp_key` currently banked - read-only, for a display
+        that wants to show "stock on hand" the way the playtester's own
+        worked example did (gold stock 1.3 kg; domestic production 0 kg/yr;
+        imports available up to 0.2 kg/yr at current prices)."""
+        return self._material_stock().get(emp_key, 0.0)
+
+    def _throttle_demand_split(self, demand):
+        """`demand` (annual_material_demand()'s raw material-key Counter)
+        split into two (emp_key, tag) -> tonnes/yr Counters: industrial
+        (unchanged from before - still a flow demand that has to clear
+        _own_material_supply + _material_market_tonnes, now plus stock) and
+        lab (drawn from stock or bought outright, never throttled - see the
+        class comment on LAB_SCALE_SUFFIX above).
+
+        Deliberately NOT _demand_by_supply_tag(): that function is also read
+        by material_price_factor() and everything built on it
+        (material_market_factor, material_market_summary, wire_chain_report)
+        for PRICING, which this pass does not touch - a gram of gold still
+        nudges the price of gold exactly as much as it did before. Only the
+        CAPACITY question (can this be done at all, or does it wait on a
+        mine) changes here, so only resource_throttle() reads this. Fixes,
+        in passing, the *_g unit bug the MATERIAL_CHECKS comment names:
+        annual_material_demand() divides every raw key by 1000 assuming
+        kilograms, which is correct for a *_kg key and 1000x too large for a
+        *_g one (a bare quantity already in grams) - corrected here, once,
+        at the one place that was ever misreading it.
+        """
+        industrial, lab = collections.Counter(), collections.Counter()
+        for mat, amt in sorted(demand.items()):
+            if not amt:
+                continue
+            tag = self._material_tag(mat)
+            if mat.endswith(self.LAB_SCALE_SUFFIX) and not mat.endswith("_kg"):
+                lab[tag] += amt / 1000.0
+            else:
+                industrial[tag] += amt
+        return industrial, lab
+
+    def _own_production_tags(self):
+        """(emp_key, tag) for every material you currently produce yourself,
+        whether or not anything is demanding it THIS year.
+
+        Without this, a mine sunk ahead of need - dug this year for a
+        furnace that starts next year - never appears in `industrial` or
+        `lab` at all (both are built from DEMAND, and there is none yet),
+        so resource_throttle()'s own loop never visits its tag and its
+        output is never banked: the exact evaporation DOCS_VS_ENGINE.md's
+        #3 describes, just the zero-demand edge of it rather than the
+        partially-used one the main loop already banks correctly.
+        `self.mine_capacity` is keyed by emp_key already (core.py's own
+        auto-mine opens `self.binding`, which IS an emp_key - see
+        MATERIAL_CHECKS), so "mine:" + that key is exactly the tag
+        _own_material_supply already knows how to read, curated commodity
+        or not."""
+        out = {(m, "mine:" + m) for m, t in self.mine_capacity.items() if t > 0}
+        if self.forest_ha > 0:
+            out.add(("charcoal", "forest1"))
+            out.add(("charcoal", "forest4"))
+        if self.nitre_bed_m2 > 0:
+            out.add(("saltpetre", "nitre"))
+        return out
+
     def resource_throttle(self):
         """How much of this year's planned work the materials will actually support.
 
@@ -2339,16 +2486,76 @@ class EconomyMixin:
         # query between steps reads the demand as of the last one, which is
         # already true of price_index, self.economy and self.throttle itself.
         self._material_demand_cache = self.annual_material_demand()
+        industrial, lab = self._throttle_demand_split(self._material_demand_cache)
+        stock = self._material_stock()
+        # IDEMPOTENT WHEN NOTHING HAS ACTUALLY CHANGED. protocol.py's own
+        # `why` handler calls this twice in a row to build one message
+        # (s.binding, then s.resource_throttle() again for the percentage)
+        # with nothing mutated in between - read-only from its point of
+        # view, which it always was before this, because there was nothing
+        # here a second call could consume. Now there is: the stock this
+        # function draws down must be spent once per genuine recomputation,
+        # not once per CALL, or a query asked twice double-depletes it and
+        # answers its own two calls with two different numbers. Keyed on the
+        # CONTENT that feeds the computation below (not self.year: a test,
+        # or a player, building a mine or a nitre bed mid-year and asking
+        # again in the SAME year must see the new answer immediately, not a
+        # stale replay - see test_regressions.py's own
+        # "...and stops once your own supply covers the need", which does
+        # exactly that). Unchanged content means replaying the cached
+        # (worst, who) is not a shortcut, it is the actual answer.
+        sig = (tuple(sorted(industrial.items())), tuple(sorted(lab.items())),
+               tuple(sorted(self.mine_capacity.items())), self.forest_ha,
+               self.nitre_bed_m2, tuple(sorted(stock.items())))
+        if sig == getattr(self, "_stock_throttle_sig", None):
+            self.throttle, self.binding = self._stock_throttle_cache
+            return self.throttle
         worst, who = 1.0, None
-        for (emp_key, tag), need in sorted(self._cached_demand_by_tag().items()):
-            if need <= 0:
-                continue
-            supply = self._own_material_supply(tag) + self._material_market_tonnes(emp_key)
-            if supply < need:
-                f = max(0.05, supply / need)
-                if f < worst:
-                    worst, who = f, emp_key
+        all_tags = set(industrial) | set(lab) | self._own_production_tags()
+        for emp_key, tag in sorted(all_tags):
+            ind_need = industrial.get((emp_key, tag), 0.0)
+            lab_need = lab.get((emp_key, tag), 0.0)
+            # Two different things, kept separate on purpose: OWN_AND_STOCK
+            # is physically yours - a bed you built, a mine you sank, a
+            # surplus banked from an earlier year - and can BANK again if
+            # unused this year. `market` is a standing offer (how much the
+            # empire's market would sell you, not what you bought), and
+            # choosing not to buy it this year does not make it yours to
+            # keep: banking unused MARKET headroom as though it were
+            # inventory was the bug this split exists to avoid (a material
+            # with a large generic market figure and no demand for years
+            # would otherwise accumulate thousands of tonnes nobody ever
+            # produced or paid for).
+            own_and_stock = stock.get(emp_key, 0.0) + self._own_material_supply(tag)
+            have = own_and_stock + self._material_market_tonnes(emp_key)
+            # Lab-scale first, and unconditionally: drawn from whatever is
+            # banked or flowing in this year, topped up by a direct purchase
+            # this function never checks capacity for - "I would just buy
+            # 20 grams," exactly. It can never be what sets `worst`/`who`.
+            lab_drawn = min(lab_need, have)
+            have -= lab_drawn
+            consumed_ind = 0.0
+            if ind_need > 1e-12:
+                if have < ind_need:
+                    f = max(0.05, have / ind_need)
+                    if f < worst:
+                        worst, who = f, emp_key
+                    consumed_ind = have
+                else:
+                    consumed_ind = ind_need
+            # BANK THE REST OF WHAT WAS YOURS. Own production (and prior
+            # stock) this year that neither draw actually touched goes back
+            # into stock rather than evaporating - the other half of the fix
+            # (DOCS_VS_ENGINE.md #3). Capped at own_and_stock, never at the
+            # larger `have`, for exactly the reason in the comment above.
+            stock[emp_key] = max(0.0, own_and_stock - lab_drawn - consumed_ind)
         self.throttle, self.binding = worst, who
+        # Stored AFTER mutation, against stock as this call actually left
+        # it - so an immediate repeat call's sig (computed from that same,
+        # now-settled stock) matches and replays rather than spending again.
+        self._stock_throttle_sig = (sig[0], sig[1], sig[2], sig[3], sig[4],
+                                     tuple(sorted(stock.items())))
+        self._stock_throttle_cache = (worst, who)
         if who:
             self.shortages[who] += 1
         return worst
