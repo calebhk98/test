@@ -16,6 +16,116 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
 from . import commodities as _commod
 
 
+class _InvalidatingSet(set):
+    """A set that calls `on_change` after every mutation, with no exceptions.
+
+    Backs `Sim.operating` (see the `operating` property on `EconomyMixin`
+    below) so that a cache keyed off operating's exact membership -
+    `capability_factor()`'s - cannot go stale, no matter which of the nine
+    call sites across core.py/projects.py/economy.py/society.py adds to or
+    discards from it, and without asking any of them to remember a second
+    line. The `done`/`_done_changed()` convention this project already has
+    relies on every one of ITS mutation sites remembering to call
+    `_done_changed()` by hand; that is a real convention and it has held,
+    but a second one just like it - one more rule written down at every call
+    site instead of enforced at one - is exactly the shape that has already
+    produced three drifted-apart bugs elsewhere in this codebase today. This
+    set makes the equivalent mistake impossible for `operating` specifically:
+    there is only one `.add`, only one `.discard`, and they are these. It is
+    the same reasoning that made `revealed` (engine/fog.py) a property rather
+    than a plain attribute, extended to a set instead of a ratchet.
+
+    Every mutating method a plain `set` exposes is overridden so that
+    swapping this in for `set()` changes nothing observable except that
+    `on_change` now fires. Non-mutating methods (`copy`, `union`, membership
+    tests, iteration, `len`) are inherited unchanged.
+    """
+
+    def __init__(self, iterable=(), on_change=None):
+        set.__init__(self, iterable)
+        self._on_change = on_change
+
+    def _fire(self):
+        if self._on_change is not None:
+            self._on_change()
+
+    def add(self, item):
+        if item not in self:
+            set.add(self, item)
+            self._fire()
+
+    def discard(self, item):
+        if item in self:
+            set.discard(self, item)
+            self._fire()
+
+    def remove(self, item):
+        set.remove(self, item)      # raises KeyError, same as a plain set
+        self._fire()
+
+    def pop(self):
+        item = set.pop(self)
+        self._fire()
+        return item
+
+    def clear(self):
+        if self:
+            set.clear(self)
+            self._fire()
+
+    def update(self, *others):
+        before = len(self)
+        set.update(self, *others)
+        if len(self) != before:
+            self._fire()
+
+    def difference_update(self, *others):
+        before = len(self)
+        set.difference_update(self, *others)
+        if len(self) != before:
+            self._fire()
+
+    def intersection_update(self, *others):
+        before = len(self)
+        set.intersection_update(self, *others)
+        if len(self) != before:
+            self._fire()
+
+    def symmetric_difference_update(self, other):
+        before = frozenset(self)
+        set.symmetric_difference_update(self, other)
+        if frozenset(self) != before:
+            self._fire()
+
+    def __ior__(self, other):
+        before = len(self)
+        result = set.__ior__(self, other)
+        if len(self) != before:
+            self._fire()
+        return result
+
+    def __iand__(self, other):
+        before = len(self)
+        result = set.__iand__(self, other)
+        if len(self) != before:
+            self._fire()
+        return result
+
+    def __isub__(self, other):
+        before = len(self)
+        result = set.__isub__(self, other)
+        if len(self) != before:
+            self._fire()
+        return result
+
+    def __ixor__(self, other):
+        before = frozenset(self)
+        result = set.__ixor__(self, other)
+        if frozenset(self) != before:
+            self._fire()
+        return result
+
+
 class EconomyMixin:
     def standing_floor(self):
         """The reputation you keep for what you have built, whatever else happens.
@@ -617,8 +727,50 @@ class EconomyMixin:
                 * self.material_market_factor(k))
 
     def _done_changed(self):
-        """Call after anything adds to or removes from self.done."""
+        """Call after anything adds to or removes from self.done.
+
+        Also invalidates capability_factor()'s cache: that walk filters
+        done_in_order() by self.granted too, and every site that adds to
+        self.granted does so in the same breath as adding to self.done (see
+        the comments on capability_factor), so no separate granted-changed
+        signal exists or is needed.
+        """
         self._done_seq = None
+        self._cap_factor = None
+
+    @property
+    def operating(self):
+        """What you RUN, as opposed to what you know how to do (`done`).
+
+        Backed by an `_InvalidatingSet` (see its class comment just above
+        EconomyMixin) rather than a plain `set`, so that every `.add`/
+        `.discard`/`.update`/... - all nine-odd call sites across
+        core.py/projects.py/economy.py/society.py, and any future one -
+        invalidates capability_factor()'s cache through the property's
+        backing object itself, not through a convention those call sites
+        have to remember.
+        """
+        return self._operating
+
+    @operating.setter
+    def operating(self, value):
+        """Whole-object replacement - `s.operating = X` - as `load_state`
+        (protocol.py) does via a generic `setattr` loop it should not need
+        to know any of this to get right. Rewraps `X` in a fresh
+        `_InvalidatingSet` (so it keeps invalidating after the swap) and
+        invalidates once immediately, since the new membership is not
+        generally the old membership plus or minus a few keys."""
+        self._operating = _InvalidatingSet(value, on_change=self._operating_changed)
+        self._operating_changed()
+
+    def _operating_changed(self):
+        """Call after anything adds to or removes from self.operating.
+
+        The `_InvalidatingSet` behind the `operating` property calls this
+        for every mutation automatically; nothing else needs to call it by
+        hand. See capability_factor(), its only reader at the moment.
+        """
+        self._cap_factor = None
 
     def venture_ramp(self, k):
         """How much of its full takings a concern is making, 0..1.
@@ -1444,8 +1596,30 @@ class EconomyMixin:
         as a concern - a concern already pays you directly and must not be
         counted twice. Saturating, because the tenth improvement to a workshop
         is worth less than the first, and because an unbounded product of 1,300
-        technologies is how you get a run holding more money than the empire.
+        technologies is how you get a run holding more method than the empire.
+
+        CACHED. A 300-year profile called this ~17,000 times, every one of
+        them walking the full done list - self.done/self.operating change far
+        less often than that (done_in_order() itself was fixed the same way,
+        earlier, for the same reason). The cache holds the FINISHED RESULT of
+        exactly this walk, recomputed from scratch - same order, same
+        arithmetic, nothing added or removed piecemeal - whenever it is
+        invalidated, so it is bit-identical to calling this uncached every
+        time: see _done_changed() and _operating_changed(), the only two
+        places that clear it. An incremental version that added and
+        subtracted a node's weight as it entered or left self.done/
+        self.operating was considered and rejected: float addition is not
+        associative, and the order nodes enter or leave at runtime is not the
+        order done_in_order() walks them in, so an incremental running total
+        would drift from a full recompute in its last bits over a long run -
+        a real behaviour change, not just a speed one. Recomputing the whole
+        thing on invalidation has none of that risk and still turns ~17,000
+        calls into however many times done/operating actually change in a
+        run (a few hundred), not however many times this is asked.
         """
+        cached = getattr(self, "_cap_factor", None)
+        if cached is not None:
+            return cached
         weight = 0.0
         for k in self.done_in_order():
             if k in self.granted or k in self.operating:
@@ -1455,7 +1629,9 @@ class EconomyMixin:
                 continue
             weight += n["rev"] * (1.0 + 0.25 * n["tier"])
         # 40,000 of tier-weighted method roughly doubles what a workshop makes.
-        return 1.0 + 2.0 * (weight / (weight + 40000.0))
+        result = 1.0 + 2.0 * (weight / (weight + 40000.0))
+        self._cap_factor = result
+        return result
 
     def revenue_sources(self):
         """Where the money actually comes from, itemised.

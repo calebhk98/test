@@ -77,6 +77,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.capital = float(c["start_capital"]) * self.price_index
         self.done = set()
         self._done_seq = None
+        self._cap_factor = None   # capability_factor()'s cache; see economy.py
         self.training = []        # [[artisan_capacity, year_it_matures], ...]
         self.granted = set()      # held because the SOCIETY has it, not because you built it
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
