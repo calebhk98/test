@@ -768,6 +768,20 @@ class ProjectsMixin:
     # silent until after the real threshold had already passed).
     STAFFING_WARNING_BAND = 5.0
 
+    # THE CLIFF ITSELF, not just the approach to it. Two players independently
+    # reported the same shape of surprise: a single artisan dying took a
+    # concern from comfortably staffed to closed the same year, with recurring
+    # income swinging from strongly positive to nothing. STAFFING_WARNING_BAND
+    # already puts every concern like that inside the warning list (5 people
+    # of headroom catches 1), but the headline it got was the same generic
+    # "within N craftsmen of closure" whether N was 4.8 or 0.3 - it never said
+    # that N here is small enough that ONE ordinary attrition event, not a
+    # policy failure or a run of bad luck, is what closes it, and it never
+    # said what that closure would actually cost or how to buy the room back.
+    # This band is where that sharper sentence kicks in: room this thin is not
+    # early warning any more, it is the edge itself.
+    STAFFING_NO_SLACK_BAND = 1.0
+
     def staffing_closure_warnings(self, limit=3):
         """Which running concern the staffing rule would shut NEXT if
         attrition keeps biting, and how many people of slack still stand
@@ -821,15 +835,45 @@ class ProjectsMixin:
             if room > self.STAFFING_WARNING_BAND:
                 continue
             name = self.nodes[k]["name"]
+            # WHAT IT COSTS TO LOSE, in the same recurring den/yr the player
+            # already judges every concern by (rev - up, the same figure
+            # `ventures` and the ranking above use) - not just that it would
+            # close, but whether closing it is worth reacting to.
+            net = max(0.0, self.nodes[k]["rev"] - self.nodes[k]["up"])
+            cost = "{:,.0f}".format(net)
+            # THE COMMAND THAT FIXES IT, named, not left for the player to
+            # infer from "craftsmen"/"scholars" alone - hire is always
+            # sayable (STAFF_SOURCES' own reasoning: the labour market is in
+            # front of you whether or not any institution is), so this is the
+            # one remedy safe to name inline rather than routing through the
+            # fuller, sometimes-circular advice _staff_advice gives.
+            _kind = "scholars" if word == "scholars" else "artisans"
+            fix = next(why for node, why in self.STAFF_SOURCES[_kind]
+                       if node == "HIRE")
+            one_loss_closes = room <= self.STAFFING_NO_SLACK_BAND + 1e-9
             if room <= 0.05:
-                headline = ("%s has no %s free this year and is next in line "
-                            "to close" % (name, word))
+                headline = ("%s has no %s free this year and is next in "
+                            "line to close - that would cost %s den/yr in "
+                            "recurring income. %s"
+                            % (name, word, cost, fix))
+            elif one_loss_closes:
+                # THE MISSING CASE: no slack at all. Room here is under one
+                # whole person, so losing even ONE %s of this trade - one
+                # death, one who leaves - closes this outright the same
+                # year, not "eventually" and not "if things get worse".
+                headline = ("%s has no spare %s: losing just one more "
+                            "closes it outright, costing %s den/yr in "
+                            "recurring income. %s"
+                            % (name, word, cost, fix))
             else:
                 headline = ("%s is within %s %s of closure"
                             % (name, ("%.1f" % room).rstrip("0").rstrip("."),
                                word))
             out.append({"id": k, "name": name, "within": round(max(0.0, room), 1),
-                       "of": word, "headline": headline})
+                       "of": word, "headline": headline,
+                       "recurring_income_at_risk": round(net, 1),
+                       "one_loss_closes_it": one_loss_closes,
+                       "fix": fix})
             if len(out) >= limit:
                 break
         return out
@@ -1838,8 +1882,12 @@ class ProjectsMixin:
     RETRY_CALENDAR_CAP = 0.65      # at most 65% of the elapsed clock survives
     RETRY_CALENDAR_DECAY = 0.5     # each failure closes half of what is left
 
-    def _retry_calendar_retain(self, k):
-        m = self.failed_attempts.get(k, 0)
+    def _retry_calendar_retain(self, k, m=None):
+        # See _retry_risk_multiplier's comment on `m` - same reason, same
+        # contract: the real failure count still drives every actual retry;
+        # `m` only lets a projection ask about a hypothetical one.
+        if m is None:
+            m = self.failed_attempts.get(k, 0)
         if m <= 0:
             return 0.0
         return self.RETRY_CALENDAR_CAP * (1.0 - self.RETRY_CALENDAR_DECAY ** m)
@@ -1853,6 +1901,118 @@ class ProjectsMixin:
         bare n["risk"] - that number is no longer what the dice use.
         """
         return self.nodes[k]["risk"] * self._retry_risk_multiplier(k)
+
+    # ---- WHAT A RISKY NODE ACTUALLY COSTS IN CALENDAR TIME -----------------
+    # `effective_risk` and `calendar_floor` answer two separate questions -
+    # "how likely is the next roll to fail" and "how many years before there
+    # even IS a next roll" - and left a player to multiply them together by
+    # hand. A player who had already won the game did exactly that by force
+    # of repeated bad luck: point_contact_transistor, 45% risk and a 4-year
+    # floor, failed six times running and cost "roughly two dozen years", and
+    # they filed it as a node whose stated "4-year floor" was nothing like
+    # its real calendar cost. A 45%-per-attempt, 4-year-floor node is not a
+    # 4-year project; on the bare geometric series 1/(1-p) it is 1.82
+    # attempts, and even that understates it for anything past the first
+    # failure, because retry learning (RETRY_RISK_FLOOR, RETRY_CALENDAR_CAP
+    # above) means neither the odds nor the clock a plain geometric series
+    # assumes are the ones a second, third or fourth attempt actually faces.
+    def calendar_floor(self, k):
+        """Calendar years THIS attempt needs to elapse before a completion
+        roll can fire at all - the SAME formula step() uses to gate
+        `_complete` (see core.py, where a project's own `st["yrs"]` is
+        compared against this), not a second copy of it. Diffusion-limited
+        nodes (yrs >= 5) shrink as reputation grows: a civilisation that
+        already does a hundred complicated things does not start the social
+        diffusion of the hundred-and-first from zero credibility.
+        """
+        n = self.nodes[k]
+        floor = n["yrs"]
+        if n["yrs"] >= 5:   # diffusion-limited nodes, not physical curing
+            floor = max(2.0, n["yrs"] / (1.0 + self.reputation / 90.0))
+        return floor
+
+    def expected_calendar_years(self, k, _max_extra_attempts=500):
+        """Expected calendar years to SUCCEED at k, counting every retry the
+        dice force - not the bare calendar_floor, and not a plain geometric
+        series on the raw risk field either. A failure does not roll the
+        exact same dice again: the per-attempt risk and the per-attempt wait
+        both move on every subsequent attempt, so the true expectation is a
+        sum over "the first i attempts all failed" with a shrinking risk and
+        a shrinking wait at each step.
+
+        THE RISK TERM IS READ FROM effective_risk(k), NEVER REIMPLEMENTED.
+        effective_risk is the one place allowed to know everything that
+        moves a node's odds - today that is only retry learning
+        (_retry_risk_multiplier), but it is the designated home for any
+        OTHER multiplier this society's own choices might someday apply
+        (a capability that makes a whole family of processes more
+        reliable, say), and this function has no business knowing what
+        those are or duplicating how they combine. To ask "what would
+        attempt i+1's odds be" for a hypothetical future i without actually
+        recording a failure, this stands in for "i failures so far" by
+        briefly setting failed_attempts[k] to i, reads effective_risk(k),
+        and restores the real count immediately after - in a `finally`, so
+        a real failure count is never left clobbered even if something
+        above raises. The calendar term has no such second multiplier (see
+        _retry_calendar_retain) and is asked the same way, via its own `m`.
+
+        Three assumptions, stated because a wrong number here is worse than
+        none:
+        1. The calendar floor used is TODAY's (today's reputation). It can
+           only shrink as reputation grows, never grow back, so if anything
+           this slightly OVERSTATES the wait for a civilisation still
+           climbing - never understates it.
+        2. Hours and money are assumed never to bind once the floor does -
+           the late-game case this was written for (a mature economy with
+           nothing between it and the node but dice and the calendar). A
+           project still starved of hours or cash will take longer than
+           this says, for reasons this number is not trying to capture.
+        3. Attempts keep retrying automatically without the project being
+           manually `stop`ped in between - which is how the engine actually
+           runs retries: a failure never removes a project from `active`,
+           only shrinks its clock and its odds (see `_complete`).
+           Stop-and-restart forfeits the banked calendar progress
+           (start_project always zeroes `yrs`) while keeping the risk
+           learning (failed_attempts is never reset) - a real, separate
+           wrinkle, and the player's own choice, not the dice's.
+        """
+        floor = self.calendar_floor(k)
+        i0 = self.failed_attempts.get(k, 0)
+        _had_key = k in self.failed_attempts
+        _active = self.active.get(k) if k in self.active else None
+        total = 0.0
+        survive = 1.0
+        i = i0
+        try:
+            while True:
+                if i == i0 and _active is not None:
+                    # ALREADY MID-ATTEMPT: use the real elapsed clock, not a
+                    # recomputed banked fraction - more honest about a
+                    # project already part-way through its current attempt.
+                    a = max(0.0, floor - _active.get("yrs", 0.0))
+                elif i == i0:
+                    # NOT ACTIVE: whether this is the very first attempt ever
+                    # (i0 == 0) or a restart after a manual `stop` (i0 > 0),
+                    # start_project always zeroes `yrs` - see assumption 3 -
+                    # so the next attempt pays the full floor either way.
+                    a = floor
+                else:
+                    a = floor * (1.0 - self._retry_calendar_retain(k, i))
+                total += survive * a
+                # STAND IN FOR "i FAILURES SO FAR", ask effective_risk, then
+                # move on - the real count is restored in `finally` below,
+                # not here, so an exception mid-loop can never leave it wrong.
+                self.failed_attempts[k] = i
+                survive *= self.effective_risk(k)
+                i += 1
+                if survive < 1e-12 or i - i0 > _max_extra_attempts:
+                    break
+        finally:
+            if _had_key:
+                self.failed_attempts[k] = i0
+            else:
+                self.failed_attempts.pop(k, None)
+        return total
 
     def _complete(self, k):
         n = self.nodes[k]

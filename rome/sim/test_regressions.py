@@ -11034,6 +11034,258 @@ check("the ending screen's final_report carries the score, not just the "
       _final_sc.get("score", {}).get("total") is not None, _final_sc.get("score"))
 check("...and renders as part of the same page, not a separate dump",
       "SCORE" in _RF(_final_sc) and "TOTAL:" in _RF(_final_sc), _RF(_final_sc)[:200])
+# --- the missing case: a concern with NO slack at all, where losing one
+# more person of its trade closes it outright - not just "within N of
+# closure" but the recurring income at stake and the command that fixes it.
+_s_sw.artisans = _sw_art_used - 0.6   # room under 1.0: one loss closes it
+_sw_warn3 = _s_sw.staffing_closure_warnings()
+check("no slack at all: the warning says losing just one more closes it, "
+      "not merely that it is 'within' some number",
+      bool(_sw_warn3) and _sw_warn3[0]["one_loss_closes_it"]
+      and "losing just one more closes it" in _sw_warn3[0]["headline"],
+      _sw_warn3)
+check("...and names what that closure would actually cost in recurring "
+      "income, not just that it would happen",
+      _sw_warn3 and _sw_warn3[0]["recurring_income_at_risk"] > 0
+      and "den/yr" in _sw_warn3[0]["headline"], _sw_warn3)
+check("...and names the command that fixes it - a real {\"cmd\":\"hire\"} "
+      "example with a real trade, not just the generic 'craftsmen'/"
+      "'scholars' word",
+      _sw_warn3 and '"cmd":"hire"' in _sw_warn3[0]["fix"]
+      and _sw_warn3[0]["fix"] in _sw_warn3[0]["headline"], _sw_warn3)
+check("within the band but NOT down to the last one: one_loss_closes_it is "
+      "false, and the headline stays the earlier 'within N' sentence",
+      _sw_warn and _sw_warn[0]["one_loss_closes_it"] is False
+      and "within" in _sw_warn[0]["headline"], _sw_warn)
+check("room already exhausted (<=0.05): also costed and fixed, same as the "
+      "one-loss-away case",
+      _sw_warn2 and _sw_warn2[0]["recurring_income_at_risk"] > 0
+      and '"cmd":"hire"' in _sw_warn2[0]["fix"], _sw_warn2)
+# render_state used to crash the instant any staffing warning fired at all -
+# "can only concatenate str (not 'dict') to str" - because
+# staffing_closure_warnings() returns dicts and the renderer assumed bare
+# strings. Nothing caught this because the regression suite only ever called
+# the engine method directly, never through the human-text renderer.
+_sw_state_out = S._agent_dispatch(_s_sw, NODES, {"cmd": "state"})
+check("render_state no longer crashes when a staffing warning is live, and "
+      "prints the actual headline sentence",
+      _sw_warn3[0]["name"] in _RSTATE(_sw_state_out), _sw_state_out.get("supervision_close_to_the_edge"))
+
+# ======================================================================
+# ROUND 9: expected calendar cost of a risky node, including retries
+# (projects.py: calendar_floor, expected_calendar_years). A 45%-risk,
+# 4-year-floor node is not a 4-year project - the raw geometric series
+# 1/(1-p) says 1.82 attempts, and even that is wrong once retry learning
+# (RETRY_RISK_FLOOR, RETRY_CALENDAR_CAP) starts changing the odds and the
+# wait on every attempt after the first. Verified both in closed form and,
+# separately in a throwaway Monte Carlo harness during development, against
+# thousands of real _complete() calls - see the session's own report for
+# those numbers; what is pinned here is the cheap, deterministic shape of
+# the guarantee, not a re-run of the simulation on every gate pass.
+# ======================================================================
+_s_ey = sim(civ="rome_100ad")
+_riskfree = next(k for k in NODES if NODES[k].get("risk", 1) == 0)
+check("risk-free node: expected calendar years is exactly the bare floor - "
+      "there is nothing to retry",
+      abs(_s_ey.expected_calendar_years(_riskfree)
+          - _s_ey.calendar_floor(_riskfree)) < 1e-9,
+      (_riskfree, _s_ey.expected_calendar_years(_riskfree),
+       _s_ey.calendar_floor(_riskfree)))
+_pct_floor = _s_ey.calendar_floor("point_contact_transistor")
+_pct_exp = _s_ey.expected_calendar_years("point_contact_transistor")
+check("a risky node's expected calendar cost is strictly more than its bare "
+      "floor (point_contact_transistor: 45% risk, 4-year floor)",
+      _pct_exp > _pct_floor, (_pct_exp, _pct_floor))
+check("...but retry learning means it is LESS than the naive geometric "
+      "series 1/(1-p) on the raw risk would predict - neither odds nor wait "
+      "stay fixed across retries the way a plain geometric series assumes",
+      _pct_exp < _pct_floor / (1.0 - NODES["point_contact_transistor"]["risk"]),
+      (_pct_exp, _pct_floor / (1.0 - NODES["point_contact_transistor"]["risk"])))
+# INDEPENDENTLY RE-DERIVED THROUGH effective_risk ITSELF, never through a
+# copy of whatever formula happens to live inside it today. effective_risk
+# is the one place allowed to know every multiplier a node's odds carry -
+# retry learning today, and it is the designated home for anything else a
+# later change adds (a capability that makes a family of processes more
+# reliable, say) - so a second check of expected_calendar_years has to ask
+# the SAME function the same way it does: stand in for "m failures so far"
+# by setting failed_attempts, read effective_risk, move on. A check that
+# instead hard-codes RETRY_RISK_FLOOR/DECAY would pass today and go on
+# passing while silently checking the wrong thing the moment any other
+# multiplier joins effective_risk.
+_pct_node = "point_contact_transistor"
+_manual_total, _manual_survive, _i = 0.0, 1.0, 0
+_cc, _cd = _s_ey.RETRY_CALENDAR_CAP, _s_ey.RETRY_CALENDAR_DECAY
+_saved_fa = _s_ey.failed_attempts.get(_pct_node, 0)
+while _manual_survive > 1e-15:
+    _a = _pct_floor if _i == 0 else _pct_floor * (1.0 - _cc * (1.0 - _cd ** _i))
+    _manual_total += _manual_survive * _a
+    _s_ey.failed_attempts[_pct_node] = _i
+    _manual_survive *= _s_ey.effective_risk(_pct_node)
+    _i += 1
+_s_ey.failed_attempts[_pct_node] = _saved_fa
+check("expected_calendar_years matches an independent sum driven by "
+      "effective_risk() at each hypothetical attempt count, not a "
+      "hard-coded copy of the retry-learning formula, to within float "
+      "rounding",
+      abs(_pct_exp - _manual_total) < 1e-6, (_pct_exp, _manual_total))
+check("...and expected_calendar_years itself leaves the real failure count "
+      "exactly as it found it once the projection is done - a read-only "
+      "query, not a mutation disguised as one",
+      _s_ey.failed_attempts.get(_pct_node, 0) == _saved_fa,
+      _s_ey.failed_attempts.get(_pct_node, 0))
+_s_ey2 = sim(civ="rome_100ad")
+_s_ey2.failed_attempts["point_contact_transistor"] = 3
+check("...concretely: 3 prior failures leaves less EXPECTED remaining "
+      "calendar time than attempt one alone faced, not more",
+      _s_ey2.expected_calendar_years("point_contact_transistor") < _pct_exp,
+      (_s_ey2.expected_calendar_years("point_contact_transistor"), _pct_exp))
+check("calendar_floor is the SAME figure core.py's step() gates completion "
+      "on - not a second copy of the reputation-shrinking formula",
+      _s_ey.calendar_floor("zone_refining")
+      == max(2.0, NODES["zone_refining"]["yrs"] / (1.0 + _s_ey.reputation / 90.0))
+      if NODES["zone_refining"]["yrs"] >= 5 else
+      _s_ey.calendar_floor("zone_refining") == NODES["zone_refining"]["yrs"],
+      _s_ey.calendar_floor("zone_refining"))
+# Surfaced wherever risk and years already are: `why`, `available` (fog and
+# not), and the `start` confirmation - not a fifth screen nobody reads.
+_why_pct = S._agent_dispatch(_s_ey, NODES, {"cmd": "why", "id": "point_contact_transistor"})
+check("`why` shows the expected total calendar years including retries, "
+      "alongside the bare floor, not instead of it",
+      _why_pct.get("calendar_floor_years") == NODES["point_contact_transistor"]["yrs"]
+      and _why_pct.get("expected_calendar_years_with_retries") is not None
+      and _why_pct["expected_calendar_years_with_retries"] > _why_pct["calendar_floor_years"],
+      _why_pct.get("expected_calendar_years_with_retries"))
+_s_ey3 = sim(civ="rome_100ad", capital=10_000_000.0)
+for _p in NODES["point_contact_transistor"]["pre"]:
+    _s_ey3.done.add(_p)
+_s_ey3._done_changed()
+_s_ey3.scholars, _s_ey3.artisans = 200.0, 200.0
+_s_ey3.trades_created.update(["chemist", "machinist"])
+_s_ey3.employees["chemist"], _s_ey3.employees["machinist"] = 20.0, 20.0
+_avail_pct = S._agent_dispatch(_s_ey3, NODES, {"cmd": "available", "find": "point_contact_transistor"})
+_avail_rows = _avail_pct.get("available")
+_avail_row = next((r for r in _avail_rows if r.get("id") == "point_contact_transistor"), None) \
+    if isinstance(_avail_rows, list) else None
+check("`available` carries the same expected-years figure on the row, not "
+      "only on `why`",
+      _avail_row is not None
+      and _avail_row.get("expected_calendar_years_with_retries") is not None,
+      (_avail_rows, _avail_row))
+_s_ey4 = sim(civ="rome_100ad", capital=10_000_000.0)
+for _p in NODES["point_contact_transistor"]["pre"]:
+    _s_ey4.done.add(_p)
+_s_ey4._done_changed()
+_s_ey4.scholars, _s_ey4.artisans = 200.0, 200.0
+_s_ey4.trades_created.update(["chemist", "machinist"])
+_s_ey4.employees["chemist"], _s_ey4.employees["machinist"] = 20.0, 20.0
+_start_pct = S._agent_dispatch(_s_ey4, NODES, {"cmd": "start", "id": "point_contact_transistor"})
+check("the `start` confirmation carries the expected-years figure too, so "
+      "the honest number is in front of the player at the one moment they "
+      "are actually committing",
+      _start_pct.get("ok") and _start_pct.get("expected_calendar_years_with_retries") is not None,
+      _start_pct)
+
+# ======================================================================
+# ROUND 10: discoverability - `help commands` and `log`, pointed at
+# directly rather than left to be found inside a buried topic list, and
+# said ONCE early in a run rather than spammed every turn.
+# ======================================================================
+_s_hc = sim(civ="rome_100ad")
+_help_front = S._agent_dispatch(_s_hc, NODES, {"cmd": "help"})["help"]
+check("the no-topic help screen names `help commands` and `log` outright, "
+      "not only inside the 'more topics' map a player has to already "
+      "suspect exists",
+      any("help" in str(k).lower() or "log" in str(v).lower()
+          for k, v in _help_front.items()
+          if "command index" in str(k).lower() or "exact history" in str(k).lower()),
+      list(_help_front.keys()))
+check("...and the text itself actually says 'help' topic 'commands' and "
+      "mentions log/values/money/automation/save-load, so a reader does not "
+      "have to guess what 'the complete command index' contains",
+      any("\"topic\":\"commands\"" in str(v) and "log" in str(v)
+          for v in _help_front.values()),
+      [v for v in _help_front.values() if "\"topic\":\"commands\"" in str(v)])
+_s_wk = sim(civ="rome_100ad")
+_st1 = S._agent_dispatch(_s_wk, NODES, {"cmd": "state"})
+check("a fresh game's very first `state` points at `help commands` and "
+      "`log` directly, in the reply itself - not only in the one-time "
+      "stderr welcome banner a player could have missed",
+      bool(_st1.get("worth_knowing_early"))
+      and "help" in _st1["worth_knowing_early"] and "log" in _st1["worth_knowing_early"],
+      _st1.get("worth_knowing_early"))
+_st2 = S._agent_dispatch(_s_wk, NODES, {"cmd": "state"})
+check("...but only ONCE - the second call in the same early game says "
+      "nothing more about it, so it never becomes per-turn noise",
+      _st2.get("worth_knowing_early") is None, _st2.get("worth_knowing_early"))
+check("the one-shot flag is in SAVE_FIELDS, so it survives a save/load and "
+      "does not fire a second time just because the process restarted",
+      "_said_command_index" in _protocol.SAVE_FIELDS, None)
+_s_wk_late = sim(civ="rome_100ad")
+_s_wk_late.year = _s_wk_late.cfg["start_year"] + 50
+_st_late = S._agent_dispatch(_s_wk_late, NODES, {"cmd": "state"})
+check("resuming deep into an existing run (year far past the opening) never "
+      "springs this first-timer tip on a player who has long since found "
+      "all of this themselves",
+      _st_late.get("worth_knowing_early") is None, _st_late.get("worth_knowing_early"))
+check("it shows up in the rendered text too, right where the staffing "
+      "warning and the idle-hours warning already print",
+      "help" in _RSTATE(_st1) and "log" in _RSTATE(_st1), None)
+
+# ======================================================================
+# ROUND 11: point_contact_transistor vs single_crystal/silicon_path - the
+# specific contradiction a player flagged as still live ("the actual start
+# check still requires a semiconductor supplied by single_crystal or
+# silicon_path"). Verified against the live tree and the live engine: the
+# node's own req_any is empty and its only semiconductor prerequisite is
+# ge_reduction. The one place the old requirement still existed was a
+# one-time migration script's stale literal (migrate_v2.py), now guarded
+# against ever reapplying.
+# ======================================================================
+check("point_contact_transistor's req_any is empty - nothing substitutes "
+      "single_crystal or silicon_path in for it",
+      NODES["point_contact_transistor"]["req_any"] == [], NODES["point_contact_transistor"]["req_any"])
+check("...and neither single_crystal nor silicon_path appears anywhere in "
+      "its hard prerequisites either",
+      "single_crystal" not in NODES["point_contact_transistor"]["pre"]
+      and "silicon_path" not in NODES["point_contact_transistor"]["pre"],
+      NODES["point_contact_transistor"]["pre"])
+_s_pct = sim(civ="rome_100ad", capital=10_000_000.0)
+for _p in NODES["point_contact_transistor"]["pre"]:
+    _s_pct.done.add(_p)
+_s_pct._done_changed()
+_s_pct.scholars, _s_pct.artisans = 200.0, 200.0
+_s_pct.trades_created.update(["chemist", "machinist"])
+_s_pct.employees["chemist"], _s_pct.employees["machinist"] = 20.0, 20.0
+_ok_pct, _why_pct2 = _s_pct.start_reason("point_contact_transistor")
+check("with every listed prerequisite met and nothing else missing, "
+      "start_reason actually allows it - the live engine, not just the "
+      "tree data, agrees single_crystal/silicon_path are not required",
+      _ok_pct, _why_pct2)
+check("junction_transistor, by contrast, genuinely does need single_crystal "
+      "- that gate is real and correctly placed one node further on, not "
+      "removed along with point_contact_transistor's stale one",
+      "single_crystal" in NODES["junction_transistor"]["pre"], NODES["junction_transistor"]["pre"])
+import importlib as _IL
+_migrate_src = open(os.path.join(ROOT, "rome", "sim", "migrate_v2.py")).read()
+check("migrate_v2.py's SUBS table no longer carries the stale "
+      "point_contact_transistor substitution group at all",
+      '"point_contact_transistor": [{"group":"semiconductor"' not in _migrate_src,
+      None)
+_migrate_v2 = _IL.import_module("migrate_v2")
+import io as _IO, contextlib as _CTX
+_tree_path = os.path.join(ROOT, "rome", "data", "tech_tree.json")
+_tree_bytes_before = open(_tree_path, "rb").read()
+_mg_out = _IO.StringIO()
+with _CTX.redirect_stdout(_mg_out):
+    _mg_rc = _migrate_v2.main()
+check("running migrate_v2.py again against the CURRENT (already-migrated) "
+      "tree refuses to touch it, rather than silently re-applying its "
+      "snapshot-in-time SUBS table over later hand-fixes",
+      _mg_rc == 0 and "already schema v2" in _mg_out.getvalue(), _mg_out.getvalue())
+check("...and the tree on disk is provably byte-for-byte unchanged by that "
+      "no-op run (compared against a copy taken before calling it, not "
+      "against the in-memory NODES this whole suite has since mutated)",
+      open(_tree_path, "rb").read() == _tree_bytes_before, None)
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"

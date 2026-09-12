@@ -61,6 +61,32 @@ def derive_traits(n):
 
 def main():
     tree = json.load(open(TREE))
+    # A ONE-TIME MIGRATION REFUSES TO RUN TWICE. This script's own SUBS dict
+    # below is a SNAPSHOT of what substitution looked like at the moment v1
+    # became v2, not a rule that stays true forever: point_contact_transistor
+    # was in it then (single_crystal or silicon_path), and a later, separate
+    # fix removed that requirement from the live tree outright - the 1947
+    # device used polycrystalline germanium, with no pulled crystal and no
+    # zone refining, and the node's own note says so. Nothing here updated
+    # when that fix landed, because nothing expected this script to run
+    # again. A player found exactly that gap from the outside - the node's
+    # text promising polycrystalline germanium while something, somewhere,
+    # still gated it on single_crystal/silicon_path - and traced it to this
+    # literal. The live tree turned out to be clean; this file, left armed to
+    # fire a second time, was the one place the contradiction could still
+    # come back from. Refusing to re-run is cheaper and more durable than
+    # trying to keep every literal below in step with every later hand-fix to
+    # the tree it was migrating away from.
+    if tree.get("meta", {}).get("schema_version") == 2:
+        print("tech_tree.json is already schema v2 (migrated once already). "
+              "This script is a ONE-TIME v1->v2 migration, not a rule to "
+              "reapply: its SUBS/EXPED/REWRITE tables are a snapshot from "
+              "the moment of migration, and later hand-fixes to the live "
+              "tree (for example, removing point_contact_transistor's stale "
+              "single_crystal/silicon_path substitution group once the node "
+              "was corrected to need neither) would be silently reverted by "
+              "running this again. Nothing to do.")
+        return 0
     nodes = {n["id"]: n for n in tree["nodes"]}
     c = collections.Counter()
 
@@ -144,7 +170,18 @@ def main():
       "railway": [{"group":"rail_metal","options":{"bessemer_openhearth":1.0,"finery_puddling":0.55,"mat_cast_iron":0.3}}],
       "vacuum_pumps": [{"group":"working_fluid","options":{"mercury_supply":1.0,"mat_olive_oil":0.5}}],
       "arc_light_lamp": [{"group":"conductor","options":{"copper_refining":1.0,"mat_aluminium":0.6}}],
-      "point_contact_transistor": [{"group":"semiconductor","options":{"single_crystal":1.0,"silicon_path":0.9}}],
+      # point_contact_transistor USED TO BE HERE, gated on single_crystal or
+      # silicon_path - wrong the day it was written, not only in hindsight:
+      # Bardeen and Brattain's 1947 device ran on ordinary polycrystalline
+      # germanium, with neither a pulled single crystal nor zone refining,
+      # and the node's own note has always said so. A later fix removed the
+      # group from the live tree (point_contact_transistor's req_any is now
+      # []; see ge_reduction in `pre` instead, which is what the device
+      # actually needed). Deleted here too, not left disarmed-but-present,
+      # because the schema_version guard above is the thing that stops this
+      # file from ever overwriting the tree again - this entry existing at
+      # all, even unused, invites exactly the "just re-run it to be sure"
+      # mistake that would revive the contradiction.
     }
     for k, groups in SUBS.items():
         if k in nodes:

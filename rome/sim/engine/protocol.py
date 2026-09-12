@@ -1461,6 +1461,39 @@ def _founder_death_info(s):
     return None
 
 
+def _worth_knowing_early(s):
+    """Said once, ever, early in a run: `help commands` is the complete
+    command index (log, values, money, automation, save/load and more, not
+    only the five starter verbs), and `log` is an exact, paginated history of
+    everything that happens from here on. Both are true from turn one, and
+    neither was ever pointed at directly - the opening briefing names `help`
+    in passing and lists its topics, but a player who won the whole game
+    reported using specialised commands for a long while without realising
+    how complete the index was, and separately flagged `log`'s depth (815
+    entries by 200 AD in their run) as something worth knowing about sooner.
+
+    ONCE, NOT EVERY TURN: gated on a flag this sets itself the first time it
+    fires (see _said_command_index in SAVE_FIELDS - it has to survive a save
+    or it would fire again every time a script reloads the game) and on
+    still being early in the run, so resuming a save from deep into an
+    existing game never springs a first-timer's tip on somebody who has long
+    since found all of this themselves.
+    """
+    if getattr(s, "_said_command_index", False):
+        return None
+    if s.year > s.cfg.get("start_year", s.year) + 3:
+        return None
+    s._said_command_index = True
+    return ("{\"cmd\":\"help\",\"topic\":\"commands\"} lists the entire "
+            "command surface, not only the five you started with - log, "
+            "values, money, automation, save/load and more, one line each. "
+            "{\"cmd\":\"log\"} is a paginated, exact history of everything "
+            "that happens from here on: starts, completions, failures, "
+            "hazards, openings, closures, staffing. Both are worth a look "
+            "now, before a hundred turns go by and you wish you had been "
+            "reading it all along.")
+
+
 def _agent_state(s, nodes, cmd=None):
     active = {}
     for k, st in s.active.items():
@@ -1644,6 +1677,29 @@ def _agent_state(s, nodes, cmd=None):
         # and a concern that shuts itself now reopens once restaffed. What three
         # players still asked for was the year's notice, not the cure.
         "supervision_close_to_the_edge": s.staffing_closure_warnings() or None,
+        # SAID ONCE, EARLY, NOT EVERY TURN. The opening briefing already names
+        # `help` and lists its topics in passing, but a player who won the
+        # whole game reported using specialised commands for a long while
+        # without realising `help commands` was a complete index of
+        # everything the game can do - log, values, money, automation,
+        # save/load - and separately flagged `log` itself, an exact paginated
+        # history of starts, completions, failures, hazards, openings,
+        # closures and staffing, as something they wished they had leaned on
+        # from the start rather than discovering was this thorough only after
+        # hundreds of entries had piled up. Both are already true from turn
+        # one; neither was ever pointed at directly. Fired once, only in the
+        # first few years of a run (never on a save that is already well
+        # under way), so a veteran resuming an old game is not told this
+        # again on a whim - see _said_command_index in SAVE_FIELDS for why it
+        # only ever fires once per game, not once per session.
+        # full:true IS THE "EVERYTHING AT ONCE" POWER VIEW, already the
+        # reply most often bumping its own readability ceiling (see the
+        # "state full stays readable" checks) - not the screen a first
+        # turn's plain `state` actually returns. Asking only there, never
+        # under full:true, means the one-shot chance to say this is never
+        # spent paying that screen's byte budget, and it still fires on the
+        # very next ordinary `state` or `step` instead.
+        **({"worth_knowing_early": _worth_knowing_early(s)} if not full else {}),
         "free_hours_going_unused": (
             ("%s founder-hours this year are going into nothing: every "
              "project you have in hand is only waiting on the calendar "
@@ -1971,6 +2027,22 @@ def _agent_help(s, topic=None):
                     "standing between here and there, AND which of those "
                     "you could start TODAY. This is the walkthrough."),
             }),
+            # NAMED OUTRIGHT, not left to be found inside "more" below by a
+            # player who has to already suspect it exists. A player who won
+            # the whole game reported using specialised commands for a long
+            # while without realising `help commands` was a complete index
+            # of everything the game can do, and separately flagged `log` -
+            # an exact, paginated history of starts, completions, failures,
+            # hazards, openings, closures and staffing - as something they
+            # wished they had leaned on from the start. Both are true from
+            # turn one.
+            "the complete command index, and your own exact history": (
+                "{\"cmd\":\"help\",\"topic\":\"commands\"} lists every "
+                "command the game has, not only the five above - including "
+                "'log', 'values', 'money', automation and save/load. "
+                "{\"cmd\":\"log\"} is worth checking on its own: a "
+                "paginated, exact record of everything that happens from "
+                "here on."),
             # See cmd_play's opening screen for why this is not buried in a
             # topic: a finished concern earns nothing until its doors open, and
             # a tester left seven of them shut and went bankrupt in year three.
@@ -2503,6 +2575,18 @@ def _full_entry(s, nodes, k, fog):
         # founder in the story could know, and that stays cut whether or not
         # fog is on - see the block comment in fog.py.
         e["note"] = strip_self_play_advice(n["note"])
+    # THE HONEST TOTAL, not the risk and the floor left for the player to
+    # multiply by hand - and only HERE, on the full per-node entry, not on
+    # _brief's own compact digest rows (cheapest_six, most_rests_on_these):
+    # those feed a summary a play tester already flagged as a reply budget
+    # to keep inside, and this number is worth a few extra bytes on the one
+    # row you asked to actually look at, not on every row of a six-wide
+    # sampler. See expected_calendar_years' own docstring (projects.py): it
+    # is >= the floor above, strictly more once risk is above zero, and it
+    # is why a 45%-risk, 4-year-floor node is not a 4-year project.
+    if n.get("risk"):
+        e["expected_calendar_years_with_retries"] = round(
+            s.expected_calendar_years(k), 2)
     return e
 
 
@@ -3148,6 +3232,21 @@ def _node_explain(s, nodes, k):
                     "your hours for wages takes another bite"
                     if k in s._practice_set() and n["rev"] else None),
         "calendar_floor_years": n["yrs"], "risk": s.effective_risk(k),
+        # THE EXPECTED TOTAL, RETRIES INCLUDED - not the floor and the risk
+        # left for the player to combine by hand. A 45%-risk, 4-year-floor
+        # node is not a 4-year project: the bare geometric series 1/(1-p) is
+        # 1.82 attempts, and even that understates it once retry learning
+        # (RETRY_RISK_FLOOR/DECAY, RETRY_CALENDAR_CAP/DECAY - see
+        # expected_calendar_years' own docstring in projects.py) starts
+        # moving both the odds and the wait on every attempt after the
+        # first. A player who had already won the game watched
+        # point_contact_transistor fail six times running and estimated it
+        # cost "roughly two dozen years" - this is the number that would
+        # have told them what to expect before the dice started rolling,
+        # computed through the SAME retry rule _complete actually applies,
+        # not a second, looser approximation of it.
+        "expected_calendar_years_with_retries": round(
+            s.expected_calendar_years(k), 2),
         # WHAT THE FAILURES SO FAR HAVE BOUGHT, said out loud, because a
         # number that quietly improves is a number a player cannot plan with.
         "attempts_already_failed": int(getattr(s, "failed_attempts", {}).get(k, 0)),
@@ -3590,7 +3689,17 @@ def render_state(out):
                     _fmt_num(_src.get("hours_each_deputy_adds"))))
                 if _dep else ""))
     for _w in (out.get("supervision_close_to_the_edge") or []):
-        L.append(_wrap("  " + _w))
+        # EACH ENTRY IS A DICT (id/name/within/of/headline/...), not a bare
+        # string - staffing_closure_warnings() returns structured rows so a
+        # JSON caller gets the trade, the room and the fix command apart from
+        # the prose. This human-text renderer wants only the sentence; a
+        # bare `_w` here crashed `state` outright the moment any warning
+        # actually fired ("can only concatenate str (not 'dict') to str"),
+        # which nothing caught because the regression suite only ever called
+        # staffing_closure_warnings() directly, never through render_state.
+        L.append(_wrap("  " + (_w.get("headline") if isinstance(_w, dict) else _w)))
+    if out.get("worth_knowing_early"):
+        L.append(_wrap("  " + out["worth_knowing_early"]))
     if out.get("free_hours_going_unused"):
         L.append(_wrap("  " + out["free_hours_going_unused"]))
 
@@ -6028,6 +6137,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
                        % "; ".join(_impossible)) if _impossible else None
         out = {"ok": True, "started": k, "name": n["name"], "founder_hours_needed": n["ph"],
                "calendar_floor_years": n["yrs"],
+               # SAID AT THE MOMENT OF COMMITMENT, not only on `why` beforehand
+               # or `available` in passing - this is the screen the player is
+               # actually looking at when the risk becomes theirs. See
+               # expected_calendar_years (projects.py): the true expected
+               # total, retries included, computed through the same retry
+               # rule _complete applies on every failure, not a plain
+               # geometric series on the bare risk field.
+               "expected_calendar_years_with_retries": round(
+                   s.expected_calendar_years(k), 2),
                "the_bill_you_have_taken_on": bill,
                "note": "This is the price as of today, and it is now fixed for "
                        "this project. Quotes move with prices, the coinage and "
@@ -7598,6 +7716,7 @@ SAVE_FIELDS = (
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
     "_said_scandal", "_said_parallelism",
+    "_said_command_index",
     "_said_deputies",
     "_said_near_limit",
     "shut_for_staff",
