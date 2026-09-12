@@ -173,6 +173,32 @@ class FogMixin:
         memo[k] = result
         return result
 
+    def missing_prereq_message(self, missing, _memo=None):
+        """Format a list of not-yet-done prerequisite ids as one player-facing
+        message, filtered through the same visibility test `start_reason`
+        (and so `why`) applies. A second caller computing its own missing
+        list and printing the ids raw is exactly how `bounty` leaked
+        industrial zinc's power_grid, the getter's induction-coupling
+        prerequisite and the vacuum tube's hidden cathode: the filter lived
+        in start_reason alone, and nothing stopped a second command from
+        skipping it. There must be exactly one way to turn "missing" into
+        words.
+        """
+        if not missing:
+            return None
+        known = [p for p in missing if self.is_visible(p, _memo=_memo)]
+        hidden = len(missing) - len(known)
+        if not getattr(self, "fog", False) or not hidden:
+            return "missing prerequisites: " + ", ".join(missing)
+        bits = []
+        if known:
+            bits.append("missing prerequisites: " + ", ".join(known))
+        bits.append("%d other thing%s you have not heard of yet"
+                    % (hidden, "" if hidden == 1 else "s"))
+        return "; and ".join(bits) if known else \
+            ("this needs %s, and you do not yet know what %s"
+             % (bits[-1], "they are" if hidden > 1 else "it is"))
+
     def fog_scrub(self, text):
         """Strip node ids the player has not discovered out of a message."""
         if not text or not getattr(self, "fog", False):

@@ -450,9 +450,39 @@ class ProjectsMixin:
             _oy = self.opened_year = {}
         _oy.setdefault(k, self.year)
         rev_now, up_now = n["rev"] * u, n["up"] * u
-        return True, ("%s open%s: it earns %s a year and costs %s a year to run"
+        # SAID NOW, NOT DISCOVERED LATER IN A FOOTNOTE. A newly opened
+        # concern takes revenue_ramp_years to reach the figure just quoted -
+        # custom takes time to find the shop - and the only place this was
+        # ever said was `money`'s still_ramping(), read after the fact. A
+        # player told "it earns 2,000 a year" at the moment of opening and
+        # then watching 650 land in the ledger had no way to know, right
+        # then, that both numbers were correct.
+        _ramp_note = (
+            " It reaches that over the first %d years as custom finds it - "
+            "expect less at first, not a mistake in the figure."
+            % self.cfg["revenue_ramp_years"]) if rev_now > 0 else ""
+        # SUBTRACT THE TWO NUMBERS YOU JUST PRINTED. A Han playtester opened
+        # a net-loss concern four separate times - three of them after
+        # having already caught the mistake once and written it up - and
+        # said, correctly, that the earn and upkeep figures sit side by side
+        # on every screen and nothing ever does the subtraction for the
+        # reader. Capability institutions are deliberately excluded: a
+        # school or a workshop losing money is the normal, intended shape of
+        # the trade (see CAPABILITY_INSTITUTIONS and venture_hands), not a
+        # mistake to flag on the one screen a player could still back out
+        # from.
+        _loss_note = (
+            " !! this costs more than it earns (%s a year net), even once "
+            "it is fully ramped up - that may be the right call for what it "
+            "unlocks, but check 'why %s' if it is not what you meant."
+            % ("{:,.0f}".format(up_now - rev_now), k)
+            if up_now > rev_now and k not in self.CAPABILITY_INSTITUTIONS
+            else "")
+        return True, ("%s open%s: it earns %s a year and costs %s a year to "
+                      "run.%s%s"
                       % (k, "" if u == 1.0 else " at %.2f of a full founding" % u,
-                         "{:,.0f}".format(rev_now), "{:,.0f}".format(up_now)))
+                         "{:,.0f}".format(rev_now), "{:,.0f}".format(up_now),
+                         _ramp_note, _loss_note))
 
     # HOW A PLAYER OPENS A SECOND SCHOOL. Send `units` to the SAME "open"
     # command: {"cmd":"open","id":"school_founded"} founds the first, ordinary
@@ -889,13 +919,38 @@ class ProjectsMixin:
         # for - charged the full price, which is itself double open's. A break
         # tester paid twice what the event had promised.
         _shut = getattr(self, "shut_for_staff", {})
-        if k in _shut and self.year - _shut[k] <= self.STAFF_CLOSURE_GRACE:
-            fee *= 0.1
+        _in_grace = k in _shut and self.year - _shut[k] <= self.STAFF_CLOSURE_GRACE
+        # SAY WHICH CASE THIS IS, not just a number. The closing message
+        # promises "reopening soon costs a tenth of what opening did"; a
+        # player who comes back to `restore` years later, after the grace
+        # window has lapsed, was billed the full price with nothing on this
+        # line connecting it to that promise or saying the window was gone.
+        # A third player read this as `restore` simply not honouring its own
+        # stated discount, which is the same complaint in different words as
+        # the earlier double-charge: a number with no account of itself reads
+        # as broken whether it is wrong or merely unexplained.
+        _grace_note = None
+        if k in _shut:
+            if _in_grace:
+                fee *= 0.1
+                _grace_note = ("the staffing window is still open (shut %d "
+                               "years ago, of %d allowed), so this is the "
+                               "discounted tenth, not the full price"
+                               % (self.year - _shut[k], self.STAFF_CLOSURE_GRACE))
+            else:
+                _grace_note = ("the staffing discount only lasts %d years "
+                               "after a closure, and it has been %d - too "
+                               "long for the tenth, so this is the full "
+                               "price, the same as rebuilding the plant "
+                               "from nothing"
+                               % (self.STAFF_CLOSURE_GRACE, self.year - _shut[k]))
         if fee > self.spending_power("buy"):
-            return False, ("bringing it back costs %s denarii, and between %s in "
-                           "cash and what anyone will advance against a purchase "
-                           "you can raise %s"
-                           % ("{:,.0f}".format(fee), "{:,.0f}".format(self.capital),
+            return False, ("bringing it back costs %s denarii%s, and between "
+                           "%s in cash and what anyone will advance against a "
+                           "purchase you can raise %s"
+                           % ("{:,.0f}".format(fee),
+                              ("; " + _grace_note) if _grace_note else "",
+                              "{:,.0f}".format(self.capital),
                               "{:,.0f}".format(self.spending_power("buy"))))
         if any(p not in self.done for p in n["pre"]):
             return False, ("you no longer have what it stands on: "
@@ -909,8 +964,9 @@ class ProjectsMixin:
         # books rather than leaving it known-but-closed.
         if self.is_venture(k):
             self.operating.add(k)
-        return True, ("%s back in service for %s denarii"
-                      % (k, "{:,.0f}".format(fee)))
+        return True, ("%s back in service for %s denarii%s"
+                      % (k, "{:,.0f}".format(fee),
+                         (" (%s)" % _grace_note) if _grace_note else ""))
 
     def bribe(self, amount):
         """Pay your way out of trouble, deliberately, for a stated sum."""
@@ -1142,19 +1198,11 @@ class ProjectsMixin:
             # crawler that did nothing but read this message, and mapped 163
             # nodes - the entire ancestor closure of the transistor - in eight
             # rounds, while `why` and `path` dutifully refused every one of them.
-            # Fog that one error message undoes is not fog.
-            known = [p for p in missing if self.is_visible(p, _memo=_memo)]
-            hidden = len(missing) - len(known)
-            if not getattr(self, "fog", False) or not hidden:
-                return False, "missing prerequisites: " + ", ".join(missing)
-            bits = []
-            if known:
-                bits.append("missing prerequisites: " + ", ".join(known))
-            bits.append("%d other thing%s you have not heard of yet"
-                        % (hidden, "" if hidden == 1 else "s"))
-            return False, "; and ".join(bits) if known else \
-                ("this needs %s, and you do not yet know what %s"
-                 % (bits[-1], "they are" if hidden > 1 else "it is"))
+            # Fog that one error message undoes is not fog. The formatting
+            # itself lives in missing_prereq_message (fog.py) now, shared with
+            # `bounty`, so there is exactly one fog filter for this sentence
+            # rather than one per caller.
+            return False, self.missing_prereq_message(missing, _memo=_memo)
         if not self.substitution_quality(k)[1]:
             _grp, _opts = getattr(self, "_last_subst_gap", None) or (None, [])
             _seen = [o for o in _opts

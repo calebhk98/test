@@ -554,21 +554,43 @@ class EconomyMixin:
             # from a debt cost a little standing and nothing else, and standing
             # grows back. A person who has just been written off does not get
             # a fresh line of credit the following morning.
-            self.credit_frozen_until = max(getattr(self, "credit_frozen_until", 0),
-                                           yr + 12)
+            _frozen_before = getattr(self, "credit_frozen_until", 0)
+            self.credit_frozen_until = max(_frozen_before, yr + 12)
             # SAY WHAT ACTUALLY HAPPENED. "The debt is written off" while
             # leaving the player owing a third of their credit line is a
             # sentence that contradicts the number on the next line, and a
             # weird-play tester watched it fire eight times and concluded it
             # did nothing at all. Most of it goes; what is left, and what it
             # cost your name, is the part worth reading.
+            #
+            # AND SAY IF THE UNLOCK DATE JUST MOVED. A second settlement
+            # while the first freeze had not yet lifted pushes it from yr+5
+            # or yr+12 out to a fresh yr+12 with nothing said about it - an
+            # England playtester watched their own credit-freeze date move
+            # silently three times (1313, then 1320, then 1330) with no
+            # event naming the change. A deadline that quietly slides is
+            # worse than a longer fixed one would have been.
+            # A FREEZE HAS TO HAVE BEEN ACTUALLY IN FORCE to "move" - the
+            # default _frozen_before of 0 is "never frozen", not a freeze
+            # that this settlement then extended, and comparing only the
+            # before/after VALUES said a date had moved on every first-ever
+            # settlement (0 -> yr+12 is a bigger number, by that test, same
+            # as a real extension).
+            _moved = (_frozen_before > yr
+                     and self.credit_frozen_until > _frozen_before)
             self.log.append((yr, "INSOLVENCY SETTLED: most of the debt is written "
                                  "off and you still owe about %s denarii. Your "
                                  "name is worth less for it (reputation %s), and "
-                                 "you keep your knowledge and your practice"
+                                 "you keep your knowledge and your practice%s"
                                  % ("{:,.0f}".format(limit * 0.35),
                                     "-%.1f" % _rep_hit if _rep_hit > 0.05
-                                    else "already at nothing, so no further")))
+                                    else "already at nothing, so no further",
+                                    (". Settling again while still frozen out "
+                                     "pushes the date nobody will fund you "
+                                     "again until from %d out to %d - it moves "
+                                     "with every settlement, not just the first"
+                                     % (_frozen_before, self.credit_frozen_until))
+                                    if _moved else "")))
 
     def stall_diagnosis(self):
         """None if the run is going somewhere; otherwise what is wrong and what
@@ -598,7 +620,12 @@ class EconomyMixin:
         # above "Net/yr: -159.5" and reported the banner as quoting a loss that
         # is not the loss.
         interest = max(0.0, -self.capital) * self.debt_interest_rate()
-        net = (self.revenue() - self.upkeep() - self.living_cost()
+        # revenue_capacity(), to actually BE "the same net the ledger
+        # prints" above, now that the ledger's own net_per_year reads it
+        # too - both were reading plain revenue() and calling themselves
+        # the standing figure, which is exactly what revenue_capacity()
+        # exists to be instead.
+        net = (self.revenue_capacity() - self.upkeep() - self.living_cost()
                - self.mine_operating_cost() - interest)
         if net >= 0:
             return None
