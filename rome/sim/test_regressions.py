@@ -9267,6 +9267,67 @@ check("the wheel concept itself, human-powered wheeled transport, and "
        "lnd_litter" in _s_mex4.done,
        "cap_power_muscle" in _s_mex4.done))
 
+# --- a failed attempt teaches you something (projects.py: retry learning) ---
+# A player who had already won the game: a failed high-pressure steam system
+# used to reset the calendar floor to zero and roll again at the identical
+# probability, as if the first attempt had never happened. Now failed_attempts
+# (counted since before this round, never spent) buys BOTH a smaller chance of
+# failing the same way twice and a banked share of the calendar clock - see
+# projects.py's own section comment on _complete for the full reasoning.
+_s_rl = sim(capital=10 ** 9)
+_rl_k = [k for k in NODES if NODES[k]["risk"] >= 0.15][0]
+# _retry_risk_multiplier reads failed_attempts off the Sim itself, so the
+# cleanest way to check the whole decaying sequence is to walk it forward by
+# setting failed_attempts directly rather than actually rolling failures.
+_seq = []
+for _m in range(5):
+    _s_rl.failed_attempts[_rl_k] = _m
+    _seq.append(_s_rl.effective_risk(_rl_k))
+check("attempt one faces the bare, untrained risk - nothing has been "
+      "learned yet because nothing has failed yet",
+      _seq[0] == NODES[_rl_k]["risk"], _seq[0])
+check("each later attempt's risk is strictly lower than the one before it, "
+      "and a fourth attempt (three failures in) is meaningfully better than "
+      "the first, not just marginally",
+      all(_seq[i] < _seq[i - 1] for i in range(1, 5))
+      and _seq[3] <= _seq[0] * 0.75, _seq)
+check("...but it is never a guarantee: risk never reaches zero, bounded "
+      "below by RETRY_RISK_FLOOR's own share of the bare risk",
+      all(s_ >= NODES[_rl_k]["risk"] * _s_rl.RETRY_RISK_FLOOR - 1e-9 for s_ in _seq),
+      _seq)
+_s_rl.failed_attempts[_rl_k] = 0
+
+class _AlwaysFails(random.Random):
+    """0.0 is below every risk the tree defines, so this fails every roll -
+    the mirror image of path_search.py's own DetRNG, which returns 1.0 to
+    never fail anything."""
+    def random(self):
+        return 0.0
+
+
+_s_cal = sim(capital=10 ** 9)
+_cal_k = [k for k in NODES if NODES[k]["risk"] >= 0.15 and NODES[k]["yrs"] >= 5][0]
+_cal_floor = NODES[_cal_k]["yrs"]
+_s_cal.rng = _AlwaysFails()
+_banked = []
+for _ in range(4):
+    _s_cal.active[_cal_k] = dict(ph_left=0.0, yrs=_cal_floor, spent=0.0,
+                                 cost_left=0.0)
+    _s_cal.done.discard(_cal_k)
+    _s_cal._complete(_cal_k)
+    _banked.append(_s_cal.active[_cal_k]["yrs"])
+check("even the FIRST failure already banks a real share of the elapsed "
+      "clock - the social groundwork a failed attempt leaves behind does "
+      "not vanish with it",
+      0 < _banked[0] < _cal_floor, (_banked, _cal_floor))
+check("every later failure banks MORE of the clock than the one before, "
+      "with shrinking increments, and never the full floor",
+      all(_banked[i] > _banked[i - 1] for i in range(1, 4))
+      and all(b < _cal_floor for b in _banked), (_banked, _cal_floor))
+check("...capped well short of the whole floor - RETRY_CALENDAR_CAP's own "
+      "share - so a retried programme is readier, never instantly ready",
+      _banked[-1] <= _cal_floor * _s_cal.RETRY_CALENDAR_CAP + 1e-6, _banked)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
