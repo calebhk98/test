@@ -2925,22 +2925,82 @@ class EconomyMixin:
     DEPLETION_HALF_LIFE_YRS = 120.0
     DEPLETION_FLOOR = 0.5
 
-    def mine_depletion_factor(self, mat):
-        """Fraction of day-one yield a working of this material still gets,
-        from cumulative intensity (see the class comment above)."""
-        yrs = getattr(self, "mine_intensity_yrs", None)
-        i = (yrs or {}).get(mat, 0.0)
+    # ---- A WORKING IS A THING, NOT AN ENTRY IN A MATERIAL-KEYED DICT -------
+    #
+    # A player who had won the game asked for exactly this: which mine,
+    # rated capacity, actual output, cost, utilisation, the year it came on
+    # stream, and whether it is a real supply or merely an asset sitting on
+    # the books. None of that could be answered before, because there was no
+    # "it" - self.mine_capacity was one float per material, open_mine()
+    # added to it, and depletion (below) aged the WHOLE material at once, so
+    # a shaft opened in year 400 was exactly as worked-out as one opened
+    # three centuries earlier purely because they shared a material key.
+    # self.mines is the fix: a list of actual workings, each its own dict
+    # with the material it raises, its rated capacity, the year it was
+    # commissioned, what it cost to sink, and its OWN depletion clock
+    # (intensity_yrs) running from that year, not from whenever the
+    # material was first touched. self.mine_capacity below is now a
+    # PROPERTY summed over this list - the "six bugs in a week from a fact
+    # living in two places" the job asked not to repeat - so it can be read
+    # everywhere it already was, but nothing can silently drift it out of
+    # step with the workings that actually make it up.
+    def _workings_of(self, mat):
+        """This civilisation's own workings raising `mat`, in the order they
+        were commissioned (self.mines is append-only in commission order,
+        never hash-ordered, so this is deterministic across runs)."""
+        return [w for w in getattr(self, "mines", ()) if w.get("material") == mat]
+
+    @property
+    def mine_capacity(self):
+        """Rated capacity of your own workings, summed by material -
+        DERIVED from self.mines, not a second number that has to agree with
+        it. Read-only: opening, closing and mothballing a working all act
+        on self.mines itself (see open_mine/commission_mines/close_mine/
+        mothball_mines), and this recomputes from whatever that list says."""
+        out = {}
+        for w in getattr(self, "mines", ()):
+            out[w["material"]] = out.get(w["material"], 0.0) + w["capacity"]
+        return out
+
+    def mine_depletion_factor_for(self, working):
+        """Fraction of day-one yield THIS working still gets, from ITS OWN
+        cumulative intensity since ITS OWN commissioning year (see the class
+        comment above `_workings_of`) - the per-working half of the fix."""
+        i = working.get("intensity_yrs", 0.0)
         return max(self.DEPLETION_FLOOR, 1.0 - i / self.DEPLETION_HALF_LIFE_YRS)
 
+    def mine_depletion_factor(self, mat):
+        """This material's CURRENT typical depletion, as the
+        capacity-weighted average across your existing workings of it - used
+        to price a NEW working before it has any history of its own (see
+        mining_cost_scale/mine_quote/open_mine: the ground here is however
+        worked-out your existing shafts say it is) and for the one-line
+        summary mine_depletion_note() gives. A material with no workings yet
+        has no history to weight, so this is 1.0: the book price, day one."""
+        workings = self._workings_of(mat)
+        total = sum(w["capacity"] for w in workings)
+        if total <= 0:
+            return 1.0
+        return sum(self.mine_depletion_factor_for(w) * w["capacity"]
+                   for w in workings) / total
+
     def _advance_mine_depletion(self):
-        """One year of intensity for every material you currently hold
-        capacity in. Called once a year from commission_mines(), which
+        """One year of intensity for every working you currently hold,
+        each aged from ITS OWN commissioning year rather than the
+        material's. Called once a year from commission_mines(), which
         core.py's step() already calls exactly once a year -- see that
-        function's own comment -- so this needed no new call site."""
-        self.mine_intensity_yrs = getattr(self, "mine_intensity_yrs", collections.Counter())
-        for mat in sorted(self.mine_capacity):
-            ceiling = max(1.0, self.mine_land_ceiling(mat))
-            self.mine_intensity_yrs[mat] += self.mine_capacity[mat] / ceiling
+        function's own comment -- so this needed no new call site.
+
+        Iterates self.mines (a list, in commission order) and caches
+        mine_land_ceiling() per material seen rather than per working, so
+        this is neither hash-ordered (self.mines is a list) nor quadratic in
+        the number of workings of one material."""
+        ceilings = {}
+        for w in getattr(self, "mines", ()):
+            mat = w["material"]
+            if mat not in ceilings:
+                ceilings[mat] = max(1.0, self.mine_land_ceiling(mat))
+            w["intensity_yrs"] = w.get("intensity_yrs", 0.0) + w["capacity"] / ceilings[mat]
 
     # ---- TECHNOLOGY: the pump, the railway and cheap steel fight back -----
     #
@@ -3030,6 +3090,30 @@ class EconomyMixin:
         _y, cost = self.mining_tech(mat)
         return max(0.4, min(2.5, cost / self.mine_depletion_factor(mat)))
 
+    def mining_cost_scale_for(self, working):
+        """Same as mining_cost_scale(), but for what running THIS working
+        costs this year, from ITS OWN depletion rather than its material's
+        average - an old, half-worked shaft costs more per tonne to keep
+        running than a fresh one of the same material, which the old
+        material-level figure could not say because it had no idea which
+        working was which."""
+        _y, cost = self.mining_tech(working["material"])
+        return max(0.4, min(2.5, cost / self.mine_depletion_factor_for(working)))
+
+    def mine_yield_t_for(self, working):
+        """Tonnes a year THIS working actually raises this year, after ITS
+        OWN depletion and current mining technology."""
+        yld, _cost = self.mining_tech(working["material"])
+        return working["capacity"] * self.mine_depletion_factor_for(working) * yld
+
+    def mine_operating_cost_for(self, working):
+        """What THIS working costs to run this year, whether or not you use
+        what it raises - mine_operating_cost()'s per-working figure, the one
+        `mines` shows against each row."""
+        mat = working["material"]
+        return (working["capacity"] * self._mine_opex(mat) * self.price_index
+                * self.mining_cost_scale_for(working))
+
     def mine_quote(self, mat, t_per_yr):
         """What a mine would cost, BEFORE you commit to it.
 
@@ -3081,25 +3165,21 @@ class EconomyMixin:
                 "note": note}
 
     def mine_yield_t(self, mat):
-        """Tonnes a year this working ACTUALLY raises this year, after
-        depletion and technology -- the number `mines` should show, not the
-        nominal tonnage sunk. Same figure _own_material_supply("mine:"+mat)
-        computes; exposed directly so a command surface does not have to
-        know that tag-string convention to ask."""
-        yld, _cost = self.mining_tech(mat)
-        return self.mine_capacity.get(mat, 0.0) * self.mine_depletion_factor(mat) * yld
+        """Tonnes a year ALL your workings of this material actually raise
+        this year, after each one's OWN depletion and current technology --
+        the number `mines` should show summed, not the nominal tonnage
+        sunk. Same figure _own_material_supply("mine:"+mat) computes;
+        exposed directly so a command surface does not have to know that
+        tag-string convention to ask. Sums mine_yield_t_for() over
+        _workings_of(mat), a list in commission order, so this needs no
+        sorted() to stay deterministic across hash seeds."""
+        return sum(self.mine_yield_t_for(w) for w in self._workings_of(mat))
 
-    def mine_depletion_note(self, mat):
-        """One sentence on why a working's actual output differs from the
-        tonnage you sank capital into, for the same reason goods_market_
-        note() exists for a concern's revenue: a player whose coal yield has
-        fallen over the decades must be able to find out why without
-        guessing. None if there is nothing to explain (a fresh working, no
-        relevant technology)."""
-        if mat not in self.mine_capacity:
-            return None
-        depl = self.mine_depletion_factor(mat)
-        yld, cost = self.mining_tech(mat)
+    def _mine_depletion_note_from(self, depl, yld):
+        """Shared sentence-builder behind mine_depletion_note() (a
+        material's average) and mine_depletion_note_for() (one working's
+        own figures) - the same wording either way, just fed a different
+        depletion fraction."""
         if abs(depl - 1.0) < 0.01 and abs(yld - 1.0) < 0.01:
             return None
         bits = []
@@ -3115,6 +3195,28 @@ class EconomyMixin:
                         "back up")
         return "; ".join(bits)
 
+    def mine_depletion_note(self, mat):
+        """One sentence on why this material's workings, ON AVERAGE, yield
+        less than the tonnage sunk into them - for the same reason
+        goods_market_note() exists for a concern's revenue: a player whose
+        coal yield has fallen over the decades must be able to find out why
+        without guessing. None if there is nothing to explain (no workings,
+        or a fresh one with no relevant technology). See
+        mine_depletion_note_for() for the SAME sentence about one
+        particular working rather than the material's blended average."""
+        if not self._workings_of(mat):
+            return None
+        yld, _cost = self.mining_tech(mat)
+        return self._mine_depletion_note_from(self.mine_depletion_factor(mat), yld)
+
+    def mine_depletion_note_for(self, working):
+        """mine_depletion_note(), for one working's OWN depletion rather
+        than its material's average across every working of it - the
+        figure the `mines` row for this specific working should explain."""
+        yld, _cost = self.mining_tech(working["material"])
+        return self._mine_depletion_note_from(
+            self.mine_depletion_factor_for(working), yld)
+
     def close_mine(self, mat):
         """Shut your own workings down, on purpose.
 
@@ -3123,16 +3225,20 @@ class EconomyMixin:
         mine producing 0.0 tonnes and could do nothing about it.
         """
         mat = self._normalize_material_name(mat)
-        have = self.mine_capacity.get(mat, 0.0)
+        workings = self._workings_of(mat)
         pend = [t for t in getattr(self, "mine_tranches", []) if t[0] == mat]
-        if not have and not pend:
+        if not workings and not pend:
             return False, ("you have no %s workings, and none being sunk" % mat
                            if self.mineable(mat)
                            else "no such material: %s. %s"
                                 % (mat, self.mine_catalog_hint()))
-        saved = (have * self._mine_opex(mat) * self.price_index
-                 * self.mining_cost_scale(mat))
-        self.mine_capacity.pop(mat, None)
+        # Each working's OWN cost, not the material average - closing two
+        # workings of very different ages must save exactly what those two
+        # were actually costing, not a figure blended across every shaft of
+        # this material as if they were all worked equally hard.
+        saved = sum(self.mine_operating_cost_for(w) for w in workings)
+        self.mines = [w for w in getattr(self, "mines", [])
+                     if w.get("material") != mat]
         self.mine_tranches = [t for t in getattr(self, "mine_tranches", [])
                               if t[0] != mat]
         self.log.append((self.year, "you close the %s workings" % mat))
@@ -3174,7 +3280,8 @@ class EconomyMixin:
         # have; without the geology half, a founder could sink a tin mine in
         # a province with no tin in it, at the same size as one with plenty.
         ceiling = self.mine_land_ceiling(mat)
-        t_per_yr = min(t_per_yr, max(0.0, ceiling - self.mine_capacity.get(mat, 0.0)
+        have_cap = self.mine_capacity
+        t_per_yr = min(t_per_yr, max(0.0, ceiling - have_cap.get(mat, 0.0)
                                           - self.mine_pending.get(mat, 0.0)))
         if t_per_yr <= 0:
             return 0.0
@@ -3205,23 +3312,42 @@ class EconomyMixin:
         # spare cash every year, which is exactly what a poor civilization must
         # do, pushed the finish line back annually and never got any capacity at
         # all: a playtester funded sixty consecutive years and ended with an
-        # empty mine_capacity.
+        # empty mine_capacity. It also means each tranche becomes its own
+        # WORKING once it commissions (see commission_mines) rather than
+        # being folded into one number for the material - `cost` is carried
+        # along so that working can say what it actually cost to sink, not
+        # a figure recomputed later against a price_index that has since moved.
         self.mine_tranches = getattr(self, "mine_tranches", [])
-        self.mine_tranches.append([mat, t_per_yr, self.year + self.MINE_LEAD_YEARS])
+        self.mine_tranches.append([mat, t_per_yr, self.year + self.MINE_LEAD_YEARS, cost])
         self.mine_pending[mat] = self.mine_pending.get(mat, 0.0) + t_per_yr
         return t_per_yr
 
     def commission_mines(self):
-        """Move finished workings from pending into capacity, tranche by tranche."""
+        """Move finished tranches from pending into standing workings
+        (self.mines), tranche by tranche. Each tranche becomes exactly one
+        working, commissioned in the year it actually came on stream (the
+        tranche's own `ready` year, which is when its own depletion clock
+        starts - see _advance_mine_depletion) - not merged into any other
+        working of the same material, so a shaft opened in year 400 stays
+        a distinct, unworn thing next to one opened three centuries before
+        it."""
+        self.mines = getattr(self, "mines", [])
         still = []
-        for mat, amount, ready in getattr(self, "mine_tranches", []):
+        for tranche in getattr(self, "mine_tranches", []):
+            mat, amount, ready = tranche[0], tranche[1], tranche[2]
+            # capex_paid: absent on a tranche written by a save from before
+            # this field existed (see SAVE_FIELDS/load_state) - honestly
+            # unknown, not fabricated, so 0.0 rather than a guess.
+            capex_paid = tranche[3] if len(tranche) > 3 else 0.0
             if self.year >= ready:
-                self.mine_capacity[mat] = self.mine_capacity.get(mat, 0.0) + amount
+                self.mines.append({"material": mat, "capacity": amount,
+                                   "opened_year": ready, "capex_paid": capex_paid,
+                                   "intensity_yrs": 0.0})
                 self.mine_pending[mat] = max(0.0, self.mine_pending.get(mat, 0.0) - amount)
                 if self.mine_pending.get(mat, 0.0) <= 0:
                     self.mine_pending.pop(mat, None)
             else:
-                still.append([mat, amount, ready])
+                still.append(tranche)
         self.mine_tranches = still
         # ONE YEAR OF DEPLETION. core.py's step() calls commission_mines()
         # exactly once a year (see its own comment, "materials: buy the
@@ -3235,18 +3361,25 @@ class EconomyMixin:
         Mothballing is not free to reverse: the shaft floods, the timbering
         rots and the crew disperses, so bringing capacity back means paying to
         sink it again through open_mine. That is the honest cost of having
-        overbuilt."""
+        overbuilt. Cuts every working of the worst-value material by half
+        rather than removing whole workings outright, so the ones that
+        survive keep their own real commissioning year and depletion clock
+        instead of the newest or oldest being arbitrarily preferred."""
         order = sorted(self.mine_capacity, key=lambda m: -self._mine_opex(m))
         for m in order:
             if self.capital >= 0:
                 break
-            cut = self.mine_capacity[m] * 0.5
-            self.mine_capacity[m] -= cut
-            self.capital += cut * self._mine_opex(m) * self.price_index
+            kept = []
+            for w in self._workings_of(m):
+                cut = w["capacity"] * 0.5
+                self.capital += cut * self._mine_opex(m) * self.price_index
+                w["capacity"] -= cut
+                if w["capacity"] >= 1.0:
+                    kept.append(w)
+            self.mines = [w for w in self.mines
+                         if w.get("material") != m] + kept
             self.log.append((self.year, "MOTHBALLED half the %s workings; you could "
                                         "not pay to keep them running" % m))
-            if self.mine_capacity[m] < 1.0:
-                self.mine_capacity.pop(m)
         # This used to clamp capital to minus one year's revenue every time any
         # mine was held, which forgave debt the mothballing had not actually
         # paid off. A playtester proved it to the cent: capital landed on
@@ -3257,13 +3390,16 @@ class EconomyMixin:
     def mine_operating_cost(self):
         """Charged every year the workings stand, whether or not you use them.
 
-        Each material's own mining_cost_scale(): a deposit you have worked
+        Each WORKING's own mining_cost_scale_for(): a shaft you have worked
         hard for a long time, with no pumping or drilling to show for it,
         costs more than book to keep running, exactly as sinking more of it
-        now does in open_mine()."""
-        return sum(self.mine_capacity.get(m, 0.0) * self._mine_opex(m)
-                   * self.mining_cost_scale(m)
-                   for m in sorted(self.mine_capacity)) * self.price_index
+        now does in open_mine() - and, since this sums per working rather
+        than per material average, two workings of the same material at
+        different ages now cost what they actually, individually cost.
+        Iterates self.mines, a list in commission order rather than a set
+        or dict, so this stays deterministic across hash seeds with no
+        sorted() needed."""
+        return sum(self.mine_operating_cost_for(w) for w in getattr(self, "mines", ()))
 
     # ~1 iugerum of woodland per 0.25 ha. Named so that `quote forest` and the
     # purchase itself cannot drift apart: a break tester spent 68% of their

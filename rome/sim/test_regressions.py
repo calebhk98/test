@@ -392,7 +392,8 @@ better, why = s.hazard_relief("staff_loss")
 check("medicine blunts a plague", bare == 1.0 and better < 0.6 and why,
       "%.2f -> %.2f %s" % (bare, better, why))
 s2 = sim()
-s2.mine_capacity["gold"] = 1.0
+s2.mines.append({"material": "gold", "capacity": 1.0, "opened_year": s2.year,
+                 "capex_paid": 0.0, "intensity_yrs": 0.0})
 gold, _ = s2.hazard_relief("real_erosion")
 check("your own gold mine blunts a debasement", gold < 0.5, "%.2f" % gold)
 
@@ -6297,13 +6298,18 @@ for _t in s_bound.MINING_TECH:
 for _t in s_bound.MINING_TECH_STEEL:
     s_bound.done.add(_t); s_bound.operating.add(_t)
 s_bound._done_changed()
-s_bound.mine_intensity_yrs = collections.Counter({"coal": 1e9})
+# A working of its own, fully depleted from its own commissioning year (see
+# economy.py's class comment above _workings_of) - mine_intensity_yrs no
+# longer exists at all; depletion is per-working now.
+s_bound.mines.append({"material": "coal", "capacity": 1.0, "opened_year": 1,
+                      "capex_paid": 0.0, "intensity_yrs": 1e9})
 check("even fully depleted with every relevant technology built, a tonne "
       "still costs something (not free) and not a runaway multiple of book",
       0.4 <= s_bound.mining_cost_scale("coal") <= 2.5,
       s_bound.mining_cost_scale("coal"))
 s_bound2 = sim(capital=1.0)
-s_bound2.mine_intensity_yrs = collections.Counter({"coal": 1e9})
+s_bound2.mines.append({"material": "coal", "capacity": 1.0, "opened_year": 1,
+                       "capex_paid": 0.0, "intensity_yrs": 1e9})
 check("fully depleted with NO relevant technology, cost is higher, not "
       "lower, than the technology-equipped case above",
       s_bound2.mining_cost_scale("coal") > s_bound.mining_cost_scale("coal"),
@@ -6346,6 +6352,143 @@ _snap_a = _mine_snapshot("0")
 _snap_b = _mine_snapshot("12345")
 check("mine depletion is identical under a different PYTHONHASHSEED",
       _snap_a == _snap_b and _snap_a, (_snap_a, _snap_b))
+
+# =============================================================================
+# A WORKING IS A THING: self.mines is a list of individual workings, each
+# with its own material, rated capacity, commissioning year and depletion
+# clock, rather than one float per material - see economy.py's class
+# comment above _workings_of(). mine_capacity is now a property SUMMED
+# over that list, not a second number kept in sync by hand.
+# =============================================================================
+
+# --- the actual bug this exists to fix: two workings of the SAME material,
+# opened at different times, must not share one depletion clock. A shaft
+# opened later must end up LESS worked-out than one opened earlier and
+# driven the same way for longer - "a shaft opened in year 400 is not
+# three centuries into its seam because an earlier one was."
+s_two = sim(capital=1e9)
+s_two.open_mine("coal", s_two.mine_land_ceiling("coal") * 0.4, partial=False)
+for _ in range(50):
+    s_two.year += 1
+    s_two.commission_mines()
+s_two.open_mine("coal", s_two.mine_land_ceiling("coal") * 0.2, partial=False)
+for _ in range(50):
+    s_two.year += 1
+    s_two.commission_mines()
+check("opening a second coal working later gives TWO distinct workings of "
+      "the same material, not one merged capacity number",
+      len(s_two.mines) == 2 and len(set(w["opened_year"] for w in s_two.mines)) == 2,
+      [(w["opened_year"], w["capacity"]) for w in s_two.mines])
+_older = min(s_two.mines, key=lambda w: w["opened_year"])
+_newer = max(s_two.mines, key=lambda w: w["opened_year"])
+check("...and the newer working is measurably LESS worked-out than the "
+      "older one, having had less time to deplete from its OWN "
+      "commissioning year rather than inheriting the older one's clock",
+      s_two.mine_depletion_factor_for(_newer)
+      > s_two.mine_depletion_factor_for(_older),
+      (s_two.mine_depletion_factor_for(_older),
+       s_two.mine_depletion_factor_for(_newer)))
+check("...and mine_yield_t (the material total) is exactly the sum of "
+      "each working's own actual output, not the nominal tonnage sunk",
+      abs(s_two.mine_yield_t("coal")
+          - sum(s_two.mine_yield_t_for(w) for w in s_two.mines)) < 1e-6,
+      s_two.mine_yield_t("coal"))
+_saved_expected = sum(s_two.mine_operating_cost_for(w) for w in s_two.mines)
+_ok, _msg = s_two.close_mine("coal")
+check("closing a material closes every working of it and refunds the SUM "
+      "of each working's OWN operating cost, not a material-average figure",
+      _ok and abs(round(_saved_expected, 0)
+                  - float(re.search(r"stop paying ([\d.]+)", _msg).group(1))) < 1.0,
+      _msg)
+check("...and every coal working is actually gone, not just one of them",
+      not s_two._workings_of("coal"), s_two.mines)
+
+# --- determinism, extended to SEVERAL workings across SEVERAL materials at
+# once: self.mines is a list (append/commission order), not a set, and
+# mine_capacity/mine_operating_cost/mine_yield_t/mine_depletion_factor all
+# derive from it, so none of that arithmetic may depend on PYTHONHASHSEED
+# even with more than one working of the same material in play together -
+# proven across FOUR hash seeds, not two, because a regression here would
+# most plausibly come from a dict/set built while grouping workings by
+# material, and a coincidence surviving four seeds is far less likely than
+# surviving two.
+def _mines_snapshot(seed_env):
+    p = subprocess.run(
+        [sys.executable, "-c",
+         "import sys; sys.path.insert(0,'.'); import random, simulator as S; "
+         "T,P,N,W,G = S.load(); _l,O,_b = S.load_strategy('recommended', N, T['meta']['goal_node']); "
+         "s = S.Sim(N, O, random.Random(1), events=False, manual=True, "
+         "civ=S.load_civ('rome_100ad'), cfg={'start_capital':1e9}); "
+         "s.open_mine('coal', s.mine_land_ceiling('coal')*0.4, partial=False); "
+         "s.open_mine('iron', s.mine_land_ceiling('iron')*0.3, partial=False); "
+         "[s.__setattr__('year', s.year+1) or s.commission_mines() for _ in range(6)]; "
+         "s.open_mine('coal', s.mine_land_ceiling('coal')*0.2, partial=False); "
+         "s.open_mine('copper', s.mine_land_ceiling('copper')*0.5, partial=False); "
+         "[s.__setattr__('year', s.year+1) or s.commission_mines() for _ in range(80)]; "
+         "print(repr(sorted((m, round(v, 9)) for m, v in s.mine_capacity.items()))); "
+         "print(round(s.mine_yield_t('coal'), 9)); "
+         "print(round(s.mine_operating_cost(), 9)); "
+         "print(sorted((w['material'], w['opened_year'], round(w['intensity_yrs'], 9)) for w in s.mines))"],
+        capture_output=True, text=True, timeout=60, cwd=HERE,
+        env=dict(os.environ, PYTHONHASHSEED=seed_env))
+    return p.stdout
+_snaps = {seed: _mines_snapshot(seed) for seed in ("0", "1", "12345", "999983")}
+check("several workings across several materials give byte-identical "
+      "mine_capacity/mine_yield_t/mine_operating_cost and per-working "
+      "intensity under four different PYTHONHASHSEED values",
+      len(set(_snaps.values())) == 1 and all(_snaps.values()), _snaps)
+
+# --- SAVES: a working survives a save and resume, with its own material,
+# capacity, commissioning year and depletion clock intact - not merely
+# the aggregate mine_capacity total.
+s_sv = sim(capital=1e9)
+s_sv.open_mine("coal", s_sv.mine_land_ceiling("coal") * 0.4, partial=False)
+for _ in range(6):
+    s_sv.year += 1
+    s_sv.commission_mines()
+_sv_path = os.path.join(HERE, "_test_mines_save.json")
+S.save_state(s_sv, _sv_path)
+s_sv2 = sim(capital=1.0)
+S.load_state(s_sv2, _sv_path)
+os.remove(_sv_path)
+check("a save/resume round-trip keeps the SAME working - material, rated "
+      "capacity, commissioning year and its own depletion clock - not just "
+      "the aggregate tonnage",
+      len(s_sv2.mines) == 1
+      and s_sv2.mines[0]["material"] == "coal"
+      and abs(s_sv2.mines[0]["capacity"] - s_sv.mines[0]["capacity"]) < 1e-6
+      and s_sv2.mines[0]["opened_year"] == s_sv.mines[0]["opened_year"]
+      and abs(s_sv2.mines[0]["intensity_yrs"] - s_sv.mines[0]["intensity_yrs"]) < 1e-9,
+      s_sv2.mines)
+check("...and mine_capacity (the derived property) agrees after the "
+      "round-trip, exactly as it did before saving",
+      abs(s_sv2.mine_capacity.get("coal", 0.0)
+          - s_sv.mine_capacity.get("coal", 0.0)) < 1e-6,
+      (s_sv.mine_capacity, s_sv2.mine_capacity))
+
+# --- SAVES, backward compatibility: a save written before workings existed
+# (an old-style "mine_capacity" dict, no "mines" list at all) still loads,
+# carries its capacity forward as one working per material, and does NOT
+# fabricate a commissioning year it never recorded.
+s_old = sim(capital=1.0)
+_old_blob = {"year": 150.0, "capital": 1000.0, "done": {"__set__": []},
+            "granted": {"__set__": []}, "active": {}, "_civ": s_old.civ.get("id"),
+            "_version": 1, "mine_capacity": {"coal": 250.0, "iron": 0.0}}
+_old_path = os.path.join(HERE, "_test_old_mines_save.json")
+with open(_old_path, "w") as _fh:
+    json.dump(_old_blob, _fh)
+S.load_state(s_old, _old_path)
+os.remove(_old_path)
+check("a save from before workings existed still loads and carries "
+      "capacity forward as a working, WITHOUT fabricating a commissioning "
+      "year it never recorded",
+      len(s_old.mines) == 1 and s_old.mines[0]["material"] == "coal"
+      and abs(s_old.mines[0]["capacity"] - 250.0) < 1e-6
+      and s_old.mines[0]["opened_year"] is None,
+      s_old.mines)
+check("...and a zero-capacity legacy entry (iron: 0.0) is not carried "
+      "forward as a phantom working",
+      not s_old._workings_of("iron"), s_old.mines)
 
 # =============================================================================
 # REPUTATION: a tester reported it rewards raw completion count, so it can
@@ -9579,8 +9722,12 @@ check("the three new commands are advertised in KNOWN_COMMANDS, the same "
 # two screens drifting apart instead of a playtester finding two different
 # answers to "what is my coal mine actually raising".
 _s_cap = sim(capital=2_000_000.0)
-_s_cap.mine_capacity["iron"] = 500.0
-_s_cap.mine_capacity["coal"] = 900.0
+_s_cap.mines.append({"material": "iron", "capacity": 500.0,
+                     "opened_year": _s_cap.year, "capex_paid": 0.0,
+                     "intensity_yrs": 0.0})
+_s_cap.mines.append({"material": "coal", "capacity": 900.0,
+                     "opened_year": _s_cap.year, "capex_paid": 0.0,
+                     "intensity_yrs": 0.0})
 _dash = S._agent_dispatch(_s_cap, NODES, {"cmd": "capacity"})
 _mines_standalone = S._agent_dispatch(_s_cap, NODES, {"cmd": "mines"})
 check("`capacity` embeds the exact same mine rows `mines` returns on its "
