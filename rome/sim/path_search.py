@@ -45,11 +45,31 @@ downstream of those three and can never even start. And the planner's own
 with no idea the tree has any scarce labour at all - hands the household
 several more nodes (locomotives, TNT, dynamite, double-acting engines) that
 draw on the EXACT SAME five trades, spread through the order specifically so
-they compete with the spine for it throughout the run.
+they compete with the spine for it throughout the run. Ranking those
+candidates by how soon they can even legally start instead looks like an
+obvious fix and is NOT one - tried and measured (see `pick_side_branches`'s
+own docstring and PATH_SEARCH.md), it left Rome roughly unchanged and cost
+Han 124 years, or cost Rome the goal entirely within 1,200 years once
+reworked to stop doing that to Han. Reverted; recorded so nobody re-walks
+into it.
 
-THE SEARCH. Two moves, applied to the CPM order `planner.backward_plan`
-already computes, chosen because they attack this specific, measured
-constraint rather than guessing at the space of all 168! orderings:
+A SECOND, LARGER CONSTRAINT, MEASURED THE SAME WAY (against the real
+rome_434_goal_startable.json / rome_380_corpus_bug.json fixtures - a player
+three times stronger than this order): the planned order's dice-free trial
+sits at capital -4,789, zero scholars, zero artisans and 30/168 of the
+closure done at year 434 AD, against the fixture's +607,402,406 / 162 / 491
+/ 167/168 at the SAME calendar year - and stays that poor, essentially
+unchanged, for roughly 850 MORE years (see PATH_SEARCH.md). Every one of the
+eight institutions `planner.pick_staffing` already names - the same ones
+that train the scholars and artisans `staff_capacity()` gates almost
+everything else on - was founded by that player 322 to 800+ years before
+this order manages it. `diagnose_capital_trap` reads this off a live Sim
+the same way `diagnose_scarce_trades` already does; `grow_supply` (move 3
+below) is what tries to do something about it.
+
+THE SEARCH. Three moves, applied to the CPM order `planner.backward_plan`
+already computes, chosen because they attack these specific, measured
+constraints rather than guessing at the space of all 168! orderings:
 
   1. PULL every side branch that draws on a currently-scarce trade OUT of
      the interleaved order entirely, to the very end (after the spine, after
@@ -69,20 +89,35 @@ constraint rather than guessing at the space of all 168! orderings:
      is a strict refinement of the tie-break planner.py already documents as
      legitimate, not a new principle.
 
-Both moves are computed FROM a diagnostic run of the real Sim, not from a
-second model of the tree - `diagnose_scarce_trades` reads `s.active`,
-`s.employees` and `s.hours_you_can_call_on` off an actual simulated
-household, the same object `run` would build. Each round re-diagnoses from
-the new order's own simulated state, so a trade that stops being scarce
-(finished, unblocked) stops being treated as one, and a round that does not
-improve on the previous best is simply not kept - see `search()`. This is
-"repeatedly relaxing whatever the binding constraint turns out to be", one
-of the two methods the brief itself names, chosen over a from-scratch
-metaheuristic (random-restart hill-climbing over raw orderings, simulated
-annealing, ...) because the constraint here is not diffuse - it is these
-five trades, provably - and searching blindly over 168! orderings to
-rediscover a fact already visible in `s.active` would be slower and no more
-honest than reading it off the Sim directly.
+  3. GROW THE SUPPLY (`grow_supply`): when a dice-free trial reads as the
+     capital trap above, try founding each of `planner.pick_staffing`'s
+     institutions, one at a time, and keep only the ones a fresh dice-free
+     trial measures as genuinely better - not "obviously helpful", the same
+     discipline as move 1. This is the one move that can ADD something to
+     the order rather than only resequence what moves 1 and 2 are given;
+     see PATH_SEARCH.md for what it found when actually tried against this
+     tree, honestly, rather than assumed either way.
+
+All three moves are computed FROM a diagnostic run of the real Sim, not from
+a second model of the tree - `diagnose_scarce_trades` and
+`diagnose_capital_trap` read `s.active`, `s.employees`, `s.capital`,
+`s.scholars`/`s.artisans` and `s.hours_you_can_call_on` off an actual
+simulated household, the same object `run` would build. Each round
+re-diagnoses from the current order's own simulated state, so a trade that
+stops being scarce (finished, unblocked) stops being treated as one, and a
+round - or a candidate institution - that does not improve on the previous
+best is simply not kept - see `search()`. This is "repeatedly relaxing
+whatever the binding constraint turns out to be", one of the two methods the
+brief itself names, extended from "resequence what is named" (moves 1-2) to
+"try adding what is missing" (move 3) once resequencing alone was measured,
+across a wide range of side-branch counts and placements, not to touch this
+particular constraint at all (PATH_SEARCH.md). Still chosen over a
+from-scratch metaheuristic (random-restart hill-climbing over raw orderings,
+simulated annealing, ...) because the constraints here are not diffuse -
+they are five named trades and eight named institutions, provably - and
+searching blindly over 168! orderings to rediscover a fact already visible
+in `s.active`/`s.capital` would be slower and no more honest than reading it
+off the Sim directly.
 """
 import argparse, os, random, sys, time
 
@@ -224,8 +259,46 @@ def stuck_active(s, need):
     return sorted(out)
 
 
+def diagnose_capital_trap(s, need, min_closure_frac=0.9):
+    """Is this dice-free household caught in the insolvency cycle
+    `engine/projects.py` (`enforce_credit_limit`/`auto_open_ventures`) itself
+    documents as a known risk - "half the credit line is the line: below it
+    you can still open your way out, above it you are digging" - rather than
+    genuinely progressing?
+
+    MEASURED, AGAINST THE 434 AD FIXTURE, NOT GUESSED. Rome's planned order,
+    run dice-free to year 434, sits at capital -4,789, zero scholars, zero
+    artisans, 30/168 of the closure done; the fixture (a real, far stronger
+    playthrough) is at +607,402,406, 162 scholars, 491 artisans, 167/168 at
+    the SAME calendar year. Traced further, the planned order's own capital
+    stays negative and its scholars/artisans stay at exactly 0.00 for roughly
+    850 more years (see PATH_SEARCH.md): a run in this state is not merely
+    slow, it is not accumulating either of the two things - money or trained
+    people - that everything else in the engine gates on. Both being still
+    at (approximately) zero this deep into a run, with most of the goal's
+    own closure still undone, is the read-off-the-Sim signature of that
+    trap, not a structural guess about WHY it is trapped.
+
+    NOT "capital < 0" ALONE - a household that is merely poor early on, on
+    its way to being rich later (Han's own dice-free trial dips negative for
+    a while too, see PATH_SEARCH.md section 1), is not this. It is the
+    COMBINATION - negative capital, no staff to speak of, most of a long
+    goal still undone - that marks a household stuck rather than simply
+    early.
+    """
+    if s.capital >= 0:
+        return None
+    if s.scholars > 1.0 or s.artisans > 1.0:
+        return None
+    done_frac = sum(1 for k in need if k in s.done) / max(1, len(need))
+    if done_frac >= min_closure_frac:
+        return None
+    return {"capital": s.capital, "scholars": s.scholars, "artisans": s.artisans,
+            "closure_done_frac": done_frac}
+
+
 # ----------------------------------------------------------------------------
-# The two moves
+# The moves
 # ----------------------------------------------------------------------------
 
 def _needs(nodes, k, trades):
@@ -296,12 +369,65 @@ def spt_within_slack_bands(order, nodes, need, c, scarce):
     return out
 
 
+def grow_supply(nodes, goal, need, s0, cur_order, cur_extras, civ, horizon,
+                 side_branch_every, base_fit, log):
+    """Move 3: GROW THE SUPPLY, rather than only resequence what is already
+    named - the move the brief itself asked for and the first two moves
+    cannot express between them.
+
+    Pulling a side branch to the end (move 1) or resequencing a tied slack
+    band (move 2) both only change WHICH of the goal's own closure or the
+    named side branches goes first; neither can add anything NEW. The
+    player behind rome_434_goal_startable.json reached 434 AD with 607
+    million denarii, 636 employees and 167/168 of the closure done -
+    against this order's -4,789, zero, zero and 30/168 at the identical
+    calendar year (see PATH_SEARCH.md) - and every one of the eight
+    institutions `planner.pick_staffing` already NAMES (it schedules none
+    of them - see its own docstring) was founded by that player 322 to 800+
+    years before this order manages it. That is growth this move can
+    actually try: found an institution, and see whether the household it
+    produces is genuinely better off, not assume it either way.
+
+    MEASURED, NOT ASSUMED, ONE AT A TIME. `pick_staffing`'s own earlier
+    finding - "putting them in this order made the run worse" - tested
+    adding ALL of them, unconditionally, at the very front. This tries each
+    one individually, appended to whatever extras already survived, and
+    keeps it only if a fresh dice-free trial's `fitness` is STRICTLY better
+    with it than without - the same "measure, do not assume" discipline
+    `refine()` (planner.py) already applies to a captured winner's order,
+    applied here to a candidate institution instead. A candidate that is
+    not kept is not tried again the same way; the order is exactly as if it
+    had never been offered.
+    """
+    candidates = [k for k in _planner.pick_staffing(nodes, need, s0)
+                  if k not in cur_extras]
+    extras = list(cur_extras)
+    fit = base_fit
+    tried = []
+    for k in candidates:
+        trial_extras = extras + [k]
+        spine = [x for x in cur_order if x in need]
+        trial_order = _planner.interleave(spine, trial_extras, side_branch_every)
+        full = _planner._repaired(nodes, goal, trial_order)
+        sim = deterministic_sim(nodes, full, goal, civ, horizon)
+        trial_fit = fitness(sim, need)
+        kept = trial_fit > fit
+        tried.append({"institution": k, "kept": kept, "fitness": trial_fit})
+        log("    try founding %-22s -> %s (closure %d, capital %.0f)"
+            % (k, "kept: genuinely better" if kept else "discarded: no better",
+               trial_fit[2], trial_fit[3]))
+        if kept:
+            extras, fit = trial_extras, trial_fit
+    return extras, fit, tried
+
+
 # ----------------------------------------------------------------------------
 # The search itself: diagnose, relax, re-simulate, keep what improves
 # ----------------------------------------------------------------------------
 
 def search(civ="rome_100ad", goal=None, side_branches=12, side_branch_every=8,
-           rounds=6, horizon=500, backlog_ratio=6.0, seed_order=None, log=print):
+           rounds=6, horizon=500, backlog_ratio=6.0, seed_order=None,
+           grow_supply_moves=True, log=print):
     """Plan by CPM, then repeatedly diagnose the binding constraint against a
     dice-free trial of the current order and relax it, keeping whichever
     round's order scored best (see `fitness`).
@@ -311,10 +437,23 @@ def search(civ="rome_100ad", goal=None, side_branches=12, side_branch_every=8,
     straight through to the initial CPM pass so `--search-rounds` composes
     with `--seed-strategy` instead of ignoring it.
 
+    `grow_supply_moves`: try `grow_supply` (move 3, founding institutions
+    one at a time, kept only if measured better) whenever a round's own
+    dice-free trial reads as the capital trap `diagnose_capital_trap`
+    describes. Tried AT MOST ONCE per search() call, regardless of how many
+    rounds run: the trap, once present, is measured (PATH_SEARCH.md) to
+    persist for centuries under this order, so a round that finds it still
+    present after growth was already tried once would only re-discover the
+    same "no better" answer at the cost of one dice-free trial per
+    candidate institution, every round, for no new evidence. `False` skips
+    move 3 entirely and reproduces the exact behaviour this module had
+    before it existed.
+
     Returns (best_order, best_extras, history) where `history` is one dict
-    per round: the scarce trades found, the stuck nodes they explain, and
-    the fitness reached - the evidence `main()` writes into the strategy
-    file's own rationale and PATH_SEARCH.md draws its numbers from.
+    per round: the scarce trades found, the stuck nodes they explain, the
+    capital trap diagnosis (if any) and what growing supply did about it,
+    and the fitness reached - the evidence `main()` writes into the
+    strategy file's own rationale and PATH_SEARCH.md draws its numbers from.
     """
     ensure_fixed_hash_seed()
     tree, prices, nodes, wages, goods = load()
@@ -328,6 +467,7 @@ def search(civ="rome_100ad", goal=None, side_branches=12, side_branch_every=8,
     history = []
     best_order, best_extras, best_fit = order, extras, None
     cur_order, cur_extras = order, extras
+    grown = False
     for rnd in range(rounds):
         full = _planner._repaired(nodes, goal, cur_order)
         sim = deterministic_sim(nodes, full, goal, civ, horizon)
@@ -335,20 +475,49 @@ def search(civ="rome_100ad", goal=None, side_branches=12, side_branch_every=8,
         stuck = stuck_active(sim, need)
         outstanding = [k for k in (need | set(cur_extras)) if k not in sim.done]
         scarce = diagnose_scarce_trades(sim, nodes, outstanding, backlog_ratio)
+        trap = diagnose_capital_trap(sim, need)
         rec = {"round": rnd, "goal_year": sim.goal_year,
                "closure_done": fit[2], "capital": sim.capital,
                "stuck": stuck, "scarce_trades": sorted(scarce),
-               "scarce_detail": scarce}
+               "scarce_detail": scarce, "capital_trap": trap, "grow_supply_tried": []}
         history.append(rec)
-        log("  round %d: %d/%d closure nodes done%s, stuck on %s, scarce trade(s): %s"
+        log("  round %d: %d/%d closure nodes done%s, stuck on %s, scarce trade(s): %s%s"
             % (rnd, fit[2], len(need),
                (" (goal reached %d AD)" % sim.goal_year) if sim.goal_year else "",
-               ", ".join(stuck) or "(nothing)", ", ".join(sorted(scarce)) or "(none)"))
+               ", ".join(stuck) or "(nothing)", ", ".join(sorted(scarce)) or "(none)",
+               ", capital trap (capital %.0f, %.1f closure done)"
+               % (trap["capital"], trap["closure_done_frac"]) if trap else ""))
         if best_fit is None or fit > best_fit:
             best_fit, best_order, best_extras = fit, cur_order, cur_extras
         if sim.goal_year:
             log("  goal reached; stopping the search early")
             break
+        # MOVE 3, AT MOST ONCE: grow the supply itself rather than only
+        # resequence what is already named - see grow_supply's own
+        # docstring for why this is a genuinely different kind of move from
+        # 1 and 2 below, and the module docstring / PATH_SEARCH.md for why
+        # it is tried and measured here rather than assumed to help.
+        if grow_supply_moves and trap and not grown:
+            grown = True
+            log("  capital trap detected; trying grow_supply (founding "
+                "institutions one at a time, kept only if measured better)")
+            new_extras, new_fit, tried = grow_supply(
+                nodes, goal, need, s0, cur_order, cur_extras, civ, horizon,
+                side_branch_every, fit, log)
+            rec["grow_supply_tried"] = tried
+            if new_fit > fit:
+                cur_extras = new_extras
+                cur_order = _planner.interleave(
+                    [k for k in cur_order if k in need], cur_extras, side_branch_every)
+                fit = new_fit
+                if fit > best_fit:
+                    best_fit, best_order, best_extras = fit, cur_order, cur_extras
+                log("  grow_supply improved this round's order; continuing "
+                    "from it")
+                continue
+            log("  grow_supply tried %d candidate(s), kept none: no "
+                "institution measured better than the order without it"
+                % len(tried))
         if not scarce:
             # Nothing currently reads as a resource bottleneck by this
             # round's own diagnosis. Either the run is money/calendar-bound
@@ -393,6 +562,11 @@ def main():
                     help="a strategy name or path whose order breaks ties "
                          "among nodes the critical path ranks as equally "
                          "urgent, same as planner.py's own --seed-strategy")
+    ap.add_argument("--no-grow-supply", action="store_true",
+                    help="skip move 3 (founding institutions one at a time, "
+                         "kept only if measured better) and reproduce this "
+                         "module's behaviour before it existed - moves 1 and "
+                         "2 (pulling/resequencing what is already named) only")
     a = ap.parse_args()
     ensure_fixed_hash_seed()
     t0 = time.time()
@@ -400,10 +574,13 @@ def main():
     seed_order = _planner.load_seed(a.seed_strategy, _nodes0)
     order, extras, history = search(a.civ, a.goal, a.side_branches,
                                     a.side_branch_every, a.rounds, a.horizon,
-                                    a.backlog_ratio, seed_order=seed_order)
+                                    a.backlog_ratio, seed_order=seed_order,
+                                    grow_supply_moves=not a.no_grow_supply)
     tree, _p, nodes, _w, _g = load()
     goal = resolve_goal(tree, nodes, a.goal)
     last = history[-1]
+    grown = [h for h in history if h["grow_supply_tried"]]
+    kept = [t["institution"] for h in grown for t in h["grow_supply_tried"] if t["kept"]]
     rationale = [
         "Deterministic search (rome/sim/path_search.py): CPM order, then up "
         "to %d rounds of diagnosing the binding constraint against a "
@@ -415,6 +592,15 @@ def main():
                 (", goal reached %d AD" % last["goal_year"]) if last["goal_year"] else "",
                 ", ".join(last["scarce_trades"]) or "(none)"),
     ]
+    if grown:
+        n_tried = sum(len(h["grow_supply_tried"]) for h in grown)
+        rationale.append(
+            "Grow-supply (move 3): a capital trap was diagnosed and %d "
+            "candidate institution(s) were tried, one at a time, each kept "
+            "only if a fresh dice-free trial measured strictly better with "
+            "it than without. Kept: %s."
+            % (n_tried, ", ".join(kept) if kept else "none - no institution "
+               "measured better than the order without it"))
     _planner.write_strategy(a.out, "SEARCHED (deterministic): %s over %s's "
                             "critical-path order, relaxed against its own "
                             "scarce-trade bottleneck" % (goal, a.civ),

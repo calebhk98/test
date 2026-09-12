@@ -194,6 +194,36 @@ def pick_side_branches(nodes, need, s, limit):
     as is; the real fix for what actually blocks the goal is
     `closure()` seeing the single-option req_any groups it used to
     walk straight past, not this.
+
+    REACHABILITY WAS TRIED HERE, MEASURED, AND REVERTED - recorded because
+    the next agent tempted by the same obvious-looking fix should not have
+    to re-discover this by hand. Ranking by net/cost ALONE, with no regard
+    for how much of the tree still stands between "today" and "legal", does
+    name tr_articulated_locomotive (71 unmet prerequisites), chm_tnt (66),
+    chm_dynamite (67), en_double_acting (47) and en_draft_tube (43) among
+    the twelve side branches meant to fund the OPENING - exactly the kind of
+    side branch path_search.py's own module docstring already found
+    competing with the spine for scarce trades centuries into a run, because
+    that is the earliest any of them can possibly fire. Sorting candidates
+    by `_closure_depth` (the size of the candidate's own unmet-prerequisite
+    closure - the same measure `_room_advice` in labour.py already sorts
+    "nearest first" by) instead of, or even only as a tiebreak after
+    filtering out the deepest candidates from, the net/cost ranking looked
+    like a strict improvement and is not one: tried head to head against
+    this version (PATH_SEARCH.md has the full account), depth-first ranking
+    left Rome roughly where it already was (goal year 1121 against 1119-1121
+    baseline - no real change) but pushed HAN from year 551 to year 675 -
+    124 years worse - and a depth-CAPPED hybrid that fixed Han back to 549
+    instead left Rome never reaching the goal at all inside a 1,200-year
+    horizon where the unfiltered version reaches it at 1121. Swapping out
+    which five-or-so cheap, otherwise-interchangeable-looking ventures get
+    named measurably changes WHEN this tree's own insolvency-recovery and
+    named-trade auto-teach cycles happen to align (see PATH_SEARCH.md), in
+    neither a monotonic nor a predictable direction - so "more reachable"
+    is not "safer" here, and no version of this idea that was tried left
+    both civilisations no worse off than before. The original ranking -
+    net/cost alone, not reachability-aware - is kept for that reason: it is
+    the one of the three tried that regresses neither civilisation.
     """
     cands = []
     for k, n in nodes.items():

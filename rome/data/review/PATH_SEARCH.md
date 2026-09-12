@@ -305,3 +305,287 @@ number that was true of "as far as this session could afford to compute
 an hour ago" stopped being the right answer the moment a performance fix
 made computing further affordable, and the fix was to re-run, not to
 footnote the old number and move on.
+
+## 4. The 434 AD fixture: a player three times better than this order, and why
+
+A human player reached the point where `junction_transistor` is startable in
+Rome at **434 AD - 334 years from the 100 AD start**, with 167 of the goal's
+168 closure nodes done, 607,402,406 denarii at roughly +4,045,403/year,
+636 employees (451 artisans, 148 scholars, 7.48 each of chemist/electrician/
+engineer/machinist/optician), 88% general literacy and 2,132 technologies
+done out of 2,836 in the tree. This is preserved as
+`rome/playtest/fixtures/rome_434_goal_startable.json`, alongside an earlier
+save from the same playthrough, `rome/playtest/fixtures/rome_380_corpus_bug.json`
+(year 380, capital 309,213,069, 24 ventures operating). Both are real saves,
+not constructed for this report, and both are read directly below, not
+summarised from memory.
+
+Section 1's own number for the SAME order, run completely dice-free, was
+**1,017 years**; measured fresh against the current tree for this section it
+is **1,119 AD - 1,019 years** (the tree has drifted in the time since
+section 1 was written - see "A warning" below and the DICE_FREE_FLOOR_YEARS
+update at the end of this section). Either way: a strictly luckier
+instrument - no sack, no hazard, no project ever fails, an immortal founder -
+reaches the goal roughly three times SLOWER than a real, unlucky player who
+failed the point-contact transistor six times before succeeding on the
+seventh. That gap is not luck. It is policy, and this section measures
+exactly what policy, before section 5 tries to fix it.
+
+### 4.1 The same calendar year, two completely different households
+
+Running the planner's own default order (`plan`, no flags - CPM plus 12
+return-on-capital side branches, side_branch_every 8) dice-free and reading
+its state at year 434 AD, against the fixture's actual state at the same
+calendar year:
+
+| | planner's order, dice-free, year 434 | the player, year 434 (fixture) |
+|---|---:|---:|
+| capital | **-4,789** | **+607,402,406** |
+| employees (named trades + artisan + scholar) | **0** (entirely) | **636** |
+| scholars | 0.00 | 162 |
+| artisans | 0.00 | 491.44 |
+| reputation | 33.3 | 92.8 |
+| goal's closure done | **30 / 168** | **167 / 168** |
+| institutions running (of the 8 `pick_staffing` names) | 1 (workshop_first) | 5 |
+| total nodes done (tree has 2,836) | 425 | 2,132 |
+
+Every one of these numbers was read off the same two objects - a live
+`Sim` for the planner's order, the fixture's own JSON for the player - at
+the identical `year` field. The planner's order is not merely behind; at
+the SAME calendar year it has no staff of any kind, negative capital, and
+five-sixths of the goal's closure still untouched, while the player has
+finished the tree almost end to end and is sitting on over half a billion
+denarii. This is not a tech-tree-ordering gap. It is the gap the brief's own
+prior names: "the planner has no model of money, staff or calendar... the
+player built an ECONOMY and an INSTITUTIONAL BASE first and then bought the
+closure outright."
+
+### 4.2 The institutions the player founded in a decade - and when the planner's own order gets to each of them
+
+`planner.pick_staffing` already NAMES the eight institutions that train
+scholars and artisans (`collegium_licensed`, `freedman_staff`,
+`school_founded`, `corpus_dispersed`, `patron_senatorial`, `patron_imperial`,
+`academy_network`, `endowment_land`); its own docstring explains why it
+does not schedule them ("measured, putting them in this order made the run
+worse"). The player founded every one of them, back to back, in a single
+decade. The planner's default order gets to each of them too - eventually:
+
+| institution | player founded it (AD) | planner's order reaches it (AD, dice-free) | gap |
+|---|---:|---:|---:|
+| workshop_first | 205 | 127 | planner is EARLIER here |
+| citizenship (not an institution, but gates collegium_licensed) | 202 | 201 | essentially identical |
+| collegium_licensed | 206 | 528 | **+322 years** |
+| freedman_staff | 207 | 739 | **+532 years** |
+| school_founded | 211 | 788 | **+577 years** |
+| patron_senatorial | 226 | 796 | **+570 years** |
+| corpus_dispersed | 230 | 1,007 | **+777 years** |
+| endowment_land | 216 | 1,000 | **+784 years** |
+| patron_imperial | 322 | 1,001 | **+679 years** |
+| academy_network | 240 | 1,023 | **+783 years** |
+
+The planner's order is not slow to REACH the point where these become
+legal - `workshop_first` and `citizenship` land within a few years of the
+player, via the same mandatory, zero-slack chain
+(`identity_cover` -> `patron_local` -> `workshop_first`). What diverges
+completely is everything downstream of that point: the player turns that
+foothold into the entire institutional ladder inside thirty-five years;
+the planner's order sits on the SAME foothold for five to eight CENTURIES
+before the remaining seven institutions get founded, by which point the
+goal itself is only decades away.
+
+### 4.3 The proximate mechanism: a credit-exhaustion cycle the engine's own code already names
+
+Tracing the planner's default order year by year (dice-free) explains why.
+Within five years of the 100 AD start, the household has committed to
+`identity_cover` (1,580), `patron_local` (1,200) and `workshop_first`
+(5,757) - all three genuinely zero-slack prerequisites of the goal - while
+the engine's own reactive "earn a living" fallback (`core.py`, "EARN A
+LIVING FIRST") simultaneously commits it to `exp_trade_route_extend`
+(cost 4,800, net +1,700/year, a 2.8-year payback - the single best-paying
+LEGAL venture the moment `patron_local` unlocks it, chosen by the engine
+itself from the ENTIRE tree, not from anything this strategy file names).
+Capital goes from +232 (year 101) to -4,023 (year 105) in four years,
+against a 400-denarii starting kit.
+
+`exp_trade_route_extend` finishes (year 116) but - per `auto_open_ventures`'
+own documented guard ("nothing opens while you are deep in arrears... half
+the credit line is the line: below it you can still open your way out,
+above it you are digging" - `engine/projects.py`) - is never actually
+OPENED: the household is already too deep in arrears for an ordinary
+venture to clear the gate, so the entire 4,800 denarii is sunk for zero
+revenue, ever. Capital sits between roughly -4,000 and -30,000 for the next
+~850 years, cycling through the engine's own named insolvency mechanics -
+`CREDIT EXHAUSTED: N projects stopped, unfinished` (year 907, 935),
+`INSOLVENCY SETTLED: most of the debt is written off... reputation -12.0`
+(907, 917, 936, each one pushing the credit freeze out another 12 years),
+`creditors took what they could: ... school_founded` / `freedman_staff,
+patron_senatorial, corpus_written, collegium_licensed` (935, 936 - two of
+the very institutions the previous subsection is about get built, THEN
+repossessed) - none of which this module edits or disputes; `engine/
+projects.py`'s own comments already call this exact risk out by name.
+
+The escape, when it finally comes (year 973-976), is not a credit event at
+all: `"2 machinists finish their training"`, `"you begin teaching the first
+opticians this world has ever had"`, `"chemist is no longer only your trade"`
+- the SAME once-a-decade-or-never auto-teach cycle section 1 already
+diagnosed for the five `TRADES_ABSENT` trades. The moment those trades
+exist, projects that had been logging `"cannot go on: no engineer here...
+abandoned"` for centuries start finishing, capital crosses from -18,653 to
++433 in one year and to +56,358 the next, and by year 1,000 the household
+holds 24.7 million denarii, 214 scholars and 540 artisans. Section 1's
+named-trade freeze and this section's credit-exhaustion cycle are not two
+separate bottlenecks - they are the SAME bottleneck, observed from two
+sides: the household cannot afford to keep the institutions that would
+train the trades, because the trades do not yet exist to make the
+institutions (or anything else) pay.
+
+### 4.4 Reordering alone cannot touch this - measured, not assumed
+
+Before concluding that, every one of the following was actually tried,
+dice-free, against the current tree, not reasoned about in the abstract:
+
+- `--side-branches 0` (no named side branches at all, pure CPM spine plus
+  the engine's own "rest" fallback): capital -4,789.4 at year 400,
+  identical to the default 12-side-branch order to the nearest tenth of a
+  denarius.
+- `--side-branches 60`, the candidate pool widened fivefold: capital
+  -5,407 at year 600 - no better, and the household's own `freedman_staff`
+  never even starts (legal, per `start_reason`, but refused by the
+  `start_project` ceiling check every time it is tried).
+- All twelve side branches moved to the very front of the order, ahead of
+  the entire spine, instead of interleaved one per eight spine nodes:
+  goal year 1,119, capital 1,772,085,619 - identical to the baseline to
+  the denarius. Reordering WHERE the twelve named side branches sit changed
+  nothing, because none of them is legal yet when it would matter (see
+  4.5) and the engine's own "earn a living" fallback already searches the
+  WHOLE tree for the best currently-legal earner regardless of what this
+  strategy file names or where it names it.
+- The `identity_cover -> patron_local -> workshop_first` chain deliberately
+  delayed by twenty spine positions: capital -4,789.4 at year 400 again,
+  identical to the unmodified order. Moving a handful of positions in a
+  168-node spine does not delay anything that has no other legal
+  competition in its own opening years.
+- All eight `pick_staffing` institutions merged into the side-branch list
+  and interleaved every four spine nodes instead of reported-only: WORSE,
+  not merely unchanged - capital frozen at exactly -5,071.09 for 200
+  straight years (300-500 AD), because the added upkeep (900-2,500/year
+  each) deepens the arrears the household can never climb back out of
+  faster than it already was.
+
+No version of reordering the strategy file - widening, narrowing,
+front-loading, interleaving, delaying, or adding institutions as named
+priorities rather than scheduled moves - moved Rome's dice-free floor by
+more than a rounding error, and one version made it measurably worse. This
+is the same honest finding section 2 already reached for the scarce-trade
+relaxation, now independently confirmed for a second, larger mechanism: **a
+priority list cannot out-argue the automatic optimizer's own reactive
+financial behaviour once revenue has gone thin, because that behaviour
+scans the whole tree for the best legal move every single year regardless
+of what any strategy file prefers, and "legal" here is decided by
+prerequisites and credit, neither of which a priority order changes.**
+
+### 4.5 A second, chaotic finding, also worth recording so nobody re-walks into it
+
+The obvious-looking refinement - rank `pick_side_branches`'s candidates by
+how soon they can legally start (the same "nearest first" measure
+`_room_advice` in `labour.py` already uses), instead of by return on
+capital alone, since the unfiltered ranking names side branches such as
+`tr_articulated_locomotive` (71 unmet prerequisites), `chm_tnt` (66) and
+`chm_dynamite` (67) that cannot fire for decades - was tried, head to head,
+and reverted. Ranked by reachability ALONE: Rome ends at 1,121 (no real
+change from 1,119) but Han goes from 551 to **675 - 124 years worse**. A
+depth-capped hybrid that restores Han to 549 instead leaves Rome **never
+reaching the goal inside a 1,200-year horizon** where the unmodified
+ranking reaches it at 1,121. Swapping out which five or six cheap,
+superficially interchangeable ventures get named measurably shifts WHEN
+this tree's own insolvency-recovery and named-trade auto-teach cycles
+happen to align - in neither a monotonic nor a predictable direction - so
+"more reachable" is not "safer" here. `planner.pick_side_branches` is
+therefore UNCHANGED from before this session (return on capital alone);
+the attempt and its exact numbers are recorded in its own docstring so the
+next agent tempted by the same fix does not have to re-discover this by
+hand.
+
+## 5. Growing the supply, honestly tried: path_search.py's third move
+
+The brief's own instruction, read literally: a search that may only permute
+the goal's closure cannot find what the 434 AD player did, because what
+that player did was not a permutation - it was growth. `path_search.py`
+now has a third move alongside the two section 2 already describes:
+
+**`grow_supply`** (and its diagnostic, `diagnose_capital_trap`): whenever a
+round's dice-free trial reads as the trap section 4.3 describes (capital
+negative, scholars and artisans both still under 1.0, most of the closure
+still undone), try founding each of `planner.pick_staffing`'s eight
+institutions, ONE AT A TIME, and keep the addition only if a fresh
+dice-free trial's `fitness` measures STRICTLY better with it than without -
+never "obviously helpful", the same discipline `refine()` already applies
+to a captured winner's order. This is the one move of the three that can
+ADD something to the order instead of only resequencing what is already
+named, and it is tried at most once per `search()` call (the trap, once
+present, is measured to persist for centuries - see 4.4 - so re-trying it
+every round would only re-spend the same compute to re-discover the same
+answer).
+
+**Measured, honestly, against the current tree: it kept none of the
+eight.** Every one of `collegium_licensed`, `freedman_staff`,
+`school_founded`, `corpus_dispersed`, `patron_senatorial`,
+`patron_imperial`, `academy_network` and `endowment_land`, tried
+individually at the search horizon, scored no better founded than not -
+consistent with 4.3's finding that the blocker is not "this strategy file
+never names these institutions" (it does, via `pick_staffing`) but "the
+household cannot afford to keep them running once named, because the
+credit-exhaustion cycle and the named-trade freeze are the same
+bottleneck, and founding an institution earlier does not clear either
+one." `grow_supply` reports this plainly (`--search-no-grow-supply` turns
+it off and reproduces the search's exact prior behaviour) rather than
+silently doing nothing: a round that tries eight candidates and keeps zero
+is recorded in the search's own history and in the strategy file's
+rationale, not hidden.
+
+## 6. The honest number, before and after, both civilisations
+
+| | Rome (`rome_100ad`) | Han (`han_china_100ad`) |
+|---|---:|---:|
+| dice-free, plain CPM order (`plan`, no search) | **1,119 AD / 1,019 years** | **551 AD / 451 years** |
+| dice-free, CPM + search (moves 1-2, scarce-trade relaxation) | 1,121 AD (one side branch pulled; no real change) | 551 AD (recognises success on round 0, no relaxation needed) |
+| dice-free, CPM + search + move 3 (`grow_supply`, this session's addition) | **1,119 AD - unchanged** (8 institutions tried, 0 kept) | **551 AD - unchanged** (no capital trap diagnosed; move 3 never triggers) |
+
+**The search is not faster than the plain CPM order on this tree, for
+either civilisation, even with a genuine capacity-growing move added to
+it, and that is reported plainly rather than tuned until a number looked
+better.** Rome's three-times-slower-than-the-player gap (1,019 dice-free
+years against the player's 334) is real, precisely diagnosed in section 4,
+and NOT closed by anything expressible as a strategy file under the
+current automatic optimizer: the mechanism blocking it - the engine's own
+reactive "earn a living" fallback combined with its credit-exhaustion
+cycle, which between them decide almost the entire opening and middle game
+regardless of what any `order` prefers - is not a sequencing problem. This
+is not a disappointing footnote to explain away; it is this section doing
+its job the same way section 2 already did for the scarce-trade case:
+trying a real, different kind of move, measuring it honestly against the
+SAME fixture-backed standard the brief set, and reporting that it does not
+move the number, rather than reporting a number that looks better than it
+measures.
+
+Both prior numbers in this document (1,017/1,121 for Rome, 555 for Han)
+have drifted slightly - now 1,119 and 551 - purely from the tree having
+moved under other agents' hands since section 1 was written; re-measured
+fresh, this session, the same way section 1's own warning insists on. The
+`DICE_FREE_FLOOR_YEARS` table in `engine/cli.py` (used only for the New
+Game difficulty menu's wording, never for anything this module or
+`planner.py` computes) is updated to match: `rome_100ad: 1019`,
+`han_china_100ad: 451`.
+
+A loose end, named rather than chased down: `engine/data.py`'s own
+`STARTING_KITS` comment claims "the median year the transistor is reached
+runs 476 destitute, 489 poor_scholar, 468 rich_merchant, 434 absurd" for
+Rome, measured "8 runs a kit, one seed" - numbers wildly different from
+everything in this section, and numbers this report does not use anywhere
+above for exactly the reason "A warning, taken seriously" already names:
+that comment does not say which strategy it measured, and Rome's own
+`planned_rome.json` history already has one proven instance (commit
+`758744b`, "10 of 10") of a pre-goal-retarget number being quoted as
+current. `engine/data.py` is not this module's file to correct; this is
+recorded here so whoever owns it next does not take that comment at face
+value either.

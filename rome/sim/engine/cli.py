@@ -34,13 +34,28 @@ from .protocol import (
 # Measured with every stroke of luck removed - no events, no project
 # failures, an immortal founder, the game's own planner doing the ordering -
 # reaching the current goal has taken about 451 years from Han China and
-# about 1,017 from Rome (see rome/data/review/PATH_SEARCH.md for the method
-# and the full tables). A 500-year Standard is generous for the one and
-# short of reachable for the other, and a menu that offers both civilisations
-# and both horizons with nothing connecting them is offering a choice it has
-# not explained. See _new_game's own use of this table for where that
-# connection actually gets said out loud, to whichever civilisation a player
-# has just picked.
+# about 1,019 from Rome (see rome/data/review/PATH_SEARCH.md section 6 for
+# the method and the full tables). A 500-year Standard is generous for the
+# one and short of reachable for the other, and a menu that offers both
+# civilisations and both horizons with nothing connecting them is offering a
+# choice it has not explained. See _new_game's own use of this table for
+# where that connection actually gets said out loud, to whichever
+# civilisation a player has just picked.
+#
+# THIS IS A MEASUREMENT OF THE PLANNER'S OWN POLICY, NOT A PROPERTY OF THE
+# GAME - say so, if this is ever quoted outside this file. PATH_SEARCH.md
+# section 4 traces Rome's 1,019-year figure to a specific, diagnosed cause
+# (an early credit-exhaustion cycle the automatic optimizer falls into and
+# does not climb back out of for roughly 850 years) and section 4.4 proves,
+# by direct ablation, that no reordering of the strategy file - which is
+# the entire space planner.py/path_search.py can search - changes it. A
+# real, far stronger playthrough (rome/playtest/fixtures/
+# rome_434_goal_startable.json) reaches the SAME goal in 334 years, three
+# times faster, by playing manually rather than by any order this table's
+# own instrument can express. Do not read 1,019 as "Rome cannot be won
+# faster" - only as "this structural instrument, searched honestly,
+# including a move that tries to grow the household's own capacity (see
+# PATH_SEARCH.md section 5), could not find an order that does."
 #
 # NOT RECOMPUTED HERE, EVER. A single dice-free trial takes anywhere from
 # several seconds (a short horizon, as path_search.py's own search rounds
@@ -52,7 +67,7 @@ from .protocol import (
 # being handed a guess dressed as a fact.
 DICE_FREE_FLOOR_YEARS = {
     "han_china_100ad": 451,
-    "rome_100ad": 1017,
+    "rome_100ad": 1019,
 }
 
 # NAMED, NOT INVENTED. Every one of these is the SAME knob the engine always
@@ -84,7 +99,7 @@ HORIZON_MODES = (
 # teach all of those call sites a special "no limit" value, several of which
 # live in protocol.py. 9,999 years is the answer instead: an order of
 # magnitude past the longest dice-free floor measured for any civilisation
-# above (1,017, for Rome) and further past that than any real game has ever
+# above (1,019, for Rome) and further past that than any real game has ever
 # been played, so nobody playing an actual game reaches it - which is the
 # only property "endless" needs to have in practice. `run`/`compare`/`plan`
 # and flag-driven `play`/`agent` never see this constant at all: it is
@@ -1548,7 +1563,8 @@ def cmd_plan(a):
         civ=a.civ, goal=a.goal, side_branches=a.side_branches,
         side_branch_every=a.side_branch_every, rounds=a.search_rounds,
         horizon=a.search_horizon, backlog_ratio=a.search_backlog_ratio,
-        seed_order=seed_order)
+        seed_order=seed_order,
+        grow_supply_moves=not a.search_no_grow_supply)
     last = history[-1]
     rationale = [
         "Deterministic search (path_search.py): critical-path order, then "
@@ -1562,6 +1578,17 @@ def cmd_plan(a):
            (", goal reached %d AD" % last["goal_year"]) if last["goal_year"] else "",
            ", ".join(last["scarce_trades"]) or "(none)"),
     ]
+    _grown = [h for h in history if h["grow_supply_tried"]]
+    if _grown:
+        _n_tried = sum(len(h["grow_supply_tried"]) for h in _grown)
+        _kept = [t["institution"] for h in _grown for t in h["grow_supply_tried"] if t["kept"]]
+        rationale.append(
+            "Grow-supply (move 3): a capital trap was diagnosed and %d "
+            "candidate institution(s) were tried, one at a time, each kept "
+            "only if a fresh dice-free trial measured strictly better with "
+            "it than without. Kept: %s."
+            % (_n_tried, ", ".join(_kept) if _kept else "none - no "
+               "institution measured better than the order without it"))
     if a.refine_rounds:
         # SAME RELATIONSHIP `plan()` ALREADY HAS TO `refine()`: the search's
         # own order and side branches become what gets measured and
@@ -2753,6 +2780,13 @@ def main():
                         "docstring on why a longer, slower verification run "
                         "is a separate step, not part of the search loop)")
     q.add_argument("--search-backlog-ratio", type=float, default=6.0)
+    q.add_argument("--search-no-grow-supply", action="store_true",
+                   help="skip the search's move 3 (founding institutions "
+                        "one at a time, kept only if a fresh dice-free trial "
+                        "measures the result as genuinely better) and use "
+                        "only moves 1-2 (pulling/resequencing what is "
+                        "already named) - the search's behaviour before "
+                        "move 3 existed")
     sub.add_parser("menu", help="pick a civilisation, read where you have landed, "
                                 "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
