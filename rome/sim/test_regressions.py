@@ -7,6 +7,8 @@ the reason this file exists: a fix verified once by hand is a fix that silently
 rots. Run it with `python3 rome/sim/test_regressions.py`.
 """
 import collections, copy, glob, json, os, random, re, subprocess, sys, time
+import concurrent.futures as _concurrent_futures
+import threading
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -24,6 +26,91 @@ FAILURES = []
 CHECKS_RUN = []
 SKIPPED = []
 _LAST_AT = time.time()
+
+# --- Where does the wall time actually go: waiting on a child process, or
+# doing our own work in this one? Every subprocess call in this file - the
+# ~150 through proto()/_run_agent()/_play()/_agent_session() and the ~30
+# direct subprocess.run() calls - goes through subprocess.run, so patching
+# the module function once here tallies all of them without touching any
+# call site. Set ROME_TEST_PROFILE=<path> to also dump the full per-check
+# timing table (not just the top 5 the normal summary prints) as JSON, for
+# deciding what is actually worth optimising rather than guessing.
+_SUBPROC_TIME = [0.0]
+_SUBPROC_CALLS = [0]
+_SUBPROC_LOCK = threading.Lock()
+_real_subprocess_run = subprocess.run
+
+
+def _timed_subprocess_run(*a, **kw):
+    t0 = time.time()
+    try:
+        return _real_subprocess_run(*a, **kw)
+    finally:
+        dt = time.time() - t0
+        with _SUBPROC_LOCK:
+            _SUBPROC_TIME[0] += dt
+            _SUBPROC_CALLS[0] += 1
+
+
+subprocess.run = _timed_subprocess_run
+_PROFILE_OUT = os.environ.get("ROME_TEST_PROFILE")
+
+# --- --jobs N: how many of the independent subprocess calls identified below
+# (each a fresh `proto()`/subprocess.run() with no shared session file, and
+# every one of them already independent of the others - that is what "fresh
+# session" means) may run at once. This does NOT reorder anything a human or
+# a diff would see: _par_map always returns results in the same order the
+# inputs were given, in the same order check() is then called on them, so
+# `--jobs 1` (the default) and `--jobs 4` print byte-identical output and
+# differ only in wall time. Real parallelism, not merely concurrency: each
+# unit of work is a CHILD PROCESS, so N of them genuinely run on N cores at
+# once - the GIL never enters into it, because the only thing this process's
+# own threads do is sit in os.waitpid.
+JOBS = 1
+for _jobs_argi, _jobs_arg in enumerate(sys.argv):
+    if _jobs_arg == "--jobs" and _jobs_argi + 1 < len(sys.argv):
+        try:
+            JOBS = max(1, int(sys.argv[_jobs_argi + 1]))
+        except ValueError:
+            pass
+    elif _jobs_arg.startswith("--jobs="):
+        try:
+            JOBS = max(1, int(_jobs_arg.split("=", 1)[1]))
+        except ValueError:
+            pass
+del _jobs_argi, _jobs_arg
+
+
+def _par_map(fn, items):
+    """Run fn(item) for each item in items, concurrently when --jobs > 1.
+
+    Only ever used where every call is already known to be independent of
+    every other (a fresh subprocess, no shared file) - see each call site's
+    own comment. Sequential fallback (--jobs 1, or a single item) is exactly
+    today's plain list comprehension, so this changes nothing about what
+    runs or in what order results come back, only whether more than one
+    child process may be in flight at once.
+    """
+    items = list(items)
+    if JOBS <= 1 or len(items) <= 1:
+        return [fn(x) for x in items]
+    with _concurrent_futures.ThreadPoolExecutor(max_workers=min(JOBS, len(items))) as ex:
+        return list(ex.map(fn, items))
+
+
+# --- progress, to stderr only (stdout - the thing diffed against an older
+# run - must stay byte-for-byte what it always was, --jobs or not). A suite
+# that runs for minutes with no output looks the same as one that is hung,
+# to a human watching or an agent that will be killed for taking too long.
+_PROGRESS_EVERY = 100
+_PROGRESS_START = time.time()
+
+
+def _progress_ping():
+    if len(CHECKS_RUN) % _PROGRESS_EVERY == 0:
+        sys.stderr.write("  ... %d checks, %.0fs elapsed\n"
+                          % (len(CHECKS_RUN), time.time() - _PROGRESS_START))
+        sys.stderr.flush()
 
 
 def sim(civ="rome_100ad", capital=None, manual=True, events=False):
@@ -81,6 +168,7 @@ def check(name, ok, detail=""):
     took = now - _LAST_AT
     _LAST_AT = now
     CHECKS_RUN.append((name, took))
+    _progress_ping()
     # str(): a failing check whose detail was a dict, a list or None used to
     # kill the whole suite here on a TypeError, so the one run that had
     # something to report was the one run that reported nothing.
@@ -167,10 +255,12 @@ check("freeing untrained people does not skip the training lag",
       s.artisans - a0 < 0.01, "instant gain %.2f" % (s.artisans - a0))
 
 # --- Han BREAK: why quoted a civilization-blind cost
-q = {}
-for civ in ("rome_100ad", "han_china_100ad"):
-    r, _, _ = proto([{"cmd": "why", "id": "blast_furnace"}], civ=civ)
-    q[civ] = r[0]["cost"]["total"]
+# Each civ gets its own fresh subprocess (proto() never takes a session
+# file), so the two calls are independent and safe to overlap under --jobs.
+_q_civs = ("rome_100ad", "han_china_100ad")
+_q_results = _par_map(lambda civ: proto([{"cmd": "why", "id": "blast_furnace"}],
+                                        civ=civ)[0], _q_civs)
+q = dict(zip(_q_civs, (r[0]["cost"]["total"] for r in _q_results)))
 check("why quotes a civilization-specific cost",
       q["rome_100ad"] != q["han_china_100ad"], str(q))
 
@@ -575,10 +665,20 @@ check("the menu offers every civilisation with its lore",
 
 # `play` was Rome-only and its loop ended at 100+horizon, so any civ that does
 # not start in year 100 ended before the player could type anything.
-for civ, first_year in (("norse_900ad", "900 AD"), ("mexica_1500", "1500 AD")):
-    p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
-                        "--manual", "--civ", civ],
-                       input="n\nq\n", capture_output=True, text=True, timeout=120, cwd=ROOT)
+# Each is its own fresh, unrelated `play` session (no --session file), so the
+# two civs are dispatched together and checked in order under --jobs.
+_civ_year_pairs = (("norse_900ad", "900 AD"), ("mexica_1500", "1500 AD"))
+
+
+def _play_manual_civ(pair):
+    civ, first_year = pair
+    return subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                           "--manual", "--civ", civ],
+                          input="n\nq\n", capture_output=True, text=True, timeout=120, cwd=ROOT)
+
+
+for (civ, first_year), p in zip(_civ_year_pairs,
+                                _par_map(_play_manual_civ, _civ_year_pairs)):
     check("play runs a civilisation that does not start in 100 AD (%s)" % civ,
           first_year in p.stdout and "Ended %s" % first_year not in p.stdout,
           p.stdout[-120:])
@@ -1720,10 +1820,24 @@ _bad_saves = {
     "an unrelated JSON object": json.dumps({"hello": "world"}),
     "missing required fields": json.dumps({"year": 100, "capital": 400}),
 }
-for _i, (_label, _content) in enumerate(_bad_saves.items()):
+# Each iteration writes its OWN uniquely-named file (bad0.json, bad1.json, ...)
+# before reading it back, so the file-writing stays sequential in this thread
+# and only the three independent proto() reads - each a fresh session, each
+# against its own file - are dispatched together under --jobs.
+_bad_items = [(i, label, content) for i, (label, content) in enumerate(_bad_saves.items())]
+_bad_names = []
+for _i, _label, _content in _bad_items:
     _name = "bad%d.json" % _i
     open(os.path.join(_loadtest_abs, _name), "w").write(_content)
-    _r, _, _ = proto([{"cmd": "state"}, {"cmd": "load", "file": _rel(_name)}, {"cmd": "state"}])
+    _bad_names.append(_name)
+
+
+def _load_bad(name):
+    return proto([{"cmd": "state"}, {"cmd": "load", "file": _rel(name)}, {"cmd": "state"}])[0]
+
+
+_bad_results = _par_map(_load_bad, _bad_names)
+for (_i, _label, _content), _r in zip(_bad_items, _bad_results):
     ok_before, resp, ok_after = _r[0], _r[1], _r[2]
     check("load refuses %s with a clear message, not a crash" % _label,
           resp.get("ok") is False and "Traceback" not in resp.get("error", "")
@@ -2628,9 +2742,13 @@ check("...and you can still build the balloon without one",
 # fifteen of them. Embedded whole, they took one `state full` reply to nearly
 # twenty thousand bytes and one `risk` reply to seventeen thousand - which is
 # the exact wall this interface was broken up to stop producing.
-for _civ_big in ("england_1300", "mexica_1500", "rome_100ad"):
-    _sf, _, _ = proto([{"cmd": "state", "full": True}, {"cmd": "risk"}],
-                      civ=_civ_big, fog=True)
+# Three fresh, unrelated sessions (proto() never shares a session file), so
+# dispatched together and checked in original civ order under --jobs.
+_big_civs = ("england_1300", "mexica_1500", "rome_100ad")
+_big_results = _par_map(
+    lambda civ: proto([{"cmd": "state", "full": True}, {"cmd": "risk"}],
+                      civ=civ, fog=True)[0], _big_civs)
+for _civ_big, _sf in zip(_big_civs, _big_results):
     check("%s: state full stays readable" % _civ_big,
           len(json.dumps(_sf[0])) < 9000, "%d bytes" % len(json.dumps(_sf[0])))
     check("%s: risk stays readable" % _civ_big,
@@ -5233,10 +5351,12 @@ check("...and reopening a shop the town already knows does not start it over",
 # --- BREAK: "FULL CHAIN BEHIND IT: ... N den" summed the tree's BASE cost and
 # applied none of the multipliers the same page prints. The eight
 # prerequisites of a telescope came out at 24,175 in all five civilisations.
-_chains = {}
-for _cid in ("rome_100ad", "han_china_100ad", "norse_900ad"):
-    _rc, _, _ = proto([{"cmd": "why", "id": "telescope"}], civ=_cid)
-    _chains[_cid] = _rc[0].get("chain_cost")
+# Three independent fresh sessions - dispatched together under --jobs.
+_chain_cids = ("rome_100ad", "han_china_100ad", "norse_900ad")
+_chain_results = _par_map(
+    lambda cid: proto([{"cmd": "why", "id": "telescope"}], civ=cid)[0][0].get("chain_cost"),
+    _chain_cids)
+_chains = dict(zip(_chain_cids, _chain_results))
 check("the full-chain bill is quoted at this society's prices",
       len(set(_chains.values())) == 3, _chains)
 check("...and the dearest society's chain really is the dearest",
@@ -6882,8 +7002,7 @@ def _goods_snapshot(seed_env):
         capture_output=True, text=True, timeout=60, cwd=HERE,
         env=dict(os.environ, PYTHONHASHSEED=seed_env))
     return p.stdout.strip()
-_gsnap_a = _goods_snapshot("0")
-_gsnap_b = _goods_snapshot("54321")
+_gsnap_a, _gsnap_b = _par_map(_goods_snapshot, ("0", "54321"))
 check("shared goods-category pricing is identical under a different "
       "PYTHONHASHSEED",
       _gsnap_a == _gsnap_b and _gsnap_a, (_gsnap_a, _gsnap_b))
@@ -7058,8 +7177,7 @@ def _mine_snapshot(seed_env):
         capture_output=True, text=True, timeout=60, cwd=HERE,
         env=dict(os.environ, PYTHONHASHSEED=seed_env))
     return p.stdout.strip()
-_snap_a = _mine_snapshot("0")
-_snap_b = _mine_snapshot("12345")
+_snap_a, _snap_b = _par_map(_mine_snapshot, ("0", "12345"))
 check("mine depletion is identical under a different PYTHONHASHSEED",
       _snap_a == _snap_b and _snap_a, (_snap_a, _snap_b))
 
@@ -7142,7 +7260,8 @@ def _mines_snapshot(seed_env):
         capture_output=True, text=True, timeout=60, cwd=HERE,
         env=dict(os.environ, PYTHONHASHSEED=seed_env))
     return p.stdout
-_snaps = {seed: _mines_snapshot(seed) for seed in ("0", "1", "12345", "999983")}
+_mines_seeds = ("0", "1", "12345", "999983")
+_snaps = dict(zip(_mines_seeds, _par_map(_mines_snapshot, _mines_seeds)))
 check("several workings across several materials give byte-identical "
       "mine_capacity/mine_yield_t/mine_operating_cost and per-working "
       "intensity under four different PYTHONHASHSEED values",
@@ -8816,7 +8935,13 @@ check("a trade practised for a fee (an assay office) still opens as a "
 # well above zero, so a change that either re-inflates the notation-as-shop
 # bug or blindly zeros revenue across the tree (destroying the real income
 # the game depends on) fails here rather than shipping.
-_venture_ct = sum(1 for k in NODES if sim().is_venture(k))
+# ONE Sim, not one per node: is_venture() only reads self.nodes/self.granted,
+# neither of which changes across k, so building a fresh Sim (~8ms) for each
+# of 2,849 nodes was paying that cost 2,849 times over for a value that never
+# moved - 22.6s of the suite's own time on a check that asserts nothing about
+# any INDIVIDUAL Sim, only a count. Measured via ROME_TEST_PROFILE.
+_venture_s = sim()
+_venture_ct = sum(1 for k in NODES if _venture_s.is_venture(k))
 check("the count of nodes offered to `open` as a concern is down from the "
       "break's 1,493, and not collapsed toward zero",
       1300 <= _venture_ct <= 1450, _venture_ct)
@@ -9028,8 +9153,7 @@ def _edu_snapshot(seed_env):
         capture_output=True, text=True, timeout=60, cwd=HERE,
         env=dict(os.environ, PYTHONHASHSEED=seed_env))
     return p.stdout.strip()
-_edu_a = _edu_snapshot("0")
-_edu_b = _edu_snapshot("98765")
+_edu_a, _edu_b = _par_map(_edu_snapshot, ("0", "98765"))
 check("literacy growth and trade absorption are identical under a "
       "different PYTHONHASHSEED",
       _edu_a == _edu_b and _edu_a, (_edu_a, _edu_b))
@@ -11264,8 +11388,7 @@ def _score_snapshot(seed_env):
         capture_output=True, text=True, timeout=60, cwd=HERE,
         env=dict(os.environ, PYTHONHASHSEED=seed_env))
     return p.stdout.strip()
-_score_seed_a = _score_snapshot("0")
-_score_seed_b = _score_snapshot("98765")
+_score_seed_a, _score_seed_b = _par_map(_score_snapshot, ("0", "98765"))
 check("the institutions component, and the total it feeds, are identical "
       "under a different PYTHONHASHSEED",
       _score_seed_a == _score_seed_b and _score_seed_a,
@@ -13432,8 +13555,7 @@ def _diffusion_snapshot(seed_env):
     return p.stdout.strip() or ("ERROR: " + p.stderr[-300:])
 
 
-_dif_a = _diffusion_snapshot("0")
-_dif_b = _diffusion_snapshot("24680")
+_dif_a, _dif_b = _par_map(_diffusion_snapshot, ("0", "24680"))
 check("the whole diffusion mechanism - food, medical, military, "
       "information and the population bonus it drives - gives identical "
       "results under a different PYTHONHASHSEED",
@@ -13647,4 +13769,11 @@ if slow and slow[0][1] >= 5.0:
             print("   %5.0fs  %s" % (t, nm))
 for f in FAILURES:
     print("   FAILED:", f)
+print("subprocess spawns: %d calls, %.0fs waiting on child processes"
+      % (_SUBPROC_CALLS[0], _SUBPROC_TIME[0]))
+if _PROFILE_OUT:
+    with open(_PROFILE_OUT, "w") as _pf:
+        json.dump({"checks": CHECKS_RUN, "subproc_time": _SUBPROC_TIME[0],
+                   "subproc_calls": _SUBPROC_CALLS[0],
+                   "total_wall": sum(t for _, t in CHECKS_RUN)}, _pf)
 sys.exit(1 if FAILURES else 0)
