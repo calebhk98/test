@@ -7153,11 +7153,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
             out["earned"] = round(pay, 1)
             out["it_cost_your_own_practice"] = round(_cost, 1)
             out["so_you_are_up"] = round(round(pay, 1) - round(_cost, 1), 1)
+            # "THE PRACTICE" THROUGHOUT, not "the surgery" halfway through.
+            # A Roman founder selling a year of smith's work does not have a
+            # surgery, and the sentence named the same thing two ways inside
+            # fourteen words.
             out["why"] = ("You cannot be in two places. Hours sold for wages "
-                          "come out of the practice, so what you really made "
-                          "this year is the wage less what the surgery did not "
-                          "take. Hours you put into your OWN projects do not "
-                          "cost you this.")
+                          "come out of your own practice, so what you really "
+                          "made this year is the wage less what the practice "
+                          "did not earn while you were gone. Hours you put "
+                          "into your OWN projects do not cost you this.")
         if err:
             out["but"] = err
         return out

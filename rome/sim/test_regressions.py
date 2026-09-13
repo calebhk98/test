@@ -13111,6 +13111,23 @@ check("...and now says the figure counts contracted hours as a share of "
       "one more craftsman, not only bodies on the payroll",
       "share of" in _why_cc, _why_cc)
 
+# ONE NAME FOR THE FOUNDER'S OWN WORK. The wage-work explanation called it
+# "the practice" and then "the surgery" fourteen words later; a Roman founder
+# selling a year of a smith's labour has neither a surgery nor two of them.
+_s_wg = sim()
+_wg = S._agent_dispatch(_s_wg, NODES, {"cmd": "work", "trade": "labourer",
+                                       "hours": 2000})
+check("the wage-work explanation names the founder's own work one way, and "
+      "does not call it a surgery",
+      "surgery" not in json.dumps(_wg).lower()
+      and "practice" in (_wg.get("why") or ""), _wg.get("why"))
+check("...and it still says what selling a year of labourer's time actually "
+      "cost, in figures that subtract",
+      abs((_wg.get("earned") or 0) - (_wg.get("it_cost_your_own_practice") or 0)
+          - (_wg.get("so_you_are_up") or 0)) < 0.051,
+      (_wg.get("earned"), _wg.get("it_cost_your_own_practice"),
+       _wg.get("so_you_are_up")))
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
