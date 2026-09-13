@@ -1454,7 +1454,7 @@ class ProjectsMixin:
         self._last_subst_gap = None
         return q, True
 
-    def start_reason(self, k, ignore_trade=False, _memo=None):
+    def start_reason(self, k, ignore_trade=False, _memo=None, _why=True):
         """Same legality test as `can_start`, but explains a refusal instead of
         just returning False. `can_start` is a thin wrapper around this now;
         the wrapper exists because the optimizer's inner loop calls it a huge
@@ -1470,9 +1470,27 @@ class ProjectsMixin:
         _memo is is_visible()'s shared per-descent cache, passed straight
         through to the is_visible() calls below for a missing node's own
         visibility. Not this function's concern otherwise; see is_visible's
-        docstring for why it exists."""
+        docstring for why it exists.
+
+        _why=False: the caller only wants the boolean (can_start, and
+        is_visible's own recursive descent through this same function) and
+        will throw the second element away. Every `return False, <message>`
+        below becomes `return False, None` in that case, which matters
+        because several of those messages are themselves built by walking
+        the tree - missing_prereq_message chief among them, which calls
+        is_visible on every missing prerequisite, which calls back into
+        start_reason on each. None of that recursion changes the boolean
+        this function is about to return; it only decides which prerequisite
+        NAMES a player refusal is allowed to mention. Skipping it here is
+        purely an optimisation: every branch below still runs exactly the
+        same tests it always did to arrive at True/False, and only the
+        prose built FROM that answer is elided. See the callers of this
+        flag (can_start, is_visible) for why they are the only two that may
+        pass False - every other caller (why, available, stuck, path,
+        bounty, the protocol layer) still wants the sentence and so keeps
+        the default."""
         if k not in self.nodes:
-            return False, "no such node"
+            return False, ("no such node" if _why else None)
         n = self.nodes[k]
         if n.get("win_condition"):
             # A THRESHOLD GOAL, NOT A PROJECT. This is measured, not built:
@@ -1483,8 +1501,13 @@ class ProjectsMixin:
             # target - see core.py's per-year win-condition check, the only
             # other place that reads this field. See
             # win_condition_describe() for the player-facing sentence.
-            return False, ("this is not something you build; it happens on "
+            #
+            # win_condition_describe() is pure formatting (data.py - no rng,
+            # no mutation, no log) but there is no reason to call it at all
+            # when nobody will read the string it returns.
+            return False, (("this is not something you build; it happens on "
                            "its own once %s" % win_condition_describe(n))
+                           if _why else None)
         if k in self.done:
             # A MOTHBALLED WORK IS NOT FRESH RESEARCH, and it is not "already
             # done" either: you know how, and the plant is gone. `restore` puts
@@ -1492,19 +1515,26 @@ class ProjectsMixin:
             # BELOW the flat "already done" that swallowed it - reachable only
             # in the one state where its advice was wrong.
             if k in getattr(self, "mothballed", set()):
-                return False, ("you built this once and let it go; you already "
+                # project_cost() is pure (no rng, no log, no mutation - see
+                # its own docstring and the factor functions it calls) but
+                # it is real arithmetic over several factor tables, and
+                # nobody reads the number when _why is False.
+                return False, (("you built this once and let it go; you already "
                                'know how, so restoring it is cheaper than '
                                'starting over: {"cmd":"restore","id":"%s"} for '
                                "about %.0f denarii"
-                               % (k, self.project_cost(k) * 0.3))
-            return False, "already done"
+                               % (k, self.project_cost(k) * 0.3)) if _why else None)
+            return False, ("already done" if _why else None)
         if k in self.active:
-            return False, "already active"
+            return False, ("already active" if _why else None)
         # NOT DEAR HERE, IMPOSSIBLE HERE. See SocietyMixin.needs_first.
+        # needs_first() itself is always called: `_nf` IS the answer, not
+        # just words about it. Only the sentence built from the two strings
+        # it hands back is skippable.
         _nf, _why_nf = self.needs_first(k)
         if _nf:
-            return False, ("%s. Build %s first and this opens with it"
-                           % (_why_nf, _nf))
+            return False, (("%s. Build %s first and this opens with it"
+                           % (_why_nf, _nf)) if _why else None)
         # A MOTHBALL ENTRY WITHOUT THE KNOWLEDGE IS A STALE ENTRY, and it falls
         # through to the ordinary checks below. Refusing here and sending the
         # player to `restore` - which answers "you no longer know how" - was a
@@ -1519,11 +1549,13 @@ class ProjectsMixin:
         # silently making a technology permanently unbuildable; treetool now
         # retiers them on merge, so this should never fire.
         if n["tier"] == 9 or n["cat"] == "unobtainable":
-            return False, "retired category: unobtainable in this tree"
+            return False, ("retired category: unobtainable in this tree"
+                           if _why else None)
         if self._is_foreign_only(k):
-            return False, ("that is an institution of a different society. %s has "
+            return False, (("that is an institution of a different society. %s has "
                            "no such thing, and it is not something you can build "
                            "here" % self.civ.get("name", "this society"))
+                           if _why else None)
         missing = [p for p in n["pre"] if p not in self.done]
         if missing:
             # NAME ONLY WHAT YOU HAVE HEARD OF. A tester wrote a twenty-line
@@ -1534,8 +1566,26 @@ class ProjectsMixin:
             # itself lives in missing_prereq_message (fog.py) now, shared with
             # `bounty`, so there is exactly one fog filter for this sentence
             # rather than one per caller.
-            return False, self.missing_prereq_message(missing, _memo=_memo)
+            #
+            # THIS is the call the profiler found: missing_prereq_message
+            # calls is_visible() on every missing prerequisite, which
+            # recurses back into start_reason on each - a full descent
+            # through the tree purely to decide which of these ids a fogged
+            # player is allowed to be told. `missing` (the boolean-relevant
+            # part - there ARE missing prerequisites) is already known
+            # above; only the message about which ones is skippable.
+            return False, (self.missing_prereq_message(missing, _memo=_memo)
+                           if _why else None)
         if not self.substitution_quality(k)[1]:
+            # substitution_quality(k) ITSELF is always called, above - it is
+            # not just words, it sets self._last_subst_gap as a side effect
+            # (read a few lines down) and its second return value is the
+            # actual test this branch is on. What is skippable is only the
+            # _seen filter below, which calls is_visible() on every option in
+            # the gap (another recursive descent), and the sentence built
+            # from it.
+            if not _why:
+                return False, None
             _grp, _opts = getattr(self, "_last_subst_gap", None) or (None, [])
             _seen = [o for o in _opts
                      if o not in self.nodes or self.is_visible(o, _memo=_memo)]
@@ -1588,7 +1638,7 @@ class ProjectsMixin:
             # a date, it is the end of the run wearing a date's clothes.
             _end = getattr(self, "end_year", None) or (
                 self.cfg["start_year"] + self.cfg["horizon_years"])
-            return False, ("nobody here will fund new work: your creditors were "
+            return False, (("nobody here will fund new work: your creditors were "
                            "left unpaid and the word is out. They will deal with "
                            "you again in %d%s, and until then you may finish what "
                            "is running, and pay for something out of money you "
@@ -1597,6 +1647,7 @@ class ProjectsMixin:
                               " - which is past the horizon at %d, so not within "
                               "this run" % int(_end)
                               if self.credit_frozen_until > _end else ""))
+                           if _why else None)
         if getattr(self, "insolvent_years", 0) >= 3:
             surplus = (self.revenue() - self.upkeep() - self.living_cost()
                        - self.mine_operating_cost())
@@ -1606,14 +1657,20 @@ class ProjectsMixin:
         if (getattr(self, "insolvent_years", 0) >= 3
                 and not cheap_enough
                 and self.capital < -max(4000.0, self.revenue() * 2.0)):
-            return False, ("you have been in arrears %d years and are %.0f denarii down; "
+            return False, (("you have been in arrears %d years and are %.0f denarii down; "
                            "nobody will fund a new undertaking of this size. Something "
                            "you can pay for out of this year's income is still allowed, "
                            "so is finishing or stopping what is running."
                            % (getattr(self, "insolvent_years", 0), -self.capital))
+                           if _why else None)
         if n["sch"] > self.effective_scholars():
-            return False, ("needs %d trained scholars, you have %.1f (you are one of them). %s"
+            # _staff_advice is pure (labour.py: no rng, no log, no mutation -
+            # it only reads is_venture/is_visible/nodes/artisans/scholars),
+            # but it walks STAFF_SOURCES and can itself call is_visible, so
+            # it is skipped along with the rest of the sentence.
+            return False, (("needs %d trained scholars, you have %.1f (you are one of them). %s"
                            % (n["sch"], self.effective_scholars(), self._staff_advice("scholars")))
+                           if _why else None)
         # CRAFTSMEN YOU HAVE UNDER CONTRACT COUNT TOO. This read self.artisans
         # alone, so work you had already paid an outside shop to do could not
         # satisfy the requirement - and the refusal's own advice was to go and
@@ -1638,22 +1695,24 @@ class ProjectsMixin:
             # be fractional even when every actual person on the payroll is
             # a whole one. Said inline, not left for the player to work out
             # from a number that otherwise looks like a body cut short.
-            return False, ("needs %d trained craftsmen, and you have %.1f - "
+            return False, (("needs %d trained craftsmen, and you have %.1f - "
                            "counting people on your staff plus any hours "
                            "already bought under contract as that share of "
                            "one more. %s"
                            % (n["art"], self.craft_hands_available(),
                               self._staff_advice("artisans")))
+                           if _why else None)
         # THE TRADE HAS TO EXIST. A node wanting 450 hours of an engineer cannot
         # be built by smiths, and in 100 AD there is no such person as a private
         # engineer: the wage table says so itself. You make one by teaching one.
         absent = [] if ignore_trade else sorted(t for t in n["lab"]
                                                 if not self.trade_available(t))
         if absent:
-            return False, ("this needs %s and there are none in this society. "
+            return False, (("this needs %s and there are none in this society. "
                            'Teach one: {"cmd":"train","trade":"%s","n":2} '
                            "(about 450 of your own hours each, two years)"
                            % (", ".join(a + "s" for a in absent), absent[0]))
+                           if _why else None)
         # AND SOMEBODY HAS TO BE LEFT. A trade you taught still counts as
         # existing after the last of them has died or been poached, so `why`
         # and `available` said CAN START NOW while the project, once begun,
@@ -1668,11 +1727,12 @@ class ProjectsMixin:
             if want > 0 and self.market_supply(t) <= 0.0
             and self._trade_headcount_pending(t) <= 0.0)
         if _none_left:
-            return False, ("this needs %s and there is not one left here to do "
+            return False, (("this needs %s and there is not one left here to do "
                            "it: you taught the trade and nobody is currently "
                            'holding it. {"cmd":"train","trade":"%s","n":2} makes '
                            "more, or hire from your own if you have any"
                            % (", ".join(a + "s" for a in _none_left), _none_left[0]))
+                           if _why else None)
         # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
         # amount of money substitutes for someone powerful being willing to be
         # associated with it. See 03_SOCIAL_POLITICS.md section 4.
@@ -1684,6 +1744,11 @@ class ProjectsMixin:
         if n["cat"] in ("social", "institution", "foundation", "capability", "material"):
             return True, None
         si = self.state_interest(n)
+        # state_interest() itself is always computed, above: it decides the
+        # branch. _patron_advice, below, is not - it is pure (no rng, no
+        # log, no mutation: see its own docstring) but it can call
+        # is_visible() on a prerequisite chain, which is another recursive
+        # descent nobody needs when only the boolean was asked for.
         if si < -0.4 and not self.running("patron_local"):
             # NAME THE NODE, by the word you would type. "Get at least a local
             # patron first" was the whole message, and a play tester who read
@@ -1699,19 +1764,21 @@ class ProjectsMixin:
             # through a kb path, and this line skipped it too. The advice is
             # worth nothing when the command it gives is refused, and under
             # fog it is worse than nothing, because it is a free reveal.
-            return False, ("the state is wary of this (state interest %.1f); "
+            return False, (("the state is wary of this (state interest %.1f); "
                            "%s"
                            % (si, self._patron_advice("patron_local",
                                                       "a local patron's name "
                                                       "behind you")))
+                           if _why else None)
         if si < -1.2 and not (self.running("patron_senatorial") or self.protection > 0.45):
-            return False, ("the state actively opposes this (state interest "
+            return False, (("the state actively opposes this (state interest "
                            "%.1f); %s, or protection above 0.45 (you have "
                            "%.2f)"
                            % (si, self._patron_advice("patron_senatorial",
                                                       "patronage at the very "
                                                       "top"),
                               self.protection))
+                           if _why else None)
         return True, None
 
     def _patron_advice(self, k, in_world):
@@ -1745,7 +1812,11 @@ class ProjectsMixin:
         return "get %s first: 'start %s'" % (in_world, k)
 
     def can_start(self, k, _memo=None):
-        return self.start_reason(k, _memo=_memo)[0]
+        # _why=False: this discards the message anyway, and it is the
+        # optimizer's own per-year loop that calls this for every node in
+        # the tree - the single hottest path in the engine (see
+        # start_reason's own docstring on _why for what this skips).
+        return self.start_reason(k, _memo=_memo, _why=False)[0]
 
     def start_project(self, k):
         """PLAYER-CHOSEN start. This is the whole reason `--manual` and the

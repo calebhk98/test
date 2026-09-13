@@ -169,7 +169,15 @@ class FogMixin:
                                 # not recurse forever if one ever sneaks in.
         # anything you could start right now is visible by definition: you can
         # see the work in front of you even if you cannot see past it
-        result = self.start_reason(k, _memo=memo)[0]
+        #
+        # _why=False: this discards start_reason's message too - is_visible
+        # only ever wants the boolean - and it is what turns the recursive
+        # descent (this function calls start_reason, which calls
+        # missing_prereq_message, which calls is_visible on every missing
+        # prerequisite, which calls back into start_reason...) from building
+        # a player-facing sentence at every single level into building one
+        # only at the outermost call that actually asked for it.
+        result = self.start_reason(k, _memo=memo, _why=False)[0]
         memo[k] = result
         return result
 
