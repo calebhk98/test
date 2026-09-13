@@ -1,0 +1,9 @@
+# python3 rome/sim/simulator.py play --session /tmp/staff.json --civ rome_100ad --kit absurd
+hire scholar 5
+step 1
+step 1
+step 1
+step 1
+step 1
+state
+log

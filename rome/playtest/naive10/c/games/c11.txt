@@ -1,0 +1,14 @@
+2
+
+absurd
+
+buy slaves 5
+labour
+buy manumit 2
+labour
+step 3
+labour
+step 1
+labour
+state
+quit

@@ -1,0 +1,11 @@
+2
+
+absurd
+
+quote mine coal 500
+buy mine coal 500
+step 3
+money
+close coal
+money
+quit

@@ -1,3 +1,39 @@
+# Naive playtest save files and stray driver output: transient game state that
+# Scaffolding playtesters build for themselves: named pipes, forwarder logs and
 # Throwaway tutorial verification runs (created by test agents); not deliverables
-tutorial-runs/
+# helper scripts. A fifo in particular must never be committed. The notes and
+# rewrites after every command. The testers' NOTES (.md) are the deliverable.
+# the session saves are the deliverables; this is the rig they were made with.
+*.pyc
 .selftest*/
+__pycache__/
+rome/playtest/naive/*.fifo
+rome/playtest/naive/*.json
+rome/playtest/naive/*.log
+rome/playtest/naive/*.out
+rome/playtest/naive/game.in
+rome/playtest/naive/game.out
+rome/playtest/naive/send.sh
+rome/playtest/naive2/*.fifo
+rome/playtest/naive2/*.json
+rome/playtest/naive2/*.log
+rome/playtest/naive2/*.out
+rome/playtest/naive3/*.fifo
+rome/playtest/naive3/*.json
+rome/playtest/naive3/*.log
+rome/playtest/naive3/*.out
+# Isolated git worktrees for parallel agents. Full checkouts, 108MB of them,
+# created and removed as agents come and go. They are scaffolding, and one of
+# them containing a stale copy of a file is exactly how another agent's work
+# got overwritten earlier in this project.
+.claude/worktrees/
+rome/playtest/scratchpad/
+tutorial-runs/
+
+# Scratch session saves written by the performance and interface audits while
+# driving the game to profile it: bad0.json, unknown_node.json and friends are
+# deliberately malformed or throwaway states, not deliverables. The audit
+# write-ups (PERF_AUDIT.md and the files under rome/data/review/) are what is
+# worth keeping from those runs.
+_loadtest_tmp/
+_playtest_tmp/

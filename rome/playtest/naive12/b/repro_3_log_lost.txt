@@ -1,0 +1,12 @@
+# Two SEPARATE process invocations against the same --session file.
+# Invocation 1:
+#   python3 rome/sim/simulator.py play --session /tmp/loglost.json --civ rome_100ad --kit poor_scholar
+start hom_eraser_breadcrumb
+step 1
+log
+# (exit; note the 4-ish history entries printed)
+# Invocation 2, same file:
+#   python3 rome/sim/simulator.py play --session /tmp/loglost.json
+log
+# -> "HISTORY: 0 / nothing has happened yet", despite money/rep/tech state
+#    from invocation 1 being intact.

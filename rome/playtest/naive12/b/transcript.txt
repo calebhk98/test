@@ -1,0 +1,712 @@
+>>> INPUT: help commands
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > help:
+  commands:
+    state: where you stand; add full:true for every field
+    available: what you could begin today, summarised by subject; add subject, find, afford, limit/offset, or all:true; add sort (price/hours/years/earns/upkeep/risk/alpha/nearest) and reverse to change the order, and page with offset/heard_offset all the way to the end
+    why <id>: everything known about one thing
+    start <id>: begin work on something
+    stop <id>: abandon it, losing what you have spent
+    rush: start everything you could begin today in one go, highest-leverage first; add limit:N to cap it
+    step <years>: let time pass
+    money: the whole ledger: what comes in, what goes out
+    values: what this society actually believes, as numbers - the same fields a completion's 'changes the society' line names
+    log: your own history - what you did and what followed, most recent first; add failures:true, find, since/before, order, offset. Never the whole thing in one go
+    quote <what>: what something would cost before you commit to it; so far quote mine coal 500
+    close <material>: shut your own workings down and stop paying to keep them standing
+    risk: what history is about to do to you, and what blunts it
+    labour: who you employ and what trades exist here
+    hire / fire / train / commission: see the labour topic
+    buy: forest, nitre, mine, slaves, or manumit; see the economy topic
+    work <trade> <hours>: do an ordinary job for ordinary pay
+    bounty <id>: pay someone else to solve it instead
+    open <id>: start actually running something you have worked out how to do; until you do, it earns nothing and costs nothing
+    ventures: what you are running, and what you know how to run and have not opened
+    mothball <id> / restore <id>: shut a finished work down, or reopen it
+    bribe <amount>: spend money to reduce a scandal
+    policy: every automatic behaviour, and a switch for each
+    path <id>: what something still needs
+    save <file> / load <file>: write or read a game
+    help: this; add a topic
+    quit: stop
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: help fog help labour help economy help money help automatic
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > help:
+  fog of war: OFF. You can see the whole tree.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > help:
+  labour: You arrive alone. Everything anyone else does for you is hired by the year, bought as a single job, taught by you from nothing if this society has no such trade, or bought outright as a person. Trades are NOT interchangeable: a smith is not a scribe, and a project asking for an engineer cannot be built by smiths however many you have.
+  commands:
+    labour: who exists here and what they cost; add "trade" for one
+    hire: hire smith 3 - paid every year, whether you have work for them or not
+    fire: fire smith 1
+    train: train machinist 2 - teaches a trade that does not exist here, out of your own hours
+    commission: commission smith 400 - buy a job rather than a person
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > help:
+  the ledger: money itemises what comes in and what goes out, including where the income comes from
+  buy forest: buy forest 100 hectares of coppice, which is where charcoal comes from
+  buy nitre: buy nitre 20,000 square metres of nitre bed. Saltpetre is made, not mined, and nothing else supplies it.
+  buy mine: buy mine coal 500 tonnes a year of your own workings; it takes years to sink, and it costs to keep standing whether or not you use it. ASK THE PRICE FIRST with quote mine coal 500, and close it with close coal. Materials: coal, iron, copper, lead, tin, silver, gold
+  buy slaves: buy slaves 5. This is available because it was the ordinary condition of production in most of these societies, and a model that hides it lies about the cost of everything.
+  manumit: buy manumit 5 frees people you hold. They then work better, and it is the decent thing.
+  debt: You may spend past what you have, as far as somebody will lend you and no further. Arrears cost interest.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > help:
+  where it comes from: Your practice - the trade this society already had, which you can do from the first day - plus every concern you have OPENED, plus what your own workshop sells. money itemises all of it and the rows sum to the revenue above them.
+  your practice pays less than the tree quotes: About a third: one person in a rented room is not an organised concern, and that gap does not close with time. Selling your hours for wages takes another bite, because you cannot be in two places.
+  a concern you open starts small: It reaches its full figure over about three years.
+  where it goes: Living and appearances, wages, the upkeep of what you are RUNNING, mines standing whether or not you work them, and interest on arrears.
+  money costs money to hold: Living and appearances is about a sixtieth of your capital a year, on top of a subsistence floor and your household, plus a fixed sum for each rank you hold. In a patronage society a man visibly richer than he lives is suspected, and a man seeking standing must spend on it. An idle million bleeds about fifteen thousand a year doing nothing, which is why money sitting still is money going backwards.
+  what you can buy: help economy
+  debt: You may spend past what you have, as far as somebody will lend you and no further. Arrears cost interest.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > help:
+  what happens on its own: Some things the engine will do for you if you let it: grow the staff, teach trades, sink mines, buy woodland, shut down what you cannot pay for, pay off a scandal. Every one is a switch you control, and every one can be done by hand instead.
+  see them: policy
+  change one: policy auto_hire on
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: available
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > AVAILABLE: 209 startable now
+a summary by subject, because the full list is 209 things
+
+SUBJECT                    THINGS   CHEAPEST    DEAREST     AFFORD
+textiles                       54          6     17,415         53
+finance                        26         10     10,831         16
+roads, bridges and canal       20       49.6      1,445         20
+the remaining arts             20       68.8      2,532         19
+power and precision            16       40.4      856.1         16
+farming, in depth              10        119        280         10
+the household                  10          5      285.5         10
+metallurgy                      9       74.4      6,296          6
+transport, in depth             9      200.4      1,258          9
+mathematics and method          7        230      1,032          7
+medicine and biology            7        9.3        580          7
+agriculture and food            5        235      2,070          4
+construction                    5       97.7        531          5
+signals and media               3      271.2      536.6          3
+electricity                     2       71.4      269.6          2
+glass and optics                2      315.9      337.2          2
+the briefing                    1        600        600          1
+society and politics            1      1,580      1,580          1
+everything else                 1        210        210          1
+printing and information        1      217.5      217.5          1
+
+CHEAPEST SIX RIGHT NOW, sorted by cost:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0       0      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0       0     1a      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0       0     1a      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0       0     1a      7
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0       0     1a      0
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0       0     1a      0
+
+MOST RESTS ON THESE, of what you could begin today:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,032
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,717
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,223
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,112
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150     1a     78
+
+  one subject: available metallurgy
+  by name: available find furnace
+  what you can pay for: available afford 1,766
+  a page of everything: available limit 30
+  all of it at once: available all (large)
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: hire smith -5 hire smith 2.5 step -5 buy slaves -3 start nonexistent_thing_xyz start point_contact_transistor
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: n must be greater than zero. Nothing was changed.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you hire whole people, not 2.5 of one. Hire 2 or 3.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: years must be >= 1
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: n must be greater than zero, got -3. Nothing was changed.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: unknown node id 'nonexistent_thing_xyz'. use available or why ... to find valid ids
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: missing prerequisites: galena_detector, gp_whisker_forming, micrometer_gauges, prc_lapping_plate, quantum_solidstate_theory, single_crystal, vacuum_tube
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: hire smith 999999999 buy slaves 999999999 step 999999999 quote mine coal -500 buy mine coal 0 why identity_cover
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: hiring 1e+09 smiths costs 281249999719 denarii in advance and you have 400
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you can supervise, house and teach 6.00 more people, not 1e+09 - and a person you own needs feeding and housing exactly as much as one you pay. To get more artisans: hire smith 3 or any trade in labour; or commission smith 400 to buy one job instead of employing anybody; build freedman_staff (buy, teach and free a technical staff); build workshop_first eventually (you need somewhere for them to work) - but it is itself waiting on artisans, so hire or commission first.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: there are only 500 years left before the horizon at 600. Ask for 500 or fewer, or fewer still if you want to see what happens on the way.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > material: coal
+tonnes per year: 0
+to sink it: 0
+every year it stands: 0
+years before it produces: 3
+you have: 400
+you could raise: 1,083
+you can afford about: 120.4
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+the ground here could ever support: 7,134
+room left before geology stops you: 7,134
+current yield is this fraction of day one: 1
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: n must be greater than zero, got 0. Nothing was changed.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > Establish a respectable cover identity  [identity_cover]
+========================================================
+tier 0, foundation, confidence C
+
+Buy books, a house, clothes, a literate freed or hired secretary, and a
+reputation for piety (in Rome this is specifically the Alexandrian
+physician-philosopher persona; every society has its own version of a
+scholar-notable it will not look at twice: a monk or clerk under any
+literate king, a temple-trained scribe in Mesoamerica, a rune-literate skald
+or lawspeaker in Scandinavia). Reduces all future suspicion.
+
+COST: 1,580 den total  (80 labour + 0 materials + 1,500 capital, then x1 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 500     CALENDAR FLOOR: 0.50 years     FAILURE RISK: 5%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 1 - counting yourself, and hours you have bought)
+HIRED LABOUR: scribe 400h
+UPKEEP: 200 den/yr     REVENUE: 0 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES: none, you can start this on arrival
+
+STILL TO BUILD BEHIND IT: 0 of 0 nodes, 0 of your hours, 0 den, 0.50-year serial floor
+
+DIRECTLY UNLOCKS: patron_local, world_map
+TOTAL DOWNSTREAM: 2,032 thing(s) depend on this -- INCLUDING THE GOAL
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: quote mine coal 500 quote mine coal -1 quote mine coal -999999
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > material: coal
+tonnes per year: 500
+to sink it: 4,500
+every year it stands: 750
+years before it produces: 3
+you have: 400
+you could raise: 1,083
+you can afford about: 120.4
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+the ground here could ever support: 7,134
+room left before geology stops you: 7,134
+current yield is this fraction of day one: 1
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > material: coal
+tonnes per year: 0
+to sink it: 0
+every year it stands: 0
+years before it produces: 3
+you have: 400
+you could raise: 1,083
+you can afford about: 120.4
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+the ground here could ever support: 7,134
+room left before geology stops you: 7,134
+current yield is this fraction of day one: 1
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > material: coal
+tonnes per year: 0
+to sink it: 0
+every year it stands: 0
+years before it produces: 3
+you have: 400
+you could raise: 1,083
+you can afford about: 120.4
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+the ground here could ever support: 7,134
+room left before geology stops you: 7,134
+current yield is this fraction of day one: 1
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: why hom_eraser_breadcrumb start hom_eraser_breadcrumb state stop hom_eraser_breadcrumb state
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > Eraser, breadcrumb substitute  [hom_eraser_breadcrumb]
+======================================================
+tier 1, writing, confidence A
+
+Breadcrumbs (white bread preferred) erase pencil marks by mechanical
+abrasion. Later rubber erasers require natural rubber, which is
+UNOBTAINABLE. Breadcrumb remains the substitute through the 19th century in
+resource-limited settings. [AUDIT: upkeep removed - a technique costs
+nothing to keep knowing; it is not an establishment with premises, staff or
+a standing cost. See JOB 1 upkeep audit.]
+
+COST: 5 den total  (0 labour + 0 materials + 5 capital, then x1 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 30     CALENDAR FLOOR: 0.10 years     FAILURE RISK: 0%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 1 - counting yourself, and hours you have bought)
+MATERIALS: wheat_kg 0.05
+
+STATUS: CAN START NOW
+PREREQUISITES: none, you can start this on arrival
+
+STILL TO BUILD BEHIND IT: 0 of 0 nodes, 0 of your hours, 0 den, 0.10-year serial floor
+TOTAL DOWNSTREAM: 0 thing(s) depend on this
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > started: hom_eraser_breadcrumb
+name: Eraser, breadcrumb substitute
+founder hours needed: 30
+calendar floor years: 0.10
+the bill you have taken on: 5
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  hom_eraser_breadcrumb                0% of your hours spent, 5 still owed - waiting on your hours
+      Eraser, breadcrumb substitute
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  17 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > stopped: hom_eraser_breadcrumb
+what happened: stopped; nothing had been paid yet
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  17 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: start units_standards state step 0.2 state
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 100 AD.
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > started: units_standards
+name: Define and publish standard length, mass, time and temperature
+founder hours needed: 300
+calendar floor years: 0.50
+the bill you have taken on: 444
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  units_standards                      0% of your hours spent, 444 still owed - waiting on your hours
+      Define and publish standard length, mass, time and temperature
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  17 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: years must be a whole number of years; 0.2 is not. Nothing was changed.
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  units_standards                      0% of your hours spent, 444 still owed - waiting on your hours
+      Define and publish standard length, mass, time and temperature
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  17 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 400 den | you:2000 hr | sch 1 art 1 | rep 5] > 
+Ended 100 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: step 1 state log
+>>> INPUT: help sittings help eminence help risk help protection help stuck help log
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 103 AD.
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > help:
+  playing across several sittings: Pass --session FILE on the command line. The game is written to that file after every command and read back when you start again, so you do not need to hold a process open or write a script.
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > help:
+  eminence: The one hazard no patron, no bribe and no reputation protects you from, because it IS reputation. It rises with how well known you are and how visibly rich, it is multiplied by standing close to the throne, and past the danger line it rolls every year for your ruin. Sejanus was the most protected man in Rome until the morning he was not.
+  what lowers it: One command does, and its price is real: withdraw halves your prominence now and gives up half the reputation you hold above what your work by itself is worth. Reputation here is your credit limit, your protection, the wages you must pay and the pace of your projects, so you cannot get small and stay grand - and you cannot do it twice in twelve years, because being seen to retire repeatedly is not retiring.
+  what survives it: A wide, dispersed institution - academy_network makes the hazard itself smaller, and corpus_dispersed means what you know is in too many places to burn. Being merely rich and merely famous is the dangerous combination.
+  and time helps: A city gets used to you. The longer you have been a fixture and the more of your work it has already seen, the less alarming the next thing is - the same familiarity that decays the alarm your work causes takes up to a third off this.
+  if it lands: 45% of the time it is a confiscation and a forced retirement, 35% your patron is destroyed in somebody else's quarrel, and 20% it is the end of the run. `state` shows both figures.
+  where to watch it: state shows it under STANDING
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > help:
+  risk: What history is about to do to you, with dates, and what you have built that blunts each one. Every hazard is fightable and the numbers are real.
+  see it: risk
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > help:
+  protection: How far your standing shields you when you produce an effect nobody can explain. It decides whether a strange result out of your workshop is read as learning or as sorcery, and it is the only thing money can buy here directly.
+  what raises it: A patron, citizenship, a licensed collegium, land endowed in public, a school, and your reputation - and spending on advocacy and piety, which is what `bribe` does when you have no scandal to answer. Protection caps at 92% in total, and money is only 30 points of that however much you spend - a break tester read the 92 as the ceiling on bribery, offered a million, and stopped at the same 32% a hundred had bought. The rest has to be earned.
+  what it does NOT protect you from: Eminence. Being too large is the one hazard no protection touches; see help eminence.
+  where to watch it: state shows it under STANDING
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > help:
+  stuck: Type 'stuck' at any time. It answers, in one place, why you are not getting on: what each piece of work in hand is waiting for, whether anything is startable and affordable, whether a raw material is throttling everything, whether you have room for more people, and how deep in arrears you are.
+  the usual answers: hours (you only have so many), money (you can raise only so much), a trade this society does not have, a material nobody is selling, or room for the people it would take.
+  where to look next: available for what you could begin, labour for people, money for the ledger.
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > help:
+  log: Your own history, in the order it happened: what you started, what finished, what failed and why, a concern opening or closing, staff hired or let go, a hazard landing, money running out. Type 'log' alone for the twenty most recent lines.
+  see only the bad news: 'log failures'
+  search it: 'log find plague'
+  a year range: 'log since 300 before 400'
+  read forward from the start instead of back from now: 'log oldest'
+  page through to the end: 'log offset 20'
+  why it never dumps everything: a long run's history runs to tens of thousands of lines, more than anyone - human or script - can read in one reply, so this always pages and there is no way to ask for all of it at once.
+  fog: respects it: a line cannot go on naming something you have since forgotten or never heard of just because it was visible the year it happened.
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > 
+Ended 103 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json
+>>> INPUT: money rush
+Resumed from /home/user/test/rome/playtest/naive12/b/save.json: 103 AD.
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > LEDGER
+Capital: -184.3 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       30
+  living and appearances         224
+  wages                          0
+  mines standing                 0
+  interest on arrears            19.9
+Net/yr before the work in hand: -40.4     spent on projects last step: 5
+Net/yr after it: -45.4   (this is the figure `state` prints)
+Credit limit: 1,407 (13% used)     interest on arrears: 11%     paid so far: 31.3
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > RUSH: 7 started, 206 not
+  STARTED arithmetic_positional (1,032): Decimal positional notation, zero, negative numbers, decimal fractions
+  STARTED scientific_method (230): Controlled experiment, hypothesis, replication, publication
+  STARTED sea_lodestone (112.2): Lodestone knowledge
+  STARTED tx2_shed (6): Shed: warp separation for pick insertion
+  STARTED tx2_retting (6): Retting of flax and hemp fibres
+  STARTED tx2_heddle (9.5): Heddle: warp thread carrier and riser
+  STARTED tx2_rope_lay (9): Rope laying: strand twisting
+  NOT STARTED identity_cover: you already owe 0 denarii on work in hand; this would take it to 1,580, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED horse_collar: you already owe 1,262 denarii on work in hand; this would take it to 1,971, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_sternpost_rudder: you already owe 1,262 denarii on work in hand; this would take it to 1,689, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_cross_staff: you already owe 1,374 denarii on work in hand; this would take it to 1,685, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_probability_axioms: you already owe 1,374 denarii on work in hand; this would take it to 1,632, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_sleeper_ballast: you already owe 1,374 denarii on work in hand; this would take it to 1,598, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_semaphore_signal: you already owe 1,374 denarii on work in hand; this would take it to 1,634, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_bill_exchange: you already owe 1,374 denarii on work in hand; this would take it to 1,444, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tex_horizontal_loom: you already owe 1,374 denarii on work in hand; this would take it to 1,600, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED cn_pile_driving: you already owe 1,374 denarii on work in hand; this would take it to 1,722, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED air_observation_balloon_tethered: you already owe 1,374 denarii on work in hand; this would take it to 2,512, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_eye_pointed_needle: you already owe 1,380 denarii on work in hand; this would take it to 1,494, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tex_mordanting: you already owe 1,380 denarii on work in hand; this would take it to 1,510, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_lateen_sail: you already owe 1,380 denarii on work in hand; this would take it to 2,009, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED pwr_petroleum_seeps: you already owe 1,396 denarii on work in hand; this would take it to 1,498, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_flyer: you already owe 1,396 denarii on work in hand; this would take it to 1,424, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED pwr_coal_seam: you already owe 1,396 denarii on work in hand; this would take it to 1,669, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_ferry: you already owe 1,396 denarii on work in hand; this would take it to 3,311, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED civ_truss_triangulated: you already owe 1,396 denarii on work in hand; this would take it to 1,504, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_carding: you already owe 1,396 denarii on work in hand; this would take it to 1,512, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED lnd_macadam: you already owe 1,396 denarii on work in hand; this would take it to 3,602, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_hot_riveting: you already owe 1,396 denarii on work in hand; this would take it to 1,616, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_drawing_office: you already owe 1,396 denarii on work in hand; this would take it to 1,938, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_marine_insurance: you already owe 1,396 denarii on work in hand; this would take it to 5,501, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_postal_service: you already owe 1,396 denarii on work in hand; this would take it to 5,758, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_patent: you already owe 1,405 denarii on work in hand; this would take it to 1,467, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED com_optical_codebook: you already owe 1,405 denarii on work in hand; this would take it to 1,476, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tex_fitted_garment: you already owe 1,405 denarii on work in hand; this would take it to 1,525, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED lnd_hobby_horse: you already owe 1,405 denarii on work in hand; this would take it to 1,607, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_production_schedule: you already owe 1,405 denarii on work in hand; this would take it to 1,609, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_flux: you already owe 1,405 denarii on work in hand; this would take it to 1,614, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_fireplace_chimney: you already owe 1,405 denarii on work in hand; this would take it to 1,676, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_silk_fibre: you already owe 1,405 denarii on work in hand; this would take it to 1,714, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED opt_manometer: you already owe 1,405 denarii on work in hand; this would take it to 1,721, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_diving_bell: you already owe 1,405 denarii on work in hand; this would take it to 2,373, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_wool_fibre: you already owe 1,405 denarii on work in hand; this would take it to 1,414, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_employment_contract: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED med_amputation: you already owe 1,405 denarii on work in hand; this would take it to 1,417, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_cutting_table: you already owe 1,405 denarii on work in hand; this would take it to 1,419, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_sizing_systems: you already owe 1,405 denarii on work in hand; this would take it to 1,423, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED med_obstetric_practice: you already owe 1,405 denarii on work in hand; this would take it to 1,423, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_trademark: you already owe 1,405 denarii on work in hand; this would take it to 1,425, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_usury_law: you already owe 1,405 denarii on work in hand; this would take it to 1,435, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_toothbrush: you already owe 1,405 denarii on work in hand; this would take it to 1,435, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_tariff: you already owe 1,405 denarii on work in hand; this would take it to 1,452, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_pattern_grading: you already owe 1,405 denarii on work in hand; this would take it to 1,460, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_printing_block: you already owe 1,405 denarii on work in hand; this would take it to 1,460, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_guild: you already owe 1,405 denarii on work in hand; this would take it to 1,474, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tex_hand_ginning: you already owe 1,405 denarii on work in hand; this would take it to 1,475, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED met_ore_crushing_sorting: you already owe 1,405 denarii on work in hand; this would take it to 1,479, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_toys_dolls: you already owe 1,405 denarii on work in hand; this would take it to 1,480, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_latrine_water_trap: you already owe 1,405 denarii on work in hand; this would take it to 1,530, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED cn_stone_polish: you already owe 1,405 denarii on work in hand; this would take it to 1,542, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED civ_gate_sluice: you already owe 1,405 denarii on work in hand; this would take it to 1,588, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED md2_vector_control: you already owe 1,405 denarii on work in hand; this would take it to 1,616, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED md2_plaster_cast: you already owe 1,405 denarii on work in hand; this would take it to 1,623, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fud_hay_making_storage: you already owe 1,405 denarii on work in hand; this would take it to 1,640, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_malting: you already owe 1,405 denarii on work in hand; this would take it to 1,645, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED cn_damp_proof_course: you already owe 1,405 denarii on work in hand; this would take it to 1,936, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mat_parchment: you already owe 1,405 denarii on work in hand; this would take it to 1,941, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_scouring: you already owe 1,405 denarii on work in hand; this would take it to 2,115, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED civ_sewer_separate: you already owe 1,405 denarii on work in hand; this would take it to 2,170, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED lnd_coach: you already owe 1,405 denarii on work in hand; this would take it to 2,242, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_lead_sheathing: you already owe 1,405 denarii on work in hand; this would take it to 2,850, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_trading_post: you already owe 1,405 denarii on work in hand; this would take it to 3,067, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_census: you already owe 1,405 denarii on work in hand; this would take it to 3,937, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_racecourse: you already owe 1,405 denarii on work in hand; this would take it to 6,737, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_hotel: you already owe 1,405 denarii on work in hand; this would take it to 7,229, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_theatre_business: you already owe 1,405 denarii on work in hand; this would take it to 10,253, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_bleaching_sun: you already owe 1,405 denarii on work in hand; this would take it to 1,411, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_count_standard: you already owe 1,405 denarii on work in hand; this would take it to 1,411, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_selvedge: you already owe 1,405 denarii on work in hand; this would take it to 1,412, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_flax_fibre: you already owe 1,405 denarii on work in hand; this would take it to 1,414, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_hemp_fibre: you already owe 1,405 denarii on work in hand; this would take it to 1,414, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_twist_insertion: you already owe 1,405 denarii on work in hand; this would take it to 1,414, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_warp_sizing: you already owe 1,405 denarii on work in hand; this would take it to 1,414, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED med_bone_setting: you already owe 1,405 denarii on work in hand; this would take it to 1,414, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_beam: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_button_horn: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_button_bone: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_cashmere: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_jute_fibre: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_mohair: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_ramie_fibre: you already owe 1,405 denarii on work in hand; this would take it to 1,415, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_button_shell: you already owe 1,405 denarii on work in hand; this would take it to 1,416, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_pin: you already owe 1,405 denarii on work in hand; this would take it to 1,417, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_comb: you already owe 1,405 denarii on work in hand; this would take it to 1,418, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_currying: you already owe 1,405 denarii on work in hand; this would take it to 1,420, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_apprenticeship: you already owe 1,405 denarii on work in hand; this would take it to 1,421, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_splitting: you already owe 1,405 denarii on work in hand; this would take it to 1,421, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_paperclip: you already owe 1,405 denarii on work in hand; this would take it to 1,421, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_hook_and_eye: you already owe 1,405 denarii on work in hand; this would take it to 1,425, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_warping_mill: you already owe 1,405 denarii on work in hand; this would take it to 1,426, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_safety_pin: you already owe 1,405 denarii on work in hand; this would take it to 1,429, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_seigniorage: you already owe 1,405 denarii on work in hand; this would take it to 1,430, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_drawing_pin: you already owe 1,405 denarii on work in hand; this would take it to 1,433, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_corset: you already owe 1,405 denarii on work in hand; this would take it to 1,435, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_spectacle_frame: you already owe 1,405 denarii on work in hand; this would take it to 1,436, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_arbitrage: you already owe 1,405 denarii on work in hand; this would take it to 1,442, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_bankruptcy: you already owe 1,405 denarii on work in hand; this would take it to 1,445, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED pwr_oil_shale: you already owe 1,405 denarii on work in hand; this would take it to 1,445, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_log_line: you already owe 1,405 denarii on work in hand; this would take it to 1,454, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_monopoly: you already owe 1,405 denarii on work in hand; this would take it to 1,456, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_bimetallism: you already owe 1,405 denarii on work in hand; this would take it to 1,458, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_cartel: you already owe 1,405 denarii on work in hand; this would take it to 1,458, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED pwr_peat: you already owe 1,405 denarii on work in hand; this would take it to 1,462, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_mortgage: you already owe 1,405 denarii on work in hand; this would take it to 1,462, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED prc_straightedge: you already owe 1,405 denarii on work in hand; this would take it to 1,486, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_punkah_ceiling: you already owe 1,405 denarii on work in hand; this would take it to 1,488, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_doll: you already owe 1,405 denarii on work in hand; this would take it to 1,488, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED air_compass_magnetic: you already owe 1,405 denarii on work in hand; this would take it to 1,492, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_trade_union: you already owe 1,405 denarii on work in hand; this would take it to 1,493, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED lnd_wheelbarrow: you already owe 1,405 denarii on work in hand; this would take it to 1,494, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_umbrella: you already owe 1,405 denarii on work in hand; this would take it to 1,494, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED cn_gypsum_plaster: you already owe 1,405 denarii on work in hand; this would take it to 1,502, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_needle: you already owe 1,405 denarii on work in hand; this would take it to 1,517, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_guano: you already owe 1,405 denarii on work in hand; this would take it to 1,524, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_marling: you already owe 1,405 denarii on work in hand; this would take it to 1,524, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED civ_lightning_conductor: you already owe 1,405 denarii on work in hand; this would take it to 1,547, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_liming: you already owe 1,405 denarii on work in hand; this would take it to 1,554, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_hopping: you already owe 1,405 denarii on work in hand; this would take it to 1,555, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED air_kite_basic: you already owe 1,405 denarii on work in hand; this would take it to 1,562, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_composting: you already owe 1,405 denarii on work in hand; this would take it to 1,564, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_potash: you already owe 1,405 denarii on work in hand; this would take it to 1,564, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_flush_toilet_trap: you already owe 1,405 denarii on work in hand; this would take it to 1,574, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tex_indigo: you already owe 1,405 denarii on work in hand; this would take it to 1,593, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_reefing: you already owe 1,405 denarii on work in hand; this would take it to 1,605, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_wooden_waggonway: you already owe 1,405 denarii on work in hand; this would take it to 1,610, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mat_obsidian_blade: you already owe 1,405 denarii on work in hand; this would take it to 1,615, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED med_surgical_gloves_mask: you already owe 1,405 denarii on work in hand; this would take it to 1,622, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_enamelling: you already owe 1,405 denarii on work in hand; this would take it to 1,622, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED prn_wire_mould_deckle: you already owe 1,405 denarii on work in hand; this would take it to 1,622, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_japanning: you already owe 1,405 denarii on work in hand; this would take it to 1,624, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_adhesive_bond: you already owe 1,405 denarii on work in hand; this would take it to 1,624, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_mould: you already owe 1,405 denarii on work in hand; this would take it to 1,627, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_cold_riveting: you already owe 1,405 denarii on work in hand; this would take it to 1,628, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mt2_pelletising: you already owe 1,405 denarii on work in hand; this would take it to 1,628, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mt2_timbering_safety: you already owe 1,405 denarii on work in hand; this would take it to 1,629, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_painting: you already owe 1,405 denarii on work in hand; this would take it to 1,630, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED in2_chain_surveyor: you already owe 1,405 denarii on work in hand; this would take it to 1,633, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED in2_sounding_machine_lead_line: you already owe 1,405 denarii on work in hand; this would take it to 1,633, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mt2_earthenware: you already owe 1,405 denarii on work in hand; this would take it to 1,635, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_block_tackle: you already owe 1,405 denarii on work in hand; this would take it to 1,635, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED cn_post_lintel: you already owe 1,405 denarii on work in hand; this would take it to 1,640, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_physics_newtons_laws: you already owe 1,405 denarii on work in hand; this would take it to 1,641, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_soft_solder: you already owe 1,405 denarii on work in hand; this would take it to 1,641, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_oil_pressing: you already owe 1,405 denarii on work in hand; this would take it to 1,646, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_log_sounding: you already owe 1,405 denarii on work in hand; this would take it to 1,655, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_notation_positional: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_doctorate: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_funded_programme: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_referee: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_research_group: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_method_hypothesis: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_method_negative_result: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_method_replication: you already owe 1,405 denarii on work in hand; this would take it to 1,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_hopper_wagon: you already owe 1,405 denarii on work in hand; this would take it to 1,671, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_notation_decimal_point: you already owe 1,405 denarii on work in hand; this would take it to 1,673, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED com_signal_flags: you already owe 1,405 denarii on work in hand; this would take it to 1,674, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED if_quill: you already owe 1,405 denarii on work in hand; this would take it to 1,676, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_notation_roots: you already owe 1,405 denarii on work in hand; this would take it to 1,683, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED civ_town_planning: you already owe 1,405 denarii on work in hand; this would take it to 1,684, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_pyrethrum: you already owe 1,405 denarii on work in hand; this would take it to 1,685, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED ag2_refrigeration_ice: you already owe 1,405 denarii on work in hand; this would take it to 1,685, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_notation_exponents: you already owe 1,405 denarii on work in hand; this would take it to 1,686, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED hom_sprung_mattress: you already owe 1,405 denarii on work in hand; this would take it to 1,690, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_curriculum: you already owe 1,405 denarii on work in hand; this would take it to 1,699, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_physics_momentum: you already owe 1,405 denarii on work in hand; this would take it to 1,701, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_citation: you already owe 1,405 denarii on work in hand; this would take it to 1,704, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_physics_kinematics: you already owe 1,405 denarii on work in hand; this would take it to 1,707, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_physics_gravitation: you already owe 1,405 denarii on work in hand; this would take it to 1,709, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_mirror: you already owe 1,405 denarii on work in hand; this would take it to 1,721, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_bilge_pump: you already owe 1,405 denarii on work in hand; this would take it to 1,734, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED met_investment_casting: you already owe 1,405 denarii on work in hand; this would take it to 1,734, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED opt_anemometer: you already owe 1,405 denarii on work in hand; this would take it to 1,742, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fud_fish_curing_and_smoking: you already owe 1,405 denarii on work in hand; this would take it to 1,768, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mat_papyrus: you already owe 1,405 denarii on work in hand; this would take it to 1,807, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_examination: you already owe 1,405 denarii on work in hand; this would take it to 1,818, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED civ_street_paved: you already owe 1,405 denarii on work in hand; this would take it to 1,896, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tex_rope_walk: you already owe 1,405 denarii on work in hand; this would take it to 1,907, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED med_herbal_pharmacy: you already owe 1,405 denarii on work in hand; this would take it to 1,985, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED arrival_orientation: you already owe 1,405 denarii on work in hand; this would take it to 2,005, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_dyeing_fibre: you already owe 1,405 denarii on work in hand; this would take it to 2,120, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_dyeing_yarn: you already owe 1,405 denarii on work in hand; this would take it to 2,123, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_dyeing_piece: you already owe 1,405 denarii on work in hand; this would take it to 2,126, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_resist_dyeing: you already owe 1,405 denarii on work in hand; this would take it to 2,138, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_alum_tanning: you already owe 1,405 denarii on work in hand; this would take it to 2,165, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fud_grain_storage_silos: you already owe 1,405 denarii on work in hand; this would take it to 2,235, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mfg_silver_solder: you already owe 1,405 denarii on work in hand; this would take it to 2,261, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tr_square_rig: you already owe 1,405 denarii on work in hand; this would take it to 2,340, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_skeleton_first: you already owe 1,405 denarii on work in hand; this would take it to 2,372, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_pawnshop: you already owe 1,405 denarii on work in hand; this would take it to 2,430, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_bottle: you already owe 1,405 denarii on work in hand; this would take it to 2,537, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_asbestos_cloth: you already owe 1,405 denarii on work in hand; this would take it to 2,607, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED met_bloomery_bog_iron: you already owe 1,405 denarii on work in hand; this would take it to 2,614, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sea_keel_deep: you already owe 1,405 denarii on work in hand; this would take it to 2,663, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED sc2_institution_textbook: you already owe 1,405 denarii on work in hand; this would take it to 2,875, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mt2_type_metal: you already owe 1,405 denarii on work in hand; this would take it to 3,288, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fud_whaling_industry: you already owe 1,405 denarii on work in hand; this would take it to 3,475, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_lottery: you already owe 1,405 denarii on work in hand; this would take it to 3,485, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_gambling_house: you already owe 1,405 denarii on work in hand; this would take it to 3,517, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_inn: you already owe 1,405 denarii on work in hand; this would take it to 4,942, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mt2_solder_lead_tin: you already owe 1,405 denarii on work in hand; this would take it to 6,118, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED mt2_amalgamation: you already owe 1,405 denarii on work in hand; this would take it to 7,701, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED fin_plantation: you already owe 1,405 denarii on work in hand; this would take it to 12,235, and between cash and credit you can raise 1,407. Finish or stop something first.
+  NOT STARTED tx2_watch_case: you already owe 1,405 denarii on work in hand; this would take it to 18,819, and between cash and credit you can raise 1,407. Finish or stop something first.
+
+tried everything you could begin today, highest-leverage first, until your
+credit ran out or the list did. 'why <id>' on anything in not_started says
+exactly why it stopped there.
+
+[103 AD | -184 den | you:2000 hr | sch 1 art 1 | rep 6] > 
+Ended 103 AD. stopped
+Saved to /home/user/test/rome/playtest/naive12/b/save.json. Come back with:
+   python3 rome/sim/simulator.py play --session /home/user/test/rome/playtest/naive12/b/save.json

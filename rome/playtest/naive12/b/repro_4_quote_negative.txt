@@ -1,0 +1,4 @@
+# python3 rome/sim/simulator.py play --session /tmp/quote.json --civ rome_100ad --kit poor_scholar
+quote mine coal 500
+quote mine coal -1
+quote mine coal -999999

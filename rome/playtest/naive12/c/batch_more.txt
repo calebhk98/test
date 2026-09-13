@@ -1,0 +1,275 @@
+Resumed from /root/.rome-saves/rome_100ad_233.json: 100 AD.
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: that is what you are aiming at, and you cannot act on it yet: everything it rests on is still beyond what you have heard of. 'why point_contact_transistor' is all of it you can see from here.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you have not worked out how to do that yet, so there is nothing to open
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: you have never heard of any such thing. You know what you have built and what you could begin next; nothing tells you what lies beyond that. Did you mean: met_investment_casting, sea_lead_sheathing
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: nobody here will pay you to be a chemist: the trade does not exist in this society, so there is no employer for it. Teach it first with train, or work at something they do recognise.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > REFUSED: nobody is watching you closely enough for this to buy anything: prominence is 0.0 against a danger line of 26. Withdrawing now would only cost you the standing that gets your work funded. Nothing was changed.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 999,924 den    net -14,989 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  counting yourself and hours you have bought: 1.0 scholars and 1.0 craft
+  hands. That pair is what the prompt shows and what 'why' and 'start' test a
+  project against; the count above is people on your payroll.
+
+STANDING: reputation 5   protection 32%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk; a sacking that costs you anything (80% of them do) takes 0, hedged by nothing yet
+  [165-180] Antonine plague
+  [190-275] Currency debasement
+  [249-262] Plague of Cyprian
+  [235-284] Third century crisis
+  [284-305] Diocletian's reforms and the Price Edict
+  [312-375] The solidus and the end of the debasement
+  [313-400] Christianisation of the empire
+  [376-405] Adrianople and the Gothic settlement
+  [406-460] The crossings, and the sack of Rome
+  [461-492] The end of the western empire
+  [493-526] Ostrogothic Italy under Theodoric
+  [535-554] Justinian's Gothic War
+  [541-545] The Justinianic plague
+  [558-600] Recurrent plague
+  [568-600] The Lombard invasion
+  [634-700] The Arab conquests close the Mediterranean
+  [774-800] The Carolingian renaissance
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+On the road there so far: 6 of its nodes
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > RUSH: 209 started, 0 not
+  STARTED identity_cover (1,580): Establish a respectable cover identity
+  STARTED units_standards (444): Define and publish standard length, mass, time and temperature
+  STARTED arithmetic_positional (1,032): Decimal positional notation, zero, negative numbers, decimal fractions
+  STARTED scientific_method (230): Controlled experiment, hypothesis, replication, publication
+  STARTED horse_collar (709.4): Rigid padded horse collar, whippletree, nailed horseshoe
+  STARTED sea_sternpost_rudder (427.4): Sternpost rudder
+  STARTED sea_lodestone (112.2): Lodestone knowledge
+  STARTED sea_cross_staff (310.7): Cross-staff for latitude
+  STARTED sc2_probability_axioms (258): Probability axioms and conditional probability
+  STARTED tr_sleeper_ballast (223.4): Sleeper and ballast foundation
+  STARTED tr_semaphore_signal (259.3): Semaphore signal
+  STARTED fin_bill_exchange (70): Bill of exchange
+  STARTED tex_horizontal_loom (225.8): Horizontal loom
+  STARTED cn_pile_driving (347.9): Pile driving by drop hammer
+  STARTED air_observation_balloon_tethered (1,138): Tethered observation balloon
+  STARTED tx2_shed (6): Shed: warp separation for pick insertion
+  STARTED tx2_eye_pointed_needle (113.8): Eye-pointed needle: self-threading sewing
+  STARTED tex_mordanting (129.3): Mordanting dyes with alum
+  STARTED tr_lateen_sail (629): Lateen sail
+  STARTED tx2_retting (6): Retting of flax and hemp fibres
+  STARTED tx2_heddle (9.5): Heddle: warp thread carrier and riser
+  STARTED pwr_petroleum_seeps (102): Petroleum seeps and collection
+  STARTED tx2_flyer (27.9): Flyer: the earliest spinning frame component
+  STARTED pwr_coal_seam (272.8): Coal seam and mining
+  STARTED fin_ferry (1,916): Ferry and toll crossing
+  STARTED civ_truss_triangulated (108.4): Triangulated truss frame
+  STARTED tx2_carding (115.9): Carding: opening and aligning fibres
+  STARTED mfg_hot_riveting (220): Hot riveting
+  STARTED mfg_drawing_office (541.8): Drawing office
+  STARTED fin_marine_insurance (4,105): Marine insurance
+  STARTED fin_postal_service (4,362): Postal service as paid business
+  STARTED tx2_rope_lay (9): Rope laying: strand twisting
+  STARTED fin_patent (61.8): Patent and exclusive right
+  STARTED com_optical_codebook (71.4): Codebook for optical signal tower
+  STARTED lnd_hobby_horse (202.8): Hobby horse (pedal-less bicycle)
+  STARTED mfg_production_schedule (204): Production schedule
+  STARTED mfg_flux (209): Flux
+  STARTED hom_fireplace_chimney (271.5): Fireplace and chimney
+  STARTED tx2_silk_fibre (309): Silk: cultivated fibre
+  STARTED opt_manometer (315.9): Manometer (pressure measurement)
+  STARTED sea_diving_bell (968.5): Diving bell
+  STARTED tx2_wool_fibre (9.5): Wool: sheep fibre
+  STARTED fin_employment_contract (10): Contract of employment
+  STARTED med_amputation (12.3): Amputation and prosthetics
+  STARTED tx2_cutting_table (14): Cutting table: stacked cloth cutting
+  STARTED tx2_sizing_systems (18): Sizing systems: body measurement standardisation
+  STARTED med_obstetric_practice (18.8): Obstetric practice
+  STARTED fin_trademark (20): Trademark and mark of quality
+  STARTED fin_usury_law (30): Usury law and interest regulation
+  STARTED hom_toothbrush (30.3): Toothbrush
+  STARTED fin_tariff (47.5): Tariff and import duty
+  STARTED tx2_pattern_grading (55): Pattern grading: multi-size scaling
+  STARTED tx2_printing_block (55.1): Block printing: carved design application
+  STARTED fin_guild (68.8): Guild and monopoly craft
+  STARTED tex_hand_ginning (69.9): Hand ginning cotton
+  STARTED met_ore_crushing_sorting (74.4): Ore dressing: crushing and hand sorting
+  STARTED hom_toys_dolls (75.5): Toys and dolls
+  STARTED hom_latrine_water_trap (124.9): Latrine water trap (S-bend)
+  STARTED cn_stone_polish (137.8): Stone polishing and smoothing
+  STARTED civ_gate_sluice (183): Sluice gate for water control
+  STARTED md2_vector_control (210.8): Vector control
+  STARTED md2_plaster_cast (218): Plaster cast immobilization
+  STARTED fud_hay_making_storage (235): Hay making and dry storage
+  STARTED ag2_malting (240): Malting
+  STARTED cn_damp_proof_course (531): Damp proof course barrier layer
+  STARTED mat_parchment (536.6): Parchment
+  STARTED tx2_scouring (710.5): Scouring: removal of grease and soil
+  STARTED civ_sewer_separate (765): Separate foul and storm sewers
+  STARTED lnd_coach (837.7): Coach
+  STARTED sea_lead_sheathing (1,445): Lead sheathing against shipworm
+  STARTED fin_trading_post (1,662): Trading post and remote store
+  STARTED fin_census (2,532): Census and population enumeration
+  STARTED fin_racecourse (5,332): Racecourse and pari-mutuel betting
+  STARTED fin_hotel (5,824): Hotel and commercial lodging
+  STARTED fin_theatre_business (8,848): Theatre as business
+  STARTED hom_eraser_breadcrumb (5): Eraser, breadcrumb substitute
+  STARTED tx2_bleaching_sun (6): Bleaching by sunlight: oxidative whitening
+  STARTED tx2_count_standard (6): Yarn count standardisation
+  STARTED tx2_selvedge (7.5): Selvedge: woven cloth edge
+  STARTED tx2_flax_fibre (9): Flax cultivation and fibre
+  STARTED tx2_hemp_fibre (9): Hemp cultivation and fibre
+  STARTED tx2_twist_insertion (9): Twist insertion control
+  STARTED tx2_warp_sizing (9): Warp sizing: fibre stiffening
+  STARTED med_bone_setting (9.3): Bone setting
+  STARTED tx2_beam (9.9): Beam: warp holder and tension
+  STARTED tx2_button_horn (10): Button: horn material
+  STARTED tx2_button_bone (10.1): Button: bone material
+  STARTED tx2_cashmere (10.5): Cashmere: goat undercoat fibre
+  STARTED tx2_jute_fibre (10.5): Jute cultivation and fibre
+  STARTED tx2_mohair (10.5): Mohair: angora goat fibre
+  STARTED tx2_ramie_fibre (10.5): Ramie cultivation and fibre
+  STARTED tx2_button_shell (11.5): Button: shell material
+  STARTED tx2_pin (11.8): Pin: sewing fastener
+  STARTED tx2_comb (13): Comb: hair grooming tool
+  STARTED tx2_currying (15): Currying: leather finish dressing
+  STARTED fin_apprenticeship (16): Apprenticeship indenture and training contract
+  STARTED tx2_splitting (16): Splitting: leather layering
+  STARTED tx2_paperclip (16.6): Paperclip: bent wire fastener
+  STARTED tx2_hook_and_eye (19.8): Hook and eye: wire fastener
+  STARTED tx2_warping_mill (21): Warping mill: warp thread length setting
+  STARTED hom_safety_pin (24.1): Safety pin
+  STARTED fin_seigniorage (25): Seigniorage and debasement
+  STARTED tx2_drawing_pin (28.6): Drawing pin: short fastening point
+  STARTED tx2_corset (30): Corset: rigid body support garment
+  STARTED tx2_spectacle_frame (31): Spectacle frame: eye support structure
+  STARTED fin_arbitrage (37.5): Arbitrage and price equalisation
+  STARTED fin_bankruptcy (40): Bankruptcy law and insolvency
+  STARTED pwr_oil_shale (40.4): Oil shale and bitumen deposits
+  STARTED sea_log_line (49.6): Log line for speed
+  STARTED fin_monopoly (51.1): Monopoly and exclusive grant
+  STARTED fin_bimetallism (53.5): Bimetallism and fixed exchange
+  STARTED fin_cartel (53.8): Cartel and market sharing agreement
+  STARTED pwr_peat (57.4): Peat extraction and burning
+  STARTED fin_mortgage (57.5): Mortgage and real estate credit
+  STARTED prc_straightedge (81.8): Straightedge and reference straightness
+  STARTED hom_punkah_ceiling (83): Ceiling punkah, servant-pulled
+  STARTED tx2_doll (83.5): Doll: articulated child plaything
+  STARTED air_compass_magnetic (87.7): Compass for navigation
+  STARTED fin_trade_union (88.1): Trade union and workers collegium
+  STARTED lnd_wheelbarrow (89): Wheelbarrow
+  STARTED hom_umbrella (89.7): Umbrella
+  STARTED cn_gypsum_plaster (97.7): Gypsum plaster finish
+  STARTED tx2_needle (111.8): Needle: sewing implement
+  STARTED ag2_guano (119): Guano
+  STARTED ag2_marling (119.4): Marling
+  STARTED civ_lightning_conductor (142): Lightning conductor and grounding
+  STARTED ag2_liming (149.6): Liming
+  STARTED ag2_hopping (150): Hopping
+  STARTED air_kite_basic (157.8): Kite
+  STARTED ag2_composting (159.4): Composting
+  STARTED ag2_potash (159.4): Potash
+  STARTED hom_flush_toilet_trap (169.2): Flush toilet with S-bend water trap
+  STARTED tex_indigo (187.8): Indigo dyeing
+  STARTED tr_reefing (200.4): Reefing sails
+  STARTED tr_wooden_waggonway (204.9): Wooden waggonway
+  STARTED mat_obsidian_blade (210): Obsidian blade knapping
+  STARTED med_surgical_gloves_mask (216.8): Surgical gloves and mask
+  STARTED mfg_enamelling (216.8): Enamelling
+  STARTED prn_wire_mould_deckle (217.5): Wire mould and deckle
+  STARTED mfg_japanning (219.5): Japanning
+  STARTED mfg_adhesive_bond (219.5): Adhesive bonding
+  STARTED mfg_mould (222.5): Casting mould
+  STARTED mfg_cold_riveting (223): Cold riveting
+  STARTED mt2_pelletising (223.5): Pelletising: forming ore fines into uniform balls
+  STARTED mt2_timbering_safety (224.4): Timbering: wooden support structures for mine stability
+  STARTED mfg_painting (225): Painting
+  STARTED mt2_earthenware (230): Earthenware: low-fired, porous ceramic for everyday use
+  STARTED tr_block_tackle (230.2): Block and tackle pulley
+  STARTED cn_post_lintel (235.6): Post and lintel structure
+  STARTED sc2_physics_newtons_laws (236): Newton's three laws of motion
+  STARTED mfg_soft_solder (236.5): Soft soldering
+  STARTED ag2_oil_pressing (241.6): Oil pressing
+  STARTED sc2_notation_positional (258): Positional notation and place value
+  STARTED sc2_institution_doctorate (258): Doctorate and research degree
+  STARTED sc2_institution_funded_programme (258): Funded research programme
+  STARTED sc2_institution_referee (258): Referee and peer review
+  STARTED sc2_institution_research_group (258): Research group and principal investigator
+  STARTED sc2_method_hypothesis (258): Hypothesis and prediction
+  STARTED sc2_method_negative_result (258): Negative result and null finding
+  STARTED sc2_method_replication (258): Replication and repeatability
+  STARTED tr_hopper_wagon (266.1): Hopper wagon for bulk minerals
+  STARTED sc2_notation_decimal_point (268.3): The decimal point convention
+  STARTED com_signal_flags (269.6): Signal flags for maritime communication
+  STARTED if_quill (271.2): Quill pen
+  STARTED sc2_notation_roots (278.6): Root symbols and radical notation
+  STARTED civ_town_planning (278.8): Town planning and street layout
+  STARTED ag2_pyrethrum (280): Pyrethrum
+  STARTED ag2_refrigeration_ice (280): Refrigeration - ice trade
+  STARTED sc2_notation_exponents (281.2): Exponent notation
+  STARTED hom_sprung_mattress (285.5): Sprung mattress
+  STARTED sc2_institution_curriculum (294): Curriculum and course sequence
+  STARTED sc2_physics_momentum (296.7): Momentum and impulse
+  STARTED sc2_institution_citation (299.3): Citation and bibliographic reference
+  STARTED sc2_physics_kinematics (301.9): Kinematics: position, velocity, acceleration
+  STARTED sc2_physics_gravitation (304.4): Newton's law of universal gravitation
+  STARTED tx2_mirror (316): Mirror: reflective glass surface
+  STARTED tr_bilge_pump (329.2): Bilge pump
+  STARTED met_investment_casting (329.8): Investment casting and lost wax
+  STARTED opt_anemometer (337.2): Anemometer (wind speed)
+  STARTED fud_fish_curing_and_smoking (363): Large-scale fish curing and smoking
+  STARTED mat_papyrus (402.5): Papyrus
+  STARTED sc2_institution_examination (412.8): Examination and credentialing
+  STARTED civ_street_paved (491.7): Paved street and sidewalk
+  STARTED med_herbal_pharmacy (580): Herbal pharmacy (Dioscorides Materia medica)
+  STARTED arrival_orientation (600): Six months of listening before you act
+  STARTED tx2_dyeing_fibre (715): Dyeing in fibre: pre-spin colouration
+  STARTED tx2_dyeing_yarn (718): Dyeing in yarn: skein colouration
+  STARTED tx2_dyeing_piece (721): Dyeing in piece: woven cloth colouration
+  STARTED tx2_resist_dyeing (733): Resist dyeing: pattern preservation
+  STARTED tx2_alum_tanning (760): Alum tanning: mineral salt curing
+  STARTED fud_grain_storage_silos (830.4): Cylindrical silos for bulk grain storage
+  STARTED mfg_silver_solder (856.1): Silver soldering
+  STARTED tr_square_rig (935): Square rig sails
+  STARTED sea_skeleton_first (967.7): Skeleton-first hull construction
+  STARTED fin_pawnshop (1,025): Pawnshop and secured loan
+  STARTED tx2_bottle (1,132): Bottle: glass container
+  STARTED tx2_asbestos_cloth (1,203): Asbestos cloth: fire-resistant fabric
+  STARTED met_bloomery_bog_iron (1,210): Bloomery smelting of bog iron
+  STARTED sea_keel_deep (1,258): Deep keel and the ability to sail to windward
+  STARTED sc2_institution_textbook (1,470): Textbook and codified knowledge
+  STARTED mt2_type_metal (1,883): Type metal: lead-tin-antimony for printing type castings
+  STARTED fud_whaling_industry (2,070): Organized whaling industry for oil and meat
+  STARTED fin_lottery (2,080): Lottery and state gambling
+  STARTED fin_gambling_house (2,112): Gambling house and gaming establishment
+  STARTED fin_inn (3,538): Inn and coaching house
+  STARTED mt2_solder_lead_tin (4,713): Solder: lead-tin for joining metals by melting
+  STARTED mt2_amalgamation (6,296): Amalgamation: extracting precious metals with mercury
+  STARTED fin_plantation (10,831): Plantation and large estate agriculture
+  STARTED tx2_watch_case (17,415): Watch case: portable timepiece housing
+
+tried everything you could begin today, highest-leverage first, until your
+credit ran out or the list did. 'why <id>' on anything in not_started says
+exactly why it stopped there.
+
+[100 AD | 999923 den | you:2000 hr | sch 1 art 1 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_233.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_233.json
