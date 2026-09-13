@@ -603,7 +603,7 @@ class SocietyMixin:
         took = (req_share + off_share) * rev
         if took > 0.5:
             self.capital -= took
-            last = getattr(self, "_said_requisition", -999)
+            last = self._said_requisition
             if yr - last >= 15:
                 self._said_requisition = yr
                 bits = ["%s takes %s this year" % (
@@ -623,7 +623,7 @@ class SocietyMixin:
             # first denarius is actually taken, not discover it in the
             # ledger after the fact.
             band = int(notice / max(0.01, self.STATE_NOTICE_THRESHOLD * 0.1))
-            if band > int(getattr(self, "_said_notice_approach", 0)):
+            if band > self._said_notice_approach:
                 self._said_notice_approach = band
                 self.log.append((yr, "this household is becoming large enough "
                                      "for the state to take an interest: "
@@ -634,7 +634,7 @@ class SocietyMixin:
                                      % (notice, self.STATE_NOTICE_THRESHOLD)))
 
         if self.events and self.military_demand_eligible():
-            last = getattr(self, "last_military_demand", -999)
+            last = self.last_military_demand
             if (yr - last >= self.MILITARY_DEMAND_COOLDOWN_YEARS
                     and self.rng.random() < self.MILITARY_DEMAND_ANNUAL_CHANCE):
                 self.last_military_demand = yr
@@ -653,7 +653,7 @@ class SocietyMixin:
         p, conf_why = self.confiscation_risk()
         if p > 0.0:
             band = int(p / 0.05)
-            last_band = int(getattr(self, "_said_confiscation_band", -1))
+            last_band = self._said_confiscation_band
             if band > last_band:
                 self._said_confiscation_band = band
                 self.log.append((yr, "THE TREASURY IS LOOKING AT YOUR FORTUNE: "
@@ -1014,7 +1014,7 @@ class SocietyMixin:
         # message. Thrown on a fixed 25-year clock (a generation) rather than
         # on a rounded-value change, so it fires on the same schedule whether
         # a run is barely investing or investing heavily.
-        last = getattr(self, "_literacy_said", -999)
+        last = self._literacy_said
         if yr - last >= 25:
             self._literacy_said = yr
             bits = []
@@ -1449,7 +1449,7 @@ class SocietyMixin:
         # ONCE A GENERATION, same throttle as _advance_literacy's own - a
         # gain this small, reported every year of a centuries-long run, is
         # the same noise that throttle was written to stop.
-        last = getattr(self, "_food_diffusion_said", -999)
+        last = self._food_diffusion_said
         if applied > 0.005 and yr - last >= 25:
             self._food_diffusion_said = yr
             self.log.append((yr, "what you grew is no longer only on your "
@@ -2184,9 +2184,7 @@ class SocietyMixin:
         need = cond.get("requires_all") or []
         met = all(self.has(n) for n in need)
         if yr == a:
-            said = getattr(self, "_said_condition", None)
-            if said is None:
-                said = self._said_condition = set()
+            said = self._said_condition
             key = h.get("name", "hazard")
             if key not in said:
                 said.add(key)
@@ -2423,9 +2421,7 @@ class SocietyMixin:
                                          and k != "corpus_dispersed")
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
-                            _lost = getattr(self, "forgotten", None)
-                            if _lost is None:
-                                _lost = self.forgotten = {}
+                            _lost = self.forgotten
                             for k in drop:
                                 self.operating.discard(k)
                                 self.done.discard(k)
