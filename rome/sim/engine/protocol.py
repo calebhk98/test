@@ -91,6 +91,55 @@ def _risk_without_the_essays(kr):
     return out
 
 
+def _staff_fraction_note(s):
+    """Why a trade count on your own STAFF is not a whole number, in one
+    place - `state` and `labour` both show it and must give the same
+    explanation, not two that could drift apart (this codebase's own
+    signature bug). None when every count already is whole, so a
+    whole-number staff gets no footnote at all.
+
+    THESE ARE REAL PEOPLE, JUST COUNTED CONTINUOUSLY. scholars/artisans/
+    employees grow and decay a little every year - hiring phases in,
+    training takes years, attrition trims a few percent rather than
+    killing one named person - so at any moment the total is a partial
+    year's worth of one more or one fewer person, the same way a
+    company's headcount can be "40.5 FTE" without anyone being cut in
+    half. Arithmetic is unchanged; this only names what the number means.
+    """
+    if (abs(s.scholars - round(s.scholars)) < 0.02
+            and abs(s.artisans - round(s.artisans)) < 0.02
+            and all(abs(v - round(v)) < 0.02 for v in s.employees.values())):
+        return None
+    return ("these are continuous full-time-equivalents, not a count of "
+            "whole people: hiring phases in, training takes years, and "
+            "attrition (about 3.5%/yr) trims everyone a little rather "
+            "than dismissing one person at a time. 1.32 artisans is the "
+            "wage and output of one artisan plus a third of another's.")
+
+
+# WHY keeping a concern open can want "2.13 craftsmen" - and it is not a
+# body count either, for a different reason than _staff_fraction_note's.
+# venture_hands() (projects.py) is a continuous SHARE of a scholar's or
+# craftsman's YEAR that running the concern claims, scaled by how much it
+# takes in - it is not even trying to count people, the way scholars/
+# artisans above at least approximately are. A player who had never seen
+# either explanation measured the exact case this answers: "'open' refused
+# lens_grinding, which a moment earlier 'why' had said needs 2 artisans,
+# over a SEPARATE figure - 2.13 craftsmen - that 'why' never showed at
+# all." Read by `why`, `start`, `stuck` and `ventures` - every screen that
+# shows venture_hands()'s own numbers - so the one explanation for what
+# they mean cannot disagree with itself from one screen to the next.
+_VENTURE_SUPERVISION_NOTE = (
+    "the craftsmen/scholars a concern wants to stay open are not a "
+    "headcount: venture_hands (what 'open' actually checks) is a "
+    "continuous SHARE of a person's YEAR that watching it claims, scaled "
+    "by how much it takes in - 2.13 craftsmen means the year-round "
+    "attention of two of them plus a little over a third of a third "
+    "one's, not that a person is divided. staff_needed, the crew that "
+    "BUILDS it, is the one figure on these screens that really is whole "
+    "people.")
+
+
 def _waiting_on(s, nodes, k, st, bill):
     """What is ACTUALLY holding this project up, checked against today."""
     n = nodes[k]
@@ -2052,15 +2101,10 @@ def _agent_state(s, nodes, cmd=None):
         # person, the same way a company's headcount can be "40.5 FTE". Said
         # only when it would actually be confusing - a whole-number staff
         # needs no footnote.
-        "staff_are_fractional_because": (
-            None if (abs(s.scholars - round(s.scholars)) < 0.02
-                     and abs(s.artisans - round(s.artisans)) < 0.02
-                     and all(abs(v - round(v)) < 0.02 for v in s.employees.values()))
-            else ("these are continuous full-time-equivalents, not a count of "
-                  "whole people: hiring phases in, training takes years, and "
-                  "attrition (about 3.5%/yr) trims everyone a little rather "
-                  "than dismissing one person at a time. 1.32 artisans is the "
-                  "wage and output of one artisan plus a third of another's.")),
+        # _staff_fraction_note, NOT A SECOND COPY OF THIS EXPLANATION - see
+        # its own docstring. `labour` shows the identical fractional counts
+        # and must say the identical thing about them.
+        "staff_are_fractional_because": _staff_fraction_note(s),
         "trades_you_created": sorted(s.trades_created),
         # WHICH OF THOSE THE SOCIETY NOW SUPPLIES ON ITS OWN. See
         # SocietyMixin.advance_society (society.py): once a taught trade has
@@ -3586,16 +3630,24 @@ def _node_explain(s, nodes, k):
             if _is_venture else None),
         "staff_to_keep_it_open_means": (
             "a SEPARATE requirement from staff_needed above, and the one "
-            "'open' actually enforces once this is built: people of your "
-            "own who keep an eye on it every year it runs, not the crew "
-            "that built it. Often smaller than staff_needed - typically a "
-            "quarter of it - but a concern that takes in a great deal needs "
-            "more watching than it took to build, and this can come out "
+            "'open' actually enforces once this is built: a continuous "
+            "SHARE of your own people's time spent watching it every year "
+            "it runs, not a headcount and not the crew that built it. "
+            "Often smaller than staff_needed - typically a quarter of it "
+            "- but a concern that takes in a great deal needs more "
+            "watching than it took to build, and this can come out "
             "LARGER. Checked when you 'open' it, not when you 'start' it, "
             "so know this number before you spend money on the other one."
             if _is_venture else None),
+        # "2.13 craftsmen" IS NOT A HEADCOUNT - SAY SO RIGHT WHERE IT IS
+        # SHOWN, not only in a help topic nobody thought to ask for. See
+        # _VENTURE_SUPERVISION_NOTE's own comment for the exact complaint
+        # this answers.
+        "these_are_a_share_of_their_year_not_a_headcount": (
+            _VENTURE_SUPERVISION_NOTE if _is_venture else None),
         "more_supervision_than_you_have_free_right_now": (
-            "%.2f scholars and %.2f artisans needed to keep it open; you "
+            "the equivalent of %.2f scholars and %.2f artisans needed to "
+            "keep it open (a share of their year, not a headcount); you "
             "have %.2f and %.2f free right now (not already watching "
             "something else). This is what 'open' will actually check, on "
             "the day you open it - hire, teach, or close something first."
@@ -4411,13 +4463,16 @@ def render_why(out):
     open_staff = out.get("staff_to_keep_it_open")
     if open_staff is not None:
         L.append("STAFF TO KEEP IT OPEN: %s scholars, %s artisans   "
-                 "(a separate, later requirement - see below)"
+                 "(a share of their year, not a headcount - see below)"
                  % (_fmt_num(open_staff.get("scholars")),
                     _fmt_num(open_staff.get("artisans"))))
         if out.get("staff_to_keep_it_open_means"):
             L.append(_wrap("  " + out["staff_to_keep_it_open_means"], indent="     "))
         if out.get("more_supervision_than_you_have_free_right_now"):
             L.append(_wrap("  !! " + out["more_supervision_than_you_have_free_right_now"],
+                            indent="     "))
+        if out.get("these_are_a_share_of_their_year_not_a_headcount"):
+            L.append(_wrap("  " + out["these_are_a_share_of_their_year_not_a_headcount"],
                             indent="     "))
     lab = out.get("hired_labour") or {}
     if lab:
@@ -4684,6 +4739,8 @@ def render_labour(out):
         L.append("you employ: %s     the town can supply: %s hours"
                  % (_fmt_num(t.get("you_employ")),
                     _fmt_num(t.get("hours_the_market_can_supply"))))
+        if t.get("you_employ_is_fractional_because"):
+            L.append(_wrap("  " + t["you_employ_is_fractional_because"], indent="     "))
         if t.get("hours_your_own_people_add"):
             L.append("your own %ss add %s" % (t.get("trade"),
                                               _fmt_num(t.get("hours_your_own_people_add"))))
@@ -4763,6 +4820,8 @@ def render_labour(out):
     L.append("")
     L.append("Total employed: %s     annual wage bill: %s den"
              % (_fmt_num(out.get("you_employ_in_total")), _fmt_num(out.get("annual_wage_bill"))))
+    if out.get("staff_are_fractional_because"):
+        L.append(_wrap(out["staff_are_fractional_because"], indent="  "))
     if out.get("note"):
         L.append("")
         L.append(_wrap(out["note"]))
@@ -4797,6 +4856,10 @@ def render_ventures(out):
     if out.get("these_are_not_interchangeable"):
         L.append("")
         L.append(_wrap(out["these_are_not_interchangeable"], indent="  "))
+    if out.get("these_are_a_share_of_their_year_not_a_headcount"):
+        L.append("")
+        L.append(_wrap(out["these_are_a_share_of_their_year_not_a_headcount"],
+                       indent="  "))
     L.append("")
     run = out.get("running")
     L.append("RUNNING")
@@ -6624,9 +6687,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
             _free_sch, _free_art = s.venture_staff_free()
             if _sup_sch > _free_sch + 1e-9 or _sup_art > _free_art + 1e-9:
                 out["today_you_could_not_open_this_when_it_is_done"] = (
-                    "keeping it open will want %.2f scholars and %.2f "
-                    "artisans of your own watching it; you have %.2f and "
-                    "%.2f free right now, with nothing else committed. That "
+                    "keeping it open will want the equivalent of %.2f "
+                    "scholars and %.2f artisans of your own watching it "
+                    "full time, every year it runs - a continuous share of "
+                    "their time, not a headcount; you have %.2f and %.2f "
+                    "free right now, with nothing else committed. That "
                     "is a different, usually smaller number than the crew "
                     "that builds it, and it is checked only when you 'open' "
                     "it - not now. Staffing can change before this "
@@ -7367,8 +7432,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 _best = max(_shut, key=lambda k: nodes[k]["rev"] - nodes[k]["up"])
                 _need_sch, _need_art = s.venture_hands(_best)
                 if _need_sch > _sch_free + 0.01 or _need_art > _art_free + 0.01:
-                    _why = ("it needs %.2f scholars and %.2f craftsmen to "
-                            "supervise it, and you have %.2f and %.2f not "
+                    _why = ("it needs the full-time equivalent of %.2f "
+                            "scholars and %.2f craftsmen to supervise it "
+                            "(a continuous share of their year, not a "
+                            "headcount), and you have %.2f and %.2f not "
                             "already watching something else"
                             % (_need_sch, _need_art, _sch_free, _art_free))
                 else:
@@ -7479,6 +7546,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
                  "a_year_of_one": round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index
                                         * s.price_index * _lpf, 0),
                  "you_employ": round(s.employees.get(t, 0.0), 2)}
+            # SAME EXPLANATION AS THE FULL LIST'S, for whoever asks about
+            # one trade without ever asking for all of them - see
+            # _staff_fraction_note. Checked on this one trade alone, not
+            # the whole household, so a whole-number trade gets no
+            # footnote even while another trade is mid-attrition.
+            if abs(r["you_employ"] - round(r["you_employ"])) >= 0.02:
+                r["you_employ_is_fractional_because"] = (
+                    "a continuous full-time-equivalent, not a count of "
+                    "whole people: hiring phases in, training takes years, "
+                    "and attrition trims a little every year rather than "
+                    "dismissing one named person at a time.")
             # THE CEILING, ON THE SCREEN. "This society's literacy will not
             # supply more than 6.4 scholars in total, ever" gates the goal
             # itself - which wants twenty-five - and appeared in no screen at
@@ -7644,6 +7722,12 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "annual_wage_bill": round(s.wage_bill(), 1),
                 "craftsmen_on_your_staff": round(s.artisans, 2),
                 "scholars_including_you": round(s.effective_scholars(), 2),
+                # SAME EXPLANATION AS `state`'s - see _staff_fraction_note.
+                # A player who asks `labour` without ever asking `state`
+                # deserves the same answer to "why is this not a whole
+                # number", not silence on this screen and a footnote only
+                # on the other one.
+                "staff_are_fractional_because": _staff_fraction_note(s),
                 # A ROW WITH NO TRADE IS PEOPLE YOU BOUGHT, and printing that
                 # as the literal string "None" - "None x3.3", "None x0.55" -
                 # is how two separate testers concluded the game had lost track
@@ -8009,6 +8093,13 @@ def _agent_dispatch_inner(s, nodes, cmd):
                    "Engineers, chemists and machinists are scholars here, and "
                    "a scholar cannot watch a workshop. 'labour <trade>' says "
                    "which of the two a trade is."),
+               # "needs", "held_in_all" and "people_free_to_run_something_new"
+               # above are venture_hands()/venture_staff_free()'s own numbers
+               # - a continuous SHARE of a person's year, never a headcount -
+               # see _VENTURE_SUPERVISION_NOTE's own comment for the exact
+               # complaint this answers.
+               "these_are_a_share_of_their_year_not_a_headcount":
+                   _VENTURE_SUPERVISION_NOTE,
                "note": "Knowing how to do a thing and running it are different. "
                        "Of the things in the TREE, only what you are RUNNING "
                        "earns anything or costs anything. 'open <id>' starts "

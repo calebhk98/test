@@ -1611,8 +1611,17 @@ class ProjectsMixin:
         # Buying a jobbing carpenter for a season to raise your workshop is
         # what a person in this position actually did.
         if n["art"] > self.craft_hands_available():
-            return False, ("needs %d trained craftsmen, on your staff or under "
-                           "contract, and you have %.1f. %s"
+            # A SHARE OF A YEAR, NOT ONLY BODIES. craft_hands_available()
+            # adds hours already bought under contract as that fraction of
+            # one more craftsman's year (see its own docstring: "a year of
+            # a carpenter's time IS a carpenter") - so the figure below can
+            # be fractional even when every actual person on the payroll is
+            # a whole one. Said inline, not left for the player to work out
+            # from a number that otherwise looks like a body cut short.
+            return False, ("needs %d trained craftsmen, and you have %.1f - "
+                           "counting people on your staff plus any hours "
+                           "already bought under contract as that share of "
+                           "one more. %s"
                            % (n["art"], self.craft_hands_available(),
                               self._staff_advice("artisans")))
         # THE TRADE HAS TO EXIST. A node wanting 450 hours of an engineer cannot

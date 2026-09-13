@@ -12986,6 +12986,92 @@ check("...and so does a standing work-for-wages directive and its trade",
       s2.hour_allocations.get("work") == 77.0 and s2.work_trade == "scribe",
       (s2.hour_allocations.get("work"), s2.work_trade))
 
+# ===========================================================================
+# "What does it mean when it says I need 2.13 craftsmen?" - wording only,
+# no arithmetic changed anywhere below.
+# ===========================================================================
+
+# --- the standing-staff explanation (self.scholars/self.artisans/employees,
+# a genuine headcount under a continuous attrition model) is written ONCE
+# and read back identically by `state` and `labour`, never two answers to
+# the same question.
+s = sim(capital=1e6)
+s.artisans, s.scholars = 1.6, 0.4
+_st = S._agent_dispatch(s, NODES, {"cmd": "state", "full": True})
+_lb = S._agent_dispatch(s, NODES, {"cmd": "labour"})
+check("`state` explains a fractional standing-staff count as a continuous "
+      "full-time-equivalent, not a chopped-up person",
+      _st.get("staff_are_fractional_because")
+      and "not a count of whole people" in _st["staff_are_fractional_because"],
+      _st.get("staff_are_fractional_because"))
+check("...and `labour` gives the identical explanation, word for word - "
+      "one rule, not two that could disagree",
+      _lb.get("staff_are_fractional_because") == _st.get("staff_are_fractional_because"),
+      (_lb.get("staff_are_fractional_because"), _st.get("staff_are_fractional_because")))
+s_whole = sim(capital=1e6)
+s_whole.artisans, s_whole.scholars = 2.0, 1.0
+_st_whole = S._agent_dispatch(s_whole, NODES, {"cmd": "state", "full": True})
+check("...and says nothing at all when the staff genuinely is whole numbers "
+      "- a footnote only where one is needed",
+      _st_whole.get("staff_are_fractional_because") is None,
+      _st_whole.get("staff_are_fractional_because"))
+
+# --- the SEPARATE, and separately confusing, "2.13 craftsmen" a concern
+# wants to stay open (venture_hands - a continuous share of a person's
+# YEAR, scaled by revenue, not a headcount at all) is now named as such
+# everywhere it is shown, not left for a player to read as a body count.
+s_shut = sim(capital=10_000_000.0)
+for _p in S.closure(NODES, "lens_grinding"):
+    s_shut.done.add(_p)
+s_shut.done.add("lens_grinding")
+s_shut._done_changed()
+_why_sg = S._agent_dispatch(s_shut, NODES, {"cmd": "why", "id": "lens_grinding"})
+check("`why`'s staff_to_keep_it_open is still exactly venture_hands's own "
+      "number - the wording fix changes nothing about what is computed",
+      (_why_sg.get("staff_to_keep_it_open") or {}).get("artisans")
+      == round(s_shut.venture_hands("lens_grinding")[1], 2),
+      _why_sg.get("staff_to_keep_it_open"))
+check("...and `why` now says outright that this is a share of a year, not "
+      "a headcount, right beside the number that confused three players",
+      _why_sg.get("these_are_a_share_of_their_year_not_a_headcount")
+      and "not a headcount" in _why_sg["these_are_a_share_of_their_year_not_a_headcount"],
+      _why_sg.get("these_are_a_share_of_their_year_not_a_headcount"))
+_vent_sg = S._agent_dispatch(s_shut, NODES, {"cmd": "ventures"})
+check("...and `ventures` - the other screen that shows venture_hands's "
+      "numbers - carries the same explanation, not a different one",
+      _vent_sg.get("these_are_a_share_of_their_year_not_a_headcount")
+      == _why_sg.get("these_are_a_share_of_their_year_not_a_headcount"),
+      _vent_sg.get("these_are_a_share_of_their_year_not_a_headcount"))
+
+# --- the `stuck` advice sentence that measurably confused a player ("2.13
+# craftsmen to supervise" with no explanation at all) keeps the exact words
+# a prior regression already checks for, and now also says why.
+_stuck_sg = S._agent_dispatch(s_shut, NODES, {"cmd": "stuck"})
+_reason_sg = next((r for r in _stuck_sg["what_is_holding_you_up"]
+                   if isinstance(r, dict)
+                   and r.get("what", "").startswith("things you built")), None)
+check("the `stuck` advice still names craftsmen specifically (unchanged "
+      "substring an earlier regression already relies on)",
+      _reason_sg is not None and "craftsmen to supervise" in _reason_sg.get("why", ""),
+      _reason_sg)
+check("...and now also says this is a continuous share of their year, not "
+      "a headcount, in the same sentence rather than a footnote elsewhere",
+      _reason_sg is not None and "not a headcount" in _reason_sg.get("why", ""),
+      _reason_sg)
+
+# --- the build-crew staffing refusal (craft_hands_available: staff PLUS
+# hours already bought under contract) still refuses for the same reason
+# and still says "craftsmen" (an existing regression checks this), and now
+# explains the mixed count inline instead of implying a body count alone.
+s_cc = sim(civ="rome_100ad", capital=1e6, manual=True, events=False)
+_ok_cc, _why_cc = s_cc.start_reason("ag2_cold_store", ignore_trade=True)
+check("the craftsmen staffing refusal still refuses for the same reason, "
+      "unchanged arithmetic",
+      not _ok_cc and "craftsmen" in _why_cc, _why_cc)
+check("...and now says the figure counts contracted hours as a share of "
+      "one more craftsman, not only bodies on the payroll",
+      "share of" in _why_cc, _why_cc)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
