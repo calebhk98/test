@@ -795,6 +795,24 @@ class EconomyMixin:
         # hire(), train() and commission() had this right all along and
         # computed it inline; the screens that quote a figure to the player
         # called this function and so quoted one too high.
+        if kind == "open":
+            # THE ONE CASE WHERE THE HOLE DOES NOT COUNT, and it is not an
+            # oversight. Opening a door on a concern you have ALREADY built
+            # and which ALREADY earns is not a wage or a commission: it buys
+            # its own fee back, often in weeks. Counting the arrears against
+            # it is how a household gets locked out of the very thing that
+            # would dig it out.
+            #
+            # Two traced runs are in the suite for this. A tester at -1,608
+            # against a 3,684 line left seven finished concerns worth 1,713 a
+            # year shut, believing they could not open them; and a Rome run
+            # built exp_trade_route_extend (net +1,700 a year) by year 117 and
+            # sat on it, unopened, for about 850 years. See the checks named
+            # "a completed concern that pays for its own door within months
+            # opens even while deep in arrears" and its slow-payback sibling,
+            # which holds the line the other way: a concern that takes YEARS
+            # to clear its own capex still does not open on this.
+            return max(0.0, self.capital) + self.credit_limit() * share
         return max(0.0, self.capital + self.credit_limit() * share)
 
     def cost_money_factor(self):

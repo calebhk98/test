@@ -512,7 +512,7 @@ class ProjectsMixin:
         if k in _shut and self.year - _shut[k] <= self.STAFF_CLOSURE_GRACE:
             fee *= 0.1
         if pay:
-            if fee > self.spending_power("buy"):
+            if fee > self.spending_power("open"):
                 # SAY WHAT WAS COUNTED. The test allows cash plus half the
                 # credit line and the refusal quoted the cash alone, so a play
                 # tester at -1,608 with a 3,684 line 44% used read "opening it
@@ -951,7 +951,25 @@ class ProjectsMixin:
         # near the end of this function, which already refuses (via
         # `open_venture`) anything whose capex it cannot actually raise or
         # whose supervision it cannot actually staff.
-        _room = max(0.0, self.capital) + self.credit_limit() * 0.5
+        # "open", NOT "buy", AND THE DIFFERENCE IS LOAD-BEARING. This asks
+        # what could be raised for a door fee on something that pays for
+        # itself in weeks, IGNORING how deep the household already is.
+        # "buy" counts the debt you carry,
+        # because that is the honest answer for a wage or a commission that
+        # buys you nothing back. Opening an already-built, already-earning
+        # concern is the one case where it must not, and the reason is
+        # recorded in the test named "a completed concern that pays for its
+        # own door within months opens even while deep in arrears": gating
+        # this on arrears made auto_open blanket-refuse everything once a
+        # household owed half its line, and a traced Rome run left
+        # exp_trade_route_extend - built, net +1,700 a year - shut for about
+        # 850 years. Sunk capex earning nothing, for ever.
+        #
+        # A consolidation pass routed this through spending_power() on the
+        # reasonable-looking grounds that it was the same arithmetic written
+        # twice. It is not. It is the same arithmetic answering a different
+        # question, and the regression suite caught it.
+        _room = self.spending_power("open")
         _deep_arrears = self.capital < 0 and -self.capital > self.credit_limit() * 0.5
         # AND THE ONES WHOSE WORTH IS NOT AT THE DOOR. A school takes 2,500 a
         # year and hands back 800, so the margin test above shuts it out for

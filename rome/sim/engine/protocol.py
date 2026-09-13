@@ -211,7 +211,7 @@ def _waiting_on(s, nodes, k, st, bill):
         # diagnosis, it is a contradiction. What they were waiting on was the
         # calendar, and nothing anywhere said there was a pace at all.
         per_year = s.project_cost(k) * frac
-        if per_year > 0.5 and s.capital + s.credit_limit() * 0.5 >= per_year:
+        if per_year > 0.5 and s.spending_power("buy") >= per_year:
             return ("the pace it can absorb money: at most %s a year goes into "
                     "this (%s still owed, about %.0f more year%s at that rate). "
                     "Money in hand cannot buy it down faster"

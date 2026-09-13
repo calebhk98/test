@@ -1459,7 +1459,7 @@ class LabourMixin:
         that WAS there. One message for hire, train and commission, so the
         three cannot drift apart from each other or from this reasoning.
         """
-        room = self.capital + self.credit_limit() * 0.5
+        room = self.spending_power("buy")
         return ("%s costs %s denarii, due now - not on credit past half your "
                 "line. You have %s in hand and could raise about %s more of "
                 "your credit line for this (not all of it: a lender funds "
@@ -1518,7 +1518,7 @@ class LabourMixin:
         _lpf_now = self.labour_price_factor(trade)
         fee = (n * ANNUAL_WAGE.get(trade, 375.0) * self.wage_index * self.price_index
               * _lpf_now)
-        if fee > self.capital + self.credit_limit() * 0.5:
+        if fee > self.spending_power("buy"):
             _msg = self._cash_in_hand_refusal(
                 "hiring %g %s%s" % (n, trade, "" if n == 1 else "s"), fee)
             # SAY WHOSE MARKET THIS IS, where the player actually feels it.
@@ -1697,7 +1697,7 @@ class LabourMixin:
         # batch while they learn.
         fee = (n * ANNUAL_WAGE.get(frm, 375.0) * 1.2 * self.wage_index * self.price_index
               * self.labour_price_factor(frm))
-        if fee > self.capital + self.credit_limit() * 0.5:
+        if fee > self.spending_power("buy"):
             return False, self._cash_in_hand_refusal(
                 "keeping %g %s%s fed while they learn"
                 % (n, trade, "" if n == 1 else "s"), fee)
@@ -1750,7 +1750,7 @@ class LabourMixin:
         # of its staff and it never opened another concern. commission() does
         # its own affordability check against cash AND credit, which is the
         # check that should govern here too.
-        if self.capital + self.credit_limit() * 0.5 <= 0:
+        if self.spending_power("buy") <= 0:
             return None
         need = getattr(self, "_goal_closure", None)
         if need is None:
@@ -1836,7 +1836,7 @@ class LabourMixin:
         # market can spare this year (see labour_price_factor).
         fee = (hours * WAGES[trade] * 1.6 * self.wage_index * self.price_index
               * self.labour_price_factor(trade))
-        if fee > self.capital + self.credit_limit() * 0.5:
+        if fee > self.spending_power("buy"):
             return False, self._cash_in_hand_refusal(
                 "%.0f hours of a %s" % (hours, trade), fee)
         self.capital -= fee
