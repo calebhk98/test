@@ -6268,20 +6268,64 @@ def _downstream_of(k, nodes):
     return seen
 
 
+# REVERSE INDEX, BUILT ONCE PER TREE. _unlocked_by used to answer "who needs
+# k" by scanning every one of the tree's 2,849 nodes and all their req_any
+# groups, on EVERY call - and _downstream_of calls it once per node on the
+# frontier of its walk, so one `why`/`path`/`available` could fire it
+# thousands of times. Profiled on a fresh, unfogged rome_100ad game, a single
+# `available` made 6,954 such calls and 23.7 million dict lookups for 11.3s
+# of an 11.33s command. The fix: walk every node ONCE, appending it to the
+# reverse-index bucket for each id in its own `pre` and each `req_any`
+# group's `options`, so `_unlocked_by` becomes a dict lookup.
+#
+# CACHE KEYED ON id(nodes), WITH A STRONG REFERENCE TO nodes HELD ALONGSIDE
+# THE INDEX. `nodes` is normally the one global tree, loaded once and never
+# mutated afterward (a repo-wide grep for assignments into a node's "pre" or
+# "req_any" - see the report accompanying this change - turns up only
+# offline tree-authoring tools that run before the tree is ever loaded, plus
+# two places in test_regressions.py that mutate a small synthetic dict, and
+# both do it before that dict's first use, never after these functions have
+# already seen it). The test suite DOES build many short-lived synthetic
+# node dicts, though, and id() is only unique among currently-alive objects:
+# once a small dict is garbage collected, a brand-new dict can legitimately
+# be allocated at that same address. A cache of {id(nodes): index} alone
+# would then hand the new dict a stale index built for a completely
+# different tree. Storing `nodes` itself in the cache entry keeps that exact
+# dict alive for as long as the entry lives, so its id cannot be recycled
+# into a stale hit while the entry is still around - the collision this
+# guards against is structurally impossible, not just unlikely.
+_unlocked_by_cache = {}  # id(nodes) -> (nodes, {prereq_id: sorted[dependent_id]})
+
+
+def _unlocked_by_index(nodes):
+    entry = _unlocked_by_cache.get(id(nodes))
+    if entry is not None and entry[0] is nodes:
+        return entry[1]
+    idx = {}
+    for m, v in nodes.items():
+        prereqs = set(v["pre"])
+        for g in (v.get("req_any") or []):
+            prereqs.update(g.get("options") or {})
+        for p in prereqs:
+            idx.setdefault(p, []).append(m)
+    for lst in idx.values():
+        lst.sort()
+    _unlocked_by_cache[id(nodes)] = (nodes, idx)
+    return idx
+
+
 def _unlocked_by(k, nodes):
     """Everything that needs this node, whether hard or as one option of a
     substitution group. sorted() because a set of ids iterates in an order
-    that depends on PYTHONHASHSEED."""
-    out = set()
-    for m, v in nodes.items():
-        if k in v["pre"]:
-            out.add(m)
-            continue
-        for g in (v.get("req_any") or []):
-            if k in (g.get("options") or {}):
-                out.add(m)
-                break
-    return sorted(out)
+    that depends on PYTHONHASHSEED - here, sorted once when the reverse
+    index (see _unlocked_by_index above) is built, not on every call.
+
+    Returns a fresh list, same as the old per-call scan did: the index's own
+    bucket is shared across every caller and every future call for this `k`,
+    so handing it out directly would let one caller's in-place edit corrupt
+    what the next caller sees. list(...) is a cheap copy of a small
+    dependents list, not another tree scan."""
+    return list(_unlocked_by_index(nodes).get(k, []))
 
 
 def _did_you_mean(k, nodes, limit=8, s=None):
