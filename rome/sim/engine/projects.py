@@ -52,11 +52,23 @@ class ProjectsMixin:
     # auto_open_ventures would leave them shut for ever. Kept honest by a
     # regression check that greps the engine for running() gates and fails if
     # any node named in one is missing from this set.
+    # fin_company_town and fin_chain_store joined this set together with the
+    # STAFF_CAPACITY_SOURCES entries that run() -gate them (labour.py): both
+    # are going concerns whose entire point is the household places they
+    # support, exactly like a school or a workshop, and both run at a loss on
+    # the books by design (fin_chain_store: upkeep 2,000 against revenue
+    # 1,500) - the intended shape of the trade, not a mistake to be flagged
+    # the way an ordinary money-losing venture is. fin_societas and
+    # fin_trial_balance are NOT here: neither has any revenue or upkeep of
+    # its own (is_venture() is false for both), so neither is ever opened,
+    # closed, or capable of losing money - there is nothing for this set to
+    # protect.
     CAPABILITY_INSTITUTIONS = frozenset((
         "academy_network", "blast_furnace", "collegium_licensed",
         "corpus_dispersed", "corpus_written", "crucible_steel",
         "endowment_land", "exp_trade_route_extend", "fin_argentarii",
-        "fin_university", "freedman_staff", "identity_cover",
+        "fin_chain_store", "fin_company_town", "fin_university",
+        "freedman_staff", "identity_cover",
         "interchangeable_parts", "patron_imperial", "patron_local",
         "patron_senatorial", "plague_preparedness", "power_grid", "railway",
         "sanitation_antisepsis", "school_founded", "steam_high_pressure",
@@ -161,9 +173,17 @@ class ProjectsMixin:
     # points at: each is a PLACE that supports a number of people
     # (institution_places, economy.py), and a second school built across town
     # supports more people for a reason a second emperor's goodwill does not.
+    # fin_chain_store joined this set for the same reason school_founded is
+    # in it: "a second school built across town" IS the model this node's own
+    # note already describes ("operates identical stores in multiple
+    # cities"), a second unit is simply a second town rather than a second
+    # schoolroom. It falls through to this function's own generic ceiling
+    # below (population, not literacy - a branch network draws on merchants
+    # and clerks, not the lettered few a second academy needs), so nothing
+    # else here had to change to seat it.
     SCALABLE_INSTITUTIONS = frozenset((
         "workshop_first", "school_founded", "academy_network",
-        "freedman_staff", "collegium_licensed"))
+        "freedman_staff", "collegium_licensed", "fin_chain_store"))
 
     def institution_units(self, k):
         """How much of this institution is actually running, as a number

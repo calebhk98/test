@@ -1949,7 +1949,12 @@ class EconomyMixin:
                   "academy_network": 120.0, "freedman_staff": 10.0,
                   "collegium_licensed": 3.0, "patron_senatorial": 10.0,
                   "patron_imperial": 64.0, "endowment_land": 14.0,
-                  "corpus_dispersed": 8.0, "interchangeable_parts": 44.0}
+                  "corpus_dispersed": 8.0, "interchangeable_parts": 44.0,
+                  # Read off STAFF_CAPACITY_SOURCES (labour.py) the same way
+                  # every other row here is: a unit's ar+di, so a chain store
+                  # with three people in it is not billed as though every
+                  # branch were already fully staffed.
+                  "fin_company_town": 20.0, "fin_chain_store": 34.0}
         if k in PLACES:
             return PLACES[k]
         return max(1.0, self.nodes[k]["up"] / 250.0)

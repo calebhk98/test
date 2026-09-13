@@ -703,6 +703,19 @@ class SocietyMixin:
                      ("BUY", "{\"cmd\":\"buy\",\"what\":\"slaves\",\"n\":N} then "
                              "manumit, though they are untrained for three years")],
     }
+    # fin_company_town and fin_chain_store are NOT added to the "artisans"
+    # list above. _staff_advice (labour.py) calls is_visible() on every node
+    # named here with no memo of its own, and missing_prereq_message - which
+    # is_visible can call - itself names an artisans/scholars shortfall by
+    # calling straight back into _staff_advice. workshop_first and
+    # freedman_staff sit one or two shallow, always-affordable prerequisites
+    # from nothing and never trip this; fin_chain_store's own chain
+    # (fin_department_store -> fin_market) is deep enough in the tree that a
+    # node on it can itself be blocked on artisans, which re-enters this same
+    # list, finds fin_chain_store again, and recurses without end - measured
+    # as an actual RecursionError, not a theoretical risk. The room advice
+    # these two nodes actually need lives in ROOM_SOURCES (labour.py)
+    # instead, which has no such call back into itself.
 
     # A lower death rate shows up in the census a generation later, not the
     # year the node completes, so a "population" tech effect is spread over
