@@ -739,6 +739,15 @@ def _spare_capacity(s, state_out):
         "you_could_raise_right_now": round(s.spending_power("buy"), 1),
         "credit_limit": round(s.credit_limit(), 1),
         "standing_net_per_year": state_out.get("net_per_year"),
+        # WHERE THE HEADROOM COMES FROM, because a starting grant was
+        # invisible. Rome alone begins with fin_societas and so oversees ten
+        # people in its first year where the other four civilisations oversee
+        # six, and nothing told a Roman player why or told a Norse player what
+        # they were missing. supervision_room_from (labour.py) walks the same
+        # sources supervision_room sums, so this cannot drift from the figure
+        # it explains.
+        "people_you_can_oversee": round(s.supervision_room(), 1),
+        "and_where_that_comes_from": s.supervision_room_from(),
         "note": "standing net per year is this household's own ordinary-year "
                 "surplus or deficit before this year's project spend - "
                 "roughly how much more annual project spend you could "
@@ -2383,6 +2392,27 @@ def _agent_help(s, topic=None):
                 'One JSON object per line on standard input, for example '
                 '{"cmd":"available"} or {"cmd":"step","years":5}. Each reply is '
                 'one JSON object.'),
+            # SAID HERE, IN THE FIRST THING ANYBODY READS. This game is played
+            # mostly by AI agents driving it from a shell, and every one of
+            # them so far has built a tmux or FIFO harness to hold the process
+            # open, because nothing they read told them they did not have to.
+            # One wrote it up as the only real friction in the interface. The
+            # capability has always existed - `help sittings` has described it
+            # all along - but "sittings" is a word about a person at a
+            # keyboard over several evenings, and no script author would ever
+            # type it looking for this. So it is said in the briefing, in the
+            # terms the reader actually has: you do not need a held-open
+            # process, one command per invocation is a supported way to play.
+            "you do not need to hold this process open": (
+                'Pass --session FILE and the whole game is written to that '
+                'file after every command and read back when you start '
+                'again. So a script or an agent may run one command per '
+                'invocation and throw the process away: `echo state | '
+                'python3 rome/sim/simulator.py play --session game.json` '
+                'prints the readable screen and exits, and the next '
+                'invocation carries on from exactly where it left off. '
+                'There is no need for a held-open pipe, a FIFO or tmux. '
+                'See {"cmd":"help","topic":"sittings"}.'),
             "more": {t: '{"cmd":"help","topic":"%s"}' % t for t in HELP_TOPICS},
         }
 
@@ -2548,11 +2578,35 @@ def _agent_help(s, topic=None):
             "see them": '{"cmd":"policy"}',
             "change one": '{"cmd":"policy","set":{"auto_hire":true}}'}
 
-    if topic in ("sittings", "save", "load"):
+    # ALSO UNDER THE NAMES A SCRIPT AUTHOR WOULD TRY. "sittings" describes a
+    # person at a keyboard over several evenings. An AI agent looking for how
+    # to drive this thing from a shell types "script", "agent", "batch" or
+    # "oneshot", finds nothing, and builds a FIFO harness instead - which is
+    # exactly what happened, repeatedly.
+    if topic in ("sittings", "save", "load", "script", "scripting", "agent",
+                 "automation", "batch", "oneshot", "one-shot",
+                 "noninteractive", "non-interactive", "pipe"):
         return {"playing across several sittings": (
             "Pass --session FILE on the command line. The game is written to "
             "that file after every command and read back when you start again, "
-            "so you do not need to hold a process open or write a script.")}
+            "so you do not need to hold a process open or write a script."),
+            "one command per invocation, for a script or an agent": (
+                "This is the supported way to drive the game from a shell, "
+                "and it needs no pipe held open, no FIFO and no tmux. Send "
+                "one command on standard input, read the reply, let the "
+                "process exit, and run it again for the next command:\n"
+                "    echo state | python3 rome/sim/simulator.py play "
+                "--session game.json\n"
+                "    echo 'step 5' | python3 rome/sim/simulator.py play "
+                "--session game.json\n"
+                "The second invocation resumes exactly where the first "
+                "stopped. `play` gives you the readable screen; `agent` "
+                "gives you JSON on stdout and takes the same --session."),
+            "why you may not have found this": (
+                "it was only ever filed under 'sittings', which is a word "
+                "about a person playing over several evenings. Every agent "
+                "that has played this game so far built a harness to hold a "
+                "process open before discovering it did not have to.")}
 
     if topic in ("stuck", "blocked"):
         return {"stuck": (

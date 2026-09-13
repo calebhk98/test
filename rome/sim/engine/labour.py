@@ -510,6 +510,31 @@ class LabourMixin:
         # this is the accounting, not a bigger market, so it buys clerks
         # (ar) and deputies (di), never scholars or the ceiling on craftsmen
         # a furnace trains.
+        # fin_societas ("Partnership between two or more parties to share
+        # profits and losses. Legally recognised, but partners remain
+        # personally liable") IS here, and the reasoning that kept it out was
+        # wrong. It was left unwired because Rome grants it in starting_techs
+        # and so any effect would be "a silent day-one buff to every Rome run,
+        # not a player choice". But a starting grant is not a bug to be
+        # routed around, it is the whole mechanism by which these five
+        # civilisations differ from one another: Rome is the only one of the
+        # five whose own file hands it over, and Rome beginning with a legally
+        # recognised partnership form while a Norse or Mexica founder must
+        # build one is exactly the asymmetry the starting_techs list exists to
+        # express. The real fault in a silent buff is the silence, not the
+        # buff, so this is attributed wherever capacity is attributed.
+        #
+        # fin_societas is NOT in this table, though it was tried here first.
+        # A director in this table is a trained deputy who can run something
+        # the founder never visits, and fin_trial_balance below is the node
+        # whose own note argues for exactly that ("the foundation of trust
+        # between owner and manager across distance. Without it, the manager
+        # can simply lie"). A partner is a different thing: somebody beside
+        # you sharing the watching, not somebody you can trust at a distance,
+        # and the tree already distinguishes the two. So the partnership's
+        # effect lives in supervision_room() instead, where it reads as "one
+        # more capable person to oversee with" rather than as a deputy the
+        # accounting has not yet been invented to supervise.
         ("fin_trial_balance",      0.0,   4.0, 2.0, False, False),
         # fin_company_town ("Employer provides housing, food, and goods to
         # workers... Highly profitable but politically dangerous"): the
@@ -668,7 +693,68 @@ class LabourMixin:
         # could in principle watch them.
         if self.running("fin_chain_store"):
             room += 20.0 * self.institution_units("fin_chain_store")
+        # A PARTNER IS NOT ON YOUR PAYROLL, which is why a partnership belongs
+        # in this headroom and not only in the institutional ceiling above.
+        # (Headroom, not a free staff: hiring INTO it is still scaled by what
+        # the household can afford - see _staff_scale in hired_room - so this
+        # raises how many people a founder may oversee, never how many they
+        # can pay for.) fin_societas is the tree's own "share profits and
+        # losses... partners remain personally liable": a partner brings their
+        # own capital and their own attention, so the household can oversee
+        # more people without first being able to afford to pay for the
+        # oversight. Gating it on what the founder can pay would model a hired
+        # manager, which is a different node.
+        #
+        # has(), not running(): fin_societas has neither revenue nor upkeep
+        # (see ProjectsMixin's CAPABILITY_INSTITUTIONS comment), so it can
+        # never be "opened" and a running() test would make it dead for ever.
+        #
+        # 4.0 against the founder's own 6.0 above: a partner is a capable
+        # person sharing the burden, not a second founder. Rome begins with
+        # this and no other civilisation does (starting_techs, rome_100ad.json),
+        # so a Roman household oversees 10 people in year one where a Norse
+        # one oversees 6 and must build the partnership to catch up. That
+        # asymmetry is the point of the starting_techs list, not a side effect
+        # of it to be routed around.
+        if self.has("fin_societas"):
+            room += 4.0
         return room
+
+    def supervision_room_from(self):
+        """Where supervision_room's total actually comes from, as rows.
+
+        ONE RULE, NOT TWO: this re-walks the same sources supervision_room
+        itself does and its total is asserted equal to it, because a
+        breakdown that can disagree with the figure it explains is worse than
+        no breakdown. The reason it exists is that a starting grant was
+        invisible: Rome begins with fin_societas and so oversees ten people
+        in year one where every other civilisation oversees six, and nothing
+        anywhere told a Roman player why, or told a Norse player what they
+        were missing. A civilisation's starting technologies are the whole
+        point of having five civilisations, and an advantage nobody can see
+        is an advantage the player cannot reason about.
+        """
+        rows = [{"source": "yourself", "people": 6.0,
+                 "what_it_is": "what one person can keep an eye on"}]
+        if self.directors_extra > 0.005:
+            rows.append({"source": "your deputies", "people":
+                         round(14.0 * self.directors_extra, 2),
+                         "what_it_is": "people you have trained to direct work"})
+        for key, per, words in (
+                ("workshop_first", 6.0, "a place of your own to work in"),
+                ("school_founded", 10.0, "a school, and the people it keeps"),
+                ("academy_network", 30.0, "an academy network"),
+                ("fin_chain_store", 20.0, "branches in other towns")):
+            if self.running(key):
+                rows.append({"source": key,
+                             "people": round(per * self.institution_units(key), 2),
+                             "what_it_is": words})
+        if self.has("fin_societas"):
+            rows.append({"source": "fin_societas", "people": 4.0,
+                         "what_it_is": "a partner who shares the watching, and "
+                                       "whose own capital and attention are not "
+                                       "on your payroll"})
+        return rows
 
     def hired_cap(self):
         # a civilization of 1.5 million cannot staff what one of 65 million can

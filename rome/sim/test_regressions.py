@@ -13428,6 +13428,69 @@ check("the whole diffusion mechanism - food, medical, military, "
       _dif_a == _dif_b and not _dif_a.startswith("ERROR"), (_dif_a, _dif_b))
 
 
+# A STARTING TECHNOLOGY IS SUPPOSED TO MATTER. fin_societas was left
+# deliberately unwired on the grounds that Rome grants it in starting_techs,
+# so any effect would be "a silent day-one buff to every Rome run, not a
+# player choice". That reasoning was wrong: the starting_techs list is the
+# mechanism by which these five civilisations differ, and Rome beginning with
+# a legally recognised partnership while a Norse or Mexica founder must build
+# one is the asymmetry, not a side effect of it. The legitimate half of the
+# objection was the word "silent", so the advantage is attributed.
+_soc_room = {}
+for _civ in ("rome_100ad", "han_china_100ad", "norse_900ad", "england_1300",
+             "mexica_1500"):
+    _s_soc = sim(civ=_civ)
+    _soc_room[_civ] = (_s_soc.has("fin_societas"), _s_soc.supervision_room())
+check("Rome alone starts with a partnership, and so oversees more people in "
+      "its first year than the four civilisations that must build one",
+      _soc_room["rome_100ad"][0]
+      and not any(_soc_room[_c][0] for _c in _soc_room if _c != "rome_100ad")
+      and all(_soc_room["rome_100ad"][1] > _soc_room[_c][1]
+              for _c in _soc_room if _c != "rome_100ad"), _soc_room)
+check("...and the four without it all start level with each other, so this is "
+      "the one technology doing it and not a population effect",
+      len({round(_soc_room[_c][1], 3) for _c in _soc_room
+           if _c != "rome_100ad"}) == 1, _soc_room)
+
+# AND IT IS NOT SILENT. The breakdown names the partnership, and it is the
+# same walk supervision_room sums, so it cannot drift from the total.
+_s_soc_r = sim(civ="rome_100ad")
+_soc_cap = S._agent_dispatch(_s_soc_r, NODES, {"cmd": "capacity"})
+_soc_sc = _soc_cap.get("spare_capacity") or {}
+_soc_rows = _soc_sc.get("and_where_that_comes_from") or []
+check("the capacity screen says where the headroom comes from, and names the "
+      "partnership rather than leaving a Roman player to wonder",
+      any(r.get("source") == "fin_societas" for r in _soc_rows), _soc_rows)
+check("...and the rows add up to exactly the figure they explain, for every "
+      "civilisation, so the breakdown cannot drift from the total",
+      all(abs(sum(r["people"] for r in sim(civ=_c).supervision_room_from())
+              - sim(civ=_c).supervision_room()) < 1e-9
+          for _c in ("rome_100ad", "han_china_100ad", "norse_900ad",
+                     "england_1300", "mexica_1500")),
+      [(_c, sum(r["people"] for r in sim(civ=_c).supervision_room_from()),
+        sim(civ=_c).supervision_room())
+       for _c in ("rome_100ad", "norse_900ad")])
+
+# HOW A SCRIPT DRIVES THIS GAME, said where a script author will find it. Every
+# AI agent that has played built a tmux or FIFO harness to hold the process
+# open, because the one place that explained otherwise was filed under
+# "sittings" - a word about a person at a keyboard over several evenings.
+_s_sit = sim()
+for _alias in ("script", "agent", "batch", "oneshot", "non-interactive"):
+    _h = S._agent_dispatch(_s_sit, NODES, {"cmd": "help", "topic": _alias})
+    check("'help %s' reaches the page that explains one command per "
+          "invocation" % _alias,
+          "invocation" in json.dumps(_h).lower()
+          and "--session" in json.dumps(_h), _alias)
+_h_sit = S._agent_dispatch(_s_sit, NODES, {"cmd": "help", "topic": "sittings"})
+check("...and it gives the actual command line, not only the idea of it",
+      "simulator.py play --session" in json.dumps(_h_sit), _h_sit)
+_welcome = S._agent_dispatch(_s_sit, NODES, {"cmd": "help"})
+check("and the opening briefing says it too, since that is the one screen "
+      "every player reads before building a harness",
+      "hold this process open" in json.dumps(_welcome).lower(),
+      sorted((_welcome.get("welcome") or {}).keys())[:12])
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
