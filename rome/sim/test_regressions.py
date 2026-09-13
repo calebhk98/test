@@ -4559,9 +4559,25 @@ slow_check("gaining a deputy is announced with what it does to your year, "
 # documented (economy.py: spending_power - a lender funds work already under
 # way, not a payroll or a one-off fee), so the fix is the message, not the
 # arithmetic: it must say WHICH rule this is and WHY, not just decline.
+#
+# RECALIBRATED for the spending_power consolidation: this block used to set
+# capital to "just past hire's half-line room" using hire's OWN inline
+# capital+credit_limit()*0.5 - the very arithmetic that turned out to be one
+# of seven copies of this rule, and the one that (unlike economy.py's
+# canonical spending_power) never floored capital at zero. Under that inline
+# copy, room kept shrinking as debt deepened, with nothing stopping it going
+# negative; under the canonical rule a household already in the hole is
+# floored at zero before the credit-line share is added, so the room hire,
+# train and commission actually allow is a FIXED half a credit line
+# regardless of how deep the debt already is - deeper debt no longer makes
+# hiring, training or commissioning any harder than shallower debt does. So
+# "just past half-line room" is no longer a function of capital at all: pick
+# a fee between spending_power("buy") (what hire/train/commission may draw)
+# and spending_power("start") (what only a project may draw) and it is
+# refused, however deep in debt the household already is.
 s_asym = sim(capital=0.0)
-s_asym.capital = -s_asym.credit_limit() * 0.5 - 50.0   # just past hire's half-line room
-_ok_h, _msg_h = s_asym.hire("smith", 1)
+s_asym.capital = -50000.0   # deep in debt - the fix is that this no longer matters
+_ok_h, _msg_h = s_asym.hire("smith", 3)   # 3 smiths: between half and whole the line
 check("a cash-short hire is still refused (the asymmetry itself is kept, "
       "not loosened)", _ok_h is False, (_ok_h, _msg_h))
 check("...but the refusal now says WHICH rule this is: half the credit "
@@ -4571,7 +4587,7 @@ check("...and WHY: a lender funds work under way (what starting a project "
       "can point to), not a payroll or a one-off fee",
       "work already under way" in _msg_h
       and ("payroll" in _msg_h or "wage" in _msg_h), _msg_h)
-_fee_h = 1.0 * S.ANNUAL_WAGE.get("smith", 375.0) * s_asym.wage_index * s_asym.price_index \
+_fee_h = 3.0 * S.ANNUAL_WAGE.get("smith", 375.0) * s_asym.wage_index * s_asym.price_index \
     * s_asym.labour_price_factor("smith")
 check("...and still states the plain facts a refusal always has: the exact "
       "cost hire() actually computed",
@@ -4579,18 +4595,149 @@ check("...and still states the plain facts a refusal always has: the exact "
 # The identical family (train's keep-fed fee, commission's job fee) shares
 # the SAME wording, written once, so the three cannot drift apart from each
 # other or from the reasoning behind them (rather than each re-deriving its
-# own capital+credit*0.5 comparison AND its own separate explanation).
-_ok_t, _msg_t = s_asym.train("machinist", 1, None)
+# own spending_power comparison AND its own separate explanation).
+_ok_t, _msg_t = s_asym.train("machinist", 3, None)
 check("train's cash-short refusal uses the identical reasoning as hire's, "
       "not a second wording for the same rule",
       _ok_t is False and "half" in _msg_t and "work already under way" in _msg_t,
       _msg_t)
 s_asym2 = sim(capital=0.0)
-s_asym2.capital = -s_asym2.credit_limit() * 0.5 - 50.0
-_ok_c, _msg_c = s_asym2.commission("smith", 2000.0)
+s_asym2.capital = -50000.0
+_ok_c, _msg_c = s_asym2.commission("smith", 3500.0)
 check("commission's cash-short refusal uses the same reasoning too",
       _ok_c is False and "half" in _msg_c and "work already under way" in _msg_c,
       _msg_c)
+
+# --- BREAK (verified against the real engine): the arithmetic
+# `self.capital + self.credit_limit() * 0.5` was written out, by hand, at six
+# sites in labour.py and protocol.py (a seventh, in projects.py, agreed today
+# only by luck), instead of calling economy.py's spending_power("buy") - the
+# function whose own docstring names it as the fix for this exact class of
+# bug. None of the six inline copies floored capital at zero the way
+# spending_power does, so at capital=-500, credit_limit()=210 the quote
+# screens (which always called spending_power) said "you could raise 105"
+# while hire/train/commission computed -395 and refused any fee at all,
+# telling the same household it was "about 475 short" of a fee it could
+# plainly afford. Two things have to be shown: that the seven sites now
+# route through the one function (so the next change to the rule cannot
+# drift again), and that this actually flips what a household in debt is
+# allowed to do.
+import inspect as _insp_sp
+from engine import labour as _sp_labour, projects as _sp_projects
+
+_SPENDING_POWER_SITES = [
+    (_sp_labour.LabourMixin._cash_in_hand_refusal, "labour._cash_in_hand_refusal"),
+    (_sp_labour.LabourMixin.hire, "labour.hire"),
+    (_sp_labour.LabourMixin.train, "labour.train"),
+    (_sp_labour.LabourMixin.auto_commission_for_blocked,
+     "labour.auto_commission_for_blocked"),
+    (_sp_labour.LabourMixin.commission, "labour.commission"),
+    (_sp_projects.ProjectsMixin.auto_open_ventures, "projects.auto_open_ventures"),
+]
+for _sp_fn, _sp_name in _SPENDING_POWER_SITES:
+    _sp_src = _insp_sp.getsource(_sp_fn)
+    check("%s calls spending_power() rather than reimplementing its "
+          "arithmetic" % _sp_name,
+          "spending_power(" in _sp_src
+          and "max(0.0, self.capital)" not in _sp_src
+          and "self.capital + self.credit_limit()" not in _sp_src,
+          "checked %s's own source" % _sp_name)
+_wo_src = _insp_sp.getsource(_WO)
+check("protocol._waiting_on's stalled-project pacing message calls "
+      "spending_power() too, not its own copy of the arithmetic",
+      "spending_power(" in _wo_src
+      and "s.capital + s.credit_limit()" not in _wo_src,
+      "checked _waiting_on's own source")
+
+# The bug's own worked example, run for real: a household owing 500 against
+# a 210 credit line. spending_power("buy") - what every quote screen already
+# showed - is 105 (capital floored at zero, plus half the line). The six
+# inline copies computed -500+105 = -395 and refused everything; routed
+# through the same function, hire/train/commission now permit exactly up to
+# that 105, the number the player was already being told.
+s_bug = sim(capital=0.0)
+s_bug.capital = -500.0
+s_bug.credit_limit = lambda: 210.0
+_sp_bug = s_bug.spending_power("buy")
+check("spending_power('buy') at capital -500, credit_limit 210 is the "
+      "documented 105 - the figure every quote screen already showed",
+      abs(_sp_bug - 105.0) < 1e-9, _sp_bug)
+_fph_bug = WAGES["smith"] * 1.6 * s_bug.wage_index * s_bug.price_index \
+    * s_bug.labour_price_factor("smith")
+s_bug_u = sim(capital=0.0)
+s_bug_u.capital = -500.0
+s_bug_u.credit_limit = lambda: 210.0
+_ok_bu, _msg_bu = s_bug_u.commission("smith", (_sp_bug - 20.0) / _fph_bug)
+check("...and commission() - hire's and train's shared verb - now actually "
+      "PERMITS a fee under that 105 while 500 in debt, where the six inline "
+      "copies refused ANY fee at all to a household already in the hole",
+      _ok_bu is True, (_ok_bu, _msg_bu))
+s_bug_o = sim(capital=0.0)
+s_bug_o.capital = -500.0
+s_bug_o.credit_limit = lambda: 210.0
+_ok_bo, _msg_bo = s_bug_o.commission("smith", (_sp_bug + 20.0) / _fph_bug)
+check("...and still refuses a fee over that same 105 - fixing the drift "
+      "did not loosen the half-line rule itself, only how it is computed",
+      _ok_bo is False, (_ok_bo, _msg_bo))
+
+# auto_commission_for_blocked's own guard (labour.py:1753, called from
+# step() - this is the one of the seven that changes what the OPTIMISER
+# does, not just what a typed command is told).
+s_gate = sim(capital=0.0)
+s_gate.capital = -1000.0
+s_gate.credit_limit = lambda: 0.0   # spending_power("buy") is exactly zero
+check("auto_commission_for_blocked refuses outright the moment "
+      "spending_power('buy') is exactly zero - the same threshold hire, "
+      "train and commission use, not a separately-drifting zero-credit case",
+      s_gate.spending_power("buy") == 0.0
+      and s_gate.auto_commission_for_blocked() is None,
+      s_gate.spending_power("buy"))
+
+# protocol.py's stalled-project "why": a household 50,000 in debt but with a
+# real 2,000 line and an installment (900/yr) it can actually service should
+# be told the PACE is what is holding the project up, not that it lacks the
+# money - which is exactly what the old inline copy (capital+credit*0.5 =
+# -49,000, never floored) got backwards.
+_slow_pace = "academy_network"
+s_pace2 = sim(capital=0.0)
+s_pace2.capital = -50000.0
+s_pace2.credit_limit = lambda: 2000.0
+s_pace2.project_cost = lambda k: 9000.0
+s_pace2.active[_slow_pace] = dict(ph_left=0.0, yrs=1.0, spent=0.0, cost_left=9000.0)
+_msg_pace_deep = _WO(s_pace2, NODES, _slow_pace, s_pace2.active[_slow_pace], 9000.0)
+check("a household deep in debt but able to service this year's "
+      "installment is told the PACE is what is holding the project up, "
+      "not that it cannot raise the money",
+      "pace" in _msg_pace_deep and "a year" in _msg_pace_deep, _msg_pace_deep)
+
+# --- The player-visible symptom itself: the number `quote`/`why`/`state`
+# show (protocol._spare_capacity's "you_could_raise_right_now", built from
+# spending_power("buy")) has to be the SAME number hire actually enforces -
+# not a screen that says one thing while the command does another.
+s_sym = sim(capital=0.0)
+s_sym.capital = -50000.0
+_quoted = _protocol._spare_capacity(s_sym, {})["you_could_raise_right_now"]
+check("the affordability figure the quote screen shows while in debt "
+      "matches spending_power('buy') exactly",
+      abs(_quoted - s_sym.spending_power("buy")) < 0.05,
+      (_quoted, s_sym.spending_power("buy")))
+_pph_sym = S.ANNUAL_WAGE.get("smith", 375.0) * s_sym.wage_index * s_sym.price_index \
+    * s_sym.labour_price_factor("smith")
+_n_under_sym = max(1, int(_quoted // _pph_sym))
+_n_over_sym = _n_under_sym + 2
+s_sym_u = sim(capital=0.0)
+s_sym_u.capital = -50000.0
+_ok_su, _msg_su = s_sym_u.hire("smith", _n_under_sym)
+check("...and a hire the quote screen says the household could raise for "
+      "really is let through by hire(), not refused despite the screen",
+      _ok_su is True, (_quoted, _msg_su))
+s_sym_o = sim(capital=0.0)
+s_sym_o.capital = -50000.0
+_ok_so, _msg_so = s_sym_o.hire("smith", _n_over_sym)
+check("...and a hire past what the quote screen says the household could "
+      "raise really is refused, so the two numbers cannot silently disagree "
+      "again",
+      _ok_so is False, (_quoted, _msg_so))
 
 # --- BREAK (naive15/rome): "`train <trade> <n>` creates the trade and starts
 # teaching specific people, but does NOT put them on your payroll ... the

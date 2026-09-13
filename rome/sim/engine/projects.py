@@ -951,7 +951,7 @@ class ProjectsMixin:
         # near the end of this function, which already refuses (via
         # `open_venture`) anything whose capex it cannot actually raise or
         # whose supervision it cannot actually staff.
-        _room = max(0.0, self.capital) + self.credit_limit() * 0.5
+        _room = self.spending_power("buy")
         _deep_arrears = self.capital < 0 and -self.capital > self.credit_limit() * 0.5
         # AND THE ONES WHOSE WORTH IS NOT AT THE DOOR. A school takes 2,500 a
         # year and hands back 800, so the margin test above shuts it out for
