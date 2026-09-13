@@ -781,7 +781,21 @@ class EconomyMixin:
     def spending_power(self, kind="buy"):
         """What you could actually raise, by what you mean to spend it on."""
         share = 1.0 if kind == "start" else 0.5
-        return max(0.0, self.capital) + self.credit_limit() * share
+        # THE DEBT YOU ALREADY CARRY COUNTS AGAINST YOU. This read
+        # max(0.0, self.capital) + credit_limit() * share, which floored the
+        # capital term and so ignored arrears entirely: a household 500 into
+        # a 210-denarii credit line was told it could still raise 105. It
+        # cannot. credit_limit() is "how far into arrears anyone will let you
+        # go" - an absolute floor on capital, which is exactly how
+        # enforce_credit_limit() reads it (`if self.capital >= -limit`), not
+        # headroom to be added on top of a debt.
+        #
+        # The floor belongs on the ANSWER, not on the capital term: you can
+        # raise nothing when you are past the line, never a negative amount.
+        # hire(), train() and commission() had this right all along and
+        # computed it inline; the screens that quote a figure to the player
+        # called this function and so quoted one too high.
+        return max(0.0, self.capital + self.credit_limit() * share)
 
     def cost_money_factor(self):
         """What a denarius of QUOTED cost means, for spending purposes.
