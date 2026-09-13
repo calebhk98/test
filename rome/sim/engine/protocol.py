@@ -670,6 +670,12 @@ def _portfolio_rows(nodes, active_out):
         row = {
             "id": k, "name": a["name"], "constraint": constraint,
             "waiting_on": a.get("waiting_on"),
+            # READ, NOT RECOMPUTED, same as everything below it: arrears
+            # gives unspendable founder hours back, so waiting_on above can
+            # say "your hours" for a project that is really underfunded.
+            # why_underfunded is the real reason, already sitting on the
+            # same active-dict entry - see _waiting_on's own comment.
+            "why_underfunded": a.get("why_underfunded"),
             "founder_hours_left": a.get("founder_hours_left"),
             "founder_hours_total": a.get("founder_hours_total"),
             # READ, NOT RECOMPUTED. These four come straight off the same
@@ -954,6 +960,8 @@ def render_portfolio(out):
                         ("  (priority #%s of %s active)" % (_rank, _count))
                         if _rank and _count else ""))
             L.append(_wrap("waiting on: " + str(r.get("waiting_on")), indent="      "))
+            if r.get("why_underfunded"):
+                L.append(_wrap(r["why_underfunded"], indent="      "))
     else:
         L.append("  nothing in hand - 'available' or 'stuck' says what you "
                  "could begin today")
@@ -3898,6 +3906,14 @@ def _node_explain(s, nodes, k):
         if _bill is None:
             _bill = max(0.0, s.project_cost(k) - _st["spent"])
         out["waiting_on"] = _waiting_on(s, nodes, k, _st, _bill)
+        # SAME FIELD `state` ALREADY PRINTS PER PROJECT, HERE TOO. Arrears
+        # gives unspendable founder hours back (core.py's underfunded path),
+        # so ph_left never sits at 0 and waiting_on's money branch above can
+        # never fire - "waiting on: your hours" is what a player in arrears
+        # sees here, full stop, on the one screen that names a single
+        # project by id. why_underfunded is the real reason, already
+        # computed onto this same st dict; only render_state read it before.
+        out["why_underfunded"] = _st.get("why_underfunded")
     # Say what the two labour fields mean ONLY when this node makes it matter.
     # A tester read them as contradicting each other, so the explanation earns
     # its place; carrying it on every reply whether or not the node hires anyone
@@ -4624,6 +4640,8 @@ def render_why(out):
     L.append("STATUS: %s" % status)
     if out.get("active") and out.get("waiting_on"):
         L.append(_wrap("  waiting on: " + out["waiting_on"], indent="    "))
+    if out.get("active") and out.get("why_underfunded"):
+        L.append(_wrap("  " + out["why_underfunded"], indent="    "))
     if out.get("start_blocked_reason"):
         # start_blocked_reason is already the full, human-authored sentence -
         # when it is naming missing prerequisites (the common case) it says
@@ -4768,8 +4786,11 @@ def render_stuck(out):
             L.append("  %s:" % str(r.get("what", "")).upper())
             if r.get("why"):
                 L.append(_wrap(r["why"], indent="    "))
+            _why_underfunded = r.get("each_why_underfunded") or {}
             for k, v in sorted((r.get("each_waiting_on") or {}).items()):
                 L.append(_wrap("%s - waiting on %s" % (k, v), indent="    "))
+                if _why_underfunded.get(k):
+                    L.append(_wrap(_why_underfunded[k], indent="      "))
             if r.get("the_nearest_few"):
                 L.append(_wrap("nearest first: " + ", ".join(r["the_nearest_few"]),
                                indent="    "))
@@ -7529,14 +7550,26 @@ def _agent_dispatch_inner(s, nodes, cmd):
                    if s.project_cost(k) <= s.spending_power("start")]
         if s.active:
             _waits = {}
+            _why_underfunded = {}
             for k, st in sorted(s.active.items()):
                 bill = st.get("cost_left")
                 if bill is None:
                     bill = max(0.0, s.project_cost(k) - st["spent"])
                 _waits[k] = _waiting_on(s, nodes, k, st, bill)
+                # SAME GAP AS `why` AND `state`: arrears gives unspendable
+                # founder hours back, so this can say "waiting on your hours"
+                # for a project that is really stuck on money, on the exact
+                # screen a player checks first when something is stalled.
+                # why_underfunded, already computed onto st by core.py, is
+                # the real reason - carry it per project, not just the string
+                # above.
+                if st.get("why_underfunded"):
+                    _why_underfunded[k] = st["why_underfunded"]
             reasons.append({"what": "work in hand",
                             "how_many": len(s.active),
-                            "each_waiting_on": _waits})
+                            "each_waiting_on": _waits,
+                            **({"each_why_underfunded": _why_underfunded}
+                               if _why_underfunded else {})})
         # THE ROAD TO THE GOAL, not the tree at large. A play tester with fifty
         # nodes left and nothing startable was told "you have work in hand,
         # money to pay for it and people to do it", because two hundred
