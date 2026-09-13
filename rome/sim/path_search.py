@@ -525,16 +525,40 @@ def main():
                          "module's behaviour before it existed - moves 1 and "
                          "2 (pulling/resequencing what is already named) only")
     a = ap.parse_args()
-    ensure_fixed_hash_seed()
     t0 = time.time()
+    order, rationale = plan_and_write(
+        a.civ, a.goal, a.out, a.side_branches, a.side_branch_every, a.rounds,
+        a.horizon, a.backlog_ratio, a.seed_strategy, a.no_grow_supply)
+    print("wrote %d nodes to %s in %.1fs" % (len(order), a.out, time.time() - t0))
+    for line in rationale:
+        print("  - " + line)
+
+
+def plan_and_write(civ="rome_100ad", goal=None, out=None, side_branches=12,
+                    side_branch_every=8, rounds=6, horizon=500,
+                    backlog_ratio=6.0, seed_strategy=None,
+                    no_grow_supply=False, log=print):
+    """The whole CLI pipeline in one call: fix the hash seed, run `search()`,
+    build the rationale a strategy file's own reader sees, and write it to
+    `out`.
+
+    ONE BODY, TWO FRONT DOORS. This module's own `main()` above and
+    `simulator.py search` (engine/cli.py's `cmd_search`) both call this
+    instead of each independently turning `search()`'s return value into a
+    written file and a printed rationale - the same principle `cmd_plan`
+    already applies to `planner.plan()`, and for the same reason: two places
+    deciding what a search result MEANS is two places that can quietly
+    disagree about it, one bugfix at a time.
+    """
+    ensure_fixed_hash_seed()
     _tree0, _p0, _nodes0, _w0, _g0 = load()
-    seed_order = _planner.load_seed(a.seed_strategy, _nodes0)
-    order, extras, history = search(a.civ, a.goal, a.side_branches,
-                                    a.side_branch_every, a.rounds, a.horizon,
-                                    a.backlog_ratio, seed_order=seed_order,
-                                    grow_supply_moves=not a.no_grow_supply)
+    seed_order = _planner.load_seed(seed_strategy, _nodes0)
+    order, extras, history = search(civ, goal, side_branches, side_branch_every,
+                                    rounds, horizon, backlog_ratio,
+                                    seed_order=seed_order,
+                                    grow_supply_moves=not no_grow_supply, log=log)
     tree, _p, nodes, _w, _g = load()
-    goal = resolve_goal(tree, nodes, a.goal)
+    goal = resolve_goal(tree, nodes, goal)
     last = history[-1]
     grown = [h for h in history if h["grow_supply_tried"]]
     kept = [t["institution"] for h in grown for t in h["grow_supply_tried"] if t["kept"]]
@@ -542,7 +566,7 @@ def main():
         "Deterministic search (rome/sim/path_search.py): CPM order, then up "
         "to %d rounds of diagnosing the binding constraint against a "
         "dice-free trial (no events, no project failures, immortal founder) "
-        "and relaxing it, keeping whichever round scored best." % a.rounds,
+        "and relaxing it, keeping whichever round scored best." % rounds,
         "Final round %d: %d/%d closure nodes done%s. Scarce trade(s) found: "
         "%s." % (last["round"], last["closure_done"],
                 len(closure(nodes, goal)),
@@ -558,13 +582,11 @@ def main():
             "it than without. Kept: %s."
             % (n_tried, ", ".join(kept) if kept else "none - no institution "
                "measured better than the order without it"))
-    _planner.write_strategy(a.out, "SEARCHED (deterministic): %s over %s's "
+    _planner.write_strategy(out, "SEARCHED (deterministic): %s over %s's "
                             "critical-path order, relaxed against its own "
-                            "scarce-trade bottleneck" % (goal, a.civ),
+                            "scarce-trade bottleneck" % (goal, civ),
                             rationale, order)
-    print("wrote %d nodes to %s in %.1fs" % (len(order), a.out, time.time() - t0))
-    for line in rationale:
-        print("  - " + line)
+    return order, rationale
 
 
 if __name__ == "__main__":

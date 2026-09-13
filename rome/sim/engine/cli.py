@@ -1840,6 +1840,45 @@ def cmd_plan(a):
     return 0
 
 
+def cmd_search(a):
+    """`path_search.py`'s own dice-free search, reached directly instead of
+    only through `plan --search-rounds`.
+
+    `plan` alone is one structural CPM pass; `plan --search-rounds N` folds
+    THIS SAME search into a CPM-seeded pipeline (and can go on to
+    --refine-rounds against real trials afterward). This command is the
+    other front door onto the identical machinery, for the case that started
+    this file's own docstring: "does the current plan even get there with
+    the dice off?", asked on its own, at path_search.py's own standalone
+    defaults, without also having to think about CPM seeding or refinement.
+    See rome/sim/path_search.py for the full reasoning - the scarce named
+    trades, the capital trap, and the three moves (pull, resequence, grow
+    supply) this measures against a real Sim with the dice removed rather
+    than guesses at.
+
+    A THIN WRAPPER, LIKE `cmd_plan`. This calls `path_search.plan_and_write`
+    - the exact function `path_search.py`'s own `main()` calls - so a change
+    to what the search does, or to how its result gets written and explained,
+    happens in one place for both front doors, not two.
+
+    NEVER REACHED FROM `play` OR `agent`, for the same reason `plan` is not:
+    both are developer/optimizer tools, and a strategy file either one
+    writes is public information already sitting in the repository, not a
+    live look into a fogged session's own state.
+    """
+    _simdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if _simdir not in sys.path:
+        sys.path.insert(0, _simdir)
+    import path_search as _search
+    order, rationale = _search.plan_and_write(
+        a.civ, a.goal, a.out, a.side_branches, a.side_branch_every, a.rounds,
+        a.horizon, a.backlog_ratio, a.seed_strategy, a.no_grow_supply)
+    print("wrote %d nodes to %s" % (len(order), a.out))
+    for line in rationale:
+        print("  - " + line)
+    return 0
+
+
 def cmd_why(a):
     """Explain one node: what it needs, what needs it, and what it costs."""
     tree, prices, nodes, wages, goods = load()
@@ -3056,6 +3095,42 @@ def main():
                         "only moves 1-2 (pulling/resequencing what is "
                         "already named) - the search's behaviour before "
                         "move 3 existed")
+    q = sub.add_parser("search", help="path_search.py's dice-free search on its own, "
+                                      "the other front door onto the same machinery "
+                                      "'plan --search-rounds' folds into a CPM-seeded "
+                                      "pipeline. Answers 'does this order even get "
+                                      "there with the dice off' and relaxes the "
+                                      "binding constraint it finds, round by round. "
+                                      "See rome/sim/path_search.py. A developer/"
+                                      "optimizer tool, like plan/compare/sweep/"
+                                      "sensitivity - never reached from play or agent.")
+    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--goal", default=None)
+    q.add_argument("--out", required=True, metavar="FILE",
+                   help="strategy file to write; feed it back in with --strategy")
+    q.add_argument("--side-branches", type=int, default=12,
+                   help="how many revenue-positive nodes outside the goal's own "
+                        "requirements to weave in, to fund the spine. 0 disables")
+    q.add_argument("--side-branch-every", type=int, default=8)
+    q.add_argument("--rounds", type=int, default=6,
+                   help="how many rounds of diagnose-and-relax to run at most; "
+                        "a round that reaches the goal, finds no scarce trade "
+                        "left, or makes no change to the order stops early")
+    q.add_argument("--horizon", type=int, default=500,
+                   help="dice-free horizon used WHILE searching - kept short "
+                        "for speed; verify the winner separately at a longer "
+                        "horizon and then against real seeds (e.g. 'run "
+                        "--strategy FILE --mc N')")
+    q.add_argument("--backlog-ratio", type=float, default=6.0)
+    q.add_argument("--seed-strategy", default=None,
+                   help="a strategy name or path whose order breaks ties "
+                        "among nodes the critical path ranks as equally "
+                        "urgent, same as plan's own --seed-strategy")
+    q.add_argument("--no-grow-supply", action="store_true",
+                   help="skip move 3 (founding institutions one at a time, "
+                        "kept only if measured better) and use only moves "
+                        "1-2 (pulling/resequencing what is already named) - "
+                        "this search's behaviour before move 3 existed")
     sub.add_parser("menu", help="pick a civilisation, read where you have landed, "
                                 "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
@@ -3155,7 +3230,8 @@ def main():
             "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs, "menu": cmd_menu,
             "goals": cmd_goals,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play, "agent": cmd_agent,
-            "sensitivity": cmd_sensitivity, "plan": cmd_plan}[a.cmd](a)
+            "sensitivity": cmd_sensitivity, "plan": cmd_plan,
+            "search": cmd_search}[a.cmd](a)
 
 
 if __name__ == "__main__":
