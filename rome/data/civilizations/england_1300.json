@@ -286,7 +286,8 @@
   "arrival": "You arrive in the reign of Edward I, in a kingdom of four and a half million with a real legal system, chartered towns that can be bargained with, two universities, and a parliament that has just begun to insist on being asked about taxes.",
   "what_is_coming": "Fifteen years to the Great Famine. Forty-eight to the Black Death, which will kill between a third and a half of everyone you will ever meet, and then come back. Whatever you build must survive that or it must be built after it.",
   "what_is_missing": "Cheap iron, and the temperature to make it. Everything downstream of steel waits on a furnace nobody has yet built.",
-  "what_you_can_see": "Watermills and windmills on every fall of water and every rise of ground. The horse collar, the crank, the spinning wheel, the blast-furnace arriving, the mechanical clock about to. Double-entry bookkeeping in the Italian houses. Paper, spectacles, the compass, gunpowder known if not yet useful. This is the most mechanically advanced society in this game at its start."
+  "what_you_can_see": "Watermills and windmills on every fall of water and every rise of ground. The horse collar, the crank, the spinning wheel, the blast-furnace arriving, the mechanical clock about to. Double-entry bookkeeping in the Italian houses. Paper, spectacles, the compass, gunpowder known if not yet useful. This is the most mechanically advanced society in this game at its start.",
+  "what_this_models": "You are one household, not the English crown. Four and a half million people live in this kingdom and roughly one in eight in a chartered town - about 540,000 town dwellers - but every trade you can hire is sized to the ONE town your household actually works in: the order of 15,000 people. Type 'population' once you are playing to see how your own reach compares, trade by trade, to the kingdom's true numbers."
  },
  "population": 4500000,
  "price_index": 1.1,

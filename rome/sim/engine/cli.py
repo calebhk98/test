@@ -2035,7 +2035,8 @@ def _new_game(civs, cfg):
     for key, heading in (("arrival", None),
                          ("what_you_can_see", "What you can see"),
                          ("what_is_missing", "What is missing"),
-                         ("what_is_coming", "What is coming, and only you know it")):
+                         ("what_is_coming", "What is coming, and only you know it"),
+                         ("what_this_models", "The size of your own reach")):
         if not op.get(key):
             continue
         print()

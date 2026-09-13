@@ -214,7 +214,8 @@
   "arrival": "You arrive in Luoyang under the Emperor He, in a capital of timber and tile laid out on a grid, in the richest and most populous state on earth. There is a civil service recruited by examination, a standing bureaucracy that keeps records you can consult, and an imperial workshop system that already does things Rome cannot.",
   "what_is_coming": "Eighty years, then the Yellow Turbans, then the warlords, then three centuries of division. The bureaucracy that makes this the easiest place on earth to organise anything is about to be the thing that breaks.",
   "what_is_missing": "Glass. The Han have almost none, and will not develop it: the whole optical branch that Rome could reach in a generation is, here, a thing you must start from sand and a furnace and an argument.",
-  "what_you_can_see": "Cast iron, five hundred years before the West. The blast furnace. Paper, this very decade, credited to Cai Lun. The seed drill, the moldboard plough, the horse collar, the crossbow lock made to interchangeable tolerances, the seismoscope. A society that already believes in the trained specialist."
+  "what_you_can_see": "Cast iron, five hundred years before the West. The blast furnace. Paper, this very decade, credited to Cai Lun. The seed drill, the moldboard plough, the horse collar, the crossbow lock made to interchangeable tolerances, the seismoscope. A society that already believes in the trained specialist.",
+  "what_this_models": "You are one household, not the Han bureaucracy. Fifty-eight million people live under this administration and roughly one in ten of them in a town at all - about 5,800,000 town dwellers - but every trade you can hire is sized to the ONE town your household actually reaches: the order of 46,000 people, not the empire. Type 'population' once you are playing to see how your own reach compares, trade by trade, to the empire's true numbers."
  },
  "population": 58000000,
  "price_index": 0.75,

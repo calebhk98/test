@@ -2280,9 +2280,9 @@ def _agent_state(s, nodes, cmd=None):
     return out
 
 
-HELP_TOPICS = ("commands", "labour", "economy", "money", "automatic",
-               "sittings", "fog", "eminence", "risk", "protection", "stuck",
-               "log")
+HELP_TOPICS = ("commands", "labour", "population", "economy", "money",
+               "automatic", "sittings", "fog", "eminence", "risk",
+               "protection", "stuck", "log")
 
 
 def _agent_help(s, topic=None):
@@ -2448,6 +2448,10 @@ def _agent_help(s, topic=None):
                                 "keep them standing",
             "risk": "what history is about to do to you, and what blunts it",
             "labour": "who you employ and what trades exist here",
+            "population": "the country's own numbers, the one town your "
+                          "household actually reaches, and - per trade - how "
+                          "many exist in the country, how many are within "
+                          "your reach, and how many you employ",
             "hire / fire / train / commission": "see the labour topic",
             "buy": "forest, nitre, mine, slaves, or manumit; see the economy topic",
             "work <trade> <hours>": "do an ordinary job for ordinary pay",
@@ -2501,6 +2505,22 @@ def _agent_help(s, topic=None):
                          "trade that does not exist here, out of your own hours",
                 "commission": '{"cmd":"commission","trade":"smith","hours":400} - '
                               "buy a job rather than a person",
+            }}
+
+    if topic == "population":
+        return {"population": (
+            "You are one household, in one town, not the whole of the "
+            "country you were handed into. Every number `labour` shows you - "
+            "who you can hire, how fast hiring one more moves the wage - is "
+            "sized to that one town's market, not to the millions the "
+            "civilisation actually holds. `population` shows both, side by "
+            "side, trade by trade, so a refusal or a rising wage can be read "
+            "as a statement about your own reach rather than about the "
+            "Roman Empire, Han China or any other country's true size. "
+            "Every country-wide and reach figure it shows is an explicit "
+            "ESTIMATE, not a census."),
+            "commands": {
+                "population": "no argument needed - the whole picture at once",
             }}
 
     if topic == "money":
@@ -4926,6 +4946,35 @@ def render_labour(out):
     return "\n".join(L)
 
 
+def render_population(out):
+    """The country, the one town this household actually reaches, and
+    every trade's three numbers side by side - see population_report()
+    (labour.py) for where every figure in this comes from.
+    """
+    L = ["POPULATION: %s" % out.get("civilisation", "")]
+    L.append("country: %s people, %s%% urban (~%s urban dwellers)"
+             % (_fmt_num(out.get("population")),
+                _fmt_num(round((out.get("urban_fraction") or 0) * 100, 1)),
+                _fmt_num(out.get("urban_population_estimate"))))
+    town = out.get("the_town_you_actually_operate_in") or {}
+    L.append("the town you actually operate in: ~%s people (an estimate - see note below)"
+             % _fmt_num(town.get("estimated_population")))
+    L.append("")
+    L.append("%-14s %14s %14s %10s %8s" % ("TRADE", "IN THE COUNTRY", "WITHIN REACH",
+                                           "YOU EMPLOY", "% OF REACH"))
+    for r in out.get("trades") or []:
+        share = r.get("share_of_the_reachable_pool_you_employ")
+        L.append("%-14s %14s %14s %10s %8s"
+                 % (r.get("trade"), _fmt_num(r.get("estimated_in_the_country")),
+                    _fmt_num(r.get("within_your_reach")) if r.get("exists_here") else "-",
+                    _fmt_num(r.get("you_employ")),
+                    ("%.1f%%" % (share * 100)) if share is not None else "-"))
+    if out.get("what_this_means"):
+        L.append("")
+        L.append(_wrap(out["what_this_means"]))
+    return "\n".join(L)
+
+
 def render_ventures(out):
     """What you run and what you could. This fell through to the generic
     key/value dump, which prints a list of dicts as raw Python - a tester
@@ -5298,6 +5347,7 @@ _RENDERERS = {
     "capacity": render_capacity, "industry": render_capacity,
     "dashboard": render_capacity, "portfolio": render_portfolio,
     "economy": render_economy, "changes": render_changes,
+    "population": render_population,
     "final": render_final, "score": render_score,
 }
 
@@ -5553,7 +5603,7 @@ def _flag(v, default=False):
 # advertise it is a visible omission rather than a silent one.
 KNOWN_COMMANDS = (
     "state", "available", "why", "path", "start", "stop", "rush", "step",
-    "money", "risk", "values", "labour", "policy", "help", "log",
+    "money", "risk", "values", "labour", "population", "policy", "help", "log",
     "hire", "fire", "train", "commission", "work", "allocate",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
@@ -5594,6 +5644,8 @@ TYPED_ALIASES = {
     "hazards": "risk", "risks": "risk",
     "history": "log", "diary": "log", "logs": "log", "journal": "log",
     "people": "labour", "staff": "labour", "workers": "labour",
+    "demographics": "population", "demography": "population", "census": "population",
+    "pop": "population",
     "dismiss": "fire", "sack": "fire", "lay": "fire",
     "job": "commission", "hireout": "commission",
     "teach": "train", "learn": "train",
@@ -6032,6 +6084,13 @@ def parse_typed(line):
         if not nums:
             return None, "bribe needs an amount, e.g. 'bribe 500'."
         return {"cmd": "bribe", "amount": nums[0]}, None
+
+    if op == "population":
+        # No argument: the country, the town, and every trade at once. Not
+        # a fog spoiler (see the op handler's own comment) - demography,
+        # not the tech tree - so nothing here is gated on what the player
+        # has discovered.
+        return {"cmd": "population"}, None
 
     if op == "labour":
         # A PLAYER WHO TYPES THE FIELD NAME MEANS THE FIELD. The help shows
@@ -7633,6 +7692,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
     if op == "changes":
         return _agent_changes(s, nodes, cmd)
 
+    if op == "population":
+        return {"ok": True, **s.population_report()}
+
     if op == "labour":
         one = (cmd.get("trade") or "").strip().lower()
         if one and one not in WAGES:
@@ -7675,8 +7737,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                        "read, and this ceiling rises with it")
             if _lpf > 1.005:
                 r["dearer_than_usual_by"] = "%d%%" % ((_lpf - 1.0) * 100)
+                # "HERE" IS ONE TOWN, NOT THE COUNTRY. A player who reads
+                # this as a claim about the whole of Rome or Han China
+                # concludes the game is absurd - that is the demographics
+                # complaint this line exists to head off. See the
+                # population command for the country-wide figure this
+                # household's own reach is being measured against.
                 r["because"] = ("you have taken on a large share of the %ss "
-                                "here lately. Teaching more of the trade, or "
+                                "within this household's reach - one town's "
+                                "labour market, not the whole country; the "
+                                "population command shows how the two "
+                                "compare. Teaching more of the trade, or "
                                 "anything that widens the supply, brings it "
                                 "back down" % t)
             if long:
@@ -7847,7 +7918,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "note": "A trade that does not exist here cannot be hired at any "
                         "price; teach one with train. Trades are not "
                         "interchangeable. Buying a job instead of a person is "
-                        "commission."}
+                        "commission. Every figure above is this household's "
+                        "own reach into ONE town's labour market, not the "
+                        "whole country - the population command shows both, "
+                        "side by side, for every trade."}
 
     if op == "hire":
         if ended:
