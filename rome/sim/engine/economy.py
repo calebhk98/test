@@ -2635,13 +2635,6 @@ class EconomyMixin:
             s = self._material_stock_ledger = collections.Counter(s)
         return s
 
-    def material_stock_t(self, emp_key):
-        """Tonnes of `emp_key` currently banked - read-only, for a display
-        that wants to show "stock on hand" the way the playtester's own
-        worked example did (gold stock 1.3 kg; domestic production 0 kg/yr;
-        imports available up to 0.2 kg/yr at current prices)."""
-        return self._material_stock().get(emp_key, 0.0)
-
     def _throttle_demand_split(self, demand):
         """`demand` (annual_material_demand()'s raw material-key Counter)
         split into two (emp_key, tag) -> tonnes/yr Counters: industrial

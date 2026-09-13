@@ -625,14 +625,31 @@ DEFAULTS = dict(
     # need to change.
     hired_hours_cap_base=25000,
     revenue_ramp_years=3,
-    suspicion_decay=0.045,
     suspicion_danger=25.0,
     eminence_danger=26.0,
     horizon_years=500,
 )
 
-# Known dated shocks. You have foreknowledge of all of these; the model does not
-# let you dodge them for free, only mitigate them.
+# DEAD, AND KEPT ONLY SO AN OLD `from simulator import SHOCKS` STILL WORKS.
+# Nothing reads this. Not one line in the engine subscripts it, iterates it or
+# calls .get() on it - it is imported by nine modules and used by none of them.
+#
+# It is the fossil of the mechanism SocietyMixin._shocks (society.py) replaced:
+# dated shocks now come from each civilization's own `hazards` list in
+# data/civilizations/*.json, which is why Rome gets the Antonine plague and
+# the Mexica get something else entirely. That function's docstring already
+# says "None of it is hardcoded here any more"; this dict is the "here".
+#
+# It is left in place rather than deleted because it is part of the
+# compatibility surface simulator.py's docstring promises, and breaking that
+# for six lines is a bad trade. It is labelled instead, because the last
+# reader to meet it undocumented was an internal audit
+# (data/review/DOCS_VS_ENGINE.md) which recorded it as live and driving the
+# staff_loss and output_factor hazards. It is not, and that audit cites a
+# line number this dict has not been at for some time.
+#
+# If you want to change when the Antonine plague lands, edit
+# data/civilizations/rome_100ad.json. Editing this changes nothing at all.
 SHOCKS = dict(
     antonine_plague=(165, 180),
     cyprian_plague=(249, 262),
