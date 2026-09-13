@@ -53,7 +53,7 @@ from engine.protocol import (_agent_available, _agent_dispatch,  # noqa: F401
 from engine.cli import (cmd_agent, cmd_civs, cmd_compare, cmd_costs,  # noqa: F401
                         cmd_goals, cmd_path, cmd_play, cmd_run, cmd_sensitivity,
                         cmd_sweep, cmd_validate, cmd_why, cmd_menu, load_strategy,
-                        main, topo_stable, _summarise)
+                        main, topo_stable, _summarise, DetRNG, ensure_fixed_hash_seed)
 
 if __name__ == "__main__":
     main()

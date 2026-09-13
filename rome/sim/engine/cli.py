@@ -20,6 +20,89 @@ from .protocol import (
 
 
 # ----------------------------------------------------------------------------
+# A DICE-FREE RNG, FOR --deterministic ON run/compare/play/agent.
+#
+# `path_search.py` built this first, to answer its own question - "does the
+# planned order even get there with the dice off?" - see that module's
+# docstring for the full argument (scarce trades, the capital trap, and why
+# `--no-events` alone was never enough to ask it). It lives HERE, not there,
+# because BOTH files need it and one of them has to be the one place it is
+# actually defined: `path_search.py` already imports `load_strategy` and
+# `topo_stable` from this module, so importing this the same way costs
+# nothing, while the reverse - this module reaching into a standalone
+# script's namespace - would tie every ordinary invocation of `run`/
+# `compare`/`play`/`agent` to path_search.py's own module-load order for no
+# reason. A second, independently-typed copy of the same class was the other
+# option, and is exactly the duplication this project's own comments warn
+# against elsewhere: two copies drift, and the drift is invisible until a fix
+# lands in one and not the other.
+# ----------------------------------------------------------------------------
+
+class DetRNG(random.Random):
+    """A seeded rng whose random() always returns 1.0.
+
+    Every probability check anywhere in this engine is "< threshold" with
+    threshold in (0, 1) - a project's own risk of failing outright
+    (engine/projects.py `_complete`), the 3.5% yearly attrition roll, the 25%
+    manumission roll, the fractional-headcount rounding in
+    `labour.py:_stochastic_round`, and every dated hazard `society.py`'s
+    `_shocks` rolls for (staff loss, a sack, and their own "does it come to
+    nothing instead" counter-rolls) - so a draw of 1.0 is never below any of
+    them: nothing fails, nobody dies, nothing is freed by luck, no hazard
+    lands, every fraction rounds down. `randint`/`sample` are never reached in
+    a run built this way (they sit behind `not self.founder_alive`, and a
+    dice-free trial is always run with an immortal founder), so overriding
+    `random()` alone is enough to make a whole run reproduce identically
+    regardless of seed - the seed number itself stops mattering, which is the
+    point: this is the world with the dice removed, not a world with better
+    dice.
+
+    NOT THE SAME THING AS `--no-events`, and deliberately independent of it.
+    `--no-events` only silences DATED weather/plague/political hazards (this
+    engine's `self.events` flag gating `_shocks` in core.py) and, alone,
+    still leaves project-failure risk, attrition, manumission and stochastic
+    rounding drawing from an ordinary seeded rng every time - see that flag's
+    own help text, which says exactly this. This class is the other half: it
+    changes how every roll comes out, not which code paths run. In practice,
+    passing `--deterministic` without `--no-events` still ends up dice-free,
+    because `_shocks` is itself built entirely from the same "< threshold"
+    rolls this class always fails - but the two flags are kept separately
+    documented rather than one silently implying the other, because a reader
+    of `--no-events`'s own help text should not have to already know this
+    class exists to understand what that flag alone does and does not do.
+    """
+    def random(self):
+        return 1.0
+
+
+def ensure_fixed_hash_seed(seed="0"):
+    """A "deterministic" trial is not, unless this runs first.
+
+    `DetRNG` makes every `random()` call return 1.0, which is exactly
+    reproducible on its own - but CPython hashes strings differently in every
+    process by default (`hash("machinist")` differs run to run unless
+    `PYTHONHASHSEED` is fixed), and this engine has at least one documented
+    site (core.py's own comment on `rng.sample(losable, ...)`) that once
+    walked a bare, unsorted `set` of ids and was fixed by sorting it
+    specifically because an earlier version did not - so a --deterministic
+    run whose output depended on iteration order over some other such set
+    would silently stop being reproducible process to process, for no reason
+    a reader of a diff would ever see. `PYTHONHASHSEED` can only be set
+    before the interpreter starts, not from inside an already-running one, so
+    a process not launched with it fixed re-execs itself, once, with it set.
+    Shared with `path_search.py`, which needs this exact same guarantee for
+    its own dice-free search trials and imports this function for it rather
+    than keeping a second copy - see that module's own docstring for the
+    fuller account of why this matters and what was actually measured about
+    it.
+    """
+    if os.environ.get("PYTHONHASHSEED") == seed:
+        return
+    env = dict(os.environ, PYTHONHASHSEED=seed)
+    os.execvpe(sys.executable, [sys.executable] + sys.argv, env)
+
+
+# ----------------------------------------------------------------------------
 # DIFFICULTY, PRESENTED HONESTLY, AS WHAT IT ACTUALLY IS HERE: how long you
 # have. The horizon was already a plain number the engine takes; a player who
 # had just won the whole game proposed naming a few points on that same line
@@ -529,16 +612,19 @@ def cmd_run(a):
     tree, prices, nodes, wages, goods = load()
     goal = resolve_goal(tree, nodes, getattr(a, "goal", None))
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    deterministic = getattr(a, "deterministic", False)
     res = []
     for i in range(a.mc):
-        rng = random.Random(a.seed + i)
+        rng = DetRNG(a.seed + i) if deterministic else random.Random(a.seed + i)
         s = Sim(nodes, order, rng, events=not a.no_events,
                 cfg={"immortal": not a.mortal,
                      "start_capital": STARTING_KITS[a.kit]["den"]},
                 civ=load_civ(a.civ),
                 bounty_set=(set() if a.no_bounties else bounties)).run(goal, a.horizon)
         res.append(s)
-    _summarise(res, "%s%s" % (label, "  [events disabled]" if a.no_events else ""))
+    _summarise(res, "%s%s%s" % (label,
+                                "  [events disabled]" if a.no_events else "",
+                                "  [deterministic]" if deterministic else ""))
     # KEEP THE PATH OF A RUN THAT WORKED. When a trial reaches the goal it
     # proves an order of work that gets there in this civilisation, and the
     # engine threw that away and went back to walking the same fixed list from
@@ -620,14 +706,17 @@ def cmd_compare(a):
         # "fix" this by drawing a fresh, unseeded RNG per strategy - that
         # would look more random and measure less: it would reintroduce the
         # between-strategy noise this line exists to cancel out.
-        res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
+        deterministic = getattr(a, "deterministic", False)
+        res = [Sim(nodes, order,
+                   DetRNG(a.seed + i) if deterministic else random.Random(a.seed + i),
+                   events=True,
                    cfg={"immortal": not getattr(a, "mortal", False),
                         "start_capital": STARTING_KITS.get(getattr(a,"kit","poor_scholar"),
                                                            STARTING_KITS["poor_scholar"])["den"]},
                    civ=load_civ(getattr(a, "civ", "rome_100ad")),
                    bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
-        _summarise(res, label)
+        _summarise(res, "%s%s" % (label, "  [deterministic]" if deterministic else ""))
         sys.stdout.flush()
 
 
@@ -753,7 +842,9 @@ def cmd_play(a):
     kit = getattr(a, "kit", None)
     if kit:
         cfg["start_capital"] = STARTING_KITS[kit]["den"]
-    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=set(),
+    s = Sim(nodes, order,
+            DetRNG(a.seed) if getattr(a, "deterministic", False) else random.Random(a.seed),
+            events=True, bounty_set=set(),
             manual=True, civ=load_civ(_civ_for_session(a)), cfg=cfg)
     s.goal = goal
     s.done_year = {}
@@ -1420,7 +1511,9 @@ def cmd_agent(a):
     # have rejected outright, because the flag did not exist here at all.
     cfg = {"start_capital": STARTING_KITS[a.kit]["den"], "horizon_years": a.horizon,
            "immortal": not getattr(a, "mortal", False)}
-    s = Sim(nodes, order, random.Random(a.seed), events=not a.no_events,
+    s = Sim(nodes, order,
+            DetRNG(a.seed) if getattr(a, "deterministic", False) else random.Random(a.seed),
+            events=not a.no_events,
             cfg=cfg, civ=load_civ(_civ_for_session(a)), bounty_set=set(), manual=True)
     s.goal = goal
     s.done_year = {}
@@ -2865,7 +2958,10 @@ def main():
                             "regardless of this flag, so a --no-events batch still "
                             "has real seed-to-seed variance. What this flag actually "
                             "buys you is a run reproducible for one fixed seed, same "
-                            "as with events on - not determinism across seeds.")
+                            "as with events on - not determinism across seeds. See "
+                            "--deterministic for a run where every one of those "
+                            "rolls, not only the dated hazards this flag silences, "
+                            "comes out the same way every time.")
         q.add_argument("--no-bounties", action="store_true")
         q.add_argument("--civ", default="rome_100ad",
                        help="which civilization to play. See data/civilizations/")
@@ -2874,6 +2970,23 @@ def main():
         q.add_argument("--mortal", action="store_true",
                        help="turn the founder's mortality back on (default: immortal, "
                             "so the run measures the TREE and not a lifespan lottery)")
+        q.add_argument("--deterministic", action="store_true",
+                       help="replace this run's rng with one whose random() always "
+                            "returns 1.0 (DetRNG, engine/cli.py - the same class "
+                            "path_search.py's own dice-free search trials use): no "
+                            "project ever fails outright, nobody is lost to the "
+                            "yearly attrition roll, nobody is freed by the "
+                            "manumission roll, and every fractional headcount rounds "
+                            "down. THIS IS NOT WHAT --no-events DOES, and --no-events "
+                            "ALONE DOES NOT DO THIS: that flag only silences dated "
+                            "weather/plague/political hazards and, by itself, still "
+                            "leaves every roll above drawing from an ordinary seeded "
+                            "rng (see --no-events' own help). With --mc greater than "
+                            "1, every trial comes out identical under this flag - "
+                            "there is no luck left to re-roll, which is the point, "
+                            "not a bug. A dice-free trial answers 'does this order "
+                            "even get there' at all; it does not choose a better "
+                            "order - see 'plan' and 'search' for that.")
         q.add_argument("--trace", action="store_true")
         # WRITE DOWN A PATH THAT WORKED, so the next measurement can start from
         # evidence instead of from the same losing list. Feed the file back in
@@ -2961,6 +3074,18 @@ def main():
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--fog", action="store_true")
     q.add_argument("--mortal", action="store_true")
+    q.add_argument("--deterministic", action="store_true",
+                   help="replace this session's rng with one whose random() always "
+                        "returns 1.0 (DetRNG - same class 'run'/'compare' --deterministic "
+                        "and path_search.py's own search trials use): project failure, "
+                        "the yearly attrition roll, the manumission roll and fractional-"
+                        "headcount rounding all come out the way they would with no "
+                        "luck at all, good or bad. 'play' has no --no-events flag, so "
+                        "dated weather/plague/political hazards still fire every year - "
+                        "but they too are gated by the same kind of roll this flag "
+                        "always fails, so in practice this alone is a fully dice-free "
+                        "sitting. A developer/diagnostic tool, not something an "
+                        "ordinary playthrough needs.")
     q.add_argument("--session", default=None,
                    help="a save file. Loaded if it exists, written after every "
                         "command, so you can stop and come back later")
@@ -3001,6 +3126,16 @@ def main():
     q.add_argument("--mortal", action="store_true",
                    help="turn the founder's mortality back on (default: immortal, "
                         "same meaning as on 'run'/'compare'/'play')")
+    q.add_argument("--deterministic", action="store_true",
+                   help="replace this session's rng with one whose random() always "
+                        "returns 1.0 (DetRNG - same class 'run'/'compare'/'play' "
+                        "--deterministic and path_search.py's own search trials use): "
+                        "project failure, the yearly attrition roll, the manumission "
+                        "roll and fractional-headcount rounding all come out the way "
+                        "they would with no luck at all. THIS IS NOT --no-events AND "
+                        "--no-events ALONE DOES NOT DO THIS - see that flag's own help "
+                        "just above. Combine the two for the same fully dice-free "
+                        "session path_search.py's own trials run.")
     q.add_argument("--session", default=None,
                    help="a save file. Loaded if it exists, written after every "
                         "command, so you can play across separate invocations "
