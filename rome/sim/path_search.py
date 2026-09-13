@@ -12,8 +12,10 @@ so a fully dice-free trial needs a seeded rng whose `random()` always returns
 1.0, never below any probability threshold anywhere in the engine (a
 project's failure risk, the 3.5% yearly attrition roll, the 25% manumission
 roll, the fractional-headcount rounding in `_stochastic_round`). See
-`DetRNG` below. Nothing in `core.py`, `projects.py`, `labour.py`, `society.py`
-or `economy.py` is edited to get this - the same rules run, against a
+`DetRNG` in `engine/cli.py` - shared from there because `--deterministic` on
+`run`/`compare`/`play`/`agent` needs the exact same rng, for the exact same
+reason. Nothing in `core.py`, `projects.py`, `labour.py`, `society.py` or
+`economy.py` is edited to get this - the same rules run, against a
 different sequence of "how did that roll come out".
 
 THE FIRST QUESTION - DOES THE CURRENT PLAN EVEN GET THERE WITH THE DICE
@@ -125,65 +127,20 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-
-def ensure_fixed_hash_seed(seed="0"):
-    """A "deterministic" trial is not, unless this is called first.
-
-    `DetRNG` makes `random()` return 1.0 for every call, which is exactly
-    reproducible on its own - but CPython hashes strings differently in every
-    process by default (`hash("machinist")` differs run to run unless
-    `PYTHONHASHSEED` is fixed), and a handful of places in this engine walk a
-    bare, unsorted `set` of node or trade ids rather than a list or a
-    `sorted()` view of one - core.py's own comment on `rng.sample(losable,
-    ...)` names this exact risk for ONE such set and sorts it there
-    specifically because an earlier version did not. Repeated trials here
-    (same order, same DetRNG, three separate `python3` processes) came back
-    identical either way for the runs this module actually measured, so
-    nothing in THIS search was silently corrupted by it - but that is one
-    tree, one order, one horizon, not a proof that no set-iteration site
-    anywhere in core.py/labour.py/economy.py can ever matter for a
-    DIFFERENT order this search might try next. Pinning the hash seed before
-    any Sim runs costs nothing and removes the question entirely, which is
-    cheaper than auditing every such site by hand and trusting the audit to
-    stay correct as those files keep changing under other agents' hands.
-    `PYTHONHASHSEED` can only be set before the interpreter starts, not from
-    inside an already-running one, so a process that was not launched with
-    it fixed re-execs itself, once, with it set - which is why every entry
-    point in this module calls this first.
-    """
-    if os.environ.get("PYTHONHASHSEED") == seed:
-        return
-    env = dict(os.environ, PYTHONHASHSEED=seed)
-    os.execvpe(sys.executable, [sys.executable] + sys.argv, env)
-
 from engine.data import TRADES_ABSENT, closure, load, load_civ, resolve_goal
 from engine.core import Sim
-from engine.cli import load_strategy, topo_stable
+# DetRNG AND ensure_fixed_hash_seed LIVE IN engine/cli.py NOW, NOT HERE.
+# `--deterministic` on `run`/`compare`/`play`/`agent` needed the exact same
+# rng and the exact same hash-seed fix this module already had, and a second,
+# separately-typed copy of either is exactly the kind of duplication that
+# drifts the moment one copy is fixed and the other is not - see DetRNG's own
+# docstring, now in engine/cli.py, for the fuller argument. This module
+# already imported `load_strategy`/`topo_stable` from there, so importing
+# these two the same way costs nothing new.
+from engine.cli import (load_strategy, topo_stable, DetRNG,
+                        ensure_fixed_hash_seed)
 
 import planner as _planner
-
-
-# ----------------------------------------------------------------------------
-# A dice-free trial
-# ----------------------------------------------------------------------------
-
-class DetRNG(random.Random):
-    """A seeded rng whose random() always returns 1.0.
-
-    Every probability check in the engine is "< threshold" with threshold in
-    (0, 1) - a project's risk of failure, the 3.5% attrition roll, the 25%
-    manumission roll, the fractional-headcount stochastic rounding - so a
-    draw of 1.0 is never below any of them: nothing fails, nobody dies,
-    nothing is freed by luck, every fraction rounds down. `randint`/`sample`
-    are never reached in a deathless run (they sit behind `not
-    self.founder_alive`, and immortal=True in every Sim this module builds),
-    so overriding `random()` alone is enough to make a whole run
-    reproduce identically for any seed - the seed number itself stops
-    mattering, which is the point: this is the world with the dice removed,
-    not a world with better dice.
-    """
-    def random(self):
-        return 1.0
 
 
 def deterministic_sim(nodes, order, goal, civ, horizon, bounty_set=None):
@@ -568,16 +525,40 @@ def main():
                          "module's behaviour before it existed - moves 1 and "
                          "2 (pulling/resequencing what is already named) only")
     a = ap.parse_args()
-    ensure_fixed_hash_seed()
     t0 = time.time()
+    order, rationale = plan_and_write(
+        a.civ, a.goal, a.out, a.side_branches, a.side_branch_every, a.rounds,
+        a.horizon, a.backlog_ratio, a.seed_strategy, a.no_grow_supply)
+    print("wrote %d nodes to %s in %.1fs" % (len(order), a.out, time.time() - t0))
+    for line in rationale:
+        print("  - " + line)
+
+
+def plan_and_write(civ="rome_100ad", goal=None, out=None, side_branches=12,
+                    side_branch_every=8, rounds=6, horizon=500,
+                    backlog_ratio=6.0, seed_strategy=None,
+                    no_grow_supply=False, log=print):
+    """The whole CLI pipeline in one call: fix the hash seed, run `search()`,
+    build the rationale a strategy file's own reader sees, and write it to
+    `out`.
+
+    ONE BODY, TWO FRONT DOORS. This module's own `main()` above and
+    `simulator.py search` (engine/cli.py's `cmd_search`) both call this
+    instead of each independently turning `search()`'s return value into a
+    written file and a printed rationale - the same principle `cmd_plan`
+    already applies to `planner.plan()`, and for the same reason: two places
+    deciding what a search result MEANS is two places that can quietly
+    disagree about it, one bugfix at a time.
+    """
+    ensure_fixed_hash_seed()
     _tree0, _p0, _nodes0, _w0, _g0 = load()
-    seed_order = _planner.load_seed(a.seed_strategy, _nodes0)
-    order, extras, history = search(a.civ, a.goal, a.side_branches,
-                                    a.side_branch_every, a.rounds, a.horizon,
-                                    a.backlog_ratio, seed_order=seed_order,
-                                    grow_supply_moves=not a.no_grow_supply)
+    seed_order = _planner.load_seed(seed_strategy, _nodes0)
+    order, extras, history = search(civ, goal, side_branches, side_branch_every,
+                                    rounds, horizon, backlog_ratio,
+                                    seed_order=seed_order,
+                                    grow_supply_moves=not no_grow_supply, log=log)
     tree, _p, nodes, _w, _g = load()
-    goal = resolve_goal(tree, nodes, a.goal)
+    goal = resolve_goal(tree, nodes, goal)
     last = history[-1]
     grown = [h for h in history if h["grow_supply_tried"]]
     kept = [t["institution"] for h in grown for t in h["grow_supply_tried"] if t["kept"]]
@@ -585,7 +566,7 @@ def main():
         "Deterministic search (rome/sim/path_search.py): CPM order, then up "
         "to %d rounds of diagnosing the binding constraint against a "
         "dice-free trial (no events, no project failures, immortal founder) "
-        "and relaxing it, keeping whichever round scored best." % a.rounds,
+        "and relaxing it, keeping whichever round scored best." % rounds,
         "Final round %d: %d/%d closure nodes done%s. Scarce trade(s) found: "
         "%s." % (last["round"], last["closure_done"],
                 len(closure(nodes, goal)),
@@ -601,13 +582,11 @@ def main():
             "it than without. Kept: %s."
             % (n_tried, ", ".join(kept) if kept else "none - no institution "
                "measured better than the order without it"))
-    _planner.write_strategy(a.out, "SEARCHED (deterministic): %s over %s's "
+    _planner.write_strategy(out, "SEARCHED (deterministic): %s over %s's "
                             "critical-path order, relaxed against its own "
-                            "scarce-trade bottleneck" % (goal, a.civ),
+                            "scarce-trade bottleneck" % (goal, civ),
                             rationale, order)
-    print("wrote %d nodes to %s in %.1fs" % (len(order), a.out, time.time() - t0))
-    for line in rationale:
-        print("  - " + line)
+    return order, rationale
 
 
 if __name__ == "__main__":

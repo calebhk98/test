@@ -20,6 +20,89 @@ from .protocol import (
 
 
 # ----------------------------------------------------------------------------
+# A DICE-FREE RNG, FOR --deterministic ON run/compare/play/agent.
+#
+# `path_search.py` built this first, to answer its own question - "does the
+# planned order even get there with the dice off?" - see that module's
+# docstring for the full argument (scarce trades, the capital trap, and why
+# `--no-events` alone was never enough to ask it). It lives HERE, not there,
+# because BOTH files need it and one of them has to be the one place it is
+# actually defined: `path_search.py` already imports `load_strategy` and
+# `topo_stable` from this module, so importing this the same way costs
+# nothing, while the reverse - this module reaching into a standalone
+# script's namespace - would tie every ordinary invocation of `run`/
+# `compare`/`play`/`agent` to path_search.py's own module-load order for no
+# reason. A second, independently-typed copy of the same class was the other
+# option, and is exactly the duplication this project's own comments warn
+# against elsewhere: two copies drift, and the drift is invisible until a fix
+# lands in one and not the other.
+# ----------------------------------------------------------------------------
+
+class DetRNG(random.Random):
+    """A seeded rng whose random() always returns 1.0.
+
+    Every probability check anywhere in this engine is "< threshold" with
+    threshold in (0, 1) - a project's own risk of failing outright
+    (engine/projects.py `_complete`), the 3.5% yearly attrition roll, the 25%
+    manumission roll, the fractional-headcount rounding in
+    `labour.py:_stochastic_round`, and every dated hazard `society.py`'s
+    `_shocks` rolls for (staff loss, a sack, and their own "does it come to
+    nothing instead" counter-rolls) - so a draw of 1.0 is never below any of
+    them: nothing fails, nobody dies, nothing is freed by luck, no hazard
+    lands, every fraction rounds down. `randint`/`sample` are never reached in
+    a run built this way (they sit behind `not self.founder_alive`, and a
+    dice-free trial is always run with an immortal founder), so overriding
+    `random()` alone is enough to make a whole run reproduce identically
+    regardless of seed - the seed number itself stops mattering, which is the
+    point: this is the world with the dice removed, not a world with better
+    dice.
+
+    NOT THE SAME THING AS `--no-events`, and deliberately independent of it.
+    `--no-events` only silences DATED weather/plague/political hazards (this
+    engine's `self.events` flag gating `_shocks` in core.py) and, alone,
+    still leaves project-failure risk, attrition, manumission and stochastic
+    rounding drawing from an ordinary seeded rng every time - see that flag's
+    own help text, which says exactly this. This class is the other half: it
+    changes how every roll comes out, not which code paths run. In practice,
+    passing `--deterministic` without `--no-events` still ends up dice-free,
+    because `_shocks` is itself built entirely from the same "< threshold"
+    rolls this class always fails - but the two flags are kept separately
+    documented rather than one silently implying the other, because a reader
+    of `--no-events`'s own help text should not have to already know this
+    class exists to understand what that flag alone does and does not do.
+    """
+    def random(self):
+        return 1.0
+
+
+def ensure_fixed_hash_seed(seed="0"):
+    """A "deterministic" trial is not, unless this runs first.
+
+    `DetRNG` makes every `random()` call return 1.0, which is exactly
+    reproducible on its own - but CPython hashes strings differently in every
+    process by default (`hash("machinist")` differs run to run unless
+    `PYTHONHASHSEED` is fixed), and this engine has at least one documented
+    site (core.py's own comment on `rng.sample(losable, ...)`) that once
+    walked a bare, unsorted `set` of ids and was fixed by sorting it
+    specifically because an earlier version did not - so a --deterministic
+    run whose output depended on iteration order over some other such set
+    would silently stop being reproducible process to process, for no reason
+    a reader of a diff would ever see. `PYTHONHASHSEED` can only be set
+    before the interpreter starts, not from inside an already-running one, so
+    a process not launched with it fixed re-execs itself, once, with it set.
+    Shared with `path_search.py`, which needs this exact same guarantee for
+    its own dice-free search trials and imports this function for it rather
+    than keeping a second copy - see that module's own docstring for the
+    fuller account of why this matters and what was actually measured about
+    it.
+    """
+    if os.environ.get("PYTHONHASHSEED") == seed:
+        return
+    env = dict(os.environ, PYTHONHASHSEED=seed)
+    os.execvpe(sys.executable, [sys.executable] + sys.argv, env)
+
+
+# ----------------------------------------------------------------------------
 # DIFFICULTY, PRESENTED HONESTLY, AS WHAT IT ACTUALLY IS HERE: how long you
 # have. The horizon was already a plain number the engine takes; a player who
 # had just won the whole game proposed naming a few points on that same line
@@ -448,7 +531,89 @@ def _summarise(results, label):
     k = len(ok)
     print("\n=== %s ===" % label)
     print("runs                : %d" % n)
-    print("reached transistor  : %s" % _fmt_rate_ci(k, n))
+    # WHAT THIS COMMAND ACTUALLY MEASURES, SAID ONCE, UP FRONT, BEFORE ANY
+    # NUMBER. `--mc N` re-rolls ONE FIXED strategy order against N different
+    # random event sequences and reports how that order coped; it has never
+    # chosen or improved the order, and does not here either - see
+    # planner.py's own docstring for the full argument (recommended.json:
+    # 0% on Rome at a 700-year horizon; a computed order: 100%, same tree,
+    # same civilisation, the entire difference being ordering). 'plan' and
+    # 'search' are the commands that compute an order; this one only tells
+    # you how the order it was handed holds up.
+    print("this measures ONE FIXED order's luck, %d roll%s of it - it does not "
+          "choose or improve the order. 'plan' (critical-path method) and "
+          "'search' (dice-free, relaxed against the binding constraint) are "
+          "the commands that do that."
+          % (n, "" if n == 1 else "s"))
+    # AGGREGATE PROGRESS, LEADING - not the success rate. A batch this small
+    # against a multi-century, near-certain-to-fail-or-succeed goal can be a
+    # ~1% event either way (this project's own default invocation has
+    # measured 0/25 and 1/125), and a bare rate at that sample size invites
+    # reading it as "the" result instead of one thing among several this
+    # batch can actually support saying. How far every run got - not only
+    # the ones that finished - is informative at any N, including this one.
+    tech = sorted(len(r.done) for r in results)
+    q = lambda xs, p: xs[min(len(xs) - 1, int(p * len(xs)))]
+    print()
+    print("technologies completed (whole tree, across all %d run%s):"
+          % (n, "" if n == 1 else "s"))
+    print("   worst %d | p25 %d | median %d | p75 %d | best %d"
+          % (tech[0], q(tech, .25), q(tech, .5), q(tech, .75), tech[-1]))
+    need = closure(results[0].nodes, results[0].goal)
+    tot = len(need)
+    prog = sorted(len(need & r.done) for r in results)
+    print("goal's own closure completed (%d node%s needed):"
+          % (tot, "" if tot == 1 else "s"))
+    print("   worst %d/%d | p25 %d | median %d | p75 %d | best %d/%d"
+          % (prog[0], tot, q(prog, .25), q(prog, .5), q(prog, .75),
+             prog[-1], tot))
+    causes = defaultdict(int)
+    for r in results:
+        if r.dead_reason: causes[r.dead_reason.split(":")[0]] += 1
+        elif not r.goal_year: causes["ran out of horizon"] += 1
+    if causes:
+        print("failure modes       :")
+        for cause, v in sorted(causes.items(), key=lambda x: -x[1]):
+            print("   %-58s %3d (%.0f%%)" % (cause, v, 100.0 * v / len(results)))
+    # where do runs get stuck. PRECISE EVEN AT N=25: almost every run that
+    # does not reach the goal is blocked on one of a small handful of nodes,
+    # which is a near-certain event rather than the ~1% one the success rate
+    # itself often is - see the rate section below for that distinction said
+    # out loud where a reader is looking at both numbers side by side.
+    stuck = defaultdict(int)
+    for r in results:
+        if not r.goal_year:
+            rneed = closure(r.nodes, r.goal)
+            miss = [kk for kk in topo_order(r.nodes, rneed) if kk not in r.done]
+            if miss: stuck[miss[0]] += 1
+    if stuck:
+        print("first blocked node  :")
+        for kk, v in sorted(stuck.items(), key=lambda x: -x[1])[:6]:
+            print("   %-58s %3d" % (kk, v))
+    # THE SUCCESS RATE, BELOW THE FOLD, NOT AS THE HEADLINE - see the "what
+    # this measures" line above for why, and this project's own diagnosis
+    # (planner.py's docstring) for the number that made the point concrete:
+    # recommended.json reached the goal in 0% of trials on Rome at a
+    # 700-year horizon, and a run pointed at a strategy like that used to
+    # print exactly that lone, uninterpreted "0%" as its headline, with the
+    # median-year line blank underneath it and nothing else on the screen to
+    # explain either fact. The progress tables above already say how far
+    # those same trials got; this says how many of them finished.
+    print()
+    if k == 0:
+        # DO NOT SILENTLY PRINT A TABLE OF ZEROS. Zero successes out of N is
+        # a statement about THIS ORDER's luck under THIS horizon, not a
+        # verdict on the goal - recommended.json scores exactly this at a
+        # 500-700 year horizon while a computed order has reached 100%, same
+        # tree, same civilisation. Re-running this same order with a
+        # different --seed will not change that; a different ORDER might.
+        print("*** ZERO of %d trials reached the goal under this order. ***" % n)
+        print("    Before reading anything below as a verdict on the GOAL: this is a")
+        print("    known losing order at this horizon, not evidence the goal is out of")
+        print("    reach. 'plan' (critical-path method) or 'search' (dice-free, relaxed")
+        print("    against the binding constraint) compute a different order instead of")
+        print("    re-testing this one against more luck.")
+    print("reached the goal    : %s" % _fmt_rate_ci(k, n))
     # --no-events IS NOT A NOISE-FREE BASELINE. See the --no-events help text
     # for the full explanation; this is the one-line reminder at the point
     # where a reader is actually looking at numbers from such a run.
@@ -459,13 +624,17 @@ def _summarise(results, label):
         print("                      rounding (labour.py _stochastic_round) still draw")
         print("                      from the same RNG regardless of this flag, so this")
         print("                      batch still has real seed-to-seed variance - it is")
-        print("                      reproducible for one seed, not noise-free.")
+        print("                      reproducible for one seed, not noise-free. See")
+        print("                      --deterministic for a run where that is also true.")
+    if "[deterministic]" in label and n > 1:
+        print("                      NOTE: '--deterministic' replaces the rng with one")
+        print("                      that always rolls the side that never fails, so")
+        print("                      every one of these %d trials is identical - there"
+              % n)
+        print("                      is no luck left for more trials to re-roll. This")
+        print("                      is the order's single dice-free outcome, repeated.")
     if k == 0:
-        print("year reached        : (blank on purpose, not a bug) no trial reached the")
-        print("                      goal, so there is no year-to-goal distribution to")
-        print("                      report a median or quartile of. The rate line above,")
-        print("                      with its interval, is the only thing this batch")
-        print("                      supports saying about the outcome.")
+        pass  # already said above, plainly, before the rate line itself
     elif k < _MIN_SUCCESSES_FOR_QUANTILES:
         ys = sorted(r.goal_year for r in ok)
         print("year reached        : only %d success%s in %d trials - too few for a"
@@ -477,11 +646,11 @@ def _summarise(results, label):
         print("                      trust the CI on the rate above instead.")
     else:
         ys = sorted(r.goal_year for r in ok)
-        q = lambda p: ys[min(len(ys) - 1, int(p * len(ys)))]
+        qy = lambda p: ys[min(len(ys) - 1, int(p * len(ys)))]
         print("year reached        : best %d | p25 %d | median %d | p75 %d | worst %d"
-              % (ys[0], q(.25), q(.5), q(.75), ys[-1]))
+              % (ys[0], qy(.25), qy(.5), qy(.75), ys[-1]))
         start = results[0].cfg["start_year"]
-        print("elapsed from %d AD  : median %d years" % (start, q(.5) - start))
+        print("elapsed from %d AD  : median %d years" % (start, qy(.5) - start))
     sh = collections.Counter()
     for r in results:
         sh.update(r.shortages)
@@ -504,41 +673,25 @@ def _summarise(results, label):
     b = [r.bounties_paid for r in results]
     if any(b):
         print("bounties posted     : mean %.1f per run" % (sum(b) / len(b)))
-    causes = defaultdict(int)
-    for r in results:
-        if r.dead_reason: causes[r.dead_reason.split(":")[0]] += 1
-        elif not r.goal_year: causes["ran out of horizon"] += 1
-    if causes:
-        print("failure modes       :")
-        for k, v in sorted(causes.items(), key=lambda x: -x[1]):
-            print("   %-58s %3d (%.0f%%)" % (k, v, 100.0 * v / len(results)))
-    # where do runs get stuck
-    stuck = defaultdict(int)
-    for r in results:
-        if not r.goal_year:
-            need = closure(r.nodes, r.goal)
-            miss = [k for k in topo_order(r.nodes, need) if k not in r.done]
-            if miss: stuck[miss[0]] += 1
-    if stuck:
-        print("first blocked node  :")
-        for k, v in sorted(stuck.items(), key=lambda x: -x[1])[:6]:
-            print("   %-58s %3d" % (k, v))
 
 
 def cmd_run(a):
     tree, prices, nodes, wages, goods = load()
     goal = resolve_goal(tree, nodes, getattr(a, "goal", None))
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    deterministic = getattr(a, "deterministic", False)
     res = []
     for i in range(a.mc):
-        rng = random.Random(a.seed + i)
+        rng = DetRNG(a.seed + i) if deterministic else random.Random(a.seed + i)
         s = Sim(nodes, order, rng, events=not a.no_events,
                 cfg={"immortal": not a.mortal,
                      "start_capital": STARTING_KITS[a.kit]["den"]},
                 civ=load_civ(a.civ),
                 bounty_set=(set() if a.no_bounties else bounties)).run(goal, a.horizon)
         res.append(s)
-    _summarise(res, "%s%s" % (label, "  [events disabled]" if a.no_events else ""))
+    _summarise(res, "%s%s%s" % (label,
+                                "  [events disabled]" if a.no_events else "",
+                                "  [deterministic]" if deterministic else ""))
     # KEEP THE PATH OF A RUN THAT WORKED. When a trial reaches the goal it
     # proves an order of work that gets there in this civilisation, and the
     # engine threw that away and went back to walking the same fixed list from
@@ -620,14 +773,17 @@ def cmd_compare(a):
         # "fix" this by drawing a fresh, unseeded RNG per strategy - that
         # would look more random and measure less: it would reintroduce the
         # between-strategy noise this line exists to cancel out.
-        res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
+        deterministic = getattr(a, "deterministic", False)
+        res = [Sim(nodes, order,
+                   DetRNG(a.seed + i) if deterministic else random.Random(a.seed + i),
+                   events=True,
                    cfg={"immortal": not getattr(a, "mortal", False),
                         "start_capital": STARTING_KITS.get(getattr(a,"kit","poor_scholar"),
                                                            STARTING_KITS["poor_scholar"])["den"]},
                    civ=load_civ(getattr(a, "civ", "rome_100ad")),
                    bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
-        _summarise(res, label)
+        _summarise(res, "%s%s" % (label, "  [deterministic]" if deterministic else ""))
         sys.stdout.flush()
 
 
@@ -753,7 +909,9 @@ def cmd_play(a):
     kit = getattr(a, "kit", None)
     if kit:
         cfg["start_capital"] = STARTING_KITS[kit]["den"]
-    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=set(),
+    s = Sim(nodes, order,
+            DetRNG(a.seed) if getattr(a, "deterministic", False) else random.Random(a.seed),
+            events=True, bounty_set=set(),
             manual=True, civ=load_civ(_civ_for_session(a)), cfg=cfg)
     s.goal = goal
     s.done_year = {}
@@ -1420,7 +1578,9 @@ def cmd_agent(a):
     # have rejected outright, because the flag did not exist here at all.
     cfg = {"start_capital": STARTING_KITS[a.kit]["den"], "horizon_years": a.horizon,
            "immortal": not getattr(a, "mortal", False)}
-    s = Sim(nodes, order, random.Random(a.seed), events=not a.no_events,
+    s = Sim(nodes, order,
+            DetRNG(a.seed) if getattr(a, "deterministic", False) else random.Random(a.seed),
+            events=not a.no_events,
             cfg=cfg, civ=load_civ(_civ_for_session(a)), bounty_set=set(), manual=True)
     s.goal = goal
     s.done_year = {}
@@ -1747,6 +1907,45 @@ def cmd_plan(a):
     return 0
 
 
+def cmd_search(a):
+    """`path_search.py`'s own dice-free search, reached directly instead of
+    only through `plan --search-rounds`.
+
+    `plan` alone is one structural CPM pass; `plan --search-rounds N` folds
+    THIS SAME search into a CPM-seeded pipeline (and can go on to
+    --refine-rounds against real trials afterward). This command is the
+    other front door onto the identical machinery, for the case that started
+    this file's own docstring: "does the current plan even get there with
+    the dice off?", asked on its own, at path_search.py's own standalone
+    defaults, without also having to think about CPM seeding or refinement.
+    See rome/sim/path_search.py for the full reasoning - the scarce named
+    trades, the capital trap, and the three moves (pull, resequence, grow
+    supply) this measures against a real Sim with the dice removed rather
+    than guesses at.
+
+    A THIN WRAPPER, LIKE `cmd_plan`. This calls `path_search.plan_and_write`
+    - the exact function `path_search.py`'s own `main()` calls - so a change
+    to what the search does, or to how its result gets written and explained,
+    happens in one place for both front doors, not two.
+
+    NEVER REACHED FROM `play` OR `agent`, for the same reason `plan` is not:
+    both are developer/optimizer tools, and a strategy file either one
+    writes is public information already sitting in the repository, not a
+    live look into a fogged session's own state.
+    """
+    _simdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if _simdir not in sys.path:
+        sys.path.insert(0, _simdir)
+    import path_search as _search
+    order, rationale = _search.plan_and_write(
+        a.civ, a.goal, a.out, a.side_branches, a.side_branch_every, a.rounds,
+        a.horizon, a.backlog_ratio, a.seed_strategy, a.no_grow_supply)
+    print("wrote %d nodes to %s" % (len(order), a.out))
+    for line in rationale:
+        print("  - " + line)
+    return 0
+
+
 def cmd_why(a):
     """Explain one node: what it needs, what needs it, and what it costs."""
     tree, prices, nodes, wages, goods = load()
@@ -1843,6 +2042,7 @@ def cmd_sweep(a):
           (a.axis, "success", "95% CI", "median", "p25", "dominant failure"))
     print("-" * 92)
     any_thin = False
+    any_success = False
     for v in values:
         cfg, life = {}, None
         if key == "founder_life_mean":
@@ -1872,6 +2072,7 @@ def cmd_sweep(a):
         lo, hi = _wilson_interval(succ, len(res))
         thin = 0 < succ < _MIN_SUCCESSES_FOR_QUANTILES
         any_thin = any_thin or thin
+        any_success = any_success or succ > 0
         print("%-12s %7.0f%% %16s %8s %8s   %s" %
               (f"{v:,}", 100.0 * succ / len(res),
                "[%.0f%%,%.0f%%]" % (100.0 * lo, 100.0 * hi),
@@ -1884,6 +2085,23 @@ def cmd_sweep(a):
         print("* median from under %d successes - an anecdote, not a distribution;"
               % _MIN_SUCCESSES_FOR_QUANTILES)
         print("  trust the 95%% CI on success rate at that point instead.")
+    if not any_success:
+        # DO NOT SILENTLY PRINT A TABLE OF ZEROS. Every point on this sweep
+        # scored 0% - '%s' is a known-losing order at every value of %s
+        # tried here, at this horizon, not merely at one unlucky point on
+        # it. That is a statement about the ORDER, not about whether the
+        # goal is reachable at all (recommended.json scores exactly this
+        # while a computed order has reached 100%, same tree, same
+        # civilisation) - 'plan' or 'search' compute a different order
+        # instead of sweeping this one across more starting conditions.
+        print("\n*** EVERY point on this sweep scored 0%% - '%s' never reached the goal"
+              % a.strategy)
+        print("    at any %s tried, not only at one unlucky value. Before reading" % a.axis)
+        print("    anything above as 'this starting condition is impossible': this looks")
+        print("    like a known-losing ORDER at this horizon, not a fact about %s. Run"
+              % a.axis)
+        print("    'plan' (critical-path method) or 'search' (dice-free, relaxed against")
+        print("    the binding constraint) to compute a different order, then sweep that.")
 
 
 def cmd_goals(a):
@@ -2865,7 +3083,10 @@ def main():
                             "regardless of this flag, so a --no-events batch still "
                             "has real seed-to-seed variance. What this flag actually "
                             "buys you is a run reproducible for one fixed seed, same "
-                            "as with events on - not determinism across seeds.")
+                            "as with events on - not determinism across seeds. See "
+                            "--deterministic for a run where every one of those "
+                            "rolls, not only the dated hazards this flag silences, "
+                            "comes out the same way every time.")
         q.add_argument("--no-bounties", action="store_true")
         q.add_argument("--civ", default="rome_100ad",
                        help="which civilization to play. See data/civilizations/")
@@ -2874,6 +3095,23 @@ def main():
         q.add_argument("--mortal", action="store_true",
                        help="turn the founder's mortality back on (default: immortal, "
                             "so the run measures the TREE and not a lifespan lottery)")
+        q.add_argument("--deterministic", action="store_true",
+                       help="replace this run's rng with one whose random() always "
+                            "returns 1.0 (DetRNG, engine/cli.py - the same class "
+                            "path_search.py's own dice-free search trials use): no "
+                            "project ever fails outright, nobody is lost to the "
+                            "yearly attrition roll, nobody is freed by the "
+                            "manumission roll, and every fractional headcount rounds "
+                            "down. THIS IS NOT WHAT --no-events DOES, and --no-events "
+                            "ALONE DOES NOT DO THIS: that flag only silences dated "
+                            "weather/plague/political hazards and, by itself, still "
+                            "leaves every roll above drawing from an ordinary seeded "
+                            "rng (see --no-events' own help). With --mc greater than "
+                            "1, every trial comes out identical under this flag - "
+                            "there is no luck left to re-roll, which is the point, "
+                            "not a bug. A dice-free trial answers 'does this order "
+                            "even get there' at all; it does not choose a better "
+                            "order - see 'plan' and 'search' for that.")
         q.add_argument("--trace", action="store_true")
         # WRITE DOWN A PATH THAT WORKED, so the next measurement can start from
         # evidence instead of from the same losing list. Feed the file back in
@@ -2943,6 +3181,42 @@ def main():
                         "only moves 1-2 (pulling/resequencing what is "
                         "already named) - the search's behaviour before "
                         "move 3 existed")
+    q = sub.add_parser("search", help="path_search.py's dice-free search on its own, "
+                                      "the other front door onto the same machinery "
+                                      "'plan --search-rounds' folds into a CPM-seeded "
+                                      "pipeline. Answers 'does this order even get "
+                                      "there with the dice off' and relaxes the "
+                                      "binding constraint it finds, round by round. "
+                                      "See rome/sim/path_search.py. A developer/"
+                                      "optimizer tool, like plan/compare/sweep/"
+                                      "sensitivity - never reached from play or agent.")
+    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--goal", default=None)
+    q.add_argument("--out", required=True, metavar="FILE",
+                   help="strategy file to write; feed it back in with --strategy")
+    q.add_argument("--side-branches", type=int, default=12,
+                   help="how many revenue-positive nodes outside the goal's own "
+                        "requirements to weave in, to fund the spine. 0 disables")
+    q.add_argument("--side-branch-every", type=int, default=8)
+    q.add_argument("--rounds", type=int, default=6,
+                   help="how many rounds of diagnose-and-relax to run at most; "
+                        "a round that reaches the goal, finds no scarce trade "
+                        "left, or makes no change to the order stops early")
+    q.add_argument("--horizon", type=int, default=500,
+                   help="dice-free horizon used WHILE searching - kept short "
+                        "for speed; verify the winner separately at a longer "
+                        "horizon and then against real seeds (e.g. 'run "
+                        "--strategy FILE --mc N')")
+    q.add_argument("--backlog-ratio", type=float, default=6.0)
+    q.add_argument("--seed-strategy", default=None,
+                   help="a strategy name or path whose order breaks ties "
+                        "among nodes the critical path ranks as equally "
+                        "urgent, same as plan's own --seed-strategy")
+    q.add_argument("--no-grow-supply", action="store_true",
+                   help="skip move 3 (founding institutions one at a time, "
+                        "kept only if measured better) and use only moves "
+                        "1-2 (pulling/resequencing what is already named) - "
+                        "this search's behaviour before move 3 existed")
     sub.add_parser("menu", help="pick a civilisation, read where you have landed, "
                                 "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
@@ -2961,6 +3235,18 @@ def main():
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--fog", action="store_true")
     q.add_argument("--mortal", action="store_true")
+    q.add_argument("--deterministic", action="store_true",
+                   help="replace this session's rng with one whose random() always "
+                        "returns 1.0 (DetRNG - same class 'run'/'compare' --deterministic "
+                        "and path_search.py's own search trials use): project failure, "
+                        "the yearly attrition roll, the manumission roll and fractional-"
+                        "headcount rounding all come out the way they would with no "
+                        "luck at all, good or bad. 'play' has no --no-events flag, so "
+                        "dated weather/plague/political hazards still fire every year - "
+                        "but they too are gated by the same kind of roll this flag "
+                        "always fails, so in practice this alone is a fully dice-free "
+                        "sitting. A developer/diagnostic tool, not something an "
+                        "ordinary playthrough needs.")
     q.add_argument("--session", default=None,
                    help="a save file. Loaded if it exists, written after every "
                         "command, so you can stop and come back later")
@@ -3001,6 +3287,16 @@ def main():
     q.add_argument("--mortal", action="store_true",
                    help="turn the founder's mortality back on (default: immortal, "
                         "same meaning as on 'run'/'compare'/'play')")
+    q.add_argument("--deterministic", action="store_true",
+                   help="replace this session's rng with one whose random() always "
+                        "returns 1.0 (DetRNG - same class 'run'/'compare'/'play' "
+                        "--deterministic and path_search.py's own search trials use): "
+                        "project failure, the yearly attrition roll, the manumission "
+                        "roll and fractional-headcount rounding all come out the way "
+                        "they would with no luck at all. THIS IS NOT --no-events AND "
+                        "--no-events ALONE DOES NOT DO THIS - see that flag's own help "
+                        "just above. Combine the two for the same fully dice-free "
+                        "session path_search.py's own trials run.")
     q.add_argument("--session", default=None,
                    help="a save file. Loaded if it exists, written after every "
                         "command, so you can play across separate invocations "
@@ -3020,7 +3316,8 @@ def main():
             "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs, "menu": cmd_menu,
             "goals": cmd_goals,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play, "agent": cmd_agent,
-            "sensitivity": cmd_sensitivity, "plan": cmd_plan}[a.cmd](a)
+            "sensitivity": cmd_sensitivity, "plan": cmd_plan,
+            "search": cmd_search}[a.cmd](a)
 
 
 if __name__ == "__main__":
