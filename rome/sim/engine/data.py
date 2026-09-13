@@ -23,7 +23,7 @@ Design notes and the full protocol: rome/sim/PROTOCOL.md
 import argparse, json, math, os, random, sys
 sys.setrecursionlimit(20000)
 import collections
-from collections import defaultdict
+from collections import defaultdict, deque
 
 # This file lives in rome/sim/engine/, one level deeper than simulator.py used
 # to, so the data directory is two parents up rather than one. Everything that
@@ -355,7 +355,27 @@ def hard_pre(nodes, k):
 
 
 def topo_order(nodes, subset=None):
-    """Kahn topological sort. `subset` restricts to a set of ids."""
+    """Kahn topological sort. `subset` restricts to a set of ids.
+
+    Was O(V^2 log V + V^2 E): every one of the (up to) 2,849 iterations of
+    the main loop re-sorted every key in the tree and linear-scanned every
+    node's prerequisite list looking for the id just emitted. 2.6s for the
+    real tree, for what should be an O(V+E) pass.
+
+    Rebuilds to the textbook version - a reverse-adjacency index built once
+    (prereq -> the nodes that name it as a hard prerequisite), so emitting
+    `k` only touches k's actual dependents - while reproducing the exact
+    output order the old quadratic version produced, which the optimiser's
+    `order` depends on byte-for-byte:
+      (a) the initial ready list is sorted, same as before;
+      (b) FIFO via collections.deque (O(1) popleft instead of list.pop(0)) -
+          same emission order, just not O(n) per pop;
+      (c) nodes newly at in-degree 0 are appended in sorted(keys) order
+          WITHIN one outer iteration - reproduced here by sorting each
+          node's own dependents list once, up front, so appending them in
+          that fixed order during the walk matches what re-sorting all of
+          `keys` and filtering would have produced each time.
+    """
     keys = set(subset) if subset else set(nodes)
     hp = {k: hard_pre(nodes, k) for k in keys}
     indeg = {k: 0 for k in keys}
@@ -363,16 +383,23 @@ def topo_order(nodes, subset=None):
         for p in hp[k]:
             if p in keys:
                 indeg[k] += 1
-    ready = sorted([k for k in keys if indeg[k] == 0])
+    # Reverse index: for each key, the OTHER keys that name it as a hard
+    # prerequisite, in sorted order - the same relative order `sorted(keys)`
+    # would have visited them in, since it is a subsequence of that sort.
+    dependents = {k: [] for k in keys}
+    for m in sorted(keys):
+        for p in hp[m]:
+            if p in keys:
+                dependents[p].append(m)
+    ready = deque(sorted(k for k in keys if indeg[k] == 0))
     out = []
     while ready:
-        k = ready.pop(0)
+        k = ready.popleft()
         out.append(k)
-        for m in sorted(keys):
-            if k in hp[m]:
-                indeg[m] -= 1
-                if indeg[m] == 0:
-                    ready.append(m)
+        for m in dependents[k]:
+            indeg[m] -= 1
+            if indeg[m] == 0:
+                ready.append(m)
     if len(out) != len(keys):
         raise RuntimeError("cycle detected among: %s" % sorted(keys - set(out)))
     return out
