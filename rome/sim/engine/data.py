@@ -584,7 +584,19 @@ DEFAULTS = dict(
     # pay. A modern 40-hour week over 52 weeks with no holiday at all is 2,080.
     founder_hours_per_year=2000,
     director_hours_per_year=1800,
-    hired_hours_cap_base=25000,   # what a provincial town's labour market can actually supply
+    # WHAT "A PROVINCIAL TOWN'S LABOUR MARKET CAN SUPPLY" USED TO MEAN FOR
+    # EVERY TRADE ALIKE - smith, scholar, millwright, all sharing one fixed
+    # fraction of this single number. A player hired five blacksmiths and
+    # watched the standing wage jump sharply, reasonably read that as a
+    # claim about the Roman Empire's entire smithing capacity (nothing told
+    # them otherwise) and called it absurd - correctly, for smiths. This is
+    # still the baseline for the trades genuinely meant to be thin (scarce
+    # or literacy-bound ones - see labour.py's market_supply): common, urban
+    # trades now read a realistically-sized town's worth of their own
+    # (labour.py's TOWN_POPULATION_REFERENCE and TRADE_DENSITY, cited
+    # there) instead of a fraction of this number, which is why it did not
+    # need to change.
+    hired_hours_cap_base=25000,
     revenue_ramp_years=3,
     suspicion_decay=0.045,
     suspicion_danger=25.0,

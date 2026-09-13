@@ -819,31 +819,153 @@ class LabourMixin:
             return True
         return t in self.trades_created
 
+    def _trade_market_class(self, t):
+        """Which reachable-labour-pool class a trade falls in - read ONCE,
+        here, so market_supply's own hiring ceiling and
+        national_trade_population's country-wide estimate (used by the
+        'population' command) cannot say two different things about the
+        same trade. See TRADE_DENSITY for what each class is worth, and
+        why, and TOWN_POPULATION_REFERENCE for the town size it is a
+        fraction OF.
+
+        Unchanged in substance from the keyword/list check this replaced;
+        only pulled out to one place instead of being reasoned about twice.
+        """
+        note = TRADE_NOTES.get(t, "").lower()
+        if "abundance" in note or "abundant" in note or "numerous" in note:
+            return "abundant"
+        if "scarcest" in note:
+            return "scarce"
+        if trade_family(t) == "scholar":
+            return "scholar"
+        if t in ("labourer", "artisan", "carpenter", "mason", "potter", "smith",
+                 "sailor", "miner", "furnaceman"):
+            return "common"
+        return "uncommon"          # glassblowers, engravers, opticians' forebears
+
+    # A PLAYER HIRED FIVE BLACKSMITHS AND WATCHED THE STANDING WAGE JUMP.
+    # Measured on the pre-fix build: market_supply("smith") was 22,500 hours -
+    # 11.25 people - because hired_hours_cap_base (data.py) is 25,000 hours
+    # "at full population scale", by its own comment, "what a provincial
+    # town's labour market can actually supply", and smith's old share of it
+    # was 0.9. Nothing in the game ever said "town"; rome_100ad.json says
+    # population 65,000,000 and urban_fraction 0.12 - about 7,800,000 town
+    # dwellers - so a player reasonably read "11.25 smiths" as a claim about
+    # the Roman Empire's entire smithing capacity, and it is an absurd claim
+    # at that scale.
+    #
+    # THE PLAYER IS RIGHT ABOUT THE SYMPTOM AND WRONG ABOUT ONE MECHANISM.
+    # Hiring five smiths where thousands exist should barely move the price;
+    # the old pool made it move a lot, because the pool was sized for a
+    # hamlet. Buying ten slaves is a DIFFERENT wall - household_room, this
+    # household's own capacity to feed, house and supervise people, checked
+    # in hire() below and nothing to do with market_supply - and is correctly
+    # left alone: a household of one cannot run ten slaves without somewhere
+    # to put them, in any economy, however deep its labour market runs.
+    #
+    # TOWN_POPULATION_REFERENCE is the size of the single market this
+    # household's reach actually represents, at full population scale (Rome
+    # itself, pop_scale == 1.0) - not the whole country, which is exactly the
+    # thing this game needs to say out loud rather than leave a player to
+    # infer (see the 'population' command, and the framing note in `hire`,
+    # `labour` and each civ's opening briefing). ANCHORED, not invented: the
+    # album of the fabri tignuarii of Ostia (CIL XIV 4569, dated 198 AD)
+    # records about 350 quinquennial members of one building-trade guild in a
+    # town usually put at the order of 50,000 people (Meiggs, "Roman Ostia",
+    # 2nd ed. 1973, ch. on the plebs and the collegia) - call it 0.7% of the
+    # town registered in ONE common craft. A floor, not a ceiling: guild
+    # rolls undercount apprentices, slaves, women in the associated trades
+    # and anyone who never joined.
+    #
+    # It shrinks with pop_scale exactly the way hired_hours_cap_base already
+    # does ("a civilization of 1.5 million cannot field what one of 65
+    # million can" - hired_cap()'s own comment) - a smaller civilisation's
+    # own provincial towns are smaller too, which is a separate and
+    # defensible claim from how big ONE of them is.
+    TOWN_POPULATION_REFERENCE = 50000.0
+
+    # What SHARE of that town plies each class of trade - feeding BOTH
+    # market_supply's ceiling for 'abundant' and 'common' (the classes the
+    # break report was actually about) and national_trade_population's
+    # country-wide estimate for every class. 'scarce', 'uncommon' and
+    # 'scholar' keep their PRE-EXISTING, separately-tuned hiring ceilings
+    # below (0.08 x base, 0.25 x base, and the literacy-bound 0.35 x base
+    # literate_capacity's own docstring explains at length) - this fix
+    # targets the trades that were wrongly sharp, not the ones that are
+    # correctly so, and changing a density entry for those three classes
+    # moves only what 'population' reports the COUNTRY holds, never this
+    # household's hiring cap or the regression coverage tuned against it
+    # (FINDINGS_ROUND2 section R's millwright checks, literate_capacity's
+    # own scholar-ceiling checks).
+    #
+    #   common:    anchored directly on the Ostia figure above.
+    #   abundant:  the trades the wage table's OWN notes call abundant or
+    #              numerous (mason, plumber, sailor) - set higher again,
+    #              matching the stronger language, still no more than an
+    #              order of magnitude's worth of judgement on top of a real
+    #              attestation.
+    #   uncommon, scarce: NO COMPARABLE FIGURE FOUND for engraver,
+    #              glassblower, master (uncommon) or for millwright, which
+    #              its own note already calls "the scarcest useful trade
+    #              you can hire" (scarce). These two are honest
+    #              order-of-magnitude placeholders for the population
+    #              report only, smaller than an attested trade and smaller
+    #              again for the one the game already singles out as
+    #              rarest - not research, and said so here rather than
+    #              dressed up as data.
+    TRADE_DENSITY = {
+        "abundant": 0.014,
+        "common": 0.007,
+        "uncommon": 0.001,
+        "scarce": 0.00015,
+    }
+    # scholar and scribe are bound by literacy, not by town population (see
+    # literacy_factor, literate_capacity) - their NATIONAL estimate uses the
+    # same idea applied to the literate pool instead of the town: what
+    # fraction of the people who can read at all make their living reading
+    # and writing for others, rather than simply being a literate landowner,
+    # priest or advocate. Neither fraction is a count anyone published; both
+    # are deliberately small because the trades themselves are (Rome's own
+    # literate_capacity("scholar") tops out at 5.9 reachable before any
+    # institution trains more). merchant is excluded from LITERATE_TRADES on
+    # purpose (see that set's own comment - "an agent working on commission is
+    # not, in this period, chiefly a reader") so it gets a plain urban density
+    # instead, also with no specific count found.
+    SCHOLAR_ENGAGEMENT_FRACTION = 0.002   # of literacy_elite x population
+    SCRIBE_ENGAGEMENT_FRACTION = 0.05     # of literacy_general x population
+    MERCHANT_DENSITY = 0.004              # of urban population, like a craft
+
     def market_supply(self, t):
-        """Hours a year of this trade the local labour market can actually supply."""
+        """Hours a year of this trade the local labour market can actually supply.
+
+        THIS IS ONE TOWN'S MARKET, NOT THE COUNTRY'S - the household this
+        game puts you in charge of draws on one town's labour, the way a
+        real Roman, Han or Norse founder would have. See
+        TOWN_POPULATION_REFERENCE's own comment for why that is a
+        defensible modelling choice and TRADE_DENSITY for how big 'one
+        town's worth' of each trade actually is; national_trade_population
+        answers the country-wide question this number is not trying to.
+        """
         if not self.trade_available(t):
             return 0.0
         base = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
         if t in TRADES_ABSENT:
             # Only the people you taught, plus the ones they have taught since.
             return self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR * 1.5
-        # How much of the town's labour market is this trade. These are shares of
-        # the SAME base the old single pool used, and the aggregate pool is still
-        # applied on top, so total hired labour is bounded exactly as before; what
-        # changes is that the trades are no longer one interchangeable bucket.
-        note = TRADE_NOTES.get(t, "").lower()
-        if "abundance" in note or "abundant" in note or "numerous" in note:
-            share = 1.0
-        elif "scarcest" in note:
-            share = 0.08
-        elif trade_family(t) == "scholar":
-            share = 0.35          # literate men are a small fraction of anywhere
-        elif t in ("labourer", "artisan", "carpenter", "mason", "potter", "smith",
-                   "sailor", "miner", "furnaceman"):
-            share = 0.9
+        cls = self._trade_market_class(t)
+        if cls in ("abundant", "common"):
+            # A REAL TOWN'S WORTH, not base's village-sized share of it (see
+            # this function's own docstring and the comment above
+            # TOWN_POPULATION_REFERENCE for the full account and its
+            # citation).
+            town = self.TOWN_POPULATION_REFERENCE * (0.25 + 0.75 * min(1.0, self.pop_scale))
+            cap = town * self.TRADE_DENSITY[cls] * self.HOURS_PER_PERSON_YEAR
+        elif cls == "scholar":
+            cap = base * 0.35          # literate men are a small fraction of anywhere
+        elif cls == "scarce":
+            cap = base * 0.08
         else:
-            share = 0.25          # glassblowers, engravers, opticians' forebears
-        cap = base * share
+            cap = base * 0.25          # uncommon: glassblowers, engravers, masters
         if self.running("school_founded"):
             cap *= 1.0 + 1.0 * self.institution_units("school_founded") ** 0.5
         if self.running("patron_imperial"):       cap *= 3.0
@@ -859,6 +981,133 @@ class LabourMixin:
         if t in self.LITERATE_TRADES:
             cap *= self.literacy_factor(t)
         return cap + self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
+
+    def reachable_trade_population(self, t):
+        """What this household's own labour market actually holds of this
+        trade, your own employees included - the 'population' command's
+        "within your reach" column; see national_trade_population for the
+        other half of the same question.
+
+        scholar and scribe read literate_capacity() INSTEAD OF market_
+        supply(): that is the real wall hire() and train() enforce for
+        them (see _literate_wall_refusal - "this household's reach into
+        the labour market for %ss will not stretch past %.1f"), floored
+        at 1.5 so a literate person always exists somewhere, which market_
+        supply's own formula is not floored to. Showing the smaller,
+        unfloored market_supply figure here would make Norse scribes read
+        as "0.2 within your reach" when the game will in fact let a
+        player hire one - exactly the kind of false "nobody's there"
+        reading literate_capacity's own floor exists to prevent.
+        """
+        if t in ("scholar", "scribe"):
+            return self.literate_capacity(t)
+        return self.market_supply(t) / self.HOURS_PER_PERSON_YEAR
+
+    def national_trade_population(self, t):
+        """A rough ESTIMATE of how many people ply this trade across the
+        WHOLE COUNTRY - not this household's reach (reachable_trade_
+        population, above) and not a second population model: the same
+        TRADE_DENSITY this file's own market_supply reads, applied to the
+        country's urban population instead of to one town, because a
+        craft trade is overwhelmingly a town trade (see civ['urban_
+        fraction'], which core.py already reads for pop_scale). 0.0 for a
+        trade that does not exist in this society at all - trade_
+        available() already says so.
+
+        Every number this returns is explicitly an estimate and the
+        'population' command says so on the screen; nobody has published a
+        trade-by-trade occupational census of Rome, Han China or Viking-age
+        Scandinavia, and TRADE_DENSITY's own comment already says, for two
+        of its four classes, that no comparable figure was found at all.
+        """
+        if not self.trade_available(t):
+            return 0.0
+        pop = float(self.civ.get("population", 0.0))
+        urban = pop * float(self.civ.get("urban_fraction", 0.0))
+        if t == "scholar":
+            return pop * float(self.civ.get("literacy_elite", 0.0)) * self.SCHOLAR_ENGAGEMENT_FRACTION
+        if t == "scribe":
+            return pop * float(self.civ.get("literacy_general", 0.0)) * self.SCRIBE_ENGAGEMENT_FRACTION
+        if t == "merchant":
+            return urban * self.MERCHANT_DENSITY
+        if t in TRADES_ABSENT:
+            # engineer, chemist, machinist, optician, electrician: taught
+            # into existence by you alone (trade_available already checked
+            # this is now true), so "the country's" population of the trade
+            # IS what you have taught - there is no wider pool to estimate.
+            return self.employees.get(t, 0.0)
+        return urban * self.TRADE_DENSITY.get(self._trade_market_class(t), 0.0)
+
+    def home_town_population_estimate(self):
+        """How big the single town TOWN_POPULATION_REFERENCE represents
+        actually is for THIS civilisation, at its current pop_scale - the
+        number the 'population' command shows next to the country's own,
+        so a player can see "one household, one town" for themselves
+        instead of inferring it from a refusal. An estimate, said as one:
+        this engine has no named city for the founder to stand in, only
+        the abstraction hired_hours_cap_base and this constant already
+        are (see TOWN_POPULATION_REFERENCE's own comment).
+        """
+        return self.TOWN_POPULATION_REFERENCE * (0.25 + 0.75 * min(1.0, self.pop_scale))
+
+    def population_report(self):
+        """Everything the 'population' command (protocol.py) shows, worked
+        out here rather than in the command layer: the country's own
+        numbers (population, urban_fraction - already loaded for
+        pop_scale, see core.py), the size of the one town this household
+        actually reaches, and - per trade - the three-way comparison that
+        is the whole point of this command: how many exist in the
+        country, how many are within reach, how many you employ, and what
+        share of the reachable pool that is.
+
+        A PLAYER ASKED FOR THIS DIRECTLY, and it dissolves most of the
+        "the labour market is the size of a village" complaint by itself:
+        "market can supply 22,500 hours" (the old number) says nothing
+        about whether that is most of the trade or a rounding error
+        against it. This says both, next to each other, once.
+        """
+        pop = float(self.civ.get("population", 0.0))
+        urban_frac = float(self.civ.get("urban_fraction", 0.0))
+        trades = []
+        for t in sorted(WAGES):
+            national = self.national_trade_population(t)
+            reach = self.reachable_trade_population(t) if self.trade_available(t) else 0.0
+            have = self.employees.get(t, 0.0)
+            trades.append({
+                "trade": t,
+                "exists_here": self.trade_available(t),
+                "estimated_in_the_country": round(national, 1),
+                "within_your_reach": round(reach, 2),
+                "you_employ": round(have, 2),
+                "share_of_the_reachable_pool_you_employ":
+                    round(have / reach, 4) if reach > 1e-9 else None,
+            })
+        return {
+            "civilisation": self.civ.get("name", self.civ.get("id", "")),
+            "population": round(pop),
+            "urban_fraction": round(urban_frac, 3),
+            "urban_population_estimate": round(pop * urban_frac),
+            "the_town_you_actually_operate_in": {
+                "estimated_population": round(self.home_town_population_estimate()),
+                "note": ("an ESTIMATE, not a place this game names: you are one "
+                        "household drawing on one town's labour market, not the "
+                        "whole of the country above - see what_this_means, below."),
+            },
+            "trades": trades,
+            "what_this_means": (
+                "Every hiring limit and every wage move in this game is sized "
+                "to ONE household's reach into ONE town's labour market, not "
+                "to the %s people counted above. A trade's 'within your "
+                "reach' figure is what that market can actually supply you; "
+                "'estimated in the country' is the whole civilisation's rough "
+                "total, for scale. Both are explicit ESTIMATES, not a census - "
+                "see labour.py's TRADE_DENSITY for what is cited and what is a "
+                "placeholder. Buying people (a slave, a freedman) is bounded "
+                "separately, by this household's own room to feed, house and "
+                "supervise them ('labour' shows that ceiling) - NOT by how "
+                "deep any market runs."
+                % "{:,.0f}".format(pop)),
+        }
 
     # ---- a technology can make the SAME worker do more, without replacing
     # them ------------------------------------------------------------------
@@ -1082,11 +1331,27 @@ class LabourMixin:
         # labour_price_factor for why it is not a one-way ratchet: teaching
         # or hiring your way to a bigger supply of the trade brings the price
         # back down).
+        _lpf_now = self.labour_price_factor(trade)
         fee = (n * ANNUAL_WAGE.get(trade, 375.0) * self.wage_index * self.price_index
-              * self.labour_price_factor(trade))
+              * _lpf_now)
         if fee > self.capital + self.credit_limit() * 0.5:
-            return False, self._cash_in_hand_refusal(
+            _msg = self._cash_in_hand_refusal(
                 "hiring %g %s%s" % (n, trade, "" if n == 1 else "s"), fee)
+            # SAY WHOSE MARKET THIS IS, where the player actually feels it.
+            # A premium this big is the market saying "you have leaned hard
+            # on the %ss THIS HOUSEHOLD CAN REACH" - one town's worth, not a
+            # claim about the whole country - and a refusal that does not
+            # say so reads as a statement about the Roman Empire's entire
+            # smithing capacity, which is the exact confusion 'population'
+            # exists to head off.
+            if _lpf_now > 1.05:
+                _msg += (" Part of that is the standing wage itself: leaning "
+                         "on the %ss within this household's reach - one "
+                         "town's labour market, not the whole country - has "
+                         "pushed the going rate up %d%%; the population "
+                         "command shows how big that reach actually is."
+                         % (trade, round((_lpf_now - 1.0) * 100)))
+            return False, _msg
         room = self.household_room()
         if n > room:
             # TRUNCATED, NOT ROUNDED, and it says what a whole number of people

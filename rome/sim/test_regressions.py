@@ -4328,12 +4328,24 @@ check("the ledger says how much of the credit line is used",
 
 # --- BREAK: engineers went from 781 a year to 1,094 and the premium appeared
 # in the bill and nowhere else.
+#
+# MILLWRIGHT, NOT SMITH. This used to hire six smiths and call that "leaning
+# hard" on the trade - true only because the old market_supply gave smith a
+# pool of 11.25 people for the whole of Rome. The demographics fix (see
+# labour.py's TOWN_POPULATION_REFERENCE/TRADE_DENSITY) gave smith, a "common"
+# trade by its own wage-table note, a real town's worth instead - roughly
+# 350 at full population scale, anchored on the Ostia fabri tignuarii album
+# (CIL XIV 4569) - so six more smiths against that pool is correctly
+# imperceptible now, which is the fix working, not a regression. Millwright
+# ("the scarcest useful trade you can hire", per its own note) was
+# deliberately left alone by that fix and still demonstrates the same
+# mechanism this check is actually about.
 s_wg = sim(capital=2000000.0)
-_r0, _, _ = proto([{"cmd": "labour", "trade": "smith"}])
+_r0, _, _ = proto([{"cmd": "labour", "trade": "millwright"}])
 _base = _r0[0]["trade"]["a_year_of_one"]
 for _ in range(6):
-    s_wg.hire("smith", 3)
-_dear = S._agent_dispatch(s_wg, NODES, {"cmd": "labour", "trade": "smith"})["trade"]
+    s_wg.hire("millwright", 3)
+_dear = S._agent_dispatch(s_wg, NODES, {"cmd": "labour", "trade": "millwright"})["trade"]
 check("leaning on a trade shows up in its quoted price, not only in the bill",
       _dear["a_year_of_one"] > _base, (_base, _dear["a_year_of_one"]))
 check("...and says why, and what brings it back down",
@@ -12792,6 +12804,119 @@ check("a fully-paid project waiting only on the calendar never triggers "
       "the wasted-hours line - there is nothing left for arrears to waste",
       not any("founder-hours meant for" in m for _, m in s.log[_before_log2:]),
       [m for _, m in s.log[_before_log2:]])
+
+# =============================================================================
+# THE DEMOGRAPHICS FIX: the labour market was sized for a village. Measured
+# on the pre-fix build: market_supply("smith") was 22,500 hours - 11.25
+# people - for the whole of Rome, and hiring one scholar moved
+# labour_price_factor from 1.0000 to 1.6151, a 61% jump, against a
+# civilisation of 65,000,000 the game never told the player it was not
+# actually reaching. Three things to pin: the reachable pool for a common
+# trade is now realistically sized, a genuinely scarce or literacy-bound
+# trade still spikes, and the 'population' command that is supposed to make
+# all of this visible actually says what it claims to.
+# =============================================================================
+
+# --- a common, urban trade (smith - no special note, on the explicit
+# "common" list) now reads a real town's worth, not a village's. Pinned to
+# the formula itself (TOWN_POPULATION_REFERENCE x TRADE_DENSITY["common"] x
+# HOURS_PER_PERSON_YEAR at Rome's own pop_scale of 1.0) rather than to a
+# bare "> 11.25", so a future recalibration of the constants moves this
+# check's expectation with it instead of silently drifting out of sync.
+s_dm = sim(capital=1e9)
+_expect_common = (s_dm.TOWN_POPULATION_REFERENCE * s_dm.TRADE_DENSITY["common"]
+                  * s_dm.HOURS_PER_PERSON_YEAR)
+check("a common trade's reachable pool is a real town's worth, not the old "
+      "11.25-person village",
+      abs(s_dm.market_supply("smith") - s_dm.employees.get("smith", 0.0)
+          * s_dm.HOURS_PER_PERSON_YEAR - _expect_common) < 1.0,
+      (s_dm.market_supply("smith"), _expect_common))
+check("...which is at least two orders of magnitude above the pre-fix "
+      "figure of 22,500 hours, not a marginal tweak",
+      s_dm.market_supply("smith") > 22500.0 * 10,
+      s_dm.market_supply("smith"))
+
+# --- the SAME curve (_labour_price_factor_from is untouched), fed a
+# realistic denominator: hiring ten smiths against Rome's own reachable
+# pool is barely a ripple, where the same ten against millwright - "the
+# scarcest useful trade you can hire", deliberately left alone - still
+# spikes hard, and a literacy-bound trade (scribe) still hits ITS ceiling
+# (literate_capacity, not market depth) rather than being waved through.
+s_rip = sim(capital=1e9)
+s_rip._add_labour_pressure("smith", 10 * s_rip.HOURS_PER_PERSON_YEAR)
+check("ten more smiths barely moves the going wage in a city this size",
+      s_rip.labour_price_factor("smith") < 1.03,
+      s_rip.labour_price_factor("smith"))
+s_spike = sim(capital=1e9)
+s_spike._add_labour_pressure("millwright", 10 * s_spike.HOURS_PER_PERSON_YEAR)
+check("...while the same ten against a genuinely scarce trade still spikes",
+      s_spike.labour_price_factor("millwright") > 2.0,
+      s_spike.labour_price_factor("millwright"))
+
+# --- reachable_trade_population and national_trade_population: the two
+# numbers 'population' shows side by side. Reach well above the old
+# 11.25-person figure, and the country's own total bigger again than one
+# household's reach into it (a trade is not entirely HELD by one town).
+s_pop = sim(capital=1e9)
+_reach_smith = s_pop.reachable_trade_population("smith")
+_nat_smith = s_pop.national_trade_population("smith")
+check("reachable_trade_population reads market_supply as people, not hours",
+      abs(_reach_smith - s_pop.market_supply("smith") / s_pop.HOURS_PER_PERSON_YEAR) < 1e-6,
+      _reach_smith)
+check("the country holds more smiths than one household's own town reaches",
+      _nat_smith > _reach_smith, (_nat_smith, _reach_smith))
+check("a trade that does not exist here at all has no national population "
+      "either - trade_available() already says so, read once rather than "
+      "claiming a pool for a trade this society cannot have at any price",
+      s_pop.national_trade_population("chemist") == 0.0,
+      s_pop.national_trade_population("chemist"))
+
+# --- scholar and scribe: reachable_trade_population reads the SAME wall
+# hire()/train() actually enforce (literate_capacity, floored at 1.5), not
+# market_supply's own unfloored figure - otherwise a thin civilisation
+# (Norse) reads "0.2 scribes within your reach" on the population screen
+# while hire() will in fact grant one, which is the false "nobody's there"
+# literate_capacity's own floor exists to prevent (see that function's
+# docstring).
+s_lit_pop = sim(civ="norse_900ad", capital=1e9)
+check("a literate trade's reachable figure matches the real hiring wall, "
+      "not the unfloored market-share number beneath it",
+      s_lit_pop.reachable_trade_population("scribe")
+      == s_lit_pop.literate_capacity("scribe"),
+      (s_lit_pop.reachable_trade_population("scribe"),
+       s_lit_pop.market_supply("scribe") / s_lit_pop.HOURS_PER_PERSON_YEAR))
+
+# --- the 'population' command itself: every trade in WAGES accounted for,
+# the country's own numbers present, and the framing sentence actually
+# printed (not just computed and dropped) - this is the command a player
+# asked for directly, so its presence and shape are pinned here rather
+# than only exercised by hand.
+_pop_r, _, _ = proto([{"cmd": "population"}])
+_pop_out = _pop_r[0]
+check("the population command answers ok and names the civilisation",
+      _pop_out.get("ok") and _pop_out.get("civilisation"), _pop_out.get("civilisation"))
+check("every trade in the wage table gets a row, fog or no fog - this is "
+      "demography, not the tech tree",
+      {r["trade"] for r in _pop_out.get("trades", [])} == set(WAGES),
+      sorted(set(WAGES) - {r["trade"] for r in _pop_out.get("trades", [])}))
+check("the one-town framing is actually said, not only computed",
+      "one household" in (_pop_out.get("what_this_means") or "").lower()
+      or "ONE household" in (_pop_out.get("what_this_means") or ""),
+      _pop_out.get("what_this_means"))
+check("'population' is in KNOWN_COMMANDS and survives the fog/pointer "
+      "scanners above - no node id leaked, no dangling command reference",
+      "population" in S.KNOWN_COMMANDS, S.KNOWN_COMMANDS)
+
+# --- the hire refusal says WHOSE market this is, at the moment a player
+# actually feels a price premium bite (not only in the literate-wall text,
+# which already said this before this fix existed).
+s_fr = sim(capital=50.0)
+s_fr._add_labour_pressure("millwright", 10 * s_fr.HOURS_PER_PERSON_YEAR)
+ok_fr, msg_fr = s_fr.hire("millwright", 3)
+check("a cash refusal driven by a real price premium says this is one "
+      "household's reach into one town's market, not a national figure",
+      ok_fr is False and "population command" in msg_fr and "one town" in msg_fr,
+      msg_fr)
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
