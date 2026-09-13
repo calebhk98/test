@@ -392,12 +392,90 @@ def cmd_costs(a):
               (n["id"][:32], n["rev"] / max(n["_total_cost"], 1), f"{n['rev']:,}", f"{n['_total_cost']:,.0f}"))
 
 
+_Z95 = 1.959963984540054  # two-sided 95% normal quantile, to stdlib float precision
+
+
+def _wilson_interval(successes, n, z=_Z95):
+    """95% (by default) Wilson score confidence interval for a binomial rate.
+
+    NOT the textbook p +/- z*sqrt(p(1-p)/n) normal-approximation interval.
+    That formula is built on a normal approximation to the binomial that
+    breaks down exactly where this tool lives: when p is small and n is a few
+    dozen trials, it can and does return a negative lower bound - a
+    "confidence interval" that includes impossible, negative probabilities.
+    An audit of this simulator's default invocation found success rates of
+    0/25 and 1/125; the normal approximation is not fit to report on either
+    one. Wilson's interval inverts the actual binomial test statistic instead
+    of a Gaussian stand-in for it, so it stays inside [0, 1] everywhere,
+    including at p=0 and p=1, and is the standard textbook fix for this exact
+    failure mode (see e.g. Agresti & Coull 1998). Stdlib-only: math.sqrt.
+    """
+    if n <= 0:
+        return (0.0, 1.0)
+    p = successes / n
+    z2 = z * z
+    denom = 1.0 + z2 / n
+    centre = p + z2 / (2 * n)
+    margin = z * math.sqrt((p * (1.0 - p) + z2 / (4 * n)) / n)
+    lo = (centre - margin) / denom
+    hi = (centre + margin) / denom
+    return (max(0.0, lo), min(1.0, hi))
+
+
+def _fmt_rate_ci(successes, n):
+    """'k/n (p%)  95% CI [lo%, hi%]' - the point estimate never appears alone
+    anywhere in this file's output. A bare percentage from a few dozen
+    Monte Carlo trials invites a reader to treat it as a measurement with no
+    error bar, which is exactly the failure this function exists to close."""
+    lo, hi = _wilson_interval(successes, n)
+    rate = 100.0 * successes / n if n else 0.0
+    return ("%d/%d (%.1f%%)  95%% CI [%.1f%%, %.1f%%] (Wilson score)"
+            % (successes, n, rate, 100.0 * lo, 100.0 * hi))
+
+
+# How few successes is too few to trust a median/quartile year-to-goal? There
+# is no sharp cutoff, but under ~10 the order statistics are individual data
+# points wearing a statistic's clothing - a "median" of 1 or 3 observations
+# is just one of those observations, arbitrarily labelled. Below this, print
+# the raw values and say so, instead of a quartile table that implies a
+# distribution nobody has actually sampled.
+_MIN_SUCCESSES_FOR_QUANTILES = 10
+
+
 def _summarise(results, label):
+    n = len(results)
     ok = [r for r in results if r.goal_year]
+    k = len(ok)
     print("\n=== %s ===" % label)
-    print("runs                : %d" % len(results))
-    print("reached transistor  : %d  (%.0f%%)" % (len(ok), 100.0 * len(ok) / len(results)))
-    if ok:
+    print("runs                : %d" % n)
+    print("reached transistor  : %s" % _fmt_rate_ci(k, n))
+    # --no-events IS NOT A NOISE-FREE BASELINE. See the --no-events help text
+    # for the full explanation; this is the one-line reminder at the point
+    # where a reader is actually looking at numbers from such a run.
+    if "[events disabled]" in label:
+        print("                      NOTE: '--no-events' turns off weather/plague/")
+        print("                      political hazards only. Project-failure rolls")
+        print("                      (projects.py _complete) and fractional-headcount")
+        print("                      rounding (labour.py _stochastic_round) still draw")
+        print("                      from the same RNG regardless of this flag, so this")
+        print("                      batch still has real seed-to-seed variance - it is")
+        print("                      reproducible for one seed, not noise-free.")
+    if k == 0:
+        print("year reached        : (blank on purpose, not a bug) no trial reached the")
+        print("                      goal, so there is no year-to-goal distribution to")
+        print("                      report a median or quartile of. The rate line above,")
+        print("                      with its interval, is the only thing this batch")
+        print("                      supports saying about the outcome.")
+    elif k < _MIN_SUCCESSES_FOR_QUANTILES:
+        ys = sorted(r.goal_year for r in ok)
+        print("year reached        : only %d success%s in %d trials - too few for a"
+              % (k, "" if k == 1 else "es", n))
+        print("                      median/quartiles; that would just relabel a")
+        print("                      handful of individual runs as a distribution.")
+        print("                      observed year%s: %s"
+              % ("" if k == 1 else "s", ", ".join(str(y) for y in ys)))
+        print("                      trust the CI on the rate above instead.")
+    else:
         ys = sorted(r.goal_year for r in ok)
         q = lambda p: ys[min(len(ys) - 1, int(p * len(ys)))]
         print("year reached        : best %d | p25 %d | median %d | p75 %d | worst %d"
@@ -408,9 +486,17 @@ def _summarise(results, label):
     for r in results:
         sh.update(r.shortages)
     if sh:
-        print("years spent short of a raw material (median run):")
-        for k, v in sh.most_common(5):
-            print("   %-12s %d run-years" % (k, v))
+        # RELABELLED, NOT RECOMPUTED. This used to print the same summed
+        # Counter under the label "(median run)" - it is a SUM across every
+        # run, not a median of anything. A true per-material median across
+        # runs would need each run's count (including the runs that were
+        # never short of that material at all, i.e. zero) aligned key by
+        # key, which is a real change to what gets computed, not just what
+        # gets printed - out of scope here. Relabelling the existing number
+        # honestly is the fix that belongs in a "what gets printed" pass.
+        print("years spent short of a raw material (SUM across %d runs, not a median):" % n)
+        for mat, v in sh.most_common(5):
+            print("   %-12s %d run-years" % (mat, v))
     fh = sorted(r.forest_ha for r in results)
     print("coppice woodland owned: median %.0f hectares" % fh[len(fh) // 2])
     rep = sorted(r.reputation for r in results)
@@ -522,6 +608,18 @@ def cmd_compare(a):
         # the very end.
         sys.stderr.write("  running %s: %d trials...\n" % (name, a.mc))
         sys.stderr.flush()
+        # COMMON RANDOM NUMBERS, ON PURPOSE. random.Random(a.seed + i) is
+        # reseeded identically for trial i under EVERY strategy in this loop,
+        # so "rush" trial 7 and "recommended" trial 7 see the same weather,
+        # the same plagues, the same project-failure rolls - only the order
+        # of work differs. That is what lets a difference between strategies'
+        # outcomes be attributed to the strategy instead of to which one
+        # happened to draw the luckier seeds; it is the textbook variance-
+        # reduction technique of the same name, not a bug. cmd_sweep and
+        # cmd_sensitivity do the same thing for the same reason. DO NOT
+        # "fix" this by drawing a fresh, unseeded RNG per strategy - that
+        # would look more random and measure less: it would reintroduce the
+        # between-strategy noise this line exists to cancel out.
         res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
                    cfg={"immortal": not getattr(a, "mortal", False),
                         "start_capital": STARTING_KITS.get(getattr(a,"kit","poor_scholar"),
@@ -1486,22 +1584,32 @@ def cmd_sensitivity(a):
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
     need = closure(nodes, goal)
 
+    # COMMON RANDOM NUMBERS: trial() reseeds random.Random(a.seed + i)
+    # identically for every call - baseline and every ablation see the same
+    # per-trial shocks, differing only in which node was dropped. See
+    # cmd_compare for the full rationale; do not randomise this per call.
     def trial(drop=None):
         o = [k for k in order if k != drop]
         res = [Sim(nodes, o, random.Random(a.seed + i), events=True,
                    bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
+        succ = sum(1 for r in res if r.goal_year)
         ok = sorted(r.goal_year for r in res if r.goal_year)
-        return (100.0 * len(ok) / len(res), ok[len(ok) // 2] if ok else None)
+        return (100.0 * succ / len(res), ok[len(ok) // 2] if ok else None, succ, len(res))
 
-    base_rate, base_med = trial()
-    print("baseline (%s): %.0f%% reach the goal, median %s AD" %
-          (a.strategy, base_rate, base_med))
+    base_rate, base_med, base_succ, base_n = trial()
+    print("baseline (%s): %s" % (a.strategy, _fmt_rate_ci(base_succ, base_n)))
+    print("  median year reached: %s AD" % base_med)
+    if 0 < base_succ < _MIN_SUCCESSES_FOR_QUANTILES:
+        print("  (that median is %d observation%s wearing a statistic's clothing -"
+              " read it as an anecdote, not a distribution)"
+              % (base_succ, "" if base_succ == 1 else "s"))
     print("A node's value shows up in the CALENDAR at least as much as in the")
     print("success rate, so both are scored. 'delay' is how many years later the")
     print("median run reaches the goal (%s) when this node is never built.\n" % goal)
-    print("%-24s %8s %8s %8s   %s" % ("node removed", "success", "median", "delay", "verdict"))
-    print("-" * 78)
+    print("%-24s %8s %16s %8s %8s   %s" %
+          ("node removed", "success", "95% CI", "median", "delay", "verdict"))
+    print("-" * 96)
     cands = ["plague_preparedness", "corpus_written", "corpus_dispersed", "printing_press",
              "rag_paper", "school_founded", "academy_network", "endowment_land",
              "freedman_staff", "collegium_licensed", "patron_senatorial", "patron_imperial",
@@ -1514,22 +1622,24 @@ def cmd_sensitivity(a):
         if k in need:
             print("%-26s %10s %10s   hard prerequisite of the goal, cannot be skipped" % (k, "-", "-"))
             continue
-        r, m = trial(k)
-        rows.append((base_rate - r, k, r, m))
+        r, m, succ, ntot = trial(k)
+        rows.append((base_rate - r, k, r, m, succ, ntot))
     scored = []
-    for d, k, r, m in rows:
+    for d, k, r, m, succ, ntot in rows:
         delay = (m - base_med) if (m and base_med) else 999
         # one point of success rate is worth roughly two years of delay
         score = d + delay / 2.0
-        scored.append((score, k, r, m, d, delay))
-    for score, k, r, m, d, delay in sorted(scored, reverse=True):
+        scored.append((score, k, r, m, d, delay, succ, ntot))
+    for score, k, r, m, d, delay, succ, ntot in sorted(scored, reverse=True):
         verdict = ("CRITICAL, do not skip" if score > 20 else
                    "clearly worth it" if score > 8 else
                    "worth it" if score > 3 else
                    "marginal in this model" if score > -3 else
                    "the model says this costs more than it returns")
-        print("%-24s %7.0f%% %8s %+8s   %s" %
-              (k, r, m or "never", ("%d yr" % delay) if m else "n/a", verdict))
+        lo, hi = _wilson_interval(succ, ntot)
+        ci = "[%.0f%%,%.0f%%]" % (100.0 * lo, 100.0 * hi)
+        print("%-24s %7.0f%% %16s %8s %+8s   %s" %
+              (k, r, ci, m or "never", ("%d yr" % delay) if m else "n/a", verdict))
 
 
 def cmd_plan(a):
@@ -1729,8 +1839,10 @@ def cmd_sweep(a):
     }
     key, values = sweeps[a.axis]
     print("sweeping %s under strategy '%s', %d runs per point\n" % (a.axis, a.strategy, a.mc))
-    print("%-12s %8s %8s %8s   %s" % (a.axis, "success", "median", "p25", "dominant failure"))
-    print("-" * 78)
+    print("%-12s %8s %16s %8s %8s   %s" %
+          (a.axis, "success", "95% CI", "median", "p25", "dominant failure"))
+    print("-" * 92)
+    any_thin = False
     for v in values:
         cfg, life = {}, None
         if key == "founder_life_mean":
@@ -1741,24 +1853,37 @@ def cmd_sweep(a):
             cfg[key] = v
         res = []
         for i in range(a.mc):
+            # COMMON RANDOM NUMBERS across the points of this sweep, same
+            # reasoning as cmd_compare: trial i sees the same shocks at every
+            # value of v, so a change down this column is the swept variable
+            # acting, not a different draw of luck. Do not reseed per v.
             sim = Sim(nodes, order, random.Random(a.seed + i), events=True, cfg=cfg,
                       bounty_set=bounties)
             if life is not None:
                 sim.life_left = float(life)
             res.append(sim.run(goal, a.horizon))
+        succ = sum(1 for r in res if r.goal_year)
         ok = sorted(r.goal_year for r in res if r.goal_year)
         c = defaultdict(int)
         for r in res:
             if not r.goal_year:
                 c[(r.dead_reason or "ran out of horizon").split(":")[0]] += 1
         worst = max(c.items(), key=lambda x: x[1]) if c else ("none", 0)
-        print("%-12s %7.0f%% %8s %8s   %s" %
-              (f"{v:,}", 100.0 * len(ok) / len(res),
-               ok[len(ok) // 2] if ok else "never",
+        lo, hi = _wilson_interval(succ, len(res))
+        thin = 0 < succ < _MIN_SUCCESSES_FOR_QUANTILES
+        any_thin = any_thin or thin
+        print("%-12s %7.0f%% %16s %8s %8s   %s" %
+              (f"{v:,}", 100.0 * succ / len(res),
+               "[%.0f%%,%.0f%%]" % (100.0 * lo, 100.0 * hi),
+               (str(ok[len(ok) // 2]) + "*" if thin else ok[len(ok) // 2]) if ok else "never",
                ok[len(ok) // 4] if ok else "-",
                "%s (%d)" % (worst[0][:44], worst[1]) if worst[1] else "-"))
     print("\nWatch the failure column, not the success column. When it changes, the")
     print("binding constraint has changed and so should your strategy.")
+    if any_thin:
+        print("* median from under %d successes - an anecdote, not a distribution;"
+              % _MIN_SUCCESSES_FOR_QUANTILES)
+        print("  trust the 95%% CI on success rate at that point instead.")
 
 
 def cmd_goals(a):
@@ -2732,7 +2857,15 @@ def main():
         q.add_argument("--mc", type=int, default=200)
         q.add_argument("--seed", type=int, default=1)
         q.add_argument("--horizon", type=int, default=500)
-        q.add_argument("--no-events", action="store_true")
+        q.add_argument("--no-events", action="store_true",
+                       help="turn off weather/plague/political hazard rolls. NOT a "
+                            "noise-free baseline: project-failure risk (projects.py "
+                            "_complete) and fractional-headcount rounding (labour.py "
+                            "_stochastic_round) both draw from the same self.rng "
+                            "regardless of this flag, so a --no-events batch still "
+                            "has real seed-to-seed variance. What this flag actually "
+                            "buys you is a run reproducible for one fixed seed, same "
+                            "as with events on - not determinism across seeds.")
         q.add_argument("--no-bounties", action="store_true")
         q.add_argument("--civ", default="rome_100ad",
                        help="which civilization to play. See data/civilizations/")
@@ -2854,7 +2987,14 @@ def main():
     q.add_argument("--kit", default="poor_scholar",
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--no-events", action="store_true",
-                   help="turn off random hazards, for a deterministic scripted playthrough")
+                   help="turn off weather/plague/political hazard rolls, for a "
+                        "playthrough with fewer surprises. This does NOT make the "
+                        "session noise-free: project-failure risk (projects.py "
+                        "_complete) and fractional-headcount rounding (labour.py "
+                        "_stochastic_round) still draw from the same self.rng "
+                        "either way. A --session is reproducible run-to-run because "
+                        "it replays the same seed, not because this flag removed "
+                        "the randomness - it only removed the hazard rolls.")
     q.add_argument("--fog", action="store_true",
                    help="fog of war: you see what you have built and what you could "
                         "begin next, and nothing about where any of it leads")
