@@ -349,6 +349,27 @@ class LabourMixin:
         # were never once offered as a reason to build or reopen one.
         ("met_open_hearth_furnace", 65), ("railway", 95), ("power_grid", 130),
     )
+    # fin_trial_balance, fin_company_town and fin_chain_store - the
+    # organisation entries added alongside STAFF_CAPACITY_SOURCES above - are
+    # deliberately NOT in ROOM_SOURCES, even though every one of them raises
+    # the same ceiling every other entry here does. _room_advice's own
+    # "nearest first" sort (below) ranks by CLOSURE SIZE, a proxy that holds
+    # for the furnace-and-patronage tree above because a shallow node there
+    # is also a cheap one. It does not hold for the finance branch: the whole
+    # point of fin_chain_store's own note ("requires sophisticated management
+    # and accounting") is that it is a late, expensive, 30,000-denarii
+    # institution sitting only two prerequisites deep (fin_market ->
+    # fin_department_store), so ranking it by closure size alone told a
+    # founder with four hundred denarii in year 100 that the NEAREST way to
+    # more room was a chain of department stores - a measured, not a
+    # theoretical, failure of this heuristic once a second branch of the
+    # tree with a different shape is let into it. The institutions
+    # themselves are real (STAFF_CAPACITY_SOURCES, supervision_room); this
+    # one piece of advice text is not worth teaching the sort to weigh cost
+    # as well as depth for three nodes, so they are simply left unnamed here
+    # - a player who builds them (for their own revenue, or for the
+    # household room staff_capacity() already credits them with) still gets
+    # the room; this function just never tells them to go build one.
 
     def _room_advice(self):
         """What raises the CEILING on people, which is not what buys people.
@@ -449,6 +470,66 @@ class LabourMixin:
         ("met_open_hearth_furnace", 6.0,  65.0, 0.0, False, False),
         ("railway",                8.0,  95.0, 0.0, False, True),
         ("power_grid",            45.0, 130.0, 6.0, False, True),
+        # ORGANISATION, NOT INDUSTRY: the same question - "how many more
+        # people can this household feed, house and oversee" - answered by
+        # the tech tree's own finance/organisation branch
+        # (data/branches/40_finance_institutions.json) instead of by a
+        # furnace. A player asked to play as Walmart or Amazon, and every
+        # wall they actually hit (see literate_capacity, household_room,
+        # buy_slaves) is this one: supervision and housing, never market
+        # depth. Rome and Han's own dice-free trials already reach several
+        # thousand employees on the INDUSTRIAL entries above alone (see this
+        # commit's own measurement); what they have never been given credit
+        # for needing is the organisational technology history actually used
+        # to run a household that big - books honest enough that a manager
+        # far from you cannot simply lie about what he did with your money,
+        # tied housing, and a network of branches in other towns. These
+        # nodes already sit in the tree, already cost founder-hours and
+        # denarii to build, and until now did nothing but sit there.
+        #
+        # fin_societas ("Partnership... Legally recognised, but partners
+        # remain personally liable") is deliberately NOT here despite being
+        # the most obvious "share the watching" node in the branch: Rome's
+        # own civilisation file grants it for free in year one
+        # (starting_techs, rome_100ad.json), so any effect hung on it would
+        # not be a choice a founder makes, it would be a silent day-one
+        # buff to every single Rome run, dice-free included - exactly the
+        # "materially faster" failure this project's own brief warns
+        # against, and it was CAUGHT this way: a regression test expecting
+        # a fresh sim's director pool at exactly 2,000 hours read 2,216
+        # after one step with a one-line version of this entry that gave
+        # fin_societas a director. No other node touched here is a starting
+        # grant for any of the five civilisations (checked by hand against
+        # every civ file's own starting_techs).
+        #
+        # fin_trial_balance, the top of fin_double_entry -> fin_ledger ->
+        # fin_trial_balance: "the foundation of trust between owner and
+        # manager across distance. Without it, the manager can simply lie."
+        # That sentence is the entire argument for why a Roman household
+        # could field a deputy who runs a concern the founder never visits -
+        # this is the accounting, not a bigger market, so it buys clerks
+        # (ar) and deputies (di), never scholars or the ceiling on craftsmen
+        # a furnace trains.
+        ("fin_trial_balance",      0.0,   4.0, 2.0, False, False),
+        # fin_company_town ("Employer provides housing, food, and goods to
+        # workers... Highly profitable but politically dangerous"): the
+        # housing half of "feed, house and oversee" bought outright, at the
+        # going concern's own cost (it runs at a loss on the books, like a
+        # school, which is why it belongs in CAPABILITY_INSTITUTIONS rather
+        # than being shed as an ordinary mistake - see economy.py).
+        ("fin_company_town",       0.0,  20.0, 0.0, False, True),
+        # fin_chain_store ("operates identical stores in multiple cities,
+        # buying centrally and selling retail in each location... requires
+        # sophisticated management and accounting"): REACH, named in the
+        # tree's own words. One household drawing on one town is the whole
+        # of the household-room wall this section answers; a second unit of
+        # this is a second city's worth of the same organisation, which is
+        # exactly what SCALABLE_INSTITUTIONS/institution_units already means
+        # for a second school "built across town" - here it is a second town,
+        # not a second schoolroom. Its branch managers are the `di` term:
+        # layers of supervision a founder's own two thousand hours a year
+        # could never provide alone.
+        ("fin_chain_store",        0.0,  30.0, 4.0, True,  True),
     )
 
     def staff_capacity(self):
@@ -573,6 +654,20 @@ class LabourMixin:
             room += 10.0 * self.institution_units("school_founded")
         if self.running("academy_network"):
             room += 30.0 * self.institution_units("academy_network")
+        # A SECOND TOWN, NOT A SECOND SCHOOLROOM. workshop_first, school_founded
+        # and academy_network above are each a single PLACE a founder can stand
+        # in; fin_chain_store is the tree's own word for the thing that is not
+        # - "operates identical stores in multiple cities... requires
+        # sophisticated management and accounting" - so it belongs in the same
+        # unconditional headroom as the other three places, not only in the
+        # income-gated institutional ceiling (STAFF_CAPACITY_SOURCES) a branch
+        # network also feeds. Smaller than that ceiling's own 30-per-unit
+        # figure, the same way school_founded's 10 here is smaller than its
+        # own 12 there: most of what a branch is worth is still bounded by
+        # whether the household can pay its clerks, not by whether a director
+        # could in principle watch them.
+        if self.running("fin_chain_store"):
+            room += 20.0 * self.institution_units("fin_chain_store")
         return room
 
     def hired_cap(self):
