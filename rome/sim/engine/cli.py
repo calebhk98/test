@@ -531,7 +531,76 @@ def _summarise(results, label):
     k = len(ok)
     print("\n=== %s ===" % label)
     print("runs                : %d" % n)
-    print("reached transistor  : %s" % _fmt_rate_ci(k, n))
+    # WHAT THIS COMMAND ACTUALLY MEASURES, SAID ONCE, UP FRONT, BEFORE ANY
+    # NUMBER. `--mc N` re-rolls ONE FIXED strategy order against N different
+    # random event sequences and reports how that order coped; it has never
+    # chosen or improved the order, and does not here either - see
+    # planner.py's own docstring for the full argument (recommended.json:
+    # 0% on Rome at a 700-year horizon; a computed order: 100%, same tree,
+    # same civilisation, the entire difference being ordering). 'plan' and
+    # 'search' are the commands that compute an order; this one only tells
+    # you how the order it was handed holds up.
+    print("this measures ONE FIXED order's luck, %d roll%s of it - it does not "
+          "choose or improve the order. 'plan' (critical-path method) and "
+          "'search' (dice-free, relaxed against the binding constraint) are "
+          "the commands that do that."
+          % (n, "" if n == 1 else "s"))
+    # AGGREGATE PROGRESS, LEADING - not the success rate. A batch this small
+    # against a multi-century, near-certain-to-fail-or-succeed goal can be a
+    # ~1% event either way (this project's own default invocation has
+    # measured 0/25 and 1/125), and a bare rate at that sample size invites
+    # reading it as "the" result instead of one thing among several this
+    # batch can actually support saying. How far every run got - not only
+    # the ones that finished - is informative at any N, including this one.
+    tech = sorted(len(r.done) for r in results)
+    q = lambda xs, p: xs[min(len(xs) - 1, int(p * len(xs)))]
+    print()
+    print("technologies completed (whole tree, across all %d run%s):"
+          % (n, "" if n == 1 else "s"))
+    print("   worst %d | p25 %d | median %d | p75 %d | best %d"
+          % (tech[0], q(tech, .25), q(tech, .5), q(tech, .75), tech[-1]))
+    need = closure(results[0].nodes, results[0].goal)
+    tot = len(need)
+    prog = sorted(len(need & r.done) for r in results)
+    print("goal's own closure completed (%d node%s needed):"
+          % (tot, "" if tot == 1 else "s"))
+    print("   worst %d/%d | p25 %d | median %d | p75 %d | best %d/%d"
+          % (prog[0], tot, q(prog, .25), q(prog, .5), q(prog, .75),
+             prog[-1], tot))
+    causes = defaultdict(int)
+    for r in results:
+        if r.dead_reason: causes[r.dead_reason.split(":")[0]] += 1
+        elif not r.goal_year: causes["ran out of horizon"] += 1
+    if causes:
+        print("failure modes       :")
+        for cause, v in sorted(causes.items(), key=lambda x: -x[1]):
+            print("   %-58s %3d (%.0f%%)" % (cause, v, 100.0 * v / len(results)))
+    # where do runs get stuck. PRECISE EVEN AT N=25: almost every run that
+    # does not reach the goal is blocked on one of a small handful of nodes,
+    # which is a near-certain event rather than the ~1% one the success rate
+    # itself often is - see the rate section below for that distinction said
+    # out loud where a reader is looking at both numbers side by side.
+    stuck = defaultdict(int)
+    for r in results:
+        if not r.goal_year:
+            rneed = closure(r.nodes, r.goal)
+            miss = [kk for kk in topo_order(r.nodes, rneed) if kk not in r.done]
+            if miss: stuck[miss[0]] += 1
+    if stuck:
+        print("first blocked node  :")
+        for kk, v in sorted(stuck.items(), key=lambda x: -x[1])[:6]:
+            print("   %-58s %3d" % (kk, v))
+    # THE SUCCESS RATE, BELOW THE FOLD, NOT AS THE HEADLINE - see the "what
+    # this measures" line above for why, and this project's own diagnosis
+    # (planner.py's docstring) for the number that made the point concrete:
+    # recommended.json reached the goal in 0% of trials on Rome at a
+    # 700-year horizon, and a run pointed at a strategy like that used to
+    # print exactly that lone, uninterpreted "0%" as its headline, with the
+    # median-year line blank underneath it and nothing else on the screen to
+    # explain either fact. The progress tables above already say how far
+    # those same trials got; this says how many of them finished.
+    print()
+    print("reached the goal    : %s" % _fmt_rate_ci(k, n))
     # --no-events IS NOT A NOISE-FREE BASELINE. See the --no-events help text
     # for the full explanation; this is the one-line reminder at the point
     # where a reader is actually looking at numbers from such a run.
@@ -542,7 +611,15 @@ def _summarise(results, label):
         print("                      rounding (labour.py _stochastic_round) still draw")
         print("                      from the same RNG regardless of this flag, so this")
         print("                      batch still has real seed-to-seed variance - it is")
-        print("                      reproducible for one seed, not noise-free.")
+        print("                      reproducible for one seed, not noise-free. See")
+        print("                      --deterministic for a run where that is also true.")
+    if "[deterministic]" in label and n > 1:
+        print("                      NOTE: '--deterministic' replaces the rng with one")
+        print("                      that always rolls the side that never fails, so")
+        print("                      every one of these %d trials is identical - there"
+              % n)
+        print("                      is no luck left for more trials to re-roll. This")
+        print("                      is the order's single dice-free outcome, repeated.")
     if k == 0:
         print("year reached        : (blank on purpose, not a bug) no trial reached the")
         print("                      goal, so there is no year-to-goal distribution to")
@@ -560,11 +637,11 @@ def _summarise(results, label):
         print("                      trust the CI on the rate above instead.")
     else:
         ys = sorted(r.goal_year for r in ok)
-        q = lambda p: ys[min(len(ys) - 1, int(p * len(ys)))]
+        qy = lambda p: ys[min(len(ys) - 1, int(p * len(ys)))]
         print("year reached        : best %d | p25 %d | median %d | p75 %d | worst %d"
-              % (ys[0], q(.25), q(.5), q(.75), ys[-1]))
+              % (ys[0], qy(.25), qy(.5), qy(.75), ys[-1]))
         start = results[0].cfg["start_year"]
-        print("elapsed from %d AD  : median %d years" % (start, q(.5) - start))
+        print("elapsed from %d AD  : median %d years" % (start, qy(.5) - start))
     sh = collections.Counter()
     for r in results:
         sh.update(r.shortages)
@@ -587,25 +664,6 @@ def _summarise(results, label):
     b = [r.bounties_paid for r in results]
     if any(b):
         print("bounties posted     : mean %.1f per run" % (sum(b) / len(b)))
-    causes = defaultdict(int)
-    for r in results:
-        if r.dead_reason: causes[r.dead_reason.split(":")[0]] += 1
-        elif not r.goal_year: causes["ran out of horizon"] += 1
-    if causes:
-        print("failure modes       :")
-        for k, v in sorted(causes.items(), key=lambda x: -x[1]):
-            print("   %-58s %3d (%.0f%%)" % (k, v, 100.0 * v / len(results)))
-    # where do runs get stuck
-    stuck = defaultdict(int)
-    for r in results:
-        if not r.goal_year:
-            need = closure(r.nodes, r.goal)
-            miss = [k for k in topo_order(r.nodes, need) if k not in r.done]
-            if miss: stuck[miss[0]] += 1
-    if stuck:
-        print("first blocked node  :")
-        for k, v in sorted(stuck.items(), key=lambda x: -x[1])[:6]:
-            print("   %-58s %3d" % (k, v))
 
 
 def cmd_run(a):
