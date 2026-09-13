@@ -8,11 +8,7 @@ import collections, json, math, os, random, re
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+from .data import (closure, load)
 
 
 # THE GAME TELLING YOU WHAT IS IMPORTANT IS THE GAME PLAYING ITSELF. A user

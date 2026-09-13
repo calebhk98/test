@@ -3,11 +3,8 @@ import collections, json, math, os, random, time
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+from .data import (DEFAULTS, STARTING_KITS, closure, critical_path, load, load_civ,
+                   load_geography, topo_order)
 
 
 import argparse, sys

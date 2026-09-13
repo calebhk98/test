@@ -31,7 +31,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from engine.data import *            # noqa: F401,F403
 from engine.data import (ANNUAL_WAGE, CIVDIR, DEFAULTS, GEOFILE, PRICES,
-                         RESFILE, SHOCKS, STARTING_KITS, STRATS, TECH_EFFECTS,
+                         RESFILE, STARTING_KITS, STRATS, TECH_EFFECTS,
                          TRADES_ABSENT, TRADE_FAMILY, TRADE_NOTES, TREE, WAGES,
                          closure, critical_path, haversine_km, load, load_civ,
                          load_geography, load_resources, topo_order,

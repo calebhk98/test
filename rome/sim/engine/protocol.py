@@ -7,12 +7,9 @@ import collections, hashlib, json, math, os, random, re
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources, money_word,
-                   downstream_count, is_downstream)
+from .data import (ANNUAL_WAGE, TRADES_ABSENT, TRADE_NOTES, WAGES, closure,
+                   critical_path, downstream_count, is_downstream, load, money_word,
+                   topo_order, trade_family)
 from .fog import strip_self_play_advice
 
 
@@ -8729,7 +8726,7 @@ SAVE_FIELDS = (
     # that does not survive the thing the game tells you to do is not a history.
     "log",
     "year", "capital", "done", "granted", "active", "done_year", "training",
-    "scholars", "artisans", "directors_extra", "reputation", "suspicion",
+    "scholars", "artisans", "directors_extra", "reputation",
     "scandal", "eminence", "protection", "familiarity", "forest_ha",
     "nitre_bed_m2", "mine_pending", "mine_ready",
     # WORKINGS, PLURAL: mine_capacity used to be the saved field, one float
@@ -8765,7 +8762,7 @@ SAVE_FIELDS = (
     # straight back to anyone playing the ordinary way, across sittings.
     "interest_paid", "wage_hours_this_year", "teaching_hours_this_year",
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
-    "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
+    "bounties_paid", "atrocity", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
     "_said_scandal", "_said_parallelism",
     "_said_command_index",

@@ -3,11 +3,8 @@ import collections, json, math, os, random
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+from .data import (ANNUAL_WAGE, DEFAULTS, WAGES, load_civ, load_geography,
+                   load_resources, trade_family)
 
 
 from .economy import EconomyMixin, _InvalidatingSet
@@ -252,8 +249,6 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self._food_diffusion_said = -999      # last year a food-diffusion note was printed
         self._said_condition = set()          # hazard-condition messages already printed once
         self.founder_alive = True
-        self.suspicion = 0.0
-        self.suspicion_mult = 1.0
         self.gov = 0.0
         self.log = []
         self.dead_reason = None

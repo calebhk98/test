@@ -8,11 +8,7 @@ import collections, json, math, os, random
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+from .data import (closure)
 
 
 class ProjectsMixin:
@@ -1409,7 +1405,9 @@ class ProjectsMixin:
         self.bounties_paid += 1
         self.active[k] = dict(ph_left=n["ph"] * 0.35, yrs=0.0, spent=price)
         self.bountied.add(k)
-        self.suspicion += 2 * self.suspicion_mult   # a public prize makes you conspicuous
+        # A public prize makes you conspicuous - and that is what `scandal`
+        # and `eminence` now measure. This used to also add to a `suspicion`
+        # scalar that nothing ever read; see core.py's note on scandal.
         self.log.append((self.year, "posted a public bounty for %s (%s den)"
                          % (n["name"], f"{price:,.0f}")))
         return True

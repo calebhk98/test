@@ -8,11 +8,7 @@ import collections, json, math, os, random
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources, hard_pre)
+from .data import (ANNUAL_WAGE, WAGES, hard_pre, trade_family)
 from . import commodities as _commod
 
 
@@ -2634,6 +2630,20 @@ class EconomyMixin:
             # promote whatever came back before anything adds to it.
             s = self._material_stock_ledger = collections.Counter(s)
         return s
+
+    def material_stock_t(self, emp_key):
+        """Tonnes of `emp_key` currently banked - the STOCK half of stock vs
+        flow, which is the thing a player asking "how much iron do I actually
+        own" wants and which no command yet shows them.
+
+        NOT DEAD, UNFINISHED. This was swept as unreferenced once and put back:
+        nothing calls it because the display it was written for was never
+        built, not because the display is unwanted. A player asked for exactly
+        this again. Whoever wires up a `stock` command in protocol.py should
+        call this; until then it is the useful half of a feature waiting for
+        its other half.
+        """
+        return self._material_stock().get(emp_key, 0.0)
 
     def _throttle_demand_split(self, demand):
         """`demand` (annual_material_demand()'s raw material-key Counter)
