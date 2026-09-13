@@ -2117,7 +2117,7 @@ class SocietyMixin:
             r.pop("in_progress", None)
         return rows
 
-    def lose_capital(self, fraction, floor_at_zero=True):
+    def lose_capital(self, fraction):
         """Destroy a fraction of what you HAVE. Never a fraction of what you owe.
 
         Every capital loss in this file used to be written `self.capital *= x`,
@@ -2131,6 +2131,11 @@ class SocietyMixin:
         A fire destroys goods. If you own nothing, the fire takes nothing; it
         does not pay off your creditors.
         """
+        # ALWAYS floored, never optionally. This took a floor_at_zero=True
+        # parameter that nothing read and no caller ever passed - the floor
+        # below is unconditional - so the signature advertised a choice that
+        # did not exist: floor_at_zero=False would have been accepted and
+        # silently ignored, which is worse than not offering it.
         if self.capital <= 0:
             return 0.0
         lost = self.capital * max(0.0, min(1.0, fraction))
