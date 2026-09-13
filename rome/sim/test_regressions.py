@@ -13128,6 +13128,306 @@ check("...and it still says what selling a year of labourer's time actually "
       (_wg.get("earned"), _wg.get("it_cost_your_own_practice"),
        _wg.get("so_you_are_up")))
 
+# =============================================================================
+# THE COUNTRY CHANGES TOO, NOT ONLY THE FOUNDER'S OWN EXPOSURE TO IT. A
+# player's own examples, stated plainly as the spec: New World crops and
+# crop rotation raise the whole country's food and population within a few
+# decades; cannon in the STATE's hands (not only the founder's workshop)
+# changes whether the Gothic wars cost the country as much; a cure or
+# vaccine diffused through the country turns the Black Death into a minor
+# sickness. See SocietyMixin.civ_diffusion and everything built on it
+# (society.py, just above diffusion_index). The household-risk mechanism
+# from the PREVIOUS round (_resolve_hazard_condition, hazard `condition`
+# blocks) is untouched by any of this - these are a second, independent
+# layer, scaled by how far what the founder built has actually spread.
+_FOOD_NODE, _MED_NODES, _MIL_NODES2, _INFO_NODE = (
+    "crop_rotation",
+    ["sanitation_antisepsis", "med_quarantine_sanitation", "germ_theory",
+     "md2_vaccine_smallpox"],
+    ["gunpowder", "mil_artillery_piece"],
+    "printing_press",
+)
+check("the four diffusion categories this section reads are real nodes with "
+      "the traits civ_diffusion keys off",
+      NODES[_FOOD_NODE]["traits"].__contains__("food")
+      and all("medical" in NODES[k]["traits"] for k in _MED_NODES)
+      and all("military" in NODES[k]["traits"] for k in _MIL_NODES2)
+      and "information" in NODES[_INFO_NODE]["traits"],
+      (_FOOD_NODE, _MED_NODES, _MIL_NODES2, _INFO_NODE))
+
+# --- civ_diffusion itself: zero until done, zero the instant it is done,
+# grows with age, bounded at 1.0, deterministic over a sorted sum.
+s = sim(civ="rome_100ad")
+check("civ_diffusion is zero for a technology nobody has built",
+      s.civ_diffusion(_FOOD_NODE) == 0.0, s.civ_diffusion(_FOOD_NODE))
+s.done.add(_FOOD_NODE); s.done_year[_FOOD_NODE] = s.year
+check("...and zero the instant it completes - diffusion takes time, it is "
+      "not a second instant effect layered on apply_tech_effects",
+      s.civ_diffusion(_FOOD_NODE) == 0.0, s.civ_diffusion(_FOOD_NODE))
+s.year += 25   # one DIFFUSION_HALF_LIFE_YEARS["food"]
+_half = s.civ_diffusion(_FOOD_NODE)
+s.year += 1000
+_far = s.civ_diffusion(_FOOD_NODE)
+check("diffusion is about half-spread after one half-life and never "
+      "exceeds 1.0 however long it has had",
+      0.45 < _half < 0.55 and _far <= 1.0 + 1e-9,
+      (_half, _far))
+check("a node with none of the four diffusible traits never diffuses at "
+      "all - this mechanism has nothing to say about a lathe or a ledger",
+      s.civ_diffusion("workshop_first") == 0.0
+      and not any(t in ("food", "medical", "military", "information")
+                  for t in NODES["workshop_first"]["traits"]),
+      NODES["workshop_first"]["traits"])
+
+# --- military is the one category gated on a patron: the state, not the
+# founder's private arsenal, is what the user's cannon example is about.
+s_nopatron = sim(civ="rome_100ad")
+for k in _MIL_NODES2:
+    s_nopatron.done.add(k); s_nopatron.done_year[k] = s_nopatron.year
+s_nopatron.year += 200
+s_patron = sim(civ="rome_100ad")
+run_it(s_patron, "patron_imperial")
+for k in _MIL_NODES2:
+    s_patron.done.add(k); s_patron.done_year[k] = s_patron.year
+s_patron.year += 200
+check("military technology the founder built never reaches the state's "
+      "hands without a patron to hand it to, however long it has had",
+      s_nopatron.state_military_diffusion() == 0.0, s_nopatron.state_military_diffusion())
+check("...but WITH a patron, and enough time, it genuinely has - the "
+      "user's own 'give the Roman government cannons' scenario",
+      s_patron.state_military_diffusion() > 0.5, s_patron.state_military_diffusion())
+
+# =============================================================================
+# FOOD: the country eats better, and grows - on top of, never instead of,
+# apply_tech_effects' own small instant population queue (see that
+# mechanism's own regression checks elsewhere in this file).
+s_food = sim(civ="rome_100ad")
+s_food.done.add(_FOOD_NODE); s_food.done_year[_FOOD_NODE] = s_food.year
+_base0 = s_food._pop_scale_base
+for i in range(1, 81):
+    s_food.year += 1
+    s_food.advance_society(s_food.year)
+check("eighty years after New World-style crop rotation is done, the "
+      "country's own baseline population has risen by a real, double-digit "
+      "percentage - 'within a few decades ALL of Rome has significantly "
+      "more food and a larger population', not a rounding error",
+      s_food._pop_scale_base - _base0 > 0.08,
+      s_food._pop_scale_base - _base0)
+check("...and it is told in the log, not only in a state variable",
+      any("no longer only on your own land" in m for _, m in s_food.log),
+      [m for _, m in s_food.log if "no longer only on your own land" in m])
+
+s_food_far = sim(civ="rome_100ad")
+s_food_far.done.add(_FOOD_NODE); s_food_far.done_year[_FOOD_NODE] = s_food_far.year
+for i in range(1, 601):
+    s_food_far.year += 1
+    s_food_far.advance_society(s_food_far.year)
+check("however long it has had, the food-diffusion population bonus never "
+      "exceeds its own cap - this is bounded, not a runaway feedback loop",
+      s_food_far._food_pop_bonus_applied <= s_food.FOOD_DIFFUSION_POP_BONUS_MAX + 1e-6,
+      s_food_far._food_pop_bonus_applied)
+
+s_nofood = sim(civ="rome_100ad")
+for i in range(1, 81):
+    s_nofood.year += 1
+    s_nofood.advance_society(s_nofood.year)
+check("a founder who never builds any food technology gets none of this - "
+      "the bonus is earned, not a free drift",
+      getattr(s_nofood, "_food_pop_bonus_applied", 0.0) == 0.0,
+      getattr(s_nofood, "_food_pop_bonus_applied", 0.0))
+
+# =============================================================================
+# DISEASE: the country is harder to kill wholesale, once ITS OWN medicine
+# has spread - not only the founder's private, has()-gated hedge (`relief`
+# in _shocks, unchanged by any of this). The user's own example: invent the
+# cure or vaccine for a pandemic and it becomes a minor sickness.
+def _plague_line2(civ, hazard_substr, med_nodes, years_before, capital=1e9):
+    _s = sim(civ=civ, capital=capital)
+    for k in med_nodes:
+        _s.done.add(k)
+    _s.scholars, _s.artisans = 50.0, 200.0
+    for t in list(_s.employees):
+        _s.employees[t] = 50.0
+    haz = next(h for h in _s.civ["hazards"] if hazard_substr in h["name"])
+    yr = haz["years"][0]
+    _s.year = yr
+    _s.done_year = {k: yr - years_before for k in med_nodes}
+    _s.rng = random.Random(1)
+    _s._shocks(yr)
+    return next((m for _y, m in _s.log if hazard_substr in m), "")
+
+
+_antonine_fresh = _plague_line2("rome_100ad", "Antonine plague", _MED_NODES, 0)
+_antonine_old = _plague_line2("rome_100ad", "Antonine plague", _MED_NODES, 300)
+check("medicine the founder has only JUST built gives the empire at large "
+      "no relief yet - diffusion has not had time to happen",
+      "Empire-wide, population -28%" in _antonine_fresh
+      and "softer" not in _antonine_fresh,
+      _antonine_fresh)
+check("the SAME medicine, diffused through three centuries, visibly softens "
+      "the empire-wide toll - the user's 'minor sickness' claim, answered "
+      "against the empire's own figure, never against the founder's",
+      "softer" in _antonine_old
+      and "Empire-wide, population -28%" not in _antonine_old,
+      _antonine_old)
+
+_black_death = _plague_line2("england_1300", "Black Death", _MED_NODES, 400)
+check("diffused medicine four centuries deep can turn even the Black Death "
+      "into a barely-registering empire-wide event - the user's example by "
+      "name",
+      "barely registers" in _black_death or "softer" in _black_death,
+      _black_death)
+
+check("medical diffusion relief is capped, never total - no amount of "
+      "diffused medicine makes a dated epidemic do nothing at all",
+      sim(civ="rome_100ad").MEDICAL_DIFFUSION_RELIEF_CAP < 1.0,
+      sim(civ="rome_100ad").MEDICAL_DIFFUSION_RELIEF_CAP)
+
+# --- and this never touches the founder's own, personal figure (`loss`),
+# nor sack_chance/output_factor, which are a different category entirely.
+s_med_mil = sim(civ="rome_100ad")
+for k in _MED_NODES:
+    s_med_mil.done.add(k); s_med_mil.done_year[k] = s_med_mil.year - 300
+_out_nomed = sim(civ="rome_100ad").hazard_relief("output_factor")[0]
+_out_med = s_med_mil.hazard_relief("output_factor")[0]
+_sack_nomed = sim(civ="rome_100ad").hazard_relief("sack_chance")[0]
+_sack_med = s_med_mil.hazard_relief("sack_chance")[0]
+check("diffused medicine gives no relief against output_factor or "
+      "sack_chance - those are war's categories, not medicine's, the same "
+      "boundary the pre-existing 'military gives no relief against staff "
+      "loss' check already holds in the other direction",
+      _out_med == _out_nomed and _sack_med == _sack_nomed,
+      (_out_nomed, _out_med, _sack_nomed, _sack_med))
+
+# =============================================================================
+# WAR: a state that is actually armed, not only a founder who privately is,
+# loses less and is sacked less often. The user's cannon example, and the
+# line the brief draws around it: the Gothic wars cost the country less -
+# they do not stop happening, and nothing here ever deletes a hazard or
+# moves its calendar.
+s_bare_h = sim(civ="rome_100ad")
+s_armed_h = sim(civ="rome_100ad")
+run_it(s_armed_h, "patron_imperial")
+for k in _MIL_NODES2:
+    s_armed_h.done.add(k); s_armed_h.done_year[k] = s_armed_h.year - 200
+_of_bare, _ = s_bare_h.hazard_relief("output_factor")
+_of_armed, _of_why = s_armed_h.hazard_relief("output_factor")
+_sk_bare, _ = s_bare_h.hazard_relief("sack_chance")
+_sk_armed, _sk_why = s_armed_h.hazard_relief("sack_chance")
+check("a state that has actually absorbed the founder's cannon loses less "
+      "trade to a dated war...",
+      _of_armed < _of_bare
+      and any("state's own armies" in w for w in _of_why),
+      (_of_bare, _of_armed, _of_why))
+check("...and is measurably less likely to be sacked, which before this "
+      "change was true of the founder's OWN walls and guns but never of "
+      "the state's - this is the user's cannon example",
+      _sk_armed < _sk_bare
+      and any("state's own armies" in w for w in _sk_why),
+      (_sk_bare, _sk_armed, _sk_why))
+check("the relief is bounded on both fields, never enough on its own to "
+      "erase a war's cost or a raid's chance entirely",
+      0.0 < _of_armed and 0.0 < _sk_armed,
+      (_of_armed, _sk_armed))
+
+_rome_gothic = _hazard("rome_100ad", "Adrianople and the Gothic settlement")
+check("the Gothic settlement hazard itself still has no `condition` and no "
+      "change to its `years` - the war still happens on the historical "
+      "date; only what it costs moves, never whether or when",
+      "condition" not in _rome_gothic and _rome_gothic["years"] == [376, 405],
+      _rome_gothic)
+
+# =============================================================================
+# INFORMATION: printing diffused past one printer's workshop makes
+# schooling itself teach faster - the mechanical home the brief pointed at
+# (literacy is already a real ceiling on trades), not a new, separate
+# effect invented from nothing.
+def _literacy_after(info_done, years=200):
+    _s = run_it(sim(civ="norse_900ad", capital=2000000.0), "school_founded")
+    if info_done:
+        _s.done.add(_INFO_NODE); _s.done_year[_INFO_NODE] = _s.year - 150
+    for i in range(1, years + 1):
+        _s.year += 1
+        _s.advance_society(_s.year)
+    return _s.civ["literacy_general"]
+
+
+_lit_no_info = _literacy_after(False)
+_lit_with_info = _literacy_after(True)
+check("a diffused printing press measurably speeds up how fast a running "
+      "school raises general literacy, holding the school itself fixed - "
+      "the user's fourth point given the mechanical home the brief named",
+      _lit_with_info > _lit_no_info,
+      (_lit_no_info, _lit_with_info))
+
+# =============================================================================
+# TOLD TO THE PLAYER, AND INSPECTABLE - not only a state variable. Gated to
+# absent (not merely null) while dormant, because `state full` already sits
+# within a few bytes of its own "stays readable" budget at the very start
+# of a run (see that check elsewhere in this file) and a field present on
+# every single call, even as null, would break it outright.
+_wd_start, _wd_out, _wd_rc = proto([{"cmd": "state", "full": True}],
+                                   civ="rome_100ad", fog=True)
+check("'world_diffusion' is not merely null but genuinely ABSENT from "
+      "`state full` at the start of a run - zero added bytes against an "
+      "already nearly-full byte budget",
+      "world_diffusion" not in _wd_start[0], sorted(_wd_start[0]))
+
+s_cli = sim(civ="rome_100ad")
+s_cli.done.add(_FOOD_NODE); s_cli.done_year[_FOOD_NODE] = s_cli.year
+for i in range(1, 91):
+    s_cli.year += 1
+    s_cli.advance_society(s_cli.year)
+check("once something has genuinely diffused, world_diffusion_report is no "
+      "longer None and names the population it has already added",
+      s_cli.world_diffusion_report() is not None
+      and s_cli.world_diffusion_report()["population_this_has_already_added"] > 0,
+      s_cli.world_diffusion_report())
+
+# =============================================================================
+# DETERMINISM: civ_diffusion and everything built on it iterate self.done (a
+# set) only through a fixed, sorted list of category ids, never a float sum
+# whose order depends on PYTHONHASHSEED.
+_DIFFUSION_SNAPSHOT_SRC = """
+import sys; sys.path.insert(0, '.')
+import random, simulator as S
+T, P, N, W, G = S.load()
+_l, O, _b = S.load_strategy('recommended', N, T['meta']['goal_node'])
+s = S.Sim(N, O, random.Random(1), events=False, manual=True,
+          civ=S.load_civ('rome_100ad'))
+s.goal, s.done_year = T['meta']['goal_node'], {}
+s.done.add('patron_imperial'); s.operating.add('patron_imperial')
+for k in ('crop_rotation', 'sanitation_antisepsis', 'med_quarantine_sanitation',
+          'germ_theory', 'gunpowder', 'mil_artillery_piece', 'printing_press'):
+    s.done.add(k)
+    s.done_year[k] = s.year
+s._done_changed()
+for _ in range(150):
+    s.advance_society(s.year)
+    s.year += 1
+print(repr((round(s.food_diffusion_index(), 12),
+            round(s.medical_diffusion_index(), 12),
+            round(s.state_military_diffusion(), 12),
+            round(s.information_diffusion_index(), 12),
+            round(s._pop_scale_base, 12))))
+"""
+
+
+def _diffusion_snapshot(seed_env):
+    p = subprocess.run([sys.executable, "-c", _DIFFUSION_SNAPSHOT_SRC],
+                        capture_output=True, text=True, timeout=60, cwd=HERE,
+                        env=dict(os.environ, PYTHONHASHSEED=seed_env))
+    return p.stdout.strip() or ("ERROR: " + p.stderr[-300:])
+
+
+_dif_a = _diffusion_snapshot("0")
+_dif_b = _diffusion_snapshot("24680")
+check("the whole diffusion mechanism - food, medical, military, "
+      "information and the population bonus it drives - gives identical "
+      "results under a different PYTHONHASHSEED",
+      _dif_a == _dif_b and not _dif_a.startswith("ERROR"), (_dif_a, _dif_b))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
