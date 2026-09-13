@@ -1748,6 +1748,13 @@ def _agent_state(s, nodes, cmd=None):
     end_reason = _agent_end_reason(s)
     full = bool((cmd or {}).get("full"))
     end_year = getattr(s, "end_year", s.cfg["start_year"] + s.cfg["horizon_years"])
+    # WHAT YOU BUILT HAS CHANGED THE COUNTRY - see SocietyMixin.
+    # world_diffusion_report (society.py). Computed once here, gated to
+    # None while dormant, so a fresh game's `state full` reply (already the
+    # reply most often bumping the "state full stays readable" byte budget)
+    # pays nothing for a mechanism that has not fired yet - same pattern as
+    # _worth_knowing_early just below.
+    _wd = s.world_diffusion_report()
     out = {
         "year": s.year,
         # HOW MUCH TIME IS LEFT. A weird-play tester ran to the end of a
@@ -1993,6 +2000,10 @@ def _agent_state(s, nodes, cmd=None):
         # pricing, only reported, because that spending is another agent's
         # seam to wire in (see that function's own docstring).
         "diffusion_index": round(s.diffusion_index(), 3),
+        # THE COUNTRY, NOT ONLY YOUR OWN MARKET SHARE. Present only once
+        # something the founder built has actually begun to spread - see
+        # world_diffusion_report's own docstring for the None gate.
+        **({"world_diffusion": _wd} if _wd else {}),
         # A playtester could not tell the difference between technologies the
         # society already had and ones they had earned: about 140 nodes complete
         # in year one and appeared in done_count as if the player had built
@@ -8306,6 +8317,17 @@ SAVE_FIELDS = (
     "_said_deputies",
     "_said_near_limit",
     "shut_for_staff",
+    # THE COUNTRY'S OWN ADOPTION OF WHAT YOU BUILT. See
+    # SocietyMixin._advance_food_diffusion_population (society.py): a
+    # ratchet that only ever grows, so a save missing it entirely (every
+    # save from before this mechanism existed) reads back as "nothing has
+    # diffused into the population yet", which is exactly true of those
+    # saves. _food_diffusion_said is the matching log throttle, same
+    # reasoning as the pre-existing _literacy_said never needing a save
+    # entry of its own - losing one generation's worth of throttling on an
+    # old save is not a fact about the game, only about when it next
+    # prints a line it would have printed anyway.
+    "_food_pop_bonus_applied",
     # TONNES ON HAND. Own production a year did not use banks here instead of
     # evaporating, which is what lets a twenty-gram gold demand be met by
     # buying twenty grams rather than by commissioning a mine. It has to

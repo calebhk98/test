@@ -965,6 +965,15 @@ class SocietyMixin:
         flow = self._schooling_flow()
         if flow <= 0.0:
             return
+        # PRINTING SPREADING TO THE COUNTRY MAKES SCHOOLING ITSELF FASTER.
+        # The user's fourth point given a mechanical home: once movable
+        # type or the press has diffused past the one printer's workshop
+        # that built it, the same schooling effort teaches faster, because
+        # texts actually exist for it to teach FROM. Still requires flow>0
+        # above - a country full of diffused printing with no school open
+        # still teaches nobody, by the same "taught, not a free drift"
+        # rule every other figure in this section already follows.
+        flow *= (1.0 + 0.5 * self.information_diffusion_index())
         changed = {}
         gen = float(self.civ.get("literacy_general", 0.0))
         gen_ceil = self.literacy_ceiling_general()
@@ -1114,6 +1123,10 @@ class SocietyMixin:
         """
         self._advance_literacy(yr)
         self._advance_trade_absorption(yr)
+        # THE COUNTRY, NOT ONLY THE FOUNDER'S OWN CENSUS ENTRY. See
+        # "THE COUNTRY CHANGES TOO" above for why this is additional to,
+        # never a replacement for, apply_tech_effects' own population queue.
+        self._advance_food_diffusion_population(yr)
 
     # ---- WHAT YOU BUILT DOES NOT STAY YOURS ---------------------------------
     # "To make it even more interesting, you could make it so others try to
@@ -1219,6 +1232,293 @@ class SocietyMixin:
             tot_w += w
             tot += w * self.diffusion_share(k)
         return tot / tot_w if tot_w > 0 else 0.0
+
+    # ---- THE COUNTRY CHANGES TOO, NOT ONLY YOUR OWN EXPOSURE TO IT ---------
+    # A player's complaint, stated plainly after the first round of work on
+    # this only fixed what a dated hazard does TO THE FOUNDER (see
+    # _resolve_hazard_condition above): "sail to the Americas and bring back
+    # New World crops, add crop rotation, and within a few decades ALL of
+    # Rome has significantly more food and a larger population. Give the
+    # Roman government cannons and it is not being sacked by tribes. Invent
+    # the cure or the vaccine for a pandemic and the Black Death becomes a
+    # minor period of some sickness rather than a catastrophe." None of
+    # that is household risk, which `condition` already answers; it is what
+    # the founder's workshop does to the COUNTRY, which was inert before
+    # this section existed.
+    #
+    # civ_diffusion(k) is the missing number, reusing diffusion_share's own
+    # shape just above (age since completion, sped up by a written/
+    # dispersed corpus and by how literate the society already is) rather
+    # than inventing a second idea of what diffusion is - but gated on
+    # DONE, not on operating: crop_rotation happens to carry rev>0 in this
+    # tree and germ_theory does not, and a country does not need the
+    # founder's own stall open for business to go on planting the crop or
+    # boiling the water once it has seen it done. Bounded at 1.0, not
+    # VENTURE_DIFFUSION_CAP's 0.65 - a crop or a vaccine can become
+    # something literally everyone has, in a way a founder's personal
+    # market share against live competitors never fully does.
+    #
+    # Four categories, read off the tree's own `traits` (the same field
+    # alarm_of and state_interest already key off) rather than a second,
+    # hand-maintained node list. The priority order matters only for the
+    # handful of nodes carrying two of these traits at once
+    # (ag2_veterinary_vaccination is both food and medical) - fixed, so the
+    # same node is never counted against two different half-lives depending
+    # on dict iteration order.
+    DIFFUSION_TRAIT_PRIORITY = ("food", "medical", "military", "information")
+
+    # Years for HALF of a just-completed technology in this category to
+    # have spread through the society at large, absent any literacy or
+    # state-capacity effect (see _diffusion_pace). Food and military are
+    # faster than medical and information on purpose: a better crop or a
+    # working gun is something a neighbour can see working and copy without
+    # reading a word, where germ theory or a press depends on somebody
+    # publishing and somebody else literate enough to read it - the user's
+    # own fourth point, given a mechanism instead of a name. 25 years (a
+    # generation) is pitched at the low end of "a few decades", matching
+    # Nunn and Qian's (2011) own description of the potato's spread across
+    # Europe as a matter of generations rather than years.
+    DIFFUSION_HALF_LIFE_YEARS = {
+        "food": 25.0, "military": 20.0, "medical": 35.0, "information": 30.0,
+    }
+
+    def _diffusion_category(self, n):
+        traits = n.get("traits") or ()
+        for t in self.DIFFUSION_TRAIT_PRIORITY:
+            if t in traits:
+                return t
+        return None
+
+    def _diffusible_ids(self, cat):
+        """Fixed, cached - same reasoning as _agri_mechanisation_ids above:
+        only the tree's own traits decide membership, so this never needs
+        recomputing once built, however large self.done grows."""
+        cache = self.__dict__.get("_diffusible_ids_cache")
+        if cache is None:
+            cache = {c: [] for c in self.DIFFUSION_TRAIT_PRIORITY}
+            for k, n in self.nodes.items():
+                c = self._diffusion_category(n)
+                if c:
+                    cache[c].append(k)
+            cache = {c: tuple(sorted(v)) for c, v in cache.items()}
+            self._diffusible_ids_cache = cache
+        return cache.get(cat, ())
+
+    def _state_has_a_patron(self):
+        """Only a patron gives the STATE anything - the same gate
+        update_protection() already applies to military_leverage()'s own
+        bonus there: a workshop with nobody to arm is a private matter, not
+        the army's equipment."""
+        return (self.running("patron_local") or self.running("patron_senatorial")
+                or self.running("patron_imperial"))
+
+    def _diffusion_pace(self, cat):
+        """How much faster than DIFFUSION_HALF_LIFE_YEARS[cat]'s bare figure
+        this category is actually moving, for THIS society, right now.
+
+        Reuses diffusion_share's own two accelerants for medical and
+        information (a corpus the knowledge is written into, and how
+        literate the general population already is) rather than a second
+        formula for "does this society read" - the user's own fourth
+        point: printing and literacy change how fast anything textual
+        spreads, and both categories that are genuinely about text
+        (information itself, and medicine once it depends on germ theory
+        rather than on watching a quarantine work) inherit that here.
+        Military instead reads state_capacity, not literacy, because what
+        limits an army re-equipping is organisation and money, not how many
+        soldiers can read (mil_general_staff and mil_conscription_reserve
+        are already scored for state_capacity in _TECH_EFFECTS.json on
+        exactly that reasoning). Food reads neither: a better crop needs
+        nobody to read anything and no army to re-equip, only a neighbour's
+        field to watch.
+        """
+        pace = 1.0
+        if cat in ("medical", "information"):
+            if self.running("corpus_dispersed"):
+                pace = 1.7
+            elif self.running("corpus_written"):
+                pace = 1.3
+            gen_lit = float(self.civ.get("literacy_general", 0.12))
+            pace *= 0.7 + 0.3 * min(2.0, gen_lit
+                                    / max(0.02, self.LITERACY_REFERENCE_GENERAL))
+        elif cat == "military":
+            pace *= 0.5 + 1.5 * self.state_capacity
+        return pace
+
+    def civ_diffusion(self, k):
+        """0..1: how much of the WHOLE SOCIETY, not this household, has
+        adopted technology `k` - the number behind every consequence below.
+
+        `done`, not `operating` (contrast diffusion_share): a field of New
+        World crops or a boiled-water habit is something the country copies
+        whether or not the founder still keeps a market stall in it. Zero
+        for anything outside the four DIFFUSION_HALF_LIFE_YEARS categories -
+        most of the tree is neither a crop, a cure, a weapon nor a text, and
+        this mechanism has nothing to say about a lathe or a bookkeeping
+        method. Military is additionally zero without a patron
+        (_state_has_a_patron): the government cannot be using cannon the
+        founder never showed to anyone with soldiers.
+        """
+        if k not in self.done:
+            return 0.0
+        n = self.nodes.get(k)
+        if not n:
+            return 0.0
+        cat = self._diffusion_category(n)
+        if cat is None:
+            return 0.0
+        if cat == "military" and not self._state_has_a_patron():
+            return 0.0
+        age = max(0.0, self.year - self.done_year.get(k, self.year))
+        half_life = (self.DIFFUSION_HALF_LIFE_YEARS[cat]
+                     / max(0.4, self._diffusion_pace(cat)))
+        return max(0.0, min(1.0, 1.0 - 0.5 ** (age / half_life)))
+
+    def _category_diffusion_index(self, cat):
+        """Plain average of civ_diffusion() across every DONE node in `cat` -
+        not revenue-weighted like diffusion_index(): a food category with
+        one fully-spread crop and one just-introduced one is honestly "half
+        spread", not "mostly spread because the old one earns more" (most
+        of these nodes earn no revenue at all). sorted() for the same
+        determinism reason every other float sum over a set in this file
+        uses it.
+        """
+        ids = [k for k in self._diffusible_ids(cat) if k in self.done]
+        if not ids:
+            return 0.0
+        return sum(self.civ_diffusion(k) for k in sorted(ids)) / len(ids)
+
+    def food_diffusion_index(self):
+        return self._category_diffusion_index("food")
+
+    def medical_diffusion_index(self):
+        return self._category_diffusion_index("medical")
+
+    def information_diffusion_index(self):
+        return self._category_diffusion_index("information")
+
+    def state_military_diffusion(self):
+        return self._category_diffusion_index("military")
+
+    # ---- FOOD: THE COUNTRY EATS BETTER, AND GROWS --------------------------
+    # apply_tech_effects' own `population` field already adds a one-off,
+    # deliberately small amount (0.01-0.02, see _TECH_EFFECTS.json's own
+    # note on why it stays small) the year a food technology completes,
+    # spread over a flat 40-year ramp (POP_TECH_RAMP_YEARS) - a generation
+    # for the CENSUS to catch up with a lower death rate on the founder's
+    # OWN estate, not a claim that the whole country farms this way yet.
+    # This is the other half the user asked for: as food_diffusion_index()
+    # climbs - which, at a 25-year half life, is "within a few decades"
+    # exactly as asked - the country's own baseline population rises again,
+    # on top of that ramp, by up to FOOD_DIFFUSION_POP_BONUS_MAX. Capped
+    # well above what a single node's instant delta could ever reach
+    # (0.25 versus a handful of nodes at 0.02 each) ONLY because it is
+    # earned slowly, over generations of the country actually adopting it,
+    # never as an instant lump sum - see _TECH_EFFECTS.json's own
+    # population field note for why the INSTANT deltas stay small instead
+    # of scoring this the way Nunn and Qian (2011) actually would.
+    FOOD_DIFFUSION_POP_BONUS_MAX = 0.25
+    # How fast the realised bonus chases its own target once diffusion
+    # moves it - fast relative to diffusion's own decades, so diffusion
+    # itself, not this, is the slow part a player is actually watching.
+    FOOD_DIFFUSION_POP_APPROACH_RATE = 0.15
+
+    def _advance_food_diffusion_population(self, yr):
+        target = self.FOOD_DIFFUSION_POP_BONUS_MAX * self.food_diffusion_index()
+        applied = getattr(self, "_food_pop_bonus_applied", 0.0)
+        gap = target - applied
+        if gap <= 1e-6:
+            return
+        add = self.FOOD_DIFFUSION_POP_APPROACH_RATE * gap
+        self._pop_scale_base += add
+        applied += add
+        self._food_pop_bonus_applied = applied
+        # ONCE A GENERATION, same throttle as _advance_literacy's own - a
+        # gain this small, reported every year of a centuries-long run, is
+        # the same noise that throttle was written to stop.
+        last = getattr(self, "_food_diffusion_said", -999)
+        if applied > 0.005 and yr - last >= 25:
+            self._food_diffusion_said = yr
+            self.log.append((yr, "what you grew is no longer only on your "
+                             "own land: the crops and rotations you "
+                             "introduced have spread far enough into the "
+                             "country's own fields that the population is "
+                             "running about %d%% above where it would "
+                             "otherwise be" % round(applied * 100)))
+
+    # ---- DISEASE: THE COUNTRY IS HARDER TO KILL WHOLESALE ------------------
+    # _shocks' staff_loss branch (below) already tells a household-level
+    # story (`loss`, reduced by the founder's own sanitation and
+    # vaccination) and an empire-wide one (`raw`, the hazard's historical,
+    # unmitigated rate - deliberately untouched by the founder's PERSONAL
+    # hedges: your quarantine protects your people, not everyone else's
+    # labour market). What it could not yet do is the user's own example -
+    # "invent the cure or the vaccine for a pandemic and the Black Death
+    # becomes a minor period of some sickness rather than a catastrophe" -
+    # because nothing let the EMPIRE's own figure fall just because the
+    # empire, not only the founder, had absorbed germ theory, quarantine
+    # and vaccination by the time the hazard's window opened.
+    # medical_diffusion_relief is that missing number, read by _shocks
+    # directly against `raw`, never against `loss` (which stays the
+    # founder's own, private, has()-gated figure it always was).
+    MEDICAL_DIFFUSION_RELIEF_CAP = 0.85
+
+    def medical_diffusion_relief(self):
+        return min(self.MEDICAL_DIFFUSION_RELIEF_CAP, self.medical_diffusion_index())
+
+    # ---- WAR: A STATE THAT IS ACTUALLY ARMED LOSES LESS, AND SACKS LESS ----
+    # military_leverage() and _military_war_relief() (further below,
+    # pre-existing) already answer "does the founder's OWN workshop protect
+    # the founder" - has()-gated, private, and wired only into
+    # output_factor. The user's cannon example is a different claim: "give
+    # the ROMAN GOVERNMENT cannons and it is not being sacked by tribes" -
+    # the STATE's own armies, not the founder's private arsenal, and
+    # sack_chance as well as output_factor. state_military_diffusion()
+    # (above) is that number - patron-gated the same way update_protection
+    # already gates military leverage's own patronage bonus, because a
+    # foundry with nobody to arm is not the state's equipment yet, however
+    # much of the tree it covers.
+    STATE_MIL_RELIEF_CAP_OUTPUT = 0.25
+    STATE_MIL_RELIEF_CAP_SACK = 0.35
+
+    def _state_military_diffusion_relief(self, cap):
+        diffused = self.state_military_diffusion()
+        if diffused <= 0.0:
+            return 1.0, None
+        share = cap * diffused
+        return (1.0 - share), ("the state's own armies now carry some of "
+                               "what you worked out (%d%% of it has "
+                               "reached them)" % round(diffused * 100))
+
+    def world_diffusion_report(self):
+        """None while nothing the founder has built is spreading into the
+        wider society; otherwise a compact, inspectable snapshot of how far
+        it has spread and what that is doing to the country - the user's
+        own fourth requirement, that this never happen silently in a state
+        variable. Gated to None when dormant so an early game's `state`
+        reply pays nothing for a mechanism that has not fired yet (see
+        `worth_knowing_early`'s own gate, just above, for the same pattern).
+        """
+        food, med, mil, info = (self.food_diffusion_index(),
+                                 self.medical_diffusion_index(),
+                                 self.state_military_diffusion(),
+                                 self.information_diffusion_index())
+        if food < 0.01 and med < 0.01 and mil < 0.01 and info < 0.01:
+            return None
+        out = {}
+        if food >= 0.01:
+            out["food_and_farming_the_country_has_adopted"] = round(food, 3)
+            out["population_this_has_already_added"] = round(
+                getattr(self, "_food_pop_bonus_applied", 0.0), 3)
+        if med >= 0.01:
+            out["public_health_the_country_has_adopted"] = round(med, 3)
+            out["how_much_softer_the_next_epidemic_will_be"] = round(
+                self.medical_diffusion_relief(), 3)
+        if mil >= 0.01:
+            out["military_technology_now_in_the_states_hands"] = round(mil, 3)
+        if info >= 0.01:
+            out["printing_and_literacy_the_country_has_adopted"] = round(info, 3)
+        return out
 
     # FOG OF WAR. Without it the player sees the entire tree from the first
     # minute, including exactly what a transistor needs, which is both a spoiler
@@ -1416,6 +1716,25 @@ class SocietyMixin:
             if reason:
                 mult *= m
                 why.append(reason)
+            # THE STATE'S OWN ARMIES, NOT ONLY THE FOUNDER'S WORKSHOP - see
+            # "WAR: A STATE THAT IS ACTUALLY ARMED" above.
+            m2, reason2 = self._state_military_diffusion_relief(
+                self.STATE_MIL_RELIEF_CAP_OUTPUT)
+            if reason2:
+                mult *= m2
+                why.append(reason2)
+        elif kind == "sack_chance":
+            # The founder's own walls and guns already sit in
+            # HAZARD_COUNTERS["sack_chance"] above, has()-gated like every
+            # other private hedge. This is the part that was missing: "give
+            # the Roman government cannons and it is not being sacked by
+            # tribes" is a claim about the STATE's army, which diffuses in
+            # slowly and only once there is a patron to hand it to.
+            m2, reason2 = self._state_military_diffusion_relief(
+                self.STATE_MIL_RELIEF_CAP_SACK)
+            if reason2:
+                mult *= m2
+                why.append(reason2)
         return mult, why
 
     def _military_war_relief(self):
@@ -1925,7 +2244,22 @@ class SocietyMixin:
                 # plagues in one lifetime are worse than either alone.
                 # _demographic_recovery() in core.py is what reads this back
                 # out into pop_scale and wage_index, and lets it decay.
-                raw = h["staff_loss"]
+                #
+                # THE COUNTRY'S OWN MEDICINE, NOT ONLY THE FOUNDER'S - the
+                # one thing `raw` never used to answer to. med_relief is
+                # medical_diffusion_relief() (above): how much of germ
+                # theory, quarantine and vaccination has actually spread
+                # through the society by the year this hazard's window
+                # opens, as opposed to `relief` just above, which is the
+                # founder's own private, has()-gated hedge. A founder who
+                # invented the vaccine for a pandemic CENTURIES early and
+                # let it diffuse is the user's own example - "the Black
+                # Death becomes a minor period of some sickness" - answered
+                # here, against the empire-wide figure, never against
+                # `loss`.
+                historical = h["staff_loss"]
+                med_relief = self.medical_diffusion_relief()
+                raw = historical * (1.0 - med_relief)
                 self.pop_deficit = 1.0 - (1.0 - self.pop_deficit) * (1.0 - raw)
                 self._pop_recovery_years = max(self._pop_recovery_years,
                                                 150.0 * (raw / 0.45))
@@ -1966,10 +2300,30 @@ class SocietyMixin:
                 # that came through nearly untouched does not read this
                 # empire-wide toll as its own.
                 if raw > 0.01:
-                    msg += (". Empire-wide, population -%d%% - wages (and "
+                    msg += (". Empire-wide, population -%d%%%s - wages (and "
                             "everything paid in them) stay dear for roughly "
                             "the next %d years either way"
-                            % (raw * 100, round(self._pop_recovery_years)))
+                            % (raw * 100,
+                               (" (the country's own public health has "
+                                "spread far enough to hold this below the "
+                                "%d%% this would otherwise have been - "
+                                "%d%% softer)"
+                                % (round(historical * 100),
+                                   round(med_relief * 100)))
+                               if med_relief > 0.02 else "",
+                               round(self._pop_recovery_years)))
+                elif med_relief > 0.02 and historical > 0.01:
+                    # THE COUNTRY CHANGED, SAY SO EVEN WHEN THE NUMBER
+                    # ROUNDS TO NOTHING. A founder whose diffused medicine
+                    # has cut a plague to under 1% empire-wide would
+                    # otherwise see no "Empire-wide" clause at all and have
+                    # no way to tell a mechanism that fired from one that
+                    # never existed.
+                    msg += (". Empire-wide: the country's own public health "
+                            "- not only yours - has spread far enough that "
+                            "this, historically a %d%% loss, barely "
+                            "registers"
+                            % round(historical * 100))
                 self.log.append((yr, msg))
             if "sack_chance" in h:
                 relief, why = self.hazard_relief("sack_chance")
