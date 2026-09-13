@@ -46,6 +46,14 @@ def survey():
         except Exception:
             continue
         for n in batch:
+            # A BRANCH FILE MAY HOLD A BARE STRING. At least one does, and
+            # this walked straight into `"...".get` and took the whole
+            # command down with an AttributeError - `survey` could not be
+            # run at all. treetool.py's own merge already guards the
+            # identical case (`if not isinstance(n, dict): continue`); this
+            # copy of the walk was simply missing it.
+            if not isinstance(n, dict):
+                continue
             for m in n.get("mat", {}):
                 if m not in goods:
                     mats[m] += 1

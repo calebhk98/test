@@ -247,7 +247,7 @@ def cmd_merge(a):
 
     base["nodes"] = [nodes[i] for i in sorted(nodes)]
     base["meta"]["goal_node"] = "point_contact_transistor"
-    json.dump(base, open(TREE, "w"), indent=1)
+    _write_json(base, TREE, a)
 
     print("merged  : %d nodes (%d added from branches)" % (len(nodes), added))
     print("errors  : %d" % len(errs))
@@ -497,10 +497,11 @@ def cmd_judge(a):
                 print("\n%s  %d %s" % (k, s, grade(s)))
                 for c, m in d:
                     print("    [%s] %s" % (c, m))
-    json.dump({k: {"score": s, "grade": grade(s), "defects": [c for c, _ in d]}
-               for k, (s, d) in results.items()},
-              open(os.path.join(DATA, "judgement.json"), "w"), indent=1)
-    print("\nwrote data/judgement.json")
+    _write_json({k: {"score": s, "grade": grade(s), "defects": [c for c, _ in d]}
+                 for k, (s, d) in results.items()},
+                os.path.join(DATA, "judgement.json"), a)
+    if not getattr(a, "dry_run", False):
+        print("\nwrote data/judgement.json")
     return 0
 
 
@@ -635,7 +636,7 @@ def cmd_repair(a):
         if "NO-FLOOR" in codes and n["tier"] >= 4:
             n["yrs"] = max(n["yrs"], 2.0); counts["calendar floors raised"] += 1
     tree["nodes"] = [nodes[i] for i in sorted(nodes)]
-    json.dump(tree, open(TREE, "w"), indent=1)
+    _write_json(tree, TREE, a)
     print("REPAIR PASS")
     for k, v in counts.most_common():
         print("   %-32s %d" % (k, v))
@@ -689,7 +690,7 @@ def cmd_apply_caps(a):
                     " [REVIEWED: prerequisite(s) %s added by a reviewer working node by node. "
                     "Reason: %s]" % (", ".join(got), fix.get("reason", "not given")))
     tree["nodes"] = [nodes[i] for i in sorted(nodes)]
-    json.dump(tree, open(TREE, "w"), indent=1)
+    _write_json(tree, TREE, a)
     print("APPLY REVIEWER-ASSIGNED PREREQUISITES")
     print("   edges applied                    %d" % applied)
     print("   nodes judged to need none        %d" % empty)
@@ -699,6 +700,27 @@ def cmd_apply_caps(a):
     for nid, (got, why) in list(reasons.items())[:12]:
         print("   %-34s + %-38s %s" % (nid[:34], ", ".join(got)[:38], why[:70]))
     return 0
+
+
+# WRITING IS A CHOICE, AND IT WAS NOT BEING OFFERED. Every one of this tool's
+# four subcommands rewrote a committed data file - tech_tree.json (2.8 MB) or
+# judgement.json (244 KB) - unconditionally, at the end of its run, with no way
+# to ask any of them merely to LOOK. So `judge`, which reads as a report
+# command and prints a report, silently replaced 244 KB of committed game data
+# as a side effect of being run; an agent doing nothing but timing it wiped the
+# file and only noticed because git said so. A tool whose read-only-sounding
+# verb mutates the repository is a trap, and it caught the first person to
+# walk past it.
+#
+# --dry-run says what would be written and writes nothing. The default is
+# unchanged - these commands still write, because that is what they are for
+# and existing callers depend on it - so this only adds a way to be careful.
+def _write_json(obj, path, a, indent=1):
+    """json.dump, unless --dry-run was asked for."""
+    if getattr(a, "dry_run", False):
+        print("would write %s (--dry-run: not written)" % os.path.basename(path))
+        return
+    json.dump(obj, open(path, "w"), indent=indent)
 
 
 def main():
@@ -715,6 +737,12 @@ def main():
     q.add_argument("--full", action="store_true")
     q.add_argument("--id")
     q.add_argument("--grade")
+    # ON EVERY SUBCOMMAND, not only the ones that look dangerous: all four
+    # write a committed data file, and which ones those are is exactly the
+    # thing a person running this for the first time does not know.
+    for _sp in sub.choices.values():
+        _sp.add_argument("--dry-run", action="store_true",
+                         help="say what would be written, write nothing")
     a = p.parse_args()
     return {"merge": cmd_merge, "judge": cmd_judge, "repair": cmd_repair,
             "apply-caps": cmd_apply_caps}[a.cmd](a)
