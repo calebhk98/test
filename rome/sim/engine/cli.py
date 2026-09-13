@@ -600,6 +600,19 @@ def _summarise(results, label):
     # explain either fact. The progress tables above already say how far
     # those same trials got; this says how many of them finished.
     print()
+    if k == 0:
+        # DO NOT SILENTLY PRINT A TABLE OF ZEROS. Zero successes out of N is
+        # a statement about THIS ORDER's luck under THIS horizon, not a
+        # verdict on the goal - recommended.json scores exactly this at a
+        # 500-700 year horizon while a computed order has reached 100%, same
+        # tree, same civilisation. Re-running this same order with a
+        # different --seed will not change that; a different ORDER might.
+        print("*** ZERO of %d trials reached the goal under this order. ***" % n)
+        print("    Before reading anything below as a verdict on the GOAL: this is a")
+        print("    known losing order at this horizon, not evidence the goal is out of")
+        print("    reach. 'plan' (critical-path method) or 'search' (dice-free, relaxed")
+        print("    against the binding constraint) compute a different order instead of")
+        print("    re-testing this one against more luck.")
     print("reached the goal    : %s" % _fmt_rate_ci(k, n))
     # --no-events IS NOT A NOISE-FREE BASELINE. See the --no-events help text
     # for the full explanation; this is the one-line reminder at the point
@@ -621,11 +634,7 @@ def _summarise(results, label):
         print("                      is no luck left for more trials to re-roll. This")
         print("                      is the order's single dice-free outcome, repeated.")
     if k == 0:
-        print("year reached        : (blank on purpose, not a bug) no trial reached the")
-        print("                      goal, so there is no year-to-goal distribution to")
-        print("                      report a median or quartile of. The rate line above,")
-        print("                      with its interval, is the only thing this batch")
-        print("                      supports saying about the outcome.")
+        pass  # already said above, plainly, before the rate line itself
     elif k < _MIN_SUCCESSES_FOR_QUANTILES:
         ys = sorted(r.goal_year for r in ok)
         print("year reached        : only %d success%s in %d trials - too few for a"
@@ -2033,6 +2042,7 @@ def cmd_sweep(a):
           (a.axis, "success", "95% CI", "median", "p25", "dominant failure"))
     print("-" * 92)
     any_thin = False
+    any_success = False
     for v in values:
         cfg, life = {}, None
         if key == "founder_life_mean":
@@ -2062,6 +2072,7 @@ def cmd_sweep(a):
         lo, hi = _wilson_interval(succ, len(res))
         thin = 0 < succ < _MIN_SUCCESSES_FOR_QUANTILES
         any_thin = any_thin or thin
+        any_success = any_success or succ > 0
         print("%-12s %7.0f%% %16s %8s %8s   %s" %
               (f"{v:,}", 100.0 * succ / len(res),
                "[%.0f%%,%.0f%%]" % (100.0 * lo, 100.0 * hi),
@@ -2074,6 +2085,23 @@ def cmd_sweep(a):
         print("* median from under %d successes - an anecdote, not a distribution;"
               % _MIN_SUCCESSES_FOR_QUANTILES)
         print("  trust the 95%% CI on success rate at that point instead.")
+    if not any_success:
+        # DO NOT SILENTLY PRINT A TABLE OF ZEROS. Every point on this sweep
+        # scored 0% - '%s' is a known-losing order at every value of %s
+        # tried here, at this horizon, not merely at one unlucky point on
+        # it. That is a statement about the ORDER, not about whether the
+        # goal is reachable at all (recommended.json scores exactly this
+        # while a computed order has reached 100%, same tree, same
+        # civilisation) - 'plan' or 'search' compute a different order
+        # instead of sweeping this one across more starting conditions.
+        print("\n*** EVERY point on this sweep scored 0%% - '%s' never reached the goal"
+              % a.strategy)
+        print("    at any %s tried, not only at one unlucky value. Before reading" % a.axis)
+        print("    anything above as 'this starting condition is impossible': this looks")
+        print("    like a known-losing ORDER at this horizon, not a fact about %s. Run"
+              % a.axis)
+        print("    'plan' (critical-path method) or 'search' (dice-free, relaxed against")
+        print("    the binding constraint) to compute a different order, then sweep that.")
 
 
 def cmd_goals(a):
