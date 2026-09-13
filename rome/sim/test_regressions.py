@@ -11270,6 +11270,45 @@ check("the ending screen's final_report carries the score, not just the "
       _final_sc.get("score", {}).get("total") is not None, _final_sc.get("score"))
 check("...and renders as part of the same page, not a separate dump",
       "SCORE" in _RF(_final_sc) and "TOTAL:" in _RF(_final_sc), _RF(_final_sc)[:200])
+
+# --- POINTS: a number to compare runs with, alongside the percentage, not
+# instead of it - and still the same capped total, just rescaled.
+check("a won run's score carries a points figure beside the percentage",
+      _final_sc["score"].get("points") is not None, _final_sc["score"])
+check("points is a lossless, exact rescaling of the SAME capped total - "
+      "1000 for a perfect run - never a second figure computed some other "
+      "way that could disagree with the percentage",
+      _final_sc["score"]["points"] == round(_final_sc["score"]["total"] * 1000),
+      (_final_sc["score"]["points"], _final_sc["score"]["total"]))
+check("...and it is printed on the rendered score screen too, not only in "
+      "the JSON a script would read",
+      "1000 points" in _RF(_final_sc) or "/ 1000" in _RF(_final_sc),
+      _RF(_final_sc)[:400])
+check("a run with no score at all (goal never reached) has no points "
+      "either - nothing invented to fill a number in",
+      _rep_nogoal.get("points") is None, _rep_nogoal.get("points"))
+# PERFECT SCORE NEVER EXCEEDS 1000. Every component clamps its own
+# normalized figure to [0, 1] before SCORE_WEIGHTS (which sum to exactly
+# 1.0 - checked above) are applied, so there is no way to push `total`
+# past 1.0 and no way to push `points` past 1000 - confirmed directly
+# against a household built to max out every component at once, not just
+# argued from the formula.
+_s_perfect = sim(capital=5_000_000.0)
+_s_perfect.goal_year = _s_perfect.year + 1
+_s_perfect.reputation = 1e9
+_s_perfect.scandal = -1e9
+_s_perfect.done = set(NODES)
+_s_perfect._done_changed()
+_s_perfect.inst_units = {k: 1e9 for k in _s_perfect.SCALABLE_INSTITUTIONS}
+for _cik in _s_perfect.CAPABILITY_INSTITUTIONS:
+    _s_perfect.operating.add(_cik)
+_rep_perfect = _SCORE(_s_perfect, NODES)
+check("even a household built to overdrive every single component at "
+      "once cannot push the percentage past 100% or the points past 1000",
+      _rep_perfect["total"] <= 1.0 + 1e-9
+      and _rep_perfect["points"] <= 1000,
+      (_rep_perfect["total"], _rep_perfect["points"]))
+
 # --- the missing case: a concern with NO slack at all, where losing one
 # more person of its trade closes it outright - not just "within N of
 # closure" but the recurring income at stake and the command that fixes it.

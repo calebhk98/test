@@ -1591,11 +1591,43 @@ def score_report(s, nodes):
     total = None
     if goal_reached and all(c["normalized"] is not None for c in components.values()):
         total = round(sum(c["weighted"] for c in components.values()), 4)
+    # A NUMBER TO COMPARE RUNS WITH, NOT ONLY A PERCENTAGE. A player asked
+    # for exactly this: a percentage answers "how much of the possible
+    # score", a point figure answers "how did this run do against that
+    # one", and the second question is what a player comparing two
+    # civilisations or two seeds is actually asking.
+    #
+    # STILL CAPPED, ON PURPOSE. `total` above can never exceed 1.0: every
+    # one of the seven components clamps its own "normalized" figure to
+    # [0, 1] before the weights (SCORE_WEIGHTS, which sum to exactly 1.0)
+    # are applied, so there is no way to run one component past its own
+    # ceiling and buy points nowhere else has to pay for - a literacy of
+    # 400% is not four times as literate, and an uncapped score would make
+    # farming whichever single component is cheapest to overdrive the
+    # dominant strategy, not balanced achievement across all seven. POINTS
+    # is a plain, lossless rescaling of the SAME capped `total` - it is
+    # not a second, less honest score computed some other way.
+    #
+    # 1,000 POINTS FOR A PERFECT RUN, chosen over the obvious alternative
+    # of just multiplying the percentage by 100 (which would only ever
+    # repeat a number already on the screen) for two reasons: a three-digit
+    # spread (0-1000) reads, at a glance, as a score rather than a percent
+    # sign that fell off, the way golf strokes or exam marks out of a
+    # thousand do; and it carries exactly one more digit of resolution than
+    # the percentage already shows (1 point = 0.1%), which is as much
+    # precision as a figure built from normalized fractions and fixed
+    # weights honestly has - inventing a bigger scale would imply the
+    # model can discriminate finer than it does.
+    points = round(total * 1000) if total is not None else None
     out = {"goal_in_words": (s.nodes[goal]["name"] if goal in getattr(s, "nodes", {})
                              else None),
            "goal_reached": goal_reached, "goal_year": s.goal_year,
            "end_reason": end_reason,
-           "components": components, "total": total}
+           "components": components, "total": total, "points": points,
+           "points_scale": "0-1000, 1000 for a perfect run across every "
+                           "component - the same capped total above, "
+                           "rescaled for a figure to compare runs with, "
+                           "not a second score computed differently"}
     if not goal_reached:
         out["no_score"] = "the goal was not reached"
     out["achievements"] = _score_achievements(s, nodes)
@@ -1635,7 +1667,8 @@ def _score_lines(out, indent="  "):
                     "%.4f" % c["weighted"]))
     L.append("")
     if out.get("total") is not None:
-        L.append("%sTOTAL: %.1f%%" % (indent, out["total"] * 100))
+        L.append("%sTOTAL: %.1f%%  (%s / 1000 points)"
+                 % (indent, out["total"] * 100, _fmt_num(out.get("points"))))
     else:
         L.append("%sTOTAL: -- (%s)" % (indent, out.get("no_score")
                  or "not computable until the run ends under fog"))
