@@ -29,11 +29,17 @@ without decoupling it. That is worth knowing before you plan any refactor.
     engine/society.py   reputation, patronage, state interest, hazards.
     engine/fog.py       what the player is allowed to see.
     engine/geography.py where things are, per civilisation.
-    engine/protocol.py  the JSON command layer - `agent` mode. The largest
-                        single file by code volume.
-    engine/cli.py       argparse, `run`/`compare`/`sweep`/`play`, reporting.
-    test_regressions.py the suite. A flat script: checks run at import, in
-                        file order.
+    engine/protocol.py  an 81-line shim. The JSON command layer itself is
+                        engine/proto/, twelve modules; `agent` mode. Everything
+                        importable from engine.protocol still is.
+    engine/proto/       dispatch (the command table), render, techtree, state,
+                        economy, typed, help, saveload, score, util, nodes,
+                        ventures.
+    engine/cli.py       argparse, `run`/`compare`/`sweep`/`plan`/`search`/
+                        `play`, reporting.
+    test_regressions.py a 33-line shim. The suite is tests/, 32 topic modules
+                        plus a harness and a runner. `--only <topics>` runs
+                        part of it; `--list` names them.
     perf_fingerprint.py proves a change did not alter the simulation.
 
 ## The import graph is fine
@@ -89,23 +95,40 @@ unchanged, because that is the part nothing currently guards.
 
 Measured code lines, excluding comments and blank lines:
 
-    test_regressions.py   9,546 code   (13,650 total, 24% comment)
-    protocol.py           5,430 code   ( 9,164 total, 36% comment)
-    cli.py                1,909 code
-    economy.py            1,493 code
-    society.py            1,122 code
-    projects.py           1,076 code
-    core.py                 893 code   ( 2,214 total, 58% comment)
-    labour.py               743 code   ( 2,089 total, 60% comment)
+    cli.py                2,128 code
+    economy.py            1,514 code
+    proto/dispatch.py     1,507 code
+    proto/render.py       1,337 code
+    society.py            1,114 code
+    projects.py           1,071 code
+    core.py                 913 code   ( 2,363 total, 61% comment)
+    labour.py               739 code   ( 2,085 total, 65% comment)
+    protocol.py              65 code   (the shim)
+    test_regressions.py       5 code   (the shim)
 
 Five of eight engine files are **majority comment**. `core.py` looks like a
 2,200-line file and is 893 lines of code. Splitting those by line count would
 shuffle prose between files and buy nothing; the comments are how agents hand
 each other the reason a thing is the way it is, and they are load-bearing.
 
-The two genuine outliers are `test_regressions.py` and `protocol.py`.
-`protocol.py` is a command dispatcher and splits along command groups with
-low coupling, unlike the mixins.
+The two genuine outliers WERE `test_regressions.py` and `protocol.py`, and
+both have since been split - see the layout above. What made them worth
+splitting was not their line count:
+
+  * `protocol.py`'s `_agent_dispatch_inner` was a single if/elif chain with a
+    cyclomatic complexity of **395**, about eight times the point at which a
+    function stops being readable. It is now forty handlers behind a dict,
+    complexity 34, with an import-time assertion tying that dict to
+    KNOWN_COMMANDS so the two cannot drift. Pulling it apart immediately
+    exposed a handler referencing a variable that only existed in the old
+    enclosing scope - dead from the moment it was extracted, and unfindable
+    while it was buried.
+  * `test_regressions.py` was a flat script, so checks ran at import in file
+    order and nothing could be run selectively. `--only mines,demographics`
+    now runs 44 checks in 2 seconds where the whole suite takes 68.
+
+The engine mixins were left alone, for the reasons above. Splitting them by
+line count would move prose between files and buy nothing.
 
 ## Where the data lives, and who reads it
 
