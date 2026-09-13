@@ -2370,6 +2370,13 @@ class ProjectsMixin:
             return
         del self.active[k]
         self.bountied.discard(k)
+        # A FINISHED PROJECT CANNOT BE GIVEN MORE HOURS. Unlike stopping or
+        # halting one - both of which carry what was already paid forward
+        # if the player starts the same id again, see start_project's own
+        # `_paid_now` - there is no "again" once it is done, so a standing
+        # order aimed at this id would otherwise sit in `allocate`'s list
+        # for ever, pointed at nothing.
+        self.hour_allocations.pop(k, None)
         self.done.add(k)
         self._done_changed()
         self.done_year[k] = self.year

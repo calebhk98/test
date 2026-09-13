@@ -109,6 +109,27 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.contract_hours = {}         # trade -> hours bought this year, by the job
         self.commissioned = {}           # trade -> hours bought this year, cumulative log
         self.teaching_hours_this_year = 0.0
+        # A STANDING INSTRUCTION, NOT A ONE-TURN COMMAND. {project id: hours
+        # a year} for every project the player has told step() to give a
+        # fixed share of their own hours to, every year, without having to
+        # retype it - this game is played over hundreds of turns. The
+        # reserved key "work" is the same standing instruction for selling
+        # hours as wages (see `work_trade` just below): "work" is never a
+        # node id, so it can never collide with one. Read ONLY by step()'s
+        # own allocator (core.py, "5. progress") and reported back verbatim
+        # by `portfolio` (protocol.py) - see that loop's own comment on why
+        # an explicit allocation has to flow through the exact code that
+        # already decides and reports the ordinary, undirected split, not a
+        # second path that could disagree with it. Hours nobody has
+        # directed are untouched by this and keep being shared out by
+        # priority exactly as before - a player who never calls `allocate`
+        # sees no change at all.
+        self.hour_allocations = {}
+        # WHICH TRADE "work" IN hour_allocations SELLS HOURS AS. A STANDING
+        # hour-allocation for wages has to name one, the same way the `work`
+        # command itself takes a trade argument every time it is typed; this
+        # is that argument, remembered.
+        self.work_trade = None
         self.trade_hours_used = {}       # trade -> hours consumed by projects this year
         self.mothballed = set()          # completed works you shut down on purpose
         self.forgotten = {}              # {node: year} destroyed by a sacking
@@ -1113,6 +1134,55 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                                      "the last %ss are gone; you begin teaching "
                                      "more" % t))
 
+        # 4a(ii). THE STANDING "WORK" DIRECTIVE. `work` (protocol.py) sells
+        # hours for wages the moment a player types it; `allocate` lets them
+        # say "sell N hours a year this way" ONCE and have it happen every
+        # year without retyping it, the same standing-instruction idea as
+        # the project directives just below. Run BEFORE `pool` is struck so
+        # director_hours_committed() (which counts wage hours already sold
+        # this year) sees it, exactly as it would if the player had typed
+        # `work` by hand a moment ago.
+        #
+        # TOPPED UP, NOT DOUBLED. A player who already called `work` by hand
+        # earlier this same turn has already sold some of the hours this
+        # directive wants; this only sells the remainder, never the whole
+        # directive again on top of what was already sold.
+        _wd = self.hour_allocations.get("work")
+        if _wd and _wd > 0 and self.work_trade:
+            _already = getattr(self, "wage_hours_this_year", 0.0)
+            _want = max(0.0, _wd - _already)
+            if _want > 0.5:
+                _room = max(0.0, self.director_pool() - self.director_hours_committed())
+                _take = min(_want, _room)
+                _got = 0.0
+                if _take > 0.5:
+                    _pay, _werr = self.work_for_wages(self.work_trade, _take)
+                    # pay > 0 with an error is a WARNING (a bad trade, or
+                    # starving an active project of its last hours), not a
+                    # refusal - see work_for_wages's own docstring. The sale
+                    # happened either way; only a genuine refusal (pay <= 0)
+                    # means none of it landed.
+                    if _pay > 0 or not _werr:
+                        _got = _take
+                # SAY SO, THE SAME WAY AN UNHONOURED PROJECT DIRECTIVE DOES,
+                # BELOW. A standing instruction nobody is told failed is the
+                # same unfairness either way: the founder-hours it asked for
+                # either went unsold or went somewhere the player never
+                # chose.
+                if _wd - (_already + _got) > 1.0:
+                    self.log.append((yr, "DIRECTED HOURS UNUSED: your standing "
+                                         "order to sell %s hours a year as a "
+                                         "%s only managed %s this year - %s. "
+                                         "'allocate' changes or clears it"
+                                     % ("{:,.0f}".format(_wd), self.work_trade,
+                                        "{:,.0f}".format(_already + _got),
+                                        "no more of your own hours were left "
+                                        "to sell once your projects and "
+                                        "training had theirs"
+                                        if _room < _want else
+                                        "nobody here will pay for that trade "
+                                        "any longer" )))
+
         # 4b. start new projects
         pool = max(0.0, self.director_pool() - self.director_hours_committed())
         hired_left = self.hired_cap()
@@ -1323,7 +1393,23 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         #    attention finishes nothing, which is a real failure mode but not the
         #    one we are trying to model here.
         rank = {k: i for i, k in enumerate(self.order)}
-        active_sorted = sorted(self.active, key=lambda k: rank.get(k, 9999))
+        # A STANDING ALLOCATION IS A PROMISE, NOT A PRIORITY BID. Without
+        # this, a project the player explicitly told `allocate` to give 500
+        # hours a year could still be starved by three higher-`order`
+        # undirected projects taking the whole pool first - the exact
+        # opposite of what asking for an explicit split means. Every project
+        # the player has put a standing instruction on is moved to the
+        # FRONT of the queue (still ordered among themselves by the usual
+        # priority, so two directed projects do not disagree about which of
+        # them goes first); everything without one shares whatever is left
+        # exactly as it always has, by the same `order`-based priority. A
+        # player who never calls `allocate` has an empty hour_allocations,
+        # every project sorts into the same single undirected bucket it
+        # always did, and this line changes nothing for them.
+        active_sorted = sorted(
+            self.active,
+            key=lambda k: (0 if self.hour_allocations.get(k, 0.0) > 0 else 1,
+                           rank.get(k, 9999)))
         remaining = pool
         self.trade_hours_used = {}
         # Summed as the loop runs, not re-read from self.active afterwards,
@@ -1342,6 +1428,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # Collected here and logged once, after the loop, so a step that
         # starves three projects at once gets one clear line, not three.
         _arrears_hours_lost = []
+        # AN ALLOCATION THE PLAYER EXPLICITLY ASKED FOR, AND DID NOT GET.
+        # hour_allocations is a promise the player made about their OWN one
+        # resource that never banks; silently handing back less than it
+        # asked for - because the project's own pace, its trade, or its
+        # money was the real ceiling, not the founder's hours - is the same
+        # unfairness the arrears line above exists to stop, aimed at a
+        # player who took the extra step of directing their hours on
+        # purpose. Collected here, per project, and logged once below.
+        _directed_hours_unused = []
         # WHY A PROJECT IS GETTING THE SHARE IT IS GETTING, STORED HERE AND
         # NOWHERE ELSE. A player who had already won the game asked for
         # exactly this: "this project is receiving 420 of your 25,000
@@ -1431,7 +1526,23 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # rather than re-derived, so 'work's own pre-sale warning
                 # about starving an active project can never disagree with
                 # what this loop actually offers it.
-                per = min(remaining, self.project_hour_pace(k)) * self.throttle
+                #
+                # A STANDING ALLOCATION IS A CEILING, NOT A FLOOR. hour_
+                # allocations.get(k) is only ever a THIRD candidate in this
+                # min() - never a reason to offer MORE than remaining or the
+                # project's own pace would otherwise allow - so a directed
+                # project can still never outrun the pool it shares with
+                # everything else, and never get hours faster than its own
+                # calendar floor could ever use. What it changes is ORDER
+                # (active_sorted, above) and that an undirected project
+                # never crowds this one out of the share the player asked
+                # for it to have.
+                _dir_hours = self.hour_allocations.get(k)
+                _pace_cap = self.project_hour_pace(k)
+                if _dir_hours and _dir_hours > 0:
+                    per = min(remaining, _pace_cap, _dir_hours) * self.throttle
+                else:
+                    per = min(remaining, _pace_cap) * self.throttle
                 remaining -= per
                 # WHAT WAS ACTUALLY TAKEN OFF, which is not the same as what was
                 # offered: `per` is allowed to exceed ph_left (the max() above
@@ -1456,6 +1567,41 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # `per` had been offered in full and half of it handed straight
                 # back. See hours_this_year in `state`.
                 st["hours_offered_this_year"] = round(per, 1)
+                # WHAT THE PLAYER ACTUALLY ASKED FOR, READ BACK AT THE END OF
+                # THE YEAR - `portfolio` and `why` print this field verbatim,
+                # same reasoning as pool_total_this_year and its neighbours
+                # just above: never recompute a number a player is told,
+                # always read the one this loop actually used.
+                st["hours_directed_this_year"] = (round(_dir_hours, 1)
+                                                  if _dir_hours else None)
+                # SAY SO WHEN THE PROMISE ITSELF WAS NOT KEPT, before any
+                # trade or money shortfall even has a chance to bite further
+                # in. A directive can be cut short right here, two ways: the
+                # POOL had already given the rest away (to a higher-priority
+                # directed project, or simply was not big enough for every
+                # standing order at once), or this project's OWN pace -
+                # what is left to do, or its calendar floor - could not use
+                # that many hours even with the whole pool behind it. Either
+                # is a real, nameable reason; "it disappeared" is not.
+                if _dir_hours and _dir_hours > 0 and _dir_hours - per > 1.0:
+                    if self.throttle < 0.98 and self.binding and _pace_cap >= _dir_hours - 0.5:
+                        _directed_hours_unused.append((k, round(_dir_hours - per, 0),
+                            "a shortage of %s has every project (this one "
+                            "included) running at %d%% of the pace its "
+                            "hours alone would allow"
+                            % (self.binding, round(self.throttle * 100))))
+                    elif _pace_cap * self.throttle < _dir_hours - 0.5:
+                        _directed_hours_unused.append((k, round(_dir_hours - per, 0),
+                            "its own pace this year - at most %s hours, set "
+                            "by how much of it is left to do or its "
+                            "calendar floor, not by your hours - could not "
+                            "use the rest" % "{:,.0f}".format(_pace_cap * self.throttle)))
+                    else:
+                        _directed_hours_unused.append((k, round(_dir_hours - per, 0),
+                            "your other standing allocations and active "
+                            "work already claimed the rest of this year's "
+                            "%s hours before this one's turn came"
+                            % "{:,.0f}".format(_pool_total_this_year)))
                 refunded = 0.0
                 st["yrs"] += 1
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
@@ -1622,6 +1768,34 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # happen, about the one resource the whole game is built on.
                 st["hours_effective_this_year"] = round(max(0.0, spent_hours - refunded), 1)
                 hours_effective_total += st["hours_effective_this_year"]
+                # THE SECOND WAY A DIRECTIVE GOES UNHONOURED: OFFERED, THEN
+                # HANDED BACK. Unlike the check above this one, it must NOT
+                # fire just because spent_hours fell short of `per` - a
+                # project a few hours from finished is offered a whole
+                # year's pace and only needs a sliver of it, which is not a
+                # shortage of anything, it is the project ending. Gated on
+                # why_underfunded/short_of_trade actually being SET this
+                # year - fields only the money and trade-shortage branches
+                # above ever write - so this can only ever name a real
+                # shortfall, never mistake "it finished" for one.
+                if _dir_hours and _dir_hours > 0:
+                    _inner_gap = st["hours_offered_this_year"] - st["hours_effective_this_year"]
+                    # DEEP ARREARS ALREADY GETS ITS OWN LINE, BELOW - "IN
+                    # ARREARS: ... did almost nothing this year" - and it is
+                    # the sharper warning of the two. Saying the same
+                    # shortfall twice in two different voices is not
+                    # clearer, it is just noise; this fires only for the
+                    # money-short case arrears does NOT already cover (the
+                    # purse-can-only-absorb-so-much-a-year pace, which is
+                    # real money trouble without capital actually being
+                    # negative).
+                    if _inner_gap > 1.0 and st.get("why_underfunded") and self.capital >= 0:
+                        _directed_hours_unused.append(
+                            (k, round(_inner_gap, 0), st["why_underfunded"]))
+                    elif _inner_gap > 1.0 and st.get("short_of_trade"):
+                        _directed_hours_unused.append((k, round(_inner_gap, 0),
+                            "trade hours already booked: " + ", ".join(
+                                sorted(st["short_of_trade"])[:2])))
                 # Count it HERE, after the hired-hours scaling and the
                 # affordability clamp, not before them. Accumulating the
                 # notional figure made project_spend_last_year disagree with
@@ -1672,6 +1846,24 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                                  "losing them here; clearing the arrears is what "
                                  "stops it happening again"
                              % ("{:,.0f}".format(_total_lost), _names)))
+
+        # A STANDING ALLOCATION THE PLAYER GAVE, AND DID NOT GET - SAID, NOT
+        # LEFT FOR THEM TO NOTICE. `allocate` is a promise about the one
+        # resource that never banks; silently falling short of it is the
+        # same unfairness the arrears line above exists to stop, aimed at a
+        # player who took the extra step of directing their hours on
+        # purpose rather than leaving the split to priority order. Sorted
+        # by id for a deterministic order across runs with the same seed -
+        # several projects can be cut short in the same year.
+        if _directed_hours_unused:
+            for _k, _hr, _why in sorted(_directed_hours_unused):
+                self.log.append((yr, "DIRECTED HOURS UNUSED: you allocated hours "
+                                     "to %s this year that it could not use - "
+                                     "%s of them went begging because %s. "
+                                     "'portfolio' shows the rest; 'allocate' "
+                                     "changes or clears the standing order"
+                                 % (self.nodes[_k]["name"],
+                                    "{:,.0f}".format(_hr), _why)))
 
         # Snapshot BEFORE 5b spends more of `remaining` on wage work: otherwise
         # offered_to_projects below double-counts wage hours as though they had

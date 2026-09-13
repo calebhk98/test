@@ -633,6 +633,11 @@ def _portfolio_rows(nodes, active_out):
             # that could end up disagreeing with what was actually applied.
             "hours_offered_this_year": a.get("hours_offered_this_year"),
             "hours_effective_this_year": a.get("hours_effective_this_year"),
+            # THE STANDING ORDER ITSELF, same read-not-recomputed rule as
+            # its four neighbours - None for every project nobody has
+            # directed, which is most of them on any save that predates
+            # `allocate` or never uses it.
+            "hours_directed_this_year": a.get("hours_directed_this_year"),
             "pool_rank_this_year": a.get("pool_rank_this_year"),
             "pool_active_count_this_year": a.get("pool_active_count_this_year"),
             "pool_total_this_year": a.get("pool_total_this_year"),
@@ -881,8 +886,11 @@ def render_portfolio(out):
         for r in rows:
             _rank = r.get("pool_rank_this_year")
             _count = r.get("pool_active_count_this_year")
+            _directed = r.get("hours_directed_this_year")
             L.append("")
-            L.append("  %-28s [%s]" % (r["name"], r["constraint"].replace("_", " ")))
+            L.append("  %-28s [%s]%s" % (r["name"], r["constraint"].replace("_", " "),
+                                         "  (allocate: %s hrs/yr)" % _fmt_num(_directed)
+                                         if _directed else ""))
             L.append("    this year: %s offered, %s effective, of %s hrs "
                      "total to go%s"
                      % (_fmt_num(r.get("hours_offered_this_year")),
@@ -1744,6 +1752,13 @@ def _agent_state(s, nodes, cmd=None):
                      # playtester in deep arrears saw hours offered and none
                      # effective, with nothing anywhere explaining the gap.
                      "why_underfunded": st.get("why_underfunded"),
+                     # THE PLAYER'S OWN STANDING ORDER, READ BACK FROM THE
+                     # SAME PLACE AS THE FOUR ABOVE - None when nothing was
+                     # ever directed here, which keeps an undirected
+                     # project's reply byte-for-byte what it always was.
+                     # See `allocate` and core.py step()'s own comment on
+                     # hour_allocations.
+                     "hours_directed_this_year": st.get("hours_directed_this_year"),
                      "bountied": k in s.bountied}
     end_reason = _agent_end_reason(s)
     full = bool((cmd or {}).get("full"))
@@ -2318,6 +2333,14 @@ def _agent_help(s, topic=None):
             "hire / fire / train / commission": "see the labour topic",
             "buy": "forest, nitre, mine, slaves, or manumit; see the economy topic",
             "work <trade> <hours>": "do an ordinary job for ordinary pay",
+            "allocate <id> <hours>": "a STANDING order: give this active "
+                "project this many of your own hours every year from now "
+                "on, ahead of anything you have not directed; 'allocate "
+                "<id> 0' (or 'off') clears it. 'allocate work <trade> "
+                "<hours>' is the same standing order for selling hours as "
+                "wages instead of a project. Bare 'allocate' lists what is "
+                "currently set; hours nobody directs keep being shared out "
+                "by priority exactly as before",
             "bounty <id>": "pay someone else to solve it instead",
             "open <id>": "start actually running something you have worked out "
                          "how to do; until you do, it earns nothing and costs "
@@ -5370,7 +5393,7 @@ def _flag(v, default=False):
 KNOWN_COMMANDS = (
     "state", "available", "why", "path", "start", "stop", "rush", "step",
     "money", "risk", "values", "labour", "policy", "help", "log",
-    "hire", "fire", "train", "commission", "work",
+    "hire", "fire", "train", "commission", "work", "allocate",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
     "open", "ventures", "withdraw", "mines", "stuck",
     "capacity", "economy", "changes", "score", "portfolio",
@@ -5427,6 +5450,7 @@ TYPED_ALIASES = {
     "infrastructure": "capacity", "power": "capacity",
     "prices": "economy", "econ": "economy",
     "diff": "changes", "recap": "changes", "summary": "changes",
+    "direct": "allocate", "assign": "allocate", "split": "allocate",
 }
 
 
@@ -5923,6 +5947,45 @@ def parse_typed(line):
         # 'close mine coal' and 'close coal' both mean the one thing close does.
         mat = words[1].lower() if len(words) > 1 else words[0].lower()
         return {"cmd": "close", "what": mat, "material": mat}, None
+
+    if op == "allocate":
+        # Bare 'allocate' lists the standing orders in hand, same as bare
+        # 'policy' lists the automatic switches.
+        if not rest:
+            return {"cmd": "allocate"}, None
+        if not words:
+            return None, ("say which project, or 'work', e.g. 'allocate "
+                          "arithmetic_positional 500' or 'allocate work "
+                          "labourer 100'.")
+        target = words[0]
+        _clear = any(w.lower() in ("off", "none", "clear", "stop")
+                    for w in words[1:]) or (bool(nums) and nums[0] == 0)
+        if target.lower() == "work":
+            out = {"cmd": "allocate", "id": "work"}
+            trade = next((w.lower() for w in words[1:]
+                         if w.lower() not in ("off", "none", "clear", "stop")),
+                        None)
+            if trade:
+                out["trade"] = trade
+            if _clear:
+                out["hours"] = 0
+            elif nums:
+                out["hours"] = nums[0]
+            else:
+                return None, ("say how many hours a year, e.g. 'allocate "
+                              "work labourer 100', or 'allocate work off' "
+                              "to clear.")
+            return out, None
+        out = {"cmd": "allocate", "id": target}
+        if _clear:
+            out["hours"] = 0
+        elif nums:
+            out["hours"] = nums[0]
+        else:
+            return None, ("say how many hours a year, e.g. 'allocate %s "
+                          "500', or 'allocate %s off' to clear."
+                          % (target, target))
+        return out, None
 
     if op == "policy":
         if not rest:
@@ -7000,6 +7063,92 @@ def _agent_dispatch_inner(s, nodes, cmd):
         if err:
             out["but"] = err
         return out
+
+    if op == "allocate":
+        # A STANDING INSTRUCTION, NOT A ONE-TURN COMMAND. "Divide your own
+        # year's hours yourself": `start` and `work` already let a player
+        # act for one year at a time, and a player who wants a fixed split
+        # - 100 hours a year of manual work, 500 to one project, 1400 to
+        # another - had no way to say so once and have it stand, in a game
+        # played over hundreds of turns. This writes s.hour_allocations,
+        # which core.py's step() - and nowhere else - reads; `portfolio`
+        # below reads the same numbers step() actually applied, never a
+        # second guess at them. See core.py's own long comment on exactly
+        # how a directive changes the allocator (order, not ceiling) and
+        # what happens when it cannot be honoured.
+        k = cmd.get("id")
+        if k is None:
+            _rows = [{"id": kk, "hours_a_year": hh}
+                     for kk, hh in sorted(s.hour_allocations.items()) if kk != "work"]
+            _out = {"ok": True, "allocations": _rows or "none"}
+            if s.hour_allocations.get("work"):
+                _out["work"] = {"trade": s.work_trade,
+                                "hours_a_year": s.hour_allocations["work"]}
+            _out["note"] = (
+                "hours you have NOT directed keep being shared out by "
+                "priority, exactly as before - this only affects what you "
+                "have explicitly put here. {\"cmd\":\"allocate\",\"id\":X,"
+                "\"hours\":N} sets or replaces one; hours 0 (or leaving "
+                "hours out) clears it. id \"work\" sells hours for wages "
+                "every year instead of a project - it also needs \"trade\".")
+            return _out
+        hours = cmd.get("hours")
+        hours = 0.0 if hours is None else _num(hours, -1.0)
+        if hours < 0:
+            return {"ok": False, "error": "hours must be a number, 0 or "
+                                          "more. 0 clears the standing order."}
+        if k == "work":
+            if hours <= 0:
+                had = s.hour_allocations.pop("work", None)
+                s.work_trade = None
+                return {"ok": True, "cleared": "work",
+                        "had_been": had} if had else {"ok": True, "cleared": "work"}
+            trade = cmd.get("trade") or s.work_trade
+            if not trade:
+                return {"ok": False,
+                        "error": "say which trade to sell hours as, e.g. "
+                                 "{\"cmd\":\"allocate\",\"id\":\"work\","
+                                 "\"trade\":\"labourer\",\"hours\":100}"}
+            if trade not in WAGES:
+                here = sorted(t for t in WAGES if s.trade_available(t))
+                return {"ok": False, "error": "no such trade. you could work "
+                                              "as: " + ", ".join(here)}
+            if not s.trade_available(trade):
+                return {"ok": False,
+                        "error": "nobody here will pay you to be a %s yet: "
+                                 "the trade does not exist in this society. "
+                                 "Teach it first with train." % trade}
+            s.hour_allocations["work"] = float(hours)
+            s.work_trade = trade
+            return {"ok": True, "set": "work", "trade": trade,
+                    "hours_a_year": float(hours),
+                    "note": "this much of your own pool is sold for wages as "
+                            "a %s every year from now on, topping up anything "
+                            "you sell by hand the same year, before your "
+                            "projects see what is left. 'allocate' with "
+                            "hours 0 clears it" % trade}
+        if k not in nodes:
+            return {"ok": False, "error": "unknown node id %r. 'state' lists "
+                                          "what is active" % k}
+        if k not in s.active:
+            return {"ok": False,
+                    "error": "%s is not active, so there is nothing for a "
+                             "directive to apply to yet. 'start' it first, "
+                             "then 'allocate' it hours" % k}
+        if hours <= 0:
+            had = s.hour_allocations.pop(k, None)
+            return ({"ok": True, "cleared": k, "had_been_a_year": had}
+                    if had else {"ok": True, "cleared": k})
+        s.hour_allocations[k] = float(hours)
+        return {"ok": True, "set": k, "name": nodes[k]["name"],
+                "hours_a_year": float(hours),
+                "note": "this many of your own hours go to %s every year "
+                        "from now on, ahead of anything you have not "
+                        "directed - it can still never exceed what the pool "
+                        "has or what this project's own pace can use; "
+                        "'portfolio' shows what it actually gets each year "
+                        "and why. 'allocate' with hours 0 clears it"
+                        % nodes[k]["name"]}
 
     if op in ("risk", "hazards"):
         kr = s.knowledge_risk()
@@ -8290,6 +8439,12 @@ SAVE_FIELDS = (
     "employees", "trades_created", "policy", "mothballed", "operating",
     "forgotten", "opened_year", "last_taught", "paid_towards",
     "contract_hours",
+    # "ALLOCATE" IS A STANDING INSTRUCTION, NOT A ONE-TURN COMMAND - see
+    # core.py's own comment on hour_allocations. Like `policy`, it has to
+    # survive a save or a player who set it once would see it quietly
+    # revert to "let the allocator decide" on every resume, which is the
+    # exact silent-reset fault `policy` itself was fixed for.
+    "hour_allocations", "work_trade",
     "commissioned", "teaching_hours_this_year", "wages_paid",
     "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",
     # Counters and within-year tallies that were being silently reset on every
