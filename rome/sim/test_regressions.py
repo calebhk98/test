@@ -628,20 +628,40 @@ check("no ordinary reply is a wall of text",
       all(v < 6000 for v in sizes.values()), str(sizes))
 
 # a late-game available must not blow up either: it was 165KB at year 250.
-# 150 simulated years to get the tree open enough to be worth measuring.
-def _late_available():
-    s = sim(capital=1e6, manual=False)
-    s.fog = True
-    for _ in range(150):
-        s.step()
-    avail = S._agent_available(s, NODES)
-    digest = len(json.dumps(avail))
-    return (digest < 12000,
-            "%d bytes at year %d with %d things startable"
-            % (digest, s.year, avail["count"]))
+#
+# THIS USED TO STEP A REAL SIM 150 YEARS to get the tree open enough to be
+# worth measuring - 44s of wall time to populate s.done, for a state that
+# then had only 12 things concurrently startable. But _agent_available is a
+# pure function of s.done/s.operating/fog (via can_start/start_reason,
+# neither of which reads anything about how a node got marked done) - it
+# does not care whether `done` was populated by 150 years of the optimizer's
+# own choices or written directly. Constructing it directly is not a weaker
+# test of the same thing, it is a HARDER one: a natural 150-year run leaves
+# the frontier narrow (12 startable) because the optimizer greedily closes
+# off branches as it goes, while cutting an arbitrary slice of ORDER opens
+# unrelated branches all over the tree at once - 251 things startable at the
+# 30% cut below, 21x what the real run ever produced - which is exactly the
+# case a "stays a summary, never a dump" claim needs to survive. Two
+# fractions, not one: how many nodes cross from locked to startable is not
+# monotonic in how much of the tree is done, so a single cut point could get
+# lucky and land somewhere unusually tame.
+def _tree_opens_up():
+    out = []
+    for frac in (0.30, 0.55):
+        s = sim(capital=1e6, manual=False)
+        s.fog = True
+        cut = int(len(ORDER) * frac)
+        s.done.update(ORDER[:cut])
+        s._done_changed()
+        avail = S._agent_available(s, NODES)
+        digest = len(json.dumps(avail))
+        out.append((digest < 12000,
+                    "%d bytes at %d%% of tree done with %d things startable"
+                    % (digest, int(frac * 100), avail["count"])))
+    return all(ok for ok, _ in out), "; ".join(d for _, d in out)
 
 
-slow_check("available stays a summary as the tree opens up", _late_available)
+slow_check("available stays a summary as the tree opens up", _tree_opens_up)
 
 # --- the menu: a bare invocation must open it, and every civ must be playable
 p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
@@ -5228,12 +5248,13 @@ def _one_run(seed=9, years=180, civ="rome_100ad"):
     return (round(s_.capital, 6), len(s_.done), len(s_.operating),
             round(s_.reputation, 9))
 
-# THESE TWO COST 293 OF THE SUITE'S 425 SECONDS between them, because each
-# simulates 180 years and the second does it again in a fresh interpreter.
-# They are the most valuable checks in the file and also by far the most
-# expensive, which is exactly the case --slow exists for: a suite you run after
-# every change has to be seconds or you stop running it, and these belong to
-# the run you do before calling something finished.
+# THE FIRST OF THESE COSTS 190 OF THE SUITE'S SECONDS, because it simulates
+# 180 years. It is kept exactly as it was: it catches cross-instance state
+# leaking WITHIN one process (two Sim objects built back to back in the same
+# interpreter disagreeing), which is a different bug class from the second
+# check below and one perf_fingerprint cannot see, because perf_fingerprint
+# always runs its scenarios in the same order in the same process - it never
+# builds two independent runs back to back the way this one does.
 def _same_seed_same_run():
     a = _one_run()
     return _one_run() == a, (a, _one_run())
@@ -5241,20 +5262,89 @@ def _same_seed_same_run():
 slow_check("the same seed gives the same run, twice in one process",
            _same_seed_same_run)
 
+# THE SECOND USED TO cost 122s comparing FOUR numbers (capital, len(done),
+# len(operating), reputation) at year 180, for ONE civilisation and ONE seed
+# under ONE alternate hash seed. An experiment that injected a real
+# "iterates an unsorted set feeding a float sum" bug (the exact class this
+# check exists to catch - see ROUND 9's docstring above) measured how well
+# each approach actually detects it:
+#
+#   this check, as it was (180 years, 1 civ, 1 seed): diverged at year 107,
+#       121 or 196 depending which seed was tried, and did not diverge at
+#       ALL within 200 years for 3 of 6 seeds tried - a coin flip, for the
+#       one thing it exists to catch.
+#   rome/sim/perf_fingerprint.py's state_of()/digest() (nine scenarios,
+#       five civilisations, hashing the FULL save-file state every year):
+#       diverged within 1-7 years on ALL NINE scenarios, every time.
+#
+# So the expensive, narrow, home-grown comparison is worse at its one job
+# than a tool that already lives in this directory. Rebuilt on top of that
+# tool instead of copying its logic (two copies of a hashing function drift
+# apart and silently disagree - see perf_fingerprint.py's own comment on
+# why FIELDS is derived from SAVE_FIELDS rather than hand-maintained here).
+#
+# Two subprocesses, not one compared against this (the parent) process:
+# PYTHONHASHSEED can only be fixed at interpreter start-up, and comparing
+# against whatever hash seed the parent test run happened to boot with
+# made the old check's sensitivity depend on luck neither run controlled.
+# Two explicit, different seeds make it the same every time this suite runs.
+#
+# 40 years, not perf_fingerprint's own 200-400: detection above was within
+# 1-7 years on every scenario, so 40 is nearly 6x the slowest of those - a
+# short horizon is not a weaker test here, it is simply not paying for 160+
+# extra years of a signal that, per that measurement, is essentially always
+# already in by year 7.
+_HASH_SEED_HORIZON = 40
+
+
+def _fingerprint_under_seed(hash_seed, years_cap):
+    """Run every perf_fingerprint scenario, capped to `years_cap` years, in a
+    fresh subprocess under PYTHONHASHSEED=<hash_seed>. Returns, for each
+    scenario, its name and its list of per-year digests - perf_fingerprint's
+    own state_of()/digest(), imported and called inside the subprocess
+    (that is the only place a hash-seed change can take effect), never
+    reimplemented here.
+    """
+    script = (
+        "import json, sys\n"
+        "sys.path.insert(0, %r)\n"
+        "import perf_fingerprint as F\n"
+        "out = []\n"
+        "for sc in F.SCENARIOS:\n"
+        "    nm = F.name_of(sc)\n"
+        "    sc = dict(sc, years=min(sc['years'], %d))\n"
+        "    s = F.build(sc)\n"
+        "    digs = []\n"
+        "    for _ in range(sc['years']):\n"
+        "        if getattr(s, 'dead_reason', None):\n"
+        "            break\n"
+        "        s.step()\n"
+        "        digs.append(F.digest(F.state_of(s)))\n"
+        "    out.append([nm, digs])\n"
+        "print(json.dumps(out))\n"
+    ) % (HERE, years_cap)
+    det = subprocess.run([sys.executable, "-c", script], capture_output=True,
+                         text=True, timeout=600,
+                         env=dict(os.environ, PYTHONHASHSEED=str(hash_seed)))
+    if det.returncode != 0:
+        raise RuntimeError("fingerprint subprocess (hash seed %s) failed: %s"
+                           % (hash_seed, det.stderr[-2000:]))
+    return json.loads(det.stdout)
+
+
 def _same_under_other_hash_seed():
-    a = _one_run()
-    det = subprocess.run(
-        [sys.executable, "-c",
-         "import random,sys;sys.path.insert(0,%r);import simulator as S;"
-         "T,P,N,W,Gd=S.load();_l,O,_b=S.load_strategy('recommended',N,T['meta']['goal_node']);"
-         "s=S.Sim(N,O,random.Random(9),events=True,manual=False,civ=S.load_civ('rome_100ad'),"
-         "cfg={'start_capital':100000.0});s.goal,s.done_year=T['meta']['goal_node'],{};"
-         "[s.step() for _ in range(180)];"
-         "print(round(s.capital,6),len(s.done),len(s.operating),round(s.reputation,9))" % HERE],
-        capture_output=True, text=True, timeout=600,
-        env=dict(os.environ, PYTHONHASHSEED="1234"))
-    return (det.stdout.split() == [str(x) for x in a],
-            (det.stdout.strip(), a))
+    a = _fingerprint_under_seed(0, _HASH_SEED_HORIZON)
+    b = _fingerprint_under_seed(1234567, _HASH_SEED_HORIZON)
+    if a == b:
+        return True, ""
+    for (na, da), (nb, db) in zip(a, b):
+        if da != db:
+            j = next((y for y in range(min(len(da), len(db)))
+                      if da[y] != db[y]), min(len(da), len(db)))
+            return False, "%s diverged at year %d" % (na, j)
+    return False, "run lengths differ: %r vs %r" % (
+        [len(d) for _, d in a], [len(d) for _, d in b])
+
 
 slow_check("...and the same run in a process with a different string hash seed",
            _same_under_other_hash_seed)
