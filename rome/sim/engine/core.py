@@ -3,11 +3,8 @@ import collections, json, math, os, random
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+from .data import (ANNUAL_WAGE, DEFAULTS, WAGES, load_civ, load_geography,
+                   load_resources, trade_family)
 
 
 from .economy import EconomyMixin, _InvalidatingSet
@@ -23,6 +20,21 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
     def __init__(self, nodes, order, rng, events=True, cfg=None, verbose=False,
                  bounty_set=None, civ=None, manual=False):
         self.nodes = nodes
+        # PRECOMPUTED ONCE: which node ids carry a `win_condition` at all,
+        # sorted for the same reproducibility reason _check_win_conditions
+        # (below) needs a fixed order. self.nodes is the loaded tech tree -
+        # assigned exactly once, right here, and never reassigned or mutated
+        # (checked: `grep -rn "self\.nodes\[.*\]\[.*\] *="` across every file
+        # in this package turns up nothing, and every other write of
+        # `self.nodes` anywhere is a *different* class's unrelated attribute
+        # of the same name in commodities.py's CommodityLedger). So a node's
+        # win_condition membership can never change after this point, and
+        # this list can be built once here rather than every single year:
+        # _check_win_conditions used to do `for k in sorted(self.nodes)`,
+        # re-sorting all ~2,849 node ids from scratch every year to reach
+        # the handful that actually carry a win_condition.
+        self._win_condition_keys = sorted(
+            k for k, n in nodes.items() if n.get("win_condition"))
         self.order = list(order)
         self.rng = rng
         self.events = events
@@ -194,9 +206,49 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             "auto_commission": not manual,
             "auto_bribe":    not manual,   # pay your way out of a scandal
         }
+        # A HANDFUL OF "LAST TIME I SAID/DID X" TRACKERS, GIVEN A REAL
+        # STARTING VALUE HERE INSTEAD OF SPRINGING INTO EXISTENCE ON FIRST
+        # USE. Each of these used to be read exclusively through
+        # `getattr(self, name, default)`, in a path that runs every single
+        # step (some in step() itself, some in SocietyMixin's per-year
+        # calls) with no assignment anywhere that could run before the
+        # first possible read - so every read paid a dict-and-default
+        # lookup to reconstruct a value this constructor can just set once.
+        # Every default below is exactly the getattr default already in use
+        # at every call site, so this cannot change behaviour... PROVIDED
+        # the attribute is not also one perf_fingerprint.py hashes: that
+        # tool hashes protocol.py's SAVE_FIELDS list at year 0, and several
+        # of ITS OWN comments say a save MISSING one of those fields reads
+        # back as "has never happened yet" (None) - a state distinct from
+        # an explicit zero or sentinel. Giving such a field a real value
+        # here would make year 0's hash disagree with a baseline recorded
+        # before this field existed, and that is exactly what happened the
+        # first time this was tried: all nine fingerprint scenarios
+        # diverged at year 0, every one of them tracing back to a
+        # SAVE_FIELDS member. So every name below has been checked against
+        # SAVE_FIELDS (protocol.py) and is NOT a member of it; the ones
+        # that ARE members (`insolvent_years`, `wage_hours_this_year`,
+        # `_said_deputies`, `_said_scandal`, `last_withdrawal`,
+        # `_food_pop_bonus_applied`, `_said_output`, `_said_debasement`,
+        # `last_patron_death`) are deliberately left OUT of this
+        # constructor and still read through `getattr(self, name, default)`
+        # at every call site, unchanged - the lazy-creation pattern there is
+        # load-bearing, not an oversight. (Also checked: no `del self.<name>`
+        # anywhere ever removes any of these again - there is exactly one
+        # `del self.` in the whole package, `del self.active[k]` in
+        # projects.py, a dict item, not an attribute.)
+        self._staff_scale = 1.0            # labour.py's staff_capacity() sets the real value every step before core.py reads it; this is only the pre-first-step default
+        self._spend_this_year = 0.0        # denarii spent this year; reset to 0.0 at the end of every step() (spend_last_year, the field that IS saved, always gets a real value from this every step)
+        self._said_eminence = -999         # last eminence "band" warned about; -999 guarantees the first qualifying band always warns
+        self._said_wage_cascade = -999     # last year a wage-cascade note was printed; -999 guarantees the first qualifying year always warns
+        self._said_requisition = -999         # last year a state-requisition note was printed
+        self._said_notice_approach = 0        # last state-notice "band" warned about
+        self.last_military_demand = -999      # last year a military levy was taken
+        self._said_confiscation_band = -1     # last confiscation-risk "band" warned about
+        self._literacy_said = -999            # last year a literacy-census note was printed
+        self._food_diffusion_said = -999      # last year a food-diffusion note was printed
+        self._said_condition = set()          # hazard-condition messages already printed once
         self.founder_alive = True
-        self.suspicion = 0.0
-        self.suspicion_mult = 1.0
         self.gov = 0.0
         self.log = []
         self.dead_reason = None
@@ -377,7 +429,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # mentioning, then a reminder at most every 15 years, not every year
         # of a shortfall that can run for a century.
         premium = (self.wage_index / self._wage_index_base - 1.0) * 100
-        if premium > 0.5 and yr - getattr(self, "_said_wage_cascade", -999) >= 15:
+        if premium > 0.5 and yr - self._said_wage_cascade >= 15:
             self._said_wage_cascade = yr
             self.log.append((yr, "population still %d%% below trend: wages "
                                  "(and anything billed in them) are running "
@@ -627,7 +679,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # used for sc_cap/ar_cap (see the comment there): supervision-room
             # headroom is not a free six people, it is six people you still
             # have to pay for.
-            extra = self.supervision_room() * getattr(self, "_staff_scale", 1.0)
+            extra = self.supervision_room() * self._staff_scale
             # THE SAME WALL hire() AND train() ENFORCE. This used to smooth
             # self.scholars toward sc_cap directly, mutating the pool itself
             # with no call anywhere near literate_capacity() - the wall a
@@ -763,7 +815,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # first year: the advance, then the identical year again at the next
         # step. A break tester found hire-then-fire in one turn burned the
         # advance for no work at all.
-        prepaid = min(lc, getattr(self, "wages_prepaid", 0.0))
+        prepaid = min(lc, self.wages_prepaid)
         lc -= prepaid
         self.wages_prepaid = 0.0
         self.living_cost_paid += lc
@@ -1070,20 +1122,54 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # Hoisted out of the loop below: it closes only over `self` and
             # the memos above, never over the loop variable `k`, so defining
             # it fresh on every one of ~2,800 iterations bought nothing.
-            def _gone(t):
-                return (not _trade_avail(t)
+            #
+            # _gone(t) ITSELF IS NOW MEMOIZED TOO (_gone_memo), for the same
+            # reason _market_supply/_trade_avail already are: it reads only
+            # _trade_avail(t), _market_supply(t) and
+            # self._trade_headcount_pending(t), and the last of those
+            # (labour.py) reads only self.training and self.employees -
+            # neither mutated anywhere in this block; train(), at the very
+            # end of it, is the only thing that changes either, exactly as
+            # the comment above already established for the other two. So
+            # _gone(t) is just as pure a function of (staff, trades_created)
+            # across this whole block as they are, and is safe to cache the
+            # same way.
+            #
+            # That matters because this used to be a plain function called
+            # through `any(_gone(t) for t in n["lab"])`, and the per-trade
+            # RESULT (not just its two cheap sub-memos) was never cached -
+            # so recomputing it, for the same handful of distinct trade
+            # names, cost one Python function call for EVERY ONE of the
+            # ~2,800 nodes in `order` that names them, even after the first
+            # node had already worked out the answer. Profiling 150 years
+            # found the `any()` generator alone at 895,244 calls / 0.83s
+            # cumulative. _is_gone below answers the identical question,
+            # through the identical `any()` (so a node whose FIRST lab
+            # trade is already known gone, or one that fails
+            # start_reason() right after, costs exactly what it always
+            # did - no extra work done on the strength of a guess that it
+            # would be needed), but every trade's verdict is computed once
+            # and reused for every later node that names it, instead of
+            # recomputing the same two calls from scratch each time.
+            _gone_memo = {}
+            def _is_gone(t):
+                v = _gone_memo.get(t)
+                if v is None:
+                    v = _gone_memo[t] = (
+                        not _trade_avail(t)
                         or (_market_supply(t) <= 0.0
                             and self._trade_headcount_pending(t) <= 0.0))
+                return v
             for k in self.order:
                 if k in self.done or k in self.active:
                     continue
                 n = self.nodes[k]
-                if not any(_gone(t) for t in n["lab"]):
+                if not any(_is_gone(t) for t in n["lab"]):
                     continue
                 if not self.start_reason(k, ignore_trade=True)[0]:
                     continue
                 for t in n["lab"]:
-                    if _gone(t):
+                    if _is_gone(t):
                         want[t] = want.get(t, 0) + 1
             # NOT EVERY YEAR. Teaching two of a trade costs about nine hundred
             # of the founder's two thousand hours plus their keep, and once
@@ -1092,9 +1178,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # technologies to 229, 56 and 188, the whole difference going into
             # a teaching treadmill. A trade is worth restoring; it is not worth
             # half of every year for ever.
-            _taught = getattr(self, "last_taught", None)
-            if _taught is None:
-                _taught = self.last_taught = {}
+            _taught = self.last_taught
             want = {t: v for t, v in want.items()
                     if yr - _taught.get(t, -999) >= self.RETEACH_EVERY}
             # AND ONLY IF YOU CAN PAY THEM. train() checked hours, literacy and
@@ -1197,7 +1281,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # human or a script. Everything below this block (materials, staff,
         # money, hazards, the calendar) is untouched by `manual` and keeps
         # running exactly as before.
-        if not self.manual and yr >= getattr(self, "credit_frozen_until", 0):
+        if not self.manual and yr >= self.credit_frozen_until:
             # More directors means more things in hand at once, and a big trained staff
             # lets routine work proceed without the founder watching it.
             # How many things can be in hand at once. I tried doubling this on
@@ -1235,8 +1319,31 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # See PERFORMANCE.md.
                 _earner_set = set(earners)
                 candidates = earners + [k for k in self.order if k not in _earner_set]
+            # INCREMENTAL COUNT, NOT A SET REBUILT PER ITERATION. Written as
+            # `len(self.active) - len(self.bountied & set(self.active))`
+            # inside the loop below, this rebuilt `set(self.active)` from
+            # scratch on every one of the 2,849 iterations of `candidates` -
+            # the identical mistake `_earner_set` (above) had already been
+            # fixed for, 30 lines earlier in this same function. Unlike
+            # `earners`, `self.active` IS mutated inside this loop (a normal
+            # start at the bottom, or post_bounty() below, which adds to both
+            # `self.active` and `self.bountied` at once), so the fix cannot
+            # be "hoist one set outside the loop" - it has to track the two
+            # mutations as they happen instead:
+            #   - post_bounty(k) succeeding adds k to self.active AND to
+            #     self.bountied together, so a bountied project never counts
+            #     against max_active: _non_bountied_active is left unchanged.
+            #   - a normal start only adds k to self.active, so
+            #     _non_bountied_active goes up by one.
+            # Nothing else in this loop's body (can_start, project_cost,
+            # funding_capacity, committed_spend, bounty_eligible) touches
+            # self.active or self.bountied - checked in projects.py and
+            # economy.py - so these two increments are the only places the
+            # tracked count can move, and it is computed once up front
+            # (O(active), not O(order)) rather than every iteration.
+            _non_bountied_active = len(self.active) - len(self.bountied & set(self.active))
             for k in candidates:
-                if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
+                if _non_bountied_active >= max_active:
                     break
                 if not self.can_start(k):
                     continue
@@ -1272,6 +1379,9 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 if self.project_cost(k) > room:
                     continue
                 if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
+                    # post_bounty() just added k to both self.active and
+                    # self.bountied - the count of NON-bountied active
+                    # projects is unchanged.
                     continue
                 # lab_left starts full here too, for the same reason
                 # start_project (projects.py) sets it at creation rather than
@@ -1280,6 +1390,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
                                       cost_left=self.project_cost(k),
                                       lab_left=dict(n["lab"]))
+                _non_bountied_active += 1
 
         # 4c. materials. Buy the woodland and dig the beds BEFORE the shortage
         #     bites, which is what a competent manager does and what the old
@@ -1392,7 +1503,38 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         #    first, not spread evenly: a director who gives every project equal
         #    attention finishes nothing, which is a real failure mode but not the
         #    one we are trying to model here.
-        rank = {k: i for i, k in enumerate(self.order)}
+        #
+        # ONLY THE HANDFUL OF KEYS active_sorted ACTUALLY NEEDS, NOT EVERY
+        # NODE IN THE TREE. This used to be a bare
+        # `{k: i for i, k in enumerate(self.order)}` - a fresh 2,849-entry
+        # dict built from scratch every single year to answer `rank.get(k,
+        # 9999)` for the at most a few dozen keys in self.active. Nothing
+        # below reads `rank` for any node NOT in self.active (checked: its
+        # only other use is the `_pool_rank` loop variable a few lines
+        # further down, an unrelated name), so recording a position for
+        # every other one of the ~2,849 nodes was pure waste - 0.64ms/year
+        # of pure self time with nothing under it, since dict-comprehension
+        # and enumerate are both C-level with no further calls to profile.
+        # This still walks self.order and cannot skip any of it in the
+        # worst case (an active key can be anywhere in `order`), so it is
+        # not a complexity win - but it stops paying for ~2,849 dict
+        # insertions when only a few dozen are ever read, and exits the
+        # walk the moment every active key's position has been found
+        # (start_project, in projects.py, moves a project to the FRONT of
+        # `order` the instant a human starts it by hand, so active keys
+        # skew early there in practice, though the automated 4b loop above
+        # does not reorder `order` and gives no such guarantee - the early
+        # exit is a bonus, not a requirement of correctness). Recomputed
+        # fresh every call, exactly as before: no cache, no staleness risk.
+        _active_left = set(self.active)
+        rank = {}
+        if _active_left:
+            for i, k in enumerate(self.order):
+                if k in _active_left:
+                    rank[k] = i
+                    _active_left.discard(k)
+                    if not _active_left:
+                        break
         # A STANDING ALLOCATION IS A PROMISE, NOT A PRIORITY BID. Without
         # this, a project the player explicitly told `allocate` to give 500
         # hours a year could still be starved by three higher-`order`
@@ -1801,7 +1943,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # notional figure made project_spend_last_year disagree with
                 # the actual capital movement by a factor of 89, which a tester
                 # caught by comparing three numbers in a single `state` reply.
-                self._spend_this_year = getattr(self, "_spend_this_year", 0.0) + money
+                self._spend_this_year = self._spend_this_year + money
                 # calendar_floor(k), NOT a second copy of this formula -
                 # expected_calendar_years (projects.py) needs the identical
                 # figure to project retries honestly, and a rule living in
@@ -1936,7 +2078,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.hours_this_year = {
             "available": round(self.director_pool(), 1),
             "wage_work": round(getattr(self, "wage_hours_this_year", 0.0), 1),
-            "teaching": round(getattr(self, "teaching_hours_this_year", 0.0), 1),
+            "teaching": round(self.teaching_hours_this_year, 1),
             "offered_to_projects": round(max(0.0, pool - remaining_after_projects), 1),
             # OFFERED is what projects were given a shot at; EFFECTIVE is what
             # actually reduced their founder_hours_left. The gap between the
@@ -1954,10 +2096,10 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # paid a shop for in 142 are not still sitting there in 143.
         self.contract_hours = {}
         self.teaching_hours_this_year = 0.0
-        self.spend_last_year = getattr(self, "_spend_this_year", 0.0)
+        self.spend_last_year = self._spend_this_year
         self._spend_this_year = 0.0
         # Sellers restock, so the pressure your buying put on the market fades.
-        self.market_pressure = max(0.0, getattr(self, "market_pressure", 0.0) * 0.55 - 2.0)
+        self.market_pressure = max(0.0, self.market_pressure * 0.55 - 2.0)
         # WARN BEFORE IT KILLS YOU. A play tester built 952 technologies, was
         # three nodes from the goal, and the run ended on a 2% roll against an
         # eminence of 28.2 - with no escalation of any kind beforehand, and
@@ -1966,7 +2108,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # bribed away and the one the player was never told was closing in.
         _danger = self.cfg["eminence_danger"]
         if self.eminence > _danger * 0.75:
-            _said = getattr(self, "_said_eminence", -999)
+            _said = self._said_eminence
             _band = int(self.eminence / max(1.0, _danger * 0.15))
             if _band > _said:
                 self._said_eminence = _band
@@ -2180,11 +2322,18 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         reasoning `topo_order` and the attrition loop above already give
         for walking `self.nodes`/`self.done` in id order rather than a bare
         set's own iteration order.
+
+        Walks `self._win_condition_keys` (built once, in __init__, from the
+        static node data - see the comment there), not `sorted(self.nodes)`:
+        this used to re-sort every one of the ~2,849 node ids in the whole
+        tree, every single year, to reach the handful that actually carry a
+        win_condition at all - pure self time (`sorted` and dict-get, both
+        C-level, nothing further to profile under it).
         """
-        for k in sorted(self.nodes):
+        for k in self._win_condition_keys:
             if k in self.done:
                 continue
-            wc = self.nodes[k].get("win_condition")
+            wc = self.nodes[k]["win_condition"]
             if not wc:
                 continue
             val = self._win_condition_value(wc["metric"])

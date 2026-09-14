@@ -8,11 +8,7 @@ import collections, json, math, os, random
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
-from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
-                   TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
-                   STARTING_KITS, trade_family, closure, critical_path,
-                   topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources, hard_pre)
+from .data import (ANNUAL_WAGE, WAGES, hard_pre, trade_family)
 from . import commodities as _commod
 
 
@@ -178,7 +174,7 @@ class EconomyMixin:
         return (2500.0 * self.economy * self.state_capacity * self.pop_scale ** 0.4
                 * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor())
 
-    def credit_limit(self):
+    def credit_limit(self, _rev=None, _upkeep=None):
         """How far into arrears anyone will actually let you go.
 
         Unbounded debt is an accounting fiction, and it produced the single worst
@@ -193,6 +189,13 @@ class EconomyMixin:
 
         What you can borrow depends on who will stand behind you, which is the
         same currency as everything else in this model.
+
+        `_rev`/`_upkeep`: forwarded to living_cost() unchanged - see ITS
+        docstring for what they mean and why passing them is safe. `earning`
+        just below still always calls revenue_capacity() itself, because
+        that is a genuinely different figure (this year's actual
+        wage-selling zeroed out - see revenue_capacity's own docstring),
+        never the same call `_rev` would have been computed with.
         """
         # What a STRANGER can borrow is almost nothing, which is the reviewer's
         # question and the right answer. You have walked into a town with no
@@ -231,7 +234,17 @@ class EconomyMixin:
         # Without this floor a household whose rent exceeded its credit line by
         # a few denarii was declared insolvent, settled, and then declared
         # insolvent again the next year, for ever.
-        floor = self.living_cost() + self.upkeep() * 0.5
+        # ONE upkeep() CALL, NOT TWO (and _rev, if the caller already had
+        # one, is reused rather than making living_cost() take its own
+        # third). Nothing between here and living_cost()'s own return
+        # assigns to self - revenue_capacity() just above already restored
+        # wage_hours_this_year before returning (see its own try/finally) -
+        # so upkeep()/revenue() cannot answer differently a second time, and
+        # living_cost() takes both as `_upkeep`/`_rev` to skip its own copy
+        # of the same calls rather than silently repeating them. See
+        # living_cost's own docstring on why those arguments exist.
+        up = self.upkeep() if _upkeep is None else _upkeep
+        floor = self.living_cost(_rev=_rev, _upkeep=up) + up * 0.5
         # AND BOUNDED BY WHAT YOU CAN SERVICE. A senatorial patron adds fifteen
         # thousand to the line whoever you are, so a household with 1,800 of
         # revenue could owe 23,000 - about 1,500 a year in interest against
@@ -290,11 +303,22 @@ class EconomyMixin:
         uses the identical number rather than a second formula that could
         quietly drift from it - one rule in two places is how a game like
         this accumulates its worst bugs.
+
+        revenue()/upkeep() computed ONCE, here, and handed to both
+        living_cost() and credit_limit() (which itself forwards them to its
+        own living_cost() call) as `_rev`/`_upkeep`, rather than the five
+        further calls between them this used to make for the same two
+        numbers - see living_cost's own docstring for why reusing them is
+        safe: nothing in this whole call graph assigns to self anywhere.
         """
-        fixed = (self.upkeep() + self.living_cost() + self.mine_operating_cost()
+        rev = self.revenue()
+        up = self.upkeep()
+        fixed = (up + self.living_cost(_rev=rev, _upkeep=up)
+                 + self.mine_operating_cost()
                  + max(0.0, -self.capital) * self.debt_interest_rate())
-        return (max(0.0, self.capital) + self.credit_limit() * 0.5
-                + max(0.0, self.revenue() - fixed) * 5.0)
+        return (max(0.0, self.capital)
+                + self.credit_limit(_rev=rev, _upkeep=up) * 0.5
+                + max(0.0, rev - fixed) * 5.0)
 
     def shed_loss_makers(self, yr):
         """In arrears, stop maintaining anything that costs more than it returns.
@@ -757,7 +781,39 @@ class EconomyMixin:
     def spending_power(self, kind="buy"):
         """What you could actually raise, by what you mean to spend it on."""
         share = 1.0 if kind == "start" else 0.5
-        return max(0.0, self.capital) + self.credit_limit() * share
+        # THE DEBT YOU ALREADY CARRY COUNTS AGAINST YOU. This read
+        # max(0.0, self.capital) + credit_limit() * share, which floored the
+        # capital term and so ignored arrears entirely: a household 500 into
+        # a 210-denarii credit line was told it could still raise 105. It
+        # cannot. credit_limit() is "how far into arrears anyone will let you
+        # go" - an absolute floor on capital, which is exactly how
+        # enforce_credit_limit() reads it (`if self.capital >= -limit`), not
+        # headroom to be added on top of a debt.
+        #
+        # The floor belongs on the ANSWER, not on the capital term: you can
+        # raise nothing when you are past the line, never a negative amount.
+        # hire(), train() and commission() had this right all along and
+        # computed it inline; the screens that quote a figure to the player
+        # called this function and so quoted one too high.
+        if kind == "open":
+            # THE ONE CASE WHERE THE HOLE DOES NOT COUNT, and it is not an
+            # oversight. Opening a door on a concern you have ALREADY built
+            # and which ALREADY earns is not a wage or a commission: it buys
+            # its own fee back, often in weeks. Counting the arrears against
+            # it is how a household gets locked out of the very thing that
+            # would dig it out.
+            #
+            # Two traced runs are in the suite for this. A tester at -1,608
+            # against a 3,684 line left seven finished concerns worth 1,713 a
+            # year shut, believing they could not open them; and a Rome run
+            # built exp_trade_route_extend (net +1,700 a year) by year 117 and
+            # sat on it, unopened, for about 850 years. See the checks named
+            # "a completed concern that pays for its own door within months
+            # opens even while deep in arrears" and its slow-payback sibling,
+            # which holds the line the other way: a concern that takes YEARS
+            # to clear its own capex still does not open on this.
+            return max(0.0, self.capital) + self.credit_limit() * share
+        return max(0.0, self.capital + self.credit_limit() * share)
 
     def cost_money_factor(self):
         """What a denarius of QUOTED cost means, for spending purposes.
@@ -848,8 +904,32 @@ class EconomyMixin:
         load_state calls _reset_operating() (below) once, right after its
         generic loop, to close that one specific gap explicitly instead of
         taxing sixteen million reads to close a gap with exactly one door.
+
+        ALSO bumps `_operating_ver`, a plain monotonic counter with the same
+        reach as this hook (every one of the same nine-odd call sites, and
+        no others - it is set here and nowhere else). `_goods_category_state`
+        and `_revenue_upkeep_candidates` below both key a cache on this
+        counter instead of re-deriving their own answer from `operating`'s
+        contents on every call, for the same reason `_cap_factor` already
+        does: those two are read from the hottest loops in the engine (see
+        _goods_category_state's own comment - 75,748 calls in a 150-year
+        profile, more than any other function in this file) and their
+        actual inputs (self.year plus this set) change far less often than
+        they are read. It carries the exact same one known gap this
+        docstring already describes for `_cap_factor` - a caller that
+        replaces `self.operating` with a plain `set()` rather than going
+        through `_reset_operating()` (test_regressions.py's ROUND 8 close-
+        order test does this once, deliberately, to build a fixture) stops
+        this counter advancing for the rest of that object's life, same as
+        it already stops `_cap_factor` invalidating. Not a new risk this
+        change introduces: the existing cache already lives with it, on the
+        same object, for the same reason, and no reference run in
+        perf_fingerprint.py's suite ever does this to a live Sim - only that
+        one hand-built test fixture does, and it never asks for a goods
+        price, an income factor, or a revenue/upkeep total afterward.
         """
         self._cap_factor = None
+        self._operating_ver = getattr(self, "_operating_ver", 0) + 1
 
     def _reset_operating(self):
         """Re-wrap self.operating in a fresh `_InvalidatingSet` and
@@ -1110,6 +1190,65 @@ class EconomyMixin:
         cfg = self.GOODS_CATEGORIES.get(cat)
         if not cfg:
             return None
+        # RESULT CACHED PER (cat, self.year, operating's version), because
+        # the walk below is still called far more often than its answer can
+        # possibly change. A 150-year rome_100ad profile of 150 optimizer
+        # steps found this called 75,748 times - 505 times per simulated
+        # year - for the same reason the comment below already explains
+        # (goods_market_factor() once per operating concern, income_factor()
+        # again for the essential category, from every one of those calls):
+        # nothing that changes what this function returns happens between
+        # most of those calls in the same year.
+        #
+        # WHY THIS KEY IS SAFE, exhaustively:
+        #   self.year only ever changes at one place in the whole engine
+        #   (core.py's step(), `self.year += 1`, once per step) - so it is
+        #   constant for the entire year's worth of calls this is trying to
+        #   collapse, and a NEW year always gets a different key, never a
+        #   stale hit.
+        #   self.operating's membership is the other input read below (the
+        #   `for m in ...: if m not in self.operating` test); `_operating_ver`
+        #   is a plain counter bumped by _operating_changed(), which the
+        #   _InvalidatingSet backing self.operating (see that class's own
+        #   comment, top of file) fires on EVERY .add/.discard/.update/...
+        #   from any of the nine-odd call sites across core.py/projects.py/
+        #   economy.py/society.py - the exact mechanism _cap_factor's own
+        #   cache already trusts for the same set, and it carries the same
+        #   one accepted gap that one already has (see _operating_changed's
+        #   own docstring): a caller that replaces self.operating with a
+        #   bare set() rather than going through _reset_operating() stops
+        #   this counter, same as it already stops _cap_factor. Not a new
+        #   risk.
+        #   `opened_year` (read below via `started`) is never mutated
+        #   anywhere except projects.py's open_venture, and there only ever
+        #   in the same call, immediately after, as `self.operating.add(k)`
+        #   - grep the engine for "opened_year" and it is the only
+        #   assignment site outside __init__'s empty {} and load_state's
+        #   generic setattr (which itself calls _reset_operating(), and so
+        #   _operating_changed(), right after setting it - see that
+        #   function's own comment on why that ordering matters). So
+        #   `_operating_ver` changing is a SUPERSET of every way
+        #   `opened_year` can change: it cannot go stale on its own.
+        #   `done_year` is read here only as a fallback for a member of
+        #   `operating` whose opened_year entry is somehow still missing -
+        #   which the paragraph above shows never happens along either real
+        #   path into `operating` (open_venture always sets it in the same
+        #   breath; restore() requires the node to already be mothballed,
+        #   which means it went through open_venture earlier). The one place
+        #   this fallback is actually reachable is a test fixture that adds
+        #   directly to `operating` without ever opening anything - and that
+        #   still bumps `_operating_ver` through the identical hook, so even
+        #   there this cache is not stale, only (like the code before this
+        #   change) reading done_year's default of self.year for a node that
+        #   was never truly opened.
+        key = (self.year, getattr(self, "_operating_ver", 0))
+        cache = getattr(self, "_goods_cat_state_cache", None)
+        if cache is None or cache[0] != key:
+            cache = (key, {})
+            self._goods_cat_state_cache = cache
+        bucket = cache[1]
+        if cat in bucket:
+            return bucket[cat]
         ages = []
         # WHICH NODES CAN EVER BE IN THIS CATEGORY IS FIXED AT LOAD TIME,
         # so walk that (small, cached-once) list and test membership in
@@ -1133,8 +1272,11 @@ class EconomyMixin:
                 started = self.done_year.get(m, self.year)
             ages.append(max(0.0, self.year - started))
         if not ages:
+            bucket[cat] = None
             return None
-        return len(ages), max(ages), cfg
+        result = (len(ages), max(ages), cfg)
+        bucket[cat] = result
+        return result
 
     def _nodes_in_cat(self, cat):
         """Every node key that carries this goods category, in the tree's
@@ -1585,7 +1727,11 @@ class EconomyMixin:
         practice_set = self._practice_set()
         granted = self.granted
         operating = self.operating
-        for k in self.done_in_order():
+        # SCAN ONLY WHAT COULD POSSIBLY PAY. Every node this loop's own body
+        # goes on to skip - not operating and not practised - was already
+        # true of the whole rest of `done`, which only grows; see
+        # _revenue_upkeep_candidates' own docstring for why this is safe.
+        for k in self._revenue_upkeep_candidates():
             practice = k in practice_set
             if k in granted and not practice:
                 continue          # the society's, not yours
@@ -1876,6 +2022,66 @@ class EconomyMixin:
             self._practice_cache = cache
         return cache[1]
 
+    def _revenue_upkeep_candidates(self):
+        """Every node in `done` that revenue() or upkeep() could possibly
+        charge or pay for - i.e. that is operating, or in your practice
+        set - in done_in_order()'s own tree order. Neither function can do
+        anything with a node that is neither, so both used to scan the
+        WHOLE of `done` (every technology ever finished, which is most of
+        the tree by the late game) just to throw almost all of it away
+        again on that same test; this is the small subset that survives it,
+        computed once and handed to both.
+
+        A 150-year rome_100ad profile of 150 optimizer steps found revenue()
+        alone at 9,037 calls and 1.428s cumulative, and upkeep() at 4,293
+        calls (upkeep's own summing genexpr showing up separately at
+        120,922 calls) - both walking done_in_order() start to finish on
+        every one of those, when `operating` and the practice set together
+        are typically a handful of concerns against a `done` list that only
+        grows. This is exactly the O(active) vs O(done) gap done_in_order()
+        itself was already added to close for a DIFFERENT quadratic blowup
+        (see its own docstring); the list is short but the SCAN was still
+        long.
+
+        CACHED, on the same three signals _goods_category_state's own cache
+        (above) already trusts for this reason:
+          - the identity of done_in_order()'s own cached list - a NEW list
+            object exactly when `done` changes, because _done_changed()
+            (below) sets `_done_seq` to None and done_in_order() rebuilds it
+            from scratch. A length check is not safe here for the same
+            reason done_in_order's docstring already gives: a year that
+            finishes one thing and abandons another leaves the length
+            unchanged and the contents different.
+          - `operating`'s version counter, `_operating_ver`, bumped once per
+            mutation by _operating_changed() - see that method's own
+            docstring for the exhaustive case-by-case proof, which applies
+            unchanged here since this reads exactly the same `operating`.
+          - the identity of _practice_set()'s own cached frozenset, which
+            THAT method already rebuilds (a new object, new identity) the
+            moment len(self.granted) changes - see its own docstring. Since
+            self.granted is only ever grown (grep the engine: every mutation
+            site is `.add`, never `.discard`/`.remove`/`&=`/`-=`), a length
+            check is sound there in a way it would not be for `done`, and
+            this cache inherits that same soundness by keying on the
+            resulting object's identity rather than re-deriving it.
+        Three signals already relied on elsewhere in this file, not a new
+        one - and this cache's OWN staleness, if any one of them were wrong,
+        would show up as a wrong revenue or upkeep total, which
+        perf_fingerprint.py's byte-for-byte, per-year state hash across nine
+        reference runs (five civilisations, several seeds, fog on and off,
+        events on and off) is built to catch.
+        """
+        seq = self.done_in_order()
+        practice_set = self._practice_set()
+        key = (id(seq), getattr(self, "_operating_ver", 0), id(practice_set))
+        cached = getattr(self, "_rev_up_candidates_cache", None)
+        if cached is not None and cached[0] == key:
+            return cached[1]
+        operating = self.operating
+        cands = [k for k in seq if k in operating or k in practice_set]
+        self._rev_up_candidates_cache = (key, cands)
+        return cands
+
     def upkeep(self):
         # Symmetrically, you do not pay to maintain what you do not own, but you
         # do bear the small standing cost of the practice you actually run - and
@@ -1884,7 +2090,8 @@ class EconomyMixin:
         # does stop the bleeding, and knowing how to do something costs nothing
         # to know.
         practice_set = self._practice_set()
-        return sum(self.institution_upkeep(k) for k in self.done_in_order()
+        return sum(self.institution_upkeep(k)
+                   for k in self._revenue_upkeep_candidates()
                    if k in self.operating or k in practice_set)
 
     # What a school costs on the day you found it, as a share of what it costs
@@ -2457,10 +2664,17 @@ class EconomyMixin:
         return s
 
     def material_stock_t(self, emp_key):
-        """Tonnes of `emp_key` currently banked - read-only, for a display
-        that wants to show "stock on hand" the way the playtester's own
-        worked example did (gold stock 1.3 kg; domestic production 0 kg/yr;
-        imports available up to 0.2 kg/yr at current prices)."""
+        """Tonnes of `emp_key` currently banked - the STOCK half of stock vs
+        flow, which is the thing a player asking "how much iron do I actually
+        own" wants and which no command yet shows them.
+
+        NOT DEAD, UNFINISHED. This was swept as unreferenced once and put back:
+        nothing calls it because the display it was written for was never
+        built, not because the display is unwanted. A player asked for exactly
+        this again. Whoever wires up a `stock` command in protocol.py should
+        call this; until then it is the useful half of a feature waiting for
+        its other half.
+        """
         return self._material_stock().get(emp_key, 0.0)
 
     def _throttle_demand_split(self, demand):
@@ -3937,7 +4151,7 @@ class EconomyMixin:
                 "work waits until something upstream of it is built."
                 % binding)
 
-    def living_cost(self):
+    def living_cost(self, _rev=None, _upkeep=None):
         """You have to eat, sleep somewhere, pay tax, and look the part.
 
         The last one is not a joke. In a patronage society a man who is visibly
@@ -3945,6 +4159,20 @@ class EconomyMixin:
         on it: clothes, a household, hospitality, and public benefaction. That
         expense RISES with your wealth and with your standing, which is why so
         many Roman fortunes went sideways into games and buildings.
+
+        `_rev`/`_upkeep`: an already-computed revenue()/upkeep() a caller who
+        just paid for one of its own may pass in, to skip this function's
+        own copy of that same call - see credit_limit() and
+        funding_capacity() below, both of which call this and ALSO need
+        revenue()/upkeep() themselves for arithmetic of their own, and both
+        of which read self via nothing but plain attribute and dict access
+        the whole way down (no assignment anywhere in that call graph), so
+        the number cannot have moved between the caller's own call and this
+        one. Optional and keyword-only in every caller but those two: every
+        other call site in the engine (there are dozens, across
+        core.py/projects.py/labour.py/society.py/protocol.py, none of which
+        this file may edit) says plain `self.living_cost()`, gets both
+        arguments' None default, and computes exactly what it always did.
         """
         # AT THIS SOCIETY'S PRICES. Every figure here was a Rome 100 AD denarius
         # and none of them was ever multiplied by price_index, so a break tester
@@ -3964,7 +4192,7 @@ class EconomyMixin:
         # alone costing 2.4s of its own time and 21.9s cumulative over
         # 28,423 calls; living_cost() was responsible for two of every
         # three of those calls. See PERFORMANCE.md.
-        rev = self.revenue()
+        rev = self.revenue() if _rev is None else _rev
         wages = self.wage_bill()
         base = 120.0 * px                             # bare subsistence, one person
         household = 90.0 * px * (1 + self.freedmen * 0.5 + self.slaves * 0.35)
@@ -3986,7 +4214,8 @@ class EconomyMixin:
         # You spend on appearances out of what is left after eating; never more
         # than the nominal figure, and never so much that the appearances
         # themselves starve you.
-        room = max(0.0, rev - base - household - tax - self.upkeep() - wages)
+        up = self.upkeep() if _upkeep is None else _upkeep
+        room = max(0.0, rev - base - household - tax - up - wages)
         status = min(status, room * 0.75 + max(0.0, self.capital) * 0.015)
         return base + household + tax + status + wages
 
