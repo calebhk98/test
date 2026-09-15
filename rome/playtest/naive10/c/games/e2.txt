@@ -1,0 +1,14 @@
+  EVENT 104: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 75 denarii
+  EVENT 130: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 79 denarii
+  EVENT 137: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 70 denarii
+  EVENT 141: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 60 denarii
+  EVENT 141: banditry or a frontier war disrupts supply: it cost you 28 denarii
+[150 AD | 291 den | you:2000 hr | sch 0 art 0 | rep 1] >   EVENT 150: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 53 denarii
+  EVENT 159: banditry or a frontier war disrupts supply: it cost you 29 denarii
+  EVENT 165: Antonine plague: 50 gone with the trade that stopped
+  EVENT 167: Antonine plague: 43 gone with the trade that stopped
+  EVENT 172: Antonine plague: 41 gone with the trade that stopped
+  EVENT 178: Antonine plague: 41 gone with the trade that stopped
+  EVENT 180: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 38 denarii
+  EVENT 188: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 41 denarii
+  EVENT 190: Currency debasement: the coin is worth 6% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 10 denarii

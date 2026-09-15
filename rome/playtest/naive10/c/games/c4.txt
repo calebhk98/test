@@ -1,0 +1,15 @@
+2
+
+
+
+start arithmetic_positional
+start scientific_method
+start units_standards
+step 5
+state
+step 2
+state
+step 8
+available
+stuck
+quit

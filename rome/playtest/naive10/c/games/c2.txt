@@ -1,0 +1,12 @@
+2
+
+
+
+start arithmetic_positional
+step 1
+state
+work scholar 2000
+state
+step 1
+state
+quit

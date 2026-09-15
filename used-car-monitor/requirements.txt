@@ -1,0 +1,3 @@
+# Runtime dependency: just the HTTP client. Everything else is stdlib
+# (sqlite3, http.server, json, argparse) so the app runs with no other installs.
+requests>=2.31.0

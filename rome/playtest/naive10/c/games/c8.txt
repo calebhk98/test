@@ -1,0 +1,17 @@
+2
+
+absurd
+
+start horse_collar
+start arithmetic_positional
+start med_herbal_pharmacy
+start fin_lottery
+step 2
+ventures
+open horse_collar
+open med_herbal_pharmacy
+open fin_lottery
+commission artisan 2000
+open fin_lottery
+ventures
+quit
