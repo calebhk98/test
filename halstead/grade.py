@@ -507,6 +507,38 @@ PASS_MARKERS = (
 SKIP = (r"^\s*0 problem", r"^\s*0 flagged", r"0 not found", r"still over target")
 
 
+# The 23 reference books live outside the repository, in the session scratchpad,
+# and a rebuilt container takes them with it. Every corpus measure then returns
+# nothing and prints nothing, so it leaves the count rather than failing: the
+# scorecard went from 59 measures to 23 and reported all 23 passing, which is a
+# clean bill of health issued by a machine that had stopped looking. This is the
+# second time a measure has been able to leave the count. It cannot be allowed
+# to happen quietly.
+CORPUS_DIRS = [
+    "/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/scratchpad/agent_gutenberg/raw",
+    "/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/scratchpad/agent_modern/texts",
+]
+CORPUS_MINIMUM = 20
+
+
+def check_corpus():
+    """Count the reference books, and say so loudly if they are not there."""
+    found = 0
+    for d in CORPUS_DIRS:
+        p = Path(d)
+        if p.is_dir():
+            found += len([f for f in p.rglob("*.txt") if "stripped" not in f.stem])
+    if found >= CORPUS_MINIMUM:
+        return 0
+    rule("0. THE CORPUS")
+    print(f"\n  reference books found: {found}, need {CORPUS_MINIMUM}   FAIL\n")
+    print("  Every measure that compares this book against the corpus is silent")
+    print("  without it, and a silent measure drops out of the scorecard instead")
+    print("  of failing. Treat the count below as the measures that could run,")
+    print("  not as the measures there are.\n")
+    return found
+
+
 def scorecard(seen):
     """What passed, what did not, and the ratio.
 
@@ -564,6 +596,7 @@ def main():
         sys.exit(f"{BOOK.name} is missing; run build_manuscript.py first")
 
     tee = Tee()
+    tee.run(check_corpus)
     tee.run(table)
     if a.table:
         return
