@@ -1,0 +1,9 @@
+2
+
+absurd
+
+start units_standards
+state
+step 1
+money
+quit

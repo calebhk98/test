@@ -1,0 +1,51 @@
+2
+n
+equestrian
+n
+start tr_hopper_wagon
+start hom_toys_dolls
+start tex_horizontal_loom
+start tex_indigo
+start tr_wooden_waggonway
+start horse_collar
+start tex_mordanting
+start tr_semaphore_signal
+step 1
+start ag2_guano
+start fud_fish_curing_and_smoking
+start tr_reefing
+start fin_guild
+start tr_sleeper_ballast
+start ag2_refrigeration_ice
+start tr_block_tackle
+start fin_seigniorage
+step 1
+start fin_tariff
+start fin_bill_exchange
+start med_bone_setting
+start fin_arbitrage
+start fin_mortgage
+start med_obstetric_practice
+start hom_umbrella
+start mat_obsidian_blade
+step 1
+start fin_cartel
+start hom_safety_pin
+start fin_trade_union
+start cn_gypsum_plaster
+start opt_anemometer
+start tex_hand_ginning
+start tex_canvas
+start tr_bilge_pump
+state
+step 1
+start fin_promissory_note
+start fin_discounting
+start fin_endorsement
+start fin_cheque
+start com_signal_flags
+start lnd_coach
+start ag2_pyrethrum
+start opt_manometer
+state
+step 1

@@ -1,0 +1,12 @@
+2
+
+
+y
+step 40
+state
+start units_standards
+hire artisan 2
+state
+step 9
+state
+quit

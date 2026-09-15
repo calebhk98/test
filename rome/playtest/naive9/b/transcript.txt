@@ -1,0 +1,720 @@
+===================================================================
+ PLAYTEST TRANSCRIPT - naive9/b
+ Three runs: A = Rome 100 (fog on, poor_scholar, immortal)
+             B = Han China 100 (fog off, poor_scholar)
+             C = Han China 100 (fog off, absurd wealth)
+ Command used to start: cd /home/user/test && python3 rome/sim/simulator.py
+===================================================================
+
+############ 1. TITLE SCREEN AND SETUP (full program output) ############
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_7.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > 
+Ended 100 AD. stopped
+Saved to rome_100ad_7.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_7.json
+
+############ 2. HELP / COMMANDS / ECONOMY / LABOUR ############
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_10.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > help:
+  what this is: You are one person, dropped into a pre-industrial society, carrying the knowledge of how modern technology works but none of the industry that makes it. You are playing The Roman Empire under Trajan, beginning in 100. Knowing how a thing works is free. Building it is not: it takes your own hours, other people's hours, money, materials, and years.
+  how a turn works: You begin projects, then advance time. Nothing happens unless you make it. You are charged for food, rent and appearances every year whether or not you are building anything.
+  what you are trying to do: Build point-contact transistor, before the horizon at 600. You know what it is and what it is for; what you cannot see is the road there, only the next step of it.
+  you arrive alone: No employees, no slaves, nobody who owes you anything. Anyone who works for you is hired, taught, commissioned or bought. See help labour.
+  the four you need first:
+    state: where you stand
+    available: what you could begin today
+    why <id>: everything known about one thing
+    step <years>: let time pass
+  how to send a command: One command per line, in plain words: "available", "step 5", "hire smith 2", "why fud_wheelbarrow". Pasting a JSON command works too, if you happen to have one.
+  more:
+    commands: help commands
+    labour: help labour
+    economy: help economy
+    money: help money
+    automatic: help automatic
+    sittings: help sittings
+    fog: help fog
+    eminence: help eminence
+    risk: help risk
+    protection: help protection
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > AVAILABLE: 207 startable now
+a summary by subject, because the full list is 207 things
+
+SUBJECT                    THINGS   CHEAPEST    DEAREST     AFFORD
+textiles                       54          6     17,415         53
+finance                        24         10     10,831         16
+roads, bridges and canal       20       49.6      1,445         20
+the remaining arts             20       68.8      2,532         19
+power and precision            16       40.4      856.1         16
+farming, in depth              10        119        280         10
+the household                  10          5      285.5         10
+metallurgy                      9       74.4      6,296          6
+transport, in depth             9      200.4      1,258          9
+mathematics and method          7        230      1,032          7
+medicine and biology            7        9.3        580          7
+agriculture and food            5        235      2,070          4
+construction                    5       97.7        531          5
+signals and media               3      271.2      536.6          3
+electricity                     2       71.4      269.6          2
+glass and optics                2      315.9      337.2          2
+the briefing                    1        600        600          1
+society and politics            1      1,580      1,580          1
+everything else                 1        210        210          1
+printing and information        1      217.5      217.5          1
+
+CHEAPEST SIX RIGHT NOW, sorted by cost:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      ?
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      ?
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*    few
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*    few
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      ?
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      ?
+
+MOST RESTS ON THESE, of what you could begin today:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -    ALL
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -    ALL
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -    ALL
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -   much
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*   some
+
+  one subject: available metallurgy
+  by name: available find furnace
+  what you can pay for: available afford 1,766
+  a page of everything: available limit 30
+  all of it at once: available all (large)
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+Under fog you see only what you could begin now, and things you have heard
+of. There is no way to see the whole tree.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > 
+Ended 100 AD. stopped
+Saved to rome_100ad_10.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_10.json
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > help:
+  commands:
+    state: where you stand; add full:true for every field
+    available: what you could begin today, summarised by subject; add subject, find, afford, limit/offset, or all:true
+    why <id>: everything known about one thing
+    start <id>: begin work on something
+    stop <id>: abandon it, losing what you have spent
+    step <years>: let time pass
+    money: the whole ledger: what comes in, what goes out
+    quote <what>: what something would cost before you commit to it; so far quote mine coal 500
+    close <material>: shut your own workings down and stop paying to keep them standing
+    risk: what history is about to do to you, and what blunts it
+    labour: who you employ and what trades exist here
+    hire / fire / train / commission: see the labour topic
+    buy: forest, nitre, mine, slaves, or manumit; see the economy topic
+    work <trade> <hours>: do an ordinary job for ordinary pay
+    bounty <id>: pay someone else to solve it instead
+    open <id>: start actually running something you have worked out how to do; until you do, it earns nothing and costs nothing
+    ventures: what you are running, and what you know how to run and have not opened
+    mothball <id> / restore <id>: shut a finished work down, or reopen it
+    bribe <amount>: spend money to reduce a scandal
+    policy: every automatic behaviour, and a switch for each
+    path <id>: not available under fog of war
+    save <file> / load <file>: write or read a game
+    help: this; add a topic
+    quit: stop
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > help:
+  the ledger: money itemises what comes in and what goes out, including where the income comes from
+  buy forest: buy forest 100 hectares of coppice, which is where charcoal comes from
+  buy nitre: buy nitre 20,000 square metres of nitre bed. Saltpetre is made, not mined, and nothing else supplies it.
+  buy mine: buy mine coal 500 tonnes a year of your own workings; it takes years to sink, and it costs to keep standing whether or not you use it. ASK THE PRICE FIRST with quote mine coal 500, and close it with close coal. Materials: coal, iron, copper, lead, tin, silver, gold
+  buy slaves: buy slaves 5. This is available because it was the ordinary condition of production in most of these societies, and a model that hides it lies about the cost of everything.
+  manumit: buy manumit 5 frees people you hold. They then work better, and it is the decent thing.
+  debt: You may spend past what you have, as far as somebody will lend you and no further. Arrears cost interest.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > help:
+  where it comes from: Your practice - the trade this society already had, which you can do from the first day - plus every concern you have OPENED, plus what your own workshop sells. money itemises all of it and the rows sum to the revenue above them.
+  your practice pays less than the tree quotes: About a third: one person in a rented room is not an organised concern, and that gap does not close with time. Selling your hours for wages takes another bite, because you cannot be in two places.
+  a concern you open starts small: It reaches its full figure over about three years.
+  where it goes: Living and appearances, wages, the upkeep of what you are RUNNING, mines standing whether or not you work them, and interest on arrears.
+  money costs money to hold: Living and appearances is about a sixtieth of your capital a year, on top of a subsistence floor and your household, plus a fixed sum for each rank you hold. In a patronage society a man visibly richer than he lives is suspected, and a man seeking standing must spend on it. An idle million bleeds about fifteen thousand a year doing nothing, which is why money sitting still is money going backwards.
+  what you can buy: help economy
+  debt: You may spend past what you have, as far as somebody will lend you and no further. Arrears cost interest.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > help:
+  labour: You arrive alone. Everything anyone else does for you is hired by the year, bought as a single job, taught by you from nothing if this society has no such trade, or bought outright as a person. Trades are NOT interchangeable: a smith is not a scribe, and a project asking for an engineer cannot be built by smiths however many you have.
+  commands:
+    labour: who exists here and what they cost; add "trade" for one
+    hire: hire smith 3 - paid every year, whether you have work for them or not
+    fire: fire smith 1
+    train: train machinist 2 - teaches a trade that does not exist here, out of your own hours
+    commission: commission smith 400 - buy a job rather than a person
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > 
+Ended 100 AD. stopped
+Saved to rome_100ad_14.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_14.json
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > Point-contact transistor  [point_contact_transistor]
+====================================================
+tier 5, semiconductor, confidence A
+
+THE GOAL. An n-type germanium slab with two phosphor bronze points a
+fraction of a millimetre apart, plus a forming pulse. Fragile, noisy,
+irreproducible and it amplifies. Bardeen, Brattain and Shockley, December
+1947. Getting here from 100 AD is the whole game.
+
+COST: 33,970 den total  (5,900 labour + 8,070 materials + 20,000 capital, then x1 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 900     CALENDAR FLOOR: 4 years     FAILURE RISK: 45%
+STAFF NEEDED: 25 scholars, 20 artisans   (you have 1, 0)
+HIRED LABOUR: chemist 8,000h, machinist 6,000h
+MATERIALS: germanium_g 200, gold_g 20, phosphor_bronze_g 60
+UPKEEP: 14,000 den/yr     REVENUE: 0 den/yr
+
+STATUS: BLOCKED
+  this needs 7 other things you have not heard of yet, and you do not yet know
+  what they are
+HOW MUCH RESTS ON THIS: a few things
+
+hours of a trade bought in for this job only. These trades do not exist here
+yet and must be taught; see the labour command.
+TRADES NOT YET TAUGHT HERE: chemist, machinist
+people kept on your own staff, who understand your methods and stay when
+this is finished. Different from hired_labour, which is hours of a job.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > Establish a respectable cover identity  [identity_cover]
+========================================================
+tier 0, foundation, confidence C
+
+Buy books, a house, clothes, a literate freed or hired secretary, and a
+reputation for piety (in Rome this is specifically the Alexandrian
+physician-philosopher persona; every society has its own version of a
+scholar-notable it will not look at twice: a monk or clerk under any
+literate king, a temple-trained scribe in Mesoamerica, a rune-literate skald
+or lawspeaker in Scandinavia). Reduces all future suspicion.
+
+COST: 1,580 den total  (80 labour + 0 materials + 1,500 capital, then x1 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 500     CALENDAR FLOOR: 0.50 years     FAILURE RISK: 5%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 0)
+HIRED LABOUR: scribe 400h
+UPKEEP: 200 den/yr     REVENUE: 0 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES: none, you can start this on arrival
+HOW MUCH RESTS ON THIS: almost everything
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > Define and publish standard length, mass, time and temperature  [units_standards]
+==============================================================================
+tier 0, foundation, confidence C
+
+Do this before writing any other recipe down. Every number in your corpus is
+meaningless to posterity without it. Make master standards in bronze, in
+triplicate, deposited in three cities.
+
+COST: 444 den total  (104 labour + 90 materials + 250 capital, then x1 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 300     CALENDAR FLOOR: 0.50 years     FAILURE RISK: 5%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 0)
+HIRED LABOUR: carpenter 200h, smith 400h
+MATERIALS: bronze_kg 20
+UPKEEP: 30 den/yr     REVENUE: 0 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES: none, you can start this on arrival
+HOW MUCH RESTS ON THIS: almost everything
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > Controlled experiment, hypothesis, replication, publication  [scientific_method]
+==============================================================================
+tier 0, foundation, confidence C
+
+The hard part is not stating it, it is displacing Aristotelian authority.
+Risk is high because the failure mode is cultural, not technical. Multiplier
+on every research node thereafter. Contradicting Aristotle and Galen in
+public is a social act before it is an intellectual one, and their defenders
+hold the chairs, the patronage and the medical guild. Expect organised
+opposition, not curiosity. (Needs no standing: writing down zero, or running
+a controlled experiment, is something a nobody can do. What standing buys is
+being BELIEVED, which is reputation, not a prerequisite.)
+
+COST: 230 den total  (100 labour + 0 materials + 100 capital, then x1 your civ, x1 distance, x1 scarcity, x1.15 opposition, x1 prices)
+YOUR HOURS: 350     CALENDAR FLOOR: 2 years     FAILURE RISK: 20%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 0)
+HIRED LABOUR: scribe 500h
+UPKEEP: 100 den/yr     REVENUE: 0 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES: none, you can start this on arrival
+HOW MUCH RESTS ON THIS: a great deal
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > Decimal positional notation, zero, negative numbers, decimal fractions  [arithmetic_positional]
+==============================================================================
+tier 0, mathematics, confidence C
+
+Highest return on personal hours in the entire tree. Frame as recovered from
+Indian sources, which is even true. Sell it to bankers and the fiscus first;
+they will adopt it for self-interest and carry it for you. (Needs no
+standing: writing down zero, or running a controlled experiment, is
+something a nobody can do. What standing buys is being BELIEVED, which is
+reputation, not a prerequisite.)
+
+COST: 1,032 den total  (500 labour + 0 materials + 300 capital, then x1.2 your civ, x1 distance, x1 scarcity, x1.075 opposition, x1 prices)
+YOUR HOURS: 450     CALENDAR FLOOR: 1 years     FAILURE RISK: 10%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 0)
+HIRED LABOUR: scribe 2,500h
+UPKEEP: 100 den/yr     REVENUE: 300 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES: none, you can start this on arrival
+HOW MUCH RESTS ON THIS: almost everything
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > Rigid padded horse collar, whippletree, nailed horseshoe  [horse_collar]
+========================================================================
+tier 1, agriculture, confidence B
+
+Roman throat-and-girth harness chokes a horse under heavy draught. The size
+of the improvement is disputed in modern scholarship, so claim a real but
+modest gain, not the old textbook figure of four times. Politically the
+safest technology in this document: it feeds people and moves army supplies
+and threatens nobody.
+
+COST: 709.4 den total  (261 labour + 173.6 materials + 400 capital, then x0.85 your civ, x1 distance, x1 scarcity, x1 opposition, x1 prices)
+YOUR HOURS: 200     CALENDAR FLOOR: 1 years     FAILURE RISK: 10%
+STAFF NEEDED: 0 scholars, 1 artisans   (you have 1, 0)
+HIRED LABOUR: artisan 900h, smith 700h
+MATERIALS: iron_bar_kg 150, leather_kg 3, timber_m3 6, wool_kg 1
+UPKEEP: 150 den/yr     REVENUE: 900 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES (all met, and finished counts for ever): tex_wool
+HOW MUCH RESTS ON THIS: a fair amount
+
+BOUNTY: yes, could be posted as a public prize
+people kept on your own staff, who understand your methods and stay when
+this is finished. Different from hired_labour, which is hours of a job.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > LABOUR
+ON YOUR STAFF:
+  nobody
+
+HOUSEHOLD PLACES: 0 of 6 used, room for 6 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+Total employed: 0     annual wage bill: 0 den
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > LEDGER
+Capital: 400 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         230
+  of which because you are rich  6
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr: 3.5     spent on projects last step: 0
+Credit limit: 1,367 (none used)     interest on arrears: 11%     paid so far: 0
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > 
+Ended 100 AD. stopped
+Saved to rome_100ad_16.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_16.json
+
+############ 3. GAME A (Rome, fog on) - selected turns ############
+--- 100 AD: available (opening) ---
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > AVAILABLE: 207 startable now
+a summary by subject, because the full list is 207 things
+
+SUBJECT                    THINGS   CHEAPEST    DEAREST     AFFORD
+textiles                       54          6     17,415         53
+finance                        24         10     10,831         16
+roads, bridges and canal       20       49.6      1,445         20
+the remaining arts             20       68.8      2,532         19
+power and precision            16       40.4      856.1         16
+farming, in depth              10        119        280         10
+the household                  10          5      285.5         10
+metallurgy                      9       74.4      6,296          6
+transport, in depth             9      200.4      1,258          9
+mathematics and method          7        230      1,032          7
+medicine and biology            7        9.3        580          7
+agriculture and food            5        235      2,070          4
+construction                    5       97.7        531          5
+signals and media               3      271.2      536.6          3
+electricity                     2       71.4      269.6          2
+glass and optics                2      315.9      337.2          2
+the briefing                    1        600        600          1
+society and politics            1      1,580      1,580          1
+everything else                 1        210        210          1
+printing and information        1      217.5      217.5          1
+
+CHEAPEST SIX RIGHT NOW, sorted by cost:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      ?
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      ?
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*    few
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*    few
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      ?
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      ?
+
+MOST RESTS ON THESE, of what you could begin today:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -    ALL
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -    ALL
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -    ALL
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -   much
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*   some
+
+  one subject: available metallurgy
+  by name: available find furnace
+  what you can pay for: available afford 1,766
+  a page of everything: available limit 30
+  all of it at once: available all (large)
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+Under fog you see only what you could begin now, and things you have heard
+of. There is no way to see the whole tree.
+
+--- key events over the run (quoted from the log) ---
+[101 AD] EVENT 102: fin_mortgage would earn 38 a year against 0 of upkeep and is still
+          shut: you have no money to open it with
+[102 AD] EVENT 102: you begin teaching the first engineers this world has ever had
+          -> wage bill went 0 -> 1,562 den/yr against revenue of 704 den/yr (auto_train)
+[105 AD] RUNNING (3): fin_pawnshop / scientific_method / units_standards
+          "in arrears: after fixed costs there is nothing left to draw on, so the hours
+           offered this year did almost nothing"
+[125 AD] RUNNING: nothing        <- the three projects had been silently destroyed
+[126 AD] > start scientific_method
+         REFUSED: you have never heard of any such thing. You know what you have built and
+         what you could begin next; nothing tells you what lies beyond that.
+         (three years later the identical command worked)
+[131 AD] EVENT 131: CLOSE TO THE LIMIT: you owe 1,186 of the 1,285 anyone here will advance
+         you (92%). Past it every project in hand is halted unfinished and nobody funds new
+         work for some years.
+[132 AD] > open horse_collar
+         REFUSED: opening it costs 150 denarii in stock and premises and you have -1,186
+         (horse_collar earns 900/yr. I waited 14 game-years to afford 150 denarii.)
+[154 AD] labour:
+         HOUSEHOLD PLACES: 3.6 of 6 used, room for 2.4 more
+           to make room: To get more artisans: hire smith 3 or any trade in labour; ...
+         (this is the "how to hire" text under a "how to make room" heading; the real
+          answer, workshop_first, is never mentioned)
+[163 AD] EVENT: completed: First workshop and laboratory
+         household places: 7.1 of 14.8 used            <- ceiling went 6.0 -> 14.8
+[215 AD] EVENT 215: sulfuric_retort cannot go on: no chemist here. It has 3 years before it
+         is abandoned and what you spent on it is lost.
+         ... while `labour` said "YOU COULD HIRE: artisan, carpenter, chemist, ..."
+[218 AD] EVENT 218: HALTED sulfuric_retort: there is nobody here who can do this work
+         (chemist). What you spent is lost
+[262 AD] EVENT 262: Third century crisis: a site is sacked - 304,663 taken, 32.4 of your
+         people gone
+[263 AD] EVENT 263: ... a site is sacked - 169,702 taken, 36.2 of your people gone,
+         5 projects back to the beginning
+[366 AD] money:
+           Capital: 958,470 den     Revenue: 467,227 den/yr
+             what the market will not absorb        -144,368
+           Costs:
+             mines standing                 353,039
+           Net/yr: -61,884
+         > close coal
+         closed: the coal workings are closed. You stop paying 94503 a year.
+         > close iron
+         closed: the iron workings are closed. You stop paying 258536 a year.
+         > money
+           Net/yr: +291,156                    <- one command, +353k/yr
+         (I had never typed `buy mine`; `policy auto_mine on` did it, and nothing lists
+          your mines.)
+[477 AD] > why point_contact_transistor
+         STATUS: BLOCKED
+           missing prerequisites: galena_detector, gp_whisker_forming, prc_lapping_plate,
+           quantum_solidstate_theory, single_crystal, vacuum_tube
+         (the roadmap I had wanted for 380 game-years, available all along under fog)
+
+--- GAME A ENDING ---
+======================================================================
+THE RUN IS OVER
+======================================================================
+  the horizon at 600 AD is reached. You built 132 things of your own and did
+  not reach point-contact transistor.
+
+  ended in 600 AD
+  you built 132 things; this society already had 141
+  3,521,845 in hand, 137.6 people, reputation 18.2, 65 concerns running
+  2 attempts failed and had to be begun again
+
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 102 of them and 44 were still to build
+    the next steps would have been: charcoal_industrial, gp_laminated_core,
+    gp_glass_metal_seal, mirror_amalgam, blast_furnace, mercury_supply,
+    glass_borosilicate, cap_pure_6N
+
+  the largest things you built: mat_bulk_steel, mat_copper, steam_high_pressure,
+  finery_puddling, lead_metallurgy, zinc_metal
+======================================================================
+
+############ 4. GAME B (Han China 100, fog OFF) ############
+Started with: python3 rome/sim/simulator.py play --session B.json --civ han_china_100ad --kit poor_scholar
+
+--- 100 AD: path, with fog off (the whole route, in order) ---
+> path point_contact_transistor
+id: point_contact_transistor
+done: False
+remaining count: 138
+remaining: arithmetic_positional, identity_cover, scientific_method, units_standards,
+algebra_symbolic, patron_local, atomic_theory, statistics_basic, geometry_analytic,
+workshop_first, calculus, case_hardening, charcoal_industrial, lead_metallurgy,
+lens_grinding, nitre_beds, refractory_fireclay, newtonian_mechanics, ... (138 in all) ...
+zone_refining, single_crystal, point_contact_transistor
+
+--- notable Han-specific text problems ---
+> why corpus_written                     (playing the LATER HAN EMPIRE)
+Write the corpus: everything you know, in plain quantitative Greek and Latin [corpus_written]
+
+> available          (playing the LATER HAN EMPIRE)
+MOST RESTS ON THESE, of what you could begin today:
+patron_senatorial   Senatorial patronage   10,997  600  2  25%   0  1,000   -   50
+civ_arch_roman      Roman masonry arch      276.9   60 0.5   0%   0     10   -   41
+
+> start el2_potentiometer_method_measurement
+REFUSED: this needs unknown_source and you have none of the things that would serve:
+any of dynamo would do
+
+--- GAME B ENDING ---
+======================================================================
+THE RUN IS OVER
+======================================================================
+  ran out of horizon (600 AD) without reaching the goal
+  you built 616 things; this society already had 135
+  18,309,907 in hand, 172 people, reputation 28.4, 176 concerns running
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 81 of them and 65 were still to build
+    the next steps would have been: nitre_beds, precision_three_plate, galena_detector,
+    cementation_steel, coal_coke, balance_analytical, zinc_metal, telescope
+======================================================================
+(note: `path` had said "remaining count: 41" only 70 game-years earlier. Sackings during
+ the Sixteen Kingdoms took back 24 nodes I had already built. corpus_written was finished
+ but never OPENED, so `risk` still read "hedge: none yet" the whole time.)
+
+############ 5. GAME C (Han China 100, fog OFF, absurd wealth) ############
+The lesson-applied run: hedge early, train all five taught trades early,
+follow the `path` list strictly, never borrow.
+> open corpus_written
+opened: corpus_written open: it earns 0 a year and costs 600 a year to run
+> risk
+hedge: corpus_written                <- the hedge only counts once it is OPEN, not built
+
+> why power_grid
+STATUS: BLOCKED
+  needs 200 trained craftsmen, on your staff or under contract, and you have 133.1.
+  To get more artisans: hire smith 3 ...; or commission smith 400 ...; buy slaves N ...
+FULL CHAIN BEHIND IT: 95 nodes, 34,850 of your hours, 3,751,306 cash, 102.2-year serial floor
+TOTAL DOWNSTREAM: 144 thing(s) depend on this -- INCLUDING THE GOAL
+
+> labour
+HOUSEHOLD PLACES: 166.9 of 166.9 used, room for 0 more
+   (so 200 standing craftsmen was arithmetically impossible at that moment, and the
+    "commission" the message offers does not count toward it: I bought 100 hours of a
+    smith and the requirement did not move.)
+
+--- GAME C ENDING (closest run) ---
+======================================================================
+THE RUN IS OVER
+======================================================================
+  ran out of horizon (600 AD) without reaching the goal
+  you built 670 things; this society already had 135
+  42,789,298 in hand, 211.2 people, reputation 26.8, 243 concerns running
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 135 of them and 11 were still to build
+    the next steps would have been: power_grid, cap_power_grid, zinc_industry_scale,
+    cap_heat_3000, germanium_extraction, arc_furnace_ferroalloys, gecl4_purification,
+    ge_reduction
+======================================================================
