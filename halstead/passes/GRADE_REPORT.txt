@@ -1,0 +1,247 @@
+
+==============================================================================
+1. EVERY MEASURE, ONE ROW PER CHAPTER
+==============================================================================
+file                     words   paras   sents  w/sent   sl CV  w/para  s/para   w len    7+ch    sTTR  top100     F-K     ARI  Lexile  commas  subord   relcl  simple     u10   20-35    runs   front    and2    and%    neg%   chat%
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01_before                4,118     118     303    13.6    74.3    34.9     2.6     4.1    11.1    36.8    48.6     4.7     4.5   931.3     1.0    26.7    20.8    59.1    43.6    17.8    14.5     2.0     5.3     2.7     5.3       0
+02_march_4th             3,160     111     216    14.6    84.0    28.4     1.9     3.9     8.8    36.7    51.3     4.6     4.4   957.3     0.9    25.0    21.8    61.6    44.0    20.8    19.9     1.4     9.7     3.3     8.3       0
+03_the_letter            3,175     128     232    13.7    86.8    24.8     1.8     4.0    10.5    36.0    50.4     4.5     4.3   929.7     1.0    19.0    21.6    67.2    53.4    21.6    25.4     1.7     5.2     2.8     5.6       0
+04_pluto                 2,810     119     197    14.2    91.0    23.6     1.7     4.0    10.0    38.6    47.8     4.8     4.5   952.3     1.0    22.8    22.8    61.4    47.2    19.8    16.2     2.0     8.6     2.9     7.6       0
+05_behind                2,679     105     199    13.4    76.3    25.5     1.9     4.0     9.9    34.9    47.3     4.3     4.1   927.5     1.0    25.1    20.1    60.8    47.2    19.6    14.6     0.5     9.0     3.3     7.0       0
+06_the_list              2,678     123     210    12.7    82.4    21.7     1.7     4.0     9.7    37.8    50.1     4.1     3.6   892.5     1.0    19.0    19.0    68.6    48.6    17.1    22.9     2.9     8.6     3.5    12.9       0
+07_the_same_room         2,773      98     194    14.3    89.8    28.2     2.0     3.9     9.1    36.9    50.7     4.6     4.2   951.9     1.1    23.7    19.6    63.9    45.4    17.5    23.2     2.1     8.8     3.6     8.8       0
+08_the_asking            2,889      94     179    16.1    70.7    30.7     1.9     4.0    10.7    37.1    50.0     5.5     5.7  1006.7     1.2    27.4    24.0    57.0    32.4    20.7     1.7     1.1    11.7     3.9     8.9       0
+09_february              2,204      68     157    14.0    71.3    32.4     2.3     3.9    10.2    34.8    53.5     4.5     4.0   929.6     0.9    25.5    19.1    65.0    40.8    19.1    15.3     3.2     7.6     2.9     9.6       0
+10_april                 3,544      84     236    15.0    71.8    42.2     2.8     4.0    11.2    38.7    49.4     5.5     5.0   970.3     0.9    28.4    22.5    59.3    39.0    19.5     8.1     2.5     9.3     3.5    10.6       0
+11_eight                 3,156      99     205    15.4    71.4    31.8     2.1     4.0    10.6    37.8    49.6     5.5     5.1   981.9     1.0    22.9    20.0    64.4    39.5    20.5     8.3     1.0     9.3     3.4     7.8       0
+12_nine                  2,718      81     192    14.1    71.9    33.5     2.4     4.0    10.9    38.2    48.9     5.0     4.6   948.1     0.9    22.9    25.0    60.9    38.0    21.9    13.0     0.0     7.3     3.3     8.9       0
+13_ten_pages             3,222      92     229    14.1    76.7    35.0     2.5     4.0    11.5    36.9    50.4     5.1     4.7   938.6     0.7    20.1    17.5    67.7    43.7    17.5    22.7     0.9    10.9     3.8     8.7       0
+14_sixty_degrees         3,758     111     243    15.4    73.3    33.8     2.2     4.0    11.4    37.4    48.5     5.7     5.3   986.5     0.9    21.4    22.6    62.6    37.4    21.4     5.8     2.1     7.8     3.1     9.1       0
+15_twelve                4,608     173     396    11.6    79.9    26.6     2.3     4.1    11.5    39.0    47.2     4.0     3.6   865.3     0.8    17.2    19.2    67.4    54.8    13.4    21.2     1.3     4.5     2.8     9.8       0
+16_thirteen              2,699      81     187    14.4    72.7    33.3     2.3     4.1    13.3    37.5    49.1     5.7     5.1   958.5     0.8    21.9    23.0    63.1    41.2    17.1    13.9     1.1     7.0     3.7    10.2       0
+17_fourteen              2,954      97     195    15.1    77.3    30.4     2.0     4.1    11.5    40.2    47.3     5.6     5.3   985.1     0.9    23.6    18.5    65.6    44.6    20.5     6.7     0.0    11.8     3.6     7.2       0
+18_fifteen               2,794      87     210    13.3    69.9    32.1     2.4     4.0    10.6    37.6    49.9     4.8     4.1   918.4     0.7    19.0    19.5    67.6    46.7    23.3    16.2     1.0     5.7     3.3     6.7       0
+19_sixteen               2,089      79     168    12.4    84.7    26.4     2.1     4.0     9.9    36.8    50.3     4.3     3.5   886.1     0.5    17.9    15.5    72.0    52.4    12.5    16.7     1.8     8.9     3.3     3.6       0
+20_the_parking_lot       2,712      87     225    12.0    86.5    31.1     2.6     4.1    10.2    40.6    45.7     4.1     3.9   883.0     0.6    13.8    22.2    68.9    56.9    16.4    31.1     0.4     8.4     3.4    13.8       0
+21_the_applications      3,151      88     192    16.4    78.3    35.8     2.2     4.2    14.1    40.0    47.3     6.8     6.7  1023.9     1.0    24.5    26.6    56.8    40.6    21.9    14.6     0.0    12.5     3.3     7.8       0
+22_the_offer             2,474      68     156    15.8    85.7    36.3     2.3     4.2    12.7    40.4    45.3     6.3     6.2  1004.8     1.1    28.8    20.5    59.0    40.4    20.5    12.8     0.6     7.7     2.5     9.0       0
+23_the_first_one         3,080      66     176    17.5    68.4    46.6     2.7     4.3    14.5    43.4    44.0     7.2     7.6  1061.3     1.2    24.4    23.3    59.1    28.4    29.5     6.8     2.3     5.1     2.4     5.1       0
+24_the_chat              1,318      23      60    21.9    50.9    57.1     2.6     4.3    17.0    40.8    41.6     9.5    10.0  1170.7     1.4    41.7    21.7    46.7    15.0    46.7     0.0     1.7     6.7     2.4     1.7      48
+25_ten_targets           2,093      35     101    20.7    92.2    59.7     2.9     4.2    14.6    39.8    45.9     8.3     8.8  1128.0     1.3    29.7    38.6    50.5    43.6    13.9    13.9     1.0    18.8     3.5     2.0       0
+26_the_exercise          2,135      27      99    21.5    53.2    78.9     3.7     4.2    13.9    39.1    45.1     8.2     8.9  1145.0     1.4    41.4    27.3    45.5    13.1    40.4     0.0     3.0     6.1     2.2     1.0       1
+27_nadia                 1,898      24      78    24.3    75.3    78.9     3.2     4.2    14.7    42.5    48.1     9.6    10.6  1200.2     1.3    41.0    34.6    46.2    24.4    24.4     6.4     1.3    14.1     2.5     0.0       7
+28_nineteen              2,714      41     143    19.0    69.4    66.1     3.5     4.4    17.3    42.8    44.0     8.3     8.6  1106.6     1.1    37.8    32.2    46.9    32.2    32.2     8.4     1.4    11.2     2.9     4.2      13
+29_the_file              2,073      41      96    21.5    63.9    50.4     2.3     4.3    15.0    43.0    46.5     9.3     9.5  1150.3     1.4    37.5    32.3    47.9    21.9    22.9     0.0     0.0    12.5     2.7     4.2       1
+30_cleared               2,057      52     118    17.4    81.2    39.5     2.3     4.3    15.5    42.1    46.6     7.6     7.5  1055.4     1.2    31.4    28.8    53.4    44.1    17.8    16.1     1.7    11.0     3.1     1.7       0
+31_ruth                  2,276      37     113    20.1    54.8    61.4     3.1     4.4    17.2    41.5    46.0     8.9     9.5  1126.2     1.2    37.2    32.7    45.1    16.8    31.0     2.7     1.8     8.8     2.8     0.0       9
+32_the_money             1,695      22      58    29.1    59.1    76.8     2.6     4.3    14.2    41.8    43.8    11.9    13.2  1303.3     1.7    51.7    37.9    27.6    19.0    27.6     0.0     0.0     5.2     1.9     1.7      24
+33_the_other_one         1,762      32      66    26.6    58.5    54.9     2.1     4.3    13.6    39.6    45.7    10.8    11.9  1250.6     1.7    36.4    37.9    43.9    10.6    30.3     0.0     0.0    12.1     2.8     1.5      14
+34_the_files             1,831      23      73    25.0    53.4    79.4     3.2     4.4    16.9    44.7    42.9    10.8    11.8  1224.8     1.5    38.4    31.5    45.2    15.1    38.4     0.0     0.0     5.5     2.3     0.0      12
+35_nine_minutes          1,811      21      79    22.9    53.8    86.0     3.8     4.3    14.7    40.8    43.8     9.6    10.1  1182.3     1.2    41.8    38.0    39.2    20.3    46.8     0.0     5.1     6.3     1.5     2.5      12
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+book median              2,712      81     187    15.4    73.3    34.9     2.3     4.1    11.5    39.0    47.3     5.6     5.3   985.1     1.0    25.1    22.6    59.3    40.6    20.7    13.0     1.3     8.6     3.1     7.0       0
+corpus median           67,163   1,946   4,649    14.3    85.3    33.7     2.4     4.1    13.2    40.7    48.1     6.1     5.2   948.5     0.9    22.2    19.5    65.9    45.7    15.9    17.1     1.6    11.7     3.3     7.8       0
+
+corpus word and paragraph counts are whole books, so the first three columns
+only compare like with like between chapters. A dash under sTTR means the
+chapter is under 1000 words, which is shorter than the sampling window.
+
+==============================================================================
+2. AGAINST TARGET (Flesch-Kincaid 7.0, Lexile 1000)
+==============================================================================
+
+  book       F-K   5.9   Lexile   995.3
+  target     F-K   7.0   Lexile  1000.0
+  gap        F-K  -1.1   Lexile    -4.7
+
+  20 of 35 chapters are more than a grade under the Flesch-Kincaid target:
+
+    15_twelve                 4.0    865.3  ############
+    06_the_list               4.1    892.5  ############
+    20_the_parking_lot        4.1    883.0  ############
+    19_sixteen                4.3    886.1  ###########
+    05_behind                 4.3    927.5  ###########
+    09_february               4.5    929.6  ##########
+    03_the_letter             4.5    929.7  ##########
+    02_march_4th              4.6    957.3  ##########
+    07_the_same_room          4.6    951.9  ##########
+    01_before                 4.7    931.3  #########
+    18_fifteen                4.8    918.4  #########
+    04_pluto                  4.8    952.3  #########
+    12_nine                   5.0    948.1  ########
+    13_ten_pages              5.1    938.6  ########
+    10_april                  5.5    970.3  ######
+    11_eight                  5.5    981.9  ######
+    08_the_asking             5.5   1006.7  ######
+    17_fourteen               5.6    985.1  ######
+    16_thirteen               5.7    958.5  #####
+    14_sixty_degrees          5.7    986.5  #####
+
+  Flesch-Kincaid counts syllables per word; Lexile counts how common the
+  words are. This book writes fairly long sentences out of short, ordinary
+  words, so it scores far better on Lexile than on Flesch-Kincaid. Closing
+  the Flesch-Kincaid gap means longer words, and in the early chapters that
+  costs the child narrator. Weigh it per chapter, not book-wide.
+
+==============================================================================
+3. GRADED AGAINST THE CORPUS
+==============================================================================
+==============================================================================
+HALSTEAD.md  |  93,108 words  |  benchmark: peter_pan  |  corpus: 23 books
+
+maturity percentile (median of 18 measures): 63      lost to benchmark on 4 of 18
+  on the original 12 measures: 70
+  3% of this chapter is chat transcript, measured separately and excluded above
+
+  measure                                           this   bench   pct
+  sentence length variation (CV %)                 78.44   82.55   22%  <-- loses
+  lexical diversity (sTTR)                         38.90   39.52   26%  <-- loses
+  sentences per paragraph                           2.27    1.96   43%  
+  words of 7+ characters %                         12.19   12.73   43%  <-- loses
+  reading grade (Flesch-Kincaid)                    5.86    5.72   48%  
+  words per paragraph                              35.28   28.64   52%  
+  words from the commonest 100 %                   47.82   49.36   57%  
+  commas per sentence                               0.99    1.17   61%  <-- loses
+  mean word length (characters)                     4.11    4.06   61%  
+  reading grade (ARI)                               5.71    5.00   65%  
+  Lexile (approximate, see note)                  995.27  953.22   70%  
+  sentences inside a run of 3+ short ones %        13.96   15.08   70%  
+  sentences under 10 words %                       40.81   42.69   70%  
+  sentences with a subordinate clause %            25.21   22.24   70%  
+  words per sentence                               15.54   14.63   70%  
+  sentences of 20-35 words %                       21.23   18.01   78%  
+  sentences with a relative clause %               23.12   22.82   78%  
+  sentences with no subordinate/relative clause %   60.36   62.74   78%  
+
+  monitored, not graded (corpus low / median / high):
+  sentences opening on a subordinate clause %       1.40   corpus 0.62 / 1.55 / 3.32
+  sentences with two or more "and" %                8.48   corpus 4.24 / 11.72 / 25.83
+  "and" as a share of all words %                   3.06   corpus 2.30 / 3.34 / 5.10
+  sentences whose beat is a negative %              7.22   corpus 2.88 / 7.80 / 17.49
+
+  fix first, by size of the gap to peter_pan (in corpus standard deviations):
+    sentence length variation (CV %)                 78.44 vs   82.55    0.5 sd
+    commas per sentence                               0.99 vs    1.17    0.4 sd
+    words of 7+ characters %                         12.19 vs   12.73    0.2 sd
+    lexical diversity (sTTR)                         38.90 vs   39.52    0.2 sd
+
+==============================================================================
+4. DIALOGUE SHARE AND THE SPOKEN / NARRATION SPLIT
+==============================================================================
+
+  chapter                   quoted   spoken  narration    gap
+  ---------------------------------------------------------
+  01_before                  25.0%      7.4       16.2    8.9
+  02_march_4th               23.3%      7.2       20.0   12.8
+  03_the_letter              24.1%      6.4       20.1   13.7
+  04_pluto                   21.8%      6.3       18.9   12.6
+  05_behind                  18.5%      6.2       16.0    9.8
+  06_the_list                29.3%      7.8       15.6    7.9
+  07_the_same_room           33.6%      8.3       19.3   11.0
+  08_the_asking              28.2%     10.4       19.0    8.5
+  09_february                22.0%      8.5       16.7    8.2
+  10_april                   27.8%     10.5       17.1    6.6
+  11_eight                   31.7%     10.0       18.9    8.9
+  12_nine                    25.8%      8.2       18.3   10.2
+  13_ten_pages               23.7%      8.5       16.9    8.4
+  14_sixty_degrees           31.5%     10.5       18.4    7.9
+  15_twelve                  39.3%      8.5       13.6    5.1
+  16_thirteen                23.4%      8.0       18.6   10.6
+  17_fourteen                24.8%      8.1       19.1   11.0
+  18_fifteen                 25.3%      7.9       17.1    9.2
+  19_sixteen                 27.8%      7.1       17.5   10.4
+  20_the_parking_lot         26.2%      7.2       14.9    7.7
+  21_the_applications        11.4%      6.8       18.3   11.6
+  22_the_offer               17.8%      6.8       20.5   13.8
+  23_the_first_one            9.7%      7.3       18.6   11.3
+  25_ten_targets              7.6%      5.8       25.1   19.2
+  26_the_exercise             3.9%     14.2       20.9    6.8
+  27_nadia                    7.0%     14.2       20.9    6.7
+  28_nineteen                 6.7%     12.2       16.2    4.0
+  29_the_file                 0.6%     13.0       20.6    7.6
+  30_cleared                 16.4%      8.2       20.9   12.7
+  31_ruth                     2.5%     10.5       18.4    7.9
+  32_the_money                0.5%      3.3       17.8   14.5
+  33_the_other_one            0.1%      1.5       20.7   19.2
+  34_the_files                0.1%      3.0       19.0   16.0
+  ---------------------------------------------------------
+  median                     23.3%                        9.8
+
+  quoted    share of words inside quotation marks
+  gap       narration mean minus spoken mean, in words. A wide gap is
+            ordinary; a gap near zero means the narration has gone as
+            clipped as the dialogue.
+
+==============================================================================
+5. NUMBERS
+==============================================================================
+HALSTEAD.md: 3,238 numbers in 96,437 words, 67 distinct values
+
+  measure                             this   corpus low / median / high
+  numbers per 1000 words                33.6   corpus 4.9 / 7.9 / 17.6   above every book in the corpus
+  share on the commonest 5 values %     64.1   corpus 62.1 / 74.4 / 90.9
+  share on the single commonest %       25.8   corpus 26.9 / 40.7 / 62.6
+  distinct values used                  67.0   corpus 17.0 / 39.0 / 79.0
+
+  the 20 commonest, as a share of all numbers, against the corpus:
+    value       uses   share  corpus med  corpus max
+    one          834   25.8%       40.7%       62.6%
+    two          424   13.1%       15.3%       23.2%
+    four         424   13.1%        3.8%        9.7%   <-- above every book
+    three        265    8.2%        7.9%       22.9%
+    eleven       129    4.0%        0.4%        1.9%   <-- above every book
+    nine         128    4.0%        1.2%        3.8%   <-- above every book
+    six          127    3.9%        2.3%        4.9%
+    five          98    3.0%        3.7%        7.5%
+    ten           91    2.8%        2.4%        6.0%
+    seven         86    2.7%        1.2%        4.2%
+    twenty        80    2.5%        2.0%        3.5%
+    eight         71    2.2%        1.1%        2.7%
+    hundred       67    2.1%        2.2%        4.7%
+    forty         66    2.0%        0.7%        2.5%
+    thirty        43    1.3%        0.8%        2.9%
+    ninety        38    1.2%        0.0%        0.3%   <-- above every book
+    twelve        34    1.1%        0.9%        2.0%
+    nineteen      23    0.7%        0.2%        1.7%
+    fifteen       22    0.7%        0.5%        2.0%
+    fifty         20    0.6%        0.9%        3.9%
+
+==============================================================================
+6. VOICE SEPARATION
+==============================================================================
+
+PROSE DIALOGUE   (tagged lines only, biased short - compare speakers, not absolutes)
+  speaker     lines  words  w/line   TTR%  quest%  1-3w%  >15w%  hedge%
+  ruth           58    462     8.0   50.6       3     28     10       3
+  priya           8     55     6.9   76.4      12     50     12       0
+  kavi           26    171     6.6   67.3       4     27      8       0
+  chloe          93    606     6.5   45.4       8     43     10       5
+  nadia           9     54     6.0   88.9      11     22      0       0
+  mom            38    215     5.7   57.2       8     47      3       3
+  dad            18     88     4.9   76.1      11     28      0       0
+  sam            58    262     4.5   64.9       3     52      3       0
+  words per line   4.5 to 8.0   spread 56% of the mean
+  1-3 word share   22.2 to 51.7   spread 80% of the mean
+
+GROUP CHAT: nothing with at least 8 lines
+
+==============================================================================
+7. INTEGRITY
+==============================================================================
+
+  Character-sheet quotations not found in the manuscript
+    295 quotations checked, 117 not found in the manuscript.
+    A miss is not proof of fabrication - it may be a paraphrase, a proposal,
+    or a line quoted from a reference document. Each one needs a human look.
+
+  PROSE_RULES violations in the character sheets
+    SANDOVAL.md
+        73 [verdict] the right call
+    18 flagged across 37 files.
+
+  Em dashes and the hard-line-break convention
+    34_the_files                2076     0 (was 0)        0      0       +0  
+    35_nine_minutes             2058     0 (was 0)        1      0       +0  1 em dash
+    4 problem(s).
+

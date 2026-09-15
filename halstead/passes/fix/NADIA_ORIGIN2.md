@@ -1,0 +1,348 @@
+# Nadia origin, second pass: chapters 21, 22, 23, 24
+
+Brief: `passes/nadia/REVISION_NOTES.md`, notes 1, 4, 7, 8, 11, 12 and 14, in the
+four chapters that carry her from school to the first months of the company.
+Files changed: `chapters/21_the_applications.md`, `22_the_offer.md`,
+`23_the_first_one.md`, `24_the_chat.md`. Nothing else touched. Chapter 20 and
+its protected fight were not opened. Chapter 27, chapter 34 and
+`characters/NADIA.md` belong to the other agent this session and were read only.
+
+`characters/NADIA.md` was re-read after the other agent rewrote it, and the
+Chloe friction was written to the shape that sheet now specifies rather than to
+a guess. See note 14 below.
+
+---
+
+## The two questions the author asked directly
+
+**What jobs was she applying for, and what were her goals?**
+
+Eleven listings a week, all of them within driving distance, all of them the
+same job wearing different job titles: purchasing assistant at a plumbing supply
+on Route 8, parts buyer at two dealerships, service writer at a transmission
+shop, dispatch at a freight company in Ambridge, and a claims trainee program at
+an insurance office that advertises straight out of high school at the top of
+the listing and two years of experience nine lines down. The goal, said once in
+chapter 21 and never explained afterwards: *"Any of them where somebody calls in
+wanting a price and I'm the one who answers the phone. The rest of it is the
+building it happens in."* It is the negotiation term pointed at a wage. Nothing
+in it is about software, and nothing in it is about starting a company.
+
+The freight desk in Ambridge is then used three more times as the concrete
+version of the ordinary life she keeps saying she will go and take.
+
+**Why does a normal teenager not go to college?**
+
+Two reasons, both hers, both delivered to Mr. Amberg in chapter 22 and never
+narrated:
+
+1. **She costed it.** Four years and about a hundred and ten thousand dollars
+   against the eleven jobs she has actually been applying for. *"A degree comes
+   up on zero of the eleven. Two of them ask for a forklift certificate."*
+   *"Which you have."* *"Which took a day."* She has kept the shop's books since
+   she was eleven, so this is the arithmetic she does about everything.
+2. **The paper problem, which is temperamental rather than financial.** *"The
+   rest of it is a desk and a paper at the end, and every paper I have ever
+   finished went to a marker, where it stopped."* Her sheet has this already:
+   she distrusts a result she cannot test, her least favourite thing is the
+   written component of anything, and the languages she is worst at are the ones
+   with nobody alive on the other end. Four more years of that is the thing she
+   is declining. It is a preference, not a principle, and she does not argue it.
+
+She also turns down the Halstead offer in the same fifteen minutes, so college
+and the salary are refused in one scene and for the same reason.
+
+---
+
+## Note 11, the psychological jump
+
+Built across all three pre-launch chapters so that the turn arrives late.
+
+**Chapter 21 (Oct 2022 - Mar 2023).** She is in the room on essay Sunday with a
+job portal open instead of an essay, typing eleven years of schooling into a box
+marked Education History after the same portal has already taken it as a file.
+The eleven jobs get named here. Then a March section: the notebook, the ledger
+hand, a hundred and ninety lines against eleven answers, the nine-minute reply
+to a fifty-minute form, a November listing still up in March with a fresh date
+on top.
+
+**Chapter 22 (Apr 2023).** The exit interview. She refuses the offer flat, gives
+the college answer, and then Amberg asks what she is doing in September and she
+says it out loud to an adult who is writing it down. His answer is the note's
+question asked from outside her: *"Eighty people have sat in that chair this
+month. Four of them told me they were starting something."* / *"That sounds
+about right."* / *"Three of the four will be doing something else by
+Christmas."* / *"That sounds right too."* Nobody in the room encourages her.
+
+**Where the doubt actually sits.** The rewritten sheet is explicit that she does
+not deliberate in front of people and that the doubt arrives after the decision,
+alone, as recounting. So the kitchen-table hesitation is not staged as
+hesitation. It is the paragraph after the interview: she counts the lines in the
+notebook, gets two hundred and one, counts them again, gets two hundred and one,
+counts what five years of Saturdays have left in her account three times, and
+then writes the first sixty lines of the thing before she sleeps. The decision
+is flat and the fear is in the arithmetic.
+
+**The turn itself** is dated to the last week of March, immediately after the
+A/B test result, and is never described as a turn.
+
+---
+
+## Note 4, friction and failure
+
+- Two hundred and eleven applications from November to April, fourteen answers,
+  eleven of the fourteen generated by software between one and four in the
+  morning. The last of the fourteen is an automatic rejection from a company
+  that had already rejected her in January under a different listing.
+- **The employers who say no.** Between mid-May and the second week of June she
+  asks sixty-one employers in person, working down a list arranged by street.
+  Nine agree, and all nine are customers of her father's.
+- **The beta is ugly and nobody uses it.** First month: forty-one registered
+  users and exactly one hire, and the hire is a man who already had the job and
+  used the site to fill in the form. By September: two hundred and twelve users
+  since June, six hires, four applications across all nine employers since
+  August, and one employer who rang the shop to ask whether the site was still
+  running. The sign-up page still has lorem ipsum under the button, which she
+  knows about and which is item forty on a list that has never got past nine.
+- **She hires nobody.** She interviews forty-one people in July for two jobs,
+  and in August writes to all forty-one to say the jobs are gone. The
+  forty-one/thirty-nine test material from the previous pass is kept, now as
+  work that led to nothing.
+
+---
+
+## Note 1, the pivot
+
+The first version is the boutique one and it is allowed to fail on the page. The
+diagnosis and the fix are four chat lines in chapter 24 and no narration
+explains either:
+
+- *"they sign up, they look at nine employers, they leave. i would leave"*
+- *"i asked sixty one to get nine. sixty one more gets me nine more and its
+  march"*
+- *"its both ends at once. neither side will go first, so i stop asking either
+  of them to"*
+- *"every board and every company careers page i can reach, read all of them,
+  and put every opening on it whether the company has heard of me or not"*
+
+Kavi predicts the boards will block her; she agrees two of them will, and points
+out that a careers page is only the company's own website and there are four
+thousand of those in reach. The signed-in-person employers stay as the ones who
+pay on the hire, and the scraped openings are there so that there is something
+to look at, which keeps chapter 27's three counties and its in-person employer
+roster intact. Matching runs from both sides, from whichever side has fewer that
+week.
+
+The author's ten-and-ninety line is in her mouth as a fact about her own
+calendar rather than as a maxim: *"i wrote the whole thing in six weeks. ive
+spent three months on nobody coming."*
+
+One dense narration paragraph closes it: eleven days of reading, most of them on
+company career pages rather than boards because a board publishes in one format
+and four thousand companies publish in four thousand, and by the first week of
+October the site carries nineteen thousand openings, nine of which have anybody
+behind them who has agreed to pay her anything.
+
+---
+
+## Note 7, emotion
+
+The six required beats, one each, all in what she says or does:
+
+| beat | where |
+| --- | --- |
+| a joke | ch24. Eli: *"youre one bad month off the plumbing supply on route 8."* Nadia: *"purchasing assistant. they never called me back either."* Deadpan, literal, extends his premise one step, and calls back the ch21 list. Also *"its tedious, not brutal. brutal implies effort."* |
+| an admission of confusion | ch21, to Ruth: *"I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."* |
+| asking for help | ch21: *"Read one of mine, Ruth."* One person, named thing first, a pause before it, sleeves up. |
+| wanting something for no strategic reason | ch24: a four-cylinder car sitting at the yard on Ohio Street since she was fourteen. *"is it better than the one you have"* / *"its worse"* / *"i want it anyway."* |
+| getting it socially wrong and recovering | ch21, with Chloe. See note 14. |
+| plainly upset | ch23, to her father: *"I got up at five for six months to fill those in. I'd like to stop doing that."* |
+
+**Shame** is written as the sheet specifies: a kept record and a number she will
+not say. She stops reading the count out at dinner in February; when her mother
+asks on the phone whether anyone has called, she starts being the one who gets
+to the shop phone first; and when Ruth asks in March she gives a number two
+weeks old before she gives the real one. Handing Chloe the open notebook later
+in the same scene is the largest thing she does in the chapter, because it is
+the record she shows nobody.
+
+**Fear** is the recounting in ch22, and one line in ch24: Ruth says *"its two in
+the morning where you are"* and Nadia says *"yes."*
+
+**The line to her father** is the ch23 handshake beat, and the warmth is buried
+under a task in the same breath, per the sheet: she says it while still holding
+his hand, and then takes the invoice off the counter and tells him the supplier
+has billed him twice for the same case of blades.
+
+**The knife-edge line.** Her sheet forbids figurative language absolutely, so
+the image is given to Eli and she declines it: *"thats a tightrope with a knife
+balanced on it"* / *"its eleven hundred dollars, eli. i can read the number"* /
+*"two invoices clear on the fourth. thats six hundred more. after that its
+whatever october does."* The author's content is there and the voice rule holds.
+
+---
+
+## Note 8, negotiation
+
+**The bank, ch24.** New scene, 300 words, fully on the page. The branch holds
+incoming payments five business days and the manager reads her the policy off a
+laminated card without turning it around. She opens with history rather than
+sympathy (three months, eleven deposits, zero returns), asks for two days on
+nine named payers, is told the minimum balance, gives him a counter four hundred
+under it plus what holding it costs her, concedes the fallback herself (*"if one
+of the nine comes back on you, put me to five across all of it and I'll take
+it"*), holds a silence, gets two days on the nine with a six-month review, and
+only then asks for the twelve-dollar monthly fee, which is cheap for him to give
+once he has already conceded. *"The fee's the fee."* / *"You've spent twenty-two
+minutes on me."* He takes it off for a year.
+
+**Her father, ch23.** Rebuilt into a real argument. He opens with the meanest
+line anyone says to her in the book: *"This is what people say when nobody will
+hire them. They say they are starting something,"* followed by his position,
+which is the counter Monday to Saturday. She refuses flat, counters with the
+back room and Sundays, prices what he already gets from her for free, names the
+alternative cost (he would be paying somebody for the books by August), and
+attaches an end date of the last day of March. He extracts the thing she least
+wants, four job applications a week in the book where he can see them; she
+settles at three plus a condition. They shake on it the way he shakes with a
+supplier.
+
+---
+
+## Note 12, the counter
+
+Dropped to Sundays and made the outcome of the negotiation rather than an
+assertion. Chapter 23's *"Then she goes back behind the counter of her parents'
+shop, same as she's always done"* is gone. Chapter 24's roster line now puts her
+in the back room with the door open onto the counter; the till-counting habit
+line became *"except on a Sunday evening, when she has the shop's books open";*
+and the section opener reads *"Nadia is behind her parents' counter one day a
+week now, Sundays, and in the back room the rest of it."* This matches chapter
+36's existing *"still counts her parents' till on a Sunday."*
+
+---
+
+## Note 14, Chloe
+
+`characters/NADIA.md` was silent on this when the pass started and specific by
+the time the friction was written, so it is written to the sheet: Chloe's method
+needs privacy until a thing is finished, Nadia reads privacy about a result as a
+small performance, and the sheet's instruction is *never as a row, a tightening
+at the table, a subject that closes early, and both of them back in the same
+seats.*
+
+Chapter 21, the March scene. Nadia asks Ruth for the read. Ruth deflects to
+Chloe, *"since Chloe's the one who writes."* Nadia's answer is the read said out
+loud in front of people: *"Chloe writes four pages when they ask for six
+hundred."* Chloe puts her pen down and leaves it down, gives the smallest
+correction available (*"Six hundred and eleven, in the end. I cut it"*), and
+Nadia finishes it (*"You cut it three times"*) before she registers it. The
+recovery is the sheet's recovery, which is not words: she pushes the notebook
+across the table open, which she has not done with it in front of anybody, and
+gives Chloe the eleventh application to read. The four pages close there and
+both of them keep their seats.
+
+Chapter 24 carries a small second instance in the laptop thread: Chloe is
+minimising the shop trip, Nadia says *"youre not annoyed about the memory,"*
+Chloe closes the subject (*"im going to go and do my reading"*), and Nadia's
+next line is the practical offer, *"just get one from the school."*
+
+---
+
+## House Rule 1 and the calibration
+
+No sentence added to any of the four chapters explains what the company
+represents, why she is unusual, or what a beat means. Nobody praises her. The
+narrator does not total anything. Her worst case is stated twice in her own
+flat words and treated by everyone in the room as unremarkable: *"it comes to
+nothing and I take whichever of the eleven jobs is still open, the same as
+anybody"* (ch22) and the retained *"There's probably a reason nobody has built
+it. I can't find the reason. That's probably me"* (ch23, unchanged).
+
+Two places where the temptation was declined: Amberg does not put his pen down
+for her, because the manuscript already spends that gesture on Chloe two days
+later and reserving it makes both scenes read straight; and the bank manager
+gets no line acknowledging that she is eighteen.
+
+---
+
+## Continuity, and one thing another agent should know
+
+- **Chapter 24's headcount changed from two to zero.** The previous pass had her
+  paying two people in September 2023. Note 4 makes that impossible, so she now
+  has nobody, and `passes/fix/NADIA_COMPANY.md` (chapter 27's report, written
+  this session) states in passing that chapter 24 has her at two staff. Nothing
+  in chapter 27's text depends on it: the chapter opens on four people besides
+  her in May 2024, and eight months from zero to four after a pivot reads better
+  than eight months from two to four with no pivot. Bev's jar of instant coffee,
+  brought in October, now lands one month after the pivot, which is a free
+  payoff.
+- **"Every employer on it was signed in person" (ch27) still holds** on the
+  reading the pass took: employer *accounts* are all signed in person and are
+  the only ones who pay, while the scraped *openings* have nobody behind them.
+  Chapter 24 says this out loud once. If the author would rather chapter 27
+  acknowledged the scraped side in its opening paragraph, that is a one-clause
+  change in a chapter this pass did not own.
+- **Dates.** Applications start November 2022; 190 by the second week of March;
+  201 by the exit interview in the first week of April; 211 by May. The build
+  starts in the unrecorded afternoon block in the last week of March, straight
+  after the A/B test. Launch is the second week of June 2023. The pivot is
+  September into October 2023. Chapters 22 and 23 were adjusted so the block
+  start date matches in both.
+- **Chapter 32, not owned, flagged.** *"Nadia runs the shop through that month
+  exactly the way she always has: the till counted against yesterday's tape
+  before she says hello to anyone, the ledger open on the counter"* is the one
+  remaining passage that reads as her working the counter as a routine. It is
+  ambiguous rather than wrong now that the counter is a Sunday, but the author
+  may want a word.
+
+---
+
+## What did not fit
+
+- **The bank scene is in chapter 24 rather than 23.** Chapter 23 is graduation
+  day and had 68 words of headroom; a bank negotiation in it would have been
+  both tonally wrong and impossible to fit. September works better anyway,
+  because the two invoices clearing on the fourth are the reason she needs the
+  hold shortened.
+- **No scene of her being irrationally angry.** Note 7's fourth reviewer asks
+  for it and there was no honest place for it in these four chapters, where the
+  antagonists are a form, a policy and her own father, and where the sheet says
+  anger in her is a narrowing rather than a raising. Chapters 27 and 33 are the
+  better homes for it.
+- **Rohan does not appear.** The sheet says he is nowhere in the manuscript, and
+  introducing a sibling in a chapter another agent may be revising was not worth
+  the risk. He would be the natural person for the note-7 unguarded beat.
+- **Chapter 21 sits at 3,997 words and chapter 23 at 3,994.** Both are three to
+  six words under the ceiling. Roughly 120 words of duplicative material were
+  cut from chapter 21 (a Chicago rep finding the same locked door the Duke rep
+  had already found, and a line about the office producing paperwork that
+  restated the Sport/Athletics/Recreation gag) and roughly 130 from chapter 23
+  (a contingency-chair sentence that told the same joke as the programs
+  sentence, and a stage-bracing description that Dave repeats verbatim in
+  argument twelve paragraphs later). If either chapter needs to grow again,
+  those are the cheapest deletions to reverse.
+
+---
+
+## Checks
+
+    grade.py --one    21: 20/22, FK 8.2, 3,997 words   (was 19/22, FK 9.1, 3,444)
+                      22: 18/22, FK 7.5, 3,808 words   (was 17/22, FK 8.6, 3,151)
+                      23: 20/22, FK 8.1, 3,994 words   (was 20/22, FK 8.1, 3,932)
+                      24: 21/22, FK 8.6, 3,644 words   (was 20/22, FK 9.4, 2,873)
+
+    band 16-22 average 8.16 against a floor of 7.0
+    band 23-36 average 9.28 against a floor of 8.0
+
+Every chapter clears its band floor and every one is at or above its previous
+count of metrics at goal. Chapters 22 and 24 lost reading grade, in both cases
+because the added material is dialogue and chat transcript, which is what those
+chapters are made of; both were pushed back up by densifying the narration
+around the new scenes rather than by lengthening her lines, which the voice will
+not take. Negative space 3.5 / 4.0 / 2.5 / 3.3 per cent, all under the 5 per
+cent ceiling.
+
+    check_edits.py --chapters 21 22 23 24   0 problems, 0 hard breaks,
+                                            0 em dashes, 0 curly quotes
+    build_manuscript.py                     36 chapters, 115,312 words

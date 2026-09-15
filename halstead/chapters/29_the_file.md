@@ -1,0 +1,101 @@
+## Chapter Twenty-Nine: The File
+
+*October 2025*
+
+Theo's job is reading things and saying what they mean.
+
+The building takes two badges to get past, the garage and then the floor, and the floor itself is the ordinary kind of ugly: gray carpet tile, a drop ceiling, a coffee machine people have been complaining about since before he started. His desk is a cubicle in a row of identical cubicles, no window, the monitor turned away from the aisle so a passing badge sees the back of it rather than the screen. Most days it's cable traffic and open-source reporting out of a dozen countries, fifty or sixty pages of it, and the job is to come back with a page or two, the part that actually matters pulled out from the part that doesn't. His supervisor sends half of it back the first time, three questions written in the margin, asking him to show steps he thought he'd already shown. It gets rewritten and sent up again.
+
+The floor holds about sixty desks like his, phones going in a low murmur most of the day, someone's radio turned down until only the person next to it can make out the station. Stand-up runs every Monday morning, five minutes each, standing in a loose horseshoe around the supervisor's desk. Somebody restocks the printer with paper before it runs out, every time, done for so long it reads as automatic rather than assigned to anyone.
+
+The work that actually uses what he's good at comes maybe once a week: a transcript in Pashto, another in Dari, the halves of a region most analysts only get one side of. A technical conversation in either language comes to him as easily as the other, and pairing them turns up exactly the kind of mismatch a single-language reader would miss, one side of a group describing an action the other side stays silent about entirely. A few of those get flagged in his first year, and his supervisor takes them all seriously, no follow-up questions in the margin, the exception rather than the rule for anything else he sends up.
+
+The job suits him. By his third year, the woman across the aisle clears her own out on a Friday afternoon: a photograph of a dog, a chipped mug, a cardigan that's hung on the back of her chair as long as he's worked there. Twenty-six years at a desk leaves more than fits in a single box, so a second box is sent to Theo's, decades of material that predates him and has sat filed and closed ever since. Setting it on the corner of his desk, she says, "Somebody has to read it eventually." She shrugs. "Might as well be the new guy." He thanks her and means it. A box of old material beats another week of cable traffic that gets read once and filed.
+
+It takes him a day and a half to work out what he's holding.
+
+The box is unglamorous, folders sorted only by the year stamped on the tab, a dead file's worth of assessments left closed for years. Working through it in order, front to back, he takes his glasses off between folders to let his eyes rest. The first ninety minutes go to routine material: an embassy posting, a shipping manifest, a currency dispute that resolved itself a decade ago. Then a folder near the bottom has a name on the tab he's read a thousand times, on report cards, on the return address of letters from home, on a building he grew up inside.
+
+There is a file on his own school. It goes back to 2013.
+
+Every few years a different hand takes the file over, a new set of initials in the margin, a new date stamped over the last one. He counts them once, an old habit from tracing family trees for fun as a child: eleven sets across twelve years, one of them repeating twice, eight years apart. He circles the repeat in pencil and turns to the next folder.
+
+The early assessments say state actor. Two candidates named, one preferred, continued observation recommended. Years later that gets revised down, and the reasoning is laid out plainly: if it were either of them, somebody already inside them would have turned something up by now, but nobody has. The file still lists them, now behind a corporate actor as the likelier explanation.
+
+The current assessment says probably corporate, with the same caveat at the bottom of the page that has apparently been at the bottom of the page since the file opened, which is that the funding cannot be traced. The paper stock changes twice across the file, a heavier bond in the earliest years, thinner and cheaper by the most recent update, the only visible evidence that the file is really a run of separate budgets and separate rooms rather than one long effort.
+
+________________
+
+The next thing is a memo about a man placed on the Halstead teaching staff. Identification took less than a day, and the school escorted him off the property. The school's stated reason is recorded word for word: they do not permit unidentified adults around children.
+
+Theo reads it once, watching for the lines he'd pull if someone handed it to him to summarize. Then he goes back to the top with a pen in his hand and does not write anything. The third time, he sits back far enough that the chair takes his weight, and then he opens the bottom drawer by feel, past the stapler and the spare lanyard, to a class photo that has sat there since the week he moved into the cubicle. The date is printed along the bottom edge in the school's own hand. He lays the photo beside the memo until the dates agree. It's the whole cohort in the photo, squinting into thin winter light, and even now he can find Chloe near the back of it without trying.
+
+Theo was a child then. There was a new teacher for about a day and a half. Something was wrong with him, and the wrongness was most of what anybody talked about at lunch for a week. Theo can still picture him standing at the front of a room. He cannot remember what the man taught, or what he said, or a single specific thing he did.
+
+What he remembers is the feeling that the man was pretending to be somebody. All of them clocked it, a few started asking questions, and by Thursday he was gone.
+
+Theo had assumed, for the better part of a decade, that the guy just quit.
+
+He stays late at his desk that first night, more habit than plan, and works through the state assessment and the memo about the teacher before he thinks about dinner. The last item in the folder waits until the next morning, coffee first, before the floor has properly filled in: something in the stack has already told him this one will take longer than the rest put together.
+
+________________
+
+Then there's the entry.
+
+Eight years ago. Four operators, over the fence at the loading side, a little before dawn.
+
+The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, but even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
+
+They were inside the first building for under two minutes. Somebody saw a child in a corridor, alone, in pajamas, apparently confused and asking who they were.
+
+Theo stops on that line and reads it again before he lets himself go on.
+
+The next entry is written from memory, after the fact, and it says that all four of them were unconscious before anyone made a decision.
+
+Bloods drawn at the debrief that afternoon came back the same for all four: a common sedative, fast acting, at a dose the report records to the milligram. It does not say how it got there.
+
+They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise in the middle of the night that skipped the board entirely.
+
+The author records that the children asked him, directly, what he would have given them.
+
+An adult arrived some time after that. He told the children to go to bed, and they did. Then he told them that an attack on a school in the United States would not be accepted, and that they were free to leave.
+
+There is no reply on file.
+
+Theo sets the page down and squares it against the others, an old habit from a table where every plate and every fork sat exactly where it was set. Somewhere down the row a phone rings and gets silenced on the second ring, but the floor keeps making its ordinary noise around him.
+
+________________
+
+Theo sits back.
+
+Theo was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, the whole year stood out on the grass on a school night with the alarm having caught them flat-footed, and by lunchtime the conversation moved on to something else.
+
+He read the grade sheet on the board like everyone else and thought it harsh at the time.
+
+Theo puts his hand over his mouth and sits like that.
+
+The man in the next cubicle leans around the partition. "You good over there?" "Fine," Theo says, and takes his hand down, and brings the folder back up off the desk.
+
+________________
+
+It sits with him for two days.
+
+At his desk it's the job it is any other day: twenty pages reduced and sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk, coffee in hand. "How's the retirement box coming along?" she asks. Theo says, "It's dead weight." He doesn't look up. "A folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: a few sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the page it would have been the day before any of this. He closes the laptop.
+
+The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. His grandmother tells him, "The ferry's back on the summer schedule. And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, but neither of them brings up anything that happened at his desk that week.
+
+For two days that is where it stays.
+
+He types several versions of the question before he sends any of it, deleting and starting each one over, because even the version that says the least is still a version that says something.
+
+So he posts in the chat.
+
+theo: hypothetically
+
+theo: if you found something out about the school. from work. that you couldnt actually say
+
+theo: how badly would you want to know
+
+ruth: bad
+
+It's the first thing Ruth has posted in six months.
