@@ -1,7 +1,0 @@
-2
-
-
-
-bribe 10
-state
-quit

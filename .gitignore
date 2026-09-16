@@ -1,9 +1,3 @@
-# Naive playtest save files and stray driver output: transient game state that
-# Scaffolding playtesters build for themselves: named pipes, forwarder logs and
-# Throwaway tutorial verification runs (created by test agents); not deliverables
-# helper scripts. A fifo in particular must never be committed. The notes and
-# rewrites after every command. The testers' NOTES (.md) are the deliverable.
-# the session saves are the deliverables; this is the rig they were made with.
 *.pyc
 .selftest*/
 
