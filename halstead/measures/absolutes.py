@@ -34,7 +34,16 @@ from pathlib import Path
 
 # The measures live in measures/; the manuscript is a level up.
 HERE = Path(__file__).resolve().parent.parent
-spec = importlib.util.spec_from_file_location("pg", HERE / "prose_grade.py")
+# prose_grade.py sits alongside this file, not beside the manuscript, and it
+# does `from style_report import ...`, so measures/ has to be importable too.
+# Loading it from HERE raised FileNotFoundError before anything was measured;
+# grade.py discards a measure's stderr, so section 7 printed an empty heading
+# and the scorecard counted neither a pass nor a failure. Same idiom as
+# dialogue_study.py, which loads prose_grade correctly.
+MEASURES = Path(__file__).resolve().parent
+if str(MEASURES) not in sys.path:
+    sys.path.insert(0, str(MEASURES))
+spec = importlib.util.spec_from_file_location("pg", MEASURES / "prose_grade.py")
 pg = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pg)
 
