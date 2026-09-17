@@ -131,11 +131,36 @@ def profile(lines):
         "words": len(flat),
         "wpl": len(flat) / len(lines),
         "ttr": 100 * len(set(flat)) / len(flat),
+        "msttr": msttr(flat),
         "q": 100 * sum(1 for x in lines if "?" in x) / len(lines),
         "short": 100 * sum(1 for t in tokens if len(t) <= 3) / len(lines),
         "long": 100 * sum(1 for t in tokens if len(t) > 15) / len(lines),
         "hedge": 100 * sum(1 for x in lines if re.search(HEDGE, x, re.I)) / len(lines),
     }
+
+
+# Plain TTR is distinct words over total words, and it falls as a sample grows:
+# common words repeat, so a speaker with more lines scores lower whatever their
+# vocabulary. Measured across this book's prose dialogue the TTR column ranks
+# the speakers at rho -0.98 against their word counts, which means it was
+# reporting who talks most under the heading of who sounds distinct.
+#
+# MSTTR cuts every speaker into equal-size segments, takes TTR on each and
+# averages, so all speakers are scored on the same sample size. Both are printed:
+# TTR because the earlier passes were read against it, MSTTR because it is the
+# one that answers the question. SEGMENT is small enough that a speaker with a
+# hundred words still gets segments to average.
+SEGMENT = 50
+
+
+def msttr(flat):
+    """Mean segmental TTR: TTR on equal-size chunks, averaged."""
+    segments = [flat[i:i + SEGMENT] for i in range(0, len(flat), SEGMENT)]
+    if segments and len(segments[-1]) < SEGMENT and len(segments) > 1:
+        segments.pop()          # a short tail scores unfairly high
+    if not segments:
+        return None
+    return 100 * st.fmean(len(set(seg)) / len(seg) for seg in segments)
 
 
 def show(title, data, floor, note):
@@ -144,10 +169,11 @@ def show(title, data, floor, note):
         print(f"\n{title}: nothing with at least {floor} lines")
         return
     print(f"\n{title}   ({note})")
-    print(f"  {'speaker':10}{'lines':>7}{'words':>7}{'w/line':>8}{'TTR%':>7}"
+    print(f"  {'speaker':10}{'lines':>7}{'words':>7}{'w/line':>8}{'TTR%':>7}{'MSTTR%':>8}"
           f"{'quest%':>8}{'1-3w%':>7}{'>15w%':>7}{'hedge%':>8}")
     for k, p in sorted(rows.items(), key=lambda kv: -kv[1]["wpl"]):
         print(f"  {k:10}{p['n']:>7}{p['words']:>7}{p['wpl']:>8.1f}{p['ttr']:>7.1f}"
+              f"{p['msttr'] if p['msttr'] is not None else float('nan'):>8.1f}"
               f"{p['q']:>8.0f}{p['short']:>7.0f}{p['long']:>7.0f}{p['hedge']:>8.0f}")
     for key, label in (("wpl", "words per line"), ("short", "1-3 word share")):
         vals = [p[key] for p in rows.values()]
