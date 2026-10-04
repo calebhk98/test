@@ -389,3 +389,420 @@ Also: the book is getting steadily more adult. The bar exam, the driving test, t
 Favorite: Ruth's clipboard and the "finishing it" ending. Weakest: the contract-law shed question and the driving.
 
 Prediction: Dad will say something honest that finally changes the plot. Chloe will want to leave, or be asked to do something she doesn't want.
+
+## Chapter 20: The Parking Lot
+
+This is the most fun chapter in the middle of the book, and also the one I felt most torn about. It starts like a teen heist movie and turns into something I did not know how to feel about.
+
+The good: sneaking out. Nadia copies a badge by talking about the weather, Chloe loops the cameras, Ruth brings her noise box, Sam times the patrol. Kavi bails because he "wants to finish something." Then the diner: waffles, the waitress calling everyone honey (twice for Ruth), Sam eating the crispy edge first, the dent in Amberg's car shaped like a mailbox. The argument about "hither" is silly in the best way, and "Hither, thither, and yon. That's three sentences" made me laugh. The shopping cart run is great too. This was the first time they felt like actual teenagers. It's the happiest I've seen them since the Pluto hallway. Also Ruth saying her little brother only wanted to know if there's pudding. That is so a seven-year-old.
+
+The Nadia line to Chloe: "You take the thing you're worst at and you stay in it. Every year. It's the only pattern you've got." Chloe snaps back, and Nadia says she's "still the only one who's there every morning nobody's making you be." I don't know if she is right, but I thought about it. It is the same stuff as chapter 1: Chloe decides she is the problem.
+
+Then the muggers. Seven men, three guns. Sam says "Let me have this one." The fight is 22 seconds. It is written like an action scene, I'll give it that, and I liked that the girls get on the dock roof ready to jump in. But the kids don't call anyone. They check the pulses, pop a shoulder back in, and leave seven hurt men in a parking lot and say "We were never here." Because if they report it they get sent home. I sat there thinking: this is not okay, but Chloe doesn't say so. Nobody does. They just argue about the waitress. And Sam says the fight was "nothing" and feels bad it was too easy. That's a very odd thing to be upset about. It shows how far gone they are.
+
+One thing bothered me a lot. Chloe says muggers "fight like that... that's retarded." I know teens say this, but it jarred me because it's Chloe, who is careful with words, and it came out of nowhere. It made me wince. I think the author should take that out. It reads like a different character wrote it.
+
+Another thing: it is again very polite how Chloe takes apart the seven men with logic ("They were all bunched between two cars... If you had one usable skill..."). I did not follow the logic fully, but I understood she was reading their posture. Good detail, and it hit me that this is the same "read the room" skill she used as a kid watching the coffee cup.
+
+The date at the top says June 2022, which is before the failed bar exam retake. I was confused about whether this came before chapter 19, and had to look back. The book jumps around in time without warning, and it cost me a moment.
+
+Weakest: the line I mentioned, and the lack of reaction after the fight. Favorite: the diner and the shopping cart.
+
+Do I still like Chloe? Yes, but I am less sure I like what the school makes her. She checked her own ribs the way she checked the men's. That image stuck.
+
+Prediction: the break-in will come back, the sixty replies in the chat, and the school finds out.
+
+## Chapter 21: The Applications
+
+I really liked this one. For the first time we see Halstead from the outside, and it is the most "this is not a normal school" the book has made me feel, and it didn't need a single fight.
+
+The outside view. The college people think the transcript has to be a mistake because it has so many classes. The essays sound so good they decide it's ghostwriting. Then a committee notices they argued opposite sides and both were good, and checks birth years. The papers can only be read in a windowless room with an escort who brings water, and when the Caltech guy says "Is the third author available?" the escort says "She's sixteen, and she's in class until four." "Would four work?" "No." I laughed out loud. And the Duke rep asking "what's in that building?" and getting "Sport," then "Athletics," then "Recreation." That's the best running joke in the book. It also makes me realize how strange it is that Chloe thinks it is normal.
+
+Where I felt it: Bex. She hears the Caltech guy ask about a group project and walks over and tells the whole long-field story in perfect order and says "That was me" about the geometry. Chloe's fork stops halfway. "I did tell him that, and it was true by the time I said it." That line is the clearest statement of what Bex does, and I think the book finally said the thing out loud. Chloe has "nothing to put next to that." And Ruth moves a bag onto Bex's seat. That was a small, satisfying thing. Then Chloe tells her mom and says "She's fast, that's all." Which is both true and not the point. I think I understand Bex better now. She really believes it.
+
+Then Nadia. I did not expect her to be the heart of this chapter. While everyone argues about essays, Nadia is quietly applying for plumbing supply jobs, parts buyer, dispatch: "a hundred and ninety against a dozen." She says "Twelve, but eight of them were written by software, and the software is bad." And the school with its ninety-one geniuses has not prepared her for the part where she is the one who needs a regular job. That was sad and real, and I thought about my own cousin. I wanted more of that, honestly. The ending of her scene, with Ruth's trick (send it twice, change one thing), worked, and I liked that.
+
+The ending, with Chloe getting twelve out of fourteen when she expected the state school, was great. "It said three percent." Sam says "They lie." Then Chloe's store sign comparison: "a window like that stops being an advertisement and starts being an accusation." That is a really smart thing to say, and I did not see it coming. But it is quick, and I had to read the last page twice to be sure what was true: she got into almost everywhere, and the acceptance rate on their website is meaningless for this school.
+
+What dragged: the opening about the Ivies and the applications. The essay-writing in Ruth's room. The long paragraph about the Penn officer. Lots of explaining. And a couple of places with so many names (Odile, Kavi, Duke, Yale, MIT) I forgot who was whom. Also "transfer-cohort theory" and "accreditation number" are words I had to guess.
+
+I also noticed Chloe never says which school she wants. Her mom's sweatshirt is the only reason she gives. That felt true, but it makes me wonder: does she want to leave?
+
+Favorite: "Sport," "Athletics," "Recreation." Weakest: the long start with the application chatter.
+
+Prediction: Chloe is going to have to decide between her mom's school and one of the big ones, and the school is going to try to keep her. I also think Nadia is not going to have a good ending unless someone helps her.
+
+## Chapter 22: The Offer
+
+A quieter chapter than I expected, and a good one, even though it starts slow and one section is repeated word for word.
+
+The opening is a lot. Amberg's exit interviews are described in a huge slow paragraph about rosters and the runner and chairs and a coffee cart. I skimmed it, honestly, and I couldn't tell where the point was until she got in the chair. I think this chapter would be stronger if it started with the office.
+
+The part that worked: Chloe's answer. "Because it's school. You do the school and then you leave and you do the next thing. Staying in it isn't the next thing, it's the same thing with a different door on it." That is clear and true, and I actually wanted her to say it, since she's been in this building since she was seven. The details that sold it for me: the envelope in the drawer she still checks. It has been in her drawer since chapter 8. She wasn't going to take the offer, but she is still attached to the letter, and I felt that.
+
+Nadia's meeting is the one I liked best, even better than Chloe's. She says no too, but for a totally different reason: she's building a thing that gets people hired, where the employer pays and the person pays nothing, because she spent a year being ignored by software. "Everything else is the building it happens in." Amberg says three of the four who say they're starting something will be doing something else by Christmas. She says "That sounds right too." I loved that. I wanted to know more about her business. I'm rooting for her more than anyone now. She counted her applications: 201.
+
+Kavi says yes. "It's a lab that also has children in it." Chloe says "you turned down a filing cabinet and now it's got my name on it." Wait, no, he says that to her. That's a good, sharp scene. I was a little surprised since Kavi has always wanted to go to MIT. He says the problems here don't already have answers, which is probably the real reason a smart kid would stay.
+
+Then Ruth tries to warn Sam about Bex ("find me one time she put a girl's name on anything") and Sam says "That's a hell of a thing to say about her." I think Ruth is right, but I wish she had said it to Chloe. It is odd that the person Bex steals from does not know Ruth is noticing.
+
+The phone call. The first time her parents have really talked back to her about money. Dad says "That's a mistake, however it's dressed up," and then talks about how rent mattered every month of his life. The mom says "We still think it's a mistake" and "There's a difference between a fact and a fault." I was not expecting the parents to be this real here. They do not shout. Mom says she called the bank that morning. Dad's pension story. That is a hard thing for Chloe to hear, and she does not fold. Then "it's your name on the letter, and it was your name on the first one too." That callback to "Miss Chloe Kessler" almost got me.
+
+What bugged me: the offer is read word for word twice (once to Mom, once to Dad). I saw it was the same paragraph and skipped. I understand why it is there but it is the same block twice in a row. Also, there is a lot of "I want that said out loud, plainly, rather than implied between the lines." Everyone talks in very careful speeches. Real parents would stumble more.
+
+Plot-wise: the money is so big ($135,000) that I wondered if she is making a mistake. And I realized I do not know what she wants to do. Her reason is that she wants to leave, but she has no idea where. "I don't know what I'd be anywhere else. That part is smaller, but it's in there." Good honest answer.
+
+Favorite: Nadia's interview. Weakest: the opening and the repeated offer speech.
+
+Prediction: Chloe goes to Georgetown and things will not be easy. Kavi and Nadia will matter again. And I still wonder why this school wants kids to stay and what it is really for.
+
+## Chapter 23: The First One
+
+This chapter felt like the end of the book, and then I looked at the table of contents and there are thirteen more chapters. That threw me. It's graduation, everyone gets a goodbye, and the news about each friend comes in a quick list. If I were reading this and found out there was still a third of the book left, I would think: what is it going to be about now?
+
+What worked: the grandmother scene. She sits at the end of a row and asks everyone "what are you doing next?" and then pats them and moves on without listening. Sam says the Army, she says "That'll do you good." Kavi says staying at the school, "And do you get your own room out of it?" Chloe starts on Georgetown, and her grandmother has already gone down the row. "Well, that's something." That is so real, I laughed. And Dana: "How's school?" "Finished. About an hour ago." And Chloe doesn't give her the rest this time and just takes her lemonade. That small refusal is the first time I felt like Chloe is okay with not being heard by relatives, and it made me happy.
+
+The other great parts are the parents. Her mom crying from the K's on. Dad keeping a hand on the back of her chair. And her mom and Ruth's mom swapping a spare jacket after years of knowing each other "only from a folding chair." I did not realize until here that the moms knew each other. Dad talking to Kavi's father about the stage bracing without knowing who he is: "Somebody had fun with this." That made me smile.
+
+I love that Chloe's mom is watching for her face: "the reflex that used to send her to the fridge twice in a night to check a magnet." That is a callback and it works. Also, Chloe reaching for the top of the courtyard door she used to have to jump for and finding "her palm against the wood with room to spare." That was a quiet, great detail, the kind of thing that made me feel time passing.
+
+Priya's South America bag is neat. "Every single year of my life has had something already decided for me before I got there." I wanted a whole chapter on that.
+
+Nadia and her father at the shop counter: her first deal with her dad ("Three, they go in the book where you can count them, and the subject stays off the counter on a Sunday") was a very satisfying negotiation. "The supplier has billed you twice for one case of blades." The best Nadia scene yet. But she asked 61 employers and nine said yes, and the whole thing gets one hire, from a man who already had the job. That is a sad little line, and I wish the book stopped there. Honestly I want her to win.
+
+What dragged: the opening, again. A lot of detail about chairs, programs, the stopwatch, "twelve seconds a name." I got the point (the school does everything exactly) in two sentences. Also the list of who is going where read like ending credits: Theo into the federal government, Marek, Priya, Sam signing at the recruiter's office (slightly confusing, because Sam says "the Marines cap the PT score," I don't know what PT is). The dates jump between May, June and July in the same chapter, and I had to keep checking.
+
+The biggest news came in the last two pages: Chloe wants the Foreign Service exam. I didn't know that was her plan. She reads the eligibility page three times, she is 17, and the exam is at twenty. I had no idea she wanted this, and I do not know why. The book never says what draws her to it. Is it languages? She says she has "languages I have only ever used on paper." OK. That at least makes sense with Russian, Mandarin, Arabic, and all the rest. But it still feels like it came out of nowhere. It would have helped to see her think about it earlier. I also did not know what "the Foreign Service" is. I think it's the people who work in embassies. Not every 14-year-old would.
+
+And a stray note: she tells her father first, not her mom. Again. Just like the steps and the riser and the vendor contract.
+
+Favorite: the grandmother's "Well, that's something." Weakest: the long stage-and-chairs opening and the ending-credits list.
+
+Prediction: the Foreign Service thing is going to be an ordinary-looking path that turns out to have some tie to Halstead. Remember: "the only record" earlier, "a federal agreement," and Theo "into the federal government." I think the school sends kids into the government. I just do not know why.
+
+## Chapter 24: The Chat
+
+I did not expect a chapter written as a group text, and it was a relief. It is the easiest chapter to read so far, and the ending woke the book up again.
+
+The chat format is fun. Short lines, jokes, everyone sounding like themselves. "eli: guys im speedrunning retirement." Kavi's "does it stack" and Eli's "i didnt even think of that, hang on." I laughed, and I also thought: this is what my group chat looks like. The callbacks are great: "kavi: room-shaped object" and "sam: tidally locked," and Ruth getting mad about how Sam uses it. I smiled at that and it made me miss how these friends sounded in chapter 4. Sam's trust fall joke ("does anyone elses job do trust falls") followed by Kavi's "what is it measuring" is dead on. Priya and the horse carrying cheese down a mountain, replying days late and everyone answering anyway, is sweet.
+
+I also liked that Theo's boss says he skips steps in his reasoning. I noticed that is the same note Chloe got on the bar exam. Nice. The "retention play" bit from Kavi: "you tell people they're exceptional early so they work harder and don't leave." That sounded exactly like what the school might be doing, and I think the author wants me to think that.
+
+Nadia is still my favorite. She hits her bank manager with a deal, gets two-day holds on nine payers and the monthly fee dropped, and then in the chat she says "i would leave" about her own site. "its item thirty on the list and the list has never got past nine." She buys a car she knows is worse "anyway." "its two in the morning where you are" / "yes." I wanted to hug her. But I got lost in her bank scene. "Holds," "exception," "twenty thousand held in the account, not passing through it." I did not understand what the manager was worried about, and a 14-year-old will not either. I'd cut it down.
+
+Something else I noticed: the first paragraph lists seven friends and where each is. I could not keep track of who was where and had to reread. By "Eli types with his phone propped against a monitor," I was skimming. It's a long setup before the actual chat.
+
+Now the ending. The sinus pill. Chloe's doctor has never heard of it. Nadia can't find it. Kavi asks the school and they say "internal." "thats not a reason thats a category." She finds the empty box in the bathroom cabinet with just a name and a dosage, and Nadia uses her old login on a machine at the school that "nobody has turned off since" and comes back with three names off a supplier's safety sheet. Chloe writes them on the back of her hand. THIS is the hook I wanted. After 23 chapters of strange school details and cool but unconnected stuff, here is something specific: they were given a pill every day for years and no one outside the school knows what it is. I am gripped. And creeped out. I also remember in chapter 1 the doctor said "everything I can measure looks the way it ought to look," and it was weirdly specific that the school started giving them something later. I do not know.
+
+Weaker bits: the little scene breaks with "Days later." The loose plan for "before the holidays." Several scenes just read as updates (Kavi's dinner table, Eli's lawyer) that I would skip.
+
+Favorite: the pill ending. Weakest: the long list at the top and the bank scene.
+
+Do I still care about Chloe? Yes, and I notice she is the one who asks the sharp question again, like when she was six.
+
+Prediction: the pill is the real secret of Halstead. It makes them smart, or controls them, or both. And the school is going to notice someone is asking.
+
+## Chapter 25: Forty Targets
+
+Best surprise in the book for me: this chapter is about Sam, not Chloe. I did not expect to leave Chloe for a whole chapter and I did not mind at all. It is funny, then it gets tense, and the last page made me gasp.
+
+What worked: Sam in the Army is a great fish out of water, except he's the fish who is better than everyone. "I think Drill Sergeant Ruiz likes me." / "He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." That's Okoro, who is great. Then Sam scores the top possible mark (600) on the fitness test and thinks the test has "a lid." He assumes everyone around him is holding back and this is just the screening part, and he tests that theory for three weeks by running slower on the nav course, and nothing happens. I laughed. It is a very Sam thing to do, and the logic is right: if everyone else is this bad, either they're hiding something or he's wrong. He never guesses the obvious answer, that Halstead is weirder than he thought. His line "Nine minutes is a strange amount of time to be given for a meal that took somebody all morning" is my favorite.
+
+Also, the letter to his grandmother: he tears up the page with "six hundred" on it because she wouldn't know what it meant, and tells her about the cold and the sergeant yelling and the length of a meal instead. That is a sweet, small thing that shows who he is. Okoro's grandmother posts him word searches.
+
+The big scene, forty targets. Sam shoots forty for forty. The captain says he's never signed a card like that in two cycles, and Sam, trying to be helpful, says it's a bad number because he's at forty percent on a machine that shoots bullets and "you're shooting the bullet." The captain says nobody shoots a bullet out of the air and there is no such thing. So Sam is telling the truth and the Army thinks he's lying or crazy. "Either something was going on at that school that you have got badly wrong, or you are standing on my range telling me a story." And Sam says, "It's a boarding school, sir. It's small. You wouldn't have heard of it." I think that line is a little joke by the author: the exact thing the school says. I really liked it.
+
+The last pages: the captain writes four documents, including a mental health referral. A woman far above him sets the memo down and pulls out "a folder far older than the captain's commission." That tells me the government has known about Halstead for a long time, and they have a file. And Sam is the first person to say it out loud. Chills. Also, interestingly, the first thing in the book that confirms the world outside the school is not equipped to hear what the school does. It also connects to Dr. Sandoval's "federal agreement" in chapter 18.
+
+Small thing: Sam's last name is Marsh. Chloe never learned it in chapter 7, and now I do. It feels like a little gift. I did go looking back in my head for "last names" and found that Okoro, Ruiz, Marsh are all here. That is also why I like that she was frustrated about not knowing them.
+
+What dragged: the long bureaucratic paragraph near the end. "Memorandum for record," "counterintelligence," "battalion S-2," "education block of the soldier's security form." I got lost in it. I think the point is that the captain sends everything up, but it reads like paperwork. I skimmed it. Also the fitness test events (deadlift, standing power throw, hand-release push-ups) read like a list.
+
+Do I still care about Chloe? I notice she is not here, and I miss her, but I care about Sam more now. He is more than the joke friend.
+
+Favorite: "You're shooting the bullet." Weakest: the paperwork paragraph.
+
+Prediction: the old folder means someone has been watching Halstead for years, and Sam's talking is going to blow something open. Maybe someone from the government will come to the school. Or find Chloe.
+
+## Chapter 26: The Exercise
+
+This is the first chapter in a while where I would have put the book down. It is a lot of military procedure and I don't think it earns its length. Sam's still fun, but the middle felt like walking through a foggy field with him.
+
+What worked: two short moments. The first is the culvert. Four men in a concrete pipe, tones going off, a hand on his sling, and Sam's hands "deal with it before the rest of him is asked." One man ends up with a bloody nose and Sam splits his own knuckles, and then he gets stood in the road and told the engagement is void. That was the one place the book let me feel what it is like to be that fast and have it be a problem. The second moment is the major's line, "patience beats a tired soldier at four in the morning, every time, full stop," and Sam's answer, "It does not get you past somebody who has been listening for that noise for years." I like how Sam disagrees with the man praising him. And then at the end Corporal Vance: "Next time you want it harder, ask the rest of us first and we will tell you no." I laughed.
+
+I also liked the end text chat. "sam: ive been waiting since august to find out which tuesday." "ruth: he said it twice to get rid of you twice." And Eli saying "yes" to asking again while everyone else says no. That is how my friends would handle it.
+
+What I did not like: the four nights. Night one he shoots two men at a fence. Night two the culvert. Night three is "simply walking." Night four he finds a man in a weed line. After the Army chapter's hook (the captain who flags Sam to counterintelligence), I expected something to follow from that. Instead there is a training exercise where Sam does very well and gets in trouble for the culvert fight. I kept waiting for the old folder to come back. It did not. The major says "Difficulty is set above you, Marsh, and a good way above me as well," which I'm pretty sure is the one real clue, but it's buried. And "School, sir" at the end of the AAR: "Which school, he leaves alone." That is the thing I'd have wanted the whole chapter to build to.
+
+The jargon was heavy. Controller gun, harness, tone, AAR, S-2, blank rounds, "minimum engagement distance is five meters." A 14-year-old would not know "AAR" (after action review, I guess). I had to figure out that the harnesses beep to say you are "dead." I'm still not sure if the tone means you're hit or you hit someone. I'd have liked a simple line to explain.
+
+And where is Chloe? She says two lines in the chat. Once the book moved away from her, I felt a little lost about the main story. We are three chapters out from graduation and the Chloe pill mystery was the hook in ch. 24, and now it's gone for two chapters. I am impatient.
+
+Favorite: the culvert and Vance's one-liner. Weakest: the third night, the ground-walking nothing, and the AAR dragging.
+
+Prediction: the Army is going to talk to Halstead or send someone. And Sam will be pulled out or recruited. I also think the pill thing will come back and connect to Sam's forty percent (maybe a pill makes them better).
+
+## Chapter 27: Nadia
+
+Another side-character chapter, and I liked this one a lot better than Sam's. Nadia is the only person in the book whose life looks like something I could end up in, which makes it hit harder than the soldiers and the spies.
+
+The opening is great. Her office is three rooms over a laundromat, the bathroom key hangs on a paint stirrer, the vinyl company name is up on the window "half an inch low; lifting it again would have torn it, so it sits half an inch low." "I read it every morning." That is such a good line, and it says who she is: she keeps things the way they are and looks at them anyway.
+
+The scam is a good, tense setup. Fake employers ask people for their bank numbers, one woman loses $2,600, and the woman apologizes to Nadia five times. "I don't know what you're supposed to say to that." Then Nadia tracks them to a tire shop and walks up the outside stairs alone to a room with four men. This was the scene that made me read faster. She says the whole thing in a calm voice and it's scary to watch. The man says "Nobody watched you come up. You want to be thinking about that instead of about filings." I was sure something awful would happen. Then she plays her cards (dead man's switch, the field six on the form, the Secretary of State). It works. I liked that she knew exactly what the men wanted to hear.
+
+The best part is what happens after. Her friends are not impressed, they are scared. Eli's text: "a dead mans switch only pays off if youre already dead. If they had called it you would be dead right now and it would have worked exactly like you built it. That isnt you being safe up there. thats you being lucky." That is exactly what I thought. Nadia says "it was my name on the site. nobody else was going to stand in that room." I understand that and I also think it is a terrible idea. I think the book does too. And her mom asks where she was and she says "Out at a tire place." The till is three dollars off, and she counts it three times. That detail got me more than the whole stair scene.
+
+The hiring part. She says she's got six people, and then in the chat: "i cant find anyone who can finish a thought." And Eli says it's a hiring pool problem. But I think she's seeing something about herself and her friends, and not the pool: Halstead taught them to follow a question all the way down, and regular people don't. The interview scene where she asks "What stops the same payment going in twice?" and "How would you find it in eighteen months?" is a clever way of showing it. A good answer is rare. I think the author wants me to see that she and her friends are different, and that she is lonely about it.
+
+What I could not follow: the interview details (idempotency key, unique index, reconciling a ledger) and the paragraph on state business filings. Skimmed. A 14-year-old will not know "registered agent," "required field," "dead man's switch" (I knew it from a video game), "retry logic." Also the confrontation has a line where she tells the men "four men who kidnapped and killed an eighteen-year-old" and I thought, this is a hard thing for an eighteen-year-old to say with a straight face.
+
+Also: Hanley's filings "all go dead in July, which she spots in August and keeps to herself." That tiny sentence says she won, and she doesn't tell anyone. I like that.
+
+Weaker: the middle hiring section (Tomas, Bev, Manny) felt like a list of names. I lost track.
+
+Do I care about Nadia? Yes, more than anyone else besides Chloe. I want her to make it.
+
+Favorite: the window lettering and "Out at a tire place." Weakest: the hiring and interview paragraphs.
+
+Prediction: Nadia's problem with "no one can finish a thought" will become a big deal. Maybe the pill makes Halstead students different, and she's about to find out.
+
+## Chapter 28: Nineteen
+
+I'm back with Chloe and this is the chapter where she is in the normal world for the first time, and it works really well. It's also the one where the book starts to feel scary for a different reason: I think someone is watching her.
+
+The best scene: the loading dock guy asks how her weekend was. She gives him fifty seconds on what she read and a proof she's stuck on and a late bus. He waits, says "Nice." The second week she gives "Fine, quiet," he says "Same." By the third week it's the same sentence and that's the exchange. That is so sad and so funny, because she's learning how normal people talk, and she's shrinking herself the same way she did in first grade. It reminds me of chapter 1 ("Water"). Only now she is learning a rule she picked up the hard way, and nobody said it was wrong, and she doesn't seem to mind.
+
+Deb is a good character: she puts Chloe's birthday on the calendar from a form, and she asks, "Did somebody actually ask you to do that, or did you just decide?" when Chloe cleans the tray three times. Chloe's face goes warm. I felt that so hard. Chloe doesn't know how to be around people who don't set her a task. And Deb's son Tyler, with the strike zone and the batting average, and Deb saying "You don't get to know which door was the right one until you're already through it." I like that Chloe cares about Tyler more than about her own coursework. Also the "Tyler rate" for the repeated-sentence discount. The first time Chloe finds a normal-person comparison and it works. That was warm and made me smile. It's a nice twist on "I talk weird."
+
+Now the weird part. She gives a coworker a small white tablet for his cold: "I have taken these since I was seven." The man says it's gone in a day and a half, which never happens. "You can't [buy them]. I have looked, and so has a doctor." That's the pill! She is still taking it. After chapter 24 I wondered if she'd stop, and she didn't. I'm worried about this. Is the pill making her faster? And she's feeding it to a stranger?
+
+Then the blog: she writes long, careful pieces on border disputes and treaties, people say "do you have a research team?" and she says no, it's one day of work. Then a man emails again, and two more, and none will say who they write for. She makes a spreadsheet: five rows, the "who do you write for" column empty. I got a chill. Someone is checking whether one nineteen-year-old can really do that. This is the first time the book made the outside feel like a threat to her instead of just a joke at her expense.
+
+And the ending: Ruth stops posting in April. By June the gap is long. Chloe messages twice, the first gets "sorry, been swamped," the second gets a single check mark and never a second. "Six months." That's a gut punch. Ruth, who was the least miserable person Chloe knows and who showed up with a clipboard. I did not expect that.
+
+The chat games with Ruth's questions (what percentage of americans speak a second language) are fun and the "And it moves" refrain is a smart way to show the group keeps going. But it also feels like Ruth was asking the questions and now no one will. Also: 21% reading below sixth grade level? That's a number to read twice. A fourteen year old like me reads it and thinks about it.
+
+What dragged: the long description of the office (the mints, the cable company call, the fire alarm). Cute, but I skimmed. The college and Polish and the "twenty-one credits" parts are another list. And "match logic," "percentage bands" in the translation price scene.
+
+Favorite: the weekend question. Weakest: the long office description and course list.
+
+Prediction: Ruth is in trouble, and the people emailing Chloe are connected. I also think the pill is the link. I'm now very worried.
+
+## Chapter 29: The File
+
+Okay. THIS is the chapter I have been waiting for. After a slow start it blew the lid off, and it made the 4 a.m. scene in chapter 15 mean something totally different.
+
+The setup is long. Theo's job, the badges, the stand-up, the printer paper, the woman across the aisle who retires with a box. I skimmed all of it. It could have been half as long. And "Pashto, Dari" with no explanation. But once he opens the box and finds a file on his own school going back to 2013, I was hooked.
+
+The file: eleven people have kept it over twelve years. First guess was a "state actor," later "probably corporate," funding "cannot be traced." The government has been watching Halstead for over a decade and has no idea who pays for it. Same story as in chapter 3 where Chloe's mom could not find anyone who had heard of the school. And I realized: Sam's captain's old folder in chapter 25 was this file, I think. So that's two chapters now where something far above the people in the room knows more than they say.
+
+Then the memo about a man placed on the teaching staff: "Identification took less than a day, and the school escorted him off." I remember that! In chapter 4, I think? No. Theo says "Theo was a child then. There was a new teacher for about a day and a half. Something was wrong with him." Feels like it was in an early chapter I missed, or a thing Theo remembers that I never saw. It is a spy the government planted and the school kicked out in a day. I love that.
+
+The biggest thing: the entry about "four operators, over the fence at the loading side, a little before dawn." Eight years ago. The kids saw a girl in pajamas. "Four children sitting on the floor next to them... an argument about their own performance." And "the children asked him, directly, what he would have given them." That is Sam in chapter 15, "What would you give us? That's a C." The four men were real. They were government operators, not actors, and a bunch of twelve-year-olds drugged them, tied them up, and graded themselves. And the adult told the kids "an attack on a school in the United States would not be accepted, and they were free to leave." Wow. I was dead wrong that they were "actors" in chapter 15, and I'm happy to be wrong. Chloe's own words in 15: "or the direction four real people would get it wrong in if somebody had handed them the wrong list." She guessed it.
+
+And the bomb: "Theo was twelve that year... one of them Chloe." He was in the same grade; he read the grade sheet on the board and thought it harsh. And now he knows that the grade sheet was about real operators. He puts his hand over his mouth. I did too, honestly.
+
+What this does to my view of the book: the whole school thing, the Watch, the hostile staff, the drills, the "fire alarm," all of it makes sense now. The school was being tested by real people, repeatedly, and the kids were trained to win. "They do not enter a building." "They do not learn anything about you." That's the Watch sheet from chapter 13. It was never a game.
+
+The ending: Theo posts "hypothetically if you found something out about the school from work that you couldn't actually say how badly would you want to know." Ruth answers "bad." "It's the first thing Ruth has posted in six months." I almost yelled. That's the cliffhanger of the year.
+
+Where it slowed down: the office, the phone ringing, the grandmother call about the Hendersons' dog (good, but a break at the wrong moment). Also "He circles the repeat in pencil" and the paper stock changing twice are details I do not need. A 14-year-old might also get confused by "classification banner" and "redacted," though I get the idea.
+
+Favorite: the operator report. Weakest: the long opening.
+
+Prediction: Theo will tell the group. The school is going to get found out or attacked. And Ruth's silence has something to do with this. I have no idea what the pill has to do with it, but I bet it comes back.
+
+## Chapter 30: Cleared
+
+After chapter 29 this one felt like someone let the air out. I get what it's doing, but it is mostly a recap and I skimmed a lot of it.
+
+Why it frustrated me: Whitaker, a background investigator, visits Chloe twice, and she explains her whole school life to him: the age she started, the languages in order, the classes, teaching the year below, Marek's blank sheet, the bar exam, the NDA. I have been through all of it already. Even the bit about her mom turning down the house is a retelling of chapter 9. It's very faithful, and it left me bored. I felt like the book was checking that I remembered. The hard part is that I was just reading about how the government found out about Halstead, and now we get a calm interview that confirms nothing new. I wanted Chloe to be told something, or to notice something.
+
+What I did like: Whitaker's honesty. She asks if the file ever gets released and he says "It goes into your file, and it stays sealed there," and "that's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it." That's the first adult in a while who talks straight to her. And the exchange about the failing student, where Chloe says Marek's "better question" sheet is still in the drawer for two years before she threw it out. That is the one place where I felt something: she kept the evidence of the person she failed.
+
+Also: Whitaker asks her about the "third" paper and the agreement, and she says "I'd want to talk to her first." That is a nice quiet beat. She's still keeping her word to Dr. Sandoval, even to a federal investigator. I think that is a good sign about her character, and also a bit worrying since the agent just wrote it down.
+
+The Bex bit is the funniest thing in the chapter. The longest reference interview "went well into the afternoon." "That'll be Bex." And then Whitaker asks who did the geometry on the long field and Chloe says "I did. I can get you the exam script it started on, if you need it dated." I laughed out loud. Even in a background check, the geometry comes up. Chloe has finally told someone official it is hers, and she has the paper to prove it. That's a win and a small sweet payoff.
+
+The thing that made me nervous: he asks who the school's donor is. "A name or foundation, anything at all." She says "I have no idea. Whoever pays for it stayed background noise my whole life." That's the question the government wants answered, and we know that from chapter 29: the file's weak point is the funding. Whitaker is asking Chloe what the entire file hasn't managed to find out in twelve years. That felt like fishing. Am I wrong to think this is a normal vetting? Probably, but the book wants me to wonder.
+
+Other stuff: the beginning is her blog getting big and people asking about her "research team." Same as chapter 28, repeating. And the Foreign Service exam passage is oddly short for such a big thing in her life. "The result arrives by mail weeks later, and she reads it as having sat an exam." What? I couldn't tell if she passed (I guess she did, since she got the investigation). I liked the line about it being "a crossword" but I wanted more.
+
+Also, the clearance arrives and she "files it in the kitchen drawer where everything that's needed keeping ends up." The drawer again. Like the envelope in chapter 8 that she kept under her socks. That detail is good.
+
+Do I still care about Chloe? Yes. She has done all of this and she's a little lonely, and I have a nagging feeling she doesn't know about the file or Ruth. Dramatic irony is a good hook, and I'm a bit impatient for her to find out.
+
+Favorite: "I can get you the exam script it started on, if you need it dated." Weakest: the long recap in the middle.
+
+Prediction: Whitaker's questions will turn out to be useful for the Halstead mystery, and Chloe will end up working for the same people who watch the school. I think that is going to be an uncomfortable conflict.
+
+## Chapter 31: Ruth
+
+This is the chapter that tells me what the book is about, and it made me think about my own school for a long time after. Ruth is not my favorite character, but this is her best chapter, and one of the best in the whole book.
+
+The opening is kind of a slow walk: the registrar, advising, the folder, the department, back to advising. I understood by the second office that nobody could help her, and I started skimming. Her belief that MIT put her in a "remedial track" is a smart start because it is so wrong and so reasonable. She thinks the sequence is too easy, so it must be a mistake. It isn't. It is just that she is not normal anymore. The woman who says "I have written this exact letter more times than I could count" is the one who breaks it open for me, because we know it won't be fixed.
+
+The joke that dies in the study group, and "when they think the course will get past fifth-grade concepts" and the boy who laughs because he thinks it's a bit, "then he watches her face two beats past the laugh and stops." That's so painful. Ruth is the girl who said "I'm agreeing with you" in chapter 4, and now nobody around her can match her. "Are you ever stuck on anything?" "No." That small word sits there. And her writing in her notebook: "MIT tracks students by ability and keeps that quiet." She chose the most comfortable wrong answer. I love that detail because it is exactly what a smart person would do.
+
+The professor's office hour is a very good scene. He makes her slow down and say the skipped step. "The tail dies before the boundary does." It took her five passes, and she thinks even a Halstead peer would have gotten there in two. So now she's the slow one in her own head, even though the professor says the grad students would never get there. That is just like Chloe being ninetieth of ninety: a reminder that "good" depends on who's in the room. Then she sits on a wall "until the light changes twice." Good line.
+
+The numbers: second language, reading level, fractions. I was glad this circled back to the chat game in chapter 28 and I realized those were not random trivia. Ruth was searching for the truth in public and everybody made a joke inside a minute. "What she posts reads, to everyone reading it, like Ruth being Ruth." Then she stops posting in April because "she has understood what the numbers add up to and would rather somebody else say it first." That is the answer to the Ruth mystery, and I think it's a good one. It is not a kidnapping or a death, it's something worse in a way: she has realized that her friends are not like everyone else, and she can't stand it.
+
+The chat is the key scene. "i dont think we're the same kind of thing." "put any kid off my street in that building at seven and you get this. thats the part nobody will say out loud." It reframes the whole book for me. They were not picked because they were gifted. They were picked because someone drew a line through a list of six-year-olds, and the building did the rest. And she asks "i want to know what the line was." She's right to ask. It makes me think of Chloe at six, "You talk weird." If the school made them, then she was never weird. She was six. And then the plot connects: the pill, the file, the "list is usually pretty good," and the scam of the first letter. I think I have been reading this book wrong. I thought it was about a gifted girl, and it's about a made one.
+
+Honest critique: I liked the chat part more than the long narrative section before it. Much of the narrative is explaining Ruth's feelings in paragraph form. The book repeats "she keeps it in the folder" a few times. And I'm still not sure what Ruth's "diagnostic in August" tested. It would have helped to see it.
+
+Favorite: "put any kid off my street in that building at seven." Weakest: the walking through offices.
+
+Prediction: someone will try to find out who picked them, which means the list, which means the school's donor. And Chloe is the one with the clearance to look.
+
+## Chapter 32: The Money
+
+Half of this chapter was a computer lecture I could not follow, and the other half was a detective story that I loved. I would cut a lot of the first half and keep every line of the second.
+
+What lost me: the build. Eli builds a program "that has to be boring" and Kavi builds "the thing that watches it." Polling interval, reconciliation job, worm, the "watcher," deployment target. Page after page of it. I got the idea: they made a program that slowly looks through bank records without anyone noticing, like a bored accountant. The idea is clever. But the writing keeps telling me about desks and coffee cups and monitors instead of what the program does. I skimmed to the chat. Also, they are breaking into financial systems. The book never stops to say it's illegal. Kavi, Eli, Nadia, all of them just do it. I think the story knows it's wrong, and it expects me to feel the same way I did about the mugging chapter. I still didn't like how easy it was. Nadia saying "if this comes back to my company i will end all of you" was funny, though.
+
+What worked: Ruth proving it was one person. She sits on the floor of her apartment with the cards in a ring around her "the arrangement she used at six," and walks a strip of paper along the floor on her hands and knees. Then the three clues in the chat:
+1. There are gaps, three to five days with nothing happening. "Institutions don't have gaps like that. Committees don't get flu."
+2. The decisions all land in the same seven-hour band, which moves forty minutes over twenty years. "That's aging." / "That's a person getting older."
+3. There are two tools that do the same job, one slightly worse, and "he's" used the worse one every time since 2003. "No reason. It's just what he does."
+That's a great piece of detective work, and I could follow it. It's the first time in a while the book let me do the thinking with them. And then "whats your number" / "99.99" / "and the other 0.01" / "is me being humble" is the funniest line in the chapter and also so Ruth.
+
+It also matters that this is Ruth's chapter-after-chapter again, and she's out of her slump. After her silence in the last one, it's great to see her working at full speed on something that finally matters to her. She's the same kid from chapter 4 who would not shut up about triangles, and this time she's right in a way that actually gets taken seriously.
+
+The other big thing: Theo's message. "nobody repeats any of this... they've had a file on the school since 2013." He tells them about the man planted on staff, and the four operators at four in the morning. Sam: "WHAT." Chloe: "theo that was a drill." Theo: "it wasnt a drill. i read the file." I knew this from chapter 29 and I still got a thrill watching them find out. Chloe asks "theo which four," because she was one of the four. Chloe's reaction is the most interesting: she doesn't say "no way," she asks which one. She knew all along it was something. "She reads that twice, sets the phone face down next to the badge." I felt that.
+
+Also, Kavi says "a state doesn't leave four operators walking. That's not their risk tolerance," meaning a real government would have done something worse. And Nadia says "they caught four operators once" and then "widen the polling interval again" in the middle of it. That is how people really act when their heart is pounding: they go back to the task.
+
+The ending line is "so lets go and read it" and that is Eli, and I do not know what "it" is: the file? Theo's file? I guess they plan to read the government's file about the school, which is a bold, risky thing. Chloe has a clearance and a badge. This is going to get dangerous.
+
+Where I was confused: the timeline ("1998 or 2001, depending which thread") and whether "one man" means the school's secret owner, or the funder. I think it's the funder. The chapter calls the financial "one" without saying what they're looking for, and I had to piece it together from the chat. A short sentence would have fixed it.
+
+Favorite: Ruth's three clues. Weakest: the build.
+
+Prediction: they'll find who the man is and it will tie to the pill and the list. Also I think Chloe will be asked to choose between her new job and her friends.
+
+## Chapter 33: The Other One
+
+A planning chapter. I know the book is setting up a big heist, but this part is almost all talking about talking, and I'd call it the quietest chapter since the Whitaker one. Still, two things about it made me smile.
+
+The first is a payoff from chapter 19. When Nadia says "name whos actually touching the code" and then "write that down, chloe," Chloe answers "already did. its clause four." Chloe, who got blamed for not writing down her reasoning on the bar exam and who failed Marek for the same thing, is now the person who writes the rules for a crime. She writes the page on what "noticed" means, and she says it twice in different words because she knows which of them will be "squinting at an ordinary blip at two in the morning." She learned the lesson and then she became the best at it. I smiled at that and I don't think the book points to it. That's a good bit of storytelling.
+
+The second thing I liked is the stop clause. One line: any one of them can end it, no vote, no reason attached. Ruth wants a sentence of reason "for the record." Nadia says "a sentence is a case. If you're building a case you're not stopping, you're asking. Whoever's scared enough to pull it is scared enough." Ruth says "fine, strike it." That is a smart rule and I liked seeing why. It reminded me of the safe word thing in the trust falls joke. Also Nadia's sleeves going up "when something is going to cost her."
+
+And Ruth's legal numbers: "section 1030... five years first offense, ten if there's a financial angle." Eli: "everyone speeds." Ruth: "thats not the same." I like their different instincts, and "give me the actual number of cameras youve counted, not the number youre confident about." That's a very Ruth thing to say, because she is right and Eli is dodging. It's a tense bit, and I felt it.
+
+But I want to be honest that I was bored. It is a lot of pages about a document. Eli writes twelve pages, Theo reads it and closes it, rereads it, closes it. Everyone says "in" or "fine" one at a time, which is a list of signatures, five or six in a row. Theo's "still the stupidest thing any of us has ever done" is funny once, and then twice. And the second paragraph about the target is vague: "the unit Theo told them exists." I am not sure what "the second worm" does and I'm not clear who the target is except "the people who have the file." It's fine, but I would want one clean sentence about the plan.
+
+Also there's something wrong with the ethics, and I don't think the book is fully facing it. Chloe has a clearance, which she just got, and she is going to use it to read a sealed government file. The last paragraph says "What that costs her she works through once... and the thought ends in about as long as it takes a light to change." That's the one line where she doubts, and then she's done. As a reader I wanted her to hesitate more. This is the person who failed Marek "because she was the one who had to write it down." She knows rules. Why doesn't she wrestle with this? I felt the book skipped over the best moment.
+
+Another quick note: the book keeps jumping dates, and it was hard to tell this chapter happens after the last one. "May 2026 – June 2026." Chloe turns twenty-one in August: "two months after she adds the last page," but this section is also called "weeks into the job" earlier. I can't track the calendar. It doesn't hurt, but I keep checking.
+
+Favorite: "already did. its clause four." Weakest: the long signature list and the vague target.
+
+Prediction: the break-in will go wrong in a way the "noticed" clause didn't plan for ("a gap closing again before anyone can point to it"). That last line of the page-three paragraph is a hint. I also think Theo is going to be the one who gets hurt.
+
+## Chapter 34: The Files
+
+This is the chapter where I felt most like the book had finally paid off. It is short, tight, and every few lines gave me a new chill. I read it in one go and wanted to start over.
+
+What worked first: the idea of seven people opening their own files in seven places at once, alone, and the chat starting up after. The opening paragraph is long, but each person has a different way of reading: Ruth on the lab floor "because the chair is across the room," Sam on a phone in thirty-second bursts while a sergeant talks, Theo standing the whole way through. It's neat, and it shows each person's personality. I didn't skim it.
+
+The files themselves are creepy. There is one on every single one of the ninety-one of them. Case number opened 2013. Address, family, where their parents work, where everybody banks. Eli's says he found five vulnerabilities in his employer's systems in one afternoon and flags it "as worth continued attention rather than as anything resembling praise." That is so funny and so cold. Nadia's file spells her name differently on every page. Kavi's is the thinnest, "a paragraph a year," with the word "continuity" written in the margin. I don't know what "continuity" means here and that bothered me in a good way. Theo's has a note with a name in it that he already knows, and he refuses to tell Sam. I'm dying to know who that is. Chloe's file notes she accepted a job requiring a background check, "dated to a Tuesday she remembers clearly, because it's the week she signed the lease." It makes me feel like someone has been sitting on her shoulder for the whole book.
+
+The line "the graduates are believed to be in contact with one another... collection against the channel comes back empty every time it's tried, but the recommendation is still to keep attempting it." That's a great detail. The kids' homemade encrypted chat from chapter 24 has beaten the government for years. And the line about how the sentence keeps getting retyped "by a clerk who has stopped expecting the retyping to change anything." I read that three times.
+
+The Waffle House incident is the big thing. I remember chapter 20, with the seven men and the 22 seconds. The file says: all the footage from the Waffle House, the units next to it, a traffic camera, and the town camera: "unrecoverable wherever the students appear, but intact everywhere else. No known method." And the government team assigned to watch the school had its own recordings that night, "gone too." Ruth's box! The thing she built "in about a weekend so we wouldn't get detention" beat a federal unit they didn't know existed. Ruth: "i was thirteen and it was a weekend and i wasnt trying." That's the emotional core. And Kavi: "ruth, read that back." He wants her to hear herself. I did, too.
+
+The ending is good: Ruth asks "how good are we" and Eli says "i dont know. i have never once been at the top of a room in my life." (A great, human thing to say.) And Chloe: "were about to find out." / "thats not an answer" / "it wasnt supposed to be one." That's the best last line of any chapter.
+
+Honest complaints: it makes me ask why Chloe and her friends never noticed a federal team watching them. They did lots of cameras stuff for years, and I wanted that to matter earlier. Also "the unit assigned to observation of the school had their own recordings." I didn't follow how Ruth's box got those too, but I get that it was in range. And the part about a "translation problem": Chloe wonders if "blank" means the men can't recall faces or that they didn't match. It's a smart thought, but it sits in a long paragraph and I almost skipped it.
+
+I also noticed: Sam says "is that the one where you lost a shoe," which is how they'd talk. I'm glad the book let one joke through.
+
+Do I still care about Chloe? More than ever. She's carrying a clearance she shouldn't be using, and she says "were about to find out" in a chat. I'm worried about her and proud of her.
+
+Favorite: Ruth "i was thirteen and it was a weekend." Weakest: the second paragraph's long list of whose file says what.
+
+Prediction: the thing they find out is the real reason for Halstead. And the "name Theo already knows" will be a person from Halstead who has been working for the other side.
+
+## Chapter 35: Nine Minutes
+
+This is a slow-burn chapter that I think works as a setup, but nothing really happens in it. I was tense and a little bored, which is a weird combination.
+
+What worked: the idea. Their worm, the program they built to quietly watch bank records, goes silent for exactly nine minutes. All three logs say it was running the whole time. "No error, no restart, no gap." Somebody stopped it, started it again, and cleaned up so well "the cleanup isnt there either." Then it happens a second time, to the second: nine minutes. Kavi's line, "different would say clumsy, but the identical number twice says measured," is the best sentence in the chapter. I thought about that for a while. Nine, nine. It's not a glitch. It's a signature.
+
+Then the argument between Chloe and Eli is the real scene. Chloe: "hes telling us hes there. he could have killed it and he gave it back. thats a message." Eli: "no. chloe im sorry but no... if you find a tool like this you do one of three things. you kill it, you follow it, or you feed it garbage. you dont put it back." Chloe's answer is interesting and Eli's is practical. And then Eli says "hes very slightly wrong about how good we are." I love that line. The unknown person might be wrong about them, and that's their one advantage. I also like Ruth saying "so he doesnt know we know" / "thats the only thing we have" / "dont lose it then."
+
+I like that Theo says the last line: "and if hes made one mistake, how many has he made that we didnt catch." That's a really good question and I wish it were the last line of the chapter.
+
+What dragged: a lot. The opening is a full page of Eli checking logs. I had to reread it to understand there were three logs and they all agree. The chapter does the same thing over and over: "He checks the noticed clause again... it reads exactly as it did." "Ruth goes through them slowly... It holds." I think I read the "noticed" clause four times and it never changed. I understand why: the rules are the point. But it makes the chapter feel like a loop.
+
+Also, I noticed the book keeps using the same body habits for characters, and now it feels like filler. Eli's two-finger tap on the desk, Kavi turning a cable or "whatever's on the table" over in his hand, Nadia's sleeves going up, Theo closing his laptop carefully. They were cute the first few times, and now I could write them myself. The tap shows up again in this one twice. I have started to skip the sentence with the tap.
+
+And I wanted more from the "he." Who is "he"? The chapter just says "he" the whole time and assumes I remember it's the one man from the money chapter. I did, but only barely. Also "the financial worm" versus "the second worm" confused me again, because I forgot which one went dark. I think it's the first one that was still running. A line saying "the first worm, the one watching the bank" would have helped.
+
+The end: Chloe says she's "out for a few hours" and asks Ruth to watch the thread. Then "her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow." I did not understand that sentence at all. I think it means: something might happen tonight, and she chooses to sleep. Then the next day, she texts to ask if the night held. It's a quiet ending, and it makes me nervous because the last thing I know about her is she's asleep. I think the author wants me to know something happened. I do not.
+
+Do I still care about Chloe? Yes. But I have been waiting for something big for a few chapters now, and I notice I'm more curious than invested.
+
+Favorite: "different would say clumsy, but the identical number twice says measured." Weakest: the long opening with the logs.
+
+Prediction: the nine-minute person is the one who actually runs Halstead. And on the last night something will go wrong with the thing Chloe is asleep through.
+
+## Chapter 36: Seventy-Five
+
+I read the last page and said "wait, that's it?" out loud. It is a strong chapter with a great twist, and then it just stops, with the biggest questions still open. I'm not sure if I'm mad or impressed.
+
+The opening is hard to follow. Priya goes quiet and the first page explains that everyone else is "where the summer left them" in a long list: Ruth's card, Kavi's second bench, Eli's job title with "a word in it he finds funny," Theo's blinds. Those are cute, but I wanted the chat. The second paragraph is a fragment about "a bus with a cracked window, then a second bus, then a room over a feed merchant's," and it took me a minute to realize it was Priya, not Chloe. Too many "she"s with no name.
+
+Then the chat, and it's great. Priya says people keep turning up to take her since March: two men in a van, then six, then a dozen, then on Tuesday night seventy-five. "give or take. there were more behind the line i never got to." Sam: "we did seven in a car park." Priya: "you were sixteen and chloe said they were retarded." That line hit me, because it's the same word I complained about in chapter 20. Priya quotes it back, so the author clearly knows it is in there and chose to bring it up. I'm not sure it works as a joke or a bit of shame, because Chloe doesn't answer and nobody remarks. I still think the word should not be in the book, and I think readers my age would feel the same.
+
+The big reveal is in what Priya says about the seventy-five. "They came in like thirteen year olds. a couple of fourteens. one of them was a fifteen and he put me into a wall." "Nobody did anything advanced. Not once, not one thing I have not had done to me on a mat." So they fought like Halstead kids at thirteen, fourteen, fifteen. They are not experts. Somebody has been training people to fight like Halstead students, just worse. That means there is another school, or a copy of Halstead, or another program. "so either they are lying about who they work for, or somebody has spent a lot of money on people who are not very good at it." That sentence gave me chills and also explains the chapter title for 33, "The Other One." I think this is the main point of the end: Halstead isn't the only one. I wanted to read more about it right away.
+
+The best part is Ruth and Priya arguing. Ruth: "at the things you were doing on tuesday you are somewhere in the top ten percent of people alive." Priya: "ruth i finished sixty-fourth out of ninety-one. bottom third four years running." "but thank you for the heads up, genuinely." That's a perfect joke, and also the thesis of the book: even the "bottom third" can beat seventy-five. And Ruth's arithmetic: "seventy-five people, arm's length apart, is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it straight through." It made me see it as a line across a field. And then it ends with Ruth writing down where everybody sleeps and realizing she started at the bottom, with her own address last. I loved that.
+
+Also Priya taking two prisoners and treating them like houseguests: the one who puts every piece of onion on the edge of his plate, the one who says good morning first. That is kind of beautiful and strange, and it is the only softness in the chapter. Priya is such a good character. I'm glad she gets the last chapter. The last line, "the mare is due and the mare keeps her own hours," is a quiet joke that ties back to chapter 4, where she was telling Chloe about horses on day one.
+
+What I did not like: no answers. We never learn who the nine-minute person is, who the "one man" behind Halstead is, what the pill is, why Ruth is on a list. I do think the book is saying: these are the questions now, and the answers are not in this book. But I wanted at least the pill. I keep thinking about "the small white one, you took it twice a day" in chapter 24, and nothing happens with it again. Chloe's still got it in her bathroom cabinet. I feel like the author gave me a really good clue and then forgot it.
+
+Also: Chloe barely does anything in this one. She "types a paragraph on the bus, reads it back, deletes all of it, but sends a single line instead." That's very her. But it is the last chapter and the main character is on a bus. I would have wanted her to say something to Priya that mattered.
+
+Favorite: Priya's "sixty-fourth out of ninety-one" and Ruth's hundred-and-ten meters. Weakest: the confusing opening and the lack of answers.
+
+Prediction: there's a sequel. Maybe the next one is about the other school, or about Chloe at her job. But I want to know who pays for it all.
+
+## Whole book
+
+Would I finish it? I finished it, because I had to. But I'll be honest: I wouldn't have finished it without the first nine chapters. The first third hooked me hard, and the last six had me by the throat, but the middle (chapters 12 to 19 and a few after) lost me over and over. If I had picked this up in a bookstore and was an average 14-year-old, I think I'd have quit around chapter 14 or 16, when the book turned into long paragraphs about archery, markers, signal clocks, mark schemes and the bar exam.
+
+Would I recommend it? Yes, to one specific kind of friend: someone who reads a lot, likes puzzle stories, and doesn't mind slow parts. Not to most of my friends. I'd say "skip the lists, read the dinners and the dialogue."
+
+What stayed with me:
+- Chloe at six getting called weird, and cutting her answer down to "Water." That's the whole book in one word, and I thought of it again at "Fine, quiet" in chapter 28.
+- The library fight ("Four"), which comes back in chapter 10 when the library has no card.
+- The floor scene in chapter 9: "Take my birthday." I still feel it.
+- "Nobody was mean." Best line.
+- Fen and her rocks sorted by size.
+- Ruth: "put any kid off my street in that building at seven and you get this." That changed how I read everything before it.
+- Nadia's window lettering sitting half an inch low, and "Out at a tire place."
+- Sam shooting forty for forty and saying "You're shooting the bullet."
+- The operator report from the file, where the four men from chapter 15 were real, and the kids graded themselves.
+- Priya's "sixty-fourth out of ninety-one."
+
+What dragged:
+- The class lists. Almost every chapter has a paragraph that is a list of subjects and teachers and what she learned. After the first two or three, it all blurs. I skimmed them from chapter 12 on.
+- Technical talk. Archery angles, milliseconds, signal clocks, ciphers, contracts, the financial worm, polling intervals. If you know it, fine. If you don't, it's just a wall.
+- Too many names. I lost track of Bex, Iyad, Eli, Theo, Marek, Odile, Aurel, Dov, Ferris, Tomas, Bev, Manny, and so on. Some were important, many weren't.
+- The Bex credit-stealing was used maybe six times (chapters 12, 13, 14, 17, 19, 21, 22). It was frustrating the first two times, and then it felt like the book was repeating a point.
+- Some chapters repeat information I already knew (chapter 6's dinner recap, chapter 7's librarian recap, chapter 22's offer read twice, chapter 30's Whitaker interview).
+- The same character tics: Eli's two-finger tap, Kavi turning an object in his hand, Nadia's sleeves, over and over.
+- Long dense paragraphs and very long sentences. A lot of the prose reads like it was written for a college student. I often had to reread a sentence to find out who the "she" was.
+- One word in chapter 20 that I flagged and that comes back in chapter 36. It should go.
+- The ending gives no answers. The pill, the one man, the nine-minute person, who is behind the seventy-five.
+
+How my feelings about Chloe moved: At the start I liked her and felt for her, in a "that poor kid" way. In chapters 4 to 11 I loved her, because she was funny and stubborn and wanted so badly. During the middle she turned into a person who was good at everything and I started to care less. I wanted to see her fail or fight with someone, and when she failed the bar in chapter 19 I woke up again. In the adult chapters I felt close to her again because she started to look like the six-year-old: saying "fine, quiet" at work, not telling her parents, hiding her pill, and still keeping Marek's sheet in a drawer. By the end I care more about her than anyone else in the book. I just wish she'd had more to do in the last chapter.
+
+One more thing: the book says its characters talk "weird" and then makes everyone sound the same, long and precise and polite. A 14-year-old would say it is "an author's voice." The dialogue works best when someone cracks a joke (Sam, Priya, Eli). More of that, please.
+
+Bottom line: a strong idea, a heartbreaking first third, a drag in the middle, a hard-hitting last quarter. I'd give it a 7 out of 10, and I'd read a sequel.
