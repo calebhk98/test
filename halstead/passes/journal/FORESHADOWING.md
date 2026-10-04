@@ -595,7 +595,7 @@ Clues:
 - Chloe: twelve of fourteen. "The middle of a year gets the state school." Her self-image as middle persists though she holds a 12/14. The book signals her mis-estimation of herself: she is only "middle" within a monstrous cohort. Fine.
 - Bex: "It's a good story, and it's true." Ruth removes her bag from Bex's seat. A friendship ends. 
 - Marek goes to a college in Arizona because of a lecturer. He is leaving. Marek's prior failing; no consequences yet.
-- "twelfth she reads a second time before she believes the count" — twelve acceptances; the number twelve (the year Chloe turned 12?). Ignore.
+- "twelfth she reads a second time before she believes the count" - twelve acceptances; the number twelve (the year Chloe turned 12?). Ignore.
 - Chloe's essay about Marek: "the interesting part is why he was right." And "half a line... The notebook does not [survive]." Chloe cut out the true part. Her essay is about a boy who was right; the notebook (his work) is lost. I predict Marek's "notebook" comes back with significance (the 1981 paper with a mistake?). 40%.
 - A detail: "The transcript is legal, an accreditation number printed in the corner." There is legal accreditation. Somewhere there is a state authority and a board. Chloe's own first impression was "no school by that name working with the district." Now there is an accreditation number. That is a contradiction with ch3 or a development (the school got accredited after). Watch it.
 
@@ -866,3 +866,296 @@ Predictions:
 - "Nine Minutes" and "Seventy-Five" will be the final operation or event and its result. 60%.
 
 Theory: now 55% "Halstead is funded by someone inside or adjacent to the government who wanted a private pipeline of unusually capable young people, and used a school as cover, so the 'funding cannot be traced' because it comes from a classified account." 25% "wealthy individual or foundation," 20% "other."
+
+## Chapter 31: Ruth
+
+Scoring:
+- Ruth held by an agency or hidden: wrong (I had 55 to 60%). Her silence was psychological: she realised the outside world is far less capable than her cohort and that nobody will say it. A fair surprise on content, but a partly unfair one on tone, because ch28's single check mark and "six months" were staged like a disappearance. The book built menace with a punctuation detail and then resolved it as an emotional beat. That is a mild misdirection, not a cheat, since nothing was said that was untrue.
+- Ruth's survey questions measured the gap between Halstead graduates and the general population: right (65%). The chat's third-grade-fraction question was exactly her evidence.
+- "Ruth knew about the school already": right in kind. Her first post in ch29 ("bad") is explained here: she already had the larger suspicion.
+- Nadia's "cant find anyone who can finish a thought" as a real thread: right. Ruth names it: "thats not a hiring pool." I gave 55%. So the book was seeding it across ch27, ch28, ch31. Nicely done and fair.
+- The pill: pending.
+
+Clues:
+- Ruth's thesis: "i dont think we're the same kind of thing." Then: "somebody wrote to my mother when i was six. a person sat down and picked me... i want to know what the line was... because there was nothing to see yet. i could read." And: "put any kid off my street in that building at seven and you get this. thats the part nobody will say out loud." Ruth argues the list may not have selected for talent; the training (and possibly the pill) produced them. This is the book's philosophical hinge: is the difference selection or manufacture? It is likely to drive the "who is behind it" answer: someone who wanted to prove that any child could be made this way, or who wanted a population made this way for a purpose. 70% the reveal is that the selection was not what mattered; the program converts ordinary children. This links to ch3's "their list is usually pretty good" (vague) and ch2's Ben (a test with no ceiling).
+- Ruth's line "sam asked when the real assessment was. it was the real assessment." She links Sam's "is this the real one?" to the idea that the whole of Halstead was the assessment. A strong thematic payoff for ch25 and ch26, and it is stated outright by a character, so it is a little spoon-fed. 
+- Ruth's folder habit: "a written claim is harder to wave off than something merely said." She is the evidence person. Predict she will assemble the documents. 70% (ties to "The Files," ch34).
+- Ruth's drafts that die unsent: "a paragraph like that commits her to defending it." Again the theme: say the whole thing or the shorter version. She finally sends the full version here.
+- MIT's registrar woman: "I sat on this committee for the two years before yours; I have written this exact letter more times than I could count." And "The sequence you're in is the only sequence there is." The outside world has one track that is far slower. Straight.
+- The professor: "Stop me there... write out the two lines you skipped." Ruth's habit of skipping steps, now realised, finds the sentence "The tail dies before the boundary does." A nice small metaphor: the function is gone by the time you get out that far. Possibly about the kids' skills dying at the boundary. Mild.
+- Devansh: "Are you ever stuck on anything?" "No." A friend outside who might be a plot element later (he gets her to talk). 35%.
+- Ruth's parents: she corrects her father's insurance reading ("thirty days"). Her father "sells insurance" (ch15). Fine.
+- Ruth's brother at Halstead (ch20, ch23): not mentioned here, despite 2023 to 2025. The omission is odd. I flagged him as a hostage candidate; he may return with the "The Other One." 50%.
+- The format: this chapter, like the ones before, ends on the chat. The last line is Sam: "probably." The chat is the book's forum for the final act.
+
+Predictions:
+- Ch32 "The Money": they trace the funding. Nadia leads (registered-agent skills). The answer is a trust or a person who is a surprise. 75%.
+- Ch33 "The Other One": a second entity: maybe the "other candidate" from the file, a second school, or a second cohort/pill. 50%.
+- Ch34 "The Files": release via a dead-man's switch; or collation of Theo's/Ruth's/Nadia's files. 70%.
+- Ch35 "Nine Minutes": a timed event where Chloe must act within nine minutes; maybe a Defensive Watch-like response. 55%.
+- Ch36 "Seventy-Five": an outcome number: 75 days, 75 minutes, 75 percent, 75 children. 40% a hit rate (75 percent), echoing "point six" and "ninety-one."
+
+Theory: Ruth's thesis is now the book's thesis candidate: Halstead manufactured their difference with training plus the pill; they were picked arbitrarily; someone wanted to see if it could be done and keep the product. I put this at 60% as the core. The second part, "who pays," is still open. I'm leaning that the answer will implicate a person or entity that profits from having a pool of unusually capable adults (maybe a corporate actor, as the file says). 45%.
+
+## Chapter 32: The Money
+
+Scoring:
+- "The Money" traces the funder: right (75%), but the method is wrong. I bet Nadia would trace it with her registered-agent skills. Instead Eli builds a slow worm, Kavi a watcher, and Ruth proves the pattern. Nadia only runs the shop test bed. The ch27 plant (shell filings) did not pay as I thought; it paid as character and a dead man's switch hook. Wrong on who, right on what.
+- The funder is a person, not a state or company: right on my 30% "wealthy individual" branch, wrong on my modal 45% (corporate/federal). The reveal is "one man," proved from presence (gaps of three to five days, a seven-hour band moving forty minutes over twenty years, a preferred slightly worse instrument since 2003).
+- Theo shares the file with the chat: right (60%). "nobody repeats any of this."
+- Chloe's reaction to learning the 2017 night was real: she says "theo that was a drill" then "theo which four." She is one of the four. A strong small payoff of ch15 and ch29; I like that she asks "which four."
+- "Dead man's switch" pending.
+- Theo's "repeat initials": pending.
+
+Clues:
+- The man: since "somewhere around 1998 or 2001"; gaps "dozens across twenty years... committees dont get flu"; the "seven hour band" drifting forty minutes (aging); the worse instrument "every single time since 2003." Ruth: "its him. one man." So Halstead's patron is an aging individual who has been making financial decisions for twenty-five years, likely very rich, and who predates the school. This explains the file in ch25 being "older than the captain's commission" if the folder concerned the man. I now think the file Sam's captain's superior pulled is on this man, or an earlier project of his. Also: "the funding cannot be traced" because it is one person's personal discretion, not an institution's. 
+- The government's "no state would leave this little" argument: Ruth: "that's not evidence, that's a shrug." The government reasoned from absence; the kids from presence. Related to Sanders' paper (absence after a Tuesday) and Hearn's "right or only comfortable." A neat consistency of method. It is also a thematic payoff: showing the reasoning instead of leaping. Ruth wins by writing the proof (the "show your steps" arc from Theo, Chloe, Ruth). Good, fair, and satisfying.
+- Theo: "they put a man on staff when we were eleven and we spotted him in a day" and "eight years ago they sent people over the fence... four of us put them on the floor." Sam: "WHAT." Kavi: "a state doesnt leave four operators walking. thats not their risk tolerance." Ruth: "it just means there were two attempts, not one." Nadia: "they caught four operators once." Kavi's inference: the intruders are not from a state, because states don't leave operators walking free. The school released the operators (Sinclair told them they were free to leave) and nothing happened. So: the one who sent them is not a state, or the state accepted the rebuke. The file says "no reply." My thought: those four were sent by the man's rival or by a second party, "the other one" (ch33). 55% "The Other One" is the entity that sent them, or a rival patron.
+- "eli: so lets go and read it." The group will break into the government file. That is a federal crime; Theo is exposed; Chloe has just been cleared and sworn in on her birthday (August). Her conflict: her career vs the group. Strong tension seeded: Chloe's clearance/job just began (ch30), the group about to hack the agency (Eli, Kavi). Good: Chloe will have to choose. 75%. And Ruth's "the file" knowledge may implicate her in a federal case.
+- Nadia: "widen the polling interval again." She calls out their risk: boring worm. The worm touches financial systems; "if this comes back to my company I will end all of you." They have already crossed the legal line; their rule ("it must be boring") will fail in some way. 60% the worm is detected and the cost lands on Nadia or Eli.
+- The worm is a clear Chekhov (the watcher says "to exactly one person before it says so to anyone else"). Kavi's watcher: "say so to exactly one person before it says so to anyone else." Pending.
+- Eli's "two-finger rhythm against the desk edge." Small repeated physical tics. Eli reads out a deployment target "once, an order read back across a counter." They are using military-ish procedure. Fine.
+- Ohio: Eli is in Ohio? "It's the middle of the night in Ohio." Eli lives there; earlier "Eli... a long way from where he grew up." Fine.
+- "Ruth taking notes for once" - Ruth in contact with Kavi. 
+
+Predictions:
+- Ch33 "The Other One": identity or nature of the second actor: either the second state candidate, or the other half of the man's pattern (a second person sending the operators), or a second school. 55% it is the identity of the person who sent the four operators.
+- Ch34 "The Files": the group reads the government file. They find the man's name and the program name. 75%. And maybe they find Chloe in the file as an asset. 55%.
+- Ch35 "Nine Minutes": a timed incident (agency detects them, or the man's response). 60%.
+- Ch36 "Seventy-Five": the man's age (seventy-five)? A very plausible fit: "that's aging... a person getting older." The aging man might be seventy-five years old, and the title might name him, or the number of days left. I put 40% that "Seventy-Five" refers to the man's age or his death. Fun: the twenty-five years since 1998-2001 plus age.
+
+Theory: Halstead was built and paid for by one wealthy man who made the decisions himself for a quarter century; the file's agency thinks it is a state or company; the children are the product. The pill is probably his. The "why" might be personal (he wanted heirs, defenders, or a legacy), or political. The "other one" may be a second such man or a counterpart. 70% the book will reveal the man is old and dying or already dead (hence "Seventy-Five") and that Halstead's future is in the graduates' hands.
+
+## Chapter 33: The Other One
+
+Scoring:
+- "The Other One" is the identity of the sender of the four operators, or a second school, or a rival: wrong on all three. It is the second worm, aimed at the agency's own file. I leaned on the title and read it as a character. That is a title misdirection, mild and fair.
+- "Eli's recklessness returns badly": no sign yet. Eli is careful in design but dismissive of risk. Pending.
+- The group reads the government file: right (75%), in process. They plan to, and the plan is signed. They have not read it yet.
+- Chloe's conflict with her new clearance: right. "She holds a clearance for things the government keeps away from most people, and she is about to spend it on a file it meant to keep sealed from her too. What that costs her she works through once, on the drive home... and the thought ends in about as long as it takes a light to change." She does not resist. The book is showing she has the habit of skipping the middle step (see her flaw), now with her career. 
+- The dead man's switch: not yet. But Chloe's document includes a stop clause and a "if noticed" page. The explicit contrast: Nadia's dead man's switch vs Chloe's stop clause.
+
+Clues:
+- The unconsidered failure mode: "It assumes noticing looks like something happening to one of them. But the version that leaves only a gap closing again before anyone can point to it, quiet and invisible, over before it registers, sits outside every page of it." This is the book telling me, in narrator voice, what will go wrong: someone will notice the intrusion, say nothing, and close the gap. It is a flat flag. 85% that the finale revolves around exactly this: they were noticed, the agency (or the man) acted without a visible sign, and the group's rules had no clause for it. Possibly "Nine Minutes" is the window. Dull to say, but the narrator is doing the work. I'd call it near-spoon-fed, but the actual form of the event is still open.
+- Chloe's definition of "noticed": "a name gets called, an account gets frozen, a stranger shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose." She wrote it so a person squinting at an ordinary blip at two in the morning will not abort. The blip will occur; the "stay outside" decision will be wrong. 80%.
+- The stop clause: "Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached." Ruth wants a reason "for the record"; Nadia refuses: "a sentence is a case." The group avoided reasons. In the climax someone will invoke the clause without a reason and the others will not know why; or someone will fail to invoke. 70%.
+- "One hour to comply": the other six have one hour to stop. A clock. In the finale, the opposite: time is "Nine Minutes" or something less than an hour. 60%.
+- Clause four: "then two of you carry it if it goes wrong, not seven. write that down, chloe" "already did. its clause four." The group has a liability clause. Chloe (a trainee at State) is a drafter. She is exposed through the document she wrote. 70% the document surfaces as evidence.
+- Ruth: "files it in the drawer where the camera-defeating box she built as a child still lives." The box (ch16 Chekhov) was used in ch20; here the drawer is mentioned again, so it is available. 60% it is used one more time.
+- Theo: "my name cant be anywhere on a document that sets out how to get round the government i get paid to read." He reluctantly signs last. Theo is the most conflicted insider. He will be the one who pays. 65%. His grandmother, tea, "ferry": a gentle character set up to be hurt.
+- Nadia: "Her sleeves go up before she answers. They go up when something is going to cost her." A physical tell that has been shown repeatedly. 
+- Kavi: "the thing that gets us caught is timing, not the door... someone doing a manual review of the exact files we touch in the exact week we touch them." Another version of the "manual review in the exact week" failure. The caught-by-timing idea ties to "Nine Minutes." So "Nine Minutes" is likely the time between an event and the trigger. 60%.
+- Time stamps: May-June 2026; Chloe "turns twenty-one in August." The planned entry therefore is around August 2026, after she is sworn in on her birthday. She gets sworn in and then breaks into the agency's file: the sworn-in clearance and the oath would be a bad combination. She is being set up to carry guilt. 75% the finale is dated August 2026 or soon after.
+
+Predictions:
+- Ch34 "The Files": the group reads the files; the file names the man (the funder), his age (75?), the program's origin, and maybe the pill. 75%. They also find the 2013 file refers to Chloe's letter as the first contact. 40%.
+- Ch35 "Nine Minutes": the entry is noticed; someone inside the agency (maybe Whitaker or the "repeat initials" person) sees it and says nothing for nine minutes, or acts within nine minutes. 65%.
+- Ch36 "Seventy-Five": either a count (75 days? 75 percent), or the man's age at the end; or a short coda about one of the characters. 40%.
+- A death or arrest: 60% at least one of the seven is arrested or compromised; 25% a death.
+
+Theory: unchanged. The architecture of the last four chapters is predictable: files, a window, a result. The unknowns are what the files say (who the man is, what the pill is, why children), and who ends up caught. I still lean that the man's purpose will be a variant of "defenders against a hidden threat" or "heirs," not wicked in a cartoon way, which would suit a book that has so far avoided villains.
+
+## Chapter 34: The Files
+
+Scoring:
+- The group reads the file: right (75%). Seven people, seven places.
+- The file names the man, the pill, or the origin: wrong. It is a file on the graduates, not on the patron. I over-expected that the file would contain the answer to "who." It mostly contains the agency's ignorance. A fair but slightly deflating payoff: the book gives the kids a mirror of themselves instead of a villain.
+- The ch20 muggers were staged by Halstead: wrong (I had 55%). The report treats them as seven real robbers, and a federal observation unit watched. The mugging was real; what was unreal was the kids' belief that nobody saw. Good, a fair surprise in that the clue-set (wrongly standing men) read as staging but was just amateurs, as Chloe said in ch20 ("people who couldn't tell you their own address").
+- Ruth's recorder box: I predicted (60%) a further use; it was used in ch20 and now the file shows it blinded a federal unit as well. So the box pays off twice, the second time retroactively. Really nice.
+- The chat is unreadable to the agency: right in spirit. "collection against the channel comes back empty every time it's tried." My 45% that the chat is read by outsiders was wrong.
+- The dead man's switch: pending.
+
+Clues:
+- Kavi's file: "Someone has annotated the margin of it more than once, always the same single word: continuity." Kavi's file is the thinnest, "a paragraph a year," with one address. "Continuity" repeated by different hands. New plant. Kavi stayed at Halstead after graduation; he is the one who remains in the building. I predict "continuity" means Kavi is the designated continuer of whatever the patron built, or the agency's term for the one who keeps Halstead running. 60%. Combined with the title "Seventy-Five" (maybe the patron's age or death), a succession plot looks likely.
+- Theo's file: "has a note on it that makes him close the laptop carefully... 'mine has a name in it I already know.'" Sam asks "whose name" and Theo does not answer. A planted secret that is guaranteed to come back. Candidates: Theo's supervisor, the retiring woman, his grandmother, or someone from home. 80% payoff in the last two chapters, probably as a betrayal or a sacrifice.
+- Chloe's file: "a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease." So the agency tracks the graduates' lives to the week, including a lease. And "The file lists the method as unknown." The agency has live information on them from somewhere that isn't the chat: phones, banks, employers. The kids' encrypted channel hid content, but the rest is open. Chloe's 'I think I knew the sentence' echo.
+- "Chloe's and Nadia's names are in the same list under the same date. Sam has been between them... the file has no way of knowing it." The file lists pairs as contacts but cannot see the structure. Tiny, human.
+- "Eli: i have never once been at the top of a room in my life." Ruth: "how good are we?" The group faces that "we're ahead" is a claim they had not accepted. Chloe: "were about to find out." Ominous. This is the end of "the wrong premise" thread: the kids are not average-gifted, they are far above, and they are about to act. That is the preface to "Nine Minutes."
+- The incident report: "Two of them independently report being told, during or just after, that this had been sloppy and needed more practice." The kids' reflex to grade. A funny but also eerie detail: they were scoring robbers.
+- "a team on us... my box got their cameras too and i didnt know their cameras existed." The agency has a unit assigned to observing the school and, per ch29, no one inside. A second unit assigned to the school. The agency has watchers on campus. "The unit assigned to observation of the school had their own recordings of that night. Those are gone too." Fine.
+- File case number opened 2013. First entry: "contact with the family went no further than the one letter." The letter in ch3 is the "one letter." So the file's origin is the letter: the agency tracked Halstead through the recruitment letters. This confirms that the letter/postmark thread meant something: the agency knew each family got one letter. The envelope in Chloe's drawer may be evidence. 60%.
+- "Every file starts with a name, its own date, a single photograph taken outside a building none of the analysts have ever set foot inside." The agency has never entered the building. So the kids' own knowledge of Halstead's interior is the one thing the agency lacks. 
+
+Predictions:
+- Ch35 "Nine Minutes": the group's final action (a real operation at Halstead, or the agency noticing them). 70% it takes place at Halstead or involves Halstead's defence systems. The "Watch" structure is likely to return: "Defensive Watch" as the finale: the graduates return and run the Watch against real attackers. 55%. Rule 2 "They do not learn anything about you" would be tested.
+- Ch36 "Seventy-Five": the denouement. 50% includes a count of something (graduates, days, minutes).
+- Theo's name will be revealed: 75% in ch35 or 36.
+- Kavi's "continuity": 60% he becomes the head.
+- The patron: the man will appear in person or by letter: 55%.
+
+Theory: With the files read and no man named, the finale will almost certainly turn on a real attack on Halstead itself, possibly by the agency's unit or by a third party, with the graduates returning. The thesis "a drill that was never a drill" now flows forward: the Watch's rule set is the book's grammar, and the final event is "the real one" Sam asked about in ch25. 65%.
+
+## Chapter 35: Nine Minutes
+
+Scoring:
+- A quiet gap closing, after the narrator's flag in ch33: right (85%). Nine minutes, no log trace, tool returned "byte for byte" unchanged. The mechanism is exactly the "gap closing again before anyone can point to it." Perfectly signposted, and the signposting makes the event land as a confirmation rather than a surprise.
+- Chloe's "blip stays outside the definition on purpose": right (80%). Eli re-reads the clause and concludes the noticed definition is not met; the group does nothing. It is the failure she wrote in.
+- Entry into the agency's files: this was the second worm, and the files were read. The nine-minute event is at the financial worm, the first one. Ok: so the thing noticed is the money trace, the patron's trail. So the observer is the man (or his people), not the agency. Right on my guess that the "patron" is the next actor: 55% before, now 85%.
+- "Nine Minutes" as a countdown or timed fight: wrong. It is a repeating gap. I expected a single event. Fair surprise, since the title's number appears early (Sam's meal gripe in ch25 is a coincidence: not related, a coincidence I flagged at 25% and now call 10%).
+- Real attack at Halstead: not yet. Pending.
+- Dead man's switch: not mentioned.
+- The stop clause used: not yet. Ruth asks "why hasnt anybody already used this." Pending, and likely to matter in ch36.
+
+Clues:
+- The nine-minute repeat: "Nine minutes again, to the second this time, which reads worse than a different number would have: different would say clumsy, but the identical number twice says measured." Kavi's reasoning is good: an identical gap means a procedure, not an accident. Eli: "could be either." Chloe: "hes telling us hes there. he could have killed it and he gave it back. thats a message." Eli: "hes not signalling. he made a mistake. hes very slightly wrong about how good we are." This is the cleanest dramatic irony in the book: the chapter presents two readings and then has Eli speak the pride line. I would put 70% on Chloe's reading being right (the observer is communicating) and 85% that Eli's boast is punished. It is a bit overcued (the 'very slightly wrong about how good we are' line is the author underlining).
+- "hes": all of them use "he" for the watcher. They already believe it is one man, the patron from ch32, whose pattern fits "one person." Ruth: "so he doesnt know we know." Theo: "if hes made one mistake how many has he made that we didnt catch." The group thinks the man is the observer. 
+- The third gap is longer: "past where it usually settles." Escalation inside the chapter. The next is plausible "seventy-five" minutes? The title "Seventy-Five" could be a gap length (75 minutes), a next escalation. 30%.
+- Chloe's line to Ruth: "watch the thread tonight, im out for a few hours." She sleeps. "Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow." The narrator has flagged that something happens during the night, without her. The next morning she texts Ruth "if the night held." 90% something happens in that night that she will learn at the start of ch36, probably the man contacts one of them, the worm is revealed, or someone invokes the stop clause.
+- Ruth's reflex: "Her phone still gets picked up at two in the morning most nights, as it has for over a year now, an old habit carrying a new reason." Ruth is awake at two, the same hour as "Any hour of the night" from ch4. Ruth is the one watching when it happens. 60% the night's event is something Ruth sees and handles.
+- Kavi teaches the thirteens: "a summer intensive to the current cohort of thirteens." Kavi is a teacher at Halstead now, with cohorts. A tie-in: if the attack comes on Halstead, Kavi is on site with the thirteens. 55%.
+- Sam: "somewhere hot and far away." Sam is deployed. He is reachable only late. In the finale he may be unreachable. 55% his late arrival is a plot beat.
+- The group's choice: "we do exactly nothing. we dont patch it, we dont move it, we dont look at him looking at us." Doing nothing is the plan. And Ruth's question "why hasnt anybody already used this [stop clause]": the clause is unused because nobody knows what the unknown is. 
+- Eli: "if it was the government we would be in custody. you dont find someone elses tool and hand it back." That rules out the agency. The observer is a third party, which fits ch29's "corporate/state" misfit and ch32's one man.
+
+Predictions:
+- Ch36 "Seventy-Five": the man reveals himself. Possibly through the worm itself, a message appended in the 75th minute, or an in-person meeting. 70% he addresses Chloe by name or through Chloe's reading. 75 could be the number of the man's age or the number of children left in some roster. 40% it's his age.
+- A confrontation at Halstead is unlikely at this point; more likely a conversation, a letter, or a call. 55%.
+- The book will end on a decision: the stop clause or an acceptance (the man's "offer"). I'd say 65% the ending is a human conversation, not a battle. The book's long-standing method is conversation, argument, reading, "show your work."
+- The pill will be mentioned with the man's answer: 50%.
+- Chloe's final line returns to something from ch1 (the "full answer"): 55%.
+
+Theory: now at 70%: Halstead's patron is one aging man who is aware of the group and has been for a long time; he is the "he" in the nine minutes; the finale is a face-to-face or a message in which he explains why the children, and offers the group something (continuity: Kavi). The government file is wrong, the group's "we're ahead" is true but not by enough. I expect no villain; the likely reveal is a moral rather than technical one: he made them to protect something or someone.
+
+## Chapter 36: Seventy-Five
+
+Scoring:
+- The man reveals himself, or the night of ch35 is explained: wrong (70%, 90% for "something is explained"). The chapter opens in October, four months later, and never returns to the nine-minute gap, the "he," or whatever happened the night Chloe slept. The book drops its own live thread. This is the biggest miss against my read, and it is the book's, not mine: the narrator set up "the version of tonight that keeps going somewhere she'd have to stay awake to follow" and then did not follow it. See "unfair" below.
+- "Seventy-Five" as a count or the man's age: it is a count, seventy-five attackers coming for Priya. Right on the "count" half (40%). Partly right that the number would be a staff number rather than a day or an age. But I expected it to belong to the main group, and it lands on Priya, the character I flagged as the "outside the system" one (50% in ch24). So the Priya prediction pays, though not in the way I meant.
+- The agency acts: right in a way. "they are american. they say agency and they will not say which one." The agency that has watched for thirteen years has been sending vans since March. Eli's ch35 line ("if it was the government we would be in custody") turns out half-wrong: they are not in custody because the agency tried and failed on Priya, and has tried to "take" her by name from a list. That makes the nine-minute "he" possibly the agency after all, or a second actor. Ambiguous on purpose, I think.
+- A real attack on Halstead: wrong (65% in ch34). The attack is on Priya, in another country.
+- Kavi inherits ("continuity"): pending, open.
+- Chloe's final line returns to ch1's "full answer vs the small one": right (55%). "Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead." The ch1 masking, now at twenty-one, and the book deliberately does not let her heal. Faithful to the opening.
+
+Clues:
+- Priya's account: seventy-five, "they came in like thirteen year olds. a couple of fourteens. one of them was a fifteen and he put me into a wall and i had to work at it." Priya finished sixty-fourth of ninety-one, "bottom third four years running." If the weakest Halstead graduate beats seventy-five agency operatives, the gap in ch31 (Ruth's survey) is now operational: the kids are not just above average, they are in another category. Ruth: "top ten percent of people alive." Priya: "top sixty on a generous day." The book wants the reader to feel the number. This is the book's thesis made violent. Also Eli's boast in ch35 ("hes very slightly wrong about how good we are") is vindicated and inverted: the miscalibrated party is the people sending seventy-five, and the book now treats that miscalibration as a threat to the kids, not a comfort.
+- "they had guns from the start and left them alone until i was already through the line"; "you do not put those [darts] in a person, because a person watches you raise it and steps left. they got one in on the third go." The darts: ch11's Nerf, ch14's arrow, ch18's bullets. The old training pays: the unseeable projectile is the weakness. And "i have a hand that will not close all the way": a permanent cost, echoing the grandmother's reading of Chloe's hands in ch18.
+- Priya took prisoners: "two men who were asleep in a field in october." She learns from them (an onion on the plate, an English "good morning") and calls it logistics. The kids' calm treatment of captives echoes ch15 (taking pulses, "you're fine, you'll feel sick"). Ethical consistency.
+- "what they will say, over and over, is that it was me they came for. by name, off a list somebody handed them." A list again. The very first thing in the book was a list ("their list is usually pretty good"). The agency has a list of graduates; the original list was someone's list of six-year-olds. The book returns to the list motif. 60% this was meant as the closing rhyme (list of children in; list of adults out).
+- "Priya goes quiet... Quiet has run longer... once for the better part of a month over a mare that would not foal." The last line is the mare due. The book ends on ordinary life next to extraordinary threat, as the early chapters did with the library and the worksheet.
+- Ruth's arithmetic: "seventy-five people, arm's length apart, is a hundred and ten meters. I can see the whole of it straight through." Her habit of measuring a threat as a distance. Nobody answers. She starts her safety list at the bottom with her own address last: another echo of "she starts with the thing she can control." Quiet.
+- Sam: "we did seven in a car park." Priya jabs at Chloe's ch20 verdict on the muggers. The book calls back its own line and moves on. Not a plant.
+- Theo: "what arrives is the name and number of an intake form." Chloe: "the search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number." The kids are now using their government jobs to look after one another. A direct signal that the future is a network of insiders protecting a free agent. 
+- Kavi: the "software none of them has heard of." Kavi's weird gift.
+
+Unresolved at the end (the book stops): the man; the nine-minute observer; who funds; what the pill is; why children; Theo's name; Kavi's "continuity"; what the agency wants; Ruth's brother; Chloe's door; the dead man's switch.
+
+Final prediction check for chapter: I predicted a face-to-face reveal in the last chapter. The book chose an outward, plot-expanding ending (a sequel hook), not a closing. Nothing here answers the central questions.
+
+Theory: unchanged from ch35 in the detail, but the book has refused to confirm it. I would still say a single aging patron, a manufactured (not selected) cohort, and an agency that sees them as an asset. The pill and the "why children" remain the open core.
+
+## Whole book
+
+### Scorecard of my predictions
+
+Right (or substantially right):
+- Ch1/2: a psychologist finds her far beyond the test's ceiling; the school will fail to use it.
+- Ch2/3: a program wrote to her; Halstead is a free school for outliers, and the payer is unexplained.
+- Ch3: her parents split, and the Dad who studies the staff photos is quietly drawn in.
+- Ch6: the four friends are reunited at Halstead (ch10).
+- Ch9: Mom is the obstacle (the house is refused as a "hold").
+- Ch10: Owen's departure is not about "no fun" (said by Kavi). Fair.
+- Ch10/11/13: a ranking exists; Defensive Watch is a real drill against real outside threat; "adults in ordinary coats."
+- Ch13/14/16/17/19/21/22/30: Bex takes credit for Chloe's work, repeatedly, and it pays when Whitaker asks "who did the geometry?" (ch30).
+- Ch15: "some drills conceal real operations" (ch29 confirms that the 2017 night was real).
+- Ch15: the server room as a target (a prisoner says it).
+- Ch16/20/34: Ruth's recorder box is used, and its effect is later shown to have blinded a federal unit.
+- Ch21/22: the offer, and an inside layer of badge-holders.
+- Ch23/30: the Foreign Service route leads to a clearance (and "The File" is an official file).
+- Ch24: Nadia's old login: planted, though never used (see below).
+- Ch27/33: a dead man's switch is set up; the pre-flagged flaw ("only pays off if youre already dead") is shown to be a lesson for planning, not used in the finale.
+- Ch31: the gap between graduates and the general population is the key discovery (Ruth's survey).
+- Ch32: the funder is one person.
+- Ch33/35: a quiet gap closes unnoticed, exactly where the narrator said it would.
+- Ch36: Priya, the free agent, is the first one targeted by outsiders; the number is a count.
+- Ch36: Chloe's masking returns at the end.
+
+Partly right:
+- Ch4: friends form (Sam, Ruth, Kavi); but I did not predict the first week would be bad.
+- Ch18/22: federal money (Sandoval's "federal agreement"); the file later says funding is untraceable and likely corporate or a state; ch32 says one man. Federal NDA remains unexplained.
+- Ch12: Sam's accident; he does fall and then succeeds, no tragedy.
+- Ch20: the mugging looked staged (it was not); the book's observation unit was watching.
+- Ch25/26: Sam's Army arc produces a CI referral; "the real one" turns out to have been behind him already.
+- Ch28: someone from outside is watching Chloe (the emailing "research team" askers), but it never resolves.
+
+Wrong:
+- A violent injury or death in 10v1 or Watch (chs 13 to 20). The book never goes there until ch36.
+- The ch20 mugging was staged by the school.
+- Ruth held by an agency (ch28); her silence was a private crisis.
+- "The Other One" as a person or a second school (ch33): it is a second worm.
+- Nadia would trace the money (ch32): it was Eli, Kavi and Ruth.
+- The pill would be identified and be central: it is never resolved.
+- The finale at Halstead: it is not.
+- A face-to-face with the man in ch36.
+- The dead man's switch would be used: it was not.
+- Chloe's 2FA card, Nadia's login, and the three names on her hand would be used: none was.
+- The chat is read by outsiders: wrong; the file says collection fails.
+
+### Best-foreshadowed developments
+1. The 4 a.m. "drill" in ch15 being real operators. The wrong boots and bolt cutters, the "traceable" sedative, "if you don't know what somebody is here for," Chloe's note that a school or four real people would err in the same direction, and Sinclair's "Who's monitoring?" all fit both readings. The ch29 file pays it with the exact time and the "go to bed." The reader who held the ambiguity for fourteen chapters is rewarded.
+2. Ruth's recorder box. Planted in ch16 with its mechanism ("writes noise into the recording"), used in ch20, then used again retroactively in ch34 when a federal unit's own footage is "gone." Three beats, each earning the last.
+3. The nine-minute gap. Ch33 flags in narrator voice that the failure mode is "a gap closing again before anyone can point to it." Ch35 delivers it. Eli's mid-chapter boast sets up the irony.
+4. Bex's credit-taking. Chapters 13, 14, 16, 17, 19, 21, 22 and 30, building from small to institutional (a federal reference interview).
+5. Theo's photograph in the drawer: ch23 ("where anyone who asked would have to already know to look"), ch24 (he checks the badge photo), ch29 (the file, the photo), ch32.
+6. "Show your steps": Chloe's bar failure (ch19), Theo's supervisor (ch24), Ruth's professor (ch31), Ruth's proof of one man (ch32). Chloe's "reader who already has your head" is the book's best repeated lesson, and it pays.
+7. Sam's "Is this the real one?" (ch25, ch26) answered by Ruth ("it was the real assessment") and by the file (ch29).
+8. Ruth's survey questions in the chat (ch28) paid in ch31. The seed was placed unobtrusively in a chat, pays in her chapter.
+
+### Spoon-fed developments
+- Dad's vendor contract (ch12: "every deliverable is worded so it can't be checked") followed by the offer in ch22 with Dad pointing at "guaranteed." The lesson is announced before its application and then again after.
+- Priya's essay prompt (ch14: "whether a person can consent to something they cannot leave"): the book's thesis, stated as a class question.
+- Chloe's backwards teaching (ch17): "your answers all follow from what I taught you, and what I taught you was wrong." A near-explicit statement of the book's premise that the kids' reasoning follows from a premise someone else gave them.
+- The stats-sign analogy (ch21): the narrator and Ruth interpret it for the reader.
+- The ch33 narrator's flag about the "gap closing again." It is a plot description in advance.
+- Ruth in ch31 explaining Sam's "real assessment" in a line. Fine, but explicit.
+- The group's reading of the ch20 mugging as "people who couldn't tell you their address."
+
+### Fair surprises
+- Dad filing the form (ch9), the clue being that he stayed quiet for months.
+- Chloe's refusal of the offer (ch22), well set up by "same thing with a different door on it," and not guessed by me.
+- Nadia's refusal of the offer in the same chapter, with a motive that had been building since ch21.
+- The mugging being real (ch34), with the clue being Chloe's own analysis in ch20.
+- Ruth's silence being a private crisis (ch31): the book gave us the survey questions and the check mark, and I misread the menace.
+- Eli's role: the sharp critic of Nadia's switch (ch27) and not the fool I expected.
+- The funder being a single man (ch32), proved from presence in a way the government could not.
+- The graduates' encrypted channel defeating federal collection (ch34).
+- Priya being the first target (ch36): she had no chapter, was "offline," lost a negotiation on purpose (ch19), and was bottom third.
+
+### Unfair or under-supported surprises
+- The nine-minute "he" is never identified or tied to the agency, the man, or the Priya attempt; the ch35 cliffhanger ("the version of tonight that keeps going") is abandoned at the start of ch36. The book creates a live puzzle and does not close it.
+- The title "The Other One" (ch33) promises a person or a place and gives a second worm. A title misdirection, harmless, but it sent me down a wrong path.
+- Ruth's "disappearance" (ch28): staging with a single check mark and "Six months" promised menace the chapter did not mean to deliver. A mild tonal trick.
+- The agency's seventy-five (ch36) arrive without any earlier hint of an escalation in "attempts to take" graduates, other than the file's general line that they are watched. There was no earlier plant for "since March." A new threat introduced in the last chapter.
+- The "federal agreement" (ch18) and the file's "funding cannot be traced" (ch29) sit uneasily: Sandoval refers to a federal NDA while the agency in the file has no inside view. Never reconciled.
+
+### Clues that never paid off
+- The pill: the unidentified "sinus" tablet, the "internal" answer, the three names written on Chloe's hand (ch24). Chloe still carries and gives it out (ch28). Never identified. The largest dangling clue.
+- The "water thing" that Owen would not do (ch10), and the real reason Owen left.
+- The north building with no path worn to it (ch14); the server room's heat (ch6); the badge floor and thirteen who said yes (ch22). Never visited again.
+- Chloe's two-factor card behind the range card (ch18); Nadia's old school login (ch24); the three names; the eight-year repeat initials in the file (ch29); Theo's "name I already know" (ch34); Kavi's "continuity" (ch34). Introduced and left.
+- The first letter's postmark, "a city four states off" and "eleven days before" (ch3), carried in a drawer through ch22; the file says contact "went no further than the one letter," but no use is made of the postmark.
+- Dr. Prentice (Ben), the bearded man in ch2, and the bearded man at the April day (ch9); Mrs. Prahl's slip in ch7; Okonkwo's reaction when she was asked about Ruth's fall-day claim (ch9); Dr. Ammons's question about "the same adults" (ch8).
+- Gary the CPR dummy ("push harder than you think you're allowed to," ch6). First-aid drills appear (ch15, ch20) but nobody does CPR on a person.
+- Ruth's brother's arrival at Halstead (ch20, ch23).
+- The ch1 hot threads: "Mom would not take the free house" (a hold) never gets used; the loan on the house for Georgetown (ch22) is not followed.
+- The unasked question "is the door still open" (ch22), which sets up a return that never comes.
+- Marek's fail (ch16), meant to "follow him onto anything that matters," never does.
+- Sinclair, who opens as a security voice (ch14, ch15) and disappears; "an adult" in the file may be him.
+- Hark's lesson that "you had the right numbers and the wrong answer" is not used.
+- The Sam "different sheet" (ch12).
+
+### How predictable is the book overall?
+High on structure, low on content. The first quarter plants a recurring pattern (masking, being the one who has the answer but not the steps), and the book's second half reaps it in ways a careful reader can see coming from at least ten chapters out: the drills being real, the narrator's flagged gap, Bex, the offer, the file, the box. The titles of chapters 29 to 36 give away the shape of the end ("The File," "Cleared," "Ruth," "The Money," "The Other One," "The Files," "Nine Minutes," "Seventy-Five"). But the book consistently refuses the big payoffs I expected: no death, no staged attack at Halstead, no villain's face, no pill answer, no confrontation with the man. It is predictable in method and unpredictable in destination. For a first-time reader that is probably the right way round, but the end feels abandoned rather than withheld, because the last live puzzle (nine minutes) is left hanging.
+
+### How my theory of "what Halstead is" changed
+- Ch1 to 3: a gifted summer program with an unexplained payer (30 to 40%).
+- Ch3 to 9: a school that controls what families can learn (names, houses, calls).
+- Ch6: a compute-heavy site (the cold room) which I thought might be the point (40%).
+- Ch11 to 14: a training pipeline with intelligence and defence flavour (politics classes, Nerf, Watch, "do not learn anything about you") (50 to 60%).
+- Ch15 to 17: a place where some drills are secretly real (55%).
+- Ch18 to 22: a human-performance dataset with a federal sponsor (the range plateau, Sandoval's NDA, Kavi's "worst dataset it was trained on") (50 to 65%).
+- Ch24 to 25: a place that enhanced its children with an unidentified drug (the pill; the Army captain's "nobody shoots a bullet out of the air") (55%).
+- Ch29: the file confirms real drills; funding untraceable; I moved toward a private patron with a mission (50%).
+- Ch31: Ruth's thesis that the children were not selected but made (60%); this became my core.
+- Ch32: one man, proven from presence (70%).
+- Ch35 to 36: the patron, or the agency, is watching; the world is far weaker than the kids; the kids are an asset someone will take (70%).
+What I got right: private patron, real drills, children as an asset, manufactured not selected. What I overbuilt: a drug, a dataset for an AI, a federal funder. The turning points were ch15 (drills ambiguous), ch22 (the lab that "also has children"), ch29 (the file), ch31 (Ruth), and ch32 (one man).
