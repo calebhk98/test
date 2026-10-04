@@ -575,3 +575,106 @@ What does not work:
 - Ruth's "why hasnt anybody already used this" is a good thematic question but is left hanging in a way that reads as a missed beat.
 
 Reader's sense of normal so far: the cohort's baseline is now so established that the book's tension depends on someone else being nearly as good, and a fair-minded reader wonders who that could be, and whether the school is not what the cohort thinks it is.
+
+## Chapter 36: Seventy-Five
+
+The book ends on its own central device, and it is the cleanest use of it. Priya, the horse girl, the one who "finished sixty-fourth out of ninety-one, bottom third four years running," beats seventy-five trained operators in a field at night, injured, takes two prisoners, and reports it as logistics: "i got out. i have a hand that will not close all the way and that is the whole list." Ruth tells her she is "somewhere in the top ten percent of people alive." Priya answers, "top ten percent of what," then, "no... top sixty on a generous day and that is me being kind about it." The exchange is the whole book in a dozen lines. Priya reads the world through the school's ranking, as Chloe read it through "ninetieth of ninety," Sam through forty percent, Ruth through the remedial track. It is the best choice to end on, because Priya was the least likely to be the subject (she is the character the book used most for warmth and horses) and because the reader, now fully trained, laughs and winces at once.
+
+Strong details:
+- Priya's own deduction: "if those two are what they say they are, then one of them on his own should be worth a sam and then some, and there were seventy-five. so either they are lying about who they work for, or somebody has spent a lot of money on people who are not very good at it." This is the first time a character turns the book's central lesson into an investigative tool: the adversary's weakness is information. It is a clean, intelligent hinge to the next book.
+- "they came in like thirteen year olds... a good fifteen." It reuses the earlier measure of the school (the 10v1, the year-by-year ladder) to calibrate seventy-five professional operators as a mid-school class. This is both a punchline and a quiet statement of how far the cohort sits from the baseline.
+- Ruth's arithmetic: "seventy-five people, arm's length apart, is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it straight through." The idea that the scale of the threat is a familiar walk between buildings is a very good image.
+- The small human moments: one captive puts every piece of onion on the edge of the plate; another says good morning first, in English. Feeding at fixed hours "because a thing that knows when the food is coming will spend the rest of its attention on something other than the door." The ending on the mare, "the mare keeps her own hours," is warm and earns the quiet close.
+
+Costs:
+- The slur returns. Priya says "you were sixteen and chloe said they were retarded." It is a callback to chapter twenty, and it repeats the word in a joke. In a book meant for ninth graders, I would cut the original and the callback. The point (Chloe judged muggers harshly, and the group has since met a harder standard) can be made without it.
+- The action is told in chat, in summary. A reader who has waited for the cohort to meet a real adversary gets a retrospective report from a single, unreliable narrator who understates everything. That is on theme, but it denies the reader any scene of the fight, and the stakes of seventy-five attackers are felt only through Priya's flat voice and Ruth's list of addresses.
+- The chapter ends without resolution. The adversary has not been identified, the nine minutes in chapter thirty-five have not been explained, the second file has not been opened, and the book closes on a mare and a gate hinge. If this is a book one of a series, it works as a cliffhanger. If it is the end, the reader will feel the thirty-first to thirty-fifth chapters promised a payoff that has not arrived.
+- Chloe's role is a bus and a deleted paragraph. She is the book's protagonist and has had little to do since chapter thirty-three. A final beat for her (a decision, a recognition, a use of her habit of writing things down) would complete her arc.
+
+Reader's sense of normal at the end: the reader has no remaining belief that Chloe or her friends are ordinary. The only live question is who is on the other side and how good they are, and the book's last twist is that the world's best may be worse at this than a bottom-third graduate.
+
+## Whole book
+
+### Verdict
+
+The misdirection works, but not in the way the intent describes. The intent says the author wants the reader to believe Chloe is ordinary, just as she does. For a careful reader that belief does not survive chapter two, where Dr. Prentice says "bright kid undersells the room I sat in this morning" and that "there is nothing above that on the page for me to give her," and it is nearly gone by chapter seven, where the mother says Chloe "finished the third-grade work in October." What the book actually accomplishes is subtler and, I think, better: it keeps the reader's sense of how far above normal Chloe is permanently lower than the truth, and it moves that sense a notch at a time until a single outside event (chapter twenty-one, then twenty-five, then twenty-nine, thirty-four and thirty-six) jolts it up. The reader is not fooled about whether she is exceptional. The reader is fooled about the scale, because every number in the book is given in the school's units (rank of ninety-one, percent of intercepts, seconds of a ten-on-one, a B on a twenty-eight page essay) and every adult who could translate it is kept out of the room.
+
+That is a durable and well-built effect. It is also dependent on the school being a closed measuring system, and the book is careful to keep it closed. The best evidence of the craft is how often a number that the reader has learned to read as failure turns out to be impossible by outside standards: sixty percent on bullets (chapter eighteen) is "nobody shoots a bullet out of the air" (chapter twenty-five); thirtieth of ninety in the ten-on-one is a team that has beaten armed men; sixty-fourth out of ninety-one is the winner of a fight against seventy-five (chapter thirty-six).
+
+### The curve of the reader's sense of normal
+
+1. Chapters 1 and 2: The reader sees a bright, bored, misread child with a probable attention problem (chapter one), then learns from a psychologist that the problem is the reverse (chapter two). Reader: top percent, unseen by anyone with power.
+2. Chapters 3 to 9: The school is a mystery and a marvel, and the focus is on the parents' fear and Chloe's longing. Reader: very bright child, special school, no sense yet of scale. The first small pushes are Chloe's dad stunned by the month's content (six), the mother's "third-grade work in October" (seven), and the pull-out group that Chloe outpaces (eight).
+3. Chapters 10 to 12: The program is revealed as a seven-subject, Olympian-taught, no-card-library academy. Chloe is behind in most subjects and the reader's sense of her stays "good but not special among the special." The politics hour with spouses and in-laws and the self-defense and Nerf blocks (eleven) are the first hints of a function.
+4. Chapters 13 to 15: The break. A posted scoring sheet (thirteen) shows that the school has an adversary. Archery with arrows hitting arrows (fourteen) and four twelve-year-olds taking four adult intruders and getting a C (fifteen) put the reader well above Chloe's belief. The reader and the cohort diverge.
+5. Chapters 16 to 19: Teaching at thirteen, a bar exam at sixteen, bullets shot on bullets, a federal NDA at fifteen. The reader's scale is now the school's scale, and Chloe's failures (the bar by four points, sixty percent on the turret lane) feel like those of a gifted person in a field of equals.
+6. Chapter 20: The first test against the outside world, in the form of seven armed muggers who prove to be nothing. "Why was it nothing?" is the first crack in the cohort's own baseline.
+7. Chapters 21 to 23: The outside speaks. Admissions offices think the transcripts are a formatting error. A Caltech rep cannot rebuild a step in a paper by a sixteen-year-old. A salary of $135,000 is offered to an eighteen-year-old and her mother says it is more than the house cost. Reader sense: fully broken, and this is the book's greatest concentration of payoff.
+8. Chapters 24 to 28: The cohort scatters and individual outside tests follow: a laptop clerk, a supervisor who wants steps, a captain who cannot believe a forty percent, hiring that cannot find anyone who can finish a thought, a loading-dock man who says "Nice." Ruth's chat quiz gives the baseline in numbers.
+9. Chapters 29 to 34: The institutional view in two file reveals (twenty-nine, thirty-four), a professor's "five passes" (thirty-one), the investigator's one-word "Sixteen" (thirty). Reader and cohort now agree.
+10. Chapters 35 and 36: The cohort's scale becomes the book's premise, and the final twist is that the world's best operators are poor against it.
+
+The cracks first show in chapter two and are undeniable by chapter fifteen. That is early for the stated intent, and I would not change it, because the early cracks are what let the reader enjoy the irony.
+
+### Techniques that work best
+
+- Failure presented with a number. The ranking sheet (ninetieth of ninety, chapter eleven), the bar failure by four points (nineteen), the turret plateau (eighteen). These are credible, humane, and later weaponized.
+- A feat passed off as a logistical event. The bar exam at sixteen, the 10v1, the four intruders, the seven muggers, Priya's seventy-five. Each is delivered at the same volume as a schedule, which is exactly what the technique needs.
+- The family as a recurring measuring stick. A Christmas, a Thanksgiving, a driving lesson, a back step. Her father takes sixteen chapters to say "Huh" and each time it is a different "Huh." The grandmother at the table reading the burn and pivoting to a ring is among the best moments in the book.
+- The list inverted. Chapter six uses the list as a glaze and chapter seventeen turns it into the character's own paralysis ("Why is it the rifle?"). This is the single most inventive use of the author's stated technique.
+- Delayed outsiders and withholding. The Caltech rep's "No" at four o'clock, Whitaker's one-word "Sixteen," the captain's four documents. These work because the outsider reacts and then says very little.
+- The re-read payoff. The file's "child in a corridor, alone, in pajamas" (twenty-nine) and the Waffle House report (thirty-four) both throw earlier scenes into relief. Chapter twenty-eight's "cereal box" echoing chapter one is a smaller instance of the same pleasure.
+
+### Where the technique costs more than it earns
+
+- Chapters 10 to 19 as a run. This is the book's longest stretch of cataloguing (subjects, electives, languages, blocks, projects). The glaze is right in small doses, but by chapter sixteen it is the author's glaze, not Chloe's, and a ninth grader will skim large parts. The sound-array project in seventeen and the loans in eighteen are the clearest examples.
+- The Bex credit-taking thread. Roughly eight incidents (twelve, thirteen, fourteen, sixteen, seventeen, nineteen, twenty-one) before Ruth names the pattern in twenty-two ("find me one time she put a girl's name on anything"). The payoff is good and the theory is sound, but the reader endures the repetition without a theory for ten chapters. Name the shape earlier, or cut two incidents.
+- Chloe is sidelined for most of 24 to 27 and 31 to 35. The book's emotional spine is the false belief that is Chloe's, and for long stretches the cohort's stories carry the interest. Sam's chapters, Nadia's chapter and Ruth's chapter are individually strong, but the reader's investment in Chloe's arc thins, and her biggest personal payoff (learning the four operators were real, chapter thirty-two) is given two chat messages.
+- Explicit thesis statements. The gap between the cohort and the world is stated in twenty-one (the numbers), twenty-seven (the hiring pool), twenty-eight (the chat quiz) and thirty-one (Ruth's speech). By thirty-one the reader does not need it said. Cut or spread these, and let the files carry the weight.
+- Technical set pieces. The sound localization (seventeen), the financial worm (thirty-two), and the nine-minute logs (thirty-five) are procedural and abstract for the target age. The best sentences in them translate to human terms ("committees dont get flu"); more of that would help.
+- The genre shift. Chapter twenty-three reads as an ending, and chapters twenty-four to thirty-six move to a conspiracy thriller whose engine (who funds the school, who is the adversary) is thinner than the first book's engine (a girl's belief about herself). Chapter thirty-six ends on a mare and a hinge without resolving the file, the nine minutes, or the second worm.
+- Voice. The children speak, from age six, in long, fluent, subordinate paragraphs ("A hinge is a fact about bread, not a fact about food"). It is charming in small amounts and it shades into an adult essayist's speech by the late teens. For a ninth-grade audience, cut dialogue lengths by a third and let more fragments through. Also remove the slur in chapter twenty and its callback in thirty-six.
+- Unpaid or told-not-shown plants. The time capsule in chapter seven (to be opened in fifth grade) never reappears. The infiltrator on staff when the cohort was eleven (twenty-nine, thirty-two) is told after the fact with no scene. Marek's failing mark, planted in sixteen and returned to in nineteen, twenty-three and thirty, never yields the consequence the book promised ("whether it follows him onto anything that matters"). Sam's shoe in thirty-four has no earlier appearance.
+
+### Best and weakest reveals
+
+Best, in order:
+1. Chapter 25, Sam's forty percent. The least likely carrier, the cleanest inversion, a captain's "Nobody shoots a bullet out of the air," and a retroactive change in how the reader hears chapter eighteen.
+2. Chapter 21, the Caltech reading room. "She's sixteen, and she's in class until four." "Would four work?" "No." The best single exchange in the book.
+3. Chapter 34, Ruth's box. "i was thirteen and it was a weekend and i wasnt trying," and Eli's "i have never once been at the top of a room in my life."
+4. Chapter 29, the file. The pajamas line, the sedative dose to the milligram, "asked him, directly, what he would have given them."
+5. Chapter 36, Priya's rank, and Ruth's "top ten percent of people alive."
+6. Chapter 22, the salary on the phone, and her mother saying it is more than the house cost.
+
+Weakest, in order:
+1. Chapter 26. A second Sam "is this the real one?" joke that adds less than the first and delays the Army thread.
+2. Chapter 33. A planning chapter with no scene of weight; its best parts are in the quiet re-use of earlier threads.
+3. Chapter 35. A good device (nine minutes) buried in logs, with the protagonist asleep.
+4. Chapter 23's relatives' non-reaction. It is clever and I think deliberate, but a reader who has waited for a relative to be shocked may feel it is withheld. If it is a statement, make it a bit more visible as one.
+5. Chapter 2's early reveal. It gives the reader the answer at the start. I would not remove it, since Ben's scene is excellent, but it means the "reader fooled" intent never starts.
+
+### Teacher normalizing: strongest and weakest
+
+Strongest:
+- Mr. Hearn and Hamilton (thirteen). A world-class feat, a number on the board, and a deadline. It is the model for the technique: a name, an arithmetic, and a concession ("less than half his rate").
+- Mr. Amberg on the bar (sixteen, nineteen). "At sixteen you'll take the bar... every citizen in this room ought to pass it." The tone of a driver's license, with no number.
+- Coach Bell with the arrow and the offer of breakfast (fourteen), and Voss with "a gun you can put a bullet onto a bullet with is a tool" (eighteen). The impossible is described as a curriculum.
+- Mr. Doyle's calm "Mass, and thank you for catching that" (four). A quiet early plant.
+- Kowalczyk's "ten is the shape of every long fight" (thirteen). Compact and sound.
+- The Defensive Watch sheet (thirteen, fifteen), not a teacher but the school's own voice, in the flattest bureaucratic language.
+
+Weaker, forced or repetitive:
+- Ben's long speech to the mother (two). Over-explained and a little unlikely for a clinician within earshot of the child.
+- Mrs. Prahl's "Some children get there in October and some get there in May" (eight), which is more consolation than normalizing.
+- The Watch sheet reprinted verbatim in fifteen. Eerie once, redundant twice.
+- Several lines on school-as-curriculum scattered through twelve to nineteen ("It goes up every single year," the electives clerk) are plausible but add little after the first two or three.
+
+### Other craft choices worth praising or questioning
+
+- Praise: the recurring objects (the strawberry magnet and the note, the envelope in the drawer, the library card in the battery drawer, the brass plates, Fen's rocks, Kavi's cable, Sam's syrup ritual) give the book a texture a ninth grader can hold onto. The numbered chapter titles (Eight, Nine, Ten Pages, Seventy-Five) carry a sense of passing time and of escalation.
+- Praise: the chat chapters (twenty-four, twenty-eight, thirty-two to thirty-six). The habit paragraph that opens twenty-four gives each voice a handle, and the lower-case texting is the cleanest way the book gets eight friends into one scene.
+- Praise: restraint at the reveals. Whitaker's pen, the Caltech escort, the captain's folder. The book generally resists a speech where a pause will do.
+- Question: the book's most affecting scene (chapter nine's bargaining on the carpet) is also the only one that plainly asks the reader to cry, and nothing in the second half equals it. A Chloe scene in the last third with that emotional weight is missing.
+- Question: the shift to omniscient narration after chapter twenty-one. It is justified by the outside reveals, but it gives away some of Chloe's intimacy. Consider returning to her close perspective for the key beats of the last third, especially chapter thirty-two.
+- Question: the book's one-way relation to the outside world. Everyone outside is either awed, baffled, or kind, and nobody is hostile except criminals and the unseen adversary. A single normal, clever, ungenerous outsider (a competent rival, a skeptical teacher, a real peer) would complicate the "normal people are slow" impression that creeps in at chapters twenty-seven and twenty-eight.

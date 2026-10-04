@@ -709,3 +709,135 @@ Open setups: who is touching the worm; the stop clause; "he doesnt know we know"
 **36g. The group mobilizes in small ways: Nadia offers company, Sam offers his leave, Eli's list for the room, Kavi's "what is on the yard gate at the moment"; the mare.** Closing: concrete help, in each person's idiom, and Priya at the fence watching a horse. Verdict: essential: it ends the book on the group acting as a group and not as a file; the mare mirrors the first Priya (horses) of chapter 4.
 
 Open at the end: the nine-minute intruder (35) is only alluded to ("a thing none of them refers to directly in writing") and is not explained; the night Chloe slept through; the funder "one man"; the pill; the purpose of the school; who the prisoners work for; the ceiling.
+
+## Whole book
+
+### Setup-to-payoff map (setup chapter, payoff chapter)
+
+Origin and the list
+- Mom pushes institutions for "the next step" (1a) -> 7j, 8b, 9d: she is the one who finally has to say yes.
+- The typed letter, the free month, "networks", "usually pretty good" (3a, 3b, 6a) -> 29b (file: funder untraceable), 31f (Ruth: "what was the line?"), 32d (the funder is one man).
+- Same-day exit promise, "same day underlined twice" (4a) -> 5e, 10f (people go home), 15h (mom: "you can come home"), 29d (the file's "free to leave").
+- Families cannot reach each other; school relays only (7b, 10a: Ruth never had an address) -> 34b (file: "contact with the family went no further than the one letter").
+- The house offer with the lease that ends when she leaves (9e) -> 17k ("That is a hold"), 30c (Chloe tells Whitaker mom's reason).
+- Mrs. Okonkwo says Ruth's fall-test claim "went round" (9f) -> 17c, 18e (rumor mechanics: Iyad).
+- "Nobody was mean" (8d) -> 22b ("same thing with a different door") and 22g (the choice to leave).
+- Envelope with her name (3a, 8f, 10a, 22b) -> motif only, last seen 22b.
+
+Skills and training
+- Fractions by hand at night (5c, 6b) -> 10d, 19c (explain for a reader who does not share your head), 31d.
+- Watch scoring sheet: "They do not learn anything about you", "You take their comms", "You establish what they came for", "Minimum personnel" (13d, 15f) -> 15g (all six applied), 25c-f (Sam breaks rule 2 to an outsider), 29d (the four were real), 34b (collection fails), 36c (what they came for).
+- Sixty-degree archery, Bell's breakfast promise (14a, 14b) -> 15b (human caller), 18a (turret), 25f (Sam: "You're shooting the bullet").
+- Easy-to-watch darts and paintball "watch the barrel" (11c, 13c) -> 36b (Priya on darts: "a person watches you raise it and steps left").
+- 4 a.m. drill with "actors", fast traceable drug, bait (15g) -> 29d (the report: real operators), 32e (Theo's disclosure; Chloe: "theo that was a drill").
+- Ruth's recorder box and the covert network disguised as weather chatter (16e) -> 20a (cameras looped), 33f (box still in the drawer), 34b-e (collection against the channel is empty; cameras erased, "no known method").
+- Sanders' logs and "a stopping kept to themselves" (16c, 17h) -> 27c (records tracing), 32d (gaps in decisions), 34c (the footage gap).
+- Amberg: "a lock fails where its designer stopped looking" (16d) -> 32a (a worm built to look tired), 35a.
+- Mark scheme: only what is written is marked (19a, 19c) -> 24e (Theo's reasoning), 31d (Ruth's "absence"), 33e (Chloe writes "noticed" out).
+- Vendor proposal that cannot be broken (12i) -> 33e.
+- Contract law, "obliges versus encourages" (16h, 17d) -> 30c, 33 (the rules document).
+- Hearn: build the other side so its supporters would accept it (13a, 14g) -> 33a-e (the document anticipates objections).
+- Psychology: "your hands go first" when tired (15c, 15h) -> unpaid.
+- Driving emergencies, look past the pole (18h, 19f) -> 23b (she wants the car) only; skills unpaid.
+
+Ceilings and numbers
+- Ranked sheets, ninetieth of ninety (11d) -> 36d (Priya: sixty-fourth, bottom third, still handles seventy-five).
+- Point-six range plateau (18b); Sam forty, Ruth ninety-one (18b, 19j); 10v1 forty-one (18c); "they cap the PT score" (23f) -> 25b, 25f, 31f; the ceiling itself is never explained.
+- "Three percent" acceptance rate, "Read me the line above it" (21j) -> 24e (Kavi: "not fake, not informative"), 31e (Ruth's numbers).
+- Outsiders cannot believe the transcripts or papers (21b-d) -> 25g, 29b (the folder), 34b.
+
+Rumor, credit and records
+- Bex takes credit (12e, 13c, 14d, 16f, 17b, 19b, 21f) -> 22f (Ruth names the pattern), 30d (Whitaker has the geometry story).
+- Iyad's list and the retelling (12f, 13d, 16i, 17c, 18e) -> 34b (the file's single sentence retyped for years).
+- Marek: "a receipt is a different object from work" (16a) -> 19h, 21a, 23d, 30c; theme returns as "a file is a receipt" in 29-34.
+- Time capsule (7g) -> never opened (unpaid).
+
+Group, money and plan
+- Priya's South America (23h) -> 24a, 36.
+- Nadia's costing and her year deal (22d, 23g) -> 24h, 27, 32a, 36a.
+- Dead man's switch and Eli's critique (27d, 27e) -> 33g and 35a (the failure mode no page defines is a quiet gap).
+- Eli's cipher on a napkin (16i) -> 24b, 32a, 33a.
+- Kavi's lit window, "false positive rate" (20a, 22e) -> 24i, 32a (the watcher).
+- Chat baseline "someone answers inside minutes" (24a) -> 28g (Ruth silent), 29f (Ruth's "bad"), 35 and 36 (the absences that matter).
+- The pill: small white tablet, "internal" (24j) -> 28d (not obtainable anywhere); unpaid after that.
+- Foreign Service six stages and security review (23i) -> 30b-e, 33g (she spends the clearance).
+- Theo's class photo in a drawer (23e) -> 29c.
+- Stop clause with no reason, "any one of them can end it" (33e) -> 35e (Ruth: "why hasnt anybody already used this").
+
+### Scenes that look cuttable but are load-bearing
+
+- 20b and 20c (the diner and the shopping cart). They read as relief, but ch.34 identifies the night by "Waffle House" and "shopping trolley", and "thats us" works only because of them.
+- 20a (the badge copy, camera loop and Ruth's box). It shows the toolkit working on the school and is the setup for the "no known method" payoff in 34.
+- 16e (Ruth's shoebox and the weather-traffic network). Looks like gadgetry; supplies the box (20a, 33f, 34), the covert channel (24a, 34b) and the metadata lesson.
+- 16c and 17h (Sanders and the logs). Look like lab detours; they train the gap-reading used in 32d and 34c.
+- 12i (the vendor proposal at the kitchen table). Looks like a family aside; is the skill used in 33e and the one place dad treats her as a peer on contracts.
+- 13d and 15f (the Watch sheet, printed twice). Repetition on purpose: the six rules are tested in 15g, 25, 29d, 34, 36.
+- 15g (the 4 a.m. drill) and its small doubt ("the direction a school would get it wrong"). Confirmed in 29d.
+- 19a-c (the failed bar, Amberg's mark scheme). Looks like exam-prep; it is the "write down the steps" lesson that 24e, 31d and 33e depend on.
+- 14e (the painting that is worth a house) and the repeated "good question for a different course". Small, but they train the adults-do-not-answer pattern behind 21j and 31f.
+- 25c (Sam chatting in the mess about forty percent and the card). Looks like barracks color; it is the leak that creates the Army documents (25g) and the second file chain (26g, 34b).
+- 22c (the boy with no badge asking what the door is for). One paragraph; the only sighting of a badge-floor track and of a separate path inside the school.
+- 22f (Ruth to Sam on Bex). Short, but the only scene that turns the Bex repetitions into a diagnosed pattern.
+- 9f (the April visit, "somebody said something in a corridor"). Plants information control and rumor travel (17c, 18e).
+- 10a (no address; Ruth never wrote). Pays off the call that does not come (7c) and explains the school's contact policy (34b).
+- 28d (the pill offered to a coworker). Six lines, but the only proof the pill is effective and unavailable.
+- 33a-b (Theo's no and Ruth's section 1030 exchange). Make the plan a conscious crime, which is what gives "noticed" and the stop clause weight.
+- 27e (Eli: "that isnt you being safe, thats you being lucky"). The principle behind 35.
+- 6a (the parents' breakfast). The only place parents compare notes about the list; without it the "list" question has no outside voices before 29.
+
+### Scenes that truly do nothing (or very little)
+
+- 7c (waiting by the phone) as a separate scene: 7b and 7i already show waiting; one sentence would do.
+- 11f (choir, "flat somewhere useful"): no later use; the apples-at-the-drainpipe half has the bracket rule, the choir half has nothing.
+- 12h (riding with Priya) as written: the blind-spot lecture has no payoff; only the "it was fun for me" exchange does anything.
+- 15e (the stock count): punishment for 15d, referred to once at 15h; Ruth's chalk-mark trick has no return.
+- 15a's Marek aside and 17j (Sam's girlfriend): neither character beat returns.
+- 16f (Bex takes the Saturday plan): lighter duplicate of the credit pattern.
+- 17g (the text renderer): no payoff except Ruth's thirty milliseconds line, which could stand alone.
+- 17f (sound localization array) as skill plant: no later use of localization; the lessons (known error carried silently, do not alter a teammate's setup) are stated elsewhere.
+- 18d (Hark's lending class): unpaid; ch.32 does not use it.
+- 20e (the waitress joke): relief after the fight; trimmable.
+- 24b (Eli's bounty), 24c (spice rack), 24f (laptop memory), 24g (bank manager): relief or duplicates; the only payload is "school sells only to students or staff" in 24f.
+- 26d (the third night, "simply walking"): time passing only.
+- 28b's Polish/course-load paragraph and 28c (Deb and Tyler) beyond the "doors" line and the stack-at-home beat.
+- 35d (the third gap): one sentence would do.
+- Forge scenes (15a, 17i, 19i) as plot: no plot use. They give Chloe a physical craft, the hinge and seam images, and the mallet in 23d; keep one.
+
+### Duplicates (scenes doing the same job; one is enough)
+
+- Bex steals credit: 12e, 13c, 14d, 16f, 17b, 19b, 21f, 21i (and 17b/19b/21i are public announcements of Chloe's own results). Keep 13c (the paintball insight, the first public theft with "the sheet is already written") and 21f (the one that reaches an outsider's notebook), plus 22f and 30d. The rest can lose scenes or shrink to a line.
+- Iyad spreads and distorts a story: 12f, 13d (close), 16i, 17c, 18e. Keep 17c (her own error; she traces it) and 18e (a rumor about her built from a sign-up sheet); trim the rest.
+- Chloe cannot explain her life to her family: 14h (grandmother), 15h (dad at Thanksgiving), 17k (mom, the rifle), 23c (grandmother and Dana), 28d. 17k is the strongest; 15h next; 14h and 23c duplicate each other and 1j/8e.
+- Cousin Dana at the Christmas table: 1j, 8e, 23c. Keep 1j and 23c; 8e is a deliberate mirror but could shrink.
+- Library-counter arguments: 1c, 3e, 7e. 1c and 7h carry the arc; 3e (sixteen books) is the duplicate.
+- Retelling camp to someone: 6b (dad), 7e (librarian), 8a (what she liked). 6b is the one that matters (fractions on the napkin and "the rightness belongs to him"); 7e is almost word for word.
+- Nadia negotiates with a numbers sheet and an end date: 23g (father), 24g (bank), 27d (the scammers). 23g and 27d differ in stakes; 24g is the duplicate.
+- Adult will not answer Chloe's question: 14e, 16g, 18b, 18c, 21j. All say the school will not explain itself; 18b and 21j do plot work, the others are repetition.
+- "Skipping steps" lesson: 19c, 24e, 31d. This is a build, not a duplicate; keep all three, but 24e can be one exchange.
+- Chat statistics: 28f has four rounds; two would do the work, and 31e retells the same research from Ruth's side.
+- Dad's "huh" and unspoken pause after Chloe cannot summarize: 15h and 23b are close; keep 15h.
+- Defensive Watch sheet printed twice: 13d and 15f (deliberate; keep both or print the second as a single line).
+- Sam's number never moving: 18b, 19j, 25c-d, 36d. Each adds a new angle, but 19j's retelling of Ruth's loyalty and Sam's forty percent duplicates 18b's dinner line.
+
+### Setups with no payoff in the 36 chapters (decide whether to pay or cut)
+
+- The time capsule (7g); the tally marks (7i); the envelope as a plot object (last at 22b).
+- Dad's unanswered "did you want me to stay" (19j); the same-day exit promise is never invoked by Chloe at the end.
+- Ruth's younger brother starts at Halstead (20b, 23b); Odile's brother who watches the arrows (14b).
+- The parent network (Meg with Ruth's mother, Dave with Kavi's father; 23b).
+- The pill's three compound names and Nadia's surviving login (24j); the "research team" emailers (28e, 30a); the third internal paper behind Sandoval's NDA (18f, 30c); Amberg's file "for the file" (22a).
+- The ceiling at "point six" (18b) and what it means; Owen's real reason for leaving (5e, 10f) and the departures; the badge floors (22c).
+- Kavi's "continuity" annotation and Theo's note with a name in it (34b).
+- The nine-minute intruder and the night Chloe slept through (35f, 36).
+- Skills never fired: driving emergencies (19f), sound localization (17f), Hark's lending (18d), game theory (16g), the tongs (19i).
+
+### Continuity flags found while reading
+
+- Mrs. Prahl is the camp teacher in 7e ("Mrs. Prahl kept ours on the windowsill") and the pull-out teacher in 8b; the same name for two different jobs.
+- 34d: "wait is that the one where you lost a shoe" has no source in ch.20 (her shoes sit by the door with knotted laces).
+- 20 is dated June 2022 and sits after 19's April 2022 to June 2023 span; 29 and 30 and 31 run in parallel date ranges. Fine, but the order of reading versus order of events should be a deliberate choice.
+- Chapters 20 and 36 both carry the "retarded" line (20d, then quoted by Priya in 36b); the author may want that checked against house rules, outside this audit's scope.
+
+### Net judgment
+
+The book's spine is five threads: Chloe's masking and her need to be known (1-9), the school as a place where she is allowed to be fast (10-19), the school's hidden defensive game and who it is aimed at (13d, 14i, 15g, 29d, 34), the outside world's file on the school (21, 25, 26, 29, 30, 34, 36), and the group's decision to look back (24, 28, 31-35). The middle chapters (11-19) carry the highest density of skill and montage scenes; roughly a third of those could shrink without breaking a payoff, while the ones that look like montage but carry later weight (16c, 16e, 12i, 13d, 15g, 19a-c, 20a-c) must stay.
