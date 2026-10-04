@@ -717,3 +717,122 @@ What later depends: Ruth's "top ten percent" thesis answered by Priya's rank, th
 Too fast: nothing. It is the first chapter in the book where the reader does not feel that the author is hurrying.
 
 Whole-book note on the last two chapters: there is no resolution scene. The break-in to the government file itself (Ch 33's plan, Ch 34's reading) happens off-page between chapters. If the manuscript ends at Ch 36, the book's plot threads (who the donor is, the nine-minute gap, the seventy-five, the prisoners) are all opened and none closed.
+
+## Whole book
+
+All sizes below are rough word estimates from my reading, not counts. I checked every candidate by searching the later chapters for names, objects and phrases (not by rereading every page), so a few callbacks that use different words could have escaped me.
+
+### Scene and summary by chapter (rough)
+
+Mostly scene (70 percent or more): 1, 2, 3, 4, 5, 8 (about 65), 9, 15 (65), 19 (65), 20, 22, 29 (60), 34, 36 (45 but strong).
+
+Scene and summary about even: 7, 10, 13, 14, 17, 18, 21, 24, 25, 26, 27, 31, 33.
+
+Mostly summary: 6 (40 scene), 11 (35), 12 (40), 16 (40), 23 (40), 28 (30), 35 (30).
+
+So the readers' complaint is real but narrower than "chapters 10 to 19". Ch 10, 11, 12 and 16 are the heaviest. Ch 14, 15, 17, 18 and 19 each have a long, strong, scene-driven spine (the arrow collision and the area-bombing essay; the four a.m. Watch; the rifles dinner; the sixty percent plateau; the bar exam) and a weak catalog around it. And the same summary-and-list problem returns after Ch 20: Ch 23, 28, 35 and 21's representatives sequence read the same way.
+
+### A. Real cuts and compressions, ranked by size and safety
+
+Tier 1: repeated beats. These cost nothing later because the first or best instance survives.
+
+1. Bex takes the credit (Ch 12 bridge "we" to "I"; Ch 13 the barrel and hose; Ch 14 astronomy dinner; Ch 16 the plan; Ch 17 the round at the sinks; Ch 19 "a fiftieth"; Ch 21 the Caltech geometry). Seven instances. The pattern pays off in Ch 21 (confrontation), Ch 22 (Ruth warns Sam), and Ch 30 (Whitaker asks "Who did the geometry" and Chloe says "I did"). Keep Ch 12, Ch 13 and Ch 21 in full; cut Ch 14's, Ch 16's and Ch 17's to a clause each, and shorten the sinks conversations with Ruth. About 700 to 900 words. Cost: none. Gain: Bex stops feeling like a loop.
+2. Iyad as rumor mill (Ch 12, 13, 16, 17, 18, 22, 23). Five of these are retellings of something Chloe did badly. Keep the Ch 13 "nobody scores the drill" joke and the Ch 18 Aurel episode, which is the only one with a consequence ("She stops using the language-block stairs"). Cut or shorten Ch 12 (Mandarin), Ch 16 (the hour), Ch 17 (backwards teaching). About 500 words. Cost: none; Iyad drops out after Ch 23.
+3. Retelling of the same material (Chapter 6 dinner replays the bridge and fractions; Ch 7 library replays Gary, bridge, fractions again; Ch 22 recites the offer three times; Ch 30 retells Marek, the bar and the NDA; Ch 25's chow-hall scene says the forty percent before the captain asks). Cut each retelling to a line. About 1,200 words together. Cost: none, except keep the napkin line in Ch 6 ("the rightness belongs to him and not to you").
+4. Christmas at the grandmother's with Dana (Ch 1 and Ch 8). Dana's role is already in Ch 23. Cut Ch 8's. About 60 to 100 words. Cost: none.
+5. The Defensive Watch scoring block printed again in Ch 15. About 70 words. Cost: none.
+
+Tier 2: catalog paragraphs in the middle. These are the "lists of classes and activities". Each can drop to one sentence with the later dependency kept as a clause.
+
+6. Ch 17, the sound-localization engineering project: about 1,400 words, compress to about 700. Keep the brief, the known two-millisecond floor hidden for a fortnight, Ruth's "That's a hope with a schedule on it", the flat sound coming back, and the geometry done in April after the run (this is what Bex says in Ch 21 and Chloe claims in Ch 30). Cut the wireless-versus-wire argument, the cable in the rain, Odile's sixty repeats, the midnight box fight. About 600 words saved.
+7. Ch 17, no-libraries project (text renderer and Ruth's thirty milliseconds of silence), the Japanese/algebra/logistics paragraph, Sam asking out a girl: about 570 words saved together, no later dependency except a clause (Japanese appears in a list).
+8. Ch 16: German, epistemology, fencing and game theory, Eli's cipher paragraph, the twelves' teaching paragraph: about 600 words saved. Keep the hidden-network section (see load-bearing).
+9. Ch 11: choir and Amara, team sports and the two teammates, the grandmother weight scene, the electives sheet: about 550 words saved. Keep dance and drawing as a pair (see below) and the hot dog and drainpipe scenes.
+10. Ch 12: riding with Priya (the stables, the blind spot), biology and the fish, textiles, first aid (compress), Iyad: about 650 words saved. Keep the overhang, Kavi's sheet, Mandarin tones, chemistry, the vendor proposal.
+11. Ch 13: paintball (compress), self-defense rules explanation (compress), Russian/music/algebra paragraph, the swimming line: about 500 words saved.
+12. Ch 14: Latin banter (halve), astronomy (see item 1), art history, wood shop and the chisel: about 450 words saved.
+13. Ch 15: Marek on the stairs (cut), the bread test (a third), the stock count (cut or merge): about 450 words saved.
+14. Ch 18: Hark's money class (a third; keep the "ceiling" line), Priya's phone-and-drawer security design (a third), the surgical/Hindi/topology paragraph, Kowalczyk: about 700 words saved. Hark and Rustem are not referred to later by name; the only later money is Nadia's and Chloe's parents' (Ch 22), so this section is the least load-bearing in the chapter.
+15. Ch 10: the cooking onion, geography and the -stans, Marcus, the second "what gets sent home" section with Owen again, Fen's second night: about 500 words saved.
+16. Ch 19: Chloe's speech to her father about Sam and Ruth (half), the driving paragraph, the drama exercise, the summer opening: about 500 words saved.
+
+Tier 2 total in chapters 10 to 19: about 6,500 to 7,500 words. Add tier 1 shares that fall in 10 to 19 (about 1,500) and the middle shrinks by roughly 8,000 to 9,000 words, about 14 percent of the middle.
+
+Tier 3: outside the middle, to match the proportion.
+17. Ch 2: the testing sequence, about 600 to 800 words saved (keep the blocks, hour and year, coding failure, "another reason").
+18. Ch 3: the due-diligence loop (district call, neighbors, website, second phone call, nine-day argument), about 400 words saved.
+19. Ch 6: breakfast room scene and the dinner list, about 700 words saved.
+20. Ch 7: library retelling and phone waiting, about 350 words saved.
+21. Ch 20: hither argument, mailbox dent, shopping cart trimmed, about 450 words saved.
+22. Ch 21: admissions-office vignettes and the representatives (a third), about 500 words saved.
+23. Ch 22: procedural opening and offer recitations, about 450 words saved.
+24. Ch 23: ceremony logistics and parents' crosstalk, about 650 words saved.
+25. Ch 24: the bank scene and Nadia's long chat (half), about 800 words saved.
+26. Ch 25 and 26: staging, third night, chow-hall retelling, about 1,000 words saved.
+27. Ch 27: hiring section to a third, opening to half, about 1,300 words saved.
+28. Ch 28: office description, college, Polish, blog, and one chat round, about 1,500 words saved.
+29. Ch 30: opening, exam, interview recap, about 800 words saved.
+30. Ch 32, 33, 35, 36: technical builds and roll calls, about 1,500 words saved.
+
+### B. Looks cuttable, but is load-bearing
+
+- Ch 3 the investigation (postmark, "usually pretty good", "networks", the four hours): Ruth's question in Ch 31 ("somebody wrote to my mother when i was six. a person sat down and picked me") and Chloe's line in Ch 22 about "a letter with her name typed across the front" depend on it. The loop can be shortened but the letter, the list and the free offer must stay.
+- Ch 4 Priya's horse monologue: do not cut to nothing. Horses are Priya's whole identity later (Ch 12 riding, Ch 23 South America, Ch 24 cheese horse, Ch 36 the mare), and Ch 12's "It's fun for me, though, even the boring parts" is the book's counterweight to Ruth's thesis. Priya's "sixty-fourth out of ninety-one" in Ch 36 only lands if the reader met her as the one who is happy at what she is not best at. Keep about a third of the monologue.
+- Ch 5 fractions night, bridge, Owen leaving, moon: they set the skill template (private understanding at night), the rule that people leave, and the end of her "check on every sentence". Ch 6, 8 and 23 call back to them.
+- Ch 6 dinner list: it is a comic set piece and also the first telling of the "list" that Ch 30 (Whitaker), Ch 17 (her mother at the table) and Ch 33 (the rules document) dramatize. It is partly redundant with Ch 5 and Ch 7; cut the replay but keep a short list of items.
+- Ch 7 library and the time capsule: "four at a time" and the battery drawer are Ch 1's payoff chain (Ch 10: no card). The time capsule is never opened in the book; it can stand alone as a scene.
+- Ch 10 library with no card: direct payoff of Ch 1 and Ch 7. Keep in full.
+- Ch 10 the wheel problem and Ruth's marker: "After that it is the hour she gets up for" is the book's one sentence making the grind pay for itself. Keep.
+- Ch 11 Nerf, Ch 13 paintball, Ch 14 archery, Ch 17 clays and rifle, Ch 18 turret: this is one escalating progression (dart, paint, arrow, bullet). Kavi says so in Ch 17 ("the nerf and the paint... then the good one") and Ch 25 and 31 call it back. Do not cut a step; do compress each. The Ch 14 collision with Odile and the Ch 18 plateau are the spine of the skill story.
+- Ch 11 dance (ninetieth of ninety) and drawing (forty left hands): only called back in Ch 12 (relief) and Ch 15 (one clause). They are a self-contained comic arc with one payoff. Keep the pair but shorten both by a third.
+- Ch 11 politics wall (who the children married): no explicit callback, but it is the one place the school teaches network tracing from public facts, which Nadia (Ch 27, state filings) and Ruth (Ch 32, tracing a funder) later perform. Keep one paragraph.
+- Ch 11 mallet (oval, thinner): called back in Ch 23 (the mallet in her box). Keep one sentence.
+- Ch 12 chemistry "three changes and one result": the book's explicit statement of how to find a cause, echoed by Nadia's "second question" (Ch 27) and Ruth's proof (Ch 32). Keep.
+- Ch 12 Bex "we" to "I": the first of the Bex pattern (see A1). Keep.
+- Ch 12 first aid and Ch 15 respirations on Ruth's arm and Ch 20 Chloe counting ribs: a chain. Keep a clause in Ch 12.
+- Ch 12 vendor proposal: it shows Chloe finding a sentence that cannot be checked; thematically echoes Ch 19 (the answer must be written for a stranger), Ch 27 (Nadia's "second question") and Ch 31 (Ruth's skipped steps). It also gives her father a scene with her. Keep, can trim.
+- Ch 13 Hearn: the first-term essay arc pays in Ch 14 (the hedge), Ch 21 (Yale representative: "It's what the material wants"). Keep.
+- Ch 13 Defensive Watch sheet and Ch 15 the four a.m. night: Ch 29 (the report from the other side), Ch 32 (Theo: "four of us put them on the floor") and Ch 34 are built on it. Keep both in full.
+- Ch 14 the area-bombing essay: the hedging lesson ("An argument you apologize for is a request"). Used again in the bar (Ch 19) and the rules document (Ch 33: the stop clause is one line, no examples, "on purpose").
+- Ch 14 the sixty-degree collision, Ch 18 the turret, Ch 25 "forty percent": the outside world's reaction in Ch 25 depends on the reader having seen it done at school.
+- Ch 15 and Ch 20 Ruth's box (writes noise into recordings): Ch 34's Waffle House report ("unrecoverable wherever the students appear") is the payoff of Ch 16's box and Ch 20's night. Ch 20's shopping cart is named in the report ("pushing each other around in a shopping trolley"), so the cart is load-bearing as a clause, and the waffle diner is load-bearing as a place.
+- Ch 16 the hidden network (traffic that looks like weather checks): Ch 34's line "collection against the channel comes back empty every time it's tried" is its payoff. Keep.
+- Ch 16 Marek and the receipt: it is the root of Ch 19 (Chloe fails by writing a correct answer without the working), Ch 21 (essay), Ch 23 (courtyard), Ch 30 (Whitaker). The bar exam arc is the single clearest answer to the author's argument and its cause is in Ch 16.
+- Ch 17 the sound array and Ch 21 Bex and Ch 30 Whitaker ("Who did the geometry"): compress, do not cut.
+- Ch 17 the rifles and her mother's face: the dinner is the best proof in the book that the list has a cost.
+- Ch 18 Sandoval and the NDA: Ch 30 depends on it ("I'd want to talk to her first").
+- Ch 18 Priya's phone and the second factor: the chat's security (Ch 24, Ch 34).
+- Ch 20 Nadia's "You take the thing you're worst at and you stay in it": character note that Ch 22 and Ch 27 honor.
+- Ch 22 the unasked question ("Is the door still open?"): a hinge the later book leans on.
+- Ch 24 Nadia's chat about the site: Ch 27 is a deeper dive; if Ch 27 stays long, Ch 24's can go; if Ch 27 is cut, Ch 24 must carry.
+- Ch 28 saying everything twice and Deb: the later chapters that need Chloe to explain things to normal people (Ch 30, Ch 33) rely on it, and it is the book's cleanest picture of how the school changed her. The chat quiz rounds (second language, reading level, fractions) are Ruth's slow disclosure; Ch 31 turns them into the reveal, so they cannot all go. Keep three of four.
+
+### C. Places that need more room
+
+1. The goodbye between Chloe and Ruth, Sam and Kavi after graduation (Ch 23). It is one sentence per friend in a list of futures. This is the book's biggest compression of the wrong thing. A scene of the four of them, even three hundred words, would earn more than the whole ceremony logistics.
+2. Chloe's decision to join the second worm (Ch 33) and what it risks: she has a clearance, a Foreign Service plan, and parents who said "mistake" when she turned down a job. Her answer is one chat message. A scene with a parent (a phone call, or no call) would cost 500 words and pay off years of setup.
+3. The first whole-school Watch (Ch 14) from Chloe's seat: she spends two hours on a landing and the reader learns it from "people say afterward".
+4. The moral reaction after the four a.m. intruders (Ch 15): Sam's "That's not very twelve" is the only commentary on twelve-year-olds drugging adults. Chloe's reaction is "the wrongness".
+5. The break-in itself (between Ch 33 and Ch 34). It is told only through its results. This is probably intentional ("boring beats clever"), but the book's last quarter spends about 6,000 words on the plan and the reading, so the omission is noticeable.
+6. Ruth's thesis at the end of Ch 31 and the response to it. The group answers with three short lines; the argument continues in Ch 32 and 36 but never gets a full reply from Chloe.
+7. The first night at year school (Ch 10), after four chapters of Chloe's separation anxiety. She arrives, unpacks, is fine in a paragraph.
+8. Marek's fail (Ch 16), if he matters: one paragraph. He recurs in Ch 19, 21, 23 so the weight is spread out.
+9. Camp goodbye at the start (Ch 3): small.
+
+### D. Can the middle be shortened without breaking the later book, and by how much?
+
+Yes, but not by half, and the author is right about why.
+
+What the later book depends on is a specific, short list of acquired things, and I can name each as it is used: the arrow-on-arrow count and the turret and the plateau (Ch 14, 18, 25, 31, 34); the bar exam's lesson that the reasoning must be written down for a stranger (Ch 19, 33); Marek and the receipt (Ch 16, 19, 30); the Defensive Watch and the four a.m. night (Ch 13, 15, 29, 32, 34); the first-aid chain (Ch 12, 15, 20); Ruth's box and the hidden network (Ch 16, 20, 34); the forge (Ch 14 to 23); Mrs. Sun, Latin and a language a year (Ch 12, 14, 28, 30); the NDA (Ch 18, 30); Bex's geometry (Ch 17, 21, 30); Priya's horses (Ch 4, 12, 23, 24, 36); the library without a card (Ch 1, 7, 10); Hearn and the hedge (Ch 13, 14, 21, 33); chemistry's change-one-thing method (Ch 12, 27, 32). Ch 30's interview and Ch 33's rules document are, structurally, the book reading its own middle back as evidence, and they only work if the reader saw the middle happen. A time skip would break them.
+
+What the later book does not depend on is the volume. By my count about thirty subjects and activities in Ch 10 to 19 (dance, drawing, choir, the team, biology and the fish, textiles, cooking, geography, French, German, Japanese, Portuguese, physics, art history, epistemology, fencing, game theory, music, Russian, Arabic, comparative religion, logistics, algebra, calculus, rhetoric, anatomy, psychology, surgery, accounting, Hindi, topology) have no later dependency beyond a clause, and several are named once in Ch 30's list anyway. Another batch (Bex's repeats, Iyad's repeats, the retellings) is a repeated beat.
+
+So: the middle can lose roughly 15 to 20 percent (about 9,000 to 12,000 words of about 60,000) by tiers 1 and 2, without touching any dependency. A bolder pass that compresses every catalog paragraph to a sentence and trims the technical set pieces by half could reach 25 to 30 percent (about 15,000 to 18,000 words) but would start to eat the very things the author wants the reader to watch (the wheel problem, the sound array, the forge arc, the hedge lesson) and would make Ch 14, 15, 17 and 19 less textured. I would not go past 25 percent.
+
+The right shape of the cut is concentration, not removal. Each middle chapter now carries about a dozen threads at a paragraph each. The strongest chapters (14, 15, 17, 19) have one or two threads with scenes behind them and a catalog around them. If each chapter carried three to five threads, with the rest as a clause or a single sentence, the reader would feel the acquisition without reading the inventory. The readers who say "lists" are right about the texture; the author is right about the need. Both are served by turning paragraphs into clauses, not by deleting years.
+
+Three further honest points:
+- The rest of the book has the same disease after Ch 20: Ch 21 (representatives), Ch 23 (futures), Ch 24 (Nadia), Ch 28 (the office), Ch 30 (the recap), Ch 35 (logs), and the three-chapter detour of Ch 25, 26 and 27 away from Chloe. If the middle is trimmed and these are not, the complaint will move, not vanish. The later detours total about 20,000 words with Chloe offstage or silent.
+- The strongest argument for the author's side is that the best scenes in the book (Ch 17's dinner, Ch 19's exam, Ch 29's report, Ch 31's professor, Ch 34's report) work because the reader has already lived what they refer to. Each is "the middle, read back".
+- The pill thread of Ch 24 and Ch 28 (a white sinus tablet with no record) is never picked up in Ch 29 to 36. It is the one plant whose absence a reader will notice; either it needs a payoff or the two scenes can be cut (about 900 words).
+- The time capsule of Ch 7 and 8 is never opened. It can stay as a self-contained scene.
