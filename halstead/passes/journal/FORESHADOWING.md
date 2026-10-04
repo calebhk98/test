@@ -836,3 +836,33 @@ Predictions:
 - The "other one" (ch33): another school or another Halstead-like site, or the other of two state-actor candidates. 50% a second school.
 
 Theory: now 50% that Halstead is privately funded and ideologically driven (a "school to build defenders") by someone who believes in training children to defend against hidden attacks and will not accept state interference. The adult line ("an attack on a school in the US would not be accepted") sounds like an owner's, not an employee's. The pill, the cap on outsiders, the accredited transcripts, and the "free to leave" all fit with a rich, rigorous, secretive patron. The kids' trained superiority as a mission; the lie is that drills were drills. That is a fair-play twist rather than a cheat.
+
+## Chapter 30: Cleared
+
+Scoring:
+- "Cleared" as the security clearance: right (second meaning, Ruth cleared, was a 30% guess and is wrong). Chloe passes the Foreign Service exam and her clearance in December 2025. As predicted at ch23.
+- Funding traced / "The Money": the clearance interviewer, Whitaker, asks who the principal donor is. Chloe has "no idea." So the question is raised again in plain terms by an official. Pending.
+- A government contact reading her blog: partly. Whitaker is an investigator, not the blog emailer. The blog emailers remain unnamed (a dozen rows, none say who they write for). Pending.
+- Bex pattern pays: yes, in a small, satisfying way. Whitaker asks "Who did the geometry on that?" after Bex's reference interview ran longest; Chloe says "I did... I can get you the exam script it started on." The book stops letting Bex's claim stand. Right as a follow-through on "a showdown with Bex" at about 60%. It is a muted showdown (via an official), not a face-to-face. Fair payoff, well seeded since ch13, ch14, ch16, ch17, ch19, ch21 and ch22.
+- The three names/pill: still unused.
+
+Clues:
+- Whitaker's second visit repeats "who the school's principal donor is." Chloe: "If you're a child, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." The reader now has the question from the file (ch29) and from the investigator. Chloe's answer is blunt and honest, and a bit complacent. Her line is also a character flaw (not asking who paid): she hasn't looked. I predict "The Money" (ch32) forces her to look. 80%. The book is using her prior incuriosity as the setup for her learning.
+- The agency is using her clearance as an intelligence opportunity: Whitaker's questions about Halstead, the NDA, the donor, the longest reference interview with Bex, the language list. The file in ch29 says no one has been able to get inside. A clearance interview with a Halstead graduate is the best look the agency has had in twelve years. 75% Whitaker will reappear and is working for the file (or "the repeat initials"). Possibly the book will reveal that Whitaker's clearance of Chloe has an ulterior purpose: to place her inside State and then use her. 50%.
+- Chloe tells Whitaker about the "third paper," the NDA, Sandoval's request, and that she'd want to talk to her first. She does not break it, but she describes it. If the NDA's project is the real secret (a federal agreement with Sandoval) then my earlier read (federal) is back in the game. The file calls the funding untraceable. So who has the "federal agreement"? Either Sandoval's project is a third-party contractor, or Halstead's own agreements are with some federal part that is not the file's agency. Two parts of the government can be on different sides: one funds, one investigates. 55% the final twist includes a hidden federal partner (a different agency) who funds Halstead while another agency investigates it. That would resolve "the funding cannot be traced" (it is hidden within the government itself). The "state actor" guess in the file was close.
+- "Cleared": the title also echoes "clear" as in the all-clear. A plain double meaning.
+- Chloe's list of languages: Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, Polish, Hebrew. Thirteen languages. The number thirteen is one off the sum; skip.
+- "At least a third of those conversations end there" and the dozen-row sheet: the unseen blog readers are likely an agency or contractors doing exactly the same quiet watching: the agency in the file wants to know how one person writes that much. They will find a "research team": Halstead itself, i.e., they assume she is a Halstead product. 60%.
+- "Whitaker's pen stops for about the length of a word" at the bar at sixteen. He records her bar; he knows it's unusual. Nothing else.
+- Chloe: "I started that April, the spring after my seventh birthday." Chloe started at Halstead in April 2013 (age seven). The file dates to 2013. This fits: the file begins when the first year-round intake starts or when the summer program had run for a year. OK.
+- Hebrew and Polish: "a class that moves at the speed of the slowest person." Not needed.
+- The final line: "She's sworn in that August, her birthday." Chloe's August birthday, 2026, aged twenty-one; wait, "Three weeks after she turns twenty she sits the exam" and the swearing-in is her birthday in August (likely 2026, age twenty-one). So "Nineteen"/"Cleared" bring us to Jan 2026 and a start date. The final chapters: "Ruth," "The Money," "The Other One," "The Files," "Nine Minutes," "Seventy-Five." So the climax is in 2026, with Chloe at State.
+
+Predictions:
+- Ch31 "Ruth": Ruth tells what she did in six months: she suspected, she dug, and she is involved in something that resulted in silence; or the chapter is from Ruth's perspective. 70%.
+- The group will gather, with Theo's file, Nadia's tracing, Kavi inside, Sam in the Army, Eli, Chloe at State; they will find out who pays. 70%.
+- The "other one" (ch33) is a second school or a second Halstead-like entity, or a second candidate "state actor." 50%.
+- A dead man's switch (ch27) will be used in "The Files," releasing the documents. 75%.
+- "Nine Minutes" and "Seventy-Five" will be the final operation or event and its result. 60%.
+
+Theory: now 55% "Halstead is funded by someone inside or adjacent to the government who wanted a private pipeline of unusually capable young people, and used a school as cover, so the 'funding cannot be traced' because it comes from a classified account." 25% "wealthy individual or foundation," 20% "other."
