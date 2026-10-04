@@ -662,7 +662,7 @@ Evidence is what characters do, with ages. Narration about ability is checked ag
 **Kavi**
 - Estimate: 158, range 146 to 170. Confidence: moderate.
 - Strongest evidence: the viscosity explanation at 7; the pump-count timing off the wall bars; breaks AES handset keys through the derivation step in four seconds of compute at about 13; beats Chloe at game theory by playing the person; two-factor phone design at 15; false-positive-rate research that "the whole building had to wait to find out" about at 17; the watcher that detects a nine-minute gap nobody else could see; the twenty-year timeline.
-- Weaknesses: told his group a known error was fixed for a fortnight and hoped it would shrink ("a hope with a schedule on it"); picked a favorite in the fish tank at 10 and was wrong; predicted the first turret hit for March (Odile hit in November); drifts into side problems.
+- Weaknesses: kept a known clock error to himself for a fortnight hoping it would shrink ("a hope with a schedule on it"); picked a favorite in the fish tank at 10 and was wrong; predicted the first turret hit for March (Odile hit in November); drifts into side problems.
 - Passed the bar by 6 and had MIT, Caltech and Chicago; chose to stay on staff.
 
 **Nadia**
@@ -762,4 +762,4 @@ Reading the table: three tiers by overall ability: Marek, Ruth, Kavi; then Chloe
 11. Eli. Ch16 says he "takes his time" with everything, then reports doing the November set in an evening that others took a week over. His own view that he is never top of the room is the right reading of his evidence.
 12. Priya. Ranked 64th of 91 for four years, yet her design objections (ch15, ch17) are the sharpest in the room and her field performance at 21 is the book's strongest physical claim. Either the ranking sheet measures something other than reasoning (languages, the forge, the bar, the money project) or the book is making the narrower point that the sheet does not capture her.
 13. Nadia. Offered the same post as Chloe, interviews 41 people for two jobs, writes a whole platform in six weeks, but applies to 200 jobs and gets 14 replies. The text frames this as the labor market failing her; it is also consistent with a very strong generalist whose credentials the outside world does not know how to read.
-14. Bex. The narration shows her as fast but derivative in every scene; the best that can be said of her own ideas is the sentence "I'd start off it next time instead of finishing on it," which she borrows. The book may be underrating her because it is told from Chloe's point of view.
+14. Bex. The narration shows her as fast but derivative in every scene; the closest thing to an idea of her own is the advice to start from the geometry next time, which is sensible but was spoken from outside the room. The book may be underrating her because it is told from Chloe's point of view.
