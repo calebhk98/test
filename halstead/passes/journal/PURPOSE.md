@@ -691,3 +691,21 @@ Continuity flag: the lost shoe in 34d is not in ch.20 (shoes by the door, laces 
 **35f. Chloe at one a.m.: "watch the thread tonight, im out for a few hours"; Ruth: "on it".** Chloe hands the watch to Ruth and goes to sleep; "her eyes close on the version of tonight that ends here". Sets the final chapter: an event during the night that Chloe misses. Verdict: essential setup for ch.36 (the miss and the question "if the night held").
 
 Open setups: who is touching the worm; the stop clause; "he doesnt know we know"; the night Chloe sleeps through; Ruth on watch; "how many mistakes".
+
+## Chapter 36: Seventy-Five
+
+**36a. Priya goes quiet; the group's current positions (Chloe on a bus, Ruth with a card in a bracket, Kavi with a second bench, Sam posted, Nadia with more staff, Eli's joke title, Theo at the window).** Re-establishes each person's situation three months after ch.35 and the baseline that Priya's gaps run long. Verdict: useful: a roll call that keeps eight people in the reader's head; it is also the proof that none of them mentions the nine minutes in writing.
+
+**36b. Priya's field: seventy-five attackers, "they came in like thirteen year olds", a fifteen who put her into a wall; guns in the engine blocks; darts; two prisoners.** The outside force is large but weak (fighters at a third-year level), with real weapons held back and darts used (pays off 11c: "you can watch the whole flight; the easiest thing to hit"; and 13c). Priya takes two men and keeps them. "Somebody has spent a lot of money on people who are not very good at it." Verdict: essential: it is the first direct action against a member of the group, and it reframes the file's "state or corporate actor": the numbers do not match a competent state. The tactical line "a person watches you raise it and steps left" pays off the Nerf/paintball training of ch.11 and 13.
+
+**36c. The prisoners: American, "agency", "it was me they came for, by name, off a list."** They have a list; their stories do not agree. Verdict: essential: the list is the counterpart to the school's list (3b, 6a, 31f) and sets the next-stage question: who is compiling lists of graduates. The prisoners eating onions on the edge of the plate is the same kind of domestic detail as the book's early tone (gentle captors).
+
+**36d. Chat: Priya's "sixty-fourth out of ninety-one, bottom third four years running"; Ruth: "top ten percent of people alive."** Pays off 31f (Ruth's thesis that they are not the same kind of thing) and 34e ("how good are we"): Priya's is the data point inside Halstead's own ranking: bottom third at the school, but handles seventy-five. The block-sheet ranking from ch.11 (ninetieth of ninety) pays off here as the evidence that the ranking is relative to an extraordinary cohort. Verdict: essential: it states the book's whole-cohort conclusion in numbers.
+
+**36e. Ruth's arithmetic: seventy-five, arm's length, a hundred and ten meters; her list of where everyone sleeps.** Ruth starts at the bottom of the list and notices her own address last (self-protection reflex). Verdict: essential: it links the abstract file to physical threat for each member; the "hundred and ten meters" figure echoes 14a's counting of distances. 
+
+**36f. Chloe rereads the file's funding paragraph; her job search returns the intake form number from Theo.** Chloe goes about her day with a secret; the shift between the two lives. Verdict: useful: the beat shows Chloe's compartmentalization, the clearance misuse (33g), and the Theo form number.
+
+**36g. The group mobilizes in small ways: Nadia offers company, Sam offers his leave, Eli's list for the room, Kavi's "what is on the yard gate at the moment"; the mare.** Closing: concrete help, in each person's idiom, and Priya at the fence watching a horse. Verdict: essential: it ends the book on the group acting as a group and not as a file; the mare mirrors the first Priya (horses) of chapter 4.
+
+Open at the end: the nine-minute intruder (35) is not mentioned or explained; the night Chloe slept through; the funder "one man"; the pill; the purpose of the school; who the prisoners work for; the ceiling.
