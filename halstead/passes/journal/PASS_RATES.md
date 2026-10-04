@@ -413,3 +413,155 @@ June 2026. The group reads the government's file on all 91 of them. Contents inc
 - Cohort check: Ruth asks "how good are we" and Eli says "I have never once been at the top of a room in my life." The text uses this to show the cohort has never seen outside baselines. It is a good, plain answer. For the lens: it concedes there is no outside calibration, which is exactly what explains a muted reaction from the cohort to its own results.
 - A small mismatch with ch 20: the report says "two of them independently report being told, during or just after, that this had been sloppy and needed more practice." In ch 20 the students make remarks to each other (and Sam says it was "too easy") but no one tells the men this; the men were unconscious or dazed. The line is probably meant to be an echo of Chloe's analysis, but nobody says "sloppy" to them on the page. Another mismatch: the men are described as having fought "all of it" and none of the men could describe the students, but in ch 20 three students stood on a dock roof in plain view of the men for a time. The "blank" is explained as a translation problem; that is acceptable.
 - Number check: "a file on all ninety-one of them" is consistent with 91 elsewhere. Case opened 2013, "thirteen years of updates", ch 29 says 2013 and twelve years of owners; ch 34 is 2026, so thirteen is right. Consistent.
+
+## Chapter 35: Nine Minutes
+
+June to July 2026. The financial worm goes quiet for exactly nine minutes, three times, with every log clean. Someone has stopped it, restarted it and covered the tracks, and only a watcher built "specifically to look for it" saw it.
+- Competence ceiling: this is the first place in the second half where a party outside the cohort is shown at or above its level. Eli: "if you find a tool like this you do one of three things... you dont put it back." Kavi: "for anybody else in the world, nobody would have" noticed. Eli's line "hes very slightly wrong about how good we are" casts the unknown party as a peer who underestimates them. That helps with the uniform-success problem: the cohort's best two are out-built or at least matched by someone, and they are afraid. It is a real stakes change.
+- Reactions: believable, careful and staggered. Kavi checks his own code first ("rereading his own handwriting"), Eli opens three independent logs, Ruth asks "why hasnt anybody already used this" about the stop clause, Theo asks how many mistakes were made that they did not catch. The group disagrees on whether the third party is signalling. The argument "if it was the government we would be in custody" is a believable inference. The group picks passive observation, not retaliation, which is a good, grounded reaction.
+- Pass-rate reading: for the first time, the cohort's cleverest are not at the top of the room. Eli said in ch 34 "I have never once been at the top of a room in my life", and the text now shows why. Good.
+- Staff reaction: none. 
+- Outsider reaction: none on-page. The unknown party (not the government by Eli's argument) is the only outside actor.
+- Small continuity: Kavi "teaches a summer intensive to the current cohort of thirteens", Eli "worm has run since the winter." Consistent with ch 32, which says it went live in late autumn. Slight: ch 32 puts go-live "the night it goes live" in autumn 2025 and the first anomaly in "the second week of December"; here it has run "since the winter." Fine.
+- Chloe's last act is to go to sleep rather than follow the thread, an understated human reaction.
+
+## Chapter 36: Seventy-Five
+
+October 2026. Priya, living abroad, reports that agents have been trying to take her since March, escalating from two men to six, a dozen, and finally seventy-five. She beat them, with a hand that "will not close all the way", and holds two prisoners. She says she finished "sixty-fourth out of ninety-one" and was in the bottom third four years running.
+- Rates: seventy-five attackers; "they came in like thirteen year olds. a couple of fourteens. one of them was a fifteen and he put me into a wall." A small dose dart hit her on the third go. She got out with one injury. Priya's own rank: 64 of 91, "bottom third four years running." Ruth says that puts her "in the top ten percent of people alive." Priya disagrees, but then reasons that the agency has sent either liars or poorly trained people.
+  - Plausibility: low, with the book's own correction attached. Priya's rank gives the final, most direct statement of the cohort's spread: even a bottom-third graduate defeats seventy-five fighters of a quality the cohort compares with its own thirteen-year-olds. The rank claim and the fight claim need to be read together, and they do not fit with the 10v1 data: at thirteen the cohort held ten peers off for about 14 seconds at best, and at sixteen the year record was 67 seconds. Seventy-five (even attacking in waves) at the level of 13-year-old cohort members would be hard for a bottom-third adult. It is only believable if the attackers are far weaker than the cohort's thirteen-year-olds, which Priya says and the book may intend; the line "or somebody has spent a lot of money on people who are not very good at it" is good internal doubt.
+- Government (agency) reaction, now shown as actions, not files: unmarked vans, then six, a dozen, seventy-five. "Three vans that came back empty gets you thirty" is Ruth's own arithmetic, and Priya says "seventy-five was the number, because whoever picked seventy-five was working off something." So the agency's response scales with failure, not with an assessment of skill. The agency sends large numbers of weak operators and loses every time. Believable as bureaucratic escalation (more of the same after failure). Not believable as the response of an agency with a twelve-year file on the same people: by now it should have a better model, and the file has been wrong "in detail" in each pass. The book supports this ("twice wrong") but the reaction still reads too blunt for a group that scouts. It also pulls the book's government threat from distant observation to open violence, a jump from the muted reactions in ch 29 and 34.
+- Prisoners say "agency" and will not say which, and "it was me they came for. by name, off a list somebody handed them." This is a believable mix of partial cooperation and stonewalling from low-level operatives.
+- Ruth's reply to Priya's rank is the most direct statement in the book that the cohort cannot see itself. Her "top ten percent" claim is a correct reading of the 10v1 ranking and the numbers, but she is arguing from the cohort's own scale.
+- Peer reactions: calm, practical, supportive, and offering concrete help (a cheaper flight, a list of changes to the room). Believable, and the closest thing in the book to a group handling a real crisis with proportion.
+- Staff reaction: none; no school staff in the chapter.
+- Number note: eight in the chat ("the eight of them"), seven when Priya is excluded. Consistent with ch 33's seven signatories.
+
+## Whole book
+
+### Table of measured skills
+
+Plausibility is for a cohort of about ninety children as the book stages it. "Stated" means a number or spread the text itself gives.
+
+| Skill or test | Age and chapter | Book's stated rate or spread | Plausibility |
+| --- | --- | --- | --- |
+| Early reading and reasoning | 6, ch 1 and 2 | One child, top of scale on reasoning, ordinary on processing speed | High. Spiky profile, school under-reacts |
+| Summer-session building, fractions, swimming | 6 to 7, ch 5 | Bridges fail at 3, 11, 19 lb; Owen cannot follow fractions; one length with a stop for Chloe, two for Sam | High. Real spread |
+| Camp to enrollment conversion | 7, ch 10 | "Of the ninety who were at camp, twenty-some came back that first fall" | Medium. Family choice, not ability; count conflicts with ch 3, 4 and 11 |
+| Seven or eight concurrent subjects | 7 to 12, ch 10 and 12 | Seven at seven (ch 10), "nine-year-olds get eight", cap of ten | Low on consistency; see inconsistencies |
+| Drawing and dance ranking | 8, ch 11 | Chloe ninetieth of ninety in both, posted on a wall | High. Gives a real tail |
+| Nerf dart vs dart | 8, ch 11 | "By the end of the first month everybody in the year can do it at will" | Low. Total success in a month |
+| Choir, riding, fencing, textiles | 8 to 13, ch 11, 12, 16 | Chloe matches a third of the time; quits riding; bad at fencing; two failed shirts | High. Individual weaknesses |
+| Mandarin | 9, ch 12 | Novels by February, ten-page reports in Mandarin by March, speech lags | Low on reading speed, high on speech lag |
+| Weekly ten-page essays | 10 to 11, ch 13 and 14 | Chloe gets a B on a 28-page essay with hedges found | High. Teacher marks hard |
+| 10v1 fight, one minute goal | 10, ch 13 | Best nine seconds on day one; most single figures by March; Sam 14 s; Chloe 11 s | High. Goal is unmet |
+| 10v1 progression | 12 to 15, ch 15, 17, 18 | 24 s (30th of 90) at 12; 50 s best of week at 14; first full minute (Odile, 67 s) in March at 15; Chloe average 41 | Medium. Fast climb, but still no one early |
+| Paintball ball on ball | 10, ch 13 | Chloe on fourth go; 19 hits by Thursday; "most of the year" past darts by Christmas | Low as a year rate; high as an individual learning curve |
+| Defensive Watch drills | 10 to 12, ch 13, 14, 15 | First drill all F; B for whole-school drill; C, C, B minus, B on the 4 a.m. drill | High. Harsh rubric |
+| Arrow on arrow | 11, ch 14 | First in late October (Chloe, Odile); "most of the year" by March; Odile 3 days of 5 | Very low. No staff reaction either |
+| Calculus and real analysis | 11 to 13, ch 14 and 16 | Chloe fails her first analysis proofs ("assumed it") and adjusts by February | High |
+| Sound-localization engineering project | 14, ch 17 | Misses spec by a hand and a half; grade B; known error carried a fortnight | High |
+| Clay breaking | 14 to 15, ch 17 and 18 | "Between ninety and a hundred" for the whole year | Medium. Ceiling effect, no tail |
+| Bullet on bullet | 15, ch 18 | Zero for weeks; first hit 11 Nov (Odile); Chloe 60 percent; Sam 40; Ruth 91; eleven plateau near 60 | Very low as a rate; high as a plateau shape |
+| Money exercise | 15, ch 18 | Rustem $940 from $200; Chloe $217; Priya down $80 | High |
+| Surgical sutures | 15, ch 18 | Chloe takes twice as long as the next student | High |
+| Bar exam | 16, ch 19 | 52 pass, 39 fail of 91; Chloe fails by 4 of 200, retake passes by 22; Kavi by 6; others not given | Medium on first sitting; the retake rate for 39 is never given |
+| Driving emergencies | 16, ch 19 | Chloe overshoots the stop mark by 30 m | High |
+| Single fight vs seven armed adults | 16, ch 20 | Sam alone, 22 seconds | Medium. Explained by weak attackers |
+| College applications | 17, ch 21 | 91 of 91 got at least one yes; Chloe 12 of 14; Odile all; Sam all but one; Nadia did not apply | Medium to low for a median student |
+| Research job offer | 17, ch 22 | 13 of 91 say yes (about 14 percent) | High |
+| Army fitness and range | 18, ch 25 | 600 of 600; 40 of 40 on qualification, first in two cycles | High |
+| Field exercise | 18, ch 26 | Sam: two wins, one rule break, one near loss to a man lying still seven hours | High |
+| Hiring screens (outside population) | 18 to 19, ch 24 and 27 | 37 of 41 say their work "doesnt break"; skills tests under one third pass even after being made easier | High. Strong baseline |
+| Foreign Service exam and clearance | 20, ch 30 | Passed with no stated score or rate | Medium. No rate, no failure |
+| Start-up (Nadia) | 18 to 19, ch 23, 24, 27 | 61 employers asked, 9 agree; 212 users, 6 hires in three months | High |
+| Camera-defeating box | 13, ch 16, 34 | Wipes students from five camera sources; "No known method" | Very low |
+| Financial worm and one-man proof | 20, ch 32 | Built in 16 weeks, no failure, 99.99 percent | Low. No setbacks |
+| Seventy-five attackers | 21, ch 36 | One woman, ranked 64 of 91, bottom third four years | Low, partly fixed by the weak-attackers reading |
+
+### Staff reactions
+
+Reactions that work:
+- Mr. Doyle correcting "weight" to "mass" after Ruth interrupts (ch 4): brief thanks, no fuss.
+- Mrs. Okonkwo's flat "No" when Chloe asks to drop dance, ninetieth of ninety (ch 11).
+- Coach Bell setting up the dart game as "the easiest thing in this building to hit" (ch 11) and later as "beyond everybody" (ch 14). Both tell children what to expect and do not describe the results.
+- Kowalczyk's plain "that's about the size of it" and the 10v1 goal that nobody meets (ch 13, 18).
+- Hearn's blank-note essay and the B for 28 pages that finds her planted hedges (ch 13, 14), and "It's what the material wants" to a Yale professor (ch 21).
+- Vasquez and Pruitt: "which of the three" and "You lost the curve on the second turn." No praise, exact notes.
+- Voss's non-answer on the plateau (ch 18). The oldest instructor on staff "first heard it from Voss": a good sign of deliberate staff myth-making.
+- Amberg's identical four-point offer to all 91, and his one dropped pen (ch 22).
+- Dr. Sandoval's careful request not to talk, "I would refuse to put a federal agreement in front of a fifteen-year-old" (ch 18).
+- The staff's mock Sport / Athletics / Recreation lines to the Duke rep, and the refusal to show the range (ch 21).
+- The school's one-day expulsion of an infiltrator "they do not permit unidentified adults around children" (ch 29).
+- The head of school's voice catching on "accomplishment" and the late applause track (ch 23). The best single slip because it is human.
+
+Slips and gaps:
+- Arrow collisions (ch 14). Bell promises breakfast to the first hitter and no adult appears at the first collision. A stronger scene: the line is shouting, no coach is seen, and a coach is later found to have known about it. A real staff would be at the grass.
+- Bullet interception (ch 18). The first hit is on 11 November and the noise brings people from the far end of the range, but no staff reaction is written. Voss says only "It's a real thing."
+- Odile's first full minute at 15 (ch 18). Thirty students make a noise. No instructor reacts to a goal the staff set at ten and nobody had met in five years.
+- The 4 a.m. drill (ch 15). Sinclair says "Grading's in the morning, go to bed" to four twelve-year-olds sitting beside four tied, sedated adults. The text later confirms the men were real operators (ch 29). A real adult would at least look at the men first.
+- Sanders reading a thirteen-year-old's reconstruction of a hidden recalibration "standing up", saying thank you (ch 16), and adding her name at the end of five on a paper (ch 17). Under-reacted.
+- The bar (ch 19). 52 of 91 pass the exam that the teachers wrote and marked. No staff member says anything about the rate.
+- Staff never say anything about pace or rate to children at any age, yet they are the only people who could know the cohort is unusual. The book keeps the staff mute to the point where a reader wonders what they privately think. Voss, Bell and Amberg each get one line that nearly says it.
+- A thin slip: Mrs. Okonkwo tells Chloe "We take people all year round" and corrects Ruth's rumour (ch 9). This is a small leak of how the school treats stakes.
+
+### Outsider reactions, most to least believable
+
+1. Chloe's mother on learning of rifles (ch 17): "You're shooting rifles?" then "Why is this the first I'm hearing about it?" Proportionate and aimed at the right fear.
+2. Parents on the $135,000 offer (ch 22): "That is more than this house cost us." "That's a mistake." Money-first reasoning.
+3. The Army: fitness grader ("You have done this before somewhere"), mess table doubters, Ruiz ("Again."), the captain's disbelief, memo, counterintelligence, mental-health referral, the woman with the old folder (ch 25). The best institutional response in the book.
+4. The Army exercise review (ch 26): rules first, praise never, peers hostile to a request for harder work.
+5. Chloe's second-grade school and the pediatrician (ch 1, 2, 7, 8): rigid, bureaucratic, under-reacting for fixed reasons. Excellent baseline.
+6. College admissions (ch 21): transcript rejected as a formatting error, ghostwriting suspected, a committee checks birth years, more than 30 open files, five attend the escorted paper reading. The visiting reps are the least believable part (Yale and Stanford reps notice but ask almost nothing).
+7. Workplace and coworkers: Theo's supervisor asking for steps (ch 24), Deb and the translation firm (ch 28), Devansh and the MIT professor (ch 31). Believable and low-key.
+8. Eli's boss and the lawyer meeting (ch 24). Fine.
+9. The bank manager (ch 24) and the criminals in the room above the tire shop (ch 27). Fine.
+10. Relatives (grandmother "Well, that's something", cousin Dana). Believable by design.
+11. Whitaker (ch 30). Warm and thorough, but too muted on a bar passed at sixteen and thirteen languages. He writes "Sixteen" down and asks no follow-up.
+12. The MIT registrar and department office (ch 31). Muted and partly false to how real advanced placement works.
+13. Government file over twelve years (ch 29, 34). Patient bureaucratic inertia is believable; the lack of any stronger response to the 2017 sedation and five defeated camera feeds is not.
+14. Government response in ch 36 (seventy-five attackers). The escalation by number, not by assessment, reads as blunt for a unit with a thirteen-year file.
+
+Where the outside world is too muted overall: nobody outside the school ever sees a verified rate for any of the extreme skills. The only outside observers for arrows, bullets, 10v1 or the 4 a.m. drill are the 2017 operators and the unit that lost its own recordings. This is a design choice, and it explains the muted outsiders, but it also means no outside person has ever tested a cohort-wide claim against a number.
+
+Where an outsider reaction is arguably too strong: none clearly. The Army's mental-health referral and counterintelligence step may look heavy for one soldier's remark, but they fit a captain who has just been told something impossible by a recruit with a file number.
+
+### Places the cohort succeeds too uniformly
+
+- Nerf interception: whole year at will within a month (ch 11).
+- Paintball interception: most of the year by Christmas after the first insight (ch 13).
+- Arrow on arrow: most of the year by March, one student three days in five (ch 14).
+- Clay breaking: whole year between 90 and 100 (ch 18). No visible tail.
+- Bullet on bullet: every card reads zero for weeks, then rapid climb with a floor of 40 percent among named students and a plateau near 60 (ch 18). The lowest named shooter is Sam at 40; the book does not name a student at zero or ten.
+- Bar retake: 39 failed the first time, and no number is given for how many passed in October.
+- College admissions: all 91 got at least one yes, and the median student 12 of 14 including Ivies (ch 21).
+- Camera box, worm and proof (ch 16, 32, 34): near-perfect execution by individuals and by the group with no false starts.
+- Group sign-off on a federal crime (ch 33): seven for seven.
+- Priya, a bottom-third graduate, beating seventy-five (ch 36).
+
+What breaks the uniformity: Chloe's two last places, Marek failing, Sam's 40 percent, the 10v1 minute not reached until fifteen, a 43 percent first-time bar failure, Nadia's start-up and hiring problems, Ruth's Portuguese, the B grades, Owen leaving. These are well chosen. Almost all of them are personal weaknesses within a very high floor. The book does not show anyone who simply cannot do the core physical or marksmanship skills at all.
+
+### Number inconsistencies and loose figures
+
+- Summer cohort: "over a hundred" and "hundred-odd" (ch 3, 4), "the ninety who were at camp" (ch 10), "twenty-some came back that first fall" (ch 10), then "ninety names" on the sheet the next year (ch 11). The jump from about 25 to 90 needs a sentence.
+- Subject counts: seven at seven (ch 10, Marcus also seven) against "nine-year-olds get eight... it goes up every year" and a cap of ten (ch 10, 12). By that rule a seven-year-old has six, and a twelve-year-old has eleven, over the cap.
+- Exit interviews: 13 yes, "the eighty saying no" (91 minus 13 is 78) (ch 22). Also "Eighty people have sat in that chair this month" is said on the Thursday of week one, when only about 40 to 50 could have gone.
+- Earlier classes: Voss says "every class for six years running" (ch 18) and Amberg's colleague "signed nine years ago", but the cohort is "the oldest in the building" (ch 16) and the first graduation is in 2023 (ch 23). No earlier cohort exists to calibrate staff reactions.
+- "Chloe could've done that at four" and her reply "I was still stuck on why you cant divide by zero at four" (ch 28) conflict with ch 5 and 6, where she learns fractions reasoning at seven.
+- The men in ch 34 report being told the fight was "sloppy and needed more practice", which no one says to them in ch 20.
+- Ch 15 treats the 4 a.m. intruders as likely actors; ch 29 says they were operators with a sedative dose recorded to the milligram. This is a reveal, not an error, but the older chapter's staff reaction (Sinclair's flat "go to bed") is hard to reconcile with real operators.
+- Bridge: ch 5 says Chloe wrote "a low number" for her prediction, and ch 6 says fourteen against a result of eleven. Minor.
+- Selection story: ch 3 and 6 imply a "good list" of identified children; ch 31 has Ruth arguing "put any kid off my street in that building at seven and you get this". The book never decides which, and it matters for how reactions should read.
+
+### What would make the reactions more convincing, in words
+
+- Add one visible staff reaction at each of the three first-time events that the book itself sets up as impossible: the first arrow collision, the first bullet hit, and the first full minute of 10v1. Keep it small and in character (a coach arriving late and saying little, a phone call made out of sight), so it fits the staff's hide-it brief and still shows they notice.
+- Show the bar's retake result as a number, or at least a rough fraction, and let one outside person (a licensing officer, a lawyer father, a state representative) react to a school administering its own bar. Also let Whitaker ask one follow-up about it.
+- Give the nerf, paintball, arrow and bullet chapters a visible tail of students who are still at zero or low after the first term, and let one of them be named and treated by staff differently.
+- Have one adult outside the school react strongly to a result that parents can understand without context, such as the vendor contract error in ch 12 or the forklift manual decimal in ch 28. The father and Deb react warmly but briefly; a stronger version would help calibrate.
+- Let the college admissions section include a case where a median-strength student loses at one top school and has to choose among fewer offers, so that the 12 of 14 figure is not read as automatic.
+- Show one parent ask a second, harder question about what the school is for, or about who pays, in the way the mother did in ch 3. After the $135,000 offer in ch 22 it is the natural moment.
+- Give the MIT registrar or advising office a more realistic reaction (an advanced-standing route, a referral to a faculty adviser) so that the muted outsider pattern does not look like a plot device.
+- Give the government at least one stronger reaction to the 2017 sedation or the camera failure, or explain in a line why the file recommends only observation, so the escalation to seventy-five attackers feels earned.
+- Settle the cohort counts (summer 100 or 90, returners 25 or 90, "eighty" or 78) and the subject-count rule so that the numbers a careful reader will notice agree.
+- Decide whether the book wants the cohort to be selected or manufactured, and let the staff reactions follow: a staff who think they picked the best six-year-olds react differently from a staff who know the method works on anyone.
