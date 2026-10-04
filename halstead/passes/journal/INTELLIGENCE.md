@@ -606,3 +606,160 @@ Chloe (21): Types a paragraph, deletes it; sends a one-line message; reads the f
 Sam: offers to fly to Priya twice. Eli: lists room defenses (bolt, second exit, braced chair), most already done by Priya. Kavi: sends software, then asks what is on the yard gate. Nadia: offers company. Theo: provides intake form info.
 Real-world note: in-world rank within the 91 is a poor guide to world rank (see whole book).
 
+
+## Whole book
+
+### How to read this section
+
+Evidence is what characters do, with ages. Narration about ability is checked against the actions. Two limits apply throughout. First, real IQ tests stop measuring well around 145 to 160, so every estimate above about 150 below is an ordering of people, not a measurement. Second, the school is a selected group of children plus eleven years of intensive residential teaching, so adult achievements mix raw ability and training. The best evidence for raw ability is what children did before or early in the school (chapters 2 to 6, 10, 11). The in-world rankings the book actually reports are few: 90th of 90 in drawing and dance (Chloe, 8), 30th of 90 in the 10v1 (Chloe, 12), range scores (Ruth 91, Chloe 60, Sam 40, ch18), the bar (52 pass, 39 fail, Chloe fails by 4 of 200, ch19), money (Rustem $940, Chloe $217, ch18), "squarely in the middle" of 91 for Chloe overall (ch21), first in fighting for Sam with Odile second (ch21), and Priya 64th of 91 overall (ch36).
+
+### Running table: Chloe by age
+
+| Age | Chapter | Demonstration | Judgment |
+| --- | --- | --- | --- |
+| 6 | 1 | Sees thirty subtraction problems are "just one problem"; retells a novel and infers its ending from a locker key | Well above age, verbal and inferential |
+| 6 | 2 | Psychologist's battery: digit span 8 forward and 6 backward; "They're both amounts of time. And people picked them both."; ceiling on some subtests | Verbal, reasoning and working memory at or near test ceiling; speed (coding) ordinary |
+| 6 | 5 | Derives why dividing by a fraction is multiplying by its flip, alone at night, in about an hour | Rare at any age; top-end conceptual depth |
+| 7 | 8 | Solves knights and knaves while the sheet is being read; classmate Dev needs about ninety seconds | Fast; Dev is the comparison point |
+| 7 | 10 | Cycloid problem solved after days, in the shower; Ruth's is "three steps and yours is seven" but Chloe's works wherever the mark starts | Very strong; second to Ruth on speed |
+| 7 | 10 | First month at Halstead: behind in four subjects, caught up in literature | Cohort is above her in some areas at first |
+| 8 | 11 | Wins the hot dog argument with "A hinge is a fact about bread, not a fact about food."; 90th of 90 in drawing and dance; ahead in three of four subjects by Christmas | Verbal reasoning high; motor and rhythm bottom of year |
+| 9 | 12 | Mandarin novels and ten-page reports by March; calls an 11-person study "a coincidence with a p-value attached to it"; spots that a vendor sentence "is just a description of the job" that her contract-reading father missed | Statistics and language very strong; Mandarin pace implausible |
+| 10 | 13 | Reads all 51 Hamilton Federalist papers in about three months; first essay faulted for not stating the other side; works out "the barrel is the hose" with Ruth; "Nobody scores the drill" | Strong writer and critic; still learning to argue against herself |
+| 11 | 14 | Astronomy essay on the two measurements of the universe's age; art price question; first arrow collision; bombing essay gets a B for hedging | University-level questions; sentimental first reaction |
+| 12 | 15 | Decoy plan: "I'm twelve, I'm small, and I'm a girl in pajamas. Nobody hits that."; 10v1 24 s, 30th of 90 | Tactical psychology excellent; physical mid |
+| 13 | 16 | Real analysis: "This step is where you assumed it."; 19 days on lab logs finds a hidden recalibration; breaks Ruth's covert network by traffic analysis; "it's both" on Eli's cipher | Research-grade analysis; proof habit takes five months |
+| 14 | 17 | Text renderer from font curves inside 16 ms, in a month; geometry placing a sound within one and a half hand-widths; reversed an ordering for seven students | Strong engineer, careless about audience |
+| 15 | 18 | Range plateau at 60 (Ruth 91); money +$17 (Rustem $940); first NDA negotiation | Mid-pack on skill and money; sound on strategy |
+| 16 | 19 | Fails the bar by 4 of 200 (closest miss on the board); passes retake by 22 | Does not show reasoning on paper; fixed within six months |
+| 16 | 21 (age 17) | Twelve of fourteen acceptances; third author on a paper a Caltech visitor cannot reproduce from the page | Top-tier output |
+| 17 | 22 | Turns down the research post; does not ask whether it stays open | Good arithmetic, one planning gap |
+| 18 | 24 | Buys a laptop and the 16 GB versus 1 TB mix-up | Inconsistent with her record (see below) |
+| 19 | 28 | Translation job done in three hours a day; catches a decimal error in a forklift manual; first-year Polish in about four months; blog of six-thousand-word pieces; "It's like Tyler's spelling test." | Competence plus real social growth |
+| 20 | 30 | Hebrew readable in nine months; thirteen languages listed; Foreign Service exam and clearance | Language ceiling very high |
+| 20 to 21 | 33 to 35 | Writes the operation rules; reads the nine-minute gap as a message; Eli disagrees | Careful drafter, less sharp adversary modelling than Eli or Kavi |
+
+### Characters
+
+**Chloe Kessler**
+- Estimate: general ability about 150, range 140 to 160. The school never reports a number. At 6 her verbal, reasoning and working memory subtests hit the ceiling while writing speed pulled the composite down (the psychologist says the front number will read "good"), so a composite near 135 to 145 with a g-like core near 150 fits. Confidence: moderate, the best evidenced person in the book.
+- Strongest evidence: digit span 8 and 6 at 6 (an adult average is about 7 and 5); the fractions derivation at 6 and the cycloid at 7; spotting the unverifiable promise in a vendor contract at 9; the decoy plan at 12; research authorship at 16; a language every year since 7.
+- Weaknesses: processing speed and fine motor (coding at 6, 90th of 90 in drawing and dance, slow stitches, stalled clutch, late in fencing); reasoning compressed so the reader cannot follow (bar exam, clamp spec, bridge credit); social calibration early on (library, names, "talk weird"), improving by 19; credit taken by Bex four times; poor on money; overconfident in chemistry at 9 and at 18 ("a week if its ugly" for a drug); never asked whether the research post stays open.
+- Within her year: "squarely in the middle" overall, which fits a person who is first in the cohort on language and verbal reasoning, second tier on formal math, near the bottom on motor skill.
+
+**Ruth Aymar**
+- Estimate: 160, range 148 to 172. Beyond the measurable range, ordering only. Confidence: moderate.
+- Strongest evidence: weight versus mass and the triangle demonstration at about 7; the divide-by-zero challenge; first on the cycloid; the camera-defeat box at 13 that no federal collection method could explain; her own cipher at 13; 91 on the turret (best seen); runs the east stairwell in the Watch; the three-argument proof that twenty years of money decisions are one man; MIT first-year material was "what she had at eleven"; her professor: "I have graduate students in their third year who would not have got me there at all."
+- Weaknesses: interrupts and demands credit as a child; reads people poorly (the joke that fails at MIT, fifth-grade remark); did not see for a year that she was the outlier; says she finished in the bottom third of a Portuguese class of native speakers (not a real weakness); shows a conclusion without the steps (five passes with the professor).
+- Rank in year: top by Chloe's account ("at the top of the year") and by the 91 on the range; MIT admission.
+
+**Sam Marsh**
+- Estimate: 138, range 125 to 150. Confidence: low to moderate; his evidence is mostly physical and practical.
+- Strongest evidence: first in his year at fighting; over the overhang after a year of falls; seven armed men down in 22 seconds at 16; a perfect 600 on the fitness test (top of the scale) and 40 of 40 on qualification; reads the pay-grade form twice and chooses the Army over the Marines because the Army has no score cap; quick verbal wit; finishes the Army reading test in a quarter of the time.
+- Weaknesses: reversed the rocket mass ratio twice; wrong about volcanoes at 7; "the click was broken" when he could not do the CPR dummy at 6; 40% on the range for six years; walks into a four-man ambush with the clock on his mind; keeps asking "when is the real one" for months and never updates that the Army is simply weaker than Halstead; plans without giving reasons (ch15).
+- Physical ability is the largest outlier in the book; academically he is probably the lowest of the twelve while still far above the general population.
+
+**Kavi**
+- Estimate: 158, range 146 to 170. Confidence: moderate.
+- Strongest evidence: the viscosity explanation at 7; the pump-count timing off the wall bars; breaks AES handset keys through the derivation step in four seconds of compute at about 13; beats Chloe at game theory by playing the person; two-factor phone design at 15; false-positive-rate research that "the whole building had to wait to find out" about at 17; the watcher that detects a nine-minute gap nobody else could see; the twenty-year timeline.
+- Weaknesses: told his group a known error was fixed for a fortnight and hoped it would shrink ("a hope with a schedule on it"); picked a favorite in the fish tank at 10 and was wrong; predicted the first turret hit for March (Odile hit in November); drifts into side problems.
+- Passed the bar by 6 and had MIT, Caltech and Chicago; chose to stay on staff.
+
+**Nadia**
+- Estimate: 148, range 135 to 158. Confidence: moderate. The in-world "rank" is not given.
+- Strongest evidence: sees "it's a plate" first on Eli's napkin; commands the third floor in the Watch; duplicates a badge by talking for half a minute; reduces a shoulder in one motion; splits a restaurant bill to the cent in her head; builds a hiring platform and writes the whole thing in six weeks; runs a full fraud investigation through state filings, property records and a ruse phone call; negotiates a bank hold from five days to two; interviews that find the edge of what candidates know; takes the full-marks Python test in minutes.
+- Weaknesses: the dead man's switch (Eli: "a dead mans switch only pays off if youre already dead"); started with weak traction (9 of 61 employers); 200 applications without a job (an outside-world failure more than a skill failure); blunt delivery.
+- Her kind of ability is the most practical in the group: reading institutions, incentives and people.
+
+**Priya**
+- Estimate: 140, range 130 to 150. Confidence: low to moderate.
+- Strongest evidence: horse knowledge at 6 that was correct in detail; the blind-test design objection at 12 ("whoever knows is the person who wrecks it"); the calibration critique at 14 ("reads beautifully at that spot and lies everywhere else"), which nobody could answer; the ethics objection about a live system at 13; throws a negotiation on purpose (as read by Chloe); at 21 takes two captives and escapes about seventy-five attackers; draws a correct estimate of the attackers' level from what they did.
+- Weaknesses: loses a hair tie and cries at 6; down $80 on the money project but can say which paragraph she misread; 64th of 91, "bottom third four years running."
+- The in-world rank (64th) is the book's way of saying that a bottom-third graduate still beats any normal adult group she meets.
+
+**Theo**
+- Estimate: 145, range 133 to 155. Confidence: low; the evidence is mostly his job and his restraint.
+- Strongest evidence: Pashto and Dari at a technical level "as easily as the other," with paired reading that finds mismatches; rebuilds the 2017 night from a redacted file by laying a photograph beside a memo; counts initial sets across twelve years; reads the paper stock as evidence of separate budgets; tests sources before repeating them.
+- Weaknesses: skips steps, so his supervisor sends half his work back (the same compression as Chloe, Ruth, Marek); cannot parallel park (a chat joke); breaks his own secrecy rule when pressed.
+
+**Eli**
+- Estimate: 145, range 135 to 155. Confidence: low to moderate.
+- Strongest evidence: solves the November cipher set in an evening at 13 when others needed a week; finds five weaknesses in his employer's systems in one afternoon; builds a worm designed to be boring; opens three logs because "logs that agree read closer to a fact"; adversary rule: "you kill it, you follow it, or you feed it garbage. you dont put it back."
+- Weaknesses: naive about institutions (the imagined bounty), overconfident about cameras and the law ("everyone speeds"); says "i have never once been at the top of a room in my life," which fits a person in the middle of this cohort.
+
+**Odile**
+- Estimate: 143, range 130 to 155. Confidence: low; reasoning evidence is thin.
+- Strongest evidence: arrow collisions three days out of five; first turret hit; second in fighting (holds 67 seconds); admitted everywhere, letters unopened; a five-page essay that a Penn reader reads three times and judges to mean exactly what it says; calls the count with Chloe and holds a steadier count than she does (and drifts late).
+- Weaknesses: none shown on the page except a burnt hand. Her ability is mostly physical and temperamental.
+
+**Bex Alcantar**
+- Estimate: 145, range 133 to 155. Confidence: low to moderate.
+- Strongest evidence: finishes sentences; assembles the whole of other people's work (the bridge, the paintball model, the astronomy answer, the rocket ratio, the sound geometry) into a full, correct account in the order it happened, usually before the originator does; knows the bar margin as "a fiftieth" and that Chloe was "the closest miss on that board"; passes the bar; plans a graduation line-up; Chloe: "She's fast, that's all."
+- Weaknesses: the book shows no original result of hers; she repackages and takes credit (Chloe four times, Sam's range numbers credited to him, which Ruth notes she never does for girls). The text probably underrates her: speed of synthesis, memory and presentation are real abilities. Not a first-rank mathematician or builder from what is shown.
+
+**Iyad Mansour**
+- Estimate: 140, range 130 to 150. Confidence: low.
+- Strongest evidence: holds the whole year's hours, numbers and money in his head and is "never wrong about any of them"; runs the roster in his head; wit ("nobody scored the north stairwell either"); in chemistry at 9 "careful and fast," getting more from the hour than Chloe.
+- Weaknesses: tactless; repeats a rumor about Chloe and Aurel from a sign-up sheet and cannot say who told him; uses information as a social weapon. His intelligence evidence is memory and social cognition; no problem solving is shown.
+
+**Marek**
+- Estimate: 165, range 150 to 180 on a shaky basis, math only. Confidence: low to moderate (all seen through Chloe, who is not an expert witness, and by report).
+- Strongest evidence: at 12 solves any problem before Chloe has put the chalk down; five off-sheet questions with a route she had not considered; spends months on a mistake "not a typo but an actual mistake in the argument" in a 1981 paper; at 17 another paper where "the error's in the middle"; returns her practice stack with a better version of the shed question; "That's better than theirs" and it takes her an evening.
+- Weaknesses: will not hand in written work, so fails the course; apologizes and interrupts himself; talks ahead of his thoughts; no finished output that anyone can mark.
+- Mathematical ability is the highest in the book; general ability cannot be separated from it.
+
+**Others the text gives evidence on**
+- Fen (roommate, ch10): orders rocks by size and holds the heavier of two in the dark to rank them; explains pebble rounding; later lends $40 against a table saw. Competent, about 125 to 135, no top-end evidence.
+- Owen (ch4 to 5): two sentences in fifteen minutes, "lost the thread" on dividing fractions, cries in the stairwell, goes home. A bright seven-year-old who is out of his depth, about 125 to 135; the book shows at least some admits were not profoundly gifted.
+- Dev, Hana, Marisol, Marcus (ch5, 8, 10): bright, slower than Chloe; Dev solves knights and knaves in about 90 seconds with a diagram, Hana is careful and slow.
+- Rustem (ch18): turns $200 into $940 by buying dead motors, learning to hear bad bearings and arguing a loan rate for twenty minutes. Practical and commercial intelligence, probably above Chloe's there.
+- Aymar (ch17): times thirty clay throws and shows the printed card is out of date. Careful measurer.
+- Devansh (MIT, ch31): strong undergraduate, stuck on a dropped sign Ruth finds in under a minute, about 130 to 140.
+- Adults: Meg and Dave, ordinary to good practical reasoners (Dave loses the hot dog argument to Chloe at 8, misses the vendor trick at 9, reads contracts for a living), estimate 110 to 125; Mr. Baptiste, Hearn, Amberg, Sandoval, Sanders, Pruitt, Voss, Kowalczyk: skilled professionals who teach well but are never shown solving something the students cannot; the opposing federal analysts (ch29, 34) produce thirteen years of files that are "wrong twice"; Okoro and the Army officers (ch25 to 26): ordinary competent soldiers who disbelieve Sam; the muggers (ch20) have "not a single usable skill."
+
+### Ranking table of the main characters
+
+Rank 1 is highest among the twelve in each column. A question mark means the text shows too little to rank. Overall estimates are the ordering described above.
+
+| Person | Est. g (range) | Verbal | Math and formal | Spatial, technical | Memory | Social reading | Physical, reflex | Persistence |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Marek | 165 (150 to 180) | ? | 1 | ? | ? | 12 | ? | 4 |
+| Ruth | 160 (148 to 172) | 2 | 2 | 1 | 5 | 10 | 5 | 1 |
+| Kavi | 158 (146 to 170) | 4 | 3 | 2 | 6 | 4 | 6 | 5 |
+| Chloe | 150 (140 to 160) | 1 | 4 | 5 | 2 | 11 | 7 | 2 |
+| Nadia | 148 (135 to 158) | 6 | 7 | 4 | 4 | 1 | 4 | 3 |
+| Eli | 145 (135 to 155) | 9 | 5 | 3 | ? | 7 | ? | 9 |
+| Theo | 145 (133 to 155) | 5 | 6 | ? | 7 | 6 | ? | ? |
+| Bex | 145 (133 to 155) | 3 | 8 | ? | 3 | 2 | ? | ? |
+| Odile | 143 (130 to 155) | 10 | ? | 8 | ? | 9 | 2 | 8 |
+| Iyad | 140 (130 to 150) | 7 | ? | ? | 1 | 3 | ? | ? |
+| Priya | 140 (130 to 150) | 11 | 9 | 6 | ? | 5 | 3 | 7 |
+| Sam | 138 (125 to 150) | 12 | 12 | 7 | ? | 8 | 1 | 6 |
+
+Reading the table: three tiers by overall ability: Marek, Ruth, Kavi; then Chloe and Nadia; then the rest, whose order inside the group is within the noise. Differences among Eli, Theo, Bex, Odile, Iyad, Priya and Sam are smaller than my uncertainty, and the book shows very little for Odile, Iyad, Bex and Theo on the abstract side. The in-world ranks that exist (Chloe in the middle, Priya 64th) say Chloe and Priya are 18 places apart at most, and Priya's own reasoning is not visibly weaker than Eli's or Theo's.
+
+### How the cohort compares with the real world
+
+- Ordinary people their age. No overlap on the page. At 6 to 8 the whole group is far above grade work; at 12 to 13 they take real analysis, calculus at 11, cryptography and law; at 16 about 57 percent of 91 pass a bar exam that the book says "every citizen" ought to pass. Ruth's survey figures (about 25 percent speak a second language, 21 percent of adults read below sixth grade, about a third can do 3/4 minus 1/2) show how far above the general population they are, and Nadia finds that 37 of 41 job candidates say what they built "doesnt break." Chloe's fractions understanding at 6 is something most adults lack.
+- Typical bright children. At camp the lower end (Owen, Marisol, Dev, Hana) looks like bright seven-year-olds, perhaps top 2 to 5 percent, while the top end (Ruth, Chloe, Kavi) looks profoundly gifted. So selection at 6 was not uniform. The class at 17 looks far more uniform because of eleven years of the school.
+- Strong university students. Ruth finds MIT's first-year sequence to be material she had at 11; Chloe does a semester of treaty reading in an afternoon and carries 21 credits plus a job; Devansh is stuck on a sign she finds in a minute. At 17 to 18 the typical graduate looks like a strong university student, and the top (Ruth, Kavi, Marek) look like strong graduate students.
+- Top professionals. Ruth's professor says third-year graduate students would not have got him there; a Caltech visitor cannot rebuild a methods step attributed to Chloe at 16; Marek finds an error in published work at 12; Kavi works on questions "nobody in that room knows" the answer to at 17; Eli, Kavi and Ruth together out-think a government unit that has been "wrong twice." The text does not show anyone matching the very top of any field (no new result is shown, no prize). A fair reading is that the top four or five match good early-career researchers in their narrow areas, with less experience, and that the rest of the group are well above ordinary professionals in reasoning without being shown to exceed them in a specialty. The feats that go beyond any real scale (bullet-on-bullet fire at 60 percent, seven armed men in 22 seconds, one weekend defeating federal cameras) are story superlatives, and I do not use them as IQ evidence.
+- Ruth's own question in ch34, "how good are we," is answered by the book roughly as follows: everyone at this table is top 0.1 percent of the population or better on reasoning, trained to adult professional level by 18, and the lowest ranked graduate (Priya, 64th) still handles a mass attack. The in-world rank means little against the outside world.
+- Note on training: the cohort's output is a school effect as much as a selection effect (91 of 91 write graduate-level prose, 91 of 91 take the same sequence). Ruth's claim in ch31 that "any kid off my street" would do the same is not supported by the early chapters: Owen, Marisol and Dev at camp did not look like Ruth, and Ruth and Chloe were already far ahead at 6 before any teaching.
+
+### Inconsistencies in the evidence
+
+1. Mandarin pace (ch12). Chloe reads "novels" by February and writes ten-page reports in Mandarin by March after starting in September at 9. Real learners need well over a thousand hours for that. Too fast to believe unless "novels" means very simple ones. Later languages go at about nine months for Hebrew and four for Polish, which is slower and more believable.
+2. The cycloid (ch10). A seven-year-old gets a general result for a rolling-wheel point that adults normally reach through calculus. The text does not state the answer; it is plausible only if the problem was posed in a simplified way.
+3. Chloe and the laptop (ch24). She wants 1 TB of memory and calls a 16 GB laptop wrong; Ruth treats 16 as small. Real laptops have 16 GB of memory and 1 TB of storage, and a 1 TB memory machine is not a retail laptop. This clashes with a character who wrote a font renderer and a text-level exploit, and with the other characters' own expertise. It reads as an authorial slip.
+4. Chloe's rank. The narration says the only number she was ever given is "squarely in the middle," but no overall ranking sheet is shown except the per-subject ones (90th of 90 for dance and drawing, 30th of 90 for the 10v1, 60 on the range) and the bar. Her record (fastest learner at 6, research author at 16) does fit a person who is first in verbal and mid-to-low in everything physical, but the "middle" figure is never shown.
+5. Marek's year. He is placed a year below Chloe (chs 16, 17, 19, 30; he sits the bar in April 2023), yet he is listed among the applicants who apply in autumn 2022 with the graduating 91 (ch21) and is at graduation reading a paper (ch23). One of these is wrong. Also Chloe's essay in ch21 says she taught "the thirteens" while ch16 and ch30 say she taught the twelves.
+6. The exit offer (ch22). The offer reads as the same for everyone ("the order he gives everybody"), so it is not evidence of rank; the count "thirteen" yeses plus "the eighty saying no" is 93 of 91.
+7. Chloe too sharp and too slow. At 9 she sees a contract trick her father missed; at 16 she writes one line and fails the exam; at 17 she turns down $135,000 and then notices she did not ask whether it stays open; at 12 she knew the four a.m. men might be real ("works out no different either way") but at 20 in ch32 she says "theo that was a drill." The pattern is consistent: insight is fast, externalization and option-thinking are slow.
+8. Ruth. She is plainly top of the year and knows it (91 on the range, "top of the year"), yet spends a year at MIT believing she was put in a remedial track, and in ch31 argues that Halstead's results come from the school and not the child. The book explains this as motivated reasoning ("because i didnt want it to be true"), which is plausible but is a long delay for the group's best statistician.
+9. Sam. The man who reads a mugging in seconds and wins in 22 seconds cannot work out for months that the Army is simply weaker than his school. He builds three hypotheses (tired, not the real range, a screen) and tests one by holding back, but never tests the plain one. Plausible as anchoring, but slow for a character who is otherwise quick.
+10. Kavi. Strong enough to break AES key derivation at 13, but wrong about the fish (ch12), the hit date (ch18) and a fortnight of an error he hoped would shrink (ch17). Each is a small human lapse and fits a person who guesses with confidence; not a real inconsistency.
+11. Eli. Ch16 says he "takes his time" with everything, then reports doing the November set in an evening that others took a week over. His own view that he is never top of the room is the right reading of his evidence.
+12. Priya. Ranked 64th of 91 for four years, yet her design objections (ch15, ch17) are the sharpest in the room and her field performance at 21 is the book's strongest physical claim. Either the ranking sheet measures something other than reasoning (languages, the forge, the bar, the money project) or the book is making the narrower point that the sheet does not capture her.
+13. Nadia. Offered the same post as Chloe, interviews 41 people for two jobs, writes a whole platform in six weeks, but applies to 200 jobs and gets 14 replies. The text frames this as the labor market failing her; it is also consistent with a very strong generalist whose credentials the outside world does not know how to read.
+14. Bex. The narration shows her as fast but derivative in every scene; the best that can be said of her own ideas is the sentence "I'd start off it next time instead of finishing on it," which she borrows. The book may be underrating her because it is told from Chloe's point of view.
