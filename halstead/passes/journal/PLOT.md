@@ -257,3 +257,122 @@ Adds: October 2026. Priya, in South America, reports in the chat that since Marc
 Resolves: "how good are we" (very, relative to adult operators); the file's "believed to be in contact" line now has teeth; Priya's silence (ch.23 "never heard of Halstead") is explained.
 Holes: (1) Motive of the hostile institution: for thirteen years the unit only watches (ch.29-34) and the one prior contact (the 4 a.m. intrusion) ended with an adult telling the men "an attack on a school in the United States would not be accepted". Now, from March 2026, it fields teams to snatch graduates by name, across countries, with seventy-five men. The book gives no trigger. The likeliest causes are all in the book (Sam's Army disclosures in ch.25, the 2025 background investigation of Chloe in ch.30, the group's financial worm and file breach in ch.32-34) but timing contradicts at least the breach (June, after March), and nobody in the chat links them. Missing causal link, serious for "does each major event have a cause". (2) The agents will not say which agency; the unit in ch.29 is a particular unit, and the book does not say whether the men are the same unit, the same agency, or a contractor; Priya notes "somebody has spent a lot of money on people who are not very good at it", a good observation that is not followed up. (3) Chloe, who has a clearance and daily access, learns of a government kidnapping campaign against her friends and responds by reading the file page again and doing her job; no discussion of whether to tell her employer, quit, or use her access. (4) Dropped: the nine-minute worm incidents of ch.35; whether the unit noticed the file breach; what happens to Chloe/Theo's careers. (5) Priya being the target and not the better-ranked Ruth or Sam, with a list "by name", is a good loose end (the list's selection criteria) but is left as a thread.
 Open: everything: funder identity, pill, Bex, Theo's name, "continuity".
+
+## Whole book
+
+The book is a decade-long coming-of-age story about Chloe Kessler that turns, in the last third, into a conspiracy plot: who runs and funds Halstead, who is watching it, and what the graduates are. The first twenty-three chapters are strong on world-building and mostly consistent. The last thirteen change genre (group chat, hacking, a government file, an attempted abduction) and are where the plot's causal chains get thin. I found no hole that makes events impossible, but several that ask the reader to supply the cause.
+
+### Plot holes, ranked
+
+**1. The government's escalation has no cause (ch.29, 34, 36). Careful reader will notice; close to book-breaking for the ending.**
+For thirteen years the federal unit observes, files and guesses (ch.29: "probably corporate", "the funding cannot be traced"), and the one earlier contact ends with an adult telling the intruders "an attack on a school in the United States would not be accepted". In ch.36 Priya reports teams coming for her "since march", then seventy-five men. Nothing in the book says why the posture changed in March 2026. The candidates are all on the page: Sam's disclosures to the Army (ch.25), Chloe's background investigation and candid answers (ch.30, Whitaker asks about funding and Bex), Eli's financial worm (ch.32). But the breach in ch.33-34 happens after March, and no character connects any of these to the abductions. Not deliberate as written, because the characters treat it as a puzzle ("somebody has spent a lot of money on people who are not very good at it") without offering the obvious suspects. Possible fix in words: have one character (Chloe or Theo) say out loud which earlier event might have triggered the change and be uncertain, so the escalation reads as consequence. If Chloe's own honest interview is the trigger, that would also give her a personal stake in the last chapter.
+
+**2. The pill has no setup (ch.24, 28). A careful reader will notice; may be intended as a mystery but is not planted.**
+Ch.24 introduces a small white tablet, "the sinus thing", that Halstead supplied, that no doctor or database knows, and that the school calls "internal". Ch.28 says Chloe has "taken these since I was seven". Nothing in ch.1-23 shows a pill, a dispensing scene, a nurse's visit or even a cold (the nurse appears only in ch.3, 4 and 9 as a reassurance to parents). A reader who goes back will find no first dose. Then the thread stops: Chloe gets three ingredient names on the back of her hand (ch.24) and never uses them in the remaining twelve chapters. If it is a deliberate mystery, it needs one early quiet scene (a small white tablet handed out in the first week, a line in a letter home) and some sign of what it does; if it is meant to connect to the hit-rate ceiling ("point six", ch.18) or to the secure-channel immunity, nothing says so. Right now it is the clearest setup-without-setup and payoff-without-payoff in the book.
+
+**3. The book's own thesis contradicts its opening (ch.31 against ch.1-4, 2, 3, 18). A careful reader will notice.**
+In ch.31 Ruth argues that selection could not have seen anything: "i could read. that is all anybody could have known about me" and "put any kid off my street in that building at seven and you get this". But ch.1-4 show Chloe, Ruth, Kavi, Priya and Sam already far outside the normal range at six and seven (Icarus and the cloud, "mass and weight", viscosity, hands of a pony), and ch.2's psychologist says "There is nothing above that on the page for me to give her". Ch.3 has Ellie Peterson, also in a gifted pull-out group, get no letter, so the list is not just "any gifted child". And ch.18 shows a hard ceiling in one measure ("Point six", Ruth at 91, Sam at 40), so the cohort is not uniform. Chloe's one line ("you dont know what was on the form") is the right objection, but nobody follows it up. As written the reader cannot tell whether the book wants "Halstead made them" or "Halstead found them", and the whole last third (ch.31, 34, 36 "top ten percent of people alive") leans on the first. Possible fix: let Ruth be wrong in an acknowledged way (someone points out the chapter 2 test and the unequal ceiling), or soften the claim to "the education did most of it".
+
+**4. The funder reveal answers "how" but not "who" or "why" (ch.32). Careful reader will notice.**
+Ch.32's "one man" (a seven-hour band, a worse instrument since 2003, "99.99") is clever but gives no name, no motive, and no link to anyone in the cast. The earlier planted mysteries all point at "who pays" (ch.3 "who is paying for it", ch.9 the free house, ch.21 research behind a chair, ch.22 salaries) and the book's answer is a shape. The chapter also skips the first link: how the worm knew which of the world's transactions to follow ("There's no name. There's no bank with a name on it"). Whether Kavi's inside access provided a seed account is never said. Fix in words: one line saying what account or transfer the school's own books gave Kavi as a starting point.
+
+**5. The break-in is poorly motivated (ch.33). Careful reader will notice.**
+By ch.33 the group already has Theo's account of the file (state or company, a staffer, the 4 a.m. incident), Ruth's funder proof, and Chloe's own knowledge. The case for stealing the live file is stated as "the only way any of them will ever know what their own government actually thinks it knows" and Chloe's "i dont see what there is to decide". The costs are spelled out (Ruth: section 1030, five to ten years; Theo's and Chloe's careers and clearances) and then waved through. For Chloe, who spent a decade learning to argue the other side (Hearn, Amberg), signing without a weighed objection is the least earned decision in the book. If the point is that Halstead graduates under-weight social risk, say so, and let someone pay for it. If the point is that they needed names (Theo's "name I already know", Kavi's "continuity"), that goal needs to be stated.
+
+**6. The 2022 night is told three ways and never reconciled (ch.20, 34). Careful reader will notice.**
+Ch.20 has Chloe conclude the seven men were untrained real muggers. Ch.34 has the federal report record the seven men's statements, say two of them "report being told, during or just after, that this had been sloppy and needed more practice", note that the observation unit also had cameras on the students that night, and call the footage "unrecoverable". That reads as though the seven were the unit's own test of the students, a repeat of the 4 a.m. intrusion (ch.15, 29), but the chapter never says so. It also never says whether the school knew. This is probably deliberate (the ch.15 "drill or real?" question is paid off in ch.29, and this is its echo) but the signal is too faint. It matters because ch.20's final beat ("Why was it nothing?") is the book's most direct setup for "the world is slower than we are".
+
+**7. The Theo box is a coincidence with a security failure inside it (ch.29). A careful reader will notice.**
+A retiring analyst hands a thirteen-year file on Halstead to a new hire who is a Halstead graduate, saying "Might as well be the new guy". The agency that has watched the school for thirteen years hired a graduate (ch.23: "answered every question completely") without apparently flagging it. Either the retiree meant it (give her a motive) or the unit's counterintelligence failed (acknowledge it). Theo himself half-says it in ch.32 ("somebody handed the new guy a retirement box") but the book moves on. Possibly deliberate irony; nobody comments.
+
+**8. Chloe's interview omits the most dangerous facts (ch.30). A careful reader will notice.**
+Chloe tells Whitaker a lot about Halstead, including the free-house offer, the bar at sixteen, the internal papers, and she chooses to protect Sandoval. She never mentions rifles, bullet intercept, the 10v1, the sedated intruders, or the pill. The chapter does not tell us she is leaving them out on purpose, and by this point she has been told (ch.13) that the school treats capability as protected. Fix in words: one beat where she decides what not to say.
+
+**9. No pandemic (ch.17, 18). A careful reader will notice if the dates are real.**
+The headings run "September 2019 to April 2020", "September 2020 to July 2021", with boarding, trips home, driving lessons and a sneak-out in June 2022. There is no mention of COVID-19 anywhere. Either Halstead is a bubble the book should say insulated itself (a single line would do, and would serve the secrecy theme) or the years should be blurred. Possibly deliberate; nothing signals it.
+
+**10. The "bar" at sixteen (ch.19, 30, 33). Nitpick to a careful reader.**
+Amberg calls it "the examination this country uses". A real state bar is not open to a sixteen-year-old without a law degree and is not proctored by the school's own teachers. The book never says what the credential is for, whether anyone outside the school recognizes it, or why failing "costs you a summer" (Bex's phrase, ch.19). It pays off in ch.33 (the group knows section 1030), so it is useful, but it should be tagged as Halstead's own exam or its real-world status explained.
+
+**11. The ending of ch.23 gives Chloe a late goal (ch.23). Nitpick.**
+Chloe's turn to the Foreign Service appears in ch.23 with a few lines ("the first two of the six"). Her earlier interests are languages, politics class (ch.11), essays (ch.13), the blog (ch.28). It fits, but there is no earlier scene where she wants it.
+
+**12. Small consistency slips (nitpicks).**
+- Ch.7 has Chloe tell the librarian "Mrs. Prahl kept ours on the windowsill for a week" about the camp bridge, but Mrs. Prahl is introduced in ch.8 as the local enrichment teacher, and no Mrs. Prahl taught at camp (Mr. Doyle, Mr. Baptiste). Either a name slip or a hidden link; no payoff.
+- Ch.7: the school passes Meg's number "to all three numbers" though she named four families (Sam, Ruth, Kavi, Priya). In ch.10 Ruth says she was told they "can't give" Chloe's address; the school said in ch.7 that it had passed it on. One of those is a lie by the school; never addressed.
+- Ch.5 has Owen leave on a Tuesday or Wednesday of week 2 ("his mom came and got him yesterday") and "wasn't having fun"; ch.10 has Kavi say he cried "on the Thursday" and left "on the Saturday", wanting to stay, and Ruth call him "the boy who wouldn't do the water thing". The "water thing" is never explained.
+- Ch.8 mentions "the bridge and the apples" among Chloe's best memories; apples do not appear at camp.
+- Ch.19: the heading is April 2022 to June 2023, but the driving lessons ("fourth year", "the previous July") sit in 2021-22 and a school year (Sept 2021 to March 2022) is skipped; ch.20 (June 2022) falls before ch.19's last scenes (June 2023).
+- Ch.21 has twelve acceptances "when the middle of a year gets the state school" while ch.23 says the whole class passed; fine, the point is that the 3 percent is a lie.
+- Ch.34 has Sam say "the one where you lost a shoe"; ch.20 has no lost shoe.
+- Ch.34: the file notes "contact with the family went no further than the one letter" but ch.3, 6, 9 show phone calls, a second letter (the house) and a tour.
+- Ch.10 says about twenty-some of ninety camp children returned in the first fall, yet ch.11 has ninety in Chloe's year and ch.21 ninety-one; the cohort numbers are stable and no attrition shows after year one.
+- Ch.29: Theo remembers "the whole year stood out on the grass" after the 4 a.m. incident; ch.15 shows nothing of that.
+
+### Dropped threads
+
+- **Bex Alcantar.** Ten years of credit-taking (ch.12, 13, 14, 16, 17, 19, 21), Ruth's challenge in ch.22 ("find me one time she put a girl's name on anything"), her exit interview that is never shown, her "longest" reference interview in ch.30. Chloe suspects "she's done this before... she's fast" and Bex knows details of events she was not in the room for. Either this is a plain character study of a credit-grabber or a planted informant. Nothing is paid off. Highest-priority dropped thread.
+- **Theo's file ("mine has a name in it I already know", ch.34)** and **Kavi's "continuity" margin note.** Two clues, no payoff.
+- **Marek and the 1981 paper** (ch.13, 16, 17, 19, 23). Beautifully set up, never returned to after ch.23, and Chloe's open question about what his fail "cost" him (ch.16) is never answered.
+- **Dr. Sandoval's federal NDA project** and the "somebody older" who suffered (ch.18). Chloe carries three silent projects (ch.30) and nothing connects them to the later plot.
+- **Sam's "different sheet"** (ch.12) and the theories "by Thursday". No payoff.
+- **Owen and "the water thing"** (ch.5, 10): attrition is explained as parents taking children home; the book plants it as a possible removal and never settles it.
+- **Defensive Watch's "standard is posted weekly"** and who sets it (ch.13-15). Partly answered by ch.29 (real attacks happen), but who writes the weekly standard is not.
+- **The head of school and Sinclair** (ch.14, 15, 23). The head speaks at graduation, unnamed; Sinclair appears three times and then only in a government report. For a book about who runs Halstead, nobody on the page runs it.
+- **Chloe's father's answer** to "did you and mom ever want me to just stay" (ch.19), left hanging; ch.22-23 do not answer it.
+- **The job offer** (ch.22): Chloe fails to ask whether it stays open, her father points out she did not; never revisited. Kavi's acceptance is a mirror but nothing follows from the "door".
+- **The bearded man** (ch.2 Dr. Prentice, ch.9 "a man whose beard is going gray"): a clue for how Halstead found her, never used. Related: how the list is made (ch.3, 6, 31).
+- **The nine-minute worm incidents** (ch.35): deliberately open, but no character is assigned to resolve them.
+- **The ch.30 anonymous readers** ("research team", a dozen rows): never identified; no link to Whitaker or the unit stated.
+- **Ruth's recorder box and the covert channel** (ch.16): fully paid off (ch.20, 33, 34). Good.
+- **The north building** (ch.14, "flat-roofed, pale, and newer than the rest"): never used.
+- **Sam's 40% and the point-six ceiling** (ch.18, 19, 25): Sam's disclosure uses it, but the ceiling's meaning (is it designed? the pill? talent?) is not examined. Ruth in ch.36 and Priya's rank counter it.
+- **Nadia's chapters** (ch.21, 23, 24, 27): a strong subplot that ends in ch.27; it connects only thematically (Ruth's "cant finish a thought", ch.31).
+
+### Deliberate open mysteries, and whether each is set up well enough to feel deliberate
+
+| Mystery | Set up well enough? |
+| --- | --- |
+| Who pays for Halstead | Yes, from ch.3 on (the free offer, the house, the server room in ch.6, the research behind a chair in ch.21). Answered partly in ch.32 (one man) but with no name; reads deliberate. |
+| How Halstead picks children ("their list is usually pretty good") | Yes, ch.3, 6, 7 (Ruth's mother), 9 (Ruth's false claim), 31. Not answered. The bearded man hint may or may not be intended. Reads deliberate but the ch.31 thesis conflicts (see hole 3). |
+| Is Watch a drill or real | Yes and answered (ch.13-15, 29). Best-handled mystery in the book. |
+| The mugging in 2022 | Weakly. Needs a line in ch.34. |
+| What the school is for / who it protects from whom | Yes, thematically (Defensive Watch, bullets, Politics class, "do not learn anything about you"). Not answered; a reader wants even a partial answer by ch.36. |
+| The pill | No. See hole 2. |
+| Owen and "the water thing" | Weakly; reads as a slip. |
+| Bex | Reads as deliberate by volume but has no ending. |
+| "Continuity", Theo's name | Fairly: planted in the same chapter as the file; reads deliberate. |
+| The nine minutes | Yes: Chloe and Eli disagree on the page. Deliberate, no payoff yet. |
+| Who is hunting Priya and why | Set up in ch.29-34; the "why now" is missing (hole 1). |
+
+### Institutions: do they act sensibly for what they want?
+
+- **Halstead:** coherent. Free recruitment, same-day pickup promise, a pipeline into its own staff (13 of 91 accept $135,000 offers, ch.22), secrecy about capability, exit interviews, a ban on unidentified adults, real defense against intruders. The one odd note is the economics: why spend ten years of resources and keep 14 percent, and why hold the research only for supervised reading (ch.21). Probably explained by the funder's goals, which are never given.
+- **Parents:** consistent in ch.3-9 (suspicious, then persuaded by contrast). Meg's refusal of the house (ch.9) is the best-motivated parental move. They are weakly informed afterward (rifles in ch.17, Watch never), but that is the book's point (kids do not tell).
+- **Colleges (ch.21):** consistent and funny; they are baffled and flag the school; five accept supervised reading. Good.
+- **The Army (ch.25, 26):** the captain's four documents are textbook (CI referral, S-2 check, mental health, memo). But from October 2023 to February 2024 nothing visible happens, and the AAR in ch.26 does not mention Halstead. Not a hole, but the Army thread is then dropped until Theo's file lists Sam in ch.34.
+- **The federal unit (ch.29-36):** passive for 13 years, then aggressive from March 2026 without a trigger (hole 1). Its competence is inconsistent: it can place a staffer, run months of surveillance and send seventy-five men, but its footage vanishes and its men fight "like thirteen year olds" (ch.36). That is probably the book's joke (Halstead graduates outclass adults) and it works, but the unit's willingness to send inferior teams against a known capability is only half explained.
+- **The funder:** only a shape. The man who restored the worm in ch.35 and cleaned the logs is, at best, the funder; the book does not say.
+
+### Who knows what, when (for the late chain)
+
+- Halstead has known about government observation since 2013 at the latest (staff placement, the 4 a.m. intrusion in 2017; ch.29).
+- The children knew the 4 a.m. intrusion only as a drill (ch.15); Theo learns it was real in Oct 2025 (ch.29); the group learns in ch.32; Chloe learns it in ch.32.
+- Sam tells the Army about intercept shooting in Oct 2023 (ch.25); the Army's CI response is not shown until ch.34.
+- Chloe's clearance interviews (ch.30) put Halstead details in a federal file in Oct-Nov 2025.
+- Federal abduction attempts on Priya begin March 2026 (ch.36), before the group's breach (June 2026).
+- The group's channel is believed to be unreadable (ch.34) and the nine-minute tampering (ch.35) suggests someone else can reach their tools.
+
+### Does the ending work as an ending?
+
+Mostly no, but it works as a turn. The last chapter gives a strong escalation (seventy-five men, the line of 110 meters, Ruth's list of addresses by distance from a road) and a thematically right final image (a gate with a new hinge, a mare about to foal, echoing the hinge in ch.11 and ch.17 and Priya's horses). It confirms Ruth's "top ten percent of people alive" as an outsider's fact and answers ch.34's "how good are we". But it does not resolve any major question: funder, pill, Bex, who the hunters are or why now, whether the file breach was noticed, what happens to Chloe's and Theo's careers. The protagonist is a reader in the last chapter (a bus, a search, a badge) and the active scene belongs to a character with far less page time. If the book is meant as the first of several, the stop is acceptable; if it is meant as the whole, the ending needs, at minimum, the trigger for the escalation (hole 1), a payoff for the pill or a clean decision to cut it, and some consequence for the felony in ch.33-34.
+
+### Highest-value fixes in words (no prose supplied)
+
+1. Give the hunters a stated trigger in ch.36 or earlier (one character suggests it, uncertainly).
+2. Plant the pill in ch.4-9 and give ch.24-28 something to do with the three ingredient names, or cut the pill.
+3. Reconcile Ruth's "any kid" claim with ch.2 and the ceiling data, or have another character say they cannot be sure.
+4. Settle Bex with a scene, or let ch.30's reference interview be the answer (for example, Whitaker's questions show who spoke).
+5. Name the first link of the money chase and one thing about the funder's motive.
+6. One line in ch.34 on who the seven men were; one line in ch.30 on what Chloe chooses not to say.
+7. Decide the pandemic question with a single sentence of Halstead insulating itself.

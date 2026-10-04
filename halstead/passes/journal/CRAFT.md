@@ -539,3 +539,39 @@ What does not work:
 - The cast is now at seven voices again in the chat, with the same stylized habits (Nadia's sleeves, Kavi's cable, Eli's tap). They were charming earlier; by now they read as tics.
 
 Reader's sense of normal so far: the cohort is a competent, serious group committing a serious crime for reasons that make sense to them; the reader has long since accepted their baseline. The book is now a heist, and the unreliable-narrator technique is not in play.
+
+## Chapter 34: The Files
+
+This is the second-best reveal in the book, and the one that most completely answers the author's stated aim: the reader re-reads an earlier scene in a new light, and the characters do too. It is chapter twenty (the diner, the shopping cart, the seven men) seen from the file's side: "Four students left campus at night without permission, walked into town, sat in a Waffle House for two hours, and afterwards were in the car park pushing each other around in a shopping trolley." The report says one student did all of it, the other three "were not where they had been," the time was twenty-two seconds "taken off the gap in the footage," and every recording of the students had been wiped: "All of it is unrecoverable wherever the students appear, but intact everywhere else. No known method." And a line under that: the observation unit's own recordings of that night "are gone too."
+
+The key turn is Ruth's. In chapter sixteen she built the box that overwrites recordings, and in chapter twenty she carried it over the fence "so we wouldnt get detention." Now she reads that her weekend project defeated the cameras of a federal team that was watching them, and that no one has figured out how. "i was thirteen and it was a weekend and i wasnt trying." The sentence is a lovely compression of the whole book's central device: a feat that the character filed as trivial is, to the world, unexplainable. Eli's reply ("i have never once been at the top of a room in my life") is the book's most affecting line since chapter nine's bargaining scene, and Ruth's "how good are we" is the thematic question stated plainly without a speech. Chloe's answer ("were about to find out") is exactly the right size.
+
+Other strengths:
+- The seven opening readings, each in a different place and posture (Theo standing, Eli with two fingers tapping, Sam thirty seconds at a time between orders), keep the chapter physical and give each character a one-sentence portrait.
+- The details of the file are chosen for irony. Sam's officer "flags the honesty itself as the interesting part, like a result that wouldn't reproduce." Kavi's has a single repeated margin word, "continuity." Eli's notes he found five vulnerabilities in one afternoon, "flags the number as worth continued attention rather than as anything resembling praise." These are small, dry and funny, and they treat the characters' habits as data.
+- The line "the graduates are believed to be in contact with one another," retyped each year with "the word changing once, from students" is a good image of institutional repetition, and it connects to the chat's secrecy.
+- Sam's "wait is that the one where you lost a shoe... we were so bad that night" is the right comic note after the file. It keeps Sam's character: he still thinks they were bad.
+
+Concerns:
+- Continuity: Sam's shoe question is a callback to an event the reader did not see in chapter twenty (Chloe's shoes were kicked off at home, laces knotted). If a shoe was lost that night, it should appear; if not, the line lands blind.
+- The file's account has a possible gap: it says "Two of them independently report being told, during or just after, that this had been sloppy and needed more practice." The reader remembers Chloe's analysis, not a lecture. It is plausible that the muggers misheard or invented, but the line is unclear and a reader will not know what to do with it.
+- This is the second "we read the file" chapter in six, after twenty-nine. The new material (the Waffle House, the box, the thirteen years) is enough to justify it, but the book has now shown its hand about the school's surveillance thrice, and the reader's curiosity about who owns the file is being managed by repetition.
+- A pacing note: the sequence of readings is spread over the first half of the chapter before any chat begins. That is right for tension, but the paragraph about "analysts who managed to spell her name differently on each page" and the Kavi "continuity" line are placed so that they could be cut without loss.
+
+Reader's sense of normal so far: complete. The characters have caught up with the reader and are now asking the reader's question: how good are they. The book's misdirection has become a shared, explicit premise.
+
+## Chapter 35: Nine Minutes
+
+A suspense chapter built on one clean device: a tool they own goes quiet for nine minutes, then returns "state, position, byte for byte what it was," and no log anywhere records the gap. The device is smart and fair. Three independent logs, a watcher built "to distrust a clean log," and the observation that "different would say clumsy, but the identical number twice says measured." The second occurrence, to the second, is the book's best piece of low-key menace, and Kavi's remark ("you only see nine minutes if you built something specifically to look for it, and the only reason i built that is because im me") quietly restates the book's thesis in a technical key: nobody else in the world would have noticed.
+
+Eli's line is the chapter's real contribution: "hes not signalling. he made a mistake... hes very slightly wrong about how good we are." This inverts the book's central irony. For thirty chapters the cohort misjudged themselves downward. Now an unseen adversary misjudges them downward too, and the group has to use that gap. It lets the book make the false-normal a weapon instead of a wound, and it is the best thematic idea in the final act.
+
+Chloe's reading ("he could have killed it and he gave it back. thats a message") versus Eli's ("you kill it, you follow it, or you feed it garbage. you dont put it back") is a good, readable argument that characterizes both. Theo's last line ("how many has he made that we didnt catch") is a strong turn to close the chat.
+
+What does not work:
+- The chapter is mostly logs and process. The reader is told, repeatedly, that checking is careful (three logs, a clause read once for what it says and once for what would make it not apply, a lock checked twice), and a ninth-grade reader will find this a long run of sentences that all say "he was thorough." The paragraphs on Eli's job, Kavi's three a.m., and the summer intensive for the thirteens are tonal filler between the two events that matter.
+- Chloe is almost absent. She appears at the end, tired, setting her phone face down: "Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow." That is a nice sentence, but it is a withdrawal. The book's central character spends the key suspense chapter asleep, and the closing line sets up something that happened while she slept. If chapter thirty-six does not use that, it is a cheat; if it does, it is a hook.
+- The adversary is entirely abstract. The group's panic is about a figure who has done nothing but pause a process. Without any sense of what he could do, the stakes feel theoretical. A small, concrete consequence (a file altered, a colleague asked a question) would give the reader something to fear.
+- Ruth's "why hasnt anybody already used this" is a good thematic question but is left hanging in a way that reads as a missed beat.
+
+Reader's sense of normal so far: the cohort's baseline is now so established that the book's tension depends on someone else being nearly as good, and a fair-minded reader wonders who that could be, and whether the school is not what the cohort thinks it is.
