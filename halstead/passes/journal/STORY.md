@@ -598,3 +598,147 @@ Facts so far:
 - Investigator: Whitaker. Bex is a reference. Chloe's languages: thirteen listed.
 - Chloe told Whitaker her mother turned down the free house.
 - Whitaker asked who the school's principal donor is; Chloe does not know.
+
+## Chapter 31: Ruth
+
+October 2023 to November 2025, from Ruth's viewpoint. At MIT Ruth believes she has been wrongly placed in a remedial track: first-year courses repeat what she learned at eleven. She chases the registrar and the department, which tell her there is no other sequence. A joke she makes in a study group falls flat; she asks when the course will "get past fifth-grade concepts" and the room goes quiet. She secretly concludes that MIT tracks students by ability and hides it. A kind professor stops her three steps in and makes her write out two lines she skipped: she finds one step she had never examined ("The tail dies before the boundary does"). He tells her the third-year graduate students could not have got there. After that she looks up national figures (second language, reading level, fractions) and posts them in the chat, but she stops posting in April 2025 because she understood what the numbers add up to and wanted someone else to say it first. In November 2025 she breaks her silence in the chat: "i dont think we're the same kind of thing." She says someone sat down and picked her at six when "there was nothing to see yet", and "put any kid off my street in that building at seven and you get this."
+
+Ruth is the book's moral compass for fairness, and giving her this arc is right. The best moment is the professor's office: Ruth, who corrected every adult in ch4, finds out her private certainty has never been checked against any head but her own. It is the fifth time the book has used the "show your steps" lesson (Marek in ch16, the bar in ch19, Theo's supervisor in ch24, Deb in ch28, now the professor), and this version finally gives it a new turn, because it leads her to doubt the school instead of herself. Her private note, her unfinished drafts about methodology and why she stayed silent ("because i didnt want it to be true") are credible and sad.
+
+The argument she opens is the book's actual theme: were they selected for what they were, or made by Halstead? Chloe's reply, "you dont know what was on the form", has real evidence behind it: ch2 shows Chloe being tested at six and scoring at the top of a test's range before any school touched her, so the evaluation, at least for her, was not nothing. The two data points conflict, and the book should say so openly or Ruth's claim will be left standing too neatly. The unlabeled pill from ch24 and ch28 is the obvious mechanism for Ruth's version, and I suspect the next chapters join them.
+
+Continuity and logic. Ruth says "somebody wrote to my mother when i was six", but the letter in ch3 was addressed to Chloe herself, and the book made a point of it ("Miss Chloe Kessler"); Sam says his grandmother nearly binned his, which also does not say who it was addressed to. The letters may have varied, but the book should keep the explicit difference. "About a year" in the chat does not quite fit a timeline where the professor episode is in spring 2024 and her statistics start in autumn 2024; at the same time, in ch27 (May 2024) she answered Nadia's hiring complaint with "thats a hiring pool problem", then here she says that was the real assessment. Her silence of six months (April to October 2025) is consistent with ch28 and ch29. The chapter lists three posted statistics; ch28 shows four (a fight question too).
+
+Facts so far:
+- Ruth at MIT from October 2023; believed she was in a remedial track; professor episode spring 2024.
+- Ruth posted stats Sept 2024 to April 2025, stopped, and returned in October/November 2025 with the claim that the group is "not the same kind of thing."
+- Sam's grandmother nearly binned his letter; Ruth was six when she was picked.
+- Ruth finished in the bottom third of an advanced Portuguese course for native speakers.
+
+## Chapter 32: The Money
+
+November 2025 to February 2026. The friends investigate the school's funding as a long background project ("The financial one takes sixteen weeks"). Eli builds a slow, boring program disguised as a reconciliation job that follows money; Kavi builds a watcher that notices when it starts to look like a person who found something; they test it against Nadia's shop's live books for a month. Two months of data produce "a shape", a single stream of decisions from about 1998 or 2001 in many currencies. Ruth argues, from presence rather than absence, that it is one man: gaps of three to five days with nothing happening ("committees dont get flu"), a seven-hour daily decision band that drifts about forty minutes in two decades ("thats a person getting older"), and a consistent preference since 2003 for the slightly worse of two instruments. She puts her confidence at 99.99. Eli checks and agrees. Theo then tells the chat what is in the file: the government has had a file since 2013, thinks the funder is a state or a company, put a man on staff when they were eleven, and eight years ago sent four people over the fence at four in the morning "and four of us put them on the floor." Chloe, now weeks into her government job, says it was a drill; Theo says "it wasnt a drill. i read the file." She asks "which four". Eli ends the chapter: "so lets go and read it."
+
+This chapter is almost all chat and exposition, and it works because the three-point argument is genuinely clever and in character: Ruth's "arguing from presence" is the best use of her yet, and Eli's "i needed it to not be true for an hour and it wouldnt do that for me" is a good beat. The theme of "show the reasoning" is turned from a weakness into the group's strength: Ruth builds a proof they all can check. The idea that a single aging man funds the school ties up Halstead's untraceable funding in a way that fits the file's two wrong guesses (state, company).
+
+What I question. The group moves from Ruth's wish to know "why it was me" (ch31) to a sixteen-week financial trace with no scene in which they decide to do it, so the chapter's first sentence, "The financial one", reads as if another investigation was already agreed. The plan is also plainly illegal: Eli and Kavi build a worm that moves through financial systems for twenty years of records and test it on Nadia's shop's live accounts; Theo breaks a classification and tells a chat; Chloe is a trainee in the federal service weeks after clearance. The book does not let Chloe or Theo feel any risk beyond Eli's door lock. If the chat is trusted because its encryption was built by teenagers (ch16), that trust is the book's, and the oath Chloe will take in August is not weighed against it.
+
+Continuity. Chloe's "that was a drill" is odd given she privately wondered in ch15 whether it was real; it reads as someone who has settled the question in the safe direction. Theo already knew in ch29 that the four were Chloe's, so his "want to check the file again" before naming them is a delay, not ignorance. Funding decisions from about 1998 or 2001 predate Halstead's start (about 2008, per ch3) and fit a private backer. "They put a man on staff when we were eleven" gives an age the file in ch29 did not. Kavi has a "regular teaching load" and a lab "he's had since he stayed on", so he is still on Halstead's staff while he runs software from there. Eli's night is "in Ohio" (earlier he was only "a long way from where he grew up").
+
+Facts so far:
+- Nov 2025 to Feb 2026: Eli (builder) and Kavi (watcher) build a financial tracer; Ruth argues from three points that one man is behind the funding; her number is 99.99.
+- The man's decisions begin around 1998 or 2001 and show a daily seven-hour band that drifts about forty minutes.
+- Theo reveals the file's contents; Chloe asks "which four".
+- Chloe is "weeks into the job" (January 2026).
+- Eli: "so lets go and read it."
+
+## Chapter 33: The Other One
+
+May to June 2026. Eli proposes a second, riskier plan to get at the government's file on Halstead. Theo refuses, stays quiet for days, then agrees; the book tells his change of mind in one summary paragraph instead of dramatizing it. The chat argues about the legal danger, and Nadia insists that only the two people doing the technical work should carry the blame. Because Theo cannot put his name on anything, Chloe writes the group's ground rules, and all seven sign. Chloe turns twenty-one in August, two months after finishing the document. The chapter ends with the note that she holds a clearance and is about to spend it.
+
+Story reaction: this is a setup chapter, mostly chat, and it does its job of pulling the ensemble toward one goal. The ground-rules document is a good character idea, since it turns Chloe's old habit of anticipating the marker's reading into a protective habit for the group, and Nadia's and Ruth's argument over whether stopping should require a reason fits both of them. One line in her rules sets up a later moment where someone must decide whether an odd signal counts as real; I expect that to pay off in the next chapters.
+
+Concerns. Chloe's decision is unearned. She is the book's rule-follower (she wrote Marek's failing mark in ch16 because the rule left one option), she is days from a federal oath, and the cost of her choice is dismissed in one sentence ("about as long as it takes a light to change"). Theo's reversal is also summarized, not shown. The chat's trust in its home-made encryption carries a lot of weight. No new contradictions found; Chloe's August birthday and twenty-first year fit the earlier dates, and Ruth's old device from ch16 is correctly remembered.
+
+Facts so far:
+- May to June 2026: the group agrees on a second, illegal effort; Eli and Kavi do the technical work, Chloe writes the rules, Theo cannot be named.
+- All seven sign; Theo signs last.
+- Chloe turns twenty-one in August 2026.
+
+## Chapter 34: The Files
+
+June 2026. The seven friends read the government's files on Halstead, each alone in a different place. There is a file on every one of the ninety-one graduates, opened in 2013, with a photograph of the building, personal details, and a standing line that the graduates are believed to be in contact with one another, with collection against their channel failing every time. Sam's file is the thickest. Theo finds a name in his own file that he already knows and will not tell Sam whose. Kavi's margin carries one repeated word, "continuity". The big item is an incident report from four years earlier: the night in ch20 (the diner, the shopping cart, the seven men, three guns, twenty-two seconds). The report says all camera footage of the students was unrecoverable while everything else was intact, and that the government team's own recordings of that night are gone too. Ruth realizes the home-made device she built at thirteen, "in about a weekend... it wasnt even hard", defeated a federal observation team she did not know existed. She asks the group "how good are we" and Eli says "i have never once been at the top of a room in my life." Chloe answers only "were about to find out."
+
+This is a strong payoff chapter. It connects Ruth's ch16 box and the ch20 sneak-out directly, and it lands the book's theme: the people who thought they were middling find that an outside team with real resources could not see them. Ruth's reaction (she kept saying "we're ahead" as a sentence she knew but had not accepted) is exactly her, and it follows from ch31 without repeating it. Eli's line is the best small beat in the chapter. The file also confirms what ch29 implied, that the government has been observing the school for thirteen years and knows almost nothing about how it picks children ("contact with the family went no further than the one letter").
+
+Questions and slips. Two of the seven men told the investigators they were told afterward that the fight "had been sloppy and needed more practice." That strongly suggests the muggers in ch20 were part of a school-run test, which the book has kept ambiguous since the chat in ch20; the report leaves it open, but it is the first hard evidence. In the chat, Sam asks "is that the one where you lost a shoe" and Chloe says yes; ch20 has no lost shoe, only Chloe's laces still knotted, so this is a new detail or an error. "Four years back" matches June 2022 to June 2026. The files are on all ninety-one graduates, but ch29's box held only the school-level file, so the group has reached a wider system; that is fine. The "continuity" margin note on Kavi's file is unexplained and probably pays off. Priya is not among the seven, and nothing says where she is now, though her two years abroad (ch23) would have ended in June 2025.
+
+Open threads added: whose name is in Theo's file; what "continuity" means for Kavi; who briefed the seven men; whether the file's hold on the group ("believed to be in contact") changes anything now that they have read it.
+
+Facts so far:
+- June 2026: all seven read the files; there are files on all ninety-one graduates, opened in 2013.
+- The ch20 incident is in the file as "four years back": twenty-two seconds, no footage of the students recoverable.
+- Ruth built her device at thirteen in a weekend.
+- Theo's file contains a name he already knows; he refuses to say whose.
+
+## Chapter 35: Nine Minutes
+
+June to July 2026. The friends' earlier money-tracing program, which has run quietly since winter, misses a check-in for exactly nine minutes, then reports normal, with no trace of the gap in any of three independent logs, including Kavi's watcher. It happens twice more over six weeks, the second time again for exactly nine minutes. Eli says someone stopped and restarted it and cleaned up perfectly; Kavi says only something built to look for it could see the gap; Chloe says whoever did it could have killed it and gave it back, so it is a message ("hes telling us hes there"); Eli says no, "hes very slightly wrong about how good we are". The group agrees to do nothing visible, keep running it, and let Kavi sharpen the watcher. Theo asks how many mistakes the unknown party made that they did not catch. Ruth rereads the stop clause and holds that "he doesnt know we know" is all they have. Chloe tells Ruth to watch the chat that night and goes to sleep; the next day she texts Ruth to ask if "the night held."
+
+This works as a slow-burn thriller beat: the reader and the characters have only a number (nine) and two readings. It also grows the antagonist, since Ruth's ch32 argument that the money belongs to one man now gets an observer on the other end, and Eli's reading ("he made a mistake") and Chloe's reading ("he's telling us") are in character: Eli is a technician who thinks in options, Chloe thinks about how a reader reads. The stop clause Chloe wrote in ch33 is now being reread by Ruth, so the setup pays off the way I expected.
+
+Problems. The rules document in ch33 was written for the second effort (the government file), but here its "noticed" definition and stop clause are applied to the earlier money-tracing program. The page-five definition quoted here ("an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy") is also much broader than the ch33 definition, which was a specific confirmable event (a name called, an account frozen, a stranger at a door) and explicitly excluded blips that settle again. Under the ch35 wording, nine unexplained minutes is arguably "noticed", and the group never argues the point; either the document was revised or the book forgot. Ruth's line "why hasnt anybody already used this" is unclear in context. The chapter ends on a hush, with Chloe asleep through whatever happens that night; I expect the next chapter to show it, and it will not be a fair outcome if Chloe's absence is the cost of her trusting Ruth.
+
+Facts so far:
+- June to July 2026: the money-tracing program has three nine-minute gaps (first Thursday of June; second Tuesday of July; a hot afternoon later in July).
+- Eli says if it were the government "we would be in custody."
+- The group's plan is to do nothing visible; Kavi tightens sampling.
+- Chloe is "months into the job"; Sam is deployed somewhere hot.
+
+## Chapter 36: Seventy-Five
+
+October 2026. Priya, still abroad and silent for days, reports in the chat that since March people have repeatedly tried to take her: two men in a van, then six in May, about a dozen in July, and on a Tuesday night seventy-five. They were all competent only at the level of thirteen- and fourteen-year-olds, with one good fifteen, and nothing advanced. They carried guns but left them alone until she was thirty in, and used sedative darts, one of which hit her; she has a hand that will not close fully. She took two guns from the grass, disabled two vehicles, and now holds two sleeping men in a room over a feed merchant's. They say they are American and "agency" and will not say which; their stories disagree; both say they came for her by name off a list. Chloe tells her about the file. Ruth argues Priya is in the top ten percent of people alive; Priya says she finished sixty-fourth of ninety-one, bottom third four years running. Ruth works out seventy-five people at arm's length is about a hundred and ten meters and starts listing the other friends' addresses and their distance from the nearest road. Chloe uses her work access to run a search on an intake form number Theo sent. The chapter closes with Priya at a fence waiting on a mare.
+
+As an ending this is a escalation, not a resolution. Its best idea is that the attackers are weak in the same way the 2017 men and the 2022 muggers were: good enough for a thirteen-year-old's practice, and each wave larger and more expensive than the last ("seventy-five"). That fits Kavi's "it escalates every year" and the major's "difficulty is set above you" in ch26. The reader now has three independent signals (the nine-minute gaps, the over-staged attackers, the army folder) of one patient hand setting increasingly large tests, and I believe the book is building to the funder. Priya is also a good choice for the last viewpoint: the one who finished sixty-fourth is the one who survives seventy-five, which punctures the ranking system that has run the whole book.
+
+Concerns. Two government employees (Chloe and Theo) hear that a friend is holding two captives abroad and respond with an intake form number and a quiet database search; the book treats this as normal because the chat has always left things alone, but the stakes for Chloe's career, her oath (August 2026), and the ethics of the kidnapping are not weighed. Priya quotes Chloe's slur from ch20 ("chloe said they were retarded") although Priya was not at the sneak-out; she could have heard it later, but the book does not say so. The chat is now "the eight of them" and the book is still treating the file as news to Priya, though ch34 did not include her. The date line "October 2026" is consistent with three years since she left (June 2023). The chapter ends mid-crisis, with no sign of how any thread resolves.
+
+Facts so far:
+- October 2026: Priya has faced repeated attempts to seize her since March 2026: 2, 6, about 12, then 75.
+- She holds two American men who say "agency"; she was darted and has a damaged hand.
+- Priya finished 64 of 91 in her year; Ruth says top ten percent of people alive.
+- Chloe is nine months into the job; Eli, Kavi, Nadia, Sam, Theo, Ruth all still in the chat.
+
+## Whole book
+
+Open threads that never closed
+- The white pill (ch24, ch28): its contents are "internal", Nadia found three supplier names, and Chloe somehow has a supply in ch28. It is never resolved and is probably the key to Ruth's claim in ch31 that the graduates are "not the same kind of thing".
+- Chloe's range plateau at "point six" (ch18) is never explained. My guess was her ordinary processing speed from ch2 (a lovely long payoff if it was meant), but the book never says; Delacroix's "look past the pole" (ch19) looks like a clue that was never used.
+- Ruth's question of why she was picked at six (ch31), and Chloe's counter-evidence (ch2 shows Chloe tested at the top before Halstead). The graying-beard man who "sits on a chair the same size as hers" in ch9, who matches Dr. Prentice in ch2, is never identified, and nobody asks Prentice how Halstead got the list.
+- Whose name is in Theo's file (ch34); Kavi's repeated margin note "continuity" (ch34); Kavi's lit third-floor window (ch20); Sam's "different" elective sheet (ch12); the "water thing" (ch5, ch10); Bell's promised breakfast (ch14).
+- Marek's failure: ch16 promised the cost "stays outside her reach for years", and nothing follows.
+- Chloe's name on the next research agreement (ch18) was answered with "I'll ask" and dropped; Dr. Sandoval's federal project, the thirteen hired students on badge floors (ch22), and who the "federal agreement" was with, against ch29's "funding cannot be traced".
+- Sam's Army file, the counterintelligence report and the mental-health referral (ch25 to ch26), and "a woman well above the captain" with an old folder.
+- Who briefed the seven muggers (ch20, ch34: they were "told this had been sloppy and needed more practice"); who made the nine-minute gaps (ch35); who sent the seventy-five (ch36); the benefactor, one aging man (ch32).
+- Her father's answer to "did you and mom ever want me to stay" (ch19), Dr. Ammons after ch9, Hanley's filings dying in July (ch27), Fen, Ellie Peterson, and Priya's two prisoners.
+- The Foreign Service plan: Chloe is sworn in at twenty-one in August 2026 (ch30), but no oath is shown, and no consequence of her chat activity is shown.
+
+Contradictions and continuity errors found
+- ch6 vs ch7: ch6 has Sam say "see you at the thing in the fall" and Kavi shake Chloe's hand at departure; ch7 opens "Sam left early" and Kavi is "gone".
+- ch7 has Chloe say "Mrs. Prahl kept ours on the windowsill" about the camp bridge; ch8 introduces Mrs. Prahl as the local enrichment teacher.
+- Camp size: "over a hundred" (ch3, ch4) vs "of the ninety who were at camp" (ch10); the year later has exactly ninety-one, which fits ch21 but not ch10's "twenty-some came back".
+- Owen left on Tuesday of week two (ch5) but on "the Saturday" per Kavi (ch10).
+- ch11: Chloe cites "two in the morning once, in December" at school before she had been there a December; Meg says "she has never fought me, not once" after ch8's "I hate you"; Okonkwo walked them "the April before she started" though ch9 and ch10 are the same April.
+- ch12 has a girl clear the climbing wall first; ch17 says Sam is "the only person who's ever got over that wall".
+- ch18: Chloe "has never heard the name" Aurel yet says she has spoken to him four times.
+- Driving: ch18 puts her father's lessons in July 2021 with school driving "next year", ch19 puts school driving in 2022-23 and the church lot "the previous July".
+- ch22: thirteen yes plus eighty no is ninety-three, not ninety-one; Amberg tells Nadia "Eighty people have sat in that chair" on the Thursday of the first week.
+- ch24: Nadia tells the bank she holds nearly $20,000; in the chat she has $1,200 for three months.
+- ch27: Nadia says "half of last night" about a call made a week earlier.
+- ch23 says Theo's desk photo is the graduation snapshot; ch29 says it is a dated "class photo" in winter light.
+- ch31: Ruth says someone "wrote to my mother"; ch3's letter was addressed to Chloe herself.
+- ch33 vs ch35: the "noticed" definition (a specific confirmable event, not a blip) vs the broader quoted clause, and the rules were written for the second effort but are applied to the first.
+- ch34: "lost a shoe" appears nowhere in ch20.
+- ch25 vs ch23: Sam chose the Army because it does not cap the fitness score, yet the Army test is capped at 600 and the cap bothers him.
+- ch30 vs ch23: the six Foreign Service stages with "open-ended timelines" are compressed to four months, with two stages missing.
+- Out-of-voice slur by Chloe in ch20, repeated by Priya in ch36.
+- Timeline loose ends: no mention of the pandemic across ch17 to ch19; Voss's "six years running" (ch18) vs "the first graduation" (ch23); ch30's Arabic, Korean and Swahili never shown.
+
+Strongest structural choices
+- Chapters 1 to 3: the school misreads a gifted child, the evaluation says "good" will not move anyone, and the letter arrives with her own name on it. The "nobody was mean" thread and the library arc (four at a time to a card-free library in ch10) are the best long payoff in the book.
+- Reflective callbacks: the "a hold" thread (house in ch9, silence in ch17), the 2012 letter named by her mother in ch22, Marek's blank sheets feeding Chloe's failed bar (ch19) and then her Deb scenes (ch28).
+- The ch29 reveal that the 2017 drill was real, with the report matching ch15 detail for detail, and ch34's link to the 2022 diner and Ruth's box.
+- Moving the viewpoint to Sam, Nadia, Theo and Ruth in ch24 to ch36, and using the chat as a form.
+
+Weakest structural choices
+- Chapters 11 to 18 are catalogue years: many classes, little change; the Bex credit-taking and Iyad gossip patterns repeat five to six times each.
+- The Foreign Service goal arrives suddenly (ch23), and Chloe's decision to join an illegal effort while about to be sworn is dismissed in one sentence (ch33).
+- Chloe's role shrinks in the last third: three chapters without her (ch25 to ch27), then she mostly reads, writes rules, and sleeps through the crucial night in ch35.
+- The heist and tracing chapters (ch32 to ch35) treat serious crimes casually, and the decision scenes (agreeing to the investigation, Theo's reversal) are summarized.
+- The book ends in escalation with no resolution; ch36 ends on a mare.
+
+Characters who work
+- Chloe through ch22 (she wants and chooses: the library, the bike deal, the letter, saying no to the offer). Meg and Dave: Meg's vigilance and Dave's silent concealments are a consistent pair. Ruth, Sam, Nadia, Kavi are distinct and grow (Ruth from corrector to someone who cannot say it; Sam from needing a test to being the leak; Nadia the best secondary; Kavi the model of understated competence). Marek, Hearn, Ben and Pruitt are good adult figures.
+
+Characters who do not
+- Bex and Iyad are functions (credit-taker and gossip) for far too long. Mrs. Okonkwo, Amberg and Sinclair are mostly roles. Theo and Eli are thin, and Odile and Priya are used for events. Chloe from ch28 on is more competent than she is shown wanting anything.
