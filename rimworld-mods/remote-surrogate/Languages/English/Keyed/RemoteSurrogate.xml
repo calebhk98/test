@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RS_SettingsCategory>Remote Surrogate</RS_SettingsCategory>
+  <RS_SetSkillFraction>Surrogate skill level, as a share of the operator's: {0}</RS_SetSkillFraction>
+  <RS_SetXpShare>Share of experience the surrogate earns that goes to the operator: {0}</RS_SetXpShare>
+  <RS_SetCooldown>Pod recharge time after a lost body, in days: {0}</RS_SetCooldown>
+  <RS_SetGrace>Power outage grace period before the link drops: {0} ticks ({1} hours)</RS_SetGrace>
+  <RS_SetStun>Stun on waking after a lost link: {0} ticks ({1} seconds)</RS_SetStun>
+  <RS_SurrogateNick>{0} (remote)</RS_SurrogateNick>
+  <RS_CantSurrogate>A remote body cannot use a link pod.</RS_CantSurrogate>
+  <RS_PodOccupied>pod in use</RS_PodOccupied>
+  <RS_PodRecharging>Pod recharging: {0}</RS_PodRecharging>
+  <RS_EnterPod>Link in to remote body</RS_EnterPod>
+  <RS_LinkEstablished>{0} is now linked to a remote body.</RS_LinkEstablished>
+  <RS_LinkFailed>The link pod could not start the link.</RS_LinkFailed>
+  <RS_LetterBodyLost>{0}'s remote body was destroyed. They woke up in the pod, shaken.</RS_LetterBodyLost>
+  <RS_LetterPowerLost>{0}'s link was cut off and they were thrown out of the pod.</RS_LetterPowerLost>
+  <RS_LetterPodDestroyed>The link pod was destroyed. {0} was thrown out, shaken.</RS_LetterPodDestroyed>
+  <RS_PowerWarning>A link pod has lost power. The link will drop if power is not restored soon.</RS_PowerWarning>
+  <RS_Disconnect>Disconnect</RS_Disconnect>
+  <RS_DisconnectDesc>End the link safely. The remote body is shut down and the operator wakes up with no ill effects.</RS_DisconnectDesc>
+  <RS_InspectLinked>Linked: {0}</RS_InspectLinked>
+  <RS_InspectPowerGrace>No power. Link drops in {0}.</RS_InspectPowerGrace>
+  <RS_InspectReady>Ready.</RS_InspectReady>
+</LanguageData>
