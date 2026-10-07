@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>TraitTowerResearch</defName>
+    <label>trait tower</label>
+    <description>Build a powered tower that slowly reshapes the temperament of the people near it.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>6.0</researchViewX>
+    <researchViewY>6.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef>
+    <defName>TraitTower</defName>
+    <label>trait tower</label>
+    <description>A powered tower that hums over its surroundings. Colonists who spend time near it have a small chance each day to gain a good trait or lose a bad one. A switch on the building reverses this, so it adds bad traits and removes good ones. Which traits count as good or bad can be changed in the mod settings.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>TraitTower/TraitTower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Misc</designationCategory>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>TraitTowerResearch</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Gold>40</Gold>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="TraitTower.CompProperties_TraitTower">
+        <thoughtGood>TraitTower_ChangedForBetter</thoughtGood>
+        <thoughtBad>TraitTower_ChangedForWorse</thoughtBad>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>TraitTower_ChangedForBetter</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>feeling different</label>
+        <description>Something about me has shifted since I started spending time near the tower. It feels like an improvement.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TraitTower_ChangedForWorse</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>feeling off</label>
+        <description>Something about me has shifted since I started spending time near the tower. I do not like it.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
