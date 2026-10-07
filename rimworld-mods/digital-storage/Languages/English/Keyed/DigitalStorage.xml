@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DS_SettingsCategory>Digital Storage</DS_SettingsCategory>
+  <DS_SetRange>Wireless network range (cells): {0}</DS_SetRange>
+  <DS_SetBills>Count network items in "do until X" bills</DS_SetBills>
+  <DS_SetBillsTip>Bills that make a product will see items stored in online cores and stop when enough exist.</DS_SetBillsTip>
+  <DS_SetPerish>Allow perishable items</DS_SetPerish>
+  <DS_SetPerishTip>Stored items do not tick, so food stored in a core does not rot. Turn this off to refuse perishable items.</DS_SetPerishTip>
+  <DS_SetSpill>Max stacks dropped when a core is destroyed (the rest is lost): {0}</DS_SetSpill>
+  <DS_TabContents>Contents</DS_TabContents>
+  <DS_Online>Network online</DS_Online>
+  <DS_Offline>Network down: no power</DS_Offline>
+  <DS_Connected>Connected to a storage core.</DS_Connected>
+  <DS_NoCore>No powered storage core in range.</DS_NoCore>
+  <DS_ItemsLine>Items: {0} / {1}</DS_ItemsLine>
+  <DS_TypesLine>Item types: {0} / {1}</DS_TypesLine>
+  <DS_DrivesLine>Drives: {0} / {1}</DS_DrivesLine>
+  <DS_Empty>Nothing stored.</DS_Empty>
+  <DS_InsertDrive>Insert drive</DS_InsertDrive>
+  <DS_InsertDriveDesc>Choose a data drive on the map. A colonist carries it to the core and slots it in.</DS_InsertDriveDesc>
+  <DS_EjectDrive>Eject drive</DS_EjectDrive>
+  <DS_EjectDriveDesc>Remove a drive. Only possible if the remaining drives can still hold everything stored.</DS_EjectDriveDesc>
+  <DS_NoFreeSlot>All drive slots are full.</DS_NoFreeSlot>
+  <DS_NoDriveOnMap>No usable data drive on the map.</DS_NoDriveOnMap>
+  <DS_NoPawn>No colonist can reach both the drive and the core.</DS_NoPawn>
+  <DS_NoDrives>No drives inserted.</DS_NoDrives>
+  <DS_CannotEject>Cannot eject: the remaining drives could not hold the stored items or item types.</DS_CannotEject>
+</LanguageData>

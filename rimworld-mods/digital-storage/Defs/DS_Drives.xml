@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="DS_DriveBase" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <useHitPoints>true</useHitPoints>
+    <pathCost>14</pathCost>
+    <tickerType>Never</tickerType>
+    <stackLimit>1</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>DS_Drives</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6,0.6)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Mass>0.3</Mass>
+      <Flammability>0.3</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="DS_DriveBase">
+    <defName>DS_DriveSmall</defName>
+    <label>data drive (small)</label>
+    <description>A data drive for a storage core. Adds room for 10 item types and 2,000 items.</description>
+    <graphicData>
+      <texPath>Things/Item/DS_DriveSmall</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>150</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <modExtensions>
+      <li Class="DigitalStorage.DriveExtension">
+        <itemTypes>10</itemTypes>
+        <totalItems>2000</totalItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DS_DriveBase">
+    <defName>DS_DriveMedium</defName>
+    <label>data drive (medium)</label>
+    <description>A data drive for a storage core. Adds room for 25 item types and 8,000 items.</description>
+    <graphicData>
+      <texPath>Things/Item/DS_DriveMedium</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>420</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Gold>10</Gold>
+    </costList>
+    <modExtensions>
+      <li Class="DigitalStorage.DriveExtension">
+        <itemTypes>25</itemTypes>
+        <totalItems>8000</totalItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="DS_DriveBase">
+    <defName>DS_DriveLarge</defName>
+    <label>data drive (large)</label>
+    <description>A data drive for a storage core. Adds room for 60 item types and 30,000 items.</description>
+    <graphicData>
+      <texPath>Things/Item/DS_DriveLarge</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Gold>30</Gold>
+    </costList>
+    <modExtensions>
+      <li Class="DigitalStorage.DriveExtension">
+        <itemTypes>60</itemTypes>
+        <totalItems>30000</totalItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <RecipeDef Name="DS_DriveRecipeBase" Abstract="True">
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <researchPrerequisite>DS_DigitalStorage</researchPrerequisite>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DS_DriveRecipeBase">
+    <defName>DS_Make_DriveSmall</defName>
+    <label>make small data drive</label>
+    <description>Make a small data drive.</description>
+    <jobString>Making small data drive.</jobString>
+    <workAmount>1600</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>30</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs>
+    </fixedIngredientFilter>
+    <products><DS_DriveSmall>1</DS_DriveSmall></products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DS_DriveRecipeBase">
+    <defName>DS_Make_DriveMedium</defName>
+    <label>make medium data drive</label>
+    <description>Make a medium data drive.</description>
+    <jobString>Making medium data drive.</jobString>
+    <workAmount>2800</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>50</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>5</count></li>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>10</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>Steel</li><li>ComponentIndustrial</li><li>Gold</li></thingDefs>
+    </fixedIngredientFilter>
+    <products><DS_DriveMedium>1</DS_DriveMedium></products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DS_DriveRecipeBase">
+    <defName>DS_Make_DriveLarge</defName>
+    <label>make large data drive</label>
+    <description>Make a large data drive.</description>
+    <jobString>Making large data drive.</jobString>
+    <workAmount>4800</workAmount>
+    <skillRequirements><Crafting>8</Crafting></skillRequirements>
+    <ingredients>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>30</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>Plasteel</li><li>ComponentSpacer</li><li>Gold</li></thingDefs>
+    </fixedIngredientFilter>
+    <products><DS_DriveLarge>1</DS_DriveLarge></products>
+  </RecipeDef>
+
+</Defs>

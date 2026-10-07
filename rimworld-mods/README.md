@@ -14,6 +14,11 @@ Each folder here is its own mod, laid out the way RimWorld loads one:
 
 All of them target RimWorld 1.6 and depend on Harmony.
 
+Built (first versions, compiled but not yet run in the game): every mod below
+except the three on hold. Each mod's README has Status, Decisions, Unverified
+and Not done sections; the Unverified list is what to watch for in the first
+playtest.
+
 On hold: `room-optimizer/` (existing code elsewhere), `task-ordering/` and
 `job-subtasks/` (checking Fluffy's Work Tab first).
 
