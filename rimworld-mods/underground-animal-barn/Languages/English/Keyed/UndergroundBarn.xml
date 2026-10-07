@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <UB_SettingsTitle>Underground Animal Barn</UB_SettingsTitle>
+  <UB_SetInterval>Herd update interval: {0} ticks ({1} hours). Longer is cheaper.</UB_SetInterval>
+  <UB_SetCapacity>Animals per barn: {0}</UB_SetCapacity>
+  <UB_SetRequirePower>Breeding and production need power</UB_SetRequirePower>
+  <UB_SetRequirePowerTip>Animals always eat, even without power. Only breeding and products stop.</UB_SetRequirePowerTip>
+  <UB_SetAgeing>Stored animals age</UB_SetAgeing>
+  <UB_SetBreeding>Stored animals breed</UB_SetBreeding>
+  <UB_SetProducts>Stored animals produce milk, wool and eggs</UB_SetProducts>
+  <UB_SetAllowBonded>Allow bonded animals</UB_SetAllowBonded>
+  <UB_SetAllowBondedTip>Off by default so a colonist's bonded animal is not lost down the hatch.</UB_SetAllowBondedTip>
+  <UB_SetFemalesPerMale>Females one male covers: {0}</UB_SetFemalesPerMale>
+  <UB_SetRestDays>Rest days between births (added to gestation): {0}</UB_SetRestDays>
+  <UB_SetCullEfficiency>Meat and leather from culling: {0}%</UB_SetCullEfficiency>
+  <UB_SetFeedRadius>Food search radius around the barn: {0} cells</UB_SetFeedRadius>
+  <UB_SetStarvation>Starvation speed: x{0}</UB_SetStarvation>
+  <UB_SetReset>Reset to defaults</UB_SetReset>
+
+  <UB_NotYourAnimal>Only tame animals of your colony can be stored.</UB_NotYourAnimal>
+  <UB_Bonded>Bonded animals are not allowed in the barn (see mod settings).</UB_Bonded>
+  <UB_BarnFull>The barn is full.</UB_BarnFull>
+
+  <UB_Stored>Stored animals: {0} / {1}</UB_Stored>
+  <UB_Fed>Herd fed: {0}%</UB_Fed>
+  <UB_NextUpdate>Next herd update in {0}</UB_NextUpdate>
+  <UB_NoPower>No power: not breeding or producing.</UB_NoPower>
+  <UB_CullInfo>Culls above {0} per kind.</UB_CullInfo>
+  <UB_LastReport>Last update: {0} born, {1} culled, {2} starved.</UB_LastReport>
+  <UB_StarvedMessage>{0} animals starved in the underground barn. Put food near the hatch.</UB_StarvedMessage>
+  <UB_Off>off</UB_Off>
+
+  <UB_GizmoStore>Store animals</UB_GizmoStore>
+  <UB_GizmoStoreDesc>Click animals to have a handler carry them into the barn. Right-click to stop.</UB_GizmoStoreDesc>
+  <UB_GizmoStoreKind>Store a whole kind</UB_GizmoStoreKind>
+  <UB_GizmoStoreKindDesc>Choose a kind of animal and mark every one of them on this map for storing.</UB_GizmoStoreKindDesc>
+  <UB_StoreKindOption>{0} ({1})</UB_StoreKindOption>
+  <UB_NoAnimals>No tame animals on this map</UB_NoAnimals>
+  <UB_Designated>Marked {0} {1} for the barn.</UB_Designated>
+  <UB_GizmoCancel>Cancel storing</UB_GizmoCancel>
+  <UB_GizmoCancelDesc>Cancel every animal still waiting to be carried to a barn.</UB_GizmoCancelDesc>
+  <UB_GizmoRelease>Release animals</UB_GizmoRelease>
+  <UB_GizmoReleaseDesc>Let some or all stored animals out of the hatch.</UB_GizmoReleaseDesc>
+  <UB_ReleaseAll>All animals ({0})</UB_ReleaseAll>
+  <UB_ReleaseKind>{0} ({1})</UB_ReleaseKind>
+  <UB_ReleaseCount>Release {0} animals</UB_ReleaseCount>
+  <UB_Released>Released {0} animals.</UB_Released>
+  <UB_GizmoCull>Auto-cull</UB_GizmoCull>
+  <UB_GizmoCullDesc>Slaughter animals above a herd size, per kind, at each herd update. Gives meat and leather. Never culls bonded or named animals. Currently: {0}.</UB_GizmoCullDesc>
+  <UB_CullOff>Auto-cull off</UB_CullOff>
+  <UB_CullSetTo>Cull above {0} per kind</UB_CullSetTo>
+</LanguageData>
