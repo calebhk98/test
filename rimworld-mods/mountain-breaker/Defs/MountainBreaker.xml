@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- The handheld launcher. Self-contained: no vanilla parent def. -->
+  <ThingDef>
+    <defName>MB_MountainBreaker</defName>
+    <label>mountain breaker</label>
+    <description>A high-tech launcher that fires a disintegration charge. Everything natural in the blast is erased: mountain rock, ore veins and the thick overhead mountain roof. Radius and behaviour are set in the mod options.</description>
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Spacer</techLevel>
+    <equipmentType>Primary</equipmentType>
+    <tickerType>Never</tickerType>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <smeltable>false</smeltable>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>MountainBreaker/MountainBreaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>6</Mass>
+      <MarketValue>2500</MarketValue>
+      <Flammability>0.3</Flammability>
+      <WorkToMake>40000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties">
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>MountainBreaker.Verb_ShootMountainBreaker</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MB_MountainBreakerCharge</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>24.9</range>
+        <minRange>3.9</minRange>
+        <burstShotCount>1</burstShotCount>
+        <requireLineOfSight>false</requireLineOfSight>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MB_MountainBreaker</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>MB_MountainBreakerCharge</defName>
+    <label>disintegration charge</label>
+    <category>Projectile</category>
+    <thingClass>MountainBreaker.Projectile_MountainBreaker</thingClass>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>true</neverMultiSelect>
+    <graphicData>
+      <texPath>MountainBreaker/Charge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>40</speed>
+      <soundExplode>Explosion_Bomb</soundExplode>
+    </projectile>
+  </ThingDef>
+
+</Defs>
