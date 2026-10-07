@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AR_SettingsCategory>Adaptive Raiders</AR_SettingsCategory>
+  <AR_EnableStrategy>Raiders switch strategy against kill boxes</AR_EnableStrategy>
+  <AR_EnableStrategyTip>Once a faction has lost enough pawns in one place, its raids are more likely to use sappers, breachers, siege or drop pods.</AR_EnableStrategyTip>
+  <AR_EnablePathing>Raiders path around kill zones</AR_EnablePathing>
+  <AR_EnablePathingTip>Adds extra path cost to cells where the faction's pawns died, so assaulting raiders walk around them when they can.</AR_EnablePathingTip>
+  <AR_IncludeMechs>Mechanoids learn too</AR_IncludeMechs>
+  <AR_IncludeMechsTip>Off by default. Mechanoids are machines on a mission and do not learn.</AR_IncludeMechsTip>
+  <AR_MinDeaths>Deaths in one spot before a faction learns</AR_MinDeaths>
+  <AR_AvoidMin>Chance to avoid at first lesson</AR_AvoidMin>
+  <AR_AvoidMax>Chance to avoid when well learned</AR_AvoidMax>
+  <AR_DropChance>Chance of a drop pod arrival instead of walking in</AR_DropChance>
+  <AR_HalfLife>Days for a lesson to fade by half</AR_HalfLife>
+  <AR_Radius>Radius of heat around each death (cells)</AR_Radius>
+  <AR_PathCost>Path cost per unit of heat</AR_PathCost>
+  <AR_PathMax>Maximum extra path cost per cell</AR_PathMax>
+</LanguageData>
