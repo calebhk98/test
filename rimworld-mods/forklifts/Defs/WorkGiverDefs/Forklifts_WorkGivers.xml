@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>Forklifts_HaulPallet</defName>
+    <label>haul with forklift</label>
+    <giverClass>Forklifts.WorkGiver_ForkliftHaul</giverClass>
+    <workType>Hauling</workType>
+    <verb>haul</verb>
+    <gerund>hauling with a forklift</gerund>
+    <priorityInType>90</priorityInType>
+    <scanThings>true</scanThings>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>
