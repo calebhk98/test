@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ES_Category>Endless Siege</ES_Category>
+  <ES_Enabled>Enable Endless Siege</ES_Enabled>
+  <ES_Mix>Mix of hostile factions</ES_Mix>
+  <ES_MixTip>Off: reinforcements come from the faction of the first raid. On: each wave picks a random hostile faction.</ES_MixTip>
+  <ES_Interval>Hours between waves: {0}</ES_Interval>
+  <ES_Fraction>Wave size, share of normal raid points: {0}</ES_Fraction>
+  <ES_Growth>Wave size growth per siege day: {0}</ES_Growth>
+  <ES_MaxMult>Maximum growth multiplier: {0}</ES_MaxMult>
+  <ES_Cap>Live enemy cap (waves skipped while over it): {0}</ES_Cap>
+  <ES_Cleanup>Remove old enemy corpses</ES_Cleanup>
+  <ES_CleanupTip>Destroys corpses of hostile pawns, with the gear on them, once they are old enough.</ES_CleanupTip>
+  <ES_CorpseHours>Corpse lifetime in hours: {0}</ES_CorpseHours>
+  <ES_QuietEvery>Quiet break after every N waves (0 = never): {0}</ES_QuietEvery>
+  <ES_QuietHours>Quiet break length in hours: {0}</ES_QuietHours>
+  <ES_SurviveDays>Siege ends after N days (0 = never): {0}</ES_SurviveDays>
+  <ES_BeginLabel>The siege begins</ES_BeginLabel>
+  <ES_BeginText>The first raid has arrived, and it will not be the last. More enemies will keep coming. Survive.</ES_BeginText>
+  <ES_SurvivedLabel>The siege is over</ES_SurvivedLabel>
+  <ES_SurvivedText>You held out for {0} days. No more reinforcements will arrive.</ES_SurvivedText>
+</LanguageData>

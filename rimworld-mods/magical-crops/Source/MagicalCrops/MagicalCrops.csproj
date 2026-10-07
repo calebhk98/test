@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Copy to <mod>/Source/<MagicalCrops>/<MagicalCrops>.csproj and replace MagicalCrops. -->
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>MagicalCrops</AssemblyName>
+    <RootNamespace>MagicalCrops</RootNamespace>
+    <OutputPath>../../Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Compile-time only: RimWorld and Harmony are supplied by the game and the Harmony mod. -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.6" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

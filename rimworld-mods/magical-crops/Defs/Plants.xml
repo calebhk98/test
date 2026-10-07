@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_HealrootPlus</defName>
+    <label>healroot+</label>
+    <description>An improved strain of healroot. Slower to grow than the wild kind, but each plant gives more herbal medicine.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/HealrootPlus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>0</Beauty>
+    </statBases>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>9</growDays>
+      <sowMinSkill>8</sowMinSkill>
+      <harvestWork>170</harvestWork>
+      <harvestedThingDef>MedicineHerbal</harvestedThingDef><harvestYield>11</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_MoodBloom</defName>
+    <label>mood bloom</label>
+    <description>Showy blue flowers. Colonists who walk among a field of them feel better. Harvest gives nothing, it is just for looks.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/MoodBloom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>4</Beauty>
+    </statBases>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>6</growDays>
+      <sowMinSkill>4</sowMinSkill>
+      <harvestWork>100</harvestWork>
+      
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_SteelVine</defName>
+    <label>steel vine</label>
+    <description>A grey vine with metallic leaves that draws steel out of the soil. Very slow, so mining is still faster.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/SteelVine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>0</Beauty>
+    </statBases>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>30</growDays>
+      <sowMinSkill>8</sowMinSkill>
+      <harvestWork>250</harvestWork>
+      <harvestedThingDef>Steel</harvestedThingDef><harvestYield>5</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_StoneGourd</defName>
+    <label>stone gourd</label>
+    <description>A heavy gourd that grows a shell of granite. Slow, but gives stone blocks to a colony with no rock.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/StoneGourd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>0</Beauty>
+    </statBases>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>22</growDays>
+      <sowMinSkill>6</sowMinSkill>
+      <harvestWork>220</harvestWork>
+      <harvestedThingDef>BlocksGranite</harvestedThingDef><harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_GlowCap</defName>
+    <label>glow cap</label>
+    <description>A mushroom that glows softly. Grows in the dark and lights its own farm.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/GlowCap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>1</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower"><glowRadius>5</glowRadius><glowColor>(60,200,150,0)</glowColor></li>
+    </comps>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>12</growDays>
+      <sowMinSkill>5</sowMinSkill>
+      <harvestWork>120</harvestWork>
+      <harvestedThingDef>MC_ManaBean</harvestedThingDef><harvestYield>1</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      <growMinGlow>0</growMinGlow><growOptimalGlow>0.2</growOptimalGlow><dieIfNoSunlight>false</dieIfNoSunlight>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_HeatPepper</defName>
+    <label>heat pepper</label>
+    <description>A fiery pepper plant that warms the air around it. Good for cold greenhouses. Inedible.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/HeatPepper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>0</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_HeatPusher"><heatPerSecond>1.5</heatPerSecond><heatPushMaxTemperature>24</heatPushMaxTemperature></li>
+    </comps>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>10</growDays>
+      <sowMinSkill>5</sowMinSkill>
+      <harvestWork>120</harvestWork>
+      <harvestedThingDef>MC_ManaBean</harvestedThingDef><harvestYield>1</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_FrostLily</defName>
+    <label>frost lily</label>
+    <description>A pale lily that is cold to the touch. It cools the air around it. Inedible.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/FrostLily</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>2</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_HeatPusher"><heatPerSecond>-1.5</heatPerSecond><heatPushMinTemperature>16</heatPushMinTemperature></li>
+    </comps>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>10</growDays>
+      <sowMinSkill>5</sowMinSkill>
+      <harvestWork>120</harvestWork>
+      <harvestedThingDef>MC_ManaBean</harvestedThingDef><harvestYield>1</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>MC_Plant_ManaBean</defName>
+    <label>mana bean</label>
+    <description>A bean vine that grows pure magical energy. The beans are a resource for other magic items.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Plants/ManaBean</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>0</Beauty>
+    </statBases>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <growDays>10</growDays>
+      <sowMinSkill>6</sowMinSkill>
+      <harvestWork>150</harvestWork>
+      <harvestedThingDef>MC_ManaBean</harvestedThingDef><harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>MC_MagicalBotany</li>
+      </sowResearchPrerequisites>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <purpose>Misc</purpose>
+      
+    </plant>
+  </ThingDef>
+</Defs>

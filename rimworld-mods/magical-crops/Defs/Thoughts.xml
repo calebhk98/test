@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>MC_PrettyFlowers</defName>
+    <workerClass>MagicalCrops.ThoughtWorker_MoodBloomNearby</workerClass>
+    <stages>
+      <li>
+        <label>pretty flowers</label>
+        <description>A few mood blooms are nodding nearby. Nice.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>field of flowers</label>
+        <description>Mood blooms all around. This is lovely.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>sea of flowers</label>
+        <description>I am standing in a sea of mood blooms. I never want to leave.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

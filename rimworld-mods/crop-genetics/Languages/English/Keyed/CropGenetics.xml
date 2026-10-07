@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CropGenetics_SettingsCategory>Crop Genetics</CropGenetics_SettingsCategory>
+  <CropGenetics_ImproveChance>Chance per harvested plant to improve the strain</CropGenetics_ImproveChance>
+  <CropGenetics_ImproveStep>Size of one improvement</CropGenetics_ImproveStep>
+  <CropGenetics_MutationChance>Chance per harvested plant of a mutation</CropGenetics_MutationChance>
+  <CropGenetics_MutationSize>Largest mutation swing (can be good or bad)</CropGenetics_MutationSize>
+  <CropGenetics_MaxMult>Cap for yield and growth speed</CropGenetics_MaxMult>
+  <CropGenetics_MinMult>Floor for yield and growth speed</CropGenetics_MinMult>
+  <CropGenetics_MaxHardiness>Cap for hardiness</CropGenetics_MaxHardiness>
+  <CropGenetics_ResetSettings>Reset to defaults</CropGenetics_ResetSettings>
+
+  <CropGenetics_StrainSummary>yield {0}, growth {1}, hardiness {2}, generation {3}</CropGenetics_StrainSummary>
+  <CropGenetics_StrainName>Strain #{0} (gen {1})</CropGenetics_StrainName>
+  <CropGenetics_InspectLine>Strain: {0}</CropGenetics_InspectLine>
+  <CropGenetics_StrainGizmo>Strain</CropGenetics_StrainGizmo>
+  <CropGenetics_StrainGizmoDesc>Manage the crop strain of this zone. Harvests can improve or mutate it. Save it to the colony library, or plant a saved strain here.</CropGenetics_StrainGizmoDesc>
+  <CropGenetics_SaveStrain>Save this strain to the library</CropGenetics_SaveStrain>
+  <CropGenetics_ResetStrain>Reset to the base strain</CropGenetics_ResetStrain>
+  <CropGenetics_UseStrain>Use {0} ({1})</CropGenetics_UseStrain>
+  <CropGenetics_Saved>Strain saved to the library.</CropGenetics_Saved>
+</LanguageData>

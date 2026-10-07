@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>MC_MagicalBotany</defName>
+    <label>magical botany</label>
+    <description>Unlock the cultivation of strange crops: healroot+, mood bloom, steel vine, stone gourd, glow cap, heat pepper, frost lily and mana bean.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>6.0</researchViewY>
+  </ResearchProjectDef>
+</Defs>

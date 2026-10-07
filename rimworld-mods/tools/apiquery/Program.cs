@@ -35,6 +35,8 @@ foreach (var t in matches)
         Console.WriteLine($"  field  {Vis(f.IsPublic, f.IsFamily)}{(f.IsStatic ? "static " : "")}{f.FieldType.Name} {f.Name}");
     foreach (var p in t.GetProperties(F).OrderBy(p => p.Name))
         Console.WriteLine($"  prop   {p.PropertyType.Name} {p.Name}");
+    foreach (var c in t.GetConstructors(F))
+        Console.WriteLine($"  ctor   {Vis(c.IsPublic, c.IsFamily)}{t.Name}({string.Join(", ", c.GetParameters().Select(p => p.ParameterType.Name + " " + p.Name))})");
     foreach (var m in t.GetMethods(F).Where(m => !m.IsSpecialName).OrderBy(m => m.Name))
         Console.WriteLine($"  method {Vis(m.IsPublic, m.IsFamily)}{(m.IsVirtual ? "virtual " : "")}{(m.IsStatic ? "static " : "")}{m.ReturnType.Name} {m.Name}({string.Join(", ", m.GetParameters().Select(p => p.ParameterType.Name + " " + p.Name))})");
 }

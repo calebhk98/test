@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>MC_ManaBean</defName>
+    <label>mana bean</label>
+    <description>A glittering bean that hums faintly. Raw magical energy in solid form. Nothing uses it yet, but other magic items could.</description>
+    <graphicData>
+      <texPath>MagicalCrops/Items/ManaBean</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>6</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>
