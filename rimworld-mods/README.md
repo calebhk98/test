@@ -12,9 +12,16 @@ Each folder here is its own mod, laid out the way RimWorld loads one:
   README.md              the design notes for that mod
 ```
 
-All of them target RimWorld 1.6 and depend on Harmony. Each README is a design
-sketch: the idea, how it plugs into the game, and the open questions. None has
-code yet.
+All of them target RimWorld 1.6 and depend on Harmony.
+
+On hold: `room-optimizer/` (existing code elsewhere), `task-ordering/` and
+`job-subtasks/` (checking Fluffy's Work Tab first).
+
+## Author name
+
+The author and the packageId prefix live in `author.config`. Edit it, then run
+`python3 tools/apply_author.py` to stamp every `About/About.xml`. Code never
+hardcodes either: the Harmony id comes from the mod's packageId at runtime.
 
 ## The mods
 
@@ -40,9 +47,20 @@ become one mod. They are kept apart for now because they can ship separately.
 
 ## Building
 
-Each `Source/` will hold a C# class library targeting .NET Framework 4.7.2,
-referencing `Assembly-CSharp.dll` and `UnityEngine.CoreModule.dll` from
-`RimWorldWin64_Data/Managed/` (do not copy them into the repo) and Harmony
-from the `Lib.Harmony` NuGet package with its runtime excluded. The compiled
-DLL goes to `<mod>/Assemblies/`. To test, symlink the mod folder into
-RimWorld's `Mods/` folder.
+Needs the .NET SDK (8 or later). Each mod's C# project is in
+`<mod>/Source/<ModName>/`, made from `tools/Mod.csproj.template`. It targets
+.NET Framework 4.7.2 and compiles against `Krafs.Rimworld.Ref` (RimWorld's
+public API as a NuGet package) and `Lib.Harmony`, so no game install is
+needed to build:
+
+```
+cd <mod>/Source/<ModName> && dotnet build
+```
+
+The DLL lands in `<mod>/Assemblies/` and is committed, so a mod can be tested
+without building. To test, symlink or copy the mod folder into RimWorld's
+`Mods/` folder.
+
+`tools/apiquery.sh <TypeName>` lists a RimWorld type's fields and methods from
+the same reference assemblies, and `tools/apiquery.sh --find <text>` searches
+type names. A Def's public fields are the XML tags it accepts.
