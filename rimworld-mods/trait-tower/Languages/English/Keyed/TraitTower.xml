@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TraitTower_SettingsCategory>Trait Tower</TraitTower_SettingsCategory>
+  <TraitTower_ChancePerDay>Chance per colonist per day: {0}%</TraitTower_ChancePerDay>
+  <TraitTower_ChancePerDayTip>How likely one colonist inside the radius is to have a trait changed during one in-game day.</TraitTower_ChancePerDayTip>
+  <TraitTower_Radius>Tower radius: {0} cells</TraitTower_Radius>
+  <TraitTower_RadiusTip>Colonists closer than this to the tower can be affected.</TraitTower_RadiusTip>
+  <TraitTower_MaxTraits>Trait cap: {0}</TraitTower_MaxTraits>
+  <TraitTower_MaxTraitsTip>A colonist at the cap can only gain a trait by losing one of the opposite kind in the same change.</TraitTower_MaxTraitsTip>
+  <TraitTower_MoodThought>Give a mood thought when a trait changes</TraitTower_MoodThought>
+  <TraitTower_MoodThoughtTip>A small mood bonus (or penalty in reverse mode) that lasts a few days.</TraitTower_MoodThoughtTip>
+  <TraitTower_Messages>Show a message when a trait changes</TraitTower_Messages>
+  <TraitTower_Slaves>Also affect slaves</TraitTower_Slaves>
+  <TraitTower_SlavesTip>Prisoners and guests are never affected.</TraitTower_SlavesTip>
+  <TraitTower_ListHelp>Mark each trait as good, neutral or bad. Neutral traits are never added or removed by the tower.</TraitTower_ListHelp>
+  <TraitTower_Search>Search</TraitTower_Search>
+  <TraitTower_ResetLists>Reset trait lists</TraitTower_ResetLists>
+  <TraitTower_ResetAll>Reset everything</TraitTower_ResetAll>
+  <TraitTower_Good>Good</TraitTower_Good>
+  <TraitTower_Neutral>Neutral</TraitTower_Neutral>
+  <TraitTower_Bad>Bad</TraitTower_Bad>
+  <TraitTower_ReverseLabel>Reverse mode</TraitTower_ReverseLabel>
+  <TraitTower_ReverseDesc>When on, this tower adds bad traits and removes good ones instead.</TraitTower_ReverseDesc>
+  <TraitTower_ModeNormal>adds good, removes bad</TraitTower_ModeNormal>
+  <TraitTower_ModeReverse>adds bad, removes good (reverse)</TraitTower_ModeReverse>
+  <TraitTower_InspectMode>Mode: {0}</TraitTower_InspectMode>
+  <TraitTower_InspectRadius>Radius: {0} cells</TraitTower_InspectRadius>
+  <TraitTower_MsgGained>{0} gained the trait {1}.</TraitTower_MsgGained>
+  <TraitTower_MsgLost>{0} lost the trait {1}.</TraitTower_MsgLost>
+  <TraitTower_MsgSwap>{0} lost the trait {1} and gained {2}.</TraitTower_MsgSwap>
+</LanguageData>

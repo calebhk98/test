@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MB_SettingsCategory>Mountain Breaker</MB_SettingsCategory>
+  <MB_Radius>Blast radius: {0}</MB_Radius>
+  <MB_RadiusTip>Cells around the impact point that lose their rock and overhead mountain roof.</MB_RadiusTip>
+  <MB_DropResources>Drop ore and resources from erased rock</MB_DropResources>
+  <MB_DropResourcesTip>On: a mining tool. Off: everything is vaporised, a terraforming tool.</MB_DropResourcesTip>
+  <MB_YieldPercent>Resource yield: {0}</MB_YieldPercent>
+  <MB_ClearAllRoofs>Also remove built (non-mountain) roofs in the radius</MB_ClearAllRoofs>
+  <MB_ClearAllRoofsTip>Off: only the natural mountain roof is removed.</MB_ClearAllRoofsTip>
+  <MB_BlastDamage>Blast damage to pawns and buildings: {0}</MB_BlastDamage>
+  <MB_BlastDamageTip>0 means the shot is harmless apart from erasing rock and roof.</MB_BlastDamageTip>
+  <MB_CellsPerTick>Cells erased per tick: {0}</MB_CellsPerTick>
+  <MB_CellsPerTickTip>Lower values spread a large blast over more ticks to avoid a hitch.</MB_CellsPerTickTip>
+</LanguageData>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>RS_SurrogateBody</defName>
+    <label>remote body</label>
+    <description>This body is driven remotely from a link pod. It is fragile and slow, needs no food or sleep, and does not panic. If it is lost, the operator wakes up in the pod instead.</description>
+    <hediffClass>RemoteSurrogate.Hediff_SurrogateBody</hediffClass>
+    <defaultLabelColor>(0.55, 0.8, 0.95)</defaultLabelColor>
+    <isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <duplicationAllowed>false</duplicationAllowed>
+    <stages>
+      <li>
+        <becomeVisible>true</becomeVisible>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
+        <statFactors>
+          <MoveSpeed>0.85</MoveSpeed>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+          <IncomingDamageFactor>1.5</IncomingDamageFactor>
+        </statFactors>
+        <disablesNeeds>
+          <li>Food</li>
+          <li>Rest</li>
+          <li>Joy</li>
+        </disablesNeeds>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>RS_DiedRemotely</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>died remotely</label>
+        <description>I felt my other body die. I can still feel it.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RS_LinkSevered</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>link torn away</label>
+        <description>The link was cut with no warning. It felt like falling.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <JobDef>
+    <defName>RS_EnterLinkPod</defName>
+    <driverClass>RemoteSurrogate.JobDriver_EnterLinkPod</driverClass>
+    <reportString>entering link pod.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+</Defs>

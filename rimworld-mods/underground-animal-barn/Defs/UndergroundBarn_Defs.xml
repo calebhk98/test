@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>UB_UndergroundBarn</defName>
+    <label>underground animal barn</label>
+    <description>A hatch and a ramp down to a deep barn. Tame animals carried in here leave the map and are looked after as one herd: they eat from food lying near the hatch, age, breed, and produce milk, wool and eggs, all worked out in one cheap pass every in-game hour instead of animal by animal. Needs power to breed and produce. Animals can be released again at any time.</description>
+    <thingClass>UndergroundBarn.Building_UndergroundBarn</thingClass>
+    <graphicData>
+      <texPath>Things/Building/UndergroundBarn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.5</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <tickerType>Rare</tickerType>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2650</uiOrder>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <costList>
+      <Steel>180</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <DesignationDef>
+    <defName>UB_StoreAnimal</defName>
+    <texturePath>UI/UndergroundBarn/StoreMark</texturePath>
+    <targetType>Thing</targetType>
+  </DesignationDef>
+
+  <JobDef>
+    <defName>UB_StoreAnimalJob</defName>
+    <driverClass>UndergroundBarn.JobDriver_StoreAnimal</driverClass>
+    <reportString>taking TargetA to the barn.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>UB_StoreAnimalsInBarn</defName>
+    <label>store animals in barn</label>
+    <giverClass>UndergroundBarn.WorkGiver_StoreAnimal</giverClass>
+    <workType>Handling</workType>
+    <verb>store</verb>
+    <gerund>storing</gerund>
+    <priorityInType>10</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

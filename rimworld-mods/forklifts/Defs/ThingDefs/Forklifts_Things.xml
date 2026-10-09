@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Pallet: an item that holds several stacks while a forklift operator carries it. -->
+  <ThingDef>
+    <defName>Forklifts_Pallet</defName>
+    <label>pallet</label>
+    <description>A flat steel pallet. A forklift operator lifts it, loads several stacks onto it and unloads them all at the destination in a single trip. It only holds goods while it is being carried.</description>
+    <thingClass>Forklifts.Pallet</thingClass>
+    <category>Item</category>
+    <graphicData>
+      <texPath>Things/Item/Forklifts_Pallet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <pathCost>14</pathCost>
+    <stackLimit>1</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Mass>4</Mass>
+      <WorkToMake>1200</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <workSkill>Crafting</workSkill>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Forklift: option 3 from the design, worn equipment. -->
+  <ThingDef>
+    <defName>Forklifts_Forklift</defName>
+    <label>forklift rig</label>
+    <description>A powered lifting rig strapped over the belt and hips. Its wearer gains a large carrying capacity and is allowed to run pallet hauls: lift a pallet, load many stacks, deliver them all in one trip. Takes the belt slot.</description>
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <graphicData>
+      <texPath>Things/Item/Forklifts_Forklift</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <pathCost>14</pathCost>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <Mass>8</Mass>
+      <WorkToMake>9000</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <equippedStatOffsets>
+      <CarryingCapacity>100</CarryingCapacity>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <workSkill>Crafting</workSkill>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MC_SettingsCategory>Magical Crops</MC_SettingsCategory>
+  <MC_RequireResearch>Require the Magical Botany research to sow</MC_RequireResearch>
+  <MC_RequireResearchTip>If off, all magical crops can be sown from the start.</MC_RequireResearchTip>
+  <MC_YieldMult>Steel vine and stone gourd yield multiplier: {0}</MC_YieldMult>
+  <MC_HeatMult>Heat pepper and frost lily strength multiplier: {0}</MC_HeatMult>
+  <MC_MoodMult>Mood bloom mood effect multiplier: {0}</MC_MoodMult>
+  <MC_BloomRadius>Mood bloom radius in cells: {0}</MC_BloomRadius>
+  <MC_RestartNote>Changes apply to loaded defs when you close this window. Already planted crops keep their progress.</MC_RestartNote>
+</LanguageData>

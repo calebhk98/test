@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DS_Core</defName>
+    <label>storage core</label>
+    <description>The heart of a storage network. Data drives slotted into it set how many item types and items it can hold. Items inside are kept as data and take no map space. Needs power: with no power the network is down and nothing goes in or out. Ports and access points within wireless range join the network.</description>
+    <thingClass>DigitalStorage.Building_DSCore</thingClass>
+    <graphicData>
+      <texPath>Things/Building/DS_Core</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.5</fillPercent>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <tickerType>Rare</tickerType>
+    <designationCategory>DS_Category</designationCategory>
+    <researchPrerequisites><li>DS_DigitalStorage</li></researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>40</Mass>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <inspectorTabs>
+      <li>DigitalStorage.ITab_DSContents</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="DigitalStorage.CoreExtension">
+        <driveSlots>6</driveSlots>
+        <powerPerDrive>50</powerPerDrive>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef Name="DS_StorageBase" ParentName="BuildingBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <surfaceType>Item</surfaceType>
+    <tickerType>Rare</tickerType>
+    <designationCategory>DS_Category</designationCategory>
+    <researchPrerequisites><li>DS_DigitalStorage</li></researchPrerequisites>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="DS_StorageBase">
+    <defName>DS_InputPort</defName>
+    <label>input port</label>
+    <description>A storage building that haulers fill. Anything left in it is absorbed by a powered storage core in wireless range, if the core has room. Raise its storage priority to funnel items in from other stockpiles.</description>
+    <thingClass>DigitalStorage.Building_DSInputPort</thingClass>
+    <graphicData>
+      <texPath>Things/Building/DS_InputPort</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <building>
+      <maxItemsInCell>1</maxItemsInCell>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories><li>Root</li></categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DS_StorageBase">
+    <defName>DS_AccessPoint</defName>
+    <label>access point</label>
+    <description>Brings network items out onto the map. Choose what it provides in its storage settings: each cell is kept stocked with one full stack of an allowed item, refilled from storage cores in wireless range. Pawns build, craft and eat from this stock like from any shelf. Starts with nothing allowed. Stock is refilled every few seconds.</description>
+    <thingClass>DigitalStorage.Building_DSAccessPoint</thingClass>
+    <graphicData>
+      <texPath>Things/Building/DS_AccessPoint</texPath>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <size>(3,2)</size>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <maxItemsInCell>1</maxItemsInCell>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter />
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

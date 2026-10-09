@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Forklifts_SettingsCategory>Forklifts and Pallets</Forklifts_SettingsCategory>
+  <Forklifts_RequireForklift>Only pawns wearing a forklift rig use pallets</Forklifts_RequireForklift>
+  <Forklifts_RequireForkliftTip>When off, any pawn with the Hauling job can run pallet trips.</Forklifts_RequireForkliftTip>
+  <Forklifts_StacksPerPallet>Stacks per pallet</Forklifts_StacksPerPallet>
+  <Forklifts_StacksPerPalletTip>How many separate stacks one pallet holds.</Forklifts_StacksPerPalletTip>
+  <Forklifts_MinStacks>Minimum stacks per trip</Forklifts_MinStacks>
+  <Forklifts_MinStacksTip>If fewer stacks than this can be grouped, the operator hauls normally instead of using a pallet.</Forklifts_MinStacksTip>
+  <Forklifts_PickupRadius>Pickup radius</Forklifts_PickupRadius>
+  <Forklifts_PickupRadiusTip>Stacks must lie within this many cells of the first stack to join the same trip.</Forklifts_PickupRadiusTip>
+  <Forklifts_UnloadRadius>Unload radius</Forklifts_UnloadRadius>
+  <Forklifts_UnloadRadiusTip>Stacks must have a storage destination within this many cells of the first stack's destination.</Forklifts_UnloadRadiusTip>
+  <Forklifts_LoadTicks>Ticks to load one stack</Forklifts_LoadTicks>
+  <Forklifts_LoadTicksTip>Time the operator spends loading each stack onto the pallet.</Forklifts_LoadTicksTip>
+  <Forklifts_PalletContents>Holding {0} / {1} stacks</Forklifts_PalletContents>
+</LanguageData>

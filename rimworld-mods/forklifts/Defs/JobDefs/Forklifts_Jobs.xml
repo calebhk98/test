@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>Forklifts_HaulPallet</defName>
+    <driverClass>Forklifts.JobDriver_ForkliftHaul</driverClass>
+    <reportString>hauling a pallet of goods.</reportString>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

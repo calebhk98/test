@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RS_LinkPod</defName>
+    <label>link pod</label>
+    <description>A padded pod that puts its occupant into a deep trance and links their mind to a remote surrogate body. The body is a weaker copy: lower skills, slower, and easier to hurt. If it is destroyed the occupant is thrown out of the pod, shaken and stunned. The pod needs power at all times; losing it for too long severs the link.</description>
+    <thingClass>RemoteSurrogate.Building_LinkPod</thingClass>
+    <graphicData>
+      <texPath>Things/Building/RS_LinkPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>true</rotatable>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <tickerType>Rare</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <designationCategory>Misc</designationCategory>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>RS_RemoteSurrogates</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ResearchProjectDef>
+    <defName>RS_RemoteSurrogates</defName>
+    <label>remote surrogates</label>
+    <description>Link a sleeping colonist to a weaker remote body, and bring them home if the body is lost.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>8.0</researchViewX>
+    <researchViewY>3.0</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

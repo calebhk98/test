@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SH_SettingsTitle>Storyteller: The Hundred</SH_SettingsTitle>
+  <SH_Target>Colonist target</SH_Target>
+  <SH_TargetTip>The storyteller pushes arrivals until you have this many free colonists.</SH_TargetTip>
+  <SH_Rate>Arrival rate multiplier</SH_Rate>
+  <SH_RateTip>1 is the default pace. Higher means more wanderers and refugees.</SH_RateTip>
+  <SH_RelaxAfter>Stop extra arrivals once the target is reached</SH_RelaxAfter>
+  <SH_RelaxAfterTip>If off, the extra arrivals keep coming at the base pace after the target.</SH_RelaxAfterTip>
+  <SH_Letters>Send milestone letters</SH_Letters>
+  <SH_MilestoneLabel>Colony of {0}</SH_MilestoneLabel>
+  <SH_MilestoneText>You now have {0} colonists. The storyteller is pleased.</SH_MilestoneText>
+  <SH_TargetLabel>The Hundred</SH_TargetLabel>
+  <SH_TargetText>You have reached {0} colonists. The storyteller has what it came for. Arrivals will slow down now, but the threats will not.</SH_TargetText>
+</LanguageData>
