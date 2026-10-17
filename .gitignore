@@ -4,3 +4,7 @@
 # Python bytecode
 __pycache__/
 *.py[cod]
+
+# The reference corpus: 9.4MB of public-domain text, rebuildable with
+# halstead/corpus/fetch.sh. Remove this line to commit the books themselves.
+halstead/corpus/*.txt

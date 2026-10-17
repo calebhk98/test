@@ -18,11 +18,13 @@ import re
 import statistics
 import sys
 
+# The reference books. These used to be two absolute paths into a previous
+# session's scratchpad under /tmp, which is wiped when the session ends, so the
+# four PEER_BOOKS below were never actually read and only the rows recorded in
+# this file were reported. corpus/ sits next to the chapters instead.
 CORPUS_DIRS = [
-    "/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/"
-    "scratchpad/agent_gutenberg/raw",
-    "/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/"
-    "scratchpad/agent_modern/texts",
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                 "corpus"),
 ]
 
 # ---------------------------------------------------------------------------

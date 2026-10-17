@@ -29,10 +29,11 @@ from pathlib import Path
 
 # The measures live in measures/; the manuscript is a level up.
 HERE = Path(__file__).resolve().parent.parent
-CORPUS = [
-    Path("/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/scratchpad/agent_gutenberg/raw"),
-    Path("/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/scratchpad/agent_modern/texts"),
-]
+# The reference books. These used to be two absolute paths into a previous
+# session's scratchpad under /tmp, which is wiped when the session ends: the
+# corpus silently became zero books and the comparison stopped happening.
+# corpus/ sits next to the chapters so it lives as long as the manuscript does.
+CORPUS = [HERE / "corpus"]
 
 WORDS = ("one two three four five six seven eight nine ten eleven twelve thirteen "
          "fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty forty "
