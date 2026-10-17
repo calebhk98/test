@@ -44,7 +44,14 @@ def create(kind: str, spec: dict[str, Any] | str, ctx: Any = None):
         cls = _REGISTRY[kind][name]
     except KeyError:
         raise ValueError(f"unknown {kind} type {name!r}; known: {available(kind)}") from None
-    return cls.from_config(spec, ctx)
+    try:
+        return cls.from_config(spec, ctx)
+    except TypeError as e:
+        if "argument" not in str(e):
+            raise
+        import inspect
+        params = [p for p in inspect.signature(cls.__init__).parameters if p != "self"]
+        raise ValueError(f"[{kind}] type = {name!r}: {e}. Settings it accepts: {params}") from None
 
 
 def load_plugins(modules: list[str]) -> None:
@@ -81,18 +88,22 @@ def _load_builtins() -> None:
     _loaded = True
     for m in (
         "agentwiki.sources.youtube",
+        "agentwiki.sources.podcast",
         "agentwiki.transcribe.faster_whisper",
         "agentwiki.transcribe.youtube_captions",
         "agentwiki.transcribe.chain",
         "agentwiki.segment.chapters",
         "agentwiki.segment.fixed_window",
         "agentwiki.segment.chain",
+        "agentwiki.segment.topics",
         "agentwiki.llm.ollama",
         "agentwiki.llm.openai_compat",
         "agentwiki.llm.anthropic",
         "agentwiki.llm.null",
+        "agentwiki.llm.transformers_local",
         "agentwiki.enrich.llm_enricher",
         "agentwiki.enrich.keyword",
+        "agentwiki.enrich.local",
         "agentwiki.embed.sentence_transformers",
         "agentwiki.embed.ollama",
         "agentwiki.embed.openai_compat",

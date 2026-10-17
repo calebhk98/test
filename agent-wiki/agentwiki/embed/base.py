@@ -11,15 +11,23 @@ class Embedder(Component, ABC):
     """Text to unit-length float32 vectors.
 
     `name` must change whenever the vector space changes (different model or
-    output size), because the index keys stored vectors by it.
+    output size), because the index keys stored vectors by it. Device, batch
+    size and precision do not change the space and are not part of the name,
+    so the same wiki can be embedded on a laptop and searched on a phone.
     """
 
     model: str = ""
     batch_size: int = 16
+    #: Longest input in tokens before the model truncates.
+    max_tokens: int = 512
 
     @property
     def name(self) -> str:
         return f"{self.registry_name}:{self.model}"
+
+    def count_tokens(self, text: str) -> int:
+        """Override with the real tokenizer when there is one. ~4 chars per token in English."""
+        return len(text) // 4 + 1
 
     @abstractmethod
     def _embed(self, texts: list[str], is_query: bool) -> np.ndarray: ...

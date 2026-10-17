@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 
 from ..registry import register
-from .base import LLM, post_json
+from .base import LLM, get_ok, post_json
 
 
 @register("llm", "openai-compatible")
@@ -18,6 +18,10 @@ class OpenAICompatLLM(LLM):
         self.api_key_env = api_key_env
         self.json_mode_supported = json_mode_supported
         self.timeout = timeout
+
+    def _ping(self) -> bool:
+        key = os.environ.get(self.api_key_env, "")
+        return get_ok(f"{self.base_url}/models", {"Authorization": f"Bearer {key}"} if key else {})
 
     def complete(self, prompt, system=None, *, max_tokens=1024, temperature=0.2, json_mode=False):
         messages = ([{"role": "system", "content": system}] if system else []) + \

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 import urllib.request
 from abc import ABC, abstractmethod
 from typing import Any
@@ -26,7 +27,22 @@ class LLM(Component, ABC):
 
     @property
     def available(self) -> bool:
+        """Can this LLM answer right now? Cached for a minute, so a stopped
+        server is noticed quickly and a restarted one is picked up again."""
+        now = time.time()
+        if now - self._checked_at > 60:
+            self._ok = self._ping()
+            self._checked_at = now
+        return self._ok
+
+    def mark_unavailable(self) -> None:
+        self._ok, self._checked_at = False, time.time()
+
+    def _ping(self) -> bool:
         return True
+
+    _ok: bool = True
+    _checked_at: float = 0.0
 
     @abstractmethod
     def complete(self, prompt: str, system: str | None = None, *, max_tokens: int = 1024,
@@ -67,6 +83,14 @@ def extract_json(text: str) -> Any:
             if depth == 0:
                 return json.loads(text[start:i + 1])
     raise LLMError(f"unterminated JSON in reply: {text[:200]!r}")
+
+
+def get_ok(url: str, headers: dict | None = None, timeout: float = 3) -> bool:
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=headers or {}), timeout=timeout):
+            return True
+    except Exception:
+        return False
 
 
 def post_json(url: str, body: dict, headers: dict | None = None, timeout: float = 600) -> dict:

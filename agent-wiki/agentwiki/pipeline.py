@@ -54,6 +54,10 @@ class Pipeline:
             if st in CACHE_FILES:
                 (self.raw_dir / vid / CACHE_FILES[st]).unlink(missing_ok=True)
 
+    def cached(self, vid: str) -> tuple[VideoInfo | None, Transcript | None]:
+        i, tr = self._load(vid, "info"), self._load(vid, "transcript")
+        return (VideoInfo.from_dict(i) if i else None, Transcript.from_dict(tr) if tr else None)
+
     # ---- stages ------------------------------------------------------------
 
     def _info(self, vid: str, refresh: bool = False) -> VideoInfo:
@@ -109,13 +113,16 @@ class Pipeline:
         cached = self._load(vid, "enrich")
         if cached is None:
             enr = self.app.enricher
-            per_section = []
+            per_section, degraded = [], False
             for s in sections:
                 e = enr.enrich_section(info, s)
                 s.summary, s.tags, s.facts = e.summary, e.tags, e.facts
                 per_section.append({"summary": e.summary, "tags": e.tags, "facts": e.facts})
+                degraded |= e.degraded
             v = enr.enrich_video(info, sections, transcript.text)
-            cached = {"model": enr.name, "sections": per_section,
+            # degraded: the LLM was unreachable and a fallback filled in; `run`
+            # redoes this stage once the LLM is back.
+            cached = {"model": enr.name, "degraded": degraded or v.degraded, "sections": per_section,
                       "video": {"summary": v.summary, "tags": v.tags}}
             self._save(vid, "enrich", cached)
         for s, e in zip(sections, cached["sections"]):
@@ -167,7 +174,21 @@ class Pipeline:
         idx, emb = self.app.index, self.app.embedder
         idx.delete_video(vid)
         idx.upsert(self._index_docs(info, sections, ve, vpath), emb)
-        idx.pool_video(vid, emb)
+        whole = self._whole_video_vector(info, transcript, emb)
         self.app.refresh_channel_page(info.channel, info.channel_url)
         return {"video_id": vid, "title": info.title, "page": vpath, "sections": len(sections),
-                "published": info.published, "channel_id": info.channel_id}
+                "published": info.published, "channel_id": info.channel_id, "whole_video": whole}
+
+    def _whole_video_vector(self, info: VideoInfo, transcript: Transcript, emb) -> str:
+        """Encode the whole transcript in one pass when it fits the encoder's
+        window (Qwen3-Embedding takes 32K tokens, about 3 hours of speech);
+        otherwise average the section vectors. Returns which was used."""
+        mode = self.app.config["index"].get("whole_video", "auto")
+        text = f"{info.title}\n\n{transcript.text}"
+        if mode != "mean":
+            fits = emb.count_tokens(text) <= emb.max_tokens
+            if fits or mode == "single":   # "single" lets the model truncate
+                self.app.index.set_doc_vector(info.video_id, emb, emb.embed_documents([text])[0])
+                return "single"
+        self.app.index.pool_video(info.video_id, emb)
+        return "mean"

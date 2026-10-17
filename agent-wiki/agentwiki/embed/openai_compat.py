@@ -13,7 +13,8 @@ from .base import Embedder
 class OpenAICompatEmbedder(Embedder):
     def __init__(self, model: str, base_url: str = "http://localhost:8080/v1",
                  api_key_env: str = "OPENAI_API_KEY", dimensions: int | None = None,
-                 query_prefix: str = "", document_prefix: str = "", batch_size: int = 32):
+                 query_prefix: str = "", document_prefix: str = "", batch_size: int = 32,
+                 max_tokens: int = 8192):
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.api_key_env = api_key_env
@@ -21,6 +22,7 @@ class OpenAICompatEmbedder(Embedder):
         self.query_prefix = query_prefix
         self.document_prefix = document_prefix
         self.batch_size = batch_size
+        self.max_tokens = max_tokens   # set to your model's context window
 
     @property
     def name(self) -> str:

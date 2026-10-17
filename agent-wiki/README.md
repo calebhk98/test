@@ -5,7 +5,8 @@ becomes a page, each chapter of a video becomes its own page, and every page is
 tagged, summarised and embedded. The wiki folder opens as an Obsidian vault, but
 nothing needs Obsidian.
 
-Design: [ARCHITECTURE.md](ARCHITECTURE.md). What exists already and how other
+Design: [ARCHITECTURE.md](ARCHITECTURE.md). What was tested for real: [TESTING.md](TESTING.md).
+What exists already and how other
 people do this: [RESEARCH.md](RESEARCH.md).
 
 ## Setup
@@ -16,19 +17,18 @@ pip install -e ".[all]"        # or just `pip install -e .` plus the extras you 
 agentwiki init                 # writes config.toml, wiki/, data/
 ```
 
-Then edit `config.toml`:
+Everything runs on your machine. The defaults work without editing anything
+except, possibly, YouTube access:
 
-- **Cookies.** YouTube often refuses yt-dlp with "Sign in to confirm you're not
-  a bot". Set `cookies_from_browser = "firefox"` (or chrome, edge...) under
-  `[source]`. This happened on every request from the cloud machine this was
-  built on; a home connection is usually fine without cookies.
+- **YouTube access.** YouTube sometimes refuses yt-dlp with "Sign in to confirm
+  you're not a bot". Set `cookies_from_browser = "firefox"` (or chrome, edge...)
+  under `[source]`, or try `player_clients = ["web_safari", "web_embedded"]`.
+  A home connection is usually fine without either.
 - **JavaScript runtime.** yt-dlp needs [deno](https://deno.com) or node for YouTube.
 - **ffmpeg** on the PATH (yt-dlp and the Whisper audio decoding both use it).
-- **LLM.** Defaults to Ollama. `ollama pull gemma3:12b`, or set any model you
-  have. Without an LLM set `[enricher] type = "keyword"` and it still works,
-  with cruder tags and summaries.
-- **Embedder.** Defaults to `google/embeddinggemma-300m`, which is gated on
-  Hugging Face: accept the licence on its page, then `hf auth login`.
+- **Models download themselves** on first use from Hugging Face, no login.
+
+`agentwiki status` shows the hardware it detected and so what "auto" picked.
 
 ## Use
 
@@ -65,6 +65,46 @@ For a weekly channel and a slow backfill, a cron line like this does both:
   (needs the `mcp` extra). Tools: search, show, ask, similar, has_video,
   add_video, add_channel, list_channels, check_channels, run_queue, status.
 - Any agent that can run shell commands can use the CLI with `--json` instead.
+
+## Hardware
+
+Nothing needs configuring per machine. Whisper's model size, the in-process
+LLM's size, the device (CUDA, Apple, CPU), precision and batch sizes are all
+picked from the detected VRAM and RAM:
+
+| machine | Whisper | in-process LLM |
+| --- | --- | --- |
+| GPU, 70 GB+ VRAM | large-v3-turbo, batched | Gemma 4 31B |
+| GPU, 30 to 70 GB | large-v3-turbo, batched | Gemma 4 12B |
+| GPU, 12 to 30 GB | large-v3-turbo, batched | Gemma 4 E4B |
+| GPU, 6 to 12 GB | large-v3-turbo, batched | Gemma 4 E2B |
+| GPU, 4 to 6 GB | large-v3-turbo, batched | chosen by RAM, as for CPU |
+| CPU, 32 GB+ RAM | small | Gemma 4 E4B |
+| CPU, 16 GB+ RAM | small | Gemma 4 E2B |
+| CPU, 6 to 16 GB | small (12 GB+) or base | Qwen2.5 1.5B |
+| phone or small board | base or tiny | Qwen2.5 0.5B, or better, no LLM |
+
+Override any of them with an explicit `model = "..."`. The embedder is the one
+thing that does not change with hardware, so a wiki built on a desktop can be
+searched from a laptop.
+
+## Without an LLM
+
+Every feature works without one. The `local` enricher uses the embedding model
+for tags (key phrases and topic categories) and summaries (the most
+representative sentences), and patterns for facts like parameter counts,
+VRAM, licence and censorship. Videos without chapters are split by topic with
+the same embeddings. `ask` without an LLM returns the cited sources, which an
+agent such as Claude Code reads and answers from.
+
+With `[enricher] type = "llm"`, an unreachable LLM never stops anything: the
+local enricher fills in, and the next `run` upgrades those videos from cache
+once the LLM answers.
+
+## Podcasts
+
+`[source] type = "podcast"` reads RSS feeds instead of YouTube, with episode
+chapters from `podcast:chapters` files. Same pipeline, same wiki.
 
 ## Swapping models
 

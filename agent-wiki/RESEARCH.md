@@ -41,11 +41,19 @@ Obsidian's REST plugin need the app open.
 - **Transcription**: faster-whisper is the usual local choice. NVIDIA Parakeet
   TDT 0.6B v3 is reported as more accurate for English (**unverified**, vendor
   benchmarks). Either fits behind the `Transcriber` interface.
-- **Embeddings**: EmbeddingGemma (308M, 768 dims, Matryoshka down to 128,
-  built on Gemma 3) is confirmed on Google's docs page. The same page describes
-  a Gemma 4 based "EmbeddingGemma 2" (multimodal, 768 dims) but with
-  inconsistent parameter counts and no date, so check the model card before
-  switching. The raw Gemma 4 chat model is not an embedding model.
+- **Embeddings** (context windows checked against the model cards on Hugging Face):
+
+  | model | context | dims | licence, access |
+  | --- | --- | --- | --- |
+  | Qwen/Qwen3-Embedding-0.6B / 4B / 8B | 32K | 1024 / 2560 / 4096, Matryoshka | Apache 2.0, ungated |
+  | google/embeddinggemma-2 (Gemma 4 based, Oct 2026) | 8K | 768, Matryoshka to 128 | Apache 2.0, ungated; text, image, audio, video |
+  | nomic-embed-text-v1.5, BAAI/bge-m3, jina-embeddings-v3 | 8K | 768-1024 | various |
+  | google/embeddinggemma-300m (Gemma 3 based) | 2K | 768 | gated, manual approval |
+
+  A 40 minute talk is about 9K tokens, so only the Qwen3 models take a whole
+  video in one pass. EmbeddingGemma 2 can also embed audio directly, which a
+  future `Embedder` could use to skip transcription for search (untried).
+  The raw Gemma 4 chat model is not an embedding model.
 - **Index**: SQLite FTS5 + vectors with reciprocal rank fusion is the common
   low-friction choice for one person's corpus; sqlite-vec, LanceDB, Chroma and
   Qdrant are the usual upgrades.

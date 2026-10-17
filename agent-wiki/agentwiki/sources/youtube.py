@@ -17,11 +17,15 @@ _URL_ID_RE = re.compile(r"(?:v=|youtu\.be/|/shorts/|/live/|/embed/)([A-Za-z0-9_-
 class YtDlpSource(VideoSource):
     def __init__(self, cookies_file: str = "", cookies_from_browser: str = "",
                  js_runtimes: list[str] | None = None, audio_format: str = "bestaudio/best",
+                 player_clients: list[str] | None = None,
                  extra_options: dict[str, Any] | None = None):
         self.cookies_file = cookies_file
         self.cookies_from_browser = cookies_from_browser
         self.js_runtimes = js_runtimes
         self.audio_format = audio_format
+        # Which YouTube app yt-dlp pretends to be. When one is blocked ("confirm
+        # you're not a bot") another often is not; see config.example.toml.
+        self.player_clients = player_clients
         self.extra_options = extra_options or {}
 
     def _opts(self, **over) -> dict:
@@ -32,6 +36,8 @@ class YtDlpSource(VideoSource):
             o["cookiesfrombrowser"] = (self.cookies_from_browser,)
         if self.js_runtimes:
             o["js_runtimes"] = {r: {} for r in self.js_runtimes}
+        if self.player_clients:
+            o["extractor_args"] = {"youtube": {"player_client": list(self.player_clients)}}
         o.update(self.extra_options)
         o.update(over)
         return o

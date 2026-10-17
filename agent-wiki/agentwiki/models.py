@@ -14,6 +14,7 @@ class Chapter:
     title: str
     start: float
     end: float | None = None
+    url: str | None = None       # podcast chapter files can link each chapter
 
 
 @dataclass
@@ -33,7 +34,10 @@ class VideoInfo:
     raw: dict[str, Any] = field(default_factory=dict, repr=False)
 
     def timestamp_url(self, seconds: float) -> str:
-        return f"https://www.youtube.com/watch?v={self.video_id}&t={int(seconds)}s"
+        if "youtube.com/" in self.url or "youtu.be/" in self.url:
+            return f"https://www.youtube.com/watch?v={self.video_id}&t={int(seconds)}s"
+        # Media fragments: browsers seek audio and video links to #t=seconds.
+        return f"{self.url}#t={int(seconds)}"
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -147,6 +151,8 @@ class Enrichment:
     tags: list[str] = field(default_factory=list)
     facts: list[str] = field(default_factory=list)
     model: str = ""
+    #: Produced by a fallback because the configured LLM was unreachable.
+    degraded: bool = False
 
 
 @dataclass

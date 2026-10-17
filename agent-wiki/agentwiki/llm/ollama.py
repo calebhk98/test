@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from ..registry import register
-from .base import LLM, post_json
+from .base import LLM, get_ok, post_json
 
 
 @register("llm", "ollama")
@@ -12,6 +12,9 @@ class OllamaLLM(LLM):
         self.host = host.rstrip("/")
         self.num_ctx = num_ctx
         self.timeout = timeout
+
+    def _ping(self) -> bool:
+        return get_ok(f"{self.host}/api/tags")
 
     def complete(self, prompt, system=None, *, max_tokens=1024, temperature=0.2, json_mode=False):
         messages = ([{"role": "system", "content": system}] if system else []) + \

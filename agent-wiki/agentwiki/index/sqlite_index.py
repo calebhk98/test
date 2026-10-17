@@ -64,8 +64,8 @@ def fts_query(q: str) -> str:
 
 @register("index", "sqlite")
 class SQLiteIndex(VectorIndex):
-    def __init__(self, path: str | Path, chunk_chars: int = 1500, chunk_overlap: int = 200,
-                 candidates: int = 200):
+    def __init__(self, path: str | Path, chunk_chars: int | str = "auto", chunk_overlap: int = 200,
+                 candidates: int = 200, whole_video: str = "auto"):
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.db = sqlite3.connect(self.path)
@@ -102,7 +102,7 @@ class SQLiteIndex(VectorIndex):
                     "INSERT INTO docs VALUES (?,?,?,?,?,?,?,?,?,?,?)",
                     (doc.doc_id, doc.kind, doc.video_id, doc.channel, doc.path, doc.title, doc.url,
                      doc.published, " " + " ".join(doc.tags) + " ", int(doc.is_sponsor), doc.text))
-                for i, ch in enumerate(chunk_text(doc.text, self.chunk_chars, self.chunk_overlap)):
+                for i, ch in enumerate(chunk_text(doc.text, self._chunk_size(embedder), self.chunk_overlap)):
                     cid = self.db.execute("INSERT INTO chunks (doc_id, ord, text) VALUES (?,?,?)",
                                           (doc.doc_id, i, ch)).lastrowid
                     self.db.execute("INSERT INTO chunks_fts (title, text, chunk_id) VALUES (?,?,?)",
@@ -114,6 +114,14 @@ class SQLiteIndex(VectorIndex):
                     "INSERT OR REPLACE INTO vectors VALUES (?,?,?)",
                     [(cid, embedder.name, v.astype(np.float32).tobytes())
                      for (cid, _), v in zip(pending, vecs)])
+
+    def _chunk_size(self, embedder: Embedder) -> int:
+        """Chunks sized to the encoder: one 2-3 minute section stays whole on
+        long-context models, and nothing gets truncated on short ones. Capped
+        at ~1000 tokens because longer chunks blur what a hit is about."""
+        if self.chunk_chars != "auto":
+            return int(self.chunk_chars)
+        return max(400, min(4000, int(embedder.max_tokens * 3)))
 
     def reembed(self, embedder: Embedder, batch: int = 256, progress=None) -> int:
         """Embed every chunk that has no vector for this embedder."""
@@ -145,9 +153,12 @@ class SQLiteIndex(VectorIndex):
         if not rows:
             return
         mean = normalize(np.mean([np.frombuffer(r[0], np.float32) for r in rows], axis=0))
+        self.set_doc_vector(video_id, embedder, mean)
+
+    def set_doc_vector(self, doc_id: str, embedder: Embedder, vec) -> None:
         with self.db:
             self.db.execute("INSERT OR REPLACE INTO doc_vectors VALUES (?,?,?)",
-                            (video_id, embedder.name, mean.tobytes()))
+                            (doc_id, embedder.name, normalize(vec).astype(np.float32).tobytes()))
 
     # ---- reading -----------------------------------------------------------
 

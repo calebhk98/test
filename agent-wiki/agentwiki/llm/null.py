@@ -8,8 +8,7 @@ from .base import LLM, LLMError
 class NullLLM(LLM):
     """No LLM configured. Enrichers fall back to keywords; `ask` returns search hits only."""
 
-    @property
-    def available(self) -> bool:
+    def _ping(self) -> bool:
         return False
 
     def complete(self, prompt, system=None, **kw):

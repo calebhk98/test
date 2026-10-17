@@ -7,13 +7,14 @@ name = "agent-wiki"
 version = "0.1.0"
 description = "A searchable markdown wiki built from YouTube videos, for AI agents"
 requires-python = ">=3.11"
-dependencies = ["yt-dlp>=2025.11.12", "numpy>=1.26"]
+dependencies = ["yt-dlp>=2025.11.12", "yt-dlp-ejs", "numpy>=1.26"]
 
 [project.optional-dependencies]
 whisper = ["faster-whisper>=1.1"]
 embed = ["sentence-transformers>=5.0"]
+llm = ["transformers>=4.51", "torch"]
 mcp = ["mcp>=1.2"]
-all = ["faster-whisper>=1.1", "sentence-transformers>=5.0", "mcp>=1.2"]
+all = ["faster-whisper>=1.1", "sentence-transformers>=5.0", "transformers>=4.51", "mcp>=1.2"]
 dev = ["pytest>=8"]
 
 [project.scripts]

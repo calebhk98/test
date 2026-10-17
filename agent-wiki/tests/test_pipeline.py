@@ -146,11 +146,64 @@ def test_cli_json(app, capsys):
     assert hits[0]["title"] == "Flux 3"
 
 
-def test_unreachable_llm_fails_video_instead_of_caching_fallback(app):
+def test_unreachable_llm_degrades_then_upgrades_when_back(app):
     from agentwiki.registry import create
-    app.__dict__["llm"] = create("llm", {"type": "ollama", "model": "x", "host": "http://127.0.0.1:9"})
+    down = create("llm", {"type": "ollama", "model": "x", "host": "http://127.0.0.1:9"})
+    app.__dict__["llm"] = down
     app.__dict__["enricher"] = create("enricher", {"type": "llm"}, app)
     r = app.add(REAL_ID)
-    assert r["status"] == "failed" and "LLMUnavailable" in r["error"]
-    assert not (app.config.data_dir / "raw" / REAL_ID / "enrichment.json").exists()
-    assert (app.config.data_dir / "raw" / REAL_ID / "transcript.json").exists()
+    assert r["status"] == "done"                          # the video is not held back
+    enr = json.loads((app.config.data_dir / "raw" / REAL_ID / "enrichment.json").read_text())
+    assert enr["degraded"] is True
+    assert "[size" in app.show(f"{REAL_ID}#14")["content"]   # local facts filled in
+
+    app.run()                                            # LLM still down: nothing requeued
+    assert app.catalog.get(REAL_ID)["status"] == "done"
+
+    up = create("llm", {"type": "scripted"})
+    app.__dict__["llm"] = up
+    app.__dict__["enricher"] = create("enricher", {"type": "llm"}, app)
+    out = app.run()
+    assert out["requeued_for_llm"] == 1
+    assert "About Flux 3." in app.show(f"{REAL_ID}#14")["content"]
+    enr = json.loads((app.config.data_dir / "raw" / REAL_ID / "enrichment.json").read_text())
+    assert enr["degraded"] is False
+    assert app.source.downloads == [REAL_ID]             # upgrade reused the transcript
+
+
+def test_youtube_block_stops_run_and_keeps_queue(app, monkeypatch):
+    app.channel_add("@theAIsearch")
+    calls = []
+
+    def blocked(vid):
+        calls.append(vid)
+        raise RuntimeError("ERROR: [youtube] x: Sign in to confirm you\u2019re not a bot.")
+    monkeypatch.setattr(app.source, "fetch_info", blocked)
+    out = app.run()
+    assert len(calls) == 1 and "stopped" in out          # did not burn through the queue
+    assert out["queue"]["queued"] == 3 and out["queue"]["failed"] == 0
+    assert app.catalog.get(calls[0])["attempts"] == 0
+
+
+def test_whole_video_vector_single_pass_when_it_fits(app):
+    r = app.add(REAL_ID)
+    assert r["whole_video"] == "single"      # short fake transcript fits 512 tokens
+    app.config.data["index"]["whole_video"] = "mean"
+    assert app.reindex()["whole_video"] == {"single": 0, "mean": 1}
+
+
+@register("llm", "cannot-load")
+class CannotLoadLLM(LLM):
+    model = "x"
+
+    def complete(self, prompt, system=None, **kw):
+        raise OSError("couldn't connect to huggingface.co to download weights")
+
+
+def test_llm_that_cannot_load_counts_as_unavailable(app):
+    from agentwiki.registry import create
+    app.__dict__["llm"] = create("llm", {"type": "cannot-load"})
+    app.__dict__["enricher"] = create("enricher", {"type": "llm"}, app)
+    assert app.add(REAL_ID)["status"] == "done"
+    enr = json.loads((app.config.data_dir / "raw" / REAL_ID / "enrichment.json").read_text())
+    assert enr["degraded"] is True

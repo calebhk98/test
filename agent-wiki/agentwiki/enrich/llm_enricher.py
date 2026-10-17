@@ -4,9 +4,9 @@ import logging
 
 from ..llm.base import LLMUnavailable
 from ..models import Enrichment, Section, VideoInfo
-from ..registry import register
+from ..registry import create, register
 from .base import Enricher, normalize_tags
-from .keyword import KeywordEnricher
+from .facts import extract_facts
 
 log = logging.getLogger(__name__)
 
@@ -28,7 +28,7 @@ Return JSON with:
   every one the transcript states: the name of each model or tool, what it does,
   model size (parameters), VRAM or hardware needs, speed, licence, whether weights
   are open or closed, whether it is censored or has content restrictions, price,
-  release status, and benchmark claims. Use "unknown" for nothing; just omit it.
+  release status, and benchmark claims. Leave out anything the transcript does not say.
 """
 
 VIDEO_PROMPT = """Video title: {title}
@@ -47,43 +47,71 @@ Return JSON with:
 
 @register("enricher", "llm")
 class LLMEnricher(Enricher):
-    def __init__(self, llm, max_tags: int = 12, max_section_chars: int = 12000,
+    """Tags, summaries and facts from an LLM, with a model-free fallback.
+
+    The LLM is an upgrade, never a requirement: when it is unreachable or
+    gives an unusable reply, the fallback enricher (default "local") does the
+    work and the result is marked degraded. `run` re-enriches degraded videos
+    once the LLM is reachable again.
+    """
+
+    def __init__(self, llm, fallback: Enricher, max_tags: int = 12, max_section_chars: int = 12000,
                  max_video_chars: int = 16000, skip_sponsor: bool = True):
         self.llm = llm
+        self.fallback = fallback
         self.max_tags = max_tags
         self.max_section_chars = max_section_chars
         self.max_video_chars = max_video_chars
         self.skip_sponsor = skip_sponsor
-        self.fallback = KeywordEnricher(max_tags=max_tags)
 
     @classmethod
     def from_config(cls, params, ctx=None):
-        return cls(llm=ctx.llm, **params)
+        params = dict(params)
+        fb = create("enricher", params.pop("fallback", {"type": "local"}), ctx)
+        return cls(llm=ctx.llm, fallback=fb, **params)
 
     @property
     def name(self) -> str:
         return f"llm[{self.llm.name}]"
 
+    def _fallback(self, e: Enrichment, degraded: bool) -> Enrichment:
+        e.degraded = degraded
+        return e
+
+    def _ask(self, prompt: str, max_tokens: int) -> dict | None:
+        """The parsed reply, None for an unusable reply. Raises nothing."""
+        if not self.llm.available:
+            return None
+        try:
+            d = self.llm.complete_json(prompt, SYSTEM, max_tokens=max_tokens)
+            return d if isinstance(d, dict) else None
+        except (LLMUnavailable, OSError, ImportError, MemoryError) as e:
+            # Server down, weights not downloadable, or too big for this machine:
+            # all "not now", so the result is marked degraded and retried later.
+            log.warning("LLM unavailable, using %s: %s", self.fallback.name, e)
+            self.llm.mark_unavailable()
+        except Exception as e:
+            log.warning("unusable LLM reply, using %s for this part: %s", self.fallback.name, e)
+        return None
+
     def enrich_section(self, info: VideoInfo, section: Section) -> Enrichment:
         if section.is_sponsor and self.skip_sponsor:
-            e = self.fallback.enrich_section(info, section)
-            e.tags = normalize_tags(["sponsor"] + e.tags, self.max_tags)
-            return e
-        links = ", ".join(f"{l.label} <{l.url}>" for l in section.links) or "none"
-        prompt = SECTION_PROMPT.format(video_title=info.title, title=section.title, links=links,
-                                       text=section.text[: self.max_section_chars],
-                                       max_tags=self.max_tags)
-        try:
-            d = self.llm.complete_json(prompt, SYSTEM, max_tokens=1200)
-        except LLMUnavailable:
-            raise           # fail the video so `run` retries it once the server is up
-        except Exception as e:  # a bad reply should not stop the whole video
-            log.warning("LLM enrichment failed for %s §%s: %s", info.video_id, section.index, e)
             return self.fallback.enrich_section(info, section)
+        links = ", ".join(f"{l.label} <{l.url}>" for l in section.links) or "none"
+        d = self._ask(SECTION_PROMPT.format(video_title=info.title, title=section.title, links=links,
+                                            text=section.text[: self.max_section_chars],
+                                            max_tags=self.max_tags), 1200)
+        if d is None:
+            return self._fallback(self.fallback.enrich_section(info, section),
+                                  degraded=not self.llm.available)
+        facts = [str(f).strip() for f in d.get("facts", []) if str(f).strip()]
+        # Keep the verbatim sentences the patterns find too. Small models drop
+        # or garble numbers (a 1.5B model left out "Flux 2 was a 32B model");
+        # the quoted sentence is evidence an agent can check.
+        facts += [f for f in extract_facts(section.text, max_facts=6) if f not in facts]
         return Enrichment(summary=str(d.get("summary", "")).strip(),
                           tags=normalize_tags(d.get("tags", []), self.max_tags),
-                          facts=[str(f).strip() for f in d.get("facts", []) if str(f).strip()],
-                          model=self.name)
+                          facts=facts, model=self.name)
 
     def enrich_video(self, info, sections, transcript_text) -> Enrichment:
         summaries = [f"- {s.title}: {s.summary}" for s in sections if s.summary and not s.is_sponsor]
@@ -91,15 +119,11 @@ class LLMEnricher(Enricher):
             body_label, body = "Section summaries", "\n".join(summaries)
         else:
             body_label, body = "Transcript", transcript_text
-        prompt = VIDEO_PROMPT.format(title=info.title, channel=info.channel,
-                                     description=info.description[:2000], body_label=body_label,
-                                     body=body[: self.max_video_chars], max_tags=self.max_tags)
-        try:
-            d = self.llm.complete_json(prompt, SYSTEM, max_tokens=800)
-        except LLMUnavailable:
-            raise
-        except Exception as e:
-            log.warning("LLM video enrichment failed for %s: %s", info.video_id, e)
-            return self.fallback.enrich_video(info, sections, transcript_text)
+        d = self._ask(VIDEO_PROMPT.format(title=info.title, channel=info.channel,
+                                          description=info.description[:2000], body_label=body_label,
+                                          body=body[: self.max_video_chars], max_tags=self.max_tags), 800)
+        if d is None:
+            return self._fallback(self.fallback.enrich_video(info, sections, transcript_text),
+                                  degraded=not self.llm.available)
         return Enrichment(summary=str(d.get("summary", "")).strip(),
                           tags=normalize_tags(d.get("tags", []), self.max_tags), model=self.name)

@@ -1,29 +1,42 @@
 # agent-wiki configuration. Copied to config.toml by `agentwiki init`.
 #
 # Every model is a [section] with a `type`; the rest of the keys are passed to
-# that class. Swap a model by changing `type` or `model` here, then run
-#   agentwiki reprocess --from <stage>   and   agentwiki run
-# (or `agentwiki reindex` for an embedder change). `agentwiki --help` lists commands.
+# that class. Anything set to "auto" is decided from this machine's hardware
+# (`agentwiki status` shows what was detected), so one config works on a phone,
+# a laptop or a big GPU box. Set AGENTWIKI_DEVICE=cpu to keep a GPU free.
+#
+# Swap a model by changing `type` or `model`, then
+#   agentwiki reprocess --from <stage>  and  agentwiki run   (or `reindex` for the embedder).
 
 # Extra modules with your own @register'ed classes.
 plugins = []
 
+# ---- Where videos come from ------------------------------------------------
 [source]
 type = "yt-dlp"
-# YouTube often asks to "confirm you're not a bot". Point yt-dlp at your
-# browser's cookies (firefox, chrome, edge, brave...) or an exported cookies.txt.
-cookies_from_browser = ""
+# If YouTube says "confirm you're not a bot", try in this order:
+#   1. cookies from a browser you are logged into YouTube with
+cookies_from_browser = ""          # "firefox", "chrome", "edge", "brave"...
 cookies_file = ""
-# yt-dlp needs a JavaScript runtime for YouTube. Install deno, or use node.
+#   2. a different YouTube client; these got past the check from a cloud server
+#      that was blocked by default
+# player_clients = ["web_safari", "web_embedded"]
+# yt-dlp needs a JavaScript runtime (deno or node) and the yt-dlp-ejs package.
 js_runtimes = ["deno", "node"]
 
+# Podcasts work too (RSS feeds; chapters come from podcast:chapters files):
+# [source]
+# type = "podcast"
+# feeds = ["https://changelog.com/practicalai/feed"]
+
 # ---- Transcription ---------------------------------------------------------
-# Tries Whisper first; falls back to YouTube's own captions if Whisper is not
-# installed or fails. For a fast first backfill, put youtube-captions first.
+# model = "auto" picks by hardware: large-v3-turbo on a GPU with 4 GB+,
+# small on a desktop CPU, base on small machines, tiny on phones.
+# Falls back to YouTube's own captions if Whisper is missing or fails.
 [transcriber]
 type = "chain"
 transcribers = [
-  { type = "faster-whisper", model = "large-v3-turbo", device = "auto", compute_type = "default" },
+  { type = "faster-whisper", model = "auto" },
   { type = "youtube-captions" },
 ]
 
@@ -31,56 +44,75 @@ transcribers = [
 [segmenter]
 type = "chain"
 segmenters = [
-  { type = "chapters" },                    # creator chapters + description links
-  { type = "fixed-window", minutes = 4 },   # when a video has no chapters
+  { type = "chapters" },   # creator or podcast chapters, with their links
+  { type = "topics" },     # no chapters: cut where the topic changes (uses the embedder)
 ]
 
-# ---- LLM for tags, summaries, facts and `ask` --------------------------------
-# Any model you have pulled; check `ollama list`.
+# ---- Tags, summaries and facts -----------------------------------------------
+# "local" uses only the embedding model: key-phrase tags, topic categories,
+# summary sentences picked from the transcript, and pattern-matched facts
+# (parameter counts, VRAM, licence, censorship, speed, price). No LLM.
+#
+# "llm" writes better summaries and facts, and falls back to "local" whenever
+# the LLM is unreachable; those videos are redone automatically by the next
+# `run` once it answers again. Nothing waits on the LLM.
+[enricher]
+type = "llm"
+fallback = { type = "local" }
+max_tags = 12
+
+# Any of these runs on your own machine.
 [llm]
-type = "ollama"
-model = "gemma3:12b"
+type = "ollama"                    # a local server: `ollama serve`, `ollama pull gemma4`
+model = "gemma4"
 host = "http://localhost:11434"
 num_ctx = 16384
 
-# Other options:
+# In-process, no server at all. "auto" picks Gemma 4 31B / 12B / E4B / E2B by
+# VRAM or RAM, down to a 0.5B model on a phone. First use downloads the weights.
 # [llm]
-# type = "openai-compatible"            # llama.cpp server, LM Studio, vLLM, OpenAI
+# type = "transformers"
+# model = "auto"
+#
+# [llm]
+# type = "openai-compatible"       # llama.cpp server, LM Studio, vLLM
 # model = "local-model"
 # base_url = "http://localhost:8080/v1"
 #
 # [llm]
-# type = "anthropic"                    # reads ANTHROPIC_API_KEY
+# type = "anthropic"               # cloud; reads ANTHROPIC_API_KEY
 # model = "claude-haiku-5-5"
 
-[enricher]
-type = "llm"            # "keyword" needs no model at all
-max_tags = 12
-skip_sponsor = true     # do not spend LLM time on sponsor chapters
-
 # ---- Embeddings ------------------------------------------------------------
-# EmbeddingGemma: 768 dims, 2048-token context. It is gated on Hugging Face:
-# accept the licence on the model page, then `hf auth login`.
-# `dim = 256` truncates it (Matryoshka) to save space at a small quality cost.
+# The embedder is NOT picked by hardware: every machine that shares this wiki
+# must use the same model, or their vectors cannot be compared. Device, batch
+# size and precision still adapt automatically.
+#
+# Qwen3-Embedding-0.6B: 32K-token context (a whole 40 minute video in one
+# pass), 1024 dims, Apache 2.0, no login. 4B and 8B versions exist for big GPUs.
+# google/embeddinggemma-2: 8K context, 768 dims, smaller and faster, Apache 2.0.
 [embedder]
 type = "sentence-transformers"
-model = "google/embeddinggemma-300m"
-device = "auto"
+model = "Qwen/Qwen3-Embedding-0.6B"
+# dim = 512          # Matryoshka truncation: smaller index, slightly lower quality
+# max_tokens = 8192  # cap the window to bound memory on small devices
 
-# Or through Ollama:   type = "ollama", model = "embeddinggemma"
-# Or no model (testing only):   type = "hashing"
+# Or through Ollama:   type = "ollama", model = "qwen3-embedding:0.6b", max_tokens = 32768
 
 [index]
 type = "sqlite"
-chunk_chars = 1500      # about 350 tokens; well inside EmbeddingGemma's context
+chunk_chars = "auto"      # sized to the embedder's window, at most ~1000 tokens
 chunk_overlap = 200
+# Whole-video vector (for `similar`): "auto" encodes the full transcript in one
+# pass when it fits the embedder's window, else averages the section vectors.
+whole_video = "auto"
 
 [ingest]
-min_duration = 90       # seconds; skips Shorts
+min_duration = 90         # seconds; skips Shorts
 skip_live = true
-sleep_between = 15      # seconds between videos in `run`, to be polite to YouTube
+sleep_between = 15        # seconds between videos in `run`, to be polite to YouTube
 max_attempts = 3
-check_recent = 30       # newest uploads per channel that `check` looks at
+check_recent = 30         # newest uploads per channel that `check` looks at
 keep_audio = false
 
 [search]

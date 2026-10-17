@@ -22,9 +22,9 @@ DEFAULTS: dict[str, Any] = {
         "segmenters": [{"type": "chapters"}, {"type": "fixed-window", "minutes": 4}],
     },
     "llm": {"type": "null"},
-    "enricher": {"type": "keyword"},
+    "enricher": {"type": "local"},
     "embedder": {"type": "hashing"},
-    "index": {"type": "sqlite", "chunk_chars": 1500, "chunk_overlap": 200},
+    "index": {"type": "sqlite", "chunk_chars": "auto", "chunk_overlap": 200, "whole_video": "auto"},
     "ingest": {
         "min_duration": 90,          # seconds; drops Shorts
         "skip_live": True,

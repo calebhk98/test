@@ -15,6 +15,9 @@ class AnthropicLLM(LLM):
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
 
+    def _ping(self) -> bool:
+        return bool(os.environ.get(self.api_key_env))
+
     def complete(self, prompt, system=None, *, max_tokens=1024, temperature=0.2, json_mode=False):
         key = os.environ.get(self.api_key_env)
         if not key:

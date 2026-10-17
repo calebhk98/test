@@ -92,9 +92,11 @@ class ChapterSegmenter(Segmenter):
         for i, c in enumerate(chapters):
             end = chapters[i + 1].start if i + 1 < len(chapters) else (c.end or end_of_video)
             title = c.title or f"Part {i + 1}"
-            is_sponsor = any(s and (_norm(title) == s or s in _norm(title).split()) for s in sponsors)
+            is_sponsor = bool(re.match(r"(?i)\s*(sponsor|ad|advert|ad break)\b", title)) or \
+                any(s and (_norm(title) == s or s in _norm(title).split()) for s in sponsors)
+            own = [Link(label=title, url=c.url)] if c.url else []
             sections.append(Section(index=i + 1, title=title, start=c.start, end=end,
-                                    links=match_links(title, links), is_sponsor=is_sponsor))
+                                    links=own + match_links(title, links), is_sponsor=is_sponsor))
         fill_text(sections, transcript)
         if self.drop_empty:
             sections = [s for s in sections if s.text]

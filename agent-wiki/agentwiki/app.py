@@ -2,6 +2,7 @@
 print them as JSON and the MCP server can return them as tool results."""
 from __future__ import annotations
 
+import json
 import logging
 import os
 import time
@@ -21,6 +22,20 @@ log = logging.getLogger(__name__)
 
 class Busy(RuntimeError):
     """Another process holds the run lock."""
+
+
+class SourceBlocked(RuntimeError):
+    """The site is rate limiting or bot-checking us. Every later video would fail
+    the same way, so `run` stops and leaves the queue as it was."""
+
+
+_BLOCK_SIGNS = ("HTTP Error 429", "Too Many Requests", "confirm you're not a bot",
+                "confirm you\u2019re not a bot", "not a bot")
+
+
+def _is_block(e: Exception) -> bool:
+    s = str(e)
+    return any(sign in s for sign in _BLOCK_SIGNS)
 
 
 ASK_SYSTEM = ("You answer questions from a personal wiki of AI news videos. Use only the "
@@ -133,6 +148,10 @@ class App:
         except Busy:
             return {"video_id": vid, "status": "queued",
                     "note": "a run is in progress; this video is first in the queue"}
+        except SourceBlocked as e:
+            return {"video_id": vid, "status": "queued", "blocked": True, "error": str(e)[:300],
+                    "note": "YouTube is rate limiting or bot-checking; the video stays queued. "
+                            "Wait, or set cookies / player_clients in [source]."}
 
     def _process_one(self, vid: str) -> dict:
         self.catalog.update(vid, status="processing", error=None)
@@ -145,6 +164,10 @@ class App:
             self.catalog.update(vid, status="queued")
             raise
         except Exception as e:
+            if _is_block(e):
+                # Not this video's fault: keep it queued, attempts unchanged.
+                self.catalog.update(vid, status="queued", error=f"blocked: {e}"[:500])
+                raise SourceBlocked(str(e)) from e
             log.exception("failed: %s", vid)
             self.catalog.mark_failed(vid, f"{type(e).__name__}: {e}")
             return {"video_id": vid, "status": "failed", "error": f"{type(e).__name__}: {e}"}
@@ -218,9 +241,10 @@ class App:
         cfg = self.config["ingest"]
         sleep = cfg["sleep_between"] if sleep is None else sleep
         deadline = time.time() + max_minutes * 60 if max_minutes else None
-        results = []
+        results, stopped = [], None
         with self.lock():
             self.catalog.reset_stuck()
+            upgraded = self._requeue_degraded()
             if check_first:
                 self.check()
             while limit is None or len(results) < limit:
@@ -231,17 +255,48 @@ class App:
                     break
                 if results and sleep:
                     time.sleep(sleep)
-                r = self._process_one(row["video_id"])
+                try:
+                    r = self._process_one(row["video_id"])
+                except SourceBlocked as e:
+                    stopped = f"source blocked, queue left as is: {str(e)[:200]}"
+                    break
                 results.append({k: r.get(k) for k in ("video_id", "status", "title", "error", "reason")})
-        return {"processed": results, "queue": self.catalog.counts()}
+        out = {"processed": results, "queue": self.catalog.counts()}
+        if upgraded:
+            out["requeued_for_llm"] = upgraded
+        if stopped:
+            out["stopped"] = stopped
+        return out
+
+    def _requeue_degraded(self) -> int:
+        """Videos enriched by the fallback while the LLM was down get redone
+        from the enrich stage (no download) once the LLM answers again."""
+        llm = getattr(self.enricher, "llm", None)
+        if llm is None or not llm.available:
+            return 0
+        n = 0
+        for f in (self.config.data_dir / "raw").glob("*/enrichment.json"):
+            try:
+                degraded = json.loads(f.read_text(encoding="utf-8")).get("degraded")
+            except (OSError, ValueError):
+                continue
+            vid = f.parent.name
+            row = self.catalog.get(vid)
+            if degraded and row and row["status"] == "done":
+                self.pipeline.invalidate(vid, "enrich")
+                self.catalog.requeue(vid, PRIORITY_BACKFILL)
+                n += 1
+        return n
 
     def status(self, video_id: str | None = None, list_status: str | None = None,
                limit: int = 20) -> dict:
         if video_id:
             vid = self.source.parse_video_id(video_id) or video_id
             return {"video": self.catalog.get(vid)}
+        from . import hardware
         out = {"queue": self.catalog.counts(), "channels": len(self.catalog.channels()),
-               "index": self.index.stats(), "embedder": self.embedder.name}
+               "index": self.index.stats(), "embedder": self.embedder.name,
+               "hardware": hardware.detect().to_dict()}
         if list_status:
             out["videos"] = self.catalog.list(list_status, limit)
         return out
@@ -259,7 +314,13 @@ class App:
     def reindex(self) -> dict:
         n = self.index.reembed(self.embedder,
                                progress=lambda a, b: log.info("embedded %d/%d", a, b))
-        return {"embedder": self.embedder.name, "chunks_embedded": n}
+        # Whole-video vectors from the cached transcripts, single pass where it fits.
+        modes = {"single": 0, "mean": 0}
+        for vid in self.catalog.all_ids("done"):
+            info, tr = self.pipeline.cached(vid)
+            if info and tr:
+                modes[self.pipeline._whole_video_vector(info, tr, self.embedder)] += 1
+        return {"embedder": self.embedder.name, "chunks_embedded": n, "whole_video": modes}
 
     def refresh_channel_page(self, channel: str, channel_url: str) -> None:
         rows = self.index.db.execute(

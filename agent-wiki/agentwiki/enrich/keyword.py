@@ -10,6 +10,7 @@ from collections import Counter
 from ..models import Enrichment, Section, VideoInfo
 from ..registry import register
 from .base import Enricher, normalize_tags
+from .facts import extract_facts
 
 _STOP = set("""a about above after again against all also am an and any are as at be because been
 before being below between both but by can could did do does doing down during each few for from
@@ -20,7 +21,13 @@ to too under until up very was way we were what when where which while who whom 
 would you your yours gonna wanna yeah okay ok um uh let lets thing things going get got go see
 one two three new also basically actually here's it's that's there's you're we're they're i'm
 don't can't isn't won't just video videos look looks pretty much even still know make makes
-want well super quite""".split())
+want well super quite every given instead kind maybe lot bit stuff something anything
+everything someone people person able around always another back being better big called
+come comes coming different done enough far first give good great guess huh hey human idea
+important interesting last little long lot made many mean means mm need needs never next
+nice part probably put rather said say saying sense show since sort start sure take talk
+talking tell thank thanks think thinking thought time today together try trying turn use
+used uses using whether work working works world yes yet year years""".split()) - {"world"}
 
 
 def _sentences(text: str, n: int) -> str:
@@ -45,7 +52,7 @@ class KeywordEnricher(Enricher):
         if section.is_sponsor:
             tags = ["sponsor"] + tags
         return Enrichment(summary=_sentences(section.text, 2), tags=tags[: self.max_tags],
-                          model=self.name)
+                          facts=extract_facts(section.text), model=self.name)
 
     def enrich_video(self, info, sections, transcript_text) -> Enrichment:
         tags = normalize_tags(info.source_tags) + self._tags(info.title, transcript_text)

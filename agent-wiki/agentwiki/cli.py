@@ -1,7 +1,7 @@
 """Command line interface. Every command takes --json for agents.
 
 Exit codes: 0 ok, 1 error, 2 bad usage, 3 another run holds the lock,
-4 `has` found nothing.
+4 `has` found nothing, 5 the source is rate limiting or bot-checking.
 """
 from __future__ import annotations
 
@@ -139,6 +139,8 @@ def main(argv=None) -> int:
             code = 4 if "error" not in r else 1
         if args.cmd == "add" and r.get("status") == "failed":
             code = 1
+        if r.get("blocked") or r.get("stopped"):
+            code = 5
     print(json.dumps(r, ensure_ascii=False, default=str) if args.json else _human(args.cmd, r))
     return code
 
