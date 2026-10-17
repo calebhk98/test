@@ -46,10 +46,10 @@ def _ram_gb() -> float:
                         ("ullTotalPageFile", ctypes.c_ulonglong), ("ullAvailPageFile", ctypes.c_ulonglong),
                         ("ullTotalVirtual", ctypes.c_ulonglong), ("ullAvailVirtual", ctypes.c_ulonglong),
                         ("ullAvailExtendedVirtual", ctypes.c_ulonglong)]
-        m = MEMORYSTATUSEX()
-        m.dwLength = ctypes.sizeof(m)
-        if ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(m)):
-            return m.ullTotalPhys / 2**30
+        memory_status = MEMORYSTATUSEX()
+        memory_status.dwLength = ctypes.sizeof(memory_status)
+        if ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(memory_status)):
+            return memory_status.ullTotalPhys / 2**30
     return 0.0
 
 
@@ -62,8 +62,8 @@ def detect() -> Hardware:
     try:
         import torch
         if forced != "cpu" and torch.cuda.is_available():
-            p = torch.cuda.get_device_properties(0)
-            return Hardware("cuda", p.name, p.total_memory / 2**30, ram, cores, arch)
+            properties = torch.cuda.get_device_properties(0)
+            return Hardware("cuda", properties.name, properties.total_memory / 2**30, ram, cores, arch)
         if forced != "cpu" and getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
             return Hardware("mps", "Apple GPU", 0.0, ram, cores, arch)
     except ImportError:
@@ -77,17 +77,17 @@ def detect() -> Hardware:
     return Hardware("cpu", "", 0.0, ram, cores, arch)
 
 
-def pick(tiers: list[tuple[float, float, str]], hw: Hardware | None = None) -> str:
+def pick(tiers: list[tuple[float, float, str]], hardware_info: Hardware | None = None) -> str:
     """First tier whose (min VRAM GB, min RAM GB) this machine meets.
 
     VRAM 0 in a tier means "no GPU needed". Tiers go from biggest to smallest;
     the last one should be (0, 0, smallest) so something always matches.
     """
-    hw = hw or detect()
+    hardware_info = hardware_info or detect()
     for min_vram, min_ram, value in tiers:
-        if min_vram and not (hw.device == "cuda" and hw.vram_gb >= min_vram):
+        if min_vram and not (hardware_info.device == "cuda" and hardware_info.vram_gb >= min_vram):
             continue
-        if hw.ram_gb and hw.ram_gb < min_ram:
+        if hardware_info.ram_gb and hardware_info.ram_gb < min_ram:
             continue
         return value
     return tiers[-1][2]

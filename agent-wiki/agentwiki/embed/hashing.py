@@ -17,15 +17,17 @@ class HashingEmbedder(Embedder):
     search quality is roughly keyword overlap.
     """
 
-    def __init__(self, dim: int = 512):
-        self.dim = dim
-        self.model = str(dim)
+    def __init__(self, dimensions: int = 512):
+        self.dimensions = dimensions
+        self.model = str(dimensions)
 
     def _embed(self, texts, is_query):
-        m = np.zeros((len(texts), self.dim), dtype=np.float32)
-        for i, t in enumerate(texts):
-            words = re.findall(r"\w+", t.lower())
-            for tok in words + [a + " " + b for a, b in zip(words, words[1:])]:
-                h = int.from_bytes(hashlib.blake2b(tok.encode(), digest_size=8).digest(), "little")
-                m[i, h % self.dim] += 1.0 if (h >> 63) == 0 else -1.0
-        return m
+        counts = np.zeros((len(texts), self.dimensions), dtype=np.float32)
+        for row, text in enumerate(texts):
+            words = re.findall(r"\w+", text.lower())
+            pairs = [first_word + " " + second_word for first_word, second_word in zip(words, words[1:])]
+            for token in words + pairs:
+                hash_value = int.from_bytes(hashlib.blake2b(token.encode(), digest_size=8).digest(), "little")
+                bucket = hash_value % self.dimensions
+                counts[row, bucket] += 1.0 if (hash_value >> 63) == 0 else -1.0
+        return counts

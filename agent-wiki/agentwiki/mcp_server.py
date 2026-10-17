@@ -17,19 +17,19 @@ def serve(root: str = ".", config: str | None = None) -> int:
     app = App.open(root, config)
     mcp = FastMCP("agent-wiki")
 
-    def safe(fn, *a, **kw):
+    def safe(function, *args, **options):
         try:
-            return fn(*a, **kw)
-        except Busy as e:
-            return {"error": str(e)}
+            return function(*args, **options)
+        except Busy as error:
+            return {"error": str(error)}
 
     @mcp.tool()
-    def search(query: str, k: int = 8, kind: str | None = None, tags: list[str] | None = None,
+    def search(query: str, top_k: int = 8, kind: str | None = None, tags: list[str] | None = None,
                channel: str | None = None, since: str | None = None) -> dict:
         """Hybrid keyword + semantic search over the wiki. kind: "section" (one topic of a
         video, usually what you want) or "video". since: YYYY-MM-DD. Returns hits with a
         timestamped YouTube url, wiki path, snippet and doc_id for `show`."""
-        return app.search(query, k, kind, tags, channel, since)
+        return app.search(query, top_k, kind, tags, channel, since)
 
     @mcp.tool()
     def show(key: str) -> dict:
@@ -37,15 +37,15 @@ def serve(root: str = ".", config: str | None = None) -> int:
         return app.show(key)
 
     @mcp.tool()
-    def ask(question: str, k: int = 8, since: str | None = None) -> dict:
+    def ask(question: str, top_k: int = 8, since: str | None = None) -> dict:
         """Answer with the wiki's configured LLM, citing sources. Without an LLM configured,
         returns the sources only."""
-        return app.ask(question, k, since)
+        return app.ask(question, top_k, since)
 
     @mcp.tool()
-    def similar(video_id: str, k: int = 8) -> dict:
+    def similar(video_id: str, top_k: int = 8) -> dict:
         """Videos whose whole transcript is closest to this one."""
-        return app.similar(video_id, k)
+        return app.similar(video_id, top_k)
 
     @mcp.tool()
     def has_video(video: str) -> dict:

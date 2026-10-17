@@ -32,163 +32,179 @@ class Pipeline:
 
     # ---- cache helpers -----------------------------------------------------
 
-    def _dir(self, vid: str) -> Path:
-        d = self.raw_dir / vid
-        d.mkdir(parents=True, exist_ok=True)
-        return d
+    def _dir(self, video_id: str) -> Path:
+        video_dir = self.raw_dir / video_id
+        video_dir.mkdir(parents=True, exist_ok=True)
+        return video_dir
 
-    def _load(self, vid: str, stage: str):
-        p = self.raw_dir / vid / CACHE_FILES[stage]
-        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+    def _load(self, video_id: str, stage: str):
+        cache_path = self.raw_dir / video_id / CACHE_FILES[stage]
+        return json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else None
 
-    def _save(self, vid: str, stage: str, data) -> None:
-        p = self._dir(vid) / CACHE_FILES[stage]
-        tmp = p.with_suffix(".tmp")
-        tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-        tmp.replace(p)
+    def _save(self, video_id: str, stage: str, data) -> None:
+        cache_path = self._dir(video_id) / CACHE_FILES[stage]
+        temp_path = cache_path.with_suffix(".tmp")
+        temp_path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+        temp_path.replace(cache_path)
 
-    def invalidate(self, vid: str, from_stage: str) -> None:
+    def invalidate(self, video_id: str, from_stage: str) -> None:
         if from_stage not in STAGES:
             raise ValueError(f"stage must be one of {STAGES}")
-        for st in STAGES[STAGES.index(from_stage):]:
-            if st in CACHE_FILES:
-                (self.raw_dir / vid / CACHE_FILES[st]).unlink(missing_ok=True)
+        for stage_name in STAGES[STAGES.index(from_stage):]:
+            if stage_name in CACHE_FILES:
+                (self.raw_dir / video_id / CACHE_FILES[stage_name]).unlink(missing_ok=True)
 
-    def cached(self, vid: str) -> tuple[VideoInfo | None, Transcript | None]:
-        i, tr = self._load(vid, "info"), self._load(vid, "transcript")
-        return (VideoInfo.from_dict(i) if i else None, Transcript.from_dict(tr) if tr else None)
+    def cached(self, video_id: str) -> tuple[VideoInfo | None, Transcript | None]:
+        cached_info, cached_transcript = self._load(video_id, "info"), self._load(video_id, "transcript")
+        return (VideoInfo.from_dict(cached_info) if cached_info else None,
+                Transcript.from_dict(cached_transcript) if cached_transcript else None)
 
     # ---- stages ------------------------------------------------------------
 
-    def _info(self, vid: str, refresh: bool = False) -> VideoInfo:
-        cached = self._load(vid, "info")
+    def _info(self, video_id: str, refresh: bool = False) -> VideoInfo:
+        cached = self._load(video_id, "info")
         if cached and not refresh:
             return VideoInfo.from_dict(cached)
-        info = self.app.source.fetch_info(vid)
-        self._save(vid, "info", info.to_dict())
-        return info
+        video_info = self.app.source.fetch_info(video_id)
+        self._save(video_id, "info", video_info.to_dict())
+        return video_info
 
-    def _check_wanted(self, info: VideoInfo) -> None:
-        cfg = self.app.config["ingest"]
-        if cfg["skip_live"] and info.live_status in ("is_live", "is_upcoming"):
-            raise Skip(f"live status {info.live_status}")
-        if info.duration and info.duration < cfg["min_duration"]:
-            raise Skip(f"shorter than {cfg['min_duration']}s")
+    def _check_wanted(self, video_info: VideoInfo) -> None:
+        ingest_config = self.app.config["ingest"]
+        if ingest_config["skip_live"] and video_info.live_status in ("is_live", "is_upcoming"):
+            raise Skip(f"live status {video_info.live_status}")
+        if video_info.duration and video_info.duration < ingest_config["min_duration"]:
+            raise Skip(f"shorter than {ingest_config['min_duration']}s")
 
-    def _transcript(self, vid: str, info: VideoInfo) -> tuple[VideoInfo, Transcript]:
-        cached = self._load(vid, "transcript")
+    def _transcript(self, video_id: str, video_info: VideoInfo) -> tuple[VideoInfo, Transcript]:
+        cached = self._load(video_id, "transcript")
         if cached:
-            return info, Transcript.from_dict(cached)
-        info_file = self.raw_dir / vid / CACHE_FILES["info"]
+            return video_info, Transcript.from_dict(cached)
+        info_file = self.raw_dir / video_id / CACHE_FILES["info"]
         if time.time() - info_file.stat().st_mtime > INFO_MAX_AGE:
-            info = self._info(vid, refresh=True)
-        t = self.app.transcriber
-        audio_dir = self.tmp_dir / vid
+            # Only caption URLs expire; titles, chapters and descriptions do not.
+            # If the refresh fails (rate limit), carry on with the cached copy:
+            # audio from a local folder or a fresh download does not need it.
+            try:
+                video_info = self._info(video_id, refresh=True)
+            except Exception as error:
+                log.warning("%s: could not refresh metadata, using the cached copy: %s", video_id, error)
+        transcriber = self.app.transcriber
+        audio_dir = self.tmp_dir / video_id
         audio = None
         try:
-            if t.needs_audio:
-                audio = self.app.source.download_audio(vid, audio_dir)
-            transcript = t.transcribe(info, audio)
+            if transcriber.needs_audio:
+                audio = self.app.source.download_audio(video_id, audio_dir)
+            transcript = transcriber.transcribe(video_info, audio)
         finally:
             # The audio is never kept unless asked: it is the only large file.
             if audio and self.app.config["ingest"]["keep_audio"]:
-                keep = self._dir(vid) / audio.name
+                keep = self._dir(video_id) / audio.name
                 shutil.move(str(audio), keep)
             shutil.rmtree(audio_dir, ignore_errors=True)
         if not transcript.segments:
             raise RuntimeError("transcript is empty")
-        self._save(vid, "transcript", transcript.to_dict())
-        return info, transcript
+        self._save(video_id, "transcript", transcript.to_dict())
+        return video_info, transcript
 
-    def _sections(self, vid: str, info: VideoInfo, transcript: Transcript) -> list[Section]:
-        cached = self._load(vid, "sections")
+    def _sections(self, video_id: str, video_info: VideoInfo, transcript: Transcript) -> list[Section]:
+        cached = self._load(video_id, "sections")
         if cached is not None:
-            return [Section.from_dict(s) for s in cached]
-        sections = self.app.segmenter.split(info, transcript)
-        self._save(vid, "sections", [s.to_dict() for s in sections])
+            return [Section.from_dict(section) for section in cached]
+        sections = self.app.segmenter.split(video_info, transcript)
+        self._save(video_id, "sections", [section.to_dict() for section in sections])
         return sections
 
-    def _enrich(self, vid: str, info: VideoInfo, transcript: Transcript,
+    def _enrich(self, video_id: str, video_info: VideoInfo, transcript: Transcript,
                 sections: list[Section]) -> Enrichment:
-        cached = self._load(vid, "enrich")
+        cached = self._load(video_id, "enrich")
         if cached is None:
-            enr = self.app.enricher
+            enricher = self.app.enricher
             per_section, degraded = [], False
-            for s in sections:
-                e = enr.enrich_section(info, s)
-                s.summary, s.tags, s.facts = e.summary, e.tags, e.facts
-                per_section.append({"summary": e.summary, "tags": e.tags, "facts": e.facts})
-                degraded |= e.degraded
-            v = enr.enrich_video(info, sections, transcript.text)
+            for section in sections:
+                enrichment = enricher.enrich_section(video_info, section)
+                section.summary, section.tags, section.facts = (
+                    enrichment.summary, enrichment.tags, enrichment.facts)
+                per_section.append({"summary": enrichment.summary, "tags": enrichment.tags,
+                                    "facts": enrichment.facts})
+                degraded |= enrichment.degraded
+            video_enrichment = enricher.enrich_video(video_info, sections, transcript.text)
             # degraded: the LLM was unreachable and a fallback filled in; `run`
             # redoes this stage once the LLM is back.
-            cached = {"model": enr.name, "degraded": degraded or v.degraded, "sections": per_section,
-                      "video": {"summary": v.summary, "tags": v.tags}}
-            self._save(vid, "enrich", cached)
-        for s, e in zip(sections, cached["sections"]):
-            s.summary, s.tags, s.facts = e["summary"], e["tags"], e["facts"]
-        v = cached["video"]
-        return Enrichment(summary=v["summary"], tags=v["tags"], model=cached["model"])
+            cached = {"model": enricher.name, "degraded": degraded or video_enrichment.degraded,
+                      "sections": per_section,
+                      "video": {"summary": video_enrichment.summary, "tags": video_enrichment.tags}}
+            self._save(video_id, "enrich", cached)
+        for section, section_data in zip(sections, cached["sections"]):
+            section.summary, section.tags, section.facts = (
+                section_data["summary"], section_data["tags"], section_data["facts"])
+        video_data = cached["video"]
+        return Enrichment(summary=video_data["summary"], tags=video_data["tags"], model=cached["model"])
 
-    def _index_docs(self, info: VideoInfo, sections: list[Section], ve: Enrichment,
-                    vpath: str) -> list[IndexDoc]:
-        w = self.app.writer
-        chapters = "\n".join(f"- {s.title}" for s in sections)
+    def _index_docs(self, video_info: VideoInfo, sections: list[Section],
+                    video_enrichment: Enrichment, video_page_path: str) -> list[IndexDoc]:
+        writer = self.app.writer
+        chapters = "\n".join(f"- {section.title}" for section in sections)
         docs = [IndexDoc(
-            doc_id=info.video_id, kind="video", video_id=info.video_id, title=info.title,
-            path=vpath, url=info.url, channel=info.channel, published=info.published,
-            tags=ve.tags, text=f"{info.title}\n\n{ve.summary}\n\nSections:\n{chapters}\n\n{info.description}")]
-        for s in sections:
-            facts = "\n".join(f"- {f}" for f in s.facts)
-            links = " ".join(l.label for l in s.links)
+            doc_id=video_info.video_id, kind="video", video_id=video_info.video_id, title=video_info.title,
+            path=video_page_path, url=video_info.url, channel=video_info.channel,
+            published=video_info.published, tags=video_enrichment.tags,
+            text=(f"{video_info.title}\n\n{video_enrichment.summary}\n\nSections:\n{chapters}"
+                  f"\n\n{video_info.description}"))]
+        for section in sections:
+            facts = "\n".join(f"- {fact}" for fact in section.facts)
+            links = " ".join(link.label for link in section.links)
             docs.append(IndexDoc(
-                doc_id=f"{info.video_id}#{s.index}", kind="section", video_id=info.video_id,
-                title=s.title, path=w.section_path(info, s), url=info.timestamp_url(s.start),
-                channel=info.channel, published=info.published, tags=s.tags,
-                is_sponsor=s.is_sponsor,
-                text=f"{s.title}. {links}\n\n{s.summary}\n\n{facts}\n\n{s.text}".strip()))
+                doc_id=f"{video_info.video_id}#{section.index}", kind="section", video_id=video_info.video_id,
+                title=section.title, path=writer.section_path(video_info, section),
+                url=video_info.timestamp_url(section.start),
+                channel=video_info.channel, published=video_info.published, tags=section.tags,
+                is_sponsor=section.is_sponsor,
+                text=f"{section.title}. {links}\n\n{section.summary}\n\n{facts}\n\n{section.text}".strip()))
         return docs
 
     # ---- driver ------------------------------------------------------------
 
-    def process(self, vid: str, on_stage: Callable[[str], None] | None = None) -> dict:
+    def process(self, video_id: str, on_stage: Callable[[str], None] | None = None) -> dict:
         def stage(name):
             if on_stage:
                 on_stage(name)
-            log.info("%s: %s", vid, name)
+            log.info("%s: %s", video_id, name)
 
         stage("info")
-        info = self._info(vid)
-        self._check_wanted(info)
+        video_info = self._info(video_id)
+        self._check_wanted(video_info)
         stage("transcript")
-        info, transcript = self._transcript(vid, info)
+        video_info, transcript = self._transcript(video_id, video_info)
         stage("sections")
-        sections = self._sections(vid, info, transcript)
+        sections = self._sections(video_id, video_info, transcript)
         stage("enrich")
-        ve = self._enrich(vid, info, transcript, sections)
+        video_enrichment = self._enrich(video_id, video_info, transcript, sections)
         stage("pages")
-        w = self.app.writer
-        vpath = w.write_video(info, transcript, sections, ve,
-                              transcriber=transcript.model, enricher=ve.model)
+        writer = self.app.writer
+        video_page_path = writer.write_video(video_info, transcript, sections, video_enrichment,
+                                             transcriber=transcript.model, enricher=video_enrichment.model)
         stage("index")
-        idx, emb = self.app.index, self.app.embedder
-        idx.delete_video(vid)
-        idx.upsert(self._index_docs(info, sections, ve, vpath), emb)
-        whole = self._whole_video_vector(info, transcript, emb)
-        self.app.refresh_channel_page(info.channel, info.channel_url)
-        return {"video_id": vid, "title": info.title, "page": vpath, "sections": len(sections),
-                "published": info.published, "channel_id": info.channel_id, "whole_video": whole}
+        index, embedder = self.app.index, self.app.embedder
+        index.delete_video(video_id)
+        index.upsert(self._index_docs(video_info, sections, video_enrichment, video_page_path), embedder)
+        whole = self._whole_video_vector(video_info, transcript, embedder)
+        self.app.refresh_channel_page(video_info.channel, video_info.channel_url)
+        return {"video_id": video_id, "title": video_info.title, "page": video_page_path,
+                "sections": len(sections),
+                "published": video_info.published, "channel_id": video_info.channel_id, "whole_video": whole}
 
-    def _whole_video_vector(self, info: VideoInfo, transcript: Transcript, emb) -> str:
+    def _whole_video_vector(self, video_info: VideoInfo, transcript: Transcript, embedder) -> str:
         """Encode the whole transcript in one pass when it fits the encoder's
         window (Qwen3-Embedding takes 32K tokens, about 3 hours of speech);
         otherwise average the section vectors. Returns which was used."""
         mode = self.app.config["index"].get("whole_video", "auto")
-        text = f"{info.title}\n\n{transcript.text}"
+        text = f"{video_info.title}\n\n{transcript.text}"
         if mode != "mean":
-            fits = emb.count_tokens(text) <= emb.max_tokens
+            fits = embedder.count_tokens(text) <= embedder.max_tokens
             if fits or mode == "single":   # "single" lets the model truncate
-                self.app.index.set_doc_vector(info.video_id, emb, emb.embed_documents([text])[0])
+                self.app.index.set_doc_vector(video_info.video_id, embedder,
+                                              embedder.embed_documents([text])[0])
                 return "single"
-        self.app.index.pool_video(info.video_id, emb)
+        self.app.index.pool_video(video_info.video_id, embedder)
         return "mean"

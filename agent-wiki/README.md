@@ -90,16 +90,33 @@ searched from a laptop.
 
 ## Without an LLM
 
-Every feature works without one. The `local` enricher uses the embedding model
-for tags (key phrases and topic categories) and summaries (the most
-representative sentences), and patterns for facts like parameter counts,
-VRAM, licence and censorship. Videos without chapters are split by topic with
+Every feature works without one. Tags, summaries and facts are three
+separate swappable parts (see the enricher section of `config.example.toml`).
+The `models` preset uses small dedicated models instead: GLiNER2 for model and
+company names and for facts, DistilBART for summaries, the embedder for topic
+categories, and patterns for numbers like parameter counts and VRAM. The
+`local` preset needs only the embedder. Videos without chapters are split by topic with
 the same embeddings. `ask` without an LLM returns the cited sources, which an
 agent such as Claude Code reads and answers from.
 
 With `[enricher] type = "llm"`, an unreachable LLM never stops anything: the
 local enricher fills in, and the next `run` upgrades those videos from cache
 once the LLM answers.
+
+## Audio you got some other way
+
+If YouTube blocks downloads, fetch the audio however you like (a converter
+website, another app), name the file after the video id
+(`lHmZoRHMZyM.mp3`) and drop it in a folder:
+
+```toml
+[source]
+type = "local-audio"
+folder = "~/agent-wiki-audio"
+source = { type = "yt-dlp" }     # metadata still comes from YouTube
+```
+
+Videos without a file are downloaded as usual.
 
 ## Podcasts
 
@@ -131,7 +148,7 @@ class MyEncoder(Embedder):
     def __init__(self, model: str):
         self.model = model
     def _embed(self, texts, is_query):
-        ...   # return an (n, dim) numpy array
+        ...   # return an (n, dimensions) numpy array
 ```
 
 Put the module on the Python path, add `plugins = ["my_module"]` to config, and set

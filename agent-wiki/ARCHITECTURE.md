@@ -82,11 +82,15 @@ LLM              complete(prompt, system) -> str, complete_json()
   every LLM reports `available`, re-checked each minute
 
 Enricher         enrich_section(), enrich_video() -> summary, tags, facts
-  LLMEnricher       asks the LLM for JSON; section facts include model names,
-                    sizes, licence, censorship, hardware, speed; falls back to Local
-  LocalEnricher     embedder only: key phrases (KeyBERT), zero-shot categories,
-                    extractive summary, pattern-matched facts
-  KeywordEnricher   nothing at all: word counts, first sentences, pattern facts
+  CompositeEnricher  holds three swappable kinds of part, each with fallbacks:
+    Tagger           title-and-links, embedding-categories, keyphrases,
+                     gliner-entities (GLiNER2), zero-shot-categories (NLI), word-counts, llm
+    Summarizer       extractive, seq2seq (BART etc.), first-sentences, llm
+    FactExtractor    patterns, gliner (GLiNER2), llm
+  presets            keyword (nothing), local (embedder only), models (+ GLiNER2),
+                     llm (one call per section, another preset as fallback)
+  A part that cannot run raises PartUnavailable; its fallbacks run, the
+  result is marked degraded, and `run` redoes it when the part is back.
 
 Embedder         embed_documents([str]), embed_query(str), name, dim
   SentenceTransformerEmbedder  EmbeddingGemma and anything on Hugging Face
@@ -108,7 +112,7 @@ tier tables behind every "auto").
 | --- | --- | --- |
 | download, transcribe, delete audio, pages, links, dedupe, channels, queue | not used | same |
 | splitting | not used (chapters) | chapters, or topic splitting by embeddings |
-| tags | written by the LLM | key phrases + zero-shot categories from the embedder |
+| tags | written by the LLM | names from GLiNER2, topic categories and key phrases from the embedder, title and link labels |
 | summary | written | the most representative sentences, quoted |
 | facts (size, VRAM, licence, censorship) | extracted and rephrased | the sentences that state them, found by pattern |
 | embeddings, search, `similar` | not used | same |

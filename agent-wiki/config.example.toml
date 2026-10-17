@@ -49,17 +49,44 @@ segmenters = [
 ]
 
 # ---- Tags, summaries and facts -----------------------------------------------
-# "local" uses only the embedding model: key-phrase tags, topic categories,
-# summary sentences picked from the transcript, and pattern-matched facts
-# (parameter counts, VRAM, licence, censorship, speed, price). No LLM.
+# Three separate jobs, each done by a swappable part:
 #
-# "llm" writes better summaries and facts, and falls back to "local" whenever
-# the LLM is unreachable; those videos are redone automatically by the next
-# `run` once it answers again. Nothing waits on the LLM.
+#   taggers           title-and-links    chapter titles that are names, description link labels
+#                     embedding-categories  topic categories, zero-shot with the embedder
+#                     keyphrases         specific terms from the text (KeyBERT method)
+#                     gliner-entities    model, tool and company names (GLiNER2 model)
+#                     zero-shot-categories  topics with an NLI classifier (slow)
+#                     word-counts        most frequent words, needs nothing
+#                     llm                one LLM call per section covers tags, summary, facts
+#   summarizer        extractive         quotes the most representative sentences
+#                     seq2seq            a summarization model (BART by default)
+#                     first-sentences    the opening sentences
+#                     llm
+#   fact_extractors   patterns           sentences stating size, VRAM, licence, censorship...
+#                     gliner             facts found by GLiNER2, quoted with their sentence
+#                     llm
+#
+# Presets with the parts already chosen:
+#   "keyword"  nothing at all
+#   "local"    only the embedding model search already loads
+#   "models"   local + GLiNER2 for names and facts (pip install "gliner2[local]")
+#   "llm"      LLM for all three, falling back to another preset while it is unavailable
+#
+# Any part can name fallbacks; while it is unavailable they run instead, the
+# video is marked degraded, and the next `run` redoes it once the part is back.
 [enricher]
 type = "llm"
-fallback = { type = "local" }
+fallback = "models"
 max_tags = 12
+# section_prompt = """..."""        # replace the LLM prompts; see agentwiki/enrich/llm_parts.py
+
+# Or mix parts yourself:
+# [enricher]
+# type = "composite"
+# taggers = ["title-and-links", "gliner-entities",
+#            { type = "llm", fallback = ["embedding-categories", "keyphrases"] }]
+# summarizer = { type = "seq2seq", model = "facebook/bart-large-cnn", fallback = "extractive" }
+# fact_extractors = [{ type = "patterns", extra_patterns = { release = '\breleased\b' } }, "gliner"]
 
 # Any of these runs on your own machine.
 [llm]
@@ -94,7 +121,7 @@ num_ctx = 16384
 [embedder]
 type = "sentence-transformers"
 model = "Qwen/Qwen3-Embedding-0.6B"
-# dim = 512          # Matryoshka truncation: smaller index, slightly lower quality
+# dimensions = 512          # Matryoshka truncation: smaller index, slightly lower quality
 # max_tokens = 8192  # cap the window to bound memory on small devices
 
 # Or through Ollama:   type = "ollama", model = "qwen3-embedding:0.6b", max_tokens = 32768

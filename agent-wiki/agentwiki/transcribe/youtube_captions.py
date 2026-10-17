@@ -24,41 +24,42 @@ class YouTubeCaptionsTranscriber(Transcriber):
         self.source = None          # set by from_config
 
     @classmethod
-    def from_config(cls, params, ctx=None):
-        obj = cls(**params)
-        obj.source = getattr(ctx, "source", None)
-        return obj
+    def from_config(cls, params, app=None):
+        transcriber = cls(**params)
+        transcriber.source = getattr(app, "source", None)
+        return transcriber
 
-    def _pick(self, info: VideoInfo) -> tuple[str, str] | None:
-        pools = [info.raw.get("subtitles") or {}, info.raw.get("automatic_captions") or {}]
+    def _pick(self, video_info: VideoInfo) -> tuple[str, str] | None:
+        pools = [video_info.raw.get("subtitles") or {}, video_info.raw.get("automatic_captions") or {}]
         if not self.prefer_manual:
             pools.reverse()
         for pool in pools:
-            for lang in self.languages:
-                for fmt in pool.get(lang) or []:
-                    if fmt.get("ext") == "json3" and fmt.get("url"):
-                        return lang, fmt["url"]
+            for language in self.languages:
+                for caption_format in pool.get(language) or []:
+                    if caption_format.get("ext") == "json3" and caption_format.get("url"):
+                        return language, caption_format["url"]
         return None
 
-    def transcribe(self, info: VideoInfo, audio_path: Path | None) -> Transcript:
-        picked = self._pick(info)
+    def transcribe(self, video_info: VideoInfo, audio_path: Path | None) -> Transcript:
+        picked = self._pick(video_info)
         if not picked:
             raise TranscriptionUnavailable("no captions in a configured language")
         if self.source is None:
             raise TranscriptionUnavailable("no source to fetch captions with")
-        lang, url = picked
-        segs = parse_json3(json.loads(self.source.fetch_text(url)))
-        if not segs:
+        language, url = picked
+        segments = parse_json3(json.loads(self.source.fetch_text(url)))
+        if not segments:
             raise TranscriptionUnavailable("captions were empty")
-        return Transcript(segments=segs, language=lang, model=self.name)
+        return Transcript(segments=segments, language=language, model=self.name)
 
 
 def parse_json3(data: dict) -> list[Segment]:
-    segs = []
-    for ev in data.get("events", []):
-        text = "".join(s.get("utf8", "") for s in ev.get("segs") or []).replace("\n", " ").strip()
+    segments = []
+    for event in data.get("events", []):
+        text = "".join(segment.get("utf8", "")
+                       for segment in event.get("segs") or []).replace("\n", " ").strip()
         if not text:
             continue
-        start = ev.get("tStartMs", 0) / 1000
-        segs.append(Segment(start=start, end=start + ev.get("dDurationMs", 0) / 1000, text=text))
-    return segs
+        start = event.get("tStartMs", 0) / 1000
+        segments.append(Segment(start=start, end=start + event.get("dDurationMs", 0) / 1000, text=text))
+    return segments

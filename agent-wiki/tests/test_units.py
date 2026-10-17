@@ -6,26 +6,28 @@ from agentwiki.transcribe.youtube_captions import parse_json3
 
 
 def test_parse_video_id():
-    p = YtDlpSource().parse_video_id
-    for s in ["lHmZoRHMZyM", "https://www.youtube.com/watch?v=lHmZoRHMZyM&t=5s",
-              "https://youtu.be/lHmZoRHMZyM", "https://www.youtube.com/shorts/lHmZoRHMZyM",
-              "https://www.youtube.com/live/lHmZoRHMZyM?si=x"]:
-        assert p(s) == "lHmZoRHMZyM", s
-    assert p("https://www.youtube.com/@theAIsearch") is None
+    parse_video_id = YtDlpSource().parse_video_id
+    for url_or_id in ["lHmZoRHMZyM", "https://www.youtube.com/watch?v=lHmZoRHMZyM&t=5s",
+                      "https://youtu.be/lHmZoRHMZyM", "https://www.youtube.com/shorts/lHmZoRHMZyM",
+                      "https://www.youtube.com/live/lHmZoRHMZyM?si=x"]:
+        assert parse_video_id(url_or_id) == "lHmZoRHMZyM", url_or_id
+    assert parse_video_id("https://www.youtube.com/@theAIsearch") is None
 
 
 def test_uploads_url():
-    u = YtDlpSource._uploads_url
-    assert u("@theAIsearch") == "https://www.youtube.com/@theAIsearch/videos"
-    assert u("https://www.youtube.com/@theAIsearch/") == "https://www.youtube.com/@theAIsearch/videos"
-    assert u("https://www.youtube.com/@theAIsearch/streams").endswith("/streams")
+    uploads_url = YtDlpSource._uploads_url
+    assert uploads_url("@theAIsearch") == "https://www.youtube.com/@theAIsearch/videos"
+    assert uploads_url("https://www.youtube.com/@theAIsearch/") == \
+        "https://www.youtube.com/@theAIsearch/videos"
+    assert uploads_url("https://www.youtube.com/@theAIsearch/streams").endswith("/streams")
 
 
 def test_description_links_continue_label_on_bare_url_line():
-    d = "Plasma conjecture https://a.example/1\nhttps://b.example/2\n\n00:00 intro\nhttps://c.example"
-    links = description_links(d)
-    assert [(l.label, l.url) for l in links] == [("Plasma conjecture", "https://a.example/1"),
-                                                ("Plasma conjecture", "https://b.example/2")]
+    description = ("Plasma conjecture https://a.example/1\nhttps://b.example/2\n\n00:00 intro\n"
+                   "https://c.example")
+    links = description_links(description)
+    assert [(link.label, link.url) for link in links] == [("Plasma conjecture", "https://a.example/1"),
+                                                          ("Plasma conjecture", "https://b.example/2")]
 
 
 def test_sponsor_names():
@@ -38,16 +40,16 @@ def test_parse_json3():
     data = {"events": [{"tStartMs": 0, "dDurationMs": 1500, "segs": [{"utf8": "hello "}, {"utf8": "world"}]},
                        {"tStartMs": 1500, "dDurationMs": 10, "segs": [{"utf8": "\n"}]},
                        {"tStartMs": 2000, "dDurationMs": 1000}]}
-    segs = parse_json3(data)
-    assert len(segs) == 1 and segs[0].text == "hello world" and segs[0].end == 1.5
+    segments = parse_json3(data)
+    assert len(segments) == 1 and segments[0].text == "hello world" and segments[0].end == 1.5
 
 
 def test_chunk_text_covers_everything_with_overlap():
-    text = " ".join(f"Sentence number {i} is here." for i in range(300))
+    text = " ".join(f"Sentence number {number} is here." for number in range(300))
     chunks = chunk_text(text, 500, 100)
-    assert all(len(c) <= 500 for c in chunks)
+    assert all(len(chunk) <= 500 for chunk in chunks)
     assert chunks[0].startswith("Sentence number 0") and chunks[-1].endswith("number 299 is here.")
-    assert all(not c.startswith(("entence", "umber")) for c in chunks)
+    assert all(not chunk.startswith(("entence", "umber")) for chunk in chunks)
     assert chunk_text("short", 500, 100) == ["short"]
 
 

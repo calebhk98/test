@@ -37,32 +37,33 @@ class FakeSource(VideoSource):
         self.downloads: list[str] = []
         self.channel_videos = [REAL_ID, "aaaaaaaaaaa", "bbbbbbbbbbb"]
 
-    def parse_video_id(self, s):
-        return YtDlpSource().parse_video_id(s)
+    def parse_video_id(self, url_or_id):
+        return YtDlpSource().parse_video_id(url_or_id)
 
     def resolve_channel(self, url):
         return ChannelRef("UCIgnGlGkVRhd4qNFcEwLL4A", "AI Search", "https://www.youtube.com/@theAIsearch")
 
     def list_channel(self, url, limit=None):
-        out = [ChannelEntry(v, f"video {v}", 600.0) for v in self.channel_videos]
+        out = [ChannelEntry(video_id, f"video {video_id}", 600.0) for video_id in self.channel_videos]
         out.append(ChannelEntry("shortshort1", "a short", 30.0))
         return out[:limit] if limit else out
 
-    def fetch_info(self, vid):
-        if vid == REAL_ID:
+    def fetch_info(self, video_id):
+        if video_id == REAL_ID:
             return VideoInfo.from_ytdlp(json.loads((FIXTURES / f"{REAL_ID}.info.json").read_text()))
-        if vid == "shortshort1":
-            return VideoInfo(video_id=vid, title="short", url="u", duration=30)
-        return VideoInfo(video_id=vid, title=f"Video {vid} about robots", url=f"https://youtu.be/{vid}",
+        if video_id == "shortshort1":
+            return VideoInfo(video_id=video_id, title="short", url="u", duration=30)
+        return VideoInfo(video_id=video_id, title=f"Video {video_id} about robots",
+                         url=f"https://youtu.be/{video_id}",
                          channel="AI Search", published="2026-09-01", duration=600,
                          description="Robots and humanoid news.")
 
-    def download_audio(self, vid, out_dir):
+    def download_audio(self, video_id, out_dir):
         out_dir.mkdir(parents=True, exist_ok=True)
-        p = out_dir / f"{vid}.webm"
-        p.write_bytes(b"fake audio")
-        self.downloads.append(vid)
-        return p
+        audio_file = out_dir / f"{video_id}.webm"
+        audio_file.write_bytes(b"fake audio")
+        self.downloads.append(video_id)
+        return audio_file
 
 
 @register("transcriber", "fake")
@@ -70,27 +71,28 @@ class FakeTranscriber(Transcriber):
     def __init__(self):
         self.seen_audio: list[Path] = []
 
-    def transcribe(self, info, audio_path):
+    def transcribe(self, video_info, audio_path):
         assert audio_path is not None and audio_path.exists()
         self.seen_audio.append(audio_path)
-        segs = []
-        if info.chapters:
-            for c in info.chapters:
-                text = SPOKEN.get(c.title, f"This part covers {c.title}. It is interesting news.")
-                segs.append(Segment(c.start, c.start + 5, text))
+        segments = []
+        if video_info.chapters:
+            for chapter in video_info.chapters:
+                text = SPOKEN.get(chapter.title, f"This part covers {chapter.title}. It is interesting news.")
+                segments.append(Segment(chapter.start, chapter.start + 5, text))
         else:
-            for i in range(0, int(info.duration), 30):
-                segs.append(Segment(i, i + 30, f"Humanoid robots segment {i}. Robots walk."))
-        return Transcript(segs, "en", "fake")
+            for second in range(0, int(video_info.duration), 30):
+                segments.append(Segment(second, second + 30,
+                                        f"Humanoid robots segment {second}. Robots walk."))
+        return Transcript(segments, "en", "fake")
 
 
 @pytest.fixture
 def app(tmp_path) -> App:
-    cfg = Config.load(tmp_path)
-    cfg.data["source"] = {"type": "fake"}
-    cfg.data["transcriber"] = {"type": "fake"}
-    cfg.data["embedder"] = {"type": "hashing", "dim": 256}
-    cfg.data["ingest"]["sleep_between"] = 0
-    a = App(cfg)
-    a.init()
-    return a
+    config = Config.load(tmp_path)
+    config.data["source"] = {"type": "fake"}
+    config.data["transcriber"] = {"type": "fake"}
+    config.data["embedder"] = {"type": "hashing", "dimensions": 256}
+    config.data["ingest"]["sleep_between"] = 0
+    wiki_app = App(config)
+    wiki_app.init()
+    return wiki_app

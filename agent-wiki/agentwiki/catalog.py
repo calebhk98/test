@@ -28,15 +28,15 @@ def now() -> str:
 class Catalog:
     def __init__(self, path: str | Path):
         Path(path).parent.mkdir(parents=True, exist_ok=True)
-        self.db = sqlite3.connect(path)
-        self.db.row_factory = sqlite3.Row
-        self.db.executescript(SCHEMA)
+        self.database = sqlite3.connect(path)
+        self.database.row_factory = sqlite3.Row
+        self.database.executescript(SCHEMA)
 
     # ---- videos ------------------------------------------------------------
 
     def get(self, video_id: str) -> dict | None:
-        r = self.db.execute("SELECT * FROM videos WHERE video_id=?", (video_id,)).fetchone()
-        return dict(r) if r else None
+        row = self.database.execute("SELECT * FROM videos WHERE video_id=?", (video_id,)).fetchone()
+        return dict(row) if row else None
 
     def has(self, video_id: str) -> bool:
         return self.get(video_id) is not None
@@ -48,85 +48,89 @@ class Catalog:
         A known video keeps its status; only its priority can go up, so adding
         a backfilled video by hand moves it to the front of the queue.
         """
-        with self.db:
-            cur = self.db.execute(
+        with self.database:
+            cursor = self.database.execute(
                 "INSERT OR IGNORE INTO videos (video_id, channel_id, title, status, priority, "
                 "added_at, updated_at) VALUES (?,?,?,?,?,?,?)",
                 (video_id, channel_id, title, "queued", priority, now(), now()))
-            if cur.rowcount == 0:
-                self.db.execute("UPDATE videos SET priority=MAX(priority, ?) WHERE video_id=?",
-                                (priority, video_id))
+            if cursor.rowcount == 0:
+                self.database.execute("UPDATE videos SET priority=MAX(priority, ?) WHERE video_id=?",
+                                      (priority, video_id))
                 return False
             return True
 
     def requeue(self, video_id: str, priority: int | None = None) -> None:
-        with self.db:
-            self.db.execute(
+        with self.database:
+            self.database.execute(
                 "UPDATE videos SET status='queued', attempts=0, error=NULL, updated_at=?, "
                 "priority=COALESCE(?, priority) WHERE video_id=?", (now(), priority, video_id))
 
     def next_queued(self, max_attempts: int) -> dict | None:
-        r = self.db.execute(
+        row = self.database.execute(
             "SELECT * FROM videos WHERE (status='queued' OR (status='failed' AND attempts<?)) "
             "ORDER BY status='failed', priority DESC, published DESC, added_at LIMIT 1",
             (max_attempts,)).fetchone()
-        return dict(r) if r else None
+        return dict(row) if row else None
 
     def update(self, video_id: str, **fields) -> None:
         fields["updated_at"] = now()
-        cols = ", ".join(f"{k}=?" for k in fields)
-        with self.db:
-            self.db.execute(f"UPDATE videos SET {cols} WHERE video_id=?", (*fields.values(), video_id))
+        columns = ", ".join(f"{column}=?" for column in fields)
+        with self.database:
+            self.database.execute(f"UPDATE videos SET {columns} WHERE video_id=?",
+                                  (*fields.values(), video_id))
 
     def mark_failed(self, video_id: str, error: str) -> None:
-        with self.db:
-            self.db.execute("UPDATE videos SET status='failed', attempts=attempts+1, error=?, "
-                            "updated_at=? WHERE video_id=?", (error[:2000], now(), video_id))
+        with self.database:
+            self.database.execute("UPDATE videos SET status='failed', attempts=attempts+1, error=?, "
+                                  "updated_at=? WHERE video_id=?", (error[:2000], now(), video_id))
 
     def counts(self) -> dict[str, int]:
-        out = {s: 0 for s in STATUSES}
-        for r in self.db.execute("SELECT status, COUNT(*) FROM videos GROUP BY status"):
-            out[r[0]] = r[1]
+        out = {status: 0 for status in STATUSES}
+        for row in self.database.execute("SELECT status, COUNT(*) FROM videos GROUP BY status"):
+            out[row[0]] = row[1]
         return out
 
     def list(self, status: str | None = None, limit: int = 50) -> list[dict]:
         if status:
-            rows = self.db.execute("SELECT * FROM videos WHERE status=? ORDER BY updated_at DESC "
-                                   "LIMIT ?", (status, limit))
+            rows = self.database.execute("SELECT * FROM videos WHERE status=? ORDER BY updated_at DESC "
+                                         "LIMIT ?", (status, limit))
         else:
-            rows = self.db.execute("SELECT * FROM videos ORDER BY updated_at DESC LIMIT ?", (limit,))
-        return [dict(r) for r in rows]
+            rows = self.database.execute("SELECT * FROM videos ORDER BY updated_at DESC LIMIT ?", (limit,))
+        return [dict(row) for row in rows]
 
     def all_ids(self, status: str | None = None) -> list[str]:
-        q = "SELECT video_id FROM videos" + (" WHERE status=?" if status else "")
-        return [r[0] for r in self.db.execute(q, (status,) if status else ())]
+        query_text = "SELECT video_id FROM videos" + (" WHERE status=?" if status else "")
+        return [row[0] for row in self.database.execute(query_text, (status,) if status else ())]
 
     def reset_stuck(self) -> int:
         """`processing` rows left behind by a crash go back to the queue."""
-        with self.db:
-            return self.db.execute("UPDATE videos SET status='queued' WHERE status='processing'").rowcount
+        with self.database:
+            return self.database.execute(
+                "UPDATE videos SET status='queued' WHERE status='processing'").rowcount
 
     # ---- channels ----------------------------------------------------------
 
     def add_channel(self, channel_id: str, name: str, url: str) -> bool:
-        with self.db:
-            cur = self.db.execute("INSERT OR IGNORE INTO channels (channel_id, name, url, added_at) "
-                                  "VALUES (?,?,?,?)", (channel_id, name, url, now()))
-            return cur.rowcount == 1
+        with self.database:
+            cursor = self.database.execute(
+                "INSERT OR IGNORE INTO channels (channel_id, name, url, added_at) "
+                "VALUES (?,?,?,?)", (channel_id, name, url, now()))
+            return cursor.rowcount == 1
 
     def remove_channel(self, key: str) -> bool:
-        with self.db:
-            return self.db.execute("DELETE FROM channels WHERE channel_id=? OR name=? OR url=?",
-                                   (key, key, key)).rowcount > 0
+        with self.database:
+            return self.database.execute("DELETE FROM channels WHERE channel_id=? OR name=? OR url=?",
+                                         (key, key, key)).rowcount > 0
 
     def channels(self) -> list[dict]:
-        return [dict(r) for r in self.db.execute("SELECT * FROM channels ORDER BY name")]
+        return [dict(row) for row in self.database.execute("SELECT * FROM channels ORDER BY name")]
 
     def find_channel(self, key: str) -> dict | None:
-        r = self.db.execute("SELECT * FROM channels WHERE channel_id=? OR name=? OR url=? "
-                            "OR url LIKE ?", (key, key, key, f"%{key.lstrip('@')}%")).fetchone()
-        return dict(r) if r else None
+        row = self.database.execute("SELECT * FROM channels WHERE channel_id=? OR name=? OR url=? "
+                                    "OR url LIKE ?", (key, key, key, f"%{key.lstrip('@')}%")).fetchone()
+        return dict(row) if row else None
 
     def touch_channel(self, channel_id: str) -> None:
-        with self.db:
-            self.db.execute("UPDATE channels SET last_checked=? WHERE channel_id=?", (now(), channel_id))
+        with self.database:
+            self.database.execute("UPDATE channels SET last_checked=? WHERE channel_id=?",
+                                  (now(), channel_id))

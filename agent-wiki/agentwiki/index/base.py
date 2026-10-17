@@ -44,15 +44,15 @@ class VectorIndex(Component, ABC):
         """Store a whole-video vector: the mean of its section chunk vectors."""
 
     @abstractmethod
-    def set_doc_vector(self, doc_id: str, embedder: Embedder, vec) -> None:
+    def set_doc_vector(self, doc_id: str, embedder: Embedder, vector) -> None:
         """Store a vector for a whole document, used by `similar`."""
 
     @abstractmethod
-    def search(self, query: str, embedder: Embedder, k: int = 8,
+    def search(self, query: str, embedder: Embedder, top_k: int = 8,
                filters: SearchFilters | None = None) -> list[SearchHit]: ...
 
     @abstractmethod
-    def similar(self, video_id: str, embedder: Embedder, k: int = 8) -> list[SearchHit]: ...
+    def similar(self, video_id: str, embedder: Embedder, top_k: int = 8) -> list[SearchHit]: ...
 
     @abstractmethod
     def stats(self) -> dict: ...

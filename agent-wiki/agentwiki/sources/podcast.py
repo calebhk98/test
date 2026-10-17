@@ -20,139 +20,142 @@ from ..models import Chapter, VideoInfo
 from ..registry import register
 from .base import ChannelEntry, ChannelRef, VideoSource
 
-NS = {"itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
-      "podcast": "https://podcastindex.org/namespace/1.0",
-      "content": "http://purl.org/rss/1.0/modules/content/"}
+XML_NAMESPACES = {"itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
+                  "podcast": "https://podcastindex.org/namespace/1.0",
+                  "content": "http://purl.org/rss/1.0/modules/content/"}
 _ID_RE = re.compile(r"^pod-[0-9a-f]{12}$")
-UA = {"User-Agent": "agent-wiki/0.1 (+podcast source)"}
+REQUEST_HEADERS = {"User-Agent": "agent-wiki/0.1 (+podcast source)"}
 
 
 def episode_id(guid: str) -> str:
     return "pod-" + hashlib.sha1(guid.encode()).hexdigest()[:12]
 
 
-def _text(el, path: str) -> str:
-    x = el.find(path, NS)
-    return (x.text or "").strip() if x is not None and x.text else ""
+def _text(element, path: str) -> str:
+    found = element.find(path, XML_NAMESPACES)
+    return (found.text or "").strip() if found is not None and found.text else ""
 
 
-def _strip_html(s: str) -> str:
-    s = re.sub(r"<br\s*/?>|</p>|</li>", "\n", s, flags=re.I)
-    s = re.sub(r'<a [^>]*href="([^"]+)"[^>]*>([^<]*)</a>', r"\2 \1", s, flags=re.I)
-    return html.unescape(re.sub(r"<[^>]+>", "", s)).strip()
+def _strip_html(html_text: str) -> str:
+    html_text = re.sub(r"<br\s*/?>|</p>|</li>", "\n", html_text, flags=re.I)
+    html_text = re.sub(r'<a [^>]*href="([^"]+)"[^>]*>([^<]*)</a>', r"\2 \1", html_text, flags=re.I)
+    return html.unescape(re.sub(r"<[^>]+>", "", html_text)).strip()
 
 
-def _duration(s: str) -> float:
-    if not s:
+def _duration(duration_text: str) -> float:
+    if not duration_text:
         return 0.0
-    parts = [float(p) for p in s.split(":")]
+    parts = [float(part) for part in duration_text.split(":")]
     total = 0.0
-    for p in parts:
-        total = total * 60 + p
+    for part in parts:
+        total = total * 60 + part
     return total
 
 
 def _get(url: str, timeout: float = 60) -> bytes:
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
-        return r.read()
+    request = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read()
 
 
 @register("source", "podcast")
 class PodcastSource(VideoSource):
     def __init__(self, feeds: list[str] | None = None):
         self.feeds = list(feeds or [])
-        self.ctx = None
+        self.app = None
         self._parsed: dict[str, tuple[ET.Element, list[ET.Element]]] = {}
 
     @classmethod
-    def from_config(cls, params, ctx=None):
-        obj = cls(**params)
-        obj.ctx = ctx
-        return obj
+    def from_config(cls, params, app=None):
+        source = cls(**params)
+        source.app = app
+        return source
 
     def _feed(self, url: str):
         if url not in self._parsed:
             root = ET.fromstring(_get(url))
-            chan = root.find("channel")
-            self._parsed[url] = (chan, chan.findall("item"))
+            channel_element = root.find("channel")
+            self._parsed[url] = (channel_element, channel_element.findall("item"))
         return self._parsed[url]
 
     def _known_feeds(self) -> list[str]:
         urls = list(self.feeds)
-        if self.ctx is not None:
-            urls += [c["url"] for c in self.ctx.catalog.channels() if c["url"] not in urls]
+        if self.app is not None:
+            urls += [channel["url"] for channel in self.app.catalog.channels() if channel["url"] not in urls]
         return urls
 
     def parse_video_id(self, url_or_id: str) -> str | None:
-        s = url_or_id.strip()
-        if _ID_RE.match(s):
-            return s
+        text = url_or_id.strip()
+        if _ID_RE.match(text):
+            return text
         for feed in self._known_feeds():          # an episode's page or audio URL
             for item in self._feed(feed)[1]:
-                enc = item.find("enclosure")
-                if s in (_text(item, "link"), enc.get("url") if enc is not None else None):
+                enclosure = item.find("enclosure")
+                if text in (_text(item, "link"), enclosure.get("url") if enclosure is not None else None):
                     return episode_id(_text(item, "guid") or _text(item, "link"))
         return None
 
     def resolve_channel(self, url: str) -> ChannelRef:
-        chan, _ = self._feed(url)
+        channel_element, _ = self._feed(url)
         return ChannelRef(channel_id="feed-" + hashlib.sha1(url.encode()).hexdigest()[:12],
-                          name=_text(chan, "title") or url, url=url)
+                          name=_text(channel_element, "title") or url, url=url)
 
     def list_channel(self, channel_url: str, limit: int | None = None) -> list[ChannelEntry]:
         _, items = self._feed(channel_url)
-        out = [ChannelEntry(video_id=episode_id(_text(i, "guid") or _text(i, "link")),
-                            title=_text(i, "title"),
-                            duration=_duration(_text(i, "itunes:duration")) or None)
-               for i in items]
+        out = [ChannelEntry(video_id=episode_id(_text(item, "guid") or _text(item, "link")),
+                            title=_text(item, "title"),
+                            duration=_duration(_text(item, "itunes:duration")) or None)
+               for item in items]
         return out[:limit] if limit else out
 
-    def _find(self, vid: str):
+    def _find(self, video_id: str):
         for feed in self._known_feeds():
-            chan, items = self._feed(feed)
+            channel_element, items = self._feed(feed)
             for item in items:
-                if episode_id(_text(item, "guid") or _text(item, "link")) == vid:
-                    return feed, chan, item
-        raise KeyError(f"{vid} is not in any configured or subscribed feed")
+                if episode_id(_text(item, "guid") or _text(item, "link")) == video_id:
+                    return feed, channel_element, item
+        raise KeyError(f"{video_id} is not in any configured or subscribed feed")
 
     def fetch_info(self, video_id: str) -> VideoInfo:
-        feed, chan, item = self._find(video_id)
-        enc = item.find("enclosure")
+        feed, channel_element, item = self._find(video_id)
+        enclosure = item.find("enclosure")
         published = ""
         if _text(item, "pubDate"):
             published = parsedate_to_datetime(_text(item, "pubDate")).isoformat()
         chapters = []
-        ch = item.find("podcast:chapters", NS)
-        if ch is not None and ch.get("url"):
+        chapters_element = item.find("podcast:chapters", XML_NAMESPACES)
+        if chapters_element is not None and chapters_element.get("url"):
             try:
-                data = json.loads(_get(ch.get("url"), 30))
-                chapters = [Chapter(title=c.get("title", "").strip(), start=float(c["startTime"]),
-                                    end=float(c["endTime"]) if c.get("endTime") else None,
-                                    url=c.get("url"))
-                            for c in data.get("chapters", []) if c.get("toc", True) is not False]
+                data = json.loads(_get(chapters_element.get("url"), 30))
+                chapters = [Chapter(title=entry.get("title", "").strip(), start=float(entry["startTime"]),
+                                    end=float(entry["endTime"]) if entry.get("endTime") else None,
+                                    url=entry.get("url"))
+                            for entry in data.get("chapters", []) if entry.get("toc", True) is not False]
             except Exception:
                 chapters = []
-        desc = _text(item, "content:encoded") or _text(item, "description")
+        description = _text(item, "content:encoded") or _text(item, "description")
         return VideoInfo(
             video_id=video_id, title=_text(item, "title"),
-            url=_text(item, "link") or (enc.get("url") if enc is not None else feed),
-            channel=_text(chan, "title"), channel_id="feed-" + hashlib.sha1(feed.encode()).hexdigest()[:12],
-            channel_url=feed, description=_strip_html(desc), published=published,
+            url=_text(item, "link") or (enclosure.get("url") if enclosure is not None else feed),
+            channel=_text(channel_element, "title"),
+            channel_id="feed-" + hashlib.sha1(feed.encode()).hexdigest()[:12],
+            channel_url=feed, description=_strip_html(description), published=published,
             duration=_duration(_text(item, "itunes:duration")), chapters=chapters,
-            source_tags=[c.text for c in item.findall("category") if c.text],
-            raw={"audio_url": enc.get("url") if enc is not None else ""})
+            source_tags=[category.text for category in item.findall("category") if category.text],
+            raw={"audio_url": enclosure.get("url") if enclosure is not None else ""})
 
     def download_audio(self, video_id: str, out_dir: Path) -> Path:
-        info = self.fetch_info(video_id)
-        url = info.raw.get("audio_url")
+        video_info = self.fetch_info(video_id)
+        url = video_info.raw.get("audio_url")
         if not url:
             raise RuntimeError(f"{video_id} has no audio enclosure")
         out_dir.mkdir(parents=True, exist_ok=True)
-        ext = Path(url.split("?")[0]).suffix or ".mp3"
-        path = out_dir / f"{video_id}{ext}"
-        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r, \
-                open(path, "wb") as f:
-            shutil.copyfileobj(r, f)
+        extension = Path(url.split("?")[0]).suffix or ".mp3"
+        path = out_dir / f"{video_id}{extension}"
+        request = urllib.request.Request(url, headers=REQUEST_HEADERS)
+        with urllib.request.urlopen(request, timeout=120) as response, \
+                open(path, "wb") as audio_file:
+            shutil.copyfileobj(response, audio_file)
         return path
 
     def fetch_text(self, url: str) -> str:

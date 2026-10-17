@@ -21,6 +21,6 @@ class OllamaEmbedder(Embedder):
 
     def _embed(self, texts, is_query):
         prefix = self.query_prefix if is_query else self.document_prefix
-        r = post_json(f"{self.host}/api/embed", {"model": self.model,
-                                                  "input": [prefix + t for t in texts]})
-        return np.array(r["embeddings"], dtype=np.float32)
+        response = post_json(f"{self.host}/api/embed", {"model": self.model,
+                                                        "input": [prefix + text for text in texts]})
+        return np.array(response["embeddings"], dtype=np.float32)

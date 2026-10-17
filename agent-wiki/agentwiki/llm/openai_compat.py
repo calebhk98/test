@@ -32,5 +32,5 @@ class OpenAICompatLLM(LLM):
             body["response_format"] = {"type": "json_object"}
         key = os.environ.get(self.api_key_env, "")
         headers = {"Authorization": f"Bearer {key}"} if key else {}
-        r = post_json(f"{self.base_url}/chat/completions", body, headers, self.timeout)
-        return r["choices"][0]["message"]["content"]
+        response = post_json(f"{self.base_url}/chat/completions", body, headers, self.timeout)
+        return response["choices"][0]["message"]["content"]

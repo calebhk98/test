@@ -33,15 +33,15 @@ class Embedder(Component, ABC):
     def _embed(self, texts: list[str], is_query: bool) -> np.ndarray: ...
 
     def embed_documents(self, texts: list[str]) -> np.ndarray:
-        out = [self._embed(texts[i:i + self.batch_size], False)
-               for i in range(0, len(texts), self.batch_size)]
-        return normalize(np.vstack(out)) if out else np.zeros((0, 0), np.float32)
+        batches = [self._embed(texts[start:start + self.batch_size], False)
+                   for start in range(0, len(texts), self.batch_size)]
+        return normalize(np.vstack(batches)) if batches else np.zeros((0, 0), np.float32)
 
     def embed_query(self, text: str) -> np.ndarray:
         return normalize(self._embed([text], True))[0]
 
 
-def normalize(m: np.ndarray) -> np.ndarray:
-    m = np.asarray(m, dtype=np.float32)
-    n = np.linalg.norm(m, axis=-1, keepdims=True)
-    return m / np.where(n == 0, 1, n)
+def normalize(matrix: np.ndarray) -> np.ndarray:
+    matrix = np.asarray(matrix, dtype=np.float32)
+    norms = np.linalg.norm(matrix, axis=-1, keepdims=True)
+    return matrix / np.where(norms == 0, 1, norms)

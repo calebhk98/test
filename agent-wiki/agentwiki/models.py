@@ -43,39 +43,40 @@ class VideoInfo:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, d: dict) -> "VideoInfo":
-        d = dict(d)
-        d["chapters"] = [Chapter(**c) for c in d.get("chapters", [])]
-        return cls(**d)
+    def from_dict(cls, data: dict) -> "VideoInfo":
+        data = dict(data)
+        data["chapters"] = [Chapter(**chapter_data) for chapter_data in data.get("chapters", [])]
+        return cls(**data)
 
     @classmethod
-    def from_ytdlp(cls, d: dict) -> "VideoInfo":
+    def from_ytdlp(cls, ytdlp_data: dict) -> "VideoInfo":
         published = ""
-        if d.get("timestamp"):
-            published = datetime.fromtimestamp(d["timestamp"], timezone.utc).isoformat()
-        elif d.get("upload_date"):
-            u = d["upload_date"]
-            published = f"{u[:4]}-{u[4:6]}-{u[6:8]}"
+        if ytdlp_data.get("timestamp"):
+            published = datetime.fromtimestamp(ytdlp_data["timestamp"], timezone.utc).isoformat()
+        elif ytdlp_data.get("upload_date"):
+            upload_date = ytdlp_data["upload_date"]
+            published = f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:8]}"
         chapters = [
-            Chapter(title=(c.get("title") or "").strip(), start=float(c["start_time"]),
-                    end=float(c["end_time"]) if c.get("end_time") is not None else None)
-            for c in d.get("chapters") or []
+            Chapter(title=(chapter.get("title") or "").strip(), start=float(chapter["start_time"]),
+                    end=float(chapter["end_time"]) if chapter.get("end_time") is not None else None)
+            for chapter in ytdlp_data.get("chapters") or []
         ]
         # Keep only what later stages read; the full yt-dlp dict is huge.
-        raw = {k: d.get(k) for k in ("subtitles", "automatic_captions", "language") if d.get(k)}
+        raw = {key: ytdlp_data.get(key) for key in ("subtitles", "automatic_captions", "language")
+               if ytdlp_data.get(key)}
         return cls(
-            video_id=d["id"],
-            title=d.get("title") or d["id"],
-            url=d.get("webpage_url") or f"https://www.youtube.com/watch?v={d['id']}",
-            channel=d.get("channel") or d.get("uploader") or "",
-            channel_id=d.get("channel_id") or "",
-            channel_url=d.get("channel_url") or "",
-            description=d.get("description") or "",
+            video_id=ytdlp_data["id"],
+            title=ytdlp_data.get("title") or ytdlp_data["id"],
+            url=ytdlp_data.get("webpage_url") or f"https://www.youtube.com/watch?v={ytdlp_data['id']}",
+            channel=ytdlp_data.get("channel") or ytdlp_data.get("uploader") or "",
+            channel_id=ytdlp_data.get("channel_id") or "",
+            channel_url=ytdlp_data.get("channel_url") or "",
+            description=ytdlp_data.get("description") or "",
             published=published,
-            duration=float(d.get("duration") or 0),
+            duration=float(ytdlp_data.get("duration") or 0),
             chapters=chapters,
-            source_tags=list(d.get("tags") or []),
-            live_status=d.get("live_status"),
+            source_tags=list(ytdlp_data.get("tags") or []),
+            live_status=ytdlp_data.get("live_status"),
             raw=raw,
         )
 
@@ -95,24 +96,24 @@ class Transcript:
 
     @property
     def text(self) -> str:
-        return " ".join(s.text.strip() for s in self.segments if s.text.strip())
+        return " ".join(segment.text.strip() for segment in self.segments if segment.text.strip())
 
     def between(self, start: float, end: float | None) -> list[Segment]:
         """Segments whose midpoint falls in [start, end)."""
-        out = []
-        for s in self.segments:
-            mid = (s.start + s.end) / 2
-            if mid >= start and (end is None or mid < end):
-                out.append(s)
-        return out
+        matching = []
+        for segment in self.segments:
+            midpoint = (segment.start + segment.end) / 2
+            if midpoint >= start and (end is None or midpoint < end):
+                matching.append(segment)
+        return matching
 
     def to_dict(self) -> dict:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, d: dict) -> "Transcript":
-        return cls(segments=[Segment(**s) for s in d["segments"]],
-                   language=d.get("language", ""), model=d.get("model", ""))
+    def from_dict(cls, data: dict) -> "Transcript":
+        return cls(segments=[Segment(**segment_data) for segment_data in data["segments"]],
+                   language=data.get("language", ""), model=data.get("model", ""))
 
 
 @dataclass
@@ -139,10 +140,10 @@ class Section:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, d: dict) -> "Section":
-        d = dict(d)
-        d["links"] = [Link(**l) for l in d.get("links", [])]
-        return cls(**d)
+    def from_dict(cls, data: dict) -> "Section":
+        data = dict(data)
+        data["links"] = [Link(**link_data) for link_data in data.get("links", [])]
+        return cls(**data)
 
 
 @dataclass

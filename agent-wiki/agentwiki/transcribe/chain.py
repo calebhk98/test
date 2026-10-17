@@ -13,21 +13,22 @@ class ChainTranscriber(Transcriber):
 
     def __init__(self, transcribers: list[Transcriber]):
         self.transcribers = transcribers
-        self.needs_audio = any(t.needs_audio for t in transcribers)
+        self.needs_audio = any(transcriber.needs_audio for transcriber in transcribers)
 
     @classmethod
-    def from_config(cls, params, ctx=None):
-        return cls([create("transcriber", s, ctx) for s in params["transcribers"]])
+    def from_config(cls, params, app=None):
+        return cls([create("transcriber", transcriber_spec, app)
+                    for transcriber_spec in params["transcribers"]])
 
     @property
     def name(self) -> str:
-        return "chain(" + ",".join(t.name for t in self.transcribers) + ")"
+        return "chain(" + ",".join(transcriber.name for transcriber in self.transcribers) + ")"
 
-    def transcribe(self, info: VideoInfo, audio_path: Path | None) -> Transcript:
+    def transcribe(self, video_info: VideoInfo, audio_path: Path | None) -> Transcript:
         errors = []
-        for t in self.transcribers:
+        for transcriber in self.transcribers:
             try:
-                return t.transcribe(info, audio_path)
-            except TranscriptionUnavailable as e:
-                errors.append(f"{t.name}: {e}")
+                return transcriber.transcribe(video_info, audio_path)
+            except TranscriptionUnavailable as error:
+                errors.append(f"{transcriber.name}: {error}")
         raise TranscriptionUnavailable("; ".join(errors))

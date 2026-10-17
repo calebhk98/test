@@ -39,12 +39,12 @@ DEFAULTS: dict[str, Any] = {
 
 def _merge(base: dict, over: dict) -> dict:
     out = copy.deepcopy(base)
-    for k, v in over.items():
+    for key, value in over.items():
         # A new `type` replaces a component wholesale rather than mixing params.
-        if isinstance(v, dict) and isinstance(out.get(k), dict) and "type" not in v:
-            out[k] = _merge(out[k], v)
+        if isinstance(value, dict) and isinstance(out.get(key), dict) and "type" not in value:
+            out[key] = _merge(out[key], value)
         else:
-            out[k] = copy.deepcopy(v)
+            out[key] = copy.deepcopy(value)
     return out
 
 
@@ -70,6 +70,6 @@ class Config:
         path = Path(path) if path else root / "config.toml"
         user: dict[str, Any] = {}
         if path.exists():
-            with open(path, "rb") as f:
-                user = tomllib.load(f)
+            with open(path, "rb") as config_file:
+                user = tomllib.load(config_file)
         return cls(root=root, data=_merge(DEFAULTS, user))

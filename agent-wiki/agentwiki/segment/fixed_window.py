@@ -13,21 +13,24 @@ class FixedWindowSegmenter(Segmenter):
     def __init__(self, minutes: float = 4.0):
         self.window = minutes * 60
 
-    def split(self, info: VideoInfo, transcript: Transcript) -> list[Section]:
+    def split(self, video_info: VideoInfo, transcript: Transcript) -> list[Section]:
         sections: list[Section] = []
-        cur: list = []
+        current_segments: list = []
         start = 0.0
-        for seg in transcript.segments:
-            if cur and seg.start - start >= self.window:
-                sections.append(self._make(len(sections) + 1, start, seg.start, cur))
-                cur, start = [], seg.start
-            cur.append(seg)
-        if cur:
-            sections.append(self._make(len(sections) + 1, start, cur[-1].end, cur))
+        for segment in transcript.segments:
+            if current_segments and segment.start - start >= self.window:
+                sections.append(self._make(len(sections) + 1, start, segment.start,
+                                           current_segments))
+                current_segments, start = [], segment.start
+            current_segments.append(segment)
+        if current_segments:
+            sections.append(self._make(len(sections) + 1, start, current_segments[-1].end,
+                                       current_segments))
         return sections
 
     @staticmethod
-    def _make(i, start, end, segs) -> Section:
-        m, s = divmod(int(start), 60)
-        return Section(index=i, title=f"Part {i} ({m}:{s:02d})", start=start, end=end,
-                       text=" ".join(x.text.strip() for x in segs).strip())
+    def _make(index, start, end, segments_in_section) -> Section:
+        minutes, seconds = divmod(int(start), 60)
+        return Section(index=index, title=f"Part {index} ({minutes}:{seconds:02d})", start=start,
+                       end=end,
+                       text=" ".join(segment.text.strip() for segment in segments_in_section).strip())

@@ -1,7 +1,8 @@
-# Generated per install; the wiki can be committed elsewhere if you want history.
-config.toml
-data/
-wiki/
+# Generated per install, at the top of this folder only. A bare "wiki/" would also
+# match the agentwiki/wiki/ package and keep it out of git.
+/config.toml
+/data/
+/wiki/
 __pycache__/
 *.egg-info/
 .pytest_cache/

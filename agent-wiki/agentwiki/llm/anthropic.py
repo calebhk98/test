@@ -28,6 +28,7 @@ class AnthropicLLM(LLM):
                 "messages": [{"role": "user", "content": prompt}]}
         if system:
             body["system"] = system
-        r = post_json(f"{self.base_url}/v1/messages", body,
-                      {"x-api-key": key, "anthropic-version": "2023-06-01"}, self.timeout)
-        return "".join(b.get("text", "") for b in r.get("content", []) if b.get("type") == "text")
+        response = post_json(f"{self.base_url}/v1/messages", body,
+                             {"x-api-key": key, "anthropic-version": "2023-06-01"}, self.timeout)
+        return "".join(block.get("text", "") for block in response.get("content", [])
+                       if block.get("type") == "text")

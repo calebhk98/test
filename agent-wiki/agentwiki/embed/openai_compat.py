@@ -30,11 +30,11 @@ class OpenAICompatEmbedder(Embedder):
 
     def _embed(self, texts, is_query):
         prefix = self.query_prefix if is_query else self.document_prefix
-        body = {"model": self.model, "input": [prefix + t for t in texts]}
+        body = {"model": self.model, "input": [prefix + text for text in texts]}
         if self.dimensions:
             body["dimensions"] = self.dimensions
         key = os.environ.get(self.api_key_env, "")
-        r = post_json(f"{self.base_url}/embeddings", body,
-                      {"Authorization": f"Bearer {key}"} if key else {})
-        data = sorted(r["data"], key=lambda d: d["index"])
-        return np.array([d["embedding"] for d in data], dtype=np.float32)
+        response = post_json(f"{self.base_url}/embeddings", body,
+                             {"Authorization": f"Bearer {key}"} if key else {})
+        data = sorted(response["data"], key=lambda row: row["index"])
+        return np.array([row["embedding"] for row in data], dtype=np.float32)

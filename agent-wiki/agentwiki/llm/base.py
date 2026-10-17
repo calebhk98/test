@@ -48,8 +48,8 @@ class LLM(Component, ABC):
     def complete(self, prompt: str, system: str | None = None, *, max_tokens: int = 1024,
                  temperature: float = 0.2, json_mode: bool = False) -> str: ...
 
-    def complete_json(self, prompt: str, system: str | None = None, **kw) -> Any:
-        text = self.complete(prompt, system, json_mode=True, **kw)
+    def complete_json(self, prompt: str, system: str | None = None, **options) -> Any:
+        text = self.complete(prompt, system, json_mode=True, **options)
         return extract_json(text)
 
 
@@ -63,25 +63,25 @@ def extract_json(text: str) -> Any:
     start = text.find("{")
     if start < 0:
         raise LLMError(f"no JSON object in reply: {text[:200]!r}")
-    depth, in_str, esc = 0, False, False
-    for i in range(start, len(text)):
-        c = text[i]
-        if in_str:
-            if esc:
-                esc = False
-            elif c == "\\":
-                esc = True
-            elif c == '"':
-                in_str = False
+    depth, in_string, escaped = 0, False, False
+    for position in range(start, len(text)):
+        character = text[position]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif character == "\\":
+                escaped = True
+            elif character == '"':
+                in_string = False
             continue
-        if c == '"':
-            in_str = True
-        elif c == "{":
+        if character == '"':
+            in_string = True
+        elif character == "{":
             depth += 1
-        elif c == "}":
+        elif character == "}":
             depth -= 1
             if depth == 0:
-                return json.loads(text[start:i + 1])
+                return json.loads(text[start:position + 1])
     raise LLMError(f"unterminated JSON in reply: {text[:200]!r}")
 
 
@@ -94,12 +94,12 @@ def get_ok(url: str, headers: dict | None = None, timeout: float = 3) -> bool:
 
 
 def post_json(url: str, body: dict, headers: dict | None = None, timeout: float = 600) -> dict:
-    req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
-                                 headers={"Content-Type": "application/json", **(headers or {})})
+    request = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
+                                     headers={"Content-Type": "application/json", **(headers or {})})
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read())
-    except urllib.error.HTTPError as e:
-        raise LLMError(f"{url}: HTTP {e.code}: {e.read()[:500]!r}") from e
-    except (urllib.error.URLError, ConnectionError, TimeoutError) as e:
-        raise LLMUnavailable(f"{url}: {getattr(e, 'reason', e)}") from e
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return json.loads(response.read())
+    except urllib.error.HTTPError as error:
+        raise LLMError(f"{url}: HTTP {error.code}: {error.read()[:500]!r}") from error
+    except (urllib.error.URLError, ConnectionError, TimeoutError) as error:
+        raise LLMUnavailable(f"{url}: {getattr(error, 'reason', error)}") from error

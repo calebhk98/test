@@ -39,8 +39,8 @@ class FasterWhisperTranscriber(Transcriber):
                  compute_type: str = "auto", language: str | None = None,
                  beam_size: int = 5, vad_filter: bool = True, batch_size: int | str = "auto"):
         self.model_name = hardware.pick(AUTO_TIERS) if model == "auto" else model
-        hw = hardware.detect()
-        self.device = ("cuda" if hw.device == "cuda" else "cpu") if device == "auto" else device
+        hardware_info = hardware.detect()
+        self.device = ("cuda" if hardware_info.device == "cuda" else "cpu") if device == "auto" else device
         self.compute_type = compute_type     # CTranslate2 resolves "auto" per device
         self.language = language
         self.beam_size = beam_size
@@ -57,8 +57,8 @@ class FasterWhisperTranscriber(Transcriber):
         if self._model is None:
             try:
                 from faster_whisper import WhisperModel
-            except ImportError as e:
-                raise TranscriptionUnavailable("faster-whisper is not installed") from e
+            except ImportError as error:
+                raise TranscriptionUnavailable("faster-whisper is not installed") from error
             log.info("loading whisper %s on %s (%s)", self.model_name, self.device, self.compute_type)
             model = WhisperModel(self.model_name, device=self.device, compute_type=self.compute_type)
             if self.batch_size > 1:
@@ -67,17 +67,19 @@ class FasterWhisperTranscriber(Transcriber):
             self._model = model
         return self._model
 
-    def transcribe(self, info: VideoInfo, audio_path: Path | None) -> Transcript:
+    def transcribe(self, video_info: VideoInfo, audio_path: Path | None) -> Transcript:
         if audio_path is None:
             raise TranscriptionUnavailable("faster-whisper needs audio")
         model = self._load()
         audio = decode_with_ffmpeg(audio_path)
-        kw = {"language": self.language, "beam_size": self.beam_size, "vad_filter": self.vad_filter}
+        options = {"language": self.language, "beam_size": self.beam_size, "vad_filter": self.vad_filter}
         if self.batch_size > 1:
-            kw["batch_size"] = self.batch_size
-        segments, meta = model.transcribe(audio if audio is not None else str(audio_path), **kw)
-        segs = [Segment(start=s.start, end=s.end, text=s.text.strip()) for s in segments]
-        return Transcript(segments=segs, language=meta.language, model=self.name)
+            options["batch_size"] = self.batch_size
+        segments, transcription_info = model.transcribe(
+            audio if audio is not None else str(audio_path), **options)
+        transcript_segments = [Segment(start=segment.start, end=segment.end, text=segment.text.strip())
+                               for segment in segments]
+        return Transcript(segments=transcript_segments, language=transcription_info.language, model=self.name)
 
 
 def decode_with_ffmpeg(path: Path, rate: int = 16000):

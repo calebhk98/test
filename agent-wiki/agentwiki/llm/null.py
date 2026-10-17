@@ -11,5 +11,5 @@ class NullLLM(LLM):
     def _ping(self) -> bool:
         return False
 
-    def complete(self, prompt, system=None, **kw):
+    def complete(self, prompt, system=None, **options):
         raise LLMError("no LLM configured; set [llm] in config.toml")

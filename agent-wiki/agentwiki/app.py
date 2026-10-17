@@ -33,9 +33,9 @@ _BLOCK_SIGNS = ("HTTP Error 429", "Too Many Requests", "confirm you're not a bot
                 "confirm you\u2019re not a bot", "not a bot")
 
 
-def _is_block(e: Exception) -> bool:
-    s = str(e)
-    return any(sign in s for sign in _BLOCK_SIGNS)
+def _is_block(error: Exception) -> bool:
+    message = str(error)
+    return any(sign in message for sign in _BLOCK_SIGNS)
 
 
 ASK_SYSTEM = ("You answer questions from a personal wiki of AI news videos. Use only the "
@@ -91,20 +91,20 @@ class App:
     def lock(self):
         path = self.config.data_dir / "run.lock"
         path.parent.mkdir(parents=True, exist_ok=True)
-        f = open(path, "a+")
+        lock_file = open(path, "a+")
         try:
             try:
                 if os.name == "nt":
                     import msvcrt
-                    msvcrt.locking(f.fileno(), msvcrt.LK_NBLCK, 1)
+                    msvcrt.locking(lock_file.fileno(), msvcrt.LK_NBLCK, 1)
                 else:
                     import fcntl
-                    fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                    fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
             except OSError:
                 raise Busy("another agentwiki run is in progress") from None
             yield
         finally:
-            f.close()
+            lock_file.close()
 
     # ---- setup -------------------------------------------------------------
 
@@ -112,78 +112,80 @@ class App:
         self.config.wiki_dir.mkdir(parents=True, exist_ok=True)
         self.config.data_dir.mkdir(parents=True, exist_ok=True)
         self.writer.write_agents_md()
-        cfg = self.config.root / "config.toml"
+        config_file = self.config.root / "config.toml"
         created = False
-        if not cfg.exists():
+        if not config_file.exists():
             example = Path(__file__).resolve().parent.parent / "config.example.toml"
-            cfg.write_text(example.read_text(encoding="utf-8") if example.exists() else "",
-                           encoding="utf-8")
+            config_file.write_text(example.read_text(encoding="utf-8") if example.exists() else "",
+                                   encoding="utf-8")
             created = True
-        return {"root": str(self.config.root), "config": str(cfg), "config_created": created}
+        return {"root": str(self.config.root), "config": str(config_file), "config_created": created}
 
     # ---- adding videos -----------------------------------------------------
 
     def has(self, url_or_id: str) -> dict:
-        vid = self.source.parse_video_id(url_or_id)
-        if not vid:
+        video_id = self.source.parse_video_id(url_or_id)
+        if not video_id:
             return {"error": f"not a video URL or id: {url_or_id}"}
-        row = self.catalog.get(vid)
-        return {"video_id": vid, "known": row is not None, **({"status": row["status"]} if row else {})}
+        row = self.catalog.get(video_id)
+        return {"video_id": video_id, "known": row is not None, **({"status": row["status"]} if row else {})}
 
     def add(self, url_or_id: str, process: bool = True, force: bool = False) -> dict:
-        vid = self.source.parse_video_id(url_or_id)
-        if not vid:
+        video_id = self.source.parse_video_id(url_or_id)
+        if not video_id:
             return {"error": f"not a video URL or id: {url_or_id}"}
-        row = self.catalog.get(vid)
+        row = self.catalog.get(video_id)
         if row and row["status"] == "done" and not force:
-            return {"video_id": vid, "status": "done", "already_added": True, "page": row["page"]}
-        self.catalog.enqueue(vid, priority=PRIORITY_MANUAL)
+            return {"video_id": video_id, "status": "done", "already_added": True, "page": row["page"]}
+        self.catalog.enqueue(video_id, priority=PRIORITY_MANUAL)
         if force or (row and row["status"] in ("failed", "skipped")):
-            self.catalog.requeue(vid, PRIORITY_MANUAL)
+            self.catalog.requeue(video_id, PRIORITY_MANUAL)
         if not process:
-            return {"video_id": vid, "status": "queued"}
+            return {"video_id": video_id, "status": "queued"}
         try:
             with self.lock():
-                return self._process_one(vid)
+                return self._process_one(video_id)
         except Busy:
-            return {"video_id": vid, "status": "queued",
+            return {"video_id": video_id, "status": "queued",
                     "note": "a run is in progress; this video is first in the queue"}
-        except SourceBlocked as e:
-            return {"video_id": vid, "status": "queued", "blocked": True, "error": str(e)[:300],
+        except SourceBlocked as error:
+            return {"video_id": video_id, "status": "queued", "blocked": True, "error": str(error)[:300],
                     "note": "YouTube is rate limiting or bot-checking; the video stays queued. "
                             "Wait, or set cookies / player_clients in [source]."}
 
-    def _process_one(self, vid: str) -> dict:
-        self.catalog.update(vid, status="processing", error=None)
+    def _process_one(self, video_id: str) -> dict:
+        self.catalog.update(video_id, status="processing", error=None)
         try:
-            r = self.pipeline.process(vid, on_stage=lambda s: self.catalog.update(vid, stage=s))
-        except Skip as e:
-            self.catalog.update(vid, status="skipped", error=str(e))
-            return {"video_id": vid, "status": "skipped", "reason": str(e)}
+            result = self.pipeline.process(
+                video_id, on_stage=lambda stage_name: self.catalog.update(video_id, stage=stage_name))
+        except Skip as error:
+            self.catalog.update(video_id, status="skipped", error=str(error))
+            return {"video_id": video_id, "status": "skipped", "reason": str(error)}
         except KeyboardInterrupt:
-            self.catalog.update(vid, status="queued")
+            self.catalog.update(video_id, status="queued")
             raise
-        except Exception as e:
-            if _is_block(e):
+        except Exception as error:
+            if _is_block(error):
                 # Not this video's fault: keep it queued, attempts unchanged.
-                self.catalog.update(vid, status="queued", error=f"blocked: {e}"[:500])
-                raise SourceBlocked(str(e)) from e
-            log.exception("failed: %s", vid)
-            self.catalog.mark_failed(vid, f"{type(e).__name__}: {e}")
-            return {"video_id": vid, "status": "failed", "error": f"{type(e).__name__}: {e}"}
-        self.catalog.update(vid, status="done", stage="done", title=r["title"], page=r["page"],
-                            published=r["published"], channel_id=r["channel_id"])
-        return {**r, "status": "done"}
+                self.catalog.update(video_id, status="queued", error=f"blocked: {error}"[:500])
+                raise SourceBlocked(str(error)) from error
+            log.exception("failed: %s", video_id)
+            self.catalog.mark_failed(video_id, f"{type(error).__name__}: {error}")
+            return {"video_id": video_id, "status": "failed", "error": f"{type(error).__name__}: {error}"}
+        self.catalog.update(video_id, status="done", stage="done", title=result["title"], page=result["page"],
+                            published=result["published"], channel_id=result["channel_id"])
+        return {**result, "status": "done"}
 
     # ---- channels ----------------------------------------------------------
 
     def channel_add(self, url: str, backfill: bool = False) -> dict:
-        ch = self.source.resolve_channel(url)
-        new = self.catalog.add_channel(ch.channel_id, ch.name, ch.url)
-        out = {"channel_id": ch.channel_id, "name": ch.name, "url": ch.url, "added": new}
-        out["check"] = self.check(ch.channel_id)
+        channel_ref = self.source.resolve_channel(url)
+        new = self.catalog.add_channel(channel_ref.channel_id, channel_ref.name, channel_ref.url)
+        out = {"channel_id": channel_ref.channel_id, "name": channel_ref.name, "url": channel_ref.url,
+               "added": new}
+        out["check"] = self.check(channel_ref.channel_id)
         if backfill:
-            out["backfill"] = self.backfill(ch.channel_id)
+            out["backfill"] = self.backfill(channel_ref.channel_id)
         return out
 
     def channel_remove(self, key: str) -> dict:
@@ -193,53 +195,53 @@ class App:
         return {"channels": self.catalog.channels()}
 
     def _resolve_channel(self, key: str) -> dict:
-        ch = self.catalog.find_channel(key)
-        if ch:
-            return ch
+        channel_row = self.catalog.find_channel(key)
+        if channel_row:
+            return channel_row
         ref = self.source.resolve_channel(key)
         return {"channel_id": ref.channel_id, "name": ref.name, "url": ref.url}
 
-    def _queue_entries(self, ch: dict, entries, priority: int) -> list[str]:
-        cfg = self.config["ingest"]
+    def _queue_entries(self, channel_row: dict, entries, priority: int) -> list[str]:
+        ingest_config = self.config["ingest"]
         new = []
-        for e in entries:
-            if cfg["skip_live"] and e.live_status in ("is_live", "is_upcoming"):
+        for entry in entries:
+            if ingest_config["skip_live"] and entry.live_status in ("is_live", "is_upcoming"):
                 continue
-            if e.duration is not None and e.duration < cfg["min_duration"]:
+            if entry.duration is not None and entry.duration < ingest_config["min_duration"]:
                 continue
-            if self.catalog.enqueue(e.video_id, channel_id=ch["channel_id"], title=e.title,
+            if self.catalog.enqueue(entry.video_id, channel_id=channel_row["channel_id"], title=entry.title,
                                     priority=priority):
-                new.append(e.video_id)
+                new.append(entry.video_id)
         return new
 
     def check(self, channel: str | None = None) -> dict:
         """Queue uploads not seen before, from one or every subscribed channel."""
-        chans = [self._resolve_channel(channel)] if channel else \
-                [c for c in self.catalog.channels() if c["auto_check"]]
+        channel_rows = [self._resolve_channel(channel)] if channel else \
+                [channel_row for channel_row in self.catalog.channels() if channel_row["auto_check"]]
         out = {}
-        for ch in chans:
+        for channel_row in channel_rows:
             try:
-                entries = self.source.list_channel(ch["url"], self.config["ingest"]["check_recent"])
-            except Exception as e:
-                out[ch["name"]] = {"error": f"{type(e).__name__}: {e}"}
+                entries = self.source.list_channel(channel_row["url"], self.config["ingest"]["check_recent"])
+            except Exception as error:
+                out[channel_row["name"]] = {"error": f"{type(error).__name__}: {error}"}
                 continue
-            out[ch["name"]] = {"queued": self._queue_entries(ch, entries, PRIORITY_NEW)}
-            self.catalog.touch_channel(ch["channel_id"])
+            out[channel_row["name"]] = {"queued": self._queue_entries(channel_row, entries, PRIORITY_NEW)}
+            self.catalog.touch_channel(channel_row["channel_id"])
         return {"channels": out}
 
     def backfill(self, channel: str, limit: int | None = None) -> dict:
         """Queue a channel's whole upload list at low priority. `run` drains it over time."""
-        ch = self._resolve_channel(channel)
-        entries = self.source.list_channel(ch["url"], limit)
-        new = self._queue_entries(ch, entries, PRIORITY_BACKFILL)
-        return {"channel": ch["name"], "listed": len(entries), "queued": len(new)}
+        channel_row = self._resolve_channel(channel)
+        entries = self.source.list_channel(channel_row["url"], limit)
+        new = self._queue_entries(channel_row, entries, PRIORITY_BACKFILL)
+        return {"channel": channel_row["name"], "listed": len(entries), "queued": len(new)}
 
     # ---- processing --------------------------------------------------------
 
     def run(self, limit: int | None = None, max_minutes: float | None = None,
             sleep: float | None = None, check_first: bool = False) -> dict:
-        cfg = self.config["ingest"]
-        sleep = cfg["sleep_between"] if sleep is None else sleep
+        ingest_config = self.config["ingest"]
+        sleep = ingest_config["sleep_between"] if sleep is None else sleep
         deadline = time.time() + max_minutes * 60 if max_minutes else None
         results, stopped = [], None
         with self.lock():
@@ -250,17 +252,18 @@ class App:
             while limit is None or len(results) < limit:
                 if deadline and time.time() > deadline:
                     break
-                row = self.catalog.next_queued(cfg["max_attempts"])
+                row = self.catalog.next_queued(ingest_config["max_attempts"])
                 if not row:
                     break
                 if results and sleep:
                     time.sleep(sleep)
                 try:
-                    r = self._process_one(row["video_id"])
-                except SourceBlocked as e:
-                    stopped = f"source blocked, queue left as is: {str(e)[:200]}"
+                    result = self._process_one(row["video_id"])
+                except SourceBlocked as error:
+                    stopped = f"source blocked, queue left as is: {str(error)[:200]}"
                     break
-                results.append({k: r.get(k) for k in ("video_id", "status", "title", "error", "reason")})
+                results.append({key: result.get(key)
+                                for key in ("video_id", "status", "title", "error", "reason")})
         out = {"processed": results, "queue": self.catalog.counts()}
         if upgraded:
             out["requeued_for_llm"] = upgraded
@@ -269,30 +272,30 @@ class App:
         return out
 
     def _requeue_degraded(self) -> int:
-        """Videos enriched by the fallback while the LLM was down get redone
-        from the enrich stage (no download) once the LLM answers again."""
-        llm = getattr(self.enricher, "llm", None)
-        if llm is None or not llm.available:
+        """Videos enriched by a fallback while a part was unavailable (LLM down,
+        model missing) get redone from the enrich stage, without downloading
+        anything, once every part can run again."""
+        if not self.enricher.upgrade_available():
             return 0
-        n = 0
-        for f in (self.config.data_dir / "raw").glob("*/enrichment.json"):
+        requeued_count = 0
+        for enrichment_file in (self.config.data_dir / "raw").glob("*/enrichment.json"):
             try:
-                degraded = json.loads(f.read_text(encoding="utf-8")).get("degraded")
+                degraded = json.loads(enrichment_file.read_text(encoding="utf-8")).get("degraded")
             except (OSError, ValueError):
                 continue
-            vid = f.parent.name
-            row = self.catalog.get(vid)
+            video_id = enrichment_file.parent.name
+            row = self.catalog.get(video_id)
             if degraded and row and row["status"] == "done":
-                self.pipeline.invalidate(vid, "enrich")
-                self.catalog.requeue(vid, PRIORITY_BACKFILL)
-                n += 1
-        return n
+                self.pipeline.invalidate(video_id, "enrich")
+                self.catalog.requeue(video_id, PRIORITY_BACKFILL)
+                requeued_count += 1
+        return requeued_count
 
     def status(self, video_id: str | None = None, list_status: str | None = None,
                limit: int = 20) -> dict:
         if video_id:
-            vid = self.source.parse_video_id(video_id) or video_id
-            return {"video": self.catalog.get(vid)}
+            resolved_video_id = self.source.parse_video_id(video_id) or video_id
+            return {"video": self.catalog.get(resolved_video_id)}
         from . import hardware
         out = {"queue": self.catalog.counts(), "channels": len(self.catalog.channels()),
                "index": self.index.stats(), "embedder": self.embedder.name,
@@ -305,80 +308,85 @@ class App:
         if from_stage not in STAGES:
             return {"error": f"stage must be one of {STAGES}"}
         ids = ids or self.catalog.all_ids("done")
-        for vid in ids:
-            self.pipeline.invalidate(vid, from_stage)
-            self.catalog.requeue(vid)
+        for video_id in ids:
+            self.pipeline.invalidate(video_id, from_stage)
+            self.catalog.requeue(video_id)
         return {"requeued": len(ids), "from": from_stage,
                 "next": "run `agentwiki run` to process them"}
 
     def reindex(self) -> dict:
-        n = self.index.reembed(self.embedder,
-                               progress=lambda a, b: log.info("embedded %d/%d", a, b))
+        chunk_count = self.index.reembed(
+            self.embedder, progress=lambda embedded, total: log.info("embedded %d/%d", embedded, total))
         # Whole-video vectors from the cached transcripts, single pass where it fits.
         modes = {"single": 0, "mean": 0}
-        for vid in self.catalog.all_ids("done"):
-            info, tr = self.pipeline.cached(vid)
-            if info and tr:
-                modes[self.pipeline._whole_video_vector(info, tr, self.embedder)] += 1
-        return {"embedder": self.embedder.name, "chunks_embedded": n, "whole_video": modes}
+        for video_id in self.catalog.all_ids("done"):
+            video_info, transcript = self.pipeline.cached(video_id)
+            if video_info and transcript:
+                modes[self.pipeline._whole_video_vector(video_info, transcript, self.embedder)] += 1
+        return {"embedder": self.embedder.name, "chunks_embedded": chunk_count, "whole_video": modes}
 
     def refresh_channel_page(self, channel: str, channel_url: str) -> None:
-        rows = self.index.db.execute(
+        rows = self.index.database.execute(
             "SELECT published, title, path FROM docs WHERE kind='video' AND channel=?",
             (channel,)).fetchall()
-        self.writer.write_channel(channel, channel_url, [tuple(r) for r in rows])
+        self.writer.write_channel(channel, channel_url, [tuple(row) for row in rows])
 
     # ---- reading -----------------------------------------------------------
 
-    def search(self, query: str, k: int | None = None, kind: str | None = None,
+    def search(self, query: str, top_k: int | None = None, kind: str | None = None,
                tags: list[str] | None = None, channel: str | None = None,
                since: str | None = None, include_sponsor: bool = False) -> dict:
-        f = SearchFilters(kind=kind, channel=channel, tags=tags or [], since=since,
-                          exclude_sponsor=not include_sponsor and self.config["search"]["exclude_sponsor"])
-        hits = self.index.search(query, self.embedder, k or self.config["search"]["k"], f)
-        return {"query": query, "hits": [h.to_dict() for h in hits]}
+        search_filters = SearchFilters(
+            kind=kind, channel=channel, tags=tags or [], since=since,
+            exclude_sponsor=not include_sponsor and self.config["search"]["exclude_sponsor"])
+        hits = self.index.search(query, self.embedder, top_k or self.config["search"]["k"], search_filters)
+        return {"query": query, "hits": [hit.to_dict() for hit in hits]}
 
-    def similar(self, video_id: str, k: int = 8) -> dict:
-        vid = self.source.parse_video_id(video_id) or video_id
-        return {"video_id": vid, "hits": [h.to_dict() for h in self.index.similar(vid, self.embedder, k)]}
+    def similar(self, video_id: str, top_k: int = 8) -> dict:
+        resolved_video_id = self.source.parse_video_id(video_id) or video_id
+        hits = self.index.similar(resolved_video_id, self.embedder, top_k)
+        return {"video_id": resolved_video_id, "hits": [hit.to_dict() for hit in hits]}
 
     def show(self, key: str) -> dict:
         """A page by doc id (`<video_id>` or `<video_id>#<n>`), URL, or wiki path."""
         path = None
-        row = self.index.db.execute("SELECT path FROM docs WHERE doc_id=?", (key,)).fetchone()
+        row = self.index.database.execute("SELECT path FROM docs WHERE doc_id=?", (key,)).fetchone()
         if not row:
-            vid = self.source.parse_video_id(key)
-            if vid:
-                row = self.index.db.execute("SELECT path FROM docs WHERE doc_id=?", (vid,)).fetchone()
+            resolved_video_id = self.source.parse_video_id(key)
+            if resolved_video_id:
+                row = self.index.database.execute("SELECT path FROM docs WHERE doc_id=?",
+                                                  (resolved_video_id,)).fetchone()
         if row:
             path = row[0]
         else:
             path = key.removesuffix(".md")
-        p = (self.config.wiki_dir / f"{path}.md").resolve()
-        if not p.is_relative_to(self.config.wiki_dir.resolve()) or not p.exists():
+        page_file = (self.config.wiki_dir / f"{path}.md").resolve()
+        if not page_file.is_relative_to(self.config.wiki_dir.resolve()) or not page_file.exists():
             return {"error": f"no page for {key}"}
-        return {"path": path, "content": p.read_text(encoding="utf-8")}
+        return {"path": path, "content": page_file.read_text(encoding="utf-8")}
 
-    def ask(self, question: str, k: int = 8, since: str | None = None,
+    def ask(self, question: str, top_k: int = 8, since: str | None = None,
             max_source_chars: int = 3000) -> dict:
-        hits = self.index.search(question, self.embedder, k,
+        hits = self.index.search(question, self.embedder, top_k,
                                  SearchFilters(kind="section", since=since))
         sources = []
-        for i, h in enumerate(hits, 1):
-            body = self.index.db.execute("SELECT body FROM docs WHERE doc_id=?",
-                                         (h.doc_id,)).fetchone()[0]
-            vt = self.index.db.execute("SELECT title FROM docs WHERE doc_id=?",
-                                       (h.video_id,)).fetchone()
-            sources.append({"n": i, "title": h.title, "video": vt[0] if vt else "",
-                            "published": h.published[:10], "url": h.url, "path": h.path,
+        for position, hit in enumerate(hits, 1):
+            body = self.index.database.execute("SELECT body FROM docs WHERE doc_id=?",
+                                               (hit.doc_id,)).fetchone()[0]
+            video_title_row = self.index.database.execute("SELECT title FROM docs WHERE doc_id=?",
+                                                          (hit.video_id,)).fetchone()
+            sources.append({"n": position, "title": hit.title,
+                            "video": video_title_row[0] if video_title_row else "",
+                            "published": hit.published[:10], "url": hit.url, "path": hit.path,
                             "text": body[:max_source_chars]})
         if not self.llm.available:
             return {"question": question, "answer": None,
                     "note": "no LLM configured; read the sources", "sources": sources}
-        ctx = "\n\n".join(f"[{s['n']}] {s['title']} (from \"{s['video']}\", {s['published']}, {s['url']})\n"
-                          f"{s['text']}" for s in sources)
-        answer = self.llm.complete(f"Sources:\n\n{ctx}\n\nQuestion: {question}", ASK_SYSTEM,
+        context = "\n\n".join(f"[{source['n']}] {source['title']} (from \"{source['video']}\", "
+                              f"{source['published']}, {source['url']})\n"
+                              f"{source['text']}" for source in sources)
+        answer = self.llm.complete(f"Sources:\n\n{context}\n\nQuestion: {question}", ASK_SYSTEM,
                                    max_tokens=1500)
-        for s in sources:
-            s.pop("text")
+        for source in sources:
+            source.pop("text")
         return {"question": question, "answer": answer, "sources": sources}

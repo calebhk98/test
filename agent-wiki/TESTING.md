@@ -28,6 +28,41 @@ summaries picked the host's questions; category scoring ranked
 (fixed by scoring categories as queries); topic splitting over-cut and gave
 every part of a video the same title.
 
+## Second round: the real AI Search video, and dedicated models
+
+YouTube still refused this IP, so the audio came from a YouTube-to-MP3
+website (mp3youtube.cc), used in a headless browser the way a person uses it:
+paste the link, click download. Sites that sit behind Cloudflare Turnstile or
+sign their requests with obfuscated code were skipped rather than worked
+around. The MP3 went into the `local-audio` source's folder, with metadata
+from the earlier YouTube fetch.
+
+| piece | result |
+| --- | --- |
+| the 40:29 AI Search video, end to end | 28 chapters, links matched, Luma flagged as sponsor, whole-video vector in one 32K pass; 13m53s on 4 CPU cores |
+| "fastest text to world model with a consistent world" | Inspatio World 1.5 first, the right answer in that video |
+| "good text to video models, sizes, censored" | weak with one video (a speech model ranked second); `--tag text-to-video` returned the right sections |
+| facts without an LLM | "based off of 1.3b and this is only less than 6GB in size so you should be able to fit this on most consumer GPU"; GLiNER2 mislabelled that 6GB as a model size |
+
+Topic tagging, 12 hand-labelled podcast sections (labels are my judgment):
+
+| method | precision | recall | F1 | CPU time |
+| --- | --- | --- | --- | --- |
+| embedding zero-shot (Qwen3-Embedding-0.6B) | 44% | 58% | 0.50 | 1.2 s/section |
+| GLiNER2.5 base classification, threshold 0.4 | 30% | 84% | 0.44 | 1.1 s |
+| GLiNER2.5 base classification, threshold 0.6 | 32% | 68% | 0.43 | 1.2 s |
+| NLI zero-shot, DeBERTa-v3-large | 83% | 26% | 0.40 | 49 s (busy CPU) |
+
+None is good at topics on conversational speech. GLiNER2 is much better at
+names (models, companies: "Flux 2" 0.95, "Black Forest Labs" 1.00), so the
+`models` preset uses it for names and embeddings for topics.
+
+Summaries, same four AI Search sections: DistilBART (a summarization-only
+model) was the most informative, about 4 s a section; the in-process 1.5B LLM
+was vaguer at 30-40 s; extractive quotes were fast but read like speech.
+transformers 5 removed the `summarization` pipeline, so the model is loaded
+directly.
+
 ## Not tested here
 
 - A full YouTube download and Whisper transcription of an AI Search video
@@ -37,8 +72,9 @@ every part of a video the same title.
 - Ollama, llama.cpp and other servers (no server here), the Anthropic backend,
   the MCP server (needs the `mcp` package and a client).
 - EmbeddingGemma 2. Windows and Android.
+- The `llm` preset with a real LLM after this restructure (the scripted test LLM covers the code path).
 
 ## Unit tests
 
-`pytest` runs 27 offline tests with fakes for download and transcription and
+`pytest` runs 33 offline tests with fakes for download and transcription and
 the saved metadata of a real AI Search video.

@@ -19,11 +19,11 @@ _REGISTRY: dict[str, dict[str, type]] = {}
 
 
 def register(kind: str, name: str):
-    def deco(cls):
+    def decorator(cls):
         _REGISTRY.setdefault(kind, {})[name] = cls
         cls.registry_name = name
         return cls
-    return deco
+    return decorator
 
 
 def available(kind: str) -> list[str]:
@@ -31,7 +31,7 @@ def available(kind: str) -> list[str]:
     return sorted(_REGISTRY.get(kind, {}))
 
 
-def create(kind: str, spec: dict[str, Any] | str, ctx: Any = None):
+def create(kind: str, spec: dict[str, Any] | str, app: Any = None):
     """Build a component from `{"type": name, **params}` (or just a name)."""
     _load_builtins()
     if isinstance(spec, str):
@@ -45,18 +45,19 @@ def create(kind: str, spec: dict[str, Any] | str, ctx: Any = None):
     except KeyError:
         raise ValueError(f"unknown {kind} type {name!r}; known: {available(kind)}") from None
     try:
-        return cls.from_config(spec, ctx)
-    except TypeError as e:
-        if "argument" not in str(e):
+        return cls.from_config(spec, app)
+    except TypeError as error:
+        if "argument" not in str(error):
             raise
         import inspect
-        params = [p for p in inspect.signature(cls.__init__).parameters if p != "self"]
-        raise ValueError(f"[{kind}] type = {name!r}: {e}. Settings it accepts: {params}") from None
+        params = [parameter_name for parameter_name in inspect.signature(cls.__init__).parameters
+                  if parameter_name != "self"]
+        raise ValueError(f"[{kind}] type = {name!r}: {error}. Settings it accepts: {params}") from None
 
 
 def load_plugins(modules: list[str]) -> None:
-    for m in modules:
-        importlib.import_module(m)
+    for module_name in modules:
+        importlib.import_module(module_name)
 
 
 class Component:
@@ -69,7 +70,7 @@ class Component:
     registry_name = ""
 
     @classmethod
-    def from_config(cls, params: dict[str, Any], ctx: Any = None):
+    def from_config(cls, params: dict[str, Any], app: Any = None):
         return cls(**params)
 
     @property
@@ -86,9 +87,10 @@ def _load_builtins() -> None:
     if _loaded:
         return
     _loaded = True
-    for m in (
+    for module_name in (
         "agentwiki.sources.youtube",
         "agentwiki.sources.podcast",
+        "agentwiki.sources.local_audio",
         "agentwiki.transcribe.faster_whisper",
         "agentwiki.transcribe.youtube_captions",
         "agentwiki.transcribe.chain",
@@ -101,13 +103,15 @@ def _load_builtins() -> None:
         "agentwiki.llm.anthropic",
         "agentwiki.llm.null",
         "agentwiki.llm.transformers_local",
-        "agentwiki.enrich.llm_enricher",
-        "agentwiki.enrich.keyword",
-        "agentwiki.enrich.local",
+        "agentwiki.enrich.taggers",
+        "agentwiki.enrich.summarizers",
+        "agentwiki.enrich.fact_extractors",
+        "agentwiki.enrich.llm_parts",
+        "agentwiki.enrich.composite",
         "agentwiki.embed.sentence_transformers",
         "agentwiki.embed.ollama",
         "agentwiki.embed.openai_compat",
         "agentwiki.embed.hashing",
         "agentwiki.index.sqlite_index",
     ):
-        importlib.import_module(m)
+        importlib.import_module(module_name)

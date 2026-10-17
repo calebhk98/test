@@ -11,12 +11,13 @@ class ChainSegmenter(Segmenter):
         self.segmenters = segmenters
 
     @classmethod
-    def from_config(cls, params, ctx=None):
-        return cls([create("segmenter", s, ctx) for s in params["segmenters"]])
+    def from_config(cls, params, app=None):
+        return cls([create("segmenter", segmenter_spec, app)
+                    for segmenter_spec in params["segmenters"]])
 
-    def split(self, info: VideoInfo, transcript: Transcript) -> list[Section]:
-        for s in self.segmenters:
-            out = s.split(info, transcript)
-            if out:
-                return out
+    def split(self, video_info: VideoInfo, transcript: Transcript) -> list[Section]:
+        for segmenter in self.segmenters:
+            sections = segmenter.split(video_info, transcript)
+            if sections:
+                return sections
         return []

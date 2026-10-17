@@ -35,8 +35,8 @@ class TransformersLLM(LLM):
         self.device = hardware.detect().device if device == "auto" else device
         self.dtype = dtype
         self.max_input_tokens = max_input_tokens
-        self._tok = None
-        self._lm = None
+        self._tokenizer = None
+        self._language_model = None
 
     def _ping(self) -> bool:
         try:
@@ -47,7 +47,7 @@ class TransformersLLM(LLM):
             return False
 
     def _load(self):
-        if self._lm is None:
+        if self._language_model is None:
             import torch
             from transformers import AutoModelForCausalLM, AutoTokenizer
             dtype = self.dtype
@@ -58,35 +58,37 @@ class TransformersLLM(LLM):
             elif isinstance(dtype, str):
                 dtype = getattr(torch, dtype)
             log.info("loading %s on %s", self.model, self.device)
-            self._tok = AutoTokenizer.from_pretrained(self.model)
-            kw = {"dtype": dtype}
+            self._tokenizer = AutoTokenizer.from_pretrained(self.model)
+            options = {"dtype": dtype}
             if self.device == "cuda":
-                kw["device_map"] = "auto"     # spreads big models over several GPUs
+                options["device_map"] = "auto"     # spreads big models over several GPUs
             try:
-                lm = AutoModelForCausalLM.from_pretrained(self.model, **kw)
+                language_model = AutoModelForCausalLM.from_pretrained(self.model, **options)
             except ValueError:
                 # Multimodal checkpoints (Gemma 4 E2B/E4B) register under a different auto class.
                 from transformers import AutoModelForImageTextToText
-                lm = AutoModelForImageTextToText.from_pretrained(self.model, **kw)
+                language_model = AutoModelForImageTextToText.from_pretrained(self.model, **options)
             if self.device != "cuda":
-                lm = lm.to(self.device)
-            self._lm = lm.eval()
-        return self._tok, self._lm
+                language_model = language_model.to(self.device)
+            self._language_model = language_model.eval()
+        return self._tokenizer, self._language_model
 
     def complete(self, prompt, system=None, *, max_tokens=1024, temperature=0.2, json_mode=False):
         import torch
-        tok, lm = self._load()
+        tokenizer, language_model = self._load()
         if json_mode:
             prompt += "\n\nReply with only the JSON object."
         messages = ([{"role": "system", "content": system}] if system else []) + \
                    [{"role": "user", "content": prompt}]
-        inputs = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt",
-                                         return_dict=True, enable_thinking=False)
-        ids = inputs["input_ids"][:, -self.max_input_tokens:]
-        mask = inputs["attention_mask"][:, -self.max_input_tokens:]
+        inputs = tokenizer.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt",
+                                               return_dict=True, enable_thinking=False)
+        input_ids = inputs["input_ids"][:, -self.max_input_tokens:]
+        attention_mask = inputs["attention_mask"][:, -self.max_input_tokens:]
         with torch.inference_mode():
-            out = lm.generate(input_ids=ids.to(lm.device), attention_mask=mask.to(lm.device),
-                              max_new_tokens=max_tokens, do_sample=temperature > 0,
-                              temperature=temperature if temperature > 0 else None,
-                              pad_token_id=tok.pad_token_id or tok.eos_token_id)
-        return tok.decode(out[0, ids.shape[1]:], skip_special_tokens=True).strip()
+            generated = language_model.generate(
+                input_ids=input_ids.to(language_model.device),
+                attention_mask=attention_mask.to(language_model.device),
+                max_new_tokens=max_tokens, do_sample=temperature > 0,
+                temperature=temperature if temperature > 0 else None,
+                pad_token_id=tokenizer.pad_token_id or tokenizer.eos_token_id)
+        return tokenizer.decode(generated[0, input_ids.shape[1]:], skip_special_tokens=True).strip()

@@ -29,29 +29,29 @@ class YtDlpSource(VideoSource):
         self.extra_options = extra_options or {}
 
     def _opts(self, **over) -> dict:
-        o: dict[str, Any] = {"quiet": True, "no_warnings": True, "noprogress": True}
+        ydl_options: dict[str, Any] = {"quiet": True, "no_warnings": True, "noprogress": True}
         if self.cookies_file:
-            o["cookiefile"] = self.cookies_file
+            ydl_options["cookiefile"] = self.cookies_file
         if self.cookies_from_browser:
-            o["cookiesfrombrowser"] = (self.cookies_from_browser,)
+            ydl_options["cookiesfrombrowser"] = (self.cookies_from_browser,)
         if self.js_runtimes:
-            o["js_runtimes"] = {r: {} for r in self.js_runtimes}
+            ydl_options["js_runtimes"] = {runtime: {} for runtime in self.js_runtimes}
         if self.player_clients:
-            o["extractor_args"] = {"youtube": {"player_client": list(self.player_clients)}}
-        o.update(self.extra_options)
-        o.update(over)
-        return o
+            ydl_options["extractor_args"] = {"youtube": {"player_client": list(self.player_clients)}}
+        ydl_options.update(self.extra_options)
+        ydl_options.update(over)
+        return ydl_options
 
-    def _ydl(self, **over):
+    def _ydl(self, **overrides):
         import yt_dlp
-        return yt_dlp.YoutubeDL(self._opts(**over))
+        return yt_dlp.YoutubeDL(self._opts(**overrides))
 
     def parse_video_id(self, url_or_id: str) -> str | None:
-        s = url_or_id.strip()
-        if _ID_RE.match(s):
-            return s
-        m = _URL_ID_RE.search(s)
-        return m.group(1) if m else None
+        text = url_or_id.strip()
+        if _ID_RE.match(text):
+            return text
+        match = _URL_ID_RE.search(text)
+        return match.group(1) if match else None
 
     @staticmethod
     def _uploads_url(url: str) -> str:
@@ -63,38 +63,42 @@ class YtDlpSource(VideoSource):
         return url + "/videos"
 
     def resolve_channel(self, url: str) -> ChannelRef:
-        with self._ydl(extract_flat="in_playlist", playlistend=1) as ydl:
-            d = ydl.extract_info(self._uploads_url(url), download=False)
-        cid = d.get("channel_id") or d.get("id")
-        return ChannelRef(channel_id=cid, name=d.get("channel") or d.get("uploader") or cid,
-                          url=d.get("channel_url") or url)
+        with self._ydl(extract_flat="in_playlist", playlistend=1) as downloader:
+            channel_data = downloader.extract_info(self._uploads_url(url), download=False)
+        channel_id = channel_data.get("channel_id") or channel_data.get("id")
+        return ChannelRef(channel_id=channel_id,
+                          name=channel_data.get("channel") or channel_data.get("uploader") or channel_id,
+                          url=channel_data.get("channel_url") or url)
 
     def list_channel(self, channel_url: str, limit: int | None = None) -> list[ChannelEntry]:
-        opts: dict[str, Any] = {"extract_flat": "in_playlist"}
+        options: dict[str, Any] = {"extract_flat": "in_playlist"}
         if limit:
-            opts["playlistend"] = limit
-        with self._ydl(**opts) as ydl:
-            d = ydl.extract_info(self._uploads_url(channel_url), download=False)
+            options["playlistend"] = limit
+        with self._ydl(**options) as downloader:
+            channel_data = downloader.extract_info(self._uploads_url(channel_url), download=False)
         out = []
-        for e in d.get("entries") or []:
-            if not e or not e.get("id"):
+        for entry in channel_data.get("entries") or []:
+            if not entry or not entry.get("id"):
                 continue
-            out.append(ChannelEntry(video_id=e["id"], title=e.get("title") or "",
-                                    duration=e.get("duration"), live_status=e.get("live_status")))
+            out.append(ChannelEntry(video_id=entry["id"], title=entry.get("title") or "",
+                                    duration=entry.get("duration"),
+                                    live_status=entry.get("live_status")))
         return out
 
     def fetch_info(self, video_id: str) -> VideoInfo:
-        with self._ydl() as ydl:
-            d = ydl.extract_info(f"https://www.youtube.com/watch?v={video_id}", download=False)
-        return VideoInfo.from_ytdlp(ydl.sanitize_info(d))
+        with self._ydl() as downloader:
+            video_data = downloader.extract_info(f"https://www.youtube.com/watch?v={video_id}",
+                                                 download=False)
+        return VideoInfo.from_ytdlp(downloader.sanitize_info(video_data))
 
     def download_audio(self, video_id: str, out_dir: Path) -> Path:
         out_dir.mkdir(parents=True, exist_ok=True)
         # No re-encode: faster-whisper reads webm/m4a through ffmpeg/PyAV directly.
-        opts = {"format": self.audio_format, "outtmpl": str(out_dir / "%(id)s.%(ext)s")}
-        with self._ydl(**opts) as ydl:
-            d = ydl.extract_info(f"https://www.youtube.com/watch?v={video_id}", download=True)
-            path = Path(ydl.prepare_filename(d))
+        options = {"format": self.audio_format, "outtmpl": str(out_dir / "%(id)s.%(ext)s")}
+        with self._ydl(**options) as downloader:
+            video_data = downloader.extract_info(f"https://www.youtube.com/watch?v={video_id}",
+                                                 download=True)
+            path = Path(downloader.prepare_filename(video_data))
         if not path.exists():
             matches = list(out_dir.glob(f"{video_id}.*"))
             if not matches:
@@ -103,5 +107,5 @@ class YtDlpSource(VideoSource):
         return path
 
     def fetch_text(self, url: str) -> str:
-        with self._ydl() as ydl:
-            return ydl.urlopen(url).read().decode("utf-8", "replace")
+        with self._ydl() as downloader:
+            return downloader.urlopen(url).read().decode("utf-8", "replace")

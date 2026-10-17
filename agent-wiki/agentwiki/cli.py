@@ -18,104 +18,109 @@ def _p(sub, name, help_):
 
 
 def build_parser() -> argparse.ArgumentParser:
-    ap = argparse.ArgumentParser(prog="agentwiki", description="Searchable wiki built from YouTube videos.")
-    ap.add_argument("--root", default=".", help="folder holding config.toml, wiki/ and data/")
-    ap.add_argument("--config", help="config file (default: <root>/config.toml)")
-    ap.add_argument("--json", action="store_true", help="machine-readable output")
-    ap.add_argument("-v", "--verbose", action="store_true")
-    sub = ap.add_subparsers(dest="cmd", required=True)
+    parser = argparse.ArgumentParser(prog="agentwiki",
+                                     description="Searchable wiki built from YouTube videos.")
+    parser.add_argument("--root", default=".", help="folder holding config.toml, wiki/ and data/")
+    parser.add_argument("--config", help="config file (default: <root>/config.toml)")
+    parser.add_argument("--json", action="store_true", help="machine-readable output")
+    parser.add_argument("-v", "--verbose", action="store_true")
+    sub = parser.add_subparsers(dest="cmd", required=True)
 
     _p(sub, "init", "create config.toml, wiki/ and data/")
 
-    s = _p(sub, "add", "add one video by URL or id, and process it now")
-    s.add_argument("video")
-    s.add_argument("--queue-only", action="store_true", help="queue it for the next `run`")
-    s.add_argument("--force", action="store_true", help="process again even if already added")
+    subparser = _p(sub, "add", "add one video by URL or id, and process it now")
+    subparser.add_argument("video")
+    subparser.add_argument("--queue-only", action="store_true", help="queue it for the next `run`")
+    subparser.add_argument("--force", action="store_true", help="process again even if already added")
 
-    s = _p(sub, "has", "is this video already in the catalog? exit code 4 if not")
-    s.add_argument("video")
+    subparser = _p(sub, "has", "is this video already in the catalog? exit code 4 if not")
+    subparser.add_argument("video")
 
-    s = _p(sub, "channel", "manage subscribed channels")
-    csub = s.add_subparsers(dest="channel_cmd", required=True)
-    c = _p(csub, "add", "subscribe to a channel (URL or @handle) and queue its recent uploads")
-    c.add_argument("url")
-    c.add_argument("--backfill", action="store_true", help="also queue every past upload")
-    c = _p(csub, "remove", "unsubscribe")
-    c.add_argument("channel")
+    subparser = _p(sub, "channel", "manage subscribed channels")
+    csub = subparser.add_subparsers(dest="channel_cmd", required=True)
+    channel_parser = _p(csub, "add", "subscribe to a channel (URL or @handle) and queue its recent uploads")
+    channel_parser.add_argument("url")
+    channel_parser.add_argument("--backfill", action="store_true", help="also queue every past upload")
+    channel_parser = _p(csub, "remove", "unsubscribe")
+    channel_parser.add_argument("channel")
     _p(csub, "list", "list subscribed channels")
 
-    s = _p(sub, "check", "queue new uploads from subscribed channels")
-    s.add_argument("--channel")
+    subparser = _p(sub, "check", "queue new uploads from subscribed channels")
+    subparser.add_argument("--channel")
 
-    s = _p(sub, "backfill", "queue a channel's whole upload history at low priority")
-    s.add_argument("channel")
-    s.add_argument("--limit", type=int, help="only the newest N uploads")
+    subparser = _p(sub, "backfill", "queue a channel's whole upload history at low priority")
+    subparser.add_argument("channel")
+    subparser.add_argument("--limit", type=int, help="only the newest N uploads")
 
-    s = _p(sub, "run", "process the queue")
-    s.add_argument("--limit", type=int, help="stop after N videos")
-    s.add_argument("--max-minutes", type=float, help="stop after this long")
-    s.add_argument("--sleep", type=float, help="seconds between downloads (default from config)")
-    s.add_argument("--check", action="store_true", help="run `check` first")
+    subparser = _p(sub, "run", "process the queue")
+    subparser.add_argument("--limit", type=int, help="stop after N videos")
+    subparser.add_argument("--max-minutes", type=float, help="stop after this long")
+    subparser.add_argument("--sleep", type=float, help="seconds between downloads (default from config)")
+    subparser.add_argument("--check", action="store_true", help="run `check` first")
 
-    s = _p(sub, "status", "queue counts and index size, or one video's state")
-    s.add_argument("video", nargs="?")
-    s.add_argument("--list", dest="list_status", choices=["queued", "processing", "done", "failed", "skipped"])
-    s.add_argument("--limit", type=int, default=20)
+    subparser = _p(sub, "status", "queue counts and index size, or one video's state")
+    subparser.add_argument("video", nargs="?")
+    subparser.add_argument("--list", dest="list_status",
+                           choices=["queued", "processing", "done", "failed", "skipped"])
+    subparser.add_argument("--limit", type=int, default=20)
 
-    s = _p(sub, "search", "hybrid keyword + vector search")
-    s.add_argument("query")
-    s.add_argument("-k", type=int)
-    s.add_argument("--kind", choices=["video", "section"])
-    s.add_argument("--tag", action="append", dest="tags", help="repeatable")
-    s.add_argument("--channel")
-    s.add_argument("--since", help="YYYY-MM-DD")
-    s.add_argument("--include-sponsor", action="store_true")
+    subparser = _p(sub, "search", "hybrid keyword + vector search")
+    subparser.add_argument("query")
+    subparser.add_argument("-k", type=int)
+    subparser.add_argument("--kind", choices=["video", "section"])
+    subparser.add_argument("--tag", action="append", dest="tags", help="repeatable")
+    subparser.add_argument("--channel")
+    subparser.add_argument("--since", help="YYYY-MM-DD")
+    subparser.add_argument("--include-sponsor", action="store_true")
 
-    s = _p(sub, "ask", "answer a question from the wiki with the configured LLM")
-    s.add_argument("question")
-    s.add_argument("-k", type=int, default=8)
-    s.add_argument("--since")
+    subparser = _p(sub, "ask", "answer a question from the wiki with the configured LLM")
+    subparser.add_argument("question")
+    subparser.add_argument("-k", type=int, default=8)
+    subparser.add_argument("--since")
 
-    s = _p(sub, "show", "print a page by doc id, video id/URL, or wiki path")
-    s.add_argument("key")
+    subparser = _p(sub, "show", "print a page by doc id, video id/URL, or wiki path")
+    subparser.add_argument("key")
 
-    s = _p(sub, "similar", "videos closest to this one (whole-video embeddings)")
-    s.add_argument("video")
-    s.add_argument("-k", type=int, default=8)
+    subparser = _p(sub, "similar", "videos closest to this one (whole-video embeddings)")
+    subparser.add_argument("video")
+    subparser.add_argument("-k", type=int, default=8)
 
-    s = _p(sub, "reprocess", "redo stages after changing a model, then `run`")
-    s.add_argument("videos", nargs="*", help="default: every done video")
-    s.add_argument("--from", dest="from_stage", default="enrich",
-                   choices=["info", "transcript", "sections", "enrich", "pages", "index"])
+    subparser = _p(sub, "reprocess", "redo stages after changing a model, then `run`")
+    subparser.add_argument("videos", nargs="*", help="default: every done video")
+    subparser.add_argument("--from", dest="from_stage", default="enrich",
+                           choices=["info", "transcript", "sections", "enrich", "pages", "index"])
 
     _p(sub, "reindex", "embed every chunk with the current embedder")
     _p(sub, "mcp", "serve the same commands as MCP tools over stdio")
-    return ap
+    return parser
 
 
-def _human(cmd: str, r: dict) -> str:
-    if "error" in r and len(r) == 1:
-        return f"error: {r['error']}"
+def _human(cmd: str, result: dict) -> str:
+    if "error" in result and len(result) == 1:
+        return f"error: {result['error']}"
     if cmd == "search":
-        if not r["hits"]:
+        if not result["hits"]:
             return "no results"
         lines = []
-        for i, h in enumerate(r["hits"], 1):
-            lines.append(f"{i}. [{h['kind']}] {h['title']}  ({h['published'][:10]})")
-            lines.append(f"   {h['url']}")
-            lines.append(f"   wiki: {h['path']}.md   id: {h['doc_id']}")
-            lines.append(f"   {h['snippet'][:240]}")
+        for position, hit in enumerate(result["hits"], 1):
+            lines.append(f"{position}. [{hit['kind']}] {hit['title']}  ({hit['published'][:10]})")
+            lines.append(f"   {hit['url']}")
+            lines.append(f"   wiki: {hit['path']}.md   id: {hit['doc_id']}")
+            lines.append(f"   {hit['snippet'][:240]}")
         return "\n".join(lines)
     if cmd == "ask":
-        out = [r["answer"] or r.get("note", "")]
-        out += [""] + [f"[{s['n']}] {s['title']} - {s['video']} ({s['published']}) {s['url']}"
-                       for s in r["sources"]]
+        out = [result["answer"] or result.get("note", "")]
+        out += [""] + [f"[{source['n']}] {source['title']} - {source['video']} "
+                       f"({source['published']}) {source['url']}"
+                       for source in result["sources"]]
         return "\n".join(out)
-    if cmd == "show" and "content" in r:
-        return r["content"]
+    if cmd == "show" and "content" in result:
+        return result["content"]
     if cmd == "similar":
-        return "\n".join(f"{h['published'][:10]} {h['title']}  ({h['path']})" for h in r["hits"]) or "no results"
-    return json.dumps(r, indent=2, ensure_ascii=False, default=str)
+        return "\n".join(
+            f"{hit['published'][:10]} {hit['title']}  ({hit['path']})" for hit in result["hits"]
+        ) or "no results"
+    return json.dumps(result, indent=2, ensure_ascii=False, default=str)
 
 
 def main(argv=None) -> int:
@@ -128,58 +133,59 @@ def main(argv=None) -> int:
 
     app = App.open(args.root, args.config)
     try:
-        r = dispatch(app, args)
-    except Busy as e:
-        r, code = {"error": str(e)}, 3
+        result = dispatch(app, args)
+    except Busy as error:
+        result, code = {"error": str(error)}, 3
     except KeyboardInterrupt:
         return 130
     else:
-        code = 1 if "error" in r else 0
-        if args.cmd == "has" and not r.get("known"):
-            code = 4 if "error" not in r else 1
-        if args.cmd == "add" and r.get("status") == "failed":
+        code = 1 if "error" in result else 0
+        if args.cmd == "has" and not result.get("known"):
+            code = 4 if "error" not in result else 1
+        if args.cmd == "add" and result.get("status") == "failed":
             code = 1
-        if r.get("blocked") or r.get("stopped"):
+        if result.get("blocked") or result.get("stopped"):
             code = 5
-    print(json.dumps(r, ensure_ascii=False, default=str) if args.json else _human(args.cmd, r))
+    print(json.dumps(result, ensure_ascii=False, default=str) if args.json else _human(args.cmd, result))
     return code
 
 
-def dispatch(app: App, a) -> dict:
-    c = a.cmd
-    if c == "init":
+def dispatch(app: App, args) -> dict:
+    command = args.cmd
+    if command == "init":
         return app.init()
-    if c == "add":
-        return app.add(a.video, process=not a.queue_only, force=a.force)
-    if c == "has":
-        return app.has(a.video)
-    if c == "channel":
-        if a.channel_cmd == "add":
-            return app.channel_add(a.url, backfill=a.backfill)
-        if a.channel_cmd == "remove":
-            return app.channel_remove(a.channel)
+    if command == "add":
+        return app.add(args.video, process=not args.queue_only, force=args.force)
+    if command == "has":
+        return app.has(args.video)
+    if command == "channel":
+        if args.channel_cmd == "add":
+            return app.channel_add(args.url, backfill=args.backfill)
+        if args.channel_cmd == "remove":
+            return app.channel_remove(args.channel)
         return app.channel_list()
-    if c == "check":
-        return app.check(a.channel)
-    if c == "backfill":
-        return app.backfill(a.channel, a.limit)
-    if c == "run":
-        return app.run(a.limit, a.max_minutes, a.sleep, a.check)
-    if c == "status":
-        return app.status(a.video, a.list_status, a.limit)
-    if c == "search":
-        return app.search(a.query, a.k, a.kind, a.tags, a.channel, a.since, a.include_sponsor)
-    if c == "ask":
-        return app.ask(a.question, a.k, a.since)
-    if c == "show":
-        return app.show(a.key)
-    if c == "similar":
-        return app.similar(a.video, a.k)
-    if c == "reprocess":
-        return app.reprocess(a.videos, a.from_stage)
-    if c == "reindex":
+    if command == "check":
+        return app.check(args.channel)
+    if command == "backfill":
+        return app.backfill(args.channel, args.limit)
+    if command == "run":
+        return app.run(args.limit, args.max_minutes, args.sleep, args.check)
+    if command == "status":
+        return app.status(args.video, args.list_status, args.limit)
+    if command == "search":
+        return app.search(args.query, args.k, args.kind, args.tags, args.channel, args.since,
+                          args.include_sponsor)
+    if command == "ask":
+        return app.ask(args.question, args.k, args.since)
+    if command == "show":
+        return app.show(args.key)
+    if command == "similar":
+        return app.similar(args.video, args.k)
+    if command == "reprocess":
+        return app.reprocess(args.videos, args.from_stage)
+    if command == "reindex":
         return app.reindex()
-    raise SystemExit(f"unknown command {c}")
+    raise SystemExit(f"unknown command {command}")
 
 
 if __name__ == "__main__":

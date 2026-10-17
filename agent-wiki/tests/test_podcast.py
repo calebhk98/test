@@ -23,13 +23,13 @@ def test_podcast_feed_and_chapters(monkeypatch):
     def fake_get(url, timeout=60):
         return FEED if url.endswith("feed") else json.dumps(CHAPTERS).encode()
     monkeypatch.setattr(podcast, "_get", fake_get)
-    s = PodcastSource(feeds=["https://ex.com/feed"])
-    ents = s.list_channel("https://ex.com/feed")
-    assert ents[0].video_id == episode_id("g-1") and ents[0].duration == 2710
-    assert s.parse_video_id("https://ex.com/1") == episode_id("g-1")
-    info = s.fetch_info(episode_id("g-1"))
-    assert info.channel == "Test Cast" and info.published.startswith("2026-10-01")
-    assert [c.title for c in info.chapters] == ["Welcome", "Flux"]
-    assert info.chapters[1].url == "https://bfl.ai"
-    assert "Flux https://bfl.ai" in info.description
-    assert info.timestamp_url(300) == "https://ex.com/1#t=300"
+    source = PodcastSource(feeds=["https://ex.com/feed"])
+    entries = source.list_channel("https://ex.com/feed")
+    assert entries[0].video_id == episode_id("g-1") and entries[0].duration == 2710
+    assert source.parse_video_id("https://ex.com/1") == episode_id("g-1")
+    video_info = source.fetch_info(episode_id("g-1"))
+    assert video_info.channel == "Test Cast" and video_info.published.startswith("2026-10-01")
+    assert [chapter.title for chapter in video_info.chapters] == ["Welcome", "Flux"]
+    assert video_info.chapters[1].url == "https://bfl.ai"
+    assert "Flux https://bfl.ai" in video_info.description
+    assert video_info.timestamp_url(300) == "https://ex.com/1#t=300"
