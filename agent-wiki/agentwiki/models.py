@@ -61,9 +61,20 @@ class VideoInfo:
                     end=float(chapter["end_time"]) if chapter.get("end_time") is not None else None)
             for chapter in ytdlp_data.get("chapters") or []
         ]
-        # Keep only what later stages read; the full yt-dlp dict is huge.
-        raw = {key: ytdlp_data.get(key) for key in ("subtitles", "automatic_captions", "language")
-               if ytdlp_data.get(key)}
+        # Keep only what later stages read; the full yt-dlp dict is huge. Auto
+        # captions alone list every translated language in every format: 10.7 MB
+        # for one 40 minute video. Keep English and the video's own language, json3 only.
+        spoken_language = (ytdlp_data.get("language") or "en").split("-")[0]
+        raw = {"language": ytdlp_data.get("language")} if ytdlp_data.get("language") else {}
+        for caption_kind in ("subtitles", "automatic_captions"):
+            tracks = {
+                language: [track for track in formats if track.get("ext") == "json3"]
+                for language, formats in (ytdlp_data.get(caption_kind) or {}).items()
+                if language.split("-")[0] in ("en", spoken_language)
+            }
+            tracks = {language: formats for language, formats in tracks.items() if formats}
+            if tracks:
+                raw[caption_kind] = tracks
         return cls(
             video_id=ytdlp_data["id"],
             title=ytdlp_data.get("title") or ytdlp_data["id"],

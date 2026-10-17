@@ -63,6 +63,31 @@ was vaguer at 30-40 s; extractive quotes were fast but read like speech.
 transformers 5 removed the `summarization` pipeline, so the model is loaded
 directly.
 
+## Scale
+
+Measured here (4 CPU cores, another job running at the same time, so upper bounds):
+
+| wiki size | index on disk | first search in a new process | later searches |
+| --- | --- | --- | --- |
+| 300 videos (9,300 chunks) | 71 MB | 0.6 s | 0.03 s |
+| 1,000 videos (31,000 chunks) | 237 MB | 0.35 s | 0.15 s |
+| 5,000 videos (155,000 chunks) | 1.2 GB | 6.1 s | 0.6 s |
+
+Synthetic indexes with 1024-dim vectors, 31 chunks per video as the real AI
+Search video produced. Each CLI call reloads the vectors; the MCP server keeps
+them in memory. Past a few thousand videos, a `VectorIndex` on sqlite-vec or
+LanceDB, or `dimensions = 512` on the embedder, would be the next step.
+
+The real 40 minute video cost about 0.65 MB of index, 0.2 MB of cached stage
+files and 0.2 MB of markdown (30 pages). Before a fix in this round, its cached
+metadata was 10.8 MB, almost all auto-caption URLs for 176 languages; it is
+now 15 KB.
+
+AI Search had 428 uploads, 207 hours in total, when listed. On this 4-core CPU
+a 40 minute video took about 14 minutes end to end with Whisper `small`, so a
+full backfill would take roughly three days of CPU time. GPU speed was not
+measured.
+
 ## Not tested here
 
 - A full YouTube download and Whisper transcription of an AI Search video

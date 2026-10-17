@@ -56,3 +56,14 @@ def test_chunk_text_covers_everything_with_overlap():
 def test_normalize_tags():
     assert normalize_tags(["Text to Video", "#Flux 3", "GPT 6.1", "2026", "flux-3"]) == \
         ["text-to-video", "flux-3", "gpt-6-1"]
+
+
+def test_cached_metadata_keeps_only_usable_caption_tracks():
+    from agentwiki.models import VideoInfo
+    track = lambda ext: {"ext": ext, "url": f"https://example/{ext}"}
+    ytdlp_data = {"id": "abcdefghijk", "language": "en",
+                  "automatic_captions": {lang: [track("json3"), track("vtt"), track("srv1")]
+                                         for lang in ("en", "en-orig", "fr", "de", "ja")}}
+    video_info = VideoInfo.from_ytdlp(ytdlp_data)
+    kept = video_info.raw["automatic_captions"]
+    assert sorted(kept) == ["en", "en-orig"] and all(len(formats) == 1 for formats in kept.values())

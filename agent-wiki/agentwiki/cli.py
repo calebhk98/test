@@ -13,58 +13,71 @@ import sys
 from .app import App, Busy
 
 
-def _p(sub, name, help_):
-    return sub.add_parser(name, help=help_, description=help_)
+def _global_options(suppress_defaults: bool) -> argparse.ArgumentParser:
+    """--root, --config, --json and -v, accepted before or after the command
+    (`agentwiki --json status` and `agentwiki status --json` both work). On
+    the commands the defaults are suppressed so they never overwrite a value
+    given before the command."""
+    options = argparse.ArgumentParser(add_help=False)
+    default = (lambda value: argparse.SUPPRESS) if suppress_defaults else (lambda value: value)
+    options.add_argument("--root", default=default("."), help="folder holding config.toml, wiki/ and data/")
+    options.add_argument("--config", default=default(None), help="config file (default: <root>/config.toml)")
+    options.add_argument("--json", action="store_true", default=default(False), help="machine-readable output")
+    options.add_argument("-v", "--verbose", action="store_true", default=default(False))
+    return options
+
+
+_COMMAND_OPTIONS = _global_options(suppress_defaults=True)
+
+
+def _add_command(commands, name, help_text):
+    return commands.add_parser(name, help=help_text, description=help_text, parents=[_COMMAND_OPTIONS])
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="agentwiki",
-                                     description="Searchable wiki built from YouTube videos.")
-    parser.add_argument("--root", default=".", help="folder holding config.toml, wiki/ and data/")
-    parser.add_argument("--config", help="config file (default: <root>/config.toml)")
-    parser.add_argument("--json", action="store_true", help="machine-readable output")
-    parser.add_argument("-v", "--verbose", action="store_true")
-    sub = parser.add_subparsers(dest="cmd", required=True)
+    parser = argparse.ArgumentParser(prog="agentwiki", parents=[_global_options(suppress_defaults=False)],
+                                     description="Searchable wiki built from YouTube videos and podcasts.")
+    commands = parser.add_subparsers(dest="cmd", required=True)
 
-    _p(sub, "init", "create config.toml, wiki/ and data/")
+    _add_command(commands, "init", "create config.toml, wiki/ and data/")
 
-    subparser = _p(sub, "add", "add one video by URL or id, and process it now")
+    subparser = _add_command(commands, "add", "add one video by URL or id, and process it now")
     subparser.add_argument("video")
     subparser.add_argument("--queue-only", action="store_true", help="queue it for the next `run`")
     subparser.add_argument("--force", action="store_true", help="process again even if already added")
 
-    subparser = _p(sub, "has", "is this video already in the catalog? exit code 4 if not")
+    subparser = _add_command(commands, "has", "is this video already in the catalog? exit code 4 if not")
     subparser.add_argument("video")
 
-    subparser = _p(sub, "channel", "manage subscribed channels")
-    csub = subparser.add_subparsers(dest="channel_cmd", required=True)
-    channel_parser = _p(csub, "add", "subscribe to a channel (URL or @handle) and queue its recent uploads")
+    subparser = _add_command(commands, "channel", "manage subscribed channels")
+    channel_commands = subparser.add_subparsers(dest="channel_cmd", required=True)
+    channel_parser = _add_command(channel_commands, "add", "subscribe to a channel (URL or @handle) and queue its recent uploads")
     channel_parser.add_argument("url")
     channel_parser.add_argument("--backfill", action="store_true", help="also queue every past upload")
-    channel_parser = _p(csub, "remove", "unsubscribe")
+    channel_parser = _add_command(channel_commands, "remove", "unsubscribe")
     channel_parser.add_argument("channel")
-    _p(csub, "list", "list subscribed channels")
+    _add_command(channel_commands, "list", "list subscribed channels")
 
-    subparser = _p(sub, "check", "queue new uploads from subscribed channels")
+    subparser = _add_command(commands, "check", "queue new uploads from subscribed channels")
     subparser.add_argument("--channel")
 
-    subparser = _p(sub, "backfill", "queue a channel's whole upload history at low priority")
+    subparser = _add_command(commands, "backfill", "queue a channel's whole upload history at low priority")
     subparser.add_argument("channel")
     subparser.add_argument("--limit", type=int, help="only the newest N uploads")
 
-    subparser = _p(sub, "run", "process the queue")
+    subparser = _add_command(commands, "run", "process the queue")
     subparser.add_argument("--limit", type=int, help="stop after N videos")
     subparser.add_argument("--max-minutes", type=float, help="stop after this long")
     subparser.add_argument("--sleep", type=float, help="seconds between downloads (default from config)")
     subparser.add_argument("--check", action="store_true", help="run `check` first")
 
-    subparser = _p(sub, "status", "queue counts and index size, or one video's state")
+    subparser = _add_command(commands, "status", "queue counts and index size, or one video's state")
     subparser.add_argument("video", nargs="?")
     subparser.add_argument("--list", dest="list_status",
                            choices=["queued", "processing", "done", "failed", "skipped"])
     subparser.add_argument("--limit", type=int, default=20)
 
-    subparser = _p(sub, "search", "hybrid keyword + vector search")
+    subparser = _add_command(commands, "search", "hybrid keyword + vector search")
     subparser.add_argument("query")
     subparser.add_argument("-k", type=int)
     subparser.add_argument("--kind", choices=["video", "section"])
@@ -73,25 +86,25 @@ def build_parser() -> argparse.ArgumentParser:
     subparser.add_argument("--since", help="YYYY-MM-DD")
     subparser.add_argument("--include-sponsor", action="store_true")
 
-    subparser = _p(sub, "ask", "answer a question from the wiki with the configured LLM")
+    subparser = _add_command(commands, "ask", "answer a question from the wiki with the configured LLM")
     subparser.add_argument("question")
     subparser.add_argument("-k", type=int, default=8)
     subparser.add_argument("--since")
 
-    subparser = _p(sub, "show", "print a page by doc id, video id/URL, or wiki path")
+    subparser = _add_command(commands, "show", "print a page by doc id, video id/URL, or wiki path")
     subparser.add_argument("key")
 
-    subparser = _p(sub, "similar", "videos closest to this one (whole-video embeddings)")
+    subparser = _add_command(commands, "similar", "videos closest to this one (whole-video embeddings)")
     subparser.add_argument("video")
     subparser.add_argument("-k", type=int, default=8)
 
-    subparser = _p(sub, "reprocess", "redo stages after changing a model, then `run`")
+    subparser = _add_command(commands, "reprocess", "redo stages after changing a model, then `run`")
     subparser.add_argument("videos", nargs="*", help="default: every done video")
     subparser.add_argument("--from", dest="from_stage", default="enrich",
                            choices=["info", "transcript", "sections", "enrich", "pages", "index"])
 
-    _p(sub, "reindex", "embed every chunk with the current embedder")
-    _p(sub, "mcp", "serve the same commands as MCP tools over stdio")
+    _add_command(commands, "reindex", "embed every chunk with the current embedder")
+    _add_command(commands, "mcp", "serve the same commands as MCP tools over stdio")
     return parser
 
 
