@@ -1,0 +1,88 @@
+# agent-wiki configuration. Copied to config.toml by `agentwiki init`.
+#
+# Every model is a [section] with a `type`; the rest of the keys are passed to
+# that class. Swap a model by changing `type` or `model` here, then run
+#   agentwiki reprocess --from <stage>   and   agentwiki run
+# (or `agentwiki reindex` for an embedder change). `agentwiki --help` lists commands.
+
+# Extra modules with your own @register'ed classes.
+plugins = []
+
+[source]
+type = "yt-dlp"
+# YouTube often asks to "confirm you're not a bot". Point yt-dlp at your
+# browser's cookies (firefox, chrome, edge, brave...) or an exported cookies.txt.
+cookies_from_browser = ""
+cookies_file = ""
+# yt-dlp needs a JavaScript runtime for YouTube. Install deno, or use node.
+js_runtimes = ["deno", "node"]
+
+# ---- Transcription ---------------------------------------------------------
+# Tries Whisper first; falls back to YouTube's own captions if Whisper is not
+# installed or fails. For a fast first backfill, put youtube-captions first.
+[transcriber]
+type = "chain"
+transcribers = [
+  { type = "faster-whisper", model = "large-v3-turbo", device = "auto", compute_type = "default" },
+  { type = "youtube-captions" },
+]
+
+# ---- Splitting into sections -------------------------------------------------
+[segmenter]
+type = "chain"
+segmenters = [
+  { type = "chapters" },                    # creator chapters + description links
+  { type = "fixed-window", minutes = 4 },   # when a video has no chapters
+]
+
+# ---- LLM for tags, summaries, facts and `ask` --------------------------------
+# Any model you have pulled; check `ollama list`.
+[llm]
+type = "ollama"
+model = "gemma3:12b"
+host = "http://localhost:11434"
+num_ctx = 16384
+
+# Other options:
+# [llm]
+# type = "openai-compatible"            # llama.cpp server, LM Studio, vLLM, OpenAI
+# model = "local-model"
+# base_url = "http://localhost:8080/v1"
+#
+# [llm]
+# type = "anthropic"                    # reads ANTHROPIC_API_KEY
+# model = "claude-haiku-5-5"
+
+[enricher]
+type = "llm"            # "keyword" needs no model at all
+max_tags = 12
+skip_sponsor = true     # do not spend LLM time on sponsor chapters
+
+# ---- Embeddings ------------------------------------------------------------
+# EmbeddingGemma: 768 dims, 2048-token context. It is gated on Hugging Face:
+# accept the licence on the model page, then `hf auth login`.
+# `dim = 256` truncates it (Matryoshka) to save space at a small quality cost.
+[embedder]
+type = "sentence-transformers"
+model = "google/embeddinggemma-300m"
+device = "auto"
+
+# Or through Ollama:   type = "ollama", model = "embeddinggemma"
+# Or no model (testing only):   type = "hashing"
+
+[index]
+type = "sqlite"
+chunk_chars = 1500      # about 350 tokens; well inside EmbeddingGemma's context
+chunk_overlap = 200
+
+[ingest]
+min_duration = 90       # seconds; skips Shorts
+skip_live = true
+sleep_between = 15      # seconds between videos in `run`, to be polite to YouTube
+max_attempts = 3
+check_recent = 30       # newest uploads per channel that `check` looks at
+keep_audio = false
+
+[search]
+k = 8
+exclude_sponsor = true
