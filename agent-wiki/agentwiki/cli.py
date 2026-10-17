@@ -34,20 +34,55 @@ def _add_command(commands, name, help_text):
     return commands.add_parser(name, help=help_text, description=help_text, parents=[_COMMAND_OPTIONS])
 
 
+STAGE_NOTES = {
+    "info": "fetching metadata",
+    "transcript": "downloading and transcribing (the slow step, minutes per video)",
+    "sections": "splitting into sections",
+    "enrich": "tagging and summarising",
+    "pages": "writing pages",
+    "index": "indexing for search",
+}
+
+
+def _quiet_libraries() -> None:
+    """Model libraries log setup chatter on every load; keep stderr for our progress and errors."""
+    import os
+    import warnings
+    # Read by the libraries when they are first imported, which happens later, lazily.
+    os.environ.setdefault("HF_HUB_DISABLE_PROGRESS_BARS", "1")
+    os.environ.setdefault("HF_HUB_VERBOSITY", "error")
+    os.environ.setdefault("TRANSFORMERS_VERBOSITY", "error")
+    os.environ.setdefault("TQDM_DISABLE", "1")
+    warnings.filterwarnings("ignore", category=FutureWarning)
+    for library in ("huggingface_hub", "transformers", "sentence_transformers", "httpx", "gliner2"):
+        logging.getLogger(library).setLevel(logging.ERROR)
+
+
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="agentwiki", parents=[_global_options(suppress_defaults=False)],
-                                     description="Searchable wiki built from YouTube videos and podcasts.")
+    parser = argparse.ArgumentParser(
+        prog="agentwiki", parents=[_global_options(suppress_defaults=False)],
+        description="Searchable wiki built from YouTube videos and podcasts.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""common tasks:
+  agentwiki add <URL>                       add one video now (takes minutes)
+  agentwiki channel add @handle --backfill  queue a whole channel, then:
+  agentwiki run --max-minutes 120           work through the queue
+  agentwiki search "question" --json        find sections; `show <doc_id>` reads one
+
+statuses: queued, processing, done, failed (retried), skipped (Shorts, live
+streams, set aside; `add <id>` brings one back).
+Full guide for agents: wiki/AGENTS.md in the wiki folder.""")
     commands = parser.add_subparsers(dest="cmd", required=True)
 
     _add_command(commands, "init", "create config.toml, wiki/ and data/")
 
-    subparser = _add_command(commands, "add", "add one video by URL or id, and process it now")
-    subparser.add_argument("video")
+    subparser = _add_command(commands, "add", "add one video and process it now (takes minutes)")
+    subparser.add_argument("video", help="URL, id, or the title of a video the catalog already knows")
     subparser.add_argument("--queue-only", action="store_true", help="queue it for the next `run`")
     subparser.add_argument("--force", action="store_true", help="process again even if already added")
 
     subparser = _add_command(commands, "has", "is this video already in the catalog? exit code 4 if not")
-    subparser.add_argument("video")
+    subparser.add_argument("video", help="URL, id, or the title of a video the catalog already knows")
 
     subparser = _add_command(commands, "channel", "manage subscribed channels")
     channel_commands = subparser.add_subparsers(dest="channel_cmd", required=True)
@@ -61,8 +96,8 @@ def build_parser() -> argparse.ArgumentParser:
     subparser = _add_command(commands, "check", "queue new uploads from subscribed channels")
     subparser.add_argument("--channel")
 
-    subparser = _add_command(commands, "backfill", "queue a channel's whole upload history at low priority")
-    subparser.add_argument("channel")
+    subparser = _add_command(commands, "backfill", "queue a channel's whole upload history at low priority; `run` processes it")
+    subparser.add_argument("channel", help="URL, @handle, or a name or id from `channel list`")
     subparser.add_argument("--limit", type=int, help="only the newest N uploads")
 
     subparser = _add_command(commands, "run", "process the queue")
@@ -91,11 +126,11 @@ def build_parser() -> argparse.ArgumentParser:
     subparser.add_argument("-k", type=int, default=8)
     subparser.add_argument("--since")
 
-    subparser = _add_command(commands, "show", "print a page by doc id, video id/URL, or wiki path")
+    subparser = _add_command(commands, "show", "print a page by doc id, video id, URL, title or wiki path")
     subparser.add_argument("key")
 
     subparser = _add_command(commands, "similar", "videos closest to this one (whole-video embeddings)")
-    subparser.add_argument("video")
+    subparser.add_argument("video", help="URL, id, or the title of a video the catalog already knows")
     subparser.add_argument("-k", type=int, default=8)
 
     subparser = _add_command(commands, "reprocess", "redo stages after changing a model, then `run`")
@@ -140,11 +175,15 @@ def main(argv=None) -> int:
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING,
                         format="%(levelname)s %(name)s: %(message)s", stream=sys.stderr)
+    if not args.verbose:
+        _quiet_libraries()
     if args.cmd == "mcp":
         from .mcp_server import serve
         return serve(args.root, args.config)
 
     app = App.open(args.root, args.config)
+    app.progress = lambda video_id, stage_name: print(f"{video_id}: {STAGE_NOTES.get(stage_name, stage_name)}",
+                                                      file=sys.stderr, flush=True)
     try:
         result = dispatch(app, args)
     except Busy as error:

@@ -88,6 +88,29 @@ a 40 minute video took about 14 minutes end to end with Whisper `small`, so a
 full backfill would take roughly three days of CPU time. GPU speed was not
 measured.
 
+## An agent using it cold
+
+A separate agent was given only the knowledge-base folder, the fact that
+`agentwiki` is installed, and three plain requests: add a podcast episode by
+title, queue every other episode without processing them, and answer a
+question with timestamped links. It could read `--help` and the wiki's
+markdown, not the source code.
+
+It managed all three: the episode was added in 24 minutes (15 sections), 376
+episodes queued, and the answer cited the right sections and said plainly
+that the wiki had no VRAM figures. What slowed it down, all fixed in this
+round:
+
+- `wiki/AGENTS.md` was only written by `init`, and that wiki was created
+  without it. Now every page write makes sure it exists.
+- `add` and `has` took only a URL or id; it found the id by listing the
+  queue. Now a title (or a unique part of one) works for any video the
+  catalog knows, and an ambiguous title lists the matches.
+- Nothing explained "skipped", or that `add <id>` brings a skipped video back.
+  `--help` and AGENTS.md now say what every status means.
+- A 24 minute `add` printed nothing. Each stage now prints a line to stderr.
+- Library warnings and progress bars filled stderr. They are off unless `-v`.
+
 ## Not tested here
 
 - A full YouTube download and Whisper transcription of an AI Search video
@@ -101,5 +124,5 @@ measured.
 
 ## Unit tests
 
-`pytest` runs 33 offline tests with fakes for download and transcription and
+`pytest` runs 37 offline tests with fakes for download and transcription and
 the saved metadata of a real AI Search video.

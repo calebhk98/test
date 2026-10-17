@@ -222,3 +222,29 @@ def test_local_audio_source_uses_dropped_file_and_keeps_it(app, tmp_path):
     assert inner_source.downloads == []                       # nothing was downloaded
     assert (drop_folder / f"{REAL_ID}.mp3").exists()          # the original is kept
     assert not any((app.config.data_dir / "tmp").glob("**/*.mp3"))   # the working copy is gone
+
+
+def test_videos_can_be_named_by_title_once_the_catalog_knows_them(app):
+    app.channel_add("@theAIsearch")
+    assert app.has("Video aaaaaaaaaaa")["video_id"] == "aaaaaaaaaaa"          # exact title
+    assert app.has("video bbbb")["video_id"] == "bbbbbbbbbbb"                 # unique part of a title
+    ambiguous = app.has("video")
+    assert "error" in ambiguous and len(ambiguous["matches"]) >= 3
+    assert "hint" in app.has("a title nobody has seen")
+
+
+def test_progress_is_reported_per_stage_and_agents_md_always_exists(app):
+    (app.config.wiki_dir / "AGENTS.md").unlink()
+    stages = []
+    app.progress = lambda video_id, stage_name: stages.append(stage_name)
+    app.add(REAL_ID)
+    assert stages == ["info", "transcript", "sections", "enrich", "pages", "index"]
+    assert "agentwiki add" in (app.config.wiki_dir / "AGENTS.md").read_text()
+
+
+def test_global_options_work_after_the_command(app, capsys):
+    root = str(app.config.root)
+    (app.config.root / "config.toml").write_text('[source]\ntype = "fake"\n[transcriber]\ntype = "fake"\n'
+                                                 '[embedder]\ntype = "hashing"\n')
+    assert main(["status", "--root", root, "--json"]) == 0
+    assert "queue" in json.loads(capsys.readouterr().out)

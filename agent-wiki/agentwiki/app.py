@@ -123,17 +123,35 @@ class App:
 
     # ---- adding videos -----------------------------------------------------
 
+    def resolve_video(self, url_id_or_title: str) -> tuple[str | None, dict | None]:
+        """A video id from a URL, an id, or the title of a video the catalog
+        knows (from `channel add`, `check` or `backfill`). Returns (id, None)
+        or (None, an error dict that says what to do)."""
+        video_id = self.source.parse_video_id(url_id_or_title)
+        if video_id:
+            return video_id, None
+        matches = self.catalog.find_by_title(url_id_or_title)
+        if len(matches) == 1:
+            return matches[0]["video_id"], None
+        if matches:
+            return None, {"error": f"{len(matches)} videos match {url_id_or_title!r}; use an id",
+                          "matches": [{"video_id": row["video_id"], "title": row["title"]} for row in matches]}
+        return None, {"error": f"not a video URL or id, and no known video has a title like "
+                               f"{url_id_or_title!r}",
+                      "hint": "titles are known only after `channel add`, `check` or `backfill`; "
+                              "otherwise pass the video's URL"}
+
     def has(self, url_or_id: str) -> dict:
-        video_id = self.source.parse_video_id(url_or_id)
-        if not video_id:
-            return {"error": f"not a video URL or id: {url_or_id}"}
+        video_id, error = self.resolve_video(url_or_id)
+        if error:
+            return error
         row = self.catalog.get(video_id)
         return {"video_id": video_id, "known": row is not None, **({"status": row["status"]} if row else {})}
 
     def add(self, url_or_id: str, process: bool = True, force: bool = False) -> dict:
-        video_id = self.source.parse_video_id(url_or_id)
-        if not video_id:
-            return {"error": f"not a video URL or id: {url_or_id}"}
+        video_id, error = self.resolve_video(url_or_id)
+        if error:
+            return error
         row = self.catalog.get(video_id)
         if row and row["status"] == "done" and not force:
             return {"video_id": video_id, "status": "done", "already_added": True, "page": row["page"]}
@@ -153,11 +171,19 @@ class App:
                     "note": "YouTube is rate limiting or bot-checking; the video stays queued. "
                             "Wait, or set cookies / player_clients in [source]."}
 
+    #: Called with (video_id, stage name) as each stage starts; the CLI prints it.
+    progress = None
+
+    def _report_stage(self, video_id: str, stage_name: str) -> None:
+        self.catalog.update(video_id, stage=stage_name)
+        if self.progress:
+            self.progress(video_id, stage_name)
+
     def _process_one(self, video_id: str) -> dict:
         self.catalog.update(video_id, status="processing", error=None)
         try:
-            result = self.pipeline.process(
-                video_id, on_stage=lambda stage_name: self.catalog.update(video_id, stage=stage_name))
+            result = self.pipeline.process(video_id, on_stage=lambda stage_name: self._report_stage(video_id,
+                                                                                                    stage_name))
         except Skip as error:
             self.catalog.update(video_id, status="skipped", error=str(error))
             return {"video_id": video_id, "status": "skipped", "reason": str(error)}
@@ -294,8 +320,8 @@ class App:
     def status(self, video_id: str | None = None, list_status: str | None = None,
                limit: int = 20) -> dict:
         if video_id:
-            resolved_video_id = self.source.parse_video_id(video_id) or video_id
-            return {"video": self.catalog.get(resolved_video_id)}
+            resolved_video_id, error = self.resolve_video(video_id)
+            return error or {"video": self.catalog.get(resolved_video_id)}
         from . import hardware
         out = {"queue": self.catalog.counts(), "channels": len(self.catalog.channels()),
                "index": self.index.stats(), "embedder": self.embedder.name,
@@ -343,7 +369,7 @@ class App:
         return {"query": query, "hits": [hit.to_dict() for hit in hits]}
 
     def similar(self, video_id: str, top_k: int = 8) -> dict:
-        resolved_video_id = self.source.parse_video_id(video_id) or video_id
+        resolved_video_id = self.resolve_video(video_id)[0] or video_id
         hits = self.index.similar(resolved_video_id, self.embedder, top_k)
         return {"video_id": resolved_video_id, "hits": [hit.to_dict() for hit in hits]}
 
@@ -352,7 +378,7 @@ class App:
         path = None
         row = self.index.database.execute("SELECT path FROM docs WHERE doc_id=?", (key,)).fetchone()
         if not row:
-            resolved_video_id = self.source.parse_video_id(key)
+            resolved_video_id = self.resolve_video(key)[0]
             if resolved_video_id:
                 row = self.index.database.execute("SELECT path FROM docs WHERE doc_id=?",
                                                   (resolved_video_id,)).fetchone()

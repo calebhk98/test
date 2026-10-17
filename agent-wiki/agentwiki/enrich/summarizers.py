@@ -91,6 +91,8 @@ class Seq2SeqSummarizer(Summarizer):
             try:
                 self._tokenizer = AutoTokenizer.from_pretrained(self.model_name)
                 self._model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name).to(device).eval()
+                # The checkpoint's own min_length conflicts with min_new_tokens and warns every call.
+                self._model.generation_config.min_length = 0
             except (OSError, ValueError) as error:
                 raise PartUnavailable(f"could not load {self.model_name}: {error}") from error
         return self._tokenizer, self._model

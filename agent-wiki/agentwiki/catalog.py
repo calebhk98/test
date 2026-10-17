@@ -98,6 +98,15 @@ class Catalog:
             rows = self.database.execute("SELECT * FROM videos ORDER BY updated_at DESC LIMIT ?", (limit,))
         return [dict(row) for row in rows]
 
+    def find_by_title(self, text: str, limit: int = 10) -> list[dict]:
+        """Videos whose title is `text` exactly (ignoring case), else contains it."""
+        exact = self.database.execute("SELECT * FROM videos WHERE lower(title)=lower(?)", (text,)).fetchall()
+        if exact:
+            return [dict(row) for row in exact]
+        rows = self.database.execute("SELECT * FROM videos WHERE title LIKE ? ORDER BY published DESC LIMIT ?",
+                                     (f"%{text}%", limit))
+        return [dict(row) for row in rows]
+
     def all_ids(self, status: str | None = None) -> list[str]:
         query_text = "SELECT video_id FROM videos" + (" WHERE status=?" if status else "")
         return [row[0] for row in self.database.execute(query_text, (status,) if status else ())]
