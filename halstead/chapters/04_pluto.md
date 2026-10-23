@@ -32,9 +32,9 @@ The nurse is on the first floor beside the stairwell with the red door, and some
 
 Lights out is earlier for the sixes than for the sevens, so the school puts Chloe in the first group until August.
 
-"If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you out of it."
+"If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you round."
 
-Further up a boy has started crying, quiet about it, and the girl next to him scoots her chair a few inches closer, close enough that their sleeves touch, while the woman finds her place again on the clipboard.
+Further up a boy has started crying, quiet about it, and the girl next to him budges her chair a few inches closer, close enough that their sleeves touch, while the woman finds her place again on the clipboard.
 
 "It isn't a punishment, it's just how it works, and if you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."
 
@@ -80,7 +80,7 @@ Then Priya says goodnight, and inside a minute she is asleep.
 
 Chloe lies on top of the covers with her shoes on.
 
-That evening she goes down to the phone by the front desk, which anyone can use whenever they want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the bulletin board until he is finished, then dials the number off the card in her folder.
+That evening she goes down to the phone by the front desk, which anyone can use whenever they want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
 
 Her mom picks up in the middle of the first ring.
 
@@ -270,7 +270,7 @@ Chloe has a very clear idea of what is supposed to happen to a child who does wh
 
 At the end of the table she leans over. "Are you in trouble?"
 
-"I don't know." Ruth has her sandwich apart and is eating the middle of it first. "At my old school they got mad when I interrupted, so probably. I say it and then I find out."
+"I don't know." Ruth has her sandwich apart and is eating the middle of it first. "At my old school they got cross when I interrupted, so probably. I say it and then I find out."
 
 But nothing comes, all day.
 

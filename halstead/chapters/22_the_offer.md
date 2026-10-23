@@ -26,7 +26,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him; 
 
 "Whatever's already in that folder is probably enough for you. I haven't got anything you'd want to write down on top of it."
 
-"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet, and nobody has ever come back to this office asking for different terms. There's a woman two floors down from me who signed one of these sheets nine years ago, straight out of a program not unlike yours; she runs a team of nineteen now, owns a house four streets from the one she grew up in, paid off, with a garden her mother comes and sits in on Sundays. I am not telling you that to sell you anything. I am telling you because you asked me once what the actual math looks like at the far end of a sheet like this, and that woman is the math."
+"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet, and nobody has come back to this office asking for different terms. There's a woman two floors down from me who signed one of these sheets nine years ago, straight out of a program not unlike yours; she runs a team of nineteen now, owns a house four streets from the one she grew up in, paid off, with a garden her mother comes and sits in on Sundays. I am not telling you that to sell you anything. I am telling you because you asked me once what the actual math looks like at the far end of a sheet like this, and that woman is the math."
 
 "Here?"
 
@@ -52,7 +52,7 @@ All ninety-one names are posted in the end, and thirteen of them turn into yeses
 
 Most of them had already been somewhere in the building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, and all of their names are posted inside the first few days, except for the last, which breaks it: he's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, saying yes anyway and spending the rest of the week asking around, politely and without much luck, to find out what the door is even for.
 
-The eighty saying no go back to their own last weeks of school, final transcripts yet to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd half finished before the list was ever posted.
+The seventy-eight saying no go back to their own last weeks of school, final transcripts yet to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd half finished before the list was ever posted.
 
 ________________
 
@@ -72,7 +72,7 @@ The list comes in the order he gives everybody: research and the salary and the 
 
 "I'd be good at a few hours a month of that job." Her hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped. Nobody at a desk in this building has ever rung me up wanting a price, and until somebody does, the desk is just a desk with my name on a folder somewhere near it, and I'd rather be at a different desk, because a desk with nobody calling it isn't a job, it's just furniture with my name near it."
 
-Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
+Amberg writes for a while. "Most of the ones saying no are going to college in September. You haven't sent an application anywhere."
 
 "I costed it. Four years and about a hundred and ten thousand dollars, against the jobs I've actually been applying for." She says them faster than he can write them. "A degree comes up on none of them. Two of them ask for a forklift certificate."
 
@@ -94,7 +94,7 @@ Sitting down, in a chair, she pushes her sleeves up.
 
 "I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing. That's the whole shape of it, and every version I've seen so far gets that backwards."
 
-Amberg looks at that for longer than he has looked at anything else on the desk. "Eighty people have sat in that chair this month. Four of them told me they were starting something."
+Amberg looks at that for longer than he has looked at anything else on the desk. "Forty people have sat in that chair this week. Four of them told me they were starting something."
 
 "That sounds about right."
 
@@ -190,7 +190,7 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "Dave."
 
-"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life. I have paid rent or a mortgage every month since before you were born, and the number has mattered in every single month of it. There has never once been a month where it didn't, and I'm not saying that as a complaint, I'm saying it because it's true, and I want you standing in front of a number that size with your eyes actually open to what it is, not just the word guaranteed, which is doing most of the work in that offer whether you noticed it or not. I did the arithmetic myself on the drive over here, twice, and I got a different total both times, which tells you something about how big the number actually is. My own father worked forty years for a pension that got cut by a third the year before he could touch it, and I always check a number that size three separate ways before I put it in front of anybody."
+"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life. I have paid rent or a mortgage every month since before you were born, and the number has mattered in every single month of it. There has never once been a month where it didn't, and I'm not saying that as a complaint, I'm saying it because it's true, and I want you standing in front of a number that size with your eyes actually open to what it is, not just the word guaranteed, which is doing most of the work in that offer whether you noticed it or not. I did the arithmetic myself while you were talking just now, twice, and I got a different total both times, which tells you something about how big the number actually is. My own father worked forty years for a pension that got cut by a third the year before he could touch it, and I always check a number that size three separate ways before I put it in front of anybody."
 
 "I understand what it is, because I did the math myself before I ever walked into that room, and I understood it fully before I said no. I wrote it out on the back of the deadline list in February and I still have the page."
 
@@ -210,11 +210,11 @@ A pause, and then her father again, quieter. "What happens if you change your mi
 
 "No, I turned it down flat, and I left that particular question sitting on the table."
 
-Her mother's voice, when it comes back, has the edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money, and we've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the degree instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself. We will find it. I would still rather you knew what we were finding, and the actual number rather than a guess, because your father and I do not have it sitting around and we never have. I called the bank this morning before you were even awake, and I already know what a loan against the house would cost us every month for the next ten years."
+Her mother's voice, when it comes back, has the edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know the aid letter from Georgetown left a gap, and we've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the degree instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself. We will find it. I would still rather you knew what we were finding, and the actual number rather than a guess, because your father and I do not have it sitting around and we never have. I called the bank this morning before you were even awake, and I already know what a loan against the house would cost us every month for the next ten years."
 
 "I hear it."
 
-"Say it back to me."
+"Then tell me what you think it costs us."
 
 "It's not free, and you and Dad are going to have to figure out how to pay for it, like you figure out everything else, and it's my fault that you have to. I had a way to make it cost you nothing, but I gave it back this afternoon, out loud, in a room, while a man wrote it down as I was saying it."
 
@@ -224,7 +224,7 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "What about the others," her father says. "Ruth, Sam, the rest of the table."
 
-"Ruth's still going to MIT, and Sam's still doing the thing with the Army, the officer program he's been talking about for a year. Kavi said yes to the same offer I said no to."
+"Ruth's still going to MIT, and Sam's still doing the thing with the Army, the infantry job he's been talking about for a year. Kavi said yes to the same offer I said no to."
 
 "Huh." A short pause, with the radio audible behind it. "Good for him, actually, since out of all of you he's the one I'd have guessed the least."
 

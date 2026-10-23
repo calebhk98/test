@@ -20,7 +20,7 @@ After standing in the driveway with the rest of the mail going warm against her 
 
 "Can you go where, honey?"
 
-Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way around for her mom.
+Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom.
 
 Her mom reads it, her eyes going back to one spot on the page and staying there, then hands it across the table.
 
@@ -48,7 +48,7 @@ Her mom takes it back and looks at the back of it, finding only the ink from the
 
 The free part is the part Chloe can't place, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, but this one is free.
 
-Chloe pushes her fork through her food and waits for her mom or dad to get to that part, but the letter has both of them, so she comes up onto her knees on the chair to see it the right way around.
+Chloe pushes her fork through her food and waits for her mom or dad to get to that part, but the letter has both of them, so she comes up onto her knees on the chair to see it the right way round.
 
 "Can I go, though, or is that a no?"
 
@@ -76,7 +76,7 @@ Her mom pulls the envelope back out of the recycling. The postmark is a city fou
 
 Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten a letter.
 
-A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbors, so that by Saturday half the street knows the Kesslers got something in the mail.
+A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbours, so that by Saturday half the street knows the Kesslers got something in the mail.
 
 Then she calls the number on the letter, and somebody picks up on the second ring, Chloe coming down from the top of the stairs to listen while her mom gives the name, spells the first half, says yes, that's the one, then waits.
 
@@ -104,7 +104,7 @@ Then the call continues a long time after that. Her mom's voice changes into the
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
-Every question gets answered right away, quick and complete, as though the questions had all been expected.
+Every question gets answered straight away, quick and complete, as though the questions had all been expected.
 
 When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee. "Well?"
 

@@ -26,7 +26,7 @@ ________________
 
 Her mother knows this campus, having come to it since the beginning, knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
-Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says. A decade and more of parking in the overflow lot, but each of them still only knows the other from a folding chair.
+Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form open on the other. "Is he settled on a roommate yet?" Meg asks, about Ruth's younger brother, starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Ruth's mother says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says. A decade and more of parking in the overflow lot, but each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done that arithmetic, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past.
 
@@ -74,9 +74,9 @@ Chloe carries her own box down the ground-floor hallway, a forge mallet with a h
 
 At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for as a child, but finds her palm against the wood with room to spare, her whole arm straight. Her hand stays there a second longer than the box in her other arm makes comfortable, then lets go, and she keeps walking, because Sam is somewhere out on the grass asking where she's got to.
 
-Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, about a third of the way through but going better than a third sounds.
+Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, half done.
 
-"The error's in the middle, so the third I've done is the cheap third, but the remainder is the part worth having. I'll have every bit of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: gray stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
+"The error's in the middle, so the half I've done is the cheap half, but the remainder is the part worth having. I'll have every bit of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: gray stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
 
 ________________
 
@@ -104,11 +104,11 @@ On a Saturday in May she brings it to her father at the counter, with the notebo
 
 Her father is still bent over the invoice in front of him, although the pen stops moving on it. "That's a bad six months, and it isn't a stretch you get back. I have watched worse than that go past this counter, and every time somebody found their way back from it eventually, given enough Saturdays."
 
-"It's a bad stretch for everybody who tried it. A person reading applications can be sued over which he picks. Software is safe from that, and it leaves a record while it works." She has the page open on the counter between them, a finger holding her place on it. "So they bought the software. It reads for words off its own listing, but I got a human the one time I pasted the listing back at it, which tells you the software isn't reading for anything at all, just matching itself against itself."
+"It's a bad stretch for everybody who tried it. A person reading applications has to answer for which he picks. Software spreads that around, and it leaves a record while it works." She has the page open on the counter between them, a finger holding her place on it. "So they bought the software. It reads for words off its own listing, but I got a human the one time I pasted the listing back at it, which tells you the software isn't reading for anything at all, just matching itself against itself."
 
 "So paste the listing back at it."
 
-Flipping to the back of the invoice, she finds that hand has already done the arithmetic. "All of that is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end. I could afford it because I live over a shop that feeds me. The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have. They would rather I looked forever, and they have built the thing that makes sure I do. Every listing on there is designed to look almost right and never quite close, because closing costs them a subscriber, and a subscriber who stays looking is worth more to them than a subscriber who finds something and leaves. I pulled thirty listings off one site last week and called every number on them; four of the thirty were real."
+Flipping to the back of the invoice, she finds that hand has already done the arithmetic. "All of that is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end. I could afford it because I live over a shop that feeds me. The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have. They would rather I looked forever, and they have built the thing that makes sure I do. Most of what's on there is built to look almost right and never quite close, because closing costs them a subscriber, and a subscriber who stays looking is worth more to them than a subscriber who finds something and leaves. I pulled thirty listings off one site last week and called every number on them; four of the thirty were real."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
@@ -154,7 +154,7 @@ Theo goes into the federal government as an analyst, having gone through round a
 
 Kavi stays, and says so plainly when anyone asks.
 
-Priya takes two years and goes to South America with a bag. There's no return flight booked and no address arranged yet, just spare clothes, a headlamp, and a folded list of every ranch and stable between Patagonia and the Argentine pampas that answered her letters over the spring.
+Priya takes two years, for now, and goes to South America with a bag. There's no return flight booked and no address arranged yet, just spare clothes, a headlamp, and a folded list of every ranch and stable between Patagonia and the Argentine pampas that answered her letters over the spring.
 
 "What's in the bag?" Chloe asks her, out on the grass, the pair of them working through what's left of a cup of lemonade.
 
@@ -168,7 +168,7 @@ ________________
 
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
-At her desk she reads the eligibility page for the Foreign Service exam again, then a third time, to be sure the readings agreed: twenty years old to sit it, twenty-one to be sworn in once the file behind it clears, and she turns eighteen in August.
+At her desk she reads the eligibility page for the Foreign Service exam: twenty years old to sit it, twenty-one to be sworn in once the file behind it clears, and she turns eighteen in August.
 
 Chloe closes the laptop and doesn't open it again that night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last, over and over, until her arm is the only part of her still making decisions.
 
@@ -182,8 +182,8 @@ It comes out in order, the way the eligibility page laid it out for her: the age
 
 Her father says, when she's finished, "So the two years in the middle, that's a long stretch to spend just waiting on one date. Find something in it you'd actually want to do anyway, because waiting well is still waiting, and I don't think I've ever met anybody who got good at it on purpose."
 
-Chloe pulls Georgetown's letter out from under the eligibility printout and lays it out next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment with languages I have only ever used on paper and in a building where everybody already knows what I mean. If I go to Georgetown, the people who run that assessment teach there every spring, the languages get somebody to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of it, so the only real choice in front of me is which building I'm sitting in while it happens. I checked the deadline twice, and it's the fourteenth, not the fifteenth, so we don't even have the extra day I thought we had."
+Chloe pulls Georgetown's letter out from under the eligibility printout and lays it out next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment with languages I have only ever used on paper and in a building where everybody already knows what I mean. If I go to Georgetown, the people who run that assessment teach there every spring, the languages get somebody to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of it, so the only real choice in front of me is which building I'm sitting in while it happens."
 
 The water stops running upstairs. A few minutes later her mother comes down for a glass, finds them still at the table, and reads the room accurately enough to fill the glass, carrying the question back upstairs with her, unasked.
 
-So she takes Georgetown, but the two years everyone else is calling a wait become the first two of the six.
+She is going to Georgetown, and the two years everyone else is calling a wait become the start of the six stages.

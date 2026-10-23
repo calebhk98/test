@@ -196,7 +196,7 @@ theo: it IS nice. its also insane
 
 ________________
 
-Sam draws half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and he spends whatever's left of it on the chat. Tonight it's this.
+Sam draws half an hour with his phone most evenings, sometimes less, in a room with fifteen other guys doing exactly what he is doing at rows of folding tables, and he spends whatever's left of it on the chat. Tonight it's this.
 
 sam: does anyone elses job do trust falls
 
@@ -272,7 +272,7 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds incoming payments before it releases them, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
+The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in his desk drawer. The bank holds incoming payments before it releases them, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
 "Five days is the policy on a new business account. I don't have anything on this desk that changes it."
 
@@ -388,7 +388,7 @@ nadia: i wrote the whole thing in six weeks. ive spent months on nobody coming
 
 ruth: can you pay for three more months of it
 
-nadia: twelve hundred dollars, and the back room is free until march
+nadia: twelve hundred dollars, not counting what the bank makes me leave sitting there, and the back room is free until march
 
 sam: thats not a lot
 
@@ -414,13 +414,13 @@ nadia: its worse
 
 nadia: i want it anyway
 
-ruth: its two in the morning where you are
+ruth: its two in the morning, nadia
 
 nadia: yes
 
 ________________
 
-Reading other people's listings takes her the better part of a fortnight, and most of them go on the individual company career pages rather than on the boards, because a board publishes in a single format and thousands of separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
+Reading other people's listings takes her the better part of a fortnight, and most of them go on the individual company career pages rather than on the boards, because a board publishes in a single format and thousands of separate companies publish in as many. By the first week of October the site carries twenty-six thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
 
 ________________
 
@@ -508,6 +508,6 @@ chloe: for what
 
 nadia: the machine on my old desk. i set it up in second year so i could work from my room and nobody has turned it off since
 
-Nadia comes back an hour later with three names off a supplier's safety sheet, the kind meant for a pharmacist, not a customer, read off a screen four hours away and typed out by hand. Chloe writes all three down on the back of her hand before she loses the message in the scroll.
+Nadia comes back an hour later with three names off a supplier's safety sheet, the kind meant for a pharmacist, not a customer, read off the screen of the machine on her old desk and typed out by hand. Chloe writes all three down on the back of her hand before she loses the message in the scroll.
 
 The chat moves on within minutes. Chloe's tab stays open on her desk for the rest of the evening, the group thread gone still and the one with Nadia gone still right behind it.

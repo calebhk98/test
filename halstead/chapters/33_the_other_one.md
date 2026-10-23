@@ -4,15 +4,15 @@
 
 Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never signed anything for the government if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
 
-Eli sends a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
+Eli sends a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder; the document is mostly about the second problem, not the first.
 
-Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, an old joke of Sam's about the food at basic. Ruth texts him alone once, just his name.
+Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, an old joke of Sam's about the food at basic. Ruth texts him alone once, just his name.
 
 The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they have a file on their own school that's a dozen years deep and mostly wrong, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
-All of them know the law cold. They had sat the same examination; when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth has two numbers ready for him.
+All of them know the law cold. They had sat the same examination; when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, Eli is reading from the kitchen table he wrote the document on less than a week earlier, and Ruth has two numbers ready for him.
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
 
@@ -28,17 +28,17 @@ ruth: thats not the same, eli
 
 eli: its exactly the same. its a rule with a known enforcement mechanism and you learn where the cameras are
 
-ruth: section 1030, eli. unauthorized access to a nonpublic government system, five years first offense, ten if theres a financial angle attached or its not your first time
+ruth: section 1030, eli. unauthorized access to a nonpublic government system, up to five years if theres a financial angle or another crime attached, up to ten if its not your first time
 
 eli: theres no money in this one
 
-ruth: and if anything we pull touches something classified thats a different statute and it doesnt start at five, eli
+ruth: and if anything we pull touches something classified thats a different statute and the numbers are worse, eli
 
 ruth: and if youre wrong about the cameras
 
 eli: then i go away for a very long time, so im not going to be wrong
 
-Ruth reads that twice from the floor of her dorm room, closes her eyes for a second, and types back anyway.
+Ruth closes her eyes for a second on the floor of her dorm room, and types back anyway.
 
 ruth: you dont get to just not be wrong. give me the actual number of cameras youve counted, not the number youre confident about
 
@@ -62,7 +62,7 @@ nadia: good
 
 Kavi stays bent over the board he's rewiring in the lab when the thread reaches him, and he answers in one line that runs until the mechanism's actually finished.
 
-kavi: the governments own logging is old and its federal so its worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door
+kavi: the governments own logging is old and its federal so its probably worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door
 
 eli: so we control the week
 
@@ -76,7 +76,7 @@ eli: i dont know. as long as it takes to get in and out once
 
 sam: thats not a number
 
-Chloe reads all of it twice, standing at her kitchen counter with the coffee going cold beside her the way it does most nights now. Months after he first posted it, she keeps going back to Theo's line about the men over the fence, and already knows what she thinks before she starts typing anything.
+Chloe reads all of it, standing at her kitchen counter. Months after he first posted it, she keeps going back to Theo's line about the men over the fence, and already knows what she thinks before she starts typing anything.
 
 chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
 
@@ -100,9 +100,9 @@ Chloe turns twenty-one in August, two months after she adds the last page, and i
 
 Chloe spends most of that stretch working after the apartment goes quiet. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 
-The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be.
+The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done.
 
-The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, a stranger shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She puts the line in twice, in different words each time, because she knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
+The middle section she rewrites. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, a stranger shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She puts the line in twice, in different words each time, because she knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
 
 The stop clause is exactly one line and no examples, on purpose. Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached.
 
@@ -148,7 +148,7 @@ Ruth signs with the numbers already spent, the argument over for her the moment 
 
 ruth: in. the numbers stand
 
-Chloe signs the night she finishes the last of it, before she's had time to reconsider a word of it. Ruth prints her own copy that week and files it in the drawer where the camera-defeating box she built as a child still lives, both of them the kind of thing a person keeps rather than throws away.
+Chloe signs the night she finishes the last of it, before she's had time to reconsider a word of it. Ruth prints her own copy that week and files it in the drawer where the camera-defeating box she built as a child still lives.
 
 Theo signs off last, at the far end of the test.
 
@@ -156,4 +156,4 @@ theo: still the stupidest thing any of us has ever done
 
 theo: in
 
-She holds a clearance for things the government keeps away from most people, and she is about to spend it on a file it meant to keep sealed from her too. What that costs her she works through once, on the drive home the week the document arrives, and the thought ends in about as long as it takes a light to change.
+Chloe holds a clearance for things the government keeps away from most people, and she is about to spend it on a file it meant to keep sealed from her too. What that costs her she works through once, on the drive home the week the document arrives, and the thought ends in about as long as it takes a light to change.

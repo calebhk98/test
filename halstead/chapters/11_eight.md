@@ -66,7 +66,7 @@ In week three she arrives well past curfew, to find her mother standing in the f
 
 "Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her. You are not the only kid at that school and you are not getting a different rule just because you asked first."
 
-"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's an whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in December, just to see if it was actually true, and it was."
+"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in May, just to see if it was actually true, and it was."
 
 Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you?"
 
@@ -84,7 +84,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she stops arguing the moment she knows it's settled. If she really wanted that extra hour she'd have kept going after I said no."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
@@ -96,7 +96,7 @@ Her grandmother says, "She's put on weight since I saw her, and I mean that as a
 
 "I know," her mother says, keeping her voice down to match.
 
-Chloe stands against the wall by the door with the glass and tugs her shirt loose from her shorts once, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate.
+Chloe stands against the wall by the door with the glass and tugs her shirt loose from her shorts once, goes back through, and finishes the story about the bridge, which came second in the room. But at dinner she eats half of what is on her plate.
 
 "I've had enough."
 
@@ -108,7 +108,7 @@ In September there is a different girl in her room, from Ohio, called Marguerite
 
 "Which do you actually like, though, Margie or the full version everyone skips?"
 
-Margie's mouth opens, closes, opens again. "Margie's fine. It's the one that fits on a name tag, and I stopped correcting people back in September, so save your breath."
+Margie's mouth opens, closes, opens again. "Margie's fine. It's the one that fits on a name tag, and I stopped correcting people years ago, so save your breath."
 
 Fen is on second floor now with a girl from Maine, and while she and Chloe say hello in corridors all year, once in November Fen shows Chloe a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, same hour, different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes, after which Chloe stays behind while the room empties around her.
 
@@ -132,13 +132,13 @@ The teacher draws the line between them on the wall while he talks. "Because the
 
 ________________
 
-Nerf is eight.
+Nerf starts at eight.
 
 The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colours over each other, and a dart that misses skids most of the way to the wall.
 
 You start on paper targets for a while, then a target Bell swings across the gym on a rope, and she watches it swing every time. Then a foam disc thrown flat and fast: hard at first, then easy. The day it turns over goes past like any other Monday. The week after, Coach Bell puts a net down the middle of the floor and lines them up either side.
 
-"Both sides load up, and you're not shooting at each other, you're shooting at what they shoot at you. If your dart gets knocked down before it crosses the net, you're out and you sit on the line, and the last side with anybody standing wins the hour. Nothing comes back off the floor, so what's in your hand is what you've got."
+"Both sides load up, and you're not shooting at each other, you're shooting at what they shoot at you. If your dart gets knocked down before it crosses the net, you're out and you sit on the line, and the side with the most people still standing when the hour ends wins. Nothing comes back off the floor, so what's in your hand is what you've got."
 
 Somebody down the line says that's impossible.
 
@@ -160,9 +160,9 @@ Drawing is Thursdays, and in the second term, while they spend the term on hands
 
 "No, I mean that's a hand, Chloe, and the thumb's even the right size this time. Last term you were drawing mittens." Ruth carries on to the door.
 
-At the end of term the sheet is posted on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays; she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
+At the end of the first term the sheet is posted on the wall with everybody on it in order, and Chloe is ninetieth of ninety, and goes to dinner. Dance is Fridays; she is ninetieth in that too, off the same wall that week. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
-A boy comes out of it ahead of her with the door swinging behind him; behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her.
+A boy comes out of it ahead of her with the door swinging behind him; behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain last April, with the block sheets laid out in front of her.
 
 "I want to come off dance. I've had it every Friday since September, and I'm ninetieth of ninety."
 
@@ -184,7 +184,7 @@ ________________
 
 The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string; from the middle of the afternoon that stretch of corridor smells of whatever dinner is. On a Wednesday it is bread.
 
-Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are on the climbing line and one on beekeeping.
+She reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are on the climbing line and one on beekeeping.
 
 Sam has come up behind her. "What are you doing? Are you signing up for something or just reading the sheet all day?"
 
@@ -202,7 +202,7 @@ Chloe signs her name on the choir line, because she sang in the shower every day
 
 Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for. What she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, but sings in the shower afterward, where she was doing it to begin with.
 
-On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the brick is a shade darker either side of it. A hit makes the pipe ring.
+On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says were only going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the brick is a shade darker either side of it. A hit makes the pipe ring.
 
 "Below the bracket counts for zero, we decided that an hour ago and you know it."
 
@@ -212,4 +212,4 @@ Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the
 
 Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. They carry the bracket rule into the summer, applying it to a stairwell, a laundry chute, and one of the goals on the field.
 
-In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, and she reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
+In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, and she reads the line back before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.

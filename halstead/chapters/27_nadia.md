@@ -10,7 +10,7 @@ It runs out of three rooms over a laundromat, a hundred yards up the street from
 
 The building came with two working outlets a room, so there is a run of surge strips down the baseboard now, taped down, with an orange extension cord stapled up over the door frame between the front rooms. She did the tape and the staples herself on a Sunday in February. The kitchen is a folding table with a kettle on it and a jar of instant coffee Bev brought in October, still sealed under its foil.
 
-In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass under her. The second word went on half an inch low; lifting it again would have torn it, so it sits half an inch low.
+In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass verge under her. The second word went on half an inch low; lifting it again would have torn it, so it sits half an inch low.
 
 "Who is ever going to read that? Nobody walks up this side of the street, and the cars coming off the county road are doing fifty by the time they pass the door," Bev said, from the window.
 
@@ -18,7 +18,7 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are so few of them, and most of them were standing there when it happened.
 
-She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the register tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has twenty-three, and more than half of them sit outside the list of employers she has driven to herself.
+She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has twenty-three, and more than half of them sit outside the list of employers she has driven to herself.
 
 Opened, they all carry the same job description, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
@@ -28,7 +28,7 @@ The rest of it is in the message logs. Traffic between an employer and a user st
 
 They ask for a Social Security number and a bank routing number in the third message, in the same few sentences, comma splice and all, reproduced without a character moved. People answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
 
-Before she sits down she deletes the batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and calls them in turn, late at night.
+Before she sits down she deletes the batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
 
 The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologizes over and over inside those twenty minutes, three times for taking up the evening and twice for having answered the message at all.
 
@@ -88,7 +88,7 @@ ________________
 
 The stairs run up the outside of the building, a bare steel case bolted to brick, and she can smell the tire shop the whole way up, rubber and hot metal working together in the heat. The door at the top gives when she tries it.
 
-Four men are inside: two at a folding table with laptops open, a third behind a desk in what's meant to look like an office, and the fourth leaning in the doorway to a second room with a coffee in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in different colors, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All of them look up when the door opens straight into the room with no knock ahead of it.
+Four men are inside: two at a folding table with laptops open, a third behind a desk in what's meant to look like an office, and the fourth leaning in the doorway to a second room with a coffee in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in different colours, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All of them look up when the door opens straight into the room with no knock ahead of it.
 
 "Whoa, hey, hold on," the nearer man at the folding table says.
 
@@ -96,7 +96,7 @@ Four men are inside: two at a folding table with laptops open, a third behind a 
 
 Just inside the door she stays on her feet, hands loose at her sides, and looks at the man behind the desk, since he is the first to straighten.
 
-"You put thirteen employer accounts on my site on the night of the ninth, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the phone with her for twenty minutes while she apologized to me for it, for something the men in this room did to her, not anything she did to anybody, and every apology like that belongs to somebody in here instead, whoever actually typed the message she answered. I have her number saved, and I told her I'd call again once this was settled, so I need it settled soon."
+"You put thirteen employer accounts on my site on the night of the ninth, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her for twenty minutes while she apologized to me for it, for something the men in this room did to her, not anything she did to anybody, and every apology like that belongs to somebody in here instead, whoever actually typed the message she answered. I have her number saved, and I told her I'd call again once this was settled, so I need it settled soon."
 
 The room goes quiet for a moment while the man behind the desk sets down what he was holding.
 
@@ -124,7 +124,7 @@ The man behind the desk sits back in the chair for the first time since she came
 
 The man at the window turns from the glass and looks at the man behind the desk.
 
-"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to call back on, and that is the end of it. So the police aren't a threat I've got, and I'm not going to stand in your office pretending I do. You can stop waiting for it to land."
+"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So the police aren't a threat I've got, and I'm not going to stand in your office pretending I do. You can stop waiting for it to land."
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and there's nothing on a screen anywhere that says this room. Whatever you carried up those stairs, you carried a printout. You've got no idea who you're standing in front of."
 
@@ -154,7 +154,7 @@ The man behind the desk looks at the man standing over her and keeps looking at 
 
 The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. One of the men comes out onto the landing and stands there watching while she crosses the lot, and is up there when she reaches the car.
 
-She gets the key in on the second try. Back at the shop she counts the drawer her mother has already counted. It comes out three dollars under, so she counts it again and gets the same. Her mother asks where she was. "Out at a tire place," Nadia says, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
+She gets the key in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under, so she counts it again and gets the same. Her mother asks where she was. "Out at a tire place," Nadia says, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
 
 sam: what did they say
 
@@ -214,7 +214,7 @@ eli: nadia do you get what were saying
 
 nadia: yes
 
-The site stays clean after that, and Hanley's filings all go dead in July, all of them inside two weeks, which she spots in August and keeps to herself.
+The site stays clean after that, and Hanley's filings all go dead in July, all of them inside a fortnight, which she spots in August and keeps to herself.
 
 ________________
 
@@ -320,8 +320,8 @@ nadia: two of them slipped in april. i covered everybody out of my own account a
 
 sam: thats a knife edge on a tightrope
 
-nadia: its under two weeks
+nadia: its under a fortnight
 
-sam: two weeks of what
+sam: a fortnight of what
 
 nadia: of everyone still getting paid if nothing at all comes in

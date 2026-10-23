@@ -2,7 +2,7 @@
 
 *September 2014 – July 2015*
 
-On the first morning the sheet in her box has one more line on it than last year's did, so she counts it twice on the way down and takes it along to the office, twenty steps from her box, where the woman behind the desk finishes the line she is on before she looks up.
+On the first morning the sheet in her box has one more line on it than last year's did, so she counts it on the way down and takes it along to the office, twenty steps from her box, where the woman behind the desk finishes the line she is on before she looks up.
 
 "There's an extra line on here, but last year's only had seven on it."
 
@@ -24,19 +24,19 @@ Sam has stopped with the spoon halfway up. "Is there a third?"
 
 "There's a third," Kavi says.
 
-"Or can I go."
+"Go on."
 
 "The third is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request the better part of a year and gave me back a date that was fixed before I wrote it down. That's all three of them," he says, squaring the sheet against the edge of the table.
 
-Ruth takes the sheet off him and reads the back of it twice, then hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's, and by Thursday there are theories about what.
+Ruth takes the sheet off him and reads the back of it, then hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's, and by Thursday there are theories about what.
 
-Chloe reads her own sheet again on the stairs, for a different reason, then a third time, before running down the stairs and coming into the dining hall loud.
+Chloe reads her own sheet on the stairs, then runs down the rest of them and comes into the dining hall loud.
 
 "Dance is gone off the sheet, I need everyone to understand what's happening right now."
 
 Sam looks up with a fork in his hand.
 
-With her hands flat on the table, she is up on her toes. "Dance is *gone*, and so is drawing. Both of them, they're not on it anywhere, I checked the back of the sheet, and then I checked it again. That's it. I am never doing either of those again as long as I live."
+With her hands flat on the table, she is up on her toes. "Dance is *gone*, and so is drawing. Both of them, they're not on it anywhere, I checked the back of the sheet. That's it. I am never doing either of those again as long as I live."
 
 "I liked dance," Sam says.
 
@@ -82,7 +82,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Where did it come from, though? I only used what was on the list this time."
 
-"Glassware, reagent, or you, take your pick. It is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes on the next bench.
+"Glassware, reagent, or you, take your pick. It is nearly always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes on the next bench.
 
 On the Friday she runs it again, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
@@ -124,9 +124,9 @@ Iyad Mansour has the year in his head, everybody's hours and everybody's numbers
 
 Chloe works with Iyad in chemistry for a term after that, during which he is careful and fast but gets more out of the hour than she does. Chloe comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last, three tables clear of him most nights.
 
-Sam spends the year on the overhang.
-
 Ruth asks her at dinner how the languages are going, and Chloe gives her all of it: which of the two is moving and which has stalled, where the stalling is, what she has tried against it, the thing Mrs. Sun said in October that she has only just understood, and what she is going to do about the tones. Ruth listens through all of it, says the tone problem sounds like the thing she had with the ablative, and gives her back an account of that at about the same length. Nobody at the table looks up.
+
+Sam spends the year on the overhang.
 
 There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September nobody has made it over the lip. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly, then sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
@@ -190,9 +190,9 @@ Chloe reads over his shoulder until she stops on the second paragraph.
 
 "It means they'll do the integration work, and they'll finish it."
 
-Chloe reads it again. "Okay, but that's not actually a promise, is it, that's just a description of the job. How would you find out if they hadn't?"
+Chloe taps it. "Okay, but that's not actually a promise, is it, that's just a description of the job. How would you find out if they hadn't?"
 
-Her father starts to answer but stops with the page half turned, then returns to the top of the paragraph and reads it again. Chloe waits.
+Her father starts to answer but stops with the page half turned, then returns to the top of the paragraph. Chloe waits.
 
 "You wouldn't, not from anything in here, and that's exactly the kind of gap they're counting on," he says.
 

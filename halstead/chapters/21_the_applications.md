@@ -2,9 +2,9 @@
 
 *October 2022 – March 2023*
 
-Chloe has been compared to the identical ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
+Chloe has been compared to the ninety-one people in her year since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
 
-The pattern is identical for everybody: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college a parent went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost nobody; then something strange, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to a place in Arizona because a woman he watched lecture online teaches there.
+The pattern is identical for everybody: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college a parent went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost nobody; then something strange, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Kavi to a place in Arizona because a woman he watched lecture online teaches there.
 
 Ruth has a laptop open on the arm of the couch in the third-floor common room, refreshing a portal stuck on the message for days, a board game abandoned on the table since dinner. Sam has a card in his hand, bending a corner of it back and forth, checking his phone every few minutes and setting it face down only to check it again.
 
@@ -24,27 +24,27 @@ Her mother calls twice in the month to ask how the essays are going and hears fi
 
 They do the essays in Ruth's room on a Sunday because doing them alone is worse, Sam taking the desk chair, Kavi the floor with his back against the bed, Odile the bed with her heels hooked over the frame, and Chloe the space under the window by the radiator.
 
-The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, She is well over a thousand words in and has not yet reached the part where anything is overcome, because the interesting part is why he was right.
+The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the twelves and had a boy in the front row refusing to hand anything in. She is well over a thousand words in and has not yet reached the part where anything is overcome, because the interesting part is why he was right.
 
-Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment." "They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
+Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment. They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
 
 "I know what they want. I just think the limit leaves out anything that's actually true, because the true part of that year is that the boy was right and I still never got a page out of him. That doesn't go in the box they gave me and it doesn't survive being remembered at lunch."
 
 "Then why is it four pages?"
 
-"Because getting it to six hundred is harder than getting it to four thousand. Everything I take out has to have been wrong to start with, and most of it wasn't." Chloe cuts it and cuts it again until it holds.
+"Because getting it to six hundred is harder than getting it to four thousand. Everything I take out has to have been wrong to start with, and most of it wasn't." Chloe cuts it three times, until it holds.
 
-Ruth reads the top of it over her shoulder again between passes. "Which boy is this?"
+Ruth reads the top of it over her shoulder between passes. "Which boy is this?"
 
-"Marek. He had the whole term of it done in a notebook and I never got a page of it off him, not once, not even the day I told him it wouldn't count against him either way."
+"Marek. He had the whole term of it done in his head and I never got a page of it off him, not once."
 
-By the version that goes in he is half a line, a boy who would not hand work in, and the half line survives every pass after that. The notebook does not.
+By the version that goes in he is half a line, a boy who would not hand work in, and the half line survives every pass after that.
 
 Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here, but the thing that decides where I end up is a paragraph. At that length they're guessing rather than reading. Everybody who wrote a paragraph knows it, and everybody who reads one knows it too," he says.
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
-Odile's runs five pages, and Chloe tells her it is many times the limit.
+Odile's runs five pages, uploaded as a file because the box will not take it, and Chloe tells her it is many times the limit.
 
 "A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it."
 
@@ -76,7 +76,7 @@ ________________
 
 The applications start landing in November. The transcript is legal, an accreditation number printed in the corner, and what is on it is classes, ordinary-looking rows of them, except there are so many of them, enough for admissions offices to decide it must be a formatting error and write back asking for the real thing.
 
-The call comes through on a Thursday afternoon. The caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake, "We're going to need the actual transcript, not whatever this is. Whatever generated that file has run the same rows over and over, and I'd rather not send it upstairs looking like that. If your registrar can resend it I'll hold the file open on my end." The registrar reads the accreditation number back to her, twice.
+The call comes through on a Thursday afternoon. The caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake, "We're going to need the actual transcript, not whatever this is. Whatever generated that file has run the same rows over and over, and I'd rather not send it upstairs looking like that. If your registrar can resend it I'll hold the file open on my end." The registrar reads the accreditation number back to her.
 
 "I can put another copy in the post to you today, if it would help to have it in your hand. It will say what this copy says."
 
@@ -84,7 +84,7 @@ The caller declines and hangs up first.
 
 Then an admissions officer reads the essays, and what everybody notices first is the graduate-level prose, while what everybody thinks first is ghostwriting: ninety-one applicants from a single school, all at such a level, is a mill or a very good teacher with a template. A review committee, reading blind, spends most of a meeting on the transfer-cohort theory before a committee member checks the birth years.
 
-An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people; she reads the sentence twice, and reads it a third time before she picks up the phone.
+An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people; she reads the sentence and picks up the phone.
 
 "Read this paragraph and tell me what you think it means. Don't tell me what it stands in for. I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
 
@@ -148,7 +148,7 @@ He asks who did the geometry.
 
 Chloe's fork stops on the way up. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, watching him write it down, and what she tells him is what is written on the back of the April drawing. She stays at the table after he has moved down it to Sam, telling the two who arrived late enough to have missed the first telling.
 
-Chloe pulls the drawing out of Nadia's folder that evening. Bex is in it, at that table, saying nothing while Chloe did the talking.
+Chloe pulls the drawing out of Nadia's folder that evening. Bex was at the table when she drew it, saying nothing while Chloe did the talking.
 
 At breakfast she sits across from Bex.
 
@@ -202,11 +202,11 @@ Nadia's answers come in mostly in the small hours. They live at the back of a no
 
 Somewhere in February she stops reading the count out at dinner, and when her mother asks on the phone whether anybody has called, Nadia starts getting to the shop phone first.
 
-Ruth asks her in the common room in March, with only Chloe else in the room, and hears a stale number, and then the true figure.
+Ruth asks her in the common room in March, with only Chloe in the room, and hears a stale number, and then the true figure.
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-The notebook is shut under her hand, and she pushes her sleeves up, saying nothing for a moment. "Twelve, but eight of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday." "Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand, and she pushes her sleeves up, saying nothing for a moment. "Twelve, but ten of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday. Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -244,7 +244,7 @@ Odile gets in everywhere. The rest of the year hears about it days later, when P
 
 Chloe gets all but two. She had spent the previous week deciding which of the fourteen were actually going to say yes, and had settled on two, the state school and the community college, and had got as far as being fine about it.
 
-Outside her window the snow along the path has gone soft and gray, the last of it, with weeks of the term left, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
+Outside her window the snow along the path has gone soft and gray, the last of it, with weeks of the term left, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads twice before she believes the count, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
 
 The arithmetic has gone wrong somewhere, and not in the letters, because the middle of a year gets the state school. She has twelve.
 
@@ -278,4 +278,4 @@ Ruth walks the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site," Ruth says, "and it still isn't a real number all the same. Read me the line above it, out loud now."
 
-Twice in the week Chloe takes the letters out and counts them; both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and she puts them back in the drawer to stay there.
+Once that week Chloe takes the letters out and counts them; the count holds. Then there's an exam on Thursday and a language report due the Monday after, and she puts them back in the drawer to stay there.

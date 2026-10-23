@@ -2,13 +2,13 @@
 
 *June 2026*
 
-They open it in seven different places, each at a different hour, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. Ruth is in a Cambridge lab she has no official reason to be in over the summer, sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it is worth. Sam reads his on a phone screen gone dim in the sun, thirty seconds at a time, between whatever a sergeant is telling nineteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till counted and the drawer locked, and reads it standing. Eli reads at his own kitchen table with the badge from the security job face down by the keyboard, and taps two fingers on the wood as he goes, Kavi in the lab down the corridor from where he had his own lessons as a boy, and Theo standing up, because he was standing when the file finished loading, and he stays on his feet the whole way through it, with the twenty minutes outside still ahead of him.
+They open it in seven different places, each at a different hour, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. Ruth is in a Cambridge lab she has no official reason to be in over the summer, sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it is worth. Sam reads his on a phone screen gone dim in the sun, thirty seconds at a time, between whatever a sergeant is telling fifteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till counted and the drawer locked, and reads it standing. Eli reads at his own kitchen table with the badge from the security job face down by the keyboard, and taps two fingers on the wood as he goes, Kavi reads in the lab down the corridor from where he had his own lessons as a boy, and Theo standing up, because he was standing when the file finished loading, and he stays on his feet the whole way through it, with the twenty minutes outside still ahead of him.
 
 There is a file on all ninety-one of them. Every page carries the same header first: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop carefully, like something that might spill, and go outside. He opens the group thread first and types "mine has a name in it I already know," and sends it before he can talk himself out of it. Sam answers inside a minute, one line, whose name, and Theo does not tell him. That's the whole account anyone else gets of it.
 
-The rest of theirs sit somewhere between those. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the company at that point three rooms over a laundromat, the documents stitched together by an analyst who managed to spell her name differently on each page. Eli's notes, in the flat voice of everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of them, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, a few lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease on the apartment she's sitting in right now.
+The rest of theirs sit somewhere between those. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the company at that point three rooms over a laundromat, the documents stitched together by an analyst who managed to spell her name two different ways. Eli's notes, in the flat voice of everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of them, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, a few lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease on the apartment she's sitting in right now.
 
 The oldest pages in the file are typed and then scanned, the paper stock visible through the scan the way an old photograph keeps its own grain no matter how many times it's copied. Every file starts with a name, its own date, a single photograph taken outside a building none of the analysts have ever set foot inside, and a line noting that contact with the family went no further than the one letter. Thirteen years of updates sit stacked under that first page, thicker in some years than others. The thickness itself is dated.
 
@@ -22,7 +22,7 @@ Seven men come across the car park to rob them. Three of the men are carrying fi
 
 None of the men agrees with the others about the order of it. But they agree it was fast, that one of the students did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 
-The one number in the report that matches exactly what Ruth already had was the time: twenty-two seconds, first word to the last man down, taken off the gap in the footage instead of out of anyone's memory, the only precise thing in the account.
+The one number in the report that matches exactly what Ruth already had was the time: twenty-two seconds, first word to the last man down, timed by one of the watchers through binoculars instead of taken from the men's memories, the only precise thing in the account.
 
 All of them come back with a blank on what the students looked like.
 
@@ -32,7 +32,7 @@ Then the last paragraph. Footage was sought from the Waffle House, the units eit
 
 And a line under that. The unit assigned to observation of the school had their own recordings of that night. Those are gone too.
 
-That's where the report ends. It was scanned rather than born digital, the text sitting slightly crooked on every page the way it does when somebody photographed a stapled original instead of typing it fresh, a small tell that whoever filed it expected it to stay inside the one unit that wrote it, forever.
+That's where the report ends. It was scanned rather than born digital, the text sitting slightly crooked on every page the way it does when somebody photographed a stapled original instead of typing it fresh.
 
 Nadia reads the last line twice, closes the file, and reopens it to check the date stamp is what she thought it was before she says anything to anyone. Chloe scrolls back up to the top of the incident report and reads it again from the start, checking for a clause she might have dropped the first time through. Sam's phone buzzes twice in his pocket before he gets a hand free to look at it, and by the time he does, the chat has started without him.
 
@@ -46,7 +46,7 @@ chloe: ruth thats the waffle house
 
 ruth: chloe i KNOW
 
-sam: wait is that the one where you lost a shoe
+sam: wait is that the one where ruth broke the cart
 
 chloe: yes
 
@@ -80,7 +80,7 @@ ruth: i did it in a weekend. it was a weekend, i remember because sam kept messa
 
 ruth: it wasnt even hard. it was a fun problem. i wasnt trying
 
-nadia: and four years later the federal government wrote "no known method"
+nadia: and four years later the unit that watched us wrote "no known method"
 
 ruth: yes
 
@@ -114,7 +114,7 @@ eli: ruth i dont know
 
 eli: i have never once been at the top of a room in my life
 
-The chat sits on that line for a while. At his kitchen table Eli sets the phone down on the wood, screen up, and keeps the tap going against the table's edge, the rhythm holding steady throughout, neither faster nor slower than it was before. Ruth leaves her phone where it landed on the floor of the lab and looks at the ceiling for a while, the file still open behind her on the bench, on that page, exactly as unexplained now as it was the night it happened, years before she ever knew the file existed at all. On Chloe's desk, she types into the empty box.
+The chat sits on that line for a while. At his kitchen table Eli sets the phone down on the wood, screen up, and keeps the tap going against the table's edge. Ruth leaves her phone where it landed on the floor of the lab and looks at the ceiling for a while, the file still open behind her on the bench, on that page, exactly as unexplained now as it was the night it happened, years before she ever knew the file existed at all. At her desk, Chloe types into the empty box.
 
 chloe: were about to find out
 
