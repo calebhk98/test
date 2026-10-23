@@ -7548,8 +7548,6 @@ Chloe scrolls up past all of it to the line Theo posted months ago about the men
 
 chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
 
-chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
-
 ________________
 
 Theo could have written cleaner rules than anyone else at that table, and he says so once.
