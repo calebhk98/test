@@ -9,12 +9,12 @@ Halstead is a school for children of roughly 160+ IQ. It convinces them they are
 Cast:
 - Chloe Kessler: protagonist, born August 2005; a reader, linguist and arguer.
 - Meg and Dave Kessler: her mother (protective, distrustful) and father (calmer, reads contracts).
-- Dana: Chloe's older cousin. Her grandmother visits and phones.
+- Dana: Chloe's older cousin. Chloe's grandmother visits and hosts Christmas.
 - Ruth Aymar: fastest and bluntest friend; later at MIT.
 - Sam Marsh: joker and best fighter; later in the Army.
 - Kavi: precise, technical friend; stays at Halstead as staff.
 - Priya: friend who loves horses; later abroad.
-- Nadia, Odile, Eli, Theo: later friends and the group chat. Theo is a federal analyst.
+- Nadia, Odile, Eli, Theo: later friends; all but Odile are in the group chat. Theo is a federal analyst.
 - Bex Alcantar: takes credit for other people's work.
 - Iyad Mansour: retells and embellishes stories.
 - Marek: fast student who will not hand work in.
@@ -26,11 +26,11 @@ Chloe is six, in first grade, and bored. She finishes worksheets in minutes, rea
 
 ## 02. March 7th (Mar to Jun 2012, Chloe 6)
 
-Psychologist Ben Prentice tests Chloe with timed puzzles and a coding task. Chloe overhears him say the school's picture is wrong: she finishes early and then has an empty hour. He expects the report to average very high reasoning with ordinary writing speed, so it reads as a bright kid. He advises taking it to the school, which may simply file it. Her mother tells Chloe only that she is doing fine; Chloe never learns the number. Nothing changes at school. By June she has learned to finish first, sit still, keep answers short and eat alone. Whether the report reaches the school stays open.
+Psychologist Ben Prentice tests Chloe with timed puzzles and a symbol-copying task. Chloe overhears him say the school's picture is wrong: she finishes early and then has an empty hour. He expects the report to average very high reasoning with ordinary copying speed, so it reads as a bright kid. He advises taking it to the school, which may simply file it. Her mother tells Chloe only that she is doing fine; Chloe never learns the number. Nothing changes at school. By June she has learned to finish first, sit still, keep answers short and eat alone. Whether the report reaches the school stays open.
 
 ## 03. The Letter (Jun to Jul 2012, Chloe 6)
 
-A typed letter addressed to Miss Chloe Kessler invites her to a free four-week summer session at Halstead, with travel, room and board. The district has no record of any school by that name. Meg phones Halstead and gets fast, smooth answers: the school has networks that find children, and its lists are usually good. Dave finds a website with few details and no outside coverage. After nine days of argument the parents agree, because Chloe wants to go. No one knows who made the list or who pays. Neighbor Ellie Peterson, in the same school pull-out group, got no letter.
+A typed letter addressed to Miss Chloe Kessler invites her to a free four-week summer session at Halstead, with travel, room and board. The district has no record of any school by that name. Meg phones Halstead and gets fast, smooth answers: the school has networks that find children, and its lists are usually good. Dave studies the school's polished website, and Meg finds no outside coverage. After nine days of argument the parents agree, mostly because Chloe has been flat since Christmas. No one knows who made the list or who pays. Neighbor Ellie Peterson, in the same school pull-out group, got no letter.
 
 ## 04. Pluto (Jul 2012, Chloe 6)
 
@@ -38,7 +38,7 @@ Halstead opens loudly on day one. Chloe's roommate is Priya, who talks about hor
 
 ## 05. Behind (Jul 2012, Chloe 6)
 
-Ruth sets the pace, and Chloe's writing is shorter than anyone else's. In a bridge project Chloe defers to Sam, and her bridge holds eleven pounds while Ruth's holds nineteen. Mr. Baptiste's fraction lesson gives Chloe the right answers, and she works out the reason alone that night. Owen leaves camp. The others say he wanted to be home; Ruth says he cried in a stairwell. Chloe cannot accept that having fun and wanting to go home can both be true. In an argument about the moon Chloe is wrong, and she has started to enjoy arguing.
+Ruth sets the pace, and Chloe's writing is shorter than Ruth's and Kavi's. In a bridge project Chloe defers to Sam, and her bridge holds eleven pounds while Ruth's holds nineteen. Mr. Baptiste's fraction lesson gives Chloe the right answers, and she works out the reason alone that night. Owen leaves camp. The others say he wanted to be home; Ruth says he cried in a stairwell. Chloe cannot accept that having fun and wanting to go home can both be true. In an argument about the moon Chloe is wrong, and she has started to enjoy arguing.
 
 ## 06. The List (Aug 2012, Chloe 6)
 
@@ -58,15 +58,15 @@ Chloe begs to be allowed to go, offering her birthday and her bike. Her father h
 
 ## 10. April (Apr to Jun 2013, Chloe 7)
 
-Chloe arrives as a student and finds Sam, Ruth and Kavi already there. Her roommate is Fen. She is behind in four subjects and ahead in literature, and the library stays open all night with no limit. In May she solves a rolling-wheel problem and mathematics becomes her favorite hour. She believes she can work out why children are sent home. Kavi says Owen wanted to stay and cried before he left. Chloe tells her mother on Sunday calls that she is happy, and her mother believes her. In June she goes home. Open: Kavi's surname, which is still unknown, and the call she promised Ruth.
+Chloe arrives as a student and finds Sam, Ruth and Kavi already there. Her roommate is Fen. She is behind in four subjects and caught up in literature, and the library stays open all night with no limit. In May she solves a rolling-wheel problem and mathematics becomes her favorite hour. She believes she can work out why children are sent home. Kavi says Owen wanted to stay and cried before he left. Chloe tells her mother on Sunday calls that she is happy, and her mother believes her. In June she goes home. Open: Kavi's surname, which is still unknown, and the call she promised Ruth.
 
 ## 11. Eight (Jun 2013 to Jun 2014, Chloe 8)
 
-Over the summer Chloe is talkative at home. She argues about curfew and a hot dog, and wins the hot dog argument with her father. Back at school her roommate is Margie. She is ninetieth of ninety on the first term sheet and in dance, and Mrs. Okonkwo refuses to move her. Chloe quits choir and hides how much being last bothers her. Her grandmother says she looks heavier than at Christmas, and Chloe eats half her plate. In June she finds she has been reading ahead in three subjects she had been behind in. Sam is working on a climbing overhang that nobody has cleared.
+Over the summer Chloe is talkative at home. She argues about curfew and a hot dog, and wins the hot dog argument with her father. Back at school her roommate is Margie. She is ninetieth of ninety on the first term sheet and in dance, and Mrs. Okonkwo refuses to move her. Chloe quits choir after matching the others only a third of the time. Her grandmother says she looks heavier than at Christmas, and Chloe eats half her plate. In June she finds she has been reading ahead in three subjects she had been behind in. Sam is working on a climbing overhang that nobody has cleared.
 
 ## 12. Nine (Sept 2014 to Jul 2015, Chloe 9)
 
-Chloe's sheet has eight lines because she is nine, and the line count rises every year. She takes Mandarin, chemistry, statistics and biology. Bex Alcantar tells the teacher "I" about bridge joints Chloe built, and Chloe stops saying "we" for the year rather than confront her. Iyad Mansour announces Chloe's struggling Mandarin to the table. Chloe quits riding without telling Priya, who thinks it was something she said. Sam clears the climbing overhang on May 11. Over the summer Chloe's father questions a vendor proposal whose promised results cannot be checked. Kavi's three course requests were all refused.
+Chloe's sheet has eight lines because she is nine, and the line count rises every year. She takes Mandarin, chemistry, statistics and biology. Bex Alcantar tells the teacher "I" about bridge joints Chloe built, and Chloe stops saying "we" for the year rather than confront her. Iyad Mansour announces Chloe's struggling Mandarin to the table. Chloe quits riding without telling Priya, and the barn thinks Priya drove her off. Sam clears the climbing overhang on May 11. Over the summer Chloe's father questions a vendor proposal whose promised results cannot be checked. Kavi's three course requests were all refused.
 
 ## 13. Ten Pages (Sept 2015 to Apr 2016, Chloe 10)
 
@@ -74,15 +74,15 @@ Mr. Hearn assigns a ten-page essay each week and cannot tell whether Chloe is ri
 
 ## 14. Sixty Degrees (Sept 2016 to Apr 2017, Chloe 11)
 
-Archery becomes a paired game in which arrows from two firing lines meet in the air. Chloe's first collision comes in October. Bex relays Chloe's astronomy question to the teacher before Chloe can. For an essay drawn from a hat, Chloe gets the area bombing of German cities; she writes both sides and earns a B for hedging. In an all-school Watch in April, staff are hostile until four in the afternoon, and students take Hearn last. Chloe is unsure whether the Watch is real or staged. Nobody has established how many adults were in the building.
+Archery becomes a paired game in which arrows from two firing lines meet in the air. Chloe's first collision comes in October. Bex relays Chloe's astronomy question to the teacher before Chloe can. For an essay drawn from a hat, Chloe gets the area bombing of German cities; she writes both sides and earns a B for hedging. In an all-school Watch in April, staff are hostile until four in the afternoon, and students take Hearn last. Chloe holds a third floor landing. The board says nobody established how many adults were in the building.
 
 ## 15. Twelve (Sept 2017 to Jan 2018, Chloe 12)
 
-Chloe works at the forge under Pruitt. Archery now uses a partner's spoken count, and she and Odile take a week to settle it. She meets Marek, who fixates on an error in a book. One night she, Ruth, Kavi and Sam run a blind bread test in the school kitchen until staff send them to bed. At a 4 a.m. Watch, four intruders arrive unannounced. Chloe volunteers as bait; her friends subdue all four, and Sinclair arrives. Chloe receives a C and suspects the intruders were staged. Her parents know about a kitchen letter but not about the 4 a.m. Watch.
+Chloe works at the forge under Pruitt. Archery now uses a partner's spoken count, and she and Odile take a week to settle it. Marek, a younger student, stops her on the stairs to explain an error he found in a book. One night she, Ruth, Kavi, Sam and Priya run a blind bread test in the school kitchen until staff send them to bed. At a 4 a.m. Watch, four intruders arrive unannounced. Chloe volunteers as bait; her friends subdue all four, and Sinclair arrives. Chloe receives a C and cannot tell whether the intruders were staged. Her parents know about a kitchen letter but not about the 4 a.m. Watch.
 
 ## 16. Thirteen (Sept 2018 to Jul 2019, Chloe 13)
 
-Chloe starts teaching mathematics to seven twelve-year-olds. Marek hands in blank sheets every week while doing the work, and when he fails, Chloe writes the mark. She does not know what that costs him. Within a week she finds the weak point in Ruth and Kavi's encrypted chat; they repair it and believe the chat is now hidden. Ruth shows Chloe a homemade device that defeats recording. Chloe falls out with Nadia over a cipher story Iyad retells. In summer her father rebuilds the back steps; a riser Chloe cut sits 4 mm proud, and he says nobody will measure it.
+Chloe starts teaching mathematics to seven twelve-year-olds. Marek hands in blank sheets every week while doing the work, and when he fails, Chloe writes the mark. She does not know what that costs him. Within a week she finds the weak point in Ruth and Kavi's encrypted chat; they repair it and believe the chat is now hidden. Ruth shows Chloe a homemade device that defeats recording. Iyad retells a cipher night as Chloe withholding the answer, and she stops sitting beside Nadia. In summer her father rebuilds the back steps; a riser Chloe cut sits 4 mm proud, and he says nobody will measure it.
 
 ## 17. Fourteen (Sept 2019 to Apr 2020, Chloe 14)
 
@@ -90,7 +90,7 @@ Marksmanship replaces archery under Voss, with live fire from October. Chloe tea
 
 ## 18. Fifteen (Sept 2020 to Jul 2021, Chloe 15)
 
-Voss introduces a turret that fires a live round down a lane while students shoot from behind glass, aiming at the round itself. Chloe's score plateaus around 60, and eleven classmates stop in the same band. Voss says only "point six" and refuses to explain. In economics she lends classmates money and ends the year $17 up. Iyad spreads a rumor linking her to a boy named Aurel, which the school largely believes. Dr. Sandoval asks her to keep an NDA project quiet; she will only if her name goes on the next agreement. Her burns and a bent knuckle go unexplained at home.
+Voss introduces a turret that fires a live round down a lane while students shoot from behind glass, aiming at the round itself. Chloe's score plateaus around 60, and ten classmates stop in the same band. Voss says only "point six" and refuses to explain. In economics she lends classmates money and ends the year $17 up. Iyad spreads a rumor linking her to a boy named Aurel, which spreads through the school. Dr. Sandoval asks her to keep an NDA project quiet; she will only if her name goes on the next agreement. Her burns and a bent knuckle go unexplained at home.
 
 ## 19. Sixteen (Apr 2022 to Jun 2023, Chloe 16 to 17)
 
@@ -102,7 +102,7 @@ In the last week before summer, Chloe, Nadia, Ruth and Sam leave campus at night
 
 ## 21. The Applications (Oct 2022 to Mar 2023, Chloe 17)
 
-Chloe applies to fourteen colleges, including Georgetown, and cuts her essay about teaching Marek to half a line. Nadia applies for jobs, not colleges. Decisions arrive in March: Ruth gets MIT; Kavi, MIT, Caltech and Chicago; Sam all but one; Odile everywhere; Chloe twelve of fourteen. At a dinner, Bex tells a Caltech visitor the long-field story and claims the geometry Chloe drew. Ruth stops saving Bex a seat. Chloe tells her mother only that Bex got it right. Chloe has not chosen a school, and she does not confront Bex.
+Chloe applies to fourteen colleges, including Georgetown, and cuts her essay about teaching Marek to half a line. Nadia applies for jobs, not colleges. Decisions arrive in March: Ruth gets MIT; Kavi, MIT, Caltech and Chicago; Sam all but one; Odile everywhere; Chloe twelve of fourteen. At a dinner, Bex tells a Caltech visitor the long-field story and claims the geometry Chloe drew. Ruth stops saving Bex a seat. Chloe confronts Bex at breakfast and gets nowhere, and tells her mother only that Bex got every part right. Chloe has not chosen a school.
 
 ## 22. The Offer (Apr 2023, Chloe 17)
 
@@ -118,19 +118,19 @@ The five-year-old group chat now spans Georgetown, MIT, Army basic training, the
 
 ## 25. Forty Targets (Aug to Nov 2023, Chloe 18)
 
-Chloe does not appear. Sam is in Army basic training, where he scores top marks and believes basic is only a screen before a real course. He keeps asking his drill sergeant when the real one starts; the answer is Tuesday. At chow he claims a small boarding school called Halstead and a forty percent range score; one man stops believing him. He hits 40 of 40 at qualification. The captain files a memorandum, a counterintelligence notice, a request for Sam's education record and a mental health referral. A woman far above the captain pulls an old folder. Sam does not know about the referrals.
+Chloe does not appear. Sam is in Army basic training, where he scores top marks and believes basic is only a screen before a real course. He keeps asking his drill sergeant when the real one starts; the answer is Tuesday. At chow he mentions a small boarding school and a forty percent range score; one man stops believing him. He hits 40 of 40 at qualification. The captain files a memorandum, a counterintelligence notice, a request for Sam's education record and a mental health referral. A woman far above the captain pulls an old folder. Sam does not know about the referrals.
 
 ## 26. The Exercise (Feb 2024, Chloe 18)
 
-Chloe appears only in one chat line. Sam's unit runs Winter Anvil, a four-night field exercise. In a culvert on the second night, Sam reacts by reflex to being grabbed, injures one man and breaks the no-contact rule; the engagement is voided. At the review a major says the correct move was to be dead. Sam asks whether a harder exercise exists, and the major says difficulty is not his to set. Sam says he learned patience at "School, sir"; the major does not ask which. The incident goes up the chain. In the chat, Ruth and Nadia say not to ask again; Eli says to ask.
+Chloe appears only in the chat. Sam's unit runs Winter Anvil, a four-night field exercise. In a culvert on the second night, Sam reacts by reflex to being grabbed, injures one man and breaks the no-contact rule; the engagement is voided. At the review a major says the correct move was to be dead. Sam asks whether a harder exercise exists, and the major says difficulty is not his to set. Asked where he learned patience, Sam says "School, sir", and names Halstead. The incident goes up the chain. In the chat, Ruth and Nadia say not to ask again; Eli says to ask.
 
 ## 27. Nadia (May 2024, Chloe 18)
 
-Chloe does not appear. Nadia's company has four staff and three rooms over a laundromat. In May she finds fake employer accounts collecting job seekers' bank details; one victim loses $2,600. She traces them to a registered agent whose office is above a tire shop. She goes there alone, with a file set to send itself to authorities if she does not return, and tells four men upstairs the accounts must stay off her site. They photograph her car and let her leave. Her parents know only that she was out at a tire place. Nadia believes the scam is over and has told only Eli.
+Chloe does not appear. Nadia's company has four staff and three rooms over a laundromat. In May she finds fake employer accounts collecting job seekers' bank details; one victim loses $2,600. She traces them to a registered agent whose office is above a tire shop. She goes there alone, with a file set to send itself to authorities if she does not return, and tells four men upstairs the accounts must stay off her site. They photograph her car and let her leave. Her parents know only that she was out at a tire place. Nadia believes the scam is over and has told her friends in the chat.
 
 ## 28. Nineteen (Sept 2024 to Oct 2025, Chloe 19)
 
-Chloe works as a translator at a company of fifty-odd people, takes college credits, and writes an anonymous blog on international disputes. She gives a sick coworker tablets she has taken since age seven, which she says cannot be bought anywhere. Emails ask whether she has a research team; she records five on a spreadsheet, none naming an outlet. She has begun explaining everything twice. In the chat Ruth asks statistical questions about ordinary people, then stops posting in April 2025. Chloe's messages to her go unanswered. Chloe does not know who the emailers write for.
+Chloe works as a translator at a company of fifty-odd people, takes college credits, and writes a blog on international disputes that she keeps from her office. She gives a sick coworker tablets she has taken since age seven, which she says cannot be bought anywhere. Emails ask whether she has a research team; she records five on a spreadsheet, none naming an outlet. She has begun explaining everything twice. In the chat Ruth asks statistical questions about ordinary people, then stops posting in April 2025. Chloe's second message to her goes unanswered. Chloe does not know who the emailers write for.
 
 ## 29. The File (Oct 2025, Chloe 20)
 
@@ -138,7 +138,7 @@ Theo, a federal analyst, is handed a box of old files by a retiring colleague. O
 
 ## 30. Cleared (Sept 2025 to Aug 2026, Chloe 20 to 21)
 
-Chloe sits the Foreign Service written exam and studies Hebrew. She keeps a sheet of unanswered emails asking who works with her. Background investigator Whitaker interviews her twice in her kitchen. She describes Halstead, her languages, the bar exam and two published papers. She withholds the subject of an internal third paper, as the lead researcher asks, on condition that her name goes on the next agreement. She guesses that the longest reference interview was Bex's. She does not know who the school's donor is. Her clearance arrives in December; she starts as a trainee in January and is sworn in on her birthday in August.
+Chloe sits the Foreign Service written exam and studies Hebrew. She keeps a sheet of unanswered emails asking who works with her. Background investigator Whitaker interviews her twice in her kitchen. She describes Halstead, her languages, the bar exam and two published papers. She withholds the subject of an internal third paper, as the lead researcher asks, on condition that her name goes on the next agreement. She guesses that the longest reference interview was Bex's. She does not know who the school's donor is. Her clearance arrives in December and she starts a part-time student trainee job in January. She turns twenty-one in August.
 
 ## 31. Ruth (Oct 2023 to Nov 2025, Chloe 18 to 20)
 
@@ -146,7 +146,7 @@ At MIT, Ruth believes she was put on a remedial track, and later that the univer
 
 ## 32. The Money (Nov 2025 to Feb 2026, Chloe 20)
 
-Eli builds a slow covert program that watches financial records, and Kavi builds a monitor for it. They test it on Nadia's shop books, and it goes live in late November. Over the following months it traces a pattern of decisions spanning about twenty years. Ruth argues that one person is behind it, with 99.99 percent confidence, and the group accepts this. Nobody has his name. Theo says the government has kept a file on the school since 2013 and that four students once overpowered intruders; Chloe says it was a drill. Theo declines to name the four. Eli ends the discussion: "so lets go and read it."
+Eli builds a slow covert program that watches financial records, and Kavi builds a monitor for it. They test it on Nadia's shop books, and it goes live by early December. Over the following months it traces a pattern of decisions spanning about twenty years. Ruth argues that one person is behind it, with 99.99 percent confidence, and the group accepts this. Nobody has his name. Theo says the government has kept a file on the school since 2013 and that four students once overpowered intruders; Chloe says it was a drill. Theo puts off naming the four. Eli ends the discussion: "so lets go and read it."
 
 ## 33. The Other One (May to Jun 2026, Chloe 20)
 
