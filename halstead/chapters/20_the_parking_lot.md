@@ -40,11 +40,11 @@ Sam puts his fork down, then asks it. "How old is he now?"
 
 "I'll tell him about the waffles here, since that's a story he can actually picture." She says it evenly, but she is looking at the cup and not at any of them.
 
-Sam has the syrup upside down over his second plate, timing the pour and counting under his breath. "Weeks of it starting Friday, so is anybody actually doing anything with the summer, or is it the usual."
+Sam has the syrup upside down over his second plate, timing the pour and counting under his breath. "Summer starts Friday, so is anybody actually doing anything with it, or is it the usual."
 
-"I'm doing the forge both sessions again, same as last year," Chloe says.
+"I'm doing the forge both sessions again, same as the rest of the year," Chloe says.
 
-"You said that like it was going to be different this year." Something in Ruth's face concedes the point before Ruth herself has agreed to concede it.
+"You said that like it was going to be different this year," Sam says. Something in Ruth's face concedes the point before Ruth herself has agreed to concede it.
 
 "It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is, same anvil, same sessions, same walk down there every morning before anyone else is up."
 
@@ -58,7 +58,7 @@ Chloe's hand goes back to the fork, and she doesn't eat with it for a while.
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and dictionaries everywhere would need rewriting every few years just to keep up with what people happen to like the sound of. I looked it up twice before I said it, just so nobody could tell me I hadn't," Ruth says.
+"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and dictionaries everywhere would need rewriting every few years just to keep up with what people happen to like the sound of. I looked it up before I said it, just so nobody could tell me I hadn't," Ruth says.
 
 "It makes it archaic. Archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
@@ -70,7 +70,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "That's different. I used it on purpose, and you used it by accident, which is the whole reason I still win." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
-There's a shopping cart in the lot behind a hardware store on the way home; Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan, but Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, but when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
+There's a shopping cart in the lot behind a hardware store on the way home; Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan, but Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia watches the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, but when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
 
 ________________
 
@@ -106,7 +106,7 @@ Sam is standing in the middle of them, turning, looking for the next one; that's
 
 They come down off the dock, Nadia hanging and dropping, Chloe straight off the edge, Ruth using the pallets.
 
-The third gun he finds on a man who spent the fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head; she holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs, all of them holding, one bitten through his lip.
+The third gun he finds on a man who spent the fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head; she holds an eyelid open and looks. "Concussion. He's breathing fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs, all of them holding, one bitten through his lip.
 
 "Should we report them to the police?" Ruth says.
 
@@ -136,7 +136,7 @@ Flat, not unkindly, she counts it off. "They were all bunched between two cars. 
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 
-Chloe says, "If you had one usable skill, any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none, not a single usable skill between the lot of them, or they'd be doing something else with their evenings." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning; that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
+Chloe says, "If you had one usable skill, any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's a badly paid dangerous job. Which means they have none, not a single usable skill between the lot of them, or they'd be doing something else with their evenings." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning; that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
 
 Sam takes it in silence for a second.
 
@@ -170,6 +170,6 @@ Chloe's shoes sit by the door, laces still knotted from being kicked off, not un
 
 ________________
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just people happening to be in the way.
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines about Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just people happening to be in the way.
 
-Kavi sends a laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, but he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.
+Kavi sends a laughing face, his entire contribution, and Ruth reads it out at breakfast while Sam reaches past her for the syrup and starts on his tray as if the question landed on somebody else at the table. He lets it sit every time it comes up, long enough that people start bringing it up just to watch him do it.
