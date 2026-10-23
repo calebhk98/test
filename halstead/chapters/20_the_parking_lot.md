@@ -152,7 +152,7 @@ Sam stops walking altogether, a foot off the kerb. "What, are you actually serio
 
 Ruth says, "She's fifty, for a start. She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
 
-Nadia says, "That's thirty-four years of being in situations, against your sixteen, most of which were spent at school."
+Nadia says, "That's thirty-four years of being in situations, against your seventeen, most of which were spent at school."
 
 Sam thinks about it for a good deal longer than the joke needs, and then answers it straight. "She'd take me apart before I even got a hand up, and everyone here knows it."
 

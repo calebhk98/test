@@ -38,7 +38,7 @@ priya: a while
 
 sam: we did seven in a car park
 
-priya: you were sixteen and chloe said they were retarded
+priya: you were seventeen and chloe said they were retarded
 
 priya: these were fine. all of them. that is the part i want somebody to explain to me
 
