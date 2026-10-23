@@ -2,7 +2,7 @@
 
 *February 2013 - April 2013*
 
-February passes with the telephone silent; the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very back, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words; Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October; at the last of them, a fortnight ago, Dr. Ammons asked whether any of it had got easier, and she said some of it had.
+February passes with the telephone silent; the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very back, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words; Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October; at the last of them, a fortnight ago, Dr. Ammons asked whether any of it had gotten easier, and she said some of it had.
 
 Home from school, she goes upstairs with her coat still on, so that when her mom comes up to say that dinner is in ten minutes she finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -58,7 +58,7 @@ Later, when she is in bed and supposed to be asleep, her parents are at the kitc
 
 "You haven't said it back, though, which is exactly what I'm telling you, and I have been the only one saying anything about any of this since August, and I am so tired of being the only one who has to."
 
-"What kind of family sends a seven-year-old away to live in a building four hours from her mother?" her mother says. "Say that one out loud in a room and listen to how it sounds, because I have been saying it to myself since August and it has not got any better."
+"What kind of family sends a seven-year-old away to live in a building four hours from her mother?" her mother says. "Say that one out loud in a room and listen to how it sounds, because I have been saying it to myself since August and it has not gotten any better."
 
 Her voice comes harder now. "Say something, Dave, actually say something, instead of standing in doorways with a dishcloth."
 
@@ -90,9 +90,19 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "We're saying yes. You can stop asking now," her mom says.
 
-"Is that a true thing you're saying, or is it a thinking about it thing?"
+Chloe holds out her hand with the little finger sticking up. "Pinky promise."
 
-"It's true, it's a true thing," her dad says.
+"Chloe, we don't need to-"
+
+"You said we were thinking about it. Then you said we were still thinking about it." She keeps the finger out. "Pinky."
+
+Her dad hooks his little finger around hers. "I promise."
+
+She turns the hand to her mom, who sighs and hooks it too, and the three of them stand there joined by two fingers until her mom gives hers a small shake.
+
+"Is that a true thing, or is it a thinking about it thing?"
+
+"It's true," her dad says.
 
 She screams. It rises, holds there and keeps going after the breath behind it should have run out. Her dad's hand lifts off his knee but stops halfway to his ear, and her mom says her name twice without finishing it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way; she is saying thank you into his shoulder with no gap between the words. Then she's off him, around the coffee table, and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 

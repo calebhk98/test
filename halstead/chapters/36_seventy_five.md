@@ -4,7 +4,7 @@
 
 Priya goes quiet for a stretch of days in October. Quiet has run longer than that over a pass with no signal, and once for the better part of a month over a mare that would not foal.
 
-The chat runs through the fall the way it ran through the summer, in short bursts, mostly in the evenings, and none of them refers directly to the thing that sits behind it. Chloe is most of a year into the job and catches it on the bus with her bag on her knees. Sam can use his phone after dinner at the unit. Nadia answers between customers and Sunday's till count, Eli from wherever he has a kettle on, Ruth and Kavi from the new places the autumn gave them. Theo answers from a window with the blinds already down.
+The chat runs through the fall the way it ran through the summer, in short bursts, mostly in the evenings, and none of them refers directly to the thing that sits behind it. Chloe is most of a year into the job and catches it on the bus with her bag on her knees. Sam can use his phone after dinner at the unit. Nadia answers between customers and Sunday's drawer count, Eli from wherever he has a kettle on, Ruth and Kavi from the new places the autumn gave them. Theo answers from a window with the blinds already down.
 
 What those days were was a bus with a cracked window, then a second bus, then a room over a feed merchant's with a lock she changed herself on the first afternoon. Part of the time in that room was spent sitting still, letting a hand come up and go down again.
 
@@ -26,7 +26,7 @@ priya: then six of them in may, and about a dozen in july, and by july i had alr
 
 priya: tuesday night there were seventy-five
 
-Ruth reads that. Nadia is behind the counter with the shutter still down and the float half counted, and the float stays half counted in front of her for a good while.
+Ruth reads that. Nadia is behind the counter with the shutter still down and the cash drawer half counted, and the drawer stays half counted in front of her for a good while.
 
 kavi: seventy-five
 
@@ -36,7 +36,7 @@ sam: how long
 
 priya: a while
 
-sam: we did seven in a car park
+sam: we did seven in a parking lot
 
 priya: you were seventeen and chloe said they were retarded
 
@@ -142,7 +142,7 @@ Nobody answers it for a long time, and she does not say it a second way.
 
 Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-In the morning Chloe reads the third page of the file, the paragraph about the funding line, which she has read enough times to recite, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number she saw that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
+In the morning Chloe reads the third page of the file, the paragraph about the funding line, which she has read enough times to recite, then goes in and does her job, in the same building, with the badge, the elevator, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number she saw that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
 
 The ranking goes unmentioned after that. Nadia asks, days later, only to Priya, whether she wants company in the yard with her for a while, but gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave, and Priya tells him the flights are absurd, but he offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, a bolt on the inside of the outer door, a second way out that isn't the stair, a chair braced under the handle rated for more weight than the door itself, most of which she had already done before it arrived.
 

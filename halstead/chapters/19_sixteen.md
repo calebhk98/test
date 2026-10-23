@@ -16,7 +16,7 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "Four pages, for the whole question?" His voice actually climbs on it, an event visiting Sam perhaps twice a year and never on purpose. "I wrote the fire from both angles because I could see it going either way. Then I wrote out why the second angle was wrong."
 
-"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders. "After that you're padding. The marker reads page after page of you agreeing with yourself for no extra credit at all, and that's a bad trade for both of you. Mine is exactly as long as the question turned out to be."
+"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders. "After that you're padding. The grader reads page after page of you agreeing with yourself for no extra credit at all, and that's a bad trade for both of you. Mine is exactly as long as the question turned out to be."
 
 Sam goes quiet the length of the corridor.
 
@@ -36,7 +36,7 @@ Of the ninety-one in the year, fifty-two pass and thirty-nine do not, hers among
 
 Bex passed, and covers the length of that hall to find her before dinner, saying it from halfway down.
 
-"It's nothing, it's a tick anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else. Everybody on that board who missed is sitting it again in October. Nobody is going to remember by Christmas which of you was on which side of the line, and if they do remember, they'll have the margin wrong within a week anyway."
+"It's nothing, it's a check mark anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else. Everybody on that board who missed is sitting it again in October. Nobody is going to remember by Christmas which of you was on which side of the line, and if they do remember, they'll have the margin wrong within a week anyway."
 
 "It's the margin, though. As a share of the whole paper that's about a..."
 
@@ -52,11 +52,11 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "I have the answer to it. It's the second line on the page and it's correct. I'm not sure what else there is left to talk about, past the part where somebody reads the line and agrees with it."
 
-"You do, it's correct, and it's sitting right there in your second line where anyone could find it." He turns the scheme around so it faces her and puts a finger under a row of it, the rows printed under each other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. A mark for the rule you are relying on. A mark for where the rule comes from. A mark for why a shed is inside it. A mark for what happens if the shed burns down on the Tuesday before delivery, and every mark on that list is sitting there waiting on a page you never wrote." He lays her own paper down beside the scheme, where a single tick sits against her second line and the rows underneath it are as empty as they were in April.
+"You do, it's correct, and it's sitting right there in your second line where anyone could find it." He turns the scheme around so it faces her and puts a finger under a row of it, the rows printed under each other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. A mark for the rule you are relying on. A mark for where the rule comes from. A mark for why a shed is inside it. A mark for what happens if the shed burns down on the Tuesday before delivery, and every mark on that list is sitting there waiting on a page you never wrote." He lays her own paper down beside the scheme, where a single check mark sits against her second line and the rows underneath it are as empty as they were in April.
 
 "All of them follow from the answer once you've got the answer. Anyone who can read the second line can work out the rest for themselves in a moment, the way I did. Writing it out afterwards is just me proving I can hold a pen."
 
-"They follow if the person reading has your head and has already done the working you skipped. A marker with a stack of these in front of him has about ten seconds a page, but that is not enough time to rebuild your reasoning for you, and he is also not allowed to give you a mark for something you did not write down, whatever you happened to be thinking while you left it out, because thinking it and writing it down are not the same action to a marker."
+"They follow if the person reading has your head and has already done the working you skipped. A grader with a stack of these in front of him has about ten seconds a page, but that is not enough time to rebuild your reasoning for you, and he is also not allowed to give you a mark for something you did not write down, whatever you happened to be thinking while you left it out, because thinking it and writing it down are not the same action to a grader."
 
 "Whoever marks this already knows all of it. It's contract law and not a mystery, and there is exactly one rule that could possibly apply to a shed sitting in a yard for two weeks. He knew the answer before he opened the paper."
 
@@ -64,7 +64,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 Chloe scans down the rows.
 
-"Give me one from an old paper. Not this one, a finished one, so I can see what filled in looks like when the marker actually got all four." She's turning to a blank page of her own notebook.
+"Give me one from an old paper. Not this one, a finished one, so I can see what filled in looks like when the grader actually got all four." She's turning to a blank page of her own notebook.
 
 ________________
 
@@ -82,11 +82,11 @@ People are getting up out of their chairs as she goes back to hers, unhurried, h
 
 A week into May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark. Kavi marks the way the examiners mark and will decline to be kind about it.
 
-"Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out. A blank space tells him you knew where to stop. A repeated sentence tells him you didn't."
+"Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The grader reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out. A blank space tells him you knew where to stop. A repeated sentence tells him you didn't."
 
 "It's the same sentence. Just restated so it sounds like it's adding something," she says.
 
-"It's the same sentence to you. You already know why the risk sits with the buyer. The marker has to be given that reasoning, not assumed to already have it, and right now the page hands him the same idea twice. He can only mark what is actually on the paper in front of him, not the paper you'd have written if you'd had more room to write it." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
+"It's the same sentence to you. You already know why the risk sits with the buyer. The grader has to be given that reasoning, not assumed to already have it, and right now the page hands him the same idea twice. He can only mark what is actually on the paper in front of him, not the paper you'd have written if you'd had more room to write it." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
 In a single fast paragraph she writes the shed burning down, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
 
@@ -96,7 +96,7 @@ Kavi's marking fills the margin. Nadia marks by ruling a line down the side of a
 
 In April she leaves a spare copy of each paper at the corner of the library table where Bex works some evenings, in case anybody there wants to check theirs against it. In May she starts leaving the spare with Kavi. Marek still takes his to Bex some weeks, when she's the one up when he finishes, and she marks his in red, in the margin, no comment underneath, the way she marks anyone's.
 
-The driving instructors do precision and competition work outside the school; they teach by staging emergencies for her to handle, in turn. By September she can drive, because her father took her out to a church lot the previous July and meant to teach her himself, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan; by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
+The driving instructors do precision and competition work outside the school; they teach by staging emergencies for her to handle, in turn. By September she can drive, because her father took her out to a church lot the previous July and meant to teach her himself, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the asphalt; she overshoots it by thirty meters. In November another sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the parking brake, and a great deal more road than she thought she would need. In January they put her on a wet skid pad; by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in a flat voice, about his brother-in-law's boat, the state of the tires, and whatever else occurs to him.
 

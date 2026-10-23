@@ -2,17 +2,17 @@
 
 ## What this folder is for
 
-`chNN.md` (ch01 to ch36) are per-chapter summaries: scenes, facts established, who knows what, open threads. `STORY_SO_FAR.md` is a short running recap of the whole book, one entry per chapter, written so an agent can learn the story up to a point without reading the chapters.
+`STORY_SO_FAR.md` is one file: a short high-level recap of the whole book, one entry per chapter, so an agent can learn the story up to a point without reading the chapters. The `chNN.md` files (ch01 to ch36) are optional detail: scenes, facts established, who knows what, open threads.
 
 ## How to use it
 
-- For work on chapter N, read the entries for chapters 1 to N-1 in `STORY_SO_FAR.md` for the story so far.
-- Read `chNN.md` for any specific chapter you need detail on (scenes, facts established, who knows what, open threads).
+- For work on chapter N, read the entries for chapters 1 to N-1 in `STORY_SO_FAR.md`. That is one short document, not many separate files.
+- Optionally read `chNN.md` for a specific chapter you need more detail on.
 - Read the chapter itself in `../chapters/` before relying on any detail that matters, and always before editing it.
 
 ## Staleness
 
-These summaries were generated from the chapters on 2026-10-23. They go stale when chapters change. The chapters are the only source of truth (see CLAUDE.md), and a summary never overrides a chapter. If a summary and a chapter disagree, the chapter wins.
+The high-level recap in `STORY_SO_FAR.md` should rarely need updating, because it covers premise, people and the shape of the story rather than scene detail. The `chNN.md` detail files were generated from the chapters on 2026-10-23 and can drift after chapter edits. The chapters are the only source of truth (see CLAUDE.md), and no summary overrides a chapter. If a summary and a chapter disagree, the chapter wins.
 
 ## Possible continuity conflicts noticed while summarizing
 

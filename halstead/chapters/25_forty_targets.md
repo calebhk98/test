@@ -220,4 +220,4 @@ On the way down to the range in the first week of November he asks Okoro whether
 
 "This. Whether we're through the sorting part of it yet, or whether they're still deciding."
 
-Okoro takes the enquiry for a bit and laughs; Sam permits him this, on the grounds that it is a perfectly fair thing to laugh at. On the Thursday he puts it to somebody else.
+Okoro takes the inquiry for a bit and laughs; Sam permits him this, on the grounds that it is a perfectly fair thing to laugh at. On the Thursday he puts it to somebody else.

@@ -48,7 +48,7 @@ kavi: and for anybody else in the world, nobody would have
 
 kavi: you only see nine minutes if you built something specifically to look for it, and the only reason i built that is because im me
 
-eli: hes not signalling. he made a mistake
+eli: hes not signaling. he made a mistake
 
 eli: hes very slightly wrong about how good we are
 

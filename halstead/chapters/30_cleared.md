@@ -18,7 +18,7 @@ ________________
 
 Hebrew is the second year's, and it goes the way Polish went: a class that moves at the speed of the slowest person in it, and everything useful happening on her own time. The root system is there on the first morning, and she spends a fortnight finding out how much of it is a loan and how much is a trap. The alphabet costs her a weekend. By March she is reading a Tel Aviv opinion column with a dictionary open and by June without one.
 
-Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID against the photo before letting her sit down.
+Two months after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID against the photo before letting her sit down.
 
 The written section runs four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, the single gap in it, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
 
@@ -26,7 +26,7 @@ The result arrives by mail weeks later.
 
 ________________
 
-The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
+The background investigation for the student job she applied for in July takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
 The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her; most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful; she sends the form in a little after midnight, and days go by before the phone rings.
 
@@ -48,7 +48,7 @@ That's the whole answer, first try, not something softer built to sound reassuri
 
 "From when?"
 
-"I started that April, the spring after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from. My mother tells it differently than I do and hers is the version I would write down."
+"I started that April, the spring after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending on which end you look from. My mother tells it differently than I do and hers is the version I would write down."
 
 At that he looks up. "That's young."
 
@@ -114,7 +114,7 @@ He doesn't confirm it, but he doesn't deny it either, and he writes something do
 
 He goes back a page before the next question. "The long field. The one with the wire down the fence. Who did the geometry on that?"
 
-"I did," Chloe says. "Nadia was there for the run in March, but the geometry's mine, from April. I can get you the exam script it started on, if you need it dated."
+"I did," Chloe says. "Nadia was there for the run in March, but the geometry's mine, from April. I can get you the exam paper it started on, if you need it dated."
 
 Whitaker writes the offer down next to the answer and goes on.
 
@@ -128,4 +128,4 @@ At the door, coat half on, he taps the folder once against his palm. "Now I get 
 
 The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it, then calls her mother before the coat is off. She gets the machine, and leaves a short message before she hangs up: it came through, she'll tell her the whole of it Sunday. Only then does she file it in the kitchen drawer where everything that's needed keeping ends up.
 
-The job starts in January, as a trainee. She's sworn in that August, her birthday.
+The job starts in January, as a student trainee, part time around her classes. She turns twenty-one in August.

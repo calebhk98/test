@@ -118,7 +118,7 @@ At the speed of a weather report, she says it. "No resume, an evening of short t
 
 "The employers. I go and ask them, one at a time, in the car."
 
-Quiet long enough for a customer to come in, buy a tin of galvanised screws and leave again, he then says the thing he has been holding since the second hundred.
+Quiet long enough for a customer to come in, buy a box of galvanized screws and leave again, he then says the thing he has been holding since the second hundred.
 
 "This is what people say when nobody will hire them. They say they are starting something." He sets his fingers on the invoice. "You will be behind that counter Monday to Saturday, you will keep sending the forms, and whatever this is happens after we close. That is what I have got to offer you, and it is a good deal more than my own father put in front of me, standing in this same spot, at about your age, with his own father still alive to see it."
 

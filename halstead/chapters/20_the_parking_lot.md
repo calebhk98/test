@@ -148,7 +148,7 @@ Ruth has her bag back on her shoulder, the strap settled across it, and shrugs. 
 
 "Go back and fight the waitress," Nadia says.
 
-Sam stops walking altogether, a foot off the kerb. "What, are you actually serious right now?"
+Sam stops walking altogether, a foot off the curb. "What, are you actually serious right now?"
 
 Ruth says, "She's fifty, for a start. She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
 

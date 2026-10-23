@@ -64,7 +64,7 @@ Voss taps the pages straight against the desk and hands them back to her.
 
 Chloe goes, running the numbers again all the way down. That evening she returns the box to the shelf, square on top of the year below's, and leaves both of them where they are.
 
-Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends. She sits behind her for the afternoon because Chloe asked her to.
+Ruth comes down on a Saturday in April with a clipboard and a bag of the candies Priya's mother sends. She sits behind her for the afternoon because Chloe asked her to.
 
 "Your count's clean. I checked it twice against the clock," Ruth says.
 
@@ -74,7 +74,7 @@ Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole se
 
 "Where, though, since there's nowhere else I can even think to look?"
 
-Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a toffee, it helps me think. I've eaten most of the bag and I'm still nowhere close."
+Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a candy, it helps me think. I've eaten most of the bag and I'm still nowhere close."
 
 At dinner that week Sam says it to his plate. "You're on sixty," he says. "Everybody's talking about it at breakfast."
 

@@ -14,7 +14,7 @@ Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. Yo
 
 "Right. So the points stay away from people, even by accident," Ruth says.
 
-Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in towards the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
+Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in towards the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps traveling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
 
 Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there. If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 
@@ -100,7 +100,7 @@ Both elbows land on the table. "I took the inflation out, but it's still six tim
 
 "I did ask her. She told me it was a good question for a different course," Chloe says.
 
-Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the odd Saturday the man opens it is better. In March he demonstrates a Japanese corner joint to the class that holds without a nail or a screw or any glue. Chloe cuts it a dozen times over weeks before one holds when she pulls on it with everything she has, and she puts that twelfth on the shelf over her desk.
+Block two is wood shop and the pieces have gotten bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the odd Saturday the man opens it is better. In March he demonstrates a Japanese corner joint to the class that holds without a nail or a screw or any glue. Chloe cuts it a dozen times over weeks before one holds when she pulls on it with everything she has, and she puts that twelfth on the shelf over her desk.
 
 In May her chisel starts rolling its edge every twenty minutes, so she takes it up to the front.
 
@@ -208,11 +208,11 @@ There is a pause of a second and a half.
 
 "Good luck," Sinclair says.
 
-Students come out of a dozen rooms at once; the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few. The students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
+Students come out of a dozen rooms at once; the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few. The students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the banister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
 
 People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in minutes Nadia takes the third floor and splits it: two on each stair head, three hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Students take three instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds, because he goes over the second floor bannister onto the teachers coming up, which works, but then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you. It means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds, because he goes over the second floor banister onto the teachers coming up, which works, but then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you. It means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
 
 Chloe spends the whole Watch on the third floor landing with five others, markers pointed down into the stairwell, firing to meet whatever comes up before it clears the turn, and when an incoming ball meets one of theirs there is a wet crack and paint everywhere at once, both spent short of the landing. Below, more crack together, the sound carrying up through the floor, and somebody down there is shouting a count she can hear without making out the numbers. Her arms ache well before the end, but she stays until it is over.
 
@@ -222,4 +222,4 @@ The board the next day says the staff lost the building at three forty-two, but 
 
 Chloe reads them in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space.
 
-It is still with her at dinner, where Sam has the bannister up for the fourth time in front of people who were standing underneath it.
+It is still with her at dinner, where Sam has the banister up for the fourth time in front of people who were standing underneath it.

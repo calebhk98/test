@@ -10,7 +10,7 @@ It runs out of three rooms over a laundromat, a hundred yards up the street from
 
 The building came with two working outlets a room, so there is a run of surge strips down the baseboard now, taped down, with an orange extension cord stapled up over the door frame between the front rooms. She did the tape and the staples herself on a Sunday in February. The kitchen is a folding table with a kettle on it and a jar of instant coffee Bev brought in October, still sealed under its foil.
 
-In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass verge under her. The second word went on half an inch low; lifting it again would have torn it, so it sits half an inch low.
+In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass under her. The second word went on half an inch low; lifting it again would have torn it, so it sits half an inch low.
 
 "Who is ever going to read that? Nobody walks up this side of the street, and the cars coming off the county road are doing fifty by the time they pass the door," Bev said, from the window.
 
@@ -18,7 +18,7 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are so few of them, and most of them were standing there when it happened.
 
-She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has twenty-six, and more than half of them sit outside the list of employers she has driven to herself.
+She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the register tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has twenty-six, and more than half of them sit outside the list of employers she has driven to herself.
 
 Opened, they all carry the same job description, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 

@@ -32,7 +32,7 @@ By November the study group meets in a fourth-floor common room with a whiteboar
 
 In November she makes a joke in a study group.
 
-It's small. It needs two things held together, and it is exactly the sort of thing that would have got a groan out of Sam and a correction out of Kavi.
+It's small. It needs two things held together, and it is exactly the sort of thing that would have gotten a groan out of Sam and a correction out of Kavi.
 
 Three people look at her.
 

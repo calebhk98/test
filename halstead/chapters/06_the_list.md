@@ -48,9 +48,11 @@ On the last night the families eat on campus, at long tables in the dining hall,
 
 Chloe is already talking before she's finished sitting down, one knee still up on the bench: "Okay, so first there's Gary. He's a plastic man with no arms at all and he lives on a cart. You do CPR on him. Push in exactly the right place hard enough and he clicks." She demonstrates the hand position on the edge of the table, both hands stacked and elbows locked, the way they showed her. "I got the click on the fourth try. Sam gave up before his and decided the click was broken. But the click works fine. You just have to push harder than you think you're allowed to."
 
-"Then there's the bridge," she says, lining up the salt, the pepper and a knife to show him the span. "You get dowels and string. You have to cross a gap with them. And then on the Tuesday they hang a bucket off the middle and put weights in a pound at a time until it goes. Ours went early. Ruth's went at nineteen. Hers was triangles. A triangle can only fold if something actually breaks. A square folds right over. I wrote fourteen and was wrong by three. The corner goes first. Ruth's didn't fold when it went. It snapped, right in the middle of the diagonal, which is a different way of running out." She taps the knife at the middle of the span.
+"CPR," her dad says. "On a plastic guy."
 
-"Then the pool. I can do a whole length now, badly, and Sam can do two straight through and brings it up at dinner most days," she says.
+"Gary. And then there's the bridge, you get dowels and string and you have to cross a gap, and on the Tuesday they hang a bucket off the middle and put in weights a pound at a time until it goes, and ours went early and Ruth's went at nineteen because hers was triangles, and a triangle can only fold if something breaks and a square folds right over, and I wrote fourteen and I was wrong by three, and then there's the pool, I can do a whole length now, badly, and Sam can do two and he brings it up at dinner most days, and then the wood shop, and the goggles are for somebody bigger, and what you do about a bleed is pressure first and the dressing second, and the glue they use on a cut that's too small for stitches, and I learned how to cook eggs, and on the Thursday the whole table ate a dish with onions in it that I cut myself, and we went and looked at paintings and one of them costs more than a house, which is so weird, because it's a painting,"
+
+"Eggs," her dad says. "Good."
 
 Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them, and running all the way through to why you turn the second fraction over, until she reaches the edge of the napkin and keeps writing on the back, while her dad leans in over the napkin.
 
@@ -62,25 +64,9 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "I said what's on the table, and where the bathroom is, and what I did today. And then the thing Sam says at breakfast every morning. It turns out it's rude," she says, then goes back through it slower this time, turning each piece into English for him.
 
-"We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess. It fails every time. Everybody else at that table is doing Spanish as well," she says.
+"We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess, and it fails every time because everybody at that table is doing Spanish too, and then there's the signing, which is better than all of it, you can do it across a whole room with your hands and your mouth shut, that's water, that's finished, that's again, and in the library you can ask somebody at the far end for a book, and there was a puzzle, twenty sentences in a language none of us had ever heard of and no dictionary, and you had to work out the grammar from the sentences, and Ruth got the plurals before I did and Kavi got the endings, which I still can't do, he explained it and explained it, I wrote it down word for word and I still read it over before every test, and the computers are two different things, in one you type the words in yourself instead of dragging colored blocks around, and I made it count to a hundred and skip every seven, and in the other there's a room, it's enormous and they keep it freezing on purpose because the machines make so much heat, and a woman took us down to see the water pipes under the floor, and she let me hold the door open with my foot so the cold came out into the hallway, and it was like an open freezer, and there's a robot arm on the second floor that picks up a block for as long as you stand there, and chess, but Sam is better at that too, and negative numbers go the other way past zero and keep going as far as you want, and karate is mostly how to fall over, and oh, the nerf guns, I forgot the nerf guns," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster.
 
-"Then there's the signing. That's better than all of it. You can do it across a whole room with your hands doing the talking and your mouth shut. That's water, that's finished, that's again. And in the library you can ask somebody at the far end of the room for a book, with everybody's mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster.
-
-"And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did. Kavi got the pattern in the endings. That part is still half out of my reach. He has explained it and explained it. He'd explain it to you right now, only he isn't sitting here and I am. I wrote his explanation down word for word so I wouldn't lose it, and I still read it over before every test."
-
-Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed: pressure first, the dressing second. Then the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they went to look at, one of which cost more than a house, which baffles her, because it is a painting.
-
-"Then there's the computers, and that's actually two entirely different things, the first being that you type the words in yourself instead of dragging colored blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat they would cook themselves. And a woman who works in there took us through the whole arrangement, down to the water pipes under the floor. She let me hold the door open with my foot so the cold air came out into the hallway, and it was like standing in front of an open freezer," she says, counting them off on her fingers.
-
-Then the robot arm on the second floor, which picks a block up for as long as you stand there watching it.
-
-Then chess, which Sam is also better at.
-
-Then negative numbers, which go the other way past zero and keep going as far as you want them to.
-
-Then karate: mostly learning how to fall over safely.
-
-Then the nerf guns at the end, which arrive out of order because she has only just remembered them.
+"Freezing," her dad says. "In August."
 
 Her plate has gone cold in front of her, barely touched, but she talks straight on through it, leaning in far enough that her shoulder ends up against his arm.
 
@@ -130,27 +116,47 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "They already looked at us, Ruth. That is exactly what this whole month was for."
 
-"That's not what she said. She said it's a whole different day, with different people doing the looking. I heard that much through the door before Mom noticed I was there."
+"That's not what she said. She said it's a whole different day, with different people doing the looking. I heard her."
+
+"You did not hear her. You were behind a door."
+
+"I did hear her. I heard a lot."
+
+"How much is a lot?"
+
+"This much," Ruth says, and holds her hands apart, and then closer together. "Until Mom saw me."
+
+"That's not a lot, that's a little."
+
+"It's more than you heard, Sam."
 
 Ruth picks the knot out of one shoelace with both thumbs.
 
 "My parents already asked, on the third day of the month," Kavi says.
 
-"Your parents asked about the whole year on the third day?"
+"On the third day?" Sam says. "We'd barely gotten here."
 
-"They liked the food, mostly, and the food is what got them talking about everything else. My dad wrote down what was in the sauce on the Tuesday and tried it at home twice. It still isn't right. And he talked to Mr. Baptiste for a solid hour."
+"They liked the food, mostly, and then they got talking about everything else. My dad wrote down what was in the sauce on the Tuesday and tried it at home twice. It still isn't right. And he talked to Mr. Baptiste for a solid hour."
 
 "When is the form due, and who signs it," Chloe says.
 
 "The form is with my mom, and she's the one who knows the date on it."
 
-"But when is it that you actually find out either way."
+"But when do you find out."
 
 "That's hers as well. She's promised to tell me the second she hears anything at all."
 
+"But when."
+
+"I don't know when, Chloe."
+
 "Well, find out." She is up on her knees now with one hand fisted in the leg of Kavi's pajamas. "It's a day where they look at you. So I want to know what they look at. Same material as this month, or different. Different material, a person can go and learn it."
 
-"It's a form, Chloe, and a form is a completely different object from a promise."
+"It's a form, Chloe. A form isn't a promise."
+
+"There's a day, though."
+
+"There's a day."
 
 "So there's a day," she says, and sits back against the wall, fist still shut on the pajama leg.
 

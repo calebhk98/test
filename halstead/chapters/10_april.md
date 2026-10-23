@@ -38,7 +38,7 @@ Ruth just gives her the number this time, so Chloe writes it under the name, lea
 
 Kavi turns up an hour later and stands in the doorway with his arms folded until Chloe looks at him, then points down the corridor at nobody. "I have been through this whole building since lunch, the office, then the laundry, then outside to the road. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour. Sam knew the entire time and let me do the whole tour anyway."
 
-"He forgot." Ruth shrugs at him. "He's been telling everyone for a week, so it stopped feeling like news to him before it ever actually happened."
+"He forgot." Ruth shrugs at him. "He's been arguing for months that you'd come, so it stopped feeling like news to him before it ever actually happened."
 
 "That's worse than not knowing." Kavi sits down on the floor by the door. "If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered. What. I'm allowed to think that's worse without both of you looking at me like that," he says.
 
@@ -60,7 +60,7 @@ The corridor lights go out and Fen stops answering partway through a sentence, a
 
 "How do you know which rock goes where, in the dark, without even checking?"
 
-That gets her sitting up. "By size, smallest closest to the door. If two look the same I hold one in each hand. Heavier's always a little bigger even when you can't see it." She reaches over and picks one off the sill, finding it in the dark by feel. "This one arrived in March, went in fourth from the end, and moved everything after it along. If I find another tomorrow the whole row moves again. That's the only rule there is, and nobody touches them but me."
+That gets her sitting up. "By size, smallest closest to the door. If two look the same I hold one in each hand. Bigger's not always heavier, ask anybody who's dropped one on their foot." She reaches over and picks one off the sill, finding it in the dark by feel. "This one's the size of a walnut and it weighs more than the big one next to it. Hold it. It arrived in March, went in fourth from the end, and moved everything after it along. If I find another tomorrow the whole row moves again. That's the only rule there is, and nobody touches them but me."
 
 "Why do you bother, if you're leaving the room in August?"
 

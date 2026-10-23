@@ -108,7 +108,7 @@ Ruth spits, and starts on the impression of the boy who said luck again, and by 
 
 By the following week there are theories going round about the markers being different weights.
 
-Kavi's pump count pays off in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, but she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
+Kavi's pump count pays off in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, but she leaves him to it. Nadia has it by the end of the month on her own, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
 In the last week of November a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor for years, and she stopped reading it long ago, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
 
@@ -205,7 +205,7 @@ Hearn gives it back on the Monday with a few lines at the bottom, some about a t
 
 The following week she does it again in an afternoon; the week after that it takes most of an evening, because the question is harder and she spends most of a night stuck, but this time all the pages do what only the third used to. By March she has stopped counting the hours; Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
 
-In April Sam asks her at dinner whether Hearn has got easier, and she says no, then turns her fork over once before answering. "He hasn't changed a single thing about any of it. Ten pages, every week, and the same handwriting at the bottom."
+In April Sam asks her at dinner whether Hearn has gotten easier, and she says no, then turns her fork over once before answering. "He hasn't changed a single thing about any of it. Ten pages, every week, and the same handwriting at the bottom."
 
 "Then how come you're not miserable about it any more?"
 

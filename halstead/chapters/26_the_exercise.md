@@ -10,7 +10,7 @@ At the head of the line he draws his rifle, a yellow adapter going on the muzzle
 
 A specialist runs a controller gun across the whole arrangement until it answers with short electronic beeps, and then Sam signs for the harness, the transmitter, a compass, a red-lens flashlight and thirty rounds of blank ammunition, on a hand receipt gone soft with damp, the pen skipping twice before it takes.
 
-A sergeant reads him the rules off a laminated card at the unhurried pace of a man who has already recited them a dozen times tonight: minimum engagement distance is five meters, blank ammunition is prohibited inside it, and there is no hand-to-hand on this exercise at any range whatsoever. A harness in a steady tone stops the soldier wearing it exactly where he stands, upright and visible, until a controller reaches him, controllers being the only people anywhere on the ground authorised to bring a casualty back.
+A sergeant reads him the rules off a laminated card at the unhurried pace of a man who has already recited them a dozen times tonight: minimum engagement distance is five meters, blank ammunition is prohibited inside it, and there is no hand-to-hand on this exercise at any range whatsoever. A harness in a steady tone stops the soldier wearing it exactly where he stands, upright and visible, until a controller reaches him, controllers being the only people anywhere on the ground authorized to bring a casualty back.
 
 Then the card, carrying its grids of figures and listing the checkpoints between them in the order he is required to take them.
 
@@ -90,7 +90,7 @@ Sam looks back down the last thirty feet of the cut, ground he spent that long r
 
 The man thinks about that. "Once in seven hours."
 
-"I know. That is the part I would have got wrong." Sam files it with the culvert and says no more about it.
+"I know. That is the part I would have gotten wrong." Sam files it with the culvert and says no more about it.
 
 A controller comes off the road, keys the man's harness quiet, sends him back to the weed line, and tells Sam to finish the leg, so Sam finishes the leg, because that is still the job.
 

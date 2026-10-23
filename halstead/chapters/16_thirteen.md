@@ -166,7 +166,7 @@ Nadia turns the napkin round towards Chloe with a finger.
 
 "It's not a date, it's a plate."
 
-"A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it, but nobody looked at the middle, which is where I went first. And Chloe's had it a while and she'll not say. She never says until she's certain, and she's never certain."
+"A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it, but nobody looked at the middle, which is where I went first. And Chloe's had it a while and she won't say. She never says until she's certain, and she's never certain."
 
 Chloe gets as far as "It's not" before the far end takes it up and keeps it. Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
 

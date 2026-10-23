@@ -6,7 +6,7 @@ Everything here moves at the speed of whoever finishes first, and in the first w
 
 When Chloe finishes a page and looks up, half the table is already working down the next page; by the time she catches them Ruth is ahead again. Chloe picks up the next thing the moment the last is done, all morning and all afternoon, so that Tuesday passes without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
 
-She had expected the speed to feel like a punishment, but it feels like being let out, though she cannot stop checking where everybody else has got to on the page.
+She had expected the speed to feel like a punishment, but it feels like being let out, though she cannot stop checking where everybody else has gotten to on the page.
 
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man with his thumb on a watch. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end. Where in the chapter that change happens, and how a reader is to know. She had read that chapter before the lesson, along with the ones after it, and all of them together had taken about as long as she now has to answer in.
 
@@ -22,7 +22,7 @@ Chloe writes six sentences, reads them back, and leaves every word standing wher
 
 "Then you should have thought about that earlier, before you started the sentence in the first place."
 
-Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page. A few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with hers. At her old school it would have been the longest answer in Mrs. Aldana's room by half a page, and the class would have listened to it read out on a Friday afternoon and guessed, correctly, whose it was.
+Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page. "Six," he says. "Kavi's got way more than that." A few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with hers.
 
 On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Chloe is put with Sam and Kavi, but Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
 
@@ -35,6 +35,12 @@ On the Thursday every table gets a bundle of dowels, a spool of string, one glue
 "Okay, but we're doing it flat and wide. Flat and wide is fine, it's already glued at the corners and it's not coming apart now," Sam says.
 
 "Flat and wide is a square, and a square folds, you just watched it fold."
+
+"Ruth. Go. Build. Your. Own."
+
+"I'll go when you look at the diagonal."
+
+"I looked at it. Go."
 
 Ruth walks off and does her own. Chloe watches her walk back to the next table, working out at her own speed whether a diagonal is the entire argument Ruth thinks it is. Before she has the answer, Sam has already laid a bead of glue along the first joint.
 
@@ -54,7 +60,7 @@ On the Tuesday a bucket hangs from the middle of each bridge and the weights are
 
 Across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
 
-"I told you," Ruth says, to the room.
+"I told you," Ruth says, to the room. She turns and says it again, to the three of them. "I told you."
 
 "Ruth," Sam says.
 
@@ -94,7 +100,7 @@ Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 "I did, and it works, every single time I tried it."
 
-"Then it works on everything you tried, and that's good evidence, but it isn't a reason. Keep trying to break it," Mr. Baptiste says, and moves to the next line on the board.
+"Every time so far. That's a good start. But there are a lot more numbers than the ones you tried, so go find the one that breaks it," Mr. Baptiste says, and moves to the next line on the board.
 
 "What about zero, though, does the rule actually hold up there too," Ruth says.
 
@@ -116,7 +122,7 @@ Priya's light goes off.
 
 Chloe sits in the dark with the paper on her knees and the pencil in her hand. The question turns over into something else: dividing by an eighth is asking how many eighths fit inside the thing you started with, and that is all it has ever asked. Three quarters is six of them, and six is also the answer you get by multiplying three quarters by eight, which means that multiplying by eight is the only thing turning the eighth upside down was ever doing.
 
-"Oh," she says, out loud, in the dark, then works the next few problems in the packet, going back through the ones she had already got right, one at a time, sorting the ones that came out right for the reason from the ones that came out right off the trick.
+"Oh," she says, out loud, in the dark, then works the next few problems in the packet, going back through the ones she had already gotten right, one at a time, sorting the ones that came out right for the reason from the ones that came out right off the trick.
 
 ________________
 
@@ -134,25 +140,33 @@ Ruth is in that group and complains about all of it at a volume Chloe would not 
 
 ________________
 
-Owen's door is standing open and the bed inside it is stripped to the plastic. That is how Chloe finds out he has gone: he was in her hall on the Monday, and this is Wednesday of the second week.
+Owen's bed is stripped to the plastic, and the shelf above it is bare. Sam is sitting on the bed across from it, still in his shoes. That is how Chloe finds out Owen has gone: he was in her hall on the Monday, and this is Wednesday of the second week.
 
 "Where's Owen?"
 
-"He went home, his mom came and got him yesterday, before dinner," Sam says from his own doorway, moving through it.
+"He went home, his mom came and got him yesterday, before dinner," Sam says from his bed, turning a wrapper over in his fingers.
 
 "Why?"
 
-Sam is most of the way to his bed by the time she gets the rest of it out. "Why would anybody leave in the middle of it?"
+Sam is lying back on his bed by the time she gets the rest of it out. "Why would anybody leave in the middle of it?"
 
 "He wasn't having fun, I think, and that's the reason, they'll let you go home for that."
 
 Chloe waits, giving him a beat to add to it, and by then Sam has gone back to the wrapper on something.
 
+"Not having fun?"
+
+"That's what he said."
+
+"Not having fun at all?"
+
+"I don't know, Chloe, that's what he said."
+
 "But it is fun, all of it, every single part I can think of."
 
 "I know," Sam says, and it comes out flat, like a fact.
 
-"No, but how is it not fun? We broke the bridge yesterday. We got to be the ones who broke it. And then we got to write down which part went first, and mine went right at the corner." Her own voice comes out loud, and she keeps going anyway.
+"But how is it not fun? How? We broke the bridge yesterday. We got to be the ones who broke it. And then we got to write down which part went first, and mine went right at the corner." Her own voice comes out loud, and she keeps going anyway.
 
 "I know, Chloe. Fun's one thing, but wanting to be home is a different thing, and he wanted to be home."
 
@@ -205,6 +219,10 @@ ________________
 "No," Sam says, after looking at the table for a moment.
 
 "But I'd say you were doing it on purpose."
+
+"I'm just walking around a table," Sam says.
+
+"On purpose, though. The whole way around."
 
 "The worst." Kavi says it to Sam, about Sam. "You do this every single time."
 

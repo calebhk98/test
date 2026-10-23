@@ -16,9 +16,9 @@ There's a standing line saying the graduates are believed to be in contact with 
 
 And there's an incident report from four years back.
 
-Four students left campus at night without permission, walked into town, sat in a Waffle House for two hours, and afterwards were in the car park pushing each other around in a shopping trolley.
+Four students left campus at night without permission, walked into town, sat in a Waffle House for two hours, and afterwards were in the parking lot pushing each other around in a shopping trolley.
 
-Seven men come across the car park to rob them. Three of the men are carrying firearms.
+Seven men come across the parking lot to rob them. Three of the men are carrying firearms.
 
 None of the men agrees with the others about the order of it. But they agree it was fast, that one of the students did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 

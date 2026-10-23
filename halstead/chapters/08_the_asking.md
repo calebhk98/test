@@ -134,7 +134,7 @@ What she is waiting for is the turn, because at camp there was a point in every 
 
 Her hand is still half up. "When does it get harder? I keep waiting for the part where it gets hard."
 
-Mrs. Prahl smiles at her. "That's a fair question. The sheets for this term are all pretty much like this one, a few more steps each time. The district picks the units, and I get them in a box at the start of the term. Take the rest of the packet home with you if you want to."
+Mrs. Prahl smiles at her. "That's a good thing to wonder about, and you don't have to push yourself to find out. We have the whole year. You're all smart in your own way, and this is just one hour of it." She taps the top sheet. "Take the rest of the packet home with you if you want to."
 
 Chloe finishes the packet that night sitting up in bed with the lamp on, both sides of every page of it, in under an hour, but then it's Friday, and Saturday, and Sunday, and Monday, and Tuesday, and Wednesday.
 
@@ -152,7 +152,7 @@ The second Thursday goes like the first.
 
 The jacket is Friday, and any excuse would have done as well.
 
-Her mom says put your jacket on and Chloe says no, and her mom says put it on. Then the fight is happening and her throat hurts before she has got a few words out of it.
+Her mom says put your jacket on and Chloe says no, and her mom says put it on. Then the fight is happening and her throat hurts before she has gotten a few words out of it.
 
 "You want me to be like this, you want me to stay exactly like this!"
 
@@ -174,7 +174,7 @@ Then she stands behind it with her hands shaking and her ears ringing, listening
 
 At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs answering and gets it. Her dad passes the salt before she asks for it.
 
-The third Thursday is different, because Mrs. Prahl puts them in pairs for a game with the dice; Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else; Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
+The third Thursday is different, because Mrs. Prahl puts them in pairs for a game with the dice; Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else; Mrs. Prahl comes over, says well done to both of them, and gives them a word search to work on.
 
 On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. The following Thursday Mrs. Prahl asks how she got on with it.
 
@@ -204,27 +204,29 @@ Her mom waits, sitting very still on the end of the bed; that is all of it: a ha
 
 "Nobody was mean to me," she says. "Not once, not ever, the whole time I was there."
 
-Her mom says it carefully. "Sweetheart, I need you to tell me the truth. Is somebody bullying you at school?"
+Her mom takes a second before she says it. "Chloe, is somebody being mean to you at school?"
 
-"No," Chloe says, shaking her head against the pillow.
+"No."
 
-"You can tell me if somebody is. I wouldn't go to the school with it unless you said so."
+"You can tell me if they are."
 
-"No," Chloe says again, to the wall this time. "Nobody at that school is bullying me." She works a thread loose from the pillowcase with one finger. "Bryce just thinks I talk weird. That's different from bullying."
+"Nobody's mean." Chloe works a thread loose from the bedspread. "Bryce says I talk funny. That's all."
 
-Her mom's hand goes still on Chloe's shirt. "What does Bryce say, exactly?"
+"Funny how?"
 
-"That I sound like a teacher." Chloe keeps working at the thread. "And that nobody asked him."
+"He says I sound like a teacher."
 
-"And what do you do when he says it?"
+Her mom breathes out through her nose, almost a laugh. "Well, you do a little bit."
 
-"Nothing. If I say something back he does it again the next day, and if I don't he gets bored by Friday." Chloe pulls the thread all the way out and holds it on her finger. "That isn't bullying. It's only true."
+"I know."
 
-Her mom looks at her for long enough that Chloe starts to think of something else to say.
+"Okay." Her mom pulls the bedspread straight over Chloe's feet. "Fridays are grilled cheese now. Starting this week."
 
-"Okay," her mom says. "I told you I wouldn't go to the school unless you said so, and I won't. But I'm going to ask you about your Fridays. Not just Bryce, the whole week." She smooths the back of Chloe's shirt down twice. "And if he ever does more than talk, you tell me the same day. Same day, Chloe."
+"Since when?"
 
-"Okay."
+"Since right now."
+
+"Okay," Chloe says, and wraps the thread around her finger.
 
 Chloe lies down again with her back to her mother and turns her face toward the wall; after a while her mom gets up off the end of the bed.
 

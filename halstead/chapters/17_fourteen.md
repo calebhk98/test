@@ -178,7 +178,7 @@ The no-libraries project runs for a month in the spring, and the brief is one se
 
 Her project is a text renderer that reads the font file when it loads and works the letter shapes out of the curves stored in it, adjusting them so that small type stays sharp on a screen and taking the gap between every pair of letters from the numbers in the file rather than from a table she typed out herself. Then it lays the page out again, live, while somebody drags the corner of the window around, and all of that has to land inside sixteen milliseconds or the letters tear. The finished thing runs to thousands of lines, so on the last day she drags the window around in front of Ruth and Kavi.
 
-Ruth does sound, all of it synthesised live off whatever the user is doing, and she spends days on her back on the floor of her room with the machine on her chest, playing one stretch of a few seconds until Priya bangs on the wall.
+Ruth does sound, all of it synthesized live off whatever the user is doing, and she spends days on her back on the floor of her room with the machine on her chest, playing one stretch of a few seconds until Priya bangs on the wall.
 
 "It's the attack, because every time I fix the attack it breaks the tail."
 

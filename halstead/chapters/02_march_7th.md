@@ -274,7 +274,7 @@ What she works out that month is bigger than the pencil trick: finish first, sit
 
 ________________
 
-She still knows all twenty-eight of their names, but the other children hardly ever use hers. By June, Chloe is quiet, she does what she's told, and she eats lunch by herself.
+She still knows all twenty-eight of their names, but when one of the other children needs something from her, a pencil or the next page, they just hold out a hand and say "Hey." By June, Chloe is quiet, she does what she's told, and she eats lunch by herself.
 
 On the last day they clean out their desks, where she finds a handful of pencils, somebody else's bracelet, and a permission slip from October. Chloe returns her library book that afternoon, ahead of the summer due date. Kayleigh Burns hugs everybody at the door, while Chloe watches from beside her desk with both straps of her backpack already on.
 

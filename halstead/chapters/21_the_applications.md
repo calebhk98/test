@@ -156,7 +156,7 @@ At breakfast she sits across from Bex.
 
 Bex doesn't stop eating. "I did tell him that, and it was true by the time I said it."
 
-"I drew it on the back of an exam script in April. You were there."
+"I drew it on the back of an exam paper in April. You were there."
 
 "And I said it out loud, with somebody writing it down. That's the version he's got now." Bex is already turned to the boy on her other side, giving him the geometry too, unchanged, down to the April drawing.
 
@@ -234,7 +234,7 @@ Decisions arrive across March rather than all at once, the part everyone braced 
 
 In the common room Chloe has the phone flat on her knee, going down her own list of which have posted and which have not, counting under her breath.
 
-"Chloe's are half up already, but the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
+"Chloe's are half up already, but the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has gotten to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
 
 "I was going to say that," Chloe says, not loud enough for Bex to hear, and finishes the list in her head, the phone screen down against her knee.
 
@@ -242,7 +242,7 @@ Ruth gets MIT and calls home, where her mother puts her on speaker so her father
 
 Odile gets in everywhere. The rest of the year hears about it days later, when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of half the table.
 
-Chloe gets all but two. She had spent the previous week deciding which of the fourteen were actually going to say yes, and had settled on two, the state school and the community college, and had got as far as being fine about it.
+Chloe gets all but two. She had spent the previous week deciding which of the fourteen were actually going to say yes, and had settled on two, the state school and the community college, and had gotten as far as being fine about it.
 
 Outside her window the snow along the path has gone soft and gray, the last of it, with weeks of the term left, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads twice before she believes the count, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
 

@@ -44,7 +44,7 @@ Chloe opens her mouth, then closes it, then goes upstairs to sit on the end of h
 
 Her mom's hand comes off the phone book and rests on top of Chloe's head for a moment before it goes back to the page.
 
-"Priya, then. I stood in that room and asked her questions myself, and I still couldn't tell you where she's from. You slept in a room with her for a whole month, Chloe, so you have to know something about her family. A last name, an address, the name of her school, anything at all that isn't just a first name and a bunk."
+"Priya, then. I only talked to her for a minute, the Sunday I left that place. You slept in a room with her for a whole month, Chloe. A last name, an address, the name of her school, anything at all that isn't just a first name and a bunk."
 
 "I had no idea I would need it, but now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
 
@@ -94,7 +94,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "There she is." The librarian takes it and tsks, turning the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait."
 
-"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did. Mr. Doyle kept the pieces of ours on the windowsill for a week before he let anybody take them home."
+"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did. Mr. Doyle let each of us carry a piece of ours to the bin, and I got the biggest one."
 
 "Did it now? Tell me the part about the corner again, slowly."
 

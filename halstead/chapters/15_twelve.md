@@ -22,7 +22,7 @@ Sam holds it up with an eye shut, then hands it back.
 
 Then he takes his coat off the peg because it is getting dark; the girl at the next bench walks over with a punch in her hand and admires how straight the hammer marks run down the shank.
 
-Walking back from the forge in the dark, late in November, having missed dinner again, she reaches the stairs before Marek passes the other way with a book open on his forearm and stops in front of her to tell her where he has got to, her name first and then straight into it. The chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it fast and with his finger keeping the place. She puts the burn on her wrist against the cold of the banister and asks him what was actually wrong with the line; he tells her that too, and he is right about it. Then she asks him where the pages are; he taps the side of his head and climbs the stairs.
+Walking back from the forge in the dark, late in November, having missed dinner again, she reaches the stairs before Marek passes the other way with a book open on his forearm and stops in front of her to tell her where he has gotten to, her name first and then straight into it. The chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it fast and with his finger keeping the place. She puts the burn on her wrist against the cold of the banister and asks him what was actually wrong with the line; he tells her that too, and he is right about it. Then she asks him where the pages are; he taps the side of his head and climbs the stairs.
 
 Three weeks later a row of hooks sits on the bench with one fault running through all of them, and Pruitt walks past with a bar on his shoulder, running a thumb down the scroll of the nearest as he passes.
 
@@ -66,7 +66,7 @@ Kavi pushes up off the floor and sets his back against the radiator. "Then do it
 
 "Get one of the corridor kids to do the plates. Then none of us knows anything," Sam says.
 
-"And then they're standing in a kitchen at midnight holding the answer with no reason at all to be careful with it, and they'll say it, or they'll pull a face at the wrong moment and we'll all read it off them, and the thing we're actually testing is whether Sam can taste a Wednesday, so Sam has to be in the room and not knowing," Priya says.
+"And then they're standing in a kitchen at midnight holding the answer with no reason at all to be careful with it, and they'll say it, or they'll make a face at the wrong moment and we'll all read it off them, and the thing we're actually testing is whether Sam can taste a Wednesday, so Sam has to be in the room and not knowing," Priya says.
 
 "So the cutter swaps," Ruth says.
 
@@ -108,7 +108,7 @@ Under the landing light he unfolds the scrap and reads out five right.
 
 "Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when you get them all."
 
-Saturday afternoon is the stock count: a clipboard between them, shelves of tinned tomatoes, and a walk-in cooler at the far end with hundreds more in it.
+Saturday afternoon is the stock count: a clipboard between them, shelves of canned tomatoes, and a walk-in cooler at the far end with hundreds more in it.
 
 "Four hundred and six on this one, and I'm sure about it."
 
@@ -224,7 +224,7 @@ They tie them up, wrists and ankles, on their sides, four men in a row against t
 
 Sam sits down across from her, elbows on his knees, watching the pen move rather than the men it's counting. "Four grown men," he says, to nobody in particular. "That's not very twelve."
 
-Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones, no pockets holding anything at all.
+Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work pants, plain jackets, nothing with a name on it, no wallets, no phones, no pockets holding anything at all.
 
 "They didn't even do costumes properly. Look at this. Look at this guy's boots," Kavi says.
 
@@ -298,7 +298,7 @@ Chloe reads it in the corridor, out loud and in Russian, at a volume that turns 
 
 "They were inside before the alarm went, but the sheet has that down as ours, and there is nothing on it anywhere about the sensors."
 
-"There won't be, but you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor. Chloe finds the duty officer's pigeonhole and posts a note through the slot before dinner: her name, the time, and the line about the sensors that isn't on the sheet.
+"There won't be, but you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor. Chloe finds the duty officer's mailbox and posts a note through the slot before dinner: her name, the time, and the line about the sensors that isn't on the sheet.
 
 ________________
 

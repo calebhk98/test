@@ -54,7 +54,7 @@ Chloe pushes her fork through her food and waits for her mom or dad to get to th
 
 "It's a we're talking about it," her mom says.
 
-Chloe asks once more on the Sunday but then forgets to ask again for days, because it's June and there's a sprinkler.
+Chloe asks once more on the Sunday. Then the sprinkler comes on in the yard, and for days she runs through it in her swimsuit, arms out, shrieking each time the spray catches her.
 
 ________________
 
@@ -104,7 +104,7 @@ Then the call continues a long time after that. Her mom's voice changes into the
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
-Every question gets answered straight away, quick and complete, as though the questions had all been expected.
+Every question gets answered straight away, quick and complete.
 
 When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee. "Well?"
 
