@@ -22,13 +22,13 @@ Sam does it again, and it is wrong again in a different place, and it goes on be
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
-"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off. The water is a privilege the bay lost on Tuesday, with no sign of getting it back soon.
+"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off. The hot water is a privilege the bay lost on Tuesday, with no sign of getting it back soon.
 
 "He walked off the second time with his mouth shut, though. That's the good version of it."
 
 Okoro thinks it over, decides against it, and goes back to his jaw.
 
-By the end of the first week Sam has asked a string of people how long the entire program runs, all of them have answered twenty-two weeks, but the question he asks after stops a couple of them cold.
+By the end of the first week Sam has asked a string of people how long the entire program runs. All of them answer twenty-two weeks, but the question he asks after that stops a couple of them cold.
 
 "Twenty-two weeks, and then what."
 
@@ -44,7 +44,7 @@ Ruiz walks off, but Sam accepts the answer as partial and carries on asking.
 
 ________________
 
-The fitness test comes in the second week, on the gravel behind the barracks before the sun is properly up: breath showing, a folding table at the end of it carrying a clipboard, a scale, a stopwatch, a line of privates stamping their feet at the other.
+The fitness test comes in the second week, on the gravel behind the barracks before the sun is properly up: breath showing, a folding table at the end of it carrying a clipboard, a scale, a stopwatch, a line of privates stamping their feet at the other end.
 
 Six events, a hundred points possible on each, sixty required to pass on each, and Sam is meeting most of them for the first occasion in his life: deadlift, standing power throw, hand-release push-ups, the sprint-drag-carry, a plank, two miles.
 
@@ -88,7 +88,7 @@ Word travels round the company by chow that day, the way a number like that alwa
 
 "A girl."
 
-"She was second in the year and I was first, but she still put me down twice." He pours, taking his time, and sets the pitcher back in the middle of the table in exactly the spot he took it from. "Then in April I lost a small thing out of my own boot and had to go and ask a friend to get me back in, so you can have that as well."
+"She was second in the year and I was first, but she still put me down twice." He pours, taking his time, and sets the pitcher back in the middle of the table in exactly the spot he took it from. "Then one April I lost a small thing out of my own boot and had to go and ask a friend to get me back in, so you can have that as well."
 
 By the end of it several of them are laughing at him, but another has stopped believing a word of any of it.
 
@@ -128,7 +128,11 @@ Instead of pointing at it he walks them the bearing, and they find the point tog
 
 Mail call is on the printed schedule, and the drill sergeants run it standing up, holding each envelope out at arm's length, charging push-ups by the letter, paid gladly by the entire platoon. Personal time runs until lights out, and half the bay spends it on boots, the other half on paper.
 
-Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive about the age of ten. He reaches as far as the six hundred once, the number sitting alone in the middle of a fresh sheet, before he tears the page free, balls it, and starts again from the top, because six hundred is not a number that means anything to a woman who has never seen the card it comes off. Okoro, writing his own letter on the rack across the aisle, watches the paper go into the bin and says nothing about it until the second sheet is half full. "Number too good to send her?" "She wouldn't know what it was. I've put full marks on the fitness one, which is what it says in English." Sam keeps writing. What she finds is the cold, a drill sergeant who yells at everyone and means well by it, the length of a meal, full marks on the fitness test, and every other part of it in words she has a use for.
+Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive about the age of ten. He reaches as far as the six hundred once, the number sitting alone in the middle of a fresh sheet, before he tears the page free, balls it, and starts again from the top, because six hundred is not a number that means anything to a woman who has never seen the card it comes off. Okoro, writing his own letter on the rack across the aisle, watches the paper go into the bin and says nothing about it until the second sheet is half full.
+
+"Number too good to send her?"
+
+"She wouldn't know what it was. I've put full marks on the fitness one, which is what it says in English." Sam keeps writing. What she finds is the cold, a drill sergeant who yells at everyone and means well by it, the length of a meal, full marks on the fitness test, and every other part of it in words she has a use for.
 
 Okoro asks him once who it goes to.
 
@@ -138,9 +142,9 @@ Okoro asks him once who it goes to.
 
 ________________
 
-Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
+Qualification is the second Thursday of October, in the tenth week, and it is forty targets.
 
-The morning comes up gray and low, with the kind of cold that reaches the fingers well before it reaches anything else. Pop-up silhouettes standing out from fifty meters to three hundred, eight exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
+The morning comes up gray and low, with the kind of cold that reaches the fingers well before it reaches anything else. Pop-up silhouettes standing out from fifty meters to three hundred, eight exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. Four ten-round magazines, changed on the clock, three minutes and fifty-eight seconds from the first exposure to the last.
 
 Sam counts himself down, then works the table at an easy pace that leaves him waiting on the tower twice.
 
@@ -156,13 +160,9 @@ The company commander is on the range because qualification numbers are his to r
 
 "They had a range at your school."
 
-"Yes, sir." Sam stays where he is. "Sir, that's a good sheet but a bad number. My accuracy runs forty percent, and it has been forty percent since I was fifteen."
+"Yes, sir." Sam stays where he is. "Sir, that's a good sheet but a bad number. My accuracy runs forty percent, and it has been forty percent since I was fifteen. There are people I went to school with sitting on ninety."
 
 The captain looks at the card in the drill sergeant's hand, where the score is written in pencil.
-
-"Say that to me again."
-
-"Forty percent, sir. There are people I went to school with sitting on ninety."
 
 "Forty percent of what, Private."
 
@@ -172,7 +172,7 @@ The drill sergeant turns the card face down against his leg.
 
 "So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. But a girl in my year was on ninety-one and she was bored the entire time she was doing it."
 
-The captain's voice has come down rather than gone up. "Private, nobody shoots a bullet out of the air. Not here, not at Benning, not anywhere I have been in sixteen years, and not in any story I have heard a man tell about somewhere he used to be. There is no machine and there is no lane. It is not a thing that is done." The captain waits, and Sam says nothing, because none of that is a question. "So one of two things is true. Either something was going on at that school that you have got badly wrong, or you are standing on my range at seven in the morning telling me a story. I have already called the number on your file once today, and I intend to call it again this afternoon whichever it turns out to be. Where did you go to school?"
+The captain's voice has come down rather than gone up. "Private, nobody shoots a bullet out of the air. Not here, not anywhere I have been in sixteen years, six of them enlisted, and not in any story I have heard a man tell about somewhere he used to be. There is no machine and there is no lane. It is not a thing that is done." The captain waits, and Sam says nothing, because none of that is a question. "So one of two things is true. Either something was going on at that school that you have got badly wrong, or you are standing on my range at seven in the morning telling me a story. I have already called the number on your file once today, and I intend to call it again this afternoon whichever it turns out to be. Where did you go to school?"
 
 "Halstead, sir."
 
@@ -194,11 +194,11 @@ Sam picks up his brass, since leaving brass on the ground is among the earliest 
 
 ________________
 
-The captain writes it out that evening at a folding desk under a bare bulb, longhand first, with a cold cup of coffee pushed away into the corner, crossing the second paragraph through twice before it says what he intends it to say.
+The captain writes it out that evening at a folding desk under a bare bulb, longhand first, crossing the second paragraph through twice before it says what he intends it to say.
 
 Three separate documents leave the company by Friday, but a fourth sits under his hand for a good while first.
 
-The first is a memorandum for record, four paragraphs long, three of them laying out the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the talk to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received special instruction from an unknown source, and says the question needs answering before the Army places him anywhere at all.
+The first is a memorandum for record, four paragraphs long, three of them laying out the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the talk to the nearest quarter hour. The fourth paragraph quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received special instruction from an unknown source, and says the question needs answering before the Army places him anywhere at all.
 
 The second goes to the supporting counterintelligence office, under the standing rule that puts unexplained special training in front of somebody whose job it is to look at it; the captain has sat through that briefing each year he has served and can list the flagged types from memory.
 
@@ -206,7 +206,7 @@ The third is a request to the battalion S-2 for the education block of the soldi
 
 The fourth is a mental health referral, signed last, and it travels up with the other three.
 
-By the next Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman well above the captain; the fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from under that stack a folder far older than the captain's commission.
+By the next Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman well above the captain; she reads the fourth paragraph and then sets the memorandum on top of a stack rather than into it, and draws out from under that stack a folder far older than the captain's commission.
 
 ________________
 

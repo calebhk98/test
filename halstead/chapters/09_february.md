@@ -58,7 +58,7 @@ Later, when she is in bed and supposed to be asleep, her parents are at the kitc
 
 "You haven't said it back, though, which is exactly what I'm telling you, and I have been the only one saying anything about any of this since August, and I am so tired of being the only one who has to."
 
-"What kind of family sends a seven-year-old away to live in a building four hours from her mother? Say that one out loud in a room and listen to how it sounds, because I have been saying it to myself since August and it has not got any better."
+"What kind of family sends a seven-year-old away to live in a building four hours from her mother?" her mother says. "Say that one out loud in a room and listen to how it sounds, because I have been saying it to myself since August and it has not got any better."
 
 Her voice comes harder now. "Say something, Dave, actually say something, instead of standing in doorways with a dishcloth."
 
@@ -90,13 +90,9 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "We're saying yes. You can stop asking now," her mom says.
 
-"Say it again," Chloe says, "say all of it again."
-
-"We're saying yes, Chloe, we're saying yes," her mom says.
-
 "Is that a true thing you're saying, or is it a thinking about it thing?"
 
-"It's true, it's a true thing and I'm not saying it a third time," her dad says.
+"It's true, it's a true thing," her dad says.
 
 She screams. It rises, holds there and keeps going after the breath behind it should have run out. Her dad's hand lifts off his knee but stops halfway to his ear, and her mom says her name twice without finishing it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way; she is saying thank you into his shoulder with no gap between the words. Then she's off him, around the coffee table, and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
@@ -132,15 +128,15 @@ Her parents sit in the living room and listen to her going back and forth over t
 
 Her mom's voice drops to something Chloe catches only just. "I know what she's like."
 
-Her dad brings up the house again in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter with the mug in both hands.
+Her dad brings up the house in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter with the mug in both hands.
 
 "They're offering us a house," her dad says, "minutes from campus, furnished, and they pay for it as long as she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
-"No, absolutely not." Her mother's hands stay around the mug. "I'm not going to spend an hour talking myself into it either."
+"No, absolutely not. I'm not going to spend an hour talking myself into it either."
 
 "Meg, we'd see her every day of the week instead of ten weeks a year, and that's the whole trade they're offering us."
 
-"I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds. You can say it a third time if you want, and I'll still be standing right here saying no."
+"I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds."
 
 Dave rubs a hand over his face. "Then give me one reason. I have been sitting here trying to think of one, but I can't."
 

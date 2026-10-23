@@ -12,7 +12,7 @@ Kavi says it from down the line. "That's the opposite of what we do with the pai
 
 Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. You want to read a shoulder at seventy meters, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
 
-"Right, so a point stays away from a person, even by accident."
+"Right," Ruth says. "So the points stay away from people, even by accident."
 
 Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in towards the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
 
@@ -24,7 +24,7 @@ Bell looks down the field at it. "The block stays where it is and none of you wi
 
 "So how are we supposed to know when to let go of it?"
 
-Bell turns the metronome on. "Keep your eyes off each other. Off the whole time, both ends. You count."
+Bell turns the metronome on. "Keep your eyes off each other, both ends, the whole time. You count."
 
 ________________
 
@@ -54,7 +54,7 @@ On the first morning of the year Ruth wants to know what everybody has got; Chlo
 
 "Latin's cheating, and you know exactly why."
 
-"How is doing an whole extra language cheating?"
+"How is doing a whole extra language cheating?"
 
 Ruth stops with her tray up on an arm. "Because it's already in everything. It's in half of Spanish and most of French, both of which you've done, so you'll sit down in September already knowing a third of it. That's collecting on a language you did years ago rather than learning one."
 
@@ -62,13 +62,13 @@ Ruth stops with her tray up on an arm. "Because it's already in everything. It's
 
 "That is what I said," Ruth says. "It's still cheating."
 
-Chloe holds her tray like somebody who intends to keep it. "It's the opposite of cheating, it's the year paying for itself twice. I've got German coming, Italian's on the list, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
+Chloe holds her tray like somebody who intends to keep it. "It's the opposite of cheating, it's the year paying for itself twice. I've got German coming, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
 
 "German is an assumption, since that timetable hasn't come out yet."
 
 "It hasn't come out saying otherwise, either."
 
-Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, for ever."
+Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who spoke it as a kid has been dead a very long time, so every ending you get wrong can stay wrong in private."
 
 "Answering back is beside the point. What I want is to read what's already sitting in it."
 
@@ -76,25 +76,25 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, and asks it again twice more, until she has both ways of measuring it in full, start to finish, and where they disagree.
+Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring how fast it is expanding, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, then asks about each method until she has both in full, start to finish, and where they disagree.
 
-Down the table, Sam works out twice why the ship needs to be mostly fuel and gets the ratio backward before Kavi corrects him. When he has it right on the third try, on his own, Bex turns from her plate and gives it to the boy on her other side complete, beginning to end, Sam's name on the front of it. Sam goes back to his food.
+Down the table, Sam works out why the ship needs to be mostly fuel and gets the ratio backward before Kavi corrects him. When he has it right, on his own, Bex turns from her plate and gives it to the boy on her other side complete, beginning to end, Sam's name on the front of it. Sam goes back to his food.
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, before Chloe had said a word of it to him herself, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
 
 Chloe keeps her bag zipped under the desk, and does not turn round to see whether Bex found her. On the way out she catches Kavi in the corridor and gives him both numbers herself, out loud, before Bex is through the door. The walk down to the field is long and empty either way. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
 
+At dinner Kavi asks whether she got the essay in all right, meaning yes or no, and gets which of the two she would bet on and why she would not bet much, and where in the fortnight she stopped being sure. He waits for her to finish, then tells her which of the two he would bet on, and they are on it when the plates go.
+
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
 Art history is in the spring. In February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
-
-Kavi asks whether she got the essay in all right, meaning yes or no, and gets the two ways of measuring the age of the universe, why they disagree, which one she would bet on and why she would not bet much, and where in the fortnight she stopped being sure. He waits for her to finish, then tells her which of the two he would bet on, and they are on it when the plates go.
 
 Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched between them the whole time. Nobody touched it, nobody even opened the case, and the price still went up while it just sat there doing nothing."
 
 "Inflation," Kavi says around a mouthful.
 
-Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
+Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty dollars, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
 "Ask her again, properly this time," Kavi says.
 
@@ -124,7 +124,7 @@ Bex says it over her shoulder, to the table, with the bottom of the slip folded 
 
 Kavi says, "Not stupid." He is eating again. "Everyone wants it. I'd swap you for juries in a heartbeat."
 
-Her fork is in her hand and still unused. "It's a stupid question because it's got an answer, and they knew what was under them. February, then again in March, then again in May, and every single time somebody sat in a room and signed it. I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
+Her fork is in her hand and still unused. "It's a stupid question because it's got an answer, and they knew what was under them. February, then again in March, then again in April, and every single time somebody sat in a room and signed it. I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
 
 "Then you'll get a C and he'll be right to," Sam says.
 
@@ -154,7 +154,7 @@ Between the second floor and the third, she finds Ruth on the stairs.
 
 "He gave me a B on it."
 
-"On twice the length," Ruth says. "You did double the words, but he took a grade off you for it."
+"On almost three times the length," Ruth says. "Nearly triple the words, and he still took a grade off you."
 
 Chloe holds the pages and goes up the stairs backwards. "That's beside the point of why I'm annoyed. He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
 
@@ -192,7 +192,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in an whole year is hardly a lot, is it," she says.
+Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in a whole year is hardly a lot, is it," she says.
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 
@@ -220,8 +220,6 @@ By late afternoon there are four teachers left standing in the whole building, t
 
 The board the next day says the staff lost the building at three forty-two, but gives the students a B and lists the failures.
 
-Chloe reads them in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space, because she spent those hours on a landing while the number of teachers upstairs went uncounted.
+Chloe reads them in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space.
 
 It is still with her at dinner, where Sam has the bannister up for the fourth time in front of people who were standing underneath it.
-
-"I got a hand on the rail and the rest of me went over the top of it. That part worked. Then the floor came up at me."
