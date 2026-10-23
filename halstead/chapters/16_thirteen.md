@@ -4,9 +4,9 @@
 
 A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
 
-Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student and the thirteens the only year with no teacher of their own. On the stairs, in the first fortnight, she works that out, tells Ruth, and gets a shrug and half a sandwich.
+Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student. On the stairs, in the first fortnight, she works that out, tells Ruth, and gets a shrug and half a sandwich.
 
-The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though Chloe can talk them out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
+The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Gus want the answer handed over, though Chloe can talk them out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
 
 Marek's sheet comes back blank, week after week.
 
@@ -48,7 +48,7 @@ A week later she stops at the mathematics office on her way past and asks how a 
 
 Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column counts on her record as well as his, and she has been asking him for it since October; asking him is the whole of what she is allowed to do about it.
 
-Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In January he is at breakfast as he was in December, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. Whatever it costs him, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
+Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In September he is at breakfast as he was in June, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. Whatever it costs him, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
 
 ________________
 
@@ -66,7 +66,7 @@ By November she stops doing it, and by February she stops resenting it.
 
 German is the language this year, and half its grammar is a frame she already has from Latin, cases and all, while the vocabulary outside that frame sits close enough to English that she barely has to translate it, so by November she reads with the dictionary open beside her, but hardly touches it. When she says so at dinner Ruth points a fork at her and calls it the exact argument Chloe made in a doorway two years ago, held now at a table in front of Sam.
 
-The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports; neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
+The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports; neither document says which of them, or when, or by whom. Twenty-three days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
 
 In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
@@ -128,7 +128,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 "I went left," Kavi says. "You'd worked out I go left, so left was the surprise."
 
-Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway. I could hand you the payoff matrix right now and you'd still find the one cell that isn't on it."
+Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the best move against a good player and not the player in front of you, and you keep doing the reverse of it and winning anyway. I could hand you the payoff matrix right now and you'd still find the one cell that isn't on it."
 
 Sweeping the counters into his hand, he is enjoying himself. "It's what the person says, not what the table says. You keep playing the table, but I'm playing you."
 
@@ -172,7 +172,7 @@ Chloe gets as far as "It's not" before the far end takes it up and keeps it. Sam
 
 Nadia waits for him to finish.
 
-"It could be a date. Dates have letters in them too, sometimes."
+"It could be a date," Chloe says. "Dates have letters in them too, sometimes."
 
 "It's got a letter in the middle of it, and you already know what that means." Nadia keeps her finger on the napkin.
 

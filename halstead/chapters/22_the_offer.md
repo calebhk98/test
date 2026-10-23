@@ -183,6 +183,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 "Dave." Her mother's voice moves off the phone and comes back closer, both of them on the line now, close enough for Chloe to hear them breathing on top of each other.
 
 "I got all of that from the doorway," her father says.
+
 Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the one who says so. I've said harder things to you than this over smaller money, and I'm not about to start being careful now."
 
 "Dave."

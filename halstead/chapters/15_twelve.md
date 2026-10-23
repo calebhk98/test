@@ -118,7 +118,7 @@ Saturday afternoon is the stock count: a clipboard between them, shelves of tinn
 
 "Sam," Ruth says, pointing at the floor with her chin. "They're by your foot."
 
-They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to nineteen and finishes the cooler before dinner.
+They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to twenty-three and finishes the cooler before dinner.
 
 Chloe goes to the library about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
 
@@ -152,13 +152,13 @@ The alarm wakes her at four in the morning, the small one that sits in her ear a
 
 Ruth arrives with her hair everywhere. "Nobody said anything about tonight. There was nothing on the board. I looked on Tuesday."
 
-Sam arrives last, and in under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "And the key is whatever they typed at pairing, run through nothing. No salt, nothing stretching it, straight in." He's already got the campus cluster chewing on it. "So you don't go at the cipher, you go at the derivation. Run everything a person can type in a hurry and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+Sam arrives last, and in under thirty seconds Kavi is on their comms. "It's AES-256," he says. "And the key is whatever they typed at pairing, run through nothing. No salt, nothing stretching it, straight in." He's already got the campus cluster chewing on it. "So you don't go at the cipher, you go at the derivation. Run everything a person can type in a hurry and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
 "How is that AES-256," Sam says, wiping his face. "Why wouldn't they carry something better?"
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
-Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this, but my dad sells insurance."
+Ruth reads over his shoulder. "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this, but my dad sells insurance."
 
 "I know," Kavi says. "The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for."
 
@@ -208,7 +208,7 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 All four of them turn; the nearest one comes at her fast and low, clamps a gloved hand up near her mouth, but she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
 
-It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, but Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, wrenches an arm free, swings, and misses before he goes down.
+It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, but Sam goes for the one with his hand on Chloe's face, doing it badly, missing the first time and going again. The man takes that half a second, wrenches an arm free, swings, and misses before he goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to, while Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
 
@@ -218,7 +218,7 @@ Chloe steps back out of the way and sits down on the floor because her legs have
 
 "Both were in eventually," Kavi says.
 
-"Yeah, but he almost hit Chloe, the one person we needed to take down correctly, and I messed up."
+"Yeah, but he almost hit Chloe, the one guy we needed to take down correctly, and I messed up."
 
 They tie them up, wrists and ankles, on their sides, four men in a row against the corridor wall, and then they sit with them, just like protocol says. Ruth has the antidote out as she counts respirations on each of the four every two minutes and writes the numbers on her arm in pen, for lack of paper.
 
@@ -264,25 +264,19 @@ The third one wakes up about a minute later, younger, less good at keeping his f
 
 "Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
 
-"No, I'm actually asking, you don't have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
-
-Kavi keeps sorting through the bag of equipment. "Four seconds of compute."
-
-"Four seconds," Sam says, like it offends him.
-
 "He's not going to answer you," Ruth says.
 
 "I know he's not supposed to answer me, I'm sure he gets paid based on not talking to us, I'm making a point." Sam sits back. "And another thing, nobody told us, there was nothing on the board. You don't run it at four with nothing on the board, that's not, like, that's not how it goes."
 
-"I was enjoying my sleep too," Ruth pipes up. 
+"I was enjoying my sleep too," Ruth pipes up.
 
 "What do you think we're getting," Sam says, to the man on the floor. "Honestly. What would you give us?"
 
-The man looks at him, his jaw working once. "I don't know," he says. 
+The man looks at him, his jaw working once. "I don't know," he says.
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it. The bolt cutters wrong for that fence, the boots wrong, all of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it works out no different either way. A man's chest going up and down a few feet away sits on that list with the bolt cutters.
+Chloe works at the wrongness of it while Sam talks. The bolt cutters wrong for that fence, the boots wrong, all of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it works out no different either way. A man's chest going up and down a few feet away sits on that list with the bolt cutters.
 
 Sinclair arrives with two other adults and a trolley, stops at the corner, and looks at the four men tied along the corridor wall, at the bags, and at the four kids sitting on the floor near them, arms crossed. "Who's monitoring?"
 
@@ -298,7 +292,7 @@ Chloe gets a C, no different from Sam's, Ruth gets a B minus and brings it up fo
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 
-Chloe reads it in the corridor, out loud and in Russian, at a volume that turns the far end of it, but Ruth reads the sheet over her shoulder and waits her out.
+Chloe reads it in the corridor, out loud and in Russian, at a volume that turns heads at the far end, but Ruth reads the sheet over her shoulder and waits her out.
 
 "Put it in English and I'll agree with you."
 
