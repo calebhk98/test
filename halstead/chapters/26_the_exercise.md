@@ -2,7 +2,7 @@
 
 *February 2024*
 
-The exercise is called Winter Anvil, the first one since Sam reached his unit in January. It runs four days and nights, and the name has been up on the board outside the orderly room for weeks, where Sam reads it on his way past.
+The exercise is called Winter Anvil. It runs four days and nights, and the name has been up on the board outside the orderly room for weeks, weeks of Sam reading it on his way past.
 
 Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody hands the man ahead of him a second flashlight when the first refuses to come on.
 

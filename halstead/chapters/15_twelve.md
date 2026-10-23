@@ -118,7 +118,7 @@ Saturday afternoon is the stock count: a clipboard between them, shelves of tinn
 
 "Sam," Ruth says, pointing at the floor with her chin. "They're by your foot."
 
-They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to twenty-three and finishes the cooler before dinner.
+They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to twenty-one and finishes the cooler before dinner.
 
 Chloe goes to the library about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
 

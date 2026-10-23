@@ -18,7 +18,7 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are so few of them, and most of them were standing there when it happened.
 
-She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has twenty-three, and more than half of them sit outside the list of employers she has driven to herself.
+She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has twenty-six, and more than half of them sit outside the list of employers she has driven to herself.
 
 Opened, they all carry the same job description, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 

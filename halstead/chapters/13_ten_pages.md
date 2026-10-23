@@ -84,7 +84,7 @@ They come out of it still talking, Chloe going back through the barrel and the f
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
-By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have twenty-three. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it.
+By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have twenty-seven. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it.
 
 Kavi watches it again on his own, marker up though it isn't loaded, at the wall bars, timing the pump against his own count until three tries in a row come out even. He says the number out loud before he trusts it. Bex is at the far end of the mats, lacing a shoe.
 
