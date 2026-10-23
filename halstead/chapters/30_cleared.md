@@ -38,7 +38,7 @@ Before he asks her anything, he tells her what the visit is for: a full accounti
 
 "Does any of it get released? After. To me, or to anyone else."
 
-"It goes into your file," Whitaker says, "and the file is controlled. Nobody opens it without a reason on record, whoever comes asking about you later."
+"It goes into your file, and the file is controlled. Nobody opens it without a reason on record, whoever comes asking about you later," Whitaker says.
 
 That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is for; she gives him more than the minimum from the first page onward.
 

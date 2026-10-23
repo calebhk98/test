@@ -10,7 +10,7 @@ Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
 Kavi is on the next mat with his chin on his forearms, watching the flag. "Six weeks. It was that on the nerf and that on the paint, so the same again, and then they hang it off something, then they make it move, then we get the good one."
 
-"That's generous," Sam says, "because Ruth's already bored and you'd have to know her to tell."
+"That's generous, because Ruth's already bored and you'd have to know her to tell," Sam says.
 
 "Ruth was bored in the briefing," Odile says, at which Ruth puts three rounds through one hole with her cheek still down on the stock, then rolls onto her side to ask whether anybody has water.
 

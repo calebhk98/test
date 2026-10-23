@@ -114,7 +114,7 @@ The parking lot, the boxes, the question that had already happened without her: 
 
 "Because what she actually said was that you can do the work when you want to, which sounds like she's saying it's a choice thing, but I think she has that wrong." Her mom turns around in her seat. "Is it a choice thing? You're not in trouble here."
 
-"I don't know," Chloe says, "I already told you I don't know."
+"I don't know, I already told you I don't know," Chloe says.
 
 "Do you like school?" her dad asks, finding her in the mirror. Chloe opens her mouth but stops. "It's good," she says.
 

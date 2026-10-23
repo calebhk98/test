@@ -20,7 +20,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "So is a sub roll, but every sub you have eaten in your life you have called a sandwich. A hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
 
-"Then it's a different food," her father says, "because you changed what's holding what, and that's the whole difference between the two."
+"Then it's a different food, because you changed what's holding what, and that's the whole difference between the two," her father says.
 
 "It's the same food, because all I did was cut it, and a cut is just a cut, not a transformation. Nobody has ever bitten into anything and tasted the hinge."
 
@@ -36,7 +36,7 @@ Her father is smiling about it. "I've been arguing that one since college, but s
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
-"She used to hum in the car," her mother says, "and only in the car, like it was something she needed the engine noise to cover."
+"She used to hum in the car, and only in the car, like it was something she needed the engine noise to cover," her mother says.
 
 "I know, because I hear it too, and it stopped a few weeks after she got back."
 

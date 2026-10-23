@@ -182,7 +182,7 @@ Her dad's position is that all of that is true but she should go anyway. They ha
 
 "That's not fair."
 
-"No," he says, "it isn't."
+"No, it isn't," he says.
 
 On the eighth day her mom also comes into Chloe's room, sits down on the end of the bed, and asks her why she wants to go.
 

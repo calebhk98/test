@@ -14,7 +14,7 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 
 "It exists, because they showed me a photograph of it with a driver next to it," a man says, and somebody laughs.
 
-"My wife had it down as a phishing scam," the first man says, "where they ask for a deposit at some point, and then it's a wire transfer, and then a different number to call."
+"My wife had it down as a phishing scam, where they ask for a deposit at some point, and then it's a wire transfer, and then a different number to call," the first man says.
 
 "That's what we thought, and we had a family meeting over it that night, about a summer camp," says the man beside him, and folds his paper plate in half.
 
@@ -32,7 +32,7 @@ Several of them answer at once: "They said they have a list."
 
 "We got the list, and then a paragraph on how the list is compiled, which explained the paragraph, but not the list. Read the whole paragraph and you still don't know a single name that's on it or why."
 
-"They told us the list is a good list," the woman says, "which leaves the whole question of good at what."
+"They told us the list is a good list, which leaves the whole question of good at what," the woman says.
 
 "She's top of her reading group at home," somebody's mother says to the table generally, finding a spot on the wood.
 
@@ -172,7 +172,7 @@ For a moment the only sound in the hall is a door somewhere down the next sectio
 
 Chloe runs the numbers again, the ones she has been running since the drive down: four hours in the car each way, a whole day of driving to put her somewhere, a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
 
-"Chloe," Sam says, "obviously."
+"Chloe, obviously," Sam says.
 
 "Obviously." She holds on to the pajama leg. "I just have to work it out. It's four hours there and four back, so I have to get Mom and Dad to say yes to a whole day of driving, and then another one at the end. But it's school. They like school. And the letter said it doesn't cost anything, so it's only the driving, and four hours is only four hours."
 

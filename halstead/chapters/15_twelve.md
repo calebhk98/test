@@ -36,7 +36,7 @@ That month Bell takes the metronome off the post and pockets it in front of all 
 
 "Which of us calls it?" Odile says.
 
-"That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first. Whoever calls the count is the one whose bad afternoon everybody else has to have."
+"That's the two of you to sort out, and I'd think about it first. Whoever calls the count is the one whose bad afternoon everybody else has to have," he says, buttoning the pocket.
 
 Chloe and Odile take a week to settle it and spend most of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her over several sessions. Odile calls for November and ends up hating it, so after Christmas they swap according to the day, but the hit rate drops for a fortnight, then climbs again.
 
@@ -322,7 +322,7 @@ Her mother stops with the spoon out over the dish, only the steam moving at that
 
 Her father makes a noise into his glass and puts a hand over his mouth, but her mother looks at him with her chin down until the hand drops away, after which he folds his napkin into quarters in front of him.
 
-"Four hours of counting tomatoes sounds about right to me," her mother says, "and you stay in your own room after lights out, Chloe, whatever list you happen to be on, because you are twelve years old."
+"Four hours of counting tomatoes sounds about right to me, and you stay in your own room after lights out, Chloe, whatever list you happen to be on, because you are twelve years old," her mother says.
 
 "Okay, I'll stay in my room," she sighs.
 

@@ -130,7 +130,7 @@ Her mom's voice drops to something Chloe catches only just. "I know what she's l
 
 Her dad brings up the house in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter with the mug in both hands.
 
-"They're offering us a house," her dad says, "minutes from campus, furnished, and they pay for it as long as she's enrolled, and if she leaves it stops, which is the only condition on the deal."
+"They're offering us a house, minutes from campus, furnished, and they pay for it as long as she's enrolled, and if she leaves it stops, which is the only condition on the deal," her dad says.
 
 "No, absolutely not. I'm not going to spend an hour talking myself into it either."
 
@@ -140,7 +140,7 @@ Her dad brings up the house in April, on a Saturday, with Chloe up the road at t
 
 Dave rubs a hand over his face. "Then give me one reason. I have been sitting here trying to think of one, but I can't."
 
-"Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
+"Because if we take their house, then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well," her mother says.
 
 Dave looks at the table.
 

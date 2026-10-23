@@ -150,7 +150,7 @@ She tells Iyad to stop, at the long table, in front of the same people he said i
 
 He asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
 
-"Four," Chloe says, "all of them since you started it, and I could give you the number for everybody else on your list too, since you're the one who keeps it." Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
+"Four, all of them since you started it, and I could give you the number for everybody else on your list too, since you're the one who keeps it," Chloe says. Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
 
 She stops using the language-block stairs.
 
