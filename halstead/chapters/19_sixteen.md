@@ -24,7 +24,7 @@ Sam goes quiet the length of the corridor.
 
 When the list is posted on the corkboard days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row, the verdict and then the margin.
 
-"Fail," she says. "By four points, out of two hundred."
+"Fail. By four points, out of two hundred," she says.
 
 Kavi looks at the board, then at her, then back at the board, his own row a few lines above hers.
 
@@ -84,7 +84,7 @@ A week into May she writes her first practice paper, at a table in the library w
 
 "Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out. A blank space tells him you knew where to stop. A repeated sentence tells him you didn't."
 
-"It's the same sentence," she says. "Just restated so it sounds like it's adding something."
+"It's the same sentence. Just restated so it sounds like it's adding something," she says.
 
 "It's the same sentence to you. You already know why the risk sits with the buyer. The marker has to be given that reasoning, not assumed to already have it, and right now the page hands him the same idea twice. He can only mark what is actually on the paper in front of him, not the paper you'd have written if you'd had more room to write it." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 

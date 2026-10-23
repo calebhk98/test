@@ -12,11 +12,19 @@ Advising sends her back to the department, and the department sends her to advis
 
 A woman in the department office finally reads the whole folder, not just the top page, and squares it back together before she answers.
 
-"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either; there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here, and none of it was wasted, it just wasn't going to change what's already been decided. I sat on this committee for the two years before yours; I have written this exact letter more times than I can count, and it does not get easier to write."
+"The sequence you're in is the only sequence there is for first-years in the fall. I can't move you, and neither can your advisor. In the spring there's a proof-based section of the next subject up, taught by the people who teach the graduate courses. Instructors take students into it once they've finished the first subject, and the instructor has to sign off. That's the prerequisite, and they don't waive it. I'm sorry. I can see how much of this you did before you came in here, and it will count when you ask."
 
-"That can't be right. The material in the opening weeks belongs to a course pitched years behind where a school like this ought to be placing me. I sat a diagnostic in August and I would like to know what it was actually for."
+"So I finish the class I'm in, and then I'm allowed to ask."
 
-The woman repeats that it's the placement anyway, and offers her a pamphlet about tutoring resources that stays on the counter after Ruth leaves. Ruth keeps the folder. The mistake, she decides, is bigger than one office can fix, something upstream of advising and the registrar both. Ruth puts it in the folder under problems she'll solve once she works out who actually owns them.
+"You finish it with a grade. Then you ask."
+
+"That's the screen, then," Ruth says, quietly.
+
+"Pardon?"
+
+"Nothing. Thank you."
+
+She puts the folder in her bag and goes down the stairs counting the landings. The class she's in has to be finished before the hard one opens. Nobody who held the real track would run it that way unless the first class was the test. By the street door she has stopped planning her next office. The folder goes on a shelf above her desk under problems she'll solve once she works out who actually owns them, and on Monday she is in the third row with her hand in her pocket on a pen she doesn't need.
 
 The classes themselves settle into a shape she recognizes from the middle years at Halstead: a problem set due Friday that takes her forty minutes on a Tuesday, a lecture that spends fifty minutes proving something she could prove in three. In recitation, half the room is still copying the professor's board by the time she's already checked her answer against the back of the book. Out of habit, not ambition, she sits in the third row, and finishes early enough most weeks to read ahead into the following week before the hour is up. When a preceptor hands back a problem set with a perfect score and no comment, she catches him at the door of the section room before he can leave and asks him straight whether a class this easy is normal for the room or just for her. He says he hasn't graded enough of these to know yet, and goes back to his stack. She reads the shrug as confirmation anyway: a correct answer earns silence, and so does a class already pitched at the right level for the room.
 
@@ -78,9 +86,9 @@ At the first he nods, but at the second he doesn't, and he sits back off the pag
 
 "The tail dies before the boundary does."
 
-From there he goes back up through it, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen.
+From there he goes back up through it to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end he tells her the result holds and caps the pen.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." The pen stays down on the desk while he says it, and he waits long enough afterward that she has to be the one who ends it.
+"That took you five passes," he says. "I've taught this with the footnote version for years. The one that says the tail is assumed away. Yours says when you're allowed to." He taps the margin where she wrote the line about the tail dying before the boundary. "I want that sentence in the write-up, with the condition under it." The pen stays down on the desk while he says it, and he waits long enough afterward that she has to be the one who ends it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

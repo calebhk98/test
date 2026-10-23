@@ -134,7 +134,7 @@ What she is waiting for is the turn, because at camp there was a point in every 
 
 Her hand is still half up. "When does it get harder? I keep waiting for the part where it gets hard."
 
-Mrs. Prahl smiles at her. "Let's not rush it, we've got all year to get all the way through this properly. Take the rest of the packet home with you if you want to. Some children get there in October and some get there in May. Both of those are the same speed as far as I'm concerned."
+Mrs. Prahl smiles at her. "That's a fair question. The sheets for this term are all pretty much like this one, a few more steps each time. The district picks the units, and I get them in a box at the start of the term. Take the rest of the packet home with you if you want to."
 
 Chloe finishes the packet that night sitting up in bed with the lamp on, both sides of every page of it, in under an hour, but then it's Friday, and Saturday, and Sunday, and Monday, and Tuesday, and Wednesday.
 
@@ -222,7 +222,9 @@ Her mom's hand goes still on Chloe's shirt. "What does Bryce say, exactly?"
 
 Her mom looks at her for long enough that Chloe starts to think of something else to say.
 
-Her mom smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make friends this year, it just takes time in a new grade, that's all this is."
+"Okay," her mom says. "I told you I wouldn't go to the school unless you said so, and I won't. But I'm going to ask you about your Fridays. Not just Bryce, the whole week." She smooths the back of Chloe's shirt down twice. "And if he ever does more than talk, you tell me the same day. Same day, Chloe."
+
+"Okay."
 
 Chloe lies down again with her back to her mother and turns her face toward the wall; after a while her mom gets up off the end of the bed.
 

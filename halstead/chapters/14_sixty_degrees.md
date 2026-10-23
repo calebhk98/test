@@ -12,7 +12,7 @@ Kavi says it from down the line. "That's the opposite of what we do with the pai
 
 Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. You want to read a shoulder at seventy meters, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
 
-"Right," Ruth says. "So the points stay away from people, even by accident."
+"Right. So the points stay away from people, even by accident," Ruth says.
 
 Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in towards the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
 
@@ -60,7 +60,7 @@ Ruth stops with her tray up on an arm. "Because it's already in everything. It's
 
 "That's the entire reason I took it, though."
 
-"That is what I said," Ruth says. "It's still cheating."
+"That is what I said. It's still cheating," Ruth says.
 
 Chloe holds her tray like somebody who intends to keep it. "It's the opposite of cheating, it's the year paying for itself twice. I've got German coming, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
 
@@ -98,7 +98,7 @@ Both elbows land on the table. "I took the inflation out, but it's still six tim
 
 "Ask her again, properly this time," Kavi says.
 
-"I did ask her," Chloe says. "She told me it was a good question for a different course."
+"I did ask her. She told me it was a good question for a different course," Chloe says.
 
 Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the odd Saturday the man opens it is better. In March he demonstrates a Japanese corner joint to the class that holds without a nail or a screw or any glue. Chloe cuts it a dozen times over weeks before one holds when she pulls on it with everything she has, and she puts that twelfth on the shelf over her desk.
 
@@ -138,7 +138,7 @@ A shrug at her. "Then go and do it properly. If you can't say why the man signed
 
 She keeps looking at the table.
 
-"That's annoying," Chloe says. "Now I have to go and build the thing I came in here to say was wrong."
+"That's annoying. Now I have to go and build the thing I came in here to say was wrong," Chloe says.
 
 The reading takes days. On the Tuesday she goes at it all afternoon and most of the evening, then is sick late in the evening, sits on the bathroom floor with her back against the bath, and goes back to it for another hour.
 
@@ -154,7 +154,7 @@ Between the second floor and the third, she finds Ruth on the stairs.
 
 "He gave me a B on it."
 
-"On almost three times the length," Ruth says. "Nearly triple the words, and he still took a grade off you."
+"On almost three times the length. Nearly triple the words, and he still took a grade off you," Ruth says.
 
 Chloe holds the pages and goes up the stairs backwards. "That's beside the point of why I'm annoyed. He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
 

@@ -64,7 +64,7 @@ Kavi pushes up off the floor and sets his back against the radiator. "Then do it
 
 "Do it how?" Priya says, rolling onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the person who wrecks it for everybody."
 
-"Get one of the corridor kids to do the plates," Sam says. "Then none of us knows anything."
+"Get one of the corridor kids to do the plates. Then none of us knows anything," Sam says.
 
 "And then they're standing in a kitchen at midnight holding the answer with no reason at all to be careful with it, and they'll say it, or they'll pull a face at the wrong moment and we'll all read it off them, and the thing we're actually testing is whether Sam can taste a Wednesday, so Sam has to be in the room and not knowing," Priya says.
 
@@ -156,7 +156,7 @@ Sam arrives last, and in under thirty seconds Kavi is on their comms. "It's AES-
 
 "How is that AES-256," Sam says, wiping his face. "Why wouldn't they carry something better?"
 
-"Because the box says AES-256," Kavi says. "The box always says AES-256."
+"Because the box says AES-256. The box always says AES-256," Kavi says.
 
 Ruth reads over his shoulder. "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this, but my dad sells insurance."
 
@@ -188,7 +188,7 @@ The plan takes Sam ninety seconds, and he starts defending it mid-description. "
 
 Ruth looks at her. "I'm shorter," she says.
 
-"Yeah, but I look smaller, it's psychology," Chloe says. "It's the whole first term."
+"Yeah, but I look smaller, it's psychology. It's the whole first term," Chloe says.
 
 The other thing they discuss is the drugs: the kit has both. Chloe fumbles the case once before it springs open, the catch slipping under her thumb before it gives. The traceable one works in about six seconds, but the untraceable one takes closer to twenty-five and needs a better stick.
 
@@ -226,7 +226,7 @@ Sam sits down across from her, elbows on his knees, watching the pen move rather
 
 Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones, no pockets holding anything at all.
 
-"They didn't even do costumes properly," Kavi says. "Look at this. Look at this guy's boots."
+"They didn't even do costumes properly. Look at this. Look at this guy's boots," Kavi says.
 
 "It worked," Sam says, looking pleased with himself.
 

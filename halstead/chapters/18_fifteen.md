@@ -28,7 +28,7 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 "Off the point."
 
-"One more," Chloe says. "I've nearly got it, I can feel it."
+"One more. I've nearly got it, I can feel it," Chloe says.
 
 "Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes, but that's not going to change tonight. Go and have your dinner."
 
@@ -66,9 +66,9 @@ Chloe goes, running the numbers again all the way down. That evening she returns
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends. She sits behind her for the afternoon because Chloe asked her to.
 
-"Your count's clean," Ruth says. "I checked it twice against the clock."
+"Your count's clean. I checked it twice against the clock," Ruth says.
 
-"I know," Chloe says. "My count's clean. That's a different question from the one I asked you."
+"I know. My count's clean. That's a different question from the one I asked you," Chloe says.
 
 Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole session, your release is tighter than mine by about a hundredth, and I'm on ninety-one. Whatever's costing you, it's somewhere else, outside anything I can see from behind you."
 

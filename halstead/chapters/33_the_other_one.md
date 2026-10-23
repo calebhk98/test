@@ -46,9 +46,7 @@ Eli doesn't answer that part, and the thread goes quiet for the night without an
 
 ________________
 
-The rest of them read that thread over the following days, each of them from wherever the year has put them.
-
-Nadia reads it standing at the register with the shop shut and the till already counted. Her sleeves go up before she answers. They go up when something is going to cost her.
+The rest of them answer over the next few days, Nadia first, with her sleeves pushed up.
 
 nadia: name whos actually touching the code
 
@@ -60,15 +58,13 @@ chloe: already did. its clause four
 
 nadia: good
 
-Kavi stays bent over the board he's rewiring in the lab when the thread reaches him, and he answers in one line that runs until the mechanism's actually finished.
-
-kavi: the governments own logging is old and its federal so its probably worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door
+kavi: the governments logging is old and probably worse than nadias, so the risk was never getting in. its someone doing a manual review of the exact files we touch in the exact week we touch them. timing, not the door
 
 eli: so we control the week
 
 kavi: yes
 
-Sam reads it between sets, phone propped against a water bottle on the end of a bench somewhere the paperwork still won't put a proper name to, and sends a line back before he's up again.
+Sam is the last to answer, a day later, in a few minutes between sets at basic.
 
 sam: how long's this go for
 
@@ -76,7 +72,9 @@ eli: i dont know. as long as it takes to get in and out once
 
 sam: thats not a number
 
-Chloe reads all of it, standing at her kitchen counter. Months after he first posted it, she keeps going back to Theo's line about the men over the fence, and already knows what she thinks before she starts typing anything.
+Chloe scrolls up past all of it to the line Theo posted months ago about the men over the fence, and then back down to the box.
+
+chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
 
 chloe: someones had a file on us since before we were teenagers. if we get a chance to read theirs back i dont see what there is to decide
 

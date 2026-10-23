@@ -38,7 +38,7 @@ The 10v1 starts in January.
 
 "One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "A few rounds a class, and the rest of the hour is what you've been doing since September. Nobody gets to skip conditioning just because they've started sparring. You'll be doing both right up until the day you stop coming to this room at all."
 
-"That's a lot," Chloe says. "That's twice as many hands as I've ever had on me at once."
+"That's a lot. That's twice as many hands as I've ever had on me at once," Chloe says.
 
 Kowalczyk holds up a hand, fingers spread, and turns it. "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over. So ten is five on you and five waiting for the first lot to get tired, and any more than that and they're just queuing for a turn."
 
@@ -50,7 +50,7 @@ The best anyone in the room manages all afternoon is nine seconds, but Chloe get
 
 "Four."
 
-"Four's fine," Sam says. "Most of this corridor is on four or five."
+"Four's fine. Most of this corridor is on four or five," Sam says.
 
 "She said a minute, and that comes nowhere close to a minute."
 
@@ -159,7 +159,7 @@ He is eating. "Tariffs," he says. "Huh. Which side did you get assigned, or did 
 
 "For, and it took a couple of minutes of reading before that got obvious."
 
-"Go on then," he says. "Let's hear it, what have you actually got?"
+"Go on then. Let's hear it, what have you actually got?" he says.
 
 Chloe has her elbows on the table and her aunt is looking at her elbows. "There are industries you have to still have in twenty years even if somebody else is cheaper today. If you're wrong on one of those you can't get it back, you can't decide to have it again, you can only decide to build a building instead."
 

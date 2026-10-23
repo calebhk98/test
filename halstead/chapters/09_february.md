@@ -138,9 +138,9 @@ Her dad brings up the house in April, on a Saturday, with Chloe up the road at t
 
 "I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds."
 
-Dave rubs a hand over his face. "Then give me one reason. I have been sitting here trying to think of one, but I can't."
+Dave rubs a hand over his face. "Okay, so the house is tied to her enrollment. That's one clause, and it only costs us if we pull her out. She's the one who begged to go, Meg."
 
-"Because if we take their house, then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well," her mother says.
+"And the day I want her out is the day the three of us have nowhere to live. That's the reason, it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well," her mother says.
 
 Dave looks at the table.
 

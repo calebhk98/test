@@ -62,7 +62,13 @@ She's on the floor of her own apartment when it lands, shoes off, back against t
 
 ruth: why hasnt anybody already used this
 
-Nobody answers it. A minute later she tries the other thing she actually came to say.
+sam: same reason i havent called my mother back since tuesday
+
+eli: sam
+
+sam: im just saying everyone has a page seven
+
+Ruth sets the phone on her knee and picks it up again. The other thing she actually came to say goes out a minute later.
 
 ruth: so he doesnt know we know
 

@@ -58,7 +58,7 @@ Differential equations run alongside real analysis from two weeks into September
 
 *This step is where you assumed it.*
 
-"I did assume it," Chloe says. "That step is obvious, and everyone in the room already agrees it's true."
+"I did assume it. That step is obvious, and everyone in the room already agrees it's true," Chloe says.
 
 "Then show me that it's obvious," the teacher says, holding it out sideways, back at her own page. "Everyone in the room believing it is one thing, and it following from what you were given at the top of the page is another, so until you can show me that difference what you have is assumed rather than proven."
 
@@ -126,7 +126,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 "You went left again, and you went left last time as well."
 
-"I went left," Kavi says. "You'd worked out I go left, so left was the surprise."
+"I went left. You'd worked out I go left, so left was the surprise," Kavi says.
 
 Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway. I could hand you the payoff matrix right now and you'd still find the one cell that isn't on it."
 
@@ -172,7 +172,7 @@ Chloe gets as far as "It's not" before the far end takes it up and keeps it. Sam
 
 Nadia waits for him to finish.
 
-"It could be a date," Chloe says. "Dates have letters in them too, sometimes."
+"It could be a date. Dates have letters in them too, sometimes," Chloe says.
 
 "It's got a letter in the middle of it, and you already know what that means." Nadia keeps her finger on the napkin.
 
@@ -202,11 +202,11 @@ Her father is replacing the back steps that summer, and it takes most of the mon
 
 The cuts are hers, and he shows her the saw on the first morning and watches her make a couple, but after that everything she cuts returns to the pile unchecked. On the Thursday a riser comes out four millimeters proud, and her father looks at it, says that will do, screws it down.
 
-"That riser's sitting proud," Chloe says. "I can see it from here without even measuring it."
+"That riser's sitting proud. I can see it from here without even measuring it," Chloe says.
 
-"It's four millimeters proud," her father says. "On a back step, but the step still holds a foot."
+"It's four millimeters proud. On a back step, but the step still holds a foot," her father says.
 
-"But I cut it," she says. "I don't want to know it's there every time I go up."
+"But I cut it. I don't want to know it's there every time I go up," she says.
 
 He reaches for the next board, his attention already on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 

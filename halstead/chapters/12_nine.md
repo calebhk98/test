@@ -194,14 +194,12 @@ Chloe taps it. "Okay, but that's not actually a promise, is it, that's just a de
 
 Her father starts to answer but stops with the page half turned, then returns to the top of the paragraph. Chloe waits.
 
-"You wouldn't, not from anything in here, and that's exactly the kind of gap they're counting on," he says.
+"You wouldn't, not from anything in here, and that's exactly the kind of gap they're counting on," he says. He pages back to the front and lays a finger on a table of dates, one row for every week. "This is the page I read against. Every row has a date on it and it all holds together. The paragraphs underneath are supposed to say what happens in the rows, and I took them as saying it."
 
-"That's what I couldn't get. I couldn't work out what breaking it would look like."
+"I only got as far as that one."
 
-Her father takes the pen and puts a line under the paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it. Every deliverable is worded so it can't be checked against anything, and every milestone describes the effort."
-
-"No idea, I only got as far as that one."
+"Then you got further than the table did." He takes the pen and puts a line under the paragraph. "There isn't a version of this where they've failed to do it. Every deliverable is worded so it can't be checked against anything, and every milestone describes the effort."
 
 Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the vendor sends the rest back as the same sentences with different words in them, and in the car on Friday he works through the lot of them for her while she eats a sandwich.
 
-"Every sentence in there is the same shape, and there isn't a date among them, and I would have signed it on Tuesday."
+"The table is good. It's the only part with anything in it, so we make the table the contract and the paragraphs a footnote. I read that page on Monday and I would have signed it on Tuesday."

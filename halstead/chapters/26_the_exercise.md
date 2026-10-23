@@ -160,9 +160,15 @@ The major opens the clipboard again, at a page he has had shut all afternoon.
 
 "School, sir."
 
-The major puts it on the sheet with the culvert. Which school, he leaves alone.
+The major puts it on the sheet with the culvert. "Which school?"
 
-Sam waits for a second question.
+"Halstead, sir. It's a boarding school."
+
+"Boarding school." The major looks up. "They teach fieldcraft?"
+
+"No, sir. It was an ordinary school." Sam keeps his eyes on the pointer. "I picked it up there."
+
+The major writes that down too.
 
 The soldier who went untouched turns around in the front row to look at him, but turns back before the major has finished writing. Then the major closes the clipboard, checks his watch, and calls the next name on his list.
 

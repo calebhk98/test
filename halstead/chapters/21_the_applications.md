@@ -56,7 +56,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends an hour
 
 "That's just telling me what to do."
 
-"It's a deadline," Kavi says. "So pick one, or the deadline picks for you at midnight."
+"It's a deadline. So pick one, or the deadline picks for you at midnight," Kavi says.
 
 Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants years of schooling typed into a box marked Education History after taking it as an attached file, the fourth form today to ask her for something it already holds.
 
@@ -204,7 +204,7 @@ Somewhere in February she stops reading the count out at dinner, and when her mo
 
 Ruth asks her in the common room in March, with only Chloe in the room, and hears a stale number, and then the true figure.
 
-"A hundred and ninety," Ruth says. "Against how many that answered?"
+"A hundred and ninety. Against how many that answered?" Ruth says.
 
 The notebook is shut under her hand, and she pushes her sleeves up, saying nothing for a moment. "Twelve, but ten of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday. Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
 

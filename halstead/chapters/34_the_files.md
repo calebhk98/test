@@ -2,9 +2,9 @@
 
 *June 2026*
 
-They open it in seven different places, each at a different hour, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. Ruth is in a Cambridge lab she has no official reason to be in over the summer, sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it is worth. Sam reads his on a phone screen gone dim in the sun, thirty seconds at a time, between whatever a sergeant is telling fifteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till counted and the drawer locked, and reads it standing. Eli reads at his own kitchen table with the badge from the security job face down by the keyboard, and taps two fingers on the wood as he goes, Kavi reads in the lab down the corridor from where he had his own lessons as a boy, and Theo standing up, because he was standing when the file finished loading, and he stays on his feet the whole way through it, with the twenty minutes outside still ahead of him.
+Theo is standing when his file finishes loading, and he stays on his feet the whole way through it, with the twenty minutes outside still ahead of him. The other six open theirs at other hours in other rooms, each of them alone with it. Chloe reads hers at her own desk, five months into a job whose clearance she is pushing a long way past its purpose to do this.
 
-There is a file on all ninety-one of them. Every page carries the same header first: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
+There is a file on all ninety-one of them. Every page carries the same header first: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might someday make it true.
 
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop carefully, like something that might spill, and go outside. He opens the group thread first and types "mine has a name in it I already know," and sends it before he can talk himself out of it. Sam answers inside a minute, one line, whose name, and Theo does not tell him. That's the whole account anyone else gets of it.
 
@@ -12,7 +12,7 @@ The rest of theirs sit somewhere between those. Nadia's crosses her company's fi
 
 The oldest pages in the file are typed and then scanned, the paper stock visible through the scan the way an old photograph keeps its own grain no matter how many times it's copied. Every file starts with a name, its own date, a single photograph taken outside a building none of the analysts have ever set foot inside, and a line noting that contact with the family went no further than the one letter. Thirteen years of updates sit stacked under that first page, thicker in some years than others. The thickness itself is dated.
 
-There's a standing line saying the graduates are believed to be in contact with one another. The line has been rewritten again and again since the file was opened, the word changing once, from students, the year the first class left, and after that only the date stamped under it, so that reading down the margin is like watching the same paragraph get retyped once a year by a clerk who has stopped expecting the retyping to change anything. Different initials sign off at the bottom of each version, the handwriting changing often enough across them that whole careers appear to have opened and closed against the one unmoving sentence. The file lists the method as unknown, and collection against the channel comes back empty every time it's tried, but the recommendation is still to keep attempting it. Kavi reads that part twice, the second time slower, the pen in his hand going still for exactly as long as it takes him to get through the sentence about collection failing, and then it starts turning again.
+There's a standing line saying the graduates are believed to be in contact with one another. The line has been rewritten again and again since the file was opened, the word changing once, from students, the year the first class left, and after that only the date stamped under it, so that reading down the margin is like watching the same paragraph get retyped once a year by a clerk who has stopped expecting the retyping to change anything. Different initials sign off at the bottom of each version, the handwriting changing often enough across them that whole careers appear to have opened and closed against the one unmoving sentence. The file lists the method as unknown, and collection against the channel comes back empty every time it's tried, but the advice is still to keep trying it. Kavi turns the page over on the bench and sits with his hand flat on the back of it.
 
 And there's an incident report from four years back.
 
@@ -34,7 +34,7 @@ And a line under that. The unit assigned to observation of the school had their 
 
 That's where the report ends. It was scanned rather than born digital, the text sitting slightly crooked on every page the way it does when somebody photographed a stapled original instead of typing it fresh.
 
-Nadia reads the last line twice, closes the file, and reopens it to check the date stamp is what she thought it was before she says anything to anyone. Chloe scrolls back up to the top of the incident report and reads it again from the start, checking for a clause she might have dropped the first time through. Sam's phone buzzes twice in his pocket before he gets a hand free to look at it, and by the time he does, the chat has started without him.
+Nadia closes the file and unplugs the shop's laptop from the wall. She puts it in her bag instead of leaving it on the counter all night. Chloe checks the report's date against her old calendar and the night is right, and then she checks the twenty-two seconds against what Ruth told them that week, and that matches too. Sam's phone buzzes twice in his pocket before he gets a hand free to look at it, and by the time he does, the chat has started without him.
 
 ________________
 
@@ -54,7 +54,7 @@ sam: we were so bad that night
 
 ________________
 
-Ruth reads the paragraph about the footage a third time before she types anything, then sets her phone face-down on the floor beside her, then picks it back up and posts a line.
+Ruth types from the floor of the lab with her back against the bench.
 
 ruth: i built that box in about a weekend so we wouldnt get detention
 
@@ -64,15 +64,11 @@ ruth: they had a team on us and my box got their cameras too and i didnt know th
 
 ________________
 
-Kavi reads what she has written standing at the lab bench, the pen down for good now, his weight forward on both arms like a man setting himself to lift something, then stays over the bench and waits, breathing slow, for as long as it takes.
+Kavi's message comes in before she has finished the last one.
 
 kavi: ruth
 
-kavi: read that back
-
-ruth: i know what it says
-
-kavi: no. read it back
+kavi: youre sure it was only a weekend
 
 ruth: i was thirteen
 
@@ -82,13 +78,11 @@ ruth: it wasnt even hard. it was a fun problem. i wasnt trying
 
 nadia: and four years later the unit that watched us wrote "no known method"
 
-ruth: yes
-
 nadia: they still dont know
 
 ruth: yes
 
-Chloe reads yes twice before anyone types again, and in the gap she gets up from the desk and pours a glass of water, her hands needing something else to be doing while she waits to see who goes next. Nadia, back at the counter with the shop's lights off around her, reads that silence and stays exactly where she's standing, arms folded, phone propped against the register.
+Nobody types for a minute. Nadia stands at the counter with her bag on her shoulder, the shop's lights off around her, arms folded, phone propped against the register.
 
 On the page about who is in contact with whom, Chloe and Nadia sit in the same list under the same date. Sam has been between them at every table since they were children and the file has no way of knowing it, so the two of them appear side by side in it.
 
