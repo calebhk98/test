@@ -4,7 +4,7 @@
 
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, again and again, to things Chloe can't make out from where she is sitting.
 
-Her mom winds the phone cord around her fingers. "No, I appreciate you calling. She's been like this since August, and it's about her, not about you or the house, she was completely fine in July, but then school started."
+Her mom winds the phone cord around her fingers. "No, I appreciate you calling. She's been like this since September, and it's about her, not about you or anything at home, she was completely fine in July, but then school started."
 
 Chloe goes back up before the call is finished.
 
@@ -68,7 +68,7 @@ Dr. Ammons turns in her chair until she's facing the couch instead of the other 
 
 There are more of them than will go in a line: the bridge going over sideways all at once, the paper on the floor with the eighths ruled straight through it, Sam saying it's a room-shaped object, and Mr. Baptiste doing the whole rectangle over from the beginning for Marisol, quiet about it.
 
-"It was hard," she says. Dr. Ammons writes that down, underlines part of it; the rest of the hour goes quiet around it, only the clock moving now, while Chloe's feet find the floor again and settle against the tile beneath the couch.
+"It was hard," she says. Dr. Ammons writes that down, underlines part of it; the rest of the hour is more questions that Chloe answers with a word or a shrug, while Chloe's feet find the floor again and settle against the tile beneath the couch.
 
 In the car her mom holds the wheel, the engine off.
 
@@ -82,7 +82,7 @@ Her mom puts the key in and leaves it there. "You'd go and talk to her every cou
 
 "Did you already decide?" Chloe says. "You and her, before I came out?"
 
-"Nothing's decided," her mother says. "If you hate it after one day, we stop. That's as far as I'm going this afternoon."
+"Nothing's decided," her mother says. "If you hate it after one day, we find somebody else. That's as far as I'm going this afternoon."
 
 "Okay." The engine is running and the car has not moved yet. "Does that mean I can go to Halstead, then? We're already talking about it."
 
@@ -90,7 +90,7 @@ Her mother puts her forehead on the steering wheel and stays there.
 
 Her mother starts on the school in October, every week, on the phone first and then in the building itself, where they give Chloe's mom a chair in a corridor.
 
-At the counter, with her back to the room and Chloe at the table behind her, she says the words in writing twice in one sentence.
+At the counter, with her back to the room and Chloe at the table behind her, she says "in writing" twice in one sentence.
 
 Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat on and lays it all out.
 
@@ -108,7 +108,7 @@ Chloe pulls the covers up over her knees and holds them there.
 
 "Is it Halstead?" Chloe's hands are still fisted in the covers. "Is it finally happening?"
 
-Her mom puts a hand flat on the covers over Chloe's shin and leaves it there. "It's a thing at your school, on Thursdays, starting after the break, and it is the only thing in that building that isn't what you're already sitting through. It's an hour, but it isn't the classroom. So I want you in it, whatever it turns out to be."
+Her mom puts a hand flat on the covers over Chloe's shin and leaves it there. "It's a thing at your school, on Thursdays, starting in November, and it is the only thing in that building that isn't what you're already sitting through. It's an hour, but it isn't the classroom. So I want you in it, whatever it turns out to be."
 
 "Can I go to Halstead instead of it, though?"
 
@@ -174,7 +174,7 @@ Then she stands behind it with her hands shaking and her ears ringing, listening
 
 At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs answering and gets it. Her dad passes the salt before she asks for it.
 
-So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice; Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else; Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
+The third Thursday is different, because Mrs. Prahl puts them in pairs for a game with the dice; Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else; Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
 On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. The following Thursday Mrs. Prahl asks how she got on with it.
 
@@ -194,7 +194,7 @@ Her mom waits.
 
 "I might not have the right words for it."
 
-"What was different there, not the fun parts, because I've heard every single fun part, but what was actually different about it, underneath all that? I keep getting the bridge and the apples and I still don't know what the place was."
+"What was different there, not the fun parts, because I've heard every single fun part, but what was actually different about it, underneath all that? I keep getting the bridge and the fractions and I still don't know what the place was."
 
 Chloe sits up and answers straight away, the answer already sitting in her mouth before the question finishes, and it is one thing, and it is small.
 

@@ -18,7 +18,7 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card.
 
-"It's seven and about a fifth," Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
+"It's seven and about a fifth," a boy called Lucien Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
 "The card says what it says, Aymar," Voss says, keeping his eyes on the range.
 
@@ -60,11 +60,11 @@ Going through the papers twice takes her back to her own notes from the third we
 
 "Does the test count?" Halide says.
 
-"So we're not actually bad at it," one of the twelves says.
+"So we're not actually bad at it," one of the thirteens says.
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-One of the twelves tells it at their own table, where it is funny and nothing else, and it is carried from there to Iyad within two days. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
+One of the thirteens tells it at their own table, where it is funny and nothing else, and it is carried from there to Iyad within two days. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
 
 A girl in her own year she has barely spoken to asks her at the sinks whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
@@ -182,11 +182,11 @@ Ruth does sound, all of it synthesised live off whatever the user is doing, and 
 
 "It's the attack, because every time I fix the attack it breaks the tail."
 
-"Play it again from the start, all the way through this time," Chloe says, shutting the door with her heel and sitting down on the floor with her back against the bed.
+"Play it from the start, all the way through this time," Chloe says, shutting the door with her heel and sitting down on the floor with her back against the bed.
 
 "I've played it hundreds of times, and it happens without fail."
 
-"Play it again and let me hear the part before the note. You keep starting where you think it starts."
+"Let me hear the part before the note. You keep starting where you think it starts."
 
 Ruth plays it twenty more times, and then at one in the morning she sits up so fast the machine slides off her.
 
@@ -224,7 +224,7 @@ Ruth puts her fork down. "He'd think about it, when he had a whole Thursday afte
 
 Priya says, "He's got a lake, Kavi. A lake and a boat shed."
 
-Ruth takes it up with him directly on Friday; Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it, but Sam says they agreed, and Odile was actually in the room.
+Ruth takes it up with him directly on Friday; Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the thirteens do paintball. The two of them last until March, when Priya says the girl ended it, but Sam says they agreed, and Odile was actually in the room.
 
 "You've both got the day wrong, and I was standing right there."
 

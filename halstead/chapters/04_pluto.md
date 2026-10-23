@@ -32,13 +32,13 @@ The nurse is on the first floor beside the stairwell with the red door, and some
 
 Lights out is earlier for the sixes than for the sevens, so the school puts Chloe in the first group until August.
 
-"If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you round."
+"If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you out of it."
 
-Further up a boy has started crying, quiet about it, and the girl next to him budges her chair a few inches closer, close enough that their sleeves touch, while the woman finds her place again on the clipboard.
+Further up a boy has started crying, quiet about it, and the girl next to him scoots her chair a few inches closer, close enough that their sleeves touch, while the woman finds her place again on the clipboard.
 
 "It isn't a punishment, it's just how it works, and if you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."
 
-A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she covers the part about the laundry bags again.
+A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she covers the laundry bags again.
 
 Chloe's mom writes something on the back of the map.
 
@@ -62,7 +62,7 @@ She continues anyway.
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
-"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not. She measured one at nineteen hands once, for a school project, and it was just a very large horse."
+"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not. I measured one at nineteen hands once, for a school project, and it was just a very large horse."
 
 The edge of her hand goes across the top of her own shoulder.
 
@@ -80,7 +80,7 @@ Then Priya says goodnight, and inside a minute she is asleep.
 
 Chloe lies on top of the covers with her shoes on.
 
-That evening she goes down to the phone by the front desk, which anyone can use whenever they want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
+That evening she goes down to the phone by the front desk, which anyone can use whenever they want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the bulletin board until he is finished, then dials the number off the card in her folder.
 
 Her mom picks up in the middle of the first ring.
 
@@ -88,7 +88,7 @@ Her mom picks up in the middle of the first ring.
 
 "Okay, yeah, okay, stay right where you are. I'm coming."
 
-The hotel is half a mile away, but by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.
+The hotel is half a mile away, but Chloe has only been sitting on the bottom stair for ten minutes when her mom comes in at the front desk, already dressed.
 
 Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far to leave the door open, her face turned into a spare pillow that smells like the hotel's detergent.
 
@@ -130,7 +130,7 @@ Chloe laughs until she has to put her forehead against the wall, then somebody e
 
 Then a girl says something from further up the line.
 
-"Okay, but Pluto's still a planet. It's a dwarf planet. A dwarf planet is a kind of planet. What they did was make a smaller category and move it into that."
+"Okay, but Pluto's still there. It's a dwarf planet now. What they did was make a smaller category and move it into that."
 
 "That's worse than just taking it off the list."
 
@@ -232,7 +232,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "How thick what is?"
 
-"The lava, and there's a word for it."
+"The magma, and there's a word for it."
 
 "What's the word," Sam says, in the voice of somebody setting something up.
 
@@ -240,7 +240,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "What's viscosity?"
 
-"How thick it is. Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
+"How thick it is. Honey's got high viscosity, water's got low viscosity, magma's somewhere in between, depending how hot it is and what's in it. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
 
 Sam tries twice more to get back into it but loses the thread both times, with a couple of the other children laughing outright by the second try.
 
@@ -250,13 +250,13 @@ ________________
 
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.
 
-"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was. Drop it there and it still falls just as fast. Nothing about the stuff itself changed."
+"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was. Nothing about the stuff itself changed."
 
 Mr. Doyle stops with the marker still up at the board to look at what he has written, then wipes one word out with the side of his hand, writing the other into the gap it leaves.
 
 "Mass, and thank you for catching that," he says, then keeps going.
 
-"I told you." Ruth says it to the room. "I said that on Friday, I said it on Friday."
+"I told you." Ruth says it to the room. "I said that on Friday."
 
 "Ruth," Sam says, from along the row, eyes on the board.
 
@@ -270,11 +270,11 @@ Chloe has a very clear idea of what is supposed to happen to a child who does wh
 
 At the end of the table she leans over. "Are you in trouble?"
 
-"I don't know." Ruth has her sandwich apart and is eating the middle of it first. "At my old school they got cross when I interrupted, so probably. I say it and then I find out."
+"I don't know." Ruth has her sandwich apart and is eating the middle of it first. "At my old school they got mad when I interrupted, so probably. I say it and then I find out."
 
 But nothing comes, all day.
 
-That night it catches again: Ruth said it, so Chloe sits on her hands through the next class, and the one after that, but answers only when Mr. Doyle calls on her direct.
+Even so, Chloe sits on her hands through the next class, and the one after that, and answers only when Mr. Doyle calls on her directly.
 
 "This is the worst mistake of my life," Sam says at dinner that week, about Kavi, for about the fourth time.
 

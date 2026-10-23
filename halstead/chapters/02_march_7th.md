@@ -24,7 +24,7 @@ There is also a sign that says NO CELL PHONES with a picture of a phone under it
 
 Dr. Prentice, the psychologist, has a room with a small table in it, more like somebody's kitchen than an office: a box of tissues, a bin of blocks, and a window with the blinds halfway down over the parking structure.
 
-There is a stack of printed sheets squared up by his elbow, the top one reading RECORD FORM upside down, and she gets that far before his forearm comes across the page. Beside the stack is a silver watch with his thumb resting on the button.
+There is a stack of printed sheets squared up by his elbow, the top one reading RECORD FORM upside down, and she gets that far before his forearm comes across the page. Beside the stack is a silver watch lying face up with his thumb resting on the button.
 
 "I'm Ben. What would you like me to call you?"
 
@@ -56,7 +56,7 @@ Ben writes something down, small and quick, but she can't tell from his face whe
 
 "One more. Is there another like it?" She hooks her heels on the rung of the chair, then comes up onto her knees on it to reach the middle of the table.
 
-There is another like it, and then another. Both times she is finished almost as soon as the card is down, and both times Ben says okay while a block is still in her fingers.
+There is another like it, and then another. Both times Ben says okay while a block is still in her fingers.
 
 The lid goes on the bin.
 
@@ -198,7 +198,7 @@ Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice
 
 "So there's nothing wrong with her?"
 
-"She's completely fine, as far as I can tell from what's going on with her."
+"She's completely fine, as far as I can tell."
 
 "Her teacher keeps writing to us about her handwriting."
 
@@ -206,15 +206,15 @@ Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice
 
 "No."
 
-"Right, and here is the thing about the report, which is going to have one big number on the front, a composite that averages two very different pictures into a single score, and on the talking and reasoning she's at the top of it, but on the speed she's ordinary, so what comes out says bright kid, but bright kid undersells the room I sat in this morning."
+"Right, and here is the thing about the report. It is going to have one big number on the front, a composite that averages two very different pictures into a single score. On the talking and reasoning she's at the top of it, but on the speed she's ordinary, so what comes out says bright kid. Bright kid undersells the room I sat in this morning."
 
 "How far at the top of it?"
 
-Ben says the number. Through the door it is one word and Chloe does not catch it. "On a couple of them she answered every item the form has for a six-year-old. There is nothing above that on the page for me to give her."
+Ben says the number. Through the door it is one word and Chloe does not catch it. "On a couple of them she got every item the form has. There is nothing above that on the page for me to give her."
 
 Chloe shifts on the chair, her feet nowhere near the floor.
 
-"So what number do I get?"
+"So what number does she get?"
 
 "A good one, and that's the trouble with it, because a bad number is the kind that gets a school to do something, and hers is going to read as good."
 
@@ -274,7 +274,7 @@ What she works out that month is bigger than the pencil trick: finish first, sit
 
 ________________
 
-She still knows all twenty-eight of their names, but not one of them has needed to learn hers. By June, Chloe is quiet, she does what she's told, and she eats lunch by herself.
+She still knows all twenty-eight of their names, but the other children hardly ever use hers. By June, Chloe is quiet, she does what she's told, and she eats lunch by herself.
 
 On the last day they clean out their desks, where she finds a handful of pencils, somebody else's bracelet, and a permission slip from October. Chloe returns her library book that afternoon, ahead of the summer due date. Kayleigh Burns hugs everybody at the door, while Chloe watches from beside her desk with both straps of her backpack already on.
 

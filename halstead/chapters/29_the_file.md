@@ -28,7 +28,7 @@ ________________
 
 The next thing is a memo about a man placed on the Halstead teaching staff. Identification took less than a day, and the school escorted him off the property. The school's stated reason is recorded word for word: they do not permit unidentified adults around children.
 
-Theo reads it once, watching for the lines he'd pull if someone handed it to him to summarize. Then he goes back to the top with a pen in his hand and does not write anything. The third time, he sits back far enough that the chair takes his weight, and then he opens the bottom drawer by feel, past the stapler and the spare lanyard, to a class photo that has sat there since the week he moved into the cubicle. The date is printed along the bottom edge in the school's own hand. He lays the photo beside the memo until the dates agree. It's the whole cohort in the photo, squinting into thin winter light, and even now he can find Chloe near the back of it without trying.
+Theo reads it once, watching for the lines he'd pull if someone handed it to him to summarize. Then he sits back far enough that the chair takes his weight, and opens the bottom drawer by feel, past the stapler and the spare lanyard, to a class photo that has sat there since the week he moved into the cubicle. The date is printed along the bottom edge in the school's own hand. He lays the photo beside the memo until the dates agree. It's the whole cohort in the photo, squinting into thin winter light, and even now he can find Chloe near the back of it without trying.
 
 Theo was a child then. There was a new teacher for about a day and a half. Something was wrong with him, and the wrongness was most of what anybody talked about at lunch for a week. Theo can still picture him standing at the front of a room. He cannot remember what the man taught, or what he said, or a single specific thing he did.
 
@@ -44,11 +44,11 @@ Then there's the entry.
 
 Eight years ago. Four operators, over the fence at the loading side, a little before dawn.
 
-The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, but even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
+The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is at the top of his clearance, and three lines in the middle of the page are blacked out entirely. What matters starts on page two.
 
 They were inside the first building for under two minutes. Somebody saw a child in a corridor, alone, in pajamas, apparently confused and asking who they were.
 
-Theo stops on that line and reads it again before he lets himself go on.
+Theo stops on that line before he goes on.
 
 The next entry is written from memory, after the fact, and it says that all four of them were unconscious before anyone made a decision.
 
@@ -68,7 +68,7 @@ ________________
 
 Theo sits back.
 
-Theo was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, the whole year stood out on the grass on a school night with the alarm having caught them flat-footed, and by lunchtime the conversation moved on to something else.
+Theo was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, caught flat-footed by the alarm, the rest of the year asleep through it, and by lunchtime the conversation moved on to something else.
 
 He read the grade sheet on the board like everyone else and thought it harsh at the time.
 
@@ -80,9 +80,9 @@ ________________
 
 It sits with him for two days.
 
-At his desk it's the job it is any other day: twenty pages reduced and sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk, coffee in hand. "How's the retirement box coming along?" she asks. Theo says, "It's dead weight." He doesn't look up. "A folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: a few sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the page it would have been the day before any of this. He closes the laptop.
+At his desk it's the job it is any other day: twenty pages reduced and sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk. "How's the retirement box coming along?" she asks. Theo says, "It's dead weight." He doesn't look up. "A folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: a few sentences, a photograph of the building he grew up inside, an admissions portal, the page it would have been the day before any of this. He closes the laptop.
 
-The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. His grandmother tells him, "The ferry's back on the summer schedule. And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, but neither of them brings up anything that happened at his desk that week.
+The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. His grandmother tells him, "The ferry's gone to the winter schedule. And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, but neither of them brings up anything that happened at his desk that week.
 
 For two days that is where it stays.
 

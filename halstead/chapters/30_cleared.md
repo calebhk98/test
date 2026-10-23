@@ -1,6 +1,6 @@
 ## Chapter Thirty: Cleared
 
-*September 2025 – January 2026*
+*September 2025 – August 2026*
 
 Chloe's blog gets big over the course of a year.
 
@@ -18,11 +18,11 @@ ________________
 
 Hebrew is the second year's, and it goes the way Polish went: a class that moves at the speed of the slowest person in it, and everything useful happening on her own time. The root system is there on the first morning, and she spends a fortnight finding out how much of it is a loan and how much is a trap. The alphabet costs her a weekend. By March she is reading a Tel Aviv opinion column with a dictionary open and by June without one.
 
-Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
+Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID against the photo before letting her sit down.
 
-The written section runs four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, the single gap in it, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
+The written section runs four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, the single gap in it, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
 
-The result arrives by mail weeks later, and she reads it as having sat an exam.
+The result arrives by mail weeks later.
 
 ________________
 
@@ -32,33 +32,33 @@ The paperwork comes first, the electronic questionnaire for national security po
 
 Then he calls, the second week of October, to set a time; she spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, on impulse.
 
-Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee, set on the counter, left closed until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers coffee, and he lifts the thermos and thanks her before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
-Before he asks her anything, he tells her what the visit is for: a full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
+Before he asks her anything, he tells her what the visit is for: a full accounting of her life as far back as the form asks, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
 "Does any of it get released? After. To me, or to anyone else."
 
-"It goes into your file," Whitaker says, "and it stays sealed there. Nobody opens it without a reason on record, not you and not whoever comes asking about you later."
+"It goes into your file," Whitaker says, "and the file is controlled. Nobody opens it without a reason on record, whoever comes asking about you later."
 
 That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is for; she gives him more than the minimum from the first page onward.
 
-"Residential the whole time?" he asks, pen moving.
+"Residential the whole time?" he asks.
 
-"The whole time. A few weeks home at Christmas and longer in the summer. The address on that form is my parents' and it has been the whole way through."
+"The whole time. A few weeks home at Christmas and longer in the summer. The address on that form is my parents', with the school's listed under it."
 
 "From when?"
 
 "I started that April, the spring after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from. My mother tells it differently than I do and hers is the version I would write down."
 
-At that he looks up, once, the pen briefly still against the page. "That's young."
+At that he looks up. "That's young."
 
-"It is. My mother thought so too, and it took months to bring her round. She asked everything: what happened if I got sick at night, who was awake, whether she could pull me out on any day, for any reason, and got a straight answer every time. Then the school offered us a house near campus, free as long as I stayed enrolled, and she said no. Giving up our own roof was a way to make it hard for her to take me back."
+"It is. My mother thought so too, and it took months to bring her round. She asked everything: what happened if I got sick at night, who was awake, whether she could pull me out on any day, for any reason, and got a straight answer every time. Then the school offered us a house near campus, free as long as I stayed enrolled, and she said no, because giving up our own roof would make it hard for her to take me back."
 
 Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next: she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
 Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Whitaker writes down the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
-The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list; his coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one answer before he sits back down, and he lets her finish every year of it before he turns the page.
+The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list, and he lets her finish every year of it before he turns the page.
 
 "You taught as well," he says, somewhere in the seventh year of the list, without making a question of it.
 
@@ -66,11 +66,11 @@ The classes come after that, all of them, mathematics through politics through t
 
 "Whose column does that go in?"
 
-"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose. I kept that sheet for two years, in the drawer, before I finally threw it out."
+"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers three years later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose. I kept that sheet for two years, in the drawer, before I finally threw it out."
 
 In the notebook, he writes that down and turns the page.
 
-"There's the bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in, and it's the exam everybody at the school treats as the real exam, whatever else is on the schedule that year."
+"There's the school's bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in, and it's the exam everybody at the school treats as the real exam, whatever else is on the schedule that year."
 
 Whitaker's pen stops for about the length of a word, then starts again. "Sat where?"
 
@@ -104,7 +104,7 @@ Around noon the notebook closes. "I'll be back once I've run down what I can on 
 
 ________________
 
-The first week of November he comes back, in a coat this time, the light already gone and the radiator behind him ticking the entire time; the folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
+The first week of November he comes back, in a coat this time, the light already gone and the radiator ticking behind him; the folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
 
 Before the funding he mentions the reference interviews, all of them done now, and that they run about an hour apiece, and that the longest of them went well into the afternoon.
 
@@ -114,9 +114,9 @@ He doesn't confirm it, but he doesn't deny it either, and he writes something do
 
 He goes back a page before the next question. "The long field. The one with the wire down the fence. Who did the geometry on that?"
 
-"I did," Chloe says. "She was there for the run in March, but the geometry's mine, from April. I can get you the exam script it started on, if you need it dated."
+"I did," Chloe says. "Nadia was there for the run in March, but the geometry's mine, from April. I can get you the exam script it started on, if you need it dated."
 
-Whitaker writes the offer down next to the answer and doesn't ask for the script.
+Whitaker writes the offer down next to the answer and goes on.
 
 The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it.
 
@@ -126,6 +126,6 @@ Along with the answer, he writes the reasoning down, the way he has everything e
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before the joke catches up with her, her attention still elsewhere.
 
-The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then a second time, then calls her mother before the coat is off. She gets the machine, and leaves a short message before she hangs up: it came through, she'll tell her the whole of it Sunday. Only then does she file it in the kitchen drawer where everything that's needed keeping ends up.
+The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it, then calls her mother before the coat is off. She gets the machine, and leaves a short message before she hangs up: it came through, she'll tell her the whole of it Sunday. Only then does she file it in the kitchen drawer where everything that's needed keeping ends up.
 
 The job starts in January, as a trainee. She's sworn in that August, her birthday.

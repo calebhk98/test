@@ -1,6 +1,6 @@
 ## Chapter Three: The Letter
 
-*July 2012*
+*June 2012 – July 2012*
 
 The envelope has her name on it.
 
@@ -14,15 +14,15 @@ You sleep there, transportation provided, room and board included, at no cost, w
 
 At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.
 
-After reading it again and again in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, then brings it back down at dinner.
+After standing in the driveway with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, then brings it back down at dinner.
 
 "Can I go," she says at dinner, and both of them look up.
 
 "Can you go where, honey?"
 
-Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom.
+Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way around for her mom.
 
-Her mom reads it, then reads it again, her eyes going back to one spot on the page, staying there longer, then reads it a third time and hands it across the table with her eyes on the page.
+Her mom reads it, her eyes going back to one spot on the page and staying there, then hands it across the table.
 
 "Did you see this?" Her mom's eyes are still on the page. "I have no memory of applying to anything of the kind, and I would remember."
 
@@ -38,27 +38,23 @@ Her dad takes it and reads it in his free hand, still eating.
 
 "Meg, I've had this in my hand for ninety seconds, same as you, so I know exactly as much about it as you do." Her dad sets the letter back down between them. "There's a number at the bottom of it. Let's call them and ask, instead of the two of us guessing at this table all night."
 
-Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through, then turns it the right way round again for a fourth read of the top part.
+Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through.
 
 "It's free, the whole month, food, a bed, a bus, all of it, but things are not free. Not for a month, and not with a bus in it."
 
 "Sometimes they are, if somebody's got the money and wants to give it away for no reason at all. Rich people build whole camps and hand them out free just to put their name on the building."
 
-"There's always a reason, we just haven't heard it yet," her mom says.
-
-Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which happens all the time in the world. People give away scholarships, and people put their name on the side of a hospital."
-
-"To us, though, it actually happens to us?"
+"There's always a reason, we just haven't heard it yet," her mom says. "To us, though? It actually happens to us?"
 
 The free part is the part Chloe can't place, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, but this one is free.
 
-Chloe pushes her fork through her food and waits for her mom or dad to get to that part, but the letter has both of them, so she comes up onto her knees on the chair to see it the right way round.
+Chloe pushes her fork through her food and waits for her mom or dad to get to that part, but the letter has both of them, so she comes up onto her knees on the chair to see it the right way around.
 
 "Can I go, though, or is that a no?"
 
 "It's a we're talking about it," her mom says.
 
-Chloe asks once more on the Sunday but then forgets to ask again for days, because it's July and there's a sprinkler.
+Chloe asks once more on the Sunday but then forgets to ask again for days, because it's June and there's a sprinkler.
 
 ________________
 
@@ -76,11 +72,11 @@ Her mom runs the tap at the sink. "She says there's no school by that name worki
 
 Her dad's jaw tightens.
 
-Her mom pulls the envelope back out of the recycling. The postmark is a city four states off, nowhere either of them has ever been, and the date on it is eleven days before it arrived. Her mom writes both down on the back of a receipt and puts the receipt under the magnet.
+Her mom pulls the envelope back out of the recycling. The postmark is a city four states off, nowhere either of them has ever been, and the date on it is four days before it arrived. Her mom writes both down on the back of a receipt and puts the receipt under the magnet.
 
 Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten a letter.
 
-A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbours, so that by Saturday half the street knows the Kesslers got something in the mail.
+A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbors, so that by Saturday half the street knows the Kesslers got something in the mail.
 
 Then she calls the number on the letter, and somebody picks up on the second ring, Chloe coming down from the top of the stairs to listen while her mom gives the name, spells the first half, says yes, that's the one, then waits.
 
@@ -108,17 +104,17 @@ Then the call continues a long time after that. Her mom's voice changes into the
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
-Every single question gets answered straight away, quick and complete, as though the questions had all been expected.
+Every question gets answered right away, quick and complete, as though the questions had all been expected.
 
 When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee. "Well?"
 
-"They said they have people who identify children, programs, scouts, and she used the word networks. She said it like I'd know what it meant. I asked her to say it again and she said it again the same way."
+"They said they have people who identify children, programs, scouts, and she used the word networks. She said it like I'd know what it meant."
 
 Her mom takes her hand off the phone.
 
 "And she said, and I want you to hear this exactly, she said their list is usually pretty good."
 
-"Usually pretty good is the vaguest possible way anybody could answer that question. A phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
+"Usually pretty good," her mom says, "is the vaguest possible way anybody could answer that question. A phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
 
 "Okay, and everything else?"
 
@@ -138,7 +134,7 @@ Her mom pulls out a chair and stands behind it.
 
 ________________
 
-Her dad looks up the website that night on the laptop at the kitchen table, and because it's Friday, Chloe gets to sit next to him, her feet swinging free under the chair while he talks through the first part of it, reading the headings out loud in the voice he uses for train station announcements, so that Chloe laughs at the one for lights out.
+Her dad looks up the website that night on the laptop at the kitchen table, and because it's Saturday, Chloe gets to sit next to him, her feet swinging free under the chair while he talks through the first part of it, reading the headings out loud in the voice he uses for train station announcements, so that Chloe laughs at the one for lights out.
 
 Chloe stops at a photograph of a field with goals on it, and when a pool comes up her dad asks whether she would swim, to which she says yes. When he points out she is still learning, she says she would get better there, so he says fair enough.
 
@@ -180,7 +176,7 @@ Behind her the bills are clipped to the refrigerator in a stack thick enough to 
 
 It takes them nine days. Her mom's position is that it is that far away, that nobody asked for the invitation, that it turned up on its own, that somebody is paying for it, and that she wants to know who before anybody gets in a car.
 
-Her dad's position is that all of that is true but she should go anyway. They have some version of that argument on the fourth day and again on the eighth, until on the eighth, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
+Her dad's position is that all of that is true but she should go anyway. They have some version of that argument on the fourth day and again on the sixth, until on the sixth, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
 
 "You already know what you're going to say," her dad says.
 
@@ -188,7 +184,7 @@ Her dad's position is that all of that is true but she should go anyway. They ha
 
 "No," he says, "it isn't."
 
-On the sixth day her mom also comes into Chloe's room, sits down on the end of the bed, and asks her why she wants to go.
+On the eighth day her mom also comes into Chloe's room, sits down on the end of the bed, and asks her why she wants to go.
 
 "It's got my name on it."
 

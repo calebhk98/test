@@ -2,8 +2,7 @@
 
 *August 2012 – October 2012*
 
-The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left early, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, halfway down the hall, while Kavi is over by the double doors with adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
-
+The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe.
 
 Ruth finds her at the flagpole, hugs her hard enough to hurt, and holds on with a fistful of Chloe's sleeve in each hand.
 
@@ -39,13 +38,13 @@ Chloe opens her mouth, then closes it, then goes upstairs to sit on the end of h
 
 "She was just Ruth to everybody, the entire time."
 
-"Kavi, then, you said Kavi a hundred times in that car, surely a last name turned up somewhere in there. You gave me his shoe size before you gave me anything useful about where he's actually from."
+"Kavi, then, you've said Kavi a hundred times since you got home, surely a last name turned up somewhere in there. You gave me his shoe size before you gave me anything useful about where he's actually from."
 
 "I never heard Kavi's either," she says, with her chin tucked down and the back of her wrist scrubbing across one eye, "but I know practically everything else there is to know about him."
 
 Her mom's hand comes off the phone book and rests on top of Chloe's head for a moment before it goes back to the page.
 
-"Priya, then, because you slept in a room with Priya for a whole month, Chloe, so you have to know something about her family. A last name, an address, the name of her school, anything at all that isn't just a first name and a bunk."
+"Priya, then. I stood in that room and asked her questions myself, and I still couldn't tell you where she's from. You slept in a room with her for a whole month, Chloe, so you have to know something about her family. A last name, an address, the name of her school, anything at all that isn't just a first name and a bunk."
 
 "I had no idea I would need it, but now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
 
@@ -69,7 +68,7 @@ She takes her book down and reads it in the kitchen, in the chair that faces the
 
 "Honestly, sweetheart, it's hard to say. It could be one week or it could be a month, and every call moves at its own pace."
 
-On the tenth day she asks her mom to call the school back and find out whether the message actually reached the families or just sat on somebody's desk; her mom makes the call while Chloe sits up on the counter to hear her side of it. The school says it sent the message out that same week, to all three numbers, and there is nothing else for anybody to do but wait.
+On the tenth day she asks her mom to call the school back and find out whether the message actually reached the families or just sat on somebody's desk; her mom makes the call while Chloe sits up on the counter to hear her side of it. The school says it sent the message out that same week, to all four families, and there is nothing else for anybody to do but wait.
 
 After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down the stairs fast if it rings.
 
@@ -95,7 +94,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "There she is." The librarian takes it and tsks, turning the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait."
 
-"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did. Mrs. Prahl kept ours on the windowsill for a week before she let anybody take it home."
+"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did. Mr. Doyle kept the pieces of ours on the windowsill for a week before he let anybody take them home."
 
 "Did it now? Tell me the part about the corner again, slowly."
 
@@ -121,7 +120,7 @@ ________________
 
 The shoebox has foil taped all over it, and in the second week Ms. Vance stands it up on the front desk where everybody can see it.
 
-"So this is a time capsule, and everybody is writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and set it on top of that cabinet. Then it stays shut until we are in fifth grade, not this year and not next year, however much anybody wants to peek," she says, reaching up to knock a knuckle against the cabinet.
+"So this is a time capsule, and everybody is writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and set it on top of that cabinet. Then it stays shut until you are in fifth grade, not this year and not next year, however much anybody wants to peek," she says, reaching up to knock a knuckle against the cabinet.
 
 Everybody talks at once, and it takes the room a long time to come down.
 
@@ -187,7 +186,7 @@ Upstairs, on the back of a spelling worksheet under her pillow, she starts a col
 
 ________________
 
-In the last week of September her mom starts on Chloe's own school, the one she walks to, about what it has for a child who finished the third-grade work in October.
+In the last week of September her mom starts on Chloe's own school, the one she walks to, about what it has for a child who has already finished the third-grade work.
 
 Coming down for water, Chloe gets the end of a call, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 

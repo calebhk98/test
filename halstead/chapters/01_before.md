@@ -12,15 +12,15 @@ Her mom listens again, longer this time, before the rest comes out. "All I'm say
 
 Chloe's thumb sits on a line she stopped reading minutes ago. She turns a page, but her eyes drift to the wall between her and the kitchen, where her mom's voice is coming through.
 
-The next morning there are thirty subtraction problems on the worksheet, but she works out partway through the second, 8-3, that all thirty are just one problem. She writes the answer, then sits with the pencil motionless. She already found the pattern. The rest is just writing it down. She has time. The classroom clock holds where it is. Mrs. Aldana always waits for everybody to finish before moving on, but somebody is always still going and nobody is ever finished. Right now, Bryce Dolan is still counting on his fingers, continuing long after Chloe stops watching him. You are allowed to read once you finish the sheet, but Chloe has decided against finishing it, and instead looks out the window.
+The next morning there are thirty subtraction problems on the worksheet, but she works out partway through the second, 8-3, that all thirty are just one problem. She writes the answer, then sits with the pencil motionless. She already found the pattern. The rest is just writing it down. She has time. The classroom clock holds where it is. Mrs. Aldana always waits for everybody to finish before moving on, but somebody is always still going. Right now, Bryce Dolan is still counting on his fingers, continuing long after Chloe stops watching him. You are allowed to read once you finish the sheet, but Chloe has decided against finishing it, and instead looks out the window.
 
-In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof, but when he gets the boxes in, he shuts the trunk and drives off with the cup still up there. Chloe is about an inch out of her seat, watching the trunk shut and the car pull away with the coffee cup still balanced on the roof, right up until it tips and rides across the asphalt, which is when she hears her name.
+In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof, but when he gets the boxes in, he shuts the trunk and drives off with the cup still up there. Chloe is about an inch out of her seat, watching, right up until the cup tips and rides across the asphalt, which is when she hears her name.
 
 "Chloe." Mrs. Aldana is beside her desk, looking down at a worksheet with a few answers on it and the rest blank. "What was the question?"
 
 "I don't know," she says, working her heel back into her shoe under the desk, looking down at the worksheet.
 
-"That's what I thought." Mrs. Aldana taps the worksheet twice, before walking back to the front. Chloe does the rest of the sheet in the time that is left, before getting out her book.
+"That's what I thought." Mrs. Aldana taps the worksheet, before walking back to the front. Chloe does the rest of the sheet in the time that is left, before getting out her book.
 
 The book comes out of the desk at every gap in the day, and it is never the only thing she is reading. In a week she reads the cereal box at breakfast, both sides, including a contest that ended in a different year, the road signs aloud from the back seat until her mom asks her to stop, her grandmother's church bulletin, and the four books at a time her library card is good for, which she has argued about with the librarian more than once. At the library, Chloe stands at the circulation counter with her stack and her library card and a plan, while the librarian works down a pile of returns with a date stamp.
 
@@ -48,13 +48,13 @@ What she reads comes back out of her at the table, in order, at length, and with
 
 "Her brother. That's why she brings him. He saves his money and she spends all of hers. And he knows it. He's kind of a jerk about it for the first half."
 
-"And then he stops being a jerk about it." Chloe can tell her mom isn't really paying attention or listening anymore, since her eyes have gone somewhere past Chloe's left shoulder, but Chloe keeps going anyway.
+"And then he stops being a jerk about it," her dad says. Chloe can tell her mom isn't really paying attention or listening anymore, since her eyes have gone somewhere past Chloe's left shoulder, but Chloe keeps going anyway.
 
 "No, he gets worse and then he stops," Chloe says, putting her fork down. "He gets worse. She starts being fine without him and he can tell. So he gets meaner at exactly the point where she stops needing him. That's backwards. Except it isn't. That's exactly when you'd get mean."
 
 Her mom points towards Chloe's plate, and Chloe pauses long enough to take a bite. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway. You know because of the little things. She saves him the last bite every time. She stops complaining about the noise he makes when he chews."
 
-"How do you know, then, if she never says so?"
+"How do you know, then, if she never says so?" her dad asks.
 
 "Because of what she does with the locker key. There's one key to the locker with all their stuff in it. At the start she keeps it. In the middle he keeps it. At the end it's just sitting in the bowl at their aunt's house with the batteries, and neither of them put it there. That's how you know."
 
@@ -84,7 +84,7 @@ In October, back inside, Peanut climbs the bars of his cage towards the clip lam
 
 Most days he gives it up halfway, but this time he goes higher than Chloe has ever seen him go, until his back feet come off the bars, swing free, then drop him into the chips. The class laughs while Peanut sits where he landed and washes his face, unbothered.
 
-Chloe read about Icarus last week, and instantly sees the similarity. "He's Icarus," she says.
+Chloe read about Icarus last week. "He's Icarus," she says.
 
 A chair squeaks behind her while Peanut keeps washing his face, so they must not have heard her.
 
@@ -92,7 +92,7 @@ A chair squeaks behind her while Peanut keeps washing his face, so they must not
 
 Kayleigh Burns turns around in her seat and looks at her. "You talk weird," she says, turning back before Chloe has worked out whether an answer is expected.
 
-"Yeah," Chloe says. The word lands somewhere Chloe was not expecting it to land. She goes back over the sentence twice looking for the part that was weird, and it comes out the same both times. For the rest of the morning she sits on her hands even when she knows the answer. In the cafeteria she peels the crust off her sandwich in a long unbroken piece and leaves both parts untouched, lining the strip up along the edge of her tray.
+"Yeah," Chloe says. The word lands somewhere Chloe was not expecting it to land. She goes back over the sentence looking for the part that was weird and cannot find it. For the rest of the morning she sits on her hands even when she knows the answer. In the cafeteria she peels the crust off her sandwich in a long unbroken piece and leaves both parts untouched, lining the strip up along the edge of her tray.
 
 ________________
 
@@ -106,7 +106,7 @@ The full answer comes first, every time, and she has to catch it before it gets 
 
 On Fridays, Mrs. Aldana reads the best paper out loud without saying whose it is. In November it is Chloe's, a few sentences about a dog with a missing leg that ran anyway, after which the room goes quiet. In December the assignment has a minimum word count and she writes the minimum, about a boat, but the paper read out is Maddie's, which everybody guesses correctly.
 
-The papers Mrs. Aldana keeps go across a table on a Thursday evening in November. Conferences are that evening and both her parents go in, while Chloe sits on the corridor floor with a book, the smell of floor wax coming off the janitor's cart. For minutes and minutes she is close enough to hear them talking but too far to make out the words, and she counts the words she can't catch. The door opens mid-sentence, her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
+The papers Mrs. Aldana keeps go across a table on a Thursday evening in December. Conferences are that evening and both her parents go in, while Chloe sits on the corridor floor with a book, the smell of floor wax coming off the janitor's cart. For minutes and minutes she is close enough to hear them talking but too far to make out the words, and she counts the words she can't catch. The door opens mid-sentence, her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
 
 While her dad drives, her mom holds the papers Mrs. Aldana gave them up against the streetlights to read. "She says you're among the strongest readers she's had, and she said it twice." She turns a page. "She also says you have some trouble focusing, which is the part I want to talk about. Do you have trouble focusing?"
 
@@ -146,11 +146,11 @@ On the way out, the receptionist lets Chloe pick a sticker, which takes a long t
 
 ________________
 
-Christmas is at her grandmother's, where the house is full and Chloe knows everybody in it, collecting a sweater, a set of markers, a stack of books, saying thank you each time unprompted. "Well, somebody got grown up this year," her grandmother says, so Chloe reads in the chair by the tree until it is time to eat, then puts it face down on the arm to keep the page.
+Christmas is at her grandmother's, where the house is full and Chloe knows everybody in it, collecting a sweater, a set of markers, a stack of books, saying thank you each time unprompted. "Well, somebody got grown up this year," her grandmother says. Chloe reads in the chair by the tree until it is time to eat, then puts it face down on the arm to keep the page.
 
 The chair is too big for her at the grown-up table, so her heels swing free while she eats her potatoes and her dad, down at the far end, keeps his eyes on his plate. Her cousin Dana, who is nineteen, sits down next to her. "How's school?" she asks.
 
-"It's good," Chloe says. "We're doing the water cycle," she starts to say about the water cycle, then stops herself.
+"It's good," Chloe says. "We're doing the water cycle," she starts, then stops herself.
 
 "Do you have a favorite subject?"
 
@@ -206,7 +206,7 @@ So in January she decides to get good at sitting there, and by February she can 
 
 ________________
 
-The appointment is set over a phone call in February. Chloe is in the next room when her mom says March seventh, says it again, and the third time says it slowly while she is writing it down.
+The appointment is set over a phone call in February. Chloe is in the next room when her mom says March seventh, slowly, while she is writing it down.
 
 It goes on a yellow sticky note on the refrigerator under the strawberry magnet, where her mom checks it every morning while the coffee is going and Chloe reads it whenever she catches the kitchen empty.
 

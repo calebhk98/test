@@ -26,7 +26,7 @@ priya: then six of them in may, and about a dozen in july, and by july i had alr
 
 priya: tuesday night there were seventy-five
 
-Ruth reads that twice. Nadia is behind the counter with the shutter still down and the float half counted, and the float stays half counted in front of her for a good while.
+Ruth reads that. Nadia is behind the counter with the shutter still down and the float half counted, and the float stays half counted in front of her for a good while.
 
 kavi: seventy-five
 
@@ -48,9 +48,9 @@ eli: a fifteen
 
 priya: a good fifteen
 
-priya: but nobody did anything advanced. not once, not one thing i have not had done to me on a mat
+priya: but nobody did anything advanced. not one thing i have not had done to me on a mat
 
-Eli reads that standing at a kitchen counter with the kettle whistling on the stove behind him, and leaves it to boil dry.
+Eli reads that standing at a kitchen counter with the kettle on the stove behind him, and leaves it to boil dry.
 
 priya: they had guns from the start and left them alone until i was already through the line and moving, which was about thirty in
 
@@ -142,7 +142,7 @@ Nobody answers it for a long time, and she does not say it a second way.
 
 Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number she saw that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
+In the morning Chloe reads the third page of the file, the paragraph about the funding line, which she has read enough times to recite, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is the intake form number she saw that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
 
 The ranking goes unmentioned after that. Nadia asks, days later, only to Priya, whether she wants company in the yard with her for a while, but gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave, and Priya tells him the flights are absurd, but he offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, a bolt on the inside of the outer door, a second way out that isn't the stair, a chair braced under the handle rated for more weight than the door itself, most of which she had already done before it arrived.
 

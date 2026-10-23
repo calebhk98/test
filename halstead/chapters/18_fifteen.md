@@ -150,7 +150,7 @@ She tells Iyad to stop, at the long table, in front of the same people he said i
 
 He asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
 
-"Four," Chloe says, "and I could give you the number for everybody else on your list too, since you're the one who keeps it." Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
+"Four," Chloe says, "all of them since you started it, and I could give you the number for everybody else on your list too, since you're the one who keeps it." Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
 
 She stops using the language-block stairs.
 
@@ -200,7 +200,7 @@ Chloe looks at the door. "But they teach driving at school next year, so this is
 
 Her father takes her to the church lot behind the tire place, empty on a Sunday, with a row of light poles to go round. She stalls it over and over in the first half hour, but only twice in the second.
 
-On the second Sunday she makes it all the way round the poles twice and stalls it pulling out of the lot at the end of the hour. Her father drinks his coffee and looks at the light poles and says nothing at all about the stall.
+On the second Sunday she makes it all the way round the poles twice and stalls it pulling out of the lot at the end of the hour. Her father looks at the light poles and says nothing at all about the stall.
 
 By the third Sunday she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the far end of the reservoir.
 
@@ -208,7 +208,7 @@ By the third Sunday she is out on the road past the reservoir with him in the pa
 
 "You said look ahead."
 
-He points with the cup. "I said look ahead, not Tennessee. That truck, what's he doing?"
+He points at the road. "I said look ahead, not Tennessee. That truck, what's he doing?"
 
 Her hands are at ten and two where he put them in the first week, and her knuckles have gone white on the wheel. "Coming out. His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him. He hasn't checked his mirror once since he started moving, and he's not going to see us until he's already most of the way out."
 
