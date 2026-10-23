@@ -130,7 +130,7 @@ Chloe laughs until she has to put her forehead against the wall, then somebody e
 
 Then a girl says something from further up the line.
 
-"Okay, but Pluto's still there. It's a dwarf planet now. What they did was make a smaller category and move it into that."
+"Okay, but Pluto's still a planet. It's a dwarf planet. A dwarf planet is a kind of planet. What they did was make a smaller category and move it into that."
 
 "That's worse than just taking it off the list."
 
@@ -232,7 +232,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "How thick what is?"
 
-"The magma, and there's a word for it."
+"The lava, and there's a word for it."
 
 "What's the word," Sam says, in the voice of somebody setting something up.
 
@@ -240,7 +240,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "What's viscosity?"
 
-"How thick it is. Honey's got high viscosity, water's got low viscosity, magma's somewhere in between, depending how hot it is and what's in it. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
+"How thick it is. Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
 
 Sam tries twice more to get back into it but loses the thread both times, with a couple of the other children laughing outright by the second try.
 
@@ -250,7 +250,7 @@ ________________
 
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.
 
-"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was. Nothing about the stuff itself changed."
+"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was. Drop it there and it still falls just as fast. Nothing about the stuff itself changed."
 
 Mr. Doyle stops with the marker still up at the board to look at what he has written, then wipes one word out with the side of his hand, writing the other into the gap it leaves.
 

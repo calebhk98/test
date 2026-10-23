@@ -106,7 +106,7 @@ Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 Around them the rest of the class is already standing, chairs scraping, Sam's bag over his shoulder before Mr. Baptiste has finished the sentence, while Chloe sits in the middle of it and watches a conversation go on over her head about a question she asked first. Her ears stay hot for an hour afterward, through the break and through most of the lesson after it.
 
-By the end of the day she stays at her desk until the room empties, and copies the zero line into the back of her own packet, in her own words: no number of zeros ever adds up to one. Then she catches Sam in the hallway and reads it to him before he can ask what she's doing.
+By the end of the day she stays at her desk until the room empties, and copies the zero line into the back of her own packet, in her own words: you can't cut nothing into pieces. Then she catches Sam in the hallway and reads it to him before he can ask what she's doing.
 
 The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. A second try gets her no further, so Chloe draws it a third time with her own numbers, because his numbers have been sitting in her head since the lesson and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
 
@@ -208,7 +208,7 @@ ________________
 
 "The worst." Kavi says it to Sam, about Sam. "You do this every single time."
 
-Ruth has stopped eating for this. "The word is tidally locked. It isn't stuck and it isn't on purpose either. It got slowed down until it matched. It used to spin faster. Then it slowed down, over a really long time."
+Ruth has stopped eating for this. "The word is tidally locked. It isn't stuck and it isn't on purpose either. It got slowed down until it matched. It used to spin. Then it stopped spinning, over a really long time."
 
 "Okay, but that's how it got that way, and I'm talking about what it's doing now," Chloe says.
 

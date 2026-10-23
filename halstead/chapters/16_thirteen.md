@@ -128,7 +128,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 "I went left," Kavi says. "You'd worked out I go left, so left was the surprise."
 
-Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the best move against a good player and not the player in front of you, and you keep doing the reverse of it and winning anyway. I could hand you the payoff matrix right now and you'd still find the one cell that isn't on it."
+Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway. I could hand you the payoff matrix right now and you'd still find the one cell that isn't on it."
 
 Sweeping the counters into his hand, he is enjoying himself. "It's what the person says, not what the table says. You keep playing the table, but I'm playing you."
 
