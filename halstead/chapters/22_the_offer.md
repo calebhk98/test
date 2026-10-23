@@ -120,7 +120,7 @@ In the evening she finds him in the network room, back against the radiator by t
 
 "Because what I want to do is happening in one building and I'm standing in it," Kavi says, and keeps turning the cable.
 
-"But it's school," she says. "You do school and then you leave and do the next thing. Same building, same people, same corridor to the same room. That isn't the next thing."
+"But it's school. You do school and then you leave and do the next thing. Same building, same people, same corridor to the same room. That isn't the next thing," she says.
 
 "It stopped being school for me a while ago, I think, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference. I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong. It was still unchecked. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He gives her the look he saves for a mark scheme. "It's a lab that also has children in it. I have told him twice this month that the model is only as good as the worst dataset it was trained on, and he tells me that is precisely why the job exists."
 
@@ -140,7 +140,7 @@ Ruth catches Sam in the stairwell with a stack of admissions mail under one arm,
 
 "No reason." Ruth starts past him, then stops on the landing. "She still owes you for the range numbers, or did she ever pay that back?"
 
-"Owes me?" Sam says. "She didn't take anything, she gave me the whole breakdown better than I had it myself. My name was on every line of it."
+"Owes me? She didn't take anything, she gave me the whole breakdown better than I had it myself. My name was on every line of it," Sam says.
 
 "She does that for you," Ruth says. "She has never once done it for me, and she has never done it for Chloe, and I want you to go back through the last two years and find me one time she put a girl's name on anything."
 
@@ -220,13 +220,13 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "Okay, I hear the difference, and I'm not going to pretend it away."
 
-"What about the others," her father says. "Ruth, Sam, the rest of the table."
+"What about the others. Ruth, Sam, the rest of the table," her father says.
 
 "Ruth's still going to MIT, and Sam's still doing the thing with the Army, the infantry job he's been talking about for a year. Kavi said yes to the same offer I said no to."
 
 "Huh." A short pause, with the radio audible behind it. "Good for him, actually, since out of all of you he's the one I'd have guessed the least."
 
-"We still think it's a mistake," her mother says. "Both of us, not just your father, and I want that said out loud, plainly, rather than implied between the lines."
+"We still think it's a mistake. Both of us, not just your father, and I want that said out loud, plainly, rather than implied between the lines," her mother says.
 
 "I know, I heard you both say it, and I'm not asking either of you to agree with it."
 

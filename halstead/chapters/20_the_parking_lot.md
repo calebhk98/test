@@ -52,7 +52,7 @@ Sam has the syrup upside down over his second plate, timing the pour and countin
 
 "I'm not worst at it anymore. I haven't been for two years." Chloe's fork is still in her hand, and she sets it down harder than the plate needs. "Pick something you've actually watched me do before you hand me a pattern."
 
-"You're not worst at it," Nadia says. "You're just still the only one who's there every morning nobody's making you be." She goes back to dividing the bill.
+"You're not worst at it. You're just still the only one who's there every morning nobody's making you be," Nadia says. She goes back to dividing the bill.
 
 Chloe's hand goes back to the fork, and she doesn't eat with it for a while.
 
@@ -64,7 +64,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "Say a sentence with it in that comes from somewhere other than a play, then, if it's so ordinary."
 
-"Hither, thither, and yon," Sam says. "That's three sentences, but you only asked for one, so I win twice over."
+"Hither, thither, and yon. That's three sentences, but you only asked for one, so I win twice over," Sam says.
 
 "You just said hither yourself, not even a moment ago, which is the whole argument, right there, coming out of your own mouth."
 
@@ -82,7 +82,7 @@ Chloe reads it fast: seven grown men who chose this and have presumably done it 
 
 Sam says, "Hang on." Then, with his eyes still on the men: "Let me have this one."
 
-Ruth stays put. "They're adults," she says. "Three guns."
+Ruth stays put. "They're adults. Three guns," she says.
 
 "There's seven of them, and I'm basically one myself. That's fair." He is already unhooking his thumbs from his pockets. "I've fought people my whole life. None of them were adults, and none of them were strangers."
 

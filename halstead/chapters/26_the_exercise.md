@@ -86,7 +86,7 @@ The man comes up out of the weed line thirty feet back, so low on the way up tha
 
 "Since nine."
 
-Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "You didn't give anything away," Sam says. "You moved once."
+Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "You didn't give anything away. You moved once," Sam says.
 
 The man thinks about that. "Once in seven hours."
 

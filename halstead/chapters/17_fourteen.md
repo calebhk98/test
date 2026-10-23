@@ -280,7 +280,7 @@ Her mother sets the dish down in the middle of the table, straightens it, and re
 
 Her mother returns, asking whether anybody wants the pie warmed up; her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
 
-"That's a hold," her mother says. "That is a hold, that's been a hold all night."
+"That's a hold. That is a hold, that's been a hold all night," her mother says.
 
 On Sunday she asks whether the man behind the line is armed, what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, but her mother listens all the way through and comes back with one more question about the man behind the line.
 

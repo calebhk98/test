@@ -152,7 +152,7 @@ The alarm wakes her at four in the morning, the small one that sits in her ear a
 
 Ruth arrives with her hair everywhere. "Nobody said anything about tonight. There was nothing on the board. I looked on Tuesday."
 
-Sam arrives last, and in under thirty seconds Kavi is on their comms. "It's AES-256," he says. "And the key is whatever they typed at pairing, run through nothing. No salt, nothing stretching it, straight in." He's already got the campus cluster chewing on it. "So you don't go at the cipher, you go at the derivation. Run everything a person can type in a hurry and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+Sam arrives last, and in under thirty seconds Kavi is on their comms. "It's AES-256. And the key is whatever they typed at pairing, run through nothing. No salt, nothing stretching it, straight in," he says. He's already got the campus cluster chewing on it. "So you don't go at the cipher, you go at the derivation. Run everything a person can type in a hurry and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
 "How is that AES-256," Sam says, wiping his face. "Why wouldn't they carry something better?"
 
@@ -160,7 +160,7 @@ Sam arrives last, and in under thirty seconds Kavi is on their comms. "It's AES-
 
 Ruth reads over his shoulder. "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this, but my dad sells insurance."
 
-"I know," Kavi says. "The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for."
+"I know. The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for," Kavi says.
 
 "Anything about the objective, anything at all?"
 
@@ -230,7 +230,7 @@ Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair 
 
 "It worked," Sam says, looking pleased with himself.
 
-"It worked because they took the stairs," Ruth says. "If they'd gone past the kitchens we'd have needed two more people off the second floor, and that's minus. Or it would have taken us longer."
+"It worked because they took the stairs. If they'd gone past the kitchens we'd have needed two more people off the second floor, and that's minus. Or it would have taken us longer," Ruth says.
 
 "They didn't go past the kitchens."
 
@@ -254,7 +254,7 @@ Chloe sits against the wall with her arms around her knees. "It's still going to
 
 Sam calls it in as soon as the last knot is tied, and then they wait, since Sinclair is a few buildings away.
 
-The first one comes round after about seven minutes, confused for a beat, then realizes he's tied and goes rigid when he sees who did it. "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." His jaw sets, teeth together.
+The first one comes round after about seven minutes, confused for a beat, then realizes he's tied and goes rigid when he sees who did it. "Hi. You're fine, although you'll feel sick for about an hour," Ruth says. His jaw sets, teeth together.
 
 "What were you here for?" He looks away.
 
@@ -262,7 +262,7 @@ The first one comes round after about seven minutes, confused for a beat, then r
 
 The third one wakes up about a minute later, younger, less good at keeping his face blank; then it stops being an interrogation.
 
-"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
+"Can I ask you something. Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point," Sam says. One of the men on the floor looks at the ceiling.
 
 "He's not going to answer you," Ruth says.
 

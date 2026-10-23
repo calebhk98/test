@@ -94,7 +94,7 @@ Chloe holds out her hand with the little finger sticking up. "Pinky promise."
 
 "Chloe, we don't need to-"
 
-"You said we were thinking about it. Then you said we were still thinking about it." She keeps the finger out. "Pinky."
+"You said you were thinking about it. Then you said you were still thinking about it." She keeps the finger out. "Pinky."
 
 Her dad hooks his little finger around hers. "I promise."
 

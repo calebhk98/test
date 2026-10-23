@@ -155,7 +155,7 @@ ________________
 
 Her father asks at Thanksgiving what she has been writing about, and she says tariffs.
 
-He is eating. "Tariffs," he says. "Huh. Which side did you get assigned, or did you pick it yourself this time?"
+He is eating. "Tariffs. Huh. Which side did you get assigned, or did you pick it yourself this time?" he says.
 
 "For, and it took a couple of minutes of reading before that got obvious."
 
@@ -171,7 +171,7 @@ She nods without waiting for him to finish. "Steel says it, textiles said it, an
 
 "I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's a little thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
 
-He turns round in his chair properly. "No, hold on," he says. "You've got most of an argument there. What happens if it's five years and the war's two? Does it still look smart partway through, or only in the year you signed it?"
+He turns round in his chair properly. "No, hold on. You've got most of an argument there. What happens if it's five years and the war's two? Does it still look smart partway through, or only in the year you signed it?" he says.
 
 "Then having the answer doesn't help you at all, does it, since you're already too late either way."
 
@@ -189,9 +189,9 @@ Theo gets his back with no note that week, but he puts it straight into his bag 
 
 More are handed in ahead of the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good, then asks where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
-"There's a chair," her grandmother says. "You know, an actual chair, a step from where you're sitting on my floor. Your knees will thank you for it later, even if you don't believe me now."
+"There's a chair. You know, an actual chair, a step from where you're sitting on my floor. Your knees will thank you for it later, even if you don't believe me now," her grandmother says.
 
-"I know," Chloe says. "There's a chair, but I've been looking at it."
+"I know. There's a chair, but I've been looking at it," Chloe says.
 
 Her grandmother puts a plate down on the carpet inside the doorway. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
 

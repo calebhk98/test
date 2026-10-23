@@ -88,7 +88,7 @@ At the first he nods, but at the second he doesn't, and he sits back off the pag
 
 From there he goes back up through it to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end he tells her the result holds and caps the pen.
 
-"That took you five passes," he says. "I've taught this with the footnote version for years. The one that says the tail is assumed away. Yours says when you're allowed to." He taps the margin where she wrote the line about the tail dying before the boundary. "I want that sentence in the write-up, with the condition under it." The pen stays down on the desk while he says it, and he waits long enough afterward that she has to be the one who ends it.
+"That took you five passes. I've taught this with the footnote version for years. The one that says the tail is assumed away. Yours says when you're allowed to," he says. He taps the margin where she wrote the line about the tail dying before the boundary. "I want that sentence in the write-up, with the condition under it." The pen stays down on the desk while he says it, and he waits long enough afterward that she has to be the one who ends it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

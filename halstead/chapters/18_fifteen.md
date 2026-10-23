@@ -56,7 +56,7 @@ Chloe says, with a shoulder against the doorframe, "That's every card in the yea
 
 Voss taps the pages straight against the desk and hands them back to her.
 
-"Point six," he says. "Six in ten, near enough, and that is where you are and where the other ten are. Put another two hundred rounds behind it and come back and tell me it moved."
+"Point six. Six in ten, near enough, and that is where you are and where the other ten are. Put another two hundred rounds behind it and come back and tell me it moved," he says.
 
 "That's not an answer to what I asked you."
 
@@ -76,9 +76,9 @@ Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole se
 
 Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a candy, it helps me think. I've eaten most of the bag and I'm still nowhere close."
 
-At dinner that week Sam says it to his plate. "You're on sixty," he says. "Everybody's talking about it at breakfast."
+At dinner that week Sam says it to his plate. "You're on sixty. Everybody's talking about it at breakfast," he says.
 
-"I know," Chloe says. "I'm on sixty. What's your actual point?" Her plate sits full in front of her.
+"I know. I'm on sixty. What's your actual point?" Chloe says. Her plate sits full in front of her.
 
 "I'm on forty," he says, getting through most of a potato. "I think I sleep fine on it."
 
@@ -102,7 +102,7 @@ On a Friday she catches Kowalczyk about it at the door of the mat room, with the
 
 Kowalczyk is up on her toes to put a box of wraps on a high shelf, and stays there while she talks. "When you were ten you were fighting children who had yet to be hit by anybody, so lasting in that was like taking candy from a baby. Now you're fighting people who have been doing this for years. You're getting better, but they're coming up off a standing start, which is the first actual challenge you've had. It'll happen to you again at eighteen, when the boys finish growing."
 
-"Not an answer," Chloe says. "So what am I supposed to do?"
+"Not an answer. So what am I supposed to do?" Chloe says.
 
 Down off her toes, she pushes the door the rest of the way open with her foot. "It's the only one there is, you just have to learn faster than they do. In you go, you're holding up the twelves."
 

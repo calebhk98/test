@@ -10,7 +10,7 @@ Ruth has a laptop open on the arm of the couch in the third-floor common room, r
 
 "That card's been in your hand all evening," Ruth says, refreshing.
 
-"I'm getting to it," Sam says. "I'm just deciding whether the game's worth finishing first. The board isn't going anywhere."
+"I'm getting to it. I'm just deciding whether the game's worth finishing first. The board isn't going anywhere," Sam says.
 
 Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. She crosses out a line twice, for no reason she could name.
 
@@ -172,13 +172,13 @@ She calls home that Sunday, works through most of the week, and only mentions it
 
 "Then what's the part?"
 
-"She's done this before," Chloe says. "She's fast, that's all. She's always been fast." Then the line goes quiet long enough that her mother asks if she's still there.
+"She's done this before. She's fast, that's all. She's always been fast," Chloe says. Then the line goes quiet long enough that her mother asks if she's still there.
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. When he asks what watch is, she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
 Another asks Sam what he's good at, expecting a list with hedging in it.
 
-"Fighting," Sam says. "I'm first in my year, out of everyone, not just close to first."
+"Fighting. I'm first in my year, out of everyone, not just close to first," Sam says.
 
 "How do you know?"
 
@@ -226,7 +226,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself."
 
-"Fine," Ruth says. "Every time."
+"Fine. Every time," Ruth says.
 
 ________________
 
@@ -254,7 +254,7 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "They lie."
 
-"All of us, though?" she says. "Everybody got a letter that lied to us?"
+"All of us, though? Everybody got a letter that lied to us?" she says.
 
 "How many did you get?"
 
@@ -266,7 +266,7 @@ Ruth is in the doorway by then, laptop open on her arm, having come by the route
 
 Chloe says, "If a store put a sign in its window saying only a few percent of the people who walk in buy something, would you think the store was doing well, or badly run?"
 
-"Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store. It's written for the people out on the pavement, not for anybody who already walked in."
+"Neither. You'd think the sign was doing a job that had nothing to do with the store. It's written for the people out on the pavement, not for anybody who already walked in," Ruth says.
 
 "Ninety-one out of ninety-one bought something, and that's the number the sign should say. Nobody is ever going to put that in a window, because a window like that stops being an advertisement and starts being an accusation."
 
