@@ -2868,7 +2868,7 @@ Swimming gets harder and the teacher says so in the first week. Some of it is in
 
 Paintball joins the afternoon block in October; Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
-For weeks most of the room is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
+For weeks everybody is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
 On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the whole way. I can see it leave, I see the whole thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
 
@@ -3094,9 +3094,9 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring how fast it is expanding, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, then asks about each method until she has both in full, start to finish, and where they disagree.
+Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring how fast it is expanding, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, and asks it again twice more, until she has both ways of measuring it in full, start to finish, and where they disagree.
 
-Down the table, Sam works out why the ship needs to be mostly fuel and gets the ratio backward before Kavi corrects him. When he has it right, on his own, Bex turns from her plate and gives it to the boy on her other side complete, beginning to end, Sam's name on the front of it. Sam goes back to his food.
+Down the table, Sam works out twice why the ship needs to be mostly fuel and gets the ratio backward before Kavi corrects him. When he has it right on the third try, on his own, Bex turns from her plate and gives it to the boy on her other side complete, beginning to end, Sam's name on the front of it. Sam goes back to his food.
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, before Chloe had said a word of it to him herself, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
 
@@ -5194,7 +5194,7 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "Dave."
 
-"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life. I have paid rent or a mortgage every month since before you were born, and the number has mattered in every single month of it. There has never once been a month where it didn't, and I'm not saying that as a complaint, I'm saying it because it's true, and I want you standing in front of a number that size with your eyes actually open to what it is, not just the word guaranteed, which is doing most of the work in that offer whether you noticed it or not. I did the arithmetic myself while you were talking just now, twice, and I got a different total both times, which tells you something about how big the number actually is. My own father worked forty years for a pension that got cut by a third the year before he could touch it, and I always check a number that size three separate ways before I put it in front of anybody."
+"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life. I have paid rent or a mortgage every month since before you were born, and the number has mattered in every single month of it. There has never once been a month where it didn't, and I'm not saying that as a complaint, I'm saying it because it's true, and I want you standing in front of a number that size with your eyes actually open to what it is, not just the word guaranteed, which is doing most of the work in that offer whether you noticed it or not. I did the arithmetic myself, twice, and I got a different total both times, which tells you something about how big the number actually is. My own father worked forty years for a pension that got cut by a third the year before he could touch it, and I always check a number that size three separate ways before I put it in front of anybody."
 
 "I understand what it is, because I did the math myself before I ever walked into that room, and I understood it fully before I said no. I wrote it out on the back of the deadline list in February and I still have the page."
 
@@ -5214,7 +5214,7 @@ A pause, and then her father again, quieter. "What happens if you change your mi
 
 "No, I turned it down flat, and I left that particular question sitting on the table."
 
-Her mother's voice, when it comes back, has the edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know the aid letter from Georgetown left a gap, and we've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the degree instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself. We will find it. I would still rather you knew what we were finding, and the actual number rather than a guess, because your father and I do not have it sitting around and we never have. I called the bank this morning before you were even awake, and I already know what a loan against the house would cost us every month for the next ten years."
+Her mother's voice, when it comes back, has the edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money, and we've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the degree instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself. We will find it. I would still rather you knew what we were finding, and the actual number rather than a guess, because your father and I do not have it sitting around and we never have. I called the bank this morning before you were even awake, and I already know what a loan against the house would cost us every month for the next ten years."
 
 "I hear it."
 
@@ -6623,7 +6623,7 @@ ruth: there were four of them and you had nothing else up there if it went wrong
 
 nadia: i had it covered. if anything happened to me the file still goes out and they still go down for it
 
-eli: nadia a dead mans switch mostly pays off after youre already dead
+eli: nadia a dead mans switch only pays off if youre already dead
 
 eli: if they had called it you would be dead right now and it would have worked exactly like you built it
 

@@ -64,7 +64,7 @@ Swimming gets harder and the teacher says so in the first week. Some of it is in
 
 Paintball joins the afternoon block in October; Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
-For weeks most of the room is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
+For weeks everybody is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
 On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the whole way. I can see it leave, I see the whole thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
 

@@ -196,7 +196,7 @@ ruth: there were four of them and you had nothing else up there if it went wrong
 
 nadia: i had it covered. if anything happened to me the file still goes out and they still go down for it
 
-eli: nadia a dead mans switch mostly pays off after youre already dead
+eli: nadia a dead mans switch only pays off if youre already dead
 
 eli: if they had called it you would be dead right now and it would have worked exactly like you built it
 
