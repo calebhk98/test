@@ -1,6 +1,6 @@
 ## Chapter Twenty-Five: Forty Targets
 
-*August 2023 – November 2023*
+*August 2023 - November 2023*
 
 Sam likes the Army immediately.
 

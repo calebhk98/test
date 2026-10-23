@@ -1,6 +1,6 @@
 ## Chapter Eleven: Eight
 
-*June 2013 – June 2014*
+*June 2013 - June 2014*
 
 Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one."
 

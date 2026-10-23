@@ -1,6 +1,6 @@
 ## Chapter Thirty-One: Ruth
 
-*October 2023 – November 2025*
+*October 2023 - November 2025*
 
 Ruth spends her first year at MIT believing the school has put her in a remedial track.
 

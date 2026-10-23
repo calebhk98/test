@@ -1,6 +1,6 @@
 ## Chapter Thirty-Two: The Money
 
-*November 2025 – February 2026*
+*November 2025 - February 2026*
 
 The financial one takes sixteen weeks, start to finish.
 

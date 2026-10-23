@@ -1,12 +1,12 @@
 ## Chapter Sixteen: Thirteen
 
-*September 2018 – July 2019*
+*September 2018 - July 2019*
 
 A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
 
 Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student. On the stairs, in the first fortnight, she works that out, tells Ruth, and gets a shrug and half a sandwich.
 
-The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Gus want the answer handed over, though Chloe can talk them out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
+The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though Chloe can talk them out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
 
 Marek's sheet comes back blank, week after week.
 

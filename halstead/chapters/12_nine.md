@@ -1,6 +1,6 @@
 ## Chapter Twelve: Nine
 
-*September 2014 – July 2015*
+*September 2014 - July 2015*
 
 On the first morning the sheet in her box has one more line on it than last year's did, so she counts it on the way down and takes it along to the office, twenty steps from her box, where the woman behind the desk finishes the line she is on before she looks up.
 

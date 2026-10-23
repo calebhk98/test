@@ -1,6 +1,6 @@
 ## Chapter Ten: April
 
-*April 2013 – June 2013*
+*April 2013 - June 2013*
 
 Sam sees her first and comes down the hall at a full run, hitting her hard enough that she drops the bag, sound first and words a beat behind it. "You came, you actually came, I told everybody you would. I said it to Ruth like fifty separate times, but she kept doing the face."
 

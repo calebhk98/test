@@ -1,6 +1,6 @@
 ## Chapter One: Before
 
-*September 2011 – February 2012*
+*September 2011 - February 2012*
 
 Chloe's mom is on the phone in the kitchen most evenings now, standing at the counter with a hand pressed flat against her forehead.
 

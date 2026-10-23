@@ -1,6 +1,6 @@
 ## Chapter Eight: The Asking
 
-*October 2012 – January 2013*
+*October 2012 - January 2013*
 
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, again and again, to things Chloe can't make out from where she is sitting.
 

@@ -1,6 +1,6 @@
 ## Chapter One: Before
 
-*September 2011 – February 2012*
+*September 2011 - February 2012*
 
 Chloe's mom is on the phone in the kitchen most evenings now, standing at the counter with a hand pressed flat against her forehead.
 
@@ -215,7 +215,7 @@ It says MARCH 7, a time, and a name.
 
 ## Chapter Two: March 7th
 
-*March 2012 – June 2012*
+*March 2012 - June 2012*
 
 Her dad is at work. That morning he tried to move two things and managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it was fine. Chloe had held his sleeve a second longer than the door needed. She doesn't know whether this is the kind of appointment you bring a dad to, so she reads the waiting room instead.
 
@@ -498,7 +498,7 @@ Her report card comes in an envelope a week later, saying she is meeting expecta
 
 ## Chapter Three: The Letter
 
-*June 2012 – July 2012*
+*June 2012 - July 2012*
 
 The envelope has her name on it.
 
@@ -1146,7 +1146,7 @@ Chloe sits in the dark with the paper on her knees and the pencil in her hand. T
 
 ________________
 
-Swimming is the last thing every afternoon, and because Chloe arrived unable to swim, she is put in the group at the shallow end of the pool with an instructor called Gwen, who has them blow bubbles with their faces in the water for two days before anybody moves on. By the end of the second week Chloe can manage a length as long as she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
+Swimming is the last thing every afternoon, and because Chloe arrived unable to swim, she is put in the group at the shallow end of the pool with an instructor called Deb, who has them blow bubbles with their faces in the water for two days before anybody moves on. By the end of the second week Chloe can manage a length as long as she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
 
 "It's not a race."
 
@@ -1156,7 +1156,7 @@ Swimming is the last thing every afternoon, and because Chloe arrived unable to 
 
 "Somebody's still first out of the water. That's a race. Nobody has to call it one," Sam says.
 
-Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Gwen, about the bubbles, about the days spent on them, and about a boy in their lane who splashes on purpose. Then on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
+Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Deb, about the bubbles, about the days spent on them, and about a boy in their lane who splashes on purpose. Then on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
 
 ________________
 
@@ -1494,7 +1494,7 @@ Chloe keeps her eyes shut the rest of the way home.
 
 ## Chapter Seven: The Same Room
 
-*August 2012 – October 2012*
+*August 2012 - October 2012*
 
 The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe.
 
@@ -1562,7 +1562,7 @@ She takes her book down and reads it in the kitchen, in the chair that faces the
 
 "Honestly, sweetheart, it's hard to say. It could be one week or it could be a month, and every call moves at its own pace."
 
-On the tenth day she asks her mom to call the school back and find out whether the message actually reached the families or just sat on somebody's desk; her mom makes the call while Chloe sits up on the counter to hear her side of it. The school says it sent the message out that same week, to all four families, and there is nothing else for anybody to do but wait.
+On the tenth day she asks her mom to call the school back and find out whether the message actually reached the families or just sat on somebody's desk; her mom makes the call while Chloe sits up on the counter to hear her side of it. The school says it sent the message out that same week, to all three numbers, and there is nothing else for anybody to do but wait.
 
 After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down the stairs fast if it rings.
 
@@ -1719,7 +1719,7 @@ Chloe moves her head from side to side with it still down on her arms.
 
 ## Chapter Eight: The Asking
 
-*October 2012 – January 2013*
+*October 2012 - January 2013*
 
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, again and again, to things Chloe can't make out from where she is sitting.
 
@@ -1968,7 +1968,7 @@ The envelope is in the top drawer under her socks, where it has been since Augus
 
 ## Chapter Nine: February
 
-*February 2013 – April 2013*
+*February 2013 - April 2013*
 
 February passes with the telephone silent; the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very back, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words; Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October; at the last of them, a fortnight ago, Dr. Ammons asked whether any of it had got easier, and she said some of it had.
 
@@ -2159,7 +2159,7 @@ Chloe watches her through the window, until her dad says something from the othe
 
 ## Chapter Ten: April
 
-*April 2013 – June 2013*
+*April 2013 - June 2013*
 
 Sam sees her first and comes down the hall at a full run, hitting her hard enough that she drops the bag, sound first and words a beat behind it. "You came, you actually came, I told everybody you would. I said it to Ruth like fifty separate times, but she kept doing the face."
 
@@ -2344,7 +2344,7 @@ In the car Chloe opens the notebook and checks the inside cover, where three nam
 
 ## Chapter Eleven: Eight
 
-*June 2013 – June 2014*
+*June 2013 - June 2014*
 
 Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one."
 
@@ -2561,7 +2561,7 @@ In June Chloe pulls out the notebook with the four subjects she was behind in, b
 
 ## Chapter Twelve: Nine
 
-*September 2014 – July 2015*
+*September 2014 - July 2015*
 
 On the first morning the sheet in her box has one more line on it than last year's did, so she counts it on the way down and takes it along to the office, twenty steps from her box, where the woman behind the desk finishes the line she is on before she looks up.
 
@@ -2768,7 +2768,7 @@ Going through the rest of the pages at the table that night, he finds more of th
 
 ## Chapter Thirteen: Ten Pages
 
-*September 2015 – April 2016*
+*September 2015 - April 2016*
 
 Mr. Hearn is small, gray, and says everything at one volume.
 
@@ -2982,7 +2982,7 @@ In April Sam asks her at dinner whether Hearn has got easier, and she says no, t
 
 ## Chapter Fourteen: Sixty Degrees
 
-*September 2016 – April 2017*
+*September 2016 - April 2017*
 
 The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground all the way. The building at that end is flat-roofed, pale, and newer than the rest; on the field side the grass comes up to the brick with no path worn into it.
 
@@ -3209,7 +3209,7 @@ It is still with her at dinner, where Sam has the bannister up for the fourth ti
 
 ## Chapter Fifteen: Twelve
 
-*September 2017 – January 2018*
+*September 2017 - January 2018*
 
 The forge is a low building past the kitchens, open Thursdays and most of Sunday, with the doors open in all weather, so the heat reaches her a good way out along with the smell of coke and scale. In the first week of September she walks down for a chisel and stays the afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, her own tongs on the rack above it, and a habit of missing dinner, so on the fourth time that month Sam waits in the doorway in his coat; she talks at him all the way back across the grass with a burn on her wrist she keeps to herself.
 
@@ -3576,13 +3576,13 @@ By Christmas she can hold twenty-four seconds in the 10v1, though she still sits
 
 ## Chapter Sixteen: Thirteen
 
-*September 2018 – July 2019*
+*September 2018 - July 2019*
 
 A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
 
 Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student. On the stairs, in the first fortnight, she works that out, tells Ruth, and gets a shrug and half a sandwich.
 
-The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Gus want the answer handed over, though Chloe can talk them out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
+The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though Chloe can talk them out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
 
 Marek's sheet comes back blank, week after week.
 
@@ -3793,7 +3793,7 @@ They finish that Tuesday in late July and the steps hold. Her mother steps out, 
 
 ## Chapter Seventeen: Fourteen
 
-*September 2019 – April 2020*
+*September 2019 - April 2020*
 
 Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything gets loaded. A row of weapons lies on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
@@ -3811,7 +3811,7 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card.
 
-"It's seven and about a fifth," a boy called Lucien Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
+"It's seven and about a fifth," a boy called Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
 "The card says what it says, Aymar," Voss says, keeping his eyes on the range.
 
@@ -4082,7 +4082,7 @@ The calls home run twice a week through January and most of February, until exam
 
 ## Chapter Eighteen: Fifteen
 
-*September 2020 – July 2021*
+*September 2020 - July 2021*
 
 The whole year is breaking clays at between ninety and a hundred, a spread that holds through September. Then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
 
@@ -4313,7 +4313,7 @@ Her grandmother turns the hand over once more, puts it down on the tablecloth, a
 
 ## Chapter Nineteen: Sixteen
 
-*April 2022 – June 2023*
+*April 2022 - June 2023*
 
 They take the bar in April, over two days, in the long examination room upstairs, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, so that the sound of the room for both days is pens and, every few minutes, a chair leg on parquet, and along the front sit the teachers who wrote the paper and will mark it, proctoring both days themselves.
 
@@ -4687,7 +4687,7 @@ Kavi sends a laughing face, his entire contribution, and Ruth reads it out at br
 
 ## Chapter Twenty-One: The Applications
 
-*October 2022 – March 2023*
+*October 2022 - March 2023*
 
 Chloe has been compared to the ninety-one people in her year since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
 
@@ -5917,7 +5917,7 @@ The chat moves on within minutes. Chloe's tab stays open on her desk for the res
 
 ## Chapter Twenty-Five: Forty Targets
 
-*August 2023 – November 2023*
+*August 2023 - November 2023*
 
 Sam likes the Army immediately.
 
@@ -6314,7 +6314,7 @@ The major writes that down too.
 
 The soldier who went untouched turns around in the front row to look at him, but turns back before the major has finished writing. Then the major closes the clipboard, checks his watch, and calls the next name on his list.
 
-The platoon runs the perimeter road that evening in boots because a private asked a major to make the next one harder. Nobody says a word to Sam on the road. At the end of it a corporal called Hale, bent over with his hands on his knees, says, "Next time you want it harder, ask the rest of us first and we will tell you no," which is all of it, and the part that lands.
+The platoon runs the perimeter road that evening in boots because a private asked a major to make the next one harder. Nobody says a word to Sam on the road. At the end of it a corporal called Vance, bent over with his hands on his knees, says, "Next time you want it harder, ask the rest of us first and we will tell you no," which is all of it, and the part that lands.
 
 ________________
 
@@ -6720,7 +6720,7 @@ nadia: of everyone still getting paid if nothing at all comes in
 
 ## Chapter Twenty-Eight: Nineteen
 
-*September 2024 – October 2025*
+*September 2024 - October 2025*
 
 Chloe gets a job at a company that translates documents for businesses: contracts, manuals, safety sheets, the kind of paperwork that has to say the same thing in several languages and cannot afford to say it almost. It is steady and slow, and the building holds fifty-odd people.
 
@@ -7017,7 +7017,7 @@ It's the first thing Ruth has posted in six months.
 
 ## Chapter Thirty: Cleared
 
-*September 2025 – August 2026*
+*September 2025 - August 2026*
 
 Chloe's blog gets big over the course of a year.
 
@@ -7150,7 +7150,7 @@ The job starts in January, as a trainee. She's sworn in that August, her birthda
 
 ## Chapter Thirty-One: Ruth
 
-*October 2023 – November 2025*
+*October 2023 - November 2025*
 
 Ruth spends her first year at MIT believing the school has put her in a remedial track.
 
@@ -7317,7 +7317,7 @@ sam: probably
 
 ## Chapter Thirty-Two: The Money
 
-*November 2025 – February 2026*
+*November 2025 - February 2026*
 
 The financial one takes sixteen weeks, start to finish.
 
@@ -7472,7 +7472,7 @@ eli: so lets go and read it
 
 ## Chapter Thirty-Three: The Other One
 
-*May 2026 – June 2026*
+*May 2026 - June 2026*
 
 Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never signed anything for the government if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
 
@@ -7750,7 +7750,7 @@ Outside his own apartment, a few blocks from the federal building he'll be back 
 
 ## Chapter Thirty-Five: Nine Minutes
 
-*June 2026 – July 2026*
+*June 2026 - July 2026*
 
 The financial worm goes quiet on a Thursday in June.
 

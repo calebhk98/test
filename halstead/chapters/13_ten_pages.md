@@ -1,6 +1,6 @@
 ## Chapter Thirteen: Ten Pages
 
-*September 2015 – April 2016*
+*September 2015 - April 2016*
 
 Mr. Hearn is small, gray, and says everything at one volume.
 

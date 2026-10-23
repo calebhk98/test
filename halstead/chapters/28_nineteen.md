@@ -1,6 +1,6 @@
 ## Chapter Twenty-Eight: Nineteen
 
-*September 2024 – October 2025*
+*September 2024 - October 2025*
 
 Chloe gets a job at a company that translates documents for businesses: contracts, manuals, safety sheets, the kind of paperwork that has to say the same thing in several languages and cannot afford to say it almost. It is steady and slow, and the building holds fifty-odd people.
 

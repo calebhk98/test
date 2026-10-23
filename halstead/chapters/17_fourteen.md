@@ -1,6 +1,6 @@
 ## Chapter Seventeen: Fourteen
 
-*September 2019 – April 2020*
+*September 2019 - April 2020*
 
 Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything gets loaded. A row of weapons lies on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
@@ -18,7 +18,7 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card.
 
-"It's seven and about a fifth," a boy called Lucien Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
+"It's seven and about a fifth," a boy called Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
 "The card says what it says, Aymar," Voss says, keeping his eyes on the range.
 

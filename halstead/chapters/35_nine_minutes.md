@@ -1,6 +1,6 @@
 ## Chapter Thirty-Five: Nine Minutes
 
-*June 2026 – July 2026*
+*June 2026 - July 2026*
 
 The financial worm goes quiet on a Thursday in June.
 

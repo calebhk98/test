@@ -172,7 +172,7 @@ The major writes that down too.
 
 The soldier who went untouched turns around in the front row to look at him, but turns back before the major has finished writing. Then the major closes the clipboard, checks his watch, and calls the next name on his list.
 
-The platoon runs the perimeter road that evening in boots because a private asked a major to make the next one harder. Nobody says a word to Sam on the road. At the end of it a corporal called Hale, bent over with his hands on his knees, says, "Next time you want it harder, ask the rest of us first and we will tell you no," which is all of it, and the part that lands.
+The platoon runs the perimeter road that evening in boots because a private asked a major to make the next one harder. Nobody says a word to Sam on the road. At the end of it a corporal called Vance, bent over with his hands on his knees, says, "Next time you want it harder, ask the rest of us first and we will tell you no," which is all of it, and the part that lands.
 
 ________________
 

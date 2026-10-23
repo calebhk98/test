@@ -120,7 +120,7 @@ Chloe sits in the dark with the paper on her knees and the pencil in her hand. T
 
 ________________
 
-Swimming is the last thing every afternoon, and because Chloe arrived unable to swim, she is put in the group at the shallow end of the pool with an instructor called Gwen, who has them blow bubbles with their faces in the water for two days before anybody moves on. By the end of the second week Chloe can manage a length as long as she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
+Swimming is the last thing every afternoon, and because Chloe arrived unable to swim, she is put in the group at the shallow end of the pool with an instructor called Deb, who has them blow bubbles with their faces in the water for two days before anybody moves on. By the end of the second week Chloe can manage a length as long as she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
 
 "It's not a race."
 
@@ -130,7 +130,7 @@ Swimming is the last thing every afternoon, and because Chloe arrived unable to 
 
 "Somebody's still first out of the water. That's a race. Nobody has to call it one," Sam says.
 
-Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Gwen, about the bubbles, about the days spent on them, and about a boy in their lane who splashes on purpose. Then on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
+Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Deb, about the bubbles, about the days spent on them, and about a boy in their lane who splashes on purpose. Then on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
 
 ________________
 

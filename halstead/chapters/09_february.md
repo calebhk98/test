@@ -1,6 +1,6 @@
 ## Chapter Nine: February
 
-*February 2013 – April 2013*
+*February 2013 - April 2013*
 
 February passes with the telephone silent; the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very back, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words; Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October; at the last of them, a fortnight ago, Dr. Ammons asked whether any of it had got easier, and she said some of it had.
 

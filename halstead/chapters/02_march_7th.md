@@ -1,6 +1,6 @@
 ## Chapter Two: March 7th
 
-*March 2012 – June 2012*
+*March 2012 - June 2012*
 
 Her dad is at work. That morning he tried to move two things and managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it was fine. Chloe had held his sleeve a second longer than the door needed. She doesn't know whether this is the kind of appointment you bring a dad to, so she reads the waiting room instead.
 

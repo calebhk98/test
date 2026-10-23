@@ -1,6 +1,6 @@
 ## Chapter Three: The Letter
 
-*June 2012 – July 2012*
+*June 2012 - July 2012*
 
 The envelope has her name on it.
 

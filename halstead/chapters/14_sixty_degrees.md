@@ -1,6 +1,6 @@
 ## Chapter Fourteen: Sixty Degrees
 
-*September 2016 – April 2017*
+*September 2016 - April 2017*
 
 The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground all the way. The building at that end is flat-roofed, pale, and newer than the rest; on the field side the grass comes up to the brick with no path worn into it.
 

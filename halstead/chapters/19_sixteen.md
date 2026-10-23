@@ -1,6 +1,6 @@
 ## Chapter Nineteen: Sixteen
 
-*April 2022 – June 2023*
+*April 2022 - June 2023*
 
 They take the bar in April, over two days, in the long examination room upstairs, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, so that the sound of the room for both days is pens and, every few minutes, a chair leg on parquet, and along the front sit the teachers who wrote the paper and will mark it, proctoring both days themselves.
 

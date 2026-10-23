@@ -1,6 +1,6 @@
 ## Chapter Twenty-One: The Applications
 
-*October 2022 – March 2023*
+*October 2022 - March 2023*
 
 Chloe has been compared to the ninety-one people in her year since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
 

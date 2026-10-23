@@ -1,6 +1,6 @@
 ## Chapter Thirty: Cleared
 
-*September 2025 – August 2026*
+*September 2025 - August 2026*
 
 Chloe's blog gets big over the course of a year.
 

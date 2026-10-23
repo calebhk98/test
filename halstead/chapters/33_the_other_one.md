@@ -1,6 +1,6 @@
 ## Chapter Thirty-Three: The Other One
 
-*May 2026 – June 2026*
+*May 2026 - June 2026*
 
 Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never signed anything for the government if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
 
