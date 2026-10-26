@@ -49,7 +49,50 @@ These are options to react to, not decisions. Pick, mix or throw out.
 
 ## The massive ones (Act IV)
 
-*Both Act IV designs were rejected. Replacements are being chosen.*
+### The living landscape (old Ch 28: a hundred million dead)
+
+**What it looks like:**
+- One colossal body, hundreds of meters tall: pale, eyeless, built like the other creatures but at the scale of a hill that walks.
+- Its hide is matte and grayish-white, and light sits on it wrong, so it looks flat even at a distance.
+- Phone footage shows it clearly. That's what ends denial.
+
+**How it kills:**
+- Its mana pulls in and consumes every producing person for kilometers around it as it walks. They fall where they stand, or are dragged toward it.
+- Ordinary people die in its wake: buildings it walks through, roads jammed with people fleeing, fires, crushes, and the collapse of everything the dead were running.
+- It walks through a dense, connected region for days. That's how the toll reaches a hundred million.
+
+**How it ends:**
+- It doesn't hurry and it doesn't notice resistance. Practitioners throw everything at it and barely mark it.
+- It leaves on its own, full, which is worse than being driven off.
+- "It moves like weather. Like a natural disaster with intent." (Keep this line.)
+
+### The scout's master (Ch 30)
+
+**What it looks like:**
+- Nearly human-sized, the same kind of being as the Act III scout, but its master: taller, with more joints, and the same smooth head with a sensory ridge where a face should be.
+- Like the scout, it can shift its density. At the edges of Mira's sight it seems to blur, which is the prose's "it didn't want to be seen clearly".
+
+**Why it came:**
+- It's looking for the scout that never came back (RULES). It knows Jason's signature, because that's what the scout went to investigate.
+- That makes Ch 30 a payoff of Act III: the thing Jason locked in his Box is why this one crossed.
+
+**How it talks:**
+- Like the scout, by shaping the air, so its voice comes from beside it.
+- It speaks to Jason first, and then, curious, to Mira.
+- It's intelligent, polite in a way that's worse than threats, and tactical.
+
+**How the fight goes:**
+1. It tests them.
+2. It kills two hundred clones almost casually.
+3. It recognizes the danger when the forty thousand appear.
+4. It tries to send a message home. Jason's lockdown blocks it, which is Jason's role in the fight.
+5. It retreats, then commits.
+
+It is far stronger than any single body of Mira's, and each clone dies in seconds. It loses because it is one body with one set of reactions, and eight million of her come from every direction at once.
+
+**Its soul:**
+- Under the rules it will come back eventually, with its memories, including the memory of her.
+- So "Gone" in the prose is true for now, and it is quietly the sequel's door.
 
 ## Decided
 
