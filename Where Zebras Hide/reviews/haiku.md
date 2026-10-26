@@ -1181,3 +1181,154 @@ Worst offenders, exact quotes:
 - The summary implies that the hunters' argument is wrong. The outline's Chapter 14 makes it a real argument. I want to know which the book chooses.
 - The summary says "devotion," and I want to see Mira's devotion argued in a scene rather than asserted.
 - Confusing: is "exponential" the cost of crossing, or the amount of energy the predators would need? The summary uses the word once and does not define it.
+
+## Step 34: Background, P/08_Worldbuilding_Notes.md (the author's own rough notes)
+
+**Overall opinion now**: These are the most honest and useful pages I have read in the project. The author asks the questions a critic would ask and answers some of them well: the lion and the lone zebra, the pheromone model of scent, the train analogy, and "Knowledge =/= Understanding." The last of these is the most important rule in the book, and it is in the notes, not on the page. The notes also argue for a grounded, realistic world, and the outline has moved a long way from that. Several things the notes settle contradict the outline and the prose, and I think the book needs to apply the notes' rules more strictly than the draft has.
+
+**Grade (the notes as worldbuilding): 7/10.** Clear, honest, and rule-based, with strong analogies. As a document meant to guide the book: 6/10, because it argues for realism while the draft escalates.
+
+**Changes of mind**: In Step 25 I praised the erasure chapter as the book's strongest moral reversal, and I still think the Priya scene is strong. But the notes say something that changes my reading of Chapter 25. The author writes: "If someone makes you forget about a train, before you understand, then you won't develop understanding of something you can't see. But once you understand, they can make you forget about trains, but the understanding persists." By that rule, erasing the memory of the video does nothing to people who have already understood its explanation. The seventeen erasures are either pointless or they work only on people who had not yet understood, and the plan never says which. I had accepted the erasures as a clean fix. The notes show the fix may not work at all.
+
+**What the notes settle, and whether the draft agrees**
+- Scent: "When the brain figures out mana, it produces it like a pheromone." This is the best explanation of the scent mechanism in the project, and the draft has only the general idea ("beacon," "bigger smell"). The prose should use the pheromone image.
+- Why it hasn't spread: the notes say global communication is recent, that small towns were wiped out when people showed off, and that the witch trials taught the practitioners to censor. This matches the summaries and the Chapter 20 history, and it gives the history a reason to be secret.
+- Why Earth is safe: the blue-whale analogy ("Earth is not a reasonable place for them, not enough food to bother") is clearer than the Chapter 6 car talk. It also contradicts the notes' own line that "large mana creatures are typically happy, and content," which the Chapter 16 creature fight does not match.
+- The randomized teleport: "he wasn't aiming for TN. He appeared there at random." This supports Chapter 3 and contradicts the Chapter 13 outline's claim that the first teleport was range-restricted. The author's notes are the tie-breaker, and the outline is wrong.
+- Memory erasure: "It is used pretty often, but it's only good as long as the brain hasn't started producing mana." Chapter 25 uses erasure on people who had watched the follow-up videos, and Chapter 25 also shows Priya already producing mana. The notes say erasing her would be too late, and the plan's choice to teach her rather than erase her is consistent with the notes. The other sixteen are the problem, as above.
+- The Jason motive for not erasing Mira: "Why not the protag, because Jason kinda likes her?" The notes give affection as the reason he refuses. The prose gives principle ("I'm not going to mess with your head unless you ask me to."). The author should decide which is the reason, because the difference is the whole of Jason's ethical position in Chapter 3.
+- The hunters: "the human hunters are just people who are trying to improve themselves, and ask others for techniques, and Jason just doesn't tell them." This matches Chapter 14, and it contradicts the Step 33 summary's word "jealous."
+- The sharing question: "It would be like curing cancer for your parents, and then just not telling people how to do so?" This is the best analogy for Jason's position in the project, and the Chapter 14 outline does not use it. It should be in the scene.
+- Family: "Even sharing with family or friends is typically avoided by those who learn." This means Mira's Chapter 22 visit to her family has to be a concealment, and the plan does not say so.
+- Children: "even children can start creating mana if their brain goes down the right path." This supports the seventeen-year-old in Chapter 29, which the plan has not connected to the rule.
+
+**The grounded-realism intent versus the draft**
+- The notes say: "It's supposed to feel like anyone could be in their shoes at any time, this isn't like a super natural world." They also say: "I'm just trying to make it more realistic." The outline's Chapter 13 (three randomized teleports, one ending in the Atlantic), Chapter 21 (the other side as a place to sleep), Chapter 29 (110 clones and a planetary triage), and Chapter 30 (eight million clones) move away from that intent. The notes' own sentence ("the story is just about over" when the world finds out) is an explicit warning that the apocalypse is the end of the grounded story. The draft spends eight chapters past that point.
+
+**Problems and typos in the notes**
+- "Issac Newton" is misspelled, and the comparison is repeated as "Michelangelo or whatever." The notes do not say whether Newton is a serious comparison or a joke, and the draft's "Newton-level" needs the same decision.
+- "the 'pet' or liability" language from Step 33 comes from Jason's Chapter 3 analogy. The notes do not mention the pet analogy at all.
+
+**Predictions and questions**
+- The notes promise a train-station image ("Now an engineer though?"). I want to see the book use the train analogy once, on the page, because it is the clearest statement of the rule.
+- The notes ask "IDk how she will react when she finds out" about the hunters. The draft has not shown Mira learning why the hunters were chasing Jason; the Chapter 14 conversation is the closest, and it is Jason's account.
+- The notes say the battery question is open ("So it's like a prison and training and battery?"). The outline has never answered it.
+- Confusing: if understanding persists even after erasure, can Mira erase herself? The notes do not say, and it matters for the ending.
+
+## Step 35: Background, P/09_Mira_Clone_Ability.md
+
+**Overall opinion now**: This is the clearest technical document in the project, and it makes the clone mechanic readable as a system: five stages, a stated cost structure, and a reason the ability is Mira's alone. The strongest idea in it is that the power comes from the eye she trained as a film photographer ("noticing when something is fractionally off"), and that Jason can see the door but cannot "thread the needle." That makes the power a consequence of who she is, which is the best thematic link in the magic. The document also makes the book's central moral problem explicit, and then does not address it. It also disagrees with the outline on the ceiling, and on whether Mira is special.
+
+**Grade (the mechanic as a document): 6/10.** Clear, well-linked to character, and honest about cost. Held back by an unaddressed ethical problem and an ambiguous ceiling.
+
+**Changes of mind**: In Step 12 I said the Stage 3 payoff was credible and that the book had not yet made Mira special. This document says she is the only one who can do this, because of how she thinks. That is a change in my view: I had accepted "not a prodigy" as the book's position, and this document contradicts it. The book has to choose.
+
+**What is strong**
+- "that habit of eye, noticing when something is fractionally off" as the source of the power. This ties Chapter 1's Pentax, the Chapter 8 refinement and the Chapter 30 colony together. It is one of the best ideas in the project and it should be in the prose at least once, plainly.
+- "He can identify that the door exists. He cannot thread the needle." The image is precise and it makes Jason's limit a character trait rather than a plot convenience. It also answers the Chapter 12 problem (Jason argues the logic and then says he cannot execute it) better than the outline does.
+- Jason's rebuttal is clearer here: "fusion is broken energy, cooking meat is an overpowered strategy." The outline's version ("Fusion power is broken by the standards of fire") was garbled, and this is the fix.
+- The cost structure is explicit: "Reabsorbing them collapses a distributed mind back into one body, causing severe pain... not from mana overload, but from the cognitive compression." This makes Chapter 29's "distributing the exhaustion" line mechanically true.
+- The stage placement against chapters is consistent with the outline. I checked each stage against Chapters 8, 9-10, 11, 12, 19, 20-21 and it matches.
+
+**Problems**
+- Ethics, unaddressed: "Stage 4: a clone creating a clone generates a genuinely independent biological entity." Then "Reabsorbing" is the word used for what happens to them. The document is clear that the clones are living, independent, and conscious (Stage 3 says "they are her, spread across multiple bodies"). Reabsorbing a genuinely independent person is killing or erasing one. The document never raises it, and neither does the book. The book has spent three chapters on consent and erasure (Chapters 3, 25 and the notes). Chapter 29 and 30 make the clones routine. This is the most serious gap in the project, and it is in the mechanic's own definition.
+- Ceiling contradiction: "At her best, she can sustain 200 clones each capable of producing 200 of their own, recursively." Two generations give 200 + 40,000 clones. Chapter 30's eight million requires a third generation, which the document's stated "best" does not allow. The word "recursively" suggests no limit, so the document is ambiguous about where the cap is. The reader will not be able to tell whether Chapter 30 breaks the rules or follows them, and the ending depends on that.
+- Contradiction with Chapter 29: Chapter 29 says "approximately 110 clones" and "one clone can not win" and "ninety threads." The document's Stage 3 ceiling is about 3 combat clones and 9 total, and Stage 4's "at her best" is 200. The Chapter 29 number is not explained by any stage in the document.
+- Contradiction with the outline's cost model: the document says "The cost of a clone is in its construction, not its upkeep." The outline's Chapter 12 and 29 say the cost of repeated creation and loss is "significant" and that maintaining them over days costs headaches and exhaustion. The document says upkeep is cognitive, not mana. The outline says both. The reader needs one.
+- The document makes Mira unique ("the ability stays distinctly Mira's"), which contradicts the outline's Chapter 7, 12 and 21 purpose lines ("not a prodigy," "functional, not powerful," "not special"). The document's position is that she is the only person who can do this. Those cannot both hold, and the outline's line is the one the reader will feel.
+- Minor: the document uses "Stage" and "Phase" for the same progression ("Phase 0 - Puppet" then "Stage 1"). Pick one.
+
+**Predictions and questions**
+- The clones' moral status is the question the book must answer before the ending lands. If the clones are persons and Mira reabsorbs them, the ending's "I was not going to leave them out there" becomes a different sentence.
+- The "eight million" ceiling will need a rule. If the ending breaks the rule, the book should say so inside the chapter.
+- Confusing: is the Stage 2 "hive mind" the same as the Stage 3 "single hive mind"? The document says the consciousness dynamic "has fully shifted by this point," at Stage 3, but Stage 2 already says the senses are "fully combined."
+- Questions: can a clone choose to stop existing? The document does not say, and the answer decides whether the mechanic is a power or a moral trap.
+
+## Step 36: Background, P/10_Genre_and_Blurbs.md
+
+**Overall opinion now**: The blurbs sell a clean premise: an ordinary woman, three months, a secret humanity was not meant to find, and a hidden world that is safe only because it is quiet. The best of the four ("Earth isn't a magical world. It's a hiding place. And she just lit a beacon.") is the clearest statement of the book's core idea in any document in the project, and it is better than most of the prose so far. The problem is that the blurbs promise a book the draft does not fully deliver: a romance is the genre, but the copy sells a thriller, and the three-month clock the blurbs depend on is abandoned in the draft.
+
+**Grade (the copy as a pitch): 6/10.** Strong hooks and a memorable closing line, weakened by a mismatch between the genre and the copy, and by a promise the draft does not keep.
+
+**Changes of mind**: In Step 1 I worried the book's opening did not say what the book was about. Reading the blurbs, I now think the book's premise is clearer than its chapters, and the copy has been ahead of the prose. That is a useful and somewhat painful finding.
+
+**What the copy gets right**
+- "Earth has stayed safe by staying silent. That silence is about to break." is the cleanest hook in the project, and the draft's Act IV does exactly that.
+- "Some secrets were buried for a reason. And Mira just helped dig one up." is a good line and it is true to the book: she is the one who breaks the silence, in Chapter 25 by erasing and in Chapter 30 by being the colony.
+- "Most people who learn what Jason knows die within months. The few who survive do so by mastering skills they didn't know were possible, and keeping secrets humanity wasn't meant to discover." is a clear, honest stake, and it matches the summaries.
+- "Jason can erase her memories. Make it all go away. But Mira's already seen too much to go back, and some truths change you whether you're ready or not." matches the notes' "understanding persists" rule. The copy has the rule better than the prose does.
+
+**Mismatches and problems**
+- Genre and copy. The genre is listed as "Romance," "Dark Fantasy with Romance," "dark romantasy," and "Paranormal Romance," and also as "APOCALYPTIC HORROR." The copy sells horror and thriller in three of the four blurbs. Only the Option 4 blurb ("Mira's Friday evening coffee date") and the Option 2 closing line mention the relationship in any detail. A romance reader who picks this up will not see the romance on the back. The book's best scenes (the hand scene in Chapter 8, the look in Chapter 21, the lean in Chapter 29) are romance, and the copy does not mention them.
+- The three-month clock. Every blurb says Mira has three months. The draft's Chapter 12 has her past the critical window ("the three-month clock... is now something she's going to outlive"), and the summary (Chapter 30) puts the book at about eight months. The copy promises a clock that the draft stops using after Chapter 12. Either the copy must change or the clock must come back.
+- "Impossible." Three of the four blurbs use "impossible" in their first two lines ("impossible choice," "impossible choices," "impossible choice"). It is a word that flattens the copy.
+- "a war humanity doesn't know exists" and "an invisible war humanity doesn't know exists." The war is the Act IV apocalypse. The copy promises it early. That is a fair pitch, but the reader who has read Chapters 1-22 has not seen a war, only a hunt.
+- "Teach Mira to fight creatures that shouldn't exist." The draft's creatures are mostly described as "not stray" predators. "Shouldn't exist" is the blurb's frame, and the prose's frame is ecological ("It's ecology, not magic," Chapter 17). The two are in tension, and the copy wins in tone.
+- The copy calls Jason's solution "teach Mira to fight." The draft's Jason is a teacher who keeps information back, and the copy's version is more active than the draft's.
+- "Earth isn't special. It's safe." (Option 2) contradicts the book's own position in Chapter 27 and 28, where Earth becomes the buffet. The copy is correct for the start of the book and wrong for the end. That is a reasonable pitch, but a reader who finishes the book will notice it.
+
+**Which blurb is best**
+- Option 4 is the most complete: the coffee date, the choice, the premise, the erasure option, the three months, and the closing line. It is also the most clearly in the book's voice. I would use Option 4 with the romance made visible in its first paragraph.
+- Option 3 is the strongest as a thriller and has the most bold-type drama. It is also the most adjective-heavy.
+
+**Predictions and questions**
+- If the book is marketed as a romance, the three-month clock and the apocalypse will both be read as the romance's stakes. The draft is closer to that than the blurbs are.
+- The copy's closing lines ("dig one up," "lit a beacon") set a high bar for the final chapters. The draft's ending ("And then I couldn't see.") is more open than the copy promises, and the reader will ask whether the book answers the hook.
+- Confusing: the genre field lists four different genres. The author should pick one, because the blurb must match the book.
+
+## Step 37: Background, P/11_Comp_Titles.md
+
+**Overall opinion now**: Three lines of comparison titles, each promising a different book. One of them is well chosen, one overpromises, and one names a fit the prose does not yet meet. Taken together they show the author has not yet decided what kind of book this is, and the comps pull toward three different readers: survival-school, war-and-monsters, and literary science fiction.
+
+**Grade (the comps as positioning): 5/10.**
+
+**Changes of mind**: In Step 36 I said the copy was ahead of the chapters. The comps say the same, but more sharply. The reader who chooses this book on the strength of "The Invisible Life of Addie LaRue meets The Three-Body Problem" will expect a literary, cerebral book, and the prose is not there yet.
+
+**Comp by comp**
+- "A Deadly Education meets Attack on Titan with romance." This is a useful pairing for the survival-training half of the book (Chapters 5-15) and for the apocalyptic half (Chapters 23-30). The draft's training is closer to a school of hard lessons than to a battle story, which suits the first comp. The second comp promises a grim, relentless violence the draft has only in brief moments (the creature fights in Chapters 13 and 16, and the colony in Chapter 30). "With romance" is accurate in the sense that the romance is real, though restrained.
+- "For fans of dark romantasy who want REAL stakes." This comp makes two promises the draft only partly keeps. "Dark romantasy" readers expect a heavy romance arc and an escalating relationship. The draft's romance is quiet and mostly restrained (Chapters 8, 21, 29), and a romantasy reader will find little of the genre's heat or intensity. "REAL stakes" is a fair claim for Chapters 3, 25 and 30, but the middle chapters (4-12) have low stakes, montage and dialogue-based training. The comp should not promise real stakes until the middle is tightened.
+- "The Invisible Life of Addie LaRue meets The Three-Body Problem." This is the most interesting pairing. Addie LaRue is about being forgotten and about memory, which is exactly the book's erasure theme (Chapters 3, 25, and the notes' rule that "understanding persists"). The Three-Body Problem is about a hidden cosmic threat and the logic of hiding from something that could destroy you, which is the book's "Earth is a hiding place" premise. The fit is thematically precise. The risk is tone: both books are literary and cerebral, and the draft's prose, especially Chapter 30, is only sometimes at that level. Chapters 1-3 read more like a commercial thriller than literary science fiction.
+
+**Problems with the comps as a set**
+- They describe three different books. A reader who likes the first comp will be surprised by the second's tone, and a reader of the third will be surprised by the first's pace.
+- The comps promise quality the draft is not yet delivering. Comparing to Addie LaRue and The Three-Body Problem sets a bar the early chapters would fail, and a reviewer will notice.
+- Only the first comp mentions the romance in a way that matches the book's shape; the second names romantasy, and the third names Addie LaRue, which has romance but is not romantic in the genre sense. The romance is the book's emotional spine, and the comps do not sell it consistently.
+
+**What I would tell the author, based on the whole reading**
+- The Addie LaRue and Three-Body comp is the most true to the premise and the most ambitious. If the author wants it, the prose has to rise to it, and that means dropping the leaked notes, the stock phrasing and the explanatory dialogue.
+- The Deadly Education and Attack on Titan comp is the most accurate about the shape of the book's survival and apocalypse halves. It is the safest pitch.
+- The romantasy comp should be cut or softened unless the romance is made more central.
+
+**Predictions and questions**
+- The comp that the book is written toward will decide the final draft's register. I expect a reader to choose the survival comp first and feel betrayed by the literary tone, or to choose the literary comp and find the early chapters too plain.
+- Confusing: is the book a romance first or a survival thriller first? The comps answer the question three different ways.
+
+## Final verdict
+
+**The strongest parts of the concept**
+- The central rule: knowing how mana works is what changes the body. "Information is a Bio-Hazard," with the understanding-persists corollary, is an original premise with a built-in moral question about who is allowed to know.
+- The ecology: a hidden world where humans are invisible until they produce mana, the "silent zebras in tall grass," the Great Filter, and the Science shield together explain why nobody has noticed. This is the best worldbuilding in the project.
+- Erasure as a theme of selfhood. Mira's "My mind is mine" (Chapter 3) becomes a real cost when she erases seventeen people (Chapter 25), and the book's best moral reversal depends on it.
+- The clone mechanic, tied to the film-photographer's eye. Jason "can identify that the door exists. He cannot thread the needle." The power is the character.
+- The people at the edges of the story: Priya's notebook and breathing, the seventeen-year-old who "want[s] to go home," Delilah's "distributing the exhaustion," Kael's "How many viral videos are you from catastrophe?"
+
+**The biggest problems**
+- The prose is not yet at the level of the concept. Chapter 1 has a leaked generator note ("Answer briefly, then redirect to something about me."). Chapters 2 and 3 run on "I don't know" loops and explain feelings the scene already carries. Stock phrasing and the door image recur until they stop working.
+- The register shifts sharply. Chapters 1-3 are short, wry and specific. Chapter 30 is long, abstract and balanced, and it reads as a different writer. The reader will feel a change of voice at the ending.
+- The middle of the book (Chapters 4-12 in outline) is montage and talk. The threat disappears by omission, the three-month clock is dropped, and Mira's family and Ohio thread vanish without scenes.
+- The rules disagree with each other. The crossing rule ("not worth the trip") is contradicted by Chapters 9, 13, 24 and 28. The first teleport is random in Chapter 3 and range-restricted in Chapter 13. Mira is "not special" in the outline and the only one who can do this in the mechanic document. The clone ceiling is 200 by 200 and then eight million.
+- The clones' moral status is never addressed, although the book has spent Chapters 3, 25 and the notes on consent and erasure. Chapters 29 and 30 make the reabsorption of conscious beings routine, and the narration does not stop to ask whether it is killing.
+- Continuity: Jason's parents are "good people" in the Chapter 6 plan but "we didn't really get along" in Chapter 1. The cycling lesson is in a cabin in Chapter 7 and a Tennessee rest stop in Chapter 25. The timeline says "since January" in Chapter 30, but Chapter 1 is February. The hunters are "sympathetic" in the outline and "jealous" in the summary.
+- The plan files carry writer's notes ("Hmm?", "IDK", "I think I should have delilah come here..."). The outline is a working draft, not a plan, and some of its sentences cannot be parsed.
+- Genre, blurb and comps disagree about the book: romance, thriller, apocalyptic horror, and literary science fiction.
+
+**The five most important fixes, in priority order**
+1. Decide the clone and erasure ethics in writing, then apply the book's own rules. The clones are conscious persons, and reabsorbing them has to be a moral act that someone in the book names. Set one clone ceiling and keep the Chapter 30 eight-million colony inside it, or change the rule openly in the text. Resolve the erasure contradiction: if understanding persists, the seventeen erasures in Chapter 25 must either fail or be shown to fail, and Chapter 26's collapse should say so.
+2. Write a single rules bible and fix the contradictions it exposes: zero-mana humans and producing humans under the crossing rule; random versus range-restricted teleportation; Mira as ordinary versus unique; the three-month clock, which must come back or be dropped from the blurbs; the history of science and the witch trials, which should be dramatized once, not stated four ways.
+3. Remove the leaked and meta text and fix the prose at the sentence level, starting with the chapters the reader meets first. Delete the Chapter 1 generator note. Cut the "I don't know" and "I know" loops in Chapters 2, 3 and 24. Replace explanatory tags after good images ("which I appreciated," "Good," "Actually scared.") with the image alone. Fix the missing-space errors ("breathing.The," "sometimes.Their," "me.The"), the backslash escapes, and the mismatched quotes. Bring the late chapters closer to the early register rather than the other way round.
+4. Turn the middle montage into scenes and bring back the threat. Give Jason's origin story its own chapter (the plan has it in Chapter 6 and the prose lacks it). Put a hunter, a family member, or a Columbus consequence on the page between Chapters 6 and 15. Dramatize one exchange in the Delilah tea scene instead of summarizing the community. Let Mira's family and Ohio life cost something on the page.
+5. Make the book's genre and promises match its shape. Choose romance or survival-thriller as the first genre, make the romance central in the middle chapters if romance is chosen, and rewrite the blurbs and comps to match. The Addie LaRue and Three-Body comp is the most true to the premise, and the book has to earn it with its prose; until then, the Deadly Education and Attack on Titan comp describes the shape more accurately.
+
+**Final grade**
+- The draft as written: **4/10.** Several chapters are readable, the ending has real force, and the rules are often coherent in the notes, but the prose has leaked notes and loops, the middle is montage, the clone ethics and rule contradictions are unresolved, and the register changes between the first and last chapters.
+- The concept's potential: **7.5/10.** The premise, the ecology, the erasure theme and the clone-as-character idea are better than the execution, and a disciplined revision that applies the book's own rules could make this a strong and original novel for its target readers. As it stands, the draft is a promising premise, not yet a finished novel.
