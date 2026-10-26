@@ -146,7 +146,7 @@ Jason's own techniques:
 | --- | --- |
 | End of Ch 8 | a handful of Stage 1 |
 | Ch 12 | about nine at Stage 1 and 2, dropping to three at Stage 3 |
-| End of Act II | six or so Stage 3 |
+| End of Act II | three to four Stage 3 |
 | Ch 19 | first Stage 4 chains, small and painful |
 | Ch 20 | a one-time burst of about a thousand in a field on a Tuesday afternoon, then a reabsorption that knocks her out for hours |
 | Act IV | about 110 sustained for days, rotating one every four to five minutes |
