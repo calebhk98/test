@@ -15,6 +15,23 @@ The order of work I'm proposing:
 3. I rewrite the outline in a fixed per-chapter format that Haiku can draft from (section 5).
 4. Haiku drafts the chapters.
 
+## Your answers so far
+
+- **D1, clone scale:** keep 8 million and set it up, as recommended.
+- **D2, Ch 28 death toll:** keep 100 million. The outline therefore has to spell out:
+  - how one creature kills that many, and over what range and how long
+  - what the world looks like afterward: infrastructure, refugees, governments
+  - why the Ch 29 teaching sessions can still run in that world
+  - why Earth was "not worth the trip" until this point, so the Ch 6 economics still hold
+- **D3, timeline:** you don't mind, so I'll use the recommendation and date every chapter in `TIMELINE.md`.
+- **D4, romance:** it should read as a romance book. I'm using the recommendation: they become a couple in Act III, with a kiss and her saying it back, and each chapter carries a romance beat. One catch, below.
+
+**The romance-genre catch.** As readers and bookstores use the label, a romance has the love story at its center and ends hopefully for the couple. An ending where she may be dead, and he is shouting at her while she can't hear him, breaks that promise. Two ways to handle it:
+- Keep the ending and sell the book as romantasy or fantasy with a strong romance. In romantasy, a first book ending on a cliffhanger is normal.
+- Keep the romance label and change the ending to something hopeful.
+
+I recommend the first. It changes the blurb and the genre line in `10_Genre_and_Blurbs.md`, not the book.
+
 ## 1. What the reviewers agree on
 
 | Problem | Raised by |
