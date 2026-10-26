@@ -36,6 +36,8 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
 
 **Her voice** (samples): "Okay. Okay. I'm going to need you to say that again, slower, and with fewer horrifying words." / "No, I'm not mad. I'm extremely calm. Look how calm I am."
 
+**On the Box:** she thinks it's wrong, says so, and never stops saying so. She also knows it's his ability, not hers, and she keeps benefiting from it. It's a real, standing disagreement between them, not guilt: she doesn't hate herself for using it, she just won't pretend she agrees.
+
 **Her arc:**
 - Devotion pulls her in. Then she's good at something for the first time in her life, and that keeps her in too.
 - By Act IV duty has taken over. She does to strangers what she refused to let Jason do to her, and she knows it.

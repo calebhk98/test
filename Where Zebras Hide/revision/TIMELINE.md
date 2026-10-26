@@ -29,7 +29,7 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 | 10 | Late April | Cabin | The Box. Stage 2 discovery: one mind. |
 | 11 | Late April | Cabin | Delilah arrives. She makes the "creation, not copying" remark. |
 | 12 | Mid-May (three months in) | Cabin | Stage 3. The recursion conversation. Delilah teaches erasure. |
-| 13 | Early June: two days of watching, then dusk, then dawn | Cabin, then ocean twice, then Spain | The hunters, the two mid-tiers, the full-range escape. He tells her he shaped the Ch 1 range so she couldn't land in water; she works out what it cost him. |
+| 13 | Early June: two days of watching (he tells her the first morning), then dusk, then dawn | Cabin, then ocean twice, then Spain | The hunters, the two mid-tiers, the full-range escape. He tells her he shaped the Ch 1 range so she couldn't land in water; she works out what it cost him. |
 | 14 | June, about two weeks | Short-term rental in Spain | The ownership debate finishes. Money, language, ID. |
 | 15 | Late June | Vermont, a second property used as a base | The sister call: Nora graduated last week, and Mira missed it. The yes. The crossing on about June 28. |
 
