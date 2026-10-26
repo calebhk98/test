@@ -1,6 +1,6 @@
 # Style sheet for drafting chapters
 
-Every chapter is first person, past tense, from Mira's point of view. She can only report what she sees, hears, senses or thinks. If someone else is impressed, they have to say it or show it.
+Every chapter is first person, past tense, from Mira's point of view. Stay in past tense for asides too: "he laughed through his nose first", never "he laughs through his nose first". She can only report what she sees, hears, senses or thinks. If someone else is impressed, they have to say it or show it.
 
 ## Voice
 
