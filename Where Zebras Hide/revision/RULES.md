@@ -47,7 +47,7 @@ There is no official vocabulary, because there is no official anything. Each pra
 
 ## Memory erasure
 
-- A practitioner can erase recent memories, and any partial understanding, from a person who **has not started producing**.
+- A practitioner can erase recent memories, and any partial understanding, from a person who **has not started producing**. An hour is easy. A few weeks takes care and skill. Years is beyond almost anyone.
 - Once production starts, erasure can remove memories but not the understanding, and it cannot stop production.
 - Done well, the person notices only a moment of confusion.
 - Since the witch trials it has been the community's normal cleanup tool. Delilah teaches it to Mira in Act II as exactly that.
