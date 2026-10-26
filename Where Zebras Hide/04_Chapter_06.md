@@ -1,4 +1,4 @@
-Chapter 6
+## Chapter Six
 
 "How long before something notices me?"
 

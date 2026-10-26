@@ -1,7 +1,8 @@
 # A test repo
 
 Unrelated projects that share a git history and nothing else. `halstead/` is a
-novel. `the-long-way-home/` is a different novel. `japan-trip/`,
+novel. `the-long-way-home/` is a different novel. `Where Zebras Hide/` is a
+third novel, in early draft. `japan-trip/`,
 `food-hygiene-deprivation/` and `used-car-monitor/` are none of the above.
 
 Treat every top-level folder as a separate repository that happens to sit in the
