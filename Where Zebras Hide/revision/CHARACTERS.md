@@ -6,7 +6,7 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
 
 **For whoever drafts from this:**
 - Show these traits through what people do and say. Never have the narration name a trait.
-- The sample lines show the kind of voice each person has. Don't reuse them as dialogue.
+- The sample lines show the kind of voice each person has. Don't reuse them as dialogue unless a chapter outline marks them verbatim.
 
 ## Mira
 

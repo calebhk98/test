@@ -29,7 +29,7 @@ These are options to react to, not decisions. Pick, mix or throw out.
 
 | Name | Size | Look | Behavior |
 | --- | --- | --- | --- |
-| **Wolves** (Mira's word in Ch 29) | large dog to small bear | Long-limbed, many-jointed, with heads like folded fans that open toward prey. A pale, near-white hide, slick like wet paper. | Pack hunters that move in sync, because they share a sense of each other's mana. The Ch 13 pair and the Act IV crossings in cities. |
+| **Wolves** (Mira's word, from Act IV on) | large dog to small bear | Long-limbed, many-jointed, with heads like folded fans that open toward prey. A pale, near-white hide, slick like wet paper. | Pack hunters that move in sync, because they share a sense of each other's mana. The Ch 13 pair and the Act IV crossings in cities. |
 | **The native at Ch 16** | large dog | Dense and heavy. Mira can only feel it, never see it. She senses a pressure shaped like a body, with a ridge of something along its back that thrums before it strikes. | It tests her shield with a committed hit, probes the angles, and withdraws when the math stops working. |
 
 ## The other side's plants

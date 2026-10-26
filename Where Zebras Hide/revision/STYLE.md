@@ -14,9 +14,17 @@ Every chapter is first person, past tense, from Mira's point of view. She can on
 ## Punctuation
 
 - No em dashes. Use a full stop, a comma, a colon or parentheses, or rewrite the sentence.
-- Don't splice two sentences together with a comma where a dash used to be ("The thing arrived the way the first one had, wrong.").
+- Don't splice two sentences together with a comma where a dash used to be ("The light came back, wrong.").
 - Use straight quotes, and put dialogue punctuation inside the quotes.
 - No markdown escapes or formatting marks in prose.
+
+## How to read the outline
+
+- **Lines marked verbatim override everything in "Never do these".** Copy them exactly, even if they use a pattern banned below.
+- **A chapter's own Limits override the default counts below.** For example, Ch 3 may use "Two years" three times.
+- **When the outline says what a character doesn't do** ("he doesn't argue", "she doesn't ask"), that's an instruction to you. In the prose, write what they do instead: a task, a question, a gesture, the wrong words.
+- **Analogies and similes listed in the outline are the only ones in that scene.** Don't add your own on top of them.
+- Coffee as an image or metaphor is limited. Ordinary cups of coffee in a scene are fine.
 
 ## Never do these
 
