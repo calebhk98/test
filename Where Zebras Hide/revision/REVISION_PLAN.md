@@ -76,7 +76,9 @@ Each item has my recommendation. If you don't change an item, I'll use the recom
 
 **D2. The Ch 28 death toll.** One creature killing 100 million people breaks the economics in Ch 6. It also makes Ch 29's parking-structure world, still running on generators, hard to believe. NR would keep the number and explain the mechanism. MR would cut it.
 
-*Recommendation: cut it to tens of thousands over several days, plus a region the creature never leaves.* That region becomes a piece of Earth that has stopped being Earth. It stays unstoppable, which is what your own note asks for, and the world can still function enough for Ch 29.
+*Decided: keep 100 million* (see "Your answers so far"). Two journals add requirements:
+- Show it through one place and one person: a village, a teenager with a phone, a recorded call (S). Or show it through someone Mira met at the mansion (O).
+- Fix the location logic. The outline says the crossing hit where "population density + internet penetration" peaked, then names rural India, which fits neither (H, S, O). Put it in a dense, connected region, and keep Rajasthan in Ch 30 consistent with that.
 
 **D3. The timeline.** Currently: February start, about 3 months of training, a few weeks on the other side, and an 11-day Act IV.
 
@@ -99,20 +101,28 @@ I'd date every chapter in the timeline file.
 - **D8. Intelligent creatures "don't care" against the scout sent "for entertainment."** Both can hold. They don't care about Earth as food, but something odd draws a scout, and the odd thing is Jason's repeated crossings. His trips cause Ch 19, which gives his choices a real cost.
 - **D9. Coming back after death.** Only intelligent beings with souls come back. Strays and mid-tiers just die. That's why Jason boxes the scout instead of killing it.
 - **D10. Mira being "not special".** Her talent is ordinary. Her patience and photographer's eye are unusual, and the clone technique suits that kind of mind. Cut the line "Mira isn't special."
-- **D11. Teleporting.** Fully random is the default. He can narrow the range at a mental and mana cost, which he did in Ch 1. This makes Ch 3 and Ch 13 consistent.
-- **D12. Memory erasure.** It removes memories and any partial understanding, but only before awakening. After awakening it can't stop production. Delilah teaches Mira erasure in Act II as the community's standard tool, which Mira hates learning ("My mind is mine"). That sets up Ch 25.
+- **D11. Teleporting. (Changed after the full journals.)** The Ch 1 teleport was fully random. Ch 3 says so ("I didn't pick Tennessee specifically. That's what randomized means"), and so do your notes. Drop the Ch 13 claim that he "kept the first one local". Instead:
+  - The technique only picks open surface, which is why it can land in an ocean.
+  - In Ch 1 he gambled her unshielded life on it, knew it, and never said so.
+  - Mira finds out in Ch 13, which feeds D20.
+  - Each jump costs something. Ch 3 calls it "not something I can just use whenever", so three jumps in minutes (Ch 13) need a price, such as him being wrecked afterward.
+- **D12. Memory erasure.** It removes memories and any partial understanding, but only before awakening. After awakening it can't stop production. *(Changed after the full journals.)*
+  - Jason plants the rule in Ch 3: "I can still do it, because you haven't started" (O, S).
+  - Jason, the man who offered to erase her, teaches her erasure later in Act II. Mira hesitates and learns it anyway (S). This hits harder than Delilah teaching it.
+  - Erasure is the community's normal cleanup tool after the witch trials (your notes). Delilah can say so.
+  - Ch 25 has to follow the rule. The sixteen are erased before they finish understanding. Priya has been producing for 72 hours, so Mira has to teach her instead (O).
 - **D13. The photonless world.** There is no natural light, and heat moves only by touch. Practitioners can make light on purpose. Every scene on the other side follows this.
 - **D14. Standalone or series.** The ending stays as written and leaves the door open. The personal arc (D4) closes before it.
 
 ### Smaller story decisions
 
-- **D15. Who sees Mira's shield sequence in Ch 18: Kael.** He is on the other side, he is top-tier enough that his shock means something, and it introduces him earlier.
+- **D15. Who sees Mira's shield sequence in Ch 18: Kael.** He is on the other side, he is top-tier enough that his shock means something, and it introduces him earlier. Two journals warn against an onlooker reacting in place of the scene. So Mira's POV shows the cost, and Kael names exactly what is wrong ("You built two shields in the time it takes me to build one"), not "impressive" (S, H).
 - **D16. Priya made the videos.** The sixteen are viewers. This fixes a contradiction NR found.
 - **D17. The hunters.** Name one of them, give them a sympathetic reason, and have them appear on the page before Ch 27. Move the "why won't you share" argument into the two days in Ch 13 while the hunters wait, so the debate happens under pressure (MR). The same named hunter sends "Took you long enough, asshole."
 - **D18. Delilah.**
   - Her want: she has watched newcomers die and doesn't want to lose another.
   - Her flaw: caution that turns into policy. She ends up in the harsher-suppression faction in Ch 23 and asks Mira to do Ch 25.
-  - In Ch 29 she organizes relief so Mira can rest, as you suggested. The rest still costs: people die during those ten hours, and Mira finds out when she wakes.
+  - In Ch 29 she organizes relief and argues Mira into resting, as you suggested. Mira makes the final call herself, so the decision stays hers (O). The rest still costs: about ninety clones pulled at once, teaching sessions stopping mid-sentence, people dying during those ten hours. Mira finds out when she wakes.
 - **D19. Kael.** He thinks the other side can be lived with, and maybe bargained with. Act IV tests that belief.
 - **D20. Jason as a person.** He gets things he likes, one annoying habit and one thing he's bad at besides teaching. His real flaw: he decides alone and tells her later. Mira names the pattern in Ch 13 and Ch 18, and in Ch 29 he asks her instead. You probably know his tastes better than I do, so I'd like your input here.
 
@@ -129,11 +139,12 @@ NR says these came from your own clarifications. Tell me if any are wrong.
 ## 4. Structural changes to the outline
 
 **Act I**
-- **Ch 2:** Fix the clock. The phone reads 4:12 after they left Columbus past 5, which only works as a one-hour time-zone change. Cumberland Gap is on Eastern Time like Columbus, so move the landing somewhere in Central-time Tennessee. Middle and west Tennessee are Central.
-- **Ch 3:** Keep it (MR calls it the best chapter in Act I), but cut about a quarter.
+- **Ch 2:** Fix the clock and keep it as a clue. The phone reads 4:12 after they left Columbus past 5, which only works as a one-hour time-zone change. Cumberland Gap is on Eastern Time like Columbus, so move the landing somewhere in Central-time Tennessee (middle and west Tennessee are Central). Mira notices and can't explain it, and works it out later, which suits her. Sonnet wanted the clue kept, and this keeps it with a real answer.
+- **Ch 3:** Keep its spine (MR calls it the best chapter in Act I), but cut about 40%. All three journals found duplicated paragraphs and a loop, so the quarter I first proposed is too little.
 - **Ch 4:**
   - Jason checks whether the gold-and-oaks analogy in Ch 3 already started her change.
-  - Move most of the history (witch trials, sponsored skepticism) to Delilah in Act II.
+  - Keep the gold-and-oaks analogy in Ch 3 for what it explains. Add your train analogy for rate, in Ch 4 or Ch 6 (O, S, H).
+  - Keep the broad history here, and say on the page why history is safe to tell when mechanics are not. Dramatize the witch trials once, later, instead of explaining them in four places (H, S).
 - **Ch 5:** Set the key scene in the motel. Ch 5 currently opens in the motel and then puts them in the woods with no move between. Give her a different onset image than coffee, such as a fever starting.
 - **Ch 6:** Plant the parents lie. Ch 1 has him say they "didn't get along", and Mira catches the contradiction here.
 - **Ch 7:**
@@ -153,7 +164,7 @@ NR says these came from your own clarifications. Tell me if any are wrong.
   - Write out her romance advice.
   - Explain why Jason missed "creation, not copying": he thinks of clones as copies of himself.
 - **Ch 12:**
-  - Delilah teaches erasure (D12).
+  - Jason teaches erasure (D12, changed), here or in Ch 13-15.
   - Cut the string-theory and quantum-mechanics aside.
   - Fix the cooking-history line: cooking goes back far more than 50,000 years.
 - **Ch 13:**
@@ -181,7 +192,7 @@ NR says these came from your own clarifications. Tell me if any are wrong.
 - **Ch 22-24 (old 23-25):**
   - Spread these over months (D3).
   - Replace the São Paulo light show with something small and hard to debunk, like the coffee mug that warms in the wrong way (FR).
-  - Replace the anchor with debunkers who teach by explaining (MR, NR).
+  - *(Changed after the full journals.)* Keep the London anchor. She reads a leaked half-explanation aloud on air to mock it, line by line, and that is what teaches. The leak has a culprit: a member of the go-public faction, a hunter, or something Jason once said (O, S, MR, NR).
 - **Ch 25 (old 26):** The celebrity awakens on camera without understanding it. The internet works out the explanation together (MR).
 - **Ch 26 (old 27):** Jason's sharing costs him something you can see. He releases the techniques in stages (NR).
 - **Ch 27 (old 28):** The new death toll (D2).
@@ -225,3 +236,216 @@ Each chapter entry will have:
 Each Haiku agent would also get the last 300 words of the previous chapter, so the joins line up.
 
 One open question for later: the root `Bad writing.txt` is shared prose criteria for the other two novels. If you want it to apply here too, say so and I'll fold it into `STYLE.md`.
+
+## 6. Additions from reading the three journals in full
+
+Three Sonnet agents read the journals line by line, found about 380 items, and checked them against this plan. The Haiku extraction also checked its journal's claims against the source files, and four of them turned out wrong. The items below survived. Changed calls are already edited into sections 2 and 4 and marked "changed".
+
+### New decisions (my recommendation in italics)
+
+- **D21. Organization.** "No government, no organization" (Ch 4) clashes with several things: the hunters as a group, strangers who found Jason at 12, Kael's "top 100", the mansion of leaders, and a mana email system (H, S, O). *There is no formal body. People know who is strong through reputation and gossip, so "top 100" is Kael's own estimate, not a list someone keeps. The mana message is a technique anyone can learn. The Ch 22 mansion is the crisis forcing the first real organization into existence (O).*
+- **D22. Where clone mana comes from.** As written, Stage 3 clones start full for free, so Mira is a perpetual-motion machine (O, NR). *Stage 3 builds a clone mature: it arrives nearly empty, but it can produce from the first second and fills itself within minutes. "Full mana" means full ability to produce mana, not a full tank. The costs are time and the reabsorption bill, which grows with everything the clones produced and remember. That keeps Delilah's insight ("it's creation, there's no reason it has to match your current state").*
+- **D23. One set of clone numbers.**
+  - *Stage 1: nine sustained.*
+  - *Stage 3: three combat-ready.*
+  - *Stage 4: about 110 sustained for days (Ch 29).*
+  - *Once in Act III, a burst to about a thousand, followed by a reabsorption that knocks her out for hours. This becomes the "thousand clones in a field on a Tuesday afternoon" scene that Ch 30 already remembers and that no chapter contains (O, H, S).*
+  - *Eight million in Ch 30.*
+  - *Delete the clone document's "200 each capable of producing 200".*
+- **D24. "Independent" clones.** The clone document calls Stage 4 grandchildren "a genuinely independent biological entity", which contradicts "they are her" (H, S, O). *They are independently powered and still one mind. Fix the document's wording. Kael asks the question in Ch 29 ("each of them is so aware"), and Mira answers it on the page: "They're not people I make. They're me." The reader may doubt her, and that doubt is a feature.*
+- **D25. Can footage teach?** "The whole world sees it. The whole world understands" (old Ch 28, new Ch 27) breaks your own rule: "The explanation is the problem. The video is just a video" (O). *Use the train analogy as the rule. Footage is the train going by every day. It makes more people work it out, but it doesn't hand them the understanding. Explanations are what spread it.*
+- **D26. Vocabulary.** "Mana" never appears in Ch 1-3, the outline switches between "mana", "magic" and "the mana one", and the clone document mixes "Phase" and "Stage" (H). *Jason says "mana" first in Ch 3 or 4. Use "practitioners" for people and "the other side" for the dimension, every time. Clone levels are called stages, and the stage terms stay out of emotional scenes.*
+- **D27. Why Jason won't erase Mira.** The text gives principle. Your notes say "because Jason kinda likes her" (H, O). *Both. He gives the principle and admits the affection later, in Ch 8 or the Ch 20 romance turn. Also, he says in Ch 3 that he has erased other people ("I do it sometimes"), and the book should come back to that once.*
+- **D28. The zebra image.** Zebras don't hide in tall grass. They are famously easy to see, and the herd is their protection. "Can't see us" and "don't smell like food" are two different senses (O, S, H). *Use the herd: eight billion silent zebras, and a predator only bothers with the one that stands out. Your notes say this ("a lion hunting a lone zebra with 4 broken legs"). The title then pays off at the end: in Ch 30, the zebra hides among copies of herself (O).*
+- **D29. Rename "The Great Filter".** That term means something else (the Fermi paradox). *Call it "the toll" (O).*
+- **D30. Plants that produce mana (Ch 9).** This is a new rule with no setup (H). *Keep it as a rule: plants near practitioners slowly start producing. That is why strays turn up near cabins, and it links Ch 9 to Ch 13's buildup of mana.*
+- **D31. The Box as a battery.** "Battery" is never explained (H). In Ch 18 Jason uses the prison to lower his own crossing cost, which means he burns captive creatures to carry her across (O). *State it, and make it the reveal of the merged Ch 17-18: Mira learns what powered her trips, which reopens the Ch 10 prison argument. Also, only Jason can build boxes. Fix the Ch 10 line saying she will need to.*
+- **D32. A breach that involves Mira.** Three journals independently suggest that the Act IV leak reach someone Mira knows (her sister, Marcus, or the Ch 1 coffee shop), caused by something she let slip during the homecoming (O, S, H). *Do it, as one of the incidents in Ch 22-24, before the celebrity. It makes Mira part of the cause in Act IV instead of someone watching it on her phone, and it pays off her lying. It also makes "And Mira just helped dig one up" in the blurb true.*
+- **D33. Closing the ownership debate.** "You should have done this before" (old Ch 27, new Ch 26) gets no reply, and "for the first time in his life, shares his techniques" is false, since he taught Mira (H, S, O). *He releases the survival basics publicly (cycling, shielding, sensing) and keeps teleportation and the Box back. Mira holds Ch 14's "lives are at stake" up to him. His reply refuses to fully concede and costs him something. Change "first time" to "first time publicly".*
+- **D34. The last line before the blackout.** *Add one line of Mira's awareness, without breaking the POV rule: does a colony of eight million say "not worth the trip", or is it the brightest beacon Earth has ever lit (O)? Optional, and I'd do it.*
+- **D35. The cast in the finale.** Ch 30 has two named characters (S). *Bring Delilah, Kael, Priya and the seventeen-year-old into Ch 28-30, even briefly. Give the boy a name.*
+- **D36. The intelligent beings on the page.** Your summary promises "hiding from intelligent beings powerful enough to kill her instantly", but none appear in Act III (O, S). *Add one scene in the merged Ch 17-18 where they hide from one passing nearby. Make the Ch 30 creature clearly intelligent and give it tactics: it tries to adapt, retreat or warn others (NR).*
+- **D37. Rules carried in from the notes.**
+  - *Small things notice by scent, big things work by cost (S).*
+  - *Three months is the window to get quiet. Years is the window to be safe. This squares Ch 3 with Ch 12 (O).*
+  - *Mira's lying is a rule of the world: telling her family would put them at risk. Give that as the reason on the page (H, S, O, your summary).*
+  - *Children can awaken, which supports the seventeen-year-old (H).*
+
+### Chapter additions not already in section 4
+
+Acts III and IV use the new numbers from section 4.
+
+**Act I**
+- **Ch 1:**
+  - Make the attack visible: one sight, sound or hit on the blue shield. Your notes say it was a shield.
+  - Mention the roommate, who appears in Ch 2's texts.
+  - Have the determinism students tie into the science shield, or cut them.
+- **Ch 2:**
+  - Mom's milk text has to make sense with Mira's own apartment, for example milk she promised to bring over.
+  - Give her a better reason not to call 911. At minimum, she types it, imagines the call and deletes it (MR).
+- **Ch 3:**
+  - One voice for Jason: dry and brief, lecturing only when he actually knows something (S).
+  - Cut "You said they don't care about me". He never said it.
+  - Make the Columbus promise and its reversal in Ch 5 a scene, not something forgotten.
+- **Ch 5:** Mira arrives at the decision on the page. She asked for time in Ch 3, so we should watch her use it.
+- **Ch 6:** Deliver the full plan the prose dropped:
+  - the cash car
+  - the headaches
+  - the rest-stop sensing lesson
+  - Jason's origin at 8 or 9, the community finding him at 12, "He says 10"
+  - arriving at the cabin
+
+  The money answer is already here ("managing money without a paper trail"). Ch 8 must build on the origin story, not retell it.
+
+**Act II**
+- **Ch 7:** One specific failure that she feels in her body. Fix the cycling speed: she partly cycles on night one, which is faster than "a week or two" for most people.
+- **Ch 8:**
+  - The clock is "two-thirds gone" but nothing happens. Make the first deadline do something, such as a lapse in her shielding drawing the Ch 9 stray.
+  - Pick one: the clone refinement is a quirk, or a plant. The outline currently says both.
+- **Ch 10:**
+  - Name Delilah only after she's introduced.
+  - Reconcile Jason's coldness toward the creature with his care about consent in Ch 3. He is careful about humans and not about anything else.
+- **Ch 11:**
+  - Say how Delilah found them through the shielding and why the hunters can't.
+  - Mira works out the Stage 3 idea herself, with Delilah's remark as a nudge (S).
+  - Give Delilah her own voice. She and the Ch 22 elder are blurring into one.
+- **Ch 12:**
+  - Establish "nine" before cutting it to three.
+  - Cut the fusion line, which doesn't make sense, and keep "he can't name a reason it's impossible".
+  - Mira's objection to the prison from Ch 10 has to still be there.
+  - Explain why careful Jason argues for an idea that could make her an army: it's the logic he can't leave alone.
+- **Ch 13:**
+  - The hunters need a reason in the world for waiting, then attacking at dawn.
+  - They watched Mira fight, so use it: they now know she exists.
+  - She should use clones in this fight, and in Ch 16 and the Ch 20 fight.
+  - Don't leave Delilah behind with hunters watching her cabin.
+  - "Two days" against "since yesterday morning": pick one.
+- **Ch 14:**
+  - "What she's now seen twice" should be "survived twice".
+  - Give Mira a position of her own, and your notes' cure-cancer analogy as her strongest argument.
+  - Cut Jason's echo of Delilah's line, or have Mira notice it.
+- **Ch 15:**
+  - Make the sister's June graduation graduate school.
+  - Give a story reason for training on the other side. Sonnet asks, "why train in the lion's den to survive a house cat?"
+  - Show Jason's crossing technique before the decision it shapes.
+  - Is Vermont a home or a waypoint? Say which.
+
+**Act III**
+- **Ch 16:**
+  - She makes the first light that world has ever seen, a photographer's act (O, S).
+  - Her camera, phone and undeveloped film become her loss here.
+  - Jason is unsettled too, as the outline's own Purpose line says.
+  - No flashlight or sunlight similes in a lightless world.
+  - Give the fight a different shape from Ch 13.
+- **Ch 17-18 merged:**
+  - Vary the Ch 6 "not worth the trip" exchange instead of repeating it.
+  - Give one concrete ecological relationship, such as a plant feeding on a creature's leaked mana.
+  - Explain why she can't sleep there yet, and what changes by Ch 20.
+  - Name the attacker. Make Jason's fatigue matter in the fight.
+  - Someone says that Jason has quietly been a very good teacher, which answers "terrible teacher".
+- **Ch 18 (scout):**
+  - Make the staging followable.
+  - "Extremely powerful" and "weak slave scout" have to sit together as an escalation, not repeat the kitten-that-fells-trees inversion.
+  - Use "slave" on purpose or not at all.
+  - The scout failing to return is what makes its masters start caring. That gives Act IV its engine (O).
+- **Ch 19 (Kael):**
+  - Kael brings a new angle on Jason. He is the third person to call him a hoarder.
+  - Mira doesn't re-ask about the witch trials. She builds on what she knows.
+  - Jason going to her when she collapses is immediate, or has a reason she'd recognize. Your own note agrees.
+- **Ch 20:**
+  - Never call it her "first time alone". It isn't.
+  - Avoid the repeated "messy, but she wins" wording.
+  - Stage 4 and the thousand-clone burst (D23) happen here, on the page.
+  - The romance turn builds on Ch 8's hand scene instead of rewinding it.
+- **Ch 21 (homecoming):**
+  - Does Jason come?
+  - The hunters could use her family as leverage.
+  - A clone stands watch while she sleeps, which shows "safe even in her sleep".
+  - Swap the visual oil-painting line for one about mana sense or photography.
+  - Pay off the milk text and the roommate.
+
+**Act IV**
+- **Ch 22:**
+  - Earlier evidence for "powder keg", or cut it.
+  - Write Mira's answer to "why are you with him?"
+  - Named speakers with real proposals at the mansion.
+  - Which faction the hunters belong to.
+  - One elder calling him "boy" is enough.
+- **Ch 23:**
+  - Name the three people the anchor triggers.
+  - Give "how many is enough?" a concrete answer, or show the moment it's crossed.
+- **Ch 24 (Priya):**
+  - Her first lesson is sensing, not cycling. The rest stop was where Jason taught Mira sensing.
+  - Priya needs a reason not to ask about "I took care of it", such as fear or working it out.
+  - Mira teaching freely is a reversal of Jason's "it's mine". Give it a sentence.
+  - End on the film roll. Cut "doesn't say anything else".
+  - Priya comes back later.
+- **Ch 25:**
+  - Make it a consequence of Ch 23, so it isn't the fourth inciting video in a row.
+  - Mira reacts to her erasures failing.
+  - Her mother or sister comes back when hospitals start reporting.
+  - Mira's clones start the mass teaching here (O).
+  - Scenes, not a summary: a clinic, a school, a phone full of news.
+- **Ch 26:**
+  - Mira says what no one else will: at world scale, the tutorials trigger the change with no consent (S).
+  - Flying needs setup, or cut it.
+- **Ch 28-29:**
+  - One clone count throughout.
+  - "Three days" against "eleven days": fix with dates.
+  - Cut the third restatement of the feedback loop.
+  - Show the strain as damage: a clone repeating a sentence, Mira not recognizing her own handwriting.
+  - Jason staying within half a mile of her is the model for how he shows love. Build on it.
+  - Cut "tiny shrimp".
+- **Ch 30:**
+  - Fix "since January" and "a cabin eight months ago".
+  - Set up "Newton-level" or cut it.
+  - Say where eight million bodies are.
+  - One reversal in the fight.
+  - Mira still sounds like Mira inside the colony: one joke or one photographer's observation.
+  - Bring the register back toward Ch 1-3.
+
+### Cleanup pass (before any rewriting)
+
+- Missing spaces after periods, mixed curly and straight quotes, markdown escapes (`\-`, `911\.`), and present-tense slips inside past-tense prose.
+- The " ,  " commas left where dashes were removed. These read as comma splices (O). Turn each into a full stop, a colon, or a rewritten sentence.
+- Unparseable outline sentences (Ch 9, 13, 14, 19, 27), the duplicate "Summary:" in Ch 29, and every author note ("Hmm", "IDK", "aka").
+- Matching chapter headings.
+
+### Additions to STYLE.md
+
+- the "door" metaphor for emotional access
+- "pulled my jacket tighter"
+- "quiet for a moment, the way he got when..."
+- "the way you ___" similes
+- triplets like "present, registered, filed"
+- thesis-sentence chapter endings
+- "Not X. Not Y. Something without a name."
+- labelling Jason brilliant, genius or Newton-level instead of showing an experiment
+- Jason's ominous one-liners
+- "not dramatically" (six times in the outline)
+- the stoic watching beat ("watches but doesn't intervene")
+
+One exception: "filed" stays in Ch 30, where it shows the colony's detachment.
+
+### Where the journals disagreed with me and I kept my call
+
+- **Kael as the observer (D15).** Kept, with the fix noted in D15.
+- **The onset image.** Haiku and Sonnet like the coffee image. Your own Purpose line says "Like a fever starting", so I'm keeping the fever.
+- **Moving the debate into Ch 13 (D17).** Haiku rates the calm Ch 14 debate highly. Compromise: it starts during the wait and finishes calmly in Ch 14.
+
+### Packaging (for `10_Genre_and_Blurbs.md` and `11_Comp_Titles.md`, after the outline)
+
+**Genre:** pick one label (see "The romance-genre catch").
+
+**Blurbs:**
+- Every blurb says "coffee date", but the point of Ch 1 is that it isn't a date.
+- Option 1: "His solution? Teach Mira to fight." His actual solution was to leave her.
+- Option 2: "if they knew humanity existed" contradicts the world.
+- Options 3 and 4: "seen too much to go back" turns her refusal of erasure into fate. Her choice is the hook: "Jason can erase her memories. Let her go home safe. Mira says no." (O)
+- The blurbs lean on the three-month clock, which stops mattering after Ch 12.
+- Option 4 is the best base.
+
+**Comp titles:**
+- Cut "For fans of dark romantasy who want REAL stakes".
+- *The Three-Body Problem* is the accurate comp (O).
+- Use recent comps, not mega-bestsellers or manga.
