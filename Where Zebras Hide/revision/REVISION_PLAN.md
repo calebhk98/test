@@ -106,10 +106,9 @@ I'd date every chapter in the timeline file.
   - In Ch 1 he gambled her unshielded life on it, knew it, and never said so.
   - Mira finds out in Ch 13, which feeds D20.
   - Each jump costs something. Ch 3 calls it "not something I can just use whenever", so three jumps in minutes (Ch 13) need a price, such as him being wrecked afterward.
-- **D12. Memory erasure.** It removes memories and any partial understanding, but only before awakening. After awakening it can't stop production. *(Changed after the full journals.)*
+- **D12. Memory erasure.** It removes memories and any partial understanding, but only before awakening. After awakening it can't stop production.
   - Jason plants the rule in Ch 3: "I can still do it, because you haven't started" (O, S).
-  - Jason, the man who offered to erase her, teaches her erasure later in Act II. Mira hesitates and learns it anyway (S). This hits harder than Delilah teaching it.
-  - Erasure is the community's normal cleanup tool after the witch trials (your notes). Delilah can say so.
+  - *Decided: Delilah teaches Mira erasure in Act II.* It is the community's normal cleanup tool after the witch trials (your notes), and she teaches it that way. Mira hates learning it ("My mind is mine").
   - Ch 25 has to follow the rule. The sixteen are erased before they finish understanding. Priya has been producing for 72 hours, so Mira has to teach her instead (O).
 - **D13. The photonless world.** There is no natural light, and heat moves only by touch. Practitioners can make light on purpose. Every scene on the other side follows this.
 - **D14. Standalone or series.** The ending stays as written and leaves the door open. The personal arc (D4) closes before it.
@@ -164,7 +163,7 @@ NR says these came from your own clarifications. Tell me if any are wrong.
   - Write out her romance advice.
   - Explain why Jason missed "creation, not copying": he thinks of clones as copies of himself.
 - **Ch 12:**
-  - Jason teaches erasure (D12, changed), here or in Ch 13-15.
+  - Delilah teaches erasure (D12).
   - Cut the string-theory and quantum-mechanics aside.
   - Fix the cooking-history line: cooking goes back far more than 50,000 years.
 - **Ch 13:**
@@ -239,7 +238,7 @@ One open question for later: the root `Bad writing.txt` is shared prose criteria
 
 ## 6. Additions from reading the three journals in full
 
-Three Sonnet agents read the journals line by line, found about 380 items, and checked them against this plan. The Haiku extraction also checked its journal's claims against the source files, and four of them turned out wrong. The items below survived. Changed calls are already edited into sections 2 and 4 and marked "changed".
+Three Sonnet agents read the journals line by line, found about 380 items, and checked them against this plan. The Haiku extraction also checked its journal's claims against the source files, and four of them turned out wrong. The items below survived. Changed calls are already edited into sections 2 and 4, and your later answers are marked "Decided".
 
 ### New decisions (my recommendation in italics)
 
@@ -256,12 +255,12 @@ Three Sonnet agents read the journals line by line, found about 380 items, and c
 - **D25. Can footage teach?** "The whole world sees it. The whole world understands" (old Ch 28, new Ch 27) breaks your own rule: "The explanation is the problem. The video is just a video" (O). *Use the train analogy as the rule. Footage is the train going by every day. It makes more people work it out, but it doesn't hand them the understanding. Explanations are what spread it.*
 - **D26. Vocabulary.** "Mana" never appears in Ch 1-3, the outline switches between "mana", "magic" and "the mana one", and the clone document mixes "Phase" and "Stage" (H). *Jason says "mana" first in Ch 3 or 4. Use "practitioners" for people and "the other side" for the dimension, every time. Clone levels are called stages, and the stage terms stay out of emotional scenes.*
 - **D27. Why Jason won't erase Mira.** The text gives principle. Your notes say "because Jason kinda likes her" (H, O). *Both. He gives the principle and admits the affection later, in Ch 8 or the Ch 20 romance turn. Also, he says in Ch 3 that he has erased other people ("I do it sometimes"), and the book should come back to that once.*
-- **D28. The zebra image.** Zebras don't hide in tall grass. They are famously easy to see, and the herd is their protection. "Can't see us" and "don't smell like food" are two different senses (O, S, H). *Use the herd: eight billion silent zebras, and a predator only bothers with the one that stands out. Your notes say this ("a lion hunting a lone zebra with 4 broken legs"). The title then pays off at the end: in Ch 30, the zebra hides among copies of herself (O).*
+- **D28. The zebra image.** Zebras don't hide in tall grass. They are famously easy to see, and the herd is their protection. "Can't see us" and "don't smell like food" are two different senses (O, S, H). *Decided: keep tall grass.* It is Mira's image, and she is allowed to be wrong about zebras. Keep the scent part consistent, so "don't smell like food" carries the meaning, and don't have Jason restate it differently.
 - **D29. Rename "The Great Filter".** That term means something else (the Fermi paradox). *Call it "the toll" (O).*
 - **D30. Plants that produce mana (Ch 9).** This is a new rule with no setup (H). *Keep it as a rule: plants near practitioners slowly start producing. That is why strays turn up near cabins, and it links Ch 9 to Ch 13's buildup of mana.*
 - **D31. The Box as a battery.** "Battery" is never explained (H). In Ch 18 Jason uses the prison to lower his own crossing cost, which means he burns captive creatures to carry her across (O). *State it, and make it the reveal of the merged Ch 17-18: Mira learns what powered her trips, which reopens the Ch 10 prison argument. Also, only Jason can build boxes. Fix the Ch 10 line saying she will need to.*
-- **D32. A breach that involves Mira.** Three journals independently suggest that the Act IV leak reach someone Mira knows (her sister, Marcus, or the Ch 1 coffee shop), caused by something she let slip during the homecoming (O, S, H). *Do it, as one of the incidents in Ch 22-24, before the celebrity. It makes Mira part of the cause in Act IV instead of someone watching it on her phone, and it pays off her lying. It also makes "And Mira just helped dig one up" in the blurb true.*
-- **D33. Closing the ownership debate.** "You should have done this before" (old Ch 27, new Ch 26) gets no reply, and "for the first time in his life, shares his techniques" is false, since he taught Mira (H, S, O). *He releases the survival basics publicly (cycling, shielding, sensing) and keeps teleportation and the Box back. Mira holds Ch 14's "lives are at stake" up to him. His reply refuses to fully concede and costs him something. Change "first time" to "first time publicly".*
+- **D32. A breach that involves Mira.** Three journals independently suggest that the Act IV leak reach someone Mira knows (her sister, Marcus, or the Ch 1 coffee shop), caused by something she let slip during the homecoming (O, S, H). *No preference from you, so I'm using it: Marcus, as one of the incidents in Ch 22-24, before the celebrity. He already teases her about Jason in Ch 1, so him poking at something she let slip fits. It makes Mira part of the cause in Act IV instead of someone watching it on her phone, and it pays off her lying. It also makes "And Mira just helped dig one up" in the blurb true.*
+- **D33. Closing the ownership debate.** "You should have done this before" (old Ch 27, new Ch 26) gets no reply, and "for the first time in his life, shares his techniques" is false, since he taught Mira (H, S, O). *Decided: he releases everything.* He does it only because the world is ending. He still thinks he was right and that the work was his; the threat forces his hand. So when Mira says "You should have done this before", his reply holds that position ("It was mine. It still is. I just don't get to keep it anymore."). The outline has to give a reason releasing dangerous techniques mid-outbreak is still worth it: survival techniques save more people than they endanger, and the threshold has already been crossed. Change "first time" to "first time publicly".
 - **D34. The last line before the blackout.** *Add one line of Mira's awareness, without breaking the POV rule: does a colony of eight million say "not worth the trip", or is it the brightest beacon Earth has ever lit (O)? Optional, and I'd do it.*
 - **D35. The cast in the finale.** Ch 30 has two named characters (S). *Bring Delilah, Kael, Priya and the seventeen-year-old into Ch 28-30, even briefly. Give the boy a name.*
 - **D36. The intelligent beings on the page.** Your summary promises "hiding from intelligent beings powerful enough to kill her instantly", but none appear in Act III (O, S). *Add one scene in the merged Ch 17-18 where they hide from one passing nearby. Make the Ch 30 creature clearly intelligent and give it tactics: it tries to adapt, retreat or warn others (NR).*
