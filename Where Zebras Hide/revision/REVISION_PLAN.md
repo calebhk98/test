@@ -17,6 +17,17 @@ The order of work I'm proposing:
 
 ## Your answers so far
 
+**Round 2 corrections.** RULES.md, CHARACTERS.md and CREATURES.md now carry these, and they override anything below that disagrees:
+- No standard vocabulary. Each person uses their own words for mana, the other side and practitioners.
+- Learning depends on exposure, frequency, duration and how a person thinks. Footage can teach, just less often.
+- The toll works like a progressive tax. Everyone can afford it, but bigger beings pay a bigger share, so they need a far bigger meal.
+- "Top 100" is an estimate from visible strength, in a community of a few thousand.
+- The Ch 1 teleport was range-shrunk to keep her inland. Teleporting isn't draining for Jason.
+- Clone numbers grow across the book. Later she has no main body, and lets others pick one.
+- Any plant or animal can produce mana naturally.
+- The characters are warmer, more emotional and less logical.
+
+
 - **D1, clone scale:** keep 8 million and set it up, as recommended.
 - **D2, Ch 28 death toll:** keep 100 million. The outline therefore has to spell out:
   - how one creature kills that many, and over what range and how long
@@ -101,11 +112,7 @@ I'd date every chapter in the timeline file.
 - **D8. Intelligent creatures "don't care" against the scout sent "for entertainment."** Both can hold. They don't care about Earth as food, but something odd draws a scout, and the odd thing is Jason's repeated crossings. His trips cause Ch 19, which gives his choices a real cost.
 - **D9. Coming back after death.** Only intelligent beings with souls come back. Strays and mid-tiers just die. That's why Jason boxes the scout instead of killing it.
 - **D10. Mira being "not special".** Her talent is ordinary. Her patience and photographer's eye are unusual, and the clone technique suits that kind of mind. Cut the line "Mira isn't special."
-- **D11. Teleporting. (Changed after the full journals.)** The Ch 1 teleport was fully random. Ch 3 says so ("I didn't pick Tennessee specifically. That's what randomized means"), and so do your notes. Drop the Ch 13 claim that he "kept the first one local". Instead:
-  - The technique only picks open surface, which is why it can land in an ocean.
-  - In Ch 1 he gambled her unshielded life on it, knew it, and never said so.
-  - Mira finds out in Ch 13, which feeds D20.
-  - Each jump costs something. Ch 3 calls it "not something I can just use whenever", so three jumps in minutes (Ch 13) need a price, such as him being wrecked afterward.
+- **D11. Teleporting.** *Decided (your correction): the Ch 1 teleport was random within a range he shrank on the fly, so the farthest landing kept them inland (Ohio to Tennessee, not Ohio to the ocean). Ch 13's explanation stands, and Mira working it out is a romance beat. Teleporting isn't especially draining for him. RULES.md has the details.*
 - **D12. Memory erasure.** It removes memories and any partial understanding, but only before awakening. After awakening it can't stop production.
   - Jason plants the rule in Ch 3: "I can still do it, because you haven't started" (O, S).
   - *Decided: Delilah teaches Mira erasure in Act II.* It is the community's normal cleanup tool after the witch trials (your notes), and she teaches it that way. Mira hates learning it ("My mind is mine").
@@ -257,7 +264,7 @@ Three Sonnet agents read the journals line by line, found about 380 items, and c
 - **D27. Why Jason won't erase Mira.** The text gives principle. Your notes say "because Jason kinda likes her" (H, O). *Both. He gives the principle and admits the affection later, in Ch 8 or the Ch 20 romance turn. Also, he says in Ch 3 that he has erased other people ("I do it sometimes"), and the book should come back to that once.*
 - **D28. The zebra image.** Zebras don't hide in tall grass. They are famously easy to see, and the herd is their protection. "Can't see us" and "don't smell like food" are two different senses (O, S, H). *Decided: keep tall grass.* It is Mira's image, and she is allowed to be wrong about zebras. Keep the scent part consistent, so "don't smell like food" carries the meaning, and don't have Jason restate it differently.
 - **D29. Rename "The Great Filter".** That term means something else (the Fermi paradox). *Call it "the toll" (O).*
-- **D30. Plants that produce mana (Ch 9).** This is a new rule with no setup (H). *Keep it as a rule: plants near practitioners slowly start producing. That is why strays turn up near cabins, and it links Ch 9 to Ch 13's buildup of mana.*
+- **D30. Plants that produce mana (Ch 9).** This is a new rule with no setup (H). *Decided (your correction): any plant or animal on Earth can produce mana naturally, with no practitioner nearby. The amounts are small, and because they can't hide it, small things cross to eat them sooner. See RULES.md.*
 - **D31. The Box as a battery.** "Battery" is never explained (H). In Ch 18 Jason uses the prison to lower his own crossing cost, which means he burns captive creatures to carry her across (O). *State it, and make it the reveal of the merged Ch 17-18: Mira learns what powered her trips, which reopens the Ch 10 prison argument. Also, only Jason can build boxes. Fix the Ch 10 line saying she will need to.*
 - **D32. A breach that involves Mira.** Three journals independently suggest that the Act IV leak reach someone Mira knows (her sister, Marcus, or the Ch 1 coffee shop), caused by something she let slip during the homecoming (O, S, H). *No preference from you, so I'm using it: Marcus, as one of the incidents in Ch 22-24, before the celebrity. He already teases her about Jason in Ch 1, so him poking at something she let slip fits. It makes Mira part of the cause in Act IV instead of someone watching it on her phone, and it pays off her lying. It also makes "And Mira just helped dig one up" in the blurb true.*
 - **D33. Closing the ownership debate.** "You should have done this before" (old Ch 27, new Ch 26) gets no reply, and "for the first time in his life, shares his techniques" is false, since he taught Mira (H, S, O). *Decided: he releases everything.* He does it only because the world is ending. He still thinks he was right and that the work was his; the threat forces his hand. So when Mira says "You should have done this before", his reply holds that position ("It was mine. It still is. I just don't get to keep it anymore."). The outline has to give a reason releasing dangerous techniques mid-outbreak is still worth it: survival techniques save more people than they endanger, and the threshold has already been crossed. Change "first time" to "first time publicly".
@@ -283,7 +290,7 @@ Acts III and IV use the new numbers from section 4.
   - Mom's milk text has to make sense with Mira's own apartment, for example milk she promised to bring over.
   - Give her a better reason not to call 911. At minimum, she types it, imagines the call and deletes it (MR).
 - **Ch 3:**
-  - One voice for Jason: dry and brief, lecturing only when he actually knows something (S).
+  - One consistent Jason across chapters (S). Per your note, warm and excitable rather than dry; see CHARACTERS.md.
   - Cut "You said they don't care about me". He never said it.
   - Make the Columbus promise and its reversal in Ch 5 a scene, not something forgotten.
 - **Ch 5:** Mira arrives at the decision on the page. She asked for time in Ch 3, so we should watch her use it.

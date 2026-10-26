@@ -29,7 +29,7 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 | 10 | Late April | Cabin | The Box. Stage 2 discovery: one mind. |
 | 11 | Late April | Cabin | Delilah arrives. She makes the "creation, not copying" remark. |
 | 12 | Mid-May (three months in) | Cabin | Stage 3. The recursion conversation. Delilah teaches erasure. |
-| 13 | Early June: two days of watching, then dusk, then dawn | Cabin, then ocean twice, then Spain | The hunters, the two mid-tiers, the full-random escape. She learns about the Ch 1 gamble. |
+| 13 | Early June: two days of watching, then dusk, then dawn | Cabin, then ocean twice, then Spain | The hunters, the two mid-tiers, the full-range escape. She works out that he shrank the Ch 1 range so she couldn't land in an ocean. |
 | 14 | June, about two weeks | Short-term rental in Spain | The ownership debate finishes. Money, language, ID. |
 | 15 | Late June | Vermont, a second property used as a base | The sister call: Nora graduated last week, and Mira missed it. The yes. The crossing on about June 28. |
 
@@ -64,15 +64,17 @@ Ch 30's prose needs two fixes against this timeline:
 
 ## Clone counts by chapter
 
+Numbers grow between these checkpoints. RULES.md has the full table.
+
 | Ch | Count |
 | --- | --- |
-| 8 | Stage 1, one to a few, building to nine sustained by the end of Act II |
-| 10 | Stage 2, a few |
-| 12 | Nine, dropping to three combat-ready at Stage 3 |
-| 13 and 16 | Two or three, used in the fights |
+| 8 | Stage 1: one, building to a handful |
+| 10 | Stage 2: a few, now one mind |
+| 12 | About nine, dropping to three at Stage 3 |
+| 13 and 16 | Three to six Stage 3, used in the fights |
 | 19 | First Stage 4 chains, small. She collapses. |
-| 20 | Burst to about a thousand, then knocked out for hours |
-| 26 to 29 | About 110 sustained, rotating one every four to five minutes. In Ch 29 that's forty teaching, twenty fighting, thirty coordinating and twenty in reserve or rotating. |
+| 20 | Burst to about a thousand on a Tuesday afternoon, then knocked out for hours |
+| 26 to 29 | About 110 sustained, rotating one every four to five minutes. In Ch 29 that's forty teaching, twenty fighting, thirty coordinating, and twenty in reserve or rotating. Others treat the body near Jason as her main one; to her, none is. |
 | 30 | 200, then 40,000, then 8,000,000 |
 
 ## Who knows what

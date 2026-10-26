@@ -4,11 +4,12 @@ Every chapter is first person, past tense, from Mira's point of view. She can on
 
 ## Voice
 
-- Write in Mira's voice from the good parts of Ch 1-3: dry, specific, a little petty, practical under stress.
+- Write in Mira's voice from the good parts of Ch 1-3: warm, funny, specific, a little petty, emotional, and practical under stress only because it gives her hands something to do.
 - Use plain words. Prefer a concrete detail to an abstract one.
 - Vary sentence length, and keep the average moderate. Fragments are allowed, but rarely; a run of fragments is a tic.
 - Act IV must sound like the same woman as Act I. A colony of eight million can still make one joke or notice one photographer's detail.
-- Jason is dry and brief, and lectures only when he truly knows the answer. Delilah is blunt and specific, Kael is quick and unsettling. CHARACTERS.md has the rest.
+- Nobody is purely logical. People interrupt, change the subject, joke badly, get defensive, say the wrong thing and come back to it. Jason gets excited and talks too fast about ideas, and gets awkward about feelings. Delilah is nosy and warm. Kael is delighted by things that scare everyone else. CHARACTERS.md has the rest.
+- People use different words for mana, the other side and each other (RULES.md). Let that show in dialogue.
 
 ## Punctuation
 
