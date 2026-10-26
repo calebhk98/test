@@ -1,0 +1,146 @@
+# Review Report: Chapters 1-30
+
+**Scope:** Chapters 1-3, 6, and 30 are drafted prose. The rest are summaries or outlines, so my notes on those are about the plan, not the sentences.
+
+## Act I
+
+**Chapter 1 (prose)**
+- *Liked:* Mira's voice is specific (Dave's carrots, the pivot table, the Pentax). Jason's distance shows through behavior (the twelve inches, the hand stopping six inches from her elbow). The dramatic irony between Marcus and Mira works.
+- *Issues:* The portal opens exactly at the emotional peak, which reads as magic responding to drama. Jason's restraint has no visible cost. "Two years without a date" needs a reason from each side. Jason's intelligence isn't shown in action. Sarah's identity is ambiguous. The free will debate may read as the author signaling.
+
+**Chapter 2 (prose)**
+- *Liked:* Jason's secrecy now has a visible cause. Mira documents, texts, and runs reality checks. The sensory detail stays grounded.
+- *Issues:* "We can't call 911 yet" has no sayable reason. Mira names a possible concussion and then waits twenty minutes without acting on it. The bomb theory is dropped without revision. The roommate appears with no setup. The "free will is an illusion" line is too loud for a debate meant as background.
+
+**Chapter 3 (prose)**
+- *Liked:* "How would I know?" is the strongest beat in the chapter. The "I love you" reveal works as a reframe. The pet analogy explains his reasoning without a lecture.
+- *Issues:* The erasure ability is a fiat risk for any later scene. "A few months" has no visible mechanism. "You'd never remember meeting me" reads as control. Text problems: a repeated "Option two" line with a stray break, "He closed his eyes" appears twice, a missing period after "There's always a choice." The Tuesday and twelve-inches motifs are leaning hard.
+
+**Chapter 4 (outline)**
+- *Liked:* The motel scene and "most people die" conversation are a good slow-burn pair. The lying-is-getting-easier beat is strong.
+- *Issues:* It breaks Jason's own information rule (Chapter 3 says partial knowledge can trigger the change). It breaks the untraceability claim, since a motel booking, a card, and calls to family are risks he should weigh on the page. The size of the hunters and the suppression network is never set.
+
+**Chapter 5 (outline)**
+- *Liked:* "At least this way I'd die understanding why" is a strong line, and the choice has a clear argument.
+- *Issues:* "You said most of them are alone" never appears in Chapter 3. Mira's decision ignores her own Chapter 3 demand for real time. Leaving Columbus has no concrete cost. The silence curtain has no cost. The route change breaks the Chapter 3 promise to return to Ohio.
+
+## Act II
+
+**Chapter 6 (prose)**
+- *Liked:* The clinical tone about her body keeps the magic physical. The zebra model is clear. Jason's origin reframes him as someone who never got to choose his context. "Existential crisis" is good.
+- *Issues:* Jason breaks the information rule mid-scene. The training trade-off (more skill, more visibility) isn't stated plainly. His parents lie contradicts Chapter 1, and Mira needs to catch it. "Eight versus ten" near-death ages don't match. The cash car purchase leaves a paper trail. Why he scouted the cabin is never asked. "Seven billion" is wrong (Earth passed eight billion in 2022). The heading is duplicated. One sentence about hidden and "not worth the trip" is hard to parse.
+
+**Chapter 7 (outline)**
+- *Liked:* Jason's silence in answer to "what if she can't" is effective. The leaky partial cycle and "Again" are a good ending.
+- *Issues:* Does cycling reduce output or only hide it? A two-day learning story doesn't match Jason's origin. Mira should be methodical (one variable per attempt), not "just stubborn." The failure hours need concrete markers, and the headaches the clinical warning predicts are missing. The information-versus-pace distinction should be stated.
+
+**Chapter 8 (outline)**
+- *Liked:* "You don't get to flinch when I hold your hand" is a strong line. The clone refinement works as a character quirk when it stays unexplained.
+- *Issues:* The narration over-explains the hand scene ("the gap doesn't come back," "honesty"). The clone payoff is promised in narration, which undermines it. Mira never brings up the parents lie, which she should. The montage needs specific details.
+
+**Chapter 9 (outline)**
+- *Liked:* Mira sitting down after the kill is the right beat.
+- *Issues:* Shielding that drops in sleep needs a stated rule. Mana-developing plants conflict with "nothing here to eat" in Chapter 6.
+
+**Chapter 10 (outline)**
+- *Liked:* The "battery versus prison" argument is the right fight. Jason's coldness is effective.
+- *Issues:* Delilah is named without introduction. Clone combat cost needs a ceiling. Hive awareness needs limits. Jason needs one visible crack. The parents callback is missing.
+
+## Act II Continued
+
+**Chapter 11 (outline)**
+- *Liked:* Delilah reads as a real person with her own priorities. "I don't disagree, child, but so could a lot of things" echoes Jason's argument with a different voice.
+- *Issues:* The romance advice request isn't paid off. The Stage 3 insight arrives as a throwaway, which is intended, but it needs a clear source.
+
+**Chapter 12 (outline)**
+- *Liked:* "Functional, not skilled" is an honest milestone. The dinner-table recursive argument is strong, and Jason corrects the reasoning and walks away.
+- *Issues:* The cooking claim is wrong. Controlled fire and cooking evidence go back much further than fifty thousand years, and the fire-to-fusion analogy is weak. "Passing the critical window" has no stated rule. Clone-making-clones needs a visible cost. "Always a half-second behind" conflicts with the later reaction speed.
+
+**Chapter 13 (outline)**
+- *Liked:* Jason's "I'm a little surprised it only took three" ocean line is good. "I don't have anything to prove to them" is a strong statement of character.
+- *Issues:* Jason's cabin gamble puts Mira in a fight he could have avoided, and she should call it out. The untraceability claim is contradicted by the hunters finding the cabin. The ocean sentence is garbled. The text doesn't say whether the mid-tier creature died.
+
+**Chapter 14 (outline)**
+- *Liked:* "Lives are always at stake" is a real argument. Mira's not deciding is the right ending. "Selfish and right" is candid.
+- *Issues:* "Seen twice" is vague. The timeline of the first randomization versus the hunters' approach needs a clear distinction. The ID needed for the rental is unaddressed.
+
+**Chapter 15 (outline)**
+- *Liked:* The sister call is restrained and lands through what goes unsaid. The four minutes is a good count. Delilah's second opinion is a useful beat. Jason asking instead of deciding is the arc turning. The pine-smell ending works.
+- *Issues:* "He has never once made a decision for her" is false within the book. The sister call needs Jason to weigh the risk. The passport status is unstated. Mid-tier creatures are called normal, which conflicts with Chapter 6. Language is contradicted. The Delilah line has a grammar problem.
+
+## Act III
+
+**Chapter 16 (prose and outline)**
+- *Liked:* Losing sight first makes her competence show through what she can read. "I'm blind, I want to be clear that I'm blind" is good. "Held expensively" lands the cost.
+- *Issues:* Light and the sun aren't settled across the boundary. The no-photons statement needs one clean rule.
+
+**Chapter 17 (outline)**
+- *Liked:* "The day they start caring is the day everything ends" is a strong line. The ecology framing is clear.
+- *Issues:* Jason's crossing cost isn't seeded. Repeated crossings need a rule. The light question carries over.
+
+**Chapter 18 (outline)**
+- *Liked:* The four-shield sequence is logically ordered.
+- *Issues:* The barrier that stops strong creatures conflicts with Chapter 9. Shield costs aren't shown. Her reaction speed jumps too far from Chapter 12. The attacker is unidentified. Jason is the wrong observer for the surprise. The prison becomes a power source, which should bring back Mira's objection. The "flashlight beam" metaphor could be turned into a moment of loss.
+
+**Chapter 19 (outline)**
+- *Liked:* The soul rule is chilling. The scout reveal is ironic. The Stage 4 decision is well placed.
+- *Issues:* Mira is absent from the biggest fight. The spatial logic isn't clear. Capturing a scout risks a signal, and Jason should know that. "Entertainment by the stronger ones" conflicts with "they don't care." Jason's collapse has no duration. The soul rule is passed over, and Mira should ask about it.
+
+**Chapter 20 (outline)**
+- *Liked:* Kael is a strong, unsettling figure. "The boy genius who hoards all the candy" is a good line. The breach concept gives the ticking clock something concrete.
+- *Issues:* "Top 100" is undefined. The suppression's organizer is still unnamed. Kael's lived experience across the boundary contradicts Delilah's beliefs, which is an opportunity for conflict. The viral-videos line is unclear. Grandchild clones contradict the hive model. The cost has two different sources. Reabsorbing sentient clones is the book's moral problem, and the book should face it. Jason not helping her up needs a mechanical reason.
+
+**Chapter 21 (outline)**
+- *Liked:* Her vomiting and his look, with neither looking away, is a good beat.
+- *Issues:* The "first alone" fight conflicts with Chapter 13 and 15. Sleeping across needs a stated mechanism. The romance needs concrete action, and Mira's romance advice from Chapter 11 is a natural payoff.
+
+**Chapter 22 (outline)**
+- *Liked:* The pencil-after-oil-painting image is strong.
+- *Issues:* The June graduation mention is in Chapter 3, not Chapter 2 as I said earlier. The visit breaks Jason's secrecy rule, and the cost should show. Her life has moved on (the report, the apartment, the roommate) and needs at least one beat. "Creatures that will cross against herself" is unclear.
+
+## Act IV
+
+**Chapter 23 (outline)**
+- *Liked:* The mana email is a strong new risk. "Powder keg" is a good line, but it works better from Delilah.
+- *Issues:* The viral video needs physical evidence. Jason's money source is unclear. The email's traceability needs a stated answer. "Accepted power capabilities" is garbled. The stranger's verdict on Jason reads as the author speaking.
+
+**Chapter 24 (outline)**
+- *Liked:* Jason recognizing the witch-trial pattern is a good link to earlier history.
+- *Issues:* The news anchor's effect conflicts with the onset rule (onset needs a location). "Seven billion" appears again. "How many is enough?" needs a rough estimate with reasoning. Deaths as a brake on the loop would make the math more interesting. The narrator's "irony is brutal" should go.
+
+**Chapter 25 (outline)**
+- *Liked:* Priya is curious and disciplined, not a villain. Her notebook makes the harm specific. The breath count echoes Chapter 15. "Sixteen people had something taken" is the right arithmetic.
+- *Issues:* Priya's status on the list is unclear. Mira's report to the network is a lie she has to decide how to write. Erasure has no training beat for Mira. The Chapter 3 callback ("My mind is mine") is missing and is the sharpest irony available. The witch-trial mirror is unstated. The cycling reference is wrong (rest stops were for sensing; cycling was on the cabin floor). Who drove her to the gas station is unanswered. Two narrator verdicts should be cut. Some sentences are garbled.
+
+**Chapter 26 (outline)**
+- *Liked:* The stream reverses Chapter 25, which makes the earlier erasures look futile. That's a hard beat.
+- *Issues:* Onset needs the location rule stated. Jason's timeline needs its inputs. (Earlier I wrote "seventeen erased." The correct number is sixteen.)
+
+**Chapter 27 (outline)**
+- *Liked:* The hunters' "Took you long enough, asshole" is a sharp line, and Jason sharing after resisting for years is a strong reversal.
+- *Issues:* Publishing tutorials contradicts Chapter 25's roadmap argument, and Mira should point that out. Jason's concession should echo Chapter 14's "I can't control where it goes." "You should have done this before" needs an answer. "Already educated" is vague.
+
+**Chapter 28 (outline)**
+- *Liked:* "This is the opening act" is a strong line.
+- *Issues:* The first real strong creature should feel like a gap from the Chapter 19 scout. "Drive back" needs a clear reason tied to the soul rule. "Might be an early beginner" is confusing. Scale and tone should stay consistent with the book's realism goals.
+
+**Chapter 29 (outline)**
+- *Liked:* The parking-structure scene is the best beat. "I don't want to be a natural, I want to go home" carries it. "You're just distributing the exhaustion" is the clearest statement of the clone cost.
+- *Issues:* The summary header is duplicated. The clone counts don't match (about 110, then 90, then ninety). The mana source isn't stated. The collapse mechanism is unclear. Kael's line is garbled. Delilah can't simply force a ten-hour rest. It needs a staged handoff, with the cost visible. Jason's silence needs to connect to his own depletion.
+
+**Chapter 30 (prose)**
+- *Liked:* The ending matches the blindness in Chapter 16. "Whatever he was saying was reaching me the way a conversation carries through a wall" is the best line in the chapter. The escalation is easy to follow.
+- *Issues:* "Not contained. Not driven back. Gone" contradicts Chapter 28's "can't kill it." The colony's mana budget needs one sentence about whose mana powers it. "Seven billion" appears again. "Since January" conflicts with a February opening. "Newton-level signature" is undefined. The "thousand clones on a Tuesday" memory isn't in the book. "Down for days" needs setup in Chapter 19. A sentence ends on a comma. Some lines use the "not X, it's Y" construction, which dulls the climax.
+
+## Global Issues
+
+1. **Population:** "Seven billion" appears in Chapters 6, 24, and 30. Change all to eight billion.
+2. **Clone mana source:** Chapters 10, 20, 29, and 30 each give a different account. Choose one and state it.
+3. **Hive versus independent minds:** Chapter 20 makes grandchildren independent beings. Chapters 10 and 12 keep the hive. Decide.
+4. **Information rule:** Jason breaks it in Chapters 4, 6, and 24 without the book acknowledging the cost.
+5. **Untraceability:** Chapter 3's claim is contradicted in Chapters 13, 23, and beyond. Jason should face this directly.
+6. **Jason's parents:** The Chapter 1 and Chapter 6 accounts conflict. Mira should catch it.
+7. **Passports and ID:** Unaddressed across Chapters 14 and 15.
+8. **Calendar:** Chapter 1 is February. The story runs into winter and beyond. Build a rough timeline.
+9. **Erasure:** Mira's erasure ability needs a training beat before Chapter 25.
+10. **Prose tics:** The "not X, it's Y" construction and "twelve inches" appear often enough to dull the impact.

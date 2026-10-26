@@ -1,0 +1,589 @@
+# MANUSCRIPT REPORT — *Working Title Unknown*
+
+**Scope:** Ch1–3 and Ch30 read in full prose; Ch6 partial prose; Ch4–5, Ch7–29 reviewed as outlines/summaries.
+
+**Verdict up front:** The book works. The premise is strong, Mira's voice is the best asset in the manuscript, and Ch25 and Ch30 are genuinely good chapters. The problems are structural and fixable: **power scaling, timeline compression, and a handful of recurring craft tics.** Nothing here requires changing the premise or the voice.
+
+---
+
+## PART 1 — GLOBAL / STRUCTURAL ISSUES
+
+These are the issues that affect more than one chapter, listed roughly in order of severity.
+
+### G1. The power scaling is broken (touches Ch8, 12, 20, 29, 30)
+
+The curve: 3 combat-viable clones (Ch8) → 110 clones (Ch29) → 8 million clones (Ch30) in roughly six to seven months of story time.
+
+- 8 million is a number the reader can't feel. A thousand is a number the reader can feel.
+- If she can run 8 million, she can run 8 billion. The only limit is reabsorption, and she survives it. That makes her a singularity, not "top tier."
+- Ch30's victory reads as "she solved the apocalypse by being exponentially more powerful than everyone else," which is not the book Act I promised.
+
+**Fix (pick one or combine):**
+1. Cap her sustainable ceiling at a few thousand. Make Ch29's 110 the *peak of sustainable power*, not the middle of the curve.
+2. Make the 8 million a one-time, self-destructive exception that nearly kills her and permanently changes her (lost memories, clones never quite the same, can't fully reabsorb).
+3. Add a hard reabsorption ceiling established in Ch29 so the reader knows 8 million is unsurvivable — which makes Ch30's ambiguity real instead of optimistic.
+
+### G2. The timeline is too fast (touches everything)
+
+Zero to most powerful being on the planet in ~7 months. Even with Jason as teacher, the photography eye, and her clone innovation, that's three orders of magnitude past "ahead of schedule."
+
+**Fix:** stretch to ~2 years via chapter datelines and one "eighteen months later" in Act III/IV. Still fast, now plausible.
+
+### G3. Act IV is too fast (touches Ch26–30)
+
+A masquerade maintained for centuries collapses in 11 days. Stretch to 2–3 months. The horror is that it's happening and nobody can stop it — not that it's happening in a week. A slower collapse also makes the 110-clone chapter (9 days of that) more brutal, not less.
+
+### G4. Why does *not* training kill you? (load-bearing, unanswered)
+
+The entire training arc's incentive structure rests on "you'd probably die anyway" (Ch3/6). Pick one mechanism: uncontained mana damages the body; the body keeps producing until burnout; the leak attracts something you can't hide from; the dimension pulls at you. Make it explicit.
+
+### G5. Where does mana come from? (one line needed)
+
+Body-generated, dimension-drawn, or both? This affects the economics, the crossing cost, and the Stage 2 clone implications.
+
+### G6. The intelligent beings are atmospheric, not agentic (Ch6, 17, 19, 26–28)
+
+They're felt as distant pressure; one scout shows up. If they're the Act IV threat, they need to *do* something — send a demand, take territory, kill someone specific. "The day they start caring is the day everything ends" is a great line that currently has no payoff scene.
+
+**Related contradiction:** Ch6 says "they don't care, we're not worth the trip." Ch19 says they send scouts "for entertainment." Those are different claims. If they *watch*, the zebra model is wrong. Either the scout is an outlier (and say so), or the model was always wrong (and that's the Act III turn).
+
+### G7. The witch trials / rationalism thread is dropped after Ch20 (Ch4, 20)
+
+The most interesting worldbuilding seed in the book — science as a suppression tool, the witch trials as containment — appears twice and vanishes. **Use it or cut it.** If used: what did containment cost in that era? Did practitioners erase whole villages? Did people die? That history should be a roadmap of dread for Act IV, and Kael's one-liner should be a scene.
+
+### G8. Jason has no weakness (all chapters)
+
+Prodigy, systems-thinker, escape artist, lockdown specialist, dimensional crosser. He collapses after big workings, but that's a cost, not a flaw. **The established flaw is teaching** (Ch7, Delilah's "you're a terrible teacher") — lean into it. Let him be *bad* at asking for help, at letting someone else take the risk, at not controlling the pace. The Ch14 debate ("selfish and right can be the same thing") is his real flaw; it should cost him in Act IV.
+
+### G9. Mira's old life is absent from Acts II–IV (Ch8–30)
+
+Her mom, sister, Sarah, job, apartment — present in Ch1–3, then gone for twenty-plus chapters. One line per chapter would keep the cost visible: a phone buzzing and silenced, a text she doesn't answer, "her mom had stopped texting." The cost of her choice is the book's emotional engine and it goes invisible.
+
+**Note:** Ch15's sister call and Ch22's family visit are the right beats, but they need setup and payoff around them (the gap, the lies, what she tells them).
+
+### G10. The death clock closes in Ch12 and nothing replaces it until Ch26
+
+Three-month window → "she's going to outlive it" → no ticking thing until the breach. **Replace it:** her mana signature getting too loud, the hunters regrouping, Jason's crossing fatigue, the clones' Stage 2 growth, the community noticing her. A clock the reader forgets isn't a clock.
+
+### G11. The memory-erasure thread is dropped after Ch3 (scariest thing in the book)
+
+Jason can edit memories. Mira can't verify he hasn't edited hers. That's the horror engine of the romance. It returns briefly in Ch25 (she erases seventeen people — good), but Jason's offer to erase *all memory of him* is never revisited, and the "how would I know?" question is never answered or weaponized. **Bring it back in Act IV:** the community's mass-erasure proposal (Ch23–25) is the perfect place for it to return at scale.
+
+### G12. Delilah is a convenience, not a character (Ch11–15, 29)
+
+She appears when needed, knows what Mira needs, teaches what Jason can't, warns about danger, and has no want, flaw, or resolution. **Give her:** one want (loneliness? curiosity? community standing? recruiting Mira?), one flaw (gossip? overcaution? envy of Jason?), and a resolution or complication before Ch26 (does she agree with containment? does she help erase people? does she refuse?).
+
+### G13. The hunters are resolved before the debate about them (Ch13 vs Ch14)
+
+Attack/escape happens in Ch13; the "why won't you share" debate is Ch14. That drains the debate's tension. **Fix:** move the debate before or *during* the hunter crisis (hiding, waiting, stuck in a room together).
+
+### G14. The romance is present in only four chapters (Ch3, 8, 21, 29–30)
+
+The hand-hold (Ch8), the look (Ch21), the lean (Ch29), the colony (Ch30). That's a 13-chapter gap between Ch8 and Ch21. Weave it through Act II–IV — a line, a decision, a fight, a near-kiss, a withdrawal. The slow burn needs embers, not gaps.
+
+### G15. The outline style is flattening the characters (meta-issue)
+
+Stage directions like "he doesn't answer, which is answer enough" and "he doesn't praise her, just nods and says 'Again'" force behavior and make Jason a stoic-sensei robot, which contradicts prose-Jason (warm, wry, deflecting, bad at boundaries, blurts "I love you" as an accusation). **Rewrite outlines as intentions:** "Jason doesn't want to tell her what happens if she fails, and he's bad at hiding it." Then let the prose find the behavior.
+
+### G16. Genre signaling / marketing
+
+Ch1 reads as contemporary romance for 90% of its length, then swerves hard. If sold as straight contemporary, that's a bait-and-switch. Signal it in cover/blurb/tone. Also decide whether the ambiguous ending is a choice (standalone tragic) or a setup (book one) — and make sure the ambiguity is intentional.
+
+### G17. Sensitivity
+
+Real-world disappearances (Easter Island, Aztecs, villages) are used as in-world explanation — good as long as framed as in-world conspiracy theory, not authorial fact. Ch28's mass-casualty event in "rural India" — fictionalize (Ch30's "Rajasthan" reference does this; keep that).
+
+### G18. The Cumberland Gap timezone issue (Ch2–3)
+
+Cumberland Gap is Eastern Time, same as Columbus. A 4:12 PM reading isn't a timezone artifact. **Fix (preferred):** keep the location, let Mira *assume* timezones and be wrong — that's a free retroactive clue. Alternative: move the location to Central Time Tennessee.
+
+---
+
+## PART 2 — CHAPTER-BY-CHAPTER
+
+Format per chapter: **Works** (protect) / **Fix** / **Continuity & line notes**. Chapters marked *(outline)* were reviewed as summaries, not prose.
+
+---
+
+## ACT I
+
+### Chapter 1 — Normal (prose)
+
+**Works:** Mira's voice ("I hated Dave. I hated his carrots."), "He remembered everything except to ever ask me on an actual date," the almost-touch, "sawdust and sugar," "Most people are boring," the Thai-dinner subversion, the genre swerve at the end.
+
+**Fix:**
+- Office opening too long; cut ~⅓. One pivot-table paragraph, not two; stop repeating the report deadline.
+- Telling after showing: "He gave me his attention, but he wouldn't give me anything else," "The door closing," "And he never touched me unless he absolutely had to." Cut or move; the scenes already say this.
+- Tuesday coffee established by Marcus, but the scene is Friday. Intentional? If yes, make Mira notice ("He never does Fridays") — a free clue. If no, fix.
+- At the end of the chapter, Jason vanishes from the narration after the crack. If he's with her, one line of him. If he's gone, that's a huge beat and must be stated.
+
+**Continuity:** "We didn't really get along" (parents) needs to be a reframe rather than a contradiction of Ch6's "good people, we don't talk" — change Ch1 to "We're not close."
+
+### Chapter 2 — Displaced (prose)
+
+**Works:** The GPS reveal (Cumberland Gap, Tennessee), the milk texts, the 20-minute negotiation ("Figure it out faster"), Mira's competence (documenting, screenshots, text-consistency test, texts to keep people calm), "Too neutral."
+
+**Fix:**
+- Phone-admin middle sags; cut by half. One 911 deliberation (at the dial pad), not three.
+- Forest description repeats Ch1's ending and then repeats itself (scan, scan, quiet).
+- Jason's dialogue loop: "I don't know" ×4–5. Give him one different deflection (physical tell, subject change).
+- **Not calling 911 is passive.** One beat fixes it: she types 911, imagines the call ("Yes, operator, I was in Ohio and now I'm in Tennessee, no I'm not hurt…"), deletes it.
+- "We can't call 911 yet" needs a better reason: calling broadcasts their location / draws attention.
+- The time discrepancy (4:12 vs past 5:00) is dropped as "phone must be damaged." Make it a *second impossible fact*, not a hand-wave. See G18.
+- End on a fact, not a mood. Currently ends on "twenty minutes that felt like they would never end."
+
+**Continuity:** Ch1 ends with Jason's hand clamped on her arm; Ch2 opens with him ten feet away. One sentence acknowledging the transition.
+
+### Chapter 3 — The Ultimatum (prose) — **best chapter of Act I**
+
+**Works:** "Shot or stabbed when I don't even believe in guns," the pet-uplift analogy, "There is no informed consent here," "My mind is mine. You don't get to edit me for my own good," the gold-near-yellow-oaks analogy (better than the train analogy — consider making this the canonical one), the accidental confession ("it wouldn't be fair of me to risk your life just because I love you!"), "A few months, usually. Sometimes less," the closing line ("choose between dying and losing him when both felt exactly the same").
+
+**Fix:**
+- 25–30% too long. Repetition: "two years" ×6, "twelve inches" ×3, the four options enumerated twice, "He closed his eyes" ×2, "we should move soon" ×3, "You love me" twice in one beat.
+- The second memory-erasure offer ("if you hate me enough… I could erase all of it") is *manipulative* — either cut it or have Jason visibly regret it immediately.
+- Slow down after "a few months, usually." Let it stop the conversation.
+- She never asks "who taught you?" or "how do we get back to Ohio?" — ask and refuse; pushing is characterization.
+- Mira's "how would I know?" re: memory editing is one sentence. Let it sit. That's the scariest line in the chapter.
+
+**Line/format issues:**
+- `I stopped breathing.The number` (missing space).
+- `"I, " He swallowed hard` → `"I—" He swallowed hard.`
+- Quote placement broken in `"There's always a choice." … "\nNot this time."`
+- `Option two: I follow him and die. Option two: I follow him and die. Option two` — if intentional panic-loop, format it as one (italics/break); if not, error.
+- "I laughed" precedes "I didn't know whether to laugh or cry" — reorder.
+
+### Chapter 4 — The Walk Back (outline)
+
+**Works:** Motel logistics; the death-aftermath conversation (corpse to disappearance); lying to Sarah and Mom; "lying is becoming easy" theme.
+
+**Fix:**
+- Title inaccurate — they're not walking back to Columbus. "The Long Way" / "Walking Distance."
+- Transition chapter risks pure walking-and-talking. Give it a **spine scene**: the 911 attempt, the motel death talk, the lie to her mom.
+- **Infection timing:** Ch3's yellow-oaks analogy may already have infected her. Have Jason *check* in Ch4 ("I don't think it's started, but I can't be sure until you decide") — makes Ch5 a certainty rather than a risk.
+- Logistics: how do they get from woods to town (hours in February dark?), and later to a car? Specify. Hitchhiking = Mira's first lie to a stranger = good scene.
+- **Life logistics hole:** job (report due Monday), roommate, apartment, stuff, camera. Address it.
+- "Managing money without a paper trail is a skill mana gives" — wrong. It's *his* skill from years off-grid. Reword.
+
+### Chapter 5 — The Choice (outline)
+
+**Works:** "It's started" / "I know. I can feel it." Small physical onset (not an explosion); Jason's three "are you sure" asks; the four options; her argument ("Most of them are alone. I wouldn't be") and "I could get hit by a bus tomorrow. At least this way I'd die understanding why."
+
+**Fix:**
+- **Continuity error:** "Jason sits across from her in the woods" — but Ch4 ends at a motel, and Ch5 is "morning, bad motel coffee." Move the scene to the motel room (thin walls — he raises a silence curtain so they can talk; more intimate and funnier) or write a reason to go outside.
+- "He doesn't answer, which is answer enough" — delete. Jason answers badly/too much; give him the worse answer: "If you can't cycle, you're loud. A beacon."
+- **First voluntary touch:** unspecified. He should take her hand when she says "I can feel it" — not dramatic; then withdraw in Ch6 so the next touch means more.
+- Coffee metaphor ("first sip of hot coffee") — second coffee image of the book. Use illness/fever imagery instead (the onset should feel like getting sick, not comfort).
+
+### Chapter 6 — Orientation (partial prose — scent/dimension scene only)
+
+**Works (prose additions beyond outline):** the "not worth the trip" economics (new, load-bearing, conditional safety); the "smart ones know and don't care" tier (new, big); "zebras in tall grass" (Mira invents it — right model); "That might actually be the healthiest response I've ever seen to this conversation" (prose-Jason, warm, wry); the minivan/dog and billboard (ordinary-world contrast — exactly what Act II needed).
+
+**Fix:**
+- **Analogy density:** match-in-dark-room + zebra + (outline) frequency + heartbeat = 4 metaphors. One per chapter max; let Mira invent some.
+- "I filed that away" reads as calm; it should read as *effort*. And Jason should notice she just filed the worst fact he's told her.
+- "Smart ones don't care" is a huge lore drop delivered flat and dropped. Track it or cut it.
+- **Phone missing.** One line: buzzing, silenced without looking.
+- Still missing from the outline chapter: cash/used-car purchase, sensing training, **the full backstory reveal** (age 8–9, the drawing, community at 12, three techniques, parents, almost died at 10), cabin arrival.
+- **Chosen-one signal:** three novel techniques by twelve. Decide if Jason is a prodigy on purpose; if not, soften to "techniques nobody had taught him." If yes, that's why hunters want him — make it load-bearing.
+
+**Continuity:** "His parents are good people… He tells people he doesn't [talk to them], because good parents invite questions about why you disappeared at seventeen." — *Excellent.* But adjust Ch1's "we didn't really get along" so this is a reframe, not a contradiction.
+
+### Chapter 7 — Day One (outline) — Act I closer
+
+**Works:** Training as physical skill; "she's terrible at it"; quiet anger ("How long did it take you? Two days. Most? A week or two."); the night flicker; "Mira isn't special. She's just stubborn."
+
+**Fix:**
+- **Hunters absent for five chapters.** Add one whisper: a car on the road, a news item about a "gas explosion" in Columbus, Jason's perimeter check coming back wrong.
+- **Phone beat** (old life).
+- **Training needs one original detail tied to photography** — she solves it by translating mana into her own visual model (metering/afterimage/grain), not by understanding Jason's physics. Let her solve it her way.
+- **"Two days" reveal needs a counterweight** so his speed reads as a wound (terrified, alone, didn't sleep) not intimidation.
+- **"He doesn't praise her. Just nods and says 'Again'"** — robotic Jason. Make the withholding *effortful*: he wants to say something, doesn't, because he's bad at teaching; Mira sees him doing it.
+- Night flicker: decide if she tells him in the morning (relationship beat) or keeps it (pride/trust beat).
+- **Act break is soft.** "Again" is a good button but the act needs a turn before it: a threat whisper, a physical escalation (nosebleed), or a relationship shift. Consider: end on "Again" *after* one beat of dread.
+- Title "Day One" bland — "Cycling," "The Firefly," "Again," "Hold Your Breath."
+- Add one humor beat and one physical-toll beat (headache worsens, starving, nosebleed).
+
+---
+
+## ACT II
+
+### Chapter 8 — Routine (outline)
+
+**Works:** Rhythm of the cabin (she cooks badly; he eats it without complaint); mana as "tinnitus she's stopped hearing"; the hand scene — **"You told me he loved me. You don't get to flinch when I hold my hand."** — best romance beat in the book; clone refinement as character quirk (photography eye noticing jaw asymmetry), Jason calling it wasted mana and letting it go; ending image (clone in the corner, her own face, "she still hasn't gotten used to that").
+
+**Fix:**
+- **Timeline:** two months, and she goes from can't-cycle to Stage 1 clones. State elapsed time; make the speed a visible dynamic shift (Jason: "you're ahead of schedule," said like it's a problem).
+- **Death clock invisible** — put it on the page.
+- **Clone Stage 2 discovery is in a bracket** — "[CLONE STAGE 2 DISCOVERY] … should feel like a small but significant moment." No: it should be a **major scene**. It's the first time Jason is genuinely uncertain about magic itself; first time her innovation outpaces him; power dynamic shifts. Also: if clones produce their own mana, they're louder beacons — does that accelerate her clock? Decide.
+- **Delilah appears in a parenthetical** ("she mentions this limitation to Delilah later") — either introduce her properly or cut.
+- **The paragraph after the hand scene undercuts it:** "Something settles between them… the gap between them is gone." That's telling the reader what the scene meant. Cut everything after "for the rest of the session."
+- "His jaw works like he's going to say something, then doesn't" — third tic (Ch1, 2, 3, 8). Vary; let him say the wrong thing.
+- Phone beat (old life) again.
+
+### Chapter 9 — First Contact (outline) — **thinnest chapter**
+
+**Works:** The stray as "kitten"; Jason killing it "fast. Efficiently. Almost casually"; "that was small… noticed her as a food source."
+
+**Fix — this is one scene where it needs three:**
+- **What does it look like?** Use the photography eye: proportions wrong, light falling wrong, her eye rejecting it.
+- **What does it feel like** to her new sense? First real *use* of her mana sense; currently skipped.
+- **What does the killing cost Jason?** Does he feel anything? Does Mira see him *not* feel anything — and does that frighten her?
+- "She has to sit down afterward" is not interiority. Give her the reaction: horror, relief, nausea, anger, the realization she's next if she's not fast enough.
+- "Make the threat visceral" — currently the threat is a description, not an experience.
+
+### Chapter 10 — The Box (outline) — **best worldbuilding, most under-written**
+
+**Works:** The box/clone-death learning loop; "prison" vs "battery"; "she realizes this is how Jason got so skilled — willingness to watch himself die hundreds of times"; she asks to try; he says no with real reasons (needs combat manipulation, box/subspace/clone during combat, must last seconds for the clone to learn).
+
+**Fix:**
+- **The moral argument is too easy.** Mira calls it a prison; Jason says "training tool"; scene moves on. This is where the reader either stays with Jason or doesn't. Either he has a real justification Mira *partly* accepts, or his justification is thin and it becomes an ongoing fracture. Don't split the difference.
+- **Does Jason experience the clone deaths?** Biggest unanswered question in the chapter and key to his entire psychology. Answer it.
+- "She realizes this is how he got so skilled" — told, not dramatized. Let her *watch* a clone die and see his face.
+- **Stage 2 discovery in a bracket** — give it its own scene (Jason notices, tests, reasons, gets scared).
+
+### Chapter 11 — Visitors (outline)
+
+**Works:** Delilah's entrance; "You're brilliant, Jason, but you're a terrible teacher"; Mira accepting before Jason can refuse; "cloning isn't copying, it's creation" (elegant Stage 3 unlock); community numbers; tea in a thermos "like a normal person."
+
+**Fix:**
+- **Delilah needs a want and a flaw** (see G12). Why now? How far did she travel? Lonely? Curious? Recruiting? Envious?
+- **"Artist won't give away paintings" is weak** — an artist needs to eat; Jason is hoarding, not monetizing. Delilah should say the real thing: "Because he's scared. Because he was alone and thinks being alone is the price of survival. Because he's wrong about that, but not wrong about the danger."
+- **"Mira asks for romantic advice"** — placeholder. What does Delilah say? Tell her to run? That he's worth it? Something about his past Mira doesn't know?
+- **Stage 3 needs a character distinction:** why hasn't Jason thought of it? Because *his* model of clones is "copies of the self" (must match current state); Delilah's is "making a thing" (needn't match the maker). Jason is locked inside his own systems; Delilah is outside his frame. Without this, she hands Mira the answer for no reason.
+- **"Make food" ambiguous** — conjuring food = different system. Keep to taste/preserve/clean ("make bad motel coffee taste good" is the right lane).
+- **Community numbers need tension:** thousands worldwide + most die in months = massive turnover. Where do new infections come from? Is someone spreading it? Delilah should have an opinion.
+
+### Chapter 12 — Progress (outline)
+
+**Works:** "Functional, not powerful"; Delilah teaches avoidance, Jason teaches survival, neither covers the other's material; first combat attempts fail by *reading* (reacting to physical movement, half-second behind); by attempt 12 she lands a counterattack and still dies; Stage 3 payoff quiet — she doesn't announce it, Jason asks, she explains, tradeoff (9 → 3); recursive conversation ("Too bad your clones can't just make their own clones" / "Why can't they?"); Jason correcting the logic and walking away; "a door she doesn't have the key to yet" (best closing line in the outline).
+
+**Fix:**
+- **"Quite a few" captured strays** — Ch10's moral horror is unresolved and now it's a resource. Mira should react: ask how many, refuse to use them, justify it to herself. Keep it unresolved.
+- **"Doesn't praise, just moves to the next phase"** — robotic Jason again (G15). Pick: bad at praise and she sees him fail / withholding on purpose and she calls it / praises in a way she doesn't recognize. "Just moves on" is the least interesting.
+- **Establish clone count earlier** (nine sustainable) so 9→3 has weight.
+- **Cut the string-theory/quantum-mechanics line** — outline leaking. "She has no idea how it works" is enough.
+- **"Specific kind of granular patience" is a huge moment buried** — Jason saying "I can't do this, you might" is the first time he acknowledges she might exceed him. Make it a moment.
+- **"And broken"** — video-game jargon; Delilah wouldn't say it. "Because it doesn't work" / "no one's ever done it" / "you'd need a brain like a spider's web."
+- **Recursive conversation needs Mira's interiority after Jason leaves** — one line of her actually engaging ("he's wrong, probably").
+- **Cap the recursion** now: one level (3 clones each making 1 = 6, not infinite); mental load crushing. Explicit in the outline so it can't break later.
+
+### Chapter 13 — The Hunters (outline)
+
+**Works:** Hunters back; Jason tracking them for two days and telling her at dinner matter-of-factly; "no reason to run from people who haven't attacked"; creature attack at dusk (two mid-tier, drawn by the mana concentration); Mira handles the smaller one, wins messily, takes a shield hit at real cost; hunters watch from tree line, Jason doesn't acknowledge; dawn attack — blocker (disrupts teleport lock) + tracker; irrelevant because randomization; he doesn't fight, he leaves; ocean ×2 then hillside; "Seventy percent of the planet is water. I'm a little surprised it only took three."; teleportation gap explained (first teleport local because no mana/no shielding — bad landing would kill her); "Because I don't have anything to prove to them. And I can leave."; Iberian Peninsula ending.
+
+**Fix:**
+- **Third withholding of information** (Ch2, 3, 13). Mira should be angry: "How long have you known?" "Two days." "And you're telling me now because…?" "They haven't done anything yet." "That's not an answer." A quiet "this is a pattern" beat.
+- **Creature fight is summarized** — first real fight of her life. What does she learn? Cost? Does she use clones/Stage 3? Does she win because of something *she* figured out or because Jason softened it? One paragraph of "what this means."
+- **Porch scene needs content** — "he sits beside her without being asked," and then? Talk? Silence? Almost-praise? Almost-confession? This is the natural relationship shift.
+- **Teleportation-gap explanation is a huge romance beat buried in logistics** — he did math on her survival, modified a spell (more effort mentally, mana, time), didn't tell her because "the priority was moving." Make it a realization, not a briefing. She should *notice* the parallel to her clone modification herself.
+- **Hunters' plan needs one more layer:** blocker + tracker, and then what? A combatant? A negotiator? A hostage plan? Right now they're competent enough to threaten and stupid enough to escape.
+- **Mira's reaction to the Iberian Peninsula** — relief, exhaustion, awe? One line.
+- Structural: see G13 (order of Ch13/14).
+
+### Chapter 14 — Why He Won't Share (outline)
+
+**Works:** The core question; "Because I made it. It's mine." / "That's it?" / "That's it."; "Lives are always at stake… that's just a more emotionally compelling version of the same argument"; the sharing-can't-be-untaugh problem; **"You taught me." / "Yeah. I did."**; "Do you think you're selfish?" / "Yeah. I do."; the radio in a language neither speaks; the ordinary afternoon.
+
+**Fix:**
+- **Jason is too articulate.** He wins the debate, and winning isn't the same as being right. Give him a crack: defensiveness, repeating himself, or the real answer — "Because it's the only thing I have that's mine. Everything else I've had to leave." That's a wound, not a philosophy.
+- **Land "You taught me"** — he broke his own rule for her. Mira should clock it. "Why me?" / no answer. Or she doesn't ask but knows.
+- **Cut "Maybe both. Probably both."** The outline says she shouldn't resolve it; then the ending resolves it. End on the radio/dishes/image.
+- **Hunters' motivation needs a "why now"** — they waited years. What changed?
+- **Money/language:** programming (Ch1), and push back on translation magic (see G-notes; better they don't speak Spanish).
+- **"They came back because translating and foreign currency is an issue"** — good reason; put it in the chapter, not the outline.
+
+### Chapter 15 — Departure (outline)
+
+**Works:** No → no → yes structure; Delilah's call raising Jason's profile (crossing is rare, she assumed prohibitive); "He's not telling her. He's asking."; **the sister phone call** — flat, factual, "I love you," no editorializing; four-minute cry around the corner, washed face, back to work; the pine-and-cold detail; "End on the moment before."
+
+**Fix:**
+- **No→yes is missing a beat.** "He asks instead of tells" moves her to *consider*, but she already knew that since Ch3. She needs a reason about *her*: staying on Earth trains her for what's happened; going trains her for what's coming; or this is the first decision she's made for herself since Tennessee; or she's more afraid of being unprepared than of the other side. Put it in the outline.
+- **Specify the physical beat at the crossing** — hand? shoulder? checking her shield? It's the first purposeful touch about *the crossing*.
+- **Title** — "The Crossing" / "Pine and Cold."
+- **Act-break choice:** threshold vs first paragraph on the other side. Lean toward the other side — Act II is a lot of preparation; the reader needs the door to open.
+- **Answer the cry question:** it's fine. Managing emotions, not drowning. Keep the flat phone call.
+- **Delilah needs a pre-exit beat** (see G12).
+- **Old-life gap:** "She hadn't called her sister in three weeks. She'd been texting. It wasn't the same." — makes the call heavier.
+
+---
+
+## ACT III
+
+### Chapter 16 — Arrival (outline)
+
+**Works:** **The no-photons rule** ("It's not like stepping from a dark room into the noon sun. It's like someone removed the concept of quiet."); "Existing here costs mana the way staying warm costs calories"; plant pressure testing her shield "the way water tests a hull"; the blind fight; "I'm blind. I want to be clear that I'm blind."; "It held expensively." / "It held. That's the standard here."; following his mana signature "the way she'd follow a flashlight beam."
+
+**Fix:**
+- **"She loses her eyes" is wrong.** She loses *light*. Eyes still work; in total darkness the visual system generates Eigengrau/noise. Reframe: she doesn't lose her eyes, she loses the *world*; her eyes generate static.
+- **Physics of no photons needs one line:** if no thermal radiation, how does heat transfer? "Heat doesn't radiate here. It only moves through touch." Great sensory detail.
+- **Creature fight summarized** — her first other-side fight, blind, against something native. Most detailed fight in the chapter. What does she learn? Use clones/Stage 3? Win by something she figured out?
+- **"He laughs"** — first laugh in the book. Note it; it means something.
+- **"Files that away"** — third time (Ch6, 8, 16). Vary, or have her *feel* instead.
+- **Use the no-photons rule consistently** (see G-note) — Ch17–19 stop using it. Every other-side scene should be shaped by blindness or cut the rule.
+
+### Chapter 17 — The Ecosystem (outline)
+
+**Works:** "The day they start caring is the day everything ends"; intelligent beings as "pressure wave of a ship passing far out at sea."
+
+**Fix:**
+- **Tour, not a scene** — "days of careful movement and observation" is summary. Give it a scene: evidence of a dead practitioner (worldbuilding + tension + Jason's reaction); a non-hostile thing that recalibrates her danger sense; or Mira loses Jason's signature for thirty seconds and panics (dependence beat).
+- **The "they don't care" answer is identical to Ch6** — the second time must be different: he admits he doesn't know as much as he pretends; tells her about the one time he saw one; contradicts himself and she notices.
+
+### Chapter 18 — Resting (outline)
+
+**Works:** Teleportation fatigue (first real cost of Jason's power); the irony (more power = harder to cross); prison as partial workaround; "the effect that stops the stronger ones still impacts him"; **Mira's defense sequence** (body shield → 2 enemy-facing shields → cushion shield → body twist → prepped attack) and the expert-level reveal; the reader thinks it's basic because Jason taught it as basic.
+
+**Fix:**
+- **The workaround needs a floor** — if the prison reduces the cost, the weakness is mitigated. Partial, not total: drains the prison, or only works for limited crossings.
+- **Sell the speed** — "her body did this while her mind was still catching up" rather than conscious deliberation in two seconds.
+- **"Someone watching is shocked" — WHO?** Delilah (community perspective, reevaluates Mira) / hunter (threat escalation, they see she's dangerous) / creature (something remembers her). Each produces a different chapter. Pick one.
+- **Plant the building blocks in Act II** — if this is "expert level," the training scenes must have shown layered defenses, directional estimation, multi-tasking. Otherwise the reveal reads as luck.
+
+### Chapter 19 — The talking creature (outline) — **biggest chapter, biggest problem**
+
+**Works:** Lockdown; box-from-five-miles; creature tries teleport / cross back / send message and fails each time; "Even if you kill me, I'll just come back alive eventually. My soul will allow me to remember."; the scout-for-entertainment reveal; Stage 4 spark ("she just decides she has to").
+
+**Fix:**
+- **Jason does seven impossible things.** Inconsistent with fleeing hunters in Ch13. Either the hunters are equivalent gods (changes the book), or tone it down, or make the cost severe — he collapses *before* leaving / can't cross back / Mira has to protect *him*. If he's incapacitated at the end, Ch20 becomes Mira's by necessity (which Act III needs).
+- **Mira is 90% watcher.** She needs an essential action: sees something in the creature's signature Jason misses (photography eye); realizes it's a scout first; holds the lockdown while he builds the box; figures out the trap. Give her the moment.
+- **The talking creature is a massive lore shift, not seeded enough.** Intelligent, speaks, has a soul, respawns. If creatures can reason/bargain/remember, the other side is a *society*, not an ecosystem. Seed it earlier or make this one an outlier and say so.
+- **"I'll come back alive" changes every combat encounter** — why kill strays in Ch9/13 if they respawn? Do strays lack souls? Only intelligent ones? Specify.
+- **Jason's "I can handle it" is too casual** — bluff, plan, or lie? Which?
+- **The entertainment reveal is in the last sentence** — should be a scene. How does he know? Creature tells him? He figures it out?
+- **Contradicts Ch6** — "they don't care" vs "they watch for entertainment." If they watch, the zebra model is wrong. If that's the Act III turn, make it the center of the act, not a detail in a fight.
+- **The box sequence is three sentences** — should be the most detailed fight in the book. What almost fails?
+- **Stage 4 spark needs a scene** — a conversation with Jason, or her alone after; second time they've had this conversation, so make it different (he says impossible again and she doesn't accept it; he says the cost is too high and won't say what it is; he admits he's afraid of what she'll become).
+
+### Chapter 20 — Contact (outline)
+
+**Works:** Kael ("the boy genius who hoards all the candy"); "Who's the top 100?"; the informational threat — **"How many viral videos are you from catastrophe?"**; "The walls are thinning. Not the dimensional walls. The informational ones."; "Science has been founded by mage users for a while" (huge, underused); the breach event.
+
+**Fix:**
+- **Kael needs a want** — warning? recruiting? testing? bored? lonely? Give him an agenda.
+- **"Science founded by mages" is one line** — needs a scene. Mira reacts; Jason has an opinion; Kael argues it was the right call. History of the world, treat it like it matters.
+- **Suppression-straining is dropped after this chapter** — keep it ticking (news item, notification, Kael's warning echoing).
+- **Mira must ask "Top 100 out of how many?" and "Where am I?"** — first external ranking she's gotten; huge moment, missing.
+- **Clone Stage 4 in a bracket** — should be the chapter beat. End Ch20 with the collapse, not Kael's info.
+- **The 911/practicality thread:** note she now *is* the eraser (Ch25) — the book's moral arc is already doing this; the outline should track it.
+
+### Chapter 21 — Evolution (outline)
+
+**Works:** "Wins — barely, messily, with none of Jason's elegance"; throws up from adrenaline and exhaustion; "He looks at her the way he's been trying not to look at her for two years. She notices. This time, neither looks away."; first night on the other side.
+
+**Fix:**
+- **Montage, not a chapter.** What happens? What goes wrong? What does she learn that's new?
+- **Romance beat needs a scene around it** — three more lines. Does he say something? Does she? Do they not, and the *not* is the scene? Specify.
+- **Night on the other side is one line** — shelter, danger, shifts, dreams, something approaching. Should be a scene.
+- **Mid-tier fight — she should win with something that's *hers*** (Stage 4 clones, photography-eye trick, a tactic Jason didn't teach). If she wins by being a worse Jason, the scene is about his teaching.
+- **"Should probably add some romance in here somewhere?"** — yes, and weave it through, not just at the end.
+
+### Chapter 22 — Return (outline)
+
+**Works:** "Earth feels empty after the other side. Thin. Like a pencil drawing after months of living in an oil painting" — best line in the act.
+
+**Fix:**
+- **"She goes to see her family" is one sentence** — biggest emotional beat in the act. What happens? Does she tell them anything? Do they notice something different? Does she edit them? Does she lie? Does she cry? Does she feel the mana (or its absence) in her mom?
+- **Old-life thread must pay off here** — job, apartment, friends, sister, mom. What did she do about them?
+- **What does she tell her family?** Long trip? Truth + edit? Watch from a distance? Pick one.
+- **Act ends on a transition** — needs a turn: her mom's face? Her reflection? Jason waiting in the car? A news alert about a viral video? A loss?
+- **Suppression thread absent** — one line.
+- **Act III has no clear climax** (see G-list): pick the Stage 4-going-wrong, Kael-doing-something, or return-to-Earth-being-wrong as the act's turn.
+
+---
+
+## ACT IV
+
+### Chapter 23 — Cracks (outline)
+
+**Works:** Community meeting; factions (go public / harsher suppression / hide — none wrong); the mana email; practitioners can be wealthy (real insight — don't undercut with "who could guess?"); "He loves you. That's obvious. But that boy is a powder keg, and you're standing right next to him."
+
+**Fix:**
+- **São Paulo video is an *evidence* problem, not a *vector* problem.** Make it uncanny and small (a man whose hand passes through someone's arm; a glitch people can't debunk), not a light show. The analysis ecosystem is the vector.
+- **"Powder keg" warning is on-the-nose** — make it specific: "That boy will burn the world down to keep you safe, and he won't ask first." That makes her complicit, not just endangered.
+- **The stranger needs identity** — name, history, grudge, faction, reason she's saying this to Mira.
+- **Mira's POV needs social texture** — who defers, who's afraid, who won't make eye contact with Jason.
+- **Why does Jason attend this time?** Specific reason.
+- **Mana email** — one line of texture (what does it feel like to send?) and why Jason doesn't use it (been alone for years; no use for staying in touch).
+
+### Chapter 24 — Escalation (outline)
+
+**Works:** The feedback loop (exposure → understanding → production → death → evidence → exposure); "We'll know when we've crossed it, because things will start coming through that have never come through before."
+
+**Fix:**
+- **London anchor is the wrong vector** — a mocking segment wouldn't teach mechanics; one person shouldn't be the vector. Make it the *network*: a thousand people each contribute a piece; the model assembles; a dozen people in a dozen countries comprehend via different chains. **Debunking is a teaching tool.** That's the trap.
+- **Witch-trial pattern needs more payoff** — what did containment cost then? People died? Villages erased? Something worse? Jason should describe the *shape* of what's coming.
+- **Math needs specificity** — range, historical precedent, worst-case model. He's a systems thinker; let him do math.
+- **Mira needs a reaction** — her mom, sister, Sarah, old roommate are in the blast radius now. That should land.
+
+### Chapter 25 — Containment (outline) — **best chapter in the book; protect it**
+
+**Works:** The erasures as violation ("technically clear, practically achievable, not something she wants to think about too hard"); Priya (notebook, breathing before picking the pen back up, "The people who watched my video. What about them?" / "I took care of it." / nods slowly, doesn't ask); teaching cycling in the seminar room (perfect inversion of Ch6); gas station bathroom, twenty minutes staring at a wall; "I know I might have to. I'm telling you I don't want to."; Jason not saying it gets easier.
+
+**Fix:**
+- **Doesn't end on a turn.** Add: a notification from Delilah's network — forty new incidents, sixteen confirmed comprehension cases, two deaths — after she erased seventeen. Futility, not just personal horror. Or Priya texts two days later: found someone else who understands, going to teach them, thought Mira would want to know. Mira has to decide.
+- **Mira's complicity must include that she now *can* erase minds** — she's become the thing Ch3 feared. Track it.
+
+### Chapter 26 — Breach (outline)
+
+**Works:** The celebrity awakening on camera; hospitals filling with "warmth in the chest, headaches, fever that isn't a fever"; Jason's timeline calculation ("days. Maybe a week or two"); "Teach. As many as we can, as fast as we can. Give them a chance."
+
+**Fix:**
+- **Competes with Ch28 for "point of no return."** Ch26 should own it; Ch28 becomes the first consequence.
+- **Celebrity explaining clearly contradicts the system** — awakening takes weeks; the celebrity would be terrified and incoherent. **Celebrity awakens on camera; the internet explains it** using the analysis ecosystem. Nobody was told; a million people were shown and figured it out together.
+- **Title "Breach" fine but generic.**
+
+### Chapter 27 — Cascade (outline)
+
+**Works:** World reaction montage (panic, denial, fascination, exploitation; governments, scientists, religious leaders); Jason uploading all his techniques; "We're all going to die anyway if I don't."; the hunters' message — "Took you long enough, asshole."; "He's explaining in minutes what took him years to figure out."
+
+**Fix:**
+- **Jason's sharing should be a wound, not a shrug.** He was wrong the whole time, and the only thing that made him share was the apocalypse. Let him be quiet in a way that's *different* from his usual quiet; let Mira find him sitting in the dark after the last upload; let her not comfort him.
+- **"You should have done this before"** — accusation, not quip. She doesn't absolve him; neither does the book.
+- **Reframe that saves it morally:** the world is already infected; teaching is *triage*, not recruitment. That makes his sharing the first genuinely unselfish thing he's done — and too late to count as redemption.
+
+### Chapter 28 — Incursion (outline) — **biggest number problem**
+
+**Works:** First major crossing; "It moves like weather. Like a natural disaster with intent"; can't kill it, only drive it back; footage ends denial; "Is this the thing you were always afraid of?" / "No. This is the opening act."
+
+**Fix:**
+- **100 million dead is catastrophic** — breaks the book: (a) not survivable; (b) contradicts Ch6's economics (if one crossing kills 100M, Earth was always worth the trip and Jason's model was stupid); (c) makes the next 11 days a rounding error.
+- **Scale down by orders of magnitude:** a few thousand dead over several days, not one attack; the creature *stays*, territorial, unstoppable; they drive it back but it remains on the other side of a boundary — **the first permanent incursion.** A place on Earth that is no longer Earth. Terrifying, survivable, leaves room.
+- **Sensitivity:** fictionalize the location (Ch30's "Rajasthan" is the model).
+- **"Opening act" exchange — keep.**
+
+### Chapter 29 — Mobilization (outline) — **two chapters; split them**
+
+**Works (protect every word):**
+- "The one writing this mental log, if she were keeping one, has probably only been alive for three hours."
+- "The headache is not a headache anymore. It's a baseline."
+- The every-four-minutes rotation ("the fresh one has all the same knowledge of what worked and what didn't because they're the same person").
+- **"Teaching cycling with one voice while driving something back with her shield, not breaking the explanation, picking up the sentence where she left off."**
+- Kael: "That's insane. You know that's insane." / "It's working." / "I'm not saying it isn't working. I'm saying it's insane. Those are not the same statement." / "each of them is so aware, and conscious. And mana generating."
+- Delilah: "You're not accumulating rest. You're just distributing the exhaustion." / "If you burn out, then who will keep maintaining this?"
+- **The seventeen-year-old: "I don't want to be a natural. I want to go home." / "I know. Me too."** — best scene in the outline. Do not touch.
+- The primary body leaning into Jason while ninety versions work.
+
+**Fix:**
+- **Split into 29A (Mobilization — panoramic, world responds) and 29B (The Hundred — entirely Mira, logistics).** The Hundred is the best sustained material you've written; give it its own chapter.
+- **Reabsorption cost isn't dramatized.** She reabsorbs lifetimes every 4–5 minutes for nine days. What is she losing? Words? Is her photography eye failing? Which memory belongs to which body? Pick one symptom and worsen it.
+- **"Three hours alive" math is confused** (primary narrating vs clone). Untangle.
+- **Mira normalizes the horror too completely** — one moment where she sees it (the seventeen-year-old is one; add one: catches her reflection and doesn't recognize which body it is).
+- **Nobody's "stop" lands.** Delilah's is logistical. Jason should say the personal version: "I'm not asking about the logistics. I'm asking about you."
+- **The Delilah-forces-rest idea: no. Jason should, and it should cost.** She sleeps ten hours; three teaching clusters lose their instructor; two people die who wouldn't have. She wakes up and finds out. Rest has a price — the only version that isn't cheap.
+- **End on a decision, not a mood** — e.g., Jason dismisses three of her clones without asking; she feels them go; furious, then just tired.
+
+### Chapter 30 — Threshold / The Colony (prose) — **strongest chapter; the right ending**
+
+**Works (protect):** "Wrong like weight. Like pressure dropping before a storm."; "eight million iterations of everything I knew, overwhelming in the way that fire is overwhelming"; "I was not one person anymore. I was not forty thousand people. I was a colony of eight million."; "The colony was functional and effective and utterly efficient and it was not a thing I wanted to be for longer than I had to."; the countdown (4M → 3M → 2M → 1M → 500K → 100K → 10K); **"The last five of me were the ones who could see Jason."**; "And then I couldn't see."; the Rajasthan fix; the thesis (understanding is irreversible; she did it anyway; the reader doesn't get resolution because she doesn't).
+
+**Fix:**
+- **Colony survivability needs foreshadowing** — establish a reabsorption ceiling in Ch29 ("I'd reabsorbed a thousand and passed out for six hours; the math said ten thousand would kill me; I'd never tested the math"). Then 8M is genuinely unknowable.
+- **Jason's action needs one concrete layer she notices** — he's not running away, not fighting the creature, he's trying to reach *her*. She files it as input; the reader should register it as the thing that matters. Then the last five looking at him has more weight.
+- **One line of Mira's reaction to the colony's non-reaction** — "Somewhere in the eight million there was a version of me who wanted to cry. She was outvoted." That's the horror: she can't even mourn properly.
+- **"The story ends there" needs a signal** — if the POV is ending, make sure the reader feels it. (This may be enough as-is; test with beta readers.)
+- **Title** — "Threshold" describes the plot; "The Colony" or "And Then I Couldn't See" describes the ending.
+- **Power scaling** — see G1. If 8M stays, it must be a one-time self-destructive exception with permanent cost. If her sustainable ceiling is a few thousand, Ch30 is her at the *limit* of the choice she made in Ch5 — which is the book.
+
+---
+
+## PART 3 — RECURRING CRAFT TICS (find-and-fix list)
+
+1. **Telling after showing** — "He gave me his attention, but he wouldn't give me anything else"; "The gap between them is gone"; "which is answer enough." The scene already did it. Cut the receipt.
+2. **"He doesn't answer / just nods / doesn't praise"** — null-space beats that flatten Jason into a robot. Replace with intention: he wants to answer and is bad at hiding it.
+3. **Repeated phrases across chapters** — "two years" ×6 (Ch3), "twelve inches" ×3, "filed that away" ×3 (Ch6, 8, 16), "his jaw works" (Ch1, 2, 3, 8), "we should move soon" ×3 (Ch3), "he closed his eyes" ×2 (Ch3).
+4. **Analogy density** — match/zebra/frequency/heartbeat in one chapter; train tracks in the premise. One per chapter, and let Mira invent some.
+5. **Coffee imagery** — Ch1 coffee dates; Ch5 "first sip of hot coffee" as the magic-onset image. The onset should feel like illness, not comfort.
+6. **Formatting/typos** — missing spaces, broken dialogue quotes, duplicate paragraphs, curly/straight quote inconsistency (Ch3 especially).
+7. **Outline stage directions** — "he doesn't answer," "just nods," "doesn't praise" force behavior. Rewrite as wants/fears (see G15).
+
+---
+
+## PART 4 — WORLD/MAGIC SYSTEM AUDIT
+
+**Clear and working:**
+- Comprehension as vector (understanding, not exposure) — the best innovation.
+- Economics (crossing cost scales with power; Earth not worth the trip) — clean, conditional, and it collapses in Act IV as designed.
+- Skill = more mana = louder = more danger — real tradeoff.
+- Techniques as invented skills — rewards creativity (Jason's randomization, Mira's clones).
+- Memory erasure as the masquerade mechanism — terrifying, underused.
+- The no-photons other side — best sensory worldbuilding; use it consistently.
+- The distributed community — thousands, low-level, no organization, informal help.
+
+**Fuzzy, needs decisions:**
+- Why not training kills you (load-bearing).
+- Where mana comes from.
+- Stage 2 clone implications (own mana = own beacon? own will?).
+- Recursive clone cap (must be one level or the book breaks).
+- Creature respawn rule (introduced Ch19, changes all combat).
+- "Smart ones know and don't care" vs "scouts for entertainment" (contradiction).
+- The witch trials/rationalism history (seed or cut).
+- Community size vs turnover (where do new infections come from?).
+
+**Does it read as if it could exist IRL?** Yes — not literally, but the *logic* holds: optimal foraging, the Zeigarnik effect (unfinished patterns are remembered), skill-based innovation, conditional safety. The holes are the unexplained bits above, not the premise.
+
+---
+
+## PART 5 — POWER RANKING (as written)
+
+1. **Jason** — prodigy-tier: teleport (randomized), pocket dimensions, clone simulations, memory erasure, dimensional crossing, 5-mile lockdown, traps an intelligent creature. Weakness: collapses after big workings; no personal flaw; optimized for escape, not combat.
+2. **Delilah** — solid professional: 30 years, better than Jason at fighting Earth-side creatures, knows community norms. Surprised crossing is possible. Baseline competence.
+3. **Mira** — pre-Ch30: fast-rising, unique technique, real ceiling (thousands, at extreme cost). Post-Ch30: singularity. **This is the problem.**
+
+**Compared to normal humans:** all three are effectively superhuman. The cost is the point — they die young, they're hunted, they're alone.
+
+**Recommended fix:** Cap sustainable clones at a few thousand; make 110 the peak of *sustainable* power; make 8M a one-time self-destructive act. Then the ranking is: Jason (skill/experience) > Mira (scale/innovation, with brutal costs) > Delilah (baseline) — and none of them can solve the apocalypse alone. That's a book that holds.
+
+---
+
+## PART 6 — THE LEAK / APOCALYPSE AUDIT
+
+**The sequence works:** São Paulo video (evidence) → analysis ecosystem (distributed comprehension — debunking as teaching) → celebrity awakening (spark; internet explains) → hospitals fill → creatures notice → first permanent incursion (scaled down) → global panic/mobilization/triage → 110-clone operation → 8M last stand.
+
+**The horror is right:** the community's tools (erasure, suppression, debunking) are also teaching tools; the harder they suppress, the more people analyze; there's no exit.
+
+**The problem is speed:** 11 days from first video to collapse. Stretch to 2–3 months. The horror is "it's happening and nobody can stop it," not "it happened in a week."
+
+---
+
+## PART 7 — ROMANCE AUDIT
+
+**Present in:** Ch3 (confession as accusation), Ch8 (hand-hold), Ch21 (the look), Ch29 (the lean), Ch30 (five voices can't hear him).
+
+**Absent in:** nearly everything else, especially Acts II–IV.
+
+**Needs:**
+- Ch5: first voluntary touch (his hand over hers when she says "I can feel it").
+- Ch6–7: withdrawal so the next touch means more; one moment where he almost says something and *does* say the wrong thing.
+- Ch13: the teleportation-gap realization (he did math on her survival).
+- Ch14: "You taught me" clocked.
+- Ch19: she sees him scared; she does something essential.
+- Ch22: the family visit — what does she choose?
+- Ch23–25: the powder-keg warning; her complicity in what he'd do for her.
+- Ch26–27: his sharing as a wound she witnesses.
+- Ch29: Jason's "I'm asking about you," and the rest that costs.
+
+**Endgame:** the ending is thematically right. The ambiguity is a choice — know it's a choice. Some romance readers will feel cheated; that's a deliberate subversion, not an accident. Decide standalone vs book one and signal accordingly.
+
+---
+
+## PART 8 — PRIORITY FIX LIST (what to do first)
+
+1. **Cap the clone scaling.** This is the single fix that unlocks the rest.
+2. **Stretch the timeline to ~2 years; stretch Act IV to 2–3 months.**
+3. **Scale Ch28 down to a few thousand dead + a permanent incursion.**
+4. **Make Ch26 the point of no return; make the celebrity spark the internet, not the celebrity.**
+5. **Answer why not-training kills you; one line on where mana comes from.**
+6. **Foreshadow the reabsorption ceiling in Ch29; make 8M a one-time self-destructive act with permanent cost.**
+7. **Fix the Ch3/Ch5 infection timing (Jason checks her in Ch4).**
+8. **Fix Ch5's woods/motel continuity and specify the first voluntary touch.**
+9. **Strip stage directions from the outline; rewrite as intentions.**
+10. **Bring back the old life (phone beats) and the memory-erasure thread.**
+11. **Use or cut the witch-trials/rationalism history.**
+12. **Give Delilah a want, a flaw, and a resolution; give Kael a want; bring Priya back.**
+13. **Fix the hunters' order (debate before/during crisis) and give them a smarter or more desperate plan.**
+14. **Kill the recurring tics (find-and-fix list).**
+15. **Decide genre signaling and standalone vs book one.**
+
+---
+
+**Final note.** I've pushed hard on ten passes because the material deserved it. The premise is excellent, Mira is a genuinely good protagonist, and Ch25 and Ch30 are the kind of chapters people remember. The structural problems are real but they're *fixable* — none of them require changing the voice, the premise, or the ending's thesis. Fix the scaling and the timeline, and the book holds.
