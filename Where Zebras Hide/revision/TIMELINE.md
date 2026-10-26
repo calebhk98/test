@@ -37,30 +37,28 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 
 | Ch | When | Where | What changes |
 | --- | --- | --- | --- |
-| 16 | About June 28 | The other side | No light. She makes the first light that world has seen. First native fight. |
-| 17 | July | The other side and Vermont, back and forth | Ecosystem. Hiding from a passing intelligent one. What powers the crossings (the Box). The shield sequence, with Kael watching. |
-| 18 | Late July | The other side, then Vermont | The scout. Jason collapses, and Mira gets them home. |
-| 19 | Early August | The other side | Kael properly. The Stage 4 breakthrough. |
-| 20 | Mid-August, the burst on a Tuesday afternoon | A field near the Vermont base | About a thousand clones, then a reabsorption that knocks her out for hours. Her own fight. They become a couple. First nights sleeping on the other side. |
-| 21 | Labor Day weekend, early September | Columbus and her parents' house | Homecoming. Jason comes, or doesn't (outline to decide). Marcus notices something she lets slip. |
+| 16 | About June 28 | The other side | No light. She makes three seconds of light. First native fight, using two bodies to place it. |
+| 17 | July | The other side and Vermont, back and forth | Ecosystem. Hiding from a passing intelligent one. The Box pays for the crossings. The shield cascade, and Kael. |
+| 18 | Late July, about 30 hours | Vermont woods | The scout. Jason's lockdown and Box. Jason collapses. Mira guards him alone. |
+| 19 | Early August | Kael's hollow on the other side | Kael properly. "Top hundred." The Manchester near-miss. First clone chains. |
+| 20 | Mid-August, the burst on a Tuesday afternoon | A field near the Vermont base, then the other side | About a thousand clones, then knocked out for hours. "Neither of us decides alone." First nights on the other side. Her fight. The kiss. |
+| 21 | Labor Day weekend, early September | Columbus and her parents' house | Jess, the darkroom prints, Sunday dinner with Jason, the clone on watch. Marcus sees the cup. |
 
 ## Act IV: September to late November
 
 | Ch | When | Where | What changes |
 | --- | --- | --- | --- |
-| 22 | Late September | The mansion | The community meets and splits into factions. Owen is there. The "powder keg" warning. |
-| 23 | October | Vermont, plus news | Marcus's poking becomes a leak. The London anchor reads a leaked half-explanation on air, and three named viewers start producing. |
-| 24 | Late October | A college campus two states from Vermont | Priya. The sixteen erasures. |
-| 25 | Day 0 = about Nov 10 | Everywhere | The celebrity livestream. The internet works out the explanation. |
-| 26 | Days 1 to 3 | Vermont base | Jason releases everything. "You should have done this before." Owen's message. Mira's clones start teaching. |
-| 27 | Day 8 | A dense, connected region (outline to choose; Ch 30 calls it Rajasthan) | The first intelligent crossing, and a hundred million dead. |
-| 28 | Days 2 to 11 | Everywhere | Mobilization. Mira has been running about 110 clones since day 2. |
-| 29 | Days 9 to 11 | A US city and the Vermont base | The hundred. Theo. Delilah's rest argument. The ten hours and what they cost. |
-| 30 | Day 11 | Near the base | "Three days since the first crossing." Eight million clones. The blackout. |
+| 22 | Late September | Adirondack lake house | The São Paulo mug video. Factions. Owen in person. Anjali. Marcus texts about the cup. |
+| 23 | October | Vermont, then Columbus | Marcus has been digging. The London anchor reads Lise's leak, and Hannah, Tom and Mrs. Okafor start producing. Mira erases Marcus. |
+| 24 | Late October | A campus in upstate New York | Sixteen erasures in eleven minutes. Priya, 72 hours in, learns sensing. |
+| 25 | Day 0 (about Nov 10) to day 1 | Vermont, through screens | The Cass stream. The internet works it out. Hospitals. Nora's call. "Teach." |
+| 26 | Days 1 to 3 | Vermont, with clones across the East | Jason releases everything. Owen: "Took you long enough." By day 2, 110 clones. |
+| 27 | Days 8 to 10 | Vermont; the creature in Rajasthan, walking toward Delhi | The living landscape. Anjali's messages. Mira coordinates evacuations. About a hundred million dead. It leaves full. |
+| 28 | Day 10 | Everywhere her clones are | The world fights back. Kael: "Are they people?" "They're me." Priya's cafeteria. |
+| 29 | Day 10, night, to day 11, morning | Hartford parking structure, Vermont | Theo. Delilah's relief plan. Ninety pulled back, ten hours of sleep, eleven dead. |
+| 30 | Day 11, late afternoon | A field near the base, with Theo's group half a mile away | The scout's master. 200, then 40,000, then 8,000,000. The blackout. |
 
-Ch 30's prose needs two fixes against this timeline:
-- "since January" becomes "since February"
-- "a cabin eight months ago" becomes "nine months ago"
+The Ch 30 prose fixes are listed in outline/ch30.md.
 
 ## Clone counts by chapter
 
