@@ -7,7 +7,7 @@ Each chapter is drafted by one Haiku agent that sees only what's listed here, no
 1. `outline/chNN.md`: its own chapter. Every chapter file is self-contained. It opens with "Where things stand", which says what has happened and what Mira knows at the start.
 2. `outline/BOOK_MAP.md`: where the chapter sits in the book.
 3. `RULES.md`, `CHARACTERS.md`, `CREATURES.md`, `STYLE.md`.
-4. The last 300 words of the previous drafted chapter, so the join lines up. For Chapter 1 there's nothing.
+4. The full text of the previous drafted chapter (two chapters if they're short), so the join lines up and facts stay consistent: clothes, objects, plans, what was said. The Ch 1-2 test showed a 300-word tail isn't enough: Ch 2 put Mira in boots and planned pasta, when Ch 1 had desk shoes and Thai.
 5. For Chapters 1, 2, 3, 6 and 30: the old draft of that chapter, as raw material.
 
 ## What each drafter must do
