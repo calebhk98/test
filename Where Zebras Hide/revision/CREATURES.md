@@ -49,25 +49,10 @@ These are options to react to, not decisions. Pick, mix or throw out.
 
 ## The massive ones (Act IV)
 
-**What kills a hundred million (old Ch 28).**
-- It isn't a monster with claws. It's more like a weather front that eats.
-- Kilometers across. On camera it looks like heat shimmer, or a fog bank with structure inside it, slowly rotating.
-- As it moves, it drains every producing person in a wide radius, the way a drought kills a field. That's how the numbers get so large, so fast, in a dense region where thousands have just started producing.
-- Ordinary people die in the collateral: buildings and vehicles fail when the people holding them up drop, plus panic, crushes and fire.
-- It moves slowly and doesn't hurry. Everything that was producing is gone behind it.
-- Practitioners can't stop it. It leaves on its own, full, which is worse.
-- "It moves like weather. Like a natural disaster with intent." (Keep this line.)
+*Both Act IV designs were rejected. Replacements are being chosen.*
 
-**The Ch 30 early mover.**
-- An intelligent one, much smaller than the weather front: building-sized.
-- It doesn't want to be seen. It bends light around itself, and the camera eye in Mira's head can't hold it in frame.
-- **Its defense:** it drinks the mana in any attack aimed at it, and takes damage only when the attacks arrive faster than it can drink. That's why numbers win, and why two hundred clones and then forty thousand aren't enough.
-- **Its tactics:** it tests her, retreats when the colony grows, tries to send a message back (Jason's lockdown stops it), then commits.
+## Decided
 
-## Open questions for you
-
-- Do any creatures on Earth glow, or reflect light strangely, in a way that would show up on phone footage? This decides how convincing the Act IV videos look.
-- How do the intelligent ones look on their own side? We only sense them there. A single scene of one passing in Act III could be:
-  - only pressure and sound
-  - or Mira making a flare of light and seeing a small piece of it
-- Do the creatures have names among practitioners, or does everyone use their own (like the vocabulary for mana)?
+- **Every creature shows up on phone footage.** Being seen on camera is part of why the Act IV videos are convincing.
+- **Nobody ever sees an intelligent one on its own side.** We only ever sense them there, as distant pressure.
+- **Everyone names creatures their own way.** The names in this file are Mira's private nicknames.
