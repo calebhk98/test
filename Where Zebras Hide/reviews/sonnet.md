@@ -756,3 +756,30 @@ This is the only real divergence.
 - The numbering is a little odd: "Phase 0" then "Stage 1" through "Stage 4." Minor.
 
 **Predictions and questions**: The next file is genre and blurbs. I expect it to tell me what readers are meant to feel. I'd like to see if the pitch emphasizes the ending's cost or the rules.
+
+## Step 36: 10_Genre_and_Blurbs.md
+
+**Overall opinion so far**: 6/10 for the concept (holding). The blurbs are competent, and all four sell a different book from the one the outline describes. The genre list is a debate, and the draft has an answer the list doesn't contain.
+
+**Genre**
+- The list: Romance, Dark Fantasy with Romance, dark romantasy, Apocalyptic Horror, Paranormal Romance with Horror elements. Judged against what I read:
+  - Romance: the romance is real but it is a thread, not the engine. Its peaks are Ch 1 (longing), Ch 3 (the confession), Ch 8's plan (the held hand), Ch 21's look, and Ch 29's lean. By Ch 3 the central obstacle (does he feel the same?) is gone. Readers who come for the tag "dark romantasy" expect the pairing to drive the conflict (enemies-to-lovers, forbidden, stolen glances). Here the pairing is stable after Ch 8 and the plot moves around it. That mismatch invites one-star reviews.
+  - Apocalyptic horror: the apocalypse is real, but the horror isn't written. The creatures in the plans are mostly beaten by training montage, a dog-sized predator, a scout, a mid-tier beast. The mass casualty (Ch 28, a hundred million) is a number on a phone. The best horror in the whole package is quiet: knowledge as infection, memory erasure of seventeen people, a world with no light, a girl who won't stop taking notes. If the book wants that tag it has to move the dread from the creatures to the idea.
+  - What the list doesn't contain: this is a rules-heavy, training-driven magic story with a scale escalation, the shape of progression fantasy or hard-magic urban fantasy. The genre that matches the draft's structure (learn the system, level up, fight bigger things, discover the clone loophole, climax) is not named. Marketing as romantasy would put it in front of readers who don't want a ten-chapter explanation of cycling and shields.
+- My view: urban/portal fantasy with a romance subplot and an apocalyptic third act. If a second tag is needed, "science fantasy," not "romantasy."
+
+**The blurbs: what they sell versus what the book is**
+- Every blurb centers the three-month clock ("Mira has three months to learn what kills most people who try"). In the outline, that clock stops mattering at Ch 12, about forty percent of the way in ("something she's going to outlive"). The blurbs promise a survival thriller with a deadline, and the book is a training arc, a world-tour, and a pandemic. None of the four mentions the world finding out, the apocalypse, clones, memory erasure as a moral burden, Jason's selfishness, or the ending. The most distinctive thing in the book (Earth as a buffet, a woman who becomes a colony) is the one thing the pitch withholds.
+- The blurbs get the book's own rule wrong. Option 3: "Jason can erase her memories. Make it all go away. But Mira's already seen too much to go back." Option 4: "Mira's already seen too much, and some truths can't be unlearned." By the notes (Step 34), erasure works until the brain starts producing mana, and Mira has not yet changed when Jason makes his offer; so she *can* go back. The Ch 3 scene is a choice, and the blurb says it's not. What can't be unlearned is understanding, not seeing. That is a rule worth stating accurately, because it's the book's thesis.
+- Option 1: "His solution? Teach Mira to fight creatures that shouldn't exist." That is a non sequitur. Jason's problem is being hunted by people who want his techniques; teaching Mira doesn't solve it. The line reads like a plot claim that does not follow.
+- Option 2: "Mira just helped dig one up." Mira doesn't dig anything up; she's dragged in. The blurb gives her agency the book (and the summary: "dragged into this world solely because of their relationship with Jason") denies. "what's really hunting people like them" promises a mystery; the hunters are known by Ch 3 and the creatures by Ch 6.
+- Options 2, 3 and 4 call it a "coffee date." Ch 1's whole tension is that it isn't one: "We're friends... Make what official?" The blurb gives away the romance's central question for free. If the first-line hook is "date," the first chapter's work is undone.
+- Option 3 is formatted in bold throughout and has the weakest copy: "every answer she gets only raises more dangerous questions" and "some truths change you whether you're ready or not" could be on any urban fantasy.
+- The best lines: Option 4's "Because Earth isn't a magical world. It's a hiding place. And she just lit a beacon." It's a "Not X. Y." reversal, and a legitimate one, because the second sentence names the real mechanism and the third gives the stakes in a concrete image (beacon is the book's scent rule). Option 1's "Earth has stayed safe by staying silent. That silence is about to break." is also clean. I would build the final blurb from Option 4's middle paragraph plus those two lines, drop "coffee date," and add one line on the world finding out.
+- Option 3's "simply understanding how it works could kill her" is the best statement of the hook in any blurb; it uses the right word (understanding).
+
+**Contradictions with the draft**
+- Option 2 and 3 say "three options"; Ch 3's plan says four, and the prose has Mira recite four. Trivial.
+- The word "war": Options 1 and 4 ("a war humanity doesn't know exists," "an invisible war"). Through Ch 23 there's no war, only individuals hiding. The war is Act IV.
+
+**Predictions and questions**: The comp titles will show who the author thinks the readers are. If they list romance bestsellers, the genre confusion is the author's.
