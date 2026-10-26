@@ -22,7 +22,7 @@ The order of work I'm proposing:
 - Learning depends on exposure, frequency, duration and how a person thinks. Footage can teach, just less often.
 - The toll works like a progressive tax. Everyone can afford it, but bigger beings pay a bigger share, so they need a far bigger meal.
 - "Top 100" is an estimate from visible strength, in a community of a few thousand.
-- The Ch 1 teleport was range-shrunk to keep her inland. Teleporting isn't draining for Jason.
+- The Ch 1 teleport's range was shaped on the fly to keep her away from water. Teleporting isn't draining for Jason.
 - Clone numbers grow across the book. Later she has no main body, and lets others pick one.
 - Any plant or animal can produce mana naturally.
 - The characters are warmer, more emotional and less logical.
@@ -112,7 +112,7 @@ I'd date every chapter in the timeline file.
 - **D8. Intelligent creatures "don't care" against the scout sent "for entertainment."** Both can hold. They don't care about Earth as food, but something odd draws a scout, and the odd thing is Jason's repeated crossings. His trips cause Ch 19, which gives his choices a real cost.
 - **D9. Coming back after death.** Only intelligent beings with souls come back. Strays and mid-tiers just die. That's why Jason boxes the scout instead of killing it.
 - **D10. Mira being "not special".** Her talent is ordinary. Her patience and photographer's eye are unusual, and the clone technique suits that kind of mind. Cut the line "Mira isn't special."
-- **D11. Teleporting.** *Decided (your correction): the Ch 1 teleport was random within a range he shrank on the fly, so the farthest landing kept them inland (Ohio to Tennessee, not Ohio to the ocean). Ch 13's explanation stands, and Mira working it out is a romance beat. Teleporting isn't especially draining for him. RULES.md has the details.*
+- **D11. Teleporting.** *Decided (your correction): the Ch 1 teleport was random within a range he shaped on the fly, away from water (Ohio to Tennessee, not Ohio to Lake Erie or the ocean). Ch 13's explanation stands, and Mira working it out is a romance beat. Teleporting isn't especially draining for him. RULES.md has the details.*
 - **D12. Memory erasure.** It removes memories and any partial understanding, but only before awakening. After awakening it can't stop production.
   - Jason plants the rule in Ch 3: "I can still do it, because you haven't started" (O, S).
   - *Decided: Delilah teaches Mira erasure in Act II.* It is the community's normal cleanup tool after the witch trials (your notes), and she teaches it that way. Mira hates learning it ("My mind is mine").

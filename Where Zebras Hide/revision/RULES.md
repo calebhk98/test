@@ -116,7 +116,7 @@ Jason's own techniques:
   - Most practitioners can't teleport at all, and a targeted teleport can be blocked or tracked. A random one can't.
   - For Jason it isn't especially draining. Three jumps in a row is fine.
   - It lands on open surface, never inside rock or high in the air. With full range, that often means ocean.
-  - In Ch 1 he shrank the range on the fly, so the farthest possible landing kept them inland (Ohio to Tennessee, not Ohio to the Atlantic). Mira had no shields; open water would have killed her. He never mentioned it. She works out what he did in Ch 13, and it moves her.
+  - In Ch 1 he shaped the range on the fly: south, away from the Great Lakes and the coast, so no possible landing was open water (Ohio to Tennessee, not Ohio to Lake Erie or the Atlantic). Mira had no shields; open water would have killed her. He never mentioned it. In Ch 13 he tells her, and she works out what it cost him, which moves her.
 - **The Box.**
   - He captures a creature mid-fight and moves it, with the space around it, into a pocket. A clone of Jason keeps fighting it on a loop, and the creature believes it's still where it was.
   - It is a prison, a training tool and a battery: Jason can draw on the captives' mana.
@@ -130,8 +130,8 @@ Jason's own techniques:
 
 **The stages.** Each is a change in kind. Within each stage her numbers grow with practice.
 - **Stage 1:** puppets with a background sub-brain. She starts with one and builds up.
-- **Stage 2:** her photographer's habit of fixing small errors makes the bodies complete enough to produce mana on their own. Her senses merge across them.
-- **Stage 3:** after Delilah's remark that cloning is creation, not copying, she builds clones mature. They arrive nearly empty but produce from the first second and fill up within minutes. The precision drops her numbers sharply, then they climb again.
+- **Stage 2:** her photographer's habit of fixing small errors makes the bodies complete enough to produce mana on their own. Her senses merge across them. But a Stage 2 clone is still a copy of her as she is at that moment: she fills it from her own reserve, it starts at her own tired level, and it produces slowly, like an immature body. In a fight it runs dry before it helps.
+- **Stage 3:** after Delilah's remark that cloning is creation, not copying, she builds clones mature instead of copying her current state. They take nothing from her reserve, start nearly empty, produce at full adult strength from the first second, and fill up within minutes. That is the difference that makes them fight twice as long. The precision drops her numbers sharply, then they climb again.
 - **Stage 4:** clones make clones. The new bodies power themselves and are still her. The thinking load spreads across all their brains.
 
 **The costs:**
@@ -147,6 +147,7 @@ Jason's own techniques:
 | End of Ch 8 | a handful of Stage 1 |
 | Ch 12 | about nine at Stage 1 and 2, dropping to three at Stage 3 |
 | End of Act II | three to four Stage 3 |
+| Ch 21 to 24 | a few dozen held easily day to day |
 | Ch 19 | first Stage 4 chains, small and painful |
 | Ch 20 | a one-time burst of about a thousand in a field on a Tuesday afternoon, then a reabsorption that knocks her out for hours |
 | Act IV | about 110 sustained for days, rotating one every four to five minutes |

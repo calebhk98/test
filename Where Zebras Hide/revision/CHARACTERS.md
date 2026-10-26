@@ -74,7 +74,7 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
 
 **On ownership:** He never changes his mind that his work was his. In Act IV he releases everything only because the world is ending. He still believes he was right, and resents being forced.
 
-**How he shows love:** through acts he doesn't explain. The model is Ch 29: he stays within half a mile of the body he thinks of as her, and never says why. Also the math he did on her survival during the escapes: the Ch 1 teleport he shrank so she couldn't land in an ocean.
+**How he shows love:** through acts he doesn't explain. The model is Ch 29: he stays within half a mile of the body he thinks of as her, and never says why. Also the math he did on her survival during the escapes: the Ch 1 teleport he shaped so she couldn't land in water.
 
 **His voice** (samples): "Okay, so, the thing is (no, hang on, this is actually really cool) the thing is it doesn't care where you are." / "I'm not sulking. I'm thinking angrily."
 
@@ -109,7 +109,7 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
   - He watches Mira's shield sequence and says exactly what's unusual about it.
   - He estimates she's "top 100" from what he senses (RULES).
   - He warns about leaks: "How many viral videos are you from catastrophe?"
-  - In Ch 29 he asks whether her clones are people.
+  - In Ch 28 he asks whether her clones are people.
 - **His words:** he calls mana "ether" and the other dimension "the deep".
 - **On Jason:** respects his work enormously, pities his loneliness, and says both to his face.
 
@@ -122,8 +122,8 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
   - In Act IV he's in the go-public faction.
 - **On the page:**
   - Before Ch 13: one close call or a message.
-  - In Ch 13: they watch Mira fight, so now they know she exists.
-  - At the Act IV mansion.
+  - In Ch 13: they watch Mira fight, so now they know she's a practitioner who can fight.
+  - At the Act IV lake house.
 - **"Took you long enough, asshole."** Owen sends it in Act IV.
 
 ## Priya

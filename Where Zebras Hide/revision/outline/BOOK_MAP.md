@@ -40,7 +40,7 @@ Point of view: first person, past tense, Mira, throughout.
 21. **Return.** Labor Day in Columbus: the apartment, the undeveloped film, dinner with her parents, Marcus. She realizes she can't come back.
 
 **Act IV: The Collapse (September to November)**
-22. **Cracks.** A meeting of the powerful in a mansion. Factions. Owen, the hunter, in person.
+22. **Cracks.** A meeting of the powerful at a lake house. Factions. Owen, the hunter, in person.
 23. **Escalation.** Marcus has been asking questions because of her. A London anchor reads a leak aloud. Mira erases her friend.
 24. **Containment.** A campus, sixteen erasures, and Priya, who is too late to erase.
 25. **Breach.** A celebrity livestream. The internet works out the rest. Day 0 of the end.
