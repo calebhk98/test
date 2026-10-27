@@ -49,7 +49,7 @@ Don't change these, even where a reviewer suggests it:
 
   The harm he fears: a teleport can take a person out of a locked room. Owen's counter: there aren't enough Jasons to be on call.
 - **Mira's reason to start (P1 4.1).** The attackers saw her with him and know Columbus. In Ch 3 Jason says so. Option 1 becomes leaving her home and hoping they lose interest, which he doesn't believe will work. In Ch 5 her argument becomes: if they know my face, I'm in this whether I learn or not, so I'd rather know. The romance stays the unspoken second reason.
-- **Time zone (P1 4.4).** In Ch 2 she works it out within the scene: 4:47 is Central time, and that is her first hard proof of how far they went. They leave the coffee shop at 5:40, the attack is about 5:50, and her phone reads 4:52 when she checks. Cut the Ch 14 payoff and the TIMELINE line.
+- **Time zone (P1 4.4).** In Ch 2 she works it out within the scene: 4:52 is Central time, and that is her first hard proof of how far they went. They leave the coffee shop at 5:40, the attack is about 5:50, and her phone reads 4:52 when she checks. Cut the Ch 14 payoff and the TIMELINE line.
 - **Carried items (P1 5.1).** Mira has a crossbody bag (wallet, keys) and her phone in her coat. Jason has a backpack he never goes without, with his laptop, cash and a few things he always keeps. Both come through the teleport. This also explains the cash in Ch 6 and Spain. Add the Ch 1 line, and have Ch 2 and Ch 3 keep the items.
 - **The phone (P1 4.3).** From Ch 6 her phone stays off. She turns it on only in town, far from the cabin, and checks voicemail there. The Ch 7 voicemail beat moves to a stop in town in Ch 6, or becomes a memory.
 - **The truck (Ch 7).** Cut it.
