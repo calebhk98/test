@@ -15,7 +15,7 @@ Drafters never get `PLANTS.md` or `TIMELINE.md`. They are planning files.
 ## What each drafter must do
 
 - Write only its own chapter, in Mira's first person, past tense.
-- Length: hit the beats. If you're 15% short of the word count given, stop. If you're 20% over, cut. No other length rule applies.
+- Length: hit the beats. A chapter more than 15% under its length has probably skipped texture the scenes need. Add observation, not jokes or side beats. If you're 20% over, cut.
 - Follow the chapter's "Limits for this chapter". These are counts, not suggestions.
 - Copy only the lines marked **verbatim**. Everything else in the outline describes intentions, not sentences.
 - If a beat seems to break RULES.md, follow the rules and add a note at the end of the draft.

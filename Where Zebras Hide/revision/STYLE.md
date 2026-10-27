@@ -7,7 +7,8 @@ Every chapter is first person, past tense, from Mira's point of view. Stay in pa
 - The reader is an adult who has read books. Write for that reader: trust them to notice things, and never explain what a scene already shows.
 - Mira's voice is warm, observant and specific, with dry humor that's occasional and mostly in what she notices. In danger, confession or grief her humor drops away, and no humor is scheduled there.
 - Use plain words. Prefer a concrete detail to an abstract one.
-- **Sentence length:** mostly full sentences of 12 to 25 words, mixed with some longer ones and a few short ones. Never more than two sentences in a row under six words. At most three fragments per chapter. Short, choppy sentences read like a children's book. Between short lines of dialogue, put a full sentence of action or thought now and then.
+- In every scene, include at least one observation that only this narrator would make, drawn from her photographer's eye or her particular worries (what the light is doing to a face, what someone does with their hands). It is not a joke and not a metaphor.
+- **Sentence length:** mostly full sentences of 12 to 25 words, mixed with some longer ones and a few short ones. Never more than two sentences in a row under six words. At most three fragments per chapter. Short, choppy sentences read like a children's book. Between short lines of dialogue, put something the scene needs: a detail of the place, something Mira notices, a thought that adds information. Never use a gesture whose only job is to fill the gap.
 - Verbatim lines are exempt from the short-sentence count. They count toward every other limit.
 - The Ch 30 countdown is exempt from the fragment limit.
 - Act IV must sound like the same woman as Act I.
@@ -24,7 +25,7 @@ Each of these is a pattern, not one banned sentence.
 - **Quips in serious scenes.** In danger, confession, grief or a revelation, no jokes, except at most one nervous one that isn't polished. Elsewhere, keep banter to what two real adults would actually say. A witty line must also mean something; a line that only sounds clever is cut.
 - **Personifying things.** Objects, animals, plants and weather don't have attitudes. Nothing is rude, cheerful, betraying or offended.
 - **Symbolic stand-ins.** Don't use an outside event or object to mirror a feeling, and never have the narration or a character point at the symbol.
-- **Props and repeated gestures.** No object or gesture appears more than twice in a chapter unless the outline asks for it. Props the outline names are exempt, and nothing else is. Don't track an object through a scene just to use it later. No habits invented to make a character seem real.
+- **Props and repeated gestures.** No object or gesture appears more than twice in a chapter unless the outline asks for it. Props the outline names are exempt, and nothing else is. Cups, phones and bags count as props once they are used as a gesture. Don't track an object through a scene just to use it later. No habits invented to make a character seem real.
 - **Body-language clichés.** A warming face, a fluttering chest, a flipping heart, a dropping stomach, a lighting-up face: at most one of these in the whole chapter. No vague microgestures, such as a mouth doing something complicated, a smile arriving sideways, or a look held a beat too long.
 - **Pointing at clues.** Don't have Mira note that something is suspicious or file it away. Report it, and let the reader notice.
 - **Saying things twice.** Don't repeat information within a scene, and don't restate a feeling the dialogue already showed.
@@ -32,7 +33,7 @@ Each of these is a pattern, not one banned sentence.
 - **Logic of space and time.** Track where everyone is, how far things are, what time it is, and what people are holding. A walk doesn't stretch to fit a conversation.
 - **Convenient timing.** Things don't happen at the perfect dramatic second.
 - **Supporting characters as functions.** A side character shouldn't only exist to deliver a plot point or a tease.
-- **Padding.** Word counts are approximate. A shorter chapter is better than a padded one. Never add jokes, quirks, side beats or extra exchanges to hit a word count.
+- **Padding.** Word counts are approximate. A chapter more than 15% under its length has probably skipped texture the scenes need; add observation. Never add jokes, quirks, side beats or extra exchanges to hit a word count.
 
 ## Punctuation
 
@@ -55,7 +56,7 @@ Each of these is a pattern, not one banned sentence.
 
 Each one is a pattern to avoid, not one banned sentence.
 
-**Null-space beats.** A character receives something important and the text records an absence: he doesn't answer, she doesn't respond, he notes it without comment, neither of them says it. Instead, give the character something to do or say: a task, a deflecting question, a physical act, the wrong words.
+**Null-space beats.** A character receives something important and the text records an absence: he doesn't answer, she doesn't respond, he notes it without comment, neither of them says it. Narration also may not describe a character's non-reaction, with or without a comparison. Instead, give the character something to do or say: a task, a deflecting question, a physical act, the wrong words.
 
 **Explaining a moment after showing it.** A line of narration that tells the reader what a look, a gesture or an exchange meant. Instead, end the beat on the action and trust it.
 
