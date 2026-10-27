@@ -56,7 +56,7 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
 - The community found him at 12, by which point he'd made three techniques they'd never seen. He first nearly died at 10.
 - Left home at 17 by not coming back after a summer. His parents are good people. He calls them sometimes from numbers they can't trace.
 - He tells people he doesn't talk to them, because good parents raise questions. He tells Mira the same lie in Ch 1 ("we didn't really get along"), and she catches it in Ch 6.
-- Lives off-grid: cash, no paper trail, a new place every year or two.
+- Lives off-grid: cash, no paper trail. He used to move every year or two. Columbus is the longest he has stayed anywhere, two years, and Mira is the reason. He doesn't say so.
 
 **Who he is:**
 - **A capable adult who has lived with danger since he was a child.** He has taught himself magic, been hunted by practitioners, killed things that crossed over, and erased people's memories. In a crisis he is fast, focused and practical. He acts before he talks. He is not scared of his own abilities and doesn't fumble them. What scares him is losing someone, and that shows as focus, not panic.

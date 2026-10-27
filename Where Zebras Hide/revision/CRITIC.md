@@ -79,6 +79,15 @@ Count the jokes in each serious scene.
 3. **Apply the character test** to every notable action or line by Jason and Mira.
 4. **Then read for problems 4, 5, 6 and 8.**
 
+## Problems in the documents
+
+The drafter only sees the outline, CHARACTERS.md, RULES.md, CREATURES.md and STYLE.md. Many draft problems start there, so read those files critically too, not only as a reference. Look for:
+- contradictions between the documents, or within one
+- instructions a drafter will follow too literally: lists that get recited in order, verbatim lines that need an invented setup, traits that get performed
+- anything vague, unnatural or overdetermined that a real novelist's notes wouldn't say
+
+For each draft problem that a document caused, quote the document line and propose new wording.
+
 ## Report format
 
 Write one report per chapter.
@@ -100,3 +109,5 @@ The table you built, with every contradiction marked.
 At most five items, each with a quote and one sentence of why.
 
 At the end of the last chapter's report, add a **Cross-chapter section**: contradictions between chapters, and patterns that repeat across chapters.
+
+Then add a **Documents section**: every document problem found, with the quote, the problem and the proposed wording.
