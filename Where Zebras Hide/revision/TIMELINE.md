@@ -39,7 +39,7 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 | --- | --- | --- | --- |
 | 16 | About June 28 | The other side | No light. She makes three seconds of light. First native fight, using two bodies to place it. |
 | 17 | July | The other side and Vermont, back and forth | Ecosystem. Hiding from a passing intelligent one. The Box pays for the crossings. The shield cascade, and Kael. |
-| 18 | Late July, about 30 hours | Vermont woods | The scout. Jason's lockdown, and a Box closed around the scout from an existing one. Jason collapses. Mira guards him alone. |
+| 18 | Late July, about 30 hours | Vermont woods | The scout. Jason's lockdown and Box. Jason collapses. Mira guards him alone. |
 | 19 | Early August | Kael's hollow on the other side | Kael properly. "Top hundred." Jason is complacent about leaks. The Manchester near-miss. First clone chains. |
 | 20 | Mid-August | A field near the Vermont base, then the other side | A burst of about a thousand clones, then knocked out for hours. "Neither of us decides alone." First nights on the other side. Her fight. The kiss. |
 | 21 | Labor Day weekend, early September | Columbus and her parents' house | Jess, the darkroom prints (Jason's roll loaded in her Pentax from her apartment). In a grocery store (milk) she warms something in front of Marcus without thinking; she could erase it and won't. Sunday dinner with Jason. The turn: driving out, she realizes she can't come back. |
