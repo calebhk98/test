@@ -19,14 +19,9 @@ There is no official vocabulary, because there is no official anything. Each pra
 
 ## What people carry
 
-- Mira has a crossbody bag (wallet, keys) and her phone in her coat. Both come through the Ch 1 teleport.
+- Mira has a crossbody bag (wallet, keys) and her phone in her coat. Both come through the Ch 1 teleport. Her phone works as an ordinary phone.
 - Jason has a backpack he never goes without, with his laptop, cash and a few things he always keeps. It comes through too. This is where the cash in Ch 6 and in Spain comes from.
 - Everything else Mira owns is in Columbus.
-
-## The phone
-
-- From Ch 6 on, Mira's phone stays off.
-- She turns it on only in the supply-run town, thirty minutes from the cabin, on the ten-day supply run, checks her voicemail and messages and turns it off again. Ch 6's stop is in a town two days' drive from the cabin.
 
 ## How a person starts producing mana
 
@@ -60,11 +55,11 @@ There is no official vocabulary, because there is no official anything. Each pra
 
 ## Memory erasure
 
-- A practitioner can erase recent memories, and any partial understanding, from a person who **has not started producing**. An hour is easy. A few weeks takes care and skill. Taking years is beyond almost anyone. Jason is one of the few who can, and it costs him days.
-- Erasure only deletes. It never implants a memory, so the person has a gap and nothing to fill it.
-- After a "tonight" erasure, Mira would wake at home remembering coffee and nothing after it. Jason would leave, and send a message saying he'd moved for work.
-- Once production starts, erasure can remove memories but not the understanding, and it cannot stop production.
-- Done well, the person notices only a moment of confusion.
+- Most skilled practitioners can erase recent memories, and any partial understanding, from a person who **has not started producing**. An hour is easy. Even years of memory can be erased by a skilled practitioner.
+- Jason can also manipulate memories, not only delete them. For example, he could leave Mira remembering that he moved away for work.
+- Neither option in Ch 3 has side effects: erasing tonight only, or erasing all of him.
+- The one limit: once a person has started producing mana, erasing their memory, even years of it, does not stop the production. Erasure can remove memories but not the understanding.
+- Done well, the person notices only a moment of confusion, or nothing.
 - Since the witch trials it has been the community's normal cleanup tool. Delilah teaches it to Mira in Act II as exactly that.
 - In Ch 3 Jason can still erase Mira because she hasn't started. He says so.
 
@@ -117,12 +112,13 @@ Crossing costs everyone, and everyone can afford it. The cost works like a progr
 
 ## The hunters, and how they found the cabin
 
-- Three practitioners (Owen is one) asked Jason politely for years for his techniques, then pressured him, then attacked him in Columbus. They saw Mira with him there, so they know her face and know Columbus.
-- They find the cabin because Delilah mentioned "Jason's girl", and which hills, to someone she trusted, and it travelled. This is Delilah's flaw, her gossip, and she says so herself.
-- At the cabin they are watching and waiting for a third person they believe can pin a teleport at its start. They are wrong, and Jason knows it. They do not know yet that a random teleport can't be blocked or tracked.
-- Jason stays a day anyway, because moving at once would lead them toward Delilah, forty miles away, and he warns her first.
-- The creatures arrive on the second evening. They are drawn by months of a loud cabin, not by the timing of the hunters.
-- After Spain, the hunters can find Jason and Mira on Earth by ordinary means, given time. The Vermont house is held under a name nobody has, which buys months and not years. The other side is the one place no one with a body follows. Jason says this, and says it is a bad option.
+- Three practitioners (Owen is one) asked Jason politely for years for his techniques, then pressured him, then attacked him in Columbus. They saw Mira with him there.
+- They are not the FBI and they are not mortal enemies. They look for Jason by mana, not by records, so names, phones, rentals, hotels and accounts do not give him away. They want him to show them his techniques. They pressure him, and they have to set up before they can attack.
+- They found the cabin through its mana, after months of a loud cabin. Delilah did not leak it. The hunters do not care about her, so nobody needs to warn her.
+- At the cabin they watch and wait for a third person they believe can block or track a teleport. A random jump can't be blocked or tracked.
+- Jason does not run the moment hunters are near, or he would be teleporting all the time. He waits until there is a real threat, just as he didn't run when Delilah showed up. It is easier to wait until it becomes a threat.
+- The creatures arrive on the second evening, drawn by months of a loud cabin. The escape comes at dawn, by random jumps.
+- The Vermont house is held under another name.
 
 ## Techniques
 
@@ -139,40 +135,38 @@ Ordinary techniques:
 - The teleport, which only very strong practitioners could learn.
 - The Box and the lockdown, which nobody else can do.
 
-The harm he fears from sharing: a teleport can take a person out of a locked room. Owen's counter: there aren't enough Jasons to be on call.
-
 Jason's own techniques:
 - **Randomized teleport.**
-  - Most practitioners can't teleport at all, and a targeted teleport can be blocked or tracked. A random one can't be blocked or tracked.
-  - A random jump can have its range shaped. He can exclude areas and bias it toward a region a few hundred miles across. He can never pick the spot.
-  - Short shaped jumps for groups are cheap.
-  - For Jason an unshaped jump isn't especially draining. Three jumps in a row is fine. Shaping one quickly, under attack, is expensive.
-  - It lands on open surface, never inside rock or high in the air. With full range, that often means ocean.
-  - In Ch 1 he shaped the range on the fly, away from the Great Lakes and the coast, to make landing in water very unlikely (not impossible). Mira had no shields; open water would have killed her. He never mentioned it at the time.
+  - Most practitioners can't teleport at all. Jason can aim a teleport. An aimed teleport can be blocked or tracked. A random one can't, which is why he jumps at random to escape.
+  - Where a chapter needs a reason he doesn't simply teleport somewhere, the reason is that an aimed jump can be followed.
+  - For Jason a jump isn't especially draining. Three jumps in a row is fine.
+  - A random jump lands on open surface, never inside rock or high in the air. With full range, that often means ocean.
+  - In Ch 1 he changed the random jump in the instant, south and away from the Great Lakes and the coast, to keep it off open water. Mira had no shields; open water would have killed her. He never mentioned it. In Ch 13 he tells her, and she works out what it cost him, which moves her.
 - **The Box.**
-  - He captures a creature mid-fight and moves it, with the space around it, into a pocket. Inside, a construct keeps fighting it on a loop, and the creature believes it's still where it was.
-  - The construct is a crude figure of Jason made of his mana, with no mind and no senses. It is not a clone, and Jason still can't clone.
+  - He captures a creature mid-fight and moves it, with the space around it, into a pocket. Inside, a clone of Jason keeps fighting it on a loop, and the creature believes it's still where it was.
   - It is a prison, a training tool and a battery: Jason can draw on the captives' mana.
-  - Building a new Box takes a long time and a lot of power. In an emergency he can close an existing Box's walls around a new place in minutes, at great cost.
+  - Building one takes a long time and a lot of power.
   - Mira can send her clones into his Box but can never build one.
 - **Crossing.** He lowers his effective mana by shifting load into the Box, which cuts his toll. Carrying Mira back and forth adds up and wears him down. Delilah assumed nobody that strong could afford to cross often.
-- **Lockdown.** Around himself he can block teleporting, crossing and messages, out to about five miles. He can stretch it further, to about eight, at a cost he feels for days. It's draining and slow to set up.
+- **Lockdown.** Around himself he can block teleporting, crossing and messages, out to about five miles. It's draining and slow to set up.
 
 ## Where they live, and how
 
 - At the cabin Jason does remote freelance work through a prepaid hotspot, for a few clients, and is paid in cash.
 - Every ten days he makes a supply run to a town thirty minutes away.
-- There are brambles by the creek that make a little mana on their own. Jason chose the place partly because that natural mana hides a little leakage.
-- In Spain he pays cash from his backpack and rents a room off the books. He has no account.
+- There are brambles by the creek that make a little mana on their own, and they draw strays.
+- In Spain he pays cash from his backpack and rents a room.
 
 ## Mira's clones
+
+**Jason and clones.** Jason can make clones, and he teaches Mira how. She goes on to Stage 4, clones that make clones, which he can't do, and she is better at it than he is. He still has his ordinary clones. In a Box, a clone of Jason is what fights the creature.
 
 **What a clone is.** Every clone is Mira. One mind, many bodies, and none of them is the original or the main one. From Stage 2 on, she doesn't experience a "main body" at all; all of them are her equally. That's hard to explain, so she lets other people think of one as her main body (usually the one nearest Jason), and doesn't correct them. Jason does this too, and she lets him.
 
 **The stages.** Each is a change in kind. Within each stage her numbers grow with practice.
 - **Stage 1:** puppets with a background sub-brain. She starts with one and builds up.
 - **Stage 2:** her photographer's habit of fixing small errors makes the bodies complete enough to produce mana on their own. Her senses merge across them. But a Stage 2 clone is still a copy of her as she is at that moment: she fills it from her own reserve, it starts at her own tired level, and it produces slowly, like an immature body. In a fight it runs dry before it helps.
-- **Stage 3:** she realizes cloning is creation, not copying, and builds clones mature instead of copying her current state. They take nothing from her reserve, start nearly empty, produce at her own current rate from the first second, and fill up within minutes. That is the difference that makes them fight twice as long. The precision drops her numbers sharply, then they climb again.
+- **Stage 3:** after Delilah's remark that cloning is creation, not copying, she builds clones mature instead of copying her current state. They take nothing from her reserve, start nearly empty, produce at full adult strength from the first second, and fill up within minutes. That is the difference that makes them fight twice as long. The precision drops her numbers sharply, then they climb again.
 - **Stage 4:** clones make clones. The new bodies power themselves and are still her. The thinking load spreads across all their brains.
 
 **The costs:**
@@ -182,8 +176,6 @@ Jason's own techniques:
 - Many clones together are loud.
 
 **Reabsorption.** Bodies fold back into whichever body she is closest to. Which body that is changes every time and doesn't matter to her. Write "one body", never "one skull".
-
-**Range.** Distance doesn't weaken the link between her bodies. She can only make new bodies within about a mile of an existing one.
 
 **Checkpoints** (the numbers grow between them):
 
@@ -197,7 +189,7 @@ Jason's own techniques:
 | Ch 20 | a one-time burst of about a thousand, in mid-August, then a reabsorption that knocks her out for hours |
 | Ch 21 to 24 | a few dozen held easily day to day |
 
-Jason understands the technique completely and can't do it. It takes patience with fine detail, and his mind doesn't work that way.
+Jason can make ordinary clones. Stage 4 he understands completely and can't do. It takes patience with fine detail, and his mind doesn't work that way.
 
 ## The other side
 
@@ -213,7 +205,7 @@ See CREATURES.md for what things look like.
 
 ## Act IV (only for Ch 22 to 30 drafters)
 
-**The phone.** From the Ch 22 meeting on, Mira keeps her phone on at the base, because Owen told her the other hunters stopped looking after Spain.
+**The Ch 22 meeting.** Jason goes because these are not people who would kill him at a dinner.
 
 **The scout's master.** The scout never returning is why one of its masters eventually crosses to look (Ch 30). The engine for the rest of Act IV is human: leaks, then evidence, then more producers.
 
@@ -238,18 +230,16 @@ See CREATURES.md for what things look like.
 **Mana messages to strangers.** A mana message reaches only someone you know. To reach strangers, pass names along: each person reached names the next.
 
 **The walker (Ch 27).**
-- It drains the mana of every living thing within kilometers: people, producing or not, animals and crops. Producers draw it, and it takes everything near it.
-- It crosses in eastern Rajasthan near the Haryana border, then walks slowly north-east toward Delhi and on into the Gangetic plain, for days.
-- The Indian Air Force strikes it for a day and a half, then stops, because each strike draws producers toward it.
-- "About a hundred million dead" is the estimate by the end of the book. It counts the drained dead, then the collapse: no water, power or food across northern India.
+- India has about 1.48 billion people, so a hundred million is under 7%.
+- Its mana pulls in and consumes every producing person for kilometers around it as it walks. They fall where they stand, or are dragged toward it.
+- Ordinary people die in its wake: buildings it walks through, roads jammed with people fleeing, fires, crushes, and the collapse of everything the dead were running.
+- It crosses near the Haryana border and walks toward Delhi, through a dense, connected region, for days. That is how the toll reaches about a hundred million by the end of the book.
 
 **Clone ladder, Act IV.**
 
 | When | What she can do |
 | --- | --- |
-| Ch 26 | a burst of about 3,000 |
 | Ch 26 to 29 | about 110 sustained for days, rotating one every four to five minutes. No breakdown by job. |
-| Ch 28 | about 20,000 in one night, pulled back over a day |
 | Ch 30 | the first 200 are bait, as many as she can fill in the seconds she has. Then Stage 4 chains left to run on their own: each body makes more, the growth is exponential, she stops steering it, and that is how she reaches about eight million bodies and loses herself. |
 
 **Ch 30 facts.**

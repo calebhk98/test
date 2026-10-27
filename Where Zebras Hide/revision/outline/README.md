@@ -12,6 +12,15 @@ Each chapter is drafted by one Haiku agent that sees only what's listed here, no
 
 Drafters never get `PLANTS.md` or `TIMELINE.md`. They are planning files.
 
+## What each outline contains
+
+Outlines are written by the planner, not the drafter. Each one has these, besides the scenes:
+
+- **Set up in this chapter.** It says plainly what to establish and how lightly: for example, "Show the pickup slowing on the road and driving on. Mira doesn't comment." It never says the thing matters later and never names a later chapter. The content comes from `PLANTS.md` and from the pre-review "Plant for later" sections.
+- **A romance beat in every chapter.** One concrete moment between Mira and Jason, small or large.
+- **Beats in the order a scene would really go.** The drafter writes beats in the order the outline lists them, so the outline lists them in the order a real scene would run. Old-life items come up because the conversation leads to them, and each beat says what leads to it.
+- **Enough scenes for the length.** If the beats can't fill the length, the outline adds a real scene (social, romance, or a quiet moment that matters) instead of leaving the chapter short. The drafter never pads.
+
 ## What each drafter must do
 
 - Write only its own chapter, in Mira's first person, past tense.

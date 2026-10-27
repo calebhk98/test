@@ -38,7 +38,7 @@ These are people, not functions. Each one is inconsistent the way real people ar
 **On the Box:** she thinks it's wrong, says so, and keeps saying so. She also knows it's his ability, not hers, and she keeps benefiting from it. It's a real, standing disagreement between them. She doesn't hate herself for using it, and she won't pretend she agrees.
 
 **Her arc:**
-- Devotion pulls her in, and so does fear: the people who attacked Jason saw her face. Then she's good at something for the first time in her life, and that keeps her in too.
+- Devotion pulls her in. If she doesn't learn, she has to give him up, and that is a romance reason, not a logical one. Then she's good at something for the first time in her life, and that keeps her in too.
 - She never stops loving Jason.
 
 **The lying:**
@@ -67,9 +67,9 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - When his control breaks, it breaks once and badly. Then he gets it back.
 - He can't cook either, and eats whatever she makes. He has no tics or props: no fidgeting, no habits added to make him seem real.
 
-**On ownership:** He never changes his mind that his work was his. He agrees with Kael that leaks are a danger, and he has no answer to them; pressed on it, he gets short and asks what Kael expects him to do about the internet.
+**On ownership:** He never changes his mind that his work was his. Warned about leaks, he is complacent: people have laughed at magic for centuries, and he expects them to laugh at the videos.
 
-**How he shows love:** through acts he doesn't explain. The math he did on her survival during the escapes is one: in Ch 1 he shaped the teleport so she couldn't land in water, and never said so.
+**How he shows love:** through acts he doesn't explain. The math he did on her survival during the escapes is one: in Ch 1 he changed the random jump in the instant to keep it off open water, and never said so.
 
 **His voice:** calm, direct, economical. When he won't answer, he says so plainly ("Not yet." "I'll tell you, but not here.") or changes the subject smoothly.
 
@@ -77,12 +77,12 @@ These are people, not functions. Each one is inconsistent the way real people ar
 
 - **Background:**
   - In her sixties. Widowed.
-  - Has practiced for thirty years and lives a drive away from the Appalachian cabin, about forty miles over the ridge.
+  - Has practiced for thirty years and lives a drive away from the Appalachian cabin.
   - Better than Jason at fighting things on Earth. Never crossed, and assumed nobody strong could afford to.
 - **Who she is:**
   - She asks Mira something personal early, because she's nosy, and she follows one question with the next before the first is answered. She says what she thinks.
   - She swears mildly, mostly at Jason.
-  - She gossips about other practitioners; it's half community news, half entertainment. This is her flaw. She mentioned "Jason's girl", and which hills, to someone she trusted, and it travelled to the hunters. She says so herself, and she's ashamed of it.
+  - She gossips about other practitioners; it's half community news, half entertainment.
   - She has taught several newcomers who died. She doesn't bring them up; when it comes out, it comes out sideways.
   - She has grandkids she can't tell anything to (RULES: telling family puts them at risk). That's part of why she latches onto Mira.
   - Her caution hardens into policy, and she is sometimes wrong.
@@ -103,7 +103,7 @@ These are people, not functions. Each one is inconsistent the way real people ar
 
 ## The hunters
 
-- **Who they are:** Three practitioners who asked Jason politely for years and offered money and technique swaps. Then they pressured him, then attacked.
+- **Who they are:** Three practitioners who asked Jason politely for years and offered money and technique swaps. Then they pressured him, then attacked. They are not the FBI and not mortal enemies: they find people by mana, not by records, and what they want is for Jason to show them his techniques.
 - **Owen:**
   - He has a family and a job he's bad at hiding magic from.
   - He wants the random teleport to get newcomers out before predators reach them. He once lost a student he could have saved with it. That's the full-strength argument against Jason.
@@ -136,7 +136,7 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - He shows love by staying within half a mile of the body he thinks of as her, and never says why.
 
 **Delilah**
-- In Act IV she joins the harsher-suppression faction and asks Mira to do the Ch 24 erasures. The two of them are stiff with each other and half make up on the phone.
+- In Act IV she joins the harsher-suppression faction and asks Mira to do the Ch 24 erasures, and she and Mira have a real fight about it.
 - Ch 29: she argues Mira into resting and organizes relief. Mira makes the final call.
 
 **Kael**
@@ -151,7 +151,7 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - He keeps digging into what he saw, and that becomes one of the leaks. Mira erases him.
 
 **Anjali**
-- A quiet practitioner from Jaipur who makes jewelry. She messages Mira in Ch 27. She survives Ch 27 and 28.
+- A quiet practitioner from Jaipur who makes jewelry. She messages Mira in Ch 27 as the walker arrives, and is gone by Ch 28.
 
 **Priya**
 - Priya is twenty and scared and keeps asking questions because it's the only thing she can do. She has a notebook because she is a student.

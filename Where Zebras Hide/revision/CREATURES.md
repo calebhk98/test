@@ -63,11 +63,9 @@ Wolves also cross in packs into cities in Act IV.
 - Phone footage shows it clearly. That's what ends denial.
 
 **How it kills:**
-- It drains the mana of every living thing within kilometers as it walks: people, producing or not, animals and crops. Producers draw it, and it takes everything near it.
-- It crosses in eastern Rajasthan near the Haryana border, then walks slowly north-east toward Delhi and on into the Gangetic plain, for days.
-- The drained fall where they stand. After them comes the collapse: no water, power or food across northern India.
-- The Indian Air Force strikes it for a day and a half, then stops, because each strike draws producers toward it.
-- "About a hundred million" is the estimate by the end of the book. It counts the drained dead, then the collapse.
+- Its mana pulls in and consumes every producing person for kilometers around it as it walks. They fall where they stand, or are dragged toward it.
+- Ordinary people die in its wake: buildings it walks through, roads jammed with people fleeing, fires, crushes, and the collapse of everything the dead were running.
+- It crosses near the Haryana border and walks toward Delhi, through a dense, connected region, for days. India has about 1.48 billion people, so a hundred million is under 7%. That is how the toll reaches about a hundred million by the end of the book.
 
 **How it ends:**
 - It doesn't hurry and it doesn't notice resistance. Practitioners throw everything at it and barely mark it.

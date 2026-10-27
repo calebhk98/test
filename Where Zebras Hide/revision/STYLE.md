@@ -33,7 +33,7 @@ Each of these is a pattern, not one banned sentence.
 - **Logic of space and time.** Track where everyone is, how far things are, what time it is, and what people are holding. A walk doesn't stretch to fit a conversation.
 - **Convenient timing.** Things don't happen at the perfect dramatic second.
 - **Supporting characters as functions.** A side character shouldn't only exist to deliver a plot point or a tease.
-- **Padding.** Word counts are approximate. A chapter more than 15% under its length has probably skipped texture the scenes need; add observation. Never add jokes, quirks, side beats or extra exchanges to hit a word count.
+- **Padding.** Word counts are approximate. A chapter more than 15% under its length has probably skipped texture the scenes need; add observation. Never add jokes, quirks, side beats or extra exchanges to hit a word count. If the beats are all written and the chapter is still short, stop. The outline is responsible for having enough scenes.
 
 ## Punctuation
 
@@ -50,7 +50,7 @@ Each of these is a pattern, not one banned sentence.
 - **At most one analogy per scene.** If the outline lists one, it is the only one in that scene. Don't add your own on top of it.
 - Photography images about once a chapter. Reserve "weather" for the creatures.
 - Coffee as an image or metaphor is limited. Ordinary cups of coffee in a scene are fine.
-- Old-life and romance beats are included where they fit. Some chapters will have neither.
+- Every chapter has a romance beat: one concrete moment between Mira and Jason, small or large. Write it. Old-life beats are included where they fit.
 
 ## Never do these
 
