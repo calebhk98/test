@@ -1,0 +1,10 @@
+== drafts/round3b/ch01.md
+words: 2194   sentences: 214   mean words/sentence: 10.3
+sentences under 6 words: 68 (32%)   longest run of short sentences: 4
+narration only: mean words/sentence 12.7, under 6 words 20%
+paragraphs: 85   with dialogue: 43   one-line paragraphs under 6 words: 19
+em dashes: 0   exclamation marks: 0   'the way you/someone' similes: 1
+body-language cliches: "cheeks went warm" x1
+stock phrases: two years x1
+repeated 4-word phrases (3+): none
+
