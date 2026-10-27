@@ -81,6 +81,9 @@ Count the jokes in each serious scene.
 
 ## Problems in the documents
 
+The author owns the book-level plot: what happens, why, and how the world and abilities work. Never propose changing it. If something at that level looks wrong, list it under "Questions for the author". Fix proposals are for the chapter level (scenes, beat order, set-ups, staging, wording) and for STYLE.
+
+
 The drafter only sees the outline, CHARACTERS.md, RULES.md, CREATURES.md and STYLE.md. Many draft problems start there, so read those files critically too, not only as a reference. Look for:
 - contradictions between the documents, or within one
 - instructions a drafter will follow too literally: lists that get recited in order, verbatim lines that need an invented setup, traits that get performed
