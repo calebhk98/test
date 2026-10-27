@@ -23,7 +23,7 @@ The docs review and consistency pass broke this rule: several book-level changes
    - In Ch 1 he changed the random jump in the instant to keep it off open water.
    - Delete every "can't aim" and "can't pick the spot" line. Where a chapter needs a reason he doesn't simply teleport somewhere, the reason is that an aimed jump can be followed.
 4. **Mira's reason to learn.** If she doesn't learn, she has to give him up. It's a romance reason, not a logical one. Restore the Ch 3 and Ch 5 reasoning to the pre-review versions. Delete "the attackers saw her, so she's in it anyway".
-5. **The time zone.** Keep it a mystery. Ordinary adults don't know offhand where time zones change. They leave at 5:40 and the attack is about 5:47. Her phone reads 4:47 in Tennessee. She can't explain it, and works it out in Spain (Ch 14). Restore the Ch 14 payoff.
+5. **The time zone.** Keep it a mystery. Ordinary adults don't know offhand where time zones change. They leave at 5:40, she sees 5:42 on her phone on the walk, and the attack is about 5:44. Her phone reads 4:47 in Tennessee. She can't explain it, and works it out in Spain (Ch 14). Restore the Ch 14 payoff.
 6. **The hunters.**
    - They aren't the FBI. They look for Jason by mana, not by records, so names, phones, rentals, hotels and accounts don't give him away.
    - They aren't mortal enemies. They want him to show them his techniques, they pressure him, and they have to set up before they can attack.

@@ -1,15 +1,15 @@
 # Style sheet for drafting chapters
 
-Every chapter is first person, past tense, from Mira's point of view. Stay in past tense for asides too: if she describes a habit of his, it is "he laughed through his nose first", never present tense. She can only report what she sees, hears, senses or thinks. If someone else is impressed, they have to say it or show it.
+Every chapter is first person, past tense, from Mira's point of view. Stay in past tense for asides too, including a habit of someone's. She can only report what she sees, hears, senses or thinks. If someone else is impressed, they have to say it or show it.
 
 ## Voice
 
 - The reader is an adult who has read books. Write for that reader: trust them to notice things, and never explain what a scene already shows.
 - Mira's voice is warm, observant and specific, with dry humor that's occasional and mostly in what she notices. In danger, confession or grief her humor drops away, and no humor is scheduled there.
 - Use plain words. Prefer a concrete detail to an abstract one.
-- Each scene gets one specific observation of light, faces or hands that only this narrator would make. It is not a joke and not a metaphor. Photography vocabulary (print, exposure, flash, grain, frame) is used once per chapter, where she'd actually reach for it. Describe light and colour in a photographer's specific terms. No word except a name appears more than three times in a chapter.
+- Each scene gets one specific observation of light, faces or hands that only this narrator would make. It is not a joke and not a metaphor. Photography vocabulary (print, exposure, flash, grain, frame) is used once per chapter, where she'd actually reach for it. Describe light and colour in a photographer's specific terms, and keep it physically right for the time and place: overcast daylight is flat, and a phone screen in it is dim. Make your own light observation; never reuse a light-on-skin image from an outline. No noun, verb or adjective appears more than three times in a chapter. Names, function words and "said" are exempt.
 - **Sentence length:** mostly full sentences, mixed with some longer ones and a few short ones. Join clauses only when the second follows from the first. Don't chain unrelated observations with "and". Never more than two sentences in a row under six words, counting dialogue and tags together. At most three fragments per chapter. Between short lines of dialogue, put something Mira thinks or sees that she hasn't mentioned before. A repeated detail doesn't count, and neither does a gesture whose only job is to fill the gap.
-- **Dialogue tags and speech.** Attach a tag to the same sentence as the speech; a standalone "he said." counts as a short sentence. Dialogue and text messages stay in quotation marks, every one. A reply uses the tense of the question ("Tell me if anything is sharp." "I don't feel anything sharp."). A speech over about 80 words is broken by the listener or the setting.
+- **Dialogue tags and speech.** Attach a tag to the same sentence as the speech; a standalone "he said." counts as a short sentence. Dialogue and text messages stay in quotation marks, every one. A reply uses the tense of the question. A speech over about 80 words is broken by the listener or the setting.
 - The Ch 30 countdown is exempt from the fragment limit.
 - Act IV must sound like the same woman as Act I.
 - Real people interrupt, misunderstand, repeat themselves a little, and answer the question they wish they'd been asked. Not every reply is a comeback.
@@ -25,8 +25,10 @@ Each of these is a pattern, not one banned sentence.
 - **Quips in serious scenes.** In danger, confession, grief or a revelation, no jokes, except at most one nervous one that isn't polished. Elsewhere, keep banter to what two real adults would actually say. A witty line must also mean something; a line that only sounds clever is cut.
 - **Personifying things.** Objects, animals, plants and weather don't have attitudes. Nothing is rude, cheerful, betraying or offended.
 - **Symbolic stand-ins.** Don't use an outside event or object to mirror a feeling, and never have the narration or a character point at the symbol.
-- **Props and repeated gestures.** No object or gesture appears more than twice in a chapter unless the outline asks for it. Props the outline names are exempt, and nothing else is. Cups, phones and bags count as props once they are used as a gesture. Place a bag or backpack once and don't move it again unless the scene needs it. Don't track an object through a scene just to use it later. No habits invented to make a character seem real.
-- **Body-language clichés.** A warming face, a fluttering chest, a flipping heart, a dropping stomach, a lighting-up face: at most one of these in the whole chapter. No vague microgestures, such as a mouth doing something complicated, a smile arriving sideways, or a look held a beat too long. Don't follow a feeling with a sentence that dismisses it ("It was only dinner").
+- **Props and repeated gestures.** No object or gesture appears more than twice in a chapter unless the outline asks for it. Cups, phones and bags count as props once used as a gesture. Place a bag once and don't move it again unless the scene needs it. Don't track an object through a scene just to use it later. No habits invented to make a character seem real.
+- **Body-language clichés.** A warming face, a fluttering chest, a flipping heart, a dropping stomach, a lighting-up face: at most one of these in the whole chapter. No vague microgestures, such as a mouth doing something complicated, a smile arriving sideways, or a look held a beat too long. Don't follow a feeling with a sentence that dismisses it.
+- **Fear.** If a character is afraid, show it in one body detail or one mistake, not in a plan. Competent reasoning is not a sign of fear.
+- **Several messages at once.** Don't answer them in order with equal weight. Let one interrupt another, leave one unanswered, or combine two replies.
 - **Pointing at clues.** Don't have Mira note that something is suspicious or file it away. Report it, and let the reader notice.
 - **Saying things twice.** Don't repeat information within a scene, restate a feeling the dialogue already showed, or restate a time, distance or detail already given. Don't follow a planted detail with a sentence saying she didn't think about it.
 - **Technical details that don't hold up.** Any science, mechanics or procedure must survive a skeptical reader. If you aren't sure it's right, leave it out.
@@ -45,7 +47,7 @@ Each of these is a pattern, not one banned sentence.
 
 - **Lines marked verbatim are copied exactly.** They are exempt from the short-sentence count and count toward every other limit and pattern.
 - **A chapter's own Limits override the default counts.** A limit on a repeated phrase or image counts verbatim lines too.
-- **When the outline says what a character doesn't do**, that's an instruction to you. In the prose, write what they do instead: a task, a question, a gesture, the wrong words.
+- **When the outline says what a character doesn't do**, write what they do instead: a task, a question, a gesture, the wrong words. Never write a sentence whose only content is the non-action.
 - **At most one simile or analogy per scene**, counting "as if" and "looked like". If the outline lists one, it is the only one in that scene.
 - Reserve "weather" for the creatures.
 - Every chapter has a romance beat: one concrete moment between Mira and Jason, small or large. Write it. Old-life beats are included where they fit.
