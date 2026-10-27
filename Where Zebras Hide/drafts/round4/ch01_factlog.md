@@ -1,0 +1,57 @@
+## Fact log for the next drafter
+
+- **Date and times**
+  - Friday, February 9, Columbus, Eastern time (the draft never states the weekday date; Mira says only "on a Friday").
+  - Office clock 4:31 when Marcus checks it; he says "half past four".
+  - Jason's text: "Still on for five?". Mira's reply: "Yes, see you there".
+  - They left the coffee shop at "twenty to six" (5:40).
+  - Mira checked her phone on the walk: 5:45.
+  - The draft states the attack at 5:47 ("I had checked my phone two minutes before"). A phone clock will show whatever it shows in Tennessee; the draft sets no other time.
+  - Dusk: streetlights coming on, orange lamps; the sky in Tennessee is gray.
+- **What Mira wears and carries, and where each is**
+  - Navy coat, worn outside with the collar turned up. She took it off in the shop and folded it over her knees. The draft does not show her putting it back on.
+  - Crossbody bag (strap across her chest, bumps her hip). RULES: wallet and keys. The draft does not list contents.
+  - Phone: in her coat pocket (put there at the office). It buzzed "against the table" in the shop (never shown taken out). Checked at 5:45 on the walk.
+  - The roll of discontinued film stock: she took the box out of a small paper bag and read the label; the box went into her coat pocket, unopened. The paper bag is left unaccounted for (assume it stayed on the table).
+  - A scarf, taken off in the coffee shop. It is never mentioned again, and its location is unknown.
+  - Shoes "not made for" salty sidewalks (type unspecified).
+  - Not with her: the Pentax and the undeveloped roll are at her apartment in Columbus. Her other two rolls were shot (kitchen, bridge) and developed.
+  - Her unfinished Henderson report is saved on her office computer. She left it with two sections blank (a regional breakdown and an appendix) and a table with formatting problems.
+- **What Jason wears and carries, and where each is**
+  - Black coffee at the shop. Backpack sat on the chair beside him in the shop; its front pocket held the gift. He "slid his laptop into his backpack" as they got up.
+  - The draft never shows him putting the backpack on, and never describes his coat or clothes. RULES says it comes through the jump.
+  - Details seen: haircut shorter at the back; knuckles red from the cold; his breath showing on the walk.
+- **Where they were walking and why**
+  - They left the coffee shop because two students at the next table were arguing loudly over a sublet debt.
+  - Mira proposed the Thai place her friend Sarah keeps recommending, "about ten minutes if we walk".
+  - They turned left out of the shop and walked beside a park. Passed: a bank with its lights off, a couple walking a dog on a long leash, a man at a sink in a second-floor window, a car with its radio on at an intersection, a dry cleaner's red sign. Salt crust on the sidewalk. The park on their left sloped down to a river, a dark line seen through a railing with a few lights on it.
+  - A gust came up off the river and she stumbled on an uneven pavement square. Jason's hand stopped a few inches from her elbow and dropped back (the one hovering hand).
+  - After "Sometimes." they walked "as far as the next corner" and the attack came during the next exchange.
+  - The restaurant was not in sight. The attack came about seven minutes into a ten-minute walk.
+- **What was said that Chapter 2 might refer back to**
+  - Jason: "Most people are boring." (said to her apology about the film talk).
+  - Jason on his parents: "We don't really talk much." and "It's fine. We didn't really get along." Mira did not question it.
+  - Jason: "Your green stock is going to look strange under these... Would you still shoot it?"; Mira: "Of course I would. It's the only thing I shoot that doesn't look like everything else."
+  - Mira: "Do you ever get lonely?" Jason: "Sometimes." Jason: "You're different." Mira: "Different how?" He opened his mouth and the attack came before he answered.
+  - Jason's gift line: "I found it at a camera shop across town... I saw it and thought of you."
+  - Jason asked for Friday (instead of Tuesday) on Wednesday. Mira never asked why.
+  - Marcus knows about Jason and the Tuesday coffees and the skipped girls' night; Mira told him "We're friends." Murphy's was where coworkers were headed.
+  - Nora's apartment listing (a Lincoln Park one-bedroom) is unanswered on her phone; she told Jason she probably wouldn't look.
+  - Mira told Jason she has to get home early Sunday to bring milk to her parents' dinner; she has not bought it.
+  - Jess is her roommate (mentioned: "Jess and me arguing about the dishwasher").
+  - Mira talked about a co-op darkroom on the east side above a print shop; she can't afford it "this year".
+- **What Mira knows and does not know**
+  - Knows: nothing supernatural exists as far as she knows. Jason has a recent haircut, brought her film, said he and his parents did not get along, and said she is "different".
+  - Does not know: who attacked, what the blue light was, where they are, why Jason jumped, that Jason did anything to the jump. She felt a bend in the lurch and said nothing about it.
+  - Does not know why Jason asked for a Friday.
+  - Is in love with Jason, which she has not told him.
+  - Has not told anyone she is leaving (Jess, Mom, Nora, the office). The Monday deadline is now missed by default.
+- **Anything physical about the attack**
+  - Sound: "The air cracked."
+  - A flash of blue light "right in front of us". Something invisible slammed into it. The force came through the light and hit her chest.
+  - No attackers were seen. Nobody was visible on the street at the time (no bystander is mentioned during the impact).
+  - Jason said nothing. His hand closed on her arm hard enough to hurt (expect a sore or bruised upper arm).
+  - Pressure in her chest and she could not breathe. A high ringing in her ears. A second flash of blue. The world tipped sideways.
+  - For about a heartbeat the lurch "curved, like a car swinging under me around a bend too fast", then straightened out.
+  - Prickling over all of her skin.
+  - Landing: she came down on her hands and knees on dirt and dead leaves, wet-wood smell, bare branches against a gray sky. The draft does not say where Jason is, whether he still holds her arm, whether her bag and phone are intact, or whether she is injured.
