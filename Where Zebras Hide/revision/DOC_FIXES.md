@@ -1,3 +1,5 @@
+> **Superseded in part.** `AUTHOR_RULINGS.md` overrides this file. Several decisions below changed the book-level plot without the author, and the rulings undo them.
+
 # Document fixes from the docs review
 
 These are decisions on the findings in `reviews/docs_review_part1.md` (P1) and `reviews/docs_review_part2.md` (P2). Finding numbers refer to those files. Where this file and a review disagree, this file wins. Where this file is silent, apply the review's fix if it is plainly correct and doesn't touch an item under "Author decisions that stay".
