@@ -20,7 +20,7 @@ There is no official vocabulary, because there is no official anything. Each pra
 ## What people carry
 
 - Mira has a crossbody bag (wallet, keys) and her phone in her coat. Both come through the Ch 1 teleport. Her phone works as an ordinary phone.
-- Jason has a backpack he never goes without, with his laptop, cash and a few things he always keeps. It comes through too. This is where the cash in Ch 6 and in Spain comes from.
+- Jason has a backpack he never goes without, with his laptop, cash and a few things he always keeps. It comes through too. This is where the cash in Ch 6 comes from. The money in Spain is different (see "Where they live, and how").
 - Everything else Mira owns is in Columbus.
 
 ## How a person starts producing mana
@@ -141,11 +141,11 @@ Jason's own techniques:
   - Where a chapter needs a reason he doesn't simply teleport somewhere, the reason is that an aimed jump can be followed.
   - For Jason a jump isn't especially draining. Three jumps in a row is fine.
   - A random jump lands on open surface, never inside rock or high in the air. With full range, that often means ocean.
-  - In Ch 1 he changed the random jump in the instant, south and away from the Great Lakes and the coast, to keep it off open water. Mira had no shields; open water would have killed her. He never mentioned it. In Ch 13 he tells her, and she works out what it cost him, which moves her.
+  - In Ch 1 he changed the random jump in the instant, south and away from the Great Lakes and the coast, to keep it off open water. Mira had no shields; open water would have killed her. He never mentioned it. In Ch 13 he tells her in one flat sentence what it cost him, and she understands what it meant, which moves her. She felt that jump bend in Ch 1, and in Ch 13 she has just felt his full-range jumps run straight.
 - **The Box.**
   - He captures a creature mid-fight and moves it, with the space around it, into a pocket. Inside, a clone of Jason keeps fighting it on a loop, and the creature believes it's still where it was.
   - It is a prison, a training tool and a battery: Jason can draw on the captives' mana.
-  - Building one takes a long time and a lot of power.
+  - Building one takes minutes of his full concentration and a great deal of power. He can't fight while he builds. That is why he builds them in calm moments, and why building one in an emergency wrecks him.
   - Mira can send her clones into his Box but can never build one.
 - **Crossing.** He lowers his effective mana by shifting load into the Box, which cuts his toll. Carrying Mira back and forth adds up and wears him down. Delilah assumed nobody that strong could afford to cross often.
 - **Lockdown.** Around himself he can block teleporting, crossing and messages, out to about five miles. It's draining and slow to set up.
@@ -155,7 +155,7 @@ Jason's own techniques:
 - At the cabin Jason does remote freelance work through a prepaid hotspot, for a few clients, and is paid in cash.
 - Every ten days he makes a supply run to a town thirty minutes away.
 - There are brambles by the creek that make a little mana on their own, and they draw strays.
-- In Spain he pays cash from his backpack and rents a room.
+- In Spain he lives on euros from an old account he set up years ago, "for if", and rents a cash-friendly room above a bakery. The account doesn't give him away, because the hunters look for mana, not records.
 
 ## Mira's clones
 
@@ -188,6 +188,7 @@ Jason's own techniques:
 | Ch 19 | first Stage 4 chains, small and painful |
 | Ch 20 | a one-time burst of about a thousand, in mid-August, then a reabsorption that knocks her out for hours |
 | Ch 21 to 24 | a few dozen held easily day to day |
+| Ch 26, day 3 | a one-time burst of about 3,000 for one hour in a high school gym in Hartford, pulled back slowly, which costs her an evening |
 
 Jason can make ordinary clones. Stage 4 he understands completely and can't do. It takes patience with fine detail, and his mind doesn't work that way.
 
@@ -235,11 +236,12 @@ See CREATURES.md for what things look like.
 - Ordinary people die in its wake: buildings it walks through, roads jammed with people fleeing, fires, crushes, and the collapse of everything the dead were running.
 - It crosses near the Haryana border and walks toward Delhi, through a dense, connected region, for days. That is how the toll reaches about a hundred million by the end of the book.
 
-**Clone ladder, Act IV.**
+**Clone ladder, Act IV.** The ladder in full: about 1,000 (Ch 20), about 3,000 for an hour (Ch 26, day 3, Hartford gym), about 20,000 for one night (night of day 9, pulled back over a day, Ch 28), then the chains (Ch 30).
 
 | When | What she can do |
 | --- | --- |
 | Ch 26 to 29 | about 110 sustained for days, rotating one every four to five minutes. No breakdown by job. |
+| Night of day 9, folded back through Ch 28 | about 20,000 for one night, to hold wolves crossing into several cities at once. She pulls them back slowly over the following day, down to 110. |
 | Ch 30 | the first 200 are bait, as many as she can fill in the seconds she has. Then Stage 4 chains left to run on their own: each body makes more, the growth is exponential, she stops steering it, and that is how she reaches about eight million bodies and loses herself. |
 
 **Ch 30 facts.**

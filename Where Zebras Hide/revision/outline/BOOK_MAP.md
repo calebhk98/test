@@ -50,9 +50,9 @@ Point of view: first person, past tense, Mira, throughout.
 23. **Escalation.** Marcus has been asking questions because of her. A London anchor reads a leak aloud. Mira erases her friend.
 24. **Containment.** A campus, sixteen erasures, and Priya, who is too late to erase.
 25. **Breach.** A celebrity livestream. The internet works out the rest. Day 0 of the end.
-26. **Cascade.** Jason gives away everything, still believing it was his. Mira's clones start teaching the world.
+26. **Cascade.** Jason gives away everything, still believing it was his. Mira's clones start teaching the world, and on day 3 she bursts to about three thousand for an hour in a Hartford gym.
 27. **Incursion.** Something the size of a hill walks out of the other side in Rajasthan.
-28. **Mobilization.** The world fights back badly. Mira is about a hundred and ten people at once.
+28. **Mobilization.** The world fights back badly. Mira is about a hundred and ten people at once, after a night as about twenty thousand holding wolves off several cities, and she is folding them back all day.
 29. **The Hundred.** Eight days without real rest. Theo. Delilah. The ten hours, and what they cost.
 30. **Threshold.** The scout's master comes looking for its scout. Two hundred bait bodies, then the chains run. Mira ends as a colony of about eight million, saving what she can and unable to hear the man shouting her name. (For Ch 28 to 30 drafters only.)
 

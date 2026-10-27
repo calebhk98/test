@@ -12,7 +12,7 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 ## Ch 09
 - The brambles by the creek: Jason chose the cabin for the mana they give off, which hides some leakage.
 - Jason's pattern, named for the first time: "You said you'd tell me when you were deciding things about me." Pays off in Ch 13 (he tells her the day he feels the hunters) and in Act III (the pattern she names again in Ch 17).
-- The creature photo on her phone is cut: her phone is off at the cabin. Ch 10's old-life beat that depended on it is gone.
+- The creature photo stays on her phone, and Ch 10's old-life beat uses it.
 
 ## Ch 10
 - "It helps with some things": the Box as battery. Pays off in Ch 17 (the Box pays for the crossings).
@@ -23,7 +23,7 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - Delilah's remark that Mira should not fill clones from her own tank is the nudge for the Ch 12 mature clones. Mira works it out alone and tells nobody.
 - The boy Delilah found too late: pays off in Ch 14 (Owen's lost student, a parallel) and Ch 15 (Delilah's call).
 - Delilah's daughter thinks she is in a book club: the model of what Mira is becoming (a double life).
-- Delilah talks freely about everyone she knows across two states. This is her gossip flaw, and it is how the hunters find the cabin (Ch 13 and 14).
+- Delilah talks freely and fondly about everyone she knows across two states. It is character only.
 - "So could a lot of things people choose to keep": Mira echoes it to Jason in Ch 14.
 - Mira's yes to Delilah's lessons.
 
@@ -38,19 +38,17 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - The hunters now know Mira is a practitioner who can fight, and that Jason's random teleport can't be pinned (they don't know it yet).
 - Jason's cold anger about the hunters. Pays off in Ch 22 (Owen's warning) and Ch 30.
 - "I've been leaving since I was seventeen."
-- The hunters found the cabin through Delilah's gossip. Delilah says so in Ch 14.
 
 ## Ch 14
 - Owen's dead student, the cure-cancer argument, and Jason's "you taught me" with the reason left unspoken.
-- The locked-room harm and Owen's "not enough Jasons" counter: pays off in the Act IV ownership argument (Ch 19, 22, 23), where Jason agrees with Kael about leaks and doesn't know what to do.
-- The disposable camera. The gift roll from Ch 1 stays unshot until Ch 21, when she loads it in her Pentax at her apartment.
+- The locked-room harm and Owen's "not enough Jasons" counter: pays off in the Act IV ownership argument (Ch 19, 22, 23), where Jason is complacent about leaks and Kael is not.
+- The disposable camera, bought because the Pentax is in Columbus. The gift roll from Ch 1 stays sealed and unshot in her bag until Ch 21, when she loads it into her Pentax at the apartment.
 
 ## Ch 15
 - "Lighter": the Box lowers Jason's toll when he crosses. Pays off in Ch 17.
 - The boy Delilah mentioned.
 - Pine and cold, held onto before the crossing. Pays off in Ch 16.
 - Her crying behind the house, ending when she's done. Pays off in Ch 25 (Nora's call).
-- Hunters can find them on Earth by ordinary means, given time. Pays off in the Act IV hunters and Owen.
 
 ## Ch 16
 - Two bodies place a sound the way two ears do. Pays off in her later fights.
@@ -69,7 +67,7 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 
 ## Ch 19
 - The Manchester woman. Pays off in Ch 22 and Ch 23.
-- Kael's walls warning, and Jason's agreement with no plan. Pays off in Ch 22 and Ch 23.
+- Kael's walls warning, and Jason's complacency about leaks. Pays off in Ch 22 and Ch 23.
 - Kael's belief that the deep can be lived with.
 - Jason's "take down the internet" answer.
 - She wakes in a body that has been at the kitchen counter for an hour: the no-main-body idea.
@@ -83,7 +81,8 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 ## Ch 21
 - Marcus saw the cup. Needed for Ch 22 (his text) and Ch 23.
 - Jason leaves the erasure as her call. Pays off in Ch 23.
-- The darkroom frame of Jason.
+- The darkroom frame of Jason (from the February roll).
+- The gift roll, still unshot, is loaded into her Pentax at the apartment. Her first frame on it is Jason on her parents' porch.
 - Nora's suspicion.
 - Mom's milk joke.
 - Her reason shifts from Jason to her family, caused by putting Marcus at risk.
@@ -94,7 +93,7 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - Owen's student.
 - Owen's warning that Jason will not ask first. Pays off in Ch 30, when Jason closes a Box around her without asking.
 - Delilah and Mira on opposite sides.
-- Anjali, who survives and returns by message in Ch 27 and Ch 28.
+- Anjali, who dies in Ch 27. Her last two messages arrive in Ch 27.
 
 ## Ch 23
 - Hannah, Tom and Mrs. Okafor (Hannah's hospital interview is used by Cass in Ch 25).
@@ -123,7 +122,7 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 
 ## Ch 27
 - The evacuation rule.
-- Anjali alive, her neighbors.
+- Anjali's last two messages, then nothing, and the empty street in her sister's town. She dies.
 - Jason's 'that one came for a meal' answer.
 
 ## Ch 28
@@ -144,12 +143,12 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 ## Ch 01
 - The lie about his parents (he says they didn't get along). Pays off in Ch 6, when he tells her the truth.
 - The undeveloped roll in her Pentax at home.
-- The gift roll in her coat pocket. Used in Ch 3 once, and shot in Spain.
+- The gift roll in her coat pocket. Held in Ch 3 once. It stays unshot until Ch 21, where she loads it into her Pentax at home.
 - The blue light and the invisible attacker.
 - Jason shapes the teleport range so water is very unlikely.
 
 ## Ch 02
-- The clock: 4:52 Central. Her first hard proof of how far they went.
+- The clock: 4:47 Central. Her first hard proof of how far they went.
 - Jason's need to know whether anyone followed them.
 - How easily she lies to Sarah, Jess and Mom.
 
@@ -158,7 +157,6 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - He has erased people before, when he had to.
 - The attackers want what he knows.
 - Most people who start figure it out alone.
-- The attackers saw her, which is the first reason he can't leave her alone.
 
 ## Ch 04
 - Other people have other words for mana.
@@ -174,10 +172,10 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - The cabin scouted a year ago, in case he had to leave Columbus fast.
 - The land's own mana hides some of her leakage.
 - "Weeks, months": the clock on when something notices her.
-- Her phone goes off; it comes on only in town.
+- Mom's two voicemails, seen and not played. Her phone works as an ordinary phone.
 
 ## Ch 07
-- Cut: the truck on the road, and the voicemail beat (moved to Ch 6).
+- Mom's two voicemails: seen but not played in Ch 6, one played in Ch 7 at night.
 - "You're not a liability, you're a student."
 - The darkroom image as her way in. It returns with the clones in Ch 11.
 
