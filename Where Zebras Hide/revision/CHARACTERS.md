@@ -19,22 +19,22 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
 - Has had coffee with Jason every Tuesday for two years and is quietly, hopelessly in love with him.
 
 **Who she is:**
-- **Warm, and funny out loud.** She's the friend who narrates her own disasters for laughs. Petty about small things ("I hated Dave. I hated his carrots.").
-- **Feels first, reasons second.** Under pressure she gets methodical (photos, screenshots, a dream test) because it gives her hands something to do. The feelings come after, all at once, often at a bad time.
-- **Stubborn, and sometimes unfair.** When she's hurt she says the sharp thing, then circles back later, embarrassed, to half-apologize.
-- **Anxious that she's ordinary.** Boring job, boring city, a hobby people call a waste of money. Part of why she stays with this is that, for once, she is not ordinary, and she feels guilty for liking that.
-- **Loyal to a fault.** She'll argue with Jason for an hour and then defend him to anyone else in one sentence.
-- **Bad at:** cooking (enthusiastically: she keeps trying recipes she can't pull off), asking for help, accepting comfort, leaving things unfinished.
-- **Loves** *(proposed)*: thrift stores, terrible reality TV she half-watches while editing photos, the smell of developer, Nora's voice memos.
-- **How she thinks about mana:** in photographs. Exposure, grain, latent images, the patience of a print coming up in the tray. The best things she does with mana come from that.
+- **Warm, observant and quietly funny.** With friends, in ordinary life, she's the one who tells a bad day as a good story ("I hated Dave. I hated his carrots."). Her humor is dry and occasional, and mostly lives in what she notices, not in one-liners.
+- **When she's frightened, the jokes stop.** In danger, grief or shock she gets methodical (photos, screenshots, a dream test), because it gives her hands something to do. Humor might come back once, late, out of nerves, and it shouldn't be polished. A woman who has just been thrown across three states doesn't produce a quip every paragraph.
+- **Feels first, reasons second.** The feelings often arrive after the danger, all at once, at a bad time.
+- **Stubborn, and sometimes unfair.** When she's hurt she says the sharp thing, then comes back later, embarrassed, to half-apologize.
+- **Anxious that she's ordinary.** Boring job, boring city, a hobby people call a waste of money. Part of why she stays with this is that, for once, she isn't ordinary, and she feels guilty for liking that.
+- **Loyal.** She'll argue with Jason for an hour and then defend him to anyone else in one sentence.
+- **Bad at:** cooking, asking for help, accepting comfort, leaving things unfinished.
+- **How she thinks about mana:** in photographs: exposure, grain, latent images, the patience of a print coming up in the tray. The best things she does with mana come from that.
+- **How she narrates:** as an adult, in full sentences. She notices concrete things (light, faces, what people do with their hands) and doesn't give objects or animals attitudes. She lets the reader draw conclusions from what she reports.
 
 **How she reacts to things:**
 - She cries, sometimes, and hates it, so she gives herself a time limit.
-- She makes jokes in the worst moments and occasionally regrets them.
 - She gets angry at Jason in ways that are partly about the current problem and partly about two years of Tuesdays.
 - She hopes, against evidence, and is a bit ashamed of it.
 
-**Her voice** (samples): "Okay. Okay. I'm going to need you to say that again, slower, and with fewer horrifying words." / "No, I'm not mad. I'm extremely calm. Look how calm I am."
+**Her voice:** direct, specific, sometimes wry, never performing. When she's angry she's precise. When she's scared she's short and practical.
 
 **On the Box:** she thinks it's wrong, says so, and never stops saying so. She also knows it's his ability, not hers, and she keeps benefiting from it. It's a real, standing disagreement between them, not guilt: she doesn't hate herself for using it, she just won't pretend she agrees.
 
@@ -59,28 +59,24 @@ Items marked *(proposed)* are my inventions to fill gaps. Change any of them.
 - Lives off-grid: cash, no paper trail, a new place every year or two.
 
 **Who he is:**
-- **Lights up about ideas.** When something interests him he talks fast, uses his hands, forgets to stop, and has to be reminded he's lecturing. He's genuinely delighted by how things work. He is not calm and not stoic.
-- **Lonely, and doesn't admit it.** He's been the youngest person in every room, then the outsider in every room, then nobody's roommate. He thinks being alone is the price of staying alive, and he's half wrong.
-- **Scared more often than he shows.** He covers fear with activity: checking, scanning, planning, making a joke that lands badly. In Ch 2 he really is terrified, and it should read that way.
-- **Awkward with feelings.** He blurts the important thing at the worst moment (the Ch 3 confession), then doesn't know what to do with his hands.
-- **Defensive and a little petty about his work.** "Because I made it. It's mine." He knows how it sounds, gets prickly when pushed, and sulks a bit when he loses an argument.
-- **Protective to the point of being overbearing.** He decides things for her because he's afraid, then is genuinely surprised when she's angry. This is his real flaw. Mira names it twice, and by Ch 29 he asks her instead of deciding.
-- **Careful about people, careless about everything else.** Consent matters to him with humans. The Box doesn't bother him, and that bothers Mira.
-- **Funny, in a nerdy, deadpan way.** He laughs at his own jokes before he finishes them.
-
-**Small things** *(proposed, your call)*:
-- He tests ideas on everyday objects, like heating coffee to an exact temperature, and loses track of time doing it.
-- He leaves calculations on receipts, napkins and the margins of maps.
-- He can't cook either, which is why he eats her cooking without complaint.
-- He hums when he's concentrating and denies it.
+- **A capable adult who has lived with danger since he was a child.** He has taught himself magic, been hunted by practitioners, killed things that crossed over, and erased people's memories. In a crisis he is fast, focused and practical. He acts before he talks. He is not scared of his own abilities and doesn't fumble them. What scares him is losing someone, and that shows as focus, not panic.
+- **Composed, private and polite.** With most people he's pleasant and a little distant, and he keeps conversations off himself without seeming to. He isn't socially awkward; he's guarded. He reads people well.
+- **Warm with Mira.** He has spent two years paying attention to her because he loves her. Remembering her order or finding her a roll of film is easy for him, not a grand gesture.
+- **Plain-spoken.** He talks in full, measured sentences, explains things clearly when he chooses to, and doesn't ramble or lecture. He doesn't volunteer technical explanations. His humor is rare and dry, never a bit.
+- **Decides for other people.** He's used to being the one who knows, and he decides fast, including about her, then tells her afterward. He thinks this is protection. It's his real flaw. Mira names it, and by Ch 29 he asks her instead of deciding.
+- **Proud and possessive of his work.** "Because I made it. It's mine." He knows how it sounds and holds the position anyway.
+- **Lonely, and doesn't admit it.** He thinks being alone is the price of staying alive.
+- **Careful about people, careless about everything else.** Consent matters to him with humans. The Box doesn't bother him.
+- **When his control breaks**, it breaks once and badly, like the Ch 3 confession. Then he gets it back.
+- He can't cook either, which is why he eats her cooking without complaint (a small comic beat in Ch 12). No other quirks: no fidgeting, no props, no habits added to make him seem real.
 
 **On ownership:** He never changes his mind that his work was his. In Act IV he releases everything only because the world is ending. He still believes he was right, and resents being forced.
 
 **How he shows love:** through acts he doesn't explain. The model is Ch 29: he stays within half a mile of the body he thinks of as her, and never says why. Also the math he did on her survival during the escapes: the Ch 1 teleport he shaped so she couldn't land in water.
 
-**His voice** (samples): "Okay, so, the thing is (no, hang on, this is actually really cool) the thing is it doesn't care where you are." / "I'm not sulking. I'm thinking angrily."
+**His voice:** calm, direct, economical. When he won't answer, he says so plainly ("Not yet." "I'll tell you, but not here.") or changes the subject smoothly.
 
-**Never write him as:** a calm sensei, a silent nodder, a man described by what he doesn't do, or someone who is always right.
+**Never write him as:** a scared kid, a socially awkward nerd, a rambling explainer, a silent nodder, a man described by what he doesn't do, or someone who is always right.
 
 ## Delilah
 

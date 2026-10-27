@@ -4,12 +4,31 @@ Every chapter is first person, past tense, from Mira's point of view. Stay in pa
 
 ## Voice
 
-- Write in Mira's voice from the good parts of Ch 1-3: warm, funny, specific, a little petty, emotional, and practical under stress only because it gives her hands something to do.
+- The reader is an adult who has read books. Write for that reader: trust them to notice things, and never explain what a scene already shows.
+- Mira's voice is warm, observant and specific, with dry humor that's occasional and mostly in what she notices. In danger or grief her humor drops away.
 - Use plain words. Prefer a concrete detail to an abstract one.
-- Vary sentence length, and keep the average moderate. Fragments are allowed, but rarely; a run of fragments is a tic.
-- Act IV must sound like the same woman as Act I. A colony of eight million can still make one joke or notice one photographer's detail.
-- Nobody is purely logical. People interrupt, change the subject, joke badly, get defensive, say the wrong thing and come back to it. Jason gets excited and talks too fast about ideas, and gets awkward about feelings. Delilah is nosy and warm. Kael is delighted by things that scare everyone else. CHARACTERS.md has the rest.
+- **Sentence length:** mostly full sentences of 12 to 25 words, mixed with some longer ones and a few short ones. Never more than two sentences in a row under six words. At most three fragments per chapter. Short, choppy sentences read like a children's book.
+- Act IV must sound like the same woman as Act I.
+- Real people aren't purely logical, and they aren't constantly witty either. They interrupt, misunderstand, repeat themselves a little, and answer the question they wish they'd been asked. Not every reply is a comeback.
+- Jason is a composed, capable adult who speaks in measured full sentences. Delilah is nosy and warm. Kael is delighted by things that scare everyone else. CHARACTERS.md has the rest.
 - People use different words for mana, the other side and each other (RULES.md). Let that show in dialogue.
+
+## Prose habits that make it read as amateur
+
+These came out of the Ch 1-3 test drafts. Each is a pattern, not just one banned sentence.
+
+- **Quips in serious scenes.** In danger, confession, grief or a revelation, no jokes, except at most one nervous one that isn't polished. Elsewhere, keep banter to what two real adults would actually say. A witty line must also mean something. ("Sawdust is the point. You look like you need it." sounds clever and means nothing.)
+- **Personifying things.** Objects, animals, plants and weather don't have attitudes. No rude trees, cheerful phones, betraying shoelaces, offended squirrels, or rot dust that wants a say.
+- **Symbolic stand-ins.** Don't use an outside event or object to mirror a feeling (a bird taking off at the confession, broken sticks standing for his mistakes), and never have the narration or a character point at the symbol.
+- **Props and repeated gestures.** No object or gesture appears more than twice in a chapter unless the outline asks for it. Don't track an object through a scene just to use it later. No habits invented to make a character seem real.
+- **Body-language clichés.** Face warming, chest fluttering, heart flipping, stomach dropping, face lighting up: at most one of these in the whole chapter. No vague microgestures ("his mouth did something complicated", "a smile came out sideways", "his face went tight and careful", "looked at the door a beat too long").
+- **Pointing at clues.** Don't have Mira note that something is suspicious or file it away ("I noticed that, and put it next to the clock"). Report it, and let the reader notice.
+- **Saying things twice.** Don't repeat information ("listened to it twice", "folded it flat, twice") or restate a feeling the dialogue already showed.
+- **Technical details that don't hold up.** Any science, mechanics or procedure must survive a skeptical reader. If you aren't sure it's right, leave it out. Characters don't give technical explanations nobody asked for.
+- **Logic of space and time.** Track where everyone is, how far things are, what time it is, and what people are holding. A walk doesn't stretch to fit a conversation.
+- **Convenient timing.** Things don't happen at the perfect dramatic second (someone arriving with nine seconds left on a timer).
+- **Supporting characters as functions.** A side character shouldn't only exist to deliver a plot point or a tease.
+- **Padding.** Word counts are approximate. A shorter chapter is better than a padded one. Never add jokes, quirks, side beats or extra exchanges to hit a word count.
 
 ## Punctuation
 
