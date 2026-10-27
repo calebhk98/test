@@ -3,8 +3,8 @@
 
 Usage: python3 prose_metrics.py chapter.md [chapter.md ...]
 
-Reads only the prose: stops at the first line that is exactly "---"
-(the drafter-notes divider) and skips markdown headings.
+Reads only the prose: skips markdown headings, treats "---" as a scene
+break, and stops at a "---" that is followed by a drafter-notes heading.
 """
 import re
 import sys
@@ -32,13 +32,19 @@ def label(pat):
 
 
 def prose(path):
+    raw = [l.rstrip("\n") for l in open(path, encoding="utf-8")]
     lines = []
-    for line in open(path, encoding="utf-8"):
+    for i, line in enumerate(raw):
         if line.strip() == "---":
-            break
+            # A "---" followed closely by a notes heading ends the prose;
+            # otherwise it is a scene break.
+            if any(re.search(r"note", l, re.I) for l in raw[i + 1:i + 4]):
+                break
+            lines.append("")
+            continue
         if line.lstrip().startswith("#"):
             continue
-        lines.append(line.rstrip("\n"))
+        lines.append(line)
     return "\n".join(lines)
 
 

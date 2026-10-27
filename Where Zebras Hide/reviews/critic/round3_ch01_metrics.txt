@@ -1,0 +1,10 @@
+== drafts/round3/ch01.md
+words: 1619   sentences: 182   mean words/sentence: 8.9
+sentences under 6 words: 72 (40%)   longest run of short sentences: 6
+narration only: mean words/sentence 11.4, under 6 words 23%
+paragraphs: 87   with dialogue: 54   one-line paragraphs under 6 words: 19
+em dashes: 0   exclamation marks: 0   'the way you/someone' similes: 0
+body-language cliches: chest fluttered x1
+stock phrases: two years x1
+repeated 4-word phrases (3+): none
+
