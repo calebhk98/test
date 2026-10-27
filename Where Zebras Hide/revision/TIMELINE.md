@@ -17,7 +17,7 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 | 3 | Fri Feb 9, dusk | Same woods | The confession. The attackers saw her and know Columbus. The options, in Jason's own words, and she interrupts. Erasure is still possible: "tonight" would leave her at home remembering coffee. A bus, paid in cash. About three hundred miles from Columbus. She asks for time. |
 | 4 | Fri Feb 9 night to Sat Feb 10 | Walk to a small town, motel | The lies to Sarah and Mom get bigger than in Ch 2. The "what dying looks like" talk. Jason says someone else should tell the witch-trial history. The jacket, once. |
 | 5 | Sat Feb 10 morning | Motel room | She decides: if they know her face, she is in this whether she learns or not, so she would rather know. He explains, onset. They can't go back to Columbus. |
-| 6 | Sat Feb 10 to Mon Feb 12 | Back roads, rest stops, Appalachian foothills | Two days on back roads, doubling back so nobody is behind them. Cash car. Her phone goes off. One stop in a town far from the cabin: she turns it on, checks voicemail, sends Marcus one word, emails her job that she's quitting for a family emergency. Headaches, sensing lesson, the zebra conversation (eight billion), his origin, the parents lie caught. They arrive at the cabin. |
+| 6 | Sat Feb 10 to Mon Feb 12 | Back roads, rest stops, Appalachian foothills | Two days on back roads, doubling back so nobody is behind them. Cash car. Her phone goes off. One stop in a town two days' drive from the cabin: she turns it on, checks voicemail, sends Marcus one word, emails her job that she's quitting for a family emergency. Headaches, sensing lesson, the zebra conversation (eight billion), his origin, the parents lie caught. They arrive at the cabin. |
 | 7 | Tue Feb 13 to Wed Feb 14 | Cabin | First cycling. A partial cycle on the second morning. Valentine's Day is small: he puts the mug down, says something plain about the date, and moves on. |
 
 ## Act II: February to late June
@@ -29,9 +29,9 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 | 10 | Late April | Cabin | The Box, with its construct. Stage 2 discovery: one mind. |
 | 11 | Late April | Cabin | Delilah arrives. She felt the Box two nights ago. Her loose remark about filling clones from her own reserve. Mira works out "creation, not copying" alone at night and tells no one. |
 | 12 | Mid-May (three months in) | Cabin | Stage 3. She shows Jason, and he's jealous of her idea. Delilah tells the witch history in full, Mira's first time hearing the why. Delilah teaches erasure. At breakfast Jason tells her people are camped a mile out. |
-| 13 | Early June: day one at breakfast, day two evening, then dawn | Cabin, then ocean twice, then Spain | The hunters, watching and waiting for a third person who they think can pin a teleport. Jason stays a day and warns Delilah. The two mid-tiers come on the second evening. The full-range escape. Jason states the cost of the Ch 1 range himself. Delilah's gossip was the leak, and she says so. |
+| 13 | Early June: breakfast on day one (the hunters camped the night before), the two mid-tiers at dusk the same day, the escape at dawn on day two | Cabin, then ocean twice, then Spain | The hunters, watching and waiting for a third person who they think can pin a teleport. Jason stays a day and warns Delilah. The two mid-tiers come at dusk, the second evening of the watch. The full-range escape. Jason states the cost of the Ch 1 range himself. Delilah's gossip was the leak; she says so in Ch 14. |
 | 14 | June, about two weeks | Room in Spain, rented off the books | The ownership debate finishes. Cash from his backpack, no account, language. |
-| 15 | Late June | Quebec field, then Vermont, a second property used as a base | The sister call: Nora graduated last week, and Mira missed it. After Spain the hunters can find them anywhere by ordinary means, and the other side is the one place no one with a body follows. The yes. One shaped jump from Spain lands them in a Quebec field. They cross the border on foot where it runs through woods, and buy a car after. The crossing on about June 28. |
+| 15 | Late June | Quebec field, then Vermont, a second property used as a base | The sister call: Nora graduated last week, and Mira missed it. After Spain the hunters can find them on Earth by ordinary means, given time, and the other side is the one place no one with a body follows. The yes. One shaped jump from Spain lands them in a Quebec field. They cross the border on foot where it runs through woods, and buy a car after. The crossing on about June 28. |
 
 ## Act III: late June to early September
 
@@ -48,7 +48,7 @@ There's no year on purpose. Days of the week are fixed where the text depends on
 
 | Ch | When | Where | What changes |
 | --- | --- | --- | --- |
-| 22 | Late September | Adirondack lake house | Three videos in a month, the latest the São Paulo bottle video. Factions. Owen in person. Anjali. Marcus texts about "that cup". |
+| 22 | Late September | Adirondack lake house | Three videos in a month, the latest the São Paulo bottle video. Factions. Owen in person. Anjali. Marcus texts about "that cup". Owen tells her the other hunters stopped looking after Spain, so she keeps her phone on at the base from here. |
 | 23 | October | Columbus, then London on the screen | Marcus's long text arrives that morning and she goes to Columbus the same day. Mira erases Marcus. Two days later the London anchor reads Lise's leak, and Hannah, Tom and Mrs. Okafor start producing. |
 | 24 | Late October | A campus in upstate New York | Sixteen erasures in eleven minutes. Priya, 72 hours in, learns sensing. |
 | 25 | Day 0 (about Nov 10) to day 1 | Vermont, through screens | The Cass stream. The internet works it out. Hospitals. Nora's call. "Teach." |

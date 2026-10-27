@@ -39,7 +39,6 @@ These are people, not functions. Each one is inconsistent the way real people ar
 
 **Her arc:**
 - Devotion pulls her in, and so does fear: the people who attacked Jason saw her face. Then she's good at something for the first time in her life, and that keeps her in too.
-- Around the Ch 21 homecoming duty starts to replace devotion, because for the first time she is the one who put someone else at risk.
 - She never stops loving Jason.
 
 **The lying:**
@@ -83,7 +82,7 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - **Who she is:**
   - She asks Mira something personal early, because she's nosy, and she follows one question with the next before the first is answered. She says what she thinks.
   - She swears mildly, mostly at Jason.
-  - She gossips about other practitioners; it's half community news, half entertainment. This is her flaw. She mentioned "Jason's girl" to someone she trusted, and it travelled to the hunters. She says so herself, and she's ashamed of it.
+  - She gossips about other practitioners; it's half community news, half entertainment. This is her flaw. She mentioned "Jason's girl", and which hills, to someone she trusted, and it travelled to the hunters. She says so herself, and she's ashamed of it.
   - She has taught several newcomers who died. She doesn't bring them up; when it comes out, it comes out sideways.
   - She has grandkids she can't tell anything to (RULES: telling family puts them at risk). That's part of why she latches onto Mira.
   - Her caution hardens into policy, and she is sometimes wrong.
@@ -111,7 +110,6 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - **On the page:**
   - Before Ch 13: one close call or a message.
   - In Ch 13: they watch Mira fight, so now they know she's a practitioner who can fight.
-  - Owen meets her in person in Act IV.
 
 ## Columbus people
 
@@ -123,11 +121,12 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - **Jess:** the roommate, mentioned in Ch 1.
 - **Mom:** texts about milk Mira promised to bring to Sunday dinner. Worries in the form of questions about promotions.
 - **Dad:** shows love by mailing grad-school applications.
-- **Nora:** Mira's sister in Chicago. Gets the Ch 15 phone call, and is the first to suspect something's wrong.
+- **Nora:** Mira's sister in Chicago. Is the first to suspect something is wrong.
 
 ## Act IV (only for Ch 22 to 30 drafters)
 
 **Mira**
+- Around the Ch 21 homecoming duty starts to replace devotion, because for the first time she is the one who put someone else at risk.
 - By Act IV duty has taken over. She does to strangers what she refused to let Jason do to her, and she knows it.
 - At the end she can't hear Jason over the scale of what she has become.
 
@@ -137,13 +136,14 @@ These are people, not functions. Each one is inconsistent the way real people ar
 - He shows love by staying within half a mile of the body he thinks of as her, and never says why.
 
 **Delilah**
-- In Act IV she joins the harsher-suppression faction and asks Mira to do the Ch 24 erasures. She and Mira have a real fight about it.
+- In Act IV she joins the harsher-suppression faction and asks Mira to do the Ch 24 erasures. The two of them are stiff with each other and half make up on the phone.
 - Ch 29: she argues Mira into resting and organizes relief. Mira makes the final call.
 
 **Kael**
 - In Ch 28 he asks whether Mira's clones are people.
 
 **Owen**
+- He meets Mira in person.
 - He is in the go-public faction.
 - He sends Jason a message: "Took you long enough, asshole."
 

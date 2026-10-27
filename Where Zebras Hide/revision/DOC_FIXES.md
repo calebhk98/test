@@ -51,11 +51,11 @@ Don't change these, even where a reviewer suggests it:
 - **Mira's reason to start (P1 4.1).** The attackers saw her with him and know Columbus. In Ch 3 Jason says so. Option 1 becomes leaving her home and hoping they lose interest, which he doesn't believe will work. In Ch 5 her argument becomes: if they know my face, I'm in this whether I learn or not, so I'd rather know. The romance stays the unspoken second reason.
 - **Time zone (P1 4.4).** In Ch 2 she works it out within the scene: 4:52 is Central time, and that is her first hard proof of how far they went. They leave the coffee shop at 5:40, the attack is about 5:50, and her phone reads 4:52 when she checks. Cut the Ch 14 payoff and the TIMELINE line.
 - **Carried items (P1 5.1).** Mira has a crossbody bag (wallet, keys) and her phone in her coat. Jason has a backpack he never goes without, with his laptop, cash and a few things he always keeps. Both come through the teleport. This also explains the cash in Ch 6 and Spain. Add the Ch 1 line, and have Ch 2 and Ch 3 keep the items.
-- **The phone (P1 4.3).** From Ch 6 her phone stays off. She turns it on only in town, far from the cabin, and checks voicemail there. The Ch 7 voicemail beat moves to a stop in town in Ch 6, or becomes a memory.
+- **The phone (P1 4.3).** From Ch 6 her phone stays off. She turns it on only in the supply-run town, thirty minutes from the cabin, on the ten-day supply run, and checks voicemail and messages there. Ch 6's stop is in a town two days' drive from the cabin. The Ch 7 voicemail beat moves to a stop in town in Ch 6, or becomes a memory. From the Ch 22 meeting on she keeps it on at the base, because Owen told her the other hunters stopped looking after Spain.
 - **The truck (Ch 7).** Cut it.
 - **How the hunters find the cabin (P1 4.3).** Delilah mentioned "Jason's girl" to someone she trusted, and it travelled. This is Delilah's flaw, her gossip, and she says so in Ch 13 or 14.
 - **Hunters' plan (P1 4.2).** They're watching and waiting for a third person they believe can pin a teleport at its start. They're wrong, and Jason knows it. He stays a day because moving now would lead them toward Delilah, forty miles away, and he warns her first. The creatures come on the second evening, drawn by months of a loud cabin, not by the same evening's timing.
-- **Ch 15's yes (P1 4.6).** After Spain, the hunters can find them anywhere on Earth by ordinary means. The other side is the one place no one with a body follows. Jason says so, and says it's a bad option. Mira's yes comes from weighing two bad places, and "tired of being protected" is her second reason, said once.
+- **Ch 15's yes (P1 4.6).** After Spain, the hunters can find them on Earth by ordinary means, given time. The other side is the one place no one with a body follows. Jason says so, and says it's a bad option. Mira's yes comes from weighing two bad places, and "tired of being protected" is her second reason, said once.
 - **Ch 15 travel.** One shaped jump from Spain toward eastern Canada lands them in a Quebec field. They cross the border on foot where it runs through woods, and buy a car after. Cut Wales and Chile.
 - **Spain (P1 4.11).** Cash from his backpack, and a room rented off the books. No account.
 - **Jason at the cabin (P1 5.6).** Remote freelance work through a prepaid hotspot, a few clients, cash. A supply run every ten days to a town thirty minutes away. Keep the brambles by the creek: he chose the place because its natural mana hides a little leakage.
@@ -77,7 +77,7 @@ Don't change these, even where a reviewer suggests it:
 - **Ch 30 (P2 4.5 to 4.11, 5.2).**
   - The first 200 bodies are bait.
   - She knows the colony is the biggest meal on Earth, so she has to finish fast.
-  - Theo's group is at a church camp six miles down the road, inside the lockdown's sweep.
+  - Theo's group is at a church camp six miles down the road. Jason stretches his lockdown from five miles to eight to cover it, at a cost he will feel for days.
   - Jason stays at the lockdown and calls her name. He reaches her at the end, shouting, and she can't hear him.
   - She half-hears that he is building a place to put her if it comes to that. The Box closes at the end.
   - Write the creature's dialogue lines.

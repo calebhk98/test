@@ -50,7 +50,7 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - The boy Delilah mentioned.
 - Pine and cold, held onto before the crossing. Pays off in Ch 16.
 - Her crying behind the house, ending when she's done. Pays off in Ch 25 (Nora's call).
-- Hunters can find them anywhere on Earth by ordinary means. Pays off in the Act IV hunters and Owen.
+- Hunters can find them on Earth by ordinary means, given time. Pays off in the Act IV hunters and Owen.
 
 ## Ch 16
 - Two bodies place a sound the way two ears do. Pays off in her later fights.

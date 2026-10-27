@@ -5,10 +5,10 @@ Each chapter is drafted by one Haiku agent that sees only what's listed here, no
 ## What each drafter gets
 
 1. `outline/chNN.md`: its own chapter. Every chapter file is self-contained. It opens with "Where things stand", which says what has happened and what Mira knows at the start.
-2. `outline/BOOK_MAP.md`: the acts up to and including the drafter's own, plus the "What follows" line of its own act. Strip every later act. For a Ch 28 to 30 drafter, keep the full Ch 30 line; for everyone else, strip it.
+2. `outline/BOOK_MAP.md`: the acts up to and including the drafter's own, plus the "What follows" line of its own act. Strip every later act. For a Ch 28 to 30 drafter, keep the full Ch 30 line; for everyone else, strip it. The one-paragraph summary is given to every drafter, so it must not say anything past Act I.
 3. `RULES.md`, `CHARACTERS.md`, `CREATURES.md`, `STYLE.md`. In RULES, CHARACTERS and CREATURES, strip the section headed "Act IV (only for Ch 22 to 30 drafters)" for any chapter before Ch 22.
 4. The packet from earlier chapters: the full text of the previous drafted chapter (two chapters if they're short), plus the critic's fact log from the previous chapter, when there is one. The fact log covers clothes, objects, times, plans and what was said, so the join lines up.
-5. For Chapters 1, 2, 3, 6 and 30: the old draft of that chapter, as raw material.
+5. For Chapters 1, 2, 3, 6 and 30: the old draft of that chapter, as raw material. The Ch 30 outline's fix list is the only place in the outlines allowed to quote the old draft, because the Ch 30 drafter is given it. Apply each fix to anything you keep; do not copy any quoted phrase.
 
 Drafters never get `PLANTS.md` or `TIMELINE.md`. They are planning files.
 

@@ -4,7 +4,7 @@ Every drafter gets the acts up to and including their own, plus the "What follow
 
 ## The book in one paragraph
 
-Mira, a 26-year-old office analyst in Columbus, has been in love with her friend Jason for two years of Tuesday coffees. Then people attack him on the street, and he teleports them both to Tennessee. Jason can do things that shouldn't be possible, and the ability spreads through understanding: once your brain truly understands how mana works, your body starts producing it. Producing it makes you food for creatures on the other side, an overlapping dimension with no light, where everything runs on mana. Most people who start die within months. Mira chooses to learn anyway. She trains, fights, crosses to the other side, and becomes extraordinary at one thing: making clones of herself that are all her. Then the secret breaks, and Mira is pulled into something far bigger than the two of them.
+Mira, a 26-year-old office analyst in Columbus, has been in love with her friend Jason for two years of Tuesday coffees. Then people attack him on the street, and he teleports them both to Tennessee. Jason can do things that shouldn't be possible, and the ability spreads through understanding: once your brain truly understands how mana works, your body starts producing it. Producing it makes you food for creatures on the other side, an overlapping dimension with no light, where everything runs on mana. Most people who start die within months. Mira chooses to learn anyway.
 
 Point of view: first person, past tense, Mira, throughout.
 
@@ -53,7 +53,7 @@ Point of view: first person, past tense, Mira, throughout.
 26. **Cascade.** Jason gives away everything, still believing it was his. Mira's clones start teaching the world.
 27. **Incursion.** Something the size of a hill walks out of the other side in Rajasthan.
 28. **Mobilization.** The world fights back badly. Mira is about a hundred and ten people at once.
-29. **The Hundred.** Nine days without real rest. Theo. Delilah. The ten hours, and what they cost.
+29. **The Hundred.** Eight days without real rest. Theo. Delilah. The ten hours, and what they cost.
 30. **Threshold.** The scout's master comes looking for its scout. Two hundred bait bodies, then the chains run. Mira ends as a colony of about eight million, saving what she can and unable to hear the man shouting her name. (For Ch 28 to 30 drafters only.)
 
 **What follows:** this is the end of the book.

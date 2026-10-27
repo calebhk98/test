@@ -26,7 +26,7 @@ There is no official vocabulary, because there is no official anything. Each pra
 ## The phone
 
 - From Ch 6 on, Mira's phone stays off.
-- She turns it on only in a town far from the cabin, checks her voicemail there, and turns it off again.
+- She turns it on only in the supply-run town, thirty minutes from the cabin, on the ten-day supply run, checks her voicemail and messages and turns it off again. Ch 6's stop is in a town two days' drive from the cabin.
 
 ## How a person starts producing mana
 
@@ -113,16 +113,16 @@ Crossing costs everyone, and everyone can afford it. The cost works like a progr
 - Kael's "top 100" for Mira comes after a great deal of training. It's his guess from what he senses, and other strong practitioners would guess about the same.
 - The more powerful have more say, but nobody can give orders.
 - When someone new starts producing nearby, a local practitioner who notices usually comes to check on them and teach the basics. Help often arrives too late or never, which is why most still die.
-- **Mana message:** a technique for sending a short message to someone you know without knowing where they are. Most practitioners can learn it. Jason rarely uses it.
+- **Mana message:** a technique for sending a message to someone you know without knowing where they are. A mana message has no range limit except inside a lockdown. It carries a sentence or two. Most practitioners can learn it. Jason rarely uses it.
 
 ## The hunters, and how they found the cabin
 
 - Three practitioners (Owen is one) asked Jason politely for years for his techniques, then pressured him, then attacked him in Columbus. They saw Mira with him there, so they know her face and know Columbus.
-- They find the cabin because Delilah mentioned "Jason's girl" to someone she trusted, and it travelled. This is Delilah's flaw, her gossip, and she says so herself.
+- They find the cabin because Delilah mentioned "Jason's girl", and which hills, to someone she trusted, and it travelled. This is Delilah's flaw, her gossip, and she says so herself.
 - At the cabin they are watching and waiting for a third person they believe can pin a teleport at its start. They are wrong, and Jason knows it. They do not know yet that a random teleport can't be blocked or tracked.
 - Jason stays a day anyway, because moving at once would lead them toward Delilah, forty miles away, and he warns her first.
 - The creatures arrive on the second evening. They are drawn by months of a loud cabin, not by the timing of the hunters.
-- After Spain, the hunters can find Jason and Mira anywhere on Earth by ordinary means. The other side is the one place no one with a body follows. Jason says this, and says it is a bad option.
+- After Spain, the hunters can find Jason and Mira on Earth by ordinary means, given time. The Vermont house is held under a name nobody has, which buys months and not years. The other side is the one place no one with a body follows. Jason says this, and says it is a bad option.
 
 ## Techniques
 
@@ -213,6 +213,8 @@ See CREATURES.md for what things look like.
 
 ## Act IV (only for Ch 22 to 30 drafters)
 
+**The phone.** From the Ch 22 meeting on, Mira keeps her phone on at the base, because Owen told her the other hunters stopped looking after Spain.
+
 **The scout's master.** The scout never returning is why one of its masters eventually crosses to look (Ch 30). The engine for the rest of Act IV is human: leaks, then evidence, then more producers.
 
 **The size of the meal.** The barrier never weakens. What changes in Act IV is the size of the meal.
@@ -252,7 +254,7 @@ See CREATURES.md for what things look like.
 
 **Ch 30 facts.**
 - She knows the colony is the biggest meal on Earth, so she has to finish fast.
-- Theo's group is at a church camp six miles down the road, inside the lockdown's sweep.
+- Theo's group is at a church camp six miles down the road. Jason stretches his lockdown from five miles to eight to cover it, at a cost he will feel for days.
 - Jason stays at the lockdown and calls her name. He reaches her at the end, shouting, and she can't hear him.
 - She half-hears that he is building a place to put her if it comes to that. The Box closes at the end.
 - The dead bodies are her. One sentence says so.
