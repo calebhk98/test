@@ -58,6 +58,8 @@ Count the jokes in each serious scene.
 - events landing at the perfect dramatic second
 - technical or physical claims that don't hold up
 - dialogue that doesn't answer what was said ("Jason?" / "Mostly. You?")
+- lines a reader can't work out the meaning of, or that refer to something never set up
+- a character knowing or citing something they have no way to know (Jason quoting Mira's friend's opinion)
 
 **8. Side characters as functions, and padding.** A side character who exists only to deliver a tease or a theme. Beats, jokes or quirks that are there only to fill length.
 
