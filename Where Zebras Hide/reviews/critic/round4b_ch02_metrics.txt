@@ -1,0 +1,10 @@
+== drafts/round4b/ch02.md
+words: 2027   sentences: 184   mean words/sentence: 11.0
+sentences under 6 words: 46 (25%)   longest run of short sentences: 3
+narration only: mean words/sentence 12.7, under 6 words 14%
+paragraphs: 64   with dialogue: 29   one-line paragraphs under 6 words: 9
+em dashes: 0   exclamation marks: 0   'the way you/someone' similes: 1
+body-language cliches: "stomach turned" x1
+stock phrases: none
+repeated 4-word phrases (3+): none
+
