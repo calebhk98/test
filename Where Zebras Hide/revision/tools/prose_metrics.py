@@ -12,7 +12,7 @@ from collections import Counter
 
 BODY_CLICHES = [
     r"face (went|got|grew) (warm|hot|red)", r"cheeks? (burned|flushed|went warm)",
-    r"chest (fluttered|flutter|did|tightened|went tight|turn)", r"heart (flipped|did a|skipped|leapt|lurched|went up)",
+    r"chest (fluttered|flutter|did a|tightened|went tight|turned over|did a turn)", r"heart (flipped|did a|skipped|leapt|lurched|went up)",
     r"stomach (dropped|lurched|rolled|turned|flipped|knotted)", r"face lit up", r"lit up before",
     r"breath caught", r"swallowed hard", r"something (shifted|flickered) in his",
     r"mouth did something", r"smile came out", r"face went (tight|careful|still)",
@@ -89,9 +89,8 @@ def report(path):
           f"{sum(1 for p in paras if len(words(p)) < 6)}")
     print(f"em dashes: {text.count(chr(8212))}   exclamation marks: {text.count('!')}   "
           f"'the way you/someone' similes: {len(re.findall(SIMILE, lower))}")
-    hits = [(pat, len(re.findall(pat, lower))) for pat in BODY_CLICHES]
-    hits = [h for h in hits if h[1]]
-    print("body-language cliches: " + (", ".join(f"{label(p)} x{c}" for p, c in hits) or "none"))
+    found = Counter(m.group(0) for pat in BODY_CLICHES for m in re.finditer(pat, lower))
+    print("body-language cliches: " + (", ".join(f'"{k}" x{v}' for k, v in found.items()) or "none"))
     stock = [(pat, len(re.findall(pat, lower))) for pat in STOCK_PHRASES]
     stock = [h for h in stock if h[1]]
     print("stock phrases: " + (", ".join(f"{label(p)} x{c}" for p, c in stock) or "none"))
