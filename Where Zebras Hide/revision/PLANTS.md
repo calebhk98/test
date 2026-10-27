@@ -51,3 +51,47 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - Pine and cold, held onto before the crossing. Pays off in Ch 16.
 - Her crying behind the house, ending when she's done. Pays off in Ch 25 (Nora's call).
 - Hunters can find them anywhere on Earth by ordinary means. Pays off in the Act IV hunters and Owen.
+
+## Ch 16
+- Two bodies place a sound the way two ears do. Pays off in her later fights.
+- Jason's unease on the other side: he has been afraid there for years. Pays off in Ch 17 and Ch 18.
+
+## Ch 17
+- The battery compromise: fewer trips, and he tells her each time. Pays off in Ch 18.
+- Kael's invitation, and Kael having followed them for two crossings. Pays off in Ch 19.
+- Jason's repeated crossings are drawing something's attention. Pays off in Ch 18 (the scout).
+
+## Ch 18
+- The scout says they will want to know where it went. Sets up the masters and the Ch 30 creature.
+- Mira decides three or four of her is not enough, because she never wants to be alone with his body in the dark again. Pays off in Ch 19 and Ch 20.
+- Her failed mana message to Delilah.
+- Waking Jason first is why the scout never got inside the house.
+
+## Ch 19
+- The Manchester woman. Pays off in Ch 22 and Ch 23.
+- Kael's walls warning, and Jason's agreement with no plan. Pays off in Ch 22 and Ch 23.
+- Kael's belief that the deep can be lived with.
+- Jason's "take down the internet" answer.
+- She wakes in a body that has been at the kitchen counter for an hour: the no-main-body idea.
+
+## Ch 20
+- The burst of about a thousand, in mid-August. Ch 30 remembers it.
+- Reabsorbing at scale nearly kills her.
+- Neither of them decides about the other alone.
+- Jason's confession: he didn't erase her in February because he couldn't stand her forgetting him. Pays off in Ch 23 (the Marcus erasure).
+
+## Ch 21
+- Marcus saw the cup. Needed for Ch 22 (his text) and Ch 23.
+- Jason leaves the erasure as her call. Pays off in Ch 23.
+- The darkroom frame of Jason.
+- Nora's suspicion.
+- Mom's milk joke.
+- Her reason shifts from Jason to her family, caused by putting Marcus at risk.
+
+## Ch 22
+- Marcus's text about the cup. Pays off in Ch 23.
+- The three factions. Pays off in Ch 23 to Ch 25.
+- Owen's student.
+- Owen's warning that Jason will not ask first. Pays off in Ch 30, when Jason closes a Box around her without asking.
+- Delilah and Mira on opposite sides.
+- Anjali, who survives and returns by message in Ch 27 and Ch 28.
