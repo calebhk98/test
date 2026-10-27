@@ -95,3 +95,94 @@ In the chapter outlines, every plant is written as an ordinary present fact insi
 - Owen's warning that Jason will not ask first. Pays off in Ch 30, when Jason closes a Box around her without asking.
 - Delilah and Mira on opposite sides.
 - Anjali, who survives and returns by message in Ch 27 and Ch 28.
+
+## Ch 23
+- Hannah, Tom and Mrs. Okafor (Hannah's hospital interview is used by Cass in Ch 25).
+- Lise, who leaked the post, in Owen's group.
+- The anchor.
+- Jason's line that things will start coming through that have never come through before (pays off in Ch 27).
+- Marcus erased: his forum posts stay up.
+
+## Ch 24
+- Priya and her notebook. She returns in Act IV (Albany group, Ch 26 and Ch 28).
+- Mira telling Priya she took care of it.
+- Mira teaching freely, unasked, with the contact given first.
+
+## Ch 25
+- Cass.
+- Nora's agreement not to read the explanations (Ch 27 call).
+- Mira's first teaching clones, the first dozen.
+
+## Ch 26
+- Priya's curriculum.
+- Owen helping.
+- Her clone at her parents' house.
+- 'The real one'.
+- Anjali in her sister's town in eastern Rajasthan (Ch 27 crossing).
+- The 3,000 burst in the Hartford gym (ladder: Ch 20 about 1,000, Ch 26 about 3,000, Ch 28 about 20,000, Ch 30 chains).
+
+## Ch 27
+- The evacuation rule.
+- Anjali alive, her neighbors.
+- Jason's 'that one came for a meal' answer.
+
+## Ch 28
+- 'They're me.' Kael's doubt.
+- Delilah driving up.
+- The 20,000 night, pulled back slowly over a day.
+- Mira's single thought of the scout in the Box (payoff in Ch 30's scout's master).
+
+## Ch 29
+- Theo, whose group is at the church camp six miles from the base in Ch 30.
+- The reabsorption pain at about ninety.
+- Her limits, and how fast she can pull back.
+
+## Ch 30
+- Owen's Ch 22 warning (he'll protect her and not tell her what it costs) pays off when Jason closes the Box around her without asking.
+- Sequel door: the master is dead but will not stay dead.
+
+## Ch 01
+- The lie about his parents (he says they didn't get along). Pays off in Ch 6, when he tells her the truth.
+- The undeveloped roll in her Pentax at home.
+- The gift roll in her coat pocket. Used in Ch 3 once, and shot in Spain.
+- The blue light and the invisible attacker.
+- Jason shapes the teleport range so water is very unlikely.
+
+## Ch 02
+- The clock: 4:52 Central. Her first hard proof of how far they went.
+- Jason's need to know whether anyone followed them.
+- How easily she lies to Sarah, Jess and Mom.
+
+## Ch 03
+- "She hasn't started": the only reason erasure still works.
+- He has erased people before, when he had to.
+- The attackers want what he knows.
+- Most people who start figure it out alone.
+- The attackers saw her, which is the first reason he can't leave her alone.
+
+## Ch 04
+- Other people have other words for mana.
+- The history is short here. Delilah tells it in full in Ch 12, as Mira's first time hearing the why.
+- "Somewhere else" is the other side, for Ch 6.
+
+## Ch 05
+- Her condition that he tell her when he is deciding something about her. He breaks it in Ch 9.
+- The notepad list of what she left.
+
+## Ch 06
+- His parents and the untraceable calls.
+- The cabin scouted a year ago, in case he had to leave Columbus fast.
+- The land's own mana hides some of her leakage.
+- "Weeks, months": the clock on when something notices her.
+- Her phone goes off; it comes on only in town.
+
+## Ch 07
+- Cut: the truck on the road, and the voicemail beat (moved to Ch 6).
+- "You're not a liability, you're a student."
+- The darkroom image as her way in. It returns with the clones in Ch 11.
+
+## Ch 08
+- The clone refinement, as a quirk only. It matters for the mature clones.
+- The two-thirds count toward May 10.
+- His parents: he calls them.
+- He can't cook either. She finds out later.

@@ -156,7 +156,7 @@ Jason's own techniques:
   - Building a new Box takes a long time and a lot of power. In an emergency he can close an existing Box's walls around a new place in minutes, at great cost.
   - Mira can send her clones into his Box but can never build one.
 - **Crossing.** He lowers his effective mana by shifting load into the Box, which cuts his toll. Carrying Mira back and forth adds up and wears him down. Delilah assumed nobody that strong could afford to cross often.
-- **Lockdown.** Around himself he can block teleporting, crossing and messages, out to about five miles. It's draining and slow to set up.
+- **Lockdown.** Around himself he can block teleporting, crossing and messages, out to about five miles. He can stretch it further, to about eight, at a cost he feels for days. It's draining and slow to set up.
 
 ## Where they live, and how
 
