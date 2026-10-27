@@ -24,7 +24,7 @@ Outlines are written by the planner, not the drafter. Each one has these, beside
 ## What each drafter must do
 
 - Write only its own chapter, in Mira's first person, past tense.
-- Length: hit the beats. A chapter more than 15% under its length has probably skipped texture the scenes need. Add observation, not jokes or side beats. If you're 20% over, cut.
+- Length: hit the beats. A chapter more than 15% under its length has probably skipped texture the scenes need. Add observation, not jokes or side beats. Never pad. If the beats are all written and it's still short, stop. If you're 20% over, cut.
 - Follow the chapter's "Limits for this chapter". These are counts, not suggestions.
 - Copy only the lines marked **verbatim**. Everything else in the outline describes intentions, not sentences.
 - If a beat seems to break RULES.md, follow the rules and add a note at the end of the draft.
