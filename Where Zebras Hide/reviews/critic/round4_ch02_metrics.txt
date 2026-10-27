@@ -1,0 +1,10 @@
+== drafts/round4/ch02.md
+words: 1768   sentences: 155   mean words/sentence: 11.4
+sentences under 6 words: 41 (26%)   longest run of short sentences: 5
+narration only: mean words/sentence 13.3, under 6 words 16%
+paragraphs: 62   with dialogue: 32   one-line paragraphs under 6 words: 6
+em dashes: 0   exclamation marks: 1   'the way you/someone' similes: 0
+body-language cliches: none
+stock phrases: i know." x2, two years x1
+repeated 4-word phrases (3+): none
+
