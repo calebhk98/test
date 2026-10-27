@@ -1,0 +1,30 @@
+== drafts/round1/ch01.md
+words: 2864   sentences: 343   mean words/sentence: 8.3
+sentences under 6 words: 147 (43%)   longest run of short sentences: 13
+narration only: mean words/sentence 11.1, under 6 words 28%
+paragraphs: 143   with dialogue: 100   one-line paragraphs under 6 words: 37
+em dashes: 0   exclamation marks: 0   'the way you/someone' similes: 1
+body-language cliches: face went warm x1, chest fluttered x1, heart flipped x1, face lit up x2, lit up before x1, mouth did something x1, face went tight x1, a beat too long x1
+stock phrases: two years x2
+repeated 4-word phrases (3+): "for the rest of" x3
+
+== drafts/round1/ch02.md
+words: 2634   sentences: 281   mean words/sentence: 9.4
+sentences under 6 words: 112 (40%)   longest run of short sentences: 8
+narration only: mean words/sentence 10.8, under 6 words 30%
+paragraphs: 99   with dialogue: 37   one-line paragraphs under 6 words: 20
+em dashes: 0   exclamation marks: 0   'the way you/someone' similes: 1
+body-language cliches: stomach dropped x1, swallowed hard x1
+stock phrases: two years x1
+repeated 4-word phrases (3+): "in a way that" x3
+
+== drafts/round1/ch03.md
+words: 3266   sentences: 415   mean words/sentence: 7.9
+sentences under 6 words: 196 (47%)   longest run of short sentences: 10
+narration only: mean words/sentence 11.5, under 6 words 33%
+paragraphs: 163   with dialogue: 137   one-line paragraphs under 6 words: 40
+em dashes: 0   exclamation marks: 3   'the way you/someone' similes: 1
+body-language cliches: heart flipped x1
+stock phrases: which was the worst part x1, two years x2
+repeated 4-word phrases (3+): "he looked at the" x3, "looked at the trees" x3
+

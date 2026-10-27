@@ -15,6 +15,8 @@ Every chapter is first person, past tense, from Mira's point of view. Stay in pa
 
 ## Prose habits that make it read as amateur
 
+**The principle behind all of these:** write what happens to real people, not a text assembled to hit targets. Every action, line and detail needs a reason that comes from the character's own situation, not only a reason the plot or the outline needs it. If something is in the scene only to foreshadow, to seem quirky, to fill length or to make the reader feel a certain way, cut it.
+
 These came out of the Ch 1-3 test drafts. Each is a pattern, not just one banned sentence.
 
 - **Quips in serious scenes.** In danger, confession, grief or a revelation, no jokes, except at most one nervous one that isn't polished. Elsewhere, keep banter to what two real adults would actually say. A witty line must also mean something. ("Sawdust is the point. You look like you need it." sounds clever and means nothing.)
