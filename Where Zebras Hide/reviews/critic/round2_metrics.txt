@@ -1,0 +1,30 @@
+== drafts/round2/ch01.md
+words: 1597   sentences: 221   mean words/sentence: 7.2
+sentences under 6 words: 110 (50%)   longest run of short sentences: 7
+narration only: mean words/sentence 9.7, under 6 words 32%
+paragraphs: 100   with dialogue: 71   one-line paragraphs under 6 words: 27
+em dashes: 0   exclamation marks: 2   'the way you/someone' similes: 0
+body-language cliches: none
+stock phrases: two years x1
+repeated 4-word phrases (3+): none
+
+== drafts/round2/ch02.md
+words: 2270   sentences: 166   mean words/sentence: 13.7
+sentences under 6 words: 35 (21%)   longest run of short sentences: 3
+narration only: mean words/sentence 15.5, under 6 words 12%
+paragraphs: 56   with dialogue: 27   one-line paragraphs under 6 words: 8
+em dashes: 0   exclamation marks: 0   'the way you/someone' similes: 1
+body-language cliches: swallowed hard x1
+stock phrases: two years x1
+repeated 4-word phrases (3+): none
+
+== drafts/round2/ch03.md
+words: 1916   sentences: 193   mean words/sentence: 9.9
+sentences under 6 words: 46 (24%)   longest run of short sentences: 2
+narration only: mean words/sentence 14.3, under 6 words 15%
+paragraphs: 109   with dialogue: 88   one-line paragraphs under 6 words: 13
+em dashes: 0   exclamation marks: 2   'the way you/someone' similes: 1
+body-language cliches: stomach dropped x1
+stock phrases: i know." x1, two years x3
+repeated 4-word phrases (3+): none
+
