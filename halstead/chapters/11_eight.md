@@ -28,11 +28,11 @@ Her father puts it off until they're away from the barbecue, so they do it in th
 
 Downstairs that night, after she has gone up, her father folds the paper and leaves it folded.
 
-"She had me on the hot dog thing in four minutes, and the cut is the only argument I hadn't already heard from her. I went out to the garage after and stood there working out what I should have said. I still don't have it."
+"She had me on the hot dog thing in four minutes, and the cut is the only argument I hadn't already heard from her."
 
 "You let her have it, like you let her have everything once she gets that look on her face. You have never held a line with her in your life."
 
-Her father is smiling about it. "I've been arguing that one since college, but she got me standing at a grill. Nobody's ever put the hinge to me, not in twenty years of having that argument."
+Her father is smiling about it. "I've been losing that one since college. She just did it faster."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
@@ -66,7 +66,7 @@ In week three she arrives well past curfew, to find her mother standing in the f
 
 "Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her. You are not the only kid at that school and you are not getting a different rule just because you asked first."
 
-"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's an whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in December, just to see if it was actually true, and it was."
+"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in May, just to see if it was actually true, and it was."
 
 Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you?"
 
@@ -144,7 +144,7 @@ Somebody down the line says that's impossible.
 
 Bell holds a dart up and turns it so the whole line can see it. "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is. Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it. You can watch the entire flight end to end. That makes it the easiest thing in this building to hit. You'll all be bad at it until Thursday."
 
-By the end of the first month everybody in the year can do it at will, the year split either side of the net, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
+By the end of the first month everybody in the year can do it at will, the year split either side of the net, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the soft knock two darts make when they meet in the air and both drop.
 
 The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all of them and everybody doing all of them.
 
@@ -178,7 +178,7 @@ Chloe takes hold of the edge of the desk and stays standing. "Then can I move te
 
 "The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it. But they don't pass. I've kept count."
 
-"Teams are for the year, and you're the third in here about a team this week. The others wanted off the team you're on. You can all do Wednesdays together until June." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the columns running across all of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
+"Teams are for the year, and you're the third in here about a team this week. The other two are in your year, and they wanted different teams as well. Nobody switches. You can all do Wednesdays where you are until June." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the columns running across all of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
 ________________
 
