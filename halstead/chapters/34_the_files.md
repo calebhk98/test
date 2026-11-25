@@ -26,7 +26,7 @@ The one number in the report that matches exactly what Ruth already had was the 
 
 All of them come back with a blank on what the students looked like.
 
-Chloe reads that line as a translation problem, working out whether *blank* means they genuinely can't picture the faces or only that none of the faces matched anything they'd expected a face like that to look like. The file leaves that open and moves straight to the next part, the level pace it has kept from the first page, as though the distinction were beneath a separate sentence.
+Chloe reads that line as a translation problem, working out whether *blank* means they really can't picture the faces or only that none of the faces matched anything they'd expected a face like that to look like. The file leaves that open and moves straight to the next part, the level pace it has kept from the first page, as though the distinction were beneath a separate sentence.
 
 Then the last paragraph. Footage was sought from the Waffle House, the units either side, a traffic camera, and a municipal camera up the road. All of it is unrecoverable wherever the students appear, but intact everywhere else. No known method.
 

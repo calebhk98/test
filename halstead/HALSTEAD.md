@@ -2413,11 +2413,11 @@ Her father puts it off until they're away from the barbecue, so they do it in th
 
 Downstairs that night, after she has gone up, her father folds the paper and leaves it folded.
 
-"She had me on the hot dog thing in four minutes, and the cut is the only argument I hadn't already heard from her. I went out to the garage after and stood there working out what I should have said."
+"She had me on the hot dog thing in four minutes, but she'd have kept going until Labor Day, and I wanted my breakfast back."
 
 "You let her have it, like you let her have everything once she gets that look on her face. You have never held a line with her in your life."
 
-Her father is smiling about it. "I've been losing that one since college, every time somebody brings up the hinge. She just got there faster than most of them did."
+Her father is smiling about it. "I've lost that one plenty of times since college. That's the first time I've had fun losing it."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
@@ -2469,7 +2469,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me over a rule, not once, not about a single one in her whole life. The screaming before she left was about Halstead, and that's a different thing. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
@@ -2616,11 +2616,11 @@ The woman goes back to the form in front of her. "Nine-year-olds get eight, that
 
 Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he lays his objections out with his own sheet spread out on the table beside the tray.
 
-"The first is that the form accomplishes nothing. It asks you for three, but it gave me zero of them."
+"The first is that the form accomplishes nothing. It asks you for three, and it gave me none of them."
 
-"They read it. They counted how many people wanted each thing, and then they did what they were going to do anyway," Ruth says.
+"They read it. They looked at what you asked for, moved an hour here and there to fit it, and then gave you what they were going to give you anyway," Ruth says.
 
-Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in. I went back the next day with a letter from the head asking them to look again; they looked again, and the answer came back no different than the first time."
+Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming starts at ten and astronomy at eleven, so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in. I went back the next day with a letter from the head asking them to look again; they looked again, and the answer came back no different than the first time."
 
 Sam has stopped with the spoon halfway up. "Is there a third?"
 
@@ -2885,11 +2885,11 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What? What are you talking about?" Ruth says.
 
-Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count learning that, and I stopped keeping score because it stopped being useful information."
+Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count and never knew why, and I stopped keeping score because it stopped being useful information."
 
 "That's not it. None of this was in the briefing," Ruth says.
 
-"She told us none of this, we worked it out ourselves, just now, standing here."
+"He told us none of this, we worked it out ourselves, just now, standing here."
 
 They come out of it still talking, Chloe going back through the barrel and the feet with her hand up in front of her face, and nearly walk into Bex at the turn of the corridor. Chloe says sorry and goes round her, still talking. Bex says it's fine.
 
@@ -2950,7 +2950,7 @@ After dinner, when the corridor is empty, she goes back and reads it again, then
 
 "Six is all of us, Chloe."
 
-"I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice. Nobody handed me a stopwatch and told me to time it."
+"I was standing in it. They asked Wes the number right in front of me, and it took him answering it for me to even notice. Nobody handed me a stopwatch and told me to time it."
 
 Ruth is looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 
@@ -3025,13 +3025,13 @@ In April Sam asks her at dinner whether Hearn has got easier, and she says no, t
 
 ## Chapter Fourteen: Sixty Degrees
 
-*September 2016 – April 2017*
+*September 2016 – June 2017*
 
 The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground all the way. The building at that end is flat-roofed, pale, and newer than the rest; on the field side the grass comes up to the brick with no path worn into it.
 
 Archery is ordinary at first, because the start of it is butts at twenty meters, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
-Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimeters of this, coming off the string faster than anything you've had at you, and end-on at seventy meters, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field. I have watched every one of you try it anyway; I have watched every one of you miss, and the day somebody actually hits one I will buy the whole line breakfast."
+Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimeters of this, coming off the string faster than anything you've had at you, and end-on at seventy meters, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field. I have watched people try it anyway for years; I have watched every one of them miss, and the day somebody actually hits one I will buy the whole line breakfast."
 
 Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots. The whole tell is in the shoulder, not the barrel, and it happens before the trigger does. You can train yourself to stop flinching at the sound, but you can't train the shoulder out of somebody, because it moves before they know they're going to shoot."
 
@@ -3079,7 +3079,7 @@ On the first morning of the year Ruth wants to know what everybody has got; Chlo
 
 "Latin's cheating, and you know exactly why."
 
-"How is doing an whole extra language cheating?"
+"How is doing a whole extra language cheating?"
 
 Ruth stops with her tray up on an arm. "Because it's already in everything. It's in half of Spanish and most of French, both of which you've done, so you'll sit down in September already knowing a third of it. That's collecting on a language you did years ago rather than learning one."
 
@@ -3089,11 +3089,11 @@ Ruth stops with her tray up on an arm. "Because it's already in everything. It's
 
 Chloe holds her tray like somebody who intends to keep it. "It's the opposite of cheating, it's the year paying for itself twice. I've got German coming, Italian's on the list, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
 
-"German is an assumption, since that timetable hasn't come out yet."
+"German is an assumption, since that schedule hasn't come out yet."
 
 "It hasn't come out saying otherwise, either."
 
-Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, for ever."
+Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, forever."
 
 "Answering back is beside the point. What I want is to read what's already sitting in it."
 
@@ -3101,25 +3101,25 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, and asks it again twice more, until she has both ways of measuring it in full, start to finish, and where they disagree.
+Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend two weeks on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the two weeks are up. Bex asks, across the table, which way she would bet, and asks it again twice more, until she has both ways of measuring it in full, start to finish, and where they disagree.
 
 Down the table, Sam works out twice why the ship needs to be mostly fuel and gets the ratio backward before Kavi corrects him. When he has it right on the third try, on his own, Bex turns from her plate and gives it to the boy on her other side complete, beginning to end, Sam's name on the front of it. Sam goes back to his food.
 
-The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, before Chloe had said a word of it to him herself, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
+The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, before Chloe had said a word of it to him herself, and he goes at it for the rest of the hour. Bex turns around in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further around to find Chloe's row before she gets to the end of the sentence.
 
-Chloe keeps her bag zipped under the desk, and does not turn round to see whether Bex found her. On the way out she catches Kavi in the corridor and gives him both numbers herself, out loud, before Bex is through the door. The walk down to the field is long and empty either way. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
+Chloe keeps her bag zipped under the desk, and does not turn around to see whether Bex found her. On the way out she catches Kavi in the corridor and gives him both numbers herself, out loud, before Bex is through the door. The walk down to the field is long and empty either way. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
+
+Kavi asks whether she got the essay in all right, meaning yes or no, and gets the two ways of measuring the age of the universe, why they disagree, which one she would bet on and why she would not bet much, and where in the two weeks she stopped being sure. He waits for her to finish, then tells her which of the two he would bet on, and they are on it when the plates go.
 
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
 Art history is in the spring. In February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
 
-Kavi asks whether she got the essay in all right, meaning yes or no, and gets the two ways of measuring the age of the universe, why they disagree, which one she would bet on and why she would not bet much, and where in the fortnight she stopped being sure. He waits for her to finish, then tells her which of the two he would bet on, and they are on it when the plates go.
-
 Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched between them the whole time. Nobody touched it, nobody even opened the case, and the price still went up while it just sat there doing nothing."
 
 "Inflation," Kavi says around a mouthful.
 
-Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
+Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty dollars, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
 "Ask her again, properly this time," Kavi says.
 
@@ -3137,7 +3137,7 @@ Filing the edge. "The forge. Low building past the kitchens, and they're in on T
 
 ________________
 
-The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased, not even finished reading it yet. Kavi gets one about juries, sits with it a minute, and announces that he has drawn the boring one and would like a swap. Priya gets whether a person can consent to something they cannot leave, puts it face down on the table, and asks who wants it.
+The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Iyad has the hat, going around the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased, not even finished reading it yet. Kavi gets one about juries, sits with it a minute, and announces that he has drawn the boring one and would like a swap. Priya gets whether a person can consent to something they cannot leave, puts it face down on the table, and asks who wants it.
 
 Chloe unfolds hers.
 
@@ -3217,7 +3217,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in an whole year is hardly a lot, is it," she says.
+Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in a whole year is hardly a lot, is it," she says.
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 
@@ -3233,11 +3233,11 @@ There is a pause of a second and a half.
 
 "Good luck," Sinclair says.
 
-Students come out of a dozen rooms at once; the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few. The students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
+Students come out of a dozen rooms at once; the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few. The students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the banister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
 
 People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in minutes Nadia takes the third floor and splits it: two on each stair head, three hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Students take three instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds, because he goes over the second floor bannister onto the teachers coming up, which works, but then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you. It means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds, because he goes over the second floor banister onto the teachers coming up, which works, but then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you. It means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
 
 Chloe spends the whole Watch on the third floor landing with five others, markers pointed down into the stairwell, firing to meet whatever comes up before it clears the turn, and when an incoming ball meets one of theirs there is a wet crack and paint everywhere at once, both spent short of the landing. Below, more crack together, the sound carrying up through the floor, and somebody down there is shouting a count she can hear without making out the numbers. Her arms ache well before the end, but she stays until it is over.
 
@@ -3247,7 +3247,7 @@ The board the next day says the staff lost the building at three forty-two, but 
 
 Chloe reads them in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space, because she spent those hours on a landing while the number of teachers upstairs went uncounted.
 
-It is still with her at dinner, where Sam has the bannister up for the fourth time in front of people who were standing underneath it.
+It is still with her at dinner, where Sam has the banister up for the fourth time in front of people who were standing underneath it.
 
 "I got a hand on the rail and the rest of me went over the top of it. That part worked. Then the floor came up at me."
 
@@ -3286,7 +3286,7 @@ That evening the sixth is in the fire, but she stops there, scroll half open, an
 
 That month Bell takes the metronome off the post and pockets it in front of all of them.
 
-"You've had that long enough, and a machine doing your counting for you is two years too long, so from today one of you calls the count out loud and the other works off the call."
+"You've had that long enough, and a machine doing your counting for you is more than a year too long, so from today one of you calls the count out loud and the other works off the call."
 
 "Which of us calls it?" Odile says.
 
@@ -3669,13 +3669,13 @@ In February she offers to read the 1981 paper and mark him on that. Politely, at
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
-The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it turns out lower than her grade in anything else that term, so she stands with it a while in the corridor, folds it into quarters and pockets it rather than binning it.
+The June sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it turns out lower than her grade in anything else that term, so she stands with it a while in the corridor, folds it into quarters and pockets it rather than binning it.
 
 A week later she stops at the mathematics office on her way past and asks how a blank column is handled once the year is done, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
 
 Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column counts on her record as well as his, and she has been asking him for it since October; asking him is the whole of what she is allowed to do about it.
 
-Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In January he is at breakfast as he was in December, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. Whatever it costs him, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
+Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In July he is at breakfast as he was in June, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. Whatever it costs him, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach, and she is careful about how she asks.
 
 ________________
 
@@ -7705,7 +7705,7 @@ The one number in the report that matches exactly what Ruth already had was the 
 
 All of them come back with a blank on what the students looked like.
 
-Chloe reads that line as a translation problem, working out whether *blank* means they genuinely can't picture the faces or only that none of the faces matched anything they'd expected a face like that to look like. The file leaves that open and moves straight to the next part, the level pace it has kept from the first page, as though the distinction were beneath a separate sentence.
+Chloe reads that line as a translation problem, working out whether *blank* means they really can't picture the faces or only that none of the faces matched anything they'd expected a face like that to look like. The file leaves that open and moves straight to the next part, the level pace it has kept from the first page, as though the distinction were beneath a separate sentence.
 
 Then the last paragraph. Footage was sought from the Waffle House, the units either side, a traffic camera, and a municipal camera up the road. All of it is unrecoverable wherever the students appear, but intact everywhere else. No known method.
 

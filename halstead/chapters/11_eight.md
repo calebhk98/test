@@ -84,7 +84,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me over a rule, not once, not about a single one in her whole life. The screaming last winter was about Halstead, and that's a different thing. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me over a rule, not once, not about a single one in her whole life. The screaming before she left was about Halstead, and that's a different thing. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 

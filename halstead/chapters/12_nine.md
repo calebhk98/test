@@ -14,11 +14,11 @@ The woman goes back to the form in front of her. "Nine-year-olds get eight, that
 
 Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he lays his objections out with his own sheet spread out on the table beside the tray.
 
-"The first is that the form accomplishes nothing. It asks you for three, but it gave me zero of them."
+"The first is that the form accomplishes nothing. It asks you for three, and it gave me none of them."
 
-"They read it. They counted how many people wanted each thing, and then they did what they were going to do anyway," Ruth says.
+"They read it. They looked at what you asked for, moved an hour here and there to fit it, and then gave you what they were going to give you anyway," Ruth says.
 
-Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in. I went back the next day with a letter from the head asking them to look again; they looked again, and the answer came back no different than the first time."
+Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming starts at ten and astronomy at eleven, so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in. I went back the next day with a letter from the head asking them to look again; they looked again, and the answer came back no different than the first time."
 
 Sam has stopped with the spoon halfway up. "Is there a third?"
 
