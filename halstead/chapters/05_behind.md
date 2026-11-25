@@ -136,7 +136,7 @@ Ruth is in that group and complains about all of it at a volume Chloe would not 
 
 ________________
 
-His door is standing open and the bed inside it is stripped to the plastic. That is how Chloe finds out Owen has gone: he was in her hall on the Monday, and this is Wednesday of the second week.
+On the Wednesday of the second week, his door is standing open and the bed inside it is stripped to the plastic. That is how Chloe finds out Owen has gone: he was in her hall on the Monday.
 
 "Where's Owen?"
 

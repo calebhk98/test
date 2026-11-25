@@ -118,7 +118,7 @@ Then she is down again, through the kitchen and out the side door into the garag
 
 Her parents look at the bike, and then at each other.
 
-"Chloe, that bike is yours. It was yours at Christmas and it is yours now, and nothing you said to me on that kitchen floor was a deal that anybody in this house was making with you."
+"Chloe, that bike is yours. It was yours at Christmas and it is yours now, and nothing you said to me on your bedroom floor was a deal that anybody in this house was making with you."
 
 "It was a deal, though. I said you could take the bike and my birthday and Christmas, and then you said yes, and you don't get to keep only the half of it you like."
 

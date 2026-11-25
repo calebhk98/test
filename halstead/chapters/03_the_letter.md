@@ -170,7 +170,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice last week, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice on Saturday, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free.
 
@@ -226,7 +226,7 @@ Chloe is already moving to a different part of the argument. "Okay, then can you
 
 "One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely. Pick it before you go."
 
-She walks the whole children's section and comes back with a book she has read before, because a new one would be finished by the Tuesday and this one she can read again.
+She walks the whole children's section and comes back with a book she has read before, because a new one would be finished by the Tuesday and this one she can read again. The librarian stamps a date card for it by hand and tucks it in her own drawer, not the computer.
 
 They drive her themselves instead of putting her on the bus, though her mom says the word bus a hundred times before they go, and by the end it barely sounds like the same word.
 
