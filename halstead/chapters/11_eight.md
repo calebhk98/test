@@ -28,11 +28,11 @@ Her father puts it off until they're away from the barbecue, so they do it in th
 
 Downstairs that night, after she has gone up, her father folds the paper and leaves it folded.
 
-"She had me on the hot dog thing in four minutes, and the cut is the only argument I hadn't already heard from her. I went out to the garage after and stood there working out what I should have said."
+"She had me on the hot dog thing in four minutes, but she'd have kept going until Labor Day, and I wanted my breakfast back."
 
 "You let her have it, like you let her have everything once she gets that look on her face. You have never held a line with her in your life."
 
-Her father is smiling about it. "I've been losing that one since college, every time somebody brings up the hinge. She just got there faster than most of them did."
+Her father is smiling about it. "I've lost that one plenty of times since college. That's the first time I've had fun losing it."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
@@ -84,7 +84,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me over a rule, not once, not about a single one in her whole life. The screaming last winter was about Halstead, and that's a different thing. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
