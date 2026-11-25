@@ -74,11 +74,11 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What? What are you talking about?" Ruth says.
 
-Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count learning that, and I stopped keeping score because it stopped being useful information."
+Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count and never knew why, and I stopped keeping score because it stopped being useful information."
 
 "That's not it. None of this was in the briefing," Ruth says.
 
-"She told us none of this, we worked it out ourselves, just now, standing here."
+"He told us none of this, we worked it out ourselves, just now, standing here."
 
 They come out of it still talking, Chloe going back through the barrel and the feet with her hand up in front of her face, and nearly walk into Bex at the turn of the corridor. Chloe says sorry and goes round her, still talking. Bex says it's fine.
 
@@ -139,7 +139,7 @@ After dinner, when the corridor is empty, she goes back and reads it again, then
 
 "Six is all of us, Chloe."
 
-"I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice. Nobody handed me a stopwatch and told me to time it."
+"I was standing in it. They asked Wes the number right in front of me, and it took him answering it for me to even notice. Nobody handed me a stopwatch and told me to time it."
 
 Ruth is looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 

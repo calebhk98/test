@@ -32,7 +32,7 @@ That evening the sixth is in the fire, but she stops there, scroll half open, an
 
 That month Bell takes the metronome off the post and pockets it in front of all of them.
 
-"You've had that long enough, and a machine doing your counting for you is two years too long, so from today one of you calls the count out loud and the other works off the call."
+"You've had that long enough, and a machine doing your counting for you is more than a year too long, so from today one of you calls the count out loud and the other works off the call."
 
 "Which of us calls it?" Odile says.
 

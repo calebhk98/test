@@ -42,13 +42,13 @@ In February she offers to read the 1981 paper and mark him on that. Politely, at
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
-The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it turns out lower than her grade in anything else that term, so she stands with it a while in the corridor, folds it into quarters and pockets it rather than binning it.
+The June sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it turns out lower than her grade in anything else that term, so she stands with it a while in the corridor, folds it into quarters and pockets it rather than binning it.
 
 A week later she stops at the mathematics office on her way past and asks how a blank column is handled once the year is done, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
 
 Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column counts on her record as well as his, and she has been asking him for it since October; asking him is the whole of what she is allowed to do about it.
 
-Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In January he is at breakfast as he was in December, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. Whatever it costs him, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
+Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In July he is at breakfast as he was in June, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. Whatever it costs him, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach, and she is careful about how she asks.
 
 ________________
 
