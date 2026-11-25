@@ -18,7 +18,7 @@ The form the office gave her mom is several pages. Chloe comes back to the arm o
 
 Her mom stops, looks at the clipboard, then at Chloe. "I only get to see the outside of you, so some of these are a guess. A better guess than anybody else in this building could make, but a guess."
 
-There is a poster about handwashing, and Chloe gets three lines into it before the words stop being ones she knows. Then she sees the same poster underneath in English and works out that she has been reading the Spanish.
+There is a poster about handwashing, and Chloe sounds out the first two lines of it before the sounds stop being words she knows. Then she sees the same poster underneath in English and works out that she has been reading the Spanish.
 
 There is also a sign that says NO CELL PHONES with a picture of a phone under it and a red line through it. The picture is for the people who can't read the sign, and the people who can't read the sign are looking at a phone with a line on it. Chloe puts her chin on the arm of the chair, and she is still finding it funny a minute later, when a man with a beard opens the door and says her name.
 
@@ -56,7 +56,7 @@ Ben writes something down, small and quick, but she can't tell from his face whe
 
 "One more. Is there another like it?" She hooks her heels on the rung of the chair, then comes up onto her knees on it to reach the middle of the table.
 
-There is another like it, and then another. Both times she is finished almost as soon as the card is down, and both times Ben says okay while a block is still in her fingers.
+There is another like it, and then another. Both times her hand goes to the right block the moment the card is down, and both times she is still turning the last one into place when Ben says okay and stops the watch.
 
 The lid goes on the bin.
 

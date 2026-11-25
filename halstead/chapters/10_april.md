@@ -6,9 +6,9 @@ Sam sees her first and comes down the hall at a full run, hitting her hard enoug
 
 The bag has skidded into the wall. Chloe picks it up before anyone else can, the rubber bands around the socks inside it in the shape her mother rolled them in, and keeps hold of it the rest of the way up.
 
-"You said probably not, and then you got in the car and came anyway, so I want to know which part of that was even true," Ruth says from behind him, her hand out for the bag.
+"I told Sam probably not, and then you got in the car and came anyway, and now he's going to be unbearable," Ruth says from behind him, her hand out for the bag.
 
-"I said probably not once, in February, and February is allowed to change its mind."
+"I said probably not myself once, in February, and February is allowed to change its mind."
 
 Ruth hugs her hard enough to hurt, then takes the bag off her anyway. "I never wrote because I never had your address, and I asked twice and got told they can't give it out, so if you thought I forgot about you, I didn't. Third floor, they put all the new ones on third and move you in August once they've worked out who talks in their sleep. Come on, it's the far end, and the far end's better because of the stairs."
 
@@ -44,7 +44,7 @@ Kavi turns up an hour later and stands in the doorway with his arms folded until
 
 "What's your last name," Chloe says.
 
-The dining hall is long tables under a roof high enough to keep the noise, so the sound from the far end comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces. The food comes, and she gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and a few more have drifted in a term at a time since. A boy asks whether she is the one who did the bridge at camp; when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays she asks Ruth about Owen.
+The dining hall is long tables under a roof high enough to keep the noise, so the sound from the far end comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces. The food comes, and she gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and a few more have drifted in a term at a time since. A boy asks whether she is the one who did the bridge at camp; when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays, Kavi in the line behind them, she asks Ruth about Owen.
 
 "He left camp in the second week, the boy in the room across from Sam with a blue thing hanging off his bag."
 
@@ -104,7 +104,7 @@ For a month she hates it, though the first weeks go badly in every subject she h
 
 The library at home was a room off the gym where the woman at the desk let you take four books and not five, however many times Chloe argued about it. But this one takes up the back of the building and goes up through two floors, with a staircase inside it that rises to a second level of shelves running all the way around. The desk is empty on a Tuesday late at night; there is no card and no limit. At that hour half the lights are off and it is colder in there than the corridor. The first time she takes a dozen, whatever sits at eye height and looks interesting, carrying them against her chest with her chin on the top of the stack and stopping twice on the stairs to get her arms back under it rather than put any of it down, but she manages a few of them. The next week she takes fewer, and it settles after that at whatever she can carry in one hand, because the library is minutes from her room and open half the night. Chloe reads wherever the day leaves room: the hour before dinner, after lights out with the corridor light coming under the door, and the Saturdays when the others are doing something she got out of.
 
-The mathematics thing happens in the third week of May, on a problem she has had for days: a wheel rolling along a straight line with one point marked on the rim, and the question of how far that mark travels while the wheel turns once. It travels further than the wheel does, and everybody agrees on that much, but how much further is where the room stalls.
+The mathematics thing happens in the third week of May, on a problem she has had for days: a coin rolled around the edge of another coin the same size, without slipping, and the question of how many times it turns by the time it is back where it started. It turns twice, and everybody agrees on that much, but why it is twice is where the room stalls.
 
 It occurs to her in the shower on the Wednesday, and she stands there until the water turns cold, and next morning reaches the room early, where Ruth is at the board.
 
@@ -112,7 +112,7 @@ It occurs to her in the shower on the Wednesday, and she stands there until the 
 
 Chloe tells her all of it, out of order and twice in places, and Ruth listens all the way through before putting her own working next to it.
 
-"Mine's three steps and yours is seven, but mine only works if the mark starts at the top, and yours works wherever the mark starts, so mine is only shorter when it happens to be right. Do it again from the start and go slower," she says, holding out the marker.
+"Mine's three steps and yours is seven, but mine only works if the two coins are the same size, and yours works whatever the sizes, so mine is only shorter when it happens to be right. Do it again from the start and go slower," she says, holding out the marker.
 
 After that it is the hour she gets up for.
 
@@ -168,7 +168,7 @@ The second term starts and the subjects change over, with history splitting into
 
 She still has to stop and think her way through Central Asia. South America is done by the end of May and Europe soon after that, but she keeps putting the -stans in the wrong order, all five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe actually likes. Physics comes in at that changeover and biology goes out, so she writes the list in the back of the notebook, the subjects plus the afternoon hours, with the date beside it. There are people in her year who have been here for years, and she wants to know how long their list is. She asks a boy called Marcus at breakfast how many he is carrying, and he says seven, the same as her, and that nobody is allowed more than ten however hard they push for it. She counts her own on her fingers under the table anyway.
 
-"Which one's fourth from the end now, is it still the one from March?" Chloe asks, in the last week of June with the packing half done, and Fen has to check, running a finger along the sill before she answers, because another came in during March and moved the whole row along. Then Fen takes her rocks off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where the heat is coming up off the gravel and Sam is out on the grass talking to somebody else's grandmother about something that requires both his arms.
+"Which one's fourth from the end now, is it still the one from March?" Chloe asks, in the last week of June with the packing half done, and Fen has to check, running a finger along the sill before she answers, because another came in during May and moved the whole row along. Then Fen takes her rocks off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where the heat is coming up off the gravel and Sam is out on the grass talking to somebody else's grandmother about something that requires both his arms.
 
 "The whole summer is a long time to fill, and my mom's got me at my cousin's for a chunk of it, where the entire town is a lake and a shop," Ruth says.
 

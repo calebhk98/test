@@ -471,7 +471,7 @@ that first fall. The day is seven hours: five subjects plus two afternoon blocks
 Mathematics runs backward from camp, you get the thing a formula is about and a
 week and are told only whether what you bring back is true. Literature has no
 reading list and the library is open all night behind an unattended door. She is
-behind in four subjects out of five by the fourth week, and cracks the cycloid in
+behind in four subjects out of five by the fourth week, and cracks the coin rotation puzzle in
 the shower in the third week of May.
 
 **11. Eight** *(June 2013 to June 2014)*. Ten weeks at home; she talks all

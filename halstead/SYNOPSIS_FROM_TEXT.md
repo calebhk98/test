@@ -194,7 +194,7 @@ whether what you bring back is true. Literature has no reading list at all; the
 library is the whole back of the ground floor over two levels, open all night
 behind an unattended door, no card and no limit. Chloe takes eleven books the
 first time. She is behind in four subjects out of five by the fourth week. In
-the third week of May she cracks the cycloid problem in the shower and Ruth
+the third week of May she cracks the coin rotation puzzle in the shower and Ruth
 makes her do it again slower. She spends three weeks establishing what gets a
 person sent home and is told: nothing except a family deciding they want their
 child home, two or three times in an ordinary year. Kavi tells her Owen wanted

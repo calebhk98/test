@@ -2,7 +2,7 @@
 
 *August 2012*
 
-The parent hotel has a breakfast room with waffles on paper plates, and every morning there is a roomful of adults in it who all know each other by now. On the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on her fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small noise nobody notices.
+The parent hotel has a breakfast room with waffles on paper plates, and every morning there is a roomful of adults in it who all know each other by now. On the last Wednesday her dad has come up two days early, and Chloe climbs onto the chair beside him on her knees, gets syrup on her fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small noise nobody notices.
 
 "We drove it, both ways. We looked at the map for an hour and decided we'd rather just drive it ourselves," a man says, on his feet with a paper plate in one hand.
 
@@ -18,7 +18,7 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 
 "That's what we thought, and we had a family meeting over it that night, about a summer camp," says the man beside him, and folds his paper plate in half.
 
-"We thought worse than that, and I'll say it out loud: I told Dave I was keeping her home from a building I had yet to see, whatever the letter said, but then we came, and it's a school, and there's a nurse, and it's fine, and I still -"
+A woman down the table says, "We thought worse than that, and I'll say it out loud: I told my husband she wasn't going anywhere I hadn't seen with my own eyes, letter or no letter, but then we came, and it's a school, and there's a nurse, and it's fine, and I still -"
 
 "Right."
 
@@ -64,7 +64,7 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess. It fails every time. Everybody else at that table is doing Spanish as well," she says.
 
-"Then there's the signing. That's better than all of it. You can do it across an whole room with your hands doing the talking and your mouth shut. That's water, that's finished, that's again. And in the library you can ask somebody at the far end of the room for a book, with everybody's mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster.
+"Then there's the signing. That's better than all of it. You can do it across a whole room with your hands doing the talking and your mouth shut. That's water, that's finished, that's again. And in the library you can ask somebody at the far end of the room for a book, with everybody's mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster.
 
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did. Kavi got the pattern in the endings. That part is still half out of my reach. He has explained it and explained it. He'd explain it to you right now, only he isn't sitting here and I am. I wrote his explanation down word for word so I wouldn't lose it, and I still read it over before every test."
 
@@ -126,7 +126,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "Here. This is a school. A whole school, running all year. That's what it is."
 
-"I know it's a school, Ruth. I've been standing in it an whole month, same as you."
+"I know it's a school, Ruth. I've been standing in it a whole month, same as you."
 
 "Then we should all get in. That's the entire point. I've been making it since I sat down."
 
@@ -152,7 +152,7 @@ Ruth picks the knot out of one shoelace with both thumbs.
 
 "They liked the food, mostly, and the food is what got them talking about everything else. My dad wrote down what was in the sauce on the Tuesday and tried it at home twice. It still isn't right."
 
-"They asked about an whole year on the third day because of the food?"
+"They asked about a whole year on the third day because of the food?"
 
 "They liked a lot of it and the food was only part of it," Kavi says, shrugging with one shoulder, "and my dad talked to Mr. Baptiste for a solid hour."
 
@@ -204,6 +204,10 @@ Chloe runs the numbers again, the ones she has been running since the drive down
 
 "Everybody has to talk their parents into it," Ruth says. "That's just the first part of it. Parents like school. How hard can that be."
 
+Sam says see you at the thing in the fall. Ruth tells him it's only a form so far and his parents have to send it in, and Sam says it again, word for word.
+
+Kavi holds his hand out palm up and Chloe puts hers into it, until the last strip of light clicks off over their heads, and in the dark she keeps her own hand open a beat after his has gone back to his side, then closes it on her sleeve.
+
 ________________
 
 Long before anybody comes to get her, she is awake, dressed and sitting on the end of the stripped mattress.
@@ -211,10 +215,6 @@ Long before anybody comes to get her, she is awake, dressed and sitting on the e
 Her dad carries her bag down and puts it in the trunk with the strap hanging out, so that he has to open it again.
 
 Priya hugs her hard enough that it takes a moment to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone. Priya turns her sleeve inside out to check it twice while her mother tells her it's fine, but she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
-
-When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far and his parents have to send it in, at which point Sam says it again, word for word.
-
-Kavi holds his hand out palm up and Chloe puts hers into it, until somebody's mom says it's time, but she keeps her own hand open a beat after his has gone back to his side, then closes it around the strap of her bag.
 
 Once the camp gate is behind them, before her eyes close, her mouth moves through the days of the week in Spanish, under her breath, and then again, faster, checking the list against itself.
 

@@ -20,7 +20,7 @@ In the parking lot a man is loading boxes into the trunk of his car, with his co
 
 "I don't know," she says, working her heel back into her shoe under the desk, looking down at the worksheet.
 
-"That's what I thought." Mrs. Aldana taps the worksheet twice, before walking back to the front. Chloe does the rest of the sheet in the time that is left, before getting out her book.
+"That's what I thought." Mrs. Aldana taps the worksheet twice and walks back to the front, and Chloe does the rest of the sheet in the time that is left, before getting out her book.
 
 The book comes out of the desk at every gap in the day, and it is never the only thing she is reading. In a week she reads the cereal box at breakfast, both sides, including a contest that ended in a different year, the road signs aloud from the back seat until her mom asks her to stop, her grandmother's church bulletin, and the four books at a time her library card is good for, which she has argued about with the librarian more than once. At the library, Chloe stands at the circulation counter with her stack and her library card and a plan, while the librarian works down a pile of returns with a date stamp.
 
@@ -90,7 +90,7 @@ A chair squeaks behind her while Peanut keeps washing his face, so they must not
 
 "He flew too close to the sun," she says, louder, "and now he's in the wood chips. It was worse for Icarus. He only had the ocean."
 
-Kayleigh Burns turns around in her seat and looks at her. "You talk weird," she says, turning back before Chloe has worked out whether an answer is expected.
+Kayleigh Burns turns around in her seat and looks at her. "You talk weird," she says, and turns back. Chloe is still working out whether an answer is expected.
 
 "Yeah," Chloe says. The word lands somewhere Chloe was not expecting it to land. She goes back over the sentence twice looking for the part that was weird, and it comes out the same both times. For the rest of the morning she sits on her hands even when she knows the answer. In the cafeteria she peels the crust off her sandwich in a long unbroken piece and leaves both parts untouched, lining the strip up along the edge of her tray.
 
@@ -106,7 +106,7 @@ The full answer comes first, every time, and she has to catch it before it gets 
 
 On Fridays, Mrs. Aldana reads the best paper out loud without saying whose it is. In November it is Chloe's, a few sentences about a dog with a missing leg that ran anyway, after which the room goes quiet. In December the assignment has a minimum word count and she writes the minimum, about a boat, but the paper read out is Maddie's, which everybody guesses correctly.
 
-The papers Mrs. Aldana keeps go across a table on a Thursday evening in November. Conferences are that evening and both her parents go in, while Chloe sits on the corridor floor with a book, the smell of floor wax coming off the janitor's cart. For minutes and minutes she is close enough to hear them talking but too far to make out the words, and she counts the words she can't catch. The door opens mid-sentence, her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
+Back in November, on a Thursday evening, the papers Mrs. Aldana keeps go across a table at conferences. Both her parents go in, while Chloe sits on the corridor floor with a book, the smell of floor wax coming off the janitor's cart. For minutes and minutes she is close enough to hear them talking but too far to make out the words, and she counts the words she can't catch. The door opens mid-sentence, her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
 
 While her dad drives, her mom holds the papers Mrs. Aldana gave them up against the streetlights to read. "She says you're among the strongest readers she's had, and she said it twice." She turns a page. "She also says you have some trouble focusing, which is the part I want to talk about. Do you have trouble focusing?"
 
@@ -148,9 +148,9 @@ ________________
 
 Christmas is at her grandmother's, where the house is full and Chloe knows everybody in it, collecting a sweater, a set of markers, a stack of books, saying thank you each time unprompted. "Well, somebody got grown up this year," her grandmother says, so Chloe reads in the chair by the tree until it is time to eat, then puts it face down on the arm to keep the page.
 
-The chair is too big for her at the grown-up table, so her heels swing free while she eats her potatoes and her dad, down at the far end, keeps his eyes on his plate. Her cousin Dana, who is nineteen, sits down next to her. "How's school?" she asks.
+The chair is too big for her at the grown-up table, so her heels dangle while she eats her potatoes and her dad, down at the far end, keeps his eyes on his plate. Her cousin Dana, who is nineteen, sits down next to her. "How's school?" she asks.
 
-"It's good," Chloe says. "We're doing the water cycle," she starts to say about the water cycle, then stops herself.
+"It's good," Chloe says. "We're doing the water cycle, and -" she starts to say, then stops herself.
 
 "Do you have a favorite subject?"
 

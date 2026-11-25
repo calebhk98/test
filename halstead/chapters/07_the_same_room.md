@@ -95,7 +95,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "There she is." The librarian takes it and tsks, turning the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait."
 
-"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did. Mrs. Prahl kept ours on the windowsill for a week before she let anybody take it home."
+"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did. Mr. Doyle made us pick up every piece after and sort the dowels back into the bin."
 
 "Did it now? Tell me the part about the corner again, slowly."
 
@@ -187,7 +187,7 @@ Upstairs, on the back of a spelling worksheet under her pillow, she starts a col
 
 ________________
 
-In the last week of September her mom starts on Chloe's own school, the one she walks to, about what it has for a child who finished the third-grade work in October.
+In the last week of September her mom starts on Chloe's own school, the one she walks to, about what it has for a child who finished the third-grade work over the summer.
 
 Coming down for water, Chloe gets the end of a call, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 

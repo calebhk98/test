@@ -28,11 +28,11 @@ Her father puts it off until they're away from the barbecue, so they do it in th
 
 Downstairs that night, after she has gone up, her father folds the paper and leaves it folded.
 
-"She had me on the hot dog thing in four minutes, and the cut is the only argument I hadn't already heard from her."
+"She had me on the hot dog thing in four minutes, and the cut is the only argument I hadn't already heard from her. I went out to the garage after and stood there working out what I should have said."
 
 "You let her have it, like you let her have everything once she gets that look on her face. You have never held a line with her in your life."
 
-Her father is smiling about it. "I've been losing that one since college. She just did it faster."
+Her father is smiling about it. "I've been losing that one since college, every time somebody brings up the hinge. She just got there faster than most of them did."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
