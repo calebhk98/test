@@ -28,7 +28,7 @@ The coffee cup goes a quarter turn on the table under her hand, and then another
 
 "My brother's in, the letter came Thursday, and my mother read me the letter over the phone twice before I got a word in edgewise. She read out the uniform list like it was news."
 
-Sam puts his fork down, then asks it. "How old is he now?"
+Sam puts his fork down, then asks, "How old is he now?"
 
 "Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
@@ -38,7 +38,7 @@ Sam puts his fork down, then asks it. "How old is he now?"
 
 "What are you going to tell him?"
 
-"I'll tell him about the waffles here, since that's a story he can actually picture." She says it evenly, but she is looking at the cup and not at any of them.
+"I'll tell him about the waffles here, since that's a story he can actually picture." She keeps her voice even, but she is looking at the cup and not at any of them.
 
 Sam has the syrup upside down over his second plate, timing the pour and counting under his breath. "Weeks of it starting Friday, so is anybody actually doing anything with the summer, or is it the usual."
 
@@ -58,17 +58,17 @@ Chloe's hand goes back to the fork, and she doesn't eat with it for a while.
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and dictionaries everywhere would need rewriting every few years just to keep up with what people happen to like the sound of. I looked it up twice before I said it, just so nobody could tell me I hadn't," Ruth says.
+"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and dictionaries everywhere would need rewriting every few years just to keep up with what people happen to like the sound of. I've looked it up twice in my life, just so nobody could tell me I hadn't," Ruth says.
 
 "It makes it archaic. Archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
-"Say a sentence with it in that comes from somewhere other than a play, then, if it's so ordinary."
+"Then say a sentence with it in, one that doesn't come out of a play, and we'll hear how strange it sounds coming out of you."
 
 "Hither, thither, and yon," Sam says. "That's three sentences, but you only asked for one, so I win twice over."
 
 "You just said hither yourself, not even a moment ago, which is the whole argument, right there, coming out of your own mouth."
 
-"That's different. I used it on purpose, and you used it by accident, which is the whole reason I still win." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
+"That's different. I said it on purpose, to make fun of it, and making fun of a word doesn't count as using it, which is the reason I still win." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
 There's a shopping cart in the lot behind a hardware store on the way home; Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan, but Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, but when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
 
@@ -78,7 +78,7 @@ The men come out a few blocks later, between two parked cars, seven of them in a
 
 "Phones. Watches. Come on."
 
-Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense, and she puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley, and she's choosing between them when Sam says it.
+Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense, and she puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley, and she's choosing between them when Sam speaks.
 
 Sam says, "Hang on." Then, with his eyes still on the men: "Let me have this one."
 
@@ -106,7 +106,7 @@ Sam is standing in the middle of them, turning, looking for the next one; that's
 
 They come down off the dock, Nadia hanging and dropping, Chloe straight off the edge, Ruth using the pallets.
 
-The third gun he finds on a man who spent the fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head; she holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs, all of them holding, one bitten through his lip.
+The third gun he finds on a man who spent the fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head; she holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs, all of them holding, one bitten through his lip.
 
 "Should we report them to the police?" Ruth says.
 
@@ -170,6 +170,6 @@ Chloe's shoes sit by the door, laces still knotted from being kicked off, not un
 
 ________________
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just people happening to be in the way.
+Ruth shuts the box off in the corridor and posts the story in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just people happening to be in the way.
 
 Kavi sends a laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, but he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.
