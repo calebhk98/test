@@ -133,11 +133,11 @@ Chloe leans over her own paper with the pencil going before anybody else at the 
 
 "Because you won't be you. You'll be somebody older. They won't remember doing any of this. So it's exactly like sending a package to a person you have yet to meet. Except it's got your name on it. So they have to open it, asked for it or not," she says, and keeps going, faster now, one foot hooked around the leg of her chair.
 
-Kayleigh Burns has turned around in her chair to say it: "Why do you talk like that? It's like you're reading it off a card or something."
+Kayleigh Burns has turned around in her chair. "Why do you talk like that? It's like you're reading it off a card or something."
 
 "You were weird before, but now you're weirder than that even," Bryce says, with interest, the way you would tell somebody their shoe was untied.
 
-Chloe's hand comes down over what she has written, the whole page gone under her palm.
+Chloe's hand comes down over what she has written, the page gone under her palm.
 
 "I just meant it's a long time to wait for anybody to actually read it," she says, to the desk.
 

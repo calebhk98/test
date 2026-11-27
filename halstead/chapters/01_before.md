@@ -78,7 +78,7 @@ She takes the book out to recess and leaves it on the wall by the door, spine up
 
 "It just was," Kayleigh says, and throws the ball before Chloe can say anything else.
 
-Kayleigh cheated. Chloe is sure of it, because the same catch put Maddie on the wall ten minutes ago with everybody watching. What she cannot work out is why nobody minds. Maddie is still sitting there and does not say anything. The girl who called Maddie out is standing close enough to have seen the whole thing and goes on playing. Chloe looks around the blacktop for somebody else to be annoyed about it and there is nobody. She plays two more rounds and lets the third throw go past her without reaching for it. Nobody calls her back in. She goes and stands by the door next to her book with her arms crossed, and the game goes on behind her at the volume it had before, and at the whistle the line forms without anybody looking around for her.
+Kayleigh cheated. Chloe is sure of it, because the same catch put Maddie on the wall ten minutes ago with everybody watching. What she cannot work out is why nobody minds. Maddie is still sitting there and does not say anything. The girl who called Maddie out is standing close enough to have seen it and goes on playing. Chloe looks around the blacktop for somebody else to be annoyed about it and there is nobody. She plays two more rounds and lets the third throw go past her without reaching for it. Nobody calls her back in. She goes and stands by the door next to her book with her arms crossed, and the game goes on behind her at the volume it had before, and at the whistle the line forms without anybody looking around for her.
 
 In October, back inside, Peanut climbs the bars of his cage towards the clip lamp, with Chloe's chin on her folded arms close enough to smell the wood chips under the heat.
 
@@ -96,7 +96,7 @@ Kayleigh Burns turns around in her seat and looks at her. "You talk weird," she 
 
 ________________
 
-The board still has yesterday's spelling list chalked half erased in the corner. In November, Mrs. Aldana asks what clouds are made of, and Chloe knows the answer. Clouds are the ocean going somewhere else, and the whole sentence is in her mouth, her hand already up, until she looks at the back of Kayleigh Burns's head and takes it down to one word.
+The board still has yesterday's spelling list chalked half erased in the corner. In November, Mrs. Aldana asks what clouds are made of, and Chloe knows the answer. Clouds are the ocean going somewhere else, and the sentence is in her mouth, her hand already up, until she looks at the back of Kayleigh Burns's head and takes it down to one word.
 
 "Water," she says, and Mrs. Aldana says good and moves on.
 
@@ -120,7 +120,7 @@ The parking lot, the boxes, the question that had already happened without her: 
 
 "Huh," her dad says, and looks back at the road, and the heater ticks the rest of the way home, until the last light before their street, where her mom turns the papers face down on her knees.
 
-The papers go with them to the doctor, still in the envelope they came home in, and her mom keeps them on her lap through the whole of the waiting room. There is a pencil line on the wall beside the scale with a date written under it, and this year Chloe stands above last year's mark by two inches. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes only. Then her mom says she has been having a hard time at school, and he rolls his chair around to face Chloe.
+The papers go with them to the doctor, still in the envelope they came home in, and her mom keeps them on her lap through the waiting room. There is a pencil line on the wall beside the scale with a date written under it, and this year Chloe stands above last year's mark by two inches. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes only. Then her mom says she has been having a hard time at school, and he rolls his chair around to face Chloe.
 
 "Do you get in trouble at school?"
 
@@ -174,7 +174,7 @@ Chloe presses closer to the cold glass and keeps her eyes shut for the rest of t
 
 ________________
 
-In January they read the book about a boy and a sled dog out loud, going around the room, and the radiator ticks all the way through the first chapter. Chloe had read the whole thing on Tuesday, finishing it on the bathroom floor, because she couldn't wait to find out whether the dog lived.
+In January they read the book about a boy and a sled dog out loud, going around the room, and the radiator ticks all the way through the first chapter. Chloe had read all of it on Tuesday, finishing it on the bathroom floor, because she couldn't wait to find out whether the dog lived.
 
 Aiden R. is reading aloud, stopping at about every fourth word, while she follows along in her own copy for a good while. Then she turns to chapter nine and is well into it when Mrs. Aldana says her name.
 
@@ -202,7 +202,7 @@ That night at dinner she tells her parents the whole story in under two minutes,
 
 The book comes back the next morning, handed over at the door without either of them saying anything about it, and goes into her desk. School is boring for everybody, obviously, because there is one room and one worksheet for all of them, but the other children sit through it fine, while Chloe is the one who cannot. The only fix is getting better at sitting there, the way some people can hold their breath a long time and some people cannot.
 
-So in January she decides to get good at sitting there, and by February she can make a worksheet last nearly to the end by holding the pencil over the page and moving it every so often. It takes work to keep it up for a whole morning, and some mornings she loses it around the second worksheet and has to start the whole thing over after lunch. The library book stays in her desk, where she touches its corner through the day but has stopped taking it out.
+So in January she decides to get good at sitting there, and by February she can make a worksheet last nearly to the end by holding the pencil over the page and moving it every so often. It takes work to keep it up for a whole morning, and some mornings she loses it around the second worksheet and has to start over after lunch. The library book stays in her desk, where she touches its corner through the day but has stopped taking it out.
 
 ________________
 

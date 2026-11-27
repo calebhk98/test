@@ -226,7 +226,7 @@ Chloe is already moving to a different part of the argument. "Okay, then can you
 
 "One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely. Pick it before you go."
 
-She walks the whole children's section and comes back with a book she has read before, because a new one would be finished by the Tuesday and this one she can read again. The librarian stamps a date card for it by hand and tucks it in her own drawer, not the computer.
+She walks the children's section and comes back with a book she has read before, because a new one would be finished by the Tuesday and this one she can read again. The librarian stamps a date card for it by hand and tucks it in her own drawer, not the computer.
 
 They drive her themselves instead of putting her on the bus, though her mom says the word bus a hundred times before they go, and by the end it barely sounds like the same word.
 

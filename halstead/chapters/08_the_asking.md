@@ -8,11 +8,11 @@ Her mom winds the phone cord around her fingers. "No, I appreciate you calling. 
 
 Chloe goes back up before the call is finished.
 
-The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she takes a chair and puts Chloe's mom in the other, leaving Chloe the couch to herself. It is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
+The appointment is the following Wednesday, for which her mom takes the afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she takes a chair and puts Chloe's mom in the other, leaving Chloe the couch to herself. It is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
 "So tell me what's going on, and start wherever you like. There's no order I need it in. Take as much time as you want getting to it, and if a part of it doesn't make sense yet, that's fine too."
 
-Her mom is sitting right on the front edge of the chair, and she has the whole list ready, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer. I stood in the doorway for ten minutes on Tuesday, just watching, and she did not look up from the floor a single time." Her hands come apart and smooth an imaginary crease out of her skirt.
+Her mom is sitting right on the front edge of the chair, and she has the list ready, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer. I stood in the doorway for ten minutes on Tuesday, just watching, and she did not look up from the floor a single time." Her hands come apart and smooth an imaginary crease out of her skirt.
 
 "Chloe, is that right, is that how it's actually been?"
 
@@ -204,7 +204,7 @@ Her mom waits, sitting very still on the end of the bed; that is all of it: a ha
 
 "Nobody was mean to me," she says. "Not once, not ever, the whole time I was there."
 
-Her mom says it carefully. "Sweetheart, I need you to tell me the truth. Is somebody bullying you at school?"
+Her mom speaks carefully. "Sweetheart, I need you to tell me the truth. Is somebody bullying you at school?"
 
 "No," Chloe says, shaking her head against the pillow.
 
