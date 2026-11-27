@@ -2,7 +2,7 @@
 
 *September 2020 – July 2021*
 
-The whole year is breaking clays at between ninety and a hundred, a spread that holds through September. Then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
+All year they have been breaking clays at between ninety and a hundred, a spread that holds through September. Then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
 
 A machine at the far end of sixty meters of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism. The new lane is colder than the old and the glass fogs from the inside where people breathe on it, so one of the range staff goes along it with a cloth between relays.
 
@@ -64,6 +64,8 @@ Voss taps the pages straight against the desk and hands them back to her.
 
 Chloe goes, running the numbers again all the way down. That evening she returns the box to the shelf, square on top of the year below's, and leaves both of them where they are.
 
+Priya asks her across the table how the range is going. Chloe gives her the run of zeroes, the November card, what the wind does at the far end and what she thinks it does, the thing Voss said that she has decided is not true, and where she is going to be by March. Then Priya gives her the same length back about a mare, and Sam, who asked nothing, gives them both his week.
+
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends. She sits behind her for the afternoon because Chloe asked her to.
 
 "Your count's clean," Ruth says. "I checked it twice against the clock."
@@ -76,7 +78,7 @@ Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole se
 
 Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a toffee, it helps me think. I've eaten most of the bag and I'm still nowhere close."
 
-At dinner that week Sam says it to his plate. "You're on sixty," he says. "Everybody's talking about it at breakfast."
+At dinner that week Sam talks to his plate. "You're on sixty," he says. "Everybody's talking about it at breakfast."
 
 "I know," Chloe says. "I'm on sixty. What's your actual point?" Her plate sits full in front of her.
 
@@ -116,8 +118,6 @@ Hark puts the last envelope down. "You are going to lose money in your life." He
 
 He sends the envelopes out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
-Priya asks her across the table how the range is going. She hears the run of zeroes, the November card, what the wind does at the far end and what she thinks it does, the thing Voss said that she has decided is not true, and where she is going to be by March. Then Priya gives her the same length back about a mare, and Sam, who asked nothing, gives them both his week.
-
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral; he argues about the rate for twenty minutes, but loses. Then he tells her she has to see the barn first, so she goes on the Saturday, finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
 Chloe lends forty to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
@@ -126,21 +126,21 @@ Iyad starts a list of it in October without anybody asking him to, everybody in 
 
 Chloe finishes the spoonful, then answers him. "Read Rustem's again, next to mine, and tell the table what his was actually worth against what he had riding on it." Sam asks Iyad what his own came to, and he tells him that as well.
 
-Hark has her at the board in April with the ledger written up, and reads the columns from the back with her arms folded, saying nothing until she's done.
+Hark has her at the board at the end of June with the ledger written up, and reads the columns from the back with his arms folded, saying nothing until she's done.
 
 "You bought a piece of somebody else's ceiling, whether you meant to or not."
 
-Chloe caps the pen and holds on to it. "He had two hundred dollars and a barn with sixty motors in it, but he was capped and I wasn't. Knowing what a bad bearing sounds like is his job. Mine is knowing whether he knows, and he already had motors turning over."
+Chloe caps the pen and holds on to it. "He had two hundred dollars and a barn with sixty motors in it, but he had no cash left to buy more with and I had two hundred sitting in an envelope. Knowing what a bad bearing sounds like is his job. Mine is knowing whether he knows, and he already had motors turning over."
 
-"You had the right numbers and the wrong answer, so how much of it could you have lost?"
+"You had the right numbers and the wrong answer, so how much of your two hundred could you have lost?"
 
-"A hundred and twenty."
+"A hundred and ninety."
 
-Hark comes across the room and stops at the front row. "A hundred and twenty dollars, over the whole year. Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty, but can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, but you are barely beating inflation."
+Hark comes across the room and stops at the front row. "A hundred and ninety dollars, over the whole year. Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty, but can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, but you are barely beating inflation."
 
 Chloe wipes the board and sits down.
 
-Iyad has more than figures. In February he has Aurel's name next to hers on the sign-up sheet for an optional Saturday session neither of them ends up going to. Six other pairs sit just as close on that page, for sessions just as skipped. He leaves each of those exactly where the sheet has them and picks up only hers, turning it into an item on his own list before either of them has said a word to the other about anything. He says it at the long table on a Tuesday, in the middle of something else, in the same flat voice he reads the rest of his list in, as a thing everybody already knows. By the Thursday it has been said back to her twice.
+Iyad has more than figures. In February he has Aurel's name next to hers on the sign-up sheet for an optional Saturday session neither of them ends up going to. Six other pairs sit just as close on that page, for sessions just as skipped. He leaves each of those exactly where the sheet has them and picks up only hers, turning it into an item on his own list before either of them has said a word to the other about anything. He tells the long table on a Tuesday, in the middle of something else, in the same flat voice he reads the rest of his list in, as a thing everybody already knows. By the Thursday it has been said back to her twice.
 
 She has never heard the name in her life. She has which boy it is by lunch, off the language-block timetable on the noticeboard, and walks past his door twice that afternoon to put a face to it; he is a head taller than her and does not look up either time. The sign-up sheet is still pinned outside the workshop, both their names on it in different hands, for a session neither of them went to. By March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
 
@@ -160,7 +160,7 @@ Her name is listed on an internal research paper in March, well down the author 
 
 Dr. Sandoval catches her in the corridor outside the laboratory in April, after a session.
 
-A folder under her arm, she stops walking to say it. "The work you have been doing since January. I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
+A folder under her arm, she stops walking. "The work you have been doing since January. I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
 
 Chloe sets her bag against the wall. "All right, shoot, whatever it is you need to ask."
 
@@ -174,7 +174,7 @@ That night she lies awake, and snaps at Sam at breakfast the next morning for no
 
 At the end of the week she finds Sandoval outside the laboratory again. "I thought about it. I'll keep it off the phone and off the table. But my name goes on the next agreement somewhere, even at the bottom of the list, or I stop telling you anything that isn't already public."
 
-Sandoval looks at her a moment longer than the hallway needs. "I'll ask," she says, and that is the whole of the answer Chloe gets before Wednesday turns into the following one.
+Sandoval looks at her a moment longer than the hallway needs. "I'll ask," she says, and that is all the answer Chloe gets before Wednesday turns into the following one.
 
 A teacher takes Priya's phone off her early in March, for the ordinary reason: it is out on the desk during a lecture on evidence. Into the drawer of the lectern he puts it; he gives it back on the Friday in front of everybody and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, but sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
 
@@ -214,7 +214,7 @@ Her hands are at ten and two where he put them in the first week, and her knuckl
 
 Her father drinks some of the coffee and tells her to carry on.
 
-On the last Sunday of July she comes down to the stop sign at the bottom of the reservoir road with the whole junction called before the car ahead of her has finished clearing it: the van on the left, the cyclist tucked in behind the van, the width of the gap after him. Then she brings the clutch up and the car bucks twice and stalls square in the middle of the road. She has it started and moving again while the driver behind her is still deciding about the horn; her father laughs into the cup.
+On the last Sunday of July she comes down to the stop sign at the bottom of the reservoir road with the junction called before the car ahead of her has finished clearing it: the van on the left, the cyclist tucked in behind the van, the width of the gap after him. Then she brings the clutch up and the car bucks twice and stalls square in the middle of the road. She has it started and moving again while the driver behind her is still deciding about the horn; her father laughs into the cup.
 
 Her grandmother takes her hand at the table a week later to look at a ring her aunt has brought over, and keeps hold of it after the ring has been round the table. In both her hands she spreads it open, where there is a burn across the base of the thumb from March and a smaller burn in the web between her fingers. The knuckle on the third finger is bigger than its opposite and sits slightly off, because she set that herself in a corridor at midnight and then went to bed.
 

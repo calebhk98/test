@@ -1,6 +1,6 @@
 ## Chapter Thirteen: Ten Pages
 
-*September 2015 – April 2016*
+*September 2015 – June 2016*
 
 Mr. Hearn is small, gray, and says everything at one volume.
 
@@ -92,7 +92,7 @@ People start asking on the Friday, and Ruth says she has been practicing while C
 
 Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. He calls the hour there and starts for the door with the markers under one arm. Bex is still on the mats at the far end when he passes her, and falls into step beside him and goes over the three things again, the barrel, the shoulder, the single speed, though the board already has all three of them written under her name.
 
-Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. She reaches the door two steps behind them and gets as far as Thursday's, hers and Ruth's, before Bex, still talking, goes through it alongside Bell and keeps talking the whole way down the corridor. He tells Chloe the sheet is already written and goes on with the markers.
+Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot while the marker is on the board. She reaches the door two steps behind them and gets as far as Thursday's, hers and Ruth's, before Bex, still talking, goes through it alongside Bell and keeps talking down the corridor. He tells Chloe the sheet is already written and goes on with the markers.
 
 The dining hall queue has gone past the doors and down the corridor by the time Chloe gets there; the end of the table Bex holds most nights already has somebody else's tray on it. Bex comes in a few places behind her and eats standing at the end of the bench until Ruth shifts down to make room.
 
@@ -131,7 +131,7 @@ Her first is on the board on the Monday and happens on the Thursday, when adults
 
 The sheet is posted on the Friday; every name on it has an F next to it and a numbered list underneath.
 
-In the corridor, with people behind her waiting for a turn at it, she reads it under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+In the corridor, with people behind her waiting for a turn at it, she reads it under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there, is still working out what covering it would even have looked like.
 
 After dinner, when the corridor is empty, she goes back and reads it again, then a third time. Ruth comes, stands next to her, and reads it all the way to the bottom in silence, arms crossed.
 
@@ -143,7 +143,7 @@ After dinner, when the corridor is empty, she goes back and reads it again, then
 
 Ruth is looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 
-Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
+Chloe talks at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
 Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, then is still on them when the plates come back. Chloe's fork stops over the plate. The laugh hasn't died down when she carries her tray out the far door, and finds Ruth on the step.
 

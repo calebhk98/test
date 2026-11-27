@@ -52,19 +52,19 @@ Kowalczyk, writing up the board, says, "That's the last round. So it's pairs for
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, then a boy from the year below who was standing right there when it happened. Bex comes in as it's finishing, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it. "Fifty seconds. Third round. Knee across the shin at the finish." She shakes the water off her hands. "What she should have done with that shin is a whole other conversation." By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself, ahead of the story going round again.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, then a boy from the year below who was standing right there when it happened. Bex comes in as it's finishing, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers. "Fifty seconds. Third round. Knee across the shin at the finish." She shakes the water off her hands. "What she should have done with that shin is a whole other conversation." By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself, ahead of the story going round again.
 
-Seven of the year below go on her teaching list in September while Marek lands on somebody else's; she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now; it holds up well enough until November, when all of them get one question wrong, and wrong it identically.
+Seven of the year below go on her teaching list in September while Marek lands on somebody else's; she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now; it holds up well enough until November, when all of them get one question wrong in exactly the same way.
 
 Going through the papers twice takes her back to her own notes from the third week, and there it is in her own handwriting. She taught them the ordering reversed, all of them learned it the way she gave it to them, and all of them arrived exactly where she had pointed them; because everything before the test came out identical either way round, it sat there for months.
 
 "Does the test count?" Halide says.
 
-"So we're not actually bad at it," one of the twelves says.
+"So we're not actually bad at it," one of the thirteens says.
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-One of the twelves tells it at their own table, where it is funny and nothing else, and it is carried from there to Iyad within two days. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
+One of the thirteens tells the story at their own table, where it is funny and nothing else, and it is carried from there to Iyad within two days. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
 
 A girl in her own year she has barely spoken to asks her at the sinks whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
@@ -82,7 +82,7 @@ The girl says she doesn't remember, and starts to go.
 
 "Then say you made it up, and I'll go."
 
-The girl doesn't say it. She looks at the door, and then back. "Tuesday. Far table, the end by the window. I'm not telling you who."
+The girl doesn't say she made it up. She looks at the door, and then back. "Tuesday. Far table, the end by the window. I'm not telling you who."
 
 Chloe already knows who sits there.
 
@@ -120,7 +120,7 @@ Kavi turns round to look at the board. "Then the air isn't the same speed at bot
 
 Nadia writes it up under the posts and says nothing about it.
 
-Priya is along the radiator under the window with her boots up on the pipe. "You're going to set the clocks off a sound, though. If you make the sound at a spot you've measured and slide the clocks about until the boxes agree about that spot, everything wrong with the boxes has gone into the clocks and you've written calibration on it. It reads beautifully at that spot and lies everywhere else. The staff are not going to put it where we calibrated. Not doing that is the whole of what they told us they'd do."
+Priya is along the radiator under the window with her boots up on the pipe. "You're going to set the clocks off a sound, though. If you make the sound at a spot you've measured and slide the clocks about until the boxes agree about that spot, everything wrong with the boxes has gone into the clocks and you've written calibration on it. It reads beautifully at that spot and lies everywhere else. The staff are not going to put it where we calibrated. Not doing that is what they told us they'd do."
 
 Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
 
@@ -132,7 +132,7 @@ The reel has to be signed for and the field is a field. They go wireless anyway.
 
 "A fortnight."
 
-Ruth stops eating. "A fortnight. So we've been building against a number you knew was the wrong number, and I've spent a fortnight tuning against recordings that were never going to be any use, and none of that had to happen, because the whole of what it needed was you saying it in that room a fortnight ago."
+Ruth stops eating. "A fortnight. So we've been building against a number you knew was the wrong number, and I've spent a fortnight tuning against recordings that were never going to be any use, and none of that had to happen, because all it needed was you saying it in that room a fortnight ago."
 
 "I thought it would come down."
 
@@ -224,7 +224,7 @@ Ruth puts her fork down. "He'd think about it, when he had a whole Thursday afte
 
 Priya says, "He's got a lake, Kavi. A lake and a boat shed."
 
-Ruth takes it up with him directly on Friday; Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it, but Sam says they agreed, and Odile was actually in the room.
+Ruth takes it up with him directly on Friday; Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the thirteens do paintball. The two of them last until March, when Priya says the girl ended it, but Sam says they agreed, and Odile was actually in the room.
 
 "You've both got the day wrong, and I was standing right there."
 
@@ -260,9 +260,9 @@ Both hands come up off the table now. "I didn't mean to keep it from you. There 
 
 "It is not just school."
 
-"It's like clays but harder."
+"It's like the paintball but harder."
 
-"What in God's name is clays?"
+"What paintball? Since when is there paintball?"
 
 Her father is looking at his plate when her mother says, "You knew?"
 
@@ -276,7 +276,7 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew. I thought it was fine," he says.
 
-Her mother sets the dish down in the middle of the table, straightens it, and retreats into the kitchen, staying there while her father moves the salt, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen takes a few minutes and the plates get stacked; that turns out to be as much of the sentence as the room can hold.
+Her mother sets the dish down in the middle of the table, straightens it, and retreats into the kitchen, staying there while her father moves the salt, then gets up and starts stacking plates still half full. When he gets to the kitchen door she says, not loud, "Since October," and he sets the plates on the counter and runs the tap.
 
 Her mother returns, asking whether anybody wants the pie warmed up; her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
 
